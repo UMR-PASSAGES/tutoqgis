@@ -1,0 +1,594 @@
+	html {
+		margin:0;
+		padding:0;
+		color:#323232;
+		background:#FFFFFF;	
+		font-family:"Open Sans", helvetica, arial, verdana;
+		font-size: 0.9em;
+		text-align: justify;
+	}	
+	body{
+		min-height: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	#wrap {	/* la zone globale */
+		width:17cm;
+		position: relative;
+		margin-left: auto;
+  		margin-right: auto;
+	}
+	#container_main_sidebar {	/* la zone pour les 2 colonnes main et sidebar; cette zone sert à faire en sorte que ces 2 colonnes soient toujours de même hauteur */
+ 		width:17cm; 
+ 		position: relative; 
+ 		margin:0; 
+	}
+	/* background container */
+	.backgrounds { 
+ 		position:absolute;
+		width:100%;
+		height:100%; 
+	}
+	/* background columns */
+	.backgrounds .main {
+		height:100%;
+		background:#FFFFFF; 
+	}
+	.backgrounds .sidebar {
+		height: 100%;
+		background: #FFFFFF;
+	}
+	.main {	/* la zone de texte */
+		float: left;
+		position: relative;
+		width:17cm;
+		padding-bottom: 0;
+	}
+
+	/* les menus horizontaux */
+	#wrapdanswrap {	/* le contenant global des menus horizontaux */
+		padding:0px 0px;
+		background:#FFFFFF;
+	}
+	#header {	/* le titre (ex. : tutoriel QGIS, cf. classe grostitre) */
+		float: left;
+    	width: 5cm;
+    	display: none;
+	}
+	#notforprint {
+		display: none;
+	}
+	#nav {	/* les menus eux-mêmes */
+		padding:2px 0px;
+		background: rgba(25,25,25,0.5);
+		display: none;
+	}
+	#nav ul {
+		margin:0;
+		padding:5px;
+		list-style:none;
+	}
+	#nav li {
+		display:inline;
+		margin:0;
+		padding:5px;
+	}
+	#nav li a {	/* pour les liens du menu horizontal */
+		font-size: 1.1em;
+      	color: #FFFFFF;
+      	text-decoration: none;
+	}
+	#nav li a:hover {	/* pour les liens du menu horizontal */
+		color: #191919;
+		background-color: #EFEFEF;
+		padding:5px 0px;
+	}
+	
+	/* les menus sur la droite (liste des chapitres) */
+	.sidebar {
+		float: left;
+		position: relative;
+		width:275px;
+		padding-left:10px;
+		padding-right:10px;
+		padding-bottom: 0;
+		display: none;
+	}
+	#sidebar a {	/* pour les liens du menu vertical */
+      color:#2DAB0B;
+      text-decoration: none;		
+	}
+	#sidebar a:hover {	/* pour les liens du menu vertical */
+      color:#FF7D00;
+	}
+
+	/* pied de page */
+	#footer {
+		clear: both;
+		padding: 5px 10px;
+		background: #FFFFFF;
+		font-size: 0.8em;
+		display: none;
+	}
+	#footer p {
+		margin:0;
+   	}
+	#footer a {	/* pour les liens du pied de page */
+      color: #646464;
+   	}
+   #footer a:hover {	/* pour les liens du pied de page */
+      color: #000000;
+   	}
+	* html #footer {
+		height:1px;
+	}
+	
+	/* images et figures */
+	img {	/* par défaut, avec une ombre */
+		padding-left: 0px;
+		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
+		border: none;
+		box-shadow: 2px 2px 4px #ccc;
+   	-webkit-box-shadow: 2px 2px 4px #ccc;
+   	-moz-box-shadow: 2px 2px 4px #ccc; 
+	}
+	img.droite {	/* image à droite, avec texte autour, et pas d'ombre */
+		float: right;
+		padding-left: 10px;
+		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
+		border: none;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+   	-moz-box-shadow: none;
+   }
+   img.gauche {	/* image à droite, avec texte autour, et pas d'ombre */
+		float: left;
+		padding-right: 10px;
+		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
+		border: none;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+   	-moz-box-shadow: none;
+   }
+	img.noshadow {	/* sans ombre */
+		padding-left: 0px;
+		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
+		border: none;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+   	-moz-box-shadow: none;
+	}
+	img.logo {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 0;
+		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
+		border: none;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+   	-moz-box-shadow: none; 
+	}
+	/* pour les figures */
+	figure.image {
+   	width: 100%;
+	}
+	figure {
+		text-align: center;
+    	display: table;
+    	max-width: 100%;
+  		border: none;
+  		margin: 15px;
+	}
+	figure.gauche {
+		text-align: left;
+    	display: table;
+    	max-width: 100%;
+  		border: none;
+  		margin: 15px;
+	}
+	/* les légendes des figures */
+	figcaption {
+  		text-align: center;
+  		font-style: italic;
+  		font-size: smaller;
+  		text-indent: 0;
+	}
+	/* quand on veut afficher l'icône d'un outil avec après du texte sur plusieurs lignes */
+	img.icone {
+		padding:0;
+		float: left;
+		margin: 5px;
+		border: thin solid;
+		border-color: silver;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+   	-moz-box-shadow: none;
+	/* quand on veut afficher l'icône d'un outil avec avant ou après du texte sur une seule ligne */
+	}
+	img.iconemid {
+		padding:0;
+		vertical-align: middle;
+		margin: 5px;
+		border: thin solid;
+		border-color: silver;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+   	-moz-box-shadow: none;
+	}
+
+	/* Pour afficher une image quand on passe la souris sur un texte (capture d'écran) */
+	/* quand on veut que l'image s'affiche au-dessous du texte */
+	.thumbnail_bottom{
+		color: #146000;
+		border-bottom: 1px dotted;
+		position: relative;
+		z-index: 0;
+	}
+	.thumbnail_bottom:hover{
+		background-color: transparent;
+		z-index: 50;
+	}
+	.thumbnail_bottom span{ /*CSS for enlarged image when invisible (without hover)*/
+		position: absolute;
+		background-color: white;
+		padding: 0;
+		top: 20px;
+		left: -1000px;
+		border: 1px dashed gray;
+		visibility: hidden;
+		color: black;
+		text-decoration: none;
+	}
+	.thumbnail_bottom span img{ /*CSS for enlarged image*/
+		border-width: 0;
+		padding: 5px;
+	}
+	.thumbnail_bottom:hover span{ /*CSS for enlarged image on hover*/
+		visibility: visible;
+		top: 20px;
+		left: 0; /*position where enlarged image should offset horizontally */	
+	}
+	/* quand on veut que l'image s'affiche au-dessus du texte (bas de page) */
+	.thumbnail_top{
+		color: #146000;
+		border-bottom: 1px dotted;
+		position: relative;
+		z-index: 0;
+	}
+	.thumbnail_top:hover{
+		background-color: transparent;
+		z-index: 50;
+	}
+	.thumbnail_top span{ /*CSS for enlarged image when invisible (without hover)*/
+		position: absolute;
+		background-color: white;
+		padding: 0;
+		bottom: 20px;
+		left: -1000px;
+		border: 1px dashed gray;
+		visibility: hidden;
+		color: black;
+		text-decoration: none;
+	}
+	.thumbnail_top span img{ /*CSS for enlarged image*/
+		border-width: 0;
+		padding: 0;
+	}
+	.thumbnail_top:hover span{ /*CSS for enlarged image on hover*/
+		visibility: visible;
+		bottom: 20px;
+		left: 0; /*position where enlarged image should offset horizontally */	
+	}
+
+	/* tableau */
+	table{
+	   border-collapse: collapse;
+	   font-size: 1em;
+	}
+	caption{
+		font-size: 0.9em;
+		font-style: italic;
+		caption-side: bottom;
+	}
+	th{
+		color: white;
+	   background-color: #2DAB0B;
+	   padding-top: 3px;
+	   padding-bottom: 3px;
+	   padding-left: 10px;
+	   padding-right: 10px;
+	}
+	th.clair{
+		color: white;
+	   background-color: #6DC057;
+	   padding-top: 3px;
+	   padding-bottom: 3px;
+	   padding-left: 10px;
+	   padding-right: 10px;
+	   text-align: center;
+	}
+	th.centre{
+		color: white;
+	   background-color: #2DAB0B;
+		padding-top: 3px;
+	   padding-bottom: 3px;
+	   padding-left: 10px;
+	   padding-right: 10px;
+	   text-align: center;
+	}
+	td{
+		padding-top: 3px;
+	   padding-bottom: 3px;
+	   padding-left: 10px;
+	   padding-right: 10px;
+	}
+	td.centre{
+		padding-top: 3px;
+	   padding-bottom: 3px;
+	   padding-left: 10px;
+	   padding-right: 10px;
+	   text-align: center;
+	}
+	td.centreclair{
+		background-color: #F1FFED;
+		padding-top: 3px;
+	   padding-bottom: 3px;
+	   padding-left: 10px;
+	   padding-right: 10px;
+	   text-align: center;
+	}
+	td.centreclairalt{
+		background-color: #C5EBBC;
+		padding-top: 3px;
+	   padding-bottom: 3px;
+	   padding-left: 10px;
+	   padding-right: 10px;
+	   text-align: center;
+	}
+	tr{
+		color: black;
+		background-color: #E2FFDB;
+	}
+	tr.alt{
+		color: black;
+		background-color: #B0EEA0;
+	}
+
+	/* différents styles de listes */
+	OL.withroman {	/* liste numérotée avec chiffres romains */
+		list-style-type: upper-roman; 
+	}
+	OL.witharabic { 	/* liste numérotée avec chiffres arabes */
+		list-style-type: arabic-numbers;
+		padding: 0 0 0 15px;
+	}
+	UL.listetitres{	/* liste utilisée en début de chapitre, pour les grands titres */
+		list-style-type: none;
+	}
+	UL.listesoustitres{	/* liste utilisée en début de chapitre, pour les sous-titres */
+		list-style-type: none;
+		font-size: 15px;
+		font-style: italic;
+	}
+	LI.espace{
+		margin-top: .7em;
+		margin-bottom: .7em;
+	}
+	UL.espace{
+		margin-top: .7em;
+		margin-bottom: .7em;
+	}
+	
+	/* différents styles d'hyperliens */
+	a {		/* les hyperliens s'affichent en vert */
+		color:#2DAB0B;
+     	text-decoration: none;
+	}
+	a:hover {	/* et en orange quand on passe la souris au-dessus */
+		color:#FF7D00;
+	}
+	a.grostitre{
+		color: #2DAB0B;
+	}
+	a.titre:hover {	/* sauf quand c'est un titre */
+		color:#2DAB0B;
+	}
+	a.noir:hover {
+		color: red;
+	}
+	a.ext {	/* les hyperliens externes en gris */
+		color:#646464;
+		border-bottom: 1px dotted;
+	}
+	a.ext:hover {
+		color: #505050;
+	}
+	a.ext:after {  /* une icône différente pour les liens externes */
+  		content: "\0000a0[\2197]";
+	}
+	a.hautpage {
+		display: block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		display: none;
+	}
+	a.suiv {
+		float: right;
+		display: none;
+	}
+	a.suiv:after {
+		content: "\0000a0\2192";
+	}
+	a.prec {
+		float: left;
+		display: none;
+	}
+	a.prec:before {
+		content: "\2190\0000a0";
+	}
+
+	/* texte mis en évidence (donnees, numeros...) */
+	em.data { 
+		color: #146000;
+		font-weight: bold;
+		font-style: normal;
+		 }
+	em.numero {
+		color: red;
+		font-weight: bold;
+		font-style: normal;
+		font-size: 1.1em;}
+
+	/* différents styles de paragraphes */	
+	p.manip{
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		border-left: 6px;
+		border-left-style: solid;
+		border-left-color: #2DAB0B;
+	}
+	p.note{
+		font-size: 0.9em;
+		font-style: italic;
+	}
+	p.attention{
+		color:#146000;
+		font-weight: bold;
+	}
+	p.answer {
+		font-style: italic;
+		background-color: #FFDBDE;
+	}
+	p.bonus_question {
+		font-size: 1.1em;
+		color: #A81111;
+		font-weight: bold;
+	}
+	p.code {
+		font-family: courier;
+	}
+
+	
+	/* syles de div */
+	div.manip{
+		padding-left: 10px;
+		padding-right: 5px;
+		padding-top: 1px;
+		padding-bottom: 1px;
+		border-left: 6px;
+		border-left-style: solid;
+		border-left-color: #2DAB0B;
+	}
+	div.bonus {
+		background-color: #FFDDDD;
+		padding-left: 10px;
+		padding-right: 5px;
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+	
+	/* un style de barre horizontale */
+	hr.simple {
+        width:100%;
+        height:1px;
+        margin-bottom:5px;
+        margin-top: -5px;
+        padding:0;
+        background-color:#191919;
+        border:0;
+        }
+
+	/* les titres */
+	h1 {
+		font-variant:small-caps;
+		color: #2DAB0B;
+		font-weight:bold;
+		font-size:1.5em;
+		margin:1em 0 1em;
+	}
+	h2 {
+		font-variant:small-caps;
+		color: #2DAB0B;
+		font-weight:bold;
+		font-size:1.5em;
+		margin:1em 0 1em;
+	}
+	h3 {
+		color: #2DAB0B;
+		font-weight:bold;
+		font-size:1.3em;
+		margin:0 0 1em;
+		padding-top: 40px;
+		border-bottom: 2px;
+		border-bottom-style:solid;
+		border-bottom-color:#2DAB0B;
+	}
+	h4 {
+		color: #2DAB0B;
+		font-style:italic;
+		font-weight: normal;
+		font-size:1.2em;
+		margin:0 0 1em;
+		padding-top: 10px;
+	}
+	#h4 li {
+	}
+	#h4 ul {
+		list-style-type: none;
+	}
+	#h2Verti {
+	font-weight:bold;
+		font-size:1.2em;
+		margin:0 0 1em;
+		padding-left:10px;
+	}
+	
+
+    
+   /* pour le système de questions-réponses */
+	div.question { position: relative; }
+	input[type=checkbox] {
+	   position: absolute;
+	   top: 0;
+	   left: 0;
+	   width: 10%;
+	   height: 10%;
+	   opacity: 0;
+	}
+	label {
+		cursor: pointer;
+		position: relative;
+		display: block;
+		padding-left: 30px; /* espacement entre le pointeur et le texte de la question */
+	}
+	label:before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		top: 50%;
+		left: 10px; /* décalage du pointeur vers la droite */
+		border-left: 7px solid black; /* apparence du pointeur */
+		border-top: 7px solid transparent;
+		border-bottom: 7px solid transparent;
+		margin-top: -7px;
+	}
+	input[type=checkbox]:checked ~ p label:before {
+		border-left: 7px solid transparent;
+		border-top: 7px solid black;
+		border-right: 7px solid transparent;
+		margin-left: -7px;
+		margin-top: -7px
+	}
+	p.reponse {
+
+		overflow: hidden;
+		padding-left: 5px;
+		font-style: italic;
+	}
+	input[type=checkbox]:checked ~ p {
+		max-height: 600px; /* la hauteur max que pourra prendre la réponse */
+	}
