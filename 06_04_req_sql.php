@@ -217,7 +217,7 @@
                         <li class="espace"><b>Nom de la couche :</b> il s'agit du nom qu'aura la couche virtuelle</li>
                         <li class="espace"><b>Requête :</b> la dernière requête tapée dans le gestionnaire de bases de données s'affiche automatiquement. Si ce n'est pas le cas, tapez une requête de votre choix</li>
                         <li class="espace"><b>Géométrie :</b> Autodétecter laisse au logiciel le soin de déterminer quelle est la colonne de géométrie. Il est également possible de spécifier <b>Aucune géométrie</b> si la couche n'en contient pas, ou bien de spécifier manuellement la colonne de géométrie</li>
-                        <li class="espace"><b>Test :</b> ce bouton permet de détecter les éventuelles erreures présentes dans la requête</li>
+                        <li class="espace"><b>Test :</b> ce bouton permet de détecter les éventuelles erreurs présentes dans la requête</li>
                         <li class="espace"><b>OK :</b> exécute la requête et ajoute le résultat dans QGIS.</li>
                     </ul>
                 </p>
