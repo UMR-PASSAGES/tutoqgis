@@ -137,7 +137,7 @@
 			            <li>de croiser plusieurs tables</li>
 			        </ul></p>  
 			        
-			    <h4><a class="titre" id="VI42a">Choisir les colonnes</a></h4>
+			    <h4><a class="titre" id="VI43a">Choisir les colonnes</a></h4>
 			         <p>Pour que le résultat de la requête ne comporte que les colonnes voulues, il suffit de les lister dans la requête.</p>
 			         <div class="manip">
 			             <figure>
@@ -151,7 +151,7 @@
 			         </div>
 			         <p>Comme précédemment, vous pouvez si vous le désirez charger ce résultat dans QGIS en tant que nouvelle couche.</p>
 			         
-			    <h4><a class="titre" id="VI42b">Croiser plusieurs tables</a></h4>
+			    <h4><a class="titre" id="VI43b">Croiser plusieurs tables</a></h4>
 			     
 			         <p>Comment faire si nous voulons maintenant croiser plusieurs tables, par exemple obtenir pour chaque commune de la couche <em class="data">communes_NordPasDeCalais</em> le nom du chef-lieu du département correspondant dans la couche <em class="data">departements</em> ?</p>
 			         <div class="manip">
@@ -176,7 +176,7 @@
                     <p>Il est donc possible de faire intervenir dans une même requête autant de couches que vous le désirez, à condition de pouvoir faire le lien entre ces couches (dernière ligne de la requête).</p>
 			     
 			         
-			     <h4><a class="titre" id="VI42c">Un peu de spatial</a></h4>
+			     <h4><a class="titre" id="VI43c">Un peu de spatial</a></h4>
 			         
 			         <p>Comment est-il possible d'utiliser la colonne de géométrie ? Essayons par exemple de sélectionner les communes contenant des installations de traitement de déchets, comme déjà réalisé précédemment au moyen d'une <a href="06_02_req_spatiales.php#VI21" >requête spatiale</a>.</p>
 			         <div class="manip">
