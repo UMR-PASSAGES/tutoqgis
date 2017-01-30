@@ -19,6 +19,7 @@
 			<p>Pour nous contacter : envoyez un courriel à l'adresse <b>julie.pierson (at) cnrs.fr</b></p>
 			<p>Faites-nous part de vos remarques, vos idées d'amélioration, ou simplement de l'usage que vous faites de notre tutoriel !</p>
 			<p>L'image du bandeau est tirée des archives de l'art américain et est disponible sur <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File:archives_of_American_Art_-_Guy_Maccoy_-_2905.jpg" >Wikimedia</a>. Cette image est dans le domaine public.</p>
+			<p>Tout le tutoriel est disponible sur GitHub : <a class="ext" target="_blank" href="https://github.com/UMR-PASSAGES/tutoqgis" >https://github.com/UMR-PASSAGES/tutoqgis</a></p>
 		</div>
 		<div class="sidebar">
 			<?php include('logos_menus_verticaux.inc.php'); ?>
