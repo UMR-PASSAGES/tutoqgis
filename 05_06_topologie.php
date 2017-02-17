@@ -127,7 +127,7 @@
 						<p>Si vous avez un grand nombre d'erreurs à corriger, vous pouvez aussi utiliser des outils de correction automatique, notamment ceux de grass. Ces outils sont disponibles dans QGIS via la 
 						<a class="thumbnail_bottom" href="#thumb">boîte à outils du menu Traitements
 							<span>
-								<img src="illustrations/tous/5_5_traitements_menu.png" alt="boîte à outils du menu Traitements" height="125" >
+								<img src="illustrations/tous/5_6_traitements_menu.png" alt="boîte à outils du menu Traitements" height="125" >
 							</span>
 						</a>. Tapez <b>clean</b> dans le filtre pour accéder à l'outil <b>v.clean</b>.</p>
 						<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass70/manuals/v.clean.html" >https://grass.osgeo.org/grass70/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>

@@ -14,7 +14,7 @@
 		<div class="main">
 			<h2>III.3  Ajout de données ponctuelles à partir d'un fichier texte</h2>
 				<ul class="listetitres">
-					<li><a href="#III31">Qu'y a-t-il dans le fichier texte?</a></li>
+					<li><a href="#III31">Qu'y a-t-il dans le fichier texte ?</a></li>
 					<li><a href="#III32">Visualisation des données dans QGIS</a>
 						<ul class="listesoustitres">
 							<li><a href="#III32a">Ajout d'une couche avec un SCR inconnu : préparer le terrain</a>
@@ -170,7 +170,7 @@
 	
 			<br>
 			<a class="prec" href="03_02_donnees_flux.php">chapitre précédent</a>
-			<a class="suiv" href="04_00_georeferencement.php">partie IV : géoréférencement</a>
+			<a class="suiv" href="03_04_donnees_osm.php">chapitre suivant</a>
 			<br>
 			<a class="hautpage" href="#wrap">haut de page</a>						
 				

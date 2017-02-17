@@ -58,8 +58,8 @@
 						<li class="espace">Cliquez ensuite sur <b>OK</b>.</li>
 					</ul>
 					<figure>
-						<a href="illustrations/tous/9_2_decoupe_jam_01.png" >
-							<img class="noshadow" src="illustrations/tous/9_2_decoupe_jam_01.png" alt="Menu Raster, Extraction, Découper" height="180" >
+						<a href="illustrations/tous/9_2_decoupe_jam.png" >
+							<img class="noshadow" src="illustrations/tous/9_2_decoupe_jam.png" alt="Menu Raster, Extraction, Découper" height="180" >
 						</a>
 					</figure>
 					<p>Une fois l'opération terminée, fermez la fenêtre de l'outil de découpage. Le nouveau raster ne comprend que la Jamaïque.</p>

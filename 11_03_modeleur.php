@@ -161,7 +161,13 @@
 								<p><label for="faq-1">Dans quel SCR sont ces deux couches ?</label></p>
 								<p class="reponse">Les 2 couches sont en RGF93 Lambert 93, code EPSG 2154 (cf. <a href="02_03_couches_projets.php#II32">partie II.3.2 : SCR d'une couche</a> )</b>.</p>
 							</div>
-							<p><b>Lancer le modèle clip and project</b> : vous pouvez soit cliquer sur l'icône d'engrenages du modeleur de traitement si ce modèle est en cours d'édition, soit à partir de la boîte à outils traitements : <b>Modèles &#8594; tests &#8594; clip and project</b>.</p>
+							<p><b>Lancer le modèle clip and project</b> : vous pouvez soit cliquer sur l'icône d'engrenages du modeleur de traitement si ce modèle est en cours d'édition, soit à partir de la boîte à outils traitements : 
+    							<a class="thumbnail_bottom" href="#thumb">Modèles &#8594; tests &#8594; clip and project
+                                	<span>
+                                		<img src="illustrations/tous/11_03_lancer_modele.png" alt="Boîte à outils de Traitement, modèle Clip and Project" height="300" >
+                                	</span>
+                                </a>
+                            </p>
 							<figure>
 								<a href="illustrations/tous/11_03_test_modele.png" >
 									<img src="illustrations/tous/11_03_test_modele.png" alt="fenêtre du modele clip and project, paramètres remplis" width="450">

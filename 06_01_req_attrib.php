@@ -62,7 +62,7 @@
 					</figure>
 					<p>Vous pouvez lire le nombre d'éléments sélectionnés en haut de la table attributaire :</p>
 					<figure>
-						<img src="illustrations/tous/6_1_nb_selectionnes_01.png" alt="ligne indiquant le nombre d'éléments sélectionnés" height="57">
+						<img src="illustrations/tous/6_1_nb_selectionnes.png" alt="ligne indiquant le nombre d'éléments sélectionnés" height="57">
 					</figure>
 				</div>
 				<p>Vous venez d'effectuer une requête attributaire simple. Il est important de comprendre qu'une requête ne modifie pas les données, elle les sélectionne simplement.</p>

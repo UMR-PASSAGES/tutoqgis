@@ -83,8 +83,8 @@
 						<div class="manip">
 							<p>Sélectionnez la transformation <b>polynomiale 1</b> dans la liste déroulante de la fenêtre de paramétrage.</p>
 							<figure>
-								<a href="illustrations/tous/4_2_type_transfo.png" >
-									<img src="illustrations/tous/4_2_type_transfo.png" alt="Choix du type de transformation" height="35">
+								<a href="illustrations/tous/4_4_type_transfo.png" >
+									<img src="illustrations/tous/4_4_type_transfo.png" alt="Choix du type de transformation" height="35">
 								</a>							
 							</figure>
 						</div>					

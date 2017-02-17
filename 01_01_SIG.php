@@ -57,7 +57,7 @@
 						<p>Les données sont organisées sous forme de couches superposables.</p>
 						<figure>
 							<a href="illustrations/tous/1_1_couches.svg" >
-								<img src="illustrations/tous/1_1_couches.png" alt="Organisation sous forme de couches" width="400">
+								<img src="illustrations/tous/1_1_couches.svg" alt="Organisation sous forme de couches" width="400">
 							</a>
 							<figcaption>Source : pôle ARD, adess (domaine public)</figcaption>
 						</figure>
@@ -78,8 +78,8 @@
 					<h4><a class="titre" id="I12b">Deux grands types de données : vecteur et raster</a></h4>
 						<p>On distingue généralement deux types de données : <b>vecteur et raster</b>.</p>
 						<figure>
-							<a href="illustrations/tous/1_1_vecteur_02.png" >
-							<img src="illustrations/tous/1_1_vecteur_02.png" alt="Exemple de données vecteur" width="400">
+							<a href="illustrations/tous/1_1_vecteur.png" >
+							<img src="illustrations/tous/1_1_vecteur.png" alt="Exemple de données vecteur" width="400">
 							</a>
 							<figcaption >Exemple de données vecteur, l'exemple du Sénégal : régions sous forme de polygones, rivières sous forme de lignes et villes sous forme de points (source : pôle ARD, adess, domaine public).</figcaption>
 						</figure>

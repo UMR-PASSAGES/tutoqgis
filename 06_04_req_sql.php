@@ -87,7 +87,7 @@
                         	</a>
                         </figure>
 				        <p>Un quatrième onglet s'ajoute, permettant d'écrire une requête SQL (il est possible d'ouvrir ainsi plusieurs onglets de requête SQL).</p>
-				        <p>Dans la moitié supérieure de cet onglet, tapez la requête suivante :</p>
+				        <p>Dans la moitié supérieure de cet onglet, tapez la requête suivante (cette requête sera explicitée en détail un peu plus loin) :</p>
 				        <p class="code">select * from departements where "NOM_DEPT" = 'NORD'</p>
 				        <p class="note">Vous pouvez utiliser ou non des retours à la ligne, le résultat sera le même.</p>
 				        <p>et cliquez sur le bouton <b>Exécuter</b> : le résultat de la requête s'affiche dans la moitié inférieure de la fenêtre.</p>
@@ -124,16 +124,16 @@
 			    <p class="code">select * from departements where "NOM_DEPT" = 'NORD'</p>
 			    <p>A quoi correspond cette requête ? Regardons-la ligne par ligne :</p>
 		        <p class="code">select *</p>
-		        <p>signifie que nous allons sélectionner toutes les colonnes de la table attributaire, ainsi que la géométrie, qui est considérée comme une colonne nommée geometry, comme vous pouvez le vérifier dans l'onglet <b>Info</b>.</p>
+		        <p>signifie que nous allons sélectionner (<b>select</b>) toutes (la mention <b>*</b>) les colonnes de la table attributaire, ainsi que la géométrie, qui est considérée comme une colonne nommée geometry, comme vous pouvez le vérifier dans l'onglet <b>Info</b>.</p>
 		        <p class="code">from departements</p>
 		        <p>signifie que nous allons sélectionner les colonnes de la couche <em class="data">departements</em>.</p>
 		        <p class="code">where "NOM_DEPT" = 'NORD'</p>
-		        <p>applique un critère à la requête : seules seront sélectionnées les lignes répondant à ce critère, c'est-à-dire dont la valeur pour le champ NOM_DEPT est égale à &#171;&nbsp;Nord&nbsp;&#187; (pour rappel, les populations sont en milliers d'habitants).</p>
+		        <p>applique un critère à la requête : seules seront sélectionnées les lignes répondant à ce critère, c'est-à-dire dont la valeur pour le champ NOM_DEPT est égale à &#171;&nbsp;Nord&nbsp;&#187;.</p>
 			    <p>Comparons avec la même requête dans la fenêtre de requête attributaire (cf. <a href="06_01_req_attrib.php#VI11" >partie VI.1.1</a>), où seul le critère <b>"NOM_DEPT" = 'NORD'</b> est nécessaire, le début de la requête étant &#171;&nbsp;sous-entendu&nbsp;&#187;.</p>
 			    <p>Par rapport à une requête attributaire, une requête SQL nous offre donc la possibilité :
 			        <ul>
 			            <li>de choisir les colonnes qui nous intéressent</li>
-			            <li>de faire intervenir également la géométrie, puisqu'il s'agit d'une colonne comme les autres</li>
+			            <li>d'effectuer des requêtes sur la géométrie</li>
 			            <li>de croiser plusieurs tables</li>
 			        </ul></p>  
 			        
@@ -193,7 +193,7 @@
                         		<img src="illustrations/tous/6_4_contains.png" alt="Exemple de requête SQL spatiale croisant deux couches et aperçu du résultat" width="600">
                         	</a>
                         </figure>
-                        <p class="note">Si la requête ne renvoie pas de résultat, vérifiez que vous appelez bien la couche d'installations en Lambert 93.</p>
+                        <p class="note">Si la requête ne renvoie pas de résultat, vérifiez que vous appelez bien la couche d'installations qui est en Lambert 93.</p>
 			         </div>
 			         <p>Il existe de nombreux opérateurs spatiaux que vous pouvez vous amuser à tester. Il est bien sûr possible d'ajouter des critères spatiaux et attributaires dans une même requête.</p>
 			     

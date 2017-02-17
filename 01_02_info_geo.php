@@ -90,8 +90,8 @@
 				<h3><a class="titre" id="I22">L'interface de QGIS</a></h3>
 					
 					<figure>
-						<a href="illustrations/tous/1_2_interface.png" >
-							<img src="illustrations/tous/1_2_interface.png" alt="Interface de QGIS" height="400">
+						<a href="illustrations/tous/1_2_interface.svg" >
+							<img src="illustrations/tous/1_2_interface.svg" alt="Interface de QGIS" height="400">
 						</a>
 					</figure>
 					<p>On peut distinguer 6 zones dans QGIS :</p>

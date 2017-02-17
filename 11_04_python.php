@@ -62,16 +62,16 @@
 					<p>Ce tutoriel n'étant pas un tutoriel Python, nous nous contenterons d'ouvrir un script existant plutôt que d'en créer un nous-mêmes.</p>
 					
 					<div class="manip">
-						<p>Pour ouvrir un script : cliquez sur l'icône <b>Afficher l'éditeur</b> de la console : l'éditeur de script s'ouvre.</p>
+						<p><img class="icone" src="illustrations/tous/11_04_editeur_icone.png" alt="icône Afficher l'éditeur" >Pour ouvrir un script : cliquez sur l'icône <b>Afficher l'éditeur</b> de la console : l'éditeur de script s'ouvre.</p>
 						<figure>
-							<a href="illustrations/tous/11_04_editeur_icone.png" >
-								<img src="illustrations/tous/11_04_editeur_icone.png" alt="icône afficher l'éditeur dans la console Python" width="620">
+							<a href="illustrations/tous/11_04_editeur.png" >
+								<img src="illustrations/tous/11_04_editeur.png" alt="console Python avec l'icône Afficher l'éditeur" width="620">
 							</a>
 						</figure>
-						<p>Dans l'éditeur, cliquez sur l'icône <b>Ouvrir fichier</b> (celle du haut) et allez chercher le script <b>clip_and_reproject.py</b> situé dans <b>TutoQGIS_11_Automatisation/scripts</b>.</p>
+						<p><img class="icone" src="illustrations/tous/11_04_ouvrir_script_icone.png" alt="icône d'ouverture de script" >Dans l'éditeur, cliquez sur l'icône <b>Ouvrir fichier</b> et allez chercher le script <b>clip_and_reproject.py</b> situé dans <b>TutoQGIS_11_Automatisation/scripts</b>.</p>
 						<figure>
-                        	<a href="illustrations/tous/11_04_ouvrir_script_icone.png" >
-                        		<img src="illustrations/tous/11_04_ouvrir_script_icone.png" alt="Icône d'ouverture de script de l'éditeur Python" width="620">
+                        	<a href="illustrations/tous/11_04_ouvrir_script.png" >
+                        		<img src="illustrations/tous/11_04_ouvrir_script.png" alt="Editeur Python avec l'icône d'ouverture de script" width="620">
                         	</a>
                         </figure>
 						<p>N'hésitez pas à agrandir la partie consacrée à la console dans QGIS, au détriment de la fenêtre de visualisation des données.</p>

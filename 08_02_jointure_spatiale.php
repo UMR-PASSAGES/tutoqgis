@@ -33,7 +33,7 @@
 				<p>Notez bien que comme pour une jointure attributaire, les données qui seront jointes sont toujours les données attributaires.</p>
 				<figure>
 					<a href="illustrations/tous/8_2_principe_jointure_spatiale.svg" >
-						<img src="illustrations/tous/8_2_principe_jointure_spatiale.png" alt="principe d'une jointure spatiale" height="700">
+						<img src="illustrations/tous/8_2_principe_jointure_spatiale.svg" alt="principe d'une jointure spatiale" height="700">
 					</a>
 				</figure>
 				<p>Dans l'exemple ci-dessus, les deux couches de départ sont une couche de département et une couche de chef-lieux. Les données attributaires des chef-lieux (leur nom, code et coordonnées) sont jointes aux départements en se basant sur leur position : <b>chaque département récupère les données du chef-lieu intersectant ce département</b>.</p>
@@ -69,13 +69,13 @@
 						<p>Si la boîte à outils Traitement n'est pas visible, menu <b>Traitement &#8594; Boîte à outils</b>.</p>
 						<p>Dans cette boîte à outils, en <b>mode avancé</b> (liste déroulante en bas de la boîte), rubrique <b>Géotraitements QGIS </b> &#8594; <b>Vector general tools</b> &#8594; <b>Join attributes by location</b> :</p>
 						<figure>
-							<a href="illustrations/tous/8_3_join_processing.png" >
-								<img src="illustrations/tous/8_3_join_processing.png" alt="emplacement de l'outil de jointure spatiale dans la boîte à outils Traitement" height="350">
+							<a href="illustrations/tous/8_2_join_processing.png" >
+								<img src="illustrations/tous/8_2_join_processing.png" alt="emplacement de l'outil de jointure spatiale dans la boîte à outils Traitement" height="350">
 							</a>
 						</figure>
 						<figure>
-							<a href="illustrations/tous/8_3_join_processing_fenetre.png" >
-								<img src="illustrations/tous/8_3_join_processing_fenetre.png" alt="fenêtre de l'outil de jointure spatiale de la boîte à outils Traitement" height="550">
+							<a href="illustrations/tous/8_2_join_processing_fenetre.png" >
+								<img src="illustrations/tous/8_2_join_processing_fenetre.png" alt="fenêtre de l'outil de jointure spatiale de la boîte à outils Traitement" height="550">
 							</a>
 						</figure>
 						<p>Au contraire de l'outil précédent, il est ici possible de choisir l'opérateur spatial. C'est donc cet outil que nous utiliserons par la suite.</p>

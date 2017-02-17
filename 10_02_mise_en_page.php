@@ -181,7 +181,7 @@
 						<div class="manip">
 							<p><img class="icone" src="illustrations/tous/10_02_etiquette_icone.png" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter une nouvelle étiquette</b>.</p>
 							<p>Dans les propriétés de cet objet, vous pouvez ensuite modifier le texte, la police, la couleur...</p>
-							<p>Si vous voulez ajouter une image, par exemple un logo : outil <b>Ajouter une image</b> puis dessinez un rectangle sur la page.</p>
+							<p><img class="icone" src="illustrations/tous/10_02_image_icone.png" alt="icône ajouter une image" >Si vous voulez ajouter une image, par exemple un logo : outil <b>Ajouter une image</b> puis dessinez un rectangle sur la page.</p>
 							<p>Dans les propriétés principales, choisissez ensuite une image sur votre ordinateur :</p>
 							<figure>
 								<a href="illustrations/tous/10_02_image_parcourir.png" >

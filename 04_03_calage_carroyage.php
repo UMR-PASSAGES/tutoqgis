@@ -36,14 +36,14 @@
 							</a>
 						</p>
 						<figure>
-							<a href="illustrations/tous/4_2_georeferenceur_fenetre.png" >
-								<img src="illustrations/tous/4_2_georeferenceur_fenetre.png" alt="Fenêtre du géoréférenceur" height="600">
+							<a href="illustrations/tous/4_3_georeferenceur_fenetre.png" >
+								<img src="illustrations/tous/4_3_georeferenceur_fenetre.png" alt="Fenêtre du géoréférenceur" height="600">
 							</a>
 						</figure>
-						<p><img class="icone" src="illustrations/tous/4_2_ouvrir_raster_icone.png" alt="icône ouvrir un raster du géoréférenceur" >Dans cette fenêtre, ajoutez au géoréférenceur l'image à caler en cliquant sur l'icône <b>Ouvrir un raster</b>, ou bien
+						<p><img class="icone" src="illustrations/tous/4_3_ouvrir_raster_icone.png" alt="icône ouvrir un raster du géoréférenceur" >Dans cette fenêtre, ajoutez au géoréférenceur l'image à caler en cliquant sur l'icône <b>Ouvrir un raster</b>, ou bien
 							<a class="thumbnail_bottom" href="#thumb">menu Fichier &#8594; Ouvrir un raster
 								<span>
-									<img src="illustrations/tous/4_2_ouvrir_raster_menu.png" alt="Menu Fichier, ouvrir un raster" height="200" >
+									<img src="illustrations/tous/4_3_ouvrir_raster_menu.png" alt="Menu Fichier, ouvrir un raster" height="200" >
 								</span>
 							</a>
 						.</p>
@@ -58,14 +58,14 @@
 						<p>La carte s'affiche dans la fenêtre du géoréférenceur.</p>
 						<p>Il s'agit maintenant de renseigner les coordonnées de plusieurs points, en se basant sur les indications de la carte. Vous pouvez par exemple commencez par le point en haut à gauche :</p>
 						<figure>
-							<a href="illustrations/tous/4_2_premier_point.png" >
-								<img src="illustrations/tous/4_2_premier_point.png" alt="emplacement du premier point de calage à créer" height="300">
+							<a href="illustrations/tous/4_3_premier_point.png" >
+								<img src="illustrations/tous/4_3_premier_point.png" alt="emplacement du premier point de calage à créer" height="300">
 							</a>
 						</figure>
-						<p><img class="icone" src="illustrations/tous/4_2_ajout_point_icone.png" alt="icône d'ajout de point du géoréférenceur" >Vérifiez que l'icône <b>Ajouter un point</b> soit bien sélectionnée et cliquez à l'intersection des deux lignes du carroyage :</p>
+						<p><img class="icone" src="illustrations/tous/4_3_ajout_point_icone.png" alt="icône d'ajout de point du géoréférenceur" >Vérifiez que l'icône <b>Ajouter un point</b> soit bien sélectionnée et cliquez à l'intersection des deux lignes du carroyage :</p>
 						<figure>
-							<a href="illustrations/tous/4_2_ajout_point_fenetre.png" >
-								<img src="illustrations/tous/4_2_ajout_point_fenetre.png" alt="Fenêtre de saisie des coordonnées d'un point de calage" height="150" >
+							<a href="illustrations/tous/4_3_ajout_point_fenetre.png" >
+								<img src="illustrations/tous/4_3_ajout_point_fenetre.png" alt="Fenêtre de saisie des coordonnées d'un point de calage" height="150" >
 							</a>
 						</figure>
 						<div class="question">
@@ -73,15 +73,15 @@
 							<p><label for="faq-3">Comment saisir les coordonnées de ce point ?</label></p>
 							<p class="reponse">Ce point est situé aux coordonnées -158° 15' Est (longitude négative car le point est à l'ouest du méridien de Greeenwich) et 21° 40' Nord (latitude positive car le point est au Nord de l'équateur).</p>
 							<p class="reponse">QGIS propose de saisir les coordonnées en degrés minutes secondes sous la forme dd mm ss.ss. Ici, nous avons juste des degrés et des minutes : le point a donc pour coordonnées <b>-158 15</b> Est et <b>21 40</b> Nord.</p>
-							<p class="reponse"><img src="illustrations/tous/4_2_ajout_point_fenetre_rempli.png" alt="Fenêtre de saisie des coordonnées d'un point de calage, coordonnées remplies" height="150" ></p>
+							<p class="reponse"><a href="illustrations/tous/4_3_ajout_point_fenetre_rempli.png" ><img src="illustrations/tous/4_3_ajout_point_fenetre_rempli.png" alt="Fenêtre de saisie des coordonnées d'un point de calage, coordonnées remplies" height="150" ></a></p>
 						</div>
 						<p>Après avoir saisi les coordonnées, cliquez sur <b>OK</b>.</p>
 					</div>
 					
 					<p>Le point apparaît sous forme d'une ligne dans la table des points de contrôle, sous la carte dans la fenêtre géoréférenceur :</p>
 					<figure>
-						<a href="illustrations/tous/4_2_table_points.png" >
-							<img src="illustrations/tous/4_2_table_points.png" alt="Table des points de contrôle : premier point" height="65">
+						<a href="illustrations/tous/4_3_table_points.png" >
+							<img src="illustrations/tous/4_3_table_points.png" alt="Table des points de contrôle : premier point" height="65">
 						</a>
 					</figure>
 					<p>Que signifient les différentes colonnes de cette table?</p>
@@ -105,18 +105,18 @@
 						<p>Pour visualiser les identifiants et/ou les coordonnées des points sur la carte du géoréférenceur : 
 							<a class="thumbnail_bottom" href="#thumb">Menu Paramètres &#8594; Configurer le géoréférenceur
 								<span>
-									<img src="illustrations/tous/4_2_config_georeferenceur_menu.png" alt="Menu Paramètres, Configurer le géoréférenceur" height="80" >
+									<img src="illustrations/tous/4_3_config_georeferenceur_menu.png" alt="Menu Paramètres, Configurer le géoréférenceur" height="80" >
 								</span>
 							</a>	
 						 :</p>
 						<figure>
-							<a href="illustrations/tous/4_2_config_georeferenceur_fenetre.png" >
-								<img src="illustrations/tous/4_2_config_georeferenceur_fenetre.png" alt="Fenêtre de configuration du géoréférenceur" height="400">
+							<a href="illustrations/tous/4_3_config_georeferenceur_fenetre.png" >
+								<img src="illustrations/tous/4_3_config_georeferenceur_fenetre.png" alt="Fenêtre de configuration du géoréférenceur" height="400">
 							</a>
 						</figure>
-						<p><img class="icone" src="illustrations/tous/4_2_effacer_point_icone.png" alt="Icône effacer un point du géoréférenceur" >Si vous faites une erreur, vous pouvez supprimer un point en cliquant sur l'icône <b>Effacer un point</b>, puis sur le point à effacer.</p>
-						<p><img class="icone" src="illustrations/tous/4_2_deplacer_point_icone.png" alt="Icône déplacer un point du géoréférenceur" >Vous pouvez également déplacer un point déjà créé en cliquant sur l'icône <b>Deplacer les points de contrôle</b>, puis en faisant glisser le point à déplacer.</p>
-						<p><img class="icone" src="illustrations/tous/4_2_sauv_points_icone.png" alt="Icône sauvegarder les points de contrôle" >Une fois vos points créés, vous pouvez les sauvegarder au moyen du menu
+						<p><img class="icone" src="illustrations/tous/4_3_effacer_point_icone.png" alt="Icône effacer un point du géoréférenceur" >Si vous faites une erreur, vous pouvez supprimer un point en cliquant sur l'icône <b>Effacer un point</b>, puis sur le point à effacer.</p>
+						<p><img class="icone" src="illustrations/tous/4_3_deplacer_point_icone.png" alt="Icône déplacer un point du géoréférenceur" >Vous pouvez également déplacer un point déjà créé en cliquant sur l'icône <b>Deplacer les points de contrôle</b>, puis en faisant glisser le point à déplacer.</p>
+						<p><img class="icone" src="illustrations/tous/4_3_sauv_points_icone.png" alt="Icône sauvegarder les points de contrôle" >Une fois vos points créés, vous pouvez les sauvegarder au moyen du menu
 							<a class="thumbnail_bottom" href="#thumb">Fichier &#8594; Sauver Points GCP en tant que...
 								<span>
 									<img src="illustrations/tous/4_3_sauv_points_menu.png" alt="Menu Projet, Fichier, Sauver Points GCP en tant que" height="170" >
@@ -134,8 +134,8 @@
 						 
 					 <p>Voici à quoi ressemble la fenêtre du géoréférenceur une fois tous les poins de calage correspondant à des intersections du carroyage renseignés :</p>
 				 	<figure>
-				 		<a href="illustrations/tous/4_2_avec_tous_les_points.png" >
-							<img src="illustrations/tous/4_2_avec_tous_les_points.png" alt="Cartes de Oahu avec le maximum de points de calage renseignés" height="600">
+				 		<a href="illustrations/tous/4_3_avec_tous_les_points.png" >
+							<img src="illustrations/tous/4_3_avec_tous_les_points.png" alt="Cartes de Oahu avec le maximum de points de calage renseignés" height="600">
 						</a>
 					</figure>
 					 <p>Vous n'êtes pas obligé de renseigner autant de points ! Six suffiront pour notre calage.</p>
