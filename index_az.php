@@ -337,7 +337,6 @@
 					
 					<li class="index_01" id="O">O
 						<ul>
-							<li class="index_02"><a href="04_06_calage_autre_couche.php#IV61">OpenLayers (extension)</a></li>
 							<li class="index_02"><a href="06_01_req_attrib.php#VI13">Opérateur (requête attributaire)</a>
 							<li class="index_02"><a href="06_02_req_spatiales.php#VI22">Opérateur (requête spatiale)</a>
 								<ul>
@@ -411,6 +410,7 @@
 					
 					<li class="index_01" id="Q">Q
 						<ul>
+						    <li class="index_02"><a href="04_06_calage_autre_couche.php#IV61">QuickMapServices (extension)</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV62">ici</a></li>
 							<li class="index_02"><a href="05_02_points.php#V24">Quitter le mode édition</a></li>
 						</ul>
 					</li>
