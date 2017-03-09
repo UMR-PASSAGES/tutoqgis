@@ -57,7 +57,7 @@
 				<p><em class="numero">6</em> : Liste des opérateurs et fonctions disponibles pour le calcul de champ.</p>
 				<p><em class="numero">7</em> : Si un opérateur ou une fonction est choisi en 6, l'aide correspondante apparaît dans cette partie.</p>
 				<p><em class="numero">8</em> : Ici, une fois l'expression remplie, vous pourrez voir un aperçu du résultat du calcul.</p>
-				<p>Comme vous avez pu le constater, le mode de fonctionnement de la calculatrice de champ est assez similaire à celui d'une requête attributaire (cf. <a href="06_01_req_attrib.php" >partie VI.1</a>). </p>
+				<p>Comme vous avez pu le constater, le mode de fonctionnement de la calculatrice de champ est assez similaire à celui d'une <a href="06_01_req_attrib.php">requête attributaire</a>. </p>
 				<p class="note">Il n'est pas obligatoire de passer en mode édition pour utiliser la calculatrice de champ ; dans ce cas, cliquer sur OK dans la calculatrice enclenche le mode édition.</p>
 				
 			
@@ -133,7 +133,7 @@
 				<h4><a class="titre" id="VII33b">Opérations sur du texte : extraction des codes et noms de régions et départements</a></h4>
 				
 					<p>La couche <em class="data">communes_NordPasDeCalais_calcul</em> comporte deux champs DEPT et REGION remplis par exemple par <b>59 - NORD</b> pour le département et <b>31 - NORD-PAS-DE-CALAIS</b> pour la région.</p>
-					<p>Le but est ici d'extraire le code de la région et du département à partir de ces deux champs. Nous avons déjà créé les champs CODE_DEPT et CODE_REG précédemment (cf. <a href="07_01_creation_suppression.php#VII12">partie VII.1.2</a>, il ne reste plus qu'à les remplir !</p>
+					<p>Le but est ici d'extraire le code de la région et du département à partir de ces deux champs. Nous avons déjà créé les champs CODE_DEPT et CODE_REG <a href="07_01_creation_suppression.php#VII12">précédemment</a>, il ne reste plus qu'à les remplir !</p>
 				
 					<div class="manip">
 						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche <em class="data">communes_NordPasDeCalais_calcul</em>. Ouvrez la calculatrice de champs :</p>

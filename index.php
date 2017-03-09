@@ -26,11 +26,11 @@
 								
 				<h3>Mode d'emploi</h3>
 					<h4>Manipulation</h4>
-						<p>Tout au long du tutoriel, les parties décrivant des manipulations à effectuer dans QGIS sont différenciées par une bordure verte et un fond vert pâle :</p>
+						<p>Tout au long du tutoriel, les parties décrivant des manipulations à effectuer dans QGIS sont différenciées par une bordure bleue et un fond bleu-gris :</p>
 						<p class="manip"> Ceci décrit une manipulation à effectuer dans QGIS.</p>
 						<p>Les données nécessaires pour effectuer ces manipulations sont accessibles dans la rubrique <a href="telechargement.php" >téléchargement</a>.</p>
 					<h4>Aide</h4>
-						<p>Quand une partie du texte apparaît souligné en vert, si vous passez la souris dessus, une image apparaît pour vous aider par exemple à trouver l'emplacement d'un menu ou d'un bouton dans QGIS.</p>
+						<p>Quand une partie du texte apparaît souligné en bleu foncé, si vous passez la souris dessus, une image apparaît pour vous aider par exemple à trouver l'emplacement d'un menu ou d'un bouton dans QGIS.</p>
 						<p class="manip">Sauvegardez votre projet sous un nouveau nom : 
 							<a class="thumbnail_top" href="#thumb">Menu Projet &#8594; Sauvegarder sous...
 								<span>
@@ -46,7 +46,7 @@
 								<p class="reponse">Parce-que c'est une légende!</p>
 							</div>
 					<h4>Liens</h4>
-						<p>Les liens internes au site de<a href="http://www.passages.cnrs.fr" > PASSAGES</a> sont affichées en vert, les <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Liens">liens</a> externes sont en gris et s'ouvriront dans une nouvelle fenêtre ou onglet.</p>
+						<p>Les liens internes au site de<a href="http://www.passages.cnrs.fr" > PASSAGES</a> sont affichées en bleu, les <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Liens">liens</a> externes sont en gris et s'ouvriront dans une nouvelle fenêtre ou onglet.</p>
 		
 		</div>
 		

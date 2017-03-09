@@ -18,7 +18,7 @@
 				<ul>
 					<li class="espace">un sous-dossier <b>donnees</b>, avec les données elles-mêmes</li>
 					<li class="espace">éventuellement un sous-dossier <b>projets</b> contenant des projets QGIS</li>
-					<li class="espace">un sous-dossier <b>liste_donnees</b>, avec la liste des données, le nom de l'organisme qui les a produites, son site internet, et si possible le lien vers les métadonnées (cf. <a class="texte" href="01_01_SIG.php#I12d" >partie I.1.2d</a>), ou à défaut le nom du fichier de métadonnées</li>
+					<li class="espace">un sous-dossier <b>liste_donnees</b>, avec la liste des données, le nom de l'organisme qui les a produites, son site internet, et si possible le lien vers les <a href="01_01_SIG.php#I12d" >métadonnées</a>, ou à défaut le nom du fichier de métadonnées</li>
 					<li class="espace">un sous-dossier <b>metadonnees</b>, avec les fichier de métadonnées. Si toutes les métadonnées sont disponibles en ligne, ce sous-dossier n'existe pas.</li>
 				</ul>
 				<p>Vous pouvez télécharger ici :</p>

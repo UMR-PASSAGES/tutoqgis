@@ -31,6 +31,7 @@
 				<h3><a class="titre" id="IV61">Installation de l'extension QuickMapServices</a></h3>
 					
 					<p>Accéder aux données OpenStreetMap dans QGIS requiert l'utilisation d'une extension nommée QuickMapServices. Cette extension permet également d'afficher les données Google Maps ainsi que beaucoup d'autres.</p>
+					<p class="note">L'extension QuickMapServices est similaire à l'extension <b>OpenLayers</b> sur laquelle elle est d'ailleurs basée, mais propose plus de couches et utilise un serveur de <a class="ext" target="_blank" href="http://www.neogeo-online.net/blog/archives/1727/">tuilage</a>, ce qui semble provoquer moins d'erreur lors de changements de niveau de zoom et de SCR.</p>
 					<div class="manip">
 						<p>Ouvrez tout d'abord un nouveau projet QGIS.</p>
 						<p>Pour installer QuickMapServices : 
@@ -56,7 +57,7 @@
 				        <div class="question">
 							<input type="checkbox" id="faq-1">
 							<p><label for="faq-1">Dans quel système de coordonnées est votre projet ?</label></p>
-							<p class="reponse">Comme vous pouvez le voir dans le coin en bas à droite de la fenêtre, ou bien menu Projet, propriétés du projet, le projet est en WGS84, EPSG:4326 (cf. <a href="02_03_couches_projets.php#II31">partie II.3.1</a>).</p>
+							<p class="reponse">Comme vous pouvez le voir dans le coin en bas à droite de la fenêtre, ou bien menu Projet, propriétés du projet, le <a href="02_03_couches_projets.php#II31">SCR du projet</a> est le WGS84, EPSG:4326.</p>
 						</div>
 						<p>Pour ajouter les données OSM : le menu QuickMapServices est maintenant visible dans le menu Internet. Chargez la couche <b>MapQuest OSM</b> dans la rubrique MapQuest.</p>
 						<figure>
@@ -67,7 +68,7 @@
 						<div class="question">
 							<input type="checkbox" id="faq-2">
 							<p><label for="faq-2">Dans quel système de coordonnées est votre projet ?</label></p>
-							<p class="reponse">Le projet est maintenant en WGS84 projection Pseudo Mercator, EPSG:3857 (cf. <a href="02_03_couches_projets.php#II31">partie II.3.1</a>).</p>
+							<p class="reponse">Le <a href="02_03_couches_projets.php#II31">SCR du projet</a> est maintenant le WGS84 projection Pseudo Mercator, EPSG:3857.</p>
 						</div>
 						<p><b>A l'ajout de données de l'extension QuickMapServices, le SCR du projet est automatiquement modifié en WGS84 Pseudo-Mercator</b>, qui est le SCR utilisé notamment par Google Maps.</p>
 					</div>
@@ -144,8 +145,8 @@
 							<figcaption>Premier point : à gauche, dans la fenêtre de QGIS (données OSM) et à droite, dans la fenêtre du géoréférenceur.</figcaption>
 						</figure>
 						<p>Procédez de la même manière pour obtenir au moins six points de calage.</p>
-						<p>Ensuite, choisissez les paramètres du géoréférencement (cf. <a href="04_04_parametrage.php">partie IV.4</a>) : vous pouvez choisir les mêmes que précédemment, mais <b>n'oubliez pas de sélectionner le SCR WGS84 Pseudo-Mercator EPSG:3857 au lieu du WGS84 EPSG:4326</b>.</p>
-						<p>Lancez le calage (cf. <a href="04_05_lancement.php">partie IV.5</a>).</p>
+						<p>Ensuite, choisissez les <a href="04_04_parametrage.php">paramètres du géoréférencement</a> : vous pouvez choisir les mêmes que précédemment, mais <b>n'oubliez pas de sélectionner le SCR WGS84 Pseudo-Mercator EPSG:3857 au lieu du WGS84 EPSG:4326</b>.</p>
+						<p><a href="04_05_lancement.php">Lancez le calage</a>.</p>
 						<p>Une fois le calage terminé, vous pouvez en vérifier la précision en donnant de la transparence à votre image calée (dans les propriétés de la couche, rubrique Transparence) :</p>
 						<figure>
 							<a href="illustrations/tous/4_6_superposition.png">

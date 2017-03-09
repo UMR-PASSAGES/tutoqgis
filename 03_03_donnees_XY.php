@@ -163,7 +163,7 @@
 					</a>	
 				 pour éviter toute confusion (en vous aidant éventuellement de son emplacement pour déterminer laquelle est-ce).
 				</p>
-				<p class="note">En ouvrant la table attributaire de la nouvelle couche, vous pouvez constater que les noms de champs ont été tronqués à 10 caractères (&#171; country co &#187; au lieu de &#171; country code &#187; par exemple). Ceci est une limitation liée au format DBF utilisé pour les shapefile (cf. <a href="01_03_formats.php#I31a">partie I.3.1a)</a>.</p>
+				<p class="note">En ouvrant la table attributaire de la nouvelle couche, vous pouvez constater que les noms de champs ont été tronqués à 10 caractères (&#171; country co &#187; au lieu de &#171; country code &#187; par exemple). Ceci est une limitation liée au format DBF utilisé pour les <a href="01_03_formats.php#I31a">fichiers shapefile</a>.</p>
 				
 			</div>
 			<p>Félicitations ! L'ajout de données ponctuelles à partir d'un fichier texte dans QGIS n'a désormais plus de secrets pour vous !</p>

@@ -129,7 +129,7 @@
 		        <p>signifie que nous allons sélectionner les colonnes de la couche <em class="data">departements</em>.</p>
 		        <p class="code">where "NOM_DEPT" = 'NORD'</p>
 		        <p>applique un critère à la requête : seules seront sélectionnées les lignes répondant à ce critère, c'est-à-dire dont la valeur pour le champ NOM_DEPT est égale à &#171;&nbsp;Nord&nbsp;&#187;.</p>
-			    <p>Comparons avec la même requête dans la fenêtre de requête attributaire (cf. <a href="06_01_req_attrib.php#VI11" >partie VI.1.1</a>), où seul le critère <b>"NOM_DEPT" = 'NORD'</b> est nécessaire, le début de la requête étant &#171;&nbsp;sous-entendu&nbsp;&#187;.</p>
+			    <p>Comparons avec <a href="06_01_req_attrib.php#VI11">la même requête dans la fenêtre de requête attributaire</a>, où seul le critère <b>"NOM_DEPT" = 'NORD'</b> est nécessaire, le début de la requête étant &#171;&nbsp;sous-entendu&nbsp;&#187;.</p>
 			    <p>Par rapport à une requête attributaire, une requête SQL nous offre donc la possibilité :
 			        <ul>
 			            <li>de choisir les colonnes qui nous intéressent</li>

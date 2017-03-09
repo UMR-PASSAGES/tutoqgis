@@ -26,7 +26,7 @@
 				</ul>
 				<br>
 				
-			<p>Vous verrez ici quelques manipulations sur un raster d'altitude, appliquées au modèle d'élévation numérique (MNE) de la Jamaïque (pour savoir ce qu'est un MNE : cf. <a href="03_01_donnees_internet.php#III12">partie III.1.2</a>).</p>	
+			<p>Vous verrez ici quelques manipulations sur un raster d'altitude, appliquées au <a href="03_01_donnees_internet.php#III12">modèle d'élévation numérique (MNE)</a> de la Jamaïque.</p>	
 		
 
 			<h3><a class="titre" id="IX21">Découpage d'un raster</a></h3>
@@ -129,7 +129,7 @@
 						<p>Sélectionnez <b>JAD2001 (code EPSG:3448) et cliquez sur <b>OK</b>.</b></p>
 					</div>
 					
-					<p>Nous venons de changer le SCR du projet, mais pas celui de notre raster (pour rappel : <a href="02_03_couches_projets.php">cf. partie II.3</a>).</p>
+					<p>Nous venons de changer le SCR du projet, mais pas celui de notre raster (pour rappel, voir <a href="02_03_couches_projets.php">ici</a>).</p>
 					
 					<div class="manip">
 						<p>Une étape préliminaire avant de projeter le raster : ouvrez les propriétés du raster, rubrique <b>Métadonnées</b>, et dans le bas de la fenêtre, en faisant défiler les propriétés, recherchez <b>Aucune valeur de données</b>. Vous devriez avoir -32768, notez cette valeur. C'est celle utilisée pour les pixels &#171; sans valeur &#187; (qui ont donc en réalité la valeur -32768), en-dehors de l'île.</p>

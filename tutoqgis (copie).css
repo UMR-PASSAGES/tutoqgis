@@ -1,11 +1,3 @@
-/* colour reference chart 
-comment     colour      desc
-link        #28A6B7     link colour
-bgm         #F0F4F4     background manip colour
-hov         #1D3437     hover colour
-
-*/
-
 	html {
 		margin:0;
 		padding:0;
@@ -229,13 +221,12 @@ hov         #1D3437     hover colour
 	/* Pour afficher une image quand on passe la souris sur un texte (capture d'écran) */
 	/* quand on veut que l'image s'affiche au-dessous du texte */
 	.thumbnail_bottom{
-		color: /*hov*/#1D3437;
+		color: #146000;
 		border-bottom: 1px dotted;
 		position: relative;
 		z-index: 0;
 	}
 	.thumbnail_bottom:hover{
-	    color: /*hov*/#1D3437;
 		background-color: transparent;
 		z-index: 50;
 	}
@@ -261,13 +252,12 @@ hov         #1D3437     hover colour
 	}
 	/* quand on veut que l'image s'affiche au-dessus du texte (bas de page) */
 	.thumbnail_top{
-		color: /*hov*/#1D3437;
+		color: #146000;
 		border-bottom: 1px dotted;
 		position: relative;
 		z-index: 0;
 	}
 	.thumbnail_top:hover{
-	    color: /*hov*/#1D3437;
 		background-color: transparent;
 		z-index: 50;
 	}
@@ -429,7 +419,7 @@ hov         #1D3437     hover colour
 	
 	/* différents styles d'hyperliens */
 	a {		/* les hyperliens s'affichent en vert */
-		color:/*link*/#28A6B7;
+		color:#2DAB0B;
     	text-decoration: none;
 	}
 	a:hover {	/* et en orange quand on passe la souris au-dessus */
@@ -442,7 +432,7 @@ hov         #1D3437     hover colour
 	    font-size: 2em;
 	}
 	a.titre:hover {	/* sauf quand c'est un titre */
-		color:#1F9DAA;
+		color:#2DAB0B;
 	}
 	a.noir:hover {
 		color: red;
@@ -452,7 +442,7 @@ hov         #1D3437     hover colour
 		border-bottom: 1px dotted;
 	}
 	a.ext:hover {
-		color: #FF7D00;
+		color: #505050;
 	}
 	a.ext:after {  /* une icône différente pour les liens externes */
   		content: "\0000a0[\2197]";
@@ -477,7 +467,7 @@ hov         #1D3437     hover colour
 
 	/* texte mis en évidence (donnees, numeros...) */
 	em.data { 
-		color: #18656F;
+		color: #146000;
 		font-weight: bold;
 		font-style: normal;
 		 }
@@ -495,8 +485,8 @@ hov         #1D3437     hover colour
 		padding-bottom: 1px;
 		border-left: 6px;
 		border-left-style: solid;
-		border-left-color: #1F9DAA;
-		background-color: /*bgm*/#F0F4F4;
+		border-left-color: #2DAB0B;
+		background-color: #E2FFDB;
 	}
 	p.note{
 		font-size: 0.9em;
@@ -528,8 +518,8 @@ hov         #1D3437     hover colour
 		padding-bottom: 1px;
 		border-left: 6px;
 		border-left-style: solid;
-		border-left-color: /*link*/#28A6B7;
-		background-color: /*bgm*/#F0F4F4;
+		border-left-color: #2DAB0B;
+		background-color: #E2FFDB;
 	}
 	div.bonus {
 		background-color: #FFDDDD;
@@ -553,30 +543,30 @@ hov         #1D3437     hover colour
 	/* les titres */
 	h1 {
 		font-variant:small-caps;
-		color: /*link*/#28A6B7;
+		color: #2DAB0B;
 		font-weight:bold;
 		font-size:1.5em;
 		margin:1em 0 1em;
 	}
 	h2 {
 		font-variant:small-caps;
-		color: /*link*/#28A6B7;
+		color: #2DAB0B;
 		font-weight:bold;
 		font-size:1.5em;
 		margin:1em 0 1em;
 	}
 	h3 {
-		color: /*link*/#28A6B7;
+		color: #2DAB0B;
 		font-weight:bold;
 		font-size:1.3em;
 		margin:0 0 1em;
 		padding-top: 40px;
 		border-bottom: 2px;
 		border-bottom-style:solid;
-		border-bottom-color:/*link*/#28A6B7;
+		border-bottom-color:#2DAB0B;
 	}
 	h4 {
-		color: /*link*/#28A6B7;
+		color: #2DAB0B;
 		font-style:italic;
 		font-weight: normal;
 		font-size:1.2em;

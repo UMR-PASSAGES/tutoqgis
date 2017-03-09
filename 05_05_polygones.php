@@ -100,7 +100,7 @@
 			<h3><a class="titre" id="V54">Frontière commune entre 2 polygones : comment est-elle gérée ?</a></h3>
 			
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/5_4_noeud_icone.png" alt="icône de l'outil de noeud" >A l'aide <b>l'outil de nœud</b> (cf. <a href="05_04_lignes.php#V43" >partie V.4.3</a>), déplacez un sommet de la petite langue de terre d'Aiea.</p>
+					<p><img class="icone" src="illustrations/tous/5_4_noeud_icone.png" alt="icône de l'outil de noeud" >A l'aide de <a href="05_04_lignes.php#V43">l'outil de nœud</a>, déplacez un sommet de la petite langue de terre d'Aiea.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_deplacement_noeud.png" >
 							<img src="illustrations/tous/5_5_deplacement_noeud.png" alt="déplacement d'un noeud de polygone" height="250">

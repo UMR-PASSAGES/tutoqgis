@@ -32,7 +32,7 @@
 							<img src="illustrations/tous/7_1_proprietes_champs.png" alt="fenêtre des propriétés de la couche, rubrique champs" height="360" >
 						</a>
 					</figure>
-					<p>Cette fenêtre vous permet de voir d'un seul coup d'œil la liste des champs, leur type : <b>String</b> (texte), <b>Integer</b> (nombre entier) ou <b>Real</b> (nombre décimal), le mode d'édition (cf. <a href="05_03_donnees_attrib.php#V32" >partie V.3.2</a>)...</p>
+					<p>Cette fenêtre vous permet de voir d'un seul coup d'œil la liste des champs, leur type : <b>String</b> (texte), <b>Integer</b> (nombre entier) ou <b>Real</b> (nombre décimal), le <a href="05_03_donnees_attrib.php#V32">mode d'édition</a> ...</p>
 				</div>		
 			
 			
@@ -42,7 +42,7 @@
 				<p>Nous allons ajouter deux champs à la couche <em class="data">communes_NordPasDeCalais_calcul</em>, <b>CODE_DEPT</b> et <b>CODE_REG</b>, destinés à contenir par la suite le code de département et le code de région.</p>
 				
 				<div class="manip">
-					<p>Ouvrez la table attributaire de la couche <em class="data">communes_NordPasDeCalais_calcul</em>. Passez en mode édition pour cette couche (cf. partie <a href="05_02_points.php#V21" >V.2.1</a>).</p>
+					<p>Ouvrez la table attributaire de la couche <em class="data">communes_NordPasDeCalais_calcul</em>. <a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
 					<p>Cliquez sur l'icône <b>Nouvelle colonne</b> en haut de la table attributaire :</p>
 					<figure>
 						<img src="illustrations/tous/7_1_BO_table_ajout.png" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" height="33" >

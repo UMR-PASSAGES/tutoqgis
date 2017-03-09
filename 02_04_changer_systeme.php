@@ -28,7 +28,7 @@
 					<p><img class="icone" src="illustrations/tous/1_4_ouvrir_projet_icone.png" alt="Icône Ouvrir">A partir de QGIS, ouvrez le projet <em class="data">monde.qgs</em> situé dans le dossier <b>TutoQGIS_02_Geodesie/projets</b></p>
 					<p>(Si vous avez déjà un autre projet du tutoriel ouvert, il est inutile de le sauvegarder).</p>
 				</div>
-					<p>Ce projet comporte une couche de pays, une couche avec les indicatrices de Tissot (cf. <a href="02_02_coord.php#II22c" >partie II.2 A chaque projection ses déformations</a>), et une couche de graticule, c'est-à-dire de méridiens et de parallèles distants ici de 15 degrés.</p>
+					<p>Ce projet comporte une couche de pays, une couche avec les <a href="02_02_coord.php#II22c">indicatrices de Tissot</a>, et une couche de graticule, c'est-à-dire de méridiens et de parallèles distants ici de 15 degrés.</p>
 				<div class="manip">
 					<div class="question">
 						<input type="checkbox" id="faq-1">
@@ -54,7 +54,7 @@
 					<p><em class="numero">5. </em><b>Vous devez voir dans cette partie le SCR que vous venez de sélectionner.</b></p>
 					<p>Cliquez sur <b>OK</b>.</p>
 				
-				<p>La couche de pays est désormais affichée en Robinson. Son SCR n'a cependant pas été modifié, ce que vous pouvez vérifier (cf. <a href="02_03_couches_projets.php#II32">partie II.3.2</a>). Observez les modifications apportées aux pays et aux indicatrices de Tissot.</p>
+				<p>La couche de pays est désormais affichée en Robinson. Son SCR n'a cependant pas été modifié, ce que vous pouvez <a href="02_03_couches_projets.php#II32">vérifier</a>. Observez les modifications apportées aux pays et aux indicatrices de Tissot.</p>
 				
 				<p class="note">Si des bugs d'affichage apparaissent, zoomez ou dézoomez.</p>
 	

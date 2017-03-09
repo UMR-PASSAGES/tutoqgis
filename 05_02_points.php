@@ -97,7 +97,7 @@
 						</a>
 					</figure>
 					<p><img class="icone" src="illustrations/tous/5_2_sauv_icone.png" alt="icône sauvegarder les modifications" >N'oubliez pas de sauvegarder vos modifications en sélectionnant la couche puis en cliquant sur l’icône <b>sauvegarder les modifications</b>.</p>
-					<p>Vous pouvez modifier le style des points dans les propriétés de la couche, rubrique Style (cf.partie <a href="01_02_info_geo.php#I23a" >partie I.2.3a</a>).</p>
+					<p>Vous pouvez <a href="01_02_info_geo.php#I23a">modifier le style</a> des points dans les propriétés de la couche, rubrique Style.</p>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
 						<p><label for="faq-1">Comment faire pour représenter les données comme dans la légende de la carte, les écoles sous forme de rond bleu et les postes de rond rouge ?</label></p>

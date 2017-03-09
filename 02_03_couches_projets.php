@@ -67,7 +67,7 @@
 					</div>
 				</div>
 				
-				<p>Notez également que le <a href="02_02_coord.php#II21b">code EPSG</a> du SCR du projet est indiqué tout en bas à droite de la fenêtre de QGIS, dans la barre d'état de QGIS (cf. <a href="01_02_info_geo.php#I22" >I.2 Interface de QGIS</a>).</p>
+				<p>Notez également que le <a href="02_02_coord.php#II21b">code EPSG</a> du SCR du projet est indiqué tout en bas à droite de la fenêtre de QGIS, dans la <a href="01_02_info_geo.php#I22">barre d'état de QGIS</a>.</p>
 				<figure>
 					<a href="illustrations/tous/2_3_barre_etat_scr.png" >
 						<img src="illustrations/tous/2_3_barre_etat_scr.png" alt="Indication du code du SCR dans la barre d'état" width="640">
@@ -102,7 +102,11 @@
 				<p>A partir du moment où la projection à la volée est activée dans un projet, toutes les couches affichées dans ce projet le seront dans le SCR du projet.</p>
 				<p>Il est donc possible de superposer plusieurs couches dans des SCR différents. C'est ce que nous allons vérifier!</p>
 				<div class="manip">
-    				<p>Ajoutez la couche <em class="data">ne_110m_admin_0_countries.shp</em> au projet. Vérifiez son SCR. Les deux couches doivent se superposer correctement (même si elles ont des niveaux de généralisation différents) ; si ce n'est pas le cas vérifiez que la projection à la volée soit bien activée (cf. <a href="#II31">SCR du projet</a>).</p>
+    				<p>Ajoutez la couche <em class="data">ne_110m_admin_0_countries.shp</em> au projet. Vérifiez son SCR. Les deux couches doivent se superposer correctement (même si elles ont des niveaux de généralisation différents) ; si ce n'est pas le cas vérifiez que la projection à la volée soit bien activée :</p>
+    				<ul>
+    				    <li class="espace">consultez le <a href="#II31">SCR du projet</a> : <b>menu Projet &#8594; Propriétés du projet &#8594; rubrique SCR</b></li>
+    				    <li class="espace">cochez si nécessaire la case <b>Activer la projection à la volée</b> en haut de la fenêtre.</li>
+    				</ul>
     				<p>La projection à la volée peut être activée ou désactivée par défaut :
 						<a class="thumbnail_bottom" href="#thumb">Menu Préférences &#8594; Options
 							<span>

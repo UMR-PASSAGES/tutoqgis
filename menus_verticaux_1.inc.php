@@ -1,4 +1,4 @@
-<div id="h2Verti"><a href="index.php">Plan</a></div>
+<div id="h2Verti"><a href="plan_detaille.php">Plan</a></div>
 	<ol class="withroman">
 		<li><a href="01_00_prise_en_main.php">Prise en main</a>
 			<ol class="witharabic">

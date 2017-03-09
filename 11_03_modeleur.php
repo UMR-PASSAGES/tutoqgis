@@ -159,7 +159,7 @@
 							<div class="question">
 								<input type="checkbox" id="faq-1">
 								<p><label for="faq-1">Dans quel SCR sont ces deux couches ?</label></p>
-								<p class="reponse">Les 2 couches sont en RGF93 Lambert 93, code EPSG 2154 (cf. <a href="02_03_couches_projets.php#II32">partie II.3.2 : SCR d'une couche</a> )</b>.</p>
+								<p class="reponse">Les 2 couches sont en RGF93 Lambert 93, code EPSG 2154 (cf. <a href="02_03_couches_projets.php#II32">SCR d'une couche</a> )</b>.</p>
 							</div>
 							<p><b>Lancer le modèle clip and project</b> : vous pouvez soit cliquer sur l'icône d'engrenages du modeleur de traitement si ce modèle est en cours d'édition, soit à partir de la boîte à outils traitements : 
     							<a class="thumbnail_bottom" href="#thumb">Modèles &#8594; tests &#8594; clip and project

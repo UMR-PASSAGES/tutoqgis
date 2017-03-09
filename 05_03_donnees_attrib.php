@@ -42,7 +42,7 @@
 					<p>Dans la rubrique <b>Numérisation</b>, cochez la case <b>Supprimer la fenêtre de saisie des attributs lors de la création de chaque entité</b>. Cliquez sur <b>OK</b> pour valider et fermer la fenêtre.</p>
 					<p>Créez un nouveau point dans la couche de bâtiments : aucune fenêtre ne s'affiche. Si vous ouvrez la table attributaire, vous pouvez voir que le point créé a un type NULL (valeur par défaut).</p>
 				</div>
-				<p>Il est ensuite possible de rentrer les données attributaires directement dans la table. La calculatrice de champ offre la possibilité de remplir plusieurs cases avec une requête (cf. <a href="07_03_calculer.php">partie VII.3</a>).</p>
+				<p>Il est ensuite possible de rentrer les données attributaires directement dans la table. La <a href="07_03_calculer.php">calculatrice de champ</a> offre la possibilité de remplir plusieurs cases avec une requête.</p>
 
 			<h3><a class="titre" id="V32">Pour une saisie plus facile : les outils d'édition</a></h3>
 			

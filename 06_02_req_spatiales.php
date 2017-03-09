@@ -32,7 +32,7 @@
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche <em class="data">communes_NordPasDeCalais</em>.</p>
-					<p>En vous connectant au flux WFS <b>http://ws.carmen.developpement-durable.gouv.fr/WFS/24/profil_env?</b> (cf. <a href="03_02_donnees_flux.php#III23">partie III.2.3</a>), ajoutez également au projet la couche <em class="data">Installations de traitement de déchets</em>.</p>
+					<p>En vous connectant au <a href="03_02_donnees_flux.php#III23">flux WFS</a> <b>http://ws.carmen.developpement-durable.gouv.fr/WFS/24/profil_env?</b>, ajoutez également au projet la couche <em class="data">Installations de traitement de déchets</em>.</p>
 					<p class="note">Au cas où la connexion au flux échouerait, cette couche est également disponible dans le dossier TutoQGIS_06_Requetes/donnees.</p>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
@@ -67,7 +67,7 @@
                     <p>Nos deux couches étant dans deux SCR différents, elles n'ont pu être croisées. <b>Beaucoup d'outils impliquant plusieurs couches de données ne fonctionneront que si elles sont toutes dans le même SCR.</b></p>
                     
                     <div class="manip">
-    					<p>Réessayez en sauvegardant au préalable la couche d'installations de traitement de déchets en RGF93 Lambert 93 (cf. <a href="02_04_changer_systeme.php#II42" >partie II.4.2</a>).</p>
+    					<p>Réessayez en sauvegardant au préalable la couche d'installations de traitement de déchets en RGF93 Lambert 93 (voir <a href="02_04_changer_systeme.php#II42" >ici</a>).</p>
     					<p>Vous devriez obtenir 74 communes sélectionnées :</p>
     					<figure>
                         	<a href="illustrations/tous/6_2_select_localisation_res.png" >
@@ -225,7 +225,7 @@
 					
 					<div class="manip">
 					<p>Ajoutez la couche <em class="data">dept59</em> créée dans la <a href="06_01_req_attrib.php#VI12">partie VI.1.2</a>.</p>
-					<p>Connectez-vous au flux WFS <b>http://services.sandre.eaufrance.fr/geo/zonage</b> (cf. <a href="03_02_donnees_flux.php#III23">partie III.2.3</a>) et ajoutez la couche <em class="data ">CoursEau1</em> correspondant aux cours d'eau de + de 100 km.</p>
+					<p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">CoursEau1</em> correspondant aux cours d'eau de + de 100 km.</p>
 					<p>En utilisant différents opérateurs, pouvez-vous dire ?...</p>
 					<p class="note">Entre deux requêtes, n'oubliez pas de tout désélectionner :<img class="iconemid" src="illustrations/tous/6_3_deselection_icone.png" alt="icône de désélection"  height="30"></p>
 						<div class="question">

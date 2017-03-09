@@ -40,6 +40,7 @@
 							<li><a href="03_01_donnees_internet.php">Recherche de données SIG sur internet</a></li>
 							<li><a href="03_02_donnees_flux.php">Ajout de données via des flux</a></li>
 							<li><a href="03_03_donnees_XY.php">Ajout de données ponctuelles à partir d'un fichier texte</a></li>
+							<li><a href="03_04_donnees_osm.php">Accéder aux données OpenStreetMap</a></li>
 						</ol>
 					</li>
 					
