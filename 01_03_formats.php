@@ -80,7 +80,7 @@
 					<div class="manip">			
 						<div class="question">
 							<input type="checkbox" id="faq-1">
-							<p><label for="faq-1">Combien de couches sont présentes dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>? En quel format est chaque couche ?</label></p>
+							<p><label for="faq-1">Combien de couches sont présentes dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> ? En quel format est chaque couche ?</label></p>
 							<p class="reponse">Le dossier contient 4 couches au format SHP : <b>depts_aqui_geofla</b>, <b>senegal_regions_gadm</b>, <b>senegal_rivieres_fao</b> et <b>senegal_villes_geonames</b>, une couche au format TAB : <b>depts_france_geofla</b> et une couche au format GeoTIFF avec un fichier de style QML et un fichier AUX.XML associés : <b>srtm_aqui</b>.</p>
 						</div>
 					</div>			

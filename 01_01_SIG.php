@@ -148,7 +148,7 @@
 								<li>et si... : modélisation</li>
 							</ul>
 						<p>Les SIG sont utilisés aujourd'hui dans des domaines très variés : géographie, géologie, écologie, urbanisme, archéologie, économie...</p>
-						<p>On peut par exemple chercher à répondre à la question : "la taille des parcelles de vignes est-elle corrélée avec la pente et l'altitude de la parcelle, sur une zone donnée?"</p>
+						<p>On peut par exemple chercher à répondre à la question : "la taille des parcelles de vignes est-elle corrélée avec la pente et l'altitude de la parcelle, sur une zone donnée ?"</p>
 						<p>Les données nécessaires seront une couche contenant les parcelles de vignes, et un <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain">Modèle Numérique de Terrain (MNT)</a> de la zone d'étude. La résolution du MNT devra être suffisante en comparaison de la taille moyenne des parcelles.</p>
 						<p>Le SIG va permettre de croiser les parcelles et le MNT pour aboutir à une couche de parcelles où seront renseignées pour chaque parcelle par exemple sa taille, sa pente moyenne, son altitude moyenne. Ces données pourront être ensuite visualisées dans le SIG, et/ou être le point de départ d'analyses statistiques dans un autre logiciel.</p>
 						

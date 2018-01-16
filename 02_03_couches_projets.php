@@ -62,7 +62,7 @@
 				<div class="manip">			
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">A votre avis, quel est le SCR du projet?</label></p>
+						<p><label for="faq-1">A votre avis, quel est le SCR du projet ?</label></p>
 						<p class="reponse">Le projet est en WGS84, comme indiqué dans la partie <em class="numero">5</em> de la fenêtre.</p>
 					</div>
 				</div>
@@ -93,7 +93,7 @@
 					</div>
 				</div>
 			
-				<p>Vous avez donc pu constater que notre projet et la couche qui y est présente ont deux SCR différents. Comment cela est-il possible?</p>		
+				<p>Vous avez donc pu constater que notre projet et la couche qui y est présente ont deux SCR différents. Comment cela est-il possible ?</p>		
 			
 			<h3><a class="titre" id="II33">Projection à la volée</a></h3>
 			

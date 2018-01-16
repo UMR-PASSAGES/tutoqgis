@@ -12,17 +12,17 @@
 		</div>	
 	
 		<div class="main">
-			<h2>II.2  Des coordonnées, oui mais dans quel système?</h2>
+			<h2>II.2  Des coordonnées, oui mais dans quel système ?</h2>
 				<ul class="listetitres">
 					<li><a href="#II21">Systèmes de coordonnées</a>
 						<ul class= "listesoustitres">
-							<li><a href="#II21a">Qu'est-ce qu'un système de coordonnées?</a></li>
+							<li><a href="#II21a">Qu'est-ce qu'un système de coordonnées ?</a></li>
 							<li><a href="#II21b">Quelques exemples de systèmes de coordonnées</a></li>
 						</ul>
 					</li>
 					<li><a href="#II22">Coordonnées en deux dimensions : les projections</a>
 						<ul class= "listesoustitres">
-							<li><a href="#II22a">Qu'est-ce qu'une projection?</a></li>
+							<li><a href="#II22a">Qu'est-ce qu'une projection ?</a></li>
 							<li><a href="#II22b">Trois grands types de projections : cylindriques, coniques et azimutales</a></li>
 							<li><a href="#II22c">A chaque projection ses déformations</a></li>
 							<li><a href="#II22d">Quelques exemples de projections</a></li>
@@ -39,7 +39,7 @@
 			<h3><a class="titre" id="II21">Systèmes de coordonnées</a></h3>
 			
 			
-				<h4><a class="titre" id="II21a">Qu'est-ce qu'un système de coordonnées?</a></h4>
+				<h4><a class="titre" id="II21a">Qu'est-ce qu'un système de coordonnées ?</a></h4>
 			
 					<p>Un système de coordonnées est un système utilisé pour mesurer des coordonnées. Il peut être défini par un ellipsoïde. Un point sera alors localisé par ses coordonnées géographiques, exprimées par la latitude <b>Ф</b>, la longitude <b>λ</b>, et la hauteur ellipsoïdale <b>h</b> mesurée suivant la normale à l'ellipsoïde.</p>
 					<figure>
@@ -106,12 +106,12 @@
 					   </tr>
 					</table>
 					
-				<p class="attention">On sait maintenant comment un point peut être défini par 3 coordonnées X, Y et Z. Comment représenter maintenant la Terre en 2 dimensions, pour en faire une carte par exemple?</p>		
+				<p class="attention">On sait maintenant comment un point peut être défini par 3 coordonnées X, Y et Z. Comment représenter maintenant la Terre en 2 dimensions, pour en faire une carte par exemple ?</p>		
 					
 					
 			<h3><a class="titre" id="II22">Coordonnées en deux dimensions : les projections</a></h3>
 				
-				<h4><a class="titre" id="II22a">Qu'est-ce qu'une projection?</a></h4>		
+				<h4><a class="titre" id="II22a">Qu'est-ce qu'une projection ?</a></h4>		
 				
 					<p><b>Le principe est de projeter des données 3D sur une surface plane</b>. Il y aura donc forcément des déformations : pensez à une peau d'orange qu'on écrase, et qui va se déchirer.</p>
 					<p>On appelle projection cartographique le système de correspondance entre les coordonnées géographiques (donc mesurées avec un système de référence) et les points du plan de projection.</p>

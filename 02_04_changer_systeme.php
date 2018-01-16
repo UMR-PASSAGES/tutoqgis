@@ -32,7 +32,7 @@
 				<div class="manip">
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">Dans quel SCR sont les 3 couches du projet?</label></p>
+						<p><label for="faq-1">Dans quel SCR sont les 3 couches du projet ?</label></p>
 						<p class="reponse">Elles sont toutes les 3 en WGS84, code EPSG 4326 (pour le vérifier, allez dans les propriétés de la couche, rubrique Général).</p>
 					</div>	
 					<p>
@@ -66,7 +66,7 @@
 					</ul>
 					<div class="question">
 						<input type="checkbox" id="faq-2">
-						<p><label for="faq-2">Qu'observez-vous dans ce dernier cas? A quoi cela est-il dû?</label></p>
+						<p><label for="faq-2">Qu'observez-vous dans ce dernier cas ? A quoi cela est-il dû ?</label></p>
 						<p class="reponse">Le RGF93 / Lambert-93 est un système adapté à l'emprise de la France ; tout le reste du monde est donc de plus en plus déformé au fur et à mesure qu'on s'éloigne de la France.</p>
 					</div>
 					<p>Nous allons maintenant repasser le projet en WGS84. Puisqu'il existe dans ce projet des couches en WGS84, vous pouvez utiliser un raccourci pour cela :

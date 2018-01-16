@@ -20,8 +20,8 @@
 				<br>		
 			
 			<h3><a class="titre" id="II11">Bref historique</a></h3>
-				<p>La géodésie est la science qui étudie la forme et les dimensions de la Terre, en tenant compte de son champ de pesanteur..</p>
-				<p>La géodésie est une science ancienne; on attribue à <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/%C3%89ratosth%C3%A8ne" >Eratosthène</a> la première mesure de la circonférence de la Terre, qu'il évalua à environ 39 375 km, mesure proche de la réalité puisque les estimations actuelles donnent environ 40 075 km.</p>
+				<p>La géodésie est la science qui étudie la forme et les dimensions de la Terre, en tenant compte de son champ de pesanteur.</p>
+				<p>La géodésie est une science ancienne ; on attribue au grec <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/%C3%89ratosth%C3%A8ne" >Eratosthène</a> (276 à 194 av. JC) la première mesure de la circonférence de la Terre, qu'il évalua à environ 39 375 km. Cette mesure s'est révélée proche de la réalité puisque les estimations actuelles sont d'environ 40 075 km.</p>
 				
 			<h3><a class="titre" id="II12">Deux notions préliminaires : géoïde et ellipsoïde</a></h3>
 				<p>La surface de la Terre est très irrégulière et complexe on peut la modéliser de différentes manières.</p>

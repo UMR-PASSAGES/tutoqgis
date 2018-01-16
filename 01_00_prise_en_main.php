@@ -16,7 +16,7 @@
 			<p>Cette première partie constitue une introduction aux logiciels SIG de manière générale et à QGIS en particulier.</p>
 			<p>Notions abordées :</p>
 				<ul>
-					<li>Qu'est-ce qu'un SIG?</li>
+					<li>Qu'est-ce qu'un SIG ?</li>
 					<li>Ajout de données vecteur</li>
 					<li>Propriétés d'une couche</li>
 					<li>La table attributaire</li>

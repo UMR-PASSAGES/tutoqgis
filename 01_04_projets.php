@@ -14,11 +14,11 @@
 		<div class="main">
 			<h2>I.4  Espace de travail (projet QGS)</h2>
 				<ul class="listetitres">
-					<li><a href="#I31">Qu'est-ce qu'un projet dans un logiciel SIG?</a></li>
-					<li><a href="#I32">Comment un projet appelle-t-il les données?</a></li>
+					<li><a href="#I31">Qu'est-ce qu'un projet dans un logiciel SIG ?</a></li>
+					<li><a href="#I32">Comment un projet appelle-t-il les données ?</a></li>
 				</ul>	
 			
-				<h3><a class="titre" id="I31">Qu'est-ce qu'un projet dans un logiciel SIG?</a></h3>
+				<h3><a class="titre" id="I31">Qu'est-ce qu'un projet dans un logiciel SIG ?</a></h3>
 				
 					<p>Un projet est un espace de travail. Sauvegarder un projet équivaut à sauvegarder le style utilisé pour chaque couche, le zoom... mais pas les données!</p>
 					<div class="manip">
@@ -48,7 +48,7 @@
 					<p>Il n'est bien sûr pas utile de comprendre en détail le contenu du fichier QGS, mais il est important de noter qu'il ne s'agit que <b>d'un fichier texte, qui va "appeler" les données</b>. Si vous fournissez à un collègue votre seul fichier QGS, sans les données correspondantes, ce collègue ne pourra pas visualiser les données.</p>
 				
 				
-				<h3><a class="titre" id="I32">Comment un projet appelle-t-il les données?</a></h3>
+				<h3><a class="titre" id="I32">Comment un projet appelle-t-il les données ?</a></h3>
 				
 				<p>Le chemin des couches peut être stocké de deux manières dans le fichier QGS : </p>
 					<ol>

@@ -304,7 +304,7 @@ hov         #1D3437     hover colour
 	}
 	th{
 		color: white;
-	   background-color: #2DAB0B;
+	   background-color: #28A6B7;
 	   padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
@@ -312,7 +312,7 @@ hov         #1D3437     hover colour
 	}
 	th.clair{
 		color: white;
-	   background-color: #6DC057;
+	   background-color: #59CFDF;
 	   padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
@@ -321,7 +321,7 @@ hov         #1D3437     hover colour
 	}
 	th.centre{
 		color: white;
-	   background-color: #2DAB0B;
+	   background-color: #28A6B7;
 		padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
@@ -342,7 +342,7 @@ hov         #1D3437     hover colour
 	   text-align: center;
 	}
 	td.centreclair{
-		background-color: #F1FFED;
+		background-color: #EAF5F6;
 		padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
@@ -350,7 +350,7 @@ hov         #1D3437     hover colour
 	   text-align: center;
 	}
 	td.centreclairalt{
-		background-color: #C5EBBC;
+		background-color: #B2DFE4;
 		padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
@@ -359,11 +359,11 @@ hov         #1D3437     hover colour
 	}
 	tr{
 		color: black;
-		background-color: #E2FFDB;
+		background-color: #DFF4F6;
 	}
 	tr.alt{
 		color: black;
-		background-color: #B0EEA0;
+		background-color: #9CDDE4;
 	}
 
 	/* différents styles de listes */
@@ -428,8 +428,8 @@ hov         #1D3437     hover colour
 	}
 	
 	/* différents styles d'hyperliens */
-	a {		/* les hyperliens s'affichent en vert */
-		color:/*link*/#28A6B7;
+	a {		/* les hyperliens s'affichent en bleu */
+		color: /*link*/#28A6B7;
     	text-decoration: none;
 	}
 	a:hover {	/* et en orange quand on passe la souris au-dessus */
@@ -503,7 +503,7 @@ hov         #1D3437     hover colour
 		font-style: italic;
 	}
 	p.attention{
-		color:#146000;
+		color:#18656F;
 		font-weight: bold;
 	}
 	p.answer {

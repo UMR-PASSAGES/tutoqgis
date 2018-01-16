@@ -31,7 +31,8 @@
 				</ul>
 	
 			<h3><a class="titre" id="III41">Qu'est-ce qu'OpenStreetMap ?</a></h3>
-                <p><a class="ext" target="_blank" href="http://www.openstreetmap.org">OpenStreetMap ou OSM</a> est un projet qui a pour but de constituer une base de données géographiques libre du monde. A l'instar de <a class="ext" target="_blank" href="https://fr.wikipedia.org">Wikipédia</a>, tout un chacun peut participer et enrichir le projet.</p>
+			
+                <p><a class="ext" target="_blank" href="http://www.openstreetmap.org">OpenStreetMap ou OSM</a> est un projet qui a pour but de constituer une base de données géographiques libre du monde. A l'instar de <a class="ext" target="_blank" href="https://fr.wikipedia.org">Wikipédia</a>, tout un chacun peut participer et enrichir le projet. On peut donc visualiser, réutiliser et même après inscription modifier gratuitement les données.</p>
                 <p>La partie la plus connue du projet est peut-être la visualisation des données OSM sous forme de <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=19/44.79461/-0.61780" >carte</a> ; mais OSM est avant tout un ensemble de <a class="ext" target="_blank" href="https://www.openstreetmap.org/way/226888023">données</a> géographiques, utilisables entre autres dans un logiciel SIG.</p>
                 <p>Les attributs des données OSM sont des paires <b>clé=valeur</b> (key=value). Un élément peut par exemple être caractérisé par <b>l'attribut</b> (tag) <b>waterway=river</b> pour indiquer qu'il s'agit d'un cours d'eau de type rivière. Un élément peut être caractérisé par plusieurs attributs (plusieurs paires clé=valeur).</p>
                 <p>Il existe plusieurs valeurs possibles pour chaque clé, la clé <b>waterway</b> peut par exemple avoir comme valeur <b>river</b> (rivière), <b>stream</b> (ruisseau), <b>canal</b>... Retrouvez <a target="_blank" class="ext" href="http://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques">ici</a> la liste des clés et des valeurs couramment utilisées.</p>
@@ -44,7 +45,7 @@
 			
                 <h4><a class="titre" id="III42a">A partir du site Geofabrik</a></h4>
                 
-                    <p>Nous utiliserons ici les données créées par <a class="ext" target="_blank" href="http://www.geofabrik.de/">Geofabrik</a>, une société allemande spécialisée dans les services autour d'OpenStreetMap. Les données sont extraites d'OpenStreetMap, et mises à jour quotidiennement. Il est possible de les télécharger par continent, sous-région, pays et parfois région au sein du pays.</p>
+                    <p>Nous utiliserons ici les données créées par <a class="ext" target="_blank" href="http://www.geofabrik.de/">Geofabrik</a>, une société allemande spécialisée dans les services autour d'OpenStreetMap. Les données sont extraites d'OpenStreetMap et mises à jour quotidiennement. Il est possible de les télécharger par continent, sous-région, pays et parfois région au sein du pays.</p>
                     
                     <div class="manip">
                         <p>Dans un navigateur internet, rendez-vous sur <a class="ext" target="_blank" href="http://download.geofabrik.de/" >http://download.geofabrik.de/</a>.</p>
@@ -246,7 +247,7 @@
                         	</a>
                         </figure>
 				    </div>
-				    <p>Ces données sont temporaires&nbsp;; pour les sauvegarder, clic droit sur la couche, Enregistrer sous...</p>
+				    <p>Ces données sont temporaires&nbsp;: pour les sauvegarder, clic droit sur la couche &#8594; Enregistrer sous...</p>
 				    <p>Pour savoir où sont stockées les données temporaires : propriétés de la couche, rubrique Général, Source de la couche.</p>
 				    <p>Nous avons vu ici quelques méthodes pour accéder aux données OSM dans QGIS, mais il en existe d'autres !</p>
 	

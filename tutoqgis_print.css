@@ -1,3 +1,11 @@
+/* colour reference chart 
+comment     colour      desc
+link        #28A6B7     link colour
+bgm         #F0F4F4     background manip colour
+hov         #1D3437     hover colour
+
+*/
+
 	html {
 		margin:0;
 		padding:0;
@@ -96,7 +104,7 @@
 		display: none;
 	}
 	#sidebar a {	/* pour les liens du menu vertical */
-      color:#2DAB0B;
+      color:#28A6B7;
       text-decoration: none;		
 	}
 	#sidebar a:hover {	/* pour les liens du menu vertical */
@@ -220,7 +228,7 @@
 	/* Pour afficher une image quand on passe la souris sur un texte (capture d'écran) */
 	/* quand on veut que l'image s'affiche au-dessous du texte */
 	.thumbnail_bottom{
-		color: #146000;
+		color: /*hov*/#1D3437;
 		border-bottom: 1px dotted;
 		position: relative;
 		z-index: 0;
@@ -293,7 +301,7 @@
 	}
 	th{
 		color: white;
-	   background-color: #2DAB0B;
+	   background-color: #28A6B7;
 	   padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
@@ -301,7 +309,7 @@
 	}
 	th.clair{
 		color: white;
-	   background-color: #6DC057;
+	   background-color: #59CFDF;
 	   padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
@@ -310,7 +318,7 @@
 	}
 	th.centre{
 		color: white;
-	   background-color: #2DAB0B;
+	   background-color: #28A6B7;
 		padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
@@ -331,7 +339,7 @@
 	   text-align: center;
 	}
 	td.centreclair{
-		background-color: #F1FFED;
+		background-color: #EAF5F6;
 		padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
@@ -339,7 +347,7 @@
 	   text-align: center;
 	}
 	td.centreclairalt{
-		background-color: #C5EBBC;
+		background-color: #B2DFE4;
 		padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
@@ -348,11 +356,11 @@
 	}
 	tr{
 		color: black;
-		background-color: #E2FFDB;
+		background-color: #DFF4F6;
 	}
 	tr.alt{
 		color: black;
-		background-color: #B0EEA0;
+		background-color: #9CDDE4;
 	}
 
 	/* différents styles de listes */
@@ -381,18 +389,18 @@
 	}
 	
 	/* différents styles d'hyperliens */
-	a {		/* les hyperliens s'affichent en vert */
-		color:#2DAB0B;
+	a {		/* les hyperliens s'affichent en bleu */
+		color: /*link*/#28A6B7;
      	text-decoration: none;
 	}
 	a:hover {	/* et en orange quand on passe la souris au-dessus */
 		color:#FF7D00;
 	}
 	a.grostitre{
-		color: #2DAB0B;
+		color: #white;
 	}
 	a.titre:hover {	/* sauf quand c'est un titre */
-		color:#2DAB0B;
+		color:#1F9DAA;
 	}
 	a.noir:hover {
 		color: red;
@@ -430,7 +438,7 @@
 
 	/* texte mis en évidence (donnees, numeros...) */
 	em.data { 
-		color: #146000;
+		color: #18656F;
 		font-weight: bold;
 		font-style: normal;
 		 }
@@ -448,14 +456,14 @@
 		padding-bottom: 1px;
 		border-left: 6px;
 		border-left-style: solid;
-		border-left-color: #2DAB0B;
+		border-left-color: #1F9DAA;
 	}
 	p.note{
 		font-size: 0.9em;
 		font-style: italic;
 	}
 	p.attention{
-		color:#146000;
+		color:#18656F;
 		font-weight: bold;
 	}
 	p.answer {
@@ -480,7 +488,7 @@
 		padding-bottom: 1px;
 		border-left: 6px;
 		border-left-style: solid;
-		border-left-color: #2DAB0B;
+		border-left-color: /*link*/#28A6B7;
 	}
 	div.bonus {
 		background-color: #FFDDDD;
@@ -504,30 +512,30 @@
 	/* les titres */
 	h1 {
 		font-variant:small-caps;
-		color: #2DAB0B;
+		color: /*link*/#28A6B7;
 		font-weight:bold;
 		font-size:1.5em;
 		margin:1em 0 1em;
 	}
 	h2 {
 		font-variant:small-caps;
-		color: #2DAB0B;
+		color: /*link*/#28A6B7;
 		font-weight:bold;
 		font-size:1.5em;
 		margin:1em 0 1em;
 	}
 	h3 {
-		color: #2DAB0B;
+		color: /*link*/#28A6B7;
 		font-weight:bold;
 		font-size:1.3em;
 		margin:0 0 1em;
 		padding-top: 40px;
 		border-bottom: 2px;
 		border-bottom-style:solid;
-		border-bottom-color:#2DAB0B;
+		border-bottom-color:#28A6B7;
 	}
 	h4 {
-		color: #2DAB0B;
+		color: /*link*/#28A6B7;
 		font-style:italic;
 		font-weight: normal;
 		font-size:1.2em;

@@ -108,7 +108,7 @@
 						  </a>
 						</figure>
 						<p>Testez les différents boutons de zoom et de déplacement.</p>
-						<p>Pouvez-vous déterminer l'effet de chacun d'entre eux? A noter : on peut aussi zoomer et dézoomer en utilisant la molette de la souris, ainsi que le trackpad.</p>
+						<p>Pouvez-vous déterminer l'effet de chacun d'entre eux ? A noter : on peut aussi zoomer et dézoomer en utilisant la molette de la souris, ainsi que le trackpad.</p>
 						<p>Vous pouvez aussi vous déplacer dans la carte (équivalent de l'outil "main") en maintenant la touche espace appuyée, quelque soit l'outil en cours dans QGIS. Le même résultat est obtenu en maintenant la molette de la souris enfoncée (clic molette prolongé).</p>
 					</div>
 	
@@ -167,7 +167,7 @@
 						<div class="manip">			
 							<div class="question">
 								<input type="checkbox" id="faq-1">
-								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Général</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">depts_aqui_geofla</em> sur votre ordinateur?</label></p>
+								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Général</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">depts_aqui_geofla</em> sur votre ordinateur ?</label></p>
 								<p class="reponse">
 								La couche est stockée à l'endroit indiqué dans la partie <b>Source de la couche</b>.
 								 Cet emplacement varie bien sûr en fonction de l'endroit où vous avez enregistré les données du tutoriel.
