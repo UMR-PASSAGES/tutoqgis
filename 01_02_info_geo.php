@@ -57,8 +57,8 @@
     						</figure>
     						<p>Type de source et encodage : laissez les valeurs par défaut. Pour en savoir plus sur ce qu'est l'encodage :
     						<a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Codage_de_caract%C3%A8res" >http://fr.wikipedia.org/wiki/Codage_de_caractères</a></p>
-    						<p>Cliquez sur <b>Parcourir</b> et sélectionnez la couche <em class="data">depts_aqui_geofla.shp</em> située dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>.</p>
-    						<p>Cliquez sur <b>Ouvrir</b> : vous pouvez voir à l'écran les départements aquitains.</p>
+    						<p>Cliquez sur <b>Parcourir</b> et sélectionnez la couche <em class="data">depts_bretagne_geofla.shp</em> située dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>.</p>
+    						<p>Cliquez sur <b>Ouvrir</b> : vous pouvez voir à l'écran les départements de la région Bretagne.</p>
     						<p>Pour <b>supprimer cette couche</b> : clic droit sur son nom dans la table des matières,
     						<a class="thumbnail_bottom" href="#thumb">Supprimer
                             	<span>
@@ -79,7 +79,7 @@
                             		<img src="illustrations/tous/1_2_explorateur_menu.png" alt="menu Vue → Panneaux → Explorateur" height="700" >
                             	</span>
                             </a>.</p>
-    						<p>Dans ce panneau, naviguez dans l'arborescence de vos fichiers jusqu'au dossier où vous avez téléchargé les données de ce tutoriel. Faites un <b>clic droit sur ce dossier &#8594; Ajouter en Favori</b>. A partir des favoris, rendez-vous maintenant dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et double-cliquez sur la couche <em class="data">depts_aqui_geofla.shp</em>.</p>
+    						<p>Dans ce panneau, naviguez dans l'arborescence de vos fichiers jusqu'au dossier où vous avez téléchargé les données de ce tutoriel. Faites un <b>clic droit sur ce dossier &#8594; Ajouter en Favori</b>. A partir des favoris, rendez-vous maintenant dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et double-cliquez sur la couche <em class="data">depts_bretagne_geofla.shp</em>.</p>
     						<figure>
                             	<a href="illustrations/tous/1_2_explorateur.png" >
                             		<img src="illustrations/tous/1_2_explorateur.png" alt="Panneau Explorateur" height="300">
@@ -91,15 +91,15 @@
 					
 					<figure>
 						<a href="illustrations/tous/1_2_interface.svg" >
-							<img src="illustrations/tous/1_2_interface.svg" alt="Interface de QGIS" height="400">
+							<img src="illustrations/tous/1_2_interface.png" alt="Interface de QGIS" height="400">
 						</a>
 					</figure>
 					<p>On peut distinguer 6 zones dans QGIS :</p>
 					<p><em class="numero">1. </em><b>Menus</b></p>
 					<p><em class="numero">2. </em><b>Barres d'outils</b>. On y trouve la même chose que dans les menus, mais sous forme 	d'icônes. Pour savoir que fait un outil, passez la souris au-dessus et lisez l'infobulle. Pour rajouter ou enlever des barres d'outils, clic-droit n'importe où dans cette zone sauf sur un outil désactivé, cocher ou décocher les barres d'outils voulues.</p>
 					<p><em class="numero">3. </em>Liste des couches chargées, aussi appelée <b>table des matières</b> ou <b>table of contents</b> (TOC). Si plusieurs couches sont présentes, vous pouvez en modifier ici l'ordre d'affichage. Pour faire apparaître ou disparaître cette zone : menu <b>Vue &#8594; Panneaux &#8594; Couches</b></p>
-					<p><em class="numero">4. </em><b>Panneaux supplémentaires</b>, par exemple le panneau <b>Explorateur</b>. Pour ajouter des panneaux, <b>Menu Vue &#8594; Panneaux</b></p>
-					<p><em class="numero">5. </em><b>Zone de visualisation</b>. On peut zoomer ou se déplacer dans cette zone.</p>
+					<p><em class="numero">4. </em><b>Zone de visualisation</b>. On peut zoomer ou se déplacer dans cette zone.</p>
+					<p><em class="numero">5. </em><b>Panneaux supplémentaires</b>, par exemple le panneau <b>Explorateur</b>. Pour ajouter des panneaux, <b>Menu Vue &#8594; Panneaux</b></p>
 					<p><em class="numero">6. </em><b>Barre d'état</b>. On y trouve les coordonnées du point où se trouve la souris, l'échelle...</p>
 					<div class="manip">
 						<figure>
@@ -151,13 +151,13 @@
 						<p>Essayez de donner à votre couche ces différents styles :</p>
 						<figure>
 							<a href="illustrations/tous/1_2_style1.png" >
-								<img src="illustrations/tous/1_2_style1.png" alt="Surfaces en gris clair, bordures en blanc" height="200">
+								<img src="illustrations/tous/1_2_style1.png" alt="Surfaces en gris clair, bordures en blanc" height="150">
 							</a>
 							<a href="illustrations/tous/1_2_style2.png" >
-								<img src="illustrations/tous/1_2_style2.png" alt="Surfaces sans remplissage, bordures épaisses en gris foncé" height="200">
+								<img src="illustrations/tous/1_2_style2.png" alt="Surfaces sans remplissage, bordures épaisses en gris foncé" height="150">
 							</a>
 							<a href="illustrations/tous/1_2_style3.png" >
-								<img src="illustrations/tous/1_2_style3.png" alt="Surfaces jaunes, pas de bordures" height="200">
+								<img src="illustrations/tous/1_2_style3.png" alt="Surfaces jaunes, pas de bordures" height="150">
 							</a>
 						</figure>
 					</div>
@@ -167,7 +167,7 @@
 						<div class="manip">			
 							<div class="question">
 								<input type="checkbox" id="faq-1">
-								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Général</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">depts_aqui_geofla</em> sur votre ordinateur ?</label></p>
+								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Général</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">depts_bretagne_geofla</em> sur votre ordinateur ?</label></p>
 								<p class="reponse">
 								La couche est stockée à l'endroit indiqué dans la partie <b>Source de la couche</b>.
 								 Cet emplacement varie bien sûr en fonction de l'endroit où vous avez enregistré les données du tutoriel.
@@ -199,7 +199,7 @@
 									<img src="illustrations/tous/1_2_ajout_couche_raster.png" alt="Interface de QGIS" height="400">
 								</a>
 							</figure>
-							<p>Rendez-vous dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et sélectionnez la couche <em class="data">srtm_aqui.tif</em>.</p>
+							<p>Rendez-vous dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et sélectionnez la couche <em class="data">srtm_bretagne.tif</em>.</p>
 							<p>Cliquez sur <b>Ouvrir</b> : la couche s'affiche.</p>
 							<p>Vous pouvez également double cliquer sur la couche dans l'explorateur de fichiers.</p>
 							<figure>
@@ -210,13 +210,13 @@
 						</div>
 						<p>Il s'agit d'un <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain" >modèle d'élévation numérique</a> : chaque pixel possède une valeur correspondant à l'altitude en mètres des éléments présents au sol. Si une forêt est présente, ce sera donc l'altitude du sommet des arbres qui sera mesurée et non l'altitude du sol, idem si des bâtiments sont présents.</p>
 						<div class="manip">
-							<p><img class="icone" src="illustrations/tous/1_2_informations_icone.png" alt="icône identifier les entités" >Après avoir sélectionné la couche <em class="data">srtm_aqui.tif</em> en cliquant sur son nom dans la table des matières, utilisez l'outil <b>Identifier les entités</b> pour cliquer sur un point du raster et connaître l'altitude de ce point.</p>
+							<p><img class="icone" src="illustrations/tous/1_2_informations_icone.png" alt="icône identifier les entités" >Après avoir sélectionné la couche <em class="data">srtm_bretagne.tif</em> en cliquant sur son nom dans la table des matières, utilisez l'outil <b>Identifier les entités</b> pour cliquer sur un point du raster et connaître l'altitude de ce point.</p>
 							<figure>
 								<a href="illustrations/tous/1_2_identifier_fenetre.png" >
 									<img src="illustrations/tous/1_2_identifier_fenetre.png" alt="résultat de l'identification d'un point au hasard du srtm : altitude = 143m" height="230" >
 								</a>
 							</figure>
-							<p>Par exemple, ici, c'est un point d'altitude 143 mètres qui a été identifié.</p>
+							<p>Par exemple, ici, c'est un point d'altitude 336 mètres qui a été identifié.</p>
 						</div>
 					
 				
@@ -228,7 +228,7 @@
 						<p>Rendez-vous dans la rubrique <b>Style</b> :</p>
 						<figure>
 							<a href="illustrations/tous/1_2_style_raster.png" >
-								<img src="illustrations/tous/1_2_style_raster.png" alt="style d'un raster" height="550" >
+								<img src="illustrations/tous/1_2_style_raster.png" alt="style d'un raster" width="600" >
 							</a>
 						</figure>
 						<p>Pour ce raster, les valeurs minimum sont représentées en blanc et les valeurs maximum en noir : plus l'altitude est élevée, plus le point est foncé.</p>

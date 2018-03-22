@@ -9,8 +9,7 @@
 		<li><a href="07_00_champs.php">Calcul de champs</a>
 			<ol class="witharabic">
 				<li><a href="07_01_creation_suppression.php">Créer et supprimer des champs</a></li>
-				<li><a href="07_02_gestionnaire_table.php">Gestionnaire de table</a></li>
-				<li><a href="07_03_calculer.php">Calcul de champ</a></li>
+				<li><a href="07_02_calculer.php">Calcul de champ</a></li>
 			</ol>
 		</li>
 		<li><a href="08_00_jointures.php">Jointures</a></li>

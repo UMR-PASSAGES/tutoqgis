@@ -86,8 +86,20 @@
 								</a>
 							</figure>
 							<p>Vous pouvez jouer sur les différents paramètre pour obtenir une visualisation correcte de la population à l'échelle d'un département ou d'une région (à l'échelle du pays, cela nécessiterait d'agréger les cercles entre eux pour un meilleur rendu). Vous avez à votre disposition la couche <em class="data">DEPARTEMENT</em>.</p>
-							<p>Comme vous l'avez peut-être remarqué, QGIS affiche les cercles dans l'ordre de la table ; il peut donc arriver que de petits cercles soient masqués par de plus gros cercles. Pour corriger cela : <b>Propriétés de la couche de centroïdes &#8594; rubrique Général &#8594; Constructeur de requête</b></p>
-							<p>Tapez la requête : <b>1=1 ORDER BY POPULATION DESC</b></p>
+							<p>Comme vous l'avez peut-être remarqué, QGIS affiche les cercles dans l'ordre de la table ; il peut donc arriver que de petits cercles soient masqués par de plus gros cercles.</p>
+							<p>Pour corriger cela : <b>Propriétés de la couche de centroïdes &#8594; rubrique Style</b>, cochez la case <b>Contrôle de l'ordre de rendu des entités</b> tout en bas de la fenêtre.</p>
+							<figure>
+								<a href="illustrations/tous/10_01_ordre_entites.png" >
+									<img src="illustrations/tous/10_01_ordre_entites.png" alt="Activer l'ordre de rendu des entités" width="530">
+								</a>
+							</figure>
+							<p><img class="icone" src="illustrations/tous/10_01_ordre_entites_icone.png" alt="Bouton Ordre des entités" >Cliquez ensuite sur le bouton à droite de cette case, choisissez le champ <b>POPULATION</b> et l'ordre <b>descendant</b>.</p>
+							<figure>
+								<a href="illustrations/tous/10_01_ordre_entites_2.png" >
+									<img src="illustrations/tous/10_01_ordre_entites_2.png" alt="Fenêtre de définition de l'ordre de rendu des entités" width="530">
+								</a>
+							</figure>
+							<p>Ainsi, les points seront dessinés en commençant par ceux avec les plus importantes populations, qui seront donc recouverts par les points avec des valeurs de population plus faibles.</p>
 						</div>
 		  	           <figure>
 							<a href="illustrations/tous/10_01_prop_visu.png" >
@@ -103,7 +115,7 @@
 						<p>La première étape consistera pour nous à créer un champ densité de population, rempli en fonction de la population et la surface.</p>
 						
 						<div class="manip">
-							<p>Ouvrez la table attributaire de <em class="data">COMMUNE</em>, passez en mode édition et ouvrez la <a href="07_03_calculer.php#VII31">calculatrice de champ</a>.</p>
+							<p>Ouvrez la table attributaire de <em class="data">COMMUNE</em>, passez en mode édition et ouvrez la <a href="07_02_calculer.php#VII21">calculatrice de champ</a>.</p>
 							<p>Calculez dans un nouveau champ nommé <b>densite</b> de type <b>décimal</b> la densité de population en <b>nombre d'habitants par km²</b>.</p>
 							<div class="question">
 								<input type="checkbox" id="faq-1">

@@ -49,7 +49,6 @@
 					<a href="illustrations/tous/2_3_scr_projet.png" >
 						<img src="illustrations/tous/2_3_scr_projet.png" alt="fenêtre SCR du projet" height="450">
 					</a>
-					<figcaption>SCR du projet.</figcaption>
 				</figure>
 				
 				<p><em class="numero">1. </em><b>Projection à la volée</b> : cette fonctionnalité sera décrite dans la partie <a href="#II33">Projection à la volée</a>.</p>
@@ -124,7 +123,7 @@
 				</div>
 				<p>Pour vérifier d'un coup d’œil si la projection à la volée est activée, regardez l'icône du statut de la projection tout en bas à droite de la fenêtre de QGIS, dans la barre d'état :</p>
 					<ul>
-						<li>si la projection est à la volée est activée, l'icône et le code du SCR du projet sont gris foncé, avec les lettre OTF pour &#171; On The Fly &#187; (à la volée)<br><img class="iconeright" src="illustrations/tous/2_3_proj_volee_activee.png" alt="projection à la volée activée" ></li>
+						<li>si la projection est à la volée est activée, l'icône et le code du SCR du projet sont gris foncé, avec les lettre ALV pour &#171; A La Volée &#187; <br><img class="iconeright" src="illustrations/tous/2_3_proj_volee_activee.png" alt="projection à la volée activée" ></li>
 						<li>si la projection est à la volée est désactivée, l'icône et le code du SCR sont gris clair <img class="iconeright" src="illustrations/tous/2_3_proj_volee_desactivee.png" alt="projection à la volée désactivée" ></li>
 					</ul>
 				<p class="note">Attention, si vous ouvrez un projet déjà existant pour lequel la projection à la volée n'est pas activée, elle restera inactive dans ce projet tant que vous ne l'aurez pas activée dans les propriétés du projet puis sauvegardé à nouveau ce projet.</p>

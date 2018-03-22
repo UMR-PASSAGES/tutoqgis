@@ -52,6 +52,8 @@
 						<li>PRJ : contient le code du système de coordonnées et éventuellement de la projection</li>
 					</ul>
 					<p>Pour que le shapefile s'ouvre correctement, tous ces fichiers doivent avoir exactement le même nom. QGIS peut ouvrir et éditer les fichiers SHP.</p>
+					
+					<p>Le format Shapefile possède plusieurs limitations : les noms de colonne sont limités à 10 caractères, la taille est limitée à 2Go... Pour en savoir plus sur ces aspects, et pour connaître des formats alternatifs : <a class="ext" target="_blank" href="http://switchfromshapefile.org/" >Switch from Shapefile</a>.</p>
 	
 					<h4><a class="titre" id="I31b">Format TAB (MapInfo)</a></h4>
 						<p>Ce format a été créé pour le logiciel MapInfo. Comme pour le SHP, un fichier au format TAB est en fait composé de plusieurs fichiers :</p>
@@ -62,7 +64,7 @@
 							<li>ID : lien entre les fichiers DAT et MAP</li>
 							<li>IND : fichier d'indexation (facultatif)</li>
 						</ul>
-						<p>QGIS peut ouvrir des fichiers au format TAB, mais il ne peut pas les éditer; il faudra pour cela les enregistrer au format SHP.</p>
+						<p>QGIS peut ouvrir des fichiers au format TAB, mais il ne peut pas les éditer ; il faudra pour cela les enregistrer au format SHP.</p>
 	
 				<h3><a class="titre" id="I32">Un exemple de format raster : le GeoTIFF</a></h3>
 				
@@ -81,7 +83,7 @@
 						<div class="question">
 							<input type="checkbox" id="faq-1">
 							<p><label for="faq-1">Combien de couches sont présentes dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> ? En quel format est chaque couche ?</label></p>
-							<p class="reponse">Le dossier contient 4 couches au format SHP : <b>depts_aqui_geofla</b>, <b>senegal_regions_gadm</b>, <b>senegal_rivieres_fao</b> et <b>senegal_villes_geonames</b>, une couche au format TAB : <b>depts_france_geofla</b> et une couche au format GeoTIFF avec un fichier de style QML et un fichier AUX.XML associés : <b>srtm_aqui</b>.</p>
+							<p class="reponse">Le dossier contient 4 couches au format SHP : <b>depts_bretagne_geofla</b>, <b>senegal_regions_gadm</b>, <b>senegal_rivieres_fao</b> et <b>senegal_villes_geonames</b>, une couche au format TAB : <b>depts_france_geofla</b> et une couche au format GeoTIFF avec un fichier de style QML et un fichier AUX.XML associés : <b>srtm_bretagne</b>.</p>
 						</div>
 					</div>			
 	

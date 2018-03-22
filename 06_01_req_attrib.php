@@ -162,6 +162,7 @@
 						<input type="checkbox" id="faq-3">
 						<p><label for="faq-3">Quelle requête utiliser pour sélectionner les communes de Lille, Roubaix et Tourcoing ?</label></p>
 						<p class="reponse">"NOM_COMM" LIKE 'LILLE' OR  "NOM_COMM" LIKE 'TOURCOING' OR "NOM_COMM" LIKE 'ROUBAIX' : cette requête sélectionne 3 communes. L'opérateur OR doit être utilisé car les communes ne peuvent satisfaire qu'un seul des critères à la fois (une commune ne peut s'appeler Lille et Roubaix en même temps).</p>
+						<p class="reponse">Une autre possibilité, moins lourde, consiste à utiliser l'opérateur <b>IN</b> : "NOM_COMM"  IN ('LILLE', 'ROUBAIX', 'TOURCOING')</p>
 					</div>
 				</div>
 			

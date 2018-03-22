@@ -56,7 +56,7 @@
 							<li class="index_02"><a href="05_05_polygones.php#V55">Accrochage</a></li>
 							<li class="index_02"><a href="10_02_mise_en_page.php#X22b">Activer le retour à la ligne après (composeur d'impression)</a></li>
 							<li class="index_02"><a href="04_02_preliminaires.php#IV22b">Activer une extension</a></li>
-							<li class="index_02"><a href="07_03_calculer.php#VII32b">Aire (mesurer)</a></li>
+							<li class="index_02"><a href="07_02_calculer.php#VII22b">Aire (mesurer)</a></li>
 							<li class="index_02">Ajouter
 								<ul>
 									<li class="index_03"><a href="08_01_jointure_attrib.php#VIII12">un fichier CSV</a></li>
@@ -84,7 +84,7 @@
 						<ul class="index">
 							<li class="index_02"><a href="04_00_georeferencement.php">Calage (géoréférencement)</a></li>
 							<li class="index_02"><a href="07_00_champs.php">Calcul de champ</a></li>
-							<li class="index_02"><a href="07_03_calculer.php#VII31">Calculatrice de champ</a></li>
+							<li class="index_02"><a href="07_02_calculer.php#VII21">Calculatrice de champ</a></li>
 							<li class="index_02"><a href="10_01_representation.php">Carte</a>
 								<ul>
 									<li class="index_03"><a href="10_01_representation.php#X12">choroplèthe</a></li>
@@ -98,12 +98,12 @@
 							<li class="index_02"><a href="10_01_representation.php#X11">Cercle proportionnel</a></li>
 							<li class="index_02">Champ
 								<ul>
-									<li class="index_03"><a href="07_03_calculer.php">calculer</a></li>
-									<li class="index_03"><a href="07_01_creation_suppression.php#VII12">créer</a>, voir aussi <a href="07_02_gestionnaire_table.php">ici</a></li>
+									<li class="index_03"><a href="07_02_calculer.php">calculer</a></li>
+									<li class="index_03"><a href="07_01_creation_suppression.php#VII12">créer</a>, voir aussi <a href="07_01_creation_suppression.php#VII13">ici</a></li>
 									<li class="index_03"><a href="10_01_representation.php#X11b">de proportion</a></li>
-									<li class="index_03"><a href="07_02_gestionnaire_table.php">ordre (modifier)</a></li>
-									<li class="index_03"><a href="07_02_gestionnaire_table.php">renommer</a></li>
-									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">supprimer</a>, voir aussi <a href="07_02_gestionnaire_table.php">ici</a></li>
+									<li class="index_03"><a href="07_01_creation_suppression.php#VII13b">ordre (modifier)</a></li>
+									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">renommer</a></li>
+									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">supprimer</a>, voir aussi <a href="07_01_creation_suppression.php#VII13">ici</a></li>
 									<li class="index_03"><a href="07_01_creation_suppression.php#VII12">type</a></li>
 								</ul>
 							</li>
@@ -117,7 +117,7 @@
 									<li class="index_03"><a href="04_04_parametrage.php#IV43">Packbits</a></li>
 								</ul>
 							</li>
-							<li class="index_02"><a href="07_03_calculer.php#VII33c">Concaténation</a></li>
+							<li class="index_02"><a href="07_02_calculer.php#VII23c">Concaténation</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X11b">Constructeur de requête</a></li>
 							<li class="index_02"><a href="09_02_raster.php#IX22">Contour (courbe de niveau)</a></li>
 							<li class="index_02">Couche
@@ -129,7 +129,7 @@
 								</ul>
 							</li>
 							<li class="index_02"><a href="09_02_raster.php#IX22">Courbe de niveau</a></li>
-							<li class="index_02"><a href="07_01_creation_suppression.php#VII12">Créer un champ</a>, voir aussi <a href="07_02_gestionnaire_table.php">ici</a></li>
+							<li class="index_02"><a href="07_01_creation_suppression.php#VII12">Créer un champ</a>, voir aussi <a href="07_01_creation_suppression.php#VII13">ici</a></li>
 							<li class="index_02"><a href="05_01_creation_couche.php">Créer une couche shapefile</a></li>
 							<li class="index_02"><a href="03_03_donnees_XY.php#III31">CSV</a>
 								<ul>
@@ -189,7 +189,7 @@
 								<ul>
 									<li class="index_03"><a href="04_02_preliminaires.php#IV22b">Activer une extension</a></li>
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV63">GeoSearch</a></li>
-									<li class="index_03"><a href="07_02_gestionnaire_table.php">Gestionnaire de table</a></li>
+									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">Gestionnaire de table</a></li>
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">Installer une extension</a></li>
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">OpenLayers</a></li>
 									<li class="index_03"><a href="09_03_vecteur_raster.php#IX32">Point Sampling Tool</a></li>
@@ -213,11 +213,11 @@
 							</li>
 							<li class="index_02">Fonction (calcul de champ)
 								<ul>
-									<li class="index_03"><a href="07_03_calculer.php#VII32a">$area</a></li>
-									<li class="index_03"><a href="07_03_calculer.php#VII33c">concaténation</a></li>
-									<li class="index_03"><a href="07_03_calculer.php#VII33b">left</a></li>
-									<li class="index_03"><a href="07_03_calculer.php#VII33b">length</a></li>
-									<li class="index_03"><a href="07_03_calculer.php#VII33b">right</a></li>
+									<li class="index_03"><a href="07_02_calculer.php#VII22a">$area</a></li>
+									<li class="index_03"><a href="07_02_calculer.php#VII23c">concaténation</a></li>
+									<li class="index_03"><a href="07_02_calculer.php#VII23b">left</a></li>
+									<li class="index_03"><a href="07_02_calculer.php#VII23b">length</a></li>
+									<li class="index_03"><a href="07_02_calculer.php#VII23b">right</a></li>
 								</ul>
 							</li>
 							<li class="index_02"><a href="01_03_formats.php">Formats de données</a>
@@ -250,7 +250,7 @@
 									<li class="index_03"><a href="09_01_vecteur.php#IX12">zone tampon</a></li>
 								</ul>
 							</li>
-							<li class="index_02"><a href="07_02_gestionnaire_table.php">Gestionnaire de table</a></li>
+							<li class="index_02"><a href="07_01_creation_suppression.php#VII13">Gestionnaire de table</a></li>
 							<li class="index_02"><a href="06_04_req_sql.php#VI42">Gestionnaire de bases de données</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X12b">Gradué (style de couche)</a></li>
 						</ul>
@@ -265,6 +265,7 @@
 					<li class="index_01" id="I">I
 						<ul>
 							<li class="index_02"><a href="06_01_req_attrib.php#VI13">Ilike</a></li>
+							<li class="index_02"><a href="06_01_req_attrib.php#VI14">In (opérateur)</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22c">Indicatrice de Tissot</a></li>
 							<li class="index_02"><a href="04_06_calage_autre_couche.php#IV61">Installer une extension</a></li>
 							<li class="index_02">Intersection
@@ -291,9 +292,9 @@
 						<ul>
 							<li class="index_02"><a href="02_02_coord.php#II22d">Lambert (projection)</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22d">Lambert 93 (projection)</a></li>
-							<li class="index_02"><a href="07_03_calculer.php#VII33b">Left (fonction de calcul de champ)</a></li>
+							<li class="index_02"><a href="07_02_calculer.php#VII23b">Left (fonction de calcul de champ)</a></li>
 							<li class="index_02"><a href="10_02_mise_en_page.php#X22b">Légende (composeur d'impression)</a></li>
-							<li class="index_02"><a href="07_03_calculer.php#VII33b">Length (fonction de calcul de champ)</a></li>
+							<li class="index_02"><a href="07_02_calculer.php#VII23b">Length (fonction de calcul de champ)</a></li>
 							<li class="index_02"><a href="06_01_req_attrib.php#VI13">Like</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Linéaire (transformation)</a></li>
 							<li class="index_02"><a href="05_03_donnees_attrib.php#V32">Liste déroulante (outils d'édition)</a></li>
@@ -305,7 +306,7 @@
 					<li class="index_01" id="M">M
 						<ul>
 							<li class="index_02"><a href="02_02_coord.php#II22d">Mercator (projection)</a></li>
-							<li class="index_02"><a href="07_03_calculer.php#VII32b">Mesurer une aire</a></li>
+							<li class="index_02"><a href="07_02_calculer.php#VII22b">Mesurer une aire</a></li>
 							<li class="index_02"><a href="01_01_SIG.php#I12d">Métadonnée</a></li>
 							<li class="index_02"><a href="10_02_mise_en_page.php">Mise en page</a></li>
 							<li class="index_02"><a href="01_02_info_geo.php#I24">MNE (Modèle Numérique d'Elevation)</a>, voir aussi <a href="03_01_donnees_internet.php#III12">ici</a></li>
@@ -361,8 +362,9 @@
 								</ul>
 							</li>
 							<li class="index_02"><a href="10_02_mise_en_page.php#X22a">Options du papier (composeur d'impression)</a></li>
-							<li class="index_02"><a href="06_01_req_attrib.php#VI14">Or</a></li>
-							<li class="index_02"><a href="07_02_gestionnaire_table.php">Ordre des champs (modifier)</a></li>
+							<li class="index_02"><a href="06_01_req_attrib.php#VI14">Or (opérateur)</a></li>
+							<li class="index_02"><a href="10_01_representation.php#X11b">Ordre de rendu des entités</a></li>
+							<li class="index_02"><a href="07_01_creation_suppression.php#VII13b">Ordre des champs (modifier)</a></li>
 							<li class="index_02"><a href="05_03_donnees_attrib.php#V32">Outils d'édition</a>
 								<ul>
 									<li class="index_03"><a href="05_03_donnees_attrib.php#V32">liste déroulante</a></li>
@@ -442,7 +444,7 @@
 									<li class="index_03"><a href="04_04_parametrage.php#IV42">plus proche voisin</a></li>
 								</ul>
 							</li>
-							<li class="index_02"><a href="07_02_gestionnaire_table.php">Renommer un champ</a></li>
+							<li class="index_02"><a href="07_01_creation_suppression.php#VII13">Renommer un champ</a></li>
 							<li class="index_02"><a href="06_00_requetes.php">Requête</a>
 								<ul>
 									<li class="index_03"><a href="06_01_req_attrib.php">attributaire</a></li>
@@ -453,7 +455,7 @@
 							<li class="index_02"><a href="08_02_jointure_spatiale.php#VIII22">Résumé des entités intersectées (jointure spatiale)</a></li>
 							<li class="index_02"><a href="10_02_mise_en_page.php#X22b">Retour à la ligne (composeur d'impression</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II21b">RGF93 (SCR)</a></li>
-							<li class="index_02"><a href="07_03_calculer.php#VII33b">Right (fonction de calcul de champ)</a></li>
+							<li class="index_02"><a href="07_02_calculer.php#VII23b">Right (fonction de calcul de champ)</a></li>
 							<li class="index_02"><a href="02_04_changer_systeme.php#II41">Robinson (projection)</a></li>
 							<li class="index_02"><a href="04_05_lancement.php#IV51b">Root Mean Square RMS (Erreur Quadratique Moyenne EMQ)</a></li>
 						</ul>
@@ -503,12 +505,12 @@
 									<li class="index_03"><a href="01_02_info_geo.php#I23a">vecteur</a>, voir aussi <a href="03_01_donnees_internet.php#III11a">ici</a> et <a href="10_01_representation.php">ici</a></li>
 								</ul>
 							</li>
-							<li class="index_02"><a href="07_01_creation_suppression.php#VII13">Supprimer un champ</a>, voir aussi <a href="07_02_gestionnaire_table.php">ici</a></li>
+							<li class="index_02"><a href="07_01_creation_suppression.php#VII13">Supprimer un champ</a>, voir aussi <a href="07_01_creation_suppression.php#VII13">ici</a></li>
 							<li class="index_02"><a href="01_02_info_geo.php#I21a">Supprimer une couche</a></li>
 							<li class="index_02">Surface
 								<ul>
-									<li class="index_03"><a href="07_03_calculer.php#VII32a">calculer la surface dans un champ</a></li>
-									<li class="index_03"><a href="07_03_calculer.php#VII32b">mesurer la surface</a></li>
+									<li class="index_03"><a href="07_02_calculer.php#VII22a">calculer la surface dans un champ</a></li>
+									<li class="index_03"><a href="07_02_calculer.php#VII22b">mesurer la surface</a></li>
 								</ul>
 							</li>
 							<li class="index_02"><a href="10_01_representation.php#X11">Symbole proportionnel</a>
@@ -518,7 +520,7 @@
 					<li class="index_01" id="T">T
 						<ul>
 							<li class="index_02"><a href="01_03_formats.php#I31b">TAB (MapInfo)</a></li>
-							<li class="index_02"><a href="07_02_gestionnaire_table.php">Table Manager</a></li>
+							<li class="index_02"><a href="07_01_creation_suppression.php#VII13">Table Manager</a></li>
 							<li class="index_02"><a href="09_01_vecteur.php#IX12">Tampon</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Thin Plate Spline TPS (transformation)</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22c">Tissot (indicatrice de)</a></li>

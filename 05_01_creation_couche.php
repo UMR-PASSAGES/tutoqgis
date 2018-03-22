@@ -59,7 +59,7 @@
 				
 				<p>Vous pouvez ensuite choisir les champs que contiendra la table attributaire, c'est-à-dire les colonnes de la table. Trois types de champs sont possibles : texte, entier et décimal (nombre à virgule).</p>
 				<p>Ici, nous allons créer une couche avec un seul champ dans la table, qui renseignera le type de bâtiment (ce champ aura donc deux valeurs possibles : école ou poste).</p>
-				<p>Il sera toujours possible d'ajouter ou de supprimer des champs par la suite !</p>
+				<p>Il sera toujours possible d'<a href="07_01_creation_suppression.php">ajouter ou de supprimer des champs</a> par la suite !</p>
 				
 				<h4><a class="titre" id="V12a">Ajout d'une colonne</a></h4>
 				
