@@ -135,7 +135,8 @@
 						<p>Afin de savoir quelles sont les utilisations que l'on peut faire d'une donnée, il est indispensable de posséder des informations sur la manière dont a été fabriquée cette donnée, sa date, ses limites éventuelles d'utilisation... <b>Ces « données sur la donnée » constituent ce qu'on appelle des métadonnées</b>. Elles peuvent se présenter sous diverses formes : un simple fichier texte, une fiche PDF...</p>
 						<p class="manip">Vous pouvez voir ici les métadonnées de la couche Corine Land Cover : <a class="ext" target="_blank" href="http://www.geocatalogue.fr/Detail.do?id=7665">www.geocatalogue.fr/Detail.do?id=7665</a></p>
 						<p>Il existe aujourd'hui des normes régissant la manière dont sont construites ces métadonnées : nombres de rubriques présentes, choix des rubriques... Ceci permet de construire des catalogues de métadonnées, et facilite <i>in fine</i> l'échange de données entre organismes.</p>
-						<p>La métadonnée ci-dessus est tirée du catalogue de métadonnées national, le géocatalogue : <a class="ext" target="_blank" href="http://www.geocatalogue.fr/" >www.geocatalogue.fr</a>. Le géocatalogue est mis en oeuvre par le <a class="ext" target="_blank" href="http://www.brgm.fr/">BRGM</a>, la visualisation étant opérée par l'<a class="ext" target="_blank" href="http://www.ign.fr/">IGN</a>.</p>
+						<p>La métadonnée ci-dessus est tirée du catalogue de métadonnées national, le géocatalogue : <a class="ext" target="_blank" href="http://www.geocatalogue.fr/" >www.geocatalogue.fr</a>.</p>
+						<p class="note">Le géocatalogue est mis en oeuvre par le <a class="ext" target="_blank" href="http://www.brgm.fr/">BRGM</a>, la visualisation étant opérée par l'<a class="ext" target="_blank" href="http://www.ign.fr/">IGN</a> au travers du <a class="ext" target="_blank" href="http://www.geoportail.gouv.fr/">géoportail</a>.</p>
 						
 						
 					<h4><a class="titre" id="I12e">A quoi sert un SIG ?</a></h4>
