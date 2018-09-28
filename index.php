@@ -17,7 +17,7 @@
 			
 				<h3>En quelques mots</h3>
 					<p>Ce tutoriel QGIS a été créé par le pôle Analyse et Représentation des données de l'UMR <a href="http://www.passages.cnrs.fr/">PASSAGES</a>. Son but est de permettre aux débutants en SIG de s'initier à ceux-ci via le logiciel libre QGIS. Pour installer QGIS, rendez-vous sur <a class="ext" target="_blank" href="http://www.qgis.org/" >http://www.qgis.org/</a>.</p>
-					<p>Le tutoriel est actuellement à jour pour la version &#171; à long terme &#187; <a class="ext" href="http://qgis.org/fr/site/forusers/visualchangelog214/index.html">QGIS 2.14 'Essen'</a>.</p>
+					<p>Le tutoriel est actuellement à jour pour la version &#171; à long terme &#187; <a class="ext" href="http://qgis.org/fr/site/forusers/visualchangelog218/index.html">QGIS 2.18 'Las Palmas'</a>.</p>
 					
 				<h3>Accès au tutoriel</h3>
 					<p>Le tutoriel comporte 11 parties auxquelles vous pouvez accéder par le plan dans la partie droite de la page, ou bien via le <a href="plan_detaille.php">plan détaillé</a>.</p>
