@@ -172,6 +172,7 @@ hov         #1D3437     hover colour
 		padding-top: 10px;
 		padding-bottom: 10px;
 		padding-left: 0;
+		padding-right: 10px;
 		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
 		border: none;
 		box-shadow: none;
