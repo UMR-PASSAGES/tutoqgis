@@ -56,7 +56,7 @@
 							</a>	
 						.</p>
 						<p>La carte s'affiche dans la fenêtre du géoréférenceur.</p>
-						<p>Il s'agit maintenant de renseigner les coordonnées de plusieurs points, en se basant sur les indications de la carte. Vous pouvez par exemple commencez par le point en haut à gauche :</p>
+						<p>Il s'agit maintenant de renseigner les coordonnées de plusieurs points, en se basant sur les indications de la carte. Vous pouvez par exemple commencer par le point en haut à gauche :</p>
 						<figure>
 							<a href="illustrations/tous/4_3_premier_point.png" >
 								<img src="illustrations/tous/4_3_premier_point.png" alt="emplacement du premier point de calage à créer" height="300">
