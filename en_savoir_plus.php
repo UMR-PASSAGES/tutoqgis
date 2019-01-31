@@ -15,7 +15,7 @@
 			<h2>En savoir plus</h2>
 			
 			<p>Ce tutoriel est réalisé par Julie Pierson du pôle Analyse et Représentation des Données de l'<a href="http://www.passages.cnrs.fr">UMR PASSAGES</a>. Il côtoie d'autres passionnants tutoriels sur la plate-forme <a href="http://ouvrir.passages.cnrs.fr">OUVRIR</a>.</p>
-			<p>Il a bénéficié de relectures et conseils avisés de (par ordre alphabétique) : Xavier Amelot, Véronique André-Lamat, Gaëlle Deletraz, Marina Duféal, Grégoire Le Campion, Delphine Montagne, Guilhem Mousselin, Matthieu Noucher, Olivier Pissoat, Raphaël Schirmer. Merci à eux !</p>
+			<p>Il a bénéficié de relectures et conseils avisés de (par ordre alphabétique) : Xavier Amelot, Véronique André-Lamat, Gaëlle Deletraz, Marina Duféal, Grégoire Le Campion, Delphine Montagne, Guilhem Mousselin, Matthieu Noucher, Olivier Pissoat, Raphaël Schirmer. Merci à eux&nbsp;!</p>
 			
 			<p>Ce tutoriel est diffusé sous <b>licence Creative Commons</b> : vous êtes autorisé à le partager et l'adapter, pour toute utilisation y compris commerciale, à condition de citer l'auteur (<em>Julie Pierson, UMR 5319 PASSAGES, www.passages.cnrs.fr</em>), et de redistribuer votre travail sous les mêmes conditions. Le texte complet est disponible ici : <a class="ext" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">http://creativecommons.org/licenses/by/4.0/legalcode</a></p>
 			<p>Cela signifie donc que vous pouvez en faire ce que bon vous semble, y compris l'utiliser pour vos propres formations. Et dans ce cas, un petit message nous fait plaisir et nous encourage à continuer ! Faites-nous part également de vos remarques, critiques et idées d'amélioration !</p>

@@ -90,7 +90,7 @@
 						<p>Les <b>données raster</b>, ou images, sont constituées de pixels. En zoomant sur un raster, on finit par distinguer les pixels. Chaque pixel possède une valeur correspondant par exemple à sa couleur, ou à son altitude. Un raster est caractérisé par la taille d'un pixel, ou résolution. Exemples de données raster : carte IGN scannée, photographie aérienne, image satellite...</p>
 						<figure>
 							<a href="illustrations/tous/1_1_raster.png" >
-								<img src="illustrations/tous/1_1_raster.png" alt="Données raster" height="300">
+								<img src="illustrations/tous/1_1_raster.png" alt="Données raster" width="470">
 							</a>
 							<figcaption>Exemple de données raster (source : IGN).</figcaption>
 						</figure>
@@ -101,7 +101,7 @@
 						<p>On distingue deux composantes dans les données utilisées dans un SIG : spatiale et attributaire. La <b>composante spatiale</b> est constituée de la localisation et la géométrie d'un objet, donc de ses coordonnées. La <b>composante attributaire</b> est constituée des données qui y sont associées. Par exemple, la composante spatiale d'un département sera le polygone représentant ce département, et sa composante attributaire sera son nom, son code, sa population...</p>
 						<figure>					
 							<a href="illustrations/tous/1_1_spatial_attrib.png" >					
-								<img src="illustrations/tous/1_1_spatial_attrib.png" alt="Composantes spatiales et attributaires" height="300">
+								<img src="illustrations/tous/1_1_spatial_attrib.png" alt="Composantes spatiales et attributaires" width="550">
 							</a>
 							<figcaption>Données spatiales et attributaires d'une couche SIG (source : données Geofla IGN) </figcaption>
 						</figure>

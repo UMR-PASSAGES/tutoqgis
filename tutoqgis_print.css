@@ -138,8 +138,8 @@ hov         #1D3437     hover colour
 		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
 		border: none;
 		box-shadow: 2px 2px 4px #ccc;
-   	-webkit-box-shadow: 2px 2px 4px #ccc;
-   	-moz-box-shadow: 2px 2px 4px #ccc; 
+   	    -webkit-box-shadow: 2px 2px 4px #ccc;
+   	    box-shadow: 2px 2px 4px #ccc; 
 	}
 	img.droite {	/* image à droite, avec texte autour, et pas d'ombre */
 		float: right;
@@ -148,7 +148,7 @@ hov         #1D3437     hover colour
 		border: none;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none;
+   	    box-shadow: none;
    }
    img.gauche {	/* image à droite, avec texte autour, et pas d'ombre */
 		float: left;
@@ -157,7 +157,7 @@ hov         #1D3437     hover colour
 		border: none;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none;
+   	    box-shadow: none;
    }
 	img.noshadow {	/* sans ombre */
 		padding-left: 0px;
@@ -165,7 +165,7 @@ hov         #1D3437     hover colour
 		border: none;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none;
+   	    box-shadow: none;
 	}
 	img.logo {
 		padding-top: 10px;
@@ -175,7 +175,7 @@ hov         #1D3437     hover colour
 		border: none;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none; 
+   	    box-shadow: none; 
 	}
 	/* pour les figures */
 	figure.image {
@@ -211,7 +211,7 @@ hov         #1D3437     hover colour
 		border-color: silver;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none;
+   	    box-shadow: none;
 	/* quand on veut afficher l'icône d'un outil avec avant ou après du texte sur une seule ligne */
 	}
 	img.iconemid {
@@ -222,7 +222,7 @@ hov         #1D3437     hover colour
 		border-color: silver;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none;
+   	    box-shadow: none;
 	}
 
 	/* Pour afficher une image quand on passe la souris sur un texte (capture d'écran) */
@@ -397,7 +397,7 @@ hov         #1D3437     hover colour
 		color:#FF7D00;
 	}
 	a.grostitre{
-		color: #white;
+		color: white;
 	}
 	a.titre:hover {	/* sauf quand c'est un titre */
 		color:#1F9DAA;

@@ -52,7 +52,7 @@
     					
     						<figure>
     							<a href="illustrations/tous/1_2_ajout_couche_vecteur.png" >
-    								<img src="illustrations/tous/1_2_ajout_couche_vecteur.png" alt="Fenêtre ajout couche vecteur" height="200" style="padding-left:10px;">
+    								<img src="illustrations/tous/1_2_ajout_couche_vecteur.png" alt="Fenêtre ajout couche vecteur" width="400" >
     							</a>
     						</figure>
     						<p>Type de source et encodage : laissez les valeurs par défaut. Pour en savoir plus sur ce qu'est l'encodage :
@@ -82,7 +82,7 @@
     						<p>Dans ce panneau, naviguez dans l'arborescence de vos fichiers jusqu'au dossier où vous avez téléchargé les données de ce tutoriel. Faites un <b>clic droit sur ce dossier &#8594; Ajouter en Favori</b>. A partir des favoris, rendez-vous maintenant dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et double-cliquez sur la couche <em class="data">depts_bretagne_geofla.shp</em>.</p>
     						<figure>
                             	<a href="illustrations/tous/1_2_explorateur.png" >
-                            		<img src="illustrations/tous/1_2_explorateur.png" alt="Panneau Explorateur" height="300">
+                            		<img src="illustrations/tous/1_2_explorateur.png" alt="Panneau Explorateur" width="330">
                             	</a>
                             </figure>
     					</div>
@@ -91,7 +91,7 @@
 					
 					<figure>
 						<a href="illustrations/tous/1_2_interface.svg" >
-							<img src="illustrations/tous/1_2_interface.png" alt="Interface de QGIS" height="400">
+							<img src="illustrations/tous/1_2_interface.png" alt="Interface de QGIS" width="600">
 						</a>
 					</figure>
 					<p>On peut distinguer 6 zones dans QGIS :</p>
@@ -137,7 +137,7 @@
 						<p>Dans les propriétés de la couche, rubrique <b>Style</b> :</p>
 						<figure>
 							<a href="illustrations/tous/1_2_style_couche.png" >
-								<img src="illustrations/tous/1_2_style_couche.png" alt="Onglet Style des propriétés d'une couche" height="310">
+								<img src="illustrations/tous/1_2_style_couche.png" alt="Onglet Style des propriétés d'une couche" width="600">
 							</a>
 						</figure>
 						<p>Cliquez sur <b>Remplissage simple</b>. </p>
@@ -151,13 +151,13 @@
 						<p>Essayez de donner à votre couche ces différents styles :</p>
 						<figure>
 							<a href="illustrations/tous/1_2_style1.png" >
-								<img src="illustrations/tous/1_2_style1.png" alt="Surfaces en gris clair, bordures en blanc" height="150">
+								<img src="illustrations/tous/1_2_style1.png" alt="Surfaces en gris clair, bordures en blanc" width="170">
 							</a>
 							<a href="illustrations/tous/1_2_style2.png" >
-								<img src="illustrations/tous/1_2_style2.png" alt="Surfaces sans remplissage, bordures épaisses en gris foncé" height="150">
+								<img src="illustrations/tous/1_2_style2.png" alt="Surfaces sans remplissage, bordures épaisses en gris foncé" width="170">
 							</a>
 							<a href="illustrations/tous/1_2_style3.png" >
-								<img src="illustrations/tous/1_2_style3.png" alt="Surfaces jaunes, pas de bordures" height="150">
+								<img src="illustrations/tous/1_2_style3.png" alt="Surfaces jaunes, pas de bordures" width="170">
 							</a>
 						</figure>
 					</div>
@@ -172,7 +172,7 @@
 								La couche est stockée à l'endroit indiqué dans la partie <b>Source de la couche</b>.
 								 Cet emplacement varie bien sûr en fonction de l'endroit où vous avez enregistré les données du tutoriel.
 							 	<a href="illustrations/tous/1_2_emplacement_couche.png">
-							 		<img src="illustrations/tous/1_2_emplacement_couche.png" alt="Onglet Général des propriétés d'une couche" height="450">
+							 		<img src="illustrations/tous/1_2_emplacement_couche.png" alt="Onglet Général des propriétés d'une couche" width="600">
 							 	</a>
 								</p>
 							</div>
@@ -196,7 +196,7 @@
 							</ul>
 							<figure>
 								<a href="illustrations/tous/1_2_ajout_couche_raster.png" >
-									<img src="illustrations/tous/1_2_ajout_couche_raster.png" alt="Interface de QGIS" height="400">
+									<img src="illustrations/tous/1_2_ajout_couche_raster.png" alt="Interface de QGIS" width="600">
 								</a>
 							</figure>
 							<p>Rendez-vous dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et sélectionnez la couche <em class="data">srtm_bretagne.tif</em>.</p>
@@ -204,7 +204,7 @@
 							<p>Vous pouvez également double cliquer sur la couche dans l'explorateur de fichiers.</p>
 							<figure>
 								<a href="illustrations/tous/1_2_srtm.png" >
-									<img src="illustrations/tous/1_2_srtm.png" alt="srtm affiché dans QGIS" height="500" >
+									<img src="illustrations/tous/1_2_srtm.png" alt="srtm affiché dans QGIS" width="500" >
 								</a>
 							</figure>
 						</div>
@@ -213,7 +213,7 @@
 							<p><img class="icone" src="illustrations/tous/1_2_informations_icone.png" alt="icône identifier les entités" >Après avoir sélectionné la couche <em class="data">srtm_bretagne.tif</em> en cliquant sur son nom dans la table des matières, utilisez l'outil <b>Identifier les entités</b> pour cliquer sur un point du raster et connaître l'altitude de ce point.</p>
 							<figure>
 								<a href="illustrations/tous/1_2_identifier_fenetre.png" >
-									<img src="illustrations/tous/1_2_identifier_fenetre.png" alt="résultat de l'identification d'un point au hasard du srtm : altitude = 143m" height="230" >
+									<img src="illustrations/tous/1_2_identifier_fenetre.png" alt="résultat de l'identification d'un point au hasard du srtm : altitude = 143m" width="500" >
 								</a>
 							</figure>
 							<p>Par exemple, ici, c'est un point d'altitude 336 mètres qui a été identifié.</p>

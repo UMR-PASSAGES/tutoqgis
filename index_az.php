@@ -154,6 +154,7 @@
 							<li class="index_02"><a href="04_04_parametrage.php#IV43">Deflate (compression)</a></li>
 							<li class="index_02"><a href="01_02_info_geo.php#I24">DEM (MNE)</a>, voir aussi <a href="03_01_donnees_internet.php#III12">ici</a></li>
 							<li class="index_02"><a href="05_02_points.php#V23a">Déplacer une entité (mode édition)</a></li>
+							<li class="index_02"><a href="06_01_req_attrib.php#VI13">Désélectionner des entités</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X12b">Discrétisation</a></li>
 						</ul>
 					</li>

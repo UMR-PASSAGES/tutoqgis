@@ -37,7 +37,7 @@
 					<p><img class="icone" src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="icône ajout d'une couche vecteur" > Ajoutez-y la couche <em class="data">dept_creuse_geofla.shp</em> que vous trouverez dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
 					<p>Donnez au projet le même SCR que la couche  <em class="data">dept_creuse_geofla.shp</em>.</p>
 				</div>
-				<p>Nous allons maintenant ajouter au projet la carte géologique de la France au 1/50 000è via un flux WMS.</p>
+				<p>Nous allons maintenant ajouter au projet la carte géologique de la France au 1/1 000 000è via un flux WMS.</p>
 				<div class="manip">
 					<p><img class="icone" src="illustrations/tous/3_2_ajout_wms_icone.png" alt="icône ajout d'une couche WMS" >Cliquez sur l'icône <b>Ajouter une couche WMS</b>, ou bien
 						<a class="thumbnail_bottom" href="#thumb">Menu Couche &#8594; Ajouter une couche &#8594; Ajouter une couche WMS...
@@ -48,13 +48,13 @@
 					</p>
 					<figure>
 						<a href="illustrations/tous/3_2_ajout_wms_fenetre.png" >
-							<img src="illustrations/tous/3_2_ajout_wms_fenetre.png" alt="Fenêtre ajout couche WMS" height="400">
+							<img src="illustrations/tous/3_2_ajout_wms_fenetre.png" alt="Fenêtre ajout couche WMS" width="580">
 						</a>
 					</figure>
 					<p>Cliquez sur le bouton <b>Nouveau</b> pour créer une nouvelle connexion. La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_wms_nouveau.png" >
-							<img src="illustrations/tous/3_2_wms_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WMS" height="400">
+							<img src="illustrations/tous/3_2_wms_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WMS" width="400">
 						</a>
 					</figure>
 					<ul>
@@ -62,30 +62,33 @@
 						<li class="espace"><b>URL :</b> tapez l’URL suivante, qui correspond à l'adresse du serveur WMS du BRGM : http://geoservices.brgm.fr/geologie</li>
 					</ul>
 					<p>Laissez les autres paramètres tels quels et cliquez sur <b>OK</b>. Vous voilà à nouveau dans la fenêtre d'ajout d'une couche WMS :</p>
-					<figure>
-						<a href="illustrations/tous/3_2_wms_connexion.png">
-							<img src="illustrations/tous/3_2_wms_connexion.png" alt="Fenêtre ajout d'une couche WMS, connexion au serveur du BRGM et choix de la couche à ajouter" height="500" >
-						</a>
-					</figure>
 					<ul>
 						<li class="espace">Après avoir vérifié que votre connexion est bien sélectionnée dans la liste déroulante en haut de la fenêtre, cliquez sur <b>Connexion</b></li>
-						<li class="espace">Rendez-vous dans la rubrique <b>0 GEOSERVICES_GEOLOGIE &#8594; 1 GEOLOGIE</b> et sélectionnez la couche correspondant à la <b>carte géologique image de la France au 1/50 000</b>.</li>
+						<figure>
+						<a href="illustrations/tous/3_2_wms_connexion.png">
+							<img src="illustrations/tous/3_2_wms_connexion.png" alt="Fenêtre ajout d'une couche WMS, connexion au serveur du BRGM et choix de la couche à ajouter" width="500" >
+						</a>
+					    </figure>
+						<li class="espace">Rendez-vous dans la rubrique <b>0 GEOSERVICES_GEOLOGIE &#8594; 1 GEOLOGIE</b> et sélectionnez la couche correspondant à la <b>carte géologique image de la France au 1/1 000 000</b> (million).</li>
 						<li class="espace">Cliquer sur <b>Modifier...</b> en bas à droite et choisissez le SCR <b>RGF93 / Lambert-93</b> (code EPSG 2154) afin que la couche ait le même SCR que notre projet</li>
 						<li class="espace">Cliquez sur <b>Ajouter</b>, patientez...</li>
+						<li class="espace">Modifiez éventuellement votre <b>niveau de zoom</b> : cette carte étant au 1/1 000 000, la couche n'est visible qu'autour de cette échelle (vous pouvez lire l'échelle en cours dans la barre en bas de la fenêtre de QGIS)</li>
 					</ul>
 					<p>Vous devriez obtenir quelque chose de similaire à ceci :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_superposition_creuse_geol.png" >
-							<img src="illustrations/tous/3_2_superposition_creuse_geol.png" alt="superposition du département de la Creuse et de la carte géologique" height="300" >
+							<img src="illustrations/tous/3_2_superposition_creuse_geol.png" alt="superposition du département de la Creuse et de la carte géologique" width="300" >
 						</a>
 					</figure>
-					<p>Il peut être nécessaire de changer l'ordre des couches en les faisant glisser dans la table des matières, et de <a href="01_02_info_geo.php#I23a">modifier le style</a> de la couche du département de la Creuse.</p>
+					<p>Il peut être nécessaire de changer l'ordre des couches en les faisant glisser dans la table des matières, et de <a href="01_02_info_geo.php#I23a">modifier le style</a> de la couche du département de la Creuse (ici, pas de remplissage et une bordure blanche).</p>
 				</div>
+				
+				<p class="note">Pour aller plus loin : le niveau de zoom auquel une couche est visible est parfois indiqué dans le résumé ; sinon, il est possible d'interroger le serveur qui propose les couches, en allant par exemple ici à l'URL <a class="ext" target="_blank" href="http://geoservices.brgm.fr/geologie?service=wms&request=GetCapabilities" >http://geoservices.brgm.fr/geologie?service=wms&request=GetCapabilities</a> dans un navigateur internet, puis en recherchant les balises <b>MinScaleDenominator</b> et <b>MaxScaleDenominator</b> pour la couche choisie. Pour en savoir plus, rendez-vous sur le <a class="ext" target="_blank" href="https://georezo.net/wiki/main/standards/wms" >wiki du GeoRezo</a>.</p>
 				
 				<p>Ici, l'adresse du serveur WMS vous était fournie ; si vous cherchez des adresses de flux, deux solutions : une recherche internet, ou bien l'onglet <b>Recherche de serveurs</b> de la fenêtre d'ajout d'une couche WMS :</p>
 				<figure>
 					<a href="illustrations/tous/3_2_recherche_serveur_wms.png" >
-						<img src="illustrations/tous/3_2_recherche_serveur_wms.png" alt="Onglet recherche de serveurs de la fenêtre d'ajout d'une couche WMS" height="400" >
+						<img src="illustrations/tous/3_2_recherche_serveur_wms.png" alt="Onglet recherche de serveurs de la fenêtre d'ajout d'une couche WMS" width="550" >
 					</a>
 				</figure>
 				<p>Dans cette fenêtre, vous pouvez taper du texte dans la partie <b>Recherche</b>, voir la liste des serveurs contenant ce texte, et ajouter une ligne de cette liste à la liste de vos connexions visible dans l'onglet <b>Couche</b>, grâce au bouton <b>Ajoutez les lignes sélectionnées à la liste des serveurs WMS</b>.</p>
@@ -105,13 +108,13 @@
 					</p>
 					<figure>
 						<a href="illustrations/tous/3_2_ajout_wfs_fenetre.png" >
-							<img src="illustrations/tous/3_2_ajout_wfs_fenetre.png" alt="Fenêtre ajout couche WFS" height="350">
+							<img src="illustrations/tous/3_2_ajout_wfs_fenetre.png" alt="Fenêtre ajout couche WFS" width="480">
 						</a>
 					</figure>
 					<p>Cliquez sur le bouton <b>Nouveau</b> pour créer une nouvelle connexion. La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_wfs_nouveau.png" >
-							<img src="illustrations/tous/3_2_wfs_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WfS" height="250">
+							<img src="illustrations/tous/3_2_wfs_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WfS" width="400">
 						</a>
 					</figure>
 					<ul>
@@ -121,7 +124,7 @@
 					<p>Laissez les autres paramètres tels quels et cliquez sur <b>OK</b>. Vous voilà à nouveau dans la fenêtre d'ajout d'une couche WFS :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_wfs_connexion.png" >
-							<img src="illustrations/tous/3_2_wfs_connexion.png" alt="Fenêtre ajout d'une couche WFS, connexion au serveur du Sandre et choix de la couche à ajouter" height="350" >
+							<img src="illustrations/tous/3_2_wfs_connexion.png" alt="Fenêtre ajout d'une couche WFS, connexion au serveur du Sandre et choix de la couche à ajouter" width="450" >
 						</a>
 					</figure>
 					<ul>
@@ -133,7 +136,7 @@
 					<p>Vous devriez obtenir quelque chose de similaire à ceci :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_superposition_creuse_courdo.png" >
-							<img src="illustrations/tous/3_2_superposition_creuse_courdo.png" alt="superposition du département de la Creuse et des cours d'eau de plus de 100km" height="300" >
+							<img src="illustrations/tous/3_2_superposition_creuse_courdo.png" alt="superposition du département de la Creuse et des cours d'eau de plus de 100km" width="300" >
 						</a>
 					</figure>
 					<p>Il peut être nécessaire de changer l'ordre des couches en les faisant glisser dans la table des matières, et de <a href="01_02_info_geo.php#I23a">modifier le style</a> de la couche du département de la Creuse. Vu qu'il s'agit ici d'un flux WFS et non WMS, il est également possible de modifier le style des cours d'eau.</p>

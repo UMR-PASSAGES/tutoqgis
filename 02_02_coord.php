@@ -44,9 +44,8 @@
 					<p>Un système de coordonnées est un système utilisé pour mesurer des coordonnées. Il peut être défini par un ellipsoïde. Un point sera alors localisé par ses coordonnées géographiques, exprimées par la latitude <b>Ф</b>, la longitude <b>λ</b>, et la hauteur ellipsoïdale <b>h</b> mesurée suivant la normale à l'ellipsoïde.</p>
 					<figure>
 						<a href="illustrations/tous/2_2_coord_geographiques.svg" >
-							<img src="illustrations/tous/2_2_coord_geographiques.png" alt="coordonnées géographiques" height="300">
+							<img src="illustrations/tous/2_2_coord_geographiques.png" alt="coordonnées géographiques" width="300">
 						</a>
-						<figcaption>Coordonnées géographiques : latitude et longitude (source : pôle ARD, adess, domaine public).</figcaption>
 					</figure>
 					<p>Longitude et latitude sont des mesures d'angles et peuvent être exprimées en degrés, en grades ou en radians.</p>
 					<p class="note">Attention à ne pas confondre la hauteur ellipsoïdale, mesurée par rapport à l'ellipsoïde, et l'altitude normale mesurée par rapport au géoïde. Avant les années 1960, les altitudes étaient mesurées par rapport au niveau de la mer (altitude orthométrique).</p>
@@ -128,13 +127,13 @@
 					<p>Dans tous les cas, on va projeter la surface de la Terre sur une forme que l'on peut dérouler pour obtenir une surface plane : un cylindre, un cône ou un plan. On distingue ainsi les <b>projections cylindriques, coniques et azimutales</b>. Il existe d'autres types de projections.</p>
 					<figure>
 						<a href="http://commons.wikimedia.org/wiki/File:Projection_cylindrique.jpg#file" >
-							<img src="illustrations/tous/2_2_projection_cylindrique.jpg" alt="Projection cylindrique, conique et azimutale" height="150">
+							<img src="illustrations/tous/2_2_projection_cylindrique.jpg" alt="Projection cylindrique, conique et azimutale" width="150">
 						</a>
 						<a href="http://commons.wikimedia.org/wiki/File:Projection_conique.jpg" >
-							<img src="illustrations/tous/2_2_projection_conique.jpg" alt="Projection cylindrique, conique et azimutale" height="150">
+							<img src="illustrations/tous/2_2_projection_conique.jpg" alt="Projection cylindrique, conique et azimutale" width="155">
 						</a>
 						<a href="http://commons.wikimedia.org/wiki/File:Projection_azimutale_stereographique.jpg" >
-							<img src="illustrations/tous/2_2_projection_azimutale.jpg" alt="Projection cylindrique, conique et azimutale" height="150">
+							<img src="illustrations/tous/2_2_projection_azimutale.jpg" alt="Projection cylindrique, conique et azimutale" width="250">
 						</a>
 						<figcaption>Projection cylindrique, conique et azimutale (Source : Traroth, Wikimedia Commons, licence GFDL).</figcaption>
 					</figure>
@@ -156,7 +155,7 @@
 					<br>Cette projection conserve les angles, mais déforme de plus en plus les surfaces au fur et à mesure qu'on se rapproche des pôles. Elle est largement utilisée, notamment par Google.</p>
 					<figure>
 						<a href="http://commons.wikimedia.org/wiki/File:Tissot_indicatrix_world_map_Mercator_proj.svg" >
-							<img src="illustrations/tous/2_2_mercator.svg" alt="projection de Mercator" height="300">
+							<img src="illustrations/tous/2_2_mercator.svg" alt="projection de Mercator" width="300">
 						</a>
 						<figcaption>Projection de Mercator (source : Eric Gaba – utilisateur Wikimedia Commons : Sting, licence GFDL).</figcaption>
 					</figure>
@@ -166,7 +165,7 @@
 					Cette projection permet une vision juste des proportions des surfaces des continents, mais ne garde pas les bonnes formes au contraire de la carte de Mercator. Elle permet notamment d'éviter de sous-dimensionner les pays du Sud.</p>
 					<figure>
 						<a href="http://commons.wikimedia.org/wiki/File:Tissot_indicatrix_world_map_Gall-Peters_equal-area_proj.svg" >
-							<img src="illustrations/tous/2_2_peters.svg" alt="projection de Peters" height="250">
+							<img src="illustrations/tous/2_2_peters.svg" alt="projection de Peters" width="400">
 						</a>
 						<figcaption>Projection de Peters (source : Eric Gaba – utilisateur Wikimedia Commons : Sting, licence GFDL).</figcaption>
 					</figure>
@@ -176,7 +175,7 @@
 					Contrairement aux projection de Mercator et Peters, cette projection est utilisée pour représenter seulement une partie du globe. Suivant ses paramètres, la zone couverte sera différente. L'illustration montre la projection <b>Lambert 93</b>, projection officielle française : les déformations sont minimisées pour la France.</p>
 					<figure>
 						<a href="illustrations/tous/2_2_lambert93.svg" >
-							<img src="illustrations/tous/2_2_lambert93.png" alt="projection conique conforme lambert 93" height="250">
+							<img src="illustrations/tous/2_2_lambert93.png" alt="projection conique conforme lambert 93" width="400">
 						</a>
 						<figcaption>Projection Lambert 93 (source : pôle ARD, adess, domaine public)</figcaption>
 					</figure>
@@ -185,7 +184,7 @@
 					<br>	
 					<figure>
 						<a href="illustrations/tous/2_2_azim.svg" >
-							<img src="illustrations/tous/2_2_azim.png" alt="projection azimutale équidistante pôle sud" height="350">
+							<img src="illustrations/tous/2_2_azim.png" alt="projection azimutale équidistante pôle sud" width="350">
 						</a>
 						<figcaption>Projection azimutale équidistante pôle sud (source : pôle ARD, adess, domaine public)</figcaption>
 					</figure>
@@ -196,7 +195,7 @@
 					<br>
 					<figure>
 						<a href="http://commons.wikimedia.org/wiki/File%3AUtm_projections.svg" >
-							<img src="illustrations/tous/2_2_Utm_projections.svg" alt="rotation d'un cylindre autour de la Terre" height="200">
+							<img src="illustrations/tous/2_2_Utm_projections.svg" alt="rotation d'un cylindre autour de la Terre" width="200">
 						</a>
 						<figcaption>Projection UTM : rotation d'un cylindre autour de la Terre.<br>Par Javiersanp (Travail personnel) [<a class="ext" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA-3.0</a> ou <a class="ext" target="_blank" href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>], <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3AUtm_projections.svg">via Wikimedia Commons</a></figcaption>
 					</figure>

@@ -67,7 +67,7 @@
                     <p>Nos deux couches étant dans deux SCR différents, elles n'ont pu être croisées. <b>Beaucoup d'outils impliquant plusieurs couches de données ne fonctionneront que si elles sont toutes dans le même SCR.</b></p>
                     
                     <div class="manip">
-    					<p>Réessayez en sauvegardant au préalable la couche d'installations de traitement de déchets en RGF93 Lambert 93 (voir <a href="02_04_changer_systeme.php#II42" >ici</a>).</p>
+    					<p>Réessayez en sauvegardant au préalable la couche d'installations de traitement de déchets en RGF93 Lambert 93 (attention, il s'agit ici de modifier le SCR de la couche et non de le redéfinir, voir <a href="02_04_changer_systeme.php#II42" >ici</a>).</p>
     					<p>Vous devriez obtenir 74 communes sélectionnées :</p>
     					<figure>
                         	<a href="illustrations/tous/6_2_select_localisation_res.png" >

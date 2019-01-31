@@ -16,9 +16,10 @@
 				<ul class="listetitres">
 					<li><a href="#VI11">Faire une requête simple</a></li>
 					<li><a href="#VI12">Créer une nouvelle couche à partir d'une sélection</a></li>
-					<li><a href="#VI13">Quelques opérateurs</a></li>
-					<li><a href="#VI14">Combiner plusieurs critères</a></li>
-					<li><a href="#VI15">Quelques exemples à tester</a></li>
+					<li><a href="#VI13">Désélectionner des entités</a></li>
+					<li><a href="#VI14">Quelques opérateurs</a></li>
+					<li><a href="#VI15">Combiner plusieurs critères</a></li>
+					<li><a href="#VI16">Quelques exemples à tester</a></li>
 				</ul>
 				<br>
 				
@@ -88,8 +89,20 @@
 					<p>La nouvelle couche est automatiquement ajoutée à QGIS. Elle ne contient qu'un seul département, celui du Nord.</p>
 				</div>
 			
+			<h3><a class="titre" id="VI13">Désélectionner des entités</a></h3>
 			
-			<h3><a class="titre" id="VI13">Quelques opérateurs</a></h3>
+			 <p>Par défaut, une nouvelle requête attributaire "part de zéro", en ne tenant pas compte des entités déjà sélectionnées (pour au contraire tenir compte d'une requête précédente, cf. <a href="http://localhost/tutoqgis/06_03_req_combinees.php#VI31" >partie VI.3.1 : Combiner deux requêtes attributaires</a>).</p>
+			 <p>Néanmoins, pour plus de clarté, il peut être utile de désélectionner des entités.</p>
+			 
+			 <div class="manip">
+					<p><img class="icone" src="illustrations/tous/6_3_deselection_icone.png" alt="icône de désélection" >Pour désélectionner toutes les entités dans toutes les couches : cliquez sur le bouton <b>Désélectionner toutes les entités</b> de la barre d'outils Attributs.</p>
+					<p><img class="icone" src="illustrations/tous/6_3_deselection_table_icone.png" alt="icône de désélection pour une couche (table)" >Pour désélectionner les entités d'une seule couche : ouvrez la table attributaire de cette couche. Dans la barre d'outils en haut de la table cliquez sur l'outil <b>Tout désélectionner</b>.</p>
+				</ul>
+				
+				<p>Attention, ces deux outils ont la même icône, mais ils ne sont pas situés au même endroit !</p>
+			 </div>
+			 
+			<h3><a class="titre" id="VI14">Quelques opérateurs</a></h3>
 			
 				<p>Dans l'exemple ci-dessus, nous avons utilisé l'opérateur <b>=</b> pour notre requête. Il en existe d'autre, comme par exemple les opérateurs mathématiques inférieur à et supérieur à, multiplier, diviser...</p>
 				<div class="manip">
@@ -143,7 +156,7 @@
 				
 				<p><img class="iconemid" src="illustrations/tous/6_3_deselection_icone.png" alt="icône de désélection" >Entre deux requêtes, pour être sûr de repartir à zéro, utiliser l'outil <b>tout désélectionner</b>.</p>
 			
-			<h3><a class="titre" id="VI14">Combiner plusieurs critères</a></h3>
+			<h3><a class="titre" id="VI15">Combiner plusieurs critères</a></h3>
 			
 				<p>Comment faire s'il l'on veut sélectionner par exemple les communes de + de 10 000 habitants dont le nom se termine par 'IN' ?</p>
 				<p>Il s'agit ici de combiner deux critères. Deux opérateurs permettent cela : <b>AND</b> (et) et <b>OR</b> (ou).</p>
@@ -166,7 +179,7 @@
 					</div>
 				</div>
 			
-			<h3><a class="titre" id="VI15">Quelques exemples à tester</a></h3>
+			<h3><a class="titre" id="VI16">Quelques exemples à tester</a></h3>
 			
 				<p>Pouvez-vous sélectionner ? ...</p>
 				<p>(plusieurs requêtes sont parfois possibles pour un même résultat)</p>

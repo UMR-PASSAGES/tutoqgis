@@ -29,7 +29,7 @@
 					<p>Réduire la fenêtre de QGIS. Ouvrir dans l'explorateur de fichiers de votre ordinateur le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b></p>
 					<figure>
 						<a href="illustrations/tous/1_3_fichiers.png" >
-							<img src="illustrations/tous/1_3_fichiers.png" alt="fichiers format SIG" height="350">
+							<img src="illustrations/tous/1_3_fichiers.png" alt="fichiers format SIG" width="450">
 						</a>
 					</figure>
 				</div>

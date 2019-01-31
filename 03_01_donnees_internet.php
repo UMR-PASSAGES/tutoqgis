@@ -36,10 +36,15 @@
 				
 					<p>Il existe de nombreux sites permettant le téléchargement de données shapefile sur des thèmes variés. Nous allons ici supposer que vous cherchez les limites administratives d'un pays précis.</p>
 					<div class="manip">		
-						<p>Pour cela, rendez-vous sur le site : <a class="ext" target="_blank" href="http://www.gadm.org/">http://www.gadm.org/</a></p>
-						<p>Trouvez sur ce site la rubrique téléchargement, et téléchargez les <b>limites administratives du Kenya</b> au format shapefile. Décompressez le fichier ZIP obtenu dans votre répertoire de travail.</p>
+						<p>Pour cela, rendez-vous sur le site <b>GADM</b>, à la page de téléchargement des limites administratives par pays : <a class="ext" target="_blank" href="https://www.gadm.org/download_country_v3.html">https://www.gadm.org/download_country_v3.html</a></p>
+						<figure>
+							<a href="illustrations/tous/3_1_gadm.png" >
+								<img src="illustrations/tous/3_1_gadm.png" alt="téléchargement des données GADM sur le Kenya" height="300">
+							</a>
+						</figure>
+						<p>Choisissez le <b>Kenya</b> dans la liste déroulante, cliquez sur <b>Shapefile</b>. Enregistrez le fichier ZIP sur votre ordinateur puis décompressez-le.</p>
 						<p>Lancez QGIS si ce n'est pas déjà fait, ou bien créez un nouveau projet sans sauvegarder l'ancien.</p>
-						<p><img class="iconemid" src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="Icône ajout d'une couche vecteur">A partir de QGIS, chargez la couche <em class="data">KEN_adm5.shp</em>.</p>		
+						<p><img class="iconemid" src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="Icône ajout d'une couche vecteur">A partir de QGIS, chargez la couche <em class="data">gadm36_KEN_3</em>.</p>		
 						<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
 						<p>Réussissez-vous à faire apparaître les grandes régions du Kenya (champ NAME_1) avec des couleurs différentes à partir de cette couche ?</p>
 						<p>Pour cela, allez dans les <b>propriétés de la couche &#8594; rubrique Style</b> :

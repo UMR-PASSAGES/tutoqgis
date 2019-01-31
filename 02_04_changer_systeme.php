@@ -44,7 +44,7 @@
 					, rubrique SCR :</p>
 					<figure>
 						<a href="illustrations/tous/2_4_modif_scr_projet.png" >
-							<img src="illustrations/tous/2_4_modif_scr_projet.png" alt="Modifier le SCR d'un projet" height="500">
+							<img src="illustrations/tous/2_4_modif_scr_projet.png" alt="Modifier le SCR d'un projet" width="550">
 						</a>
 					</figure>
 					<p><em class="numero">1. </em>Vérifiez que la <a href="02_03_couches_projets.php#II33">projection à la volée</a> soit bien activée.</p>
@@ -101,7 +101,7 @@
 					<p>La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/2_4_sauvegarder_couche_fenetre.png" >
-							<img src="illustrations/tous/2_4_sauvegarder_couche_fenetre.png" alt="Fenêtre de sauvegarde de la couche" height="500" >
+							<img src="illustrations/tous/2_4_sauvegarder_couche_fenetre.png" alt="Fenêtre de sauvegarde de la couche" width="400" >
 						</a>
 					</figure>
 					<ul>
@@ -123,7 +123,7 @@
 					</p>
 					<figure>
 						<a href="illustrations/tous/2_4_bonne.png" >
-							<img src="illustrations/tous/2_4_bonne.png" alt="Projection de Bonne" height="300">
+							<img src="illustrations/tous/2_4_bonne.png" alt="Projection de Bonne" width="300">
 						</a>
 					</figure>
 				</div>
@@ -151,7 +151,7 @@
 					</p>
 					<figure>
 						<a href="illustrations/tous/2_4_options_sans_scr.png" >
-							<img src="illustrations/tous/2_4_options_sans_scr.png" alt="Options, rubrique SCR" height="500">
+							<img src="illustrations/tous/2_4_options_sans_scr.png" alt="Options, rubrique SCR" width="600">
 						</a>
 					</figure>
 					<p>Pour l'option <b>Quand une nouvelle couche est créée ou quand une couche est chargée sans SCR</b>, choisissez l'option <b>Demander le SCR</b>.</p>

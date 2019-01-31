@@ -47,7 +47,7 @@
 				<p>La fenêtre suivante s'ouvre :</p>
 				<figure>
 					<a href="illustrations/tous/2_3_scr_projet.png" >
-						<img src="illustrations/tous/2_3_scr_projet.png" alt="fenêtre SCR du projet" height="450">
+						<img src="illustrations/tous/2_3_scr_projet.png" alt="fenêtre SCR du projet" width="600">
 					</a>
 				</figure>
 				
@@ -80,7 +80,7 @@
 					<p>Ouvrez les propriétés de cette couche (double clic sur le nom de la couche) et allez dans la rubrique <b>Général</b>.</p>			
 					<figure>
 						<a href="illustrations/tous/2_3_scr_couche.png" >
-							<img src="illustrations/tous/2_3_scr_couche.png" alt="Fenêtre Propriétés d'une couche, rubrique Général, lire le SCR" height="440" >
+							<img src="illustrations/tous/2_3_scr_couche.png" alt="Fenêtre Propriétés d'une couche, rubrique Général, lire le SCR" width="600" >
 						</a>
 						<figcaption>Lire le SCR d'une couche.</figcaption>
 					</figure>
@@ -116,7 +116,7 @@
 					</p>
 					<figure>
 						<a href="illustrations/tous/2_3_proj_volee_defaut.png" >
-							<img src="illustrations/tous/2_3_proj_volee_defaut.png" alt="Activer automatiquement la projection à la volée si les couches possèdent des SCR différents" height="500">
+							<img src="illustrations/tous/2_3_proj_volee_defaut.png" alt="Activer automatiquement la projection à la volée si les couches possèdent des SCR différents" width="600">
 						</a>
 					</figure>		
 					<p>Laissez cochée la case <b>Activer automatiquement la projection à la volée si les couches ont des SCR différents</b>. Ainsi, chaque projet que vous créerez dans QGIS aura automatiquement cette fonctionnalité activée.</p>

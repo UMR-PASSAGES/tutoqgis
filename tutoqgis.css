@@ -6,6 +6,7 @@ hov         #1D3437     hover colour
 
 */
 
+
 	html {
 		margin:0;
 		padding:0;
@@ -25,7 +26,7 @@ hov         #1D3437     hover colour
 		width:1000px;
 		position: relative;
 		margin:0 auto;
-		-moz-box-shadow: 4px 4px 10px #D4D4D4;
+		box-shadow: 4px 4px 10px #D4D4D4;
   		-webkit-box-shadow: 4px 4px 10px #D4D4D4;
 		box-shadow: 4px 4px 10px #D4D4D4;
 	}
@@ -77,7 +78,10 @@ hov         #1D3437     hover colour
 	}
 	#nav ul {
 		margin:0;
-		padding:5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 0px;
+		padding-right: 0px;
 		list-style:none;
 	}
 	#nav li {
@@ -87,13 +91,15 @@ hov         #1D3437     hover colour
 	}
 	#nav li a {	/* pour les liens du menu horizontal */
 		font-size: 1.1em;
-      color: #FFFFFF;
-      text-decoration: none;
+        color: #FFFFFF;
+        text-decoration: none;
 	}
-	#nav li a:hover {	/* pour les liens du menu horizontal */
+	#nav li:hover {	/* pour les liens du menu horizontal */
 		color: #191919;
 		background-color: #EFEFEF;
-		padding:5px 0px;
+	}
+	#nav li:hover a {	/* pour les liens du menu horizontal */
+		color: inherit;
 	}
 	
 	/* les menus sur la droite (liste des chapitres) */
@@ -139,8 +145,8 @@ hov         #1D3437     hover colour
 		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
 		border: none;
 		box-shadow: 2px 2px 4px #ccc;
-   	-webkit-box-shadow: 2px 2px 4px #ccc;
-   	-moz-box-shadow: 2px 2px 4px #ccc; 
+   	    -webkit-box-shadow: 2px 2px 4px #ccc;
+   	    box-shadow: 2px 2px 4px #ccc; 
 	}
 	img.droite {	/* image à droite, avec texte autour, et pas d'ombre */
 		float: right;
@@ -149,7 +155,7 @@ hov         #1D3437     hover colour
 		border: none;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none;
+   	    box-shadow: none;
    }
    img.gauche {	/* image à droite, avec texte autour, et pas d'ombre */
 		float: left;
@@ -158,7 +164,7 @@ hov         #1D3437     hover colour
 		border: none;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none;
+   	    box-shadow: none;
    }
 	img.noshadow {	/* sans ombre */
 		padding-left: 0px;
@@ -166,7 +172,7 @@ hov         #1D3437     hover colour
 		border: none;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none;
+   	    box-shadow: none;
 	}
 	img.logo {
 		padding-top: 10px;
@@ -177,7 +183,7 @@ hov         #1D3437     hover colour
 		border: none;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none; 
+   	    box-shadow: none; 
 	}
 	/* pour les figures */
 	figure.image {
@@ -213,7 +219,7 @@ hov         #1D3437     hover colour
 		border-color: silver;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none;
+   	    box-shadow: none;
 	/* quand on veut afficher l'icône d'un outil avec avant ou après du texte sur une seule ligne */
 	}
 	img.iconemid {
@@ -224,7 +230,7 @@ hov         #1D3437     hover colour
 		border-color: silver;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	-moz-box-shadow: none;
+   	    box-shadow: none;
 	}
 
 	/* Pour afficher une image quand on passe la souris sur un texte (capture d'écran) */
@@ -423,7 +429,7 @@ hov         #1D3437     hover colour
 		margin:0;
 		padding:5px;
 	}
-	LI.plandet{	*/ pour le plan détaillé */
+	LI.plandet{
 		margin-bottom: 1em;
 		padding-bottom: 1em;
 	}
@@ -642,3 +648,81 @@ hov         #1D3437     hover colour
 	input[type=checkbox]:checked ~ p {
 		max-height: 600px; /* la hauteur max que pourra prendre la réponse */
 	}
+	
+	/* pour les smartphones */
+    @media all and (max-width:480px) {
+        /* pour que le contenu se redimensionne à la taille de l'écran */
+        #wrap{width: auto}
+        #container_main_sidebar{width: auto}
+        .main{width: auto; background: #FFFFFF}
+        .backgrounds{width: auto}
+        /* on n'affiche plus le menu de droite avec le plan */
+        .sidebar {display:none;}
+        /* pour que les images se redimensionnent à la taille de l'écran */
+        img {max-width: 100% !important; height: auto;}
+        /* les icônes des outils ne doivent pas se redimensionner */
+        img.icone {width: 30px !important;}
+        img.iconemid {width: 30px !important;}
+        /* l'icône creative commons du pied de page ne doit pas se redimmensionner */
+        #footer img{ width: 80px !important}
+        /* on n'affiche pas les images qui s'affichent normalement en survolant le texte */
+        .thumbnail_bottom span{display: none;}
+        .thumbnail_top span{display: none;}
+        .thumbnail_bottom{color: #323232; border-bottom: none; pointer-events: none; cursor: default; font-weight: bold;}
+        .thumbnail_top{color: #323232; border-bottom: none; pointer-events: none; cursor: default; font-weight: bold;}
+        /* pour couper les mots trop longs */
+        body {overflow-wrap: break-word; word-wrap: break-word; -ms-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+        /* pour le menu horizontal */
+        /*#nav { background: #4E4943;}*/
+        #nav li {display: block; text-align: center;}
+        #nav ul li, #nav ul li a {width: 100%;}
+        #nav li:hover {display: block;}
+        #wrapdanswrap { background:#FFFFFF url(illustrations/tous/bandeau.png); background-size: cover;}
+    }
+    
+    /* pour les tablettes */
+    @media (min-width: 481px) and (max-width:780px) {
+        /* pour que le contenu se redimensionne à la taille de l'écran */
+        #wrap{width: auto}
+        #container_main_sidebar{width: auto}
+        .main{width: auto; background: #FFFFFF}
+        .backgrounds{width: auto}
+        /* on n'affiche plus le menu de droite avec le plan */
+        .sidebar {display:none;}
+        /* pour que les images se redimensionnent à la taille de l'écran */
+        img {max-width: 100% !important; height: auto;}
+        /* les icônes des outils ne doivent pas se redimensionner */
+        img.icone {width: 30px !important;}
+        img.iconemid {width: 30px !important;}
+        /* l'icône creative commons du pied de page ne doit pas se redimmensionner */
+        #footer img{ width: 80px !important}
+        /* on n'affiche pas les images qui s'affichent normalement en survolant le texte */
+        .thumbnail_bottom span{display: none;}
+        .thumbnail_top span{display: none;}
+        .thumbnail_bottom{color: #323232; border-bottom: none; pointer-events: none; cursor: default; font-weight: bold;}
+        .thumbnail_top{color: #323232; border-bottom: none; pointer-events: none; cursor: default; font-weight: bold;}
+        /* pour couper les mots trop longs */
+        body {overflow-wrap: break-word; word-wrap: break-word; -ms-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+        /* pour le menu horizontal */
+        #nav li {padding-left: 3px;}
+        #nav li {padding-right: 3px;}
+        #nav li a {font-size: 1em;}
+        /* a.grostitre{color:blue;} */
+    }
+    @media (min-width: 781px) and (max-width:979px) {
+        /* pour que le contenu se redimensionne à la taille de l'écran */
+        #wrap{width: auto}
+        #container_main_sidebar{width: auto}
+        .main{width: auto; background: #FFFFFF}
+        .backgrounds{width: auto}
+        /* on n'affiche plus le menu de droite avec le plan */
+        .sidebar {display:none;}
+        /* pour que les images se redimensionnent à la taille de l'écran */
+        img {max-width: 100% !important; height: auto;}
+        /* les icônes des outils ne doivent pas se redimensionner */
+        img.icone {width: 30px !important;}
+        img.iconemid {width: 30px !important;}
+        /* l'icône creative commons du pied de page ne doit pas se redimmensionner */
+        #footer img{ width: 80px !important}
+        /* a.grostitre{color:red;} */
+    }

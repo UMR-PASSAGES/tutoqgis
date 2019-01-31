@@ -145,6 +145,7 @@
 							<figcaption>Premier point : à gauche, dans la fenêtre de QGIS (données OSM) et à droite, dans la fenêtre du géoréférenceur.</figcaption>
 						</figure>
 						<p>Procédez de la même manière pour obtenir au moins six points de calage.</p>
+						<p>Si vous avez besoin de <b>vous déplacer dans la fenêtre de QGIS avant de cliquer pour créer le point</b> : vous pouvez laisser la <b>barre d'espace</b> appuyée en bougeant la souris, et zoomer et dézoomer avec la molette. Vous pouvez aussi sélectionner l'outil <b>Se déplacer dans la carte</b> (icône de main) ; dans ce cas, revenez ensuite à la fenêtre du géoréférenceur et cliquez à nouveau sur le bouton <b>Depuis le canevas de la carte</b> pour créer le point.</p>
 						<p>Ensuite, choisissez les <a href="04_04_parametrage.php">paramètres du géoréférencement</a> : vous pouvez choisir les mêmes que précédemment, mais <b>n'oubliez pas de sélectionner le SCR WGS84 Pseudo-Mercator EPSG:3857 au lieu du WGS84 EPSG:4326</b>.</p>
 						<p><a href="04_05_lancement.php">Lancez le calage</a>.</p>
 						<p>Une fois le calage terminé, vous pouvez en vérifier la précision en donnant de la transparence à votre image calée (dans les propriétés de la couche, rubrique Transparence) :</p>
