@@ -53,7 +53,7 @@
     					.</p>
     					<figure>
                         	<a href="illustrations/tous/6_2_select_localisation.png" >
-                        		<img src="illustrations/tous/6_2_select_localisation.png" alt="Outil de sélection par localisation" height="340">
+                        		<img src="illustrations/tous/6_2_select_localisation.png" alt="Outil de sélection par localisation" width="500">
                         	</a>
                         </figure>
                         <ul>
@@ -71,7 +71,7 @@
     					<p>Vous devriez obtenir 74 communes sélectionnées :</p>
     					<figure>
                         	<a href="illustrations/tous/6_2_select_localisation_res.png" >
-                        		<img src="illustrations/tous/6_2_select_localisation_res.png" alt="Communes sélectionnées" height="300">
+                        		<img src="illustrations/tous/6_2_select_localisation_res.png" alt="Communes sélectionnées" width="450">
                         	</a>
                         </figure>
                     </div>
@@ -95,7 +95,7 @@
     					.</p>
     					<figure>
     						<a href="illustrations/tous/6_2_req_spatial_fenetre.png" >
-    							<img src="illustrations/tous/6_2_req_spatial_fenetre.png" alt="Fenêtre de requête spatiale : sélection des communes contenant les installations" height="400" >
+    							<img src="illustrations/tous/6_2_req_spatial_fenetre.png" alt="Fenêtre de requête spatiale : sélection des communes contenant les installations" width="300" >
     						</a>
     					</figure>
     					<ul>
@@ -106,7 +106,7 @@
     					</ul>
     					<figure>
     						<a href="illustrations/tous/6_2_req_spatial_fenetre_2.png" >
-    							<img src="illustrations/tous/6_2_req_spatial_fenetre_2.png" alt="Fenêtre de requête spatiale : sélection des communes contenant les installations, résultat" height="370" >
+    							<img src="illustrations/tous/6_2_req_spatial_fenetre_2.png" alt="Fenêtre de requête spatiale : sélection des communes contenant les installations, résultat" width="600" >
     						</a>
     					</figure>
     					<p>Comme précédemment, 74 communes sont sélectionnées. Notez que cet outil, contrairement au précédent, <b>fonctionne pour deux couches ayant des SCR différents !</b></p>

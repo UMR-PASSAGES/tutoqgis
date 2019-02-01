@@ -39,14 +39,14 @@
 					<p>Toujours dans le même projet QGIS, avec uniquement la couche <em class="data">communes_NordPasDeCalais_calcul</em>, ouvrez sa table attributaire.</p>
 					<p>Passez en mode édition. Cliquez sur l'icône <b>Ouvrir la calculatrice de champs</b> parmi les icônes de la table attributaire :</p>
 					<figure>
-						<img src="illustrations/tous/7_2_BO_table_calc.png" alt="barre d'outils de la table attributaire, avec icône de la calculatrice de champs entourée en rouge" height="33" >
+						<img src="illustrations/tous/7_2_BO_table_calc.png" alt="barre d'outils de la table attributaire, avec icône de la calculatrice de champs entourée en rouge" width="450" >
 					</figure>
 				</div>
 				
 				<p>La fenêtre suivante s'ouvre :</p>
 				<figure>
 					<a href="illustrations/tous/7_2_calc_fenetre.png" >
-						<img src="illustrations/tous/7_2_calc_fenetre.png" alt="Fenêtre de la calculatrice de champs" height="500" >
+						<img src="illustrations/tous/7_2_calc_fenetre.png" alt="Fenêtre de la calculatrice de champs" width="620" >
 					</a>
 				</figure>
 				<p><em class="numero">1</em> : Si cette case est cochée, seules les lignes sélectionnées seront modifiées (en grisé si aucune entité n'est sélectionnée).</p>
@@ -69,7 +69,7 @@
 					<div class="manip">
 						<figure>
 							<a href="illustrations/tous/7_2_calc_fenetre_surface.png">
-								<img src="illustrations/tous/7_2_calc_fenetre_surface.png" alt="Fenêtre de la calculatrice de champs, pour calculer la surface d'un département en km2" height="480" >
+								<img src="illustrations/tous/7_2_calc_fenetre_surface.png" alt="Fenêtre de la calculatrice de champs, pour calculer la surface d'un département en km2" width="600" >
 							</a>
 						</figure>
 						<ul>
@@ -86,12 +86,14 @@
 					<div class="manip">
 						<p><img class="iconemid" src="illustrations/tous/7_2_mesure_icone.png" alt="icône mesurer une aire" >Vous pouvez vérifier votre calcul au moyen de l'outil <b>Mesurer une aire</b> : </p>
 						<figure>
-							<img src="illustrations/tous/7_2_aire_selection.png" alt="Sélection de l'outil mesurer une aire dans la liste" height="100" >
+						  <a href="illustrations/tous/7_2_aire_selection.png" >
+							<img src="illustrations/tous/7_2_aire_selection.png" alt="Sélection de l'outil mesurer une aire dans la liste" width="280" >
+						  </a>
 						</figure>
 						<p>Sélectionnez une commune, mesurez son aire en faisant un clic droit sur le dernier sommet pour terminer, choisissez dans la table l'option <b>Ne montrer que les entités sélectionnées</b> et comparer l'aire que vous avez mesuré et l'aire du champ SURF_KM2.</p>
 						<figure>
 							<a href="illustrations/tous/7_2_verif_surf.png" >
-								<img src="illustrations/tous/7_2_verif_surf.png" alt="Vérification de la surface au moyen de l'outil mesurer une aire" height="320" >
+								<img src="illustrations/tous/7_2_verif_surf.png" alt="Vérification de la surface au moyen de l'outil mesurer une aire" width="600" >
 							</a>
 						</figure>
 					</div>
@@ -116,7 +118,7 @@
 						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche <em class="data">communes_NordPasDeCalais_calcul</em>. Ouvrez la calculatrice de champs :</p>
 						<figure>
 							<a href="illustrations/tous/7_2_calc_densite.png" >
-								<img src="illustrations/tous/7_2_calc_densite.png" alt="Fenêtre de la calculatrice de champ, calcul de la densité" height="420" >
+								<img src="illustrations/tous/7_2_calc_densite.png" alt="Fenêtre de la calculatrice de champ, calcul de la densité" width="600" >
 							</a>
 						</figure>
 						<ul>
@@ -126,7 +128,9 @@
 							<li class="espace">Cliquez sur <b>OK</b> : le champ densité est ajouté et calculé :</li>
 						</ul>
 						<figure>
-							<img src="illustrations/tous/7_2_densite_table.png" alt="Table attributaire avec les 3 colonnes population, surface et densité" height="300" >
+						  <a href="illustrations/tous/7_2_densite_table.png" >
+							<img src="illustrations/tous/7_2_densite_table.png" alt="Table attributaire avec les 3 colonnes population, surface et densité" width="280" >
+						  </a>
 						</figure>
 					</div>
 					
@@ -139,7 +143,7 @@
 						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche <em class="data">communes_NordPasDeCalais_calcul</em>. Ouvrez la calculatrice de champs :</p>
 						<figure>
 							<a href="illustrations/tous/7_2_calc_codedept.png" >
-								<img src="illustrations/tous/7_2_calc_codedept.png" alt="Calculatrice de champ : calcul du code du département" height="450" >
+								<img src="illustrations/tous/7_2_calc_codedept.png" alt="Calculatrice de champ : calcul du code du département" width="600" >
 							</a>
 						</figure>
 						<ul>
@@ -151,7 +155,9 @@
 							<li class="espace">Cliquez sur <b>OK</b> : le champ CODE_DEPT est mis à jour :</li>
 						</ul>
 						<figure>
-							<img src="illustrations/tous/7_2_table_codedept.png" alt="extrait de la table avec les champs DEPT et CODE_DEPT" height="200" >
+						  <a href="illustrations/tous/7_2_table_codedept.png" >
+							<img src="illustrations/tous/7_2_table_codedept.png" alt="extrait de la table avec les champs DEPT et CODE_DEPT" width="250" >
+						  </a>
 						</figure>
 					</div>
 					
@@ -166,7 +172,7 @@
 						<p>Au final, les paramètres de la calculatrice de champs sont donc les suivants :</p>
 						<figure>
 							<a href="illustrations/tous/7_2_calc_nomdept.png" >
-								<img src="illustrations/tous/7_2_calc_nomdept.png" alt="Calculatrice de champ : calcul du nom du département" height="460" >
+								<img src="illustrations/tous/7_2_calc_nomdept.png" alt="Calculatrice de champ : calcul du nom du département" width="600" >
 							</a>
 						</figure>
 						<div class="question">
@@ -185,7 +191,7 @@
 						<p>Ouvrez la calculatrice de champ :</p>
 						<figure>
 							<a href="illustrations/tous/7_2_calc_codeinsee.png" >
-								<img src="illustrations/tous/7_2_calc_codeinsee.png" alt="Calculatrice de champ : calcul du code INSEE" height="420" >
+								<img src="illustrations/tous/7_2_calc_codeinsee.png" alt="Calculatrice de champ : calcul du code INSEE" width="600" >
 							</a>
 						</figure>
 						<ul>
@@ -195,7 +201,9 @@
 							<li class="espace">Cliquez sur <b>OK</b>. Le champ CODE_INSEE est créé et mis à jour :</li>
 						</ul>
 						<figure>
-							<img src="illustrations/tous/7_2_codeinsee_table.png" alt="Table attributaire avec les 3 colonnes CODE_DEPT, CODE_COMM et CODE_INSEE" height="200" >
+						  <a href="illustrations/tous/7_2_codeinsee_table.png" >
+							<img src="illustrations/tous/7_2_codeinsee_table.png" alt="Table attributaire avec les 3 colonnes CODE_DEPT, CODE_COMM et CODE_INSEE" width="250" >
+						  </a>
 						</figure>
 						<p class="note">Il est aussi possible d'utiliser la formule <b>concat ( "CODE_DEPT",  "CODE_COMM" )</b>, pour le même résultat.</p>
 					</div>

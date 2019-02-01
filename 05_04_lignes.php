@@ -48,10 +48,10 @@
 					<p>Zoomez sur un fleuve, par exemple dans le nord est de l'île, dans la région de Makaha :</p>
 					<figure>
 						<a href="illustrations/tous/5_4_makaha.png" >
-							<img class="noshadow" src="illustrations/tous/5_4_makaha.png" alt="zoom sur Makaha" height="200">
+							<img class="noshadow" src="illustrations/tous/5_4_makaha.png" alt="zoom sur Makaha" width="232">
 						</a>
 						<a href="illustrations/tous/5_4_makaha_zoom.png" >
-							<img class="noshadow" src="illustrations/tous/5_4_makaha_zoom.png" alt="zoom sur la rivière de Makaha" height="200">
+							<img class="noshadow" src="illustrations/tous/5_4_makaha_zoom.png" alt="zoom sur la rivière de Makaha" width="266">
 						</a>
 					</figure>
 					<p>Passez en mode édition pour votre couche de fleuves.</p>
@@ -59,7 +59,7 @@
 					<p>Cliquez sur le début du fleuve pour créer un premier sommet, puis rajoutez d'autres points à votre ligne. Pour terminer, faites un clic-droit n'importe où.</p>
 					<figure>
 						<a href="illustrations/tous/5_4_fleuve.png" >
-							<img src="illustrations/tous/5_4_fleuve.png" alt="fleuve numérisé" height="300">
+							<img src="illustrations/tous/5_4_fleuve.png" alt="fleuve numérisé" width="500">
 						</a>
 					</figure>
 				</div>
@@ -88,7 +88,7 @@
 					<p>Cliquez sur une ligne existante : les sommets prennent la forme de carrés rouges.</p>
 					<figure>
 						<a href="illustrations/tous/5_4_fleuve_noeud.png" >
-							<img src="illustrations/tous/5_4_fleuve_noeud.png" alt="ligne avec les noeuds visibles sous forme de carrés rouges" height="300" >
+							<img src="illustrations/tous/5_4_fleuve_noeud.png" alt="ligne avec les noeuds visibles sous forme de carrés rouges" width="500" >
 						</a>
 					</figure>
 					<p>Si vous cliquez sur un sommet, il est sélectionné et devient bleu. Vous pouvez grâce à l'outil de nœud :</p>

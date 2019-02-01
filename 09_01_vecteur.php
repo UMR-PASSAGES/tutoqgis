@@ -57,7 +57,7 @@
 						:</p>
 						<figure>
 							<a href="illustrations/tous/9_1_decouper_fenetre.png" >
-								<img src="illustrations/tous/9_1_decouper_fenetre.png" alt="Fenêtre de l'outil découper" height="300" >
+								<img src="illustrations/tous/9_1_decouper_fenetre.png" alt="Fenêtre de l'outil découper" width="320" >
 							</a>
 						</figure>
 						<ul>
@@ -89,14 +89,14 @@
 						<p>Patientez... et ajoutez la nouvelle couche :</p>
 						<figure>
 							<a href="illustrations/tous/9_1_decoupage_resultat.png" >
-								<img src="illustrations/tous/9_1_decoupage_resultat.png" alt="Résultat du découpage" height="300" >
+								<img src="illustrations/tous/9_1_decoupage_resultat.png" alt="Résultat du découpage" width="500" >
 							</a>
 							<figcaption>Cours d'eau découpés en bleu, cours d'eau non découpés en rouge.</figcaption>
 						</figure>
 						<p>Contrairement à une requête spatiale, le découpage modifie les entités en les <b>découpant</b> suivant les limites de la couche de découpage. Une requête se borne à <b>sélectionner</b> par exemple les cours d'eau à l'intérieur des communes, ou intersectant les communes.</p>
 						<figure>
 							<a href="illustrations/tous/9_1_req_intersect.png" >
-								<img src="illustrations/tous/9_1_req_intersect.png" alt="Sélection des cours d'eau intersectant les communes" height="300" >
+								<img src="illustrations/tous/9_1_req_intersect.png" alt="Sélection des cours d'eau intersectant les communes" width="500" >
 							</a>
 							<figcaption>Sélection des cours d'eau intersectant les communes (en jaune) par une requête spatiale.</figcaption>
 						</figure>
@@ -110,7 +110,7 @@
 					<p>Une zone tampon (aussi appelée « buffer ») est une <b>zone épousant la forme des objets d'une couche, d'une largeur donnée</b>. Si elles sont tracées autour de points, les zones tampons seront des cercles. Autour de lignes et de polygones, ce sera des polygones de forme variable. Une zone tampon peut servir par exemple à modéliser une zone inondable, un périmètre de sécurité, une zone d'achalandage...</p>
 					<figure>
 						<a href="illustrations/tous/9_1_principe_tampon.svg" >
-							<img src="illustrations/tous/9_1_principe_tampon.png" alt="Exemples de zones tampon autour d'un point, d'une ligne et d'un polygone" height="220" >
+							<img src="illustrations/tous/9_1_principe_tampon.png" alt="Exemples de zones tampon autour d'un point, d'une ligne et d'un polygone" width="500" >
 						</a>
 					</figure>
 					<p>L'objectif est ici de créer une zone tampon d'1 km autour du cours d'eau du Trieux. Cette zone pourra représenter par exemple une zone inondable, ou bien une zone s'interposant entre rivière et cultures.</p>
@@ -124,9 +124,12 @@
 							<p class="reponse">Vous pouvez soit cliquer sur le numéro de la ligne où le toponyme est &#171; le Trieux &#187; (pour la trouver plus facilement, cliquez sur l'intitulé de colonne <b>Toponyme</b> pour classer les lignes par toponyme), soit <a href="06_01_req_attrib.php">utiliser une requête attributaire</a> : <b>"Toponyme"  =  'le Trieux'</b>.</p>
 						</div>
 						<figure>
-							<img src="illustrations/tous/9_1_selection_trieux.png" alt="le Trieux sélectionné dans la carte" height="300" >
-							<img src="illustrations/tous/9_1_selection_trieux_table.png" alt="le Trieux sélectionné dans la table" height="150" >
-							<figcaption>Le cours d'eau du Trieux sélectionné</figcaption>
+						  <a href="illustrations/tous/9_1_selection_trieux.png" >
+							<img src="illustrations/tous/9_1_selection_trieux.png" alt="le Trieux sélectionné dans la carte" width="370" >
+						  </a>
+						  <a href="illustrations/tous/9_1_selection_trieux_table.png" >
+							<img src="illustrations/tous/9_1_selection_trieux_table.png" alt="le Trieux sélectionné dans la table" width="300" >
+						  </a>
 						</figure>
 					</div>
 								
@@ -141,13 +144,15 @@
 							</a>	
 						:</p>
 						<figure>
-							<img src="illustrations/tous/9_1_tampon_fenetre.png" alt="Paramètrage de l'outil zone tampon" height="350" >
+						  <a href="illustrations/tous/9_1_tampon_fenetre.png" >
+							<img src="illustrations/tous/9_1_tampon_fenetre.png" alt="Paramètrage de l'outil zone tampon" width="460" >
+						  </a>
 						</figure>
 
 						<ul>
 							<li class="espace"><b>Couche vectorielle de saisie :</b> il s'agit de la couche autour de laquelle sera créée la ou les zones tampons, donc ici la couche de cours d'eau <em class="data">COURS_D_EAU_dep22_35</em></li>
 						</ul>
-						<img class="droite" src="illustrations/tous/9_1_tampon_trieux.png" alt="zone tampon autour du trieux" height="400" >
+						<img class="droite" src="illustrations/tous/9_1_tampon_trieux.png" alt="zone tampon autour du trieux" width="150" >
 						<ul>
 							<li class="espace"><b>Utiliser uniquement les valeurs sélectionnées :</b> vérifier que cette case soit bien cochée (elle l'est par défaut à partir du moment où une sélection existe dans la couche), afin de ne créer de zone tampon qu'autour du Trieux</li>
 							<li class="espace"><b>Segments pour l'approximation :</b> plus cette valeur est élevée, plus les contours de la zone seront « arrondis ». Une valeur de <b>10</b> sera suffisante dans notre cas</li>
@@ -168,7 +173,7 @@
 					
 					<figure>
 						<a href="illustrations/tous/9_1_inters_principe.svg" >
-							<img src="illustrations/tous/9_1_inters_principe.png" alt="Exemple d'une intersection entre une cercle et un rectangle" height="300" >
+							<img src="illustrations/tous/9_1_inters_principe.png" alt="Exemple d'une intersection entre une cercle et un rectangle" width="320" >
 						</a>
 						<figcaption>La zone hachurée correspond à l'intersection entre le rectangle et le cercle.</figcaption>
 					</figure>
@@ -185,10 +190,10 @@
 						:</p>
 						<figure>
 							<a href="illustrations/tous/9_1_inters_fenetre.png" >
-								<img src="illustrations/tous/9_1_inters_fenetre.png" alt="Paramètrage de l'outil d'intersection" height="300" >
+								<img src="illustrations/tous/9_1_inters_fenetre.png" alt="Paramètrage de l'outil d'intersection" width="470" >
 							</a>
 						</figure>
-						<img class="droite" src="illustrations/tous/9_1_inters_resultat.png" alt="intersection entre zone tampon et communes" height="350" >
+						<img class="droite" src="illustrations/tous/9_1_inters_resultat.png" alt="intersection entre zone tampon et communes" width="100" >
 						<ul>
 							<li class="espace"><b>Couche vectorielle de saisie :</b> choisir la couche de communes. Ne pas cocher la case &#171; Utiliser uniquement les entités sélectionnées &#187; puisqu'il s'agit d'intersecter toutes les communes</li>
 							<li class="espace"><b>Couche d'intersection :</b> choisir la couche contenant la zone tampon. Idem, ne pas cocher la case &#171; Utiliser uniquement les entités sélectionnées &#187;</li>

@@ -45,7 +45,7 @@
 					:</p>
 					<figure>
 						<a href="illustrations/tous/9_2_raster_decouper_fenetre.png" >
-							<img src="illustrations/tous/9_2_raster_decouper_fenetre.png" alt="Fenêtre de l'outil découper" height="400" >
+							<img src="illustrations/tous/9_2_raster_decouper_fenetre.png" alt="Fenêtre de l'outil découper" width="580" >
 						</a>
 					</figure>
 					<ul>
@@ -59,7 +59,7 @@
 					</ul>
 					<figure>
 						<a href="illustrations/tous/9_2_decoupe_jam.png" >
-							<img class="noshadow" src="illustrations/tous/9_2_decoupe_jam.png" alt="Menu Raster, Extraction, Découper" height="180" >
+							<img class="noshadow" src="illustrations/tous/9_2_decoupe_jam.png" alt="Menu Raster, Extraction, Découper" width="600" >
 						</a>
 					</figure>
 					<p>Une fois l'opération terminée, fermez la fenêtre de l'outil de découpage. Le nouveau raster ne comprend que la Jamaïque.</p>
@@ -80,7 +80,11 @@
 							</span>
 						</a>
 					:</p>
-					<img src="illustrations/tous/9_2_contours_fenetre.png" alt="Fenêtre de l'outil de création de contours" height="320" >
+					<figure>
+					   <a href="illustrations/tous/9_2_contours_fenetre.png" >
+					       <img src="illustrations/tous/9_2_contours_fenetre.png" alt="Fenêtre de l'outil de création de contours" width="600" >
+					   </a>
+					</figure>
 					<ul>
 						<li class="espace"><b>Fichier source :</b> sélectionnez <em class="data">srtm_jamaique</em></li>
 						<li class="espace"><b>Fichier de sortie pour les contours :</b> cliquez sur <b>Sélection...</b>, sélectionnez l'emplacement de la couche qui sera créée, tapez son nom : <em class="data">jamaique_courbes_100m</em> par exemple</li>
@@ -157,7 +161,7 @@
 						<p>Patientez... La nouvelle couche est ajoutée, vous pouvez vérifier dans ses propriétés (rubrique Général) que son SCR est bien le JAD2001.</p>
 						<figure>
 							<a href="illustrations/tous/9_2_scr_ok.png">
-								<img src="illustrations/tous/9_2_scr_ok.png" alt="scr de la nouvelle couche : JAD2001" height="62" >
+								<img src="illustrations/tous/9_2_scr_ok.png" alt="scr de la nouvelle couche : JAD2001" width="600" >
 							</a>
 						</figure>
 						<p>Supprimez les autres couches, pour ne garder dans le projet que la couche <em class="data">srtm_jamaique_JAD2001</em>.</p>
@@ -196,7 +200,7 @@
 						<p><img class="icone" src="illustrations/tous/8_2_id_icone.png" alt="menu projet, sauvegarder sous..." >En cliquant sur un pixel avec l'outil <b>Identifier les entités</b>, vous pouvez connaître la valeur de la pente pour ce pixel :</p>
 						<figure>
 							<a href="illustrations/tous/9_2_id_pente.png">
-								<img src="illustrations/tous/9_2_id_pente.png" alt="la couche de pentes" height="180" >
+								<img src="illustrations/tous/9_2_id_pente.png" alt="la couche de pentes" width="400" >
 							</a>
 						</figure>
 						<p>Ici, le pixel a une pente de 13,5° environ.</p>

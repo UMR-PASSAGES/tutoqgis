@@ -60,7 +60,7 @@
 					.</p>
 				</div>
 				<p>Certains outils de la barre d'outil d'édition deviennent actifs, et dans la table des matières un symbole de crayon apparaît à gauche du nom de la couche :</p>
-				<img src="illustrations/tous/5_2_couche_editable.png" alt="symbole de crayon à gauche d'une couche éditable" height="22">
+				<img src="illustrations/tous/5_2_couche_editable.png" alt="symbole de crayon à gauche d'une couche éditable" width="170">
 				<p>La couche est maintenant modifiable.</p>
 				<p>Dans QGIS, le passage en mode édition est géré &#171; par couches &#187; : certaines couches peuvent être éditables et d'autres non. Il est facile de voir dans la tables des matières quelle couche est éditable.</p>
 				<p><b>De manière générale, il vaut mieux quitter le mode édition dès que vous n'en avez plus besoin, et limiter le nombre de couches éditables.</b></p>
@@ -72,7 +72,7 @@
 					<p>Commencez par repérer une école ou une poste, représentées respectivement par un point bleu ou rouge, par exemple la poste de la baie de Kaneohe :</p>
 					<figure>
 						<a href="illustrations/tous/5_2_ecole_kaneohe.png" >
-							<img src="illustrations/tous/5_2_ecole_kaneohe.png" alt="zoom sur l'école de Kaneohe" height="300">
+							<img src="illustrations/tous/5_2_ecole_kaneohe.png" alt="zoom sur l'école de Kaneohe" width="430">
 						</a>
 					</figure>
 					<p><img class="icone" src="illustrations/tous/5_2_ajout_icone.png" alt="icône d'ajout d'une entité" >Assurez-vous que votre couche de bâtiments soit bien sélectionnée dans la table des matières, puis cliquez sur l'icône <b>Ajouter une entité</b>.</p>
@@ -80,20 +80,20 @@
 					<p class="note">Si cette fenêtre ne s'ouvre pas, menu Préférences &#8594; Options &#8594; rubrique Numérisation : décochez la case &#171; Supprimer la fenêtre de saisie des attributs lors de la création de chaque nouvelle entité &#187; (tout en haut).</p>
 					<figure>
 						<a href="illustrations/tous/5_2_remplissage_type.png" >
-							<img src="illustrations/tous/5_2_remplissage_type.png" alt="remplir l'attribut type par 'école' par exemple" height="120" >
+							<img src="illustrations/tous/5_2_remplissage_type.png" alt="remplir l'attribut type par 'école' par exemple" width="300" >
 						</a>
 					</figure>
 					<p>Le point s'affiche sur la carte, avec le style de la couche (ici un rond turquoise) :</p>
 					<figure>
 						<a href="illustrations/tous/5_2_ecole_kaneohe_pt.png" >
-							<img src="illustrations/tous/5_2_ecole_kaneohe_pt.png" alt="point de l'école de Kaneohe" height="300">
+							<img src="illustrations/tous/5_2_ecole_kaneohe_pt.png" alt="point de l'école de Kaneohe" width="430">
 						</a>
 					</figure>
 					<p>Si vous ouvrez la table attributaire de la couche, vous pouvez voir une ligne correspondant au point que vous venez de créer.</p>
 					<p>Ajoutez d'autres points pour les écoles et postes de l'île.</p>
 					<figure>
 						<a href="illustrations/tous/5_2_tous_les_points.png" >
-							<img src="illustrations/tous/5_2_tous_les_points.png" alt="Carte avec toutes les écoles et postes numérisées" height="400">
+							<img src="illustrations/tous/5_2_tous_les_points.png" alt="Carte avec toutes les écoles et postes numérisées" width="500">
 						</a>
 					</figure>
 					<p><img class="icone" src="illustrations/tous/5_2_sauv_icone.png" alt="icône sauvegarder les modifications" >N'oubliez pas de sauvegarder vos modifications en sélectionnant la couche puis en cliquant sur l’icône <b>sauvegarder les modifications</b>.</p>
@@ -101,7 +101,7 @@
 					<div class="question">
 						<input type="checkbox" id="faq-1">
 						<p><label for="faq-1">Comment faire pour représenter les données comme dans la légende de la carte, les écoles sous forme de rond bleu et les postes de rond rouge ?</label></p>
-						<p class="reponse"><img src="illustrations/tous/5_2_style_categ.png" alt="fenêtre des propriétés de la couche, style catégorisé" height="450" ></p>
+						<p class="reponse"><img src="illustrations/tous/5_2_style_categ.png" alt="fenêtre des propriétés de la couche, style catégorisé" width="600" ></p>
 						<p class="reponse">Choisissez le style <b>catégorisé</b> sur la colonne <b>type</b>, cliquez sur <b>classer</b> puis double cliquez sur chacun des symboles pour les modifier à votre convenance. Le troisième symbole sera utilisé si certains points ne sont ni des écoles ni des postes. Cliquez sur <b>OK</b> pour valider et fermer la fenêtre.</p>
 					</div>
 				</div>
@@ -130,7 +130,7 @@
 						<p>Double-cliquez sur la case de la table à modifier. Vous pouvez ensuite modifier le texte de cette case.</p>
 						<figure>
                         	<a href="illustrations/tous/5_2_modif_donnees_attributaires.png" >
-                        		<img src="illustrations/tous/5_2_modif_donnees_attributaires.png" alt="Modification de données attributaires" height="130">
+                        		<img src="illustrations/tous/5_2_modif_donnees_attributaires.png" alt="Modification de données attributaires" width="110">
                         	</a>
                         </figure>
 					</div>
@@ -145,7 +145,11 @@
 				</ul>
 				<div class="manip">
 					<p><img class="icone" src="illustrations/tous/5_2_edition_icone.png" alt="icône basculer en mode édition">Sélectionnez votre couche dans la table des matières et cliquez sur l'icône <b>basculer en mode édition</b>.</p>
-					<img src="illustrations/tous/5_2_quitter_edition.png" alt="Fenêtre arrêter l'édition" >
+					<figure>
+					   <a href="illustrations/tous/5_2_quitter_edition.png">
+					       <img src="illustrations/tous/5_2_quitter_edition.png" alt="Fenêtre arrêter l'édition" width="480" >
+					   </a>
+					</figure>
 					<p>Une fenêtre apparaît vous demander si vous souhaitez :</p>
 					<ul>
 						<li><b>Fermer sans enregistrer :</b> quitte le mode édition sans sauvegarder vos modifications</li>
@@ -155,7 +159,9 @@
 					<p>Cliquez sur <b>Enregistrer</b>.</p>
 					<p>L'icône de crayon à côté de nom de la couche disparaît :</p>
 					<figure>
-						<img src="illustrations/tous/5_2_quitter_edition_couche.png" alt="nom de la couche, en mode édition (icône crayon) et hors mode édition" height="60">
+					   <a href="illustrations/tous/5_2_quitter_edition_couche.png" >
+						  <img src="illustrations/tous/5_2_quitter_edition_couche.png" alt="nom de la couche, en mode édition (icône crayon) et hors mode édition" width="400">
+					   </a>
 					</figure>
 				</div>
 				<p>Peut-être vous demandez-vous comment faire pour, comme dans l'image ci-dessus, représenter d'une manière les écoles (ronds bleus) et d'une autre les postes (rounds rouge) ? Procédez comme indiqué <a href="03_01_donnees_internet.php#III11a" >ici</a>, en allant dans les propriétés de la couche, rubrique Style, mode Catégorisé sur la colonne type.</p>

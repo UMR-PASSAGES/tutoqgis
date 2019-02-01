@@ -33,7 +33,7 @@
 				<p>Un champ de la couche de départ et un champ de la table contenant les données à joindre servent de <b>champs clé</b>. Ces champs doivent être de même type (texte, nombre) et contenir les mêmes données. Le logiciel se base sur le contenu de ces champs pour déterminer quel élément de la table est lié à quel élément de la couche.</p>
 				<figure>
 					<a href="illustrations/tous/8_1_principe_jointure_attrib.svg" >
-						<img src="illustrations/tous/8_1_principe_jointure_attrib.png" alt="principe d'une jointure attributaire" height="500">
+						<img src="illustrations/tous/8_1_principe_jointure_attrib.png" alt="principe d'une jointure attributaire" width="620">
 					</a>
 				</figure>
 				<p>Dans l'illustration ci-dessus, les données de départ sont :</p>
@@ -54,14 +54,14 @@
 					<p>Ajoutez également au projet la table <em class="data">pop_bhutan.csv</em> : pour cela, procédez comme pour ajouter une couche shapefile mais choisissez <b>Tous les fichiers</b> comme format de fichier :</p>
 					<figure>
 						<a href="illustrations/tous/8_1_ajout_csv.png" >
-							<img src="illustrations/tous/8_1_ajout_csv.png" alt="ajout d'un csv : choisir tous les fichiers comme format" height="350">
+							<img src="illustrations/tous/8_1_ajout_csv.png" alt="ajout d'un csv : choisir tous les fichiers comme format" width="550">
 						</a>
 					</figure>
 					<p>Vous pouvez également ajouter ce fichier via le <a href="01_02_info_geo.php#I21b">panneau Explorateur</a>.</p>
 					<p class="note">Le <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Comma-separated_values">format CSV</a> est un format texte contenant des colonnes séparées par un caractère délimiteur, habituellement la virgule, le point-virgule ou la tabulation.</p>
 					<p>Vous devez donc avoir dans QGIS ces deux données (notez l'icône de tableau pour le CSV) :</p>
 					<figure>
-						<img src="illustrations/tous/8_1_donnees_chargees.png" alt="la table et la couche dans la table des matières" height="60">
+						<img src="illustrations/tous/8_1_donnees_chargees.png" alt="la table et la couche dans la table des matières" width="180">
 					</figure>
 					<p>Ouvrez les deux tables attributaires.</p>
 					<div class="question">
@@ -72,13 +72,13 @@
 					<p>Allez dans les propriétés de la couche <em class="data">regions_bhutan</em>, rubrique <b>Jointure</b> :</p>
 					<figure>
 						<a href="illustrations/tous/8_1_proprietes_jointure.png" >
-							<img src="illustrations/tous/8_1_proprietes_jointure.png" alt="rubrique jointure des propriétés de la couche" height="320">
+							<img src="illustrations/tous/8_1_proprietes_jointure.png" alt="rubrique jointure des propriétés de la couche" width="600">
 						</a>
 					</figure>
 					<p>Cliquez sur le symbole <img class="iconemid" src="illustrations/tous/8_1_plus.png" alt="symbole + d'ajout de jointure" > pour ajouter une jointure :</p>
 					<figure>
 						<a href="illustrations/tous/8_1_jointure_fenetre.png" >
-							<img src="illustrations/tous/8_1_jointure_fenetre.png" alt="création d'une jointure : choix de la couche à joindre et des champs clés" height="350">
+							<img src="illustrations/tous/8_1_jointure_fenetre.png" alt="création d'une jointure : choix de la couche à joindre et des champs clés" width="500">
 						</a>
 					</figure>
 					<ul>
@@ -92,7 +92,7 @@
 					<p>Ouvrez la table attributaire de la couche  <em class="data">regions_bhutan.shp</em> : les données de la table ont été ajoutées (champ tab_POPEST95).</p>
 					<figure>
 						<a href="illustrations/tous/8_1_jointure_res.png">
-							<img src="illustrations/tous/8_1_jointure_res.png" alt="table attributaire de la couche regions_bhutan une fois les données de populations jointes" height="130">
+							<img src="illustrations/tous/8_1_jointure_res.png" alt="table attributaire de la couche regions_bhutan une fois les données de populations jointes" width="450">
 						</a>
 					</figure>
 				</div>

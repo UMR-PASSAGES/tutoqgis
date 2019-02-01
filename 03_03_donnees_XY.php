@@ -33,7 +33,7 @@
 					<p>Dans l'explorateur de votre ordinateur, ouvrez le fichier <em class="data">villes_bhutan_geonames.csv</em> situé dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b> à l'aide d'un éditeur de texte simple (<b>pas dans un tableur</b>) : par exemple, WordPad dans Windows, TextEdit sous Mac, gedit sous Ubuntu.</p>
 					<figure>
 						<a href="illustrations/tous/3_3_apercu_csv.png" >
-							<img src="illustrations/tous/3_3_apercu_csv.png" alt="capture d'écran du fichier CSV" height="240">
+							<img src="illustrations/tous/3_3_apercu_csv.png" alt="capture d'écran du fichier CSV" width="600">
 						</a>
 					</figure>
 				</div>
@@ -43,13 +43,13 @@
 						<input type="checkbox" id="faq-1">
 						<p><label for="faq-1">Combien de colonnes y a-t-il dans le fichier  <em class="data">villes_bhutan_geonames.csv</em> ?</label></p>
 						<p class="reponse">Le fichier comporte 9 colonnes : geonamesid, name, asciiname, latitude, longitude, country code, population, dem et modification date.</p>
-						<p class="reponse"><img src="illustrations/tous/3_3_csv_colonnes.png" alt="capture d'écran des données du CSV avec les noms de colonnes encadrés en rouge" height="45"></p>
+						<p class="reponse"><img src="illustrations/tous/3_3_csv_colonnes.png" alt="capture d'écran des données du CSV avec les noms de colonnes encadrés en rouge" width="600"></p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-2">
 						<p><label for="faq-2">Quelle est la latitude de la ville de Timphu?</label></p>
 						<p class="reponse">La latitude de la ville de Timphu est 27.46609 (la colonne "latitude" est la 4ème colonne : la réponse se trouve donc dans la 4ème colonne de la ligne correspondant à Timphu.</p>
-						<p class="reponse"><img src="illustrations/tous/3_3_lat_timphu.png" alt="capture d'écran des données du CSV avec la latitude de Timphu encadrée en rouge" height="120"></p>
+						<p class="reponse"><img src="illustrations/tous/3_3_lat_timphu.png" alt="capture d'écran des données du CSV avec la latitude de Timphu encadrée en rouge" width="460"></p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-3">
@@ -87,7 +87,7 @@
 						</p>
 						<figure>
 							<a href="illustrations/tous/2_4_options_sans_scr.png" >
-								<img src="illustrations/tous/2_4_options_sans_scr.png" alt="Options, rubrique SCR" height="350">
+								<img src="illustrations/tous/2_4_options_sans_scr.png" alt="Options, rubrique SCR" width="500">
 							</a>
 						</figure>
 						<p>Pour l'option <b>Quand une nouvelle couche est créée ou quand une couche est chargée sans SCR</b>, choisissez l'option <b>Demander le SCR</b> si ce n'est pas déjà fait. Cliquez sur <b>OK</b>.</p>
@@ -107,7 +107,7 @@
 					</p>
 					<figure>
 						<a href="illustrations/tous/3_3_ajout_csv_fenetre.png" >
-							<img src="illustrations/tous/3_3_ajout_csv_fenetre.png" alt="Fenêtre d'ajout d'une couche CSV" height="450">
+							<img src="illustrations/tous/3_3_ajout_csv_fenetre.png" alt="Fenêtre d'ajout d'une couche CSV" width="600">
 						</a>
 					</figure>
 					<ul>
@@ -121,7 +121,7 @@
 					<p>Zoomez sur la couche de points et ouvrez sa table attributaire :</p>
 					<figure>
 						<a href="illustrations/tous/3_3_visu_villes_bhutan.png" >
-							<img src="illustrations/tous/3_3_visu_villes_bhutan.png" alt="Visualisation des villes du bhutan et de leurs données attributaires sous QGIS" height="500" >
+							<img src="illustrations/tous/3_3_visu_villes_bhutan.png" alt="Visualisation des villes du bhutan et de leurs données attributaires sous QGIS" width="550" >
 						</a>
 					</figure>
 					<p>Les villes ont bien été ajoutées à QGIS sous la forme d'une couche de points.</p>
@@ -146,7 +146,7 @@
 				</p>
 				<figure>
 					<a href="illustrations/tous/3_3_sauvegarder_villes_fenetre.png" >
-						<img src="illustrations/tous/3_3_sauvegarder_villes_fenetre.png" alt="fenêtre de sauvegarde de la couche" height="450" >
+						<img src="illustrations/tous/3_3_sauvegarder_villes_fenetre.png" alt="fenêtre de sauvegarde de la couche" width="370" >
 					</a>
 				</figure>
 				<ul>

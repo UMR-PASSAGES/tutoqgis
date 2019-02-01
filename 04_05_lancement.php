@@ -39,7 +39,7 @@
 					<p>Maintenant que le type de transformation est renseignée, les erreurs pour chaque pixel ont été calculées dans la table des points de contrôle :</p>
 					<figure>
 						<a href="illustrations/tous/4_5_table_avec_erreurs.png" >
-							<img src="illustrations/tous/4_5_table_avec_erreurs.png" alt="Tables de points de contrôle une fois les erreurs par pixel calculées" height="175">
+							<img src="illustrations/tous/4_5_table_avec_erreurs.png" alt="Tables de points de contrôle une fois les erreurs par pixel calculées" width="620">
 						</a>
 					</figure>
 					<p>Comme indiqué dans la partie <a href="04_03_calage_carroyage.php#IV31" >IV.3.1</a> :</p>
@@ -94,7 +94,7 @@
 					<p class="manip">Ouvrez tout d'abord la carte PDF, qui se situe à l'emplacement que vous avez choisi précédemment.</p>
 					<figure>
 						<a href="illustrations/tous/4_5_carte.jpg" >
-							<img src="illustrations/tous/4_5_carte.jpg" alt="carte PDF issue du géoréférencement" height="400" >
+							<img src="illustrations/tous/4_5_carte.jpg" alt="carte PDF issue du géoréférencement" width="550" >
 						</a>
 					</figure>
 					<p>Cette carte montre le déplacement des différents points de calage. Attention, ce déplacement n'est pas représenté à l'échelle de l'image, mais selon une échelle en pixels située en bas à gauche de l'image.</p>
@@ -118,7 +118,7 @@
 					<p>Les deux couches doivent normalement se superposer (ajustez éventuellement le style de la couche de pays).</p>
 					<figure>
 						<a href="illustrations/tous/4_5_superposition.png">
-							<img src="illustrations/tous/4_5_superposition.png" alt="superposition de la couche de pays et de l'image calée" height="350" >
+							<img src="illustrations/tous/4_5_superposition.png" alt="superposition de la couche de pays et de l'image calée" width="550" >
 						</a>
 					</figure>
 					<p>Félicitations, votre géoréférencement a fonctionné ! Vous pouvez si vous le voulez découvrir l'autre méthode pour géoréférencer, en se basant sur une couche déjà calée, dans le chapitre suivant.</p>

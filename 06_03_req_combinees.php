@@ -34,19 +34,19 @@
 					<p> "POPULATION" > 10</p>
 					<figure>
 						<a href="illustrations/tous/6_3_sup10000hab.png" >
-							<img src="illustrations/tous/6_3_sup10000hab.png" alt="Communes de + de 10 000 habitants sélectionnées" height="300" >
+							<img src="illustrations/tous/6_3_sup10000hab.png" alt="Communes de + de 10 000 habitants sélectionnées" width="400" >
 						</a>
 					</figure>
 					<p>Tapez ensuite la requête suivante, pour sélectionner les communes du Pas-de-Calais...</p>
 					<p> "NOM_DEPT"  =  'PAS-DE-CALAIS' </p>
 					<p>...Mais cette fois-ci, au lieu de cliquer sur <b>Sélection</b>, sélectionnez dans la liste <b>Sélectionner depuis la sélection</b> :</p>
 					<figure>
-						<img src="illustrations/tous/6_3_selection_liste.png" alt="liste accessible à partir du bouton sélection" height="130" >
+						<img src="illustrations/tous/6_3_selection_liste.png" alt="liste accessible à partir du bouton sélection" width="270" >
 					</figure>
 					<p>Ainsi, cette deuxième requête s'appliquera uniquement aux communes déjà sélectionnées : les communes du Pas-de-Calais seront sélectionnées parmi les communes de + de 10 000 habitants.</p>
 					<figure>
 						<a href="illustrations/tous/6_3_sup10000hab_NPDC.png" >
-							<img src="illustrations/tous/6_3_sup10000hab_NPDC.png" alt="Communes de + de 10 000 habitants et du département du Pas-de-Calais sélectionnées" height="300" >
+							<img src="illustrations/tous/6_3_sup10000hab_NPDC.png" alt="Communes de + de 10 000 habitants et du département du Pas-de-Calais sélectionnées" width="400" >
 						</a>
 					</figure>
 					<div class="question">
@@ -74,19 +74,19 @@
 					.</p>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_installations.png" >
-							<img src="illustrations/tous/6_3_communes_installations.png" alt="communes avec installation(s)) sélectionnées" height="300" >
+							<img src="illustrations/tous/6_3_communes_installations.png" alt="communes avec installation(s)) sélectionnées" width="450" >
 						</a>
 					</figure>
 					<p>Une fois cette requête effectuée, la case <b>selected geometries</b> (74 dans notre cas) est automatiquement cochée. En laissant cette case cochée, la requête suivante ne portera que sur les communes avec installation. Il ne vous reste donc plus qu'à sélectionner les communes avec cours d'eau :</p>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_inters_CE.png" >
-							<img src="illustrations/tous/6_3_communes_inters_CE.png" alt="Fenêtre de requête spatiale : sélection à partir des communes avec installation des communes avec cours d'eau" height="400" >
+							<img src="illustrations/tous/6_3_communes_inters_CE.png" alt="Fenêtre de requête spatiale : sélection à partir des communes avec installation des communes avec cours d'eau" width="330" >
 						</a>
 					</figure>
 					<p>Au final, les 40 communes sélectionnées sont donc celles avec installation et cours d'eau :</p>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_installations_CE.png" >
-							<img src="illustrations/tous/6_3_communes_installations_CE.png" alt="communes avec installation et cours d'eau sélectionnées" height="300" >
+							<img src="illustrations/tous/6_3_communes_installations_CE.png" alt="communes avec installation et cours d'eau sélectionnées" width="420" >
 						</a>
 					</figure>
 				</div>
@@ -101,7 +101,7 @@
 					<p>Ensuite, au moyen d'une requête spatiale, sélectionnez parmi ces communes celles avec installation :</p>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_inf100hab_installation.png" >
-							<img src="illustrations/tous/6_3_communes_inf100hab_installation.png" alt="communes avec installation et cours d'eau sélectionnées" height="400" >
+							<img src="illustrations/tous/6_3_communes_inf100hab_installation.png" alt="communes avec installation et cours d'eau sélectionnées" width="300" >
 						</a>
 					</figure>
 					<p>Au final, une seule commune reste sélectionnée : Riencourt-Les-Bapaumes dans le Pas-de-Calais.</p>

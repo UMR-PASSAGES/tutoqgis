@@ -71,7 +71,7 @@
 						.</p>
 						<figure>
 							<a href="illustrations/tous/4_2_activation_georeferenceur.png" >
-								<img src="illustrations/tous/4_2_activation_georeferenceur.png" alt="Activation de l'extension géoréférenceur" height="370">
+								<img src="illustrations/tous/4_2_activation_georeferenceur.png" alt="Activation de l'extension géoréférenceur" width="600">
 							</a>
 						</figure>
 						<p>Allez dans la rubrique <b>installées</b> pour voir la liste des extensions installées, tapez "géo" (attention, l'accent est important) dans <b>Rechercher</b> pour limiter les résultats, et cochez la case de l'extension <b>Géoréférenceur GDAL</b>.</p>

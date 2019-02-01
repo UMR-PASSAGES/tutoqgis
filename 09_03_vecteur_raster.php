@@ -51,7 +51,7 @@
 					<p>Rendez-vous dans le menu <b>Extension &#8594; Installer/gérer les extensions</b> :</p>
 					<figure>
 						<a href="illustrations/tous/9_3_install_ext.png">
-							<img src="illustrations/tous/9_3_install_ext.png" alt="installation de l'extension point sampling tool" height="380" >
+							<img src="illustrations/tous/9_3_install_ext.png" alt="installation de l'extension point sampling tool" width="600" >
 						</a>
 					</figure>
 					<p>Dans la rubrique <b>En obtenir plus</b>, tapez <b>sampling</b> dans la partie filtre : plusieurs extensions sont trouvées. Lisez leurs descriptifs ; <b>Point sampling tool</b> semble correspondre à notre besoin. Installez cette extension.</p>
@@ -72,7 +72,7 @@
 					<p><b>Onglet General :</b></p>
 					<figure>
 						<a href="illustrations/tous/9_3_PST_fenetre_01.png">
-							<img src="illustrations/tous/9_3_PST_fenetre_01.png" alt="Fenêtre de point sampling tool, onglet general" height="450" >
+							<img src="illustrations/tous/9_3_PST_fenetre_01.png" alt="Fenêtre de point sampling tool, onglet general" width="440" >
 						</a>
 					</figure>
 					<ul>
@@ -85,7 +85,7 @@
 					<p>Avant de cliquer sur OK, passez à <b>l'onglet Champs :</b></p>
 					<figure>
 						<a href="illustrations/tous/9_3_PST_fenetre_02.png">
-							<img src="illustrations/tous/9_3_PST_fenetre_02.png" alt="Fenêtre de point sampling tool, onglet champs" height="450" >
+							<img src="illustrations/tous/9_3_PST_fenetre_02.png" alt="Fenêtre de point sampling tool, onglet champs" width="440" >
 						</a>
 					</figure>
 					<p>Si vous avez bien sélectionné les deux couches dans l'onglet général, vous voyez ici les champs de ces deux couches : id pour les points, et la pente pour le raster. Vous pouvez renommer les champs qui seront créés : renommez par exemple <b>pente_jama</b> en <b>pente</b>.</p>
@@ -95,7 +95,7 @@
 					<p>Ouvrez sa table attributaire : les 2 champs <b>id</b> et <b>pente</b> sont présents. La pente est renseignée pour chacun des points.</p>
 					<figure>
 						<a href="illustrations/tous/9_3_points_pente_table.png">
-							<img src="illustrations/tous/9_3_points_pente_table.png" alt="table attributaire de la couche créée avec Point sampling tool, avec les 2 champs id et pente" height="400" >
+							<img src="illustrations/tous/9_3_points_pente_table.png" alt="table attributaire de la couche créée avec Point sampling tool, avec les 2 champs id et pente" width="170" >
 						</a>
 					</figure>
 				</div>

@@ -43,7 +43,7 @@
 						 : la fenêtre du gestionnaire d'extensions s'ouvre.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_install_quickmapservices.png" >
-								<img src="illustrations/tous/4_6_install_quickmapservices.png" alt="Installation de QuickMapServices" height="310">
+								<img src="illustrations/tous/4_6_install_quickmapservices.png" alt="Installation de QuickMapServices" width="600">
 							</a>
 						</figure>
 						<p>Dans la rubrique <b>Tout</b>, tapez &#171; quickmap &#187; dans la partie <b>Rechercher</b> pour limiter les résultats, sélectionner <b>QuickMapServices</b> puis cliquez sur <b>Installer l'extension</b> en bas à droite de la fenêtre.</p>
@@ -81,7 +81,7 @@
 						<p>Commençons par installer l'extension GeoSearch : procédez comme pour QuickMapServices, via le <b>menu Extensions &#8594; Installer/Gérer les extensions</b>.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_install_geosearch.png">
-								<img src="illustrations/tous/4_6_install_geosearch.png" alt="Installation de l'extension GeoSearch" height="300">
+								<img src="illustrations/tous/4_6_install_geosearch.png" alt="Installation de l'extension GeoSearch" width="600">
 							</a>
 						</figure>
 						<p>GeoSearch est ensuite accessible via le 
@@ -92,14 +92,14 @@
                             </a>
                         <figure>
 							<a href="illustrations/tous/4_6_geosearch.png">
-								<img src="illustrations/tous/4_6_geosearch.png" alt="Utilisation de l'extension GeoSearch" height="450">
+								<img src="illustrations/tous/4_6_geosearch.png" alt="Utilisation de l'extension GeoSearch" width="500">
 							</a>
 						</figure>
 						<p>Dans la zone <b>Address</b>, tapez : <b>Doncaster East, Melbourne, Australia</b> puis cliquez sur le bouton <b>Search</b> : une ligne correspondant à ce lieu apparaît dans la liste en bas de la fenêtre.</p>
 						<p>En double-cliquant sur cette ligne, vous centrez la carte sur ce lieu ; en utilisant les outils de zoom et GeoSearch, vous pouvez donc vous rapprocher de la zone correspondant à notre carte à caler :</p>
 						<figure>
 						  <a href="illustrations/tous/4_6_osm_zoom1.png" >
-							<img src="illustrations/tous/4_6_osm_zoom1.png" alt="Données OSM : Melbourne" height="300">
+							<img src="illustrations/tous/4_6_osm_zoom1.png" alt="Données OSM : Melbourne" width="350">
 						  </a>
 						</figure>
 					</div>
@@ -109,7 +109,7 @@
 						<p>Zoomez maintenant sur Doncaster East (pour vous aider : <a class="ext" target="_blank" href="http://www.openstreetmap.org/relation/2390038#map=13/-37.7776/145.1615" >carte OpenStreetMap de Doncaster Est</a>).</p>
 						<figure>
 							<a href="illustrations/tous/4_6_osm_doncaster_east.png">
-								<img src="illustrations/tous/4_6_osm_doncaster_east.png" alt="Doncaster East : données OSM et carte à caler en vis à vis" height="300">
+								<img src="illustrations/tous/4_6_osm_doncaster_east.png" alt="Doncaster East : données OSM et carte à caler en vis à vis" width="600">
 							</a>
 						</figure>
 					</div>
@@ -122,25 +122,25 @@
 						<p>Lorsque QGIS vous demande dans quel SCR est cette image, choisissez le <b>WGS84 / Pseudo-Mercator EPSG:3857</b>.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_scr_3857.png">
-								<img src="illustrations/tous/4_6_scr_3857.png" alt="choix du scr wgs84 pseudo-mercator epsg:3857" height="500">
+								<img src="illustrations/tous/4_6_scr_3857.png" alt="choix du scr wgs84 pseudo-mercator epsg:3857" width="350">
 							</a>
 						</figure>
 						<p>Cliquez sur une intersection de routes, par exemple entre Reynolds Road et Blackburn Road. La fenêtre de saisie des coordonnées apparaît : cliquez sur le bouton <b>Depuis le canevas de la carte</b>.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_depuis_canevas.png">
-								<img src="illustrations/tous/4_6_depuis_canevas.png" alt="fenêtre de saisie des coordonnées" height="170">
+								<img src="illustrations/tous/4_6_depuis_canevas.png" alt="fenêtre de saisie des coordonnées" width="570">
 							</a>
 						</figure>
 						<p>Dans la fenêtre de QGIS, cliquez sur cette intersection sur les données OSM : les coordonnées de la fenêtre de saisie sont automatiquement remplies avec les coordonnées du point sur lequel vous venez de cliquer.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_coord_remplies.png">
-								<img src="illustrations/tous/4_6_coord_remplies.png" alt="les coordonnées sont remplies en fonction du point cliqué dans QGIS" height="170">
+								<img src="illustrations/tous/4_6_coord_remplies.png" alt="les coordonnées sont remplies en fonction du point cliqué dans QGIS" width="600">
 							</a>
 						</figure>
 						<p>Cliquez sur <b>OK</b>.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_point_0.png">
-								<img src="illustrations/tous/4_6_point_0.png" alt="point 0, dans la fenêtre du géoréférenceur et dans celle de QGIS" height="300">
+								<img src="illustrations/tous/4_6_point_0.png" alt="point 0, dans la fenêtre du géoréférenceur et dans celle de QGIS" width="570">
 							</a>
 							<figcaption>Premier point : à gauche, dans la fenêtre de QGIS (données OSM) et à droite, dans la fenêtre du géoréférenceur.</figcaption>
 						</figure>
@@ -151,7 +151,7 @@
 						<p>Une fois le calage terminé, vous pouvez en vérifier la précision en donnant de la transparence à votre image calée (dans les propriétés de la couche, rubrique Transparence) :</p>
 						<figure>
 							<a href="illustrations/tous/4_6_superposition.png">
-								<img src="illustrations/tous/4_6_superposition.png" alt="Superposition de l'image calée et des données OSM" height="500">
+								<img src="illustrations/tous/4_6_superposition.png" alt="Superposition de l'image calée et des données OSM" width="500">
 							</a>
 						</figure>
 					</div>

@@ -36,12 +36,12 @@
 					<p>Pour sélectionner le département du Nord (59), vous pouvez cliquez sur le numéro de la ligne correspondante ou bien directement sur ce département sur la carte. Vous pouvez aussi utiliser une requête attributaire.</p>
 				<div class="manip">
 					<p>Dans la barre d'outils située en haut de la table attributaire, cliquez sur l'icône <b>Sélectionne les entités en utilisant une expression</b>.</p>
-					<img src="illustrations/tous/6_1_BO_icone_selection.png" alt="barre d'outils de la table attributaire avec icône sélection entourée en rouge" height="52">
+					<img src="illustrations/tous/6_1_BO_icone_selection.png" alt="barre d'outils de la table attributaire avec icône sélection entourée en rouge" width="600">
 					<p class="note">Cette icône est aussi accessible dans la barre d'outils <b>attributs</b>, à condition que vous ayez au préalable sélectionné la couche dans la table des matières.</p>
 					<p>La fenêtre de requête attributaire s'ouvre :</p>
 					<figure>
 						<a href="illustrations/tous/6_1_selection_fenetre.png" >
-							<img src="illustrations/tous/6_1_selection_fenetre.png" alt="fenêtre de sélection, avec une requête simple" height="410">
+							<img src="illustrations/tous/6_1_selection_fenetre.png" alt="fenêtre de sélection, avec une requête simple" width="600">
 						</a>
 					</figure>
 					<p>Pour faire une requête simple, par exemple pour sélectionner le département du Nord :</p>
@@ -58,12 +58,12 @@
 					<p>La fenêtre de requête attributaire ne se ferme pas automatiquement ; vous pouvez ou la fermer en cliquant sur le bouton <b>Fermer</b> ou bien simplement la déplacer pour vérifier sur la carte le résultat de votre sélection.</p>
 					<figure>
 						<a href="illustrations/tous/6_1_selection_nord.png" >
-							<img src="illustrations/tous/6_1_selection_nord.png" alt="carte avec le département du Nord sélectionné" height="300">
+							<img src="illustrations/tous/6_1_selection_nord.png" alt="carte avec le département du Nord sélectionné" width="300">
 						</a>
 					</figure>
 					<p>Vous pouvez lire le nombre d'éléments sélectionnés en haut de la table attributaire :</p>
 					<figure>
-						<img src="illustrations/tous/6_1_nb_selectionnes.png" alt="ligne indiquant le nombre d'éléments sélectionnés" height="57">
+						<img src="illustrations/tous/6_1_nb_selectionnes.png" alt="ligne indiquant le nombre d'éléments sélectionnés" width="550">
 					</figure>
 				</div>
 				<p>Vous venez d'effectuer une requête attributaire simple. Il est important de comprendre qu'une requête ne modifie pas les données, elle les sélectionne simplement.</p>
@@ -77,7 +77,7 @@
 					<p>Votre département du Nord étant toujours sélectionné, faites un clic droit sur la couche de départements dans la table des matières et choisissez <b>Enregistrer sous...</b> :</p>
 					<figure>
 						<a href="illustrations/tous/6_1_sauv_selection_fenetre.png" >
-							<img src="illustrations/tous/6_1_sauv_selection_fenetre.png" alt="fenêtre pour sauvegarder la sélection" height="480">
+							<img src="illustrations/tous/6_1_sauv_selection_fenetre.png" alt="fenêtre pour sauvegarder la sélection" width="410">
 						</a>
 					</figure>
 					<ul>
@@ -116,7 +116,7 @@
 					<p><img class="icone" src="illustrations/tous/6_1_selection_attr_icone.png" alt="icône de sélection de la table attributaire" >Nous allons faire une requête pour sélectionner les communes de + de 10 000 habitants. Ouvrez la fenêtre de requête pour la couche de communes :</p>
 					<figure>
 						<a href="illustrations/tous/6_1_popsup10000.png" >
-							<img src="illustrations/tous/6_1_popsup10000.png" alt="fenêtre de sélection avec une requête pour les communes de population supérieure à 10" height="410">
+							<img src="illustrations/tous/6_1_popsup10000.png" alt="fenêtre de sélection avec une requête pour les communes de population supérieure à 10" width="600">
 						</a>
 					</figure>
 						<ul>
@@ -127,7 +127,7 @@
 					<p>Une fois votre requête tapée : <b>"POPULATION" > 10</b>, cliquez sur le bouton <b>Sélection</b> pour voir le résultat :</p>
 					<figure>
 						<a href="illustrations/tous/6_1_popsup10000_res.png" >
-							<img src="illustrations/tous/6_1_popsup10000_res.png" alt="résultat de la requête pour les communes de population supérieure à 10" height="300">
+							<img src="illustrations/tous/6_1_popsup10000_res.png" alt="résultat de la requête pour les communes de population supérieure à 10" width="450">
 						</a>
 					</figure>
 				</div>
@@ -135,7 +135,7 @@
 				<p>Les opérateurs qu'on voit en haut à gauche de la fenêtre de sélection (=, +, - ...) ne représentent qu'une petite partie des opérateurs disponibles ; vous pouvez tous les retrouver dans la catégorie <b>Opérateurs</b> de la colonne du milieu. En cliquant sur un opérateur, vous pouvez lire l'aide dans la partie de droite :</p>
 				<figure>
 					<a href="illustrations/tous/6_1_liste_operateurs.png" >
-						<img src="illustrations/tous/6_1_liste_operateurs.png" alt="liste des opérateurs avec aide pour l'opérateur <>" height="380">
+						<img src="illustrations/tous/6_1_liste_operateurs.png" alt="liste des opérateurs avec aide pour l'opérateur <>" width="500">
 					</a>
 				</figure>
 				<p>Parmi ces opérateurs se trouvent par exemple <b>LIKE</b> et <b>ILIKE</b>. L'opérateur <b>LIKE</b> permet de comparer une chaîne de caractère à une autre chaîne qui peut utiliser le caractère joker <b>%</b>.</p>
@@ -146,7 +146,7 @@
 					<p>Ouvrez la fenêtre de sélection pour la couche de communes. Écrivez la requête suivante : <b>"NOM_COMM" LIKE '%IN'</b> (soit en la tapant à la main soit en double-cliquant sur les différents éléments).</p>
 					<figure>
 						<a href="illustrations/tous/6_1_nomfinitIN_res.png" >
-							<img src="illustrations/tous/6_1_nomfinitIN_res.png" alt="résultat de la requête pour les communes dont le nom se termine par IN" height="300">
+							<img src="illustrations/tous/6_1_nomfinitIN_res.png" alt="résultat de la requête pour les communes dont le nom se termine par IN" width="450">
 						</a>
 					</figure>
 				</div>

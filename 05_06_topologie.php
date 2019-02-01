@@ -43,19 +43,19 @@
 					<p>Par exemple, on peut décider qu'il ne doit y avoir aucune superposition de polygones dans une couche :</p>
 					<figure>
 						<a href="illustrations/tous/5_6_overlap.png" >
-							<img src="illustrations/tous/5_6_overlap.png" alt="deux polygones se superposant en partie" height="150">
+							<img src="illustrations/tous/5_6_overlap.png" alt="deux polygones se superposant en partie" width="300">
 						</a>
 					</figure>
 					<p>Ou bien qu'il ne doit pas y avoir de trous entre les polygones :</p>
 					<figure>
 						<a href="illustrations/tous/5_6_gap.png" >
-							<img src="illustrations/tous/5_6_gap.png" alt="deux polygones avec un trou entre les deux" height="150">
+							<img src="illustrations/tous/5_6_gap.png" alt="deux polygones avec un trou entre les deux" width="300">
 						</a>
 					</figure>
 					<p>Les règles de topologie peuvent aussi mettre en jeu plusieurs couches. Par exemple, tous les points d'une couche doivent être dans un polygone d'une autre couche :</p>
 					<figure>
 						<a href="illustrations/tous/5_6_pts_dans_polygones.png" >
-							<img src="illustrations/tous/5_6_pts_dans_polygones.png" alt="des points dans des polygones sauf deux" height="200">
+							<img src="illustrations/tous/5_6_pts_dans_polygones.png" alt="des points dans des polygones sauf deux" width="300">
 						</a>
 					</figure>
 					<p>Il est bien sûr possible de combiner plusieurs règles. Vous trouverez dans le <a class="ext" target="_blank" href="http://docs.qgis.org/2.0/fr/docs/user_manual/plugins/plugins_topology_checker.html" >manuel de QGIS</a> la description d'un certain nombre de règles de topologie.</p>
@@ -82,7 +82,7 @@
 						:</p>
 						<figure>
 							<a href="illustrations/tous/5_6_verif_fenetre.png" >
-								<img src="illustrations/tous/5_6_verif_fenetre.png" alt="fenêtre de validation de la géométrie" height="400">
+								<img src="illustrations/tous/5_6_verif_fenetre.png" alt="fenêtre de validation de la géométrie" width="320">
 							</a>
 						</figure>
 						<p>Sélectionnez la couche <em class="data">zones_oahu</em> et cliquez sur <b>OK</b> : les éventuelles erreurs sont listées, un double clic sur une erreur zoome dessus.</p>
@@ -102,20 +102,20 @@
 						:</p>
 						<figure>
 							<a href="illustrations/tous/5_6_veriftopo_fenetre.png" >
-								<img src="illustrations/tous/5_6_veriftopo_fenetre.png" alt="fenêtre (intégrée) du vérificateur de topologie" height="220">
+								<img src="illustrations/tous/5_6_veriftopo_fenetre.png" alt="fenêtre (intégrée) du vérificateur de topologie" width="400">
 							</a>
 						</figure>
 						<p>Cliquez sur le bouton <b>Configuration</b> pour ajouter ou supprimer des règles de topologie. Nous allons ajouter une règle pour interdire les superpositions de polygones dans la couche <em class="data">zones_oahu</em>.</p>
 						<figure>
 							<a href="illustrations/tous/5_6_regle_fenetre.png" >
-								<img src="illustrations/tous/5_6_regle_fenetre.png" alt="fenêtre de gestion des règles de topologie" height="250">
+								<img src="illustrations/tous/5_6_regle_fenetre.png" alt="fenêtre de gestion des règles de topologie" width="430">
 							</a>
 						</figure>
 						<p>Sélectionnez la couche <b>zones_oahu</b> dans la liste déroulante, puis la propriété <b>ne doit pas se superposer</b> et cliquez enfin sur le bouton <b>Ajouter une règle</b>. Cliquez sur <b>OK</b>.</p>
 						<p>Pour visualiser les erreurs à cette règle, cliquez sur le bouton <b>Valider tout</b> du vérificateur de topologie.</p>
 						<figure>
 							<a href="illustrations/tous/5_6_veriftopo_erreurs.png" >
-								<img src="illustrations/tous/5_6_veriftopo_erreurs.png" alt="fenêtre du vérificateur de topologie, pas d'erreurs" height="220">
+								<img src="illustrations/tous/5_6_veriftopo_erreurs.png" alt="fenêtre du vérificateur de topologie, pas d'erreurs" width="400">
 							</a>
 						</figure>
 						<p>La liste des éventuelles erreurs apparaît ; il est possible de zoomer sur une erreur en double-cliquant sur la ligne correspondante.</p>

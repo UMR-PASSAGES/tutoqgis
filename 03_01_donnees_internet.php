@@ -39,7 +39,7 @@
 						<p>Pour cela, rendez-vous sur le site <b>GADM</b>, à la page de téléchargement des limites administratives par pays : <a class="ext" target="_blank" href="https://www.gadm.org/download_country_v3.html">https://www.gadm.org/download_country_v3.html</a></p>
 						<figure>
 							<a href="illustrations/tous/3_1_gadm.png" >
-								<img src="illustrations/tous/3_1_gadm.png" alt="téléchargement des données GADM sur le Kenya" height="300">
+								<img src="illustrations/tous/3_1_gadm.png" alt="téléchargement des données GADM sur le Kenya" width="400">
 							</a>
 						</figure>
 						<p>Choisissez le <b>Kenya</b> dans la liste déroulante, cliquez sur <b>Shapefile</b>. Enregistrez le fichier ZIP sur votre ordinateur puis décompressez-le.</p>
@@ -57,13 +57,13 @@
 						</p>
 						<figure>
 							<a href="illustrations/tous/3_1_style_categorise.png" >
-								<img src="illustrations/tous/3_1_style_categorise.png" alt="Style de couche : catégorisé" height="450" >
+								<img src="illustrations/tous/3_1_style_categorise.png" alt="Style de couche : catégorisé" width="600" >
 							</a>
 						</figure>
 						<p>Cliquez sur <b>Appliquer</b> pour voir les changements (ou bien cliquez sur OK pour appliquer les changements + fermer la fenêtre) : vous pouvez voir les régions du Kenya. </p>
 						<figure>
 							<a href="illustrations/tous/3_1_kenya_regions.png" >
-								<img src="illustrations/tous/3_1_kenya_regions.png" alt="résultat de la catégorisation : on voit les régions" height="300">
+								<img src="illustrations/tous/3_1_kenya_regions.png" alt="résultat de la catégorisation : on voit les régions" width="300">
 							</a>
 						</figure>
 						<p>Vous venez de réaliser votre première analyse thématique!</p>
@@ -83,13 +83,13 @@
 						<p>Vous pouvez par exemple y rechercher les cours d'eau du Kenya. Tapez <b>rivers Kenya</b> dans la rubrique <b>WHAT?</b>, dans la colonne gauche de la page, puis sur le bouton <b>Search</b></p>
 						<figure>
 							<a href="illustrations/tous/3_1_fao.png" >
-								<img src="illustrations/tous/3_1_fao.png" alt="recherche des cours d'eau du Kenya sur le site de la FAO" height="340">
+								<img src="illustrations/tous/3_1_fao.png" alt="recherche des cours d'eau du Kenya sur le site de la FAO" width="500">
 							</a>
 						</figure>
 						<p>Prenez connaissance des métadonnées de  <b>Rivers of Kenya - AFRICOVER</b> et téléchargez ces données. Affichez ensuite la couche correspondante <em class="data">ke-rivers.shp</em> dans QGIS.</p>
 						<figure>
 							<a href="illustrations/tous/3_1_reg_courseau_kenya.png" >
-								<img src="illustrations/tous/3_1_reg_courseau_kenya.png" alt="superposition des cours d'eau et des régions du Kenya" height="400" >
+								<img src="illustrations/tous/3_1_reg_courseau_kenya.png" alt="superposition des cours d'eau et des régions du Kenya" width="350" >
 							</a>
 						</figure>
 						<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
@@ -107,14 +107,14 @@
 				<p>rendez-vous sur <a class="ext" target="_blank" href="http://dwtkns.com/srtm/">http://dwtkns.com/srtm/</a> et cliquez sur une des cases recouvrant le Kenya (par exemple la dalle <b>srtm_44_12</b>) :</p>
 				<figure>
 					<a href="illustrations/tous/3_1_srtm_kenya.png" >
-						<img src="illustrations/tous/3_1_srtm_kenya.png" alt="téléchargement d'une dalle du SRTM" height="350">
+						<img src="illustrations/tous/3_1_srtm_kenya.png" alt="téléchargement d'une dalle du SRTM" width="350">
 					</a>
 				</figure>
 				<p>Téléchargez la dalle au format GeoTIFF, dézippez ensuite le fichier obtenu.</p>
 				<p><img class="iconemid" src="illustrations/tous/3_1_ajout_raster_icone.png" alt="Icône ajout couche raster">Ajoutez le fichier TIF téléchargé au moyen de l'icône <b>Ajouter une couche raster</b>.</p>
 				<figure>
 					<a href="illustrations/tous/3_1_reg_courseau_srtm_kenya.png" >
-						<img src="illustrations/tous/3_1_reg_courseau_srtm_kenya.png" alt="superposition des cours d'eau, des régions et du SRTM" height="400" >
+						<img src="illustrations/tous/3_1_reg_courseau_srtm_kenya.png" alt="superposition des cours d'eau, des régions et du SRTM" width="350" >
 					</a>
 				</figure>
 				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>

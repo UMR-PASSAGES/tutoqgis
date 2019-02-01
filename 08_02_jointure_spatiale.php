@@ -33,7 +33,7 @@
 				<p>Notez bien que comme pour une jointure attributaire, les données qui seront jointes sont toujours les données attributaires.</p>
 				<figure>
 					<a href="illustrations/tous/8_2_principe_jointure_spatiale.svg" >
-						<img src="illustrations/tous/8_2_principe_jointure_spatiale.svg" alt="principe d'une jointure spatiale" height="700">
+						<img src="illustrations/tous/8_2_principe_jointure_spatiale.svg" alt="principe d'une jointure spatiale" width="620">
 					</a>
 				</figure>
 				<p>Dans l'exemple ci-dessus, les deux couches de départ sont une couche de département et une couche de chef-lieux. Les données attributaires des chef-lieux (leur nom, code et coordonnées) sont jointes aux départements en se basant sur leur position : <b>chaque département récupère les données du chef-lieu intersectant ce département</b>.</p>
@@ -56,7 +56,7 @@
 						:</p>
 						<figure>
 							<a href="illustrations/tous/8_2_join_fenetre.png" >
-								<img src="illustrations/tous/8_2_join_fenetre.png" alt="fenêtre de jointure spatiale" height="450">
+								<img src="illustrations/tous/8_2_join_fenetre.png" alt="fenêtre de jointure spatiale" width="500">
 							</a>
 						</figure>
 						<p>Notez que cet outil ne propose pas le choix de l'opérateur (intersecte, contient, est disjoint...). L'opérateur intersecte sera toujours utilisé.</p>
@@ -70,12 +70,12 @@
 						<p>Dans cette boîte à outils, en <b>mode avancé</b> (liste déroulante en bas de la boîte), rubrique <b>Géotraitements QGIS </b> &#8594; <b>Vector general tools</b> &#8594; <b>Join attributes by location</b> :</p>
 						<figure>
 							<a href="illustrations/tous/8_2_join_processing.png" >
-								<img src="illustrations/tous/8_2_join_processing.png" alt="emplacement de l'outil de jointure spatiale dans la boîte à outils Traitement" height="350">
+								<img src="illustrations/tous/8_2_join_processing.png" alt="emplacement de l'outil de jointure spatiale dans la boîte à outils Traitement" width="350">
 							</a>
 						</figure>
 						<figure>
 							<a href="illustrations/tous/8_2_join_processing_fenetre.png" >
-								<img src="illustrations/tous/8_2_join_processing_fenetre.png" alt="fenêtre de l'outil de jointure spatiale de la boîte à outils Traitement" height="550">
+								<img src="illustrations/tous/8_2_join_processing_fenetre.png" alt="fenêtre de l'outil de jointure spatiale de la boîte à outils Traitement" width="400">
 							</a>
 						</figure>
 						<p>Au contraire de l'outil précédent, il est ici possible de choisir l'opérateur spatial. C'est donc cet outil que nous utiliserons par la suite.</p>
@@ -106,7 +106,7 @@
 					<p>Choisissez les paramètres de la jointure spatiale :</p>
 					<figure>
 						<a href="illustrations/tous/8_2_join_fenetre_kenya.png" >
-							<img src="illustrations/tous/8_2_join_fenetre_kenya.png" alt="choix des paramètres pour la jointure des écoles aux zones du district de Nakuru" height="550" >
+							<img src="illustrations/tous/8_2_join_fenetre_kenya.png" alt="choix des paramètres pour la jointure des écoles aux zones du district de Nakuru" width="450" >
 						</a>
 					</figure>
 					<p>Le nombre d'écoles dans la zone sera automatiquement calculé à partir du moment où vous choisissez l'option <b>Take summary of intersected features</b>. Vous pouvez choisir de ne calculer aucune statistique.</p>
@@ -115,7 +115,7 @@
 					<p><img class="icone" src="illustrations/tous/8_2_id_icone.png" alt="icône identifier les entités" >En lisant les informations par exemple de la zone de Bahati, on peut lire que cette zone comporte 22 écoles :</p>
 					<figure>
 						<a href="illustrations/tous/8_2_bahati_id.png" >
-							<img src="illustrations/tous/8_2_bahati_id.png" alt="résultat de l'identification des entités sur la zone de Bahati : 22 écoles" height="320" >
+							<img src="illustrations/tous/8_2_bahati_id.png" alt="résultat de l'identification des entités sur la zone de Bahati : 22 écoles" width="600" >
 						</a>
 					</figure>
 				</div>
@@ -128,7 +128,7 @@
 					<p>Testez-le, avec les mêmes paramètres que pour les écoles secondaires du Kenya : vous devriez obtenir les nombres de départements suivants par région :</p>
 					<figure>
 						<a href="illustrations/tous/8_2_reg_join_depts.png" >
-							<img src="illustrations/tous/8_2_reg_join_depts.png" alt="nb de départements par région, tel que calculé par une jointure spatiale" height="550" >
+							<img src="illustrations/tous/8_2_reg_join_depts.png" alt="nb de départements par région, tel que calculé par une jointure spatiale" width="600" >
 						</a>
 					</figure>
 				</div>

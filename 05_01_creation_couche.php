@@ -26,7 +26,7 @@
 				<br>
 				
 			<p>Le but va être ici de créer une couche de points qui contiendra les écoles et les postes de l'île d'Oahu, qui sont représentées dans la carte sous forme de points bleus ou rouges :</p>
-			<img src="illustrations/tous/5_1_leg_pts.png" alt="extrait de la légende de la carte d'Oahu correspondant aux écoles et postes" height="70">			
+			<img src="illustrations/tous/5_1_leg_pts.png" alt="extrait de la légende de la carte d'Oahu correspondant aux écoles et postes" width="150">			
 			
 			<h3><a class="titre" id="V11">Choix du type (point, ligne, polygone) et du SCR</a></h3>
 			
@@ -44,7 +44,7 @@
 					<p>La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/5_1_nouvellecouche_fenetre.png" >
-							<img src="illustrations/tous/5_1_nouvellecouche_fenetre.png" alt="fenêtre de création d'une nouvelle couche" height="500">
+							<img src="illustrations/tous/5_1_nouvellecouche_fenetre.png" alt="fenêtre de création d'une nouvelle couche" width="450">
 						</a>
 					</figure>
 					<ul>
@@ -67,7 +67,7 @@
 						<p>Pour ajouter une colonne :</p>
 						<figure>
 							<a href="illustrations/tous/5_1_nouvel_attribut.png" >
-								<img src="illustrations/tous/5_1_nouvel_attribut.png" alt="ajout d'un nouvel attribut" height="500">
+								<img src="illustrations/tous/5_1_nouvel_attribut.png" alt="ajout d'un nouvel attribut" width="450">
 							</a>
 						</figure>
 						<ul>
@@ -84,7 +84,7 @@
 						<p>Nous allons supprimer le champ <b>id</b> créé par défaut. Pour cela, sélectionnez la ligne du champ id et cliquez sur le bouton <b>Supprimer le champ</b>.</p>
 						<figure>
 							<a href="illustrations/tous/5_1_supprimer_champ.png" >
-								<img src="illustrations/tous/5_1_supprimer_champ.png" alt="suppression d'un champ" height="500">
+								<img src="illustrations/tous/5_1_supprimer_champ.png" alt="suppression d'un champ" width="450">
 							</a>
 						</figure>
 						<p>Terminez en cliquant sur le bouton <b>OK</b> pour valider vos choix.</p>
@@ -100,20 +100,20 @@
 					</ul>
 					<figure>
 						<a href="illustrations/tous/5_1_sauv_couche.png" >
-							<img src="illustrations/tous/5_1_sauv_couche.png" alt="sauvegarde de la couche" height="400">
+							<img src="illustrations/tous/5_1_sauv_couche.png" alt="sauvegarde de la couche" width="580">
 						</a>
 					</figure>
 					<p>Cliquez sur <b>Enregistrer</b> pour créer la couche. Elle est automatiquement ajoutée à QGIS.</p>
 					<p>Vous pouvez vérifier son SCR (propriétés de la couche, rubrique Général) :</p>
 					<figure>
 						<a href="illustrations/tous/5_1_scr.png" >
-							<img src="illustrations/tous/5_1_scr.png" alt="vérification du scr de la couche" height="55">
+							<img src="illustrations/tous/5_1_scr.png" alt="vérification du scr de la couche" width="600">
 						</a>
 					</figure>
 					<p>Vous pouvez également ouvrir sa table attributaire, qui ne doit contenir qu'une seule colonne nommée type et aucune ligne.</p>
 					<figure>
 						<a href="illustrations/tous/5_1_table_vide.png" >
-							<img src="illustrations/tous/5_1_table_vide.png" alt="table attributaire vide" height="200">
+							<img src="illustrations/tous/5_1_table_vide.png" alt="table attributaire vide" width="600">
 						</a>
 					</figure>
 				</div>

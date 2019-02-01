@@ -40,10 +40,10 @@
 									
 			<h3><a class="titre" id="V52">Ajout d'un polygone</a></h3>
 			
-				<p>Nous allons commencer par numériser la réserve forestière de l'île :</p>
+				<p>Nous allons commencer par numériser la réserve forestière de l'île (hachurée en rouge dans l'image ci-dessous) :</p>
 				<figure>
 					<a href="illustrations/tous/5_5_reserve_foret.png" >
-						<img src="illustrations/tous/5_5_reserve_foret.png" alt="réserve forestière de l'île hachurée en rouge" height="300">
+						<img src="illustrations/tous/5_5_reserve_foret.png" alt="réserve forestière de l'île hachurée en rouge" width="420">
 					</a>
 				</figure>
 				
@@ -51,20 +51,20 @@
 					<p>Passez en mode édition pour votre couche de polygones. Zoomez sur la réserve forestière.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_zoom_reserve.png" >
-							<img src="illustrations/tous/5_5_zoom_reserve.png" alt="zoom sur la réserve" height="300">
+							<img src="illustrations/tous/5_5_zoom_reserve.png" alt="zoom sur la réserve" width="350">
 						</a>
 					</figure>
 					<p><img class="iconemid" src="illustrations/tous/5_5_ajout_icone.png" alt="icône ajouter une entité">Cliquez sur l'icône <b>Ajouter une entité</b> qui a pris la forme d'un polygone.</p>
 					<p>Cliquez sur un point du polygone, puis ajoutez d'autres sommets comme pour une ligne. La forme du polygone évolue au fur et à mesure.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_debut_num.png" >
-							<img src="illustrations/tous/5_5_debut_num.png" alt="numérisation d'un polygone en cours" height="150">
+							<img src="illustrations/tous/5_5_debut_num.png" alt="numérisation d'un polygone en cours" width="350">
 						</a>
 					</figure>
 					<p>Lorsque le polygone est complet, faites un clic droit n'importe où pour le terminer. Il est inutile de cliquer à nouveau sur le premier sommet !</p>
 					<figure>
 						<a href="illustrations/tous/5_5_premier_polygone.png" >
-							<img src="illustrations/tous/5_5_premier_polygone.png" alt="numérisation d'un polygone en cours" height="300">
+							<img src="illustrations/tous/5_5_premier_polygone.png" alt="numérisation d'un polygone en cours" width="350">
 						</a>
 					</figure>
 					<p>Vous pouvez maintenant remplir les données attributaires pour ce polygone, par exemple en donnant la valeur "Forest Reserves" en type1, et aucune valeur en type2.</p>
@@ -86,13 +86,13 @@
 					<p>Cliquez à l'extérieur du polygone, puis de l'autre côté du polygone en suivant la ligne selon laquelle le découper. Terminez par un clic droit n'importe où. Il est possible de créer des points à l'intérieur du polygone mais il faut terminer par un point à l'extérieur du polygone.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_decoupe.png" >
-							<img src="illustrations/tous/5_5_decoupe.png" alt="découpe d'un polygone" height="300">
+							<img src="illustrations/tous/5_5_decoupe.png" alt="découpe d'un polygone" width="550">
 						</a>
 					</figure>
 					<p>Procédez de la même manière pour découper la bande de terrain public de Waimano, et la petite langue de terre de Aiea.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_public_lands.png" >
-							<img src="illustrations/tous/5_5_public_lands.png" alt="Sélection de la bande de terrain public de Waimano en réserve forestière" height="300">
+							<img src="illustrations/tous/5_5_public_lands.png" alt="Sélection de la bande de terrain public de Waimano en réserve forestière" width="330">
 						</a>
 					</figure>
 				</div>
@@ -103,7 +103,7 @@
 					<p><img class="icone" src="illustrations/tous/5_4_noeud_icone.png" alt="icône de l'outil de noeud" >A l'aide de <a href="05_04_lignes.php#V43">l'outil de nœud</a>, déplacez un sommet de la petite langue de terre d'Aiea.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_deplacement_noeud.png" >
-							<img src="illustrations/tous/5_5_deplacement_noeud.png" alt="déplacement d'un noeud de polygone" height="250">
+							<img src="illustrations/tous/5_5_deplacement_noeud.png" alt="déplacement d'un noeud de polygone" width="400">
 						</a>
 					</figure>
 					<p><img class="icone" src="illustrations/tous/1_1_selection_icone.png" alt="icône de sélection" >A l'aide de l'outil de sélection, sélectionnez successivement le polygone d'Aiea, et celui qui l'entoure.</p>
@@ -119,7 +119,7 @@
 								</span>
 							</a>	
 						et cochez la case <b>Activer l'édition topologique</b> en bas à gauche de la fenêtre.</p>
-						<img src="illustrations/tous/5_5_edition_topologique.png" alt="case d'activation de l'édition topologique cochée" height="30">
+						<img src="illustrations/tous/5_5_edition_topologique.png" alt="case d'activation de l'édition topologique cochée" width="200">
 						<p>Déplacez à nouveau un sommet d'un des polygones et sélectionnez successivement les deux polygones.</p>
 						<div class="question">
 						<input type="checkbox" id="faq-2">
@@ -139,7 +139,7 @@
 					<p>Rendez-vous dans le Menu <b>Préférences &#8594; Options d'accrochage</b> :</p>
 					<figure>
 						<a href="illustrations/tous/5_5_accrochage_fenetre.png" >
-							<img src="illustrations/tous/5_5_accrochage_fenetre.png" alt="activation de l'accrochage pour la couche de polygones avec une tolérance de 10 pixels" height="210">
+							<img src="illustrations/tous/5_5_accrochage_fenetre.png" alt="activation de l'accrochage pour la couche de polygones avec une tolérance de 10 pixels" width="600">
 						</a>
 					</figure>
 				</div>
@@ -158,7 +158,11 @@
 				
 				<div class="manip">
 					<p>Pour éviter cela, rendez-vous à nouveau dans le menu Préférences &#8594; Options d'accrochage et cochez la case <b>Éviter les intersections</b> pour la couche zones_oahu.</p>
-					<img src="illustrations/tous/5_5_eviter_intersections.png" alt="cocher la case éviter les intersections" height="30">
+					<figure>
+					   <a href="illustrations/tous/5_5_eviter_intersections.png" >
+					       <img src="illustrations/tous/5_5_eviter_intersections.png" alt="cocher la case éviter les intersections" width="500">
+					   </a>
+					</figure>
 					<p>Cliquez sur l'icône <b>Ajouter une entité</b>, et dessinez un par exemple le polygone en pointillés bleu correspondant à la surface des terres forestières qui ne sont pas en réserve. Ce polygone est contigu sur une longue portion à des polygones que vous avez déjà créés : ne suivez pas les bords pour cette partie mais contentez-vous de passer au milieu des polygones déjà existants.</p>
 					<p>Faites un clic droit pour terminer le polygone : les parties du polygone que vous venez de dessiner qui étaient superposées à des polygones déjà existants ont été automatiquement supprimées.</p>
 				</div>				

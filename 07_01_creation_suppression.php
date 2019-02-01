@@ -39,7 +39,7 @@
 					<p>Pour voir les champs de la table attributaire de cette couche, vous pouvez bien sûr ouvrir la table attributaire, mais vous pouvez également ouvrir les propriétés de la couche, rubrique <b>Champs</b> :</p>
 					<figure>
 						<a href="illustrations/tous/7_1_proprietes_champs.png" >
-							<img src="illustrations/tous/7_1_proprietes_champs.png" alt="fenêtre des propriétés de la couche, rubrique champs" height="360" >
+							<img src="illustrations/tous/7_1_proprietes_champs.png" alt="fenêtre des propriétés de la couche, rubrique champs" width="600" >
 						</a>
 					</figure>
 					<p>Cette fenêtre vous permet de voir d'un seul coup d'œil la liste des champs, leur type : <b>String</b> (texte), <b>Integer</b> (nombre entier) ou <b>Real</b> (nombre décimal), le <a href="05_03_donnees_attrib.php#V32">mode d'édition</a> ...</p>
@@ -57,12 +57,12 @@
     					<p>Ouvrez la table attributaire de la couche <em class="data">communes_NordPasDeCalais_calcul</em>. <a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
     					<p>Cliquez sur l'icône <b>Nouvelle colonne</b> en haut de la table attributaire :</p>
     					<figure>
-    						<img src="illustrations/tous/7_1_BO_table_ajout.png" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" height="33" >
+    						<img src="illustrations/tous/7_1_BO_table_ajout.png" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" width="440" >
     					</figure>
     					<p>La fenêtre suivante s'ouvre :</p>
     					<figure>
     						<a href="illustrations/tous/7_1_ajout_fenetre.png" >
-    							<img src="illustrations/tous/7_1_ajout_fenetre.png" alt="fenêtre de création de colonne" height="200" >
+    							<img src="illustrations/tous/7_1_ajout_fenetre.png" alt="fenêtre de création de colonne" width="400" >
     						</a>
     					</figure>
     					<ul>
@@ -74,13 +74,13 @@
     					<p>Cliquez sur <b>OK</b> ; le champ est ajouté à la table, rempli pour l'instant de valeurs nulles.</p>
     					<figure>
     						<a href="illustrations/tous/7_1_table_nouveau_champ.png" >
-    							<img src="illustrations/tous/7_1_table_nouveau_champ.png" alt="table avec le champ CODE_DEPT vide" height="115" >
+    							<img src="illustrations/tous/7_1_table_nouveau_champ.png" alt="table avec le champ CODE_DEPT vide" width="600" >
     						</a>
     					</figure>
     					<p>Procédez de la même manière pour ajouter un champ <b>CODE_REG</b> :</p>
     					<figure>
     						<a href="illustrations/tous/7_1_ajout_fenetre_2.png" >
-    							<img src="illustrations/tous/7_1_ajout_fenetre_2.png" alt="fenêtre de création de colonne" height="200" >
+    							<img src="illustrations/tous/7_1_ajout_fenetre_2.png" alt="fenêtre de création de colonne" width="390" >
     						</a>
     					</figure>
     					<p>Quittez le mode édition en enregistrant les modifications. Ces champs seront remplis dans la <a href="07_03_calculer.php">partie VII.3</a>.</p>
@@ -94,12 +94,12 @@
     					<p>Passez à nouveau en mode édition pour la couche <em class="data">communes_NordPasDeCalais_calcul</em>.</p>
     					<p>Cliquez sur l'icône <b>Supprimer la colonne</b> en haut de la table attributaire :</p>
     					<figure>
-    						<img src="illustrations/tous/7_1_BO_table_suppression.png" alt="barre d'outils de la table attributaire, icône de suppression de champ entourée en rouge" height="33" >
+    						<img src="illustrations/tous/7_1_BO_table_suppression.png" alt="barre d'outils de la table attributaire, icône de suppression de champ entourée en rouge" width="440" >
     					</figure>
     					<p>La fenêtre suivante apparaît :</p>
     					<figure>
     						<a href="illustrations/tous/7_1_suppression_fenetre.png" >
-    							<img src="illustrations/tous/7_1_suppression_fenetre.png" alt="fenêtre de suppression de colonne" height="270" >
+    							<img src="illustrations/tous/7_1_suppression_fenetre.png" alt="fenêtre de suppression de colonne" width="240" >
     						</a>
     					</figure>
     					<p>Sélectionnez le champ <b>INSEE_COM</b> puis cliquez sur <b>OK</b>.</p>
@@ -122,7 +122,7 @@
 			             <p>Dans la boîte à outils : <b>Géotraitements QGIS &#8594; Outils de table d'un vecteur &#8594; Refactoriser les champs</b> :</p>
 			             <figure>
     						<a href="illustrations/tous/7_1_outil_refactoriser.png" >
-    							<img src="illustrations/tous/7_1_outil_refactoriser.png" alt="Outil refactoriser dans la boîte à outils Traitement" height="500" >
+    							<img src="illustrations/tous/7_1_outil_refactoriser.png" alt="Outil refactoriser dans la boîte à outils Traitement" width="350" >
     						</a>
     					 </figure>
     					 
