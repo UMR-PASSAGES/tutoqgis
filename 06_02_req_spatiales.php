@@ -58,7 +58,7 @@
                         </figure>
                         <ul>
                             <li><b>Sélection d'entités dans :</b> il s'agit de la couche dans laquelle sera faite la sélection, sélectionnez la couche de communes</li>
-                            <li><b>qui intersecte les entités dans :</b> il s'agit de la couche par rapport à laquelle seront sélectionnés les éléments, sélectionnez la couche d'éoliennes</li>
+                            <li><b>qui intersecte les entités dans :</b> il s'agit de la couche par rapport à laquelle seront sélectionnés les éléments, sélectionnez la couche d'installations de traitement de déchêts</li>
                             <li>Vérifiez que la case <b>Inclure les entités en entrée qui intersectent les entités sélectionnées</b> soit cochée</li>
                             <li>Cliquez sur <b>OK</b>, vous pouvez ensuite fermer la fenêtre.</ul>
                         </ul>
