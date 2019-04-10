@@ -169,7 +169,7 @@
 					<div class="question">
 						<input type="checkbox" id="faq-2">
 						<p><label for="faq-2">Quelle requête utiliser pour sélectionner les communes de moins de 10 000 habitants dont le nom commence par A ?</label></p>
-						<p class="reponse">"NOM_COMM" LIKE 'A%' and  "POPULATION" &lt; 10000 : cette requête sélectionne 104 communes.</p>
+						<p class="reponse">"NOM_COMM" LIKE 'A%' and  "POPULATION" &lt; 10 : cette requête sélectionne 104 communes.</p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-3">
