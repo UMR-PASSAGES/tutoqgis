@@ -73,7 +73,7 @@
 						<p>Il est ensuite possible de faire varier la taille des centroïdes des communes en fonction d'un champ, ou d'une expression :</p>
 
 						<div class="manip">
-							<p>Ouvrez les <b>propriétés de la couche de communes &#8594; rubrique Style &#8594; bouton à droite de Taille &#8594; Assistant Taille...</b> :</p>
+							<p>Ouvrez les <b>propriétés de la couche communes_centroides &#8594; rubrique Style &#8594; bouton à droite de Taille &#8594; Assistant Taille...</b> :</p>
 							<figure>
 								<a href="illustrations/tous/10_1_assistant_taille_acces.png" >
 									<img src="illustrations/tous/10_1_assistant_taille_acces.png" alt="Accès à l'Assistant Taille dans la rubrique style des propriétés de la couche" width="620">
