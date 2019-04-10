@@ -114,7 +114,7 @@
     					<p><img class="icone" src="illustrations/tous/6_2_sauv_selection_icone.png" alt="icône pour créer une couche à partir de la sélection dans la fenêtre de requête spatiale" >Il est également possible dans cette fenêtre de créer une couche temporaire à partir de la sélection, en cliquant sur l'icône <b>Créer une couche depuis la sélection</b>.</p>
     					<p>Cette couche sera uniquement sauvegardée dans le projet ; pour la sauvegarder définitivement, clic droit sur son nom, enregistrer sous...</p>
 				    </div>
-				    <p>Les deux outils que nous venons de voir sont à peu près équivalents mais présentent des différence au niveau des opérateurs notamment, du temps de traitement et de la gestion des SCR. A vous de choisir lequel est le plus adapté en fonction de ce que vous souhaitez faire !</p>
+				    <p>Les deux outils que nous venons de voir sont à peu près équivalents mais présentent des différences au niveau des opérateurs notamment, du temps de traitement et de la gestion des SCR. A vous de choisir lequel est le plus adapté en fonction de ce que vous souhaitez faire !</p>
 			
 			
 			<h3><a class="titre" id="VI22">Quelques opérateurs</a></h3>
