@@ -87,7 +87,7 @@
 							</figure>
 							<p>Vous pouvez jouer sur les différents paramètre pour obtenir une visualisation correcte de la population à l'échelle d'un département ou d'une région (à l'échelle du pays, cela nécessiterait d'agréger les cercles entre eux pour un meilleur rendu). Vous avez à votre disposition la couche <em class="data">DEPARTEMENT</em>.</p>
 							<p>Comme vous l'avez peut-être remarqué, QGIS affiche les cercles dans l'ordre de la table ; il peut donc arriver que de petits cercles soient masqués par de plus gros cercles.</p>
-							<p>Pour corriger cela : <b>Propriétés de la couche de centroïdes &#8594; rubrique Style</b>, cochez la case <b>Contrôle de l'ordre de rendu des entités</b> tout en bas de la fenêtre.</p>
+							<p>Pour corriger cela : <b>Propriétés de la couche communes_centroides &#8594; rubrique Style</b>, cochez la case <b>Contrôle de l'ordre de rendu des entités</b> tout en bas de la fenêtre.</p>
 							<figure>
 								<a href="illustrations/tous/10_01_ordre_entites.png" >
 									<img src="illustrations/tous/10_01_ordre_entites.png" alt="Activer l'ordre de rendu des entités" width="530">
