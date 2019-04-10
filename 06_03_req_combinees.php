@@ -24,7 +24,7 @@
 			
 			<h3><a class="titre" id="VI31">Combiner deux requêtes attributaires</a></h3>
 			
-				<p>Pour combiner deux requêtes attributaire (par exemple les communes de + de 10 000 habitants du département du Pas-de-Calais), nous avons vu dans la <a href="06_01_req_attrib.php#VI14" >partie VI.1.4</a> qu'il est possible d'utiliser les opérateurs AND et OR.</p>
+				<p>Pour combiner deux requêtes attributaires (par exemple les communes de + de 10 000 habitants du département du Pas-de-Calais), nous avons vu dans la <a href="06_01_req_attrib.php#VI14" >partie VI.1.4</a> qu'il est possible d'utiliser les opérateurs AND et OR.</p>
 				<p>Il est également possible de faire deux requêtes successives.</p>
 				
 				<div class="manip">
