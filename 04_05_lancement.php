@@ -113,7 +113,7 @@
 					<p>Ici, nous allons utiliser la couche de pays de <a class="ext" target="_blank" href="http://www.naturalearthdata.com/">NaturalEarth</a>.</p>
 					<div class="manip">
 						<p>Si ce n'est pas déjà fait, ajoutez à QGIS votre carte calée de l'île d'Oahu.</p>
-						<p>Ajoutez ensuite la couche shapefile <em class="data">ne_10m_admin_0_countries</em>, disponible dans le dossier <b>TutoQGIS_04_Georef/donnees</b>.</p>
+						<p>Ajoutez ensuite la couche shapefile <em class="data"><a href="donnees/TutoQGIS_04_Georef.zip">ne_10m_admin_0_countries</a></em>, disponible dans le dossier <b>TutoQGIS_04_Georef/donnees</b>.</p>
 					</div>
 					<p>Les deux couches doivent normalement se superposer (ajustez éventuellement le style de la couche de pays).</p>
 					<figure>

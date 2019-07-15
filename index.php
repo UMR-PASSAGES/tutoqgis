@@ -17,7 +17,7 @@
 			
 				<h3>En quelques mots</h3>
 					<p>Ce tutoriel QGIS a été créé par le pôle Analyse et Représentation des données de l'UMR <a href="http://www.passages.cnrs.fr/">PASSAGES</a>. Son but est de permettre aux débutants en SIG de s'initier à ceux-ci via le logiciel libre QGIS. Pour installer QGIS, rendez-vous sur <a class="ext" target="_blank" href="http://www.qgis.org/" >http://www.qgis.org/</a>.</p>
-					<p>Le tutoriel est actuellement à jour pour la version &#171; à long terme &#187; <a class="ext" href="http://qgis.org/fr/site/forusers/visualchangelog218/index.html">QGIS 2.18 'Las Palmas'</a>.</p>
+					<p>Vous êtes en train de parcourir le tutoriel pour la version &#171; à long terme &#187; <a class="ext" href="http://qgis.org/fr/site/forusers/visualchangelog34/index.html">QGIS 3.4 'Madeira'</a>. Si vous utilisez l'ancienne version <a class="ext" href="https://qgis.org/fr/site/forusers/visualchangelog218/index.html">QGIS 2.18 'Las Palmas'</a> rendez-vous plutôt <a href="ancienne_version/index.php" >ici</a> !</p>
 					
 				<h3>Accès au tutoriel</h3>
 					<p>Le tutoriel comporte 11 parties auxquelles vous pouvez accéder par le plan dans la partie droite de la page, ou bien via le <a href="plan_detaille.php">plan détaillé</a>.</p>
@@ -43,7 +43,7 @@
 							<div class="question">
 								<input type="checkbox" id="faq-1">
 								<p><label for="faq-1">Pourquoi Jimi Hendrix connaît-il tous les symboles des cartes ?</label></p>
-								<p class="reponse">Parce-que c'est une légende!</p>
+								<p class="reponse">Parce-que c'est une légende !</p>
 							</div>
 					<h4>Liens</h4>
 						<p>Les liens internes au site de<a href="http://www.passages.cnrs.fr" > PASSAGES</a> sont affichées en bleu, les <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Liens">liens</a> externes sont en gris et s'ouvriront dans une nouvelle fenêtre ou onglet.</p>

@@ -34,18 +34,12 @@
 				
 				<div class="manip">
 					<p>Lancez QGIS si ce n'est pas déjà fait, ou bien créez un nouveau projet.</p>
-					<p><img class="icone" src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="icône ajout d'une couche vecteur" > Ajoutez-y la couche <em class="data">dept_creuse_geofla.shp</em> que vous trouverez dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
+					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône gestionnaire de source de données" > Ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">dept_creuse_geofla.gpkg</a></em> que vous trouverez dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
 					<p>Donnez au projet le même SCR que la couche  <em class="data">dept_creuse_geofla.shp</em>.</p>
 				</div>
 				<p>Nous allons maintenant ajouter au projet la carte géologique de la France au 1/1 000 000è via un flux WMS.</p>
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/3_2_ajout_wms_icone.png" alt="icône ajout d'une couche WMS" >Cliquez sur l'icône <b>Ajouter une couche WMS</b>, ou bien
-						<a class="thumbnail_bottom" href="#thumb">Menu Couche &#8594; Ajouter une couche &#8594; Ajouter une couche WMS...
-							<span>
-								<img src="illustrations/tous/3_2_ajout_wms_menu.png" alt="Menu Couche, ajouter une couche WMS" height="300" >
-							</span>
-						</a>
-					</p>
+					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône gestionnaire de source de données" >Cliquez sur l'icône du gestionnaire des sources de données, allez dans la rubrique <b>WMS/WMTS</b> :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_ajout_wms_fenetre.png" >
 							<img src="illustrations/tous/3_2_ajout_wms_fenetre.png" alt="Fenêtre ajout couche WMS" width="580">
@@ -54,7 +48,7 @@
 					<p>Cliquez sur le bouton <b>Nouveau</b> pour créer une nouvelle connexion. La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_wms_nouveau.png" >
-							<img src="illustrations/tous/3_2_wms_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WMS" width="400">
+							<img src="illustrations/tous/3_2_wms_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WMS" width="80%">
 						</a>
 					</figure>
 					<ul>
@@ -70,7 +64,7 @@
 						</a>
 					    </figure>
 						<li class="espace">Rendez-vous dans la rubrique <b>0 GEOSERVICES_GEOLOGIE &#8594; 1 GEOLOGIE</b> et sélectionnez la couche correspondant à la <b>carte géologique image de la France au 1/1 000 000</b> (million).</li>
-						<li class="espace">Cliquer sur <b>Modifier...</b> en bas à droite et choisissez le SCR <b>RGF93 / Lambert-93</b> (code EPSG 2154) afin que la couche ait le même SCR que notre projet</li>
+						<li class="espace">Vérifiez que les SCR de cette couche soit bien <b>RGF93 / Lambert-93 (code EPSG 2154)</b> afin que la couche ait le même SCR que notre projet</li>
 						<li class="espace">Cliquez sur <b>Ajouter</b>, patientez...</li>
 						<li class="espace">Modifiez éventuellement votre <b>niveau de zoom</b> : cette carte étant au 1/1 000 000, la couche n'est visible qu'autour de cette échelle (vous pouvez lire l'échelle en cours dans la barre en bas de la fenêtre de QGIS)</li>
 					</ul>
@@ -92,6 +86,7 @@
 					</a>
 				</figure>
 				<p>Dans cette fenêtre, vous pouvez taper du texte dans la partie <b>Recherche</b>, voir la liste des serveurs contenant ce texte, et ajouter une ligne de cette liste à la liste de vos connexions visible dans l'onglet <b>Couche</b>, grâce au bouton <b>Ajoutez les lignes sélectionnées à la liste des serveurs WMS</b>.</p>
+				<p>La nouvelle connexion sera alors accessible dans l'onglet <b>Couches</b>, aux côtés de la connexion BRGM créée précédemment.</p>
 			
 			
 			<h3><a class="titre" id="III23">Ajout de données via un flux WFS : cours d'eau</a></h3>
@@ -99,13 +94,7 @@
 				<p>Le but va être ici d'ajouter les cours d'eau de la <a class="ext" target="_blank" href="http://professionnels.ign.fr/bdcarthage">BD Carthage</a> du Sandre (Service d'Administration Nationale des Données et Référentiels sur l'Eau).</p>
 				
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/3_2_ajout_wfs_icone.png" alt="icône ajout d'une couche WFS" >Cliquez sur l'icône <b>Ajouter une couche WFS</b>, ou bien
-						<a class="thumbnail_bottom" href="#thumb">Menu Couche &#8594; Ajouter une couche &#8594; Ajouter une couche WFS...
-							<span>
-								<img src="illustrations/tous/3_2_ajout_wfs_menu.png" alt="Menu Couche, ajouter une couche WFS" height="300" >
-							</span>
-						</a>
-					</p>
+					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône gestionnaire de source de données" >Cliquez sur l'icône du gestionnaire des sources de données, rubrique <b>WFS</b> :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_ajout_wfs_fenetre.png" >
 							<img src="illustrations/tous/3_2_ajout_wfs_fenetre.png" alt="Fenêtre ajout couche WFS" width="480">
@@ -114,7 +103,7 @@
 					<p>Cliquez sur le bouton <b>Nouveau</b> pour créer une nouvelle connexion. La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_wfs_nouveau.png" >
-							<img src="illustrations/tous/3_2_wfs_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WfS" width="400">
+							<img src="illustrations/tous/3_2_wfs_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WFS" width="75%">
 						</a>
 					</figure>
 					<ul>
@@ -124,13 +113,13 @@
 					<p>Laissez les autres paramètres tels quels et cliquez sur <b>OK</b>. Vous voilà à nouveau dans la fenêtre d'ajout d'une couche WFS :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_wfs_connexion.png" >
-							<img src="illustrations/tous/3_2_wfs_connexion.png" alt="Fenêtre ajout d'une couche WFS, connexion au serveur du Sandre et choix de la couche à ajouter" width="450" >
+							<img src="illustrations/tous/3_2_wfs_connexion.png" alt="Fenêtre ajout d'une couche WFS, connexion au serveur du Sandre et choix de la couche à ajouter" width="90%" >
 						</a>
 					</figure>
 					<ul>
 						<li class="espace">Après avoir vérifier que votre connexion est bien sélectionnée dans la liste déroulante en haut de la fenêtre, cliquez sur <b>Connexion</b></li>
-						<li class="espace">Sélectionnez la couche correspondant aux <b>cours d'eau métropole de plus de 100km (CoursEau1)</b></li>
-						<li class="espace">Cliquer sur <b>Modifier...</b> pour tenter de modifier le SCR : malheureusement, seul le WGS84 est rendu disponible par ce flux</li>
+						<li class="espace">Sélectionnez la couche correspondant aux <b>cours d'eau métropole de plus de 100km (CoursEau1) (il faut descendre un peu dans la liste des couches proposées)</b></li>
+						<li class="espace">Vérifiez que le SCR soit bien le Lambert 93 RGF93 (code EPSG 2154) afin que toutes nos couches aient le même SCR</li>
 						<li class="espace">Cliquez sur <b>Ajouter</b></li>
 					</ul>
 					<p>Vous devriez obtenir quelque chose de similaire à ceci :</p>
@@ -139,9 +128,9 @@
 							<img src="illustrations/tous/3_2_superposition_creuse_courdo.png" alt="superposition du département de la Creuse et des cours d'eau de plus de 100km" width="300" >
 						</a>
 					</figure>
-					<p>Il peut être nécessaire de changer l'ordre des couches en les faisant glisser dans la table des matières, et de <a href="01_02_info_geo.php#I23a">modifier le style</a> de la couche du département de la Creuse. Vu qu'il s'agit ici d'un flux WFS et non WMS, il est également possible de modifier le style des cours d'eau.</p>
+					<p>Il peut être nécessaire de changer l'ordre des couches en les faisant glisser dans la table des matières, et de <a href="01_02_info_geo.php#I23a">modifier le style</a> de la couche du département de la Creuse. Vu qu'il s'agit ici d'un flux WFS et non WMS, il est également possible de modifier le style des cours d'eau. La carte géologique étant une couche WMS, on ne peut modifier son style mais il est possible de lui donner une transparence afin de l'atténuer.</p>
 				</div>
-				<p>De même, s'agissant d'un flux WFS, il est possible de sauvegarder les cours d'eau au format shapefile : clic droit sur la couche, enregistrer sous...</p>
+				<p>De même, s'agissant d'un flux WFS, il est possible de sauvegarder les cours d'eau au format shapefile : clic droit sur la couche, Exporter, Sauvegarder les entités sous...</p>
 	
 			<h3><a class="titre" id="III24">Avantages et inconvénients des flux</a></h3>
 				

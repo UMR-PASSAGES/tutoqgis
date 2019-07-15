@@ -15,12 +15,7 @@
 			<h2>III.3  Ajout de données ponctuelles à partir d'un fichier texte</h2>
 				<ul class="listetitres">
 					<li><a href="#III31">Qu'y a-t-il dans le fichier texte ?</a></li>
-					<li><a href="#III32">Visualisation des données dans QGIS</a>
-						<ul class="listesoustitres">
-							<li><a href="#III32a">Ajout d'une couche avec un SCR inconnu : préparer le terrain</a>
-							<li><a href="#III32b">Visualisation des données sous QGIS</a>
-						</ul>
-					</li>
+					<li><a href="#III32">Visualisation des données dans QGIS</a></li>
 					<li><a href="#III33">Création du shapefile de points</a></li>
 				</ul>
 	
@@ -30,7 +25,7 @@
 			<h3><a class="titre" id="III31">Qu'y a-t-il dans le fichier texte?</a></h3>
 				
 				<div class="manip">
-					<p>Dans l'explorateur de votre ordinateur, ouvrez le fichier <em class="data">villes_bhutan_geonames.csv</em> situé dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b> à l'aide d'un éditeur de texte simple (<b>pas dans un tableur</b>) : par exemple, WordPad dans Windows, TextEdit sous Mac, gedit sous Ubuntu.</p>
+					<p>Dans l'explorateur de votre ordinateur, ouvrez le fichier <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">villes_bhutan_geonames.csv</a></em> situé dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b> à l'aide d'un éditeur de texte simple (<b>pas dans un tableur</b>) : par exemple, WordPad dans Windows, TextEdit sous Mac, gedit sous Ubuntu.</p>
 					<figure>
 						<a href="illustrations/tous/3_3_apercu_csv.png" >
 							<img src="illustrations/tous/3_3_apercu_csv.png" alt="capture d'écran du fichier CSV" width="600">
@@ -72,53 +67,22 @@
 			
 			<h3><a class="titre" id="III32">Visualisation des données dans QGIS</a></h3>
 				
-				<h4><a class="titre" id="III32a">Ajout d'une couche avec un SCR inconnu : préparer le terrain</a></h4>
-				
-					<p>Dans la mesure où nous allons ajouter des données issues d'un fichier texte à QGIS, QGIS ne pourra pas lire dans quel SCR ont été mesurées ces coordonnées : ce sera à nous de le préciser au logiciel.</p>
-					<div class="manip">
-						<p>Lancez QGIS si ce n'est pas déjà fait, ou bien créez un nouveau projet sans sauvegarder l'ancien.</p>
-						<p>Pour être sûr que QGIS vous demande dans quel SCR sont les coordonnées du fichier texte, rendez-vous dans le menu 
-							<a class="thumbnail_bottom" href="#thumb">Préférences  &#8594; Options
-								<span>
-									<img src="illustrations/tous/2_3_preferences_options_menu.png" alt="Menu Préférences, Options" height="150" >
-								</span>
-							</a>
-							, rubrique <b>SCR</b> :
-						</p>
-						<figure>
-							<a href="illustrations/tous/2_4_options_sans_scr.png" >
-								<img src="illustrations/tous/2_4_options_sans_scr.png" alt="Options, rubrique SCR" width="500">
-							</a>
-						</figure>
-						<p>Pour l'option <b>Quand une nouvelle couche est créée ou quand une couche est chargée sans SCR</b>, choisissez l'option <b>Demander le SCR</b> si ce n'est pas déjà fait. Cliquez sur <b>OK</b>.</p>
-					</div>
-				
-				<h4><a class="titre" id="III32b">Visualisation des données sous QGIS</a></h4>
-			
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="Icône ajout d'une couche vecteur">A partir de QGIS, chargez la couche <em class="data">ne_10m_admin_0_countries.shp</em> située dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
-					<p><img class="icone" src="illustrations/tous/3_3_ajout_csv_icone.png" alt="icône ajout fichier texte délimité" >
-						Cliquez sur l'icône <b>Ajouter une couche de texte délimité</b>, ou bien rendez-vous dans le 
-						<a class="thumbnail_bottom" href="#thumb">Menu Couche &#8594; Ajouter une couche &#8594; Ajouter une couche de texte délimité
-							<span>
-								<img src="illustrations/tous/3_3_ajout_csv_menu.png" alt="Menu Couche, ajouter une couche de texte délimité" height="300" >
-							</span>
-						</a>				
-					</p>
+					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône ajout d'une couche vecteur">A partir de QGIS, chargez la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">ne_10m_admin_0_countries.shp</a></em> située dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
+					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône ajout fichier texte délimité" >Toujours à partir du gestionnaire des sources, cliquez sur <b>Texte délimité</b> :</p>
 					<figure>
 						<a href="illustrations/tous/3_3_ajout_csv_fenetre.png" >
 							<img src="illustrations/tous/3_3_ajout_csv_fenetre.png" alt="Fenêtre d'ajout d'une couche CSV" width="600">
 						</a>
 					</figure>
 					<ul>
-						<li class="espace">Cliquez sur le bouton <b>Parcourir</b> et sélectionnez le fichier <em class="data">villes_bhutan_geonames.csv</em></li>
-						<li class="espace"><b>Nom de la couche :</b> vous pouvez laisser <b>villes_bhutan_geonames</b> ou bien tapez le nom de votre choix</li>
+						<li class="espace">Cliquez sur le bouton <b>...</b> et sélectionnez le fichier <em class="data">villes_bhutan_geonames.csv</em></li>
 						<li class="espace"><b>Format de fichier :</b> choisir <b>CSV (virgule)</b></li>
-						<li class="espace"><b>Enregistrements :</b> vérifiez que la case <b>en-têtes de 1ère ligne</b> soit bien cochée</li>
+						<li class="espace"><b>Options des champs et enregistrements :</b> vérifiez que les cases <b>en-têtes de 1ère ligne</b>, <b>Détecter les types de champs</b> et <b>Virgule en sépareteur décimal</b> soient bien cochées</li>
 						<li class="espace"><b>Définition de la géométrie : </b> choisir <b>point</b>, puis les colonnes X et Y : <b>longitude et latitude</b></li>		
+						<li class="espace">Vérifiez également que le SCR sélectionné soit bien <b>WGS84 - code EPSG 4326</b></li>		
 					</ul>
-					<p>Cliquez sur <b>OK</b>. Une fenêtre s'ouvre vous demandant dans quel SCR sont les coordonnées du fichier CSV : choisissez le WGS84, comme vu plus haut.</p>
-					<p>Zoomez sur la couche de points et ouvrez sa table attributaire :</p>
+					<p>Cliquez sur <b>Ajouter</b>. Faites un clic droit sur le nom de cette couche, <b>zoomer sur la couche</b>.</p>
 					<figure>
 						<a href="illustrations/tous/3_3_visu_villes_bhutan.png" >
 							<img src="illustrations/tous/3_3_visu_villes_bhutan.png" alt="Visualisation des villes du bhutan et de leurs données attributaires sous QGIS" width="550" >
@@ -133,12 +97,12 @@
 			<p>Regardez <a href="01_02_info_geo.php#I23b">à quel emplacement</a> est stockée votre couche. Vous pouvez observer que cet emplacement fait référence à un fichier CSV et non à un fichier SHP.</p>
 			<p>Par ailleurs, si vous sélectionnez la couche de villes dans la table des matières, vous pouvez constater que l'icône pour passer en mode édition est désactivée, au contraire de notre couche de pays. La couche de villes n'est donc pas éditable.</p>
 			<p class="note">Icône édition activée : <img class="iconemid" src="illustrations/tous/3_3_edition_icone_activee.png" alt="Icône édition activée" > Icône édition désactivée : <img class="iconemid" src="illustrations/tous/3_3_edition_icone_desactivee.png" alt="Icône édition désactivée" ></p>
-			<p>Ces indices laissent à penser que bien que nous puissions visualiser les villes dans QGIS, <b>aucun SHP n'a été créé</b>, ce qui est d'ailleurs logique dans la mesure où QGIS ne nous a demandé à aucun moment de choisir un emplacement pour cette couche.</p>
+			<p>Ces indices laissent à penser que bien que nous puissions visualiser les villes dans QGIS, <b>aucune couche n'a été créée sur votre ordinateur</b>, ce qui est d'ailleurs logique dans la mesure où QGIS ne nous a demandé à aucun moment de choisir un emplacement pour cette couche.</p>
 			<p>En fait, nous avons seulement créé <b>une couche temporaire, uniquement stockée dans le projet QGS en cours</b>. Comment faire pour sauvegarder cette couche?</p>
 			
 			<div class="manip">
 				<p>Il suffit pour cela de faire un
-					<a class="thumbnail_bottom" href="#thumb">clic-droit sur la couche <em class="data">villes_bhutan_geonames</em>, Enregistrer sous...
+					<a class="thumbnail_bottom" href="#thumb">clic-droit sur la couche <em class="data">villes_bhutan_geonames</em> &#8594; Exporter &#8594; Sauvegarder les entités sous...
 						<span>
 							<img src="illustrations/tous/3_3_sauvegarder_villes_menu.png" alt="clic droit sur la couche, sauvegarder sous" height="300" >
 						</span>
@@ -150,8 +114,8 @@
 					</a>
 				</figure>
 				<ul>
-					<li class="espace">Cliquez sur <b>Parcourir</b> pour sélectionner l'emplacement où la couche sera créée et lui donner un nom</li>
-					<li class="espace">Cochez la case <b>Ajouter les fichiers sauvegardés à la carte</b></li>
+				    <li class="espace">choisissez le format : <b>GeoPackage</b></li>
+					<li class="espace">Cliquez sur <b>...</b> pour sélectionner l'emplacement où la couche sera créée et lui donner un nom</li>
 					<li class="espace">Laissez les autres paramètres par défaut</li>
 				</ul>
 				<p>Cliquez sur <b>OK</b> ; la couche est ajoutée à QGIS, vous devez donc avoir deux couches de villes identiques au premier abord; cependant, l'une est temporaire et l'autre permanente.</p>
@@ -163,10 +127,10 @@
 					</a>	
 				 pour éviter toute confusion (en vous aidant éventuellement de son emplacement pour déterminer laquelle est-ce).
 				</p>
-				<p class="note">En ouvrant la table attributaire de la nouvelle couche, vous pouvez constater que les noms de champs ont été tronqués à 10 caractères (&#171; country co &#187; au lieu de &#171; country code &#187; par exemple). Ceci est une limitation liée au format DBF utilisé pour les <a href="01_03_formats.php#I31a">fichiers shapefile</a>.</p>
 				
 			</div>
 			<p>Félicitations ! L'ajout de données ponctuelles à partir d'un fichier texte dans QGIS n'a désormais plus de secrets pour vous !</p>
+			<p>Notez que si vous effectuez cette manip avec un fichier CSV &#171; non standard &#187; (dont le délimiteur n'est pas la virgule), il vous faudra choisir l'option <b>délimiteurs personnalisés</b> dans la fenêtre d'ajout du fichier CSV, puis votre délimiteur : point-virgule, tabulation... Attention aussi à la case <b>Virgule en séparateur décimal</b>, à cocher ou décocher suivant vos coordonnées (44,192 vs 44.192).</p>
 	
 			<br>
 			<a class="prec" href="03_02_donnees_flux.php">chapitre précédent</a>

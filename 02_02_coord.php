@@ -259,7 +259,6 @@
 				<ul>
 					<li>Comprendre le principe des projections : <a class="ext" target="_blank" href="https://www.onf.ca/film/carte_impossible#temp-share-panel">la carte impossible</a></li>
 					<li>Liste des systèmes de coordonnées avec leurs codes EPSG ou autre : <a class="ext" target="_blank" href="http://spatialreference.org/" >http://spatialreference.org/</a></li>
-					<li>Pour mettre en évidence les déformations liées à la projection Google Mercator : <a class="ext" target="_blank" href="http://mapfrappe.blogspot.fr/2011/01/mapfrappe-examples-index.html" >mapfrappe</a></li>
 					<li>Comparaison de projections : <a class="ext" target="_blank" href="http://bl.ocks.org/syntagmatic/ba569633d51ebec6ec6e" >http://bl.ocks.org/syntagmatic/ba569633d51ebec6ec6e</a> et <a class="ext" target="_blank" href="https://www.map-projections.net/imglist.php" >https://www.map-projections.net/imglist.php</a></li>
 					<li>Aide au choix d'une projection : <a class="ext" target="_blank" href="http://projectionwizard.org/" >http://projectionwizard.org/</a></li>
 				</ul>

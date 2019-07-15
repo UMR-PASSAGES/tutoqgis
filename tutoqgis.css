@@ -650,7 +650,7 @@ hov         #1D3437     hover colour
 	}
 	
 	/* pour les smartphones */
-    @media all and (max-width:480px) {
+    @media all and (max-device-width:480px) {
         /* pour que le contenu se redimensionne à la taille de l'écran */
         #wrap{width: auto}
         #container_main_sidebar{width: auto}
@@ -673,15 +673,20 @@ hov         #1D3437     hover colour
         /* pour couper les mots trop longs */
         body {overflow-wrap: break-word; word-wrap: break-word; -ms-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
         /* pour le menu horizontal */
-        /*#nav { background: #4E4943;}*/
-        #nav li {display: block; text-align: center;}
+        #nav li {display: block; text-align: center; font-size: 6vw;}
         #nav ul li, #nav ul li a {width: 100%;}
         #nav li:hover {display: block;}
         #wrapdanswrap { background:#FFFFFF url(illustrations/tous/bandeau.png); background-size: cover;}
+        /* taille de police pour le titre */
+        a.grostitre {font-size: 8vw;}
+        /* taille de police pour le plan détaillé */
+        li.plandet {font-size: 3vw;}
+        /* taille de police pour les liens chapitre précédent et suivant */
+        a.prec, a.suiv {font-size: 6vw;}
     }
     
     /* pour les tablettes */
-    @media (min-width: 481px) and (max-width:780px) {
+    @media (min-device-width: 481px) and (max-device-width:780px) {
         /* pour que le contenu se redimensionne à la taille de l'écran */
         #wrap{width: auto}
         #container_main_sidebar{width: auto}
@@ -704,12 +709,19 @@ hov         #1D3437     hover colour
         /* pour couper les mots trop longs */
         body {overflow-wrap: break-word; word-wrap: break-word; -ms-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
         /* pour le menu horizontal */
-        #nav li {padding-left: 3px;}
+        #nav li {padding-left: 3px; font-size: 3vw;}
         #nav li {padding-right: 3px;}
-        #nav li a {font-size: 1em;}
+        #nav li a {font-size: vw;}
+        /* taille de police pour le titre */
+        a.grostitre {font-size: 5vw;}
+        /* taille de police pour le plan détaillé */
+        li.plandet {font-size: 2vw;}
+        /* taille de police pour les liens chapitre précédent et suivant */
+        a.prec, a.suiv {font-size: 3vw;}
+        
         /* a.grostitre{color:blue;} */
     }
-    @media (min-width: 781px) and (max-width:979px) {
+    @media (min-device-width: 781px) and (max-device-width:979px) {
         /* pour que le contenu se redimensionne à la taille de l'écran */
         #wrap{width: auto}
         #container_main_sidebar{width: auto}
@@ -724,5 +736,10 @@ hov         #1D3437     hover colour
         img.iconemid {width: 30px !important;}
         /* l'icône creative commons du pied de page ne doit pas se redimmensionner */
         #footer img{ width: 80px !important}
+        /* tailles de police pour le titre */
+        a.grostitre {font-size: 3vw;}
+        /* taille de police pour le menu horizontal */
+        #nav li a{font-size: 2vw;}        
+        
         /* a.grostitre{color:red;} */
     }

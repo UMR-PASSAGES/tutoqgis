@@ -36,7 +36,7 @@
 					<p class="reponse">L'île est située approximativement aux coordonnées 21° 28' Nord et 157° 59' Ouest (SCR WGS84).</p>
 				</div>
 				
-				<p>A partir de l'explorateur de fichiers de votre ordinateur, ouvrez l'image <em class="data">Oahu_Hawaiian_Islands_1906.jpg</em> située dans le dossier <b>TutoQGIS_04_Georef/donnees</b>.</p>
+				<p>A partir de l'explorateur de fichiers de votre ordinateur, ouvrez l'image <em class="data"><a href="donnees/TutoQGIS_04_Georef.zip">Oahu_Hawaiian_Islands_1906.jpg</a></em> située dans le dossier <b>TutoQGIS_04_Georef/donnees</b>.</p>
 				<div class="question">
 					<input type="checkbox" id="faq-2">
 					<p><label for="faq-2">Pouvez-vous dire dans quel système sont mesurées les coordonnées de cette carte ?</label></p>
@@ -50,7 +50,7 @@
 			
 					<div class="manip">	
 						<p>Le module de géoréférencement de QGIS est normalement accessible via le menu
-							<a class="thumbnail_bottom" href="#thumb">Raster &#8594; Géoréférencer &#8594; Géoréférencer
+							<a class="thumbnail_bottom" href="#thumb">Raster &#8594; Géoréférencer...
 								<span>
 									<img src="illustrations/tous/4_2_georeferencer_menu.png" alt="Menu Raster, géoréférencer, géoréférencer" height="200" >
 								</span>

@@ -2,7 +2,7 @@
 
 	<!-- titre -->
 	<div id="header">
-		<a class="grostitre" href="index.php">Tutoriel QGIS</a>
+		<a class="grostitre" href="index.php">Tutoriel QGIS 3.4</a>
 	</div>
 	
 	<!-- menus horizontaux -->

@@ -37,30 +37,47 @@
 				    <h4><a class="titre" id="I21a">Par le menu</a></h4>
 				
     					<div class="manip">
-    						<p>Lancez QGIS. Pour ajouter une couche vecteur, plusieurs solutions :</p>
+    						<p>Lancez QGIS. Depuis QGIS 3, il existe une interface unique pour ajouter des couches vecteurs, rasters etc. : le gestionnaire des sources de données.</p>
+    						<p>Pour ajouter une couche vecteur via cette interface, plusieurs solutions au choix :</p>
     							<ul>
     								<li>
+    									<a class="thumbnail_bottom" href="#thumb">Menu couche &#8594; Gestionnaire des sources de données
+    										<span>
+    											<img src="illustrations/tous/1_2_ajout_couche_gestionnaire_menu.png" alt="Menu Couche, gestionnaire des sources de données" height="120" >
+    										</span>
+    									</a>	
+    								</li>
+    								<li>cliquer sur l'icône <b>Gestionnaire des sources Open Data</b><img class="iconemid" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône du gestionnaire des sources de données"></li>
+    								<li>utiliser le raccourci clavier <b>ctrl + l</b></li>
+    							</ul>
+    					   <p>Si vous souhaitez retrouver vos habitudes de QGIS 2.18, vous pouvez également procéder ainsi : </p>
+    					       <ul>
+    					           <li>
     									<a class="thumbnail_bottom" href="#thumb">Menu couche &#8594; Ajouter une couche &#8594; Ajouter une couche vecteur...
     										<span>
     											<img src="illustrations/tous/1_2_ajout_couche_vecteur_menu.png" alt="Menu Couche, ajouter une couche vecteur" height="300" >
     										</span>
     									</a>	
     								</li>
-    								<li>cliquer sur l'icône <b>Ajouter une couche vecteur</b><img class="iconemid" src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="Icône ajout couche vecteur"></li>
+    								<li><img class="icone" src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="Icône ajout couche vecteur">Cliquer sur l'icône <b>Ajouter une couche vecteur</b> (il faut activer la barre d'outils <b>Gestion des couches</b> si ce n'est pas déjà fait : menu Vue &#8594; Barres d'outils &#8594; Gestion des couches)</li>
     								<li>utiliser le raccourci clavier <b>ctrl + majuscule + v</b></li>
     							</ul>
-    					
+    					   </p>
+    					   <p>Dans tous les cas, vous arrivez normalement à cette fenêtre :</p>
     						<figure>
-    							<a href="illustrations/tous/1_2_ajout_couche_vecteur.png" >
-    								<img src="illustrations/tous/1_2_ajout_couche_vecteur.png" alt="Fenêtre ajout couche vecteur" width="400" >
+    							<a href="illustrations/tous/1_2_ajout_couche_vecteur_gestionnaire.png" >
+    								<img src="illustrations/tous/1_2_ajout_couche_vecteur_gestionnaire.png" alt="Fenêtre du gestionnaire des sources de données, rubrique vecteur" width="600" >
     							</a>
     						</figure>
-    						<p>Type de source et encodage : laissez les valeurs par défaut. Pour en savoir plus sur ce qu'est l'encodage :
-    						<a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Codage_de_caract%C3%A8res" >http://fr.wikipedia.org/wiki/Codage_de_caractères</a></p>
-    						<p>Cliquez sur <b>Parcourir</b> et sélectionnez la couche <em class="data">depts_bretagne_geofla.shp</em> située dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>.</p>
-    						<p>Cliquez sur <b>Ouvrir</b> : vous pouvez voir à l'écran les départements de la région Bretagne.</p>
+    						<ul>
+    						    <li>Vérifiez que vous êtes bien dans la rubrique <b>Vecteur</b>. Par défaut, le gestionnaire des sources de données s'ouvre dans la dernière rubrique utilisée.</li>
+        						<li>Type de source et encodage : laissez les valeurs par défaut. Pour en savoir plus sur ce qu'est l'encodage :
+        						<a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Codage_de_caract%C3%A8res" >http://fr.wikipedia.org/wiki/Codage_de_caractères</a></li>
+        						<li>Cliquez sur <b>...</b> à gauche de <b>Jeux de données vectorielles</b> et sélectionnez la couche <em class="data"><a href="donnees/TutoQGIS_01_PriseEnMain.zip">depts_bretagne_geofla.shp</a></em> située dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>.</li>
+    						</ul>
+    						<p>Cliquez sur <b>Ajouter</b> : vous pouvez voir à l'écran les départements de la région Bretagne.</p>
     						<p>Pour <b>supprimer cette couche</b> : clic droit sur son nom dans la table des matières,
-    						<a class="thumbnail_bottom" href="#thumb">Supprimer
+    						<a class="thumbnail_bottom" href="#thumb">Supprimer la couche...
                             	<span>
                             		<img src="illustrations/tous/1_2_supprimer_couche.png" alt="Clic droit sur une couche, supprimer" height="300" >
                             	</span>
@@ -91,13 +108,13 @@
 					
 					<figure>
 						<a href="illustrations/tous/1_2_interface.svg" >
-							<img src="illustrations/tous/1_2_interface.png" alt="Interface de QGIS" width="600">
+							<img src="illustrations/tous/1_2_interface.svg" alt="Interface de QGIS" width="600">
 						</a>
 					</figure>
 					<p>On peut distinguer 6 zones dans QGIS :</p>
 					<p><em class="numero">1. </em><b>Menus</b></p>
 					<p><em class="numero">2. </em><b>Barres d'outils</b>. On y trouve la même chose que dans les menus, mais sous forme 	d'icônes. Pour savoir que fait un outil, passez la souris au-dessus et lisez l'infobulle. Pour rajouter ou enlever des barres d'outils, clic-droit n'importe où dans cette zone sauf sur un outil désactivé, cocher ou décocher les barres d'outils voulues.</p>
-					<p><em class="numero">3. </em>Liste des couches chargées, aussi appelée <b>table des matières</b> ou <b>table of contents</b> (TOC). Si plusieurs couches sont présentes, vous pouvez en modifier ici l'ordre d'affichage. Pour faire apparaître ou disparaître cette zone : menu <b>Vue &#8594; Panneaux &#8594; Couches</b></p>
+					<p><em class="numero">3. </em><b>Panneau couches</b>, avec la liste des couches chargées, aussi appelé parfois table des matières ou table of contents (TOC). Si plusieurs couches sont présentes, vous pouvez en modifier ici l'ordre d'affichage en les faisant glisser. Pour faire apparaître ou disparaître cette zone : menu <b>Vue &#8594; Panneaux &#8594; Couches</b></p>
 					<p><em class="numero">4. </em><b>Zone de visualisation</b>. On peut zoomer ou se déplacer dans cette zone.</p>
 					<p><em class="numero">5. </em><b>Panneaux supplémentaires</b>, par exemple le panneau <b>Explorateur</b>. Pour ajouter des panneaux, <b>Menu Vue &#8594; Panneaux</b></p>
 					<p><em class="numero">6. </em><b>Barre d'état</b>. On y trouve les coordonnées du point où se trouve la souris, l'échelle...</p>
@@ -134,7 +151,7 @@
 					<h4><a class="titre" id="I23a">Changer la représentation d'une couche</a></h4>
 					
 					<div class="manip">
-						<p>Dans les propriétés de la couche, rubrique <b>Style</b> :</p>
+						<p>Dans les propriétés de la couche, rubrique <b>Symbologie</b> :</p>
 						<figure>
 							<a href="illustrations/tous/1_2_style_couche.png" >
 								<img src="illustrations/tous/1_2_style_couche.png" alt="Onglet Style des propriétés d'une couche" width="600">
@@ -142,10 +159,9 @@
 						</figure>
 						<p>Cliquez sur <b>Remplissage simple</b>. </p>
 					</div>
-					
-					<p><em class="numero">1. </em>Dans la partie <b>Couleurs</b>, vous pouvez modifier la couleur du fond et de la bordure des départements.</p>
-					<p><em class="numero">2. </em>Vous pouvez également modifier le <b>style de remplissage</b> : plein, vide, hachures... ainsi que le <b>style de la bordure</b> : ligne continue, pas de bordure, pointillés...</p>
-					<p><em class="numero">3. </em>La <b>largeur de la bordure</b> peut aussi être modifiée.</p>
+					<p>Vous pouvez modifier ici notamment :</p>
+					<p><em class="numero">1. </em>La couleur et le style du remplissage (continu, hachures, pas de remplissage...)</p>
+					<p><em class="numero">2. </em>La couleur et le style de la bordure (ligne continue, pas de bordure, pointillés...)</p>
 					
 					<div class="manip">
 						<p>Essayez de donner à votre couche ces différents styles :</p>
@@ -167,40 +183,41 @@
 						<div class="manip">			
 							<div class="question">
 								<input type="checkbox" id="faq-1">
-								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Général</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">depts_bretagne_geofla</em> sur votre ordinateur ?</label></p>
+								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Information</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">depts_bretagne_geofla</em> sur votre ordinateur ?</label></p>
 								<p class="reponse">
-								La couche est stockée à l'endroit indiqué dans la partie <b>Source de la couche</b>.
+								La couche est stockée à l'endroit indiqué dans la partie <b>Chemin</b>.
 								 Cet emplacement varie bien sûr en fonction de l'endroit où vous avez enregistré les données du tutoriel.
 							 	<a href="illustrations/tous/1_2_emplacement_couche.png">
-							 		<img src="illustrations/tous/1_2_emplacement_couche.png" alt="Onglet Général des propriétés d'une couche" width="600">
+							 		<img src="illustrations/tous/1_2_emplacement_couche.png" alt="Onglet Général des propriétés d'une couche" width="95%">
 							 	</a>
 								</p>
 							</div>
 						</div>
+						<p class="note">Vous pouvez aussi vérifier l'emplacement d'une couche en passant simplement la souris sur son nom dans le panneau des couches !</p>
 						
 						
 				<h3><a class="titre" id="I24">Ajout d'une couche raster</a></h3>		
 				
 					<div class="manip">
-						<p>Comme lors de l'ajout d'une couche vecteur, vous avez plusieurs possibilités pour ajouter une couche raster :</p>
+						<p>Comme lors de l'ajout d'une couche vecteur, vous avez plusieurs possibilités pour ajouter une couche raster. Par exemple, en utilisant le <b>gestionnaire des sources de données :</b></p>
 						<ul>
-								<li>
-									<a class="thumbnail_bottom" href="#thumb">Menu couche &#8594; Ajouter une couche &#8594; Ajouter une couche raster...
-										<span>
-											<img src="illustrations/tous/1_2_ajout_couche_raster_menu.png" alt="Menu Couche, ajouter une couche raster" height="300" >
-										</span>
-									</a>	
-								</li>
-								<li>cliquer sur l'icône <b>Ajouter une couche raster</b><img class="iconemid" src="illustrations/tous/1_2_ajout_raster_icone.png" alt="Icône ajout couche raster"></li>
-								<li>utiliser le raccourci clavier <b>ctrl + majuscule + r</b></li>
+								<li>menu couche &#8594; Gestionnaire des sources de données</li>
+								<li><img class="iconemid" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône du gestionnaire des sources de données">cliquer sur l'icône du gestionnaire des sources de données</li>
+								<li>utiliser le raccourci clavier <b>ctrl + L</b></li>
 							</ul>
+							<figure>
+								<a href="illustrations/tous/1_2_ajout_couche_raster_fenetre.png" >
+									<img src="illustrations/tous/1_2_ajout_couche_raster_fenetre.png" alt="Gestionnaire de sources de données rubrique raster" width="600">
+								</a>
+							</figure>
+							<p>Allez dans la rubrique <b>Raster</b> et cliquez sur les <b>...</b> à droite de <b>Jeux de données Raster</b>.</p>
 							<figure>
 								<a href="illustrations/tous/1_2_ajout_couche_raster.png" >
 									<img src="illustrations/tous/1_2_ajout_couche_raster.png" alt="Interface de QGIS" width="600">
 								</a>
 							</figure>
-							<p>Rendez-vous dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et sélectionnez la couche <em class="data">srtm_bretagne.tif</em>.</p>
-							<p>Cliquez sur <b>Ouvrir</b> : la couche s'affiche.</p>
+							<p>Rendez-vous dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et sélectionnez la couche <em class="data"><a href="donnees/TutoQGIS_01_PriseEnMain.zip">srtm_bretagne.tif</a></em>.</p>
+							<p>Cliquez sur <b>Ouvrir</b>, puis sur <b>Ajouter</b> dans la fenêtre du gestionnaire de données.</p>
 							<p>Vous pouvez également double cliquer sur la couche dans l'explorateur de fichiers.</p>
 							<figure>
 								<a href="illustrations/tous/1_2_srtm.png" >
@@ -224,16 +241,18 @@
 					
 					<div class="manip">
 						<p>Comme pour accéder aux propriétés d'une couche vecteur, clic-droit sur le nom de la couche dans la table des matières, <b>Propriétés</b> (ou bien double-clic sur le nom de la couche).</p>
-						<p>Pour une couche raster, les différentes rubriques des propriétés sont un peu différentes de celles d'une couche vecteur ; on retrouve néanmoins les rubriques <b>Général</b> et <b>Style.</b></p>
-						<p>Rendez-vous dans la rubrique <b>Style</b> :</p>
+						<p>Pour une couche raster, les différentes rubriques des propriétés sont un peu différentes de celles d'une couche vecteur ; on retrouve néanmoins les rubriques <b>Information</b> et <b>Symbologie.</b></p>
+						<p>Rendez-vous dans la rubrique <b>Symbologie</b> :</p>
 						<figure>
 							<a href="illustrations/tous/1_2_style_raster.png" >
 								<img src="illustrations/tous/1_2_style_raster.png" alt="style d'un raster" width="600" >
 							</a>
 						</figure>
-						<p>Pour ce raster, les valeurs minimum sont représentées en blanc et les valeurs maximum en noir : plus l'altitude est élevée, plus le point est foncé.</p>
-						<p>Vous pouvez modifier les valeurs minimum et maximum, et inverser les couleurs en choisissant <b>Noir vers blanc</b> au lieu de <b>Blanc vers noir</b>. Cliquez à chaque fois sur <b>Appliquer</b> en bas de la fenêtre pour voir le résultat de vos changements.</p>
+						<p>Pour ce raster, les valeurs minimum sont représentées en noir et les valeurs maximum en blanc : plus l'altitude est élevée, plus le point est clair.</p>
+						<p>Vous pouvez modifier les valeurs minimum et maximum, et inverser les couleurs en choisissant <b>Blanc vers noir</b> au lieu de <b>Noir vers blanc</b>. Cliquez à chaque fois sur <b>Appliquer</b> en bas de la fenêtre pour voir le résultat de vos changements.</p>
 					</div>
+					
+					<p class="note">Il est également possible de faire des classes en fonction des valeurs des pixels, en choisissant le <b>type de rendu</b> (en haut de la fenêtre des propriétés rubrique Symbologie) <b>Pseudo-couleur à bande unique</b>.</p>
 					
 				<br>
 				<a class="prec" href="01_01_SIG.php">chapitre précédent</a>

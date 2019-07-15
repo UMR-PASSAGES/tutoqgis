@@ -14,7 +14,7 @@
 		<div class="main">
 			<h2>IV.6 Points de calage : en se basant sur une couche de référence</h2>
 				<ul class="listetitres">
-					<li><a href="#IV61">Installation de l'extension QuickMapServices</a></li>
+					<li><a href="#IV61">Installation et paramétrage de l'extension QuickMapServices</a></li>
 					<li><a href="#IV62">Ajout des données OpenStreetMap</a></li>
 					<li><a href="#IV63">Zoom sur la zone d'étude avec l'extension GeoSearch</a></li>
 					<li><a href="#IV64">Création des points de calage</a></li>
@@ -31,7 +31,7 @@
 				<h3><a class="titre" id="IV61">Installation de l'extension QuickMapServices</a></h3>
 					
 					<p>Accéder aux données OpenStreetMap dans QGIS requiert l'utilisation d'une extension nommée QuickMapServices. Cette extension permet également d'afficher les données Google Maps ainsi que beaucoup d'autres.</p>
-					<p class="note">L'extension QuickMapServices est similaire à l'extension <b>OpenLayers</b> sur laquelle elle est d'ailleurs basée, mais propose plus de couches et utilise un serveur de <a class="ext" target="_blank" href="http://www.neogeo-online.net/blog/archives/1727/">tuilage</a>, ce qui semble provoquer moins d'erreur lors de changements de niveau de zoom et de SCR.</p>
+					<p class="note">L'extension QuickMapServices est similaire à l'extension <b>OpenLayers</b> sur laquelle elle est d'ailleurs basée, mais propose plus de couches et utilise un serveur de tuilage, ce qui semble provoquer moins d'erreur lors de changements de niveau de zoom et de SCR.</p>
 					<div class="manip">
 						<p>Ouvrez tout d'abord un nouveau projet QGIS.</p>
 						<p>Pour installer QuickMapServices : 
@@ -49,6 +49,19 @@
 						<p>Dans la rubrique <b>Tout</b>, tapez &#171; quickmap &#187; dans la partie <b>Rechercher</b> pour limiter les résultats, sélectionner <b>QuickMapServices</b> puis cliquez sur <b>Installer l'extension</b> en bas à droite de la fenêtre.</p>
 						<p>Fermez la fenêtre du gestionnaire d'extensions.</p>
 					</div>
+					
+					<p>Par défaut, QuickMapServices permet l'ajout de quelques fonds de carte, que vous pouvez voir en allant dans le menu Internet &#8594; QuickMapservices... Il est possible d'en ajouter d'autres !</p>
+					
+					<div class="manip">
+					   <p>Menu Internet &#8594; QuickMapServices &#8594; Settings :</p>
+					   <p>Dans l'onglet <b>More services</b>, cliquez sur le bouton <b>Get contributed pack</b>.</p>
+					   <figure>
+							<a href="illustrations/tous/4_6_quickmapservices_moreservices.png" >
+								<img src="illustrations/tous/4_6_quickmapservices_moreservices.png" alt="Ajouter des fonds dans QuickMapServices" width="80%">
+							</a>
+						</figure>
+						<p>Rendez-vous ensuite dans l'onglet <b>Visibility</b> pour décocher les fonds qui ne vous semblent pas à première vue utiles, pour plus de clarté.</p>
+					</div>
 						
 				<h3><a class="titre" id="IV62">Ajout des données OpenStreetMap</a></h3>
 				
@@ -59,18 +72,18 @@
 							<p><label for="faq-1">Dans quel système de coordonnées est votre projet ?</label></p>
 							<p class="reponse">Comme vous pouvez le voir dans le coin en bas à droite de la fenêtre, ou bien menu Projet, propriétés du projet, le <a href="02_03_couches_projets.php#II31">SCR du projet</a> est le WGS84, EPSG:4326.</p>
 						</div>
-						<p>Pour ajouter les données OSM : le menu QuickMapServices est maintenant visible dans le menu Internet. Chargez la couche <b>MapQuest OSM</b> dans la rubrique MapQuest.</p>
+						<p>Pour ajouter les données OSM : le menu QuickMapServices est maintenant visible dans le menu Internet. Chargez la couche <b>OSM standard</b> dans la rubrique OSM.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_menu_quickmapservices.png" >
-								<img src="illustrations/tous/4_6_menu_quickmapservices.png" alt="Menu QuickMapServices" width="625">
+								<img src="illustrations/tous/4_6_menu_quickmapservices.png" alt="Menu QuickMapServices" width="100%">
 							</a>
 						</figure>
 						<div class="question">
 							<input type="checkbox" id="faq-2">
-							<p><label for="faq-2">Dans quel système de coordonnées est votre projet ?</label></p>
-							<p class="reponse">Le <a href="02_03_couches_projets.php#II31">SCR du projet</a> est maintenant le WGS84 projection Pseudo Mercator, EPSG:3857.</p>
+							<p><label for="faq-2">Dans quel système de coordonnées est la couche OSM ?</label></p>
+							<p class="reponse">Le <a href="02_03_couches_projets.php#II32">SCR de le couche</a> est le WGS84 projection Pseudo Mercator, EPSG:3857.</p>
 						</div>
-						<p><b>A l'ajout de données de l'extension QuickMapServices, le SCR du projet est automatiquement modifié en WGS84 Pseudo-Mercator</b>, qui est le SCR utilisé notamment par Google Maps.</p>
+						<p>La couche ajoutée via QuickMapServices est projetée à la volée dans le SCR du projet.</p>
 					</div>
 						<p class="note">Notez qu'il est possible de désactiver ce comportement dans les paramètres de QuickMapServices (menu Internet, QuickMapServices, Settings, onglet Général).</p>
 				
