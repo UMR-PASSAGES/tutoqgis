@@ -24,7 +24,13 @@
 				</ul>
 				<br>
 	
-			<p>Notre but sera ici de caler une carte de l'île d'Oahu (Hawaii) de 1902 (source : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3A1902_Land_Office_Map_of_the_Island_of_Oahu%2C_Hawaii_(_Honolulu_)_-_Geographicus_-_OhauHawaii-lo-1902.jpg">Wikimedia</a>. Une fois cette carte calée, vous pourrez la superposer à d'autres données dans QGIS.</p>
+			<p>Notre but sera ici de caler une carte de l'île d'Oahu (Hawaii) de 1902 (source : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3A1902_Land_Office_Map_of_the_Island_of_Oahu%2C_Hawaii_(_Honolulu_)_-_Geographicus_-_OhauHawaii-lo-1902.jpg">Wikimedia</a>.</p>
+			<figure>
+				<a href="illustrations/tous/4_2_carte_oahu.jpg" >
+					<img src="illustrations/tous/4_2_carte_oahu.jpg" alt="carte à caler de l'île d'Oahu" width="80%">
+				</a>
+			</figure>
+			<p>Une fois cette carte calée, vous pourrez la superposer à d'autres données dans QGIS.</p>
 			<p>La première étape consiste à prendre connaissance de cette carte, et à vérifier que le module de géoréférencement de QGIS soit activé.</p>
 			
 			<h3><a class="titre" id="IV21">Découverte de l'image à caler</a></h3>			

@@ -25,7 +25,15 @@
 				</ul>
 				<br>
 				
-			<p>Le but va être ici de créer une couche de points qui contiendra les écoles et les postes de l'île d'Oahu, qui sont représentées dans la carte sous forme de points bleus ou rouges :</p>
+			<p>Le but va être ici, à partir d'une carte déjà géoréférencée, de créer une couche de points qui contiendra les écoles et les postes de l'île d'Oahu. On passera donc d'une couche raster (la carte) à une couche vecteur contenant une partie des informations de la carte.</p>
+			<p>Ci-dessous, à gauche, la carte originale, et à droite, la carte avec par-dessus la couche vecteur contenant les bâtiments.</p>
+			<figure>
+				<a href="illustrations/tous/5_1_principe_numerisation.png" >
+					<img src="illustrations/tous/5_1_principe_numerisation.png" alt="carte de l'île d'Oahu avant et après numérisation des bâtiments" width="100%">
+				</a>
+			</figure>
+			<p>Il sera ensuite plus facile de manipuler des données vecteurs, pour par exemple compter le nombre d'écoles, et si on a numérisé également les routes travailler sur l'accessibilité des ces écoles...</p>
+			<p>Ces écoles et postes sont représentées dans la carte sous forme de points bleus ou rouges :</p>
 			<img src="illustrations/tous/5_1_leg_pts.png" alt="extrait de la légende de la carte d'Oahu correspondant aux écoles et postes" width="150">			
 			
 			<h3><a class="titre" id="V11">Choix du type (point, ligne, polygone) et du SCR</a></h3>

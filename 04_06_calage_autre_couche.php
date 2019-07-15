@@ -21,11 +21,14 @@
 				</ul>
 				<br>
 			
-			
-			
 				<p>Comme expliqué dans la <a href="04_01_principe.php#IV12" >partie IV.1.2</a>, il est également possible de se baser sur une couche de référence pour géoréférencer une image.</p>
 				<p>La manipulation sera la même que décrite dans les précédentes parties, sauf en ce qui concerne la création des points de calage. Seule cette partie sera donc décrite ici.</p>
 				<p>L'image que nous allons caler est une carte de Doncaster East, dans la banlieue de Melbourne (source : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File:Doncaster_east_locality_map.PNG">Wikimedia</a>).</p>
+				<figure>
+					<a href="illustrations/tous/4_6_doncaster_east.png" >
+						<img src="illustrations/tous/4_6_doncaster_east.png" alt="Carte à caler de Doncaster East (Australie)" width="80%">
+					</a>
+				</figure>
 				<p>Pour caler cette carte, nous allons nous baser sur les données <a class="ext" target="_blank" href="http://www.openstreetmap.org/">OpenStreetMap</a>. OpenStreetMap est une base de données cartographique libre ; on décrit souvent ce projet comme un "wikipedia cartographique".</p>
 			
 				<h3><a class="titre" id="IV61">Installation de l'extension QuickMapServices</a></h3>
@@ -84,40 +87,31 @@
 							<p class="reponse">Le <a href="02_03_couches_projets.php#II32">SCR de le couche</a> est le WGS84 projection Pseudo Mercator, EPSG:3857.</p>
 						</div>
 						<p>La couche ajoutée via QuickMapServices est projetée à la volée dans le SCR du projet.</p>
+						<p>Pour simplifier les choses, nous allons passer le projet également en Pseudo Mercator, afin que la couche de base pour le géoréférencement et le projet aient le même SCR.</p>
+						<p>Pour cela, rendez-vous dans les propriétés du projet et sélectionnez le SCR Pseudo Mercator, code EPSG 3857 (cf. <a href="02_04_changer_systeme.php#II41">ici</a>).</p>
 					</div>
 						<p class="note">Notez qu'il est possible de désactiver ce comportement dans les paramètres de QuickMapServices (menu Internet, QuickMapServices, Settings, onglet Général).</p>
 				
-				<h3><a class="titre" id="IV63">Zoom sur la zone d'étude avec l'extension GeoSearch</a></h3>
+				<h3><a class="titre" id="IV63">Zoom sur la zone d'étude avec l'extension OSM place search</a></h3>
 				
-				    <p>Nous cherchons ici à zoomer sur la zone qui concerne notre carte, à savoir Doncaster East dans le banlieue de Melbourne, en Australie. Il est bien sûr possible d'utiliser les outils de zoom pour cela, mais nous allons en profiter pour découvrir une autre méthode parfois bien pratique, avec l'extension GeoSearch.</p>
+				    <p>Nous cherchons ici à zoomer sur la zone qui concerne notre carte, à savoir Doncaster East dans le banlieue de Melbourne, en Australie. Il est bien sûr possible d'utiliser les outils de zoom pour cela, mais nous allons en profiter pour découvrir une autre méthode parfois bien pratique, avec l'extension OSM place search.</p>
 				    <div class="manip">
 						<p>Commençons par installer l'extension GeoSearch : procédez comme pour QuickMapServices, via le <b>menu Extensions &#8594; Installer/Gérer les extensions</b>.</p>
 						<figure>
-							<a href="illustrations/tous/4_6_install_geosearch.png">
-								<img src="illustrations/tous/4_6_install_geosearch.png" alt="Installation de l'extension GeoSearch" width="600">
+							<a href="illustrations/tous/4_6_install_osmplacesearch.png">
+								<img src="illustrations/tous/4_6_install_osmplacesearch.png" alt="Installation de l'extension OSM place search" width="600">
 							</a>
 						</figure>
-						<p>GeoSearch est ensuite accessible via le 
-    						<a class="thumbnail_bottom" href="#thumb">menu Extensions &#8594; GeoSearch &#8594; GeoSearch
-                            	<span>
-                            		<img src="illustrations/tous/4_6_geosearch_menu.png" alt="Menu Extensions, Geosearch, GeoSearch" height="300" >
-                            	</span>
-                            </a>
-                        <figure>
-							<a href="illustrations/tous/4_6_geosearch.png">
-								<img src="illustrations/tous/4_6_geosearch.png" alt="Utilisation de l'extension GeoSearch" width="500">
-							</a>
-						</figure>
-						<p>Dans la zone <b>Address</b>, tapez : <b>Doncaster East, Melbourne, Australia</b> puis cliquez sur le bouton <b>Search</b> : une ligne correspondant à ce lieu apparaît dans la liste en bas de la fenêtre.</p>
-						<p>En double-cliquant sur cette ligne, vous centrez la carte sur ce lieu ; en utilisant les outils de zoom et GeoSearch, vous pouvez donc vous rapprocher de la zone correspondant à notre carte à caler :</p>
+						<p>Le panneau OSM place search s'ouvre ensuite. Ce panneau est activable ou désactivable via le menu Vue &#8594; Panneaux &#8594; Recherche de lieux OSM.</p>
+						<p>Dans la barre de recherche, tapez : <b>Doncaster East, Victoria, Australia</b> puis appuyez sur la touche entrée : une ligne correspondant à ce lieu apparaît dans la liste en bas de la fenêtre.</p>
+						<p>En double-cliquant sur cette ligne en bien en la sélectionnant et en cliquant ensuite sur le bouton <b>Zoomer</b>, vous centrez la carte sur ce lieu.</p>
 						<figure>
 						  <a href="illustrations/tous/4_6_osm_zoom1.png" >
-							<img src="illustrations/tous/4_6_osm_zoom1.png" alt="Données OSM : Melbourne" width="350">
+							<img src="illustrations/tous/4_6_osm_zoom1.png" alt="Données OSM : Melbourne" width="100%">
 						  </a>
 						</figure>
 					</div>
 					
-					<p class="note">Notez qu'une couche temporaire <b>GeoSearch</b> a été ajoutée à votre projet ; vous pouvez également faire un clic droit dessus, zoomer sur la couche.</p>
 					<div class="manip">
 						<p>Zoomez maintenant sur Doncaster East (pour vous aider : <a class="ext" target="_blank" href="http://www.openstreetmap.org/relation/2390038#map=13/-37.7776/145.1615" >carte OpenStreetMap de Doncaster Est</a>).</p>
 						<figure>
@@ -131,7 +125,7 @@
 				<h3><a class="titre" id="IV64">Création des points de calage</a></h3>
 					
 					<div class="manip">
-						<p>Ouvrez la fenêtre du géoréférenceur et ajoutez l'image à caler : <em class="data">Doncaster_east_locality_map.PNG</em> située dans le dossier <b>TutoQGIS_04_Georef/donnees</b> (si nécessaire, aidez-vous pour cela du début de la <a href="04_03_calage_carroyage.php#IV31">partie IV.3.1</a>).</p>
+						<p>Ouvrez la fenêtre du géoréférenceur et ajoutez l'image à caler : <em class="data"><a href="donnees/TutoQGIS_04_Georef.zip">Doncaster_east_locality_map.PNG</a></em> située dans le dossier <b>TutoQGIS_04_Georef/donnees</b> (si nécessaire, aidez-vous pour cela du début de la <a href="04_03_calage_carroyage.php#IV31">partie IV.3.1</a>).</p>
 						<p>Lorsque QGIS vous demande dans quel SCR est cette image, choisissez le <b>WGS84 / Pseudo-Mercator EPSG:3857</b>.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_scr_3857.png">
