@@ -31,9 +31,9 @@
 			<h3><a class="titre" id="VI21">Faire une requête spatiale simple</a></h3>
 			
 				<div class="manip">
-					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche <em class="data">communes_NordPasDeCalais</em>.</p>
+					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_NordPasDeCalais</a></em>.</p>
 					<p>En vous connectant au <a href="03_02_donnees_flux.php#III23">flux WFS</a> <b>http://ws.carmen.developpement-durable.gouv.fr/WFS/24/profil_env?</b>, ajoutez également au projet la couche <em class="data">Installations de traitement de déchets</em>.</p>
-					<p class="note">Au cas où la connexion au flux échouerait, cette couche est également disponible dans le dossier TutoQGIS_06_Requetes/donnees.</p>
+					<p class="note">Au cas où la connexion au flux échouerait, cette couche est également disponible dans le dossier <a href="donnees/TutoQGIS_06_Requetes.zip">TutoQGIS_06_Requetes</a>.</p>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
 						<p><label for="faq-1">Dans quel SCR sont ces deux couches ?</label></p>

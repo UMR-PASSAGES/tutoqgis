@@ -25,12 +25,12 @@
 				
 			<p>Nous allons voir ici comment utiliser les données de la table attributaire pour sélectionner des éléments d'une couche, par exemple comment sélectionner les départements dans le nom commence par &#171; A &#187; .</p>
 			<p>Beaucoup d'opérateurs sont disponibles pour les requêtes attributaires; nous ne les passerons pas tous en revue mais allons simplement utiliser quelques uns des plus courants.</p>
-			<p>Pour une description de tous les opérateurs et fonctions possibles : voir le <a class="ext" target="_blank" href="http://docs.qgis.org/2.8/fr/docs/user_manual/working_with_vector/field_calculator.html" >manuel de QGIS</a> (cette partie correspond à la calculatrice de champ mais est valable également pour les requêtes attributaires).</p>
+			<p>Pour une description de tous les opérateurs et fonctions possibles : voir le <a class="ext" target="_blank" href="https://docs.qgis.org/3.4/fr/docs/user_manual/working_with_vector/expression.html#vector-expressions" >manuel de QGIS</a>.</p>
 
 			<h3><a class="titre" id="VI11">Faire une requête simple</a></h3>
 
 				<div class="manip">
-					<p>Ajoutez la couche <em class="data">departements</em> située dans le dossier <b>TutoQGIS_06_Requetes/donnees</b>.</p>
+					<p>Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">departements</a></em> située dans le dossier <b>TutoQGIS_06_Requetes/donnees</b>.</p>
 					<p>Ouvrez la table attributaire de cette couche.</p>
 				</div>
 					<p>Pour sélectionner le département du Nord (59), vous pouvez cliquez sur le numéro de la ligne correspondante ou bien directement sur ce département sur la carte. Vous pouvez aussi utiliser une requête attributaire.</p>
@@ -74,16 +74,15 @@
 				
 				<p>Il est possible de créer une nouvelle couche shapefile à partir d'une sélection.</p>
 				<div class="manip">
-					<p>Votre département du Nord étant toujours sélectionné, faites un clic droit sur la couche de départements dans la table des matières et choisissez <b>Enregistrer sous...</b> :</p>
+					<p>Votre département du Nord étant toujours sélectionné, faites un clic droit sur la couche de départements &#8594; <b>Exporter &#8594; Sauvegarder les entités sélectionnées sous...</b></p>
 					<figure>
 						<a href="illustrations/tous/6_1_sauv_selection_fenetre.png" >
-							<img src="illustrations/tous/6_1_sauv_selection_fenetre.png" alt="fenêtre pour sauvegarder la sélection" width="410">
+							<img src="illustrations/tous/6_1_sauv_selection_fenetre.png" alt="fenêtre pour sauvegarder la sélection" width="90%">
 						</a>
 					</figure>
 					<ul>
-						<li class="espace">Cliquez sur <b>Parcourir</b> pour choisir à quel endroit sera sauvegardée la nouvelle couche, et sous quel nom, <em class="data">dept59</em> par exemple</li>
+						<li class="espace">Cliquez sur <b>...</b> pour choisir à quel endroit sera sauvegardée la nouvelle couche, et sous quel nom, <em class="data">dept59</em> par exemple</li>
 						<li class="espace">Vérifiez que la case <b>N'enregistrer que les entités sélectionnées</b> soit cochée.</p></li>
-						<p class="note">Cette case est cochée automatiquement à partir du moment où une sélection est présente, et est grisée si aucune entité n'est sélectionnée</p>
 						<li class="espace">et cliquez sur <b>OK</b></li>
 					</ul>
 					<p>La nouvelle couche est automatiquement ajoutée à QGIS. Elle ne contient qu'un seul département, celui du Nord.</p>
@@ -106,7 +105,7 @@
 			
 				<p>Dans l'exemple ci-dessus, nous avons utilisé l'opérateur <b>=</b> pour notre requête. Il en existe d'autre, comme par exemple les opérateurs mathématiques inférieur à et supérieur à, multiplier, diviser...</p>
 				<div class="manip">
-					<p>Ajoutez la couche <em class="data">communes_NordPasDeCalais</em> située dans le dossier <b>TutoQGIS_06_Requetes/donnees</b>.</p>
+					<p>Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_NordPasDeCalais</a></em> située dans le dossier <b>TutoQGIS_06_Requetes/donnees</b>.</p>
 					<p>Fermez la table attributaire de la couche de départements et ouvrez celle de la couche de communes. Cette table comporte une colonne <b>POPULATION</b> avec la population de chaque commune en milliers d'habitants.</p>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
@@ -221,6 +220,8 @@
 						<p class="reponse">"NOM_DEPT" LIKE  'NORD' AND ( "NOM_COMM" LIKE '%W%' OR   "NOM_COMM" LIKE '%OO%') AND  "POPULATION"  &lt;= 10 : 55 communes sélectionnées</p>
 					</div>
 				</div>
+				
+				<p>Nous avons vu ici comment sélectionner des entités en fonction de leurs données attributaires. Au chapitre suivant, nous verrons comment sélectionner des entités en fonction de leur position par rapport aux entités d'une autre couche&nbsp;!</p>
 			
 				
 				<br>
