@@ -31,13 +31,13 @@
 			<h3><a class="titre" id="V41">Création d'une couche de lignes</a></h3>
 				
 				<div class="manip">
-					<p>Reportez-vous à la <a href="05_01_creation_couche.php">partie V.1</a> pour créer une couche de ligne, en choisissant cette fois :</p>
+					<p>Reportez-vous à la <a href="05_01_creation_couche.php">partie V.1</a> pour créer une couche de ligne, en lui donnant :</p>
 					<ul>
-						<li>le type <b>ligne</b></li>
+  					    <li>le nom <em class="data">fleuves_oahu</em>.</li>
+						<li>le type de géométrie <b>ligne</b></li>
 						<li>un seul champ de type texte, de longueur 80, nommé <b>nom</b> (il contiendra le nom des fleuves)</li>
-						<li>nommez cette couche <em class="data">fleuves_oahu</em>.</li>
 					</ul>
-					<p>Vérifiez que cette couche soit bien chargée dans votre projet, ainsi que la carte <em class="data">Oahu_Hawaiian_Islands_1906_wgs84.tif</em></p>
+					<p>Vérifiez que cette couche soit bien chargée dans votre projet, ainsi que la carte <em class="data"><a href="donnees/TutoQGIS_05_Numerisation.zip">Oahu_Hawaiian_Islands_1906_wgs84.tif</a></em>.</p>
 				</div>
 			
 			<h3><a class="titre" id="V42">Ajout d'une ligne</a></h3>
@@ -45,7 +45,7 @@
 				<h4><a class="titre" id="V42a">Première ligne</a></h4>
 				
 				<div class="manip">
-					<p>Zoomez sur un fleuve, par exemple dans le nord est de l'île, dans la région de Makaha :</p>
+					<p>Zoomez sur un fleuve, par exemple dans l'ouest de l'île, dans la région de Makaha :</p>
 					<figure>
 						<a href="illustrations/tous/5_4_makaha.png" >
 							<img class="noshadow" src="illustrations/tous/5_4_makaha.png" alt="zoom sur Makaha" width="232">
@@ -85,20 +85,22 @@
 				
 				<div class="manip">
 					<p><img class="icone" src="illustrations/tous/5_4_noeud_icone.png" alt="icône outil de noeud">Vérifiez que vous êtes bien en mode édition pour la couche de fleuves. Sélectionnez-la dans la table des matières, puis cliquez sur l'icône <b>Outil de nœud</b>.</p>
-					<p>Cliquez sur une ligne existante : les sommets prennent la forme de carrés rouges.</p>
+					<p>Survolez une ligne existante : les sommets prennent la forme de ronds rouges.</p>
 					<figure>
 						<a href="illustrations/tous/5_4_fleuve_noeud.png" >
 							<img src="illustrations/tous/5_4_fleuve_noeud.png" alt="ligne avec les noeuds visibles sous forme de carrés rouges" width="500" >
 						</a>
 					</figure>
-					<p>Si vous cliquez sur un sommet, il est sélectionné et devient bleu. Vous pouvez grâce à l'outil de nœud :</p>
+					<p>Si vous survolez un sommet, il devient plus gros. Vous pouvez alors :</p>
 					<ul>
-						<li class="espace"><b>déplacer un sommet</b> en le faisant glisser</li>
-						<li class="espace"><b>supprimer un sommet :</b> cliquez dessus pour le sélectionner, puis appuyez sur la touche suppr</li>
-						<li class="espace"><b>rajouter un sommet :</b> double-cliquez sur la ligne à l'endroit où vous voulez créer un sommet. Vous pouvez ensuite déplacer ce nouveau sommet.</li>
+						<li class="espace"><b>le déplacer</b> en cliquant une première fois sur le sommet puis en cliquant à l'emplacement de votre choix</li>
+						<li class="espace"><b>le supprimer </b> en cliquant une première fois sur le sommet puis en appuyant sur la touche suppr</li>
+						<li class="espace"><b>rajouter un sommet :</b> double-cliquez sur la ligne à l'endroit où vous voulez créer un sommet puis cliquez là où vous désirez placer ce sommet.</li>
 					</ul>
 					<p>Une fois vos modifications terminées, n'oubliez pas de <b>quitter le mode édition en enregistrant vos modifications</b>.</p>
 				</div>
+				
+				<p>Rendez-vous au chapitre suivant pour numériser des polygones !</p>
 	
 
 				<br>

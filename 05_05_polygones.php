@@ -24,17 +24,36 @@
 				<br>
 				
 			<p>Pour numériser des polygones, les choses se compliquent un peu... Nous n'allons pas ici numériser toutes les zones de l'île, mais passer en revue quelques techniques d'édition de polygones au moyen de quelques exemples.</p>
+			
+			<p>Il s'agira ici de numériser des zones en fonction de leur type. Comme l'indique la légende, certaines zones peuvent avoir 2 types différents, par exemple réserve forestière et réserve fédérale. La couche que nous allons créer contiendra 2 champs, type1 et type2</p>
+			<center>
+			<figure>
+			    <a href="illustrations/tous/5_5_oahu_legende.png" >
+					<img src="illustrations/tous/5_5_oahu_legende.png" alt="légende de la carte de l'île d'Oahu" width="70%">
+				</a>
+			</figure>
+			</center>
+			<p>Vous voyez ici la carte originale à gauche, et avec superposée la couche de polygones à droite.</p>
+			<figure>
+				<a href="illustrations/tous/5_5_oahu_avant.png" >
+					<img src="illustrations/tous/5_5_oahu_avant.png" alt="détail de la carte de l'île d'Oahu" width="40%">
+				</a>
+				<a href="illustrations/tous/5_5_oahu_apres.png" >
+					<img src="illustrations/tous/5_5_oahu_apres.png" alt="détail de la carte de l'île d'Oahu avec la couche de polygones superposée" width="40%">
+				</a>
+			</figure>
+			<p>L'idée est de numériser le polygone de la réserve forestière, avec des contours bleus sur la carte, puis de le découper pour différencier les zones de cette réserve classées comme &#171; Public lands &#187; (en vert) ou comme &#171; Dederal Reservations &#187; (en rose).</p>
 				
 			<h3><a class="titre" id="V51">Création d'une couche de polygones</a></h3>
 				
 				<div class="manip">
-					<p>Reportez-vous à la <a href="05_01_creation_couche.php">partie V.1</a> pour créer une couche de polygones, en choisissant cette fois :</p>
+					<p>Reportez-vous à la <a href="05_01_creation_couche.php">partie V.1</a> pour créer une couche de polygones, en lui donnant :</p>
 					<ul>
+					    <li class="espace">le nom <em class="data">zones_oahu</em>.</li>
 						<li class="espace">le type <b>polygone</b></li>
 						<li class="espace">deux champs de type texte, de longueur 80, nommés <b>type1</b> et <b>type2</b> (ils contiendront les types de zone, tels qu'indiqués dans la légende)</li>
-						<li class="espace">nommez cette couche <em class="data">zones_oahu</em>.</li>
 					</ul>
-					<p>Vérifiez que cette couche soit bien chargée dans votre projet, ainsi que la carte <em class="data">Oahu_Hawaiian_Islands_1906_wgs84.tif</em></p>
+					<p>Vérifiez que cette couche soit bien chargée dans votre projet, ainsi que la carte <em class="data"><a href="donnees/TutoQGIS_05_Numerisation.zip">Oahu_Hawaiian_Islands_1906_wgs84.tif</a></em>.</p>
 				</div>
 				
 									
@@ -67,7 +86,7 @@
 							<img src="illustrations/tous/5_5_premier_polygone.png" alt="numérisation d'un polygone en cours" width="350">
 						</a>
 					</figure>
-					<p>Vous pouvez maintenant remplir les données attributaires pour ce polygone, par exemple en donnant la valeur "Forest Reserves" en type1, et aucune valeur en type2.</p>
+					<p>Vous pouvez maintenant remplir les données attributaires pour ce polygone, par exemple en donnant la valeur <b>Forest Reserves</b> en type1, et la valeur <b>None</b> en type2.</p>
 				</div>
 				
 			<h3><a class="titre" id="V53">Découpage d'un polygone</a></h3>
@@ -83,6 +102,7 @@
 						</a>
 					.</p>
 					<p><img class="iconemid" src="illustrations/tous/5_5_decoupe_icone.png" alt="icône séparer les entités" >Dans la barre d'outils <b>Numérisation avancée</b>, cliquez sur l'icône <b>Séparer les entités</b>.</p>
+					<p class="note">Attention à ne pas confondre cet outil avec celui pour <b>Séparer les parties</b> juste à sa droite !</p>
 					<p>Cliquez à l'extérieur du polygone, puis de l'autre côté du polygone en suivant la ligne selon laquelle le découper. Terminez par un clic droit n'importe où. Il est possible de créer des points à l'intérieur du polygone mais il faut terminer par un point à l'extérieur du polygone.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_decoupe.png" >
@@ -93,6 +113,12 @@
 					<figure>
 						<a href="illustrations/tous/5_5_public_lands.png" >
 							<img src="illustrations/tous/5_5_public_lands.png" alt="Sélection de la bande de terrain public de Waimano en réserve forestière" width="330">
+						</a>
+					</figure>
+					<p>Vous pouvez ensuite mettre à jour les données attributaires :</p>
+					<figure>
+						<a href="illustrations/tous/5_5_attributs_remplis.png" >
+							<img src="illustrations/tous/5_5_attributs_remplis.png" alt="Table attributaire de la couche de polygones" width="80%">
 						</a>
 					</figure>
 				</div>
@@ -113,13 +139,13 @@
 						<p class="reponse">Les deux polygones ne sont plus jointifs. Le déplacement d'un sommet d'un des polygones n'a pas eu d'effet sur le sommet correspondant du deuxième polygone.</p>
 					</div>
 						<p>Rendez-vous maintenant dans le 
-							<a class="thumbnail_bottom" href="#thumb">Menu Préférences &#8594; Options d'accrochage
+							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Options d'accrochage
 								<span>
-									<img src="illustrations/tous/5_5_accrochage_menu.png" alt="Menu Préférences, Options d'accrochage" height="150" >
+									<img src="illustrations/tous/5_5_accrochage_menu.png" alt="Menu Préférences, Options d'accrochage" height="320" >
 								</span>
 							</a>	
-						et cochez la case <b>Activer l'édition topologique</b> en bas à gauche de la fenêtre.</p>
-						<img src="illustrations/tous/5_5_edition_topologique.png" alt="case d'activation de l'édition topologique cochée" width="200">
+						et <b>activez l'édition topologique</b> en enclenchant le bouton correspondant si ça n'est pas déjà fait.</p>
+						<img src="illustrations/tous/5_5_edition_topologique.png" alt="case d'activation de l'édition topologique cochée" width="100%">
 						<p>Déplacez à nouveau un sommet d'un des polygones et sélectionnez successivement les deux polygones.</p>
 						<div class="question">
 						<input type="checkbox" id="faq-2">
@@ -136,7 +162,7 @@
 				<p>Par exemple, comment faire pour rajouter la partie Ouest de la bande de Waimano en s'aimantant aux polygones déjà existants ?</p>
 				
 				<div class="manip">
-					<p>Rendez-vous dans le Menu <b>Préférences &#8594; Options d'accrochage</b> :</p>
+					<p>Rendez-vous dans le Menu <b>Projet &#8594; Options d'accrochage</b> :</p>
 					<figure>
 						<a href="illustrations/tous/5_5_accrochage_fenetre.png" >
 							<img src="illustrations/tous/5_5_accrochage_fenetre.png" alt="activation de l'accrochage pour la couche de polygones avec une tolérance de 10 pixels" width="600">
@@ -144,12 +170,24 @@
 					</figure>
 				</div>
 				
-				<p>Cette fenêtre permet de définir à quelle(s) couche(s) le curseur sera aimanté, s'il sera aimanté uniquement par les sommets ou également par les segments, et à quelle distance d'un sommet ou segment l'aimantage prend effet.</p>
-				
 				<div class="manip">
-					<p>Par exemple, pour être automatiquement aimanté à votre couche de polygone dès que votre curseur approche à moins de 10 pixels d'un sommet de cette couche, en mode d'accrochage <b>avancé</b>, cochez la case de <b>zones_oahu</b>, choisissez le mode <b>sur un sommet</b> et fixez la tolérance à <b>10 pixels</b>.</p>
+				    <p><img class="iconemid" src="illustrations/tous/5_5_accrochage_icone.png" alt="icône de l'outil d'activation de l'accrochage" >Cliquez sur le bouton <b>Activer l'accrochage</b> tout en haut à gauche de la fenêtre.</p>
+				    <p>Choisissez le mode <b>Configuration avancée</b> dans la liste déroulante à droite. La liste des couches présentes dans votre projet QGIS s'affiche.</p>
+				    <p>Vous pouvez ici définir à quelle(s) couche(s) le curseur sera aimanté, s'il sera aimanté uniquement par les sommets ou également par les segments, et à quelle distance d'un sommet ou segment l'aimantage prend effet.</p>
+					<p>Par exemple, pour être automatiquement aimanté à votre couche de polygone dès que votre curseur approche à moins de 10 pixels d'un sommet de cette couche, cochez la case de <b>zones_oahu</b>, choisissez le mode <b>sommet</b> et fixez la tolérance à <b>10 pixels</b>.</p>
+					<p>Fermez la fenêtre des paramètres d'accrochage.</p>
 					<p>Cliquez sur l'icône <b>Ajouter une entité</b>, et approchez-vous d'un sommet d'un polygone déjà créé : votre curseur est aimanté par ce sommet, qui apparaît alors en rose.</p>
+					<figure>
+						<a href="illustrations/tous/5_5_curseur_aimante.png" >
+							<img src="illustrations/tous/5_5_curseur_aimante.png" alt="Curseur aimanté prenant la forme d'un carré rose" width="90%">
+						</a>
+					</figure>
 					<p>Profitez-en pour numériser la partie Est de la bande d'Aiea, de manière à ce que les deux parties soient parfaitement jointives.</p>
+					<figure>
+						<a href="illustrations/tous/5_5_aiea.png" >
+							<img src="illustrations/tous/5_5_aiea.png" alt="bande d'Aiea numérisée" width="70%">
+						</a>
+					</figure>
 				</div>
 				
 			<h3><a class="titre" id="V56">Éviter les intersections entre polygones jointifs</a></h3>
@@ -157,7 +195,7 @@
 				<p>L'accrochage est une propriété pratique pour quelques sommets, mais si vous souhaitez créer un polygone contigu à une autre sur une longue portion (par exemple le polygone en pointillés bleus sur la carte), cela peut être fastidieux de cliquer un à un sur tous les sommets communs.</p>
 				
 				<div class="manip">
-					<p>Pour éviter cela, rendez-vous à nouveau dans le menu Préférences &#8594; Options d'accrochage et cochez la case <b>Éviter les intersections</b> pour la couche zones_oahu.</p>
+					<p>Pour éviter cela, rendez-vous à nouveau dans le menu Projet &#8594; Options d'accrochage et cochez la case <b>Éviter les intersections</b> pour la couche zones_oahu.</p>
 					<figure>
 					   <a href="illustrations/tous/5_5_eviter_intersections.png" >
 					       <img src="illustrations/tous/5_5_eviter_intersections.png" alt="cocher la case éviter les intersections" width="500">
@@ -165,7 +203,18 @@
 					</figure>
 					<p>Cliquez sur l'icône <b>Ajouter une entité</b>, et dessinez un par exemple le polygone en pointillés bleu correspondant à la surface des terres forestières qui ne sont pas en réserve. Ce polygone est contigu sur une longue portion à des polygones que vous avez déjà créés : ne suivez pas les bords pour cette partie mais contentez-vous de passer au milieu des polygones déjà existants.</p>
 					<p>Faites un clic droit pour terminer le polygone : les parties du polygone que vous venez de dessiner qui étaient superposées à des polygones déjà existants ont été automatiquement supprimées.</p>
-				</div>				
+					<figure>
+					   <a href="illustrations/tous/5_5_eviter_intersections_avant.png" >
+					       <img src="illustrations/tous/5_5_eviter_intersections_avant.png" alt="polygone en cours d'édition, avec des débordements sur le polygone voisin" width="40%">
+					   </a>
+					   <a href="illustrations/tous/5_5_eviter_intersections_apres.png" >
+					       <img src="illustrations/tous/5_5_eviter_intersections_apres.png" alt="polygone fini sans débordements" width="40%">
+					   </a>
+					   <figcaption>à gauche, polygone en cours d'édition juste avant le clic droit final, à droite après ce clic droit.</figcaption>
+					</figure>
+				</div>
+				
+				<p>Dans le chapitre suivant, découvrez ce qu'est la topologie&nbsp;!</p>		
 				
 
 				<br>
