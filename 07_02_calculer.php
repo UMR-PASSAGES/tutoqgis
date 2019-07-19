@@ -31,7 +31,7 @@
 				</ul>
 				<br>
 				
-			<p>Il est possible de calculer automatiquement les valeurs d'un champ au moyen de la calculatrice de champ, un peu à la manière d'une requête attributaire.</p>
+			<p>Il est possible de calculer automatiquement les valeurs d'un champ au moyen de la calculatrice de champ, un peu à la manière d'une formule dans un tableur.</p>
 
 			<h3><a class="titre" id="VII21">Comment fonctionne la calculatrice de champ ?</a></h3>
 			
