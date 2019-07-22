@@ -54,7 +54,7 @@
 							<li class="espace">A ce stade, la case <b>Expression</b> doit contenir  : <b>"NOM_DEPT" = 'NORD'</b></li>
 							<li class="espace">Cliquez sur le bouton <b>Sélection</b> en bas de la fenêtre</li>
 						</ul>
-					<p class="note">Il est également possible de taper la requête &#171; à la main &#187; directement dans la case Expression. Attention dans ce cas à bien respecter la syntaxe utilisée par QGIS : par exemple, les noms de champs sont entourées de guillemets doubles et les chaînes de caractères de guillemets simples.</p>
+					<p class="note">Il est également possible de taper la requête &#171; à la main &#187; directement dans la case Expression. Attention dans ce cas à bien respecter la syntaxe utilisée par QGIS : par exemple, les noms de champs sont entourés de guillemets doubles et les chaînes de caractères de guillemets simples.</p>
 					<p>La fenêtre de requête attributaire ne se ferme pas automatiquement ; vous pouvez ou la fermer en cliquant sur le bouton <b>Fermer</b> ou bien simplement la déplacer pour vérifier sur la carte le résultat de votre sélection.</p>
 					<figure>
 						<a href="illustrations/tous/6_1_selection_nord.png" >
