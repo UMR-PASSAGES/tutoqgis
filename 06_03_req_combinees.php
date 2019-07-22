@@ -24,7 +24,7 @@
 			
 			<h3><a class="titre" id="VI31">Combiner deux requêtes attributaires</a></h3>
 			
-				<p>Pour combiner deux requêtes attributaire, nous avons vu dans la <a href="06_01_req_attrib.php#VI15" >partie VI.1.5</a> qu'il est possible d'utiliser les opérateurs AND et OR.</p>
+				<p>Pour combiner deux requêtes attributaires, nous avons vu dans la <a href="06_01_req_attrib.php#VI15" >partie VI.1.5</a> qu'il est possible d'utiliser les opérateurs AND et OR.</p>
 				<p>Il est également possible de faire deux requêtes successives.</p>
 				<p>Nous allons ici sélectionner les communes du Morbihan de + de 10 000 habitants.</p>
 				
