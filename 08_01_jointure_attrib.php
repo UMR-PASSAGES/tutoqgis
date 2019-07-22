@@ -50,14 +50,15 @@
 			<h3><a class="titre" id="VIII12">Application : population au Bhoutan</a></h3>
 			
 				<div class="manip">
-					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche des régions du <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Bhoutan" >Bhoutan</a> <em class="data">regions_bhutan.shp</em>.</p>
-					<p>Ajoutez également au projet la table <em class="data">pop_bhutan.csv</em> : pour cela, procédez comme pour ajouter une couche shapefile mais choisissez <b>Tous les fichiers</b> comme format de fichier :</p>
+					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche des régions du <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Bhoutan" >Bhoutan</a> <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">regions_bhutan.shp</a></em>.</p>
+					<p>Ajoutez également au projet la table <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">pop_bhutan.csv</a></em> : pour cela, procédez comme pour <a href="03_03_donnees_XY.php">ajouter une couche de texte délimité</a> en choisissant l'option <b>Pas de géométrie</b> :</p>
 					<figure>
 						<a href="illustrations/tous/8_1_ajout_csv.png" >
-							<img src="illustrations/tous/8_1_ajout_csv.png" alt="ajout d'un csv : choisir tous les fichiers comme format" width="550">
+							<img src="illustrations/tous/8_1_ajout_csv.png" alt="ajout d'un csv : choisir tous les fichiers comme format" width="100%">
 						</a>
 					</figure>
-					<p>Vous pouvez également ajouter ce fichier via le <a href="01_02_info_geo.php#I21b">panneau Explorateur</a>.</p>
+					<p>Vous pouvez également ajouter ce fichier via le <a href="01_02_info_geo.php#I21b">panneau Explorateur</a> ou en procédant comme pour une couche vecteur.</p>
+					<p>Cependant la méthode présentée ici permet de <b>détecter automatiquement les types des champs</b> (texte, entier...). En passant par une autre méthode, tous les champs seront considérés comme du texte.</p>
 					<p class="note">Le <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Comma-separated_values">format CSV</a> est un format texte contenant des colonnes séparées par un caractère délimiteur, habituellement la virgule, le point-virgule ou la tabulation.</p>
 					<p>Vous devez donc avoir dans QGIS ces deux données (notez l'icône de tableau pour le CSV) :</p>
 					<figure>
@@ -78,15 +79,16 @@
 					<p>Cliquez sur le symbole <img class="iconemid" src="illustrations/tous/8_1_plus.png" alt="symbole + d'ajout de jointure" > pour ajouter une jointure :</p>
 					<figure>
 						<a href="illustrations/tous/8_1_jointure_fenetre.png" >
-							<img src="illustrations/tous/8_1_jointure_fenetre.png" alt="création d'une jointure : choix de la couche à joindre et des champs clés" width="500">
+							<img src="illustrations/tous/8_1_jointure_fenetre.png" alt="création d'une jointure : choix de la couche à joindre et des champs clés" width="90%">
 						</a>
 					</figure>
 					<ul>
 						<li class="espace"><b>Joindre la couche :</b> choisissez la couche qui sera jointe, ici le CSV <em class="data">pop_bhutan</em></li>
-						<li class="espace"><b>Champs de jointure des couches jointe et cible :</b> choisissez les deux champs clés qui permettront de trouver les correspondances d'une table à l'autre</li>
+						<li class="espace"><b>Champs de jointure :</b> choisissez le champs clé dans le CSV, à savoir <b>REG_CODE</b></li>
+						<li class="espace"><b>Champs de jointure :</b> choisissez le champs clé dans la couche région, à savoir <b>CODEREGION</b></li>
 						<li class="espace"><b>Mettre la couche jointe en cache dans la mémoire virtuelle :</b> si cette case est cochée, l'affichage de la table sera plus rapide, mais les données ne seront pas mises à jour si des modifications sont effectuées dans la couche jointe</li>
-						<li class="espace"><b>Choisir les champs à joindre :</b> ici, nous voulons joindre tous les champs donc vous pouvez laisser cette case décochée</li>
-						<li class="espace"><b>Personnaliser le préfixe du champ :</b> les champs joints peuvent avoir le préfixe de votre choix, pour bien les différencier des champs originaux ou issus d'autres jointures. Choisissez un préfixe court, par exemple <b>tab_</b></li>
+						<li class="espace"><b>champs joints :</b> ici, nous voulons joindre tous les champs donc vous pouvez laisser cette case décochée</li>
+						<li class="espace"><b>Préfixe de nom de champ personnalisé :</b> les champs joints peuvent avoir le préfixe de votre choix, pour bien les différencier des champs originaux ou issus d'autres jointures. Choisissez un préfixe court, par exemple <b>tab_</b></li>
 					</ul>
 					<p>Cliquez sur <b>OK</b> pour créer la jointure : la ligne correspondante apparaît dans la fenêtre des propriétés.</p>
 					<p>Ouvrez la table attributaire de la couche  <em class="data">regions_bhutan.shp</em> : les données de la table ont été ajoutées (champ tab_POPEST95).</p>

@@ -236,6 +236,7 @@
 							<li class="index_02"><a href="02_00_geodesie.php">Géodésie</a></li>
 							<li class="index_02"><a href="02_01_intro.php#II12">Géoïde</a></li>
 							<li class="index_02"><a href="01_01_SIG.php#I11a">Géomatique</a></li>
+							<li class="index_02"><a href="01_03_formats.php#I31b">GeoPackage</a></li>
 							<li class="index_02"><a href="04_00_georeferencement.php">Géoréférencement</a></li>
 							<li class="index_02">Géoréférenceur
 								<ul>
@@ -293,7 +294,6 @@
 						<ul>
 							<li class="index_02"><a href="02_02_coord.php#II22d">Lambert (projection)</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22d">Lambert 93 (projection)</a></li>
-							<li class="index_02"><a href="07_02_calculer.php#VII23b">Left (fonction de calcul de champ)</a></li>
 							<li class="index_02"><a href="10_02_mise_en_page.php#X22b">Légende (composeur d'impression)</a></li>
 							<li class="index_02"><a href="07_02_calculer.php#VII23b">Length (fonction de calcul de champ)</a></li>
 							<li class="index_02"><a href="06_01_req_attrib.php#VI13">Like</a></li>
@@ -520,8 +520,7 @@
 					
 					<li class="index_01" id="T">T
 						<ul>
-							<li class="index_02"><a href="01_03_formats.php#I31b">TAB (MapInfo)</a></li>
-							<li class="index_02"><a href="07_01_creation_suppression.php#VII13">Table Manager</a></li>
+							<li class="index_02"><a href="01_03_formats.php#I31c">TAB (MapInfo)</a></li>
 							<li class="index_02"><a href="09_01_vecteur.php#IX12">Tampon</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Thin Plate Spline TPS (transformation)</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22c">Tissot (indicatrice de)</a></li>
