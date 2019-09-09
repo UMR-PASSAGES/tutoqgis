@@ -451,6 +451,7 @@
 									<li class="index_03"><a href="06_01_req_attrib.php">attributaire</a></li>
 									<li class="index_03"><a href="10_01_representation.php#X11b">constructeur de</a></li>
 									<li class="index_03"><a href="06_02_req_spatiales.php">spatiale</a></li>
+									<li class="index_03"><a href="06_04_req_sql.php">SQL</a></li>
 								</ul>
 							</li>
 							<li class="index_02"><a href="08_02_jointure_spatiale.php#VIII22">Résumé des entités intersectées (jointure spatiale)</a></li>
@@ -497,6 +498,7 @@
 							<li class="index_02"><a href="03_04_donnees_osm.php#III42c">SLD (Style Layer Descriptor)</a></li>
 							<li class="index_02"><a href="06_04_req_sql.php">SQL</a></li>
 							<li class="index_02"><a href="03_01_donnees_internet.php#III12">SRTM</a></li>
+							<li class="index_02"><a href="08_01_jointure_attrib.php#VIII14b">Statistiques par catégories (outil)</a></li>
 							<li class="index_02">Style d'une couche
 								<ul>
 									<li class="index_03"><a href="03_01_donnees_internet.php#III11a">catégorisé</a></li>
