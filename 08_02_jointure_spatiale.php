@@ -15,14 +15,18 @@
 			<h2>VIII.2  Lier des données en fonction de leur position : jointures spatiales</h2>
 				<ul class="listetitres">
 					<li><a href="#VIII21">Comment fonctionne une jointure spatiale ?</a></li>
-					<li><a href="#VIII22">Joindre des éléments un à un</a></li>
-					<li><a href="#VIII23">Quelques exemples supplémentaires</a>
+					<li><a href="#VIII22">Joindre des éléments un à un</a>
 						<ul class="listesoustitres">
-							<li><a href="#VIII23a">Écoles secondaires du Kenya</a></li>
+							<li><a href="#VIII22a">Premier exemple détaillé : quel chef-lieu pour quel département ?</a></li>
+							<li><a href="#VIII22b">Pour s'entraîner : quel comté pour quel site remarquable ?</a></li>
+						</ul>
+					</li>
+					<li><a href="#VIII23">Joindre plusieurs éléments à un seul</a>
+					   <ul class="listesoustitres">
+							<li><a href="#VIII23a">Compter le nombre de sites par comté</a></li>
 							<li><a href="#VIII23b">Jointure de deux couches de polygones : un comportement étonnant</a></li>
 						</ul>
 					</li>
-					<li><a href="#VIII24">Joindre plusieurs éléments à un seul</a></li>
 				</ul>
 				<br>
 				
@@ -41,81 +45,67 @@
 				<p>Il existe plusieurs outils pour cela dans QGIS ; nous utiliserons celui présentant a priori le plus de possibilités.</p>
 				
 			<h3><a class="titre" id="VIII22">Joindre des éléments un à un</a></h3>
+			     
+			    <h4><a class="titre" id="VIII22a">Premier exemple détaillé : quel chef-lieu pour quel département ?</a></h4>
 			
-				<p>Voyons tout d'abord le cas où les données correspondent une à une, par exemple pour joindre les données d'un chef-lieu au département qui lui correspond.</p>
-				
-				<div class="manip">
-					<p>Ouvrez un nouveau projet QGIS, ajoutez les deux couches shapefile <em class="data">DEPARTEMENT</em> et <em class="data">CHEF_LIEU</em>.</p>
-					<figure>
-						<a href="illustrations/tous/8_2_cheflieux_depts.png" >
-							<img src="illustrations/tous/8_2_cheflieux_depts.png" alt="superposition des chefs-lieux et des départements" width="60%" >
-						</a>
-					</figure>
-                    <p>Ouvrez les tables attributaires des 2 couches : il n'existe pas de champ permettant de faire une jointure attributaire entre les couches (même s'il serait possible de récupérer le code du département à partir du code INSEE, mais nous ferons comme si pour les besoins de l'exercice...).</p>
-                    <p>Par contre, <b>chaque chef-lieu est situé dans un département</b>&nbsp;; il est donc possible d'associer les 2 avec un <a href="06_02_req_spatiales.php#VI22">opérateur spatial</a> comme par exemple <b>contient</b>.</p>
-                </div>
-                
-                <p>Le but de l'opération est d'<b>ajouter des colonnes</b> dans la table attributaire de la couche de départements, avec le nom du chef-lieu, son statut etc. Bien sûr, l'inverse est également possible : ajouter dans la table attributaire des chefs-lieux des colonnes avec le nom du département, son code etc.</p>
-                
-                <div class="manip">
-                    <p>Dans la boît à outils de traitements, rubrique <b>Outils généraux pour les vecteurs</b>, double-cliquez sur <b>Joindre les attributs par localisation</b>.</p>
-                    <figure>
-						<a href="illustrations/tous/8_2_join_emplacement.png" >
-							<img src="illustrations/tous/8_2_join_emplacement.png" alt="Emplacement de l'outil de jointure spatiale dans la boît à outils" width="80%" >
-						</a>
-					</figure>
-					 <figure>
-						<a href="illustrations/tous/8_2_join_fenetre.png" >
-							<img src="illustrations/tous/8_2_join_fenetre.png" alt="Fenêtre de l'outil de jointure spatiale dans la boît à outils" width="100%" >
-						</a>
-					</figure>
-					<ul>
-					   <li class="espace">Couche source : sélectionnez la couche <em class="data">DEPARTEMENT</em></li>
-					   <li class="espace">Joindre la couche : sélectionnez la couche <em class="data">CHEF_LIEU</em></li>
-					   <li class="espace">Prédicat géométrique : vous pouvez choisir <b>intersecte</b>, ou bien <b>contient</b></li>
-					   <li class="espace">Champs à ajouter : il est possible de n'ajouter que certains champs de la couche à joindre. Laisser vide pour ajouter tous les champs</li>
-					   <li class="espace">Type de jointure : dans la mesure où ici, un chef-lieu correspond exactement à un département, vous pouvez choisir l'une ou l'autre option et le résultat sera le même</li>
-					   <li class="espace">Couche issue de la jointure spatiale : laisser la valeur par défaut <b>Créer une couche temporaire</b></li>
-					   <li class="espace">Cliquez sur <b>Exécuter</b></li>
-					</ul>
-					<p>Vous pouvez fermer la fenêtre de l'outil de jointure.</p>
-					<p> Une couche temporaire a été ajoutée à QGIS. Ses géométries sont celles de la couche source, ici les départements.</p>
-					<p>Ouvrez sa table attributaire : elle contient les attributs des départements et des chefs-lieux.</p>
-					<figure>
-						<a href="illustrations/tous/8_2_table_apres_jointure.png" >
-							<img src="illustrations/tous/8_2_table_apres_jointure.png" alt="Table attributaire de la couche créée par jointure spatiale, avec les données attributaires des départements et des chefs-lieux" width="100%" >
-						</a>
-					</figure>
-                </div>
+    				<p>Voyons tout d'abord le cas où les données correspondent une à une, par exemple pour joindre les données d'un chef-lieu au département qui lui correspond.</p>
+    				
+    				<div class="manip">
+    					<p>Ouvrez un nouveau projet QGIS, ajoutez les deux couches shapefile <em class="data">DEPARTEMENT</em> et <em class="data">CHEF_LIEU</em>.</p>
+    					<figure>
+    						<a href="illustrations/tous/8_2_cheflieux_depts.png" >
+    							<img src="illustrations/tous/8_2_cheflieux_depts.png" alt="superposition des chefs-lieux et des départements" width="60%" >
+    						</a>
+    					</figure>
+                        <p>Ouvrez les tables attributaires des 2 couches : il n'existe pas de champ permettant de faire une jointure attributaire entre les couches (même s'il serait possible de récupérer le code du département à partir du code INSEE, mais nous ferons comme si pour les besoins de l'exercice...).</p>
+                        <p>Par contre, <b>chaque chef-lieu est situé dans un département</b>&nbsp;; il est donc possible d'associer les 2 avec un <a href="06_02_req_spatiales.php#VI22">opérateur spatial</a> comme par exemple <b>contient</b>.</p>
+                    </div>
+                    
+                    <p>Le but de l'opération est d'<b>ajouter des colonnes</b> dans la table attributaire de la couche de départements, avec le nom du chef-lieu, son statut etc. Bien sûr, l'inverse est également possible : ajouter dans la table attributaire des chefs-lieux des colonnes avec le nom du département, son code etc.</p>
+                    
+                    <div class="manip">
+                        <p>Dans la boît à outils de traitements, rubrique <b>Outils généraux pour les vecteurs</b>, double-cliquez sur <b>Joindre les attributs par localisation</b>.</p>
+                        <figure>
+    						<a href="illustrations/tous/8_2_join_emplacement.png" >
+    							<img src="illustrations/tous/8_2_join_emplacement.png" alt="Emplacement de l'outil de jointure spatiale dans la boît à outils" width="80%" >
+    						</a>
+    					</figure>
+    					 <figure>
+    						<a href="illustrations/tous/8_2_join_fenetre.png" >
+    							<img src="illustrations/tous/8_2_join_fenetre.png" alt="Fenêtre de l'outil de jointure spatiale dans la boît à outils" width="100%" >
+    						</a>
+    					</figure>
+    					<ul>
+    					   <li class="espace">Couche source : sélectionnez la couche <em class="data">DEPARTEMENT</em></li>
+    					   <li class="espace">Joindre la couche : sélectionnez la couche <em class="data">CHEF_LIEU</em></li>
+    					   <li class="espace">Prédicat géométrique : vous pouvez choisir <b>intersecte</b>, ou bien <b>contient</b></li>
+    					   <li class="espace">Champs à ajouter : il est possible de n'ajouter que certains champs de la couche à joindre. Laisser vide pour ajouter tous les champs</li>
+    					   <li class="espace">Type de jointure : dans la mesure où ici, un chef-lieu correspond exactement à un département, vous pouvez choisir l'une ou l'autre option et le résultat sera le même</li>
+    					   <li class="espace">Couche issue de la jointure spatiale : laisser la valeur par défaut <b>Créer une couche temporaire</b></li>
+    					   <li class="espace">Cliquez sur <b>Exécuter</b></li>
+    					</ul>
+    					<p>Vous pouvez fermer la fenêtre de l'outil de jointure.</p>
+    					<p> Une couche temporaire a été ajoutée à QGIS. Ses géométries sont celles de la couche source, ici les départements.</p>
+    					<p>Ouvrez sa table attributaire : elle contient les attributs des départements et des chefs-lieux.</p>
+    					<figure>
+    						<a href="illustrations/tous/8_2_table_apres_jointure.png" >
+    							<img src="illustrations/tous/8_2_table_apres_jointure.png" alt="Table attributaire de la couche créée par jointure spatiale, avec les données attributaires des départements et des chefs-lieux" width="100%" >
+    						</a>
+    					</figure>
+                    </div>
+                    
+                <h4><a class="titre" id="VIII22b">Pour s'entraîner : quel comté pour quel site remarquable ?</a></h4>
 
 				
 					<p class="note">Il existe d'autres moyens pour faire une jointure spatiale, notamment en passant par une base de données relationnelle type PostgreSQL avec son extension spatiale PostGIS, ou bien à l'aide du plugin mmqgis...</p>	
 			
 							
-    		<h3><a class="titre" id="VIII23">Quelques exemples supplémentaires</a></h3>
-		
-    			<h4><a class="titre" id="VIII23a">Écoles secondaires du Kenya</a></h4>
-    			
-    				<p>Le but sera ici, à partir d'une couche du district de Nakuru et d'une couche de points représentant les écoles secondaires de ce district, de déterminer combien d'écoles compte chaque zone du district.</p>
     				
-    				<div class="manip">
-    					<p>Dans un nouveau projet QGIS, ajoutez les couches <em class="data">KEN_adm4_Nakuru</em> et <em class="data">kenya_ecoles_nakuru</em>.</p>
-    					<p>Choisissez les paramètres de la jointure spatiale :</p>
-    					<figure>
-    						<a href="illustrations/tous/8_2_join_fenetre_kenya.png" >
-    							<img src="illustrations/tous/8_2_join_fenetre_kenya.png" alt="choix des paramètres pour la jointure des écoles aux zones du district de Nakuru" width="450" >
-    						</a>
-    					</figure>
-    					<p>Le nombre d'écoles dans la zone sera automatiquement calculé à partir du moment où vous choisissez l'option <b>Take summary of intersected features</b>. Vous pouvez choisir de ne calculer aucune statistique.</p>
-    					<p>Choisissez également <b>Keep all records</b> : ainsi, même si une zone ne comporte aucune école, elle ne sera pas supprimée de la couche résultat.</p>
-    					<p>Lancez la jointure, ajoutez la nouvelle couche.</p>
-    					<p><img class="icone" src="illustrations/tous/8_2_id_icone.png" alt="icône identifier les entités" >En lisant les informations par exemple de la zone de Bahati, on peut lire que cette zone comporte 22 écoles :</p>
-    					<figure>
-    						<a href="illustrations/tous/8_2_bahati_id.png" >
-    							<img src="illustrations/tous/8_2_bahati_id.png" alt="résultat de l'identification des entités sur la zone de Bahati : 22 écoles" width="600" >
-    						</a>
-    					</figure>
-    				</div>
+    		<h3><a class="titre" id="VIII23">Joindre plusieurs éléments à un seul</a></h3>
+    		
+        		<h4><a class="titre" id="VIII23a">Compter le nombre de sites par comté</a></h4>
+    			
+    				
     			
     			<h4><a class="titre" id="VIII23b">Jointure de deux couches de polygones : un comportement étonnant</a></h4>
     			
@@ -131,8 +121,6 @@
     				</div>
     				<p>A part pour la Corse, ces nombres sont erronés; en effet, il semble que la jointure ait pris en compte pour une région non seulement les départements à l'intérieur de la région mais également les départements adjacents.</p>
     				<p>Comment cela se fait-il ? Si vous testez une <a href="06_02_req_spatiales.php">requête spatiale</a> pour sélectionnez tous les départements intersectant une région (après avoir sélectionné une région), vous constaterez que les départements limitrophes sont également sélectionnés. L'opérateur d'intersection fonctionne donc ainsi. Bug ou feature ? A vous de voir !</p>
-    				
-    		<h3><a class="titre" id="VIII24">Joindre plusieurs éléments à un seul</a></h3>
 			
 				
 		<br>
