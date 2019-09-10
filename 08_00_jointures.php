@@ -21,6 +21,8 @@
 				<ul>
 					<li>Jointure attributaire</li>
 					<li>Jointure spatiale</li>
+					<li>Jointure un-un</li>
+					<li>Jointure un-plusieurs</li>
 				</ul>
 			<p>Les données pour cette partie ainsi qu'une version PDF du tutoriel sont accessibles dans la rubrique <a href="telechargement.php"> téléchargement</a>.</p>
 			
