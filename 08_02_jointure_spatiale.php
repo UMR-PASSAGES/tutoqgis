@@ -24,7 +24,7 @@
 					<li><a href="#VIII23">Joindre plusieurs éléments à un seul</a>
 					   <ul class="listesoustitres">
 							<li><a href="#VIII23a">Compter le nombre de sites par comté</a></li>
-							<li><a href="#VIII23b">Jointure de deux couches de polygones : un comportement étonnant</a></li>
+							<li><a href="#VIII23b">Calculer la population par département à partir des communes</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -95,33 +95,109 @@
                     </div>
                     
                 <h4><a class="titre" id="VIII22b">Pour s'entraîner : quel comté pour quel site remarquable ?</a></h4>
+                
+                    <div class="manip">
+                        <p>Ouvrez un nouveau projet QGIS, ajoutez les couches <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip" >Counties</a></em> et <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip" >Heritage</a></em>, correspondant aux comtés et sites remarquables irlandais.</p>
+                        <figure>
+    						<a href="illustrations/tous/8_2_irlande_carte.png" >
+    							<img src="illustrations/tous/8_2_irlande_carte.png" alt="Comtés et sites remarquables irlandais" width="70%" >
+    						</a>
+    					</figure>
+    					<div class="question">
+                    		<input type="checkbox" id="faq-1">
+                    		<p><label for="faq-1">Prenez connaissance des données attributaires de ces 2 couches. Comment ajouter aux sites remarquables (données ponctuelles) les données attributaires de leur comté&nbsp;?</label></p>
+                    		<p class="reponse">Boîte à outils de traitements &#8594; Outils généraux pour les vecteurs &#8594; Joindre les attributs par localisation, avec en couche source <em class="data">Heritage</em> et en couche à joindre <em class="data">Counties</em>. Une fois la nouvelle couche créée, vérifiez sa géométrie (sites remarquables) et ses données attributaires :</p>
+                    		<p class="reponse">
+                    		  <a href="illustrations/tous/8_2_heritage_join_counties_res.png"><img src="illustrations/tous/8_2_heritage_join_counties_res.png" alt="Résultat de la jointure spatiale : points et table attributaire" width="70%" ></a>
+                    		</p>
+                    	</div>
+                    </div>
 
-				
 					<p class="note">Il existe d'autres moyens pour faire une jointure spatiale, notamment en passant par une base de données relationnelle type PostgreSQL avec son extension spatiale PostGIS, ou bien à l'aide du plugin mmqgis...</p>	
 			
 							
     				
     		<h3><a class="titre" id="VIII23">Joindre plusieurs éléments à un seul</a></h3>
     		
+    		   <p>Nous avons vu le cas où l'on souhaite joindre des données une à une.</p>
+    		   <p>Comment faire maintenant si <b>une entité dans la couche source correspond à plusieurs entités dans la couche à joindre&nbsp;?</b> Par exemple, en reprenant l'exemple des comtés (données surfaciques) et sites remarquables (données ponctuelles) irlandais, on peut vouloir joindre les données des sites aux comtés. Chaque comté contenant plusieurs sites, il y a 2 possibilités pour faire la jointure :</p>
+    		   <ul>
+    		      <li class="espace">créer autant de comtés que de sites. Les géométries des comtés seront donc en double, triple etc., chacune avec les données attributaire d'un site</li>
+    		      <li class="espace">décider d'une méthode <b>d'agrégation</b> pour joindre par exemple à chaque comté la moyenne, le nombre, la concaténation... des champs de la couche de sites. Cette dernière méthode est généralement la plus utile.</li>
+    		   </ul>
+    		   <p><em>Avant de procéder à la jointure, il est important de bien réfléchir aux questions que l'on voudra poser par la suite aux données : que cherche-t-on à faire&nbsp;? Quelle sera la prochaine étape&nbsp;?</em></p>
+    		
         		<h4><a class="titre" id="VIII23a">Compter le nombre de sites par comté</a></h4>
     			
-    				
-    			
-    			<h4><a class="titre" id="VIII23b">Jointure de deux couches de polygones : un comportement étonnant</a></h4>
-    			
-    				<div class="manip">
-    					<p>Ouvrez un nouveau projet QGIS, ajoutez les couches <em class="data">regions_france_geofla</em> et <em class="data">depts_france_geofla</em>.</p>
-    					<p>Que se passe-t-il si l'on essaye de trouver par une jointure spatiale le nombre de départements de chaque région ?</p>
-    					<p>Testez-le, avec les mêmes paramètres que pour les écoles secondaires du Kenya : vous devriez obtenir les nombres de départements suivants par région :</p>
-    					<figure>
-    						<a href="illustrations/tous/8_2_reg_join_depts.png" >
-    							<img src="illustrations/tous/8_2_reg_join_depts.png" alt="nb de départements par région, tel que calculé par une jointure spatiale" width="600" >
+    			    <p>Le but sera ici de compter le nombre de sites remarquables par comté.</p>
+    			    
+    			    <div class="manip">
+        			    <p>Ouvrez un nouveau projet QGIS, ajoutez les couches <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip" >Counties</a></em> et <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip" >Heritage</a></em>, correspondant aux comtés et sites remarquables irlandais.</p>
+        			    <p>Boîte à outils de traitement &#8594; Outils généraux pour les vecteurs &#8594; <b>Joindre les attributs par localisation (résumé)</b></p>
+        			    <figure>
+    						<a href="illustrations/tous/8_2_join_resume_fenetre.png" >
+    							<img src="illustrations/tous/8_2_join_resume_fenetre.png" alt="Fenêtre de l'outil de jointure spatiale (résumé)" width="100%" >
     						</a>
     					</figure>
+    					<ul>
+    					   <li class="espace">Couche source : <em class="data">Counties</em></li>
+    					   <li class="espace">Joindre la couche : <em class="data">Heritage</em></li>
+    					   <li class="espace">Prédicat géométrique : <b>Intersecte</b>, ou bien <b>Contient</b></li>
+    					   <li class="espace">Champs à résumer : cliquez sur le bouton <b>...</b> à droite, et choisissez un champ d'identifiant unique, ici <b>OBJECTID</b> (NAMN1 donnerait le même résultat, dans la mesure où chaque site a un nom différent)</li>
+    					   <li class="espace">Résumés à calculer : cliquez sur le bouton <b>...</b> à droite, et cochez <b>compte</b> pour compter le nombre de sites par comté</li>
+    					   <li class="espace">Couche issue de la jointure spatiale : laissez la valeur par défaut pour créer une couche temporaire</li>
+    					   <li class="espace">Cliquez sur <b>Exécuter</b></li>
+    					</ul>
+    					<p>La couche créée possède les même géométries que la couche Counties. Ouvrez sa table attributaire.</p>
+    					<div class="question">
+                    		<input type="checkbox" id="faq-2">
+                    		<p><label for="faq-2">Quel est le comté avec le plus de sites&nbsp;? Y a-t-il des comtés qui n'ont pas de sites&nbsp;?</label></p>
+                    		<p class="reponse">En cliquant sur la colonne <b>OBJECTID_count</b> (tout à droite), on peut classer les comtés en fonction de leur nombre de sites.</p>
+                    		<p class="reponse">Le comté de Galway possède 8 sites remarquables&nbsp;; les comtés de Offaly, Monaghan et Carlow n'en possèdent aucun.</p>
+                    		<p class="reponse"><a href="illustrations/tous/8_2_counties_join_heritage_table.png" ><img src="illustrations/tous/8_2_counties_join_heritage_table.png" alt="Extrait de la table attributaire de la couche résultat, classé par nombre de sites croissant" width="100%" ></a></p>
+                    	</div>
+    			    </div>
+    				
+    			
+    			<h4><a class="titre" id="VIII23b">Calculer la population par département à partir des communes</a></h4>
+    			
+    			    <p>Nous allons ici partir d'une couche de communes avec un champ population, et d'une couche de départements. L'objectif sera de calculer pour chaque département la population totale, la population moyenne par commune et la population médiane par commune.</p>
+    			
+    				<div class="manip">
+    					<p>Ouvrez un nouveau projet QGIS, ajoutez les couches <em class="data">COMMUNE</em> et <em class="data">DEPARTEMENT</em>.</p>
+    					<p>Ouvrez la table attributaire de la couche de communes, vérifiez que le champ <b>POPULATION</b> soit bien présent.</p>
+    					<p>Boîte à outils de traitement &#8594; Outils généraux pour les vecteurs &#8594; <b>Joindre les attributs par localisation (résumé)</b></p>
+    					<figure>
+    						<a href="illustrations/tous/8_2_join_resume_fenetre_2.png" >
+    							<img src="illustrations/tous/8_2_join_resume_fenetre_2.png" alt="Fenêtre de l'outil de jointure spatiale (résumé)" width="100%" >
+    						</a>
+    					</figure>
+    					<ul>
+    					   <li class="espace">Couche source : <em class="data">DEPARTEMENT</em></li>
+    					   <li class="espace">Joindre la couche : <em class="data">COMMUNE</em></li>
+    					   <li class="espace">Prédicat géométrique : choisissez <b>contient</b>. Avec l'opérateur Intersecte, les communes limitrophes seraient également prises en compte, ce qui n'est pas souhaité ici.</li>
+    					   <li class="espace">Champs à résumer : cliquez sur le bouton <b>...</b> à droite, et choisissez un champ d'identifiant unique, ici <b>INSEE_COM</b> pour le code INSEE des communes</li>
+    					   <li class="espace">Résumés à calculer : cliquez sur le bouton <b>...</b> à droite, et cochez <b>sum</b>, <b>moyenne</b> et <b>median</b> pour calculer respectivement la somme, la moyenne et la médiane des populations communales pour chaque département</li>
+    					   <figure>
+    						<a href="illustrations/tous/8_2_choix_resumes.png" >
+    							<img src="illustrations/tous/8_2_choix_resumes.png" alt="Fenêtre de choix des opérations d'agrégation : sum, moyenne et median sont cochés" width="80%" >
+    						</a>
+    					   </figure>
+    					   <li class="espace">Couche issue de la jointure spatiale : laissez la valeur par défaut pour créer une couche temporaire</li>
+    					   <li class="espace">Cliquez sur <b>Exécuter</b>. Attention, le temps de traitement peut être un peu long.</li>
+    					</ul>
+    					<p>La couche temporaire est ajoutée à QGIS. Ses géométries sont celles des départements. Ouvrez sa table attributaire, vérifiez son contenu.</p>
+    					<div class="question">
+                    		<input type="checkbox" id="faq-3">
+                    		<p><label for="faq-3">Quel est le département le moins peuplé&nbsp;?</label></p>
+                    		<p class="reponse">En cliquant sur la colonne <b>POPULATION_sum</b>, on peut classer les départements en fonction de leur population. La Lozère est le département le moins peuplé avec une population de 76422 habitants.</p>
+                    		<p class="reponse"><a href="illustrations/tous/8_2_depts_pop_communes_table.png" ><img src="illustrations/tous/8_2_depts_pop_communes_table.png" alt="Extrait de la table attributaire de la couche résultat, du moins peuplé au plus peuplé" width="100%" ></a></p>
+                    	</div>
     				</div>
-    				<p>A part pour la Corse, ces nombres sont erronés; en effet, il semble que la jointure ait pris en compte pour une région non seulement les départements à l'intérieur de la région mais également les départements adjacents.</p>
-    				<p>Comment cela se fait-il ? Si vous testez une <a href="06_02_req_spatiales.php">requête spatiale</a> pour sélectionnez tous les départements intersectant une région (après avoir sélectionné une région), vous constaterez que les départements limitrophes sont également sélectionnés. L'opérateur d'intersection fonctionne donc ainsi. Bug ou feature ? A vous de voir !</p>
-			
+    				
+                    <p>Il est possible d'utiliser d'autres méthodes pour réaliser les jointures spatiales, par exemple avec le plugin mmqgis, ou bien via une <a href="06_04_req_sql.php" >requête SQL</a>.</p>
+                    <p>Concernant cette dernière méthode, avec utilisation des couches virtuelles, les temps de traitement sont parfois longs en particulier avec des opérateurs spatiaux. L'utilisation de Postgresql/PostGIS améliore grandement ces temps de traitement, mais ceci sort de l'objet de ce tutoriel&nbsp;!</p>
+
 				
 		<br>
 		<a class="prec" href="08_01_jointure_attrib.php">chapitre précédent</a>
