@@ -349,26 +349,23 @@
     				<h4><a class="titre" id="IX24c">Calcul de pente à partir du raster projeté</a></h4>
     				
     					<div class="manip">
-    						<p>Rendez-vous dans le
-    							<a class="thumbnail_bottom" href="#thumb">Menu Raster &#8594; Analyse &#8594; MNT/DEM (Modèles de terrain)
+    						<p>Rendez-vous dans la 
+    							<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; GDAL &#8594; Analyse raster &#8594; Pente
     								<span>
-    									<img src="illustrations/tous/9_2_pente_menu.png" alt="Menu Raster, Analyse, MNT/DEM (Modèles de terrain)" height="250" >
+    									<img src="illustrations/tous/9_2_pente_menu.png" alt="Menu Raster, Analyse, MNT/DEM (Modèles de terrain)" width="90%" >
     								</span>
     							</a>
     						:</p>
     						<figure>
     							<a href="illustrations/tous/9_2_pente_fenetre.png">
-    								<img src="illustrations/tous/9_2_pente_fenetre.png" alt="Fenêtre de calcul de pente" width="500" >
+    								<img src="illustrations/tous/9_2_pente_fenetre.png" alt="Fenêtre de calcul de pente" width="90%" >
     							</a>
     						</figure>
     						<ul>
-    							<li class="espace"><b>Fichier source :</b> sélectionnez <em class="data">srtm_jamaique_JAD2001</em></li>
-    							<li class="espace"><b>Fichier en sortie :</b> cliquez sur <b>Sélection...</b> et sélectionnez l'emplacement de la couche qui sera créée, tapez son nom : <em class="data">pente_jamaique_JAD2001</em></li>
-    							<li class="espace"><b>Mode :</b> choisir <b>Pente</b> dans la liste déroulante</li>
-    							<li class="espace">Cochez la case <b>Charger dans la carte une fois terminé</b></li>
+    							<li class="espace">Couche source : sélectionnez <em class="data">srtm_jamaique_JAD2001</em></li>
     							<li class="espace">Laissez les autres paramètres par défaut (pour plus d'infos sur les méthodes de Zevenberger & Thorne et Horn : <a class="ext" target="_blank" href="http://www.macaulay.ac.uk/LADSS/documents/DEMs-for-spatial-modelling.pdf" >http://www.macaulay.ac.uk/LADSS/documents/DEMs-for-spatial-modelling.pdf</a>, pp. 12 et 13).</li>
     						</ul>
-    						<p>Cliquez sur <b>OK</b>, patientez... la couche s'affiche :</p>
+    						<p>Cliquez sur <b>Exécuter</b>, patientez... la couche s'affiche :</p>
     						<figure>
     							<a href="illustrations/tous/9_2_pente_res.png">
     								<img src="illustrations/tous/9_2_pente_res.png" alt="la couche de pentes" width="600" >
@@ -383,6 +380,8 @@
     						</figure>
     						<p>Ici, le pixel a une pente de 13,5° environ.</p>
     					</div>
+    					
+    					<p>Il existe beaucoup d'autres traitements possibles sur les données raster. Mais pourquoi toujours opposer raster et vecteur&nbsp;? Dans le prochain chapitre, découvrez comment les faire fonctionner main dans la main&nbsp;!</p>
 			
 		
 				<br>
