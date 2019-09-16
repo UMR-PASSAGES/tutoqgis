@@ -26,12 +26,14 @@
 							<li><a href="#IX12a">Qu'est-ce qu'une zone tampon ?</a>
 							<li><a href="#IX12b">Sélection d'un cours d'eau</a>
 							<li><a href="#IX12c">Création d'une zone tampon autour de la sélection</a>
+							<li><a href="#IX12d">Pour aller plus loin : détail des autres paramètres</a>
 						</ul>
 					</li>
 					<li><a href="#IX13">Données communes entre deux couches : intersection</a>
 						<ul class="listesoustitres">
 							<li><a href="#IX13a">Qu'est-ce qu'une intersection ?</a>
 							<li><a href="#IX13b">Intersection entre communes et zone tampon</a>
+							<li><a href="#IX13c">Si on voulait aller plus loin...</a>
 						</ul>
 					</li>
 				</ul>
@@ -199,19 +201,64 @@
     					</figure>
 						<ul>
 							<li class="espace">Couche source :</b> il s'agit de la couche autour de laquelle sera créée la ou les zones tampons, donc ici la couche de cours d'eau <em class="data">coursdeau_osm_44_L93</em></li>
+							<li class="espace">Entité(s) sélectionnée(s) uniquement : <b>cocher cette case</b> afin de ne créer de zone tampon qu'autour de l'Erdre</li>
+							<li class="espace">Distance tampon : la couche étant projetée en Lambert 93, son unité est le mètre. Choisissez une distance de <b>100 mètres</b>. Le bouton tout à droite permet de faire varier la largeur de la zone en fonction des valeurs d'un champ ou d'une expression&nbsp;; nous ne l'utiliserons pas ici</li>
+							<li class="espace"><b>Regrouper le résultat :</b> cette case permet de fusionner toutes les zones tampon qui seront créées&nbsp;; sinon, une zone tampon est créée par entité de la couche source. Cochez cette case pour cet exercice</li>
+							<figure>
+        						<a href="illustrations/tous/9_1_tampon_nonregroupe.png" >
+        							<img src="illustrations/tous/9_1_tampon_nonregroupe.png" alt="Détail du résultat de la zone tampon sans regrouper" width="30%" >
+        						</a>
+        						<a href="illustrations/tous/9_1_tampon_regroupe.png" >
+        							<img src="illustrations/tous/9_1_tampon_regroupe.png" alt="Détail du résultat de la zone tampon en regroupant" width="30%" >
+        						</a>
+        						<figcaption>Détail du résultat de la zone tampon : à gauche sans regrouper, à droite en regroupant.</figcaption>
+        					</figure>
+							<li class="espace">Mis en tampon : cliquez tout à droite sur le bouton <b>... &#8594; Enregistrer vers un fichier...</b> choisir le nom : <em class="data">Erdre_tampon100m.gpkg</em> par exemple et l'emplacement de la couche qui sera créée</li>
 						</ul>
-						<img class="droite" src="illustrations/tous/9_1_tampon_trieux.png" alt="zone tampon autour du trieux" width="150" >
-						<ul>
-							<li class="espace"><b>Utiliser uniquement les valeurs sélectionnées :</b> vérifier que cette case soit bien cochée (elle l'est par défaut à partir du moment où une sélection existe dans la couche), afin de ne créer de zone tampon qu'autour du Trieux</li>
-							<li class="espace"><b>Segments pour l'approximation :</b> plus cette valeur est élevée, plus les contours de la zone seront « arrondis ». Une valeur de <b>10</b> sera suffisante dans notre cas</li>
-							<li class="espace"><b>Distance tampon :</b> la couche étant projetée en Lambert 93, son unité est le mètre. Taper donc <b>1000</b> pour obtenir une zone d'une largeur de 1km. L'option <b>Champ de distance tampon</b> permet quant à elle de faire varier la largeur de la zone en fonction des valeurs d'un champ ; nous ne l'utiliserons pas ici</li>
-							<li class="espace"><b>Union des résultats du tampon :</b> cette case permet de fusionner toutes les zones tampon qui seront créées. Dans la mesure où une seule zone sera créée ici, la cocher ou décocher ne changera rien au résultat</li>
-							<li class="espace"><b>Fichier de sortie :</b> cliquez sur <b>Parcourir</b>, choisir le nom : <em class="data">Trieux_Tampon1km_RGF93L93</em> par exemple) et l'emplacement de la couche qui sera créée</li>
-						</ul>
-						<p>Cliquez sur <b>OK</b>, ajoutez la nouvelle couche : vous devez obtenir un résultat similaire à celui de l'illustration ci-dessus.</p>
-						
+						<p>Cliquez sur <b>Exécuter</b>, observez le résultat :</p>
+						<figure>
+    						<a href="illustrations/tous/9_1_res_tampon_erdre.png" >
+    							<img src="illustrations/tous/9_1_res_tampon_erdre.png" alt="Résultat de la zone tampon" width="60%" >
+    						</a>
+    					</figure>
 					</div>
 					
+				<h4><a class="titre" id="IX12d">Pour aller plus loin : détail des autres paramètres</a></h4>
+					
+					<p>Les autres paramètres de l'outil de zone tampon sont moins fréquemment modifiés et vous pouvez souvent laisser les valeurs par défaut. Voici leur description pour information, que vous pouvez également retrouver dans l'aide (partie droite de la fenêtre de l'outil) ou bien la <a class="ext" target="_blank" href="https://docs.qgis.org/3.4/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html?highlight=buffer#buffer" >documentation QGIS</a> :</p>
+					<ul>
+					    <li class="espace"><b>Segments :</b> plus cette valeur est élevée, plus les contours de la zone seront « arrondis ». Il s'agit en fait du nombre de segments utilisés pour représenter un quart de cercle.</li>
+    					<li class="espace"><b>Style d'extrémité :</b> il s'agit de la manière dont les zones tampons sont &#171; terminées &#187;. 3 valeurs sont possibles : rond, plat et carré</li>
+    					<figure>
+    						<a href="illustrations/tous/9_1_tampon_extr_rond.png" >
+    							<img src="illustrations/tous/9_1_tampon_extr_rond.png" alt="Style d'extrémité rond pour une zone tampon" width="30%" >
+    						</a>
+    						<a href="illustrations/tous/9_1_tampon_extr_plat.png" >
+    							<img src="illustrations/tous/9_1_tampon_extr_plat.png" alt="Style d'extrémité plat pour une zone tampon" width="30%" >
+    						</a>
+    <a href="illustrations/tous/9_1_tampon_extr_rond.png" >
+    							<img src="illustrations/tous/9_1_tampon_extr_carre.png" alt="Style d'extrémité carré pour une zone tampon" width="30%" >
+    						</a>
+    						<figcaption>Différents types d'extrémité pour les zones tampon : de gauche à droite, rond, plat et carré.</figcaption>
+    					</figure>
+    					<li class="espace"><b>Style de jointure :</b> les zones tampons sont créées en &#171; décalant &#187; les sommets d'une entité, ici une ligne. Il existe plusieurs manières de réaliser ce décalage, ce que contrôle ce paramètre. 3 valeurs sont possibles : rond, angle droit et oblique.</li>
+    					<figure>
+    						<a href="illustrations/tous/9_1_tampon_jointure_rond.png" >
+    							<img src="illustrations/tous/9_1_tampon_jointure_rond.png" alt="Style de jointure rond pour une zone tampon" width="24%" >
+    						</a>
+    						<a href="illustrations/tous/9_1_tampon_jointure_angledroit.png" >
+    							<img src="illustrations/tous/9_1_tampon_jointure_angledroit.png" alt="Style de jointure angle droit pour une zone tampon" width="24%" >
+    						</a>
+                            <a href="illustrations/tous/9_1_tampon_jointure_oblique.png" >
+    							<img src="illustrations/tous/9_1_tampon_jointure_oblique.png" alt="Style de jointure oblique pour une zone tampon" width="24%" >
+    						</a>
+    						<a href="illustrations/tous/9_1_tampon_jointure_tous.png" >
+    							<img src="illustrations/tous/9_1_tampon_jointure_tous.png" alt="Comparaison des 3 styles de jointure pour une zone tampon" width="24%" >
+    						</a>
+    						<figcaption>Différents types de jointure pour les zones tampon : de gauche à droite, rond, angle droit, oblique et superposition des 3.</figcaption>
+    					</figure>
+    					<li class="espace"><b>Limite d'angle droite :</b> ce paramètre n'est utilisé que pour les styles jointure à angle droit. D'après l'aide, il contrôle &#171; la distance maximale de la courbe de décalage &#187;. Personnellement cette définition je trouve cette définition peu claire, et d'après mes observations les différences sont minimes (on peut les observer en passant de 1 à 2 par exemple). Ecrivez-moi si vous en savez plus&nbsp;!</li>
+    				</ul>
 					
 			<h3><a class="titre" id="IX13">Données communes entre deux couches : intersection</a></h3>
 			
@@ -227,31 +274,46 @@
 					</figure>
 					
 				<h4><a class="titre" id="IX13b">Intersection entre communes et zone tampon</a></h4>
+				
+				    <p>L'idée sera ici de créer la couche d'intersection entre les communes et la zone tampon autour de l'Erdre créée ci-dessus. Ceci pourrait permettre de visualiser par exemple pour chaque commune la partie qui se trouve en zone inondable.</p>
 					
 					<div class="manip">
-						<p>Rendez-vous dans le 
-							<a class="thumbnail_bottom" href="#thumb">menu Vecteur &#8594; Outils de géotraitement  &#8594; Intersection
-								<span>
-									<img src="illustrations/tous/9_1_inters_menu.png" alt="Menu Vecteur, Outils de géotraitement, Intersection" height="350" >
-								</span>
-							</a>	
+					    <p>Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">COMMUNE_44</a></em> au projet.</p>
+						<p><b>Boîte à outils de traitements &#8594; Recouvrement de vecteur &#8594; Intersection</b>
 						:</p>
 						<figure>
 							<a href="illustrations/tous/9_1_inters_fenetre.png" >
-								<img src="illustrations/tous/9_1_inters_fenetre.png" alt="Paramètrage de l'outil d'intersection" width="470" >
+								<img src="illustrations/tous/9_1_inters_fenetre.png" alt="Paramètrage de l'outil d'intersection" width="100%" >
 							</a>
 						</figure>
-						<img class="droite" src="illustrations/tous/9_1_inters_resultat.png" alt="intersection entre zone tampon et communes" width="100" >
 						<ul>
-							<li class="espace"><b>Couche vectorielle de saisie :</b> choisir la couche de communes. Ne pas cocher la case &#171; Utiliser uniquement les entités sélectionnées &#187; puisqu'il s'agit d'intersecter toutes les communes</li>
-							<li class="espace"><b>Couche d'intersection :</b> choisir la couche contenant la zone tampon. Idem, ne pas cocher la case &#171; Utiliser uniquement les entités sélectionnées &#187;</li>
-							<li class="espace"><b>Fichier de sortie :</b> cliquez sur <b>Parcourir</b>, choisir le nom (<em class="data">intersection_communes_tampon</em> par exemple) et l'emplacement de la couche qui sera créée</li>
+							<li class="espace">Couche source : choisir la couche <em class="data">COMMUNE_44</em>. Ne pas cocher la case &#171; Entités sélectionnées uniquement &#187; puisqu'il s'agit d'intersecter toutes les communes</li>
+							<li class="espace">Couche de superposition : choisir la couche <em class="data">Erdre_tampon_100m</em>. Idem, ne pas cocher la case &#171; Entités sélectionnées uniquement &#187;</li>
+							<li class="espace">Champs d'entrée à conserver : cette option permet de choisir les champs de la couche source à conserver. Ici, nous garderons tous les champs et nous n'utiliserons donc pas ce paramètre</li>
+							<li class="espace">Champs à conserver : cette option permet de choisir les champs de la couche de superposition. Ici, nous garderons tous les champs et nous n'utiliserons donc pas ce paramètre</li>
+							<li class="espace">Intersection : cliquez tout à droite sur le bouton <b>... &#8594; Enregistrer vers un fichier...</b> choisir le nom : <em class="data">inters_communes_tampon.gpkg</em> par exemple et l'emplacement de la couche qui sera créée</li>
 						</ul>
 						
-						<p>Cliquez sur <b>OK</b>, ajoutez la couche.</p>
-						<p>Vous devez obtenir une couche similaire à celle de l'illustration.</p>
+						<p>Cliquez sur <b>Exécuter</b>, observez le résultat&nbsp;:</p>
+						<figure>
+							<a href="illustrations/tous/9_1_inters_resultat.png" >
+								<img src="illustrations/tous/9_1_inters_resultat.png" alt="Résultat de l'intersection, superposé à la couche de communes" width="70%" >
+							</a>
+						</figure>
 						<p>Ouvrez la table attributaire de cette couche : notez que les champs des deux couches sont présents.</p>
 					</div>
+					
+				<h4><a class="titre" id="IX13c">Si on voulait aller plus loin...</a></h4>
+				
+				    <p>A titre d'exemple d'application, comment faire pour obtenir pour chaque commune le pourcentage de sa surface en zone inondable&nbsp;?</p>
+				    <p>Plusieurs étapes seraient nécessaires&nbsp;:</p>
+				    <ol>
+				        <li class="espace">Ajouter un champ Surface à la couche d'intersection, en calculant pour chaque entité sa surface par exemple en hectares</li>
+				        <li class="espace">Joindre ce champ Surface à la couche de communes, en effectuant une jointure attributaire sur les codes INSEE</li>
+				        <li class="espace">Ajouter un champ à la couche de communes et y calculer le pourcentage en zone inondable, en utilisant le champ Surface joint et la surface de la commune</li>
+				    </ol>
+				    
+				    <p>En combinant les outils vus dans ce tutoriel (et d'autres !), on peut essayer de répondre à des questions sur des données spatiales.</p>
 						
 
 				

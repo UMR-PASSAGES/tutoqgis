@@ -58,6 +58,7 @@
     						</a>
     					</figure>
                         <p>Ouvrez les tables attributaires des 2 couches : il n'existe pas de champ permettant de faire une jointure attributaire entre les couches (même s'il serait possible de récupérer le code du département à partir du code INSEE, mais nous ferons comme si pour les besoins de l'exercice...).</p>
+                        <p class="note">Si vous avez le choix entre effectuer une jointure attributaire et une jointure spatiale pour le même résultat, choisissez la jointure attributaire : les temps de traitements seront moins longs, et vous vous affranchirez aussi d'éventuels problèmes liés aux géométries, par exemple des erreurs de topologie.</p>
                         <p>Par contre, <b>chaque chef-lieu est situé dans un département</b>&nbsp;; il est donc possible d'associer les 2 avec un <a href="06_02_req_spatiales.php#VI22">opérateur spatial</a> comme par exemple <b>contient</b>.</p>
                     </div>
                     
