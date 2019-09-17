@@ -18,8 +18,8 @@
 					<li><a href="#IX22">Explorer les données en modifiant le mode de représentation</a>
 					   <ul class="listesoustitres">
 					       <li><a href="#IX22a">Répartition des valeurs : histogramme de fréquence</li>
-					       <li><a href="#IX22a">La valeur des pixels sans valeur</li>
-					       <li><a href="#IX22a">Modifier le style pour explorer les données</li>
+					       <li><a href="#IX22b">La valeur des pixels sans valeur</li>
+					       <li><a href="#IX22c">Modifier le style pour explorer les données</li>
 					   </ul>
 					</li>
 					<li><a href="#IX23">Manipuler les données : extraction de valeurs</a></li>
@@ -96,7 +96,7 @@
 			    
 			    <h4><a class="titre" id="IX22a">Répartition des valeurs : histogramme de fréquence</a></h4>
 			    
-			        <p>Une manière simple d'avoir un aperçu du contenu des données est de visualiser l'histogramme de fréquence des valeurs des pixels. Vous pourrez ainsi voir d'un coup d'oeil la répartition des valeurs d'élévation.</p>
+			        <p>Une manière simple d'avoir un aperçu du contenu des données est de visualiser l'histogramme de fréquence des valeurs des pixels. Vous pourrez ainsi voir d'un coup d'&#156;il la répartition des valeurs d'élévation.</p>
 			        
 			        <div class="manip">
 			            <p><b>Propriétés de la couche <em class="data">srtm_jamaique</em> &#8594; rubrique Histogramme</b> : cliquez sur le bouton <b>Calculer l'histogramme</b>.</p>
@@ -107,7 +107,7 @@
     					</figure>
     				</div>
     				<p>L'axe horizontal représente les valeurs de pixels, donc ici d'élévation. L'axe vertical représente le nombre de pixels ayant une valeur donnée. Il est également possible de lire les valeurs minimale et maximale sou l'histogramme.</p>
-    				<p>On peut voir d'un seul coup d'oeil que beaucoup de pixels ont une valeur inférieure à 100 mètres d'élévation.</p>
+    				<p>On peut voir d'un seul coup d'&#156;il que beaucoup de pixels ont une valeur inférieure à 100 mètres d'élévation.</p>
     				<div class="manip">
     					<p>Il est possible de zoomer sur le graphique en dessinant un rectangle, ou bien en modifiant les valeurs min et max. Un clic droit permet de revenir à la vue initiale.</p>
 			        </div>

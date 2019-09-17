@@ -119,7 +119,7 @@
 							</li>
 							<li class="index_02"><a href="07_02_calculer.php#VII23c">Concaténation</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X11b">Constructeur de requête</a></li>
-							<li class="index_02"><a href="09_02_raster.php#IX22">Contour (courbe de niveau)</a></li>
+							<li class="index_02"><a href="09_02_raster.php#IX24a">Contour (courbe de niveau)</a></li>
 							<li class="index_02">Couche
 								<ul>
 									<li class="index_03"><a href="05_01_creation_couche.php">créer une couche shapefile</a></li>
@@ -128,7 +128,7 @@
 									<li class="index_03"><a href="06_04_req_sql.php#VI41">virtuelle</a></li>
 								</ul>
 							</li>
-							<li class="index_02"><a href="09_02_raster.php#IX22">Courbe de niveau</a></li>
+							<li class="index_02"><a href="09_02_raster.php#IX24a">Courbe de niveau</a></li>
 							<li class="index_02"><a href="07_01_creation_suppression.php#VII12">Créer un champ</a>, voir aussi <a href="07_01_creation_suppression.php#VII13">ici</a></li>
 							<li class="index_02"><a href="05_01_creation_couche.php">Créer une couche shapefile</a></li>
 							<li class="index_02"><a href="03_03_donnees_XY.php#III31">CSV</a>
@@ -193,7 +193,6 @@
 									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">Gestionnaire de table</a></li>
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">Installer une extension</a></li>
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">OpenLayers</a></li>
-									<li class="index_03"><a href="09_03_vecteur_raster.php#IX32">Point Sampling Tool</a></li>
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">QuickMapServices</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV62">ici</a></li>
 									<li class="index_03"><a href="03_04_donnees_osm.php#III43b">QuickOSM</a></li>
 									<li class="index_03"><a href="06_02_req_spatiales.php#VI21b">Requête spatiale</a></li>
@@ -272,8 +271,8 @@
 							<li class="index_02"><a href="04_06_calage_autre_couche.php#IV61">Installer une extension</a></li>
 							<li class="index_02">Intersection
 								<ul>
-									<li class="index_03"><a href="06_02_req_spatiales.php#VI22">de deux couches vecteur</a></li>
-									<li class="index_03"><a href="09_01_vecteur.php#IX13">opérateur de requête spatiale</a></li>
+									<li class="index_03"><a href="06_02_req_spatiales.php#VI22">opérateur de requête spatiale</a></li>
+									<li class="index_03"><a href="09_01_vecteur.php#IX13">de deux couches vecteur</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -323,8 +322,8 @@
 							<li class="index_02"><a href="02_04_changer_systeme.php">Modifier le SCR</a>
 								<ul>
 									<li class="index_03"><a href="02_04_changer_systeme.php#II41">d'un projet</a></li>
-									<li class="index_03"><a href="09_02_raster.php#IX23a">d'une couche raster</a></li>
-									<li class="index_03"><a href="02_04_changer_systeme.php#II43">d'une couche vecteur</a></li>
+									<li class="index_03"><a href="09_02_raster.php#IX24b">d'une couche raster</a></li>
+									<li class="index_03"><a href="02_04_changer_systeme.php#II42">d'une couche vecteur</a></li>
 								</ul>
 							</li>
 							<li class="index_02"><a href="05_02_points.php#V23b">Modifier les données attributaires</a>, voir aussi <a href="05_03_donnees_attrib.php">ici</a> et <a href="07_00_champs.php">ici</a></li>
@@ -436,6 +435,7 @@
 							<li class="index_02"><a href="01_01_SIG.php#I12b">Raster</a>
 								<ul>
 									<li class="index_03"><a href="09_02_raster.php#IX23a">modifier le SCR</a></li>
+									<li class="index_03"><a href="09_02_raster.php#IX22b">type de raster (8bits, 16bits...)</a></li>
 								</ul>
 							</li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV42">Rééchantillonnage</a>
@@ -477,7 +477,7 @@
 									<li class="index_03"><a href="02_03_couches_projets.php#II32">d'une couche</a></li>
 									<li class="index_03"><a href="02_02_coord.php#II21b">ED50</a></li>
 									<li class="index_03"><a href="02_04_changer_systeme.php#II41">modifier le SCR d'un projet</a></li>
-									<li class="index_03"><a href="09_02_raster.php#IX23a">modifier le SCR d'une couche raster</a></li>
+									<li class="index_03"><a href="09_02_raster.php#IX24b">modifier le SCR d'une couche raster</a></li>
 									<li class="index_03"><a href="02_04_changer_systeme.php#II43">modifier le SCR d'une couche vecteur</a></li>
 									<li class="index_03"><a href="02_02_coord.php#II21b">NTF</a></li>
 									<li class="index_03"><a href="02_02_coord.php#II21b">RGF93</a></li>
@@ -485,7 +485,7 @@
 								</ul>
 							</li>
 							<li class="index_02"><a href="11_04_python.php">Script Python</a></li>
-							<li class="index_02"><a href="09_01_vecteur.php#IX12c">Segments pour l'approximation (zone tampon)</a></li>
+							<li class="index_02"><a href="09_01_vecteur.php#IX12d">Segments pour l'approximation (zone tampon)</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X13">Semis de points</a></li>
 							<li class="index_02"><a href="01_01_SIG.php#I12c">Sélection</a>
 							    <ul>
