@@ -28,7 +28,7 @@
 				</ul>
 				
 				<p>Une fois vos données représentées de manière satisfaisante, il peut être utile d'en faire une carte. <b>Cette partie n'a pas pour but d'expliquer les bonnes et mauvaises pratiques en matière de cartographie</b>, mais se bornera à décrire quelques fonctionnalités du mode mise en page de QGIS.</p>
-				<p>L'exercice consistera ici à mettre en page une carte de la densité de population par communes (carte choroplèthe) en France.</p>
+				<p>L'exemple portera ici sur une carte de la densité de population par communes (carte choroplèthe) en France. Mais vous pouvez choisir le sujet de votre choix, avec vos données&nbsp;!</p>
 				
 				<h3><a class="titre" id="X21">Préparation de la mise en page</a></h3>
 				
@@ -36,24 +36,30 @@
 						<p>Commencez par ajouter toutes les couches dont vous avez besoin, et supprimez toutes les couches inutiles.</p>
 						<p>Choisissez le style de chacune des couches.</p>
 						<p>N'oubliez pas également de choisir un SCR adapté pour votre projet (projeté si vous souhaitez créer une échelle en mètres par exemple) (cf. <a href="02_04_changer_systeme.php#II41">Modifier le SCR du projet</a>).</p>
+						<p>Pour aller plus vite, vous pouvez ouvrir le projet tout fait <a href="donnees/TutoQGIS_10_Representation.zip" >misenpage_densite.qgz</a>. Dans ce cas, nombre des étapes décrites ci-dessous seront déjà réalisées, mais vous pourrez modifier les différents paramètres.</p>
 					</div>
 						
 				<h3><a class="titre" id="X22">Mise en page : le composeur d'impression</a></h3>
 					
-					<p>Le mode mise en page se nomme <b>composeur d'impression</b> dans QGIS. C'est dans le composeur d'impression que vous pourrez ajouter une échelle, un titre etc. à votre carte.</p>
+					<p>Le mode mise en page ouvre une fenêtre à part dans QGIS. On peut y ajouter différents éléments&nbsp;: carte, légende, échelle... La carte est liée à celle de la fenêtre principale de QGIS et se met à jour automatiquement.</p>
+					<p class="note">Dans la version 2.18 de QGIS, le mode mise en page se nommait &#171;&nbsp;composeur d'impression&nbsp;&#187;.</p>
 					
 					<div class="manip">
 						<p>
-							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Nouveau composeur d'impression
+							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Nouvelle mise en page...
 								<span>
-									<img src="illustrations/tous/10_02_composeur_menu.png" alt="Menu Projet, Nouveau composeur d'impression" height="275">
+									<img src="illustrations/tous/10_02_composeur_menu.png" alt="Menu Projet, Nouvelle mise en page..." width="100%">
 								</span>
 							</a>
 						</p>
 						<p>Tapez un titre, par exemple densité communes.</p>
 					</div>
 					
-					<p>Le principe du composeur d'impression est simple : l'onglet <b>Composition</b> permet de fixer les paramètres de la page (format A4, paysage ou portrait...), et l'onglet <b>Propriétés de l'objet</b> les paramètres de l'objet actuellement sélectionné.</p>
+					<p>Le principe du composeur d'impression est simple :</p>
+					<ul>
+					   <li>l'onglet <b>Mise en page</b> permet de fixer les paramètres de la page (format A4, paysage ou portrait...)</li>
+					   <li>l'onglet <b>Propriétés de l'objet</b> permet de fixer les paramètres de l'objet actuellement sélectionné.</li>
+					</ul>
 					
 					<h4><a class="titre" id="X22a">Créer une carte sur une page au format de votre choix</a></h4>
 					

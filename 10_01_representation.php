@@ -33,9 +33,16 @@
 				
 
 				<p>Il existe de nombreuses manières de représenter les données. Nous en avons abordées certaines dans les précédentes parties, et nous en verrons quelques unes plus en détail ici. Il en existe beaucoup d'autres&nbsp;!</p>
+				
 				<p>Le <a href="10_02_mise_en_page.php" >chapitre suivant</a> abordera quant à lui la mise en page proprement dite, dans le module dédié de QGIS, qui permet d'exporter une carte avec légende, titre, échelle...</p>
 				<p>A partir d'une couche de communes et leur population, nous allons voir différentes manières de visualiser cette population.</p>
-				<p class="manip"> Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">COMMUNE.shp</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
+				
+				<p><b>Nous ne parlerons pas ici, ou très peu, de sémiologie graphique et du choix du mode de représentation</b>, ce qui a déjà été fait dans de nombreux ouvrages, notamment :</p>
+				<ul>
+					<li><em>Sémiologie graphique: Les diagrammes - Les réseaux - Les cartes</em> de Jacques Bertin</li>
+					<li><em>Manuel de cartographie</em> de Nicolas Lambert et Christine Zanin</li>
+					<li><em>Pratiques de la cartographie</em> d'Anne Le Fur</li>
+				</ul>
 				
 				<h3><a class="titre" id="X11">Représenter des quantités ou des effectifs : carte en symboles proportionnels</a></h3>
 				
@@ -60,6 +67,7 @@
 						</figure>
 						
 						<div class="manip">
+						    <p> Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">COMMUNE.shp</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
 							<p>Pour trouver l'outil voulu, tapez <b>centro</b> dans la barre de recherche de la boîte à outils (centro et non centroïde pour que la recherche fonctionne également avec les noms d'outils en anglais).</p>
 							<figure>
 								<a href="illustrations/tous/10_01_centroides_menu.png" >
@@ -183,16 +191,23 @@
 						</div>
 		  	           <figure>
 							<a href="illustrations/tous/10_01_prop_visu.png" >
-								<img src="illustrations/tous/10_01_prop_visu.png" alt="Une partie de la carte en cercles proportionnels" width="300">
+								<img src="illustrations/tous/10_01_prop_visu.png" alt="Une partie de la carte en cercles proportionnels" width="40%">
 							</a>
 					   </figure>
 						
 				<h3><a class="titre" id="X12">Représenter des variables relatives à des surfaces : cartes choroplèthes</a></h3>
 					
-					<p>Une carte choroplèthe est une carte en aplats de couleurs. Les régions sont colorées selon une mesure statistique telle que la densité de population ou le revenu par habitant. Ce type de carte <a class="ext" target="_blank" href="https://neocarto.hypotheses.org/5717">ne peut donc être utilisé pour représenter des quantités ou des effectifs</a>. Les variables continues doivent être discrétisées pour produire des classes.</p>
+					<p>Une carte choroplèthe est une carte en aplats de couleurs. Les régions sont colorées selon une mesure statistique telle que la densité de population ou le revenu par habitant. Ce type de carte <a class="ext" target="_blank" href="https://neocarto.hypotheses.org/5717">ne peut donc être utilisé pour représenter des quantités ou des effectifs</a>. Les variables continues doivent être <a class="ext" target="_blank" href="http://www.hypergeo.eu/spip.php?article374">discrétisées</a> pour produire des classes.</p>
+					<figure>
+						<a href="illustrations/tous/10_01_carte_choroplethe.png" >
+							<img src="illustrations/tous/10_01_carte_choroplethe.png" alt="Exemple de carte choroplethe : carte de densité de population par commune, France métropolitaine, discrétisation par quantiles" width="90%">
+						</a>
+						<figcaption>Exemple de carte choroplethe montrant la densité de population par commune en France métropolitaine, avec une discrétisation par quantiles.</figcaption>
+				   </figure>
+					
 					
 					<h4><a class="titre" id="X12a">Créer un champ de densité de population</a></h4>
-						<p>La première étape consistera pour nous à créer un champ densité de population, rempli en fonction de la population et la surface.</p>
+						<p>La première étape consistera pour nous à créer un champ densité de population, rempli en fonction de la population et de la surface.</p>
 						
 						<div class="manip">
 							<p>Ouvrez la table attributaire de <em class="data">COMMUNE</em>, <a href="05_02_points.php#V21">passez en mode édition</a> et ouvrez la <a href="07_02_calculer.php#VII21">calculatrice de champ</a>.</p>
@@ -224,12 +239,17 @@
 									<img src="illustrations/tous/10_01_choroplethe_fenetre.png" alt="Choix des paramètres du style pour une carte choroplèthe en 5 classes par la méthode des quantiles" width="600">
 								</a>
 							</figure>
-							<p>Sélectionnez le style <b>Gradué</b> en fonction de la colonne <b>densite</b>.</p>
-							<p>Choisissez un nombre de classes et une méthode de discrétisation.</p>
-							<p>Cliquez sur <b>Classer</b> et appliquez les changements.</p>
-							<p>Pour un meilleur rendu, vous pouvez supprimer les bordures des communes en cliquant sur <b>Modification...</b> puis sur <b>Remplissage simple &#8594; Style de la bordure &#8594; Pas de ligne</b>.</p>
+							<ul>
+    							<li class="espace">Sélectionnez le style <b>Gradué</b> pour discrétiser les valeurs</li>
+    							<li class="espace">Choisissez la colonne <b>densite</b> créée précédemment</li>
+    							<li class="espace">Choisissez éventuellement une palette de couleur</li>
+    							<li class="espace">Sélectionnez un <b>mode de discrétisation</b> (quantile, intervalles égaux, Jenks) et un <b>nombre de classes</b></li>
+    							<li class="espace">Cliquez sur <b>Classer</b> pour voir apparaître les classes avec les couleurs qui leur sont attribuées</li>
+							</ul>
+							<p>Appliquez ensuite les changements. Vous pouvez tester différents modes de discrétisation et nombres de classes.</p>
 							<p>Pour voir l'effectif de chaque classe, clic droit sur le nom de la couche &#8594; <b>Montrer le décompte des entités</b>.</p>
-							<p>Testez différents modes de discrétisation et nombres de classes.</p>
+							<p>Pour un meilleur rendu, vous pouvez supprimer les bordures des communes en cliquant sur <b>Modification...</b> puis sur <b>Remplissage simple &#8594; Style de la bordure &#8594; Pas de ligne</b>.</p>
+							<p class="note">Toutefois, même ainsi, les limites restent un peu visibles. Pour ne vraiment plus les voir, il faut rendre visibles ces limites avec une épaisseur fine et leur donner la même couleur que la couleur de remplissage.</p>
 						</div>
 						<figure>
 							<a href="illustrations/tous/10_01_choroplethe_visu.png" >
@@ -241,34 +261,38 @@
 				<h3><a class="titre" id="X13">Représenter des quantités ou des effectifs : cartes en semis de points</a></h3>
 					
 					<p>Une carte en semis de points permet, à partir d'un maillage surfacique, de représenter des quantités ou effectifs par des points placés aléatoirement au sein de chaque polygone. Le nombre de ces points est proportionnel à la quantité ou l'effectif lié au polygone.</p>
-					<p>Nous allons créer ces points aléatoires en fonction du champ POPULATION. Ce champ étant décimal avec un chiffre après la virgule, nous allons le multiplier par 10 pour obtenir des nombres entiers (il n'est pas possible de créer 0,7 points dans un polygone...).</p>
+					<figure>
+					   <iframe src="https://demographics.virginia.edu/DotMap/" width="90%" height="400" style="border:1px solid darkgrey;"></iframe>
+					   <figcaption>Carte en semis de points des Etats-Unis&nbsp;: 1 point représente un personne, sa couleur est fonction de l'origine de cette personne. Cette carte met en lumière la ségrégation qui a lieu notamment dans certains quartiers des grandes villes.</figcaption>
+				    </figure>
+					
+					<p>Ici, nous allons créer ces points aléatoires en fonction du champ POPULATION. On pourrait créer un point par personne, mais le temps de création de la couche de points serait très long, et le résultat serait peu lisible. <b>Nous allons donc créer un point pour 100 personnes.</b></p>
+					<p>Il faudra donc diviser la population par 100, et arrondir le résultat à l'entier le plus proche, puisqu'on ne peut créer 1,2 points.</p>
 					
 					<div class="manip">
-						<p>Ajoutez un champ nommé <b>POP10</b>, de type <b>entier</b>, égal à 10 fois le champ POPULATION. N'oubliez pas de quitter le mode édition une fois l'opération terminée.
-						<p>Pour créer les points aléatoires :</p>
-						<p>
-							<a class="thumbnail_bottom" href="#thumb">menu Vecteur &#8594; Outils de recherche &#8594; Points aléatoires
+						<p>Pour créer les points aléatoires :
+							<a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; Création de vecteurs &#8594; Points aléatoires à l'intérieur des polygones
 								<span>
-									<img src="illustrations/tous/10_01_pts_aleatoires_menu.png" alt="menu Vecteur, Outils de recherche, Points aléatoires " height="275">
+									<img src="illustrations/tous/10_01_pts_aleatoires_menu.png" alt="Emplacement de l'outil de points aléatoires à l'intérieur des polygones dans la boîte à outils" width="80%">
 								</span>
 							</a>
 						</p>
 						<figure>
 							<a href="illustrations/tous/10_01_pts_aleatoires_fenetre.png" >
-								<img src="illustrations/tous/10_01_pts_aleatoires_fenetre.png" alt="Fenêtre de création des points aléatoires" width="400">
+								<img src="illustrations/tous/10_01_pts_aleatoires_fenetre.png" alt="Fenêtre de création des points aléatoires" width="80%">
 							</a>
 						</figure>
 						<ul>
-							<li class="espace">Couche en entrée : <b>COMMUNE</b></li>
-							<li class="espace">Taille d'échantillon : utiliser la valeur du champ <b>POP10</b></li>
-							<li class="espace">Fichier de sortie : cliquez sur <b>Parcourir</b>, sélectionnez l'emplacement et tapez le nom de la couche qui sera créée : <b>points_aleatoires_communes</b> par exemple</li>
-							<li class="espace">Ajouter le résultat au canevas de la carte</li>
-							<li class="espace"><b>OK</b>, patientez, l'opération est un peu longue... et fermez la fenêtre une fois terminé.</li>
+							<li class="espace">Couche source : <b>COMMUNE</b></li>
+							<li class="espace">Stratégie d'échantillonnage : <b>Nombre de points</b>, pour créer un nombre de points directement proportionnel à la population</li>
+							<li class="espace">Expression : cliquez sur le bouton à droite, et tapez l'expression suivante : <b>  round("POPULATION"/100)</b>, pour diviser la population par 100 et arrondir le résultat pour obtenir un nombre entier</li>
+							<li class="espace">Laissez les autres paramètres par défaut, pour créer une couche temporaire</li>
+							<li class="espace"><b>Exécuter</b>, patientez, l'opération est un peu longue... et fermez la fenêtre une fois terminé.</li>
 						</ul>
 						<p>Ajustez le style de la couche, par exemple à l'échelle du pays :</p>
 						<figure>
 							<a href="illustrations/tous/10_01_style_pts_aleatoires.png" >
-								<img src="illustrations/tous/10_01_style_pts_aleatoires.png" alt="paramètres de représentation de la couche de points" width="610">
+								<img src="illustrations/tous/10_01_style_pts_aleatoires.png" alt="paramètres de représentation de la couche de points" width="90%">
 							</a>
 						</figure>
 					</div>
@@ -279,13 +303,8 @@
 						</figure>
 						
 					
-					<p>Nous avons vu ici trois manières de représenter une même donnée : la population des communes. Il en existe beaucoup d'autres. Il est difficile de terminer cette partie sans citer au moins trois références pour ceux qui souhaitent en savoir plus sur la sémiologie graphique :</p>
-					<ul>
-						<li><em>Sémiologie graphique: Les diagrammes - Les réseaux - Les cartes</em> de Jacques Bertin</li>
-						<li><em>Manuel de cartographie</em> de Nicolas Lambert et Christine Zanin</li>
-						<li><em>Pratiques de la cartographie</em> d'Anne Le Fur</li>
-					</ul>
-					<p>Dans le chapitre suivant, nous aborderons la mise en page de cartes afin par exemple de pouvoir les intégrer dans un article : ajout d'un titre, d'une légende... et export au format image ou vectoriel. L'export au format vectoriel vous permettra de retravailler la carte dans un logiciel de dessin vectoriel.</p>
+					<p>Nous avons vu ici trois manières de représenter une même donnée : la population des communes. Il en existe beaucoup d'autres&nbsp;!</p>
+					<p>Dans le chapitre suivant, nous aborderons la <b>mise en page de cartes</b> afin par exemple de pouvoir les intégrer dans un article : ajout d'un titre, d'une légende... et export au format image ou vectoriel. L'export au format vectoriel vous permettra de retravailler la carte dans un logiciel de dessin vectoriel.</p>
 
 				<br>
 				<a class="prec" href="10_00_carto.php">chapitre précédent</a>
