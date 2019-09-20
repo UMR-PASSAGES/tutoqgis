@@ -32,57 +32,71 @@
 				</ul>
 				<br>
 				
-				<p>Les modèles sont surtout utiles pour chaîner plusieurs traitements. Par exemple, imaginons que notre but soit non seulement de découper une couche par une autre, mais ensuite de changer le SCR de la couche découpée pour la passer en WGS84 par exemple. Il est possible de créer un modèle enchaînant les deux outils.</p>
+				<p>Les modèles sont surtout utiles pour chaîner plusieurs traitements. Par exemple, imaginons que notre but soit non seulement de découper une couche par une autre, mais ensuite de changer le SCR de la couche découpée pour la passer en WGS84 par exemple.</p>
+				<p>Il est possible de <b>créer un modèle enchaînant les deux outils</b>, qui pourra être lancé facilement sur plusieurs couches, et même être exécuté <a href="11_02_par_lot.php">par lot</a>.</p>
 				<div class="manip">
-					<p>Dans la boîte à outils Traitements, rubrique <b>Modèles</b> puis <b>Outils</b>, double-cliquez sur <b>Créer un nouveau modèle</b>.</p>
+					<p>Dans la boîte à outils Traitements, cliquez sur l'icône <b>Modèles</b> tout en haut à gauche et choisissez <b>Créer un nouveau modèle</b>.</p>
 					<figure>
 						<a href="illustrations/tous/11_03_creer_modele.png" >
-							<img src="illustrations/tous/11_03_creer_modele.png" alt="Emplacement de l'outil de création de modèles dans la boîte à outils Traitements" width="350">
+							<img src="illustrations/tous/11_03_creer_modele.png" alt="Emplacement de l'outil de création de modèles dans la boîte à outils Traitements" width="90%">
 						</a>
 					</figure>
 				</div>
 				<p>La fenêtre qui s'ouvre comporte une partie à gauche avec 2 onglets, Entrées et Algorithmes, qui vont vous servir à créer le modèle, et une partie vide à droite où votre modèle sera représenté.</p>
 				<p>Notre modèle comportera 2 paramètres en entrée : une couche vecteur qui sera découpée et une couche vecteur qui servira de masque de découpe. L'outil de découpage va utiliser ces deux paramètres en entrée pour créer une nouvelle couche temporaire. Cette couche temporaire sera utilisée comme paramètre d'entrée pour l'outil de reprojection, qui produira la couche finale.</p>
+				<figure>
+				    <a href="illustrations/tous/11_03_organigramme.svg" >
+						<img src="illustrations/tous/11_03_organigramme.svg" alt="Organigramme du modèle qui sera créé" width="100%">
+					</a>
+				</figure>
 				
 				<h3><a class="titre" id="XI31">Création d'un modèle</a></h3>
 					<h4><a class="titre" id="XI31a">Création du premier paramètre en entrée : couche à découper</a></h4>
 					
 						<div class="manip">
-							<p>Dans l'onglet <b>Entrées</b>, double-cliquez sur <b>Vector layer</b> :</p>
+							<p>Cliquez sur l'onglet <b>Entrées</b> en bas à gauche de la fenêtre, puis double-cliquez sur <b>Couche vecteur</b>&nbsp;:</p>
 							<figure>
-							<a href="illustrations/tous/11_03_modeleur_fenetre.png" >
-								<img src="illustrations/tous/11_03_modeleur_fenetre.png" alt="Fenêtre du modeleur de traitement" width="600">
-							</a>
+    							<a href="illustrations/tous/11_03_modeleur_fenetre.png" >
+    								<img src="illustrations/tous/11_03_modeleur_fenetre.png" alt="Fenêtre du modeleur de traitement" width="100%">
+    							</a>
 							</figure>
 							<figure>
-							<a href="illustrations/tous/11_03_def_parametre_fenetre.png" >
-								<img src="illustrations/tous/11_03_def_parametre_fenetre.png" alt="Fenêtre de définition d'un paramètre" width="250">
-							</a>
+    							<a href="illustrations/tous/11_03_def_parametre_fenetre.png" >
+    								<img src="illustrations/tous/11_03_def_parametre_fenetre.png" alt="Fenêtre de définition d'un paramètre" width="90%">
+    							</a>
 							</figure>
 							<ul>
-								<li>Nom du paramètre : <b>input layer</b></li>
-								<li>Type de forme : <b>N'importe lequel</b>, puisque cette couche peut aussi bien être de type point, ligne ou polygone</li>
-								<li>Requis : <b>oui</b>, ce paramètre est obligatoire</li>
+								<li class="espace">Nom du paramètre : <b>couche source</b></li>
+								<li class="espace">Type de géométrie : <b>Tout type de géométrie</b>, puisque cette couche peut aussi bien être de type point, ligne ou polygone</li>
+								<li class="espace"><b>Obligatoire</b> : cochez la case, il ne s'agit pas d'un paramètre optionnel</li>
 							</ul>	
 						</div>
-						<p>Le paramètre est ajouté au modèle sous forme d'une boîte violette. Vous pouvez éditer ses caractéristiques en cliquant sur l'icône de crayon de cette boîte.</p>
+						<p>Le paramètre est ajouté au modèle sous forme d'une boîte jaune. Vous pouvez éditer ses caractéristiques en double-cliquant sur cette boîte.</p>
+						<figure>
+							<a href="illustrations/tous/11_03_couche_source.png" >
+								<img src="illustrations/tous/11_03_couche_source.png" alt="Boîte pour la couche source" width="100%">
+							</a>
+						</figure>
 						
 						
 					<h4><a class="titre" id="XI31b">Création du deuxième paramètre en entrée : masque de découpe</a></h4>
 						
 						<div class="manip">
-							<p>Dans l'onglet Entrées, double-cliquez à nouveau sur Vector layer :</p>
+							<p>Dans l'onglet Entrées, double-cliquez à nouveau sur <b>Couche vecteur</b> :</p>
 							<figure>
 								<a href="illustrations/tous/11_03_def_parametre2_fenetre.png" >
-									<img src="illustrations/tous/11_03_def_parametre2_fenetre.png" alt="Fenêtre de définition d'un paramètre" width="250">
+									<img src="illustrations/tous/11_03_def_parametre2_fenetre.png" alt="Fenêtre de définition d'un paramètre" width="90%">
 								</a>
 								</figure>
 							<ul>
-								<li>Nom du paramètre : <b>mask layer</b></li>
-								<li>Type de forme : <b>polygone</b></li>
-								<li>Requis : <b>oui</b>, ce paramètre est obligatoire</li>
+								<li class="espace">Nom du paramètre : <b>couche masque</b></li>
+								<li class="espace">Type de géométrie : <b>polygone</b></li>
+								<li class="espace"><b>Obligatoire</b></li>
 							</ul>
 						</div>
+						<a href="illustrations/tous/11_03_couche_source.png" >
+							<img src="illustrations/tous/11_03_modele_02.png" alt="Les 2 boîtes pour la couche source et la couche masque" width="70%">
+						</a>
 					
 					<h4><a class="titre" id="XI31c">Création du premier algorithme : découpage</a></h4>
 						
