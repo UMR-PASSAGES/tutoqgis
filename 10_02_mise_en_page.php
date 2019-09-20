@@ -28,8 +28,9 @@
 					</li>
 					<li><a href="#X26">Ajouter une échelle</a></li>
 					<li><a href="#X27">Ajout d'éléments supplémentaires : titre, logo, flèche nord...</a></li>
-					<li><a href="#X28">Exporter la carte</a></li>
-					<li><a href="#X29">Sauvegarder une mise en page</a></li>
+					<li><a href="#X28">Ajout d'une carte de situation</a></li>
+					<li><a href="#X29">Exporter la carte</a></li>
+					<li><a href="#X210">Sauvegarder une mise en page</a></li>
 				</ul>
 				
 				<p>Une fois vos données représentées de manière satisfaisante, il peut être utile d'en faire une carte. <b>Cette partie n'a pas pour but d'expliquer les bonnes et mauvaises pratiques en matière de cartographie</b>, mais se bornera à décrire quelques fonctionnalités du mode mise en page de QGIS.</p>
@@ -84,7 +85,7 @@
 						<p>Faites un <b>clic droit sur la page &#8594; Propriétés de la page</b>.</p>
 						<figure>
 							<a href="illustrations/tous/10_02_taille_page.png" >
-								<img src="illustrations/tous/10_02_taille_page.png" alt="Fixer la taille de la page dans le composeur" width="400">
+								<img src="illustrations/tous/10_02_taille_page.png" alt="Fixer la taille de la page dans la mise en page" width="400">
 							</a>
 						</figure>
 						<ul>
@@ -92,7 +93,7 @@
 						 <li class="espace">Largeur et hauteur : <b>200 mm</b></li>
 						</ul>
 						
-						<p><img class="icone" src="illustrations/tous/10_02_zoom_page_icone.png" alt="icône zoom sur l'emprise totale du composeur" >Pour zoomer sur votre page : cliquez sur l'icône <b>Zoom complet</b> (ou <b>menu Vue &#8594; Zoom sur l'emprise totale</b>).</p>
+						<p><img class="icone" src="illustrations/tous/10_02_zoom_page_icone.png" alt="icône zoom sur l'emprise totale de la page" >Pour zoomer sur votre page : cliquez sur l'icône <b>Zoom complet</b> (ou <b>menu Vue &#8594; Zoom sur l'emprise totale</b>).</p>
 					</div>
 						
 				<h3><a class="titre" id="X24">Ajouter une carte</a></h3>
@@ -109,7 +110,7 @@
 					
 					</div>
 					
-						<p><b>La carte ainsi créée est synchronisée avec les données visibles dans QGIS</b> : si vous changer le style d'une des couches dans la fenêtre principale de QGIS et revenez au composeur, la carte aura été mise à jour (si besoin en cliquant sur le bouton actualiser).</p>
+						<p><b>La carte ainsi créée est synchronisée avec les données visibles dans QGIS</b> : si vous changer le style d'une des couches dans la fenêtre principale de QGIS et revenez à la mise en page, la carte aura été mise à jour (si besoin en cliquant sur le bouton actualiser).</p>
 						
 					<div class="manip">
 					
@@ -135,7 +136,7 @@
     					
     						<p><img class="icone" src="illustrations/tous/10_02_legende_icone.png" alt="icône ajouter une nouvelle légende" >Pour ajouter une <b>légende</b> : icône <b>Ajouter une nouvelle légende à la mise en page</b>, puis cliquez n’importe où sur la carte.</p>
     						<p>La fenêtre <b>Propriétés de l'élément</b> s'ouvre : cliquez sur OK sans modifiez les paramètres, ce que vous pourrez toujours faire par la suite.</p>
-    						<p>La légende reprend celle de la couche dans QGIS&nbsp;: si vous modifiez les étiquettes de la légende dans la propriété de la couche, la légende du composeur prendra en compte ces modifications.</p>
+    						<p>La légende reprend celle de la couche dans QGIS&nbsp;: si vous modifiez les étiquettes de la légende dans la propriété de la couche, la légende de la mise en page prendra en compte ces modifications.</p>
     						<p>Dans la fenêtre principale de QGIS, ouvrez les propriétés de la couche, rubrique Style. Vous pouvez&nbsp;:</p>
     						<ul>
     							<li class="espace"><b>Modifier les bornes des classes</b> en double-cliquant sur une ligne dans la colonne valeur</li>
@@ -268,42 +269,49 @@
         							<img src="illustrations/tous/10_02_echelle_numerique.png" alt="Echelle style numérique" width="16%">
         						</a>
         				   </figure>
+						</div>
 						
-						<p>Par exemple, si vous voulez une échelle en Km, indiquez d'abord l'unité des de votre projet : le mètre (votre projet doit utiliser un SCR projeté), puis tapez 1000 dans la case <b>Multiplicateur des unités de l'étiquette</b>.</p>
+						<p>Vous pouvez également modifier les unités de l'échelle, et l'étiquette des unités&nbsp;:</p>
 						<figure>
 							<a href="illustrations/tous/10_02_echelle_unites.png" >
-								<img src="illustrations/tous/10_02_echelle_unites.png" alt="Paramétrer les unités de l'échelle" width="380">
+								<img src="illustrations/tous/10_02_echelle_unites.png" alt="Paramétrer les unités de l'échelle" width="90%">
 							</a>
 						</figure>
-					<p>Vous pouvez également régler le nombre de segments de l'échelle, et la largeur du trait :</p>
-					<figure>
-						<a href="illustrations/tous/10_02_echelle_segments.png" >
-							<img src="illustrations/tous/10_02_echelle_segments.png" alt="Paramétrer le nombre de segments de l'échelle" width="380">
-						</a>
-					</figure>
-					<p>Différents styles d'échelle peuvent être choisis dans la rubrique <b>Propriétés principales</b> de l'échelle :</p>
+    					<p>Ainsi que le nombre de segments, et la hauteur de la barre d'échelle&nbsp;:</p>
+    					<figure>
+    						<a href="illustrations/tous/10_02_echelle_segments.png" >
+    							<img src="illustrations/tous/10_02_echelle_segments.png" alt="Paramétrer le nombre de segments de l'échelle" width="90%">
+    						</a>
+    					</figure>
+					   <p>Sans oublier les couleurs, et la police de caractères&nbsp;:</p>
+					   <figure>
+    						<a href="illustrations/tous/10_02_echelle_police.png" >
+    							<img src="illustrations/tous/10_02_echelle_police.png" alt="Paramétrer les couleurs et la taille de l'échelle" width="90%">
+    						</a>
+    					</figure>
+    					<p>Et bien d'autres paramètres encore&nbsp;!</p>
 					
-				</div>
-					<p>Voici quelques exemples d'échelle :</p>
-					<figure>
-						<a href="illustrations/tous/10_02_echelle_visu.png" >
-							<img src="illustrations/tous/10_02_echelle_visu.png" alt="Exemple d'échelle simple" width="175">
-						</a>
-						<a href="illustrations/tous/10_02_echelle_visu_2.png" >
-							<img src="illustrations/tous/10_02_echelle_visu_2.png" alt="Exemple d'échelle simple" width="175">
-						</a>
-						<a href="illustrations/tous/10_02_echelle_visu_3.png" >
-							<img src="illustrations/tous/10_02_echelle_visu_3.png" alt="Exemple d'échelle simple" width="175">
-						</a>
-					</figure>
+    					<p>Vous pouvez opter pour un style épuré...</p>
+    					<figure>
+    						<a href="illustrations/tous/10_02_echelle_visu.png" >
+    							<img src="illustrations/tous/10_02_echelle_visu.png" alt="Exemple d'échelle simple" width="40%">
+    						</a>
+    					</figure>
+    					<p>...ou bien laisser parler l'artiste qui est en vous&nbsp;:</p>
+    					<figure>
+    					   <a href="illustrations/tous/10_02_echelle_coupemulet.png" >
+    							<img src="illustrations/tous/10_02_echelle_coupemulet.png" alt="Exemple d'échelle simple" width="80%">
+    						</a>
+    					</figure>
+    					<p class="note">(Notez bien que je décline toute responsabilité dans ce cas)</p>
 						
 				
 				<h3><a class="titre" id="X27">Ajout d'éléments supplémentaires : titre, logo, flèche nord...</a></h3>
 				
 					<div class="manip">
-						<p><img class="icone" src="illustrations/tous/10_02_etiquette_icone.png" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter une nouvelle étiquette</b>.</p>
+						<p><img class="icone" src="illustrations/tous/10_02_etiquette_icone.png" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter une nouvelle étiquette à la mise en page</b>.</p>
 						<p>Dans les propriétés de cet objet, vous pouvez ensuite modifier le texte, la police, la couleur...</p>
-						<p><img class="icone" src="illustrations/tous/10_02_image_icone.png" alt="icône ajouter une image" >Si vous voulez ajouter une image, par exemple un logo : outil <b>Ajouter une image</b> puis dessinez un rectangle sur la page.</p>
+						<p><img class="icone" src="illustrations/tous/10_02_image_icone.png" alt="icône ajouter une image" >Si vous voulez ajouter une image, par exemple un logo : outil <b>Ajouter une nouvelle image à la mise en page</b> puis dessinez un rectangle sur la page.</p>
 						<p>Dans les propriétés principales, choisissez ensuite une image sur votre ordinateur :</p>
 						<figure>
 							<a href="illustrations/tous/10_02_image_parcourir.png" >
@@ -311,8 +319,8 @@
 							</a>
 						</figure>
 					</div>
-						<p>Par convention, le Nord est situé en haut de votre carte. Ajouter une flèche Nord si tel est bien le cas n'est donc pas indispensable et peut même alourdir inutilement votre carte et donc nuire à sa lisibilité.</p>
-						<p>Peut-être avez-vous néanmoins besoin d'une flèche Nord, par exemple si le Nord n'est pas en haut de votre carte ?</p>
+						<p>Par convention, le Nord est situé en haut de votre carte. Ajouter une flèche Nord si tel est bien le cas n'est donc pas indispensable et peut même alourdir inutilement votre carte. Par ailleurs, suivant la projection que vous utilisez, la flèche Nord peut ne pas être valable pour toute la carte, mais par exemple seulement le long du méridien de référence.</p>
+						<p>Peut-être avez-vous néanmoins besoin d'une flèche Nord, par exemple si le Nord n'est pas en haut de votre carte&nbsp;?</p>
 					<div class="manip">
 						<p>Dans ce cas, utilisez également l'outil <b>Ajouter une image</b> et choisissez comme image un symbole de flèche Nord. Pour cela, vous pouvez utiliser la bibliothèque de symboles de QGIS, dans la rubrique <b>Rechercher dans les répertoires</b>.</p>
 						<figure>
@@ -321,68 +329,108 @@
 							</a>
 						</figure>
 						<p class="note">Il est possible d'ajouter de nouveaux symboles au format SVG à cette bibliothèque, au moyen du bouton <b>Ajouter...</b></p>
-						<p>Pour synchroniser votre flèche Nord avec votre carte, afin que cette flèche indique toujours le Nord : cocher la case <b>Synchroniser avec la carte</b> dans la rubrique <b>Image rotation</b>.</p>
-						<figure>
-							<a href="illustrations/tous/10_02_fleche_synchro.png" >
-								<img src="illustrations/tous/10_02_fleche_synchro.png" alt="synchroniser la fleche nord avec la carte" width="350">
-							</a>
-						</figure>
-						<p class="note">Pour régler la rotation de la carte, dans les propriétés principales de la carte (toujours dans le composeur), réglez le paramètre <b>Rotation de la carte</b>.</p>
+						
 					</div>
+					
+				<h3><a class="titre" id="X28">Ajouter une carte de situation</a></h3>
+				
 					<p>Vous pouvez également ajouter une deuxième carte à votre page, qui servira par exemple de carte de situation.</p>
+					<p>Il est possible de faire figurer dans cette deuxième carte un rectangle correspondant à l'emprise de la première carte.</p>
+					<figure>
+						<a href="illustrations/tous/10_02_apercu.png" >
+							<img src="illustrations/tous/10_02_apercu.png" alt="exemple : une carte de France, avec en haut une petite carte d'Europe et un rectangle correspondant à l'emprise de la carte de France" width="90%">
+						</a>
+					</figure>
+					
 					<div class="manip">
-						<p>Ajouter une carte, réglez son emprise et son échelle, et allez dans la rubrique <b>Aperçu</b> des propriétés de cette carte, pour visualiser l'emprise de votre première carte :</p>
+						<p>Ajoutez une carte, réglez son emprise et son échelle, et allez dans la rubrique <b>Aperçu</b> des propriétés de cette carte, pour visualiser l'emprise de votre première carte dans cette deuxième carte&nbsp;:</p>
 						<figure>
 							<a href="illustrations/tous/10_02_apercu_reglage.png" >
 								<img src="illustrations/tous/10_02_apercu_reglage.png" alt="reglage de l'aperçu pour voir l'emprise de la 1ère carte sur la 2ème" width="350">
 							</a>
 						</figure>
-						<p class="note">Il peut être nécessaire de choisir les bonnes couches pour une des cartes dans QGIS, mettre à jour cette carte dans le composeur puis cocher la case <b>Verrouiller les couches pour cette carte</b> avant de faire la même chose pour l'autre carte.</p>
-						<p class="note">De manière générale, si vous avez plusieurs cartes, la manière la plus facile de les gérer est peut-être de créer un groupe de couches par carte dans QGIS, quitte à dupliquer certaines couches.</p>
+						<ul>
+						  <li class="espace">Cliquez sur le bouton <b>+</b> pour ajouter un aperçu</li>
+						  <li class="espace">Choisissez la carte dont vous voulez voir l'emprise dans cette carte. Dans cet exemple, il s'agit de <b>Carte 1</b></li>
+						  <li class="espace">Modifiez éventuellement le style de cadre</li>
+						</ul>
 					</div>
-					<figure>
-						<a href="illustrations/tous/10_02_apercu.png" >
-							<img src="illustrations/tous/10_02_apercu.png" alt="exemple : une carte de France, avec en haut une petite carte d'Europe et un rectangle correspondant à l'emprise de la carte de France" width="350">
-						</a>
-					</figure>
-				
-				<h3><a class="titre" id="X28">Exporter la carte</a></h3>
-				
-					<p>Vous êtes satisfait de votre carte ? Voici venu le moment de l'exporter !</p>
-					<p>Vous pouvez soit l'<b>exporter au format image</b> (PNG, JPG) pour l'intégrer directement dans un rapport par exemple, soit l'<b>exporter au format vectoriel</b> SVG ou PDF pour la retravailler dans un logiciel de dessin type Inkscape ou Adobe Illustrator. Vous pouvez également l'imprimer directement !</p>
+						
+					<p>Avec plusieurs cartes, il faut gérer la visibilité des couches dans chacune des cartes.</p>
 					
 					<div class="manip">
-						<p>Pour <b>exporter au format image</b> : vous pouvez tout d'abord paramétrer la résolution à laquelle votre carte sera exportée : onglet <b>Composition</b>, <b>Paramètres d'export :</b></p>
+						<p>Pour cela, vous pouvez utiliser cette méthode&nbsp;:</p>
+						<ul>
+						  <li class="espace">Dans QGIS, créez autant de groupes que de cartes dans votre mise en page (clic droit dans la liste des couches, Ajouter un groupe), ici un groupe <b>carte principale</b> et un groupe <b>carte de situation</b></li>
+						  <li class="espace">Dans QGIS, mettez dans chacun des groupes les couches que vous voulez voir figurer dans la mise en page correspondante, quitte à dupliquer certaines couches (clic droit, Dupliquer la couche)</li>
+                          <img src="illustrations/tous/10_02_groupes_qgis.png" alt="2 groupes de couches dans QGIS" width="50%">
+						  <li class="espace">Toujours dans QGIS, rendez visible uniquement les couches d'un groupe</li>
+						  <li class="espace">Dans le mode mise en page, sélectionnez la carte correspondant au groupe visible dans QGIS, et cochez la case <b>Verrouiller les couches</b> dans la rubrique <b>Couches</b> des propriétés de la carte</li>
+						  <img src="illustrations/tous/10_02_verrouiller_couches.png" alt="case pour verrouiller les couches dans les propriétés de la carte" width="65%">
+						  <li class="espace">Faites de même pour les autres groupes</li>
+						</ul>
+					</div>
+					
+				
+				<h3><a class="titre" id="X29">Exporter la carte</a></h3>
+				
+					<p>Vous êtes satisfait de votre carte ? Voici venu le moment de l'exporter !</p>
+					<p>Vous pouvez soit l'<b>exporter au format image</b> (PNG, JPG) pour l'intégrer directement dans un rapport par exemple, soit l'<b>exporter au format vectoriel</b> SVG ou PDF pour la retravailler dans un logiciel de dessin type Inkscape ou Adobe Illustrator. Vous pouvez également l'imprimer directement&nbsp;!</p>
+					
+					<div class="manip">
+						<p>Pour <b>exporter au format image</b> : vous pouvez tout d'abord paramétrer la résolution à laquelle votre carte sera exportée : onglet <b>Mise en page</b>, <b>Paramètres d'export :</b></p>
 						<figure>
 							<a href="illustrations/tous/10_02_export_resolution.png" >
 								<img src="illustrations/tous/10_02_export_resolution.png" alt="choix d'une résolution de 300 dpi pour l'export" width="400">
 							</a>
 						</figure>
 						<p class="note">On considère généralement qu'une résolution de 300 dpi est suffisante pour une impression. Pour en savoir plus sur ce qu'est la résolution d'une image : <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/R%C3%A9solution_%28imagerie_num%C3%A9rique%29" >http://fr.wikipedia.org/wiki/R%C3%A9solution_%28imagerie_num%C3%A9rique%29</a></p>
-						<p><img class="icone" src="illustrations/tous/10_02_export_image_icone.png" alt="icône Exporter comme une image" >Pour ensuite exporter votre mise en page au format image : à partir du composeur, <b>menu Composeur &#8594; Exporter comme image...</b></p>
-						<p>De nombreux formats sont disponibles : PNG, JPEG, TIFF, EPS...</p>
-						<p><img class="icone" src="illustrations/tous/10_02_export_svg_icone.png" alt="icône Exporter au format SVG" >Pour <b>exporter au format SVG</b> : à partir du composeur, <b>menu Composeur &#8594; Exporter au format SVG...</b></p>
-						<p><img class="icone" src="illustrations/tous/10_02_impression_icone.png" alt="icône Imprimer" >Pour <b>imprimer la carte</b> : à partir du composeur, <b>menu Composeur &#8594; Imprimer...</b> ou bien <b>Ctrl + P</b></p>
+						<p><img class="icone" src="illustrations/tous/10_02_export_image_icone.png" alt="icône Exporter comme une image" >Pour ensuite exporter votre mise en page au format image : à partir de la fenêtre de mise en page, <b>menu Mise en page &#8594; Exporter au format image...</b></p>
+						<p>De nombreux formats sont disponibles : PNG, JPEG, TIFF...</p>
 					</div>
-						<p>L'export au format SVG peut poser quelques problèmes, en particulier pour gérer la transparence. L'export au format PDF peut parfois être plus pratique pour ensuite retoucher la carte dans un logiciel de dessin.</p>
-				
-						<p>Un exemple de carte réalisée dans QGIS :</p>
-						<figure>
-							<a href="illustrations/tous/10_02_carte_exemple.png" >
-								<img src="illustrations/tous/10_02_carte_exemple.png" alt="exemple d'une carte de densité de population dans QGIS" width="400">
-							</a>
-						</figure>
-						
-						<p>A noter également, l'existence d'un module permettant la <b>génération d'atlas</b> (il s'agit du troisième onglet dans le composeur d'impression). Ce module est décrit dans le <a class="ext" target="_blank" href="http://documentation.qgis.org/2.8/fr/docs/user_manual/print_composer/print_composer.html#atlas-generation">manuel QGIS</a>, ou bien <a class="ext" target="_blank" href="http://nyalldawson.net/2013/04/a-neat-trick-in-qgis-2-0-images-in-atlas-prints/">ici</a> (en anglais).</p>
-				
-				<h3><a class="titre" id="X29">Sauvegarder une mise en page</a></h3>
-				
-					<p>Dans QGIS, les mises en page sont sauvegardées dans les projets QGS. Pour sauvegarder votre mise en page, il vous suffit donc de sauvegarder votre projet.</p>
+					
+					<p>Si vous voulez pouvoir modifier votre carte dans un logiciel de dessin vectoriel, il faut l'exporter dans un format vectoriel, SVG ou PDF.</p>
 					
 					<div class="manip">
-						<p>Dans la fenêtre principale de QGIS, rendez-vous dans le <b>menu Projet &#8594; Sauvegarder sous...</b>.</p>
-						<p>Choisissez un emplacement : dossier <b>TutoQGIS_10_Representation/projets</b> par exemple, et un nom : <b>carte_densite_01</b> par exemple.</p>
+						<p><img class="icone" src="illustrations/tous/10_02_export_svg_icone.png" alt="icône Exporter au format SVG" >Pour <b>exporter au format SVG</b> : <b>menu mise en page &#8594; Exporter au format SVG...</b></p>
 					</div>
+					
+					<p>L'export au format SVG peut poser quelques problèmes, en particulier pour gérer la transparence. L'export au format PDF peut parfois être plus pratique pour ensuite retoucher la carte dans un logiciel de dessin.</p>
+					
+					<div class="manip">
+						<p><img class="icone" src="illustrations/tous/10_02_export_pdf_icone.png" alt="icône Exporter au format PDF" >Pour <b>exporter au format PDF</b> : <b>menu mise en page &#8594; Exporter au format PDF...</b></p>
+					</div>
+					
+					<p>Vous pouvez également imprimer directement votre carte, par exemple pour tester son rendu.</p>
+					
+					<div class="manip">
+						<p><img class="icone" src="illustrations/tous/10_02_impression_icone.png" alt="icône Imprimer" >Pour <b>imprimer la carte</b> : <b>menu mise en page &#8594; Imprimer...</b> ou bien <b>Ctrl + P</b></p>
+					</div>
+						
+					<p>Un exemple de carte réalisée dans QGIS :</p>
+					<figure>
+						<a href="illustrations/tous/10_02_carte_exemple.png" >
+							<img src="illustrations/tous/10_02_carte_exemple.png" alt="exemple d'une carte de densité de population dans QGIS" width="90%">
+						</a>
+					</figure>
+				
+				
+				<h3><a class="titre" id="X210">Sauvegarder une mise en page</a></h3>
+				
+					<p>Dans QGIS, les mises en page sont sauvegardées dans les projets QGZ ou QGS. Pour sauvegarder votre mise en page, il vous suffit donc de sauvegarder votre projet.</p>
+					
+					<div class="manip">
+						<p>Dans la fenêtre principale de QGIS, rendez-vous dans le <b>menu Projet &#8594; Enregistrer sous...</b>.</p>
+						<p>Choisissez un emplacement : dossier <b>TutoQGIS_10_Representation/projets</b> par exemple, et un nom : <b>carte_densite_01</b> par exemple.</p>
+						<p>Un projet peut contenir plusieurs mises en page. Pour renommer, ajouter, supprimer ou dupliquer des mises en page&nbsp;: <b>menu Projet &#8594; Gestionnaire de mise en page...</b>.</p>
+						<figure>
+							<a href="illustrations/tous/10_02_gestionnaire_misenpage.png" >
+								<img src="illustrations/tous/10_02_gestionnaire_misenpage.png" alt="Fenêtre du gestionnaire de mise en page" width="85%">
+							</a>
+						</figure>
+					</div>
+					
+					<p>Vous savez maintenant présenter vos travaux de manière claire, bravo&nbsp;! Le chapitre suivant traitera d'un tout autre sujet, à savoir l'automatisation de tâches dans QGIS...</p>
 
 				<br>
 				<a class="prec" href="10_01_representation.php">chapitre précédent</a>
