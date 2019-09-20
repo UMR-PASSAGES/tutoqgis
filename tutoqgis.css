@@ -214,7 +214,7 @@ hov         #1D3437     hover colour
 	img.icone {
 		padding:0;
 		float: left;
-		margin: 5px;
+		margin-right: 7px;
 		border: thin solid;
 		border-color: silver;
 		box-shadow: none;
