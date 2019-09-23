@@ -73,7 +73,7 @@
     						    <li>Vérifiez que vous êtes bien dans la rubrique <b>Vecteur</b>. Par défaut, le gestionnaire des sources de données s'ouvre dans la dernière rubrique utilisée.</li>
         						<li>Type de source et encodage : laissez les valeurs par défaut. Pour en savoir plus sur ce qu'est l'encodage :
         						<a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Codage_de_caract%C3%A8res" >http://fr.wikipedia.org/wiki/Codage_de_caractères</a></li>
-        						<li>Cliquez sur <b>...</b> à gauche de <b>Jeux de données vectorielles</b> et sélectionnez la couche <em class="data"><a href="donnees/TutoQGIS_01_PriseEnMain.zip">depts_bretagne_geofla.shp</a></em> située dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>.</li>
+        						<li>Cliquez sur <b>...</b> à gauche de <b>Jeux de données vectorielles</b> et sélectionnez la couche <em class="data"><a href="donnees/TutoQGIS_01_PriseEnMain.zip">DEPARTEMENT_BRETAGNE.shp</a></em> située dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>.</li>
     						</ul>
     						<p>Cliquez sur <b>Ajouter</b> : vous pouvez voir à l'écran les départements de la région Bretagne.</p>
     						<p>Pour <b>supprimer cette couche</b> : clic droit sur son nom dans la table des matières,
@@ -96,7 +96,8 @@
                             		<img src="illustrations/tous/1_2_explorateur_menu.png" alt="menu Vue → Panneaux → Explorateur" height="700" >
                             	</span>
                             </a>.</p>
-    						<p>Dans ce panneau, naviguez dans l'arborescence de vos fichiers jusqu'au dossier où vous avez téléchargé les données de ce tutoriel. Faites un <b>clic droit sur ce dossier &#8594; Ajouter en Favori</b>. A partir des favoris, rendez-vous maintenant dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et double-cliquez sur la couche <em class="data">depts_bretagne_geofla.shp</em>.</p>
+    						<p>Dans ce panneau, naviguez dans l'arborescence de vos fichiers jusqu'au dossier où vous avez téléchargé les données de ce tutoriel. Faites un <b>clic droit sur ce dossier &#8594; Ajouter en Favori</b>.</p>
+    						<p>A partir des favoris, rendez-vous dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et double-cliquez sur la couche <em class="data">DEPARTEMENT_BRETAGNE.shp</em>.</p>
     						<figure>
                             	<a href="illustrations/tous/1_2_explorateur.png" >
                             		<img src="illustrations/tous/1_2_explorateur.png" alt="Panneau Explorateur" width="330">
@@ -183,7 +184,7 @@
 						<div class="manip">			
 							<div class="question">
 								<input type="checkbox" id="faq-1">
-								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Information</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">depts_bretagne_geofla</em> sur votre ordinateur ?</label></p>
+								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Information</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">DEPARTEMENT_BRETAGNE</em> sur votre ordinateur ?</label></p>
 								<p class="reponse">
 								La couche est stockée à l'endroit indiqué dans la partie <b>Chemin</b>.
 								 Cet emplacement varie bien sûr en fonction de l'endroit où vous avez enregistré les données du tutoriel.

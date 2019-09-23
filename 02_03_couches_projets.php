@@ -71,7 +71,7 @@
 			<h3><a class="titre" id="II32">SCR d'une couche</a></h3>
 			
 				<div class="manip">
-					<p>Nous allons maintenant nous poser la question de savoir dans quel SCR est la couche <em class="data">Reg_France_Geofla_L93.</em></p>
+					<p>Nous allons maintenant nous poser la question de savoir dans quel SCR est la couche <em class="data">REGION</em>.</p>
 					<p>Ouvrez les propriétés de cette couche (double clic sur le nom de la couche) et allez dans la rubrique <b>Information</b>.</p>			
 					<figure>
 						<a href="illustrations/tous/2_3_scr_couche.png" >
@@ -82,7 +82,7 @@
 				
 					<div class="question">
 						<input type="checkbox" id="faq-2">
-						<p><label for="faq-2">A votre avis, quel est le SCR de la couche <em class="data">Reg_France_Geofla_L93</em> ?</label></p>
+						<p><label for="faq-2">A votre avis, quel est le SCR de la couche <em class="data">REGION</em> ?</label></p>
 						<p class="reponse">Cette couche est en RGF93 / Lambert-93, code EPSG 2154.</p>
 					</div>
 				</div>
@@ -92,7 +92,7 @@
 			<h3><a class="titre" id="II33">Projection à la volée</a></h3>
 			
 				<p>La <b>projection à la volée</b> est une fonctionnalité qui permet d'afficher des couches dans un autre SCR que le leur, le SCR du projet.</p>
-				<p>Ainsi, la couche <em class="data">Reg_France_Geofla_L93</em> est affichée en WGS84 bien que son SCR soit le RGF93 Lambert93. Il s'agit bien uniquement d'une question d'affichage, le SCR de la couche n'est pas modifié.</p>
+				<p>Ainsi, la couche <em class="data">REGION</em> est affichée en WGS84 bien que son SCR soit le RGF93 Lambert93. Il s'agit bien uniquement d'une question d'affichage, le SCR de la couche n'est pas modifié.</p>
 				<p>Depuis la version 3 de QGIS, <b>il n'est plus possible de désactive la projection à la volée</b>. <b>Toutes les couches sont donc toujours affichées dans le SCR du projet</b>.</p>
 				<p>Il est donc possible de superposer plusieurs couches dans des SCR différents. C'est ce que nous allons vérifier!</p>
 				<div class="manip">

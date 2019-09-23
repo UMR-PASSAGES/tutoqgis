@@ -47,7 +47,7 @@
 							 <img src="illustrations/tous/1_3_fichiers_shp.png" alt="fichiers format shapefile" width="100%">
 						  </a>
 					    </figure>
-					    <p>La couche <em class="data">depts_bretagne_geofla</em> est au format <b>shapefile</b> ou <b>SHP</b>.</p>
+					    <p>La couche <em class="data">DEPARTEMENT_BRETAGNE</em> est au format <b>shapefile</b> ou <b>SHP</b>.</p>
 						<p>Le format shapefile a été créé par ESRI, l'auteur notamment du logiciel ArcGIS. Ce format est aujourd'hui l'un des standards du SIG et est couramment utilisé par les logiciels libres de SIG.</p>
 						<p><b>Un fichier SHP est en fait composé de plusieurs fichiers qui fonctionnent ensemble</b>, dont 3 sont obligatoires :</p>
 						<ul>
@@ -94,7 +94,7 @@
 							 <img src="illustrations/tous/1_3_fichiers_tab.png" alt="fichiers format TAB" width="100%">
 						  </a>
 					    </figure>
-					    <p>La couche <em class="data">depts_france_geofla</em> est au format TAB.</p>
+					    <p>La couche <em class="data">DEPARTEMENT</em> est au format TAB.</p>
 						<p>Ce format a été créé pour le logiciel <b>MapInfo</b>. Comme pour le SHP, un fichier au format <b>TAB</b> est en fait composé de <b>plusieurs fichiers</b> :</p>
 						<ul>
 							<li><b>MAP</b> : données spatiales (avec le système de coordonnées)</li>
