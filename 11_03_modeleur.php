@@ -22,7 +22,12 @@
 							<li><a href="#XI31d">Création du second algorithme : modification du SCR</a></li>
 						</ul>
 					</li>
-					<li><a href="#XI32">Enregistrement et édition du modèle</a></li>
+					<li><a href="#XI32">Enregistrement et documentation d'un modèle</a>
+					    <ul class="listesoustitres">
+							<li><a href="#XI32a">Enregistrer un modèle</a></li>
+							<li><a href="#XI32b">Documenter un modèle</a></li>
+						</ul>
+					</li>
 					<li><a href="#XI33">Application</a>
 						<ul class="listesoustitres">
 							<li><a href="#XI33a">Découpage et reprojection d'une couche</a></li>
@@ -73,10 +78,14 @@
 						</div>
 						<p>Le paramètre est ajouté au modèle sous forme d'une boîte jaune. Vous pouvez éditer ses caractéristiques en double-cliquant sur cette boîte.</p>
 						<figure>
-							<a href="illustrations/tous/11_03_couche_source.png" >
-								<img src="illustrations/tous/11_03_couche_source.png" alt="Boîte pour la couche source" width="100%">
+							<a href="illustrations/tous/11_03_modele_01.png" >
+								<img src="illustrations/tous/11_03_modele_01.png" alt="Boîte pour la couche source" width="100%">
 							</a>
 						</figure>
+						<div class="manip">
+						  <p><img class="icone" src="illustrations/tous/11_03_zoom_icone.png" alt="icône zoom complet" >Si à un moment donné vous ne voyez plus votre modèle dans la partir droite de la fenêtre, cliquez sur l'icône <b>Zoom complet</b>.</p>
+						</div>
+						
 						
 						
 					<h4><a class="titre" id="XI31b">Création du deuxième paramètre en entrée : masque de découpe</a></h4>
@@ -94,17 +103,17 @@
 								<li class="espace"><b>Obligatoire</b></li>
 							</ul>
 						</div>
-						<a href="illustrations/tous/11_03_couche_source.png" >
+						<a href="illustrations/tous/11_03_modele_02.png" >
 							<img src="illustrations/tous/11_03_modele_02.png" alt="Les 2 boîtes pour la couche source et la couche masque" width="70%">
 						</a>
 					
 					<h4><a class="titre" id="XI31c">Création du premier algorithme : découpage</a></h4>
 						
 						<div class="manip">
-							<p>Dans l'onglet Algorithmes, double-cliquez sur l'outil <b>Couper</b> (Géotraitements QGIS &#8594; Outils de recouvrement de vecteur(s) &#8594; Couper) :</p>
+							<p>Dans l'onglet <b>Algorithmes</b>, rubrique <b>Recouvrement de vecteur</b> &#8594; double-cliquez sur l'outil <b>Couper</b> :</p>
 							<figure>
 								<a href="illustrations/tous/11_03_modeleur_fenetre_algos.png" >
-									<img src="illustrations/tous/11_03_modeleur_fenetre_algos.png" alt="Fenêtre du modeleur, onglet algorithmes" width="600">
+									<img src="illustrations/tous/11_03_modeleur_fenetre_algos.png" alt="Fenêtre du modeleur, onglet algorithmes" width="100%">
 								</a>
 							</figure>
 							<figure>
@@ -113,22 +122,27 @@
 								</a>
 							</figure>
 							<ul>
-								<li>Description : <b>Clip</b></li>
-								<li>Couche en entrée : <b>input layer</b></li>
-								<li>Couche de découpage : <b>mask layer</b></li>
-								<li>Découpé&#60;OutputVector&#62; : ne rentrez rien dans cette partie, pour que la couche créée soit temporaire</li>
+								<li>Description : <b>Couper</b></li>
+								<li>Couche en entrée : <b>couche source</b></li>
+								<li>Couche de découpage : <b>couche masque</b></li>
+								<li>Découpé : ne rentrez rien dans cette partie, pour que la couche créée soit temporaire</li>
 							</ul>
 						</div>
-						<p>L'algorithme apparaît sous forme d'une boîte blanche ; de même, vous pouvez éditer ses caractéristiques en cliquant sur l'icône de crayon de cette boîte.</p>
+						<p>L'algorithme apparaît sous forme d'une boîte blanche reliée aux 2 couches en entrée&nbsp;; de même, vous pouvez éditer ses caractéristiques en cliquant sur l'icône de crayon de cette boîte.</p>
+						<figure>
+							<a href="illustrations/tous/11_03_modele_03.png" >
+								<img src="illustrations/tous/11_03_modele_03.png" alt="Modèle avec les 3 boîtes pour les 2 couches en entrée et l'algo couper" width="100%">
+							</a>
+						</figure>
 						
 					
 					<h4><a class="titre" id="XI31d">Création du second algorithme : modification du SCR</a></h4>
 						
 						<div class="manip">
-							<p>Toujours dans la fenêtre du modeleur de traitement, onglet Algorithmes, double-cliquez sur l'outil <b>Reproject layer</b>
-							<a class="thumbnail_bottom" href="#thumb">(Géotraitements QGIS &#8594; Outils généraux de vecteur &#8594; Reprojeter une couche)
+							<p>Toujours dans la fenêtre du modeleur de traitement, 
+							<a class="thumbnail_bottom" href="#thumb">onglet Algorithmes &#8594; Outils généraux pour les vecteur&#8594; Reprojeter une couche
                             	<span>
-                            		<img src="illustrations/tous/11_03_reprojeter.png" alt="Emplacement de l'outil 'Reprojeter une couche'" height="420" >
+                            		<img src="illustrations/tous/11_03_reprojeter.png" alt="Emplacement de l'outil 'Reprojeter une couche'" width="90%" >
                             	</span>
                             </a>  :</p>
 							<figure>
@@ -137,63 +151,104 @@
 								</a>
 							</figure>
 							<ul>
-								<li>Description : <b>Reproject layer</b></li>
-								<li>Couche en entrée : <b>'Découpé' créé par l'algorithme 'Clip'</b></li>
-								<li>Target CRS : laissez EPSG:4326, ce qui correspond au WGS84</li>
-								<li>Reprojected&#60;OutputVector&#62; : <b>result</b></li>
+								<li>Description : <b>Reprojeter une couche</b></li>
+								<li>Couche en entrée : <b>'Découpé' créé par l'algorithme 'Couper'</b></li>
+								<li>Target CRS : laissez EPSG:4326, ce qui correspond au WGS84 (l'idée étant de passer du Lambert 93 au WGS84)</li>
+								<li>Reprojecté : tapez le nom de votre choix, par exemple <b>reprojeté+découpé</b></li>
 							</ul>
 						</div>
-				
-				<h3><a class="titre" id="XI32">Enregistrement et édition du modèle</a></h3>
-				
-					<p>Vous devriez obtenir quelque chose de similaire à ceci :</p>
-					<figure>
-						<a href="illustrations/tous/11_03_modele_fini_fenetre.png" >
-							<img src="illustrations/tous/11_03_modele_fini_fenetre.png" alt="Fenêtre du modeleur avec le modèle terminé" width="600">
-						</a>
-					</figure>
-					<div class="manip">
-						<p>Pour <b>sauvegarder ce modèle</b>, tapez d'abord son nom en haut à gauche de la partie droite de la fenêtre (<b>clip and project</b> par exemple) et le nom de son groupe en haut à droite de la partie droite de la fenêtre (<b>tests</b> par exemple).</p>
-						<p><img class="icone" src="illustrations/tous/11_03_enregistrer_modele_icone.png" alt="icône Enregistrer" >Cliquez ensuite sur l'icône <b>Enregistrer</b> et sauvegardez le modèle dans le répertoire par défaut : processing/models dans le dossier qgis. Notez que les modèles ont l'extension <em>.model</em>.</p>
-						<p>Pour <b>éditer un modèle</b> à partir de la boîte à outils de traitements, clic droit sur son nom, <b>Editer modèle</b>.</p>
+						
+						<p>Votre modèle est maintenant fini&nbsp;! Il doit ressembler à ceci&nbsp;:</p>
 						<figure>
-							<a href="illustrations/tous/11_03_editer_modele.png" >
-								<img src="illustrations/tous/11_03_editer_modele.png" alt="Editer un modèle à partir de la boîte à outils Traitements" width="400">
+							<a href="illustrations/tous/11_03_modele_fini.png" >
+								<img src="illustrations/tous/11_03_modele_fini.png" alt="Modèle fini, avec les 2 boîtes pour les couches en entrée, les 2 boîte pour les algos et la boîte pour la couche en sortie" width="90%">
 							</a>
 						</figure>
-					</div>
+				
+				<h3><a class="titre" id="XI32">Enregistrement et documentation d'un modèle</a></h3>
+				
+				    <h4><a class="titre" id="XI32a">Enregistrer un modèle</a></h4>
+				    
+    					<p>Comment faire maintenant pour sauvegarder notre modèle&nbsp;?</p>
+    					
+    					<div class="manip">
+        					<figure>
+        						<a href="illustrations/tous/11_03_enregistrer_modele_fenetre.png" >
+        							<img src="illustrations/tous/11_03_enregistrer_modele_fenetre.png" alt="Fenêtre du modeleur, choix du nom du modèle et du groupe et icône de sauvegarde entourés en rouge" width="100%">
+        						</a>
+        					</figure>
+    						<p>Tapez d'abord son nom en haut à gauche de la fenêtre, <b>couper et modifier SCR</b> par exemple, et le nom de son groupe, <b>tests</b> par exemple.</p>
+    					</div>
+    					
+    					<p>Le groupe correspond à la rubrique dans laquelle votre modèle apparaîtra au sein de la boîte à outils. S'il n'existe pas déjà, il sera créé.</p>
+    					
+    					<div class="manip">
+    						<p><img class="icone" src="illustrations/tous/11_03_enregistrer_modele_icone.png" alt="icône Enregistrer" >Cliquez ensuite sur l'icône <b>Enregistrer le modèle sous</b>. Dans la fenêtre qui s'ouvre alors, choisissez un nom pour votre modèle, par exemple <b>couper_modifSCR</b>.</p>
+    						<p>Notez qu'il va être enregistré dans le répertoire par défaut des modèles : processing/models dans le dossier qgis, et qu'il possède l'extension <em>.model3</em> (pour QGIS 3).</p>
+    					</div>
+    						
+    				<h4><a class="titre" id="XI32b">Documenter un modèle</a></h4>
+    				
+    				    <p>Si ce modèle est destiné à être utilisé par d'autres personnes, ou tout simplement si vous comptez vous en servir régulièrement, documenter un peu ce modèle sera très pratique. Il s'agit en fait de <b>rédiger l'aide de l'outil</b>, telle qu'on peut la voir dans la partie droite de la fenêtre pour les outils QGIS.</p>
+    				    <figure>
+    						<a href="illustrations/tous/11_03_aide_exemple.png" >
+    							<img src="illustrations/tous/11_03_aide_exemple.png" alt="Fenêtre de l'outil Couper, avec la partie Aide à droite entourée en rouge" width="80%">
+    						</a>
+    						<figcaption>Exemple d'aide&nbsp;: l'outil Couper.</figcaption>
+    					</figure>
+    					
+    					<div class="manip">
+    					   <p>Si vous avez fermé la fenêtre d'édition du modèle, vous pouvez y accéder à nouveau : <b>boîte à outils &#8594; modèles &#8594; tests (ou le nom de votre groupe) &#8594; clic droit sur le nom de votre outil, Editer le modèle...</b></p>
+    					   <figure>
+        						<a href="illustrations/tous/11_03_emplacement_modele.png" >
+        							<img src="illustrations/tous/11_03_emplacement_modele.png" alt="Emplacement du modèle dans la boîte à outils" width="80%">
+        						</a>
+        				   </figure>
+        				   <p>Dans la barre d'outils en haut de la fenêtre d'édition du modèle, cliquez sur l'icône <b>Editeur d'aide du modèle</b>.</p>
+                           <figure>
+        						<a href="illustrations/tous/11_03_modele_aide_icone.png" >
+        							<img src="illustrations/tous/11_03_modele_aide_icone.png" alt="Barre d'outils de la fenêtr d'édition du modèle, icône Aide entourée en rouge" width="90%">
+        						</a>
+        				   </figure>
+        				   <p>La fenêtre de l'éditeur d'aide s'ouvre&nbsp;:</p>
+        				   <figure>
+        						<a href="illustrations/tous/11_03_aide_fenetre.png" >
+        							<img src="illustrations/tous/11_03_aide_fenetre.png" alt="Fenêtre de l'éditeur d'aide du modèle" width="90%">
+        						</a>
+        				   </figure>
+        				   <p>Cliquez par exemple sur <b>Description de l'algorithme</b> à gauche, puis rédigez le texte correspondant à droite.</p>
+        				   <p>L'aide doit être courte et claire&nbsp;!</p>
+        				   <p>Vous pouvez également rédiger l'aide pour d'autres parties, par exemple pour les 2 paramètres en entrée et le rendu.</p>
+    					</div>
+    					
+    					<p>Votre modèle est fini et possède même une aide... C'est le moment de le tester&nbsp;!</p>
+						
 				
 				<h3><a class="titre" id="XI33">Application</a></h3>
 				
 					<h4><a class="titre" id="XI33a">Découpage et reprojection d'une couche</a></h4>
 					
-						<p>L'objectif est de découper une couche de routes par une commune, pour ne garder que les routes à l'intérieur de cette commune, la couche obtenue devant être en WGS84.</p>
+						<p>L'objectif est de découper la couche de routes par la commune, pour ne garder que les routes à l'intérieur de cette commune, la couche obtenue devant être en WGS84.</p>
+						
 						<div class="manip">
-							<p> Ajoutez à QGIS les couches <em class='data'>OSM_routes</em> et <em class="data">SAINTE_RADEGONDE</em> situées dans le dossier <b>TutoQGIS_11_Automatisation/donnees</b>.</p>
+							<p>Si elles ne sont pas déjà chargées, ajoutez à QGIS les couches <em class='data'>OSM_routes</em> et <em class="data">SAINTE_RADEGONDE</em> situées dans le dossier <b>TutoQGIS_11_Automatisation/donnees</b>.</p>
 							<div class="question">
 								<input type="checkbox" id="faq-1">
 								<p><label for="faq-1">Dans quel SCR sont ces deux couches ?</label></p>
 								<p class="reponse">Les 2 couches sont en RGF93 Lambert 93, code EPSG 2154 (cf. <a href="02_03_couches_projets.php#II32">SCR d'une couche</a> )</b>.</p>
 							</div>
-							<p><b>Lancer le modèle clip and project</b> : vous pouvez soit cliquer sur l'icône d'engrenages du modeleur de traitement si ce modèle est en cours d'édition, soit à partir de la boîte à outils traitements : 
-    							<a class="thumbnail_bottom" href="#thumb">Modèles &#8594; tests &#8594; clip and project
-                                	<span>
-                                		<img src="illustrations/tous/11_03_lancer_modele.png" alt="Boîte à outils de Traitement, modèle Clip and Project" height="300" >
-                                	</span>
-                                </a>
-                            </p>
+							<p>Lancez votre modèle&nbsp;: <b>boîte à outils &#8594; modèles &#8594; tests (ou le nom de votre groupe) &#8594; double clic sur le nom de votre outil</b>.</p>
 							<figure>
 								<a href="illustrations/tous/11_03_test_modele.png" >
-									<img src="illustrations/tous/11_03_test_modele.png" alt="fenêtre du modele clip and project, paramètres remplis" width="450">
+									<img src="illustrations/tous/11_03_test_modele.png" alt="fenêtre du modele clip and project, paramètres remplis" width="100%">
 								</a>
 							</figure>
 							<ul>
-								<li class="espace">input layer : <em class="data">OSM_routes</em></li>
-								<li class="espace">mask layer : <em class="data">SAINTE_RADEGONDE</em></li>
-								<li class="espace">result : cliquez sur les <b>...</b>, choisir <b>Enregistrer dans un fichier...</b>, choisir l'emplacement et nommez la future couche <em class="data">OSM_route_radegonde_wgs84</em></li>
-								<li class="espace">cochez la case <b>Ouvrir le fichier en sortie après l'exécution de l'algorithme</b> pour que la couche soit automatiquement ajoutée à QGIS</li>
+								<li class="espace">couche source&nbsp;: <em class="data">OSM_routes</em></li>
+								<li class="espace">couche masque&nbsp;: <em class="data">SAINTE_RADEGONDE</em></li>
+								<li class="espace">découpé+reprojeté&nbsp;: ne tapez rien, pour que le résultat soit une couche temporaire</li>
 							</ul>
-							Vérifiez le SCR de la couche obtenue, ainsi que son contenu : elle ne doit comporter que les routes à l'intérieur de la commune de Sainte-Radégonde (en gris foncé dans la figure ci-dessous).
+							<p><b>Exécutez</b>, vérifiez le SCR de la couche obtenue, ainsi que son contenu : elle ne doit comporter que les routes à l'intérieur de la commune de Sainte-Radégonde (en gris foncé dans la figure ci-dessous).</p>
 							<figure>
 								<a href="illustrations/tous/11_03_resultat_decoupe.png" >
 									<img src="illustrations/tous/11_03_resultat_decoupe.png" alt="résultat de la découpe : les 2 couches de route et la couche de commune" width="350">
@@ -205,14 +260,18 @@
 				
 						<p>Le but est ici de découper et reprojeter plusieurs couches, sans avoir à lancer plusieurs fois le modèle.</p>
 						<div class="manip">
-							<p>A partir de la boîte à outils de traitements, clic droit sur le modèle clip and project, <b>Exécuter par lot</b>. Remplissez les différents paramètres, en vous aidant éventuellement de la <a href="11_02_par_lot.php">partie XI.2</a>.</p>
+							<p>A partir de la boîte à outils de traitements, clic droit sur le modèle, <b>Exécuter comme processus de lot...</b>. Remplissez les différents paramètres, en vous aidant éventuellement de la <a href="11_02_par_lot.php">partie XI.2</a>.</p>
 							<figure>
 								<a href="illustrations/tous/11_03_test_modele_lot.png" >
 									<img src="illustrations/tous/11_03_test_modele_lot.png" alt="remplissage des paramètres de l'outil clip and project en mode par lot" width="620">
 								</a>
 							</figure>
-							<p>Vérifiez les couches obtenues.</p>
+							<p>Exécutez et vérifiez les couches obtenues.</p>
 						</div>
+						
+						<p>Les modèles permettent de créer une chaîne de traitement, en enchaînant autant d'algorithmes que vous le souhaitez, et <b>sont donc très pratiques si vous êtes amenés à répéter souvent la même séquence d'opérations</b>.</p>
+						<p>Au-delà de la création du modèle, il peut être utile quand vous réfléchissez à une manipulation de dessiner au papier et crayon l'enchaînement des étapes. Et une fois finalisé de noter le tout dans un fichier texte, pour vous aider à comprendre ce que vous avez fait quand vous reprendrez ce dossier dans 6 mois&nbsp;!</p>
+						
 				<br>
 				<a class="prec" href="11_02_par_lot.php">chapitre précédent</a>
 				<a class="suiv" href="11_04_python.php">chapitre suivant</a>
