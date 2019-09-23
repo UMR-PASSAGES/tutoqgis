@@ -271,6 +271,7 @@
 						
 						<p>Les modèles permettent de créer une chaîne de traitement, en enchaînant autant d'algorithmes que vous le souhaitez, et <b>sont donc très pratiques si vous êtes amenés à répéter souvent la même séquence d'opérations</b>.</p>
 						<p>Au-delà de la création du modèle, il peut être utile quand vous réfléchissez à une manipulation de dessiner au papier et crayon l'enchaînement des étapes. Et une fois finalisé de noter le tout dans un fichier texte, pour vous aider à comprendre ce que vous avez fait quand vous reprendrez ce dossier dans 6 mois&nbsp;!</p>
+						<p>Dans le chapitre suivant, nous allons voir une autre méthode pour automatiser des tâches dans QGIS, plus puissante mais avec un coup d'entrée plus important, en utilisant le langage de programmation Python.</p>
 						
 				<br>
 				<a class="prec" href="11_02_par_lot.php">chapitre précédent</a>
