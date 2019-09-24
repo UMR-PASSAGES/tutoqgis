@@ -556,6 +556,17 @@ hov         #1D3437     hover colour
         background-color:#191919;
         border:0;
         }
+    
+    /* pour la couverture des PDF */   
+    hr.cover {
+        width:100%;
+        height:1.5px;
+        margin-bottom:5px;
+        margin-top: 5px;
+        padding:0;
+        background-color:darkgray;
+        border:0;
+        }
 
 	/* les titres */
 	h1 {
