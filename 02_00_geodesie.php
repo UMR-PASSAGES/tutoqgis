@@ -13,7 +13,7 @@
 		
 		<div class="main">
 			<h1>II.  Géodésie</h1>
-			<p>La géodésie est la science qui étudie la forme et les dimensions de la Terre. Cette deuxième partie abordera les différentes manières d'exprimer des coordonnées, et comment cela se traduit-il dans un logiciel SIG.</p>
+			<p>La géodésie est la science qui étudie la forme et les dimensions de la Terre. Cette deuxième partie abordera les différentes manières d'exprimer des coordonnées, et comment cela se traduit dans un logiciel SIG.</p>
 			<p>Notions abordées :</p>
 				<ul>
 					<li>ellipsoïde et géoïde</li>

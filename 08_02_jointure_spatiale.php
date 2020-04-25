@@ -177,8 +177,8 @@
     					   <li class="espace">Couche source : <em class="data">DEPARTEMENT</em></li>
     					   <li class="espace">Joindre la couche : <em class="data">COMMUNE</em></li>
     					   <li class="espace">Prédicat géométrique : choisissez <b>contient</b>. Avec l'opérateur Intersecte, les communes limitrophes seraient également prises en compte, ce qui n'est pas souhaité ici.</li>
-    					   <li class="espace">Champs à résumer : cliquez sur le bouton <b>...</b> à droite, et choisissez un champ d'identifiant unique, ici <b>INSEE_COM</b> pour le code INSEE des communes</li>
-    					   <li class="espace">Résumés à calculer : cliquez sur le bouton <b>...</b> à droite, et cochez <b>sum</b>, <b>moyenne</b> et <b>median</b> pour calculer respectivement la somme, la moyenne et la médiane des populations communales pour chaque département</li>
+    					   <li class="espace">Champs à résumer : cliquez sur le bouton <b>...</b> à droite, et choisissez le champ <b>POPULATION</b></li>
+    					   <li class="espace">Résumés à calculer : cliquez sur le bouton <b>...</b> à droite, et cochez <b>somme</b>, <b>moyenne</b> et <b>médiane</b> pour calculer ces valeurs pour chaque département.</li>
     					   <figure>
     						<a href="illustrations/tous/8_2_choix_resumes.png" >
     							<img src="illustrations/tous/8_2_choix_resumes.png" alt="Fenêtre de choix des opérations d'agrégation : sum, moyenne et median sont cochés" width="80%" >
@@ -187,7 +187,7 @@
     					   <li class="espace">Couche issue de la jointure spatiale : laissez la valeur par défaut pour créer une couche temporaire</li>
     					   <li class="espace">Cliquez sur <b>Exécuter</b>. Attention, le temps de traitement peut être un peu long.</li>
     					</ul>
-    					<p>La couche temporaire est ajoutée à QGIS. Ses géométries sont celles des départements. Ouvrez sa table attributaire, vérifiez son contenu.</p>
+    					<p>La couche temporaire est ajoutée à QGIS. Ses géométries sont celles des départements. Ouvrez sa table attributaire, vérifiez son contenu : on connaît maintenant pour chaque département la population totale (POPULATION_sum), la population communale moyenne (POPULATION_mean) et la population communale mediane (POPULATION_median).</p>
     					<div class="question">
                     		<input type="checkbox" id="faq-3">
                     		<p><label for="faq-3">Quel est le département le moins peuplé&nbsp;?</label></p>

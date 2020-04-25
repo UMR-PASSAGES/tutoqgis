@@ -41,7 +41,7 @@
 			
 				<h4><a class="titre" id="III11a">Avec l'IGN</a></h4>
 				
-					<p>L'IGN (Institut National de l'Information Géographique et Forestière) diffuse gratuitement une partie de ses données ici : <a class="ext" target="_blank" href="http://professionnels.ign.fr/donnees">http://professionnels.ign.fr/donnees</a>.</p>
+					<p>L'IGN (Institut National de l'Information Géographique et Forestière) diffuse gratuitement une partie de ses données ici : <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html">https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html</a>.</p>
 					<p class="note">Si vous êtes étudiant ou bien si vous travaillez dans un laboratoire de recherche, il existe peut-être entre votre structure et l'IGN une convention recherche et enseignement vous donnant accès à plus de données !</p>
 					<p>Nous allons ici télécharger les communes de la Guyane.</p>
 					<div class="manip">
@@ -50,18 +50,18 @@
 								<img src="illustrations/tous/3_1_ign_telechargement.png" alt="page de téléchargement des données IGN" width="90%">
 							</a>
 						</figure>
-					   <p>Sur la page internet <a class="ext" target="_blank" href="http://professionnels.ign.fr/donnees">http://professionnels.ign.fr/donnees</a>, dans la rubrique <b>Les bases de données au format vectoriel</b> &#8594; <b>libre et gratuit</b>, cliquez sur <a class="ext" target="_blank" href="http://professionnels.ign.fr/adminexpress">Admin Express (et GEOFLA®)</a>.</p>
+					   <p>Sur la page internet <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html">https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html</a>, cliquez sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#admin-express">ADMIN-EXPRESS</a>.</p>
 					</div>
-					   <p>La base ADMIN EXPRESS contient des couches de régions, départements, arrondissements, EPCI, communes et chef-lieux pour la France métropolitaine et ultra-marine. Elle remplace la base GEOFLA® qui n'est plus mise à jour (cf. <a class="ext" target="_blank" href="http://professionnels.ign.fr/adminexpresscog" >http://professionnels.ign.fr/adminexpresscog</a>.</p>
+					   <p>La base ADMIN EXPRESS contient des couches de régions, départements, arrondissements, EPCI, communes et chef-lieux pour la France métropolitaine et ultra-marine. Elle remplace la base GEOFLA® qui n'est plus mise à jour et dont la dernière édition est celle de 2016.</p>
 					<div class="manip">
 					   <figure>
 							<a href="illustrations/tous/3_1_ign_telechargement_2.png" >
 								<img src="illustrations/tous/3_1_ign_telechargement_2.png" alt="page de téléchargement des données ADMIN EXPRESS (IGN)" width="90%">
 							</a>
 						</figure>
-						<p>Dans l'onglet <b>ADMIN-EXPRESS</b>, téléchargez les données <b>ADMIN EXPRESS par territoire</b>.</p>
+						<p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS par territoire</b> (ici celle de mars 2020).</p>
 						<p>Dézippez le fichier téléchargé (vous pouvez par exemple utiliser <a class="ext" target="_blank" href="https://www.7-zip.org/">7-zip</a>).</p>
-						<p>A partir de l'explorateur de fichiers de QGIS, ajoutez la couche <em class="data">COMMUNE</em> du sous-dossier <b>ADE_2-0_SHP_UTM22RGFG95_D973</b> (973 correspond au code département de la Guyane, et l'UTM 22 RGFG95 au SCR qui y est utilisé).</p>
+						<p>A partir de l'explorateur de fichiers de QGIS, ajoutez la couche <em class="data">COMMUNE</em> du sous-dossier <b>ADE_2-X_SHP_UTM22RGFG95_D973</b> (973 correspond au code département de la Guyane, et l'UTM 22 RGFG95 au SCR qui y est utilisé).</p>
 						<figure>
 							<a href="illustrations/tous/3_1_commune_guyane_explorateur.png" >
 								<img src="illustrations/tous/3_1_commune_guyane_explorateur.png" alt="ajout de la couche de communes de Guyane via l'explorateur QGIS" width="90%">
@@ -69,7 +69,7 @@
 						</figure>
 					</div>
 					
-					<p class="note">Si le téléchargement échoue, cette couche est également disponible dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees/COMMUNE.shp</b> accessible en <a href="telechargement.php" >téléchargement</a>.</p>
+					<p class="note">Si le téléchargement échoue, cette couche est également accessible <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">en téléchargement</a></em>.</p>
 					
 					<p>Dans les données téléchargées sur le site de l'IGN se trouvent également les autres découpages administratifs pour la Guyane, ainsi que pour les autres territoires ultra-marins et la France métropolitaine.</p>
 					
@@ -128,7 +128,7 @@
 							<img src="illustrations/tous/3_1_naturalearth_telechargement_2.png" alt="téléchargement des données Natural Earth" width="70%">
 						</a>
 					 </figure>
-					 <p class="note">Si le téléchargement échoue, cette couche est également disponible dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees/COMMUNE.shp</b> accessible en <a href="telechargement.php" >téléchargement</a>.</p>
+					 <p class="note">Si le téléchargement échoue, cette couche est également accessible <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">en téléchargement</a></em>.</p>
 					 <p>Une fois le fichier téléchargé, placez-le dans votre dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
 					 <p>Ouvrez un nouveau projet QGIS, et à partir de l'explorateur, ajoutez la couche <em class="data">ne_110m_admin_0_countries</em>. <b>Notez qu'il n'est pas nécessaire de dézipper le fichier pour visualiser les données dans QGIS !</b> Ceci est très pratique quand on est par exemple à la recherche de données sur internet et évite de dézipper tous les fichiers et donc de se retrouver avec beaucoup de dossiers. Il faudra cependant décompresser les données pour pouvoir les éditer.</p>
 					 <figure>

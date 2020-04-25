@@ -52,10 +52,10 @@
                     	</a>
                     </figure>
                      <p class="note">Au cas où le téléchargement échouerait, ces données sont également disponibles ici : <b>TutoQGIS_03_RechercheDonnees/donnees/suriname-latest-free.shp.zip</b>.</p>
-                     <p>Enregistrer le fichier sur votre ordianteur, décompressez le fichier ZIP obtenu dans votre répertoire de travail : vous obtenez une série de couches au format Shapefile.</p>
+                     <p>Enregistrer le fichier sur votre ordinateur, décompressez le fichier ZIP obtenu dans votre répertoire de travail : vous obtenez une série de couches au format Shapefile.</p>
                      <p>Que contiennent ces données ? Pour le savoir, cliquez sur le lien <a class="ext" target="_blank" href="http://download.geofabrik.de/osm-data-in-gis-formats-free.pdf" >Format description PDF</a> disponible en cliquant sur <b>Suriname</b> à partir de la page où vous avez téléchargé les données.</p>
                 </div>
-                <p class="note">Notez que les noms de couches correspondante au clés des attributs OSM. Par exemple, la couche <em class="data">gis.osm_waterways_free_1</em> regroupe les éléments ayant la clé <a class="ext" target="_blank" href="http://wiki.openstreetmap.org/wiki/FR:Key:waterway">waterway</a>.</p>
+                <p class="note">Notez que les noms de couches correspondent au clés des attributs OSM. Par exemple, la couche <em class="data">gis.osm_waterways_free_1</em> regroupe les éléments ayant la clé <a class="ext" target="_blank" href="http://wiki.openstreetmap.org/wiki/FR:Key:waterway">waterway</a>.</p>
                 <div class="manip">
                      <p>Dans un nouveau projet QGIS, ajoutez ces données. Ouvrez la table attributaire de la couche <em class="data">gis.osm_waterways_free_1</em>.</p>
                      <p>Les valeurs du champ <b>fclass</b> correspondent aux différentes valeurs prises par la clé de la couche pour chaque élément. On trouve par exemple les valeurs river, stream, canal et drain.</p>
