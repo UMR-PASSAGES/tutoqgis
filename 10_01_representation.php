@@ -58,7 +58,7 @@
 					
 						<p>Dans QGIS, la visualisation de données sous forme de cercles proportionnels peut se faire directement à partir d'une couche de polygone (c'est alors les centroïdes des polygones qui sont représentés) mais est plus simple à partir d'une couche de points.</p>
 						<p><b>A partir de la couche de communes, nous allons créer les centroïdes (barycentres) des communes.</b></p>
-						<p>Qu'est-ce que le <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Centroid">centroïde</a> d'un polygone ? Il s'agit du centre géométrique de ce polygone. Conctètement, cela correspond au point où une forme en papier du polygone tiendrait en équilibre sur une épingle. Sans entrer dans le détail du calcul des coordonnées d'un centroïde, l'idée est de minimiser la distance au carré de ce centroïde à chacun des sommets du polygone.</p>
+						<p>Qu'est-ce que le <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Centroid">centroïde</a> d'un polygone ? Il s'agit du centre géométrique de ce polygone. Concrètement, cela correspond au point où une forme en papier du polygone tiendrait en équilibre sur une épingle. Sans entrer dans le détail du calcul des coordonnées d'un centroïde, l'idée est de minimiser la distance au carré de ce centroïde à chacun des sommets du polygone.</p>
 						<figure>
 							<a href="illustrations/tous/10_01_centroides_principe.png" >
 								<img src="illustrations/tous/10_01_centroides_principe.png" alt="Communes et leur centroïde" width="60%">
@@ -233,7 +233,7 @@
 						
 						<div class="manip">
 							<p>Pour faire varier la couleur des communes en fonction de la densité :</p>
-							<p><b>Propriétés de la couche COMMUNE &#8594; rubrique Style</b></p>
+							<p><b>Propriétés de la couche COMMUNE &#8594; rubrique Symbologie</b></p>
 							<figure>
 								<a href="illustrations/tous/10_01_choroplethe_fenetre.png" >
 									<img src="illustrations/tous/10_01_choroplethe_fenetre.png" alt="Choix des paramètres du style pour une carte choroplèthe en 5 classes par la méthode des quantiles" width="600">
@@ -248,7 +248,12 @@
 							</ul>
 							<p>Appliquez ensuite les changements. Vous pouvez tester différents modes de discrétisation et nombres de classes.</p>
 							<p>Pour voir l'effectif de chaque classe, clic droit sur le nom de la couche &#8594; <b>Montrer le décompte des entités</b>.</p>
-							<p>Pour un meilleur rendu, vous pouvez supprimer les bordures des communes en cliquant sur <b>Modification...</b> puis sur <b>Remplissage simple &#8594; Style de la bordure &#8594; Pas de ligne</b>.</p>
+							<p>Pour un meilleur rendu, vous pouvez supprimer les bordures des communes en cliquant sur <b>Modifier...</b> puis sur <b>Remplissage simple &#8594; Style de trait &#8594; Pas de ligne</b>.</p>
+							<figure>
+								<a href="illustrations/tous/10_01_enlever_bordure.png" >
+									<img src="illustrations/tous/10_01_enlever_bordure.png" alt="Cliquer sur Modifier pour enlever les bordures" width="600">
+								</a>
+							</figure>
 							<p class="note">Toutefois, même ainsi, les limites restent un peu visibles. Pour ne vraiment plus les voir, il faut rendre visibles ces limites avec une épaisseur fine et leur donner la même couleur que la couleur de remplissage.</p>
 						</div>
 						<figure>

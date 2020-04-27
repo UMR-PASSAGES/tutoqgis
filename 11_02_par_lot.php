@@ -17,7 +17,7 @@
 				<p>L'outil de découpage est accessible via la boîte à outils&nbsp;; tous les outils de cette boîte peuvent être exécutés <b>par lot</b>.</p>
 				
 				<div class="manip">
-					<p>Pour lancer l'outil de découpage en mode &#171;&nbsp;par lot&nbsp;&#187;&nbsp;: dans la boe à outils, <b>clic droit sur Couper &#8594; Exécuter comme processus de lot...</b></p>
+					<p>Pour lancer l'outil de découpage en mode &#171;&nbsp;par lot&nbsp;&#187;&nbsp;: dans la boîte à outils, <b>clic droit sur Couper &#8594; Exécuter comme processus de lot...</b></p>
 					<p>Il est également possible d'utiliser l'outil en mode &#171; par lot &#187; : <b>clic droit sur Couper, Exécuter par lot</b>. Dans la fenêtre qui s'ouvre, <b>chaque ligne correspond à une instance de l'outil</b>. Chaque colonne correspond à un paramètre : la 1ère colonne à la couche en entrée, la 2ème à la couche de découpage (masque), la 3ème à la couche qui sera créée.</p>
 					<p>Pour remplir chacune des colonnes :</p>
 					<ul>

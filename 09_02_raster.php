@@ -50,7 +50,7 @@
 						<figcaption>MNE sur fond OpenStreetMap. En gris transparent, l'emprise de la couche, en rouge encadré, la partie à conserver.</figcaption>
 					</figure>
 					<p>Rendez-vous dans la
-						<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; GDAL &#8594; Découper un raster selon une emprise
+						<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; GDAL &#8594; Extraction raster &#8594; Découper un raster selon une emprise
 							<span>
 								<img src="illustrations/tous/9_2_raster_decouper_menu.png" alt="Menu Raster, Extraction, Découper" width="80%" >
 							</span>
@@ -92,7 +92,7 @@
 			<h3><a class="titre" id="IX22">Explorer les données en modifiant le mode de représentation</a></h3>
 			
 			    <p>Les données ne contiennent maintenant plus que la zone d'étude et sont donc prêtes pour la suite... Mais au fait, que contiennent-elles, ces données&nbsp;?</p>
-			    <p>Avant de créer de nouvelles données à partir de ce MNE, ou bien de le croiser avec d'autres couches, il peut être judicier d'explorer un peu ces données. Pour cela, il est possible de faire beaucoup de choses en allant simplement dans les propriétés de la couche &nbsp;!</p>
+			    <p>Avant de créer de nouvelles données à partir de ce MNE, ou bien de le croiser avec d'autres couches, il peut être judicieux d'explorer un peu ces données. Pour cela, il est possible de faire beaucoup de choses en allant simplement dans les propriétés de la couche &nbsp;!</p>
 			    
 			    <h4><a class="titre" id="IX22a">Répartition des valeurs : histogramme de fréquence</a></h4>
 			    
@@ -142,7 +142,7 @@
 			        <p>Pourquoi la valeur -32768&nbsp;? Voici quelques explications si vous désirez en savoir plus. Il existe différents types de raster : 8 bits, 16 bits, 32 bits... Ce qui correspond en fait au nombre de bits sur lesquels est stockée la valeur d'un pixel.</p>
 			        <p>Ici, notre raster est de type 16 bits (ce que vous pouvez vérifier en allant dans les propriétés de la couche, rubrique Information). Chaque valeur de pixel est codée sur 16 bits, ce qui donne 2<sup>16</sup> soit 65536 possibilités. Les valeurs pouvant être positives ou négatives, elles vont de -32768 à 32767, puisque 65536/2=32768.</p>
 			        <p>La valeur nulle est donc la valeur la plus aberrante possible, ici -32768.</p>
-			        <p>Rendez-vous <a class="ext" target="_blank" href="http://desktop.arcgis.com/fr/arcmap/10.3/manage-data/raster-and-images/bit-depth-capacity-for-raster-dataset-cells.htm" >ici</a> pour en savoir plus sur les différents types de raster et les données qu'ils peuvent contenir. En règle général, on choisir le type codé sur le moins de bits possibles en restant compatible avec les données, pour obtenir des rasters moins lourds.</p>
+			        <p>Rendez-vous <a class="ext" target="_blank" href="http://desktop.arcgis.com/fr/arcmap/10.3/manage-data/raster-and-images/bit-depth-capacity-for-raster-dataset-cells.htm" >ici</a> pour en savoir plus sur les différents types de raster et les données qu'ils peuvent contenir. En règle général, on choisit le type codé sur le moins de bits possibles en restant compatible avec les données, pour obtenir des rasters moins lourds.</p>
 			        
 			        
 			    <h4><a class="titre" id="IX22c">Modifier le style pour explorer les données</a></h4>
@@ -317,7 +317,7 @@
     					<p>Nous venons de changer le SCR du projet, mais pas celui de notre raster (pour rappel, voir <a href="02_03_couches_projets.php">ici</a>).</p>
     					
     					<div class="manip">
-    						<p>Une étape préliminaire avant de projeter le raster : ouvrez les propriétés du raster, rubrique <b>Métadonnées</b>, et dans le bas de la fenêtre, en faisant défiler les propriétés, recherchez <b>Aucune valeur de données</b>. Vous devriez avoir -32768, notez cette valeur. C'est celle utilisée pour les pixels &#171; sans valeur &#187; (qui ont donc en réalité la valeur -32768), en-dehors de l'île.</p>
+    						<p>Une étape préliminaire avant de projeter le raster : ouvrez les propriétés du raster, rubrique <b>Information</b>, sous-rubrique <b>Bandes</b>, recherchez <b>Aucune valeur de données</b>. Vous devriez avoir -32768, notez cette valeur. C'est celle utilisée pour les pixels &#171; sans valeur &#187; (qui ont donc en réalité la valeur -32768), en-dehors de l'île.</p>
     						<p>Ensuite, pour changer le SCR du raster :
     							<a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; GDAL &#8594; Projections raster &#8594; Projection (warp)
     								<span>

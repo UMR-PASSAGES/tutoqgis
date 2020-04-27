@@ -85,7 +85,7 @@
 					</figure>
 				</div>
 				<p>Attention toutefois, la résolution des données d'élévation est de 90 mètres : si les points représentent une location précise par exemple au mètre près, l'élévation que nous leur avons attribué n'aura pas cette précision.</p>
-				<p>Nous avons vu ici un exemple très simple montrant qu'on peut croiser données vecteur et raster. Il est également possible de <b>transformer des données vecteur en raster (polygonisation) et inversement (rastérisation)</b>.</p>
+				<p>Nous avons vu ici un exemple très simple montrant qu'on peut croiser données vecteur et raster. Il est également possible de <b>transformer des données vecteur en raster (rastérisation) et inversement (polygonisation)</b>.</p>
 				<p>Par exemple, on peut vouloir rasteriser une série de couches vecteurs surfaciques pour pouvoir les additionner facilement, ou bien vectoriser une couche raster représentant des zones pour pouvoir y affecter des données attributaires...</p>
 				<p>Chaque type de données a une utilisation différente, mais il est utile de garder à l'esprit que les 2 existent&nbsp;!</p>
 					
