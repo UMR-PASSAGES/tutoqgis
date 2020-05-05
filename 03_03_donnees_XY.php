@@ -48,7 +48,8 @@
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-3">
-						<p><label for="faq-3">A quoi correspond la colonne "dem" ? Pouvez-vous trouver la réponse dans les métadonnées ?</label></p>
+						<p><label for="faq-3">A quoi correspond la colonne "dem" ? Pouvez-vous trouver la réponse dans les métadonnées&nbsp;?</label></p>
+						<p class="note">Pour rappel, dans les données que vous avez téléchargées pour chaque partie, il existe dans le dossier <b>liste_donnees</b> une liste de ces données avec l'emplacement de leurs métadonnées.</p>
 						<p class="reponse">En vous rendant sur http://download.geonames.org/export/dump/readme.txt dans un navigateur internet, vous pouvez lire la définition suivante pour la colonne dem (dans la partie "The main 'geoname' table has the following fields" ) : <b>digital elevation model, srtm3 or gtopo30, average elevation of 3''x3'' (ca 90mx90m) or 30''x30'' (ca 900mx900m) area in meters, integer. srtm processed by cgiar/ciat.</b></p>
 						<p class="reponse">Il s'agit donc de la valeur d'un <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain" >modèle d'élévation numérique</a>, correspondant approximativement à l'altitude. Différents modèles ont été utilisés, à différentes résolutions. </p>
 					</div>

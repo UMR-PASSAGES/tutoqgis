@@ -12,12 +12,18 @@
 		</div>	
 	
 		<div class="main">
-			<h2>III.4  Accéder aux données OpenStreetMap</h2>
+			<h2>III.4  QGIS et OpenStreetMap</h2>
 				<ul class="listetitres">
 					<li><a href="#III41">Qu'est-ce qu'OpenStreetMap ?</a></li>
-					<li><a href="#III42">Télécharger des données OpenStreetMap</a></li>
-					<li><a href="#III43">Représenter des données OpenStreetMap</a></li>
-					<li><a href="#III44">Charger des données OpenStreetMap à partir de QGIS</a></li>
+					<li><a href="#III42">Visualiser un fonds OpenStreetMap</a>
+					   <ul class= "listesoustitres">
+						   <li><a href="#III42a" >Via l'explorateur</a></li>
+					       <li><a href="#III42b" >Avec l'extension QuickMapServices</a></li>
+					   </ul>
+					</li>
+					<li><a href="#III43">Télécharger des données OpenStreetMap</a></li>
+					<li><a href="#III44">Représenter des données OpenStreetMap</a></li>
+					<li><a href="#III45">Charger des données OpenStreetMap à partir de QGIS</a></li>
 				</ul>
 	
 			<h3><a class="titre" id="III41">Qu'est-ce qu'OpenStreetMap ?</a></h3>
@@ -26,10 +32,111 @@
                 <p>La partie la plus connue du projet est peut-être la visualisation des données OSM sous forme de <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=19/44.79461/-0.61780" >carte</a> ; mais OSM est avant tout un ensemble de <a class="ext" target="_blank" href="https://www.openstreetmap.org/way/226888023">données</a> géographiques, utilisables entre autres dans un logiciel SIG.</p>
                 <p>Les attributs des données OSM sont des paires <b>clé=valeur</b> (key=value). Un élément peut par exemple être caractérisé par <b>l'attribut</b> (tag) <b>waterway=river</b> pour indiquer qu'il s'agit d'un cours d'eau de type rivière. Un élément peut être caractérisé par plusieurs attributs (plusieurs paires clé=valeur).</p>
                 <p>Il existe plusieurs valeurs possibles pour chaque clé, la clé <b>waterway</b> peut par exemple avoir comme valeur <b>river</b> (rivière), <b>stream</b> (ruisseau), <b>canal</b>... Retrouvez <a target="_blank" class="ext" href="http://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques">ici</a> la liste des clés et des valeurs couramment utilisées.</p>
-                <p>Nous allons découvrir ici différentes manières d'utiliser les données OSM dans QGIS. Il est possible non seulement de télécharger ces données à partir de différents sites pour ensuite les ajouter à QGIS, mais également de les charger directement dans QGIS.</p>
+                <p>Nous allons découvrir ici différentes manières pour non seulement visualiser un fonds OSM, mais également pour utiliser les données OSM dans QGIS. Il est possible de télécharger ces données à partir de différents sites pour ensuite les ajouter à QGIS, mais aussi de les charger directement dans QGIS.</p>
                 <p>Si vous désirez simplement <b>visualiser un fond OSM</b>, sans accéder aux données elles mêmes, référez-vous plutôt ici : <a href="04_06_calage_autre_couche.php#IV61">Installation de l'extension QuickMapServices</a> et <a href="04_06_calage_autre_couche.php#IV62">Ajout des données OpenStreetMap</a>.</p>
                 
-			<h3><a class="titre" id="III42">Téléchargement de données OpenStreetMap</a></h3>
+			<h3><a class="titre" id="III42">Visualiser un fonds OpenStreetMap</a></h3>
+			
+			<p>Il s'agira ici de simplement visualiser les données OSM comme un fonds raster, c'est-à-dire une image non modifiable. OSM étant une base de données, il est possible de représenter ces données comme on le souhaite ; plusieurs organismes proposent ainsi leur représentation des données OSM. Ces représentations peuvent avoir des objectifs différents : servir de fonds de carte discret, représenter les itinéraires cyclables, les données utiles pour les organisations humanitaires...</p>
+			<p>Nous allons voir ici 2 possibilités pour visualiser les données OSM dans QGIS.</p>
+			
+			    <h4><a class="titre" id="III42a">Via l'explorateur</a></h4>
+			        
+			        <p>Depuis QGIS 3, il existe une solution pour ajouter des fonds de carte, OSM ou autres, sans installation d'extension.</p>
+			        
+			        <div class="manip">
+			            <p>Ouvrez un nouveau projet QGIS.</p>
+    			        <p>Rendez-vous dans le panneau <b>Explorateur</b> de QGIS. Si vous ne voyez pas ce panneau, activez-le via le <b>menu Vue &#8594; Panneaux &#8594; Explorateur</b>.</p>
+    			        <p>Dans ce panneau Explorateur, allez dans la rubrique <b>XYZ Tiles</b> : 2 fonds s'y trouvent par défaut, OpenStreetMap et OSM no labels.</p>
+    			        <figure>
+                        	<a href="illustrations/tous/3_4_xyz_tiles.png" >
+                        		<img src="illustrations/tous/3_4_xyz_tiles.png" alt="panneau explorateur, rubrique xyz tiles" width="80%">
+                        	</a>
+                         </figure>
+                         <p>Double-cliquez sur l'un de ces fonds pour l'ajouter à QGIS.</p>
+			        </div>
+			        <p class="note">Le fonds <b>OSM no labels</b> est identique au fonds OpenStreetMap mais sans la toponymie (étiquettes) : cela est pratique si vous ajoutez vos propres noms de lieux dans QGIS et ne souhaitez pas qu'ils se superposent avec les noms OSM par exemple.</p>
+			        
+			        <p>Il est possible d'ajouter d'autres fonds utilisant les données OSM.</p>
+			        
+			        <div class="manip">
+			            <p>Dans un navigateur internet, rendez-vous dans <a target="_blank" class="ext" href="https://wiki.openstreetmap.org/wiki/Tile_servers">la page du wiki OSM dédiée aux serveurs de tuiles raster</a> : cette page liste les adresses des fonds de carte utilisant les données OSM accessibles en ligne.</p>
+			            <p>Ici, nous allons ajouter le fonds <b>Stamen Toner</b> en noir et blanc.</p>
+			            <figure>
+                        	<a href="illustrations/tous/3_4_stamen_toner.png" >
+                        	    <img src="illustrations/tous/3_4_stamen_toner.png" alt="page du wiki OSM sur les serveurs de tuiles, ligne correspondant au fonds Stamen Toner" width="100%">
+                            </a>
+                        </figure>
+			            <p>Copiez l'url du serveur : <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.png</b></p>
+			            <p>Dans QGIS, panneau explorateur, clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</p>
+			            <figure>
+                        	<a href="illustrations/tous/3_4_stamen_connexion.png" >
+                        	    <img src="illustrations/tous/3_4_stamen_connexion.png" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="80%">
+                            </a>
+                        </figure>
+                        <ul>
+                            <li>Nom : il s'agit du nom qui apparaîtra dans le panneau explorateur, vous pouvez taper par exemple <b>Stamen Toner</b></li>
+                            <li>URL : collez l'URL que vous avez préalablement copiée, et <b>supprimez les &#171;&nbsp;$&nbsp;&#187;</b> : l'URL finale est donc <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.png</b></li>
+                        </ul>
+                        <p>Laissez les valeurs par défaut pour les autres paramètres, cliquez sur OK.</p>
+                        <p>Le fonds Stamen Toner apparaît maintenant avec les autres fonds dans la rubrique XYZ Tiles.</p>
+                        <figure>
+                            <a href="illustrations/tous/3_4_stamen_xyz.png" >
+                        	    <img src="illustrations/tous/3_4_stamen_xyz.png" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Stamen Toner apparaît avec les autres" width="80%">
+                        	</a>
+                        </figure>
+                        <p>Double-cliquez pour l'ajouter :</p>
+                        <figure>
+                        	<a href="illustrations/tous/3_4_stamen_visu.png" >
+                        	    <img src="illustrations/tous/3_4_stamen_visu.png" alt="Aperçu du fonds Stamen Toner" width="70%">
+                            </a>
+                        </figure>
+			        </div>
+			   
+			    <h4><a class="titre" id="III42b">Avec l'extension QuickMapServices</a></h4>
+			    
+			        <p>Une autre méthode pour ajouter des fonds de carte consiste à utiliser l'extension QuickMapServices, qui propose un certain nombre de fonds et notamment des fonds OSM (mais aussi les fonds Google ou autres).</p>
+			        
+			        <p class="note">L'extension QuickMapServices est similaire à l'extension <b>OpenLayers</b> sur laquelle elle est d'ailleurs basée, mais propose plus de couches et utilise un serveur de tuilage, ce qui semble provoquer moins d'erreur lors de changements de niveau de zoom et de SCR.</p>
+					<div class="manip">
+						<p>Pour installer QuickMapServices : 
+							<a class="thumbnail_bottom" href="#thumb">Menu Extension &#8594; Installer/Gérer les extensions
+								<span>
+									<img src="illustrations/tous/4_6_extensions_menu.png" alt="Menu Extension, Installer/Gérer les extensions" height="100" >
+								</span>
+							</a>	
+						 : la fenêtre du gestionnaire d'extensions s'ouvre.</p>
+						<figure>
+							<a href="illustrations/tous/4_6_install_quickmapservices.png" >
+								<img src="illustrations/tous/4_6_install_quickmapservices.png" alt="Installation de QuickMapServices" width="600">
+							</a>
+						</figure>
+						<p>Dans la rubrique <b>Tout</b>, tapez &#171; quickmap &#187; dans la partie <b>Rechercher</b> pour limiter les résultats, sélectionnez <b>QuickMapServices</b> puis cliquez sur <b>Installer l'extension</b> en bas à droite de la fenêtre.</p>
+						<p>Fermez la fenêtre du gestionnaire d'extensions.</p>
+					</div>
+					
+					<p>Par défaut, QuickMapServices permet l'ajout de quelques fonds de carte, que vous pouvez voir en allant dans le menu Internet &#8594; QuickMapservices... Il est possible d'en ajouter d'autres !</p>
+					
+					<div class="manip">
+					   <p>Menu Internet &#8594; QuickMapServices &#8594; Settings :</p>
+					   <p>Dans l'onglet <b>More services</b>, cliquez sur le bouton <b>Get contributed pack</b>.</p>
+					   <figure>
+							<a href="illustrations/tous/4_6_quickmapservices_moreservices.png" >
+								<img src="illustrations/tous/4_6_quickmapservices_moreservices.png" alt="Ajouter des fonds dans QuickMapServices" width="80%">
+							</a>
+						</figure>
+						<p>Rendez-vous ensuite dans l'onglet <b>Visibility</b> pour décocher les fonds qui ne vous semblent pas à première vue utiles, pour plus de clarté.</p>
+					<p>Pour ajouter les données OSM : le menu QuickMapServices est maintenant visible dans le menu Internet. Chargez la couche <b>OSM standard</b> dans la rubrique OSM.</p>
+						<figure>
+							<a href="illustrations/tous/4_6_menu_quickmapservices.png" >
+								<img src="illustrations/tous/4_6_menu_quickmapservices.png" alt="Menu QuickMapServices" width="100%">
+							</a>
+						</figure>
+				    </div>
+				    
+				<p class="attention">Quelle que soit la méthode utilisée pour charger un fonds de carte OSM, il aura pour SCR WGS84/Pseudo-Mercator (EPSG 3857). Il est possible de modifier le SCR du projet pour afficher les fonds OSM dans d'autres SCR, mais ceci peut éventuellement provoquer des problèmes d'affichage.</p>
+			
+			<h3><a class="titre" id="III43">Télécharger des données OpenStreetMap</a></h3>
 			
 			    <p>Il existe plusieurs possibilités pour <a class="ext" target="_blank" href="http://wiki.openstreetmap.org/wiki/Downloading_data">télécharger des données OSM</a>, notamment <a class="ext" target="_blank" href="http://wiki.openstreetmap.org/wiki/Shapefiles#Download_shapefiles">au format Shapefile</a>.</p>
 			
@@ -62,7 +169,7 @@
                 </div>
                    
                     
-                <h3><a class="titre" id="III43">Représenter les données OpenStreetMap</a></h3>
+                <h3><a class="titre" id="III44">Représenter des données OpenStreetMap</a></h3>
                 
                     <p>Les données OpenStreetMap ajoutées dans QGIS, comme toute autre donnée, ont un style &#171; par défaut &#187;, ne convenant pas pour une carte. Nous allons voir ici comment représenter ces données pour obtenir quelque chose de similaire à ceci :</p>
                     <figure>
@@ -134,7 +241,7 @@
                     <p>Vous pouvez ensuite si vous le désirez modifier le style des couches pour créer votre propre version. Pour enregistrer un fichier de style QML, procédez comme pour charger un style, mais choisissez <b>Enregistrer le style</b>.</p>
                
                 
-			<h3><a class="titre" id="III44">Charger des données OpenStreetMap à partir de QGIS</a></h3>
+			<h3><a class="titre" id="III45">Charger des données OpenStreetMap à partir de QGIS</a></h3>
 			 
 			    <p>Nous allons utiliser ici l'extension <b>QuickOSM</b> pour charger des données OpenStreetMap directement dans QGIS.</p>
 			    <p>Cette extension permet le téléchargement de données OSM sous forme de couches temporaires, pour l'emprise de votre choix.</p>

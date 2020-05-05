@@ -194,7 +194,7 @@
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">Installer une extension</a></li>
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">OpenLayers</a></li>
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">QuickMapServices</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV62">ici</a></li>
-									<li class="index_03"><a href="03_04_donnees_osm.php#III43b">QuickOSM</a></li>
+									<li class="index_03"><a href="03_04_donnees_osm.php#III45">QuickOSM</a></li>
 									<li class="index_03"><a href="06_02_req_spatiales.php#VI21b">Requête spatiale</a></li>
 								</ul>
 							</li>
@@ -203,7 +203,7 @@
 					
 					<li class="index_01" id="F">F
 						<ul>
-							<li class="index_02"><a href="03_04_donnees_osm.php#III42c">Fichier de style QML ou SLD</a></li>
+							<li class="index_02"><a href="03_04_donnees_osm.php#III44">Fichier de style QML ou SLD</a></li>
 							<li class="index_02"><a href="10_02_mise_en_page.php#X22d">Flèche Nord</a></li>
 							<li class="index_02"><a href="03_02_donnees_flux.php">Flux</a>
 								<ul>
@@ -344,9 +344,9 @@
 						    <li class="index_02"><a href="04_06_calage_autre_couche.php#IV61">OpenLayers (extension)</a></li>
 						    <li class="index_02"><a href="03_04_donnees_osm.php#III41">OpenStreetMap (OSM)</a>
     					        <ul>
-    								<li class="index_03"><a href="03_04_donnees_osm.php">Accéder aux données</a></li>
-    								<li class="index_03"><a href="03_04_donnees_osm.php#III42c">Représenter les données</a>, voir aussi <a href="03_04_donnees_osm.php#III43a">ici</a></li>
-    								<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">Visualiser le fond de carte</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV62">ici</a></li>
+    								<li class="index_03"><a href="03_04_donnees_osm.php#III43">Accéder aux données</a></li>
+    								<li class="index_03"><a href="03_04_donnees_osm.php#III44">Représenter les données</a></li>
+    								<li class="index_03"><a href="03_04_donnees_osm.php#III42">Visualiser un fonds de carte</a></li>
     							</ul>
 						    </li>
 							<li class="index_02"><a href="06_01_req_attrib.php#VI13">Opérateur (requête attributaire)</a>
@@ -423,9 +423,9 @@
 					
 					<li class="index_01" id="Q">Q
 						<ul>
-						    <li class="index_02"><a href="03_04_donnees_osm.php#III42c">QML (fichier de style QGIS)</a></li>
-						    <li class="index_02"><a href="04_06_calage_autre_couche.php#IV61">QuickMapServices (extension)</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV62">ici</a></li>
-						    <li class="index_02"><a href="03_04_donnees_osm.php#III43b">QuickOSM (extension)</a></li>
+						    <li class="index_02"><a href="03_04_donnees_osm.php#III44">QML (fichier de style QGIS)</a></li>
+						    <li class="index_02"><a href="03_04_donnees_osm.php#III42b">QuickMapServices (extension)</a></li>
+						    <li class="index_02"><a href="03_04_donnees_osm.php#III45">QuickOSM (extension)</a></li>
 							<li class="index_02"><a href="05_02_points.php#V24">Quitter le mode édition</a></li>
 						</ul>
 					</li>
@@ -495,14 +495,14 @@
 							<li class="index_02"><a href="03_02_donnees_flux.php#III22">Serveurs WMS</a></li>
 							<li class="index_02"><a href="01_03_formats.php#I31a">Shapefile</a></li>
 							<li class="index_02"><a href="01_01_SIG.php#I11b">SIG</a></li>
-							<li class="index_02"><a href="03_04_donnees_osm.php#III42c">SLD (Style Layer Descriptor)</a></li>
+							<li class="index_02"><a href="03_04_donnees_osm.php#III44">SLD (Style Layer Descriptor)</a></li>
 							<li class="index_02"><a href="06_04_req_sql.php">SQL</a></li>
 							<li class="index_02"><a href="03_01_donnees_internet.php#III12">SRTM</a></li>
 							<li class="index_02"><a href="08_01_jointure_attrib.php#VIII14b">Statistiques par catégories (outil)</a></li>
 							<li class="index_02">Style d'une couche
 								<ul>
 									<li class="index_03"><a href="03_01_donnees_internet.php#III11a">catégorisé</a></li>
-									<li class="index_03"><a href="03_04_donnees_osm.php#III42c">fichier de style QML ou SLD</a></li>
+									<li class="index_03"><a href="03_04_donnees_osm.php#III44">fichier de style QML ou SLD</a></li>
 									<li class="index_03"><a href="10_01_representation.php#X12b">gradué</a></li>
 									<li class="index_03"><a href="01_02_info_geo.php#I25">raster</a></li>
 									<li class="index_03"><a href="01_02_info_geo.php#I23a">vecteur</a>, voir aussi <a href="03_01_donnees_internet.php#III11a">ici</a> et <a href="10_01_representation.php">ici</a></li>

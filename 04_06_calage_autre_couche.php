@@ -14,10 +14,9 @@
 		<div class="main">
 			<h2>IV.6 Points de calage : en se basant sur une couche de référence</h2>
 				<ul class="listetitres">
-					<li><a href="#IV61">Installation et paramétrage de l'extension QuickMapServices</a></li>
-					<li><a href="#IV62">Ajout des données OpenStreetMap</a></li>
-					<li><a href="#IV63">Zoom sur la zone d'étude avec l'extension GeoSearch</a></li>
-					<li><a href="#IV64">Création des points de calage</a></li>
+					<li><a href="#IV61">Ajout d'un fonds OpenStreetMap</a></li>
+					<li><a href="#IV62">Zoom sur la zone d'étude avec l'extension GeoSearch</a></li>
+					<li><a href="#IV63">Création des points de calage</a></li>
 				</ul>
 				<br>
 			
@@ -31,68 +30,29 @@
 				</figure>
 				<p>Pour caler cette carte, nous allons nous baser sur les données <a class="ext" target="_blank" href="http://www.openstreetmap.org/">OpenStreetMap</a>. OpenStreetMap est une base de données cartographique libre ; on décrit souvent ce projet comme un "wikipedia cartographique".</p>
 			
-				<h3><a class="titre" id="IV61">Installation de l'extension QuickMapServices</a></h3>
-					
-					<p>Accéder aux données OpenStreetMap dans QGIS requiert l'utilisation d'une extension nommée QuickMapServices. Cette extension permet également d'afficher les données Google Maps ainsi que beaucoup d'autres.</p>
-					<p class="note">L'extension QuickMapServices est similaire à l'extension <b>OpenLayers</b> sur laquelle elle est d'ailleurs basée, mais propose plus de couches et utilise un serveur de tuilage, ce qui semble provoquer moins d'erreur lors de changements de niveau de zoom et de SCR.</p>
-					<div class="manip">
-						<p>Ouvrez tout d'abord un nouveau projet QGIS.</p>
-						<p>Pour installer QuickMapServices : 
-							<a class="thumbnail_bottom" href="#thumb">Menu Extension &#8594; Installer/Gérer les extensions
-								<span>
-									<img src="illustrations/tous/4_6_extensions_menu.png" alt="Menu Extension, Installer/Gérer les extensions" height="100" >
-								</span>
-							</a>	
-						 : la fenêtre du gestionnaire d'extensions s'ouvre.</p>
-						<figure>
-							<a href="illustrations/tous/4_6_install_quickmapservices.png" >
-								<img src="illustrations/tous/4_6_install_quickmapservices.png" alt="Installation de QuickMapServices" width="600">
-							</a>
-						</figure>
-						<p>Dans la rubrique <b>Tout</b>, tapez &#171; quickmap &#187; dans la partie <b>Rechercher</b> pour limiter les résultats, sélectionner <b>QuickMapServices</b> puis cliquez sur <b>Installer l'extension</b> en bas à droite de la fenêtre.</p>
-						<p>Fermez la fenêtre du gestionnaire d'extensions.</p>
-					</div>
-					
-					<p>Par défaut, QuickMapServices permet l'ajout de quelques fonds de carte, que vous pouvez voir en allant dans le menu Internet &#8594; QuickMapservices... Il est possible d'en ajouter d'autres !</p>
-					
-					<div class="manip">
-					   <p>Menu Internet &#8594; QuickMapServices &#8594; Settings :</p>
-					   <p>Dans l'onglet <b>More services</b>, cliquez sur le bouton <b>Get contributed pack</b>.</p>
-					   <figure>
-							<a href="illustrations/tous/4_6_quickmapservices_moreservices.png" >
-								<img src="illustrations/tous/4_6_quickmapservices_moreservices.png" alt="Ajouter des fonds dans QuickMapServices" width="80%">
-							</a>
-						</figure>
-						<p>Rendez-vous ensuite dans l'onglet <b>Visibility</b> pour décocher les fonds qui ne vous semblent pas à première vue utiles, pour plus de clarté.</p>
-					</div>
-						
-				<h3><a class="titre" id="IV62">Ajout des données OpenStreetMap</a></h3>
+				<h3><a class="titre" id="IV61">Ajout d'un fond OpenStreetMap</a></h3>
 				
+				    <p>Il existe au moins <a href="03_04_donnees_osm.php#III42">2 méthodes</a> pour ajouter un fonds OSM à QGIS.</p>
+				    
 				    <div class="manip">
-				        <p>Vous pouvez commencer par ajouter la couche <em class="data">ne_10m_admin_0_countries</em>, située dans le dossier <b>TutoQGIS_04_Georef/donnees</b>.</p>
-				        <div class="question">
-							<input type="checkbox" id="faq-1">
-							<p><label for="faq-1">Dans quel système de coordonnées est votre projet ?</label></p>
-							<p class="reponse">Comme vous pouvez le voir dans le coin en bas à droite de la fenêtre, ou bien menu Projet, propriétés du projet, le <a href="02_03_couches_projets.php#II31">SCR du projet</a> est le WGS84, EPSG:4326.</p>
-						</div>
-						<p>Pour ajouter les données OSM : le menu QuickMapServices est maintenant visible dans le menu Internet. Chargez la couche <b>OSM standard</b> dans la rubrique OSM.</p>
-						<figure>
-							<a href="illustrations/tous/4_6_menu_quickmapservices.png" >
-								<img src="illustrations/tous/4_6_menu_quickmapservices.png" alt="Menu QuickMapServices" width="100%">
-							</a>
-						</figure>
+				        <p>Vous pouvez par exemple vous rendre dans le panneau Explorateur (s'il n'est pas déjà activé : menu Vue &#8594; Panneaux &#8594; Explorateur), rubrique <b>XYZ Tiles</b>, et double-cliquez sur le fonds <b>OpenStreetMap</b>.</p>
+				        <figure>
+        					<a href="illustrations/tous/4_6_ajout_OSM.png" >
+        						<img src="illustrations/tous/4_6_ajout_OSM.png" alt="Panneau Explorateur, XYZ Tiles, OpenStreetMap" width="80%">
+        					</a>
+        				</figure>
+					
 						<div class="question">
 							<input type="checkbox" id="faq-2">
 							<p><label for="faq-2">Dans quel système de coordonnées est la couche OSM ?</label></p>
 							<p class="reponse">Le <a href="02_03_couches_projets.php#II32">SCR de le couche</a> est le WGS84 projection Pseudo Mercator, EPSG:3857.</p>
 						</div>
-						<p>La couche ajoutée via QuickMapServices est projetée à la volée dans le SCR du projet.</p>
+						<p>La couche ajoutée est projetée à la volée dans le SCR du projet.</p>
 						<p>Pour simplifier les choses, nous allons passer le projet également en Pseudo Mercator, afin que la couche de base pour le géoréférencement et le projet aient le même SCR.</p>
 						<p>Pour cela, rendez-vous dans les propriétés du projet et sélectionnez le SCR Pseudo Mercator, code EPSG 3857 (cf. <a href="02_04_changer_systeme.php#II41">ici</a>).</p>
 					</div>
-						<p class="note">Notez qu'il est possible de désactiver ce comportement dans les paramètres de QuickMapServices (menu Internet, QuickMapServices, Settings, onglet Général).</p>
 				
-				<h3><a class="titre" id="IV63">Zoom sur la zone d'étude avec l'extension OSM place search</a></h3>
+				<h3><a class="titre" id="IV62">Zoom sur la zone d'étude avec l'extension OSM place search</a></h3>
 				
 				    <p>Nous cherchons ici à zoomer sur la zone qui concerne notre carte, à savoir Doncaster East dans le banlieue de Melbourne, en Australie. Il est bien sûr possible d'utiliser les outils de zoom pour cela, mais nous allons en profiter pour découvrir une autre méthode parfois bien pratique, avec l'extension OSM place search.</p>
 				    <div class="manip">
@@ -122,7 +82,7 @@
 					</div>
 					<p>Nous allons maintenant pouvoir procéder à la création des points de calage.</p>
 					
-				<h3><a class="titre" id="IV64">Création des points de calage</a></h3>
+				<h3><a class="titre" id="IV63">Création des points de calage</a></h3>
 					
 					<div class="manip">
 						<p>Ouvrez la fenêtre du géoréférenceur et ajoutez l'image à caler : <em class="data"><a href="donnees/TutoQGIS_04_Georef.zip">Doncaster_east_locality_map.PNG</a></em> située dans le dossier <b>TutoQGIS_04_Georef/donnees</b> (si nécessaire, aidez-vous pour cela du début de la <a href="04_03_calage_carroyage.php#IV31">partie IV.3.1</a>).</p>
