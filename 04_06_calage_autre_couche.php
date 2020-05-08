@@ -32,7 +32,7 @@
 			
 				<h3><a class="titre" id="IV61">Ajout d'un fond OpenStreetMap</a></h3>
 				
-				    <p>Il existe au moins <a href="03_04_donnees_osm.php#III42">2 méthodes</a> pour ajouter un fonds OSM à QGIS.</p>
+				    <p>2 méthodes permettant d'afficher un fonds OpenStreetMap sont décrites <a href="03_04_fonds_carte.php">ici</a>.</p>
 				    
 				    <div class="manip">
 				        <p>Vous pouvez par exemple vous rendre dans le panneau Explorateur (s'il n'est pas déjà activé : menu Vue &#8594; Panneaux &#8594; Explorateur), rubrique <b>XYZ Tiles</b>, et double-cliquez sur le fonds <b>OpenStreetMap</b>.</p>

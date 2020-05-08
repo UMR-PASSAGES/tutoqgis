@@ -20,6 +20,7 @@
 					<li>télécharger des données sur internet</li>
 					<li>flux WMS et WFS</li>
 					<li>données XY</li>
+					<li>fonds de carte en ligne (tuiles raster)</li>
 					<li>données OpenStreetMap</li>
 				</ul>
 			<p>Les données pour cette partie ainsi qu'une version PDF du tutoriel sont accessibles dans la rubrique <a href="telechargement.php"> téléchargement</a>.</p>

@@ -7,7 +7,8 @@
 				<li><a href="03_01_donnees_internet.php">Recherche de données SIG sur internet</a></li>
 				<li><a href="03_02_donnees_flux.php">Ajout de données via des flux</a></li>
 				<li><a href="03_03_donnees_XY.php">Ajout de données ponctuelles à partir d'un fichier texte</a></li>
-				<li><a href="03_04_donnees_osm.php">QGIS et OpenStreetMap</a></li>
+				<li><a href="03_04_fonds_carte.php">Ajout d'un fonds de carte en ligne</a></li>
+				<li><a href="03_05_donnees_osm.php">QGIS et OpenStreetMap</a></li>
 			</ol>
 		</li>
 		<li><a href="04_00_georeferencement.php">Géoréférencement</a></li>
