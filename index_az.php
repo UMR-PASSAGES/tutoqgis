@@ -341,7 +341,6 @@
 					
 					<li class="index_01" id="O">O
 						<ul>
-						    <li class="index_02"><a href="04_06_calage_autre_couche.php#IV61">OpenLayers (extension)</a></li>
 						    <li class="index_02"><a href="03_04_donnees_osm.php#III41">OpenStreetMap (OSM)</a>
     					        <ul>
     								<li class="index_03"><a href="03_04_donnees_osm.php#III43">Accéder aux données</a></li>

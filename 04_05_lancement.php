@@ -16,7 +16,7 @@
 				<ul class="listetitres">
 					<li><a href="#IV51">Vérification avant calage : les erreurs</a>
 						<ul class= "listesoustitres">
-							<li><a href="#IV51a" >Erreur par pixel</a></li>
+							<li><a href="#IV51a" >Erreur locale : en chaque point de contrôle</a></li>
 							<li><a href="#IV51b" >Erreur globale : Erreur Quadratique Moyenne</a></li>
 						</ul>
 					</li>
@@ -34,7 +34,7 @@
 			<h3><a class="titre" id="IV51">Vérification avant calage : les erreurs</a></h3>
 			
 			
-				<h4><a class="titre" id="IV51a">Erreur par pixel</a></h4>
+				<h4><a class="titre" id="IV51a">Erreur locale : en chaque point de contrôle</a></h4>
 				
 					<p>Maintenant que le type de transformation est renseignée, les erreurs pour chaque pixel ont été calculées dans la table des points de contrôle :</p>
 					<figure>
@@ -51,6 +51,11 @@
 					<div class="manip">
 						<p>Classez les points par erreur décroissante, en cliquant deux fois sur l'en-tête de colonne Résidu (pixels).</p>
 						<p>Avez-vous dans votre table des points avec des valeurs d'erreur très importantes par rapport aux autres ? Pouvez-vous en trouver la cause ? Vous pouvez décocher les points aberrants dans la colonne on/off.</p>
+					</div>
+					
+						<p>Observez que, quand vous décochez un point de contrôle, son erreur résiduelle devient plus grande que lorsqu'il était coché, ce qui traduit une moins bonne précision de calage dans la zone autour de ce point. Il est fortement conseillé, lorsqu'on désactive un point, de le remplacer par un autre point situé dans le voisinage de matière à éviter des zones non prises en compte dans le calage et pour lesquelles on ne peut avoir de résidu, donc d'indicateur de qualité du calage.</p>
+						
+					<div class="manip">
 						<p>Vous ne devriez normalement pas obtenir des erreurs résiduelles supérieures à 10 ; si nécessaire, supprimez et recréez des points de calage.</p>
 					</div>
 				
@@ -105,7 +110,7 @@
 					   </a>
 					</figure>
 					<p>En effet, les informations des cases dX[pixels] et dY[pixels] indiquent un déplacement de 2,77 pixels en Y (vers le bas) et -0,82 pixels en Y (vers la gauche). Ces chiffres seront différents dans votre cas, mais ils seront cohérents avec votre carte PDF.</p>
-					<p>Le rapport PDF contient les mêmes informations que la carte PDF, présentées de manière légèrement différente.</p>
+					<p>Le rapport PDF contient la carte, la visualisation séparée des erreurs de calage en chaque point, ainsi que la table des points de contrôle avec les erreurs en X, en Y et totale pour chacun d'eux. Il n'indique malheureusement pas la RMSE (ou l'EMQ). Il demeure cependant possible de la recalculer sous un tableur en important le fichier-texte des points de contrôle (extension .points).</p>
 				
 				<h4><a class="titre" id="IV53b">Vérification par superposition d'une autre couche</a></h4>
 				

@@ -56,15 +56,26 @@
 				
 				    <p>Nous cherchons ici à zoomer sur la zone qui concerne notre carte, à savoir Doncaster East dans le banlieue de Melbourne, en Australie. Il est bien sûr possible d'utiliser les outils de zoom pour cela, mais nous allons en profiter pour découvrir une autre méthode parfois bien pratique, avec l'extension OSM place search.</p>
 				    <div class="manip">
-						<p>Commençons par installer l'extension GeoSearch : procédez comme pour QuickMapServices, via le <b>menu Extensions &#8594; Installer/Gérer les extensions</b>.</p>
+						<p>Commençons par installer l'extension Nominatim Locator Filter : procédez comme pour QuickMapServices, via le <b>menu Extensions &#8594; Installer/Gérer les extensions</b>.</p>
 						<figure>
-							<a href="illustrations/tous/4_6_install_osmplacesearch.png">
-								<img src="illustrations/tous/4_6_install_osmplacesearch.png" alt="Installation de l'extension OSM place search" width="600">
+							<a href="illustrations/tous/4_6_install_nlf.png">
+								<img src="illustrations/tous/4_6_install_nlf.png" alt="Installation de l'extension Nominatim Locator Filter" width="600">
 							</a>
 						</figure>
-						<p>Le panneau OSM place search s'ouvre ensuite. Ce panneau est activable ou désactivable via le menu Vue &#8594; Panneaux &#8594; Recherche de lieux OSM.</p>
-						<p>Dans la barre de recherche, tapez : <b>Doncaster East, Victoria, Australia</b> puis appuyez sur la touche entrée : une ligne correspondant à ce lieu apparaît dans la liste en bas de la fenêtre.</p>
-						<p>En double-cliquant sur cette ligne en bien en la sélectionnant et en cliquant ensuite sur le bouton <b>Zoomer</b>, vous centrez la carte sur ce lieu.</p>
+						<p>L'extension n'est pas visible dans QGIS ; en fait, cette extension ajoute une fonctionnalité à la barre de recherche tout en bas à gauche de la fenêtre de QGIS.</p>
+						<figure>
+							<a href="illustrations/tous/4_6_barre_recherche.png">
+								<img src="illustrations/tous/4_6_barre_recherche.png" alt="Fenêtre de QGIS avec la barre de recherche en bas à gauche encadrée en rouge" width="600">
+							</a>
+						</figure>
+					</div>
+					
+						<p>Cette barre de recherche permet de rechercher une couche chargée dans le projet, un algorithme de traitement... L'extension Nominatim Locator Filter lui ajoute la fonctionnalité permettant de rechercher des noms de lieux dans OpenStreetMap et de zoomer sur la zone correspondante (qu'une couche OSM soit chargée dans le projet en cours ou non).</p>
+						<p><b>Pour cela, il faut taper le nom du lieu à rechercher puis le caractère espace.</b></p>
+						
+					<div class="manip">
+						<p>Dans la barre de recherche, tapez : <b>Doncaster East, Victoria, Australia </b> en terminant par un espace.</p>
+						<p>Appuyez sur la touche entrée pour valider la suggestion qui doit normalement apparaître : la carte est maintenant zoomée sur ce lieu.</p>
 						<figure>
 						  <a href="illustrations/tous/4_6_osm_zoom1.png" >
 							<img src="illustrations/tous/4_6_osm_zoom1.png" alt="Données OSM : Melbourne" width="100%">
