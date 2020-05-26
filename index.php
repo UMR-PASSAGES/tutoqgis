@@ -30,7 +30,7 @@
 						<p class="manip"> Ceci décrit une manipulation à effectuer dans QGIS.</p>
 						<p>Les données nécessaires pour effectuer ces manipulations sont accessibles dans la rubrique <a href="telechargement.php" >téléchargement</a>.</p>
 					<h4>Aide</h4>
-						<p>Quand une partie du texte apparaît souligné en bleu foncé, si vous passez la souris dessus, une image apparaît pour vous aider par exemple à trouver l'emplacement d'un menu ou d'un bouton dans QGIS.</p>
+						<p>Quand une partie du texte apparaît soulignée en pointillés en bleu foncé, si vous passez la souris dessus, une image apparaît pour vous aider par exemple à trouver l'emplacement d'un menu ou d'un bouton dans QGIS.</p>
 						<p class="manip">Sauvegardez votre projet sous un nouveau nom : 
 							<a class="thumbnail_top" href="#thumb">Menu Projet &#8594; Sauvegarder sous...
 								<span>
@@ -46,7 +46,9 @@
 								<p class="reponse">Parce-que c'est une légende !</p>
 							</div>
 					<h4>Liens</h4>
-						<p>Les liens internes au site de<a href="http://www.passages.cnrs.fr" > PASSAGES</a> sont affichées en bleu, les <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Liens">liens</a> externes sont en gris et s'ouvriront dans une nouvelle fenêtre ou onglet.</p>
+						<p>Les liens internes au site de<a href="http://www.passages.cnrs.fr" > PASSAGES</a> sont affichés en bleu, les <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Liens">liens</a> externes sont en gris et s'ouvriront dans une nouvelle fenêtre ou onglet.</p>
+						
+				    <a class="suiv" href="01_00_prise_en_main.php" >C'est parti !</a>
 		
 		</div>
 		
