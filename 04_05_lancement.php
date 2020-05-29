@@ -36,7 +36,7 @@
 			
 				<h4><a class="titre" id="IV51a">Erreur locale : en chaque point de contrôle</a></h4>
 				
-					<p>Maintenant que le type de transformation est renseignée, les erreurs pour chaque pixel ont été calculées dans la table des points de contrôle :</p>
+					<p>Maintenant que le type de transformation est renseigné, les erreurs pour chaque pixel ont été calculées dans la table des points de contrôle :</p>
 					<figure>
 						<a href="illustrations/tous/4_5_table_avec_erreurs.png" >
 							<img src="illustrations/tous/4_5_table_avec_erreurs.png" alt="Tables de points de contrôle une fois les erreurs par pixel calculées" width="620">

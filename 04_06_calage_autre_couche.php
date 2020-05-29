@@ -28,7 +28,7 @@
 						<img src="illustrations/tous/4_6_doncaster_east.png" alt="Carte à caler de Doncaster East (Australie)" width="80%">
 					</a>
 				</figure>
-				<p>Pour caler cette carte, nous allons nous baser sur les données <a class="ext" target="_blank" href="http://www.openstreetmap.org/">OpenStreetMap</a>. OpenStreetMap est une base de données cartographique libre ; on décrit souvent ce projet comme un "wikipedia cartographique".</p>
+				<p>Pour caler cette carte, nous allons nous baser sur les données <a class="ext" target="_blank" href="http://www.openstreetmap.org/">OpenStreetMap</a>. OpenStreetMap est une base de données cartographique libre ; on décrit souvent ce projet comme un "wikipedia cartographique". Pour en savoir plus, voir aussi <a href="03_05_donnees_osm.php" >ici</a> !</p>
 			
 				<h3><a class="titre" id="IV61">Ajout d'un fond OpenStreetMap</a></h3>
 				

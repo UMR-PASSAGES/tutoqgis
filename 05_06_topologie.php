@@ -27,6 +27,12 @@
 						</ul>
 					</li>
 					<li><a href="#V63">Corriger les erreurs de topologie : quelques pistes</a>
+					   <ul class="listesoustitres">
+							<li><a href="#V63a">Corriger les erreurs de topologie manuellement</a></li>
+							<li><a href="#V63b">Corriger les erreurs de topologie avec l'outil &#171;&nbsp; réparer les géométries &#187;&nbsp;</a></li>
+							<li><a href="#V63c">Corriger les erreurs de topologie avec l'outil v.clean de Grass</a></li>
+						</ul>
+				    </li>
 				</ul>
 				<br>
 				
@@ -129,14 +135,31 @@
 					
 					<h3><a class="titre" id="V63">Corriger les erreurs de topologie : quelques pistes</a></h3>
 					
-						<p>Pour corriger les erreurs de topologie d'une couche, vous pouvez procéder &#171; à la main &#187; , en corrigeant les erreurs une à une avec les outils d'édition de QGIS, en utilisant les <b>propriétés d'accrochage</b> et l'<b>outil de noeud</b>. Cliquer sur la ligne correspondant à une erreur dans le vérificateur de topologie zoome sur cette erreur.</p>
-						<p>Si vous avez un grand nombre d'erreurs à corriger, vous pouvez aussi utiliser des outils de correction automatique, notamment ceux de grass. Ces outils sont disponibles dans QGIS via la 
-						<a class="thumbnail_bottom" href="#thumb">boîte à outils du menu Traitements
-							<span>
-								<img src="illustrations/tous/5_6_traitements_menu.png" alt="boîte à outils du menu Traitements" height="125" >
-							</span>
-						</a>. Tapez <b>clean</b> dans le filtre pour accéder à l'outil <b>v.clean</b>.</p>
-						<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass70/manuals/v.clean.html" >https://grass.osgeo.org/grass70/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>
+					    <p>Cette partie n'est pas très étoffée et mériterait un chapitre à part entière ! A venir ?</p>
+					
+					    <h4><a class="titre" id="V63a">Corriger les erreurs de topologie manuellement</a></h4>
+					
+					       <p>Pour corriger les erreurs de topologie d'une couche, vous pouvez procéder &#171; à la main &#187;, en corrigeant les erreurs une à une avec les outils d'édition de QGIS, en utilisant les <b>propriétés d'accrochage</b> et l'<b>outil de noeud</b>. Cliquer sur la ligne correspondant à une erreur dans le vérificateur de topologie zoome sur cette erreur.</p>
+					       
+					    <h4><a class="titre" id="V63b">Corriger les erreurs de topologie avec l'outil &#171;&nbsp; Réparer les géométries &nbsp;&#187;</a></h4>
+					    
+					       <p>Il existe un outil <b>Réparer les géométries</b> accessible dans la boîte à outils de traitement. Pour afficher (ou masquer si elle est déjà affichée) cette boîte, <b>menu Traitement &#8594; Boîte à outils</b>. Tapez ensuite <b>réparer</b> dans la partie filtre pour trouver facilement cet outil :</p>
+					       <figure>
+    							<a href="illustrations/tous/5_6_reparer.png" >
+    								<img src="illustrations/tous/5_6_reparer.png" alt="accès à l'outil réparer les géométries à partir de la boîte à outils" width="300">
+    							</a>
+    						</figure>
+    						<p>Cet outil prend une couche en entrée (la couche contenant des erreurs) et génère une nouvelle couche, normalement sans erreurs de topologie, en sortie.</p>
+					    
+					    <h4><a class="titre" id="V63c">Corriger les erreurs de topologie avec l'outil v.clean de Grass</a></h4>
+					    
+    						<p>Vous pouvez également utiliser l'outil <b>v.clean</b> issu de <b>Grass</b>, toujours dans la boîte à outils de traitements. Tapez <b>clean</b> dans le filtre pour accéder à l'outil <b>v.clean</b>.</p>
+    						<figure>
+    							<a href="illustrations/tous/5_6_vclean.png" >
+    								<img src="illustrations/tous/5_6_vclean.png" alt="accès à l'outil vclean à partir de la boîte à outils" width="300">
+    							</a>
+    						</figure>
+    						<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass70/manuals/v.clean.html" >https://grass.osgeo.org/grass70/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>
 
 				<br>
 				<a class="prec" href="05_05_polygones.php">chapitre précédent</a>

@@ -67,13 +67,13 @@
 				<h4><a class="titre" id="V42b">Quelques astuces</a></h4>
 				
 					<ul>
-					<li class="espace">Si pendant la numérisation vous avez des <b>difficultés à voir votre ligne</b> : menu Préférences, Options, rubrique Numérisation : réglez l'épaisseur de la ligne, par exemple 2, et la couleur. Pour la 
+					<li class="espace">Si pendant la numérisation vous avez des <b>difficultés à voir votre ligne</b> : menu Préférences &#8594; Options &#8594; rubrique Numérisation : réglez l'épaisseur de la ligne, par exemple 2, et la couleur. Pour la 
 					<a class="thumbnail_bottom" href="#thumb">couleur
 						<span>
 							<img src="illustrations/tous/5_4_num_style_couleur.png" alt="choix de la couleur de numérisation" height="400" >
 						</span>
 					</a>
-					, n'oubliez pas de mettre le cana alpha, c'est-à-dire la transparence, à 255 pour éliminer toute transparence (une fois la ligne terminée, elle prend le style spécifiée dans les propriétés de la couche)</li>
+					, n'oubliez pas de mettre le canal alpha, c'est-à-dire la transparence, à 255 pour éliminer toute transparence (une fois la ligne terminée, elle prend le style spécifié dans les propriétés de la couche)</li>
 					<li class="espace"><b>Supprimer le dernier point créé :</b> touche suppr ou retour arrière (backspace)</li>
 					<li class="espace"><b>Se déplacer tout en numérisant :</b> utilisez les flèches du clavier, ou bien maintenez la molette de la souris ou la touche espace enfoncée et bougez la souris</li>
 					<li class="espace"><b>Abandonner la ligne en cours :</b> terminez-la avec un clic droit, puis si les fenêtres de saisie d'attributs sont activées cliquez sur annuler, sinon utilisez ctrl + z</li>

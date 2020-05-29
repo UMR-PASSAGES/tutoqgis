@@ -24,19 +24,19 @@
 				</ul>
 				<br>
 			
-			<h3><a class="titre" id="IV11">Qu'est-ce que le géoréférencement?</a></h3>
+			<h3><a class="titre" id="IV11">Qu'est-ce que le géoréférencement ?</a></h3>
 			
 				<p>Les données SIG que nous avons utilisées jusqu'ici ont toutes des coordonnées, ce qui nous permet de les superposer correctement dans une logiciel SIG. A l'inverse, dans le cas d'une image simplement scannée, une carte ancienne par exemple, le logiciel ne possède pas d'informations de coordonnées ; il placera cette image simplement en considérant que le coin en haut à gauche a les coordonnées 0,0.</p>
 				<p><b>Le géoréférencement, ou calage, consiste à attribuer des coordonnées à une image</b>. Cette image pourra ensuite être superposée à d'autres couches dans un logiciel SIG, et servir par exemple de fond de carte ou être <a href="05_00_numerisation.php">numérisée</a>. Le géoréférencement s'applique uniquement aux données raster (il existe d'autres méthodes pour les données vecteur qui ne seront pas abordées ici).</p>
 				<p>Lors du géoréférencement, il faudra aussi préciser dans quel SCR est notre image.</p>
 				
-			<h3><a class="titre" id="IV12">Géoréférencer par rapport à quoi? Deux méthodes</a></h3>
+			<h3><a class="titre" id="IV12">Géoréférencer par rapport à quoi ? Deux méthodes</a></h3>
 			
 				<p>Pour donner des coordonnées à une image, il est possible de se baser soit sur des informations contenues directement dans l'image, par exemple si l'image est une carte avec un carroyage, ou soit sur une autre couche déjà existante et correctement calée (vecteur ou raster).</p>
 				
 				<h4><a class="titre" id="IV12a">En se basant sur les informations contenues dans l'image</a></h4>
 				
-					<p>si on connaît précisément les coordonnées de quelques points sur l'image, grâce à un carroyage avec des amorces de coordonnées, on va pouvoir se servir de ces coordonnées pour géoréférencer l'image.</p>
+					<p>Si on connaît précisément les coordonnées de quelques points sur l'image, grâce à un carroyage avec des amorces de coordonnées, on va pouvoir se servir de ces coordonnées pour géoréférencer l'image.</p>
 					<p>Il faut néanmoins connaître le système de coordonnées utilisé, ce qui peut nécessiter des recherches.</p>
 					<figure>
 						<a href="illustrations/tous/4_1_calage_methode1.png" >

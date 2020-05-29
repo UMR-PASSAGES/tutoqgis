@@ -138,13 +138,7 @@
 						<p><label for="faq-1">Que constatez-vous ?</label></p>
 						<p class="reponse">Les deux polygones ne sont plus jointifs. Le déplacement d'un sommet d'un des polygones n'a pas eu d'effet sur le sommet correspondant du deuxième polygone.</p>
 					</div>
-						<p>Rendez-vous maintenant dans le 
-							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Options d'accrochage
-								<span>
-									<img src="illustrations/tous/5_5_accrochage_menu.png" alt="Menu Préférences, Options d'accrochage" height="320" >
-								</span>
-							</a>	
-						et <b>activez l'édition topologique</b> en enclenchant le bouton correspondant si ça n'est pas déjà fait.</p>
+						<p>Rendez-vous maintenant dans le <b>menu Projet &#8594; Options d'accrochage</b> et <b>activez l'édition topologique</b> en enclenchant le bouton correspondant si ça n'est pas déjà fait.</p>
 						<img src="illustrations/tous/5_5_edition_topologique.png" alt="case d'activation de l'édition topologique cochée" width="100%">
 						<p>Déplacez à nouveau un sommet d'un des polygones et sélectionnez successivement les deux polygones.</p>
 						<div class="question">
@@ -159,7 +153,7 @@
 			
 				<p>Pour rajouter un élément qui en touche un autre, il est possible de s'aimanter sur les sommets ou les segments de l'élément déjà existant. Cette propriété n'est bien sûr pas propre seulement aux couches de polygones mais fonctionne aussi pour les couches de lignes et de points.</p>
 				<p>Ceci permet de faire en sorte que deux polygones soient parfaitement contigus, sans aucun trou ou superposition.</p>
-				<p>Par exemple, comment faire pour rajouter la partie Ouest de la bande de Waimano en s'aimantant aux polygones déjà existants ?</p>
+				<p>Par exemple, comment faire pour rajouter la partie ouest de la bande de Waimano en s'aimantant aux polygones déjà existants ?</p>
 				
 				<div class="manip">
 					<p>Rendez-vous dans le Menu <b>Projet &#8594; Options d'accrochage</b> :</p>
@@ -210,7 +204,7 @@
 					   <a href="illustrations/tous/5_5_eviter_intersections_apres.png" >
 					       <img src="illustrations/tous/5_5_eviter_intersections_apres.png" alt="polygone fini sans débordements" width="40%">
 					   </a>
-					   <figcaption>à gauche, polygone en cours d'édition juste avant le clic droit final, à droite après ce clic droit.</figcaption>
+					   <figcaption>&#192; gauche, polygone en cours d'édition juste avant le clic droit final, à droite après ce clic droit.</figcaption>
 					</figure>
 				</div>
 				

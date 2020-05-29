@@ -40,7 +40,7 @@
 								<img src="illustrations/tous/4_3_georeferenceur_fenetre.png" alt="Fenêtre du géoréférenceur" width="600">
 							</a>
 						</figure>
-						<p class="note">Il est possible d'afficher le géoréferenceur comme une fenêtre à art ou ancrée. Pour changer de mode, dans la fenêtre du géoréférenceur, <b>menu Paramètres &#8594; Configurer géoréférenceur...</b>, cochez ou décochez la case <b>Afficher la fenêtre de géoréférencement dans la fenêtre principale</b>.</p>
+						<p class="note">Il est possible d'afficher le géoréferenceur comme une fenêtre à part ou ancrée. Pour changer de mode, dans la fenêtre du géoréférenceur, <b>menu Paramètres &#8594; Configurer géoréférenceur...</b>, cochez ou décochez la case <b>Afficher la fenêtre de géoréférencement dans la fenêtre principale</b>.</p>
 						<p><img class="icone" src="illustrations/tous/4_3_ouvrir_raster_icone.png" alt="icône ouvrir un raster du géoréférenceur" >Dans cette fenêtre, ajoutez au géoréférenceur l'image à caler en cliquant sur l'icône <b>Ouvrir un raster</b>, ou bien
 							<a class="thumbnail_bottom" href="#thumb">menu Fichier &#8594; Ouvrir raster...
 								<span>
@@ -85,7 +85,7 @@
 							<img src="illustrations/tous/4_3_table_points.png" alt="Table des points de contrôle : premier point" width="600">
 						</a>
 					</figure>
-					<p>Que signifient les différentes colonnes de cette table?</p>
+					<p>Que signifient les différentes colonnes de cette table&nbsp;?</p>
 					<ul>
 						<li class="espace"><b>Visible :</b> indique si le point sera pris en compte ou non pour le géoréférencement. Permet de ne pas prendre en compte certains points qui semblent apporter trop d'erreurs, tout en les gardant en mémoire.</li>
 						<li class="espace"><b>ID :</b> identifiant du point. Peut aider à repérer de quel point il s'agit sur la carte, dans le fenêtre du géoréférenceur comme dans celle de QGIS.</li>

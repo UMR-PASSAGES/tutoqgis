@@ -37,7 +37,7 @@
 			
 			<h3><a class="titre" id="V21">Rendre une couche éditable</a></h3>
 			
-				<p>Par défaut, toutes les couches ajoutées dans QGIS sont &#171; verrouillées &#187; donc non modifiables (modifier la couleur, le style ne modifie pas les données mais seulement leur représentation).</p>
+				<p>Par défaut, toutes les couches ajoutées dans QGIS sont &#171; verrouillées &#187; donc non modifiables (modifier le style ne modifie pas les données mais seulement leur représentation).</p>
 				<p>Pour rendre une couche éditable, que ce soit pour modifier les données de la table attributaire ou la géométrie d'un élément, il faut donc passer en mode édition. Nous allons faire cette manipulation pour la couche <em class="data">batiments_oahu</em> afin de pouvoir y ajouter des points.</p>
 				<div class="manip">
 					<p>Vérifiez tout d'abord que votre couche de bâtiments soit <b>au-dessus</b> de la carte.</p>
@@ -138,7 +138,7 @@
 					
 			<h3><a class="titre" id="V24">Quitter le mode édition</a></h3>
 			
-				<p>Une fois vos ajouts et modifications terminées, il est important de quitter le mode édition, pour plusieurs raisons :</p>
+				<p>Une fois vos ajouts et modifications terminés, il est important de quitter le mode édition, pour plusieurs raisons :</p>
 				<ul>
 					<li>éviter de faire des modifications par erreur</li>
 					<li>sauvegarder les modifications effectuées</li>
@@ -151,7 +151,7 @@
 					       <img src="illustrations/tous/5_2_quitter_edition.png" alt="Fenêtre arrêter l'édition" width="480" >
 					   </a>
 					</figure>
-					<p>Une fenêtre apparaît vous demander si vous souhaitez :</p>
+					<p>Une fenêtre apparaît pour vous demander si vous souhaitez :</p>
 					<ul>
 						<li><b>Fermer sans enregistrer :</b> quitte le mode édition sans sauvegarder vos modifications</li>
 						<li><b>Annuler :</b> ne quitte pas le mode édition</li>
