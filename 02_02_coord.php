@@ -213,26 +213,26 @@
 					   <tr>
 					       <td>Mercator</td>
 					       <td>EPSG:54004</td>
-					       <td>261712.122</td>
-					       <td>6218386.300</td>
+					       <td>261712</td>
+					       <td>6218386</td>
 					   </tr>
 					   <tr class="alt">
 					       <td>Peters</td>
 					       <td>SR-ORG:22</td>
-					       <td>185368.909</td>
-					       <td>6753027.140</td>
+					       <td>185369</td>
+					       <td>6753027</td>
 					   </tr>
 					   <tr>
 					       <td>RGF93 Lambert93</td>
 					       <td>EPSG:2154</td>
-					       <td>652381.068</td>
-					       <td>6862047.100</td>
+					       <td>652381</td>
+					       <td>6862047</td>
 					   </tr>
 					   <tr class="alt">
 					       <td>Azimutale équidistante pôle sud</td>
 					       <td>EPSG:102019</td>
-					       <td>632368.408</td>
-					       <td>15402681.400</td>
+					       <td>632368</td>
+					       <td>15402681</td>
 					   </tr>
 					</table>
 					<br>
@@ -261,6 +261,7 @@
 					<li>Liste des systèmes de coordonnées avec leurs codes EPSG ou autre : <a class="ext" target="_blank" href="http://spatialreference.org/" >http://spatialreference.org/</a></li>
 					<li>Comparaison de projections : <a class="ext" target="_blank" href="http://bl.ocks.org/syntagmatic/ba569633d51ebec6ec6e" >http://bl.ocks.org/syntagmatic/ba569633d51ebec6ec6e</a> et <a class="ext" target="_blank" href="https://www.map-projections.net/imglist.php" >https://www.map-projections.net/imglist.php</a></li>
 					<li>Aide au choix d'une projection : <a class="ext" target="_blank" href="http://projectionwizard.org/" >http://projectionwizard.org/</a></li>
+					<li>Sur la précision des coordonnées : jusqu'où faut-il aller dans le nombre de décimales ? <a class="ext" target="_blank" href="https://xkcd.com/2170/" >https://xkcd.com/2170/</a></li>
 				</ul>
 			
 				<br>

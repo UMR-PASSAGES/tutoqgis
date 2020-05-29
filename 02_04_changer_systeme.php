@@ -22,7 +22,7 @@
 				
 			<h3><a class="titre" id="II41">Modifier le SCR du projet</a></h3>
 			
-				<p>Vous avez pu constater dans la partie <a href="02_03_couches_projets.php">II.3 Couches et projets : à chacun son système</a> que les couches d'un projet sont affichées dans le SCR du projet. Comment modifier le SCR du projet pour afficher les couches dans le SCR de votre choix?</p>
+				<p>Vous avez pu constater dans la partie <a href="02_03_couches_projets.php">II.3 Couches et projets : à chacun son système</a> que les couches d'un projet sont affichées dans le SCR du projet. Comment modifier le SCR du projet pour afficher les couches dans le SCR de votre choix&nbsp;?</p>
 				<p>Nous allons modifier le SCR du projet <em class="data">monde.qgz</em> du WGS84 vers <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Projection_de_Robinson" >Robinson</a> (code EPSG 53030).</p>
 				<div class="manip">
 					<p><img class="icone" src="illustrations/tous/1_4_ouvrir_projet_icone.png" alt="Icône Ouvrir">A partir de QGIS, ouvrez le projet <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">monde.qgz</a></em> situé dans le dossier <b>TutoQGIS_02_Geodesie/projets</b></p>
@@ -87,7 +87,7 @@
 				<p>Nous avons vu que QGIS gère le cas où plusieurs couches dans différents SCR sont affichés dans un même projet. Cependant, certaines manipulations nécessitent que toutes les couches soient dans le même SCR. Par ailleurs, par souci de clarté et pour éviter les erreurs, on peut vouloir travailler avec des couches dans le même SCR.</p>
 				<p>Pour toutes ces raisons, il est utile de savoir modifier le SCR d'une couche.</p>
 				<p>Cette manipulation implique de <b>recalculer les coordonnées de tous les objets de la couche dans un autre SCR</b>.</p>
-				<p>Par exemple, si la couche d'origine est en WGS84 et contient un point correspondant à la ville de Paris, et que le but est d'obtenir une couche en RGF93 / Lambert-93 , les coordonnées initiales du point (48,856700 2,351000 en WGS84) seront recalculées pour devenir (652381.068 6862047.100) en RGF93 / Lambert-93.</p>
+				<p>Par exemple, si la couche d'origine est en WGS84 et contient un point correspondant à la ville de Paris, et que le but est d'obtenir une couche en RGF93 / Lambert-93 , les coordonnées initiales du point (48,89 2,35) en WGS84 seront recalculées pour devenir (652381 6862047) en RGF93 / Lambert-93.</p>
 				<p>Cette manipulation <b>crée une nouvelle couche</b>. La couche d'origine et la couche résultat se superposeront exactement dans QGIS si la projection à la volée est activée, puisqu'elles contiendront exactement les mêmes objets.</p>
 				<div class="manip">
 					<p>L'objectif sera ici de créer une nouvelle couche pays dans la projection de Bonne (code EPSG 53024).</p>
@@ -135,7 +135,7 @@
 				<p>Redéfinir le SCR d'une couche n'est donc utile que dans deux cas bien précis :</p>
 					<ul>
 						<li><b>le SCR n'est pas défini du tout</b>, ce qui peut arriver par exemple pour certaine couches trouvées sur internet. Il faudra alors retrouver dans quel SCR a été initialement créée la couche</li>
-						<li><b>le SCR est mal défini</b> (quelqu'un a donc déjà effectué cette manip à tort)</li>
+						<li><b>le SCR est mal défini</b> (quelqu'un - ou vous-même ! - a donc déjà effectué cette manipulation à tort)</li>
 					</ul>
 				<div class="manip">
 					<p>Pour être sûr de vous rendre compte si une couche n'a pas de SCR défini, rendez-vous dans le menu
