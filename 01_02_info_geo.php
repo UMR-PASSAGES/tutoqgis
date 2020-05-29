@@ -48,7 +48,7 @@
     									</a>	
     								</li>
     								<li>cliquer sur l'icône <b>Gestionnaire des sources Open Data</b><img class="iconemid" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône du gestionnaire des sources de données"></li>
-    								<li>utiliser le raccourci clavier <b>ctrl + l</b></li>
+    								<li>utiliser le raccourci clavier <b>ctrl + L</b> (minuscule)</li>
     							</ul>
     					   <p>Si vous souhaitez retrouver vos habitudes de QGIS 2.18, vous pouvez également procéder ainsi : </p>
     					       <ul>
@@ -96,8 +96,8 @@
                             		<img src="illustrations/tous/1_2_explorateur_menu.png" alt="menu Vue → Panneaux → Explorateur" height="700" >
                             	</span>
                             </a>.</p>
-    						<p>Dans ce panneau, naviguez dans l'arborescence de vos fichiers jusqu'au dossier où vous avez téléchargé les données de ce tutoriel. Faites un <b>clic droit sur ce dossier &#8594; Ajouter en Favori</b>.</p>
-    						<p>A partir des favoris, rendez-vous dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et double-cliquez sur la couche <em class="data">DEPARTEMENT_BRETAGNE.shp</em>.</p>
+    						<p>Dans ce panneau, naviguez dans l'arborescence de vos fichiers jusqu'au dossier où vous avez téléchargé les données de ce tutoriel. Faites un <b>clic droit sur ce dossier &#8594; Ajouter aux marque-pages</b>.</p>
+    						<p>A partir des marque-pages, rendez-vous dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et double-cliquez sur la couche <em class="data">DEPARTEMENT_BRETAGNE.shp</em>.</p>
     						<figure>
                             	<a href="illustrations/tous/1_2_explorateur.png" >
                             		<img src="illustrations/tous/1_2_explorateur.png" alt="Panneau Explorateur" width="330">
@@ -145,8 +145,8 @@
 					
 					<p>Vous avez accès ici à plusieurs propriétés, notamment :</p>
 					<ol>
-						<li>la manière dont la couche est représentée, dans la rubrique <b>Style</b>. Vous pouvez par exemple changer ici la couleur des départements</li>
-						<li>l'emplacement de la couche, dans la rubrique <b>Général</b></li>
+						<li>la manière dont la couche est représentée, dans la rubrique <b>Symbologie</b>. Vous pouvez par exemple changer ici la couleur des départements</li>
+						<li>l'emplacement de la couche, dans la rubrique <b>Information</b></li>
 					</ol>
 					
 					<h4><a class="titre" id="I23a">Changer la représentation d'une couche</a></h4>
@@ -234,7 +234,7 @@
 									<img src="illustrations/tous/1_2_identifier_fenetre.png" alt="résultat de l'identification d'un point au hasard du srtm : altitude = 143m" width="500" >
 								</a>
 							</figure>
-							<p>Par exemple, ici, c'est un point d'altitude 336 mètres qui a été identifié.</p>
+							<p>Par exemple, ici, c'est un pixel d'altitude 336 mètres qui a été identifié.</p>
 						</div>
 					
 				

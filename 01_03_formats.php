@@ -55,7 +55,6 @@
 							<li><b>DBF</b> : contient les informations attributaires</li>
 							<li><b>SHX</b> : fichier d'index</li>
 						</ul>
-					<p>Le format DBF impose certaines limitations pour les noms de colonnes : maximum 10 caractères, éviter les accents...</p>
 					<p>Deux autres fichiers sont aussi bien utiles :</p>
 					<ul>
 						<li><b>PRJ</b> : contient le code du système de coordonnées et éventuellement de la projection, lisible par le logiciel ArcGIS</li>
@@ -65,7 +64,7 @@
 					</p>
 					<p>Pour que le shapefile s'ouvre correctement, tous ces fichiers doivent avoir exactement le même nom. QGIS peut ouvrir et éditer les fichiers SHP.</p>
 					
-					<p>Outre le fait d'être constitué de plusieurs fichiers, le format Shapefile possède plusieurs limitations : les noms de colonnes sont limités à 10 caractères, la taille est limitée à 2Go... Pour en savoir plus sur ces aspects, et pour connaître des formats alternatifs : <a class="ext" target="_blank" href="http://switchfromshapefile.org/" >Switch from Shapefile</a>.</p>
+					<p>Outre le fait d'être constitué de plusieurs fichiers, le format Shapefile possède plusieurs limitations&nbsp;: les noms de colonnes sont limités à 10 caractères et doivent éviter les accents (limites dues à l'utilisation du format DBF), la taille est limitée à 2Go... Pour en savoir plus sur ces aspects, et pour connaître des formats alternatifs&nbsp;: <a class="ext" target="_blank" href="http://switchfromshapefile.org/" >Switch from Shapefile</a>.</p>
 	
 					<h4><a class="titre" id="I31b">Format GPKG (GeoPackage)</a></h4>
 					
@@ -83,7 +82,7 @@
 					
 					   <p>Le format <b>GeoPackage</b> constitue une alternative au Shapefile. Il est le format par défaut de QGIS depuis la version 3. Il est constitué d'<b>un seul fichier avec l'extension GPKG</b>.</p>
 					   <p>Il s'agit en réalité d'une base de données (au format SQLite) et peut donc <b>contenir plusieurs couches, aussi bien vecteur que raster</b>.</p>
-					   <p>Ce format léger et implémenté aujourd'hui dans la plupart des logiciels SIG.</p>
+					   <p>Ce format léger est implémenté aujourd'hui dans la plupart des logiciels SIG.</p>
 					   <p>Pour en savoir plus : <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Geopackage" >https://fr.wikipedia.org/wiki/Geopackage</a> (en français) ou <a class="ext" target="_blank" href="http://switchfromshapefile.org/#geopackage">http://switchfromshapefile.org/#geopackage</a> (en anglais).</p>
 					   
 					
@@ -107,7 +106,7 @@
 						
 				    <h4><a class="titre" id="I31d">Et bien d'autres...</a></h4>
 				    
-				        <p>Il existe de nombreux autres formats de fichiers vecteur lisibles par QGIS.Citons par exemple le <b>GeoJSON</b>, utilisé notamment pour les cartes interactives en ligne, le <b>KML</b>, utilisé par Google Maps et Google Earth...</p>
+				        <p>Il existe de nombreux autres formats de fichiers vecteur lisibles par QGIS. Citons par exemple le <b>GeoJSON</b>, utilisé notamment pour les cartes interactives en ligne, le <b>KML</b>, utilisé par Google Maps et Google Earth...</p>
 	
 				<h3><a class="titre" id="I32">Un exemple de format raster : le GeoTIFF</a></h3>
 				

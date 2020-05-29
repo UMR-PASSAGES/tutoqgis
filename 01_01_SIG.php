@@ -128,7 +128,7 @@
 									<img src="illustrations/tous/1_1_table_liste_deroulante.png" alt="Table attributaire : ne montrer que les entités sélectionnées" width="600">
 								</a>
 							</figure>
-							<p class="note">Pour que la fenêtre de la table attributaire soit "ancrée" dans QGIS : menu <b>Préférences &#8594; Options &#8594; Sources de données</b> : cocher la case <b>Ouvrir la table d'attributs dans une fenêtre intégrée</b>. Contrairement à ce qui est écrit, cette modification est prise en compte directement sans besoin de redémarrer QGIS.</p>
+							<p class="note">Pour que la fenêtre de la table attributaire soit "ancrée" dans QGIS : menu <b>Préférences &#8594; Options &#8594; Sources de données</b> : cocher la case <b>Ouvrir la table d'attributs dans une fenêtre intégrée</b>.</p>
 						</div>
 						
 						

@@ -20,7 +20,7 @@
 			
 				<h3><a class="titre" id="I31">Qu'est-ce qu'un projet dans un logiciel SIG ?</a></h3>
 				
-					<p>Un projet est un espace de travail. Sauvegarder un projet équivaut à sauvegarder le style utilisé pour chaque couche, le zoom... mais pas les données!</p>
+					<p>Un projet est un espace de travail. Sauvegarder un projet équivaut à sauvegarder le style utilisé pour chaque couche, le zoom... mais pas les données !</p>
 					<p><b>Depuis la version 3 de QGIS, le format par défaut pour les projets est le QGZ et non plus le QGS</b>. Un fichier QGZ est en fait un fichier QGS plus d'autres informations compressées dans un seul fichier. Il est toujours possible d'ouvrir et d'enregistrer des projets au format QGS.</p>
 					<p>L'intérêt du format QGZ par rapport au format QGS est de stocker plus d'informations directement dans le projet, par exemple les symboles utilisés, les polices, les rampes de couleurs, les emplacements des étiquettes...</p>
 					<div class="manip">
@@ -55,7 +55,7 @@
 				
 				<p>Le chemin des couches peut être stocké de deux manières dans le projet : </p>
 					<ol>
-						<li>soit <b>par rapport</b> à l'emplacement du QGZ ou QGS</li>
+						<li>soit <b>par rapport</b> à l'emplacement du QGZ ou QGS <b>(en relatif)</b></li>
 						<li>soit <b>"en dur"</b>, sous la forme du chemin en entier</li>
 					</ol>
 					<p>1. Par exemple, <b>../donnees/LA_LOCALITE_P.gpkg</b> signifie qu'il faut remonter d'un dossier par rapport au dossier dans lequel est situé le projet, puis descendre dans le dossier donnees pour y trouver la couche LA_LOCALITE_P.gpkg</p>
