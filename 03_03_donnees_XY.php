@@ -119,7 +119,7 @@
 					<li class="espace">Cliquez sur <b>...</b> pour sélectionner l'emplacement où la couche sera créée et lui donner un nom</li>
 					<li class="espace">Laissez les autres paramètres par défaut</li>
 				</ul>
-				<p>Cliquez sur <b>OK</b> ; la couche est ajoutée à QGIS, vous devez donc avoir deux couches de villes identiques au premier abord; cependant, l'une est temporaire et l'autre permanente.</p>
+				<p>Cliquez sur <b>OK</b> ; la couche est ajoutée à QGIS, vous devez donc avoir deux couches de villes identiques au premier abord&nbsp;; cependant, l'une est temporaire et l'autre permanente.</p>
 				<p><img class="icone" src="illustrations/tous/3_3_supprimer_couche_icone.png" alt="Icône supprimer une couche" >
 					<a class="thumbnail_top" href="#thumb">Supprimez la couche temporaire
 						<span>
@@ -131,7 +131,7 @@
 				
 			</div>
 			<p>Félicitations ! L'ajout de données ponctuelles à partir d'un fichier texte dans QGIS n'a désormais plus de secrets pour vous !</p>
-			<p>Notez que si vous effectuez cette manip avec un fichier CSV &#171; non standard &#187; (dont le délimiteur n'est pas la virgule), il vous faudra choisir l'option <b>délimiteurs personnalisés</b> dans la fenêtre d'ajout du fichier CSV, puis votre délimiteur : point-virgule, tabulation... Attention aussi à la case <b>Virgule en séparateur décimal</b>, à cocher ou décocher suivant vos coordonnées (44,192 vs 44.192).</p>
+			<p>Notez que si vous effectuez cette manipulation avec un fichier CSV &#171; non standard &#187; (dont le délimiteur n'est pas la virgule), il vous faudra choisir l'option <b>délimiteurs personnalisés</b> dans la fenêtre d'ajout du fichier CSV, puis votre délimiteur : point-virgule, tabulation... Attention aussi à la case <b>Virgule en séparateur décimal</b>, à cocher ou décocher suivant vos coordonnées (44,192 vs 44.192).</p>
 	
 			<br>
 			<a class="prec" href="03_02_donnees_flux.php">chapitre précédent</a>

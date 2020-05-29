@@ -59,7 +59,8 @@
 								<img src="illustrations/tous/3_1_ign_telechargement_2.png" alt="page de téléchargement des données ADMIN EXPRESS (IGN)" width="90%">
 							</a>
 						</figure>
-						<p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS par territoire</b> (ici celle de mars 2020).</p>
+						<p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS par territoire</b> (ici celle de mai 2020).</p>
+						<p class="note">Vous pouvez également télécharger la version <a class="ext" target="_blank" href="https://geoservices.ign.fr/ressources_documentaires/Espace_documentaire/BASES_VECTORIELLES/ADMIN_EXPRESS_COG/SE_ADMIN_EXPRESS_COG.pdf">COG (Code Officiel Géographique)</a> mais celle-ci est plus lourde.</p>
 						<p>Dézippez le fichier téléchargé (vous pouvez par exemple utiliser <a class="ext" target="_blank" href="https://www.7-zip.org/">7-zip</a>).</p>
 						<p>A partir de l'explorateur de fichiers de QGIS, ajoutez la couche <em class="data">COMMUNE</em> du sous-dossier <b>ADE_2-X_SHP_UTM22RGFG95_D973</b> (973 correspond au code département de la Guyane, et l'UTM 22 RGFG95 au SCR qui y est utilisé).</p>
 						<figure>
@@ -205,7 +206,7 @@
 					</li>
 					<li class="espace">ASTER : modèle d'élévation, données mondiales téléchargeables par dalles
 						<br>
-						<a class="ext" target="_blank" href="http://asterweb.jpl.nasa.gov/gdem.asp">http://asterweb.jpl.nasa.gov/gdem.asp</a>
+						<a class="ext" target="_blank" href="https://search.earthdata.nasa.gov/">https://search.earthdata.nasa.gov/</a>
 					</li>
 					<li class="espace">SRTM : modèle d'élévation, données mondiales téléchargeables par dalles
 						<br>

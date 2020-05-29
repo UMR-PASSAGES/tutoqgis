@@ -14,10 +14,11 @@
 		<div class="main">
 			<h2>III.2  Ajout de données via des flux</h2>
 				<ul class="listetitres">
-					<li><a href="#III21">Qu'est-ce qu'un flux WMS ou WFS?</a></li>
+					<li><a href="#III21">Qu'est-ce qu'un flux WMS ou WFS ?</a></li>
 					<li><a href="#III22">Ajout de données via un flux WMS : carte géologique</a></li>
 					<li><a href="#III23">Ajout de données via un flux WFS : cours d'eau</a></li>
 					<li><a href="#III24">Avantages et inconvénients des flux</a></li>
+					<li><a href="#III25">Quelques adresses de flux WMS et WFS</a></li>
 				</ul>
 	
 			
@@ -137,6 +138,11 @@
 				<p>Un inconvénient d'utiliser des flux est le temps de chargement et la nécessité d'avoir une connexion internet.</p>
 				<p>Cependant, ils vous assurent de toujours visualiser la dernière mise à jour des données, vous évitent d'encombrer vos ordinateurs et vous permettent de transmettre des projets QGS à des collègues en étant sûr que ceux-ci puissent en visualiser les données (s'ils sont connectés à internet).</p>
 				<p>En résumé, c'est probablement l'usage que vous ferez des données qui vous fera opter pour l'une ou l'autre solution.</p>
+				
+			<h3><a class="titre" id="III25">Quelques adresses de flux WMS et WFS</a></h3>
+			
+			    <p>Vous pouvez trouver <a class="ext" target="_blank" href="https://github.com/igeofr/qgis2/tree/master/flux">ici</a> une liste de flux WFS et WMS, créée par l'utilisateur github <a class="ext" target="_blank" href="https://github.com/igeofr">igeofr</a>.</p>
+			    <p>Vous pouvez soit ajouter ces flux manuellement, un par un, comme décrit plus haut, en copiant l'url, soit tous les ajouter en même temps. Pour cela, par exemple pour les flux WFS, collez le contenu entier du fichier QGIS_WFS.xml dans un fichier texte vierge, enregistrez ce fichier sous le nom QGIS_WFS.xml. Ensuite, dans QGIS : gestionnaire de sources &#8594; WFS&#8594; Charger &#8594; sélectionnez le fichier XML, et choisissez les flux que vous souhaitez ajouter.</p>
 	
 				<br>
 				<a class="prec" href="03_01_donnees_internet.php">chapitre précédent</a>

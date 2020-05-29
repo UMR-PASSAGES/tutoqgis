@@ -30,6 +30,15 @@
 			
                 <p><a class="ext" target="_blank" href="http://www.openstreetmap.org">OpenStreetMap ou OSM</a> est un projet qui a pour but de constituer une base de données géographiques libre du monde. A l'instar de <a class="ext" target="_blank" href="https://fr.wikipedia.org">Wikipédia</a>, tout un chacun peut participer et enrichir le projet. On peut donc visualiser, réutiliser et même après inscription modifier gratuitement les données.</p>
                 <p>La partie la plus connue du projet est peut-être la visualisation des données OSM sous forme de <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=19/44.79461/-0.61780" >carte</a> ; mais OSM est avant tout un ensemble de <a class="ext" target="_blank" href="https://www.openstreetmap.org/way/226888023">données</a> géographiques, utilisables entre autres dans un logiciel SIG.</p>
+                <figure>
+                    <a href="illustrations/tous/3_4_carte.png" >
+                		<img src="illustrations/tous/3_4_carte.png" alt="OpenStreetMap : extrait de carte" width="48%">
+                	</a>
+                    <a href="illustrations/tous/3_4_carte.png" >
+                		<img src="illustrations/tous/3_4_donnees.jpg" alt="OpenStreetMap : extrait de carte avec les données en bleu" width="48%">
+                	</a>
+                	<figcaption>Sous la carte... les données !</figcaption>
+                </figure>
                 <p>Les attributs des données OSM sont des paires <b>clé=valeur</b> (key=value). Un élément peut par exemple être caractérisé par <b>l'attribut</b> (tag) <b>waterway=river</b> pour indiquer qu'il s'agit d'un cours d'eau de type rivière. Un élément peut être caractérisé par plusieurs attributs (plusieurs paires clé=valeur).</p>
                 <p>Il existe plusieurs valeurs possibles pour chaque clé, la clé <b>waterway</b> peut par exemple avoir comme valeur <b>river</b> (rivière), <b>stream</b> (ruisseau), <b>canal</b>... Retrouvez <a target="_blank" class="ext" href="http://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques">ici</a> la liste des clés et des valeurs couramment utilisées.</p>
                 <p>Nous allons découvrir ici différentes manières pour non seulement visualiser un fonds OSM, mais également pour utiliser les données OSM dans QGIS. Il est possible de télécharger ces données à partir de différents sites pour ensuite les ajouter à QGIS, mais aussi de les charger directement dans QGIS.</p>
@@ -104,7 +113,7 @@
                      <p>Enregistrer le fichier sur votre ordinateur, décompressez le fichier ZIP obtenu dans votre répertoire de travail : vous obtenez une série de couches au format Shapefile.</p>
                      <p>Que contiennent ces données ? Pour le savoir, cliquez sur le lien <a class="ext" target="_blank" href="http://download.geofabrik.de/osm-data-in-gis-formats-free.pdf" >Format description PDF</a> disponible en cliquant sur <b>Suriname</b> à partir de la page où vous avez téléchargé les données.</p>
                 </div>
-                <p class="note">Notez que les noms de couches correspondent au clés des attributs OSM. Par exemple, la couche <em class="data">gis.osm_waterways_free_1</em> regroupe les éléments ayant la clé <a class="ext" target="_blank" href="http://wiki.openstreetmap.org/wiki/FR:Key:waterway">waterway</a>.</p>
+                <p class="note">Notez que les noms de couches correspondent aux clés des attributs OSM. Par exemple, la couche <em class="data">gis.osm_waterways_free_1</em> regroupe les éléments ayant la clé <a class="ext" target="_blank" href="http://wiki.openstreetmap.org/wiki/FR:Key:waterway">waterway</a>.</p>
                 <div class="manip">
                      <p>Dans un nouveau projet QGIS, ajoutez ces données. Ouvrez la table attributaire de la couche <em class="data">gis.osm_waterways_free_1</em>.</p>
                      <p>Les valeurs du champ <b>fclass</b> correspondent aux différentes valeurs prises par la clé de la couche pour chaque élément. On trouve par exemple les valeurs river, stream, canal et drain.</p>
