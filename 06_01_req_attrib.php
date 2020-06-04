@@ -24,7 +24,7 @@
 				<br>
 				
 			<p>Nous allons voir ici comment utiliser les données de la table attributaire pour sélectionner des éléments d'une couche, par exemple comment sélectionner les départements dans le nom commence par &#171; A &#187; .</p>
-			<p>Beaucoup d'opérateurs sont disponibles pour les requêtes attributaires; nous ne les passerons pas tous en revue mais allons simplement utiliser quelques uns des plus courants.</p>
+			<p>Beaucoup d'opérateurs sont disponibles pour les requêtes attributaires; nous ne les passerons pas tous en revue mais allons simplement utiliser quelques-uns des plus courants.</p>
 			<p>Pour une description de tous les opérateurs et fonctions possibles : voir le <a class="ext" target="_blank" href="https://docs.qgis.org/3.4/fr/docs/user_manual/working_with_vector/expression.html#vector-expressions" >manuel de QGIS</a>.</p>
 
 			<h3><a class="titre" id="VI11">Faire une requête simple</a></h3>
@@ -35,7 +35,7 @@
 				</div>
 					<p>Pour sélectionner le département du Nord (59), vous pouvez cliquez sur le numéro de la ligne correspondante ou bien directement sur ce département sur la carte. Vous pouvez aussi utiliser une requête attributaire.</p>
 				<div class="manip">
-					<p>Dans la barre d'outils située en haut de la table attributaire, cliquez sur l'icône <b>Sélectionne les entités en utilisant une expression</b>.</p>
+					<p>Dans la barre d'outils située en haut de la table attributaire, cliquez sur l'icône <b>Sélectionner les entités en utilisant une expression</b>.</p>
 					<img src="illustrations/tous/6_1_BO_icone_selection.png" alt="barre d'outils de la table attributaire avec icône sélection entourée en rouge" width="600">
 					<p class="note">Cette icône est aussi accessible dans la barre d'outils <b>attributs</b>, à condition que vous ayez au préalable sélectionné la couche dans la table des matières.</p>
 					<p>La fenêtre de requête attributaire s'ouvre :</p>
@@ -61,9 +61,11 @@
 							<img src="illustrations/tous/6_1_selection_nord.png" alt="carte avec le département du Nord sélectionné" width="300">
 						</a>
 					</figure>
-					<p>Vous pouvez lire le nombre d'éléments sélectionnés en haut de la table attributaire :</p>
+					<p>Vous pouvez lire le nombre d'éléments sélectionnés en haut de la table attributaire, ou encore en bas à gauche de la fenêtre de QGIS, dans la barre d'état :</p>
 					<figure>
-						<img src="illustrations/tous/6_1_nb_selectionnes.png" alt="ligne indiquant le nombre d'éléments sélectionnés" width="550">
+					    <a href="illustrations/tous/6_1_nb_selectionnes.png" >
+						    <img src="illustrations/tous/6_1_nb_selectionnes.png" alt="ligne indiquant le nombre d'éléments sélectionnés, en haut de la table et dans la barre d'état" width="550">
+						</a>
 					</figure>
 				</div>
 				<p>Vous venez d'effectuer une requête attributaire simple. Il est important de comprendre qu'une requête ne modifie pas les données, elle les sélectionne simplement.</p>
@@ -91,7 +93,7 @@
 			
 			<h3><a class="titre" id="VI13">Désélectionner des entités</a></h3>
 			
-			 <p>Par défaut, une nouvelle requête attributaire "part de zéro", en ne tenant pas compte des entités déjà sélectionnées (pour au contraire tenir compte d'une requête précédente, cf. <a href="http://localhost/tutoqgis/06_03_req_combinees.php#VI31" >partie VI.3.1 : Combiner deux requêtes attributaires</a>).</p>
+			 <p>Par défaut, une nouvelle requête attributaire "part de zéro", en ne tenant pas compte des entités déjà sélectionnées (pour au contraire tenir compte d'une requête précédente, cf. <a href="06_03_req_combinees.php#VI31" >partie VI.3.1 : Combiner deux requêtes attributaires</a>).</p>
 			 <p>Néanmoins, pour plus de clarté, il peut être utile de désélectionner des entités.</p>
 			 
 			 <div class="manip">
@@ -169,13 +171,13 @@
 					<div class="question">
 						<input type="checkbox" id="faq-2">
 						<p><label for="faq-2">Quelle requête utiliser pour sélectionner les communes de plus de 10 000 habitants dont le nom commence par PLOU ?</label></p>
-						<p class="reponse">" "NOM_COM_M" like 'PLOU%' and "POPULATION" > 10000 : cette requête sélectionne 3 communes.</p>
+						<p class="reponse">"NOM_COM_M" like 'PLOU%' and "POPULATION" > 10000 : cette requête sélectionne 3 communes.</p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-3">
 						<p><label for="faq-3">Quelle requête utiliser pour sélectionner les communes de Brest et Plouzané ?</label></p>
 						<p class="reponse">"NOM_COM_M" LIKE 'BREST' OR  "NOM_COM_M" LIKE 'PLOUZANE' : cette requête sélectionne 2 communes. L'opérateur OR doit être utilisé car les communes ne peuvent satisfaire qu'un seul des critères à la fois (une commune ne peut s'appeler Brest et Plouzané en même temps).</p>
-						<p class="reponse">Une autre possibilité, moins lourde, consiste à utiliser l'opérateur <b>IN</b> : "NOM_COMM"  IN ('BREST', 'PLOUZANE')</p>
+						<p class="reponse">Une autre possibilité, moins lourde, consiste à utiliser l'opérateur <b>IN</b> : "NOM_COMM_M"  IN ('BREST', 'PLOUZANE')</p>
 					</div>
 				</div>
 			
