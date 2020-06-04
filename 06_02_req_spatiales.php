@@ -28,7 +28,7 @@
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_Bretagne</a></em>.</p>
-					<p>En vous connectant au <a href="03_02_donnees_flux.php#III23">flux WFS</a> <b>https://geobretagne.fr/geoserver/dreal_b/wfs</b>, ajoutez également au projet la couche <em class="data">Eoliennes en Bretagne</em>.</p>
+					<p>En vous connectant au <a href="03_02_donnees_flux.php#III23">flux WFS</a> <b>https://geobretagne.fr/geoserver/dreal_b/wfs</b>, ajoutez également au projet la couche <em class="data">Eoliennes implantations en Bretagne</em>.</p>
 					<p class="note">Au cas où la connexion au flux échouerait, cette couche est également disponible dans le dossier <a href="donnees/TutoQGIS_06_Requetes.zip">TutoQGIS_06_Requetes</a>.</p>
 					<figure>
                     	<a href="illustrations/tous/6_2_eoliennes_bretagne.png" >
@@ -59,7 +59,7 @@
                         <li class="espace">Vérifiez que <b>Créer une nouvelle sélection</b> soit bien l'option choisie, afin de ne pas partir d'une sélection existante</li>
                         <li class="espace">Cliquez sur <b>Exécuter</b>, vous pouvez ensuite fermer la fenêtre.</li>
                     </ul>
-					<p>Vous devriez obtenir 247 communes sélectionnées :</p>
+					<p>Vous devriez obtenir 249 communes sélectionnées (mais ce nombre peut varier légèrement si vous chargez les données via le flux WFS et qu'elles ont été mises à jour depuis la rédaction de ce tutoriel) :</p>
 					<figure>
                     	<a href="illustrations/tous/6_2_select_localisation_res.png" >
                     		<img src="illustrations/tous/6_2_select_localisation_res.png" alt="Communes sélectionnées" width="450">
@@ -194,6 +194,7 @@
     					<p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">Cours d'eau métropole de plus de 100km</em>.</p>
     					<p>En utilisant différents opérateurs, pouvez-vous dire ?...</p>
     					<p class="note">Entre deux requêtes, n'oubliez pas de tout désélectionner :<img class="iconemid" src="illustrations/tous/6_3_deselection_icone.png" alt="icône de désélection"  height="30"></p>
+    					<p class="note">Attention, le nombre d'entités sélectionnées peut varier légèrement si vous chargez des données via des flux WFS et que ces données ont été mises à jour depuis la rédaction de ce tutoriel.</p>
 						<div class="question">
 							<input type="checkbox" id="faq-2">
 							<p><label for="faq-2">Combien de communes bretonnes sont traversées par des cours d'eau de plus de 100 km&nbsp;?</label></p>
@@ -209,7 +210,7 @@
 						<div class="question">
 							<input type="checkbox" id="faq-4">
 							<p><label for="faq-4">Combien de communes ne contiennent pas d'éoliennes ?</label></p>
-							<p class="reponse">Sélection des communes disjointes des éoliennes : <b>961 communes sélectionnées</b></p>
+							<p class="reponse">Sélection des communes disjointes des éoliennes : <b>959 communes sélectionnées</b></p>
 							<p class="reponse"><img class="icone" src="illustrations/tous/6_2_inverser_selection_icone.png" alt="icône inverser la sélection" >Vous pouvez aussi repartir des communes contenant des éoliennes, et <b>inverser la sélection</b> avec le bouton correspondant en haut de la table attributaire des communes.</p>
 							<p class="reponse"><img src="illustrations/tous/6_2_communes_disjoint_eoliennes.png" alt="Communes sans éoliennes" width="70%"></p>
 						</div>
@@ -218,7 +219,7 @@
 							<p><label for="faq-5">Combien le département du Finistère contient-il d'éoliennes ?</label></p>
 							<p class="reponse">Il faut procéder en 2 étapes : 1/ sélectionner &#171; à la main &#187; le département du Finistère 2/ utiliser l'outil de sélection par localisation pour sélectionner les éoliennes à l'intérieur des départements, en cochant la case <b>Entités sélectionnées uniquement</b>.</p>
 							<p class="reponse"><img src="illustrations/tous/6_2_eoliennes_finistere.png" alt="Eoliennes du Finistère" width="70%"></p>
-							<p class="reponse">Au final, on trouve <b>1830 éoliennes sélectionnées</b>. Notez que cette requête fonctionne alors même que les 2 couches en jeu ont 2 SCR différents ! Ceci n'était pas le cas avec la version 2 de QGIS.</p>
+							<p class="reponse">Au final, on trouve <b>610 éoliennes sélectionnées</b>. Notez que cette requête fonctionne alors même que les 2 couches en jeu ont 2 SCR différents ! Ceci n'était pas le cas avec la version 2 de QGIS.</p>
 						</div>
 					</div>
 						

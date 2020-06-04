@@ -38,11 +38,13 @@
 							<img src="illustrations/tous/6_3_sup10000hab.png" alt="Communes de + de 10 000 habitants sélectionnées" width="400" >
 						</a>
 					</figure>
-					<p>Tapez ensuite la requête suivante, pour sélectionner les communes du Pas-de-Calais...</p>
-					<p> "NOM_DEPT"  =  'MORBIHAN' </p>
-					<p>...Mais cette fois-ci, au lieu de cliquer sur <b>Sélection</b>, sélectionnez dans la liste <b>Filtrer la sélection courante</b> :</p>
+					<p>Tapez ensuite la requête suivante, pour sélectionner les communes du Morbihan...</p>
+					<p> "INSEE_DEP"  =  '56' </p>
+					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection courante</b> :</p>
 					<figure>
-						<img src="illustrations/tous/6_3_selection_liste.png" alt="liste accessible à partir du bouton sélection" width="80%" >
+					    <a href="illustrations/tous/6_3_selection_liste.png" >
+						    <img src="illustrations/tous/6_3_selection_liste.png" alt="liste accessible à partir du bouton sélection" width="90%" >
+						</a>
 					</figure>
 					<p>Ainsi, cette deuxième requête s'appliquera uniquement aux communes déjà sélectionnées : les communes du Morbihan seront sélectionnées parmi les communes de + de 10 000 habitants.</p>
 					<figure>
@@ -52,7 +54,7 @@
 					</figure>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">Pouvez-vous au moyen des mêmes 2 requêtes ("POPULATION" > 10 et "NOM_DEPT"  =  'MORBIHAN') sélectionner les communes de + de 10 000 habitants de Bretagne qui ne sont pas dans le département du Morbihan ?</label></p>
+						<p><label for="faq-1">Pouvez-vous au moyen des mêmes 2 requêtes ("POPULATION" > 10000 et "INSEE_DEP"  =  '56') sélectionner les communes bretonnes de + de 10 000 habitants qui ne sont pas dans le département du Morbihan ?</label></p>
 						<p class="reponse">Utilisez cette fois pour la deuxième requête le bouton <b>Supprimer de la sélection actuelle</b> : les communes du Morbihan seront désélectionnées et il ne restera de sélectionnées que les communes de + de 10 000 des autres départements.</p>
 					</div>
 				</div>
@@ -62,6 +64,7 @@
 			<h3><a class="titre" id="VI32">Combiner deux requêtes spatiales</a></h3>
 			
 				<p>Comment faire maintenant pour combiner deux requêtes spatiales, par exemple pour sélectionner les communes avec éolienne et cours d'eau ?</p>
+				<p>Attention, le nombre d'entités sélectionnées peut varier légèrement par rapport à ceux indiqués ici si vous chargez des données via des flux WFS et que ces données ont été mises à jour depuis la rédaction de ce tutoriel.</p>
 				
 				<div class="manip">
 				    <p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">Cours d'eau métropole de plus de 100km</em>.</p>
@@ -83,7 +86,7 @@
 							<img src="illustrations/tous/6_3_communes_eoliennes.png" alt="communes avec éoliennes sélectionnées" width="90%" >
 						</a>
 					</figure>
-					<p>A ce stade, 247 communes sont sélectionnées.</p>
+					<p>A ce stade, 249 communes sont sélectionnées.</p>
 					<p>Il ne reste plus ensuite qu'à sélectionner les communes intersectant des cours d'eau <b>à partir de cette sélection</b> :</p>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_eoliennes_coursdeau_fenetre.png" >

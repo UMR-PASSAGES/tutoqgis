@@ -78,7 +78,7 @@
                         	</a>
                         </figure>
 				        <p>Dans l'arborescence située dans la partie gauche de la fenêtre, allez dans <b>Couches virtuelle</b> &#8594; <b>Couches du projet</b> : vous devriez voir vos 3 couches chargées dans QGIS.</p>
-				        <p>Cliquez sur une des couches et allez dans l'onglet <b>Info</b>, dans la partie droite de la fenêtre. Vous pouvez y lire des informations générales sur la couche, un peu comme dans la fenêtre des propriétés, telles que le nombre d'entités, le SCR, la liste des champs.</p>
+				        <p>Cliquez sur une des couches et allez dans l'onglet <b>Info</b>, dans la partie droite de la fenêtre. Vous pouvez y lire des informations générales sur la couche, un peu comme dans la fenêtre des propriétés, telles que le nombre d'entités, le SCR ou la liste des champs.</p>
 				        <p>Les onglets <b>Table</b> et <b>Aperçu</b> vous donne respectivement un aperçu des données attributaires et spatiales.</p>
 				        <p><img class="icone" src="illustrations/tous/6_4_fenetre_sql_icone.png" alt="icône de la fenêtre SQL" >Cliquez ensuite sur l'icône <b>Fenêtre SQL</b>, ou bien menu <b>Base de données</b> &#8594; <b>Fenêtre SQL</b>.</p>
 				        <figure>
@@ -88,7 +88,7 @@
                         </figure>
 				        <p>Un quatrième onglet s'ajoute, permettant d'écrire une requête SQL (il est possible d'ouvrir ainsi plusieurs onglets de requête SQL).</p>
 				        <p>Dans la moitié supérieure de cet onglet, tapez la requête suivante (cette requête sera explicitée en détail un peu plus loin) :</p>
-				        <p class="code">select * from depts_Bretagne_wgs84 where NOM_DEP = 'MORBIHAN'</p>
+				        <p class="code">select * from depts_bretagne_wgs84 where NOM_DEP = 'MORBIHAN'</p>
 				        <p class="note">Vous pouvez utiliser ou non des retours à la ligne, le résultat sera le même.</p>
 				        <p>et cliquez sur le bouton <b>Exécuter</b> : le résultat de la requête s'affiche dans la moitié inférieure de la fenêtre.</p>
 				    </div>
@@ -106,7 +106,7 @@
 				            <ul>
 				                <li>Vérifiez que la colonne de géométrie <b>geometry</b> soit bien sélectionnée</li>
 				                <li>Tapez éventuellement un nom pour la nouvelle couche (par défaut, elle se nommera QueryLayer)</li>
-				                <li>Et cliquez sur le bouton <b>Charger !</b> pour voir le résultat dans QGIS :</li>
+				                <li>Et cliquez sur le bouton <b>Charger</b> pour voir le résultat dans QGIS :</li>
 				            </ul>
 				        </p>
 				        <figure>
@@ -121,15 +121,15 @@
 			<h3><a class="titre" id="VI43">Tirer parti du SQL par rapport à une requête attributaire ou spatiale</a></h3>
 			
 			    <p>La requête utilisée était :</p>
-			    <p class="code">select * from departements where "NOM_DEPT" = 'NORD'</p>
+			    <p class="code">select * <br>from depts_bretagne_wgs84<br>where "NOM_DEPT" = 'NORD'</p>
 			    <p>A quoi correspond cette requête ? Regardons-la ligne par ligne :</p>
 		        <p class="code">select *</p>
 		        <p>signifie que nous allons sélectionner (<b>select</b>) toutes (la mention <b>*</b>) les colonnes de la table attributaire, ainsi que la géométrie, qui est considérée comme une colonne nommée geometry, comme vous pouvez le vérifier dans l'onglet <b>Info</b>.</p>
-		        <p class="code">from departements</p>
+		        <p class="code">from depts_bretagne_wgs84</p>
 		        <p>signifie que nous allons sélectionner les colonnes de la couche <em class="data">departements</em>.</p>
-		        <p class="code">where "NOM_DEPT" = 'NORD'</p>
-		        <p>applique un critère à la requête : seules seront sélectionnées les lignes répondant à ce critère, c'est-à-dire dont la valeur pour le champ NOM_DEPT est égale à &#171;&nbsp;Nord&nbsp;&#187;.</p>
-			    <p>Comparons avec <a href="06_01_req_attrib.php#VI11">la même requête dans la fenêtre de requête attributaire</a>, où seul le critère <b>"NOM_DEPT" = 'NORD'</b> est nécessaire, le début de la requête étant &#171;&nbsp;sous-entendu&nbsp;&#187;.</p>
+		        <p class="code">where "NOM_DEPT" = 'MORBIHAN'</p>
+		        <p>applique un critère à la requête : seules seront sélectionnées les lignes répondant à ce critère, c'est-à-dire dont la valeur pour le champ NOM_DEPT est égale à &#171;&nbsp;MORBIHAN&nbsp;&#187;.</p>
+			    <p>Comparons avec <a href="06_01_req_attrib.php#VI11">la même requête dans la fenêtre de requête attributaire</a>, où seul le critère <b>"NOM_DEPT" = 'MORBIHAN'</b> est nécessaire, le début de la requête étant &#171;&nbsp;sous-entendu&nbsp;&#187;.</p>
 			    <p>Par rapport à une requête attributaire, une requête SQL nous offre donc la possibilité :
 			        <ul>
 			            <li>de choisir les colonnes qui nous intéressent</li>
@@ -145,8 +145,8 @@
                         		<img src="illustrations/tous/6_4_colonnes.png" alt="Choix des colonnes dans la requête SQL" width="600">
                         	</a>
                         </figure>
-			             <p>Toujours dans l'onglet <b>Requête</b> du gestionnaire de bases données, remplacez l'étoile par <b>CODE_DEPT, NOM_DEPT, geometry</b> :</p>
-			             <p class="code">select INSEE_DEP, NOM_DEP, geometry from depts_Bretagne_wgs84 where NOM_DEP = 'MORBIHAN'</p>
+			             <p>Toujours dans l'onglet <b>Requête</b> du gestionnaire de bases données, remplacez l'étoile par <b>INSEE_DEP, geometry</b> :</p>
+			             <p class="code">select INSEE_DEP, NOM_DEP, geometry from depts_bretagne_wgs84 where NOM_DEP = 'MORBIHAN'</p>
 			             <p>Et cliquez sur le bouton <b>Exécuter</b> : seules les colonnes voulues sont renvoyées par la requête. Notez que vous pouvez choisir l'ordre des colonnes.</p>
 			         </div>
 			         <p>Comme précédemment, vous pouvez si vous le désirez charger ce résultat dans QGIS en tant que nouvelle couche.</p>
@@ -185,7 +185,7 @@
 			         <p>Pour rappel, croiser deux couches est plus facile si elles sont dans le même SCR (même s'il est possible de modifier le SCR en SQL directement dans la requête&nbsp;!).</p>
 			         <div class="manip">
 			             <p>Nous pouvons déjà écrire les deux premières lignes de notre requête, par exemple :</p>
-			             <p class="code">select c.INSEE_COM, c.NOM_COMM, c.geometry from from communes_Bretagne as c, eoliennes_bretagne as e</p>
+			             <p class="code">select c.INSEE_COM, c.NOM_COM, c.geometry from communes_Bretagne as c, eoliennes_bretagne as e</p>
 			             <p>mais il nous manque le critère spatial indiquant que les communes doivent contenir au moins une éolienne.</p>
 			             <p>Une recherche dans la <a class="ext" target="_blank" href="http://www.gaia-gis.it/spatialite-2.4.0/spatialite-sql-2.4.html" >liste des fonctions SpatiaLite</a> et plus spécifiquement dans la partie consacrée aux <a class="ext" target="_blank" href="http://www.gaia-gis.it/spatialite-2.4.0/spatialite-sql-2.4.html#p12">fonctions testant les relations spatiales</a> nous permet de trouver l'opérateur <b>Contains</b> et de compléter notre requête :</p>
 			             <p class="code">where Contains(c.geometry, e.geometry)</p>
@@ -246,7 +246,7 @@
                         <li class="espace"><b>Requête :</b> la dernière requête tapée dans le gestionnaire de bases de données s'affiche automatiquement. Si ce n'est pas le cas, tapez une requête de votre choix</li>
                         <li class="espace"><b>Géométrie :</b> Autodétecter laisse au logiciel le soin de déterminer quelle est la colonne de géométrie. Il est également possible de spécifier <b>Aucune géométrie</b> si la couche n'en contient pas, ou bien de spécifier manuellement la colonne de géométrie</li>
                         <li class="espace"><b>Test :</b> ce bouton permet de détecter les éventuelles erreurs présentes dans la requête</li>
-                        <li class="espace"><b>OK :</b> exécute la requête et ajoute le résultat dans QGIS.</li>
+                        <li class="espace"><b>Ajouter :</b> exécute la requête et ajoute le résultat dans QGIS.</li>
                     </ul>
                 </p>
                 <p>Vous devriez obtenir une couche temporaire similaire à celle créée précédemment.</p>
