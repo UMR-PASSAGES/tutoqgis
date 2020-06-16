@@ -36,10 +36,10 @@
 			<h3><a class="titre" id="VII21">Comment fonctionne la calculatrice de champ ?</a></h3>
 			
 				<div class="manip">
-					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne</a></em>. Ouvrez sa table attributaire.</p>
+					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>. Ouvrez sa table attributaire.</p>
 					<p>Passez en <a href="05_02_points.php#V21">mode édition</a>. Cliquez sur l'icône <b>Ouvrir la calculatrice de champs</b> parmi les icônes de la table attributaire :</p>
 					<figure>
-						<img src="illustrations/tous/7_2_BO_table_calc.png" alt="barre d'outils de la table attributaire, avec icône de la calculatrice de champs entourée en rouge" width="450" >
+						<img src="illustrations/tous/7_2_BO_table_calc.png" alt="barre d'outils de la table attributaire, avec icône de la calculatrice de champs entourée en rouge" width="600" >
 					</figure>
 				</div>
 				
@@ -81,10 +81,13 @@
 							<li class="espace">cliquez sur <b>OK</b></li>
 						</ul>
 					</div>
-					<p class="note">Avez-vous noté qu'il est possible de créer des <b>champs virtuels</b> ? Ces champs ne sont pas permanents et ne seront pas sauvegardés (il est donc possible d'en créer sans passer en mode édition). Si un champ virtuel est utilisé pour calculer par exemple une surface, et si les polygones sont modifiés, la surface sera automatiquement mise à jour. </p>
+					<p class="note">Avez-vous noté qu'il est possible de créer des <b>champs virtuels</b> (case à cocher en haut à gauche sous &#171;&nbsp;créer un nouveau champ&#187;&nbsp;) ? Ces champs ne sont pas permanents et ne seront pas sauvegardés (il est donc possible d'en créer sans passer en mode édition).</p>
+					<p class="note">Si un champ virtuel est utilisé pour calculer par exemple une surface, et si les polygones sont modifiés, <b>la surface sera automatiquement mise à jour</b>. </p>
 						
 				<h4><a class="titre" id="VII22b">Vérification</a></h4>
-						
+					
+					<p>Parfois, il peut arriver de se mélanger dans les unités... Il peut être utile de vérifier les calculs de géométrie. Nous allons voir 2 méthodes pour le faire; cela vous indique aussi comment connaître par exemple la surface d'un polygone donné sans forcément créer et calculer un champ.</p>
+					<p>La première méthode consiste à <b>mesurer &#171;&nbsp;à la main&nbsp;&#187; la surface d'une commune et à comparer le résultat avec celui du champ SURF_KM2</b>.</p>
 					<div class="manip">
 						<p><img class="iconemid" src="illustrations/tous/7_2_mesure_icone.png" alt="icône mesurer une aire" >Vous pouvez vérifier votre calcul au moyen de l'outil <b>Mesurer une aire</b> : </p>
 						<figure>
@@ -100,12 +103,28 @@
 						</figure>
 						<p>Les deux aires devraient être sensiblement égales.</p>
 					</div>
+					
+					<p>La deuxième méthode utilise l'outil <b>Identifier des entités</b>.</p>
+					
+					<div class="manip">
+					   <p><img class="iconemid" src="illustrations/tous/7_2_identifier_icone.png" alt="icône Identifier des entités" >Cliquer sur l'icône <b>Identifier des entités</b> puis sur une commune.</p>
+					   <p>Cette commune prend une transparence rouge avec une bordure rouge, et les informations relatives à cette entité apparaissent dans le panneau <b>Résultats de l'identification</b>. On peut y lire les données de la table attributaire pour cette commune, mais également des informations <b>dérivées</b> liées à sa géométrie telles que son périmètre, sa surface...</p>
+					   <figure>
+							<a href="illustrations/tous/7_2_verif_surf_identifier.png" >
+								<img src="illustrations/tous/7_2_verif_surf_identifier.png" alt="Vérification de la surface au moyen de l'outil d'identification" width="100%" >
+							</a>
+						</figure>
+					   <p>Comparez la surface du champ SURF_KM2 et la surface indiquée dans les résultats de l'identification (rubrique Dérivé). Les deux aires devraient être sensiblement égales (attention à convertir les unités).</p>
+					</div>
+					
+					<p>Vous remarquerez qu'on peut lire 2 surfaces dans les résultats de l'identification : <b>la surface cartésienne, et la surface basée sur une ellipsoïde</b>. La première est basée sur des distances en ligne droite, qui ne prennent pas en compte la courbure de la Terre. La deuxième prend en compte la courbure de la Terre en se basant sur l'ellipsoïde indiquée.</p>
+					<p>Bien sûr, pour de faibles distances, les 2 résultats seront très proches.</p>
 									
 				
 			
 			<h3><a class="titre" id="VII23">Quelques exemples supplémentaires de calculs</a></h3>
 			
-				<p>La calculatrice de champs offre beaucoup de fonctions que nous ne passerons pas toutes en revue ; nous verrons simplement quelques exemples pour vous donner un aperçu des possibilités.</p>
+				<p>La calculatrice de champs offre beaucoup de fonctions que nous ne passerons pas toutes en revue&nbsp;; nous verrons simplement quelques exemples pour vous donner un aperçu des possibilités.</p>
 
 				<h4><a class="titre" id="VII23a">Opérations mathématiques : calcul de densité</a></h4>
 				

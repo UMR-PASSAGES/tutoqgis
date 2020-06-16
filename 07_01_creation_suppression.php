@@ -35,7 +35,7 @@
 			<h3><a class="titre" id="VII11">Quels sont les champs présents dans une table ?</a></h3>
 			
 				<div class="manip">
-					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne</a></em>.</p>
+					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>.</p>
 					<p>Pour voir les champs de la table attributaire de cette couche, vous pouvez bien sûr ouvrir la table attributaire, mais vous pouvez également ouvrir les propriétés de la couche, rubrique <b>Champs source</b> :</p>
 					<figure>
 						<a href="illustrations/tous/7_1_proprietes_champs.png" >
@@ -55,9 +55,9 @@
     				
     				<div class="manip">
     					<p>Ouvrez la table attributaire de la couche <em class="data">communes_Bretagne_calcul</em>. <a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
-    					<p>Cliquez sur l'icône <b>Nouvelle colonne</b> en haut de la table attributaire :</p>
+    					<p>Cliquez sur l'icône <b>Ajouter un champ</b> en haut de la table attributaire :</p>
     					<figure>
-    						<img src="illustrations/tous/7_1_BO_table_ajout.png" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" width="440" >
+    						<img src="illustrations/tous/7_1_BO_table_ajout.png" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" width="600" >
     					</figure>
     					<p>La fenêtre suivante s'ouvre :</p>
     					<figure>
@@ -94,7 +94,7 @@
     					<p>Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
     					<p>Cliquez sur l'icône <b>Supprimer la colonne</b> en haut de la table attributaire :</p>
     					<figure>
-    						<img src="illustrations/tous/7_1_BO_table_suppression.png" alt="barre d'outils de la table attributaire, icône de suppression de champ entourée en rouge" width="440" >
+    						<img src="illustrations/tous/7_1_BO_table_suppression.png" alt="barre d'outils de la table attributaire, icône de suppression de champ entourée en rouge" width="600" >
     					</figure>
     					<p>La fenêtre suivante apparaît :</p>
     					<figure>
@@ -135,12 +135,12 @@
     					 </figure>
     					 <ul>
     					   <li class="espace">Vérifiez que la couche <em class="data">communes_Bretagne_calcul</em> soit bien sélectionnée en entrée</li>
-    					   <li class="espace">Cliquez sur le champ <b>CODE_DEPT</b> puis sur le bouton de flèche vers le haut à droite de la liste des champs, pour le faire remonter en deuxième position</li>
-    					   <li class="espace">Procédez de même pour que le champ <b>CODE_REG</b> soit en troisième position</li>
+    					   <li class="espace">Cliquez sur le champ <b>CODE_DEPT</b> puis sur le bouton de flèche vers le haut à droite de la liste des champs, pour le faire remonter en cinquième position</li>
+    					   <li class="espace">Procédez de même pour que le champ <b>CODE_REG</b> soit en sixième position</li>
     					   <li class="espace">Laissez <b>Créer une couche temporaire</b> afin de créer en sortie une couche temporaire</li>
     					   <li class="espace">Cliquez enfin sur <b>Exécuter</b> et fermez la fenêtre de l'outil une fois le traitement fini.</li>
     					 </ul>
-    					 <p>Ouvrez la table attributaire de la couche temporaire <b>Couche refactorisé</b> : l'ordre des champs a bien été modifié.
+    					 <p>Ouvrez la table attributaire de la couche temporaire <b>Couche refactorisée</b> : l'ordre des champs a bien été modifié.
 			         </div>
 			         
 			         <p>En double-cliquant dans la case <b>Nom du champ</b> d'un champ, vous pouvez le <b>renommer</b>. De même, vous pouvez changer son <b>type</b>, sa <b>longueur</b> et <b>précision</b>, et <b>recalculer ses valeurs</b> au moyen d'une expression (comme avec la <a href="07_02_calculer.php">calculatrice de champ</a>).</p>
