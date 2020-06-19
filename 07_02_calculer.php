@@ -118,7 +118,7 @@
 					</div>
 					
 					<p>Vous remarquerez qu'on peut lire 2 surfaces dans les résultats de l'identification : <b>la surface cartésienne, et la surface basée sur une ellipsoïde</b>. La première est basée sur des distances en ligne droite, qui ne prennent pas en compte la courbure de la Terre. La deuxième prend en compte la courbure de la Terre en se basant sur l'ellipsoïde indiquée.</p>
-					<p>Bien sûr, pour de faibles distances, les 2 résultats seront très proches.</p>
+					<p>Pour de faibles distances, les 2 résultats seront donc très proches, la différence augmentant avec la distance.</p>
 									
 				
 			
@@ -136,7 +136,7 @@
 					</div>
 					
 					<div class="manip">
-						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche <em class="data">communes_Bretagne</em>. Ouvrez la calculatrice de champs :</p>
+						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche  <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>. Ouvrez la calculatrice de champs :</p>
 						<figure>
 							<a href="illustrations/tous/7_2_calc_densite.png" >
 								<img src="illustrations/tous/7_2_calc_densite.png" alt="Fenêtre de la calculatrice de champ, calcul de la densité" width="600" >
@@ -146,7 +146,7 @@
 							<li class="espace">Choisissez l'option <b>Créer un nouveau champ</b>, nommez-le <b>DENSITE</b>, type <b>Nombre décimal</b></li>
 							<li class="espace">Dans la liste des <b>fonctions</b>, rubrique <b>Champs et valeurs</b>, double-cliquez sur <b>POPULATION</b>, le diviseur <b>/</b> puis double-cliquez sur le champ <b>SURF_KM2</b></li>
 							<li class="espace">Au final, l'expression est <b> "POPULATION" / "SURF_KM2" </b></li>
-							<li class="espace">Cliquez sur <b>OK</b> : le champ densité est ajouté et calculé :</li>
+							<li class="espace">Cliquez sur <b>OK</b> : le champ densité est ajouté et calculé, en nombre d'habitants par km&#178; :</li>
 						</ul>
 						<figure>
 						  <a href="illustrations/tous/7_2_densite_table.png" >
@@ -157,7 +157,7 @@
 					
 				<h4><a class="titre" id="VII23b">Opérations sur du texte : extraction</a></h4>
 				
-					<p>La couche <em class="data">communesBretagne</em> comporte une colonne INSEE_COM avec le code INSEE des communes. Ce code INSEE est constitué du code du département (2 chiffres pour la Bretagne) et du code commune (3 chiffres).</p>
+					<p>La couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em> comporte une colonne INSEE_COM avec le code INSEE des communes. Ce code INSEE est constitué du code du département (2 chiffres pour la Bretagne) et du code commune (3 chiffres).</p>
 					<p>Le but est ici d'<b>extraire le code commune</b> du code INSEE, donc les 3 derniers chiffres de ce dernier. Par exemple, la commune de Dirinon a comme code INSEE 29045 : le nouveau champ CODE_COM aura la valeur 045 pour cette commune.</p>
 				
 					<div class="manip">

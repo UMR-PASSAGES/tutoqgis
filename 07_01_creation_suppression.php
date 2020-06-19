@@ -18,7 +18,8 @@
 					<li><a href="#VII12">Créer et supprimer un champ à partir de la table attributaire</a>
 					   <ul class="listesoustitres">
 							<li><a href="#VII12a">Créer un champ</a></li>
-							<li><a href="#VII12b">Supprimer un champ existant</a></li>
+							<li><a href="#VII12b">Modifier les valeurs d'un champ manuellement</a></li>
+							<li><a href="#VII12c">Supprimer un champ existant</a></li>
 						</ul>
 					</li>
 					<li><a href="#VII13">Pour aller plus loin : refactoriser les champs</a>
@@ -51,7 +52,7 @@
 			
 			    <h4><a class="titre" id="VII12a">Créer un champ</a></h4>
 			
-    				<p>Nous allons ajouter deux champs à la couche <em class="data">communes_Bretagne_calcul</em>, <b>CODE_DEPT</b> et <b>CODE_REG</b>, destinés à contenir par la suite le code de département et le code de région.</p>
+    				<p>Nous allons ajouter un champs à la couche <em class="data">communes_Bretagne_calcul</em>, nommé <b>NOM_DEPT</b>, destiné à contenir le nom du département de la commune.</p>
     				
     				<div class="manip">
     					<p>Ouvrez la table attributaire de la couche <em class="data">communes_Bretagne_calcul</em>. <a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
@@ -66,10 +67,10 @@
     						</a>
     					</figure>
     					<ul>
-    						<li class="espace"><b>Nom :</b> Tapez <b>CODE_DEPT</b></li>
+    						<li class="espace"><b>Nom :</b> Tapez <b>NOM_DEPT</b></li>
     						<li class="espace"><b>Commentaire :</b> ce champ peut contenir un commentaire, laissez-le vide</li>
-    						<li class="espace"><b>Type :</b> ce champ peut contenir les valeurs suivantes : texte, nombre entier, nombre décimal et date. Choisissez texte (on pourrait aussi choisir le type nombre entier, mais texte est souvent préférable pour les identifiants)</li>
-    						<li class="espace"><b>Longueur :</b> Dans le cas d'un champ type texte, cette valeur représente le nombre maximum de caractères que pourra contenir le champ. Tapez 3, pour prévoir le cas des départements d'outre-mer.</li>
+    						<li class="espace"><b>Type :</b> ce champ peut contenir les valeurs suivantes : texte, nombre entier, nombre décimal et date. Choisissez texte puisque nous voulons y mettre les noms des départements</li>
+    						<li class="espace"><b>Longueur :</b> Dans le cas d'un champ type texte, cette valeur représente le nombre maximum de caractères que pourra contenir le champ. Tapez 50, ce qui devrait suffire.</li>
     					</ul>
     					<p>Cliquez sur <b>OK</b> ; le champ est ajouté à la table, rempli pour l'instant de valeurs nulles.</p>
     					<figure>
@@ -77,16 +78,19 @@
     							<img src="illustrations/tous/7_1_table_nouveau_champ.png" alt="table avec le champ CODE_DEPT vide" width="600" >
     						</a>
     					</figure>
-    					<p>Procédez de la même manière pour ajouter un champ <b>CODE_REG</b> :</p>
-    					<figure>
-    						<a href="illustrations/tous/7_1_ajout_fenetre_2.png" >
-    							<img src="illustrations/tous/7_1_ajout_fenetre_2.png" alt="fenêtre de création de colonne" width="390" >
-    						</a>
-    					</figure>
-    					<p>Quittez le mode édition en enregistrant les modifications. Ces champs seront remplis dans la partie <a href="07_02_calculer.php">Calcul de champ</a>.</p>
+    					<p>Quittez le mode édition en enregistrant les modifications.</p>
     				</div>
 			
-			     <h4><a class="titre" id="VII12b">Supprimer un champ existant</a></h4>
+			     <h4><a class="titre" id="VII12b">Modifier les valeurs d'un champ manuellement</a></h4>
+			     
+			         <p>Il est maintenant possible de taper du texte pour remplir le champ NOM_DEPT que nous venons de créer.</p>
+			         <div class="manip">
+			             <p>Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
+			             <p>Ouvrez sa table attributaire si ce n'est pas déjà fait.</p>
+			         </div>
+			     
+			     
+			     <h4><a class="titre" id="VII12c">Supprimer un champ existant</a></h4>
 			
     				<p>Nous allons supprimer le champ INSEE_COM (ne vous inquiétez pas, nous recréerons un champ code INSEE à partir du code de département et de commune, dans la partie <a href="07_02_calculer.php">Calcul de champ</a>).</p>
     				
