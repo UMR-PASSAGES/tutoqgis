@@ -19,7 +19,7 @@
 				<ul>
 					<li>Exécution d'un outil "par lot"</li>
 					<li>Modeleur de traitement (graphical modeler)</li>
-					<li>script Python</li>
+					<li>Script Python</li>
 				</ul>
 			<p>Les données pour cette partie ainsi qu'une version PDF du tutoriel sont accessibles dans la rubrique <a href="telechargement.php"> téléchargement</a>.</p>
 			<br>

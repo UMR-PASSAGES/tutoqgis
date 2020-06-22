@@ -22,12 +22,7 @@
 							<li><a href="#VII12c">Supprimer un champ existant</a></li>
 						</ul>
 					</li>
-					<li><a href="#VII13">Pour aller plus loin : refactoriser les champs</a>
-					   <ul class="listesoustitres">
-							<li><a href="#VII13a">Accéder à l'outil de refactorisation de champs</a></li>
-							<li><a href="#VII13b">Modifier l'ordre des champs</a></li>
-						</ul>
-					</li>
+					<li><a href="#VII13">Pour aller plus loin : refactoriser les champs</a></li>
 				</ul>
 				<br>
 				
@@ -85,14 +80,33 @@
 			     
 			         <p>Il est maintenant possible de taper du texte pour remplir le champ NOM_DEPT que nous venons de créer.</p>
 			         <div class="manip">
-			             <p>Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
+			             <p><img class="icone" src="illustrations/tous/7_1_edition_icone.png" alt="icône passer en mode édition" >Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
 			             <p>Ouvrez sa table attributaire si ce n'est pas déjà fait.</p>
+			             <p>Double-cliquez dans une case du champ <b>NOM_DEPT</b> :</p>
+			             <figure>
+    						<a href="illustrations/tous/7_1_table_modifier.png" >
+    							<img src="illustrations/tous/7_1_table_modifier.png" alt="double clic dans une case du champ CODE_DEPT vide" width="90%" >
+    						</a>
+    					 </figure>
+    					 <p>Et tapez-y la valeur correspondante (en vous aidant du champ INSEE_DEP qui contient le <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais#Liste_des_d%C3%A9partements">code du département</a>), terminez en appuyant sur la touche entrée&nbsp;:</p>
+    					 <figure>
+    						<a href="illustrations/tous/7_1_table_modifier_ok.png" >
+    							<img src="illustrations/tous/7_1_table_modifier_ok.png" alt="double clic dans une case du champ CODE_DEPT vide" width="90%" >
+    						</a>
+    					 </figure>
+    					 <p>Vous pouvez tapez ainsi quelques valeurs.</p>
 			         </div>
+			         
+			         <p>Vous remarquerez qu'il serait très long de remplir ainsi toutes les lignes de la table. Nous verrons dans le <a href="07_02_calculer.php#VII23c">chapitre suivant</a> comment remplir automatiquement un champ en fonction des valeurs d'un autre (ici, remplir le nom du département en fonction du code du département).</p>
+			         
+			         <div class="manip">
+    					 <p>Quittez le mode édition en enregistrant les modifications.</p>
+    			     </div>
 			     
 			     
 			     <h4><a class="titre" id="VII12c">Supprimer un champ existant</a></h4>
 			
-    				<p>Nous allons supprimer le champ INSEE_COM (ne vous inquiétez pas, nous recréerons un champ code INSEE à partir du code de département et de commune, dans la partie <a href="07_02_calculer.php">Calcul de champ</a>).</p>
+    				<p>Nous allons <b>supprimer le champ NOM_DEPT</b> que vous venez de créer (nous créerons un autre champ NOM_DEPT dans le <a href="07_02_calculer.php">chapitre suivant</a> que nous remplirons automatiquement).</p>
     				
     				<div class="manip">
     					<p>Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
@@ -106,7 +120,7 @@
     							<img src="illustrations/tous/7_1_suppression_fenetre.png" alt="fenêtre de suppression de colonne" width="240" >
     						</a>
     					</figure>
-    					<p>Sélectionnez le champ <b>INSEE_COM</b> puis cliquez sur <b>OK</b>.</p>
+    					<p>Sélectionnez le champ <b>NOM_DEPT</b> puis cliquez sur <b>OK</b>.</p>
     					<p class="note">Notez qu'il est possible de sélectionner plusieurs champs dans cette fenêtre.</p>
     					<p>Le champ est supprimé. Quittez le mode édition en enregistrant les modifications.</p>
     				</div>
@@ -115,40 +129,27 @@
 			    
 			       <p>Sous le nom un peu barbare de &#171; refactoriser &#187; se cache la possibilité de <b>renommer les champs</b>, ainsi que d'en <b>modifier l'ordre et le type</b> (texte, nombre...). Cet outil offre également la possibilité de créer ou supprimer des champs.</p>
 			       <p>Notez que la couche en entrée ne sera pas directement modifiée, une nouvelle couche sera créée.</p>
+			       <p>Nous n'utiliserons pas cet outil, mais vous trouverez ici une brève description de son fonctionnement.</p>
 			       
-			       <h4><a class="titre" id="VII13a">Accéder à l'outil de refactorisation de champs</a></h4>
 			       
-			         <p>Cet outil est disponible dans la <b>boîte à outils Traitement</b>.</p>
-			         
-			         <div class="manip">
-			             <p>Si vous ne voyez pas cette boîte à outils : <b>menu Traitement &#8594; Boîte à outils</b>, ou bien <b>menu Vue &#8594; Panneaux &#8594; Boîte à outils de traitements</b>.</p>
-			             <p>Dans la boîte à outils : <b>Table vecteur &#8594; Refactoriser les champs</b> :</p>
-			             <figure>
-    						<a href="illustrations/tous/7_1_outil_refactoriser.png" >
-    							<img src="illustrations/tous/7_1_outil_refactoriser.png" alt="Outil refactoriser dans la boîte à outils Traitement" width="350" >
-    						</a>
-    					 </figure>
-    					 
- 			       <h4><a class="titre" id="VII13b">Modifier l'ordre des champs</a></h4>
+    		       <p>Pour accéder à l'outil : <b>boîte à outils Traitement  &#8594; Table vecteur &#8594; Refactoriser les champs</b>.</p>
+		           <figure>
+    				   <a href="illustrations/tous/7_1_outil_refactoriser.png" >
+    				       <img src="illustrations/tous/7_1_outil_refactoriser.png" alt="Outil refactoriser dans la boîte à outils Traitement" width="350" >
+    				   </a>
+				   </figure>
  			          			    
-    					 <p>Double-cliquez sur cet outil. Nous allons simplement <b>modifier l'ordre des champs</b> pour remonter CODE_DEPT et CODE_REG créés précédemment.</p>
-    					 <figure>
-    						<a href="illustrations/tous/7_1_refactoriser_fenetre.png" >
-    							<img src="illustrations/tous/7_1_refactoriser_fenetre.png" alt="Fenêtre de l'outil refactoriser" width="600" >
-    						</a>
-    					 </figure>
-    					 <ul>
-    					   <li class="espace">Vérifiez que la couche <em class="data">communes_Bretagne_calcul</em> soit bien sélectionnée en entrée</li>
-    					   <li class="espace">Cliquez sur le champ <b>CODE_DEPT</b> puis sur le bouton de flèche vers le haut à droite de la liste des champs, pour le faire remonter en cinquième position</li>
-    					   <li class="espace">Procédez de même pour que le champ <b>CODE_REG</b> soit en sixième position</li>
-    					   <li class="espace">Laissez <b>Créer une couche temporaire</b> afin de créer en sortie une couche temporaire</li>
-    					   <li class="espace">Cliquez enfin sur <b>Exécuter</b> et fermez la fenêtre de l'outil une fois le traitement fini.</li>
-    					 </ul>
-    					 <p>Ouvrez la table attributaire de la couche temporaire <b>Couche refactorisée</b> : l'ordre des champs a bien été modifié.
-			         </div>
+				   <figure>
+				    <a href="illustrations/tous/7_1_refactoriser_fenetre.png" >
+					 <img src="illustrations/tous/7_1_refactoriser_fenetre.png" alt="Fenêtre de l'outil refactoriser" width="100%" >
+					</a>
+				   </figure>
+    					 
+    				 <p>Pour <b>modifier l'ordre des champs</b>, sélectionnez un champ en cliquant sur le numéro de sa ligne, puis utilisez les boutons flèche haut et bas à droite de la fenêtre.
 			         
-			         <p>En double-cliquant dans la case <b>Nom du champ</b> d'un champ, vous pouvez le <b>renommer</b>. De même, vous pouvez changer son <b>type</b>, sa <b>longueur</b> et <b>précision</b>, et <b>recalculer ses valeurs</b> au moyen d'une expression (comme avec la <a href="07_02_calculer.php">calculatrice de champ</a>).</p>
-			         <p>Les boutons à droite de la liste de champ permettent, de haut en bas : l'<b>ajout</b> et la <b>suppression</b> d'un champ, <b>déplacer</b> un champ vers le haut ou vers le bas, et <b>annuler toutes les modifications en cours</b>.</p>
+			         <p>Pour <b>renommer un champ</b>, double-cliquez sur son nom (colonne Nom du champ) et tapez un nouveau nom. De même, vous pouvez changer son <b>type</b>, sa <b>longueur</b> et <b>précision</b>, et <b>recalculer ses valeurs</b> au moyen d'une expression (comme avec la <a href="07_02_calculer.php">calculatrice de champ</a>).</p>
+			         
+			         <p>Il est également possible <b>d'ajouter et supprimer un champ</b>, ainsi que <b>d'annuler toutes les modifications en cours</b>.</p>
 			         
 			         <p>Dans le chapitre suivant, nous verrons comment calculer automatiquement les valeurs d'un champ au moyen d'une formule, à l'aide de la calculatrice de champ&nbsp;!</p>
 				

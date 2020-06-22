@@ -242,7 +242,7 @@
 			
 			<h3><a class="titre" id="IX24">Exemples d'opérations sur des données d'altitude</a></h3>
 			
-			    <p>Il existe un certain nombre d'opérations proposées par les logiciels SIG sur les rasters d'altitude, par exemple la création de courbes de niveaux, d'ombrage, de pente... NOus verrons ici 2 exemples, sur les courbes de niveau et le calcul de pente.</p>
+			    <p>Il existe un certain nombre d'opérations proposées par les logiciels SIG sur les rasters d'altitude, par exemple la création de courbes de niveaux, d'ombrage, de pente... Nous verrons ici 2 exemples, sur les courbes de niveau et le calcul de pente.</p>
 			
 			    <h4><a class="titre" id="IX24a">Création de courbes de niveau</a></h4>
 				

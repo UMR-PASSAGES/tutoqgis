@@ -251,7 +251,10 @@
 							<p>Pour un meilleur rendu, vous pouvez supprimer les bordures des communes en cliquant sur <b>Modifier...</b> puis sur <b>Remplissage simple &#8594; Style de trait &#8594; Pas de ligne</b>.</p>
 							<figure>
 								<a href="illustrations/tous/10_01_enlever_bordure.png" >
-									<img src="illustrations/tous/10_01_enlever_bordure.png" alt="Cliquer sur Modifier pour enlever les bordures" width="600">
+									<img src="illustrations/tous/10_01_enlever_bordure.png" alt="Cliquer sur Modifier pour enlever les bordures" width="70%">
+								</a>
+								<a href="illustrations/tous/10_01_enlever_bordure_02.png" >
+									<img src="illustrations/tous/10_01_enlever_bordure_02.png" alt="Cliquer sur Modifier pour enlever les bordures" width="60%">
 								</a>
 							</figure>
 							<p class="note">Toutefois, même ainsi, les limites restent un peu visibles. Pour ne vraiment plus les voir, il faut rendre visibles ces limites avec une épaisseur fine et leur donner la même couleur que la couleur de remplissage.</p>

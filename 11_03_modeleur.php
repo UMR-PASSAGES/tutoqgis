@@ -153,7 +153,7 @@
 							<ul>
 								<li>Description : <b>Reprojeter une couche</b></li>
 								<li>Couche en entrée : <b>'Découpé' créé par l'algorithme 'Couper'</b></li>
-								<li>Target CRS : laissez EPSG:4326, ce qui correspond au WGS84 (l'idée étant de passer du Lambert 93 au WGS84)</li>
+								<li>SCR cible : laissez EPSG:4326, ce qui correspond au WGS84 (l'idée étant de passer du Lambert 93 au WGS84)</li>
 								<li>Reprojecté : tapez le nom de votre choix, par exemple <b>reprojeté+découpé</b></li>
 							</ul>
 						</div>

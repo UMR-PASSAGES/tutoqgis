@@ -205,7 +205,7 @@
     					       <li class="espace"><b>Colonnes</b> : pour une légende sur plusieurs colonnes</li>
     					       <li class="espace"><b>Symbole</b> : pour modifier la taille des symboles de légende</li>
     					       <li class="espace"><b>Espacement</b> : pour augmenter ou diminuer l'espace entre les différents éléments (par exemple sous le titre)</li>
-    					       <li class="espace"><b>cadre</b> : pour encadrer ou non la légende</li>
+    					       <li class="espace"><b>Cadre</b> : pour encadrer ou non la légende</li>
     					       <li class="espace"><b>Arrière-plan</b> : pour enlever ou choisir la couleur d'arrière-plan. Cette couleur peut avoir de la transparence.</li>
     					   </ul>
     						

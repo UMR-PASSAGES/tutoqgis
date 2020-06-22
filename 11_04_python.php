@@ -31,7 +31,7 @@
 					<li>le nom du fournisseur de données : <b>ogr</b> car QGIS utilise en interne une <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_logicielle">bibliothèque</a> nommée ogr pour accéder aux shapefiles</li>
 				</ul>
 				
-                <p>Quel est l'intérêt&nbsp;? D'abord, mieux comprendre comment fonctionne le logiciel. Ensuite, <b>créer exactement l'outil dont vous avez besoin</b>, avec plus de souplesse et de possibilités qu'un <a href="" >modèle</a>&nbsp;! Bien sûr, <b>on peut parfaitement utiliser QGIS sans jamais lire une ligne de Python</b>. Il s'agit d'un autre mode d'utilisation de QGIS.</p>				
+                <p>Quel est l'intérêt&nbsp;? D'abord, mieux comprendre comment fonctionne le logiciel. Ensuite, <b>créer exactement l'outil dont vous avez besoin</b>, avec plus de souplesse et de possibilités qu'un <a href="11_03_modeleur.php" >modèle</a>&nbsp;! Bien sûr, <b>on peut parfaitement utiliser QGIS sans jamais lire une ligne de Python</b>. Il s'agit d'un autre mode d'utilisation de QGIS.</p>				
 				
 				<p>Qu'allons-nous voir dans ce chapitre&nbsp;? Il ne s'agit pas ici d'apprendre à coder en Python, mais simplement <b>d'ouvrir un script Python existant, voir comment est constitué ce script, comment le paramétrer et le lancer</b>. En quelque sorte une introduction à cette face cachée de QGIS&nbsp;!</p>
 				
@@ -99,7 +99,7 @@
 						<li><b>dossier_sortie</b> : le dossier où seront enregistrées les couches créées (ce dossier doit déjà exister)</li>
 					</ul>
 					<div class="manip">
-						<p>A vous de modifier ces paramètres suivant l'emplacement des données sur votre ordinateur&nbsp;!</p>
+						<p>A vous de modifier ces paramètres suivant l'emplacement des données sur votre ordinateur&nbsp;! Attention à ce que le dossier en entrée ne comporte que les couches à découper.</p>
 						<p>Attention à bien écrire les chemins exacts dans le script, une erreur d'une seule lettre vous renverra un message d'erreur quand vous voudrez l'exécuter.</p>
 					</div>
 					

@@ -171,7 +171,7 @@
 							<li class="espace">Vérifiez que la case <b>Ne mettre à jour que les x entités sélectionnées</b> soit décochée, puisque le but est de mettre à jour toutes les lignes de la table</li>
 							<li class="espace">Choisissez <b>Créer un nouveau champ</b></li>
 							<li class="espace">Nommez-le <b>CODE_COM</b>, type <b>Texte</b>, longueur <b>3</b></li>
-							<li class="espace">Dans la liste des fonctions, allez dans la rubrique <b>Chaîne</b> (texte) et cliquez sur la fonction <b>right</b> : vous pouvez lire l'aide à droite. Cette fonction extrait les caractères les plus à gauche d'un texte.</li>
+							<li class="espace">Dans la liste des fonctions, allez dans la rubrique <b>Chaîne</b> (texte) et cliquez sur la fonction <b>right</b> : vous pouvez lire l'aide à droite. Cette fonction extrait les caractères les plus à droite d'un texte.</li>
 							<li class="espace">La fonction right nécessite deux paramètres : le texte d'où seront extraits les caractères (ici, le champ <b>INSEE_COM</b>) et le nombre de caractères à extraire (ici, <b>3</b> puisque le code commune codé sur 3 caractères)</li>
 							<li class="espace">L'expression est donc <b>right( "INSEE_COM", 3)</b></li>
 							<li class="espace">Cliquez sur <b>OK</b> : le champ CODE_COM est créé et mis à jour :</li>

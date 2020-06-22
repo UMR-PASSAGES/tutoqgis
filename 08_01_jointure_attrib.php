@@ -44,7 +44,7 @@
 				</figure>
 				<p>Dans l'illustration ci-dessus, les données de départ sont :</p>
 				<ul>
-					<li class="espace">une couche de polygone avec les régions du bhoutan. La table attributaire comporte le nom et le code de chaque région, mais pas leur population.</li>
+					<li class="espace">une couche de polygone avec les régions du Bhoutan. La table attributaire comporte le nom et le code de chaque région, mais pas leur population.</li>
 					<li class="espace">un tableau avec le code de chaque région et sa population en 1995</li>
 				</ul>
 				<p>Les données de la table sont jointes aux données du shapefile, en se basant sur le code région : champ <b>CODEREGION</b> pour le shapefile et champ <b>REG_CODE</b> pour le tableau.</p>
@@ -73,7 +73,7 @@
 					<p>Ouvrez les deux tables attributaires.</p>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">A votre avis, pour pouvoir effectuer une jointure entre les 2 tables, quels seront les 2 champs clés ?</label></p>
+						<p><label for="faq-1">&#192; votre avis, pour pouvoir effectuer une jointure entre les 2 tables, quels seront les 2 champs clés ?</label></p>
 						<p class="reponse">Le champ clé pour regions_bhutan est <b>CODEREGION</b> et le champ clé pour pop_bhutan est <b>REG_CODE</b>.</p>
 					</div>
 					<p>Allez dans les propriétés de la couche <em class="data">regions_bhutan</em>, rubrique <b>Jointure</b> :</p>
@@ -91,7 +91,7 @@
 					<ul>
 						<li class="espace"><b>Joindre la couche :</b> choisissez la couche qui sera jointe, ici le CSV <em class="data">pop_bhutan</em></li>
 						<li class="espace"><b>Champs de jointure :</b> choisissez le champs clé dans le CSV, à savoir <b>REG_CODE</b></li>
-						<li class="espace"><b>Champs de jointure :</b> choisissez le champs clé dans la couche région, à savoir <b>CODEREGION</b></li>
+						<li class="espace"><b>Champs dans la couche cible :</b> choisissez le champs clé dans la couche région, à savoir <b>CODEREGION</b></li>
 						<li class="espace"><b>Mettre la couche jointe en cache dans la mémoire virtuelle :</b> si cette case est cochée, l'affichage de la table sera plus rapide, mais les données ne seront pas mises à jour si des modifications sont effectuées dans la couche jointe</li>
 						<li class="espace"><b>champs joints :</b> ici, nous voulons joindre tous les champs donc vous pouvez laisser cette case décochée</li>
 						<li class="espace"><b>Préfixe de nom de champ personnalisé :</b> les champs joints peuvent avoir le préfixe de votre choix, pour bien les différencier des champs originaux ou issus d'autres jointures. Choisissez un préfixe court, par exemple <b>tab_</b></li>
@@ -119,7 +119,7 @@
 							<p><label for="faq-2">Ouvrez les deux tables attributaires. A votre avis, sur quels champs faire la jointure ? Quel problème va se poser ?</label></p>
 							<p class="reponse">Il est possible de faire la jointure en utilisant le nom du County : champ <b>NAME_1</b> pour  <em class="data">KEN_adm1</em> et champ <b>County</b> pour <em class="data">County_Population_2009.csv</em>.</p>
 							<p class="reponse">Cependant, les noms sont en minuscules dans la couche et en majuscule dans le CSV. Il faut donc créer et calculer un nouveau champ dans la couche GeoPackage, rempli à l'aide de la formule  <b>upper("NAME_1")</b>.</p>
-							<p class="reponse">Par ailleurs, le champ étant un nom et non un code, il est possible que des lignes ne soient pas jointes si les noms sont orthographiées de manière légèrement différente.</p>
+							<p class="reponse">Par ailleurs, le champ étant un nom et non un code, il est possible que des lignes ne soient pas jointes si les noms sont orthographiés de manière légèrement différente.</p>
 						</div>
 						<p>Faites la jointure.</p>
 						<div class="question">
@@ -127,7 +127,7 @@
 							<p><label for="faq-3">Combien de lignes n'ont pas été jointes ? Pourquoi ?</label></p>
 							<p class="reponse">Deux counties n'ont pas de données jointes : <b>ELGEYO-MARAKWET</b> et <b>THARAKA-NITHI</b>, orthographiés sans tirets dans le fichier CSV.</p>
 						</div>
-						<p>Pour que tous les enregistrements soit joints, vous pouvez modifier à la main les noms des counties qui posent problème, soit dans la couche GeoPackage soit dans le fichier CSV.</p>
+						<p>Pour que tous les enregistrements soient joints, vous pouvez modifier à la main les noms des counties qui posent problème, soit dans la couche GeoPackage soit dans le fichier CSV.</p>
 					</div>
 				
 				
@@ -150,16 +150,20 @@
                 
                     <div class="manip">
                         <p>Ouvrez un nouveau projet QGIS. Ajoutez-y la couche GeoPackage <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">communes_oise</a></em> et le fichier CSV <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">L_MONUMENT_HISTO_S_060</a></em> qui correspond à l'ensemble des monuments historiques classés et inscrits dans le département de l'Oise.</p>
-                        <p>Explorez ces données : pouvez-vous joindre les données du fichier CSV à la couche de communes&nbsp;? Grâce à quels champs&nbsp;?</p>
-                        <p>Faites la jointure.</p>
                         <div class="question">
                     		<input type="checkbox" id="faq-5">
-                    		<p><label for="faq-5">Combien y a-t-il de communes&nbsp;? De monuments historiques&nbsp;?</p>
+                    		<p><label for="faq-5">Explorez ces données : pouvez-vous joindre les données du fichier CSV à la couche de communes&nbsp;? Grâce à quels champs&nbsp;?</p>
+                    		<p class="reponse">Il est possible de joindre les couches en se basant sur le code INSEE : champ INSEE_COM pour la couche de communes et INSEE pour le tableau des monuments historiques.</p>
+                    	</div>
+                        <p>Faites la jointure.</p>
+                        <div class="question">
+                    		<input type="checkbox" id="faq-6">
+                    		<p><label for="faq-6">Combien y a-t-il de communes&nbsp;? De monuments historiques&nbsp;?</p>
                     		<p class="reponse">La couche de communes contient 679 entités, le CSV 700 lignes.</p>
                     	</div>
                     	<div class="question">
-                    		<input type="checkbox" id="faq-6">
-                    		<p><label for="faq-6">Comment la jointure a-t-elle géré cela&nbsp;?</p>
+                    		<input type="checkbox" id="faq-7">
+                    		<p><label for="faq-7">Comment la jointure a-t-elle géré cela&nbsp;?</p>
                     		<p class="reponse">A chaque commune ont été joints les attributs du 1er monument ayant le même code INSEE rencontré dans le CSV. Si une commune possède plusieurs monuments, les données d'un seul ont été jointes.</p>
                     	</div>
                     </div>

@@ -118,7 +118,7 @@
                 		<p><label for="faq-1">Quel SCR commun pourrait-on utiliser pour cette opération&nbsp;?</label></p>
                 		<p class="reponse">Le WGS84 (code EPSG 4326) et le RGF93 Lambert 93 (code EPSG 2154) sont tous deux techniquement possibles. Cependant, la zone d'étude étant un département français, il est plus logique de travailler en Lambert 93.</p>
                 	</div>
-                	<p><a href="02_04_changer_systeme.php#II42">Modifiez le SCR</a> de la couche <em class="data">gis_osm_waterways_free_1</em>, pour passer du WGS84 vers le <b>RGF93/Lambert-93 (code EPSG 2154)</b> grâce à l'outil <b>Reprojeter une couche</b> (Outils généraux pour les vecteurs) de la boîte à outils. Nommez la nouvelle couche <em class="data">coursdeau_osm_44_L93</em>.</p>
+                	<p><a href="02_04_changer_systeme.php#II42">Modifiez le SCR</a> de la couche <em class="data">gis_osm_waterways_free_1</em>, pour passer du WGS84 vers le <b>RGF93/Lambert-93 (code EPSG 2154)</b> grâce à l'outil <b>Reprojeter une couche</b> (Outils généraux pour les vecteurs) de la boîte à outils. Nommez la nouvelle couche <em class="data">gis_osm_waterways_free_1_L93</em>.</p>
                 	<p>Vérifiez dans les propriétés de cette nouvelle couche, rubrique <b>Source</b>, que son SCR soit bien le Lambert 93 :</p>
                 	<figure>
 						<a href="illustrations/tous/9_1_verif_l93.png" >
@@ -128,7 +128,7 @@
 				</div>
 				<p>Attention, si le SCR n'est pas le bon, ne le modifiez pas ici&nbsp;! Utilisez l'outil <b>Reprojeter une couche</b> de la boîte à outils. Modifier le SCR et <a href="02_04_changer_systeme.php#II43">redéfinir le SCR</a> sont 2 manipulations différentes.</p>
 				<div class="manip">
-                	<p>Effectuez ensuite le découpage comme précédemment, sans oublier de choisir en entrée <em class="data">coursdeau_osm_44_L93</em> et de sélectionner au préalable le département 44. Nommez la coouche obtenue </p>
+                	<p>Effectuez ensuite le découpage comme précédemment, sans oublier de choisir en entrée <em class="data">gis_osm_waterways_free_1_L93</em> et de sélectionner au préalable le département 44. Nommez la couche obtenue <em class="data">coursdeau_osm_44_L93</em> par exemple.</p>
 				</div>
 
 			
@@ -257,7 +257,7 @@
     						</a>
     						<figcaption>Différents types de jointure pour les zones tampon : de gauche à droite, rond, angle droit, oblique et superposition des 3.</figcaption>
     					</figure>
-    					<li class="espace"><b>Limite d'angle droite :</b> ce paramètre n'est utilisé que pour les styles jointure à angle droit. D'après l'aide, il contrôle &#171; la distance maximale de la courbe de décalage &#187;. Personnellement cette définition je trouve cette définition peu claire, et d'après mes observations les différences sont minimes (on peut les observer en passant de 1 à 2 par exemple). Ecrivez-moi si vous en savez plus&nbsp;!</li>
+    					<li class="espace"><b>Limite d'angle droite :</b> ce paramètre n'est utilisé que pour les styles jointure à angle droit. D'après l'aide, il contrôle &#171; la distance maximale de la courbe de décalage &#187;. Personnellement je trouve cette définition peu claire, et d'après mes observations les différences sont minimes (on peut les observer en passant de 1 à 2 par exemple). Ecrivez-moi si vous en savez plus&nbsp;!</li>
     				</ul>
 					
 			<h3><a class="titre" id="IX13">Données communes entre deux couches : intersection</a></h3>

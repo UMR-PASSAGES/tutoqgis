@@ -12,7 +12,7 @@
 		</div>
 		
 		<div class="main">
-			<h2>X.1  Traitement de base pour une seule couche</h2>
+			<h2>XI.1  Traitement de base pour une seule couche</h2>
 				
 				<p>Nous allons (re)voir ici une manipulation simple&nbsp;: comment <a href="09_01_vecteur.php#IX11">découper une couche par une autre</a>.</p>
 				<p>Nous verrons dans les chapitres suivant comment <b>automatiser ce traitement</b>, pour par exemple découper rapidement 10 couches par une autre.</p>
