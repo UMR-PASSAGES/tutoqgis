@@ -25,7 +25,7 @@
 						<ul class="listesoustitres">
 							<li><a href="#VII23a">Opérations mathématiques : calcul de densité</a></li>
 							<li><a href="#VII23b">Opérations sur du texte : extraction</a></li>
-							<li><a href="#VII23c">Pour aller plus loin : utiliser une expression conditionnelle avec CASE<</a></li>
+							<li><a href="#VII23c">Pour aller plus loin : utiliser une expression conditionnelle avec CASE</a></li>
 						</ul>
 					</li>
 				</ul>

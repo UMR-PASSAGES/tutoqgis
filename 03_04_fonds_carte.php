@@ -85,7 +85,7 @@
                         </figure>
     		        </div>
 			   
-		    <h3><a class="titre" id="III52b">Ajouter un fonds avec l'extension QuickMapServices</a></h4>
+		    <h3><a class="titre" id="III43">Ajouter un fonds avec l'extension QuickMapServices</a></h4>
 		    
 		        <p>Une autre méthode pour ajouter des fonds de carte consiste à utiliser l'extension QuickMapServices, qui propose un certain nombre de fonds, notamment des fonds OpenStreetMap et Google Maps.</p>
 		        
