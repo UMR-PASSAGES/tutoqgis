@@ -14,29 +14,25 @@
 		<div class="main">
 			<h2>VII.1  Manipulation de champs</h2>
 				<ul class="listetitres">
-					<li><a href="#VII11">Quels sont les champs présents dans une table ?</a></li>
+					<li><a href="#VII11">Quels sont les champs présents dans une table&nbsp;?</a></li>
 					<li><a href="#VII12">Créer et supprimer un champ à partir de la table attributaire</a>
 					   <ul class="listesoustitres">
 							<li><a href="#VII12a">Créer un champ</a></li>
-							<li><a href="#VII12b">Supprimer un champ existant</a></li>
+							<li><a href="#VII12b">Modifier les valeurs d'un champ manuellement</a></li>
+							<li><a href="#VII12c">Supprimer un champ existant</a></li>
 						</ul>
 					</li>
-					<li><a href="#VII13">Pour aller plus loin : refactoriser les champs</a>
-					   <ul class="listesoustitres">
-							<li><a href="#VII13a">Accéder à l'outil de refactorisation de champs</a></li>
-							<li><a href="#VII13b">Modifier l'ordre des champs</a></li>
-						</ul>
-					</li>
+					<li><a href="#VII13">Pour aller plus loin : refactoriser les champs</a></li>
 				</ul>
 				<br>
 				
-			<p></p>
+			<p>Nous verrons ici comment ajouter et supprimer des champs dans la table attributaire d'une couche existante, et comment modifier l'ordre des champs.</p>
 
 			<h3><a class="titre" id="VII11">Quels sont les champs présents dans une table ?</a></h3>
 			
 				<div class="manip">
-					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data">communes_NordPasDeCalais_calcul</em>.</p>
-					<p>Pour voir les champs de la table attributaire de cette couche, vous pouvez bien sûr ouvrir la table attributaire, mais vous pouvez également ouvrir les propriétés de la couche, rubrique <b>Champs</b> :</p>
+					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>.</p>
+					<p>Pour voir les champs de la table attributaire de cette couche, vous pouvez bien sûr ouvrir la table attributaire, mais vous pouvez également ouvrir les propriétés de la couche, rubrique <b>Champs source</b> :</p>
 					<figure>
 						<a href="illustrations/tous/7_1_proprietes_champs.png" >
 							<img src="illustrations/tous/7_1_proprietes_champs.png" alt="fenêtre des propriétés de la couche, rubrique champs" width="600" >
@@ -51,13 +47,13 @@
 			
 			    <h4><a class="titre" id="VII12a">Créer un champ</a></h4>
 			
-    				<p>Nous allons ajouter deux champs à la couche <em class="data">communes_NordPasDeCalais_calcul</em>, <b>CODE_DEPT</b> et <b>CODE_REG</b>, destinés à contenir par la suite le code de département et le code de région.</p>
+    				<p>Nous allons ajouter un champs à la couche <em class="data">communes_Bretagne_calcul</em>, nommé <b>NOM_DEPT</b>, destiné à contenir le nom du département de la commune.</p>
     				
     				<div class="manip">
-    					<p>Ouvrez la table attributaire de la couche <em class="data">communes_NordPasDeCalais_calcul</em>. <a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
-    					<p>Cliquez sur l'icône <b>Nouvelle colonne</b> en haut de la table attributaire :</p>
+    					<p>Ouvrez la table attributaire de la couche <em class="data">communes_Bretagne_calcul</em>. <a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
+    					<p>Cliquez sur l'icône <b>Ajouter un champ</b> en haut de la table attributaire :</p>
     					<figure>
-    						<img src="illustrations/tous/7_1_BO_table_ajout.png" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" width="440" >
+    						<img src="illustrations/tous/7_1_BO_table_ajout.png" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" width="600" >
     					</figure>
     					<p>La fenêtre suivante s'ouvre :</p>
     					<figure>
@@ -66,10 +62,10 @@
     						</a>
     					</figure>
     					<ul>
-    						<li class="espace"><b>Nom :</b> Tapez <b>CODE_DEPT</b></li>
+    						<li class="espace"><b>Nom :</b> Tapez <b>NOM_DEPT</b></li>
     						<li class="espace"><b>Commentaire :</b> ce champ peut contenir un commentaire, laissez-le vide</li>
-    						<li class="espace"><b>Type :</b> ce champ peut contenir les valeurs suivantes : texte, nombre entier, nombre décimal et date. Choisissez texte (on pourrait aussi choisir le type nombre entier, mais texte est souvent préférable pour les identifiants)</li>
-    						<li class="espace"><b>Longueur :</b> Dans le cas d'un champ type texte, cette valeur représente le nombre maximum de caractères que pourra contenir le champ. Tapez 3, pour prévoir le cas des départements d'outre-mer.</li>
+    						<li class="espace"><b>Type :</b> ce champ peut contenir les valeurs suivantes : texte, nombre entier, nombre décimal et date. Choisissez texte puisque nous voulons y mettre les noms des départements</li>
+    						<li class="espace"><b>Longueur :</b> Dans le cas d'un champ type texte, cette valeur représente le nombre maximum de caractères que pourra contenir le champ. Tapez 50, ce qui devrait suffire.</li>
     					</ul>
     					<p>Cliquez sur <b>OK</b> ; le champ est ajouté à la table, rempli pour l'instant de valeurs nulles.</p>
     					<figure>
@@ -77,24 +73,46 @@
     							<img src="illustrations/tous/7_1_table_nouveau_champ.png" alt="table avec le champ CODE_DEPT vide" width="600" >
     						</a>
     					</figure>
-    					<p>Procédez de la même manière pour ajouter un champ <b>CODE_REG</b> :</p>
-    					<figure>
-    						<a href="illustrations/tous/7_1_ajout_fenetre_2.png" >
-    							<img src="illustrations/tous/7_1_ajout_fenetre_2.png" alt="fenêtre de création de colonne" width="390" >
-    						</a>
-    					</figure>
-    					<p>Quittez le mode édition en enregistrant les modifications. Ces champs seront remplis dans la <a href="07_03_calculer.php">partie VII.3</a>.</p>
+    					<p>Quittez le mode édition en enregistrant les modifications.</p>
     				</div>
 			
-			     <h4><a class="titre" id="VII12b">Supprimer un champ existant</a></h4>
+			     <h4><a class="titre" id="VII12b">Modifier les valeurs d'un champ manuellement</a></h4>
+			     
+			         <p>Il est maintenant possible de taper du texte pour remplir le champ NOM_DEPT que nous venons de créer.</p>
+			         <div class="manip">
+			             <p><img class="icone" src="illustrations/tous/7_1_edition_icone.png" alt="icône passer en mode édition" >Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
+			             <p>Ouvrez sa table attributaire si ce n'est pas déjà fait.</p>
+			             <p>Double-cliquez dans une case du champ <b>NOM_DEPT</b> :</p>
+			             <figure>
+    						<a href="illustrations/tous/7_1_table_modifier.png" >
+    							<img src="illustrations/tous/7_1_table_modifier.png" alt="double clic dans une case du champ CODE_DEPT vide" width="90%" >
+    						</a>
+    					 </figure>
+    					 <p>Et tapez-y la valeur correspondante (en vous aidant du champ INSEE_DEP qui contient le <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais#Liste_des_d%C3%A9partements">code du département</a>), terminez en appuyant sur la touche entrée&nbsp;:</p>
+    					 <figure>
+    						<a href="illustrations/tous/7_1_table_modifier_ok.png" >
+    							<img src="illustrations/tous/7_1_table_modifier_ok.png" alt="double clic dans une case du champ CODE_DEPT vide" width="90%" >
+    						</a>
+    					 </figure>
+    					 <p>Vous pouvez tapez ainsi quelques valeurs.</p>
+			         </div>
+			         
+			         <p>Vous remarquerez qu'il serait très long de remplir ainsi toutes les lignes de la table. Nous verrons dans le <a href="07_02_calculer.php#VII23c">chapitre suivant</a> comment remplir automatiquement un champ en fonction des valeurs d'un autre (ici, remplir le nom du département en fonction du code du département).</p>
+			         
+			         <div class="manip">
+    					 <p>Quittez le mode édition en enregistrant les modifications.</p>
+    			     </div>
+			     
+			     
+			     <h4><a class="titre" id="VII12c">Supprimer un champ existant</a></h4>
 			
-    				<p>Nous allons supprimer le champ INSEE_COM (ne vous inquiétez pas, nous recréerons un champ code INSEE à partir du code de département et de commune, dans la <a href="07_03_calculer.php">partie VII.3</a>).</p>
+    				<p>Nous allons <b>supprimer le champ NOM_DEPT</b> que vous venez de créer (nous créerons un autre champ NOM_DEPT dans le <a href="07_02_calculer.php">chapitre suivant</a> que nous remplirons automatiquement).</p>
     				
     				<div class="manip">
-    					<p>Passez à nouveau en mode édition pour la couche <em class="data">communes_NordPasDeCalais_calcul</em>.</p>
+    					<p>Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
     					<p>Cliquez sur l'icône <b>Supprimer la colonne</b> en haut de la table attributaire :</p>
     					<figure>
-    						<img src="illustrations/tous/7_1_BO_table_suppression.png" alt="barre d'outils de la table attributaire, icône de suppression de champ entourée en rouge" width="440" >
+    						<img src="illustrations/tous/7_1_BO_table_suppression.png" alt="barre d'outils de la table attributaire, icône de suppression de champ entourée en rouge" width="600" >
     					</figure>
     					<p>La fenêtre suivante apparaît :</p>
     					<figure>
@@ -102,50 +120,38 @@
     							<img src="illustrations/tous/7_1_suppression_fenetre.png" alt="fenêtre de suppression de colonne" width="240" >
     						</a>
     					</figure>
-    					<p>Sélectionnez le champ <b>INSEE_COM</b> puis cliquez sur <b>OK</b>.</p>
+    					<p>Sélectionnez le champ <b>NOM_DEPT</b> puis cliquez sur <b>OK</b>.</p>
     					<p class="note">Notez qu'il est possible de sélectionner plusieurs champs dans cette fenêtre.</p>
     					<p>Le champ est supprimé. Quittez le mode édition en enregistrant les modifications.</p>
     				</div>
 			
 			    <h3><a class="titre" id="VII13">Pour aller plus loin : refactoriser les champs</a></h3>
 			    
-			       <p>Sous le nom un peu barbare de "refactoriser" se cache la possibilité de <b>renommer les champs</b>, ainsi que d'en <b>modifier l'ordre et le type</b> (texte, nombre...). Cet outil offre également la possibilité de créer ou supprimer des champs.</p>
+			       <p>Sous le nom un peu barbare de &#171; refactoriser &#187; se cache la possibilité de <b>renommer les champs</b>, ainsi que d'en <b>modifier l'ordre et le type</b> (texte, nombre...). Cet outil offre également la possibilité de créer ou supprimer des champs.</p>
 			       <p>Notez que la couche en entrée ne sera pas directement modifiée, une nouvelle couche sera créée.</p>
-			       <p>Ces fonctions sont également disponibles via l'extension <b>Table Manager (Gestionnaire de table)</b>, mais cette extension n'est plus maintenue, vous l'utilisez donc à vos risques et périls !</p>
+			       <p>Nous n'utiliserons pas cet outil, mais vous trouverez ici une brève description de son fonctionnement.</p>
 			       
-			       <h4><a class="titre" id="VII13a">Accéder à l'outil de refactorisation de champs</a></h4>
 			       
-			         <p>Cet outil est disponible dans la <b>boîte à outils Traitement</b>.</p>
-			         
-			         <div class="manip">
-			             <p>Si vous ne voyez pas cette boîte à outils : <b>menu Traitement &#8594; Boîte à outils</b>, ou bien <b>menu Vue &#8594; Panneaux &#8594; Boîte à outils</b>.</p>
-			             <p>Dans la boîte à outils : <b>Géotraitements QGIS &#8594; Outils de table d'un vecteur &#8594; Refactoriser les champs</b> :</p>
-			             <figure>
-    						<a href="illustrations/tous/7_1_outil_refactoriser.png" >
-    							<img src="illustrations/tous/7_1_outil_refactoriser.png" alt="Outil refactoriser dans la boîte à outils Traitement" width="350" >
-    						</a>
-    					 </figure>
-    					 
- 			       <h4><a class="titre" id="VII13b">Modifier l'ordre des champs</a></h4>
+    		       <p>Pour accéder à l'outil : <b>boîte à outils Traitement  &#8594; Table vecteur &#8594; Refactoriser les champs</b>.</p>
+		           <figure>
+    				   <a href="illustrations/tous/7_1_outil_refactoriser.png" >
+    				       <img src="illustrations/tous/7_1_outil_refactoriser.png" alt="Outil refactoriser dans la boîte à outils Traitement" width="350" >
+    				   </a>
+				   </figure>
  			          			    
-    					 <p>Double-cliquez sur cet outil. Nous allons simplement <b>modifier l'ordre des champs</b> pour remonter CODE_DEPT et CODE_REG créés précédemment.</p>
-    					 <figure>
-    						<a href="illustrations/tous/7_1_refactoriser_fenetre.png" >
-    							<img src="illustrations/tous/7_1_refactoriser_fenetre.png" alt="Fenêtre de l'outil refactoriser" width="600" >
-    						</a>
-    					 </figure>
-    					 <ul>
-    					   <li class="espace">Vérifiez que la couche <em class="data">communes_NordPasDeCalais</em> soit bien sélectionnée en entrée</li>
-    					   <li class="espace">Cliquez sur le champ <b>CODE_DEPT</b> puis sur le bouton de flèche vers le haut à droite de la liste des champs, pour le faire remonter en deuxième position</li>
-    					   <li class="espace">Procédez de même pour que le champ <b>CODE_REG</b> soit en troisième position</li>
-    					   <li class="espace">Laissez <b>Create temporary layer</b> afin de créer en sortie une couche temporaire</li>
-    					   <li class="espace">Cliquez enfin sur <b>Run</b> et fermez la fenêtre de l'outil une fois le traitement fini.</li>
-    					 </ul>
-    					 <p>Ouvrez la table attributaire de la couche temporaire <b>Refactorisé</b> : l'ordre des champs a bien été modifié.
-			         </div>
+				   <figure>
+				    <a href="illustrations/tous/7_1_refactoriser_fenetre.png" >
+					 <img src="illustrations/tous/7_1_refactoriser_fenetre.png" alt="Fenêtre de l'outil refactoriser" width="100%" >
+					</a>
+				   </figure>
+    					 
+    				 <p>Pour <b>modifier l'ordre des champs</b>, sélectionnez un champ en cliquant sur le numéro de sa ligne, puis utilisez les boutons flèche haut et bas à droite de la fenêtre.
 			         
-			         <p>En double-cliquant dans la case <b>Name</b> d'un champ, vous pouvez le <b>renommer</b>. De même, vous pouvez changer son <b>type</b>, sa <b>longueur</b> et <b>précision</b>, et <b>recalculer ses valeurs</b> au moyen d'une expression (comme avec la <a href="07_03_calculer.php">calculatrice de champ</a>).</p>
-			         <p>Les boutons à droite de la liste de champ permettent, de haut en bas : l'<b>ajout</b> et la <b>suppression</b> d'un champ, <b>déplacer</b> un champ vers le haut ou vers le bas, et <b>annuler toutes les modifications en cours</b>.</p>
+			         <p>Pour <b>renommer un champ</b>, double-cliquez sur son nom (colonne Nom du champ) et tapez un nouveau nom. De même, vous pouvez changer son <b>type</b>, sa <b>longueur</b> et <b>précision</b>, et <b>recalculer ses valeurs</b> au moyen d'une expression (comme avec la <a href="07_02_calculer.php">calculatrice de champ</a>).</p>
+			         
+			         <p>Il est également possible <b>d'ajouter et supprimer un champ</b>, ainsi que <b>d'annuler toutes les modifications en cours</b>.</p>
+			         
+			         <p>Dans le chapitre suivant, nous verrons comment calculer automatiquement les valeurs d'un champ au moyen d'une formule, à l'aide de la calculatrice de champ&nbsp;!</p>
 				
 				<br>
 				<a class="prec" href="07_00_champs.php">chapitre précédent</a>

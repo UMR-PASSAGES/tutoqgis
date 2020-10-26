@@ -16,7 +16,7 @@
 			<h1>IX.  Analyse spatiale</h1>
 			
 			<p>Dans cette partie, nous allons aborder un domaine particulièrement utile des SIG : comment croiser spatialement des données, ou créer des données à partir d'autres données.</p>
-			<p>Nous verrons quelques exemples de traitements possibles sur des données vecteur et raster (pour un rappel de ce qu'est une donnée vecteur ou raster : cf. <a href="01_01_SIG.php#I12b" >partie I.1.2b</a>).</p>
+			<p>Nous verrons quelques exemples de traitements possibles sur des <a href="01_01_SIG.php#I12b" >données vecteur et raster</a>.</p>
 			
 			<p>Notions abordées :</p>
 				<ul>

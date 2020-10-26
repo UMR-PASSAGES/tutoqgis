@@ -24,7 +24,13 @@
 				</ul>
 				<br>
 	
-			<p>Notre but sera ici de caler une carte de l'île d'Oahu (Hawaii) de 1902 (source : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3A1902_Land_Office_Map_of_the_Island_of_Oahu%2C_Hawaii_(_Honolulu_)_-_Geographicus_-_OhauHawaii-lo-1902.jpg">Wikimedia</a>. Une fois cette carte calée, vous pourrez la superposer à d'autres données dans QGIS.</p>
+			<p>Notre but sera ici de caler une carte de l'île d'Oahu (Hawaii) de 1902 (source : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3A1902_Land_Office_Map_of_the_Island_of_Oahu%2C_Hawaii_(_Honolulu_)_-_Geographicus_-_OhauHawaii-lo-1902.jpg">Wikimedia</a>.</p>
+			<figure>
+				<a href="illustrations/tous/4_2_carte_oahu.jpg" >
+					<img src="illustrations/tous/4_2_carte_oahu.jpg" alt="carte à caler de l'île d'Oahu" width="80%">
+				</a>
+			</figure>
+			<p>Une fois cette carte calée, vous pourrez la superposer à d'autres données dans QGIS.</p>
 			<p>La première étape consiste à prendre connaissance de cette carte, et à vérifier que le module de géoréférencement de QGIS soit activé.</p>
 			
 			<h3><a class="titre" id="IV21">Découverte de l'image à caler</a></h3>			
@@ -36,7 +42,7 @@
 					<p class="reponse">L'île est située approximativement aux coordonnées 21° 28' Nord et 157° 59' Ouest (SCR WGS84).</p>
 				</div>
 				
-				<p>A partir de l'explorateur de fichiers de votre ordinateur, ouvrez l'image <em class="data">Oahu_Hawaiian_Islands_1906.jpg</em> située dans le dossier <b>TutoQGIS_04_Georef/donnees</b>.</p>
+				<p>A partir de l'explorateur de fichiers de votre ordinateur, ouvrez l'image <em class="data"><a href="donnees/TutoQGIS_04_Georef.zip">Oahu_Hawaiian_Islands_1906.jpg</a></em> située dans le dossier <b>TutoQGIS_04_Georef/donnees</b>.</p>
 				<div class="question">
 					<input type="checkbox" id="faq-2">
 					<p><label for="faq-2">Pouvez-vous dire dans quel système sont mesurées les coordonnées de cette carte ?</label></p>
@@ -50,7 +56,7 @@
 			
 					<div class="manip">	
 						<p>Le module de géoréférencement de QGIS est normalement accessible via le menu
-							<a class="thumbnail_bottom" href="#thumb">Raster &#8594; Géoréférencer &#8594; Géoréférencer
+							<a class="thumbnail_bottom" href="#thumb">Raster &#8594; Géoréférencer...
 								<span>
 									<img src="illustrations/tous/4_2_georeferencer_menu.png" alt="Menu Raster, géoréférencer, géoréférencer" height="200" >
 								</span>

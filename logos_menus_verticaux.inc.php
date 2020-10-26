@@ -7,8 +7,8 @@
 </a>
 <br>
 <a href="ancienne_version/" >
-	<img class="logo" src="illustrations/tous/logo_qgis2.png" alt="logo QGIS 2" height="63">
+	<img class="logo" src="illustrations/tous/logo_qgis_3_4.png" alt="logo QGIS 3.4" height="60">
 </a>
 <a href="" >
-	<img class="logo" src="illustrations/tous/logo_qgis3.png" alt="logo QGIS 3" height="60">
+	<img class="logo" src="illustrations/tous/logo_qgis_3_16.png" alt="logo QGIS 3.16" height="60">
 </a>

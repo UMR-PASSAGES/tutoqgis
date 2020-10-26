@@ -8,5 +8,5 @@
 	<meta name="author" content="julie" >
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="tutoqgis.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="tutoqgis_print.css" media="print">
+	<!--<link rel="stylesheet" type="text/css" href="tutoqgis_print.css" media="screen">-->
 </head>

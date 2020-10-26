@@ -27,6 +27,12 @@
 						</ul>
 					</li>
 					<li><a href="#V63">Corriger les erreurs de topologie : quelques pistes</a>
+					   <ul class="listesoustitres">
+							<li><a href="#V63a">Corriger les erreurs de topologie manuellement</a></li>
+							<li><a href="#V63b">Corriger les erreurs de topologie avec l'outil &#171;&nbsp; réparer les géométries &#187;&nbsp;</a></li>
+							<li><a href="#V63c">Corriger les erreurs de topologie avec l'outil v.clean de Grass</a></li>
+						</ul>
+				    </li>
 				</ul>
 				<br>
 				
@@ -58,8 +64,7 @@
 							<img src="illustrations/tous/5_6_pts_dans_polygones.png" alt="des points dans des polygones sauf deux" width="300">
 						</a>
 					</figure>
-					<p>Il est bien sûr possible de combiner plusieurs règles. Vous trouverez dans le <a class="ext" target="_blank" href="http://docs.qgis.org/2.0/fr/docs/user_manual/plugins/plugins_topology_checker.html" >manuel de QGIS</a> la description d'un certain nombre de règles de topologie.</p>
-					<p>Pour en savoir plus, vous pouvez également consulter cet <a class="ext" target="blank" href="http://www.portailsig.org/content/grass-gis-geometries-topologies-et-consequences-pratiques-vecteurs-rasters-volumes" >article du portail SIG</a>.</p>
+					<p>Il est bien sûr possible de combiner plusieurs règles. Vous trouverez dans le <a class="ext" target="_blank" href="https://docs.qgis.org/testing/en/docs/gentle_gis_introduction/topology.html" >manuel de QGIS</a> la description d'un certain nombre de règles de topologie.</p>
 
 				<h4><a class="titre" id="V61b">Pourquoi faire attention à la topologie ?</a></h4>
 					
@@ -74,18 +79,25 @@
 					
 					<div class="manip">
 						<p>Pour vérifier rapidement la topologie d'une couche, rendez-vous dans le menu
-							<a class="thumbnail_bottom" href="#thumb">Vecteur &#8594; Outils de géométrie &#8594; Vérifier la validité de la géométrie
+							<a class="thumbnail_bottom" href="#thumb">Vecteur &#8594; Outils de géométrie &#8594; Vérifier la validité
 								<span>
-									<img src="illustrations/tous/5_6_verif_menu.png" alt="Menu Vecteur, Outils de géométrie, vérifier la validité de la géométrie" height="400" >
+									<img src="illustrations/tous/5_6_verif_menu.png" alt="Menu Vecteur, Outils de géométrie, vérifier la validité" height="400" >
 								</span>
 							</a>	
 						:</p>
 						<figure>
 							<a href="illustrations/tous/5_6_verif_fenetre.png" >
-								<img src="illustrations/tous/5_6_verif_fenetre.png" alt="fenêtre de validation de la géométrie" width="320">
+								<img src="illustrations/tous/5_6_verif_fenetre.png" alt="fenêtre de validation de la géométrie" width="100%">
 							</a>
 						</figure>
-						<p>Sélectionnez la couche <em class="data">zones_oahu</em> et cliquez sur <b>OK</b> : les éventuelles erreurs sont listées, un double clic sur une erreur zoome dessus.</p>
+						<p>Sélectionnez la couche <em class="data">zones_oahu</em> et cliquez sur <b>Exécuter</b>.</p>
+						<p>3 couches temporaires sont ajoutées au projet :</p>
+						<ul>
+						  <li><b>sortie valide</b> liste les entités valide</li>
+						  <li><b>sortie invalide</b> liste les entités invalides (avec une ou plusieurs erreurs de topologie</li>
+						  <li><b>erreur de sortie</b> liste les erreurs de topologie rencontrées, un point par erreur.</li>
+						</ul>
+						<p>Si vous n'avez pas d'erreur de topologie dans votre couche, la couche <b>sortie valide</b> contiendra autant d'entités que la couche d'origine, et les couches <b>sortie invalide</b> et <b>erreur de sortie</b> n'en contiendront aucune.</p>
 					</div>
 				
 				<h4><a class="titre" id="V62b">Utilisation du vérificateur de topologie</a></h4>
@@ -94,9 +106,9 @@
 				
 					<div class="manip">
 						<p>Pour accéder au vérificateur de topologie : 
-							<a class="thumbnail_bottom" href="#thumb">menu Vecteur &#8594; Vérificateur de topologie &#8594; Vérificateur de topologie
+							<a class="thumbnail_bottom" href="#thumb">menu Vecteur &#8594; Vérificateur de topologie
 								<span>
-									<img src="illustrations/tous/5_6_veriftopo_menu.png" alt="Menu Vecteur, Vérificateur de topologie, Vérificateur de topologie" height="300" >
+									<img src="illustrations/tous/5_6_veriftopo_menu.png" alt="Menu Vecteur, Vérificateur de topologie" height="200" >
 								</span>
 							</a>	
 						:</p>
@@ -123,14 +135,31 @@
 					
 					<h3><a class="titre" id="V63">Corriger les erreurs de topologie : quelques pistes</a></h3>
 					
-						<p>Pour corriger les erreurs de topologie d'une couche, vous pouvez procéder &#171; à la main &#187; , en corrigeant les erreurs une à une avec les outils d'édition de QGIS. Cliquer sur la ligne correspondant à une erreur dans le vérificateur de topologie zoome sur cette erreur.</p>
-						<p>Si vous avez un grand nombre d'erreurs à corriger, vous pouvez aussi utiliser des outils de correction automatique, notamment ceux de grass. Ces outils sont disponibles dans QGIS via la 
-						<a class="thumbnail_bottom" href="#thumb">boîte à outils du menu Traitements
-							<span>
-								<img src="illustrations/tous/5_6_traitements_menu.png" alt="boîte à outils du menu Traitements" height="125" >
-							</span>
-						</a>. Tapez <b>clean</b> dans le filtre pour accéder à l'outil <b>v.clean</b>.</p>
-						<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass70/manuals/v.clean.html" >https://grass.osgeo.org/grass70/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>
+					    <p>Cette partie n'est pas très étoffée et mériterait un chapitre à part entière ! A venir ?</p>
+					
+					    <h4><a class="titre" id="V63a">Corriger les erreurs de topologie manuellement</a></h4>
+					
+					       <p>Pour corriger les erreurs de topologie d'une couche, vous pouvez procéder &#171; à la main &#187;, en corrigeant les erreurs une à une avec les outils d'édition de QGIS, en utilisant les <b>propriétés d'accrochage</b> et l'<b>outil de noeud</b>. Cliquer sur la ligne correspondant à une erreur dans le vérificateur de topologie zoome sur cette erreur.</p>
+					       
+					    <h4><a class="titre" id="V63b">Corriger les erreurs de topologie avec l'outil &#171;&nbsp; Réparer les géométries &nbsp;&#187;</a></h4>
+					    
+					       <p>Il existe un outil <b>Réparer les géométries</b> accessible dans la boîte à outils de traitement. Pour afficher (ou masquer si elle est déjà affichée) cette boîte, <b>menu Traitement &#8594; Boîte à outils</b>. Tapez ensuite <b>réparer</b> dans la partie filtre pour trouver facilement cet outil :</p>
+					       <figure>
+    							<a href="illustrations/tous/5_6_reparer.png" >
+    								<img src="illustrations/tous/5_6_reparer.png" alt="accès à l'outil réparer les géométries à partir de la boîte à outils" width="300">
+    							</a>
+    						</figure>
+    						<p>Cet outil prend une couche en entrée (la couche contenant des erreurs) et génère une nouvelle couche, normalement sans erreurs de topologie, en sortie.</p>
+					    
+					    <h4><a class="titre" id="V63c">Corriger les erreurs de topologie avec l'outil v.clean de Grass</a></h4>
+					    
+    						<p>Vous pouvez également utiliser l'outil <b>v.clean</b> issu de <b>Grass</b>, toujours dans la boîte à outils de traitements. Tapez <b>clean</b> dans le filtre pour accéder à l'outil <b>v.clean</b>.</p>
+    						<figure>
+    							<a href="illustrations/tous/5_6_vclean.png" >
+    								<img src="illustrations/tous/5_6_vclean.png" alt="accès à l'outil vclean à partir de la boîte à outils" width="300">
+    							</a>
+    						</figure>
+    						<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass70/manuals/v.clean.html" >https://grass.osgeo.org/grass70/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>
 
 				<br>
 				<a class="prec" href="05_05_polygones.php">chapitre précédent</a>

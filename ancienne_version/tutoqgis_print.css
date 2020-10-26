@@ -6,14 +6,17 @@ hov         #1D3437     hover colour
 
 */
 
+
 	html {
 		margin:0;
 		padding:0;
 		color:#323232;
-		background:#FFFFFF;	
+		background:#FFFFFF;	/* fond blanc pour les PDF */
 		font-family:"Open Sans", helvetica, arial, verdana;
 		font-size: 0.9em;
 		text-align: justify;
+		width: 100%;
+		height: 100%;
 	}	
 	body{
 		min-height: 100%;
@@ -22,75 +25,83 @@ hov         #1D3437     hover colour
 		border: 0;
 	}
 	#wrap {	/* la zone globale */
-		width:17cm;
+		width:1000px;
 		position: relative;
-		margin-left: auto;
-  		margin-right: auto;
+		margin:0 auto;
+		/*box-shadow: 4px 4px 10px #D4D4D4;
+  		-webkit-box-shadow: 4px 4px 10px #D4D4D4;
+		box-shadow: 4px 4px 10px #D4D4D4;*/
 	}
 	#container_main_sidebar {	/* la zone pour les 2 colonnes main et sidebar; cette zone sert à faire en sorte que ces 2 colonnes soient toujours de même hauteur */
- 		width:17cm; 
- 		position: relative; 
- 		margin:0; 
+		width:1000px;
+		position: relative;
+		margin:0 auto;
 	}
 	/* background container */
 	.backgrounds { 
- 		position:absolute;
+		position:absolute;
 		width:100%;
-		height:100%; 
+		height:100%;
 	}
 	/* background columns */
 	.backgrounds .main {
 		height:100%;
-		background:#FFFFFF; 
+		background:#FFFFFF;
 	}
 	.backgrounds .sidebar {
 		height: 100%;
-		background: #FFFFFF;
+		background: #F7F7F7;	/* fond gris très clair */
 	}
 	.main {	/* la zone de texte */
 		float: left;
 		position: relative;
-		width:17cm;
+		width:665px;
+		padding-left:20px;
+		padding-right:20px;
 		padding-bottom: 0;
 	}
 
 	/* les menus horizontaux */
 	#wrapdanswrap {	/* le contenant global des menus horizontaux */
 		padding:0px 0px;
-		background:#FFFFFF;
+		background:#FFFFFF url(illustrations/tous/bandeau.png);
 	}
-	#header {	/* le titre (ex. : tutoriel QGIS, cf. classe grostitre) */
-		float: left;
-    	width: 5cm;
-    	display: none;
-	}
-	#notforprint {
+	/* le div pour les logos à n'afficher qu'à l'impression */
+	#logos_print {
 		display: none;
+	}
+	#header {	/* le titre (ex. : tutoriel QGIS 2) */
+    	padding:15px 10px;
+		color: #FFFFFF;
 	}
 	#nav {	/* les menus eux-mêmes */
 		padding:2px 0px;
 		background: rgba(25,25,25,0.5);
-		display: none;
 	}
 	#nav ul {
 		margin:0;
-		padding:5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 0px;
+		padding-right: 0px;
 		list-style:none;
 	}
 	#nav li {
 		display:inline;
 		margin:0;
-		padding:5px;
+		padding:8px;
 	}
 	#nav li a {	/* pour les liens du menu horizontal */
 		font-size: 1.1em;
-      	color: #FFFFFF;
-      	text-decoration: none;
+        color: #FFFFFF;
+        text-decoration: none;
 	}
-	#nav li a:hover {	/* pour les liens du menu horizontal */
+	#nav li:hover {	/* pour les liens du menu horizontal */
 		color: #191919;
 		background-color: #EFEFEF;
-		padding:5px 0px;
+	}
+	#nav li:hover a {	/* pour les liens du menu horizontal */
+		color: inherit;
 	}
 	
 	/* les menus sur la droite (liste des chapitres) */
@@ -101,10 +112,9 @@ hov         #1D3437     hover colour
 		padding-left:10px;
 		padding-right:10px;
 		padding-bottom: 0;
-		display: none;
 	}
 	#sidebar a {	/* pour les liens du menu vertical */
-      color:#28A6B7;
+      color:#2DAB0B;
       text-decoration: none;		
 	}
 	#sidebar a:hover {	/* pour les liens du menu vertical */
@@ -116,8 +126,7 @@ hov         #1D3437     hover colour
 		clear: both;
 		padding: 5px 10px;
 		background: #FFFFFF;
-		font-size: 0.8em;
-		display: none;
+		font-size: 0.8em
 	}
 	#footer p {
 		margin:0;
@@ -171,6 +180,7 @@ hov         #1D3437     hover colour
 		padding-top: 10px;
 		padding-bottom: 10px;
 		padding-left: 0;
+		padding-right: 10px;
 		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
 		border: none;
 		box-shadow: none;
@@ -206,7 +216,7 @@ hov         #1D3437     hover colour
 	img.icone {
 		padding:0;
 		float: left;
-		margin: 5px;
+		margin-right: 7px;
 		border: thin solid;
 		border-color: silver;
 		box-shadow: none;
@@ -234,6 +244,7 @@ hov         #1D3437     hover colour
 		z-index: 0;
 	}
 	.thumbnail_bottom:hover{
+	    color: /*hov*/#1D3437;
 		background-color: transparent;
 		z-index: 50;
 	}
@@ -259,12 +270,13 @@ hov         #1D3437     hover colour
 	}
 	/* quand on veut que l'image s'affiche au-dessus du texte (bas de page) */
 	.thumbnail_top{
-		color: #146000;
+		color: /*hov*/#1D3437;
 		border-bottom: 1px dotted;
 		position: relative;
 		z-index: 0;
 	}
 	.thumbnail_top:hover{
+	    color: /*hov*/#1D3437;
 		background-color: transparent;
 		z-index: 50;
 	}
@@ -387,17 +399,56 @@ hov         #1D3437     hover colour
 		margin-top: .7em;
 		margin-bottom: .7em;
 	}
+	LI.index_01{	/* liste pour l'index : lettres */
+		list-style-type: none;
+	}
+	LI.index_02{	/* liste pour l'index : termes */
+		list-style: none;
+   	text-indent: -.7em;
+		margin: -10px;
+	}
+	li.index_02:before{	/* pour la puce de cette liste */
+		content: '\002022';
+		color: lightgray;
+		font-size: 1.7em;
+		padding-right: 0.25em;
+		position: relative;
+		top: 0.2em;
+	}
+	LI.index_03{	/* liste pour l'index : termes encore un niveau dessous */
+		list-style-type: none;
+	}
+	UL.index{
+		margin-top: 0em;
+	}
+	#index_sommaire ul{	/* pour les lettres tout en haut de l'index qui renvoient plus bas */
+		margin:0;
+		padding:5px;
+		list-style:none;
+	}
+	#index_sommaire li {
+		display:inline;
+		margin:0;
+		padding:5px;
+	}
+	LI.plandet{
+		margin-bottom: 1em;
+		padding-bottom: 1em;
+	}
 	
 	/* différents styles d'hyperliens */
 	a {		/* les hyperliens s'affichent en bleu */
 		color: /*link*/#28A6B7;
-     	text-decoration: none;
+    	text-decoration: none;
 	}
 	a:hover {	/* et en orange quand on passe la souris au-dessus */
 		color:#FF7D00;
 	}
 	a.grostitre{
 		color: white;
+		margin:0;
+	    font-weight:normal;
+	    font-size: 2em;
 	}
 	a.titre:hover {	/* sauf quand c'est un titre */
 		color:#1F9DAA;
@@ -410,27 +461,27 @@ hov         #1D3437     hover colour
 		border-bottom: 1px dotted;
 	}
 	a.ext:hover {
-		color: #505050;
+		color: #FF7D00;
 	}
 	a.ext:after {  /* une icône différente pour les liens externes */
   		content: "\0000a0[\2197]";
 	}
 	a.hautpage {
+	    visibility: hidden;
 		display: block;
 		padding-top: 10px;
 		padding-bottom: 10px;
-		display: none;
 	}
 	a.suiv {
+	    visibility: hidden;
 		float: right;
-		display: none;
 	}
 	a.suiv:after {
 		content: "\0000a0\2192";
 	}
 	a.prec {
+	    visibility: hidden;
 		float: left;
-		display: none;
 	}
 	a.prec:before {
 		content: "\2190\0000a0";
@@ -457,6 +508,7 @@ hov         #1D3437     hover colour
 		border-left: 6px;
 		border-left-style: solid;
 		border-left-color: #1F9DAA;
+		background-color: /*bgm*/#F0F4F4;
 	}
 	p.note{
 		font-size: 0.9em;
@@ -489,6 +541,7 @@ hov         #1D3437     hover colour
 		border-left: 6px;
 		border-left-style: solid;
 		border-left-color: /*link*/#28A6B7;
+		background-color: /*bgm*/#F0F4F4;
 	}
 	div.bonus {
 		background-color: #FFDDDD;
@@ -506,6 +559,17 @@ hov         #1D3437     hover colour
         margin-top: -5px;
         padding:0;
         background-color:#191919;
+        border:0;
+        }
+        
+    /* pour la couverture des PDF */   
+    hr.cover {
+        width:100%;
+        height:1.5px;
+        margin-bottom:5px;
+        margin-top: 5px;
+        padding:0;
+        background-color:darkgray;
         border:0;
         }
 
@@ -532,7 +596,7 @@ hov         #1D3437     hover colour
 		padding-top: 40px;
 		border-bottom: 2px;
 		border-bottom-style:solid;
-		border-bottom-color:#28A6B7;
+		border-bottom-color:/*link*/#28A6B7;
 	}
 	h4 {
 		color: /*link*/#28A6B7;
@@ -592,7 +656,7 @@ hov         #1D3437     hover colour
 		margin-top: -7px
 	}
 	p.reponse {
-
+		max-height: 0;
 		overflow: hidden;
 		padding-left: 5px;
 		font-style: italic;
@@ -600,3 +664,98 @@ hov         #1D3437     hover colour
 	input[type=checkbox]:checked ~ p {
 		max-height: 600px; /* la hauteur max que pourra prendre la réponse */
 	}
+	
+	/* pour les smartphones */
+    @media all and (max-device-width:480px) {
+        /* pour que le contenu se redimensionne à la taille de l'écran */
+        #wrap{width: auto}
+        #container_main_sidebar{width: auto}
+        .main{width: auto; background: #FFFFFF}
+        .backgrounds{width: auto}
+        /* on n'affiche plus le menu de droite avec le plan */
+        .sidebar {display:none;}
+        /* pour que les images se redimensionnent à la taille de l'écran */
+        img {max-width: 100% !important; height: auto;}
+        /* les icônes des outils ne doivent pas se redimensionner */
+        img.icone {width: 30px !important;}
+        img.iconemid {width: 30px !important;}
+        /* l'icône creative commons du pied de page ne doit pas se redimmensionner */
+        #footer img{ width: 80px !important}
+        /* on n'affiche pas les images qui s'affichent normalement en survolant le texte */
+        .thumbnail_bottom span{display: none;}
+        .thumbnail_top span{display: none;}
+        .thumbnail_bottom{color: #323232; border-bottom: none; pointer-events: none; cursor: default; font-weight: bold;}
+        .thumbnail_top{color: #323232; border-bottom: none; pointer-events: none; cursor: default; font-weight: bold;}
+        /* pour couper les mots trop longs */
+        body {overflow-wrap: break-word; word-wrap: break-word; -ms-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+        /* pour le menu horizontal */
+        #nav li {display: block; text-align: center; font-size: 6vw;}
+        #nav ul li, #nav ul li a {width: 100%;}
+        #nav li:hover {display: block;}
+        #wrapdanswrap { background:#FFFFFF url(illustrations/tous/bandeau.png); background-size: cover;}
+        /* taille de police pour le titre */
+        a.grostitre {font-size: 8vw;}
+        /* taille de police pour le plan détaillé */
+        li.plandet {font-size: 3vw;}
+        /* taille de police pour les liens chapitre précédent et suivant */
+        a.prec, a.suiv {font-size: 6vw;}
+    }
+    
+    /* pour les tablettes */
+    @media (min-device-width: 481px) and (max-device-width:780px) {
+        /* pour que le contenu se redimensionne à la taille de l'écran */
+        #wrap{width: auto}
+        #container_main_sidebar{width: auto}
+        .main{width: auto; background: #FFFFFF}
+        .backgrounds{width: auto}
+        /* on n'affiche plus le menu de droite avec le plan */
+        .sidebar {display:none;}
+        /* pour que les images se redimensionnent à la taille de l'écran */
+        img {max-width: 100% !important; height: auto;}
+        /* les icônes des outils ne doivent pas se redimensionner */
+        img.icone {width: 30px !important;}
+        img.iconemid {width: 30px !important;}
+        /* l'icône creative commons du pied de page ne doit pas se redimmensionner */
+        #footer img{ width: 80px !important}
+        /* on n'affiche pas les images qui s'affichent normalement en survolant le texte */
+        .thumbnail_bottom span{display: none;}
+        .thumbnail_top span{display: none;}
+        .thumbnail_bottom{color: #323232; border-bottom: none; pointer-events: none; cursor: default; font-weight: bold;}
+        .thumbnail_top{color: #323232; border-bottom: none; pointer-events: none; cursor: default; font-weight: bold;}
+        /* pour couper les mots trop longs */
+        body {overflow-wrap: break-word; word-wrap: break-word; -ms-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+        /* pour le menu horizontal */
+        #nav li {padding-left: 3px; font-size: 3vw;}
+        #nav li {padding-right: 3px;}
+        #nav li a {font-size: vw;}
+        /* taille de police pour le titre */
+        a.grostitre {font-size: 5vw;}
+        /* taille de police pour le plan détaillé */
+        li.plandet {font-size: 2vw;}
+        /* taille de police pour les liens chapitre précédent et suivant */
+        a.prec, a.suiv {font-size: 3vw;}
+        
+        /* a.grostitre{color:blue;} */
+    }
+    @media (min-device-width: 781px) and (max-device-width:979px) {
+        /* pour que le contenu se redimensionne à la taille de l'écran */
+        #wrap{width: auto}
+        #container_main_sidebar{width: auto}
+        .main{width: auto; background: #FFFFFF}
+        .backgrounds{width: auto}
+        /* on n'affiche plus le menu de droite avec le plan */
+        .sidebar {display:none;}
+        /* pour que les images se redimensionnent à la taille de l'écran */
+        img {max-width: 100% !important; height: auto;}
+        /* les icônes des outils ne doivent pas se redimensionner */
+        img.icone {width: 30px !important;}
+        img.iconemid {width: 30px !important;}
+        /* l'icône creative commons du pied de page ne doit pas se redimmensionner */
+        #footer img{ width: 80px !important}
+        /* tailles de police pour le titre */
+        a.grostitre {font-size: 3vw;}
+        /* taille de police pour le menu horizontal */
+        #nav li a{font-size: 2vw;}        
+        
+        /* a.grostitre{color:red;} */
+    }

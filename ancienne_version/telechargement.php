@@ -35,7 +35,7 @@
 				<p><a href="donnees/TutoQGIS_10_Representation.zip">Données de la partie X : représentation et mise en page</a></p>
 				<p><a href="donnees/TutoQGIS_11_Automatisation.zip">Données de la partie XI : automatisation de traitements</a></p>
 				
-			<h2>Téléchargement du tutoriel au format PDF</h2>
+			<!--<h2>Téléchargement du tutoriel au format PDF</h2>
 				<p>Vous pouvez télécharger ici des PDF correspondant à la version en ligne du tutoriel QGIS. Ces PDF ont été générés grâce à l'outil <a class="ext" target="_blank" href="http://wkhtmltopdf.org/">wkhtmltopdf</a>.</p>
 				<p>Attention, ces PDF étant des exports de la version en ligne, les mises à jour sont moins régulières et toutes les fonctionnalités ne seront pas affichées.</p>
 				<p><a href="exports_pdf/tutoqgis.pdf">Tout le tutoriel au format PDF</a></p>
@@ -49,9 +49,10 @@
 				<p><a href="exports_pdf/tuto08.pdf">PDF de la partie VIII : jointures</a> </p>
 				<p><a href="exports_pdf/tuto09.pdf">PDF de la partie IX : analyse spatiale</a></p>
 				<p><a href="exports_pdf/tuto10.pdf">PDF de la partie X : représentation et mise en page</a></p>
-				<p><a href="exports_pdf/tuto11.pdf">PDF de la partie XI : automatisation de traitements</a></p>
+				<p><a href="exports_pdf/tuto11.pdf">PDF de la partie XI : automatisation de traitements</a></p>-->
 
-			
+			    </br>
+			    
 		</div>
 		<div class="sidebar">
 			<?php include('logos_menus_verticaux.inc.php'); ?>

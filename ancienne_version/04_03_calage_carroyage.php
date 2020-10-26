@@ -29,7 +29,7 @@
 						<p>Lancez QGIS ou créez un nouveau projet. <b>Il est inutile d'ajouter la carte d'Oahu à QGIS</b> (si vous le faites néanmoins, profitez-en pour observer qu'en l'absence d'informations de localisation pour cette image, QGIS positionne son coin supérieur gauche aux coordonnées (0,0)).</p>
 						<p><img class="icone" src="illustrations/tous/4_3_georeferenceur_icone.png" alt="icône du géoréférenceur" >
 						Ouvrez la fenêtre du géoréférenceur :
-							<a class="thumbnail_bottom" href="#thumb">Menu Raster &#8594; Géoréférencer &#8594; Géoréférencer...
+							<a class="thumbnail_bottom" href="#thumb">Menu Raster &#8594; Géoréférencer...
 								<span>
 									<img src="illustrations/tous/4_3_georeferenceur_menu.png" alt="Menu Raster, Géoréférencer, Géoréférencer..." height="250" >
 								</span>
@@ -40,14 +40,15 @@
 								<img src="illustrations/tous/4_3_georeferenceur_fenetre.png" alt="Fenêtre du géoréférenceur" width="600">
 							</a>
 						</figure>
+						<p class="note">Il est possible d'afficher le géoréferenceur comme une fenêtre à part ou ancrée. Pour changer de mode, dans la fenêtre du géoréférenceur, <b>menu Paramètres &#8594; Configurer géoréférenceur...</b>, cochez ou décochez la case <b>Afficher la fenêtre de géoréférencement dans la fenêtre principale</b>.</p>
 						<p><img class="icone" src="illustrations/tous/4_3_ouvrir_raster_icone.png" alt="icône ouvrir un raster du géoréférenceur" >Dans cette fenêtre, ajoutez au géoréférenceur l'image à caler en cliquant sur l'icône <b>Ouvrir un raster</b>, ou bien
-							<a class="thumbnail_bottom" href="#thumb">menu Fichier &#8594; Ouvrir un raster
+							<a class="thumbnail_bottom" href="#thumb">menu Fichier &#8594; Ouvrir raster...
 								<span>
 									<img src="illustrations/tous/4_3_ouvrir_raster_menu.png" alt="Menu Fichier, ouvrir un raster" height="200" >
 								</span>
 							</a>
 						.</p>
-						<p>Sélectionnez la carte de l'île d'Oahu : fichier <em class="data">Oahu_Hawaiian_Islands_1906.jpg</em>.</p>
+						<p>Sélectionnez la carte de l'île d'Oahu : fichier <em class="data"><a href="donnees/TutoQGIS_04_Georef.zip">Oahu_Hawaiian_Islands_1906.jpg</a></em>.</p>
 						<p>Une fenêtre s'ouvre demandant le SCR de l'image ; puisque nous avons décidé de partir du principe que les coordonnées de cette carte était en WGS84, 
 							<a class="thumbnail_bottom" href="#thumb">choisissez ce SCR
 								<span>
@@ -84,7 +85,7 @@
 							<img src="illustrations/tous/4_3_table_points.png" alt="Table des points de contrôle : premier point" width="600">
 						</a>
 					</figure>
-					<p>Que signifient les différentes colonnes de cette table?</p>
+					<p>Que signifient les différentes colonnes de cette table&nbsp;?</p>
 					<ul>
 						<li class="espace"><b>Visible :</b> indique si le point sera pris en compte ou non pour le géoréférencement. Permet de ne pas prendre en compte certains points qui semblent apporter trop d'erreurs, tout en les gardant en mémoire.</li>
 						<li class="espace"><b>ID :</b> identifiant du point. Peut aider à repérer de quel point il s'agit sur la carte, dans le fenêtre du géoréférenceur comme dans celle de QGIS.</li>

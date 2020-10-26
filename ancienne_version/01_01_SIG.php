@@ -70,7 +70,7 @@
 								</span>
 							</a>
 						</p>				
-						<p>Sélectionnez le projet <em class="data">senegal.qgs</em> situé dans <b>TutoQIS_01_PriseEnMain/projets</b>, cliquez sur <b>Ouvrir</b>.</p>
+						<p>Sélectionnez le projet <em class="data">senegal.qgz</em> situé dans <b>TutoQIS_01_PriseEnMain/projets</b>, cliquez sur <b>Ouvrir</b>.</p>
 						<p>Trois couches de données sont affichées dans QGIS, correspondant aux villes, rivières et régions du Sénégal.</p>
 						</div>
 						
@@ -79,13 +79,13 @@
 						<p>On distingue généralement deux types de données : <b>vecteur et raster</b>.</p>
 						<figure>
 							<a href="illustrations/tous/1_1_vecteur.png" >
-							<img src="illustrations/tous/1_1_vecteur.png" alt="Exemple de données vecteur" width="400">
+							<img src="illustrations/tous/1_1_vecteur.png" alt="Exemple de données vecteur" width="90%">
 							</a>
 							<figcaption >Exemple de données vecteur, l'exemple du Sénégal : régions sous forme de polygones, rivières sous forme de lignes et villes sous forme de points (source : pôle ARD, adess, domaine public).</figcaption>
 						</figure>
 						<p>Les <b>données vecteurs</b> se définissent uniquement par des coordonnées. On trouvera des données vecteurs de type <b>point</b>, <b>ligne</b> et <b>polygone</b>. Un point sera défini par un couple de coordonnées XY, une ligne ou un polygone par les coordonnées de leurs sommets. Une couche vecteur sera soit de type point, soit de type ligne, soit de type polygone, mais ne pourra contenir de données de deux types différents (sauf dans le cas particuliers de certains formats qui ne seront pas abordés dans ce tutoriel).</p>
 						<p>On pourra choisir par exemple de représenter des cours d'eau sous forme de ligne, des villes sous forme de points...</p>
-						<p>Les données vecteur sont généralement moins volumineuses que les données raster. Quelques exemples de formats vecteur : SVG, AI, SHP...</p>
+						<p>Les données vecteur sont généralement moins volumineuses que les données raster. Quelques exemples de formats vecteur : SVG, AI, SHP, Geo...</p>
 		
 						<p>Les <b>données raster</b>, ou images, sont constituées de pixels. En zoomant sur un raster, on finit par distinguer les pixels. Chaque pixel possède une valeur correspondant par exemple à sa couleur, ou à son altitude. Un raster est caractérisé par la taille d'un pixel, ou résolution. Exemples de données raster : carte IGN scannée, photographie aérienne, image satellite...</p>
 						<figure>
@@ -95,6 +95,7 @@
 							<figcaption>Exemple de données raster (source : IGN).</figcaption>
 						</figure>
 						<p>Quelques exemples de formats raster : JPG, TIFF, PNG...</p>
+						<p>Certains formats, comme le <a class="ext" target="_blank" href="https://www.geopackage.org/" >GeoPackage</a>, peuvent contenir des données vecteur ou raster.</p>
 						
 						
 					<h4><a class="titre" id="I12c">Les données vecteur : à chaque géométrie ses attributs (et vice-versa)</a></h4>
@@ -108,7 +109,7 @@
 						<p>Le lien entre composante spatiale et attributaire constitue une différence fondamentale avec les logiciels de dessin (DAO) type AutoCAD.</p>
 						<div class="manip">
 							<p><img class="icone" src="illustrations/tous/1_1_ouvrir_projet_icone.png" alt="icône ouvrir un projet" >Ouvrez le projet 
-								<em class="data">depts_france.qgs</em> qui se trouve situé dans le dossier <b>TutoQIS_01_PriseEnMain/projets</b>.
+								<em class="data">depts_france.qgz</em> qui se trouve situé dans le dossier <b>TutoQIS_01_PriseEnMain/projets</b>.
 							</p>
 							<p><img class="icone" src="illustrations/tous/1_1_ouvrir_table_icone.png" alt="icône ouvrir la table d'attributs" >Ouvrez la table attributaire de la couche de départements :
 								<br>
@@ -127,7 +128,7 @@
 									<img src="illustrations/tous/1_1_table_liste_deroulante.png" alt="Table attributaire : ne montrer que les entités sélectionnées" width="600">
 								</a>
 							</figure>
-							<p class="note">Pour que la fenêtre de la table attributaire soit "ancrée" dans QGIS : menu <b>Préférences &#8594; Options &#8594; Sources de données</b> : cocher la case <b>Ouvrir la table d'attributs dans une fenêtre intégrée</b>. Contrairement à ce qui est écrit, cette modification est prise en compte directement sans besoin de redémarrer QGIS.</p>
+							<p class="note">Pour que la fenêtre de la table attributaire soit "ancrée" dans QGIS : menu <b>Préférences &#8594; Options &#8594; Sources de données</b> : cocher la case <b>Ouvrir la table d'attributs dans une fenêtre intégrée</b>.</p>
 						</div>
 						
 						

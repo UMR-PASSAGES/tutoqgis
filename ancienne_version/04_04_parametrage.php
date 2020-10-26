@@ -57,7 +57,7 @@
 					
 				<h3><a class="titre" id="IV41">Type de transformation, ou comment calculer les nouvelles coordonnées des points ?</a></h3>
 				
-					<h4><a class="titre" id="IV41a">Qu'est-ce qu'une transformation?</a></h4>
+					<h4><a class="titre" id="IV41a">Qu'est-ce qu'une transformation ?</a></h4>
 					
 						<p>Lors du calage, l'image subit une transformation, afin de faire coïncider au maximum les points de départ avec les coordonnées spécifiées par l'utilisateur. Une transformation est en fait une formule mathématique transformant les coordonnées de départ vers les coordonnées voulues.</p>
 						<p>Il existe divers types de transformations, adaptées à des usages différents. Chaque transformation, si on l'utilise avec un nombre de points de calage supérieur à son minimum, renverra une erreur correspondant à la différence entre les coordonnées "idéales" voulues par l'utilisateur et les coordonnées effectivement calculées lors de la transformation (erreur résiduelle <b>residual[pixels]</b> de la table des points de contrôle, voir plus haut).</p>
@@ -101,10 +101,10 @@
 						</figure>					
 					<ul>
 						<li class="espace"><b>Plus proche voisin :</b> le nouveau pixel prend la valeur du pixel de l'ancien raster le plus proche. Cette méthode est la plus rapide, et est utilisée principalement pour des données catégorisées (occupation du sol par exemple) puisqu'elle ne crée pas de nouvelles valeurs.</li>
-						<li class="espace"><b>Linéaire :</b> la valeur du nouveau pixel est déterminé à partir des valeurs des 4 pixels les plus proches. Cette méthode est utilisée pour des données continues et permet un lissage du raster.</li>
+						<li class="espace"><b>Linéaire :</b> la valeur du nouveau pixel est déterminée à partir des valeurs des 4 pixels les plus proches. Cette méthode est utilisée pour des données continues et permet un lissage du raster.</li>
 						<li class="espace"><b>Cubique :</b> la valeur du nouveau pixel est déterminée à partir des valeurs des 16 pixels les plus proches. Ceci provoque moins de distorsion géométrique de l'image mais nécessite un temps de calcul relativement long. Par ailleurs, il y a plus de possibilités d'obtenir avec cette méthode de nouvelles valeurs de pixel par rapport aux valeurs de départ.</li>
 					</ul>
-					<p>Le choix d'une méthode de rééchantillonnage a surtout une influence dans le cas où un la taille des pixels est importante par rapport à la taille des objets qui seront étudiés sur l'image, par exemple une photo aérienne où chaque maison est constituée de seulement quelques pixels.</p>
+					<p>Le choix d'une méthode de rééchantillonnage a surtout une influence dans le cas où la taille des pixels est importante par rapport à la taille des objets qui seront étudiés sur l'image, par exemple une photo aérienne où chaque maison est constituée de seulement quelques pixels.</p>
 					<p>Dans notre cas (carte scannée avec une bonne résolution), le choix du type de rééchantillonnage influencera peu le résultat.</p>
 					
 					<div class="manip">
@@ -153,7 +153,7 @@
 				
 					<h4><a class="titre" id="IV44b">SCR cible</a></h4>
 						
-						<p>Comme décidé en partie <a href="04_02_preliminaires.php#IV21">IV.1</a>, nous allons partir du principe que les coordonnées de cette carte sont exprimées dans un système proche du WGS84.</p>
+						<p>Comme décidé en partie <a href="04_02_preliminaires.php#IV21">IV.2.1</a>, nous allons partir du principe que les coordonnées de cette carte sont exprimées dans un système proche du WGS84.</p>
 						<div class="manip">
 							<p>Cliquez sur l'icône à droite de la ligne <b>SCR cible</b>, ou bien utilisez la liste déroulante pour choisir directement le SCR.</p>
 							<figure>

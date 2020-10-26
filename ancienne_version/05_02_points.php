@@ -30,14 +30,14 @@
 			<div class="manip">
 				<p>Créez un nouveau projet QGIS, et ajoutez-y :</p>
 				<ul>
-					<li class="espace">la carte géoréférencée <em class="data">Oahu_Hawaiian_Islands_1906_wgs84.tif</em> située dans le dossier <b>TutoQGIS_05_Numerisation/donnees</b></li>
+					<li class="espace">la carte géoréférencée <em class="data"><a href="donnees/TutoQGIS_05_Numerisation.zip">Oahu_Hawaiian_Islands_1906_wgs84.tif</a></em> située dans le dossier <b>TutoQGIS_05_Numerisation/donnees</b></li>
 					<li class="espace">la couche vide créée dans le chapitre précédent : <em class="data">batiments_oahu.shp</em></li>
 				</ul>
 			</div>
 			
 			<h3><a class="titre" id="V21">Rendre une couche éditable</a></h3>
 			
-				<p>Par défaut, toutes les couches ajoutées dans QGIS sont &#171; verrouillées &#187; donc non modifiables (modifier la couleur, le style ne modifie pas les données mais seulement leur représentation).</p>
+				<p>Par défaut, toutes les couches ajoutées dans QGIS sont &#171; verrouillées &#187; donc non modifiables (modifier le style ne modifie pas les données mais seulement leur représentation).</p>
 				<p>Pour rendre une couche éditable, que ce soit pour modifier les données de la table attributaire ou la géométrie d'un élément, il faut donc passer en mode édition. Nous allons faire cette manipulation pour la couche <em class="data">batiments_oahu</em> afin de pouvoir y ajouter des points.</p>
 				<div class="manip">
 					<p>Vérifiez tout d'abord que votre couche de bâtiments soit <b>au-dessus</b> de la carte.</p>
@@ -76,11 +76,11 @@
 						</a>
 					</figure>
 					<p><img class="icone" src="illustrations/tous/5_2_ajout_icone.png" alt="icône d'ajout d'une entité" >Assurez-vous que votre couche de bâtiments soit bien sélectionnée dans la table des matières, puis cliquez sur l'icône <b>Ajouter une entité</b>.</p>
-					<p>Cliquez sur l'école ou la poste que vous avez choisie; une fenêtre s'ouvre vous demandant de renseigner les attributs pour ce point (un seul attribut dans notre cas). Renseignez le type de bâtiment et cliquez sur <b>OK</b>.</p>
+					<p>Cliquez sur l'école ou la poste que vous avez choisie; une fenêtre s'ouvre vous demandant de renseigner les attributs pour ce point. Laissez <b>Génération automatique</b> pour le champ fid, et renseignez le type de bâtiment : <b>poste</b>. Cliquez sur <b>OK</b>.</p>
 					<p class="note">Si cette fenêtre ne s'ouvre pas, menu Préférences &#8594; Options &#8594; rubrique Numérisation : décochez la case &#171; Supprimer la fenêtre de saisie des attributs lors de la création de chaque nouvelle entité &#187; (tout en haut).</p>
 					<figure>
 						<a href="illustrations/tous/5_2_remplissage_type.png" >
-							<img src="illustrations/tous/5_2_remplissage_type.png" alt="remplir l'attribut type par 'école' par exemple" width="300" >
+							<img src="illustrations/tous/5_2_remplissage_type.png" alt="remplir l'attribut type par 'école' par exemple" width="80%" >
 						</a>
 					</figure>
 					<p>Le point s'affiche sur la carte, avec le style de la couche (ici un rond turquoise) :</p>
@@ -97,7 +97,7 @@
 						</a>
 					</figure>
 					<p><img class="icone" src="illustrations/tous/5_2_sauv_icone.png" alt="icône sauvegarder les modifications" >N'oubliez pas de sauvegarder vos modifications en sélectionnant la couche puis en cliquant sur l’icône <b>sauvegarder les modifications</b>.</p>
-					<p>Vous pouvez <a href="01_02_info_geo.php#I23a">modifier le style</a> des points dans les propriétés de la couche, rubrique Style.</p>
+					<p>Vous pouvez <a href="01_02_info_geo.php#I23a">modifier le style</a> des points dans les propriétés de la couche, rubrique Symbologie.</p>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
 						<p><label for="faq-1">Comment faire pour représenter les données comme dans la légende de la carte, les écoles sous forme de rond bleu et les postes de rond rouge ?</label></p>
@@ -116,8 +116,9 @@
 					<p>Imaginons qu'un de vos points soit mal placé et que vous vouliez le déplacer.</p>
 					<div class="manip">
 						<p>La couche doit être en mode édition.</p>
-						<p><img class="icone" src="illustrations/tous/5_2_deplacer_icone.png" alt="icône déplacer une entité" >Sélectionnez votre couche de bâtiments dans la table des matières, puis cliquez sur l'icône <b>Déplacer une entité</b>.</p>
-						<p>Le curseur prend la forme d'une croix blanche. Cliquez sur le point à déplacer, et faites-le glisser en maintenant le bouton de la souris enfoncé. Relâchez le bouton de la souris une fois le point à l'emplacement de votre choix.</p>
+						<p>Il faut également <b>activer la barre d'outils de numérisation avancée</b> : clic droit sur n'importe quel barre d'outils (sauf sur un outil désactivé) et cochez si ça n'est pas déjà le cas la case Barre d'outils de numérisation avancée. Vous pouvez également passer par le menu Vue &#8594; Barres d'outils.</p>
+						<p><img class="icone" src="illustrations/tous/5_2_deplacer_icone.png" alt="icône déplacer l'entité" >Sélectionnez votre couche de bâtiments dans la table des matières, puis cliquez sur l'icône <b>Déplacer l'entité</b>.</p>
+						<p>Le curseur prend la forme d'une croix. Cliquez sur le point à déplacer, puis cliquez sur l'endroit où vous souhaitez déplacer ce point.</p>
 					</div>
 				
 				<h4><a class="titre" id="V23b">Modification des données attributaires</a></h4>
@@ -137,9 +138,9 @@
 					
 			<h3><a class="titre" id="V24">Quitter le mode édition</a></h3>
 			
-				<p>Une fois vos ajouts et modifications terminées, il est important de quitter le mode édition, pour plusieurs raisons :</p>
+				<p>Une fois vos ajouts et modifications terminés, il est important de quitter le mode édition, pour plusieurs raisons :</p>
 				<ul>
-					<li>éviter de faire de modifications par erreur</li>
+					<li>éviter de faire des modifications par erreur</li>
 					<li>sauvegarder les modifications effectuées</li>
 					<li>certains outils SIG ne peuvent fonctionner sur une couche en cours d'édition</li>
 				</ul>
@@ -150,7 +151,7 @@
 					       <img src="illustrations/tous/5_2_quitter_edition.png" alt="Fenêtre arrêter l'édition" width="480" >
 					   </a>
 					</figure>
-					<p>Une fenêtre apparaît vous demander si vous souhaitez :</p>
+					<p>Une fenêtre apparaît pour vous demander si vous souhaitez :</p>
 					<ul>
 						<li><b>Fermer sans enregistrer :</b> quitte le mode édition sans sauvegarder vos modifications</li>
 						<li><b>Annuler :</b> ne quitte pas le mode édition</li>
@@ -164,7 +165,9 @@
 					   </a>
 					</figure>
 				</div>
-				<p>Peut-être vous demandez-vous comment faire pour, comme dans l'image ci-dessus, représenter d'une manière les écoles (ronds bleus) et d'une autre les postes (rounds rouge) ? Procédez comme indiqué <a href="03_01_donnees_internet.php#III11a" >ici</a>, en allant dans les propriétés de la couche, rubrique Style, mode Catégorisé sur la colonne type.</p>
+				
+				<p>Le chapitre suivant vous permettra d'en savoir plus sur les modes de saisie des données attributaires, en créant une liste de choix avec les 2 valeurs école et poste.</p>
+				<p>Vous pouvez bien sûr décider de filer directement au chapitre d'après sur la <a href="05_04_lignes.php" >numérisation des lignes</a>&nbsp;!</p>
 
 				
 				<br>
