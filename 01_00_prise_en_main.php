@@ -17,11 +17,12 @@
 			<p>Notions abordées :</p>
 				<ul>
 					<li>Qu'est-ce qu'un SIG ?</li>
-					<li>Ajout de données vecteur</li>
+					<li>Ajout de données vecteur et raster</li>
 					<li>Propriétés d'une couche</li>
+					<li>Modifier la représentation d'une couche</li>
 					<li>La table attributaire</li>
-					<li>Formats de données vecteur</li>
-					<li>Espace de travail : le projet QGS</li>
+					<li>Formats de données vecteur et raster</li>
+					<li>Espace de travail : le projet QGZ</li>
 				</ul>
 			<p>Les données pour cette partie ainsi qu'une version PDF du tutoriel sont accessibles dans la rubrique <a href="telechargement.php"> téléchargement</a>.</p>
 			

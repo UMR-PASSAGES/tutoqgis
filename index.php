@@ -46,7 +46,7 @@
 								<p class="reponse">Parce-que c'est une légende !</p>
 							</div>
 					<h4>Liens</h4>
-						<p>Les liens internes au site de<a href="http://www.passages.cnrs.fr" > PASSAGES</a> sont affichés en bleu, les <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Liens">liens</a> externes sont en gris et s'ouvriront dans une nouvelle fenêtre ou onglet.</p>
+						<p>Les liens internes au <a href="en_savoir_plus.php" >tutoriel</a> sont affichés en bleu, les <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Liens">liens</a> externes sont en gris et s'ouvriront dans une nouvelle fenêtre ou onglet.</p>
 						
 				    <a class="suiv" href="01_00_prise_en_main.php" >C'est parti !</a>
 		

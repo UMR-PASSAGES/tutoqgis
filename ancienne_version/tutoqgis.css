@@ -175,10 +175,10 @@ hov         #1D3437     hover colour
    	    box-shadow: none;
 	}
 	img.logo {
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 0px;
+		padding-bottom: 0px;
 		padding-left: 0;
-		padding-right: 10px;
+		padding-right: 0px;
 		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
 		border: none;
 		box-shadow: none;
@@ -351,18 +351,18 @@ hov         #1D3437     hover colour
 	td.centreclair{
 		background-color: #EAF5F6;
 		padding-top: 3px;
-	   padding-bottom: 3px;
-	   padding-left: 10px;
-	   padding-right: 10px;
-	   text-align: center;
+	    padding-bottom: 3px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    text-align: center;
 	}
 	td.centreclairalt{
 		background-color: #B2DFE4;
 		padding-top: 3px;
-	   padding-bottom: 3px;
-	   padding-left: 10px;
-	   padding-right: 10px;
-	   text-align: center;
+	    padding-bottom: 3px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    text-align: center;
 	}
 	tr{
 		color: black;
@@ -371,6 +371,17 @@ hov         #1D3437     hover colour
 	tr.alt{
 		color: black;
 		background-color: #9CDDE4;
+	}
+	
+	/* pour les logos dans la partie droite */
+	table.table_logos{
+	    background-color: none;
+	}
+	table.table_logos tr {
+	    background-color: transparent;
+	}
+	table.table_logos td {
+	    text-align: center;
 	}
 
 	/* différents styles de listes */

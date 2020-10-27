@@ -62,16 +62,17 @@
 							<figcaption>Source : pôle ARD, adess (domaine public)</figcaption>
 						</figure>
 						<div class="manip">
-						<p><img class="icone" src="illustrations/tous/1_1_ouvrir_projet_icone.png" alt="icône ouvrir un projet" >Lancez le logiciel QGIS. Ouvrez un projet :
-							<br>
-							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Ouvrir
-								<span>
-									<img src="illustrations/tous/1_1_ouvrir_projet.png" alt="Menu Projet, Ouvrir" height="500">
-								</span>
-							</a>
-						</p>				
-						<p>Sélectionnez le projet <em class="data">senegal.qgz</em> situé dans <b>TutoQIS_01_PriseEnMain/projets</b>, cliquez sur <b>Ouvrir</b>.</p>
-						<p>Trois couches de données sont affichées dans QGIS, correspondant aux villes, rivières et régions du Sénégal.</p>
+    						<p><img class="icone" src="illustrations/tous/1_1_ouvrir_projet_icone.png" alt="icône ouvrir un projet" >Lancez le logiciel QGIS. Ouvrez un projet :
+    							<br>
+    							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Ouvrir
+    								<span>
+    									<img src="illustrations/tous/1_1_ouvrir_projet.png" alt="Menu Projet, Ouvrir" height="500">
+    								</span>
+    							</a>
+    						</p>				
+    						<p>Sélectionnez le projet <em class="data">senegal.qgz</em> situé dans <b>TutoQIS_01_PriseEnMain/projets</b>, cliquez sur <b>Ouvrir</b>.</p>
+    						<p>Trois couches de données sont affichées dans QGIS, correspondant aux villes, rivières et régions du Sénégal.</p>
+    						<p>Ces données proviennent de <a class="ext" target="_blank" href="http://www.basegeo.gouv.sn/" >l'Agence Nationale de l'Aménagement du Territoire (ANAT) du Sénégal</a>, comme vous pouvez le voir dans la liste des données fournie avec les données du tutoriel (fichier PDF TutoQGIS_01_PriseEnMain_liste_donnees).</p>
 						</div>
 						
 						
@@ -81,7 +82,7 @@
 							<a href="illustrations/tous/1_1_vecteur.png" >
 							<img src="illustrations/tous/1_1_vecteur.png" alt="Exemple de données vecteur" width="90%">
 							</a>
-							<figcaption >Exemple de données vecteur, l'exemple du Sénégal : régions sous forme de polygones, rivières sous forme de lignes et villes sous forme de points (source : pôle ARD, adess, domaine public).</figcaption>
+							<figcaption >Exemple de données vecteur, l'exemple du Sénégal : régions sous forme de polygones, rivières sous forme de lignes et villes sous forme de points (source : Agence Nationale de l'Aménagement du Territoire (ANAT) du Sénégal).</figcaption>
 						</figure>
 						<p>Les <b>données vecteurs</b> se définissent uniquement par des coordonnées. On trouvera des données vecteurs de type <b>point</b>, <b>ligne</b> et <b>polygone</b>. Un point sera défini par un couple de coordonnées XY, une ligne ou un polygone par les coordonnées de leurs sommets. Une couche vecteur sera soit de type point, soit de type ligne, soit de type polygone, mais ne pourra contenir de données de deux types différents (sauf dans le cas particuliers de certains formats qui ne seront pas abordés dans ce tutoriel).</p>
 						<p>On pourra choisir par exemple de représenter des cours d'eau sous forme de ligne, des villes sous forme de points...</p>

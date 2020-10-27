@@ -47,7 +47,7 @@
     										</span>
     									</a>	
     								</li>
-    								<li>cliquer sur l'icône <b>Gestionnaire des sources Open Data</b><img class="iconemid" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône du gestionnaire des sources de données"></li>
+    								<li>cliquer sur l'icône <b>Ouvrir le gestionnaire des sources de données</b><img class="iconemid" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône du gestionnaire des sources de données"></li>
     								<li>utiliser le raccourci clavier <b>ctrl + L</b> (minuscule)</li>
     							</ul>
     					   <p>Si vous souhaitez retrouver vos habitudes de QGIS 2.18, vous pouvez également procéder ainsi : </p>
@@ -91,7 +91,7 @@
     				    <div class="manip">
     					
     						<p>Une autre méthode, peut-être plus pratique, consiste à utiliser l'explorateur de fichiers&#160;: activez-le éventuellement dans le menu
-    						<a class="thumbnail_bottom" href="#thumb">Menu Vue &#8594; Panneaux &#8594; Explorateur
+    						<a class="thumbnail_bottom" href="#thumb">Menu Vue &#8594; Panneaux &#8594; Panneau Explorateur
                             	<span>
                             		<img src="illustrations/tous/1_2_explorateur_menu.png" alt="menu Vue → Panneaux → Explorateur" height="700" >
                             	</span>
@@ -224,7 +224,15 @@
 								<a href="illustrations/tous/1_2_srtm.png" >
 									<img src="illustrations/tous/1_2_srtm.png" alt="srtm affiché dans QGIS" width="500" >
 								</a>
+								<figcaption>Pour obtenir cette représentation, la couche de départements est affichée au-dessus du raster, sans remplissage, avec un contour rouge.</figcaption>
 							</figure>
+							<p>Pour modifier l'ordre des couches et donc l'ordre dans lequel elles sont affichée, 
+    							<a class="thumbnail_bottom" href="#thumb">faites-les glisser dans la liste des couches
+                                	<span>
+                                		<img src="illustrations/tous/1_2_modifier_ordre_couches.gif" alt="GIF montrant comment faire glisser une couche par-dessus une autre" height="300" >
+                                	</span>
+                                </a>.
+                            </p>
 						</div>
 						<p>Il s'agit d'un <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain" >modèle d'élévation numérique</a> : chaque pixel possède une valeur correspondant à l'altitude en mètres des éléments présents au sol. Si une forêt est présente, ce sera donc l'altitude du sommet des arbres qui sera mesurée et non l'altitude du sol, idem si des bâtiments sont présents.</p>
 						<div class="manip">
@@ -249,7 +257,7 @@
 								<img src="illustrations/tous/1_2_style_raster.png" alt="style d'un raster" width="600" >
 							</a>
 						</figure>
-						<p>Pour ce raster, les valeurs minimum sont représentées en noir et les valeurs maximum en blanc : plus l'altitude est élevée, plus le point est clair.</p>
+						<p>Pour ce raster, les valeurs minimum sont représentées en noir et les valeurs maximum en blanc&nbsp;: plus l'altitude est élevée, plus le point est clair.</p>
 						<p>Vous pouvez modifier les valeurs minimum et maximum, et inverser les couleurs en choisissant <b>Blanc vers noir</b> au lieu de <b>Noir vers blanc</b>. Cliquez à chaque fois sur <b>Appliquer</b> en bas de la fenêtre pour voir le résultat de vos changements.</p>
 					</div>
 					
