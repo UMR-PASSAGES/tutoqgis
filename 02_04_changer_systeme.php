@@ -71,7 +71,7 @@
 					</div>
 					<p>Nous allons maintenant repasser le projet en WGS84. Puisqu'il existe dans ce projet des couches en WGS84, vous pouvez utiliser un raccourci pour cela :
 						<br>
-						<a class="thumbnail_bottom" href="#thumb">Clic-droit sur une couche (n'importe laquelle puisqu'elles sont toutes trois en WGS84) &#8594; Définir le SCR &#8594; Définir le SCR du projet depuis cette couche
+						<a class="thumbnail_bottom" href="#thumb">Clic-droit sur une couche (n'importe laquelle puisqu'elles sont toutes trois en WGS84) &#8594; SCR de la couche &#8594; Définir le SCR du projet depuis cette couche
 							<span>
 								<img src="illustrations/tous/2_4_def_scr_projet_couche.png" alt="Définir le SCR du projet à partir du SCR d'une couche" height="320" >
 							</span>
@@ -90,7 +90,7 @@
 				<p>Par exemple, si la couche d'origine est en WGS84 et contient un point correspondant à la ville de Paris, et que le but est d'obtenir une couche en RGF93 / Lambert-93 , les coordonnées initiales du point (48,89 2,35) en WGS84 seront recalculées pour devenir (652381 6862047) en RGF93 / Lambert-93.</p>
 				<p>Cette manipulation <b>crée une nouvelle couche</b>. La couche d'origine et la couche résultat se superposeront exactement dans QGIS si la projection à la volée est activée, puisqu'elles contiendront exactement les mêmes objets.</p>
 				<div class="manip">
-					<p>L'objectif sera ici de créer une nouvelle couche pays dans la projection de Bonne (code EPSG 53024).</p>
+					<p>L'objectif sera ici de créer une nouvelle couche pays dans la projection de Bonne (code ESRI 53024).</p>
 					<p>Pour cela, affichez la <b>boîte à outils de traitements</b> : menu Traitements &#8594; Boîte à outils.</p>
 					<figure>
 						<a href="illustrations/tous/2_4_traitement_reprojeter.png" >
@@ -98,6 +98,9 @@
 						</a>
 					</figure>
 					<p>Dans la barre de recherche de cette boîte à outils, tapez <b>projection</b> et double-cliquez sur l'outil <b>Reprojeter une couche</b>.</p>
+				</div>
+				<p class="note">Vous noterez que cet outil est improprement nommé : il peut en effet être utiliser pour modifier le SCR d'une couche, que les SCR de départ et d'arrivée soit projetés ou géographiques&nbsp;!</p>
+				<div class="manip">
 					<p>La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/2_4_reprojeter_fenetre.png" >
@@ -106,7 +109,8 @@
 					</figure>
 					<ul>
 						<li class="espace">Couche source : sélectionnez <b>ne_110m_admin_0_countries</b> dans la liste</li>
-						<li class="espace">SCR cible : cliquez sur l'icône à droite et choisissez le SCR <b>Sphere Bonne, code EPSG 53024</b></li>
+						<li class="espace">SCR cible : cliquez sur l'icône à droite et choisissez le SCR <b>Sphere Bonne, code ESRI 53024</b></li>
+						<li class="espace">Advanced Parameters : dans certains cas, pour passer d'un SCR à un autre, différentes transformations sont disponibles. Nous n'utiliserons pas ici cette option</li>
 						<li class="espace">Reprojeté : laissez l'option par défaut, à savoir créer une couche temporaire. Le but étant ici de tester la manipulation, il n'est pas nécessaire de sauvegarder une nouvelle couche sur votre ordinateur.</li>
 					</ul>
 					<p>Cliquez sur <b>Exécuter</b>.</p>
@@ -116,7 +120,7 @@
                 	<div class="question">
                 		<input type="checkbox" id="faq-3">
                 		<p><label for="faq-3">Comment afficher cette couche dans son SCR, pour savoir à quoi ressemble la projection de Bonne ?</label></p>
-                		<p class="reponse">Clic droit sur le nom de la couche &#8594; Définir le SCR &#8594; Définir le SCR du projet depuis cette couche, ou bien dans les propriétés du projet, rubrique SCR, choisissez le SCR Sphere Bonne.</p>
+                		<p class="reponse">Clic droit sur le nom de la couche &#8594; SCR de la couche &#8594; Définir le SCR du projet depuis cette couche, ou bien dans les propriétés du projet, rubrique SCR, choisissez le SCR Sphere Bonne.</p>
                 	</div>
 					<figure>
 						<a href="illustrations/tous/2_4_bonne.png" >
@@ -155,7 +159,8 @@
 				</div>
 				<p>Ainsi, si vous chargez une couche dont le SCR n'est pas défini, QGIS vous avertira et vous demandera de spécifier un SCR pour cette couche (ce sera cependant à vous de retrouver le SCR initial dans lequel aura été créée cette couche).</p>
 				
-				<p class="attention">Redéfinir le SCR d'une couche est une opération très (trop !) facilement accessible : à partir des propriétés d'une couche, rubrique <b>Source</b>, il suffit de sélectionner un autre SCR dans la liste déroulante. Rappelez-vous de ne pas procéder ainsi pour modifier le SCR d'une couche, mais d'utiliser plutôt l'outil <b>Reprojeter</b> de la boîte à outils de traitement.</p>
+				<p class="attention">Redéfinir le SCR d'une couche est une opération très (trop !) facilement accessible : à partir des propriétés d'une couche, rubrique <b>Source</b>, il suffit de sélectionner un autre SCR dans la liste déroulante.</p>
+				<p class="attention">Rappelez-vous de ne pas procéder ainsi pour modifier le SCR d'une couche, mais d'utiliser plutôt l'outil <b>Reprojeter</b> de la boîte à outils de traitement. La confusion entre ces 2 opérations est une source d'erreur très courante&nbsp;!</p>
 				
 				<br>
 				<a class="prec" href="02_03_couches_projets.php">chapitre précédent</a>

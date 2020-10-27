@@ -49,8 +49,7 @@
 				<p><em class="numero">2. </em><b>Partie "Filtre"</b> : vous pouvez taper ici un code ou un nom pour rechercher un SCR précis.</p>
 				<p><em class="numero">3. </em><b>SCR récemment utilisés</b> (cette partie peut être vide). Cette liste permet d'accéder facilement aux SCR que vous utilisez souvent.</p>
 				<p><em class="numero">4. </em><b>Liste de tous les SCR disponibles dans QGIS</b>. Ils sont classés selon 3 grandes rubriques : systèmes de coordonnées géographiques, systèmes de coordonnées projetés et systèmes de coordonnées définis par l'utilisateur (soit qu'ils aient été créés par vous-même, soit qu'ils aient été lus par QGIS dans une couche).</p>
-				<p><em class="numero">5. </em><b>SCR actuellement utilisé par le projet</b></p>
-				<p><em class="numero">6. </em><b>Transformations</b> : il est possible de choisir quelle transformation utiliser pour afficher une couche avec un SCR dans un autre SCR. Nous n'utiliserons pas cette possibilité dans ce tutoriel.</p>
+				<p><em class="numero">5. </em><b>SCR actuellement utilisé par le projet</b> avec sa définition dans 2 formats, WKT et Proj4, et sa zone d'application (également visible dans la carte à droite)</p>
 				
 				<p>La rubrique SCR de la fenêtre des propriétés du projet permet donc de modifier le système de coordonnées du projet, ou bien simplement de vérifier quel est ce système, ce que nous nous bornerons à faire pour le moment.</p>
 				<div class="manip">			
