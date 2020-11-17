@@ -35,7 +35,7 @@
 			<p>Dans le cas de <b>données raster</b>, on pourra trouver par exemple des données au format geotiff (TIF géoréférencé, c'est-à-dire avec des coordonnées lui permettant de se superposer correctement à d'autres couches).</p>
 			<p>Parfois, on ne trouvera que des <b>données non géoréférencées</b> (carte papier par exemple, ou simple image trouvée sur internet). Ce cas sera traité dans la <a href="04_00_georeferencement.php" >partie 4 : géoréférencement</a>.</p>
 			<p>Cette partie se borne à donner quelques exemples de sites permettant le téléchargement de données SIG. Il en existe beaucoup d'autres !</p>
-			<p>Ne vous offusquez pas de ne pas voir ici les données OpenStreetMap : il existe <a href="03_04_donnees_osm.php">une partie qui leur est spécialement dédiée !</a></p>
+			<p>Ne vous offusquez pas de ne pas voir ici les <b>données OpenStreetMap</b> : il existe <a href="03_05_donnees_osm.php">une partie qui leur est spécialement dédiée !</a></p>
 				
 			<h3><a class="titre" id="III11">Données nationales pour la France</a></h3>
 			
@@ -62,15 +62,39 @@
 						<p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS par territoire</b> (ici celle de mai 2020).</p>
 						<p class="note">Vous pouvez également télécharger la version <a class="ext" target="_blank" href="https://geoservices.ign.fr/ressources_documentaires/Espace_documentaire/BASES_VECTORIELLES/ADMIN_EXPRESS_COG/SE_ADMIN_EXPRESS_COG.pdf">COG (Code Officiel Géographique)</a> mais celle-ci est plus lourde.</p>
 						<p>Dézippez le fichier téléchargé (vous pouvez par exemple utiliser <a class="ext" target="_blank" href="https://www.7-zip.org/">7-zip</a>).</p>
+					</div>
+					
+					<p class="note">Si le téléchargement échoue, cette couche est également accessible <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">en téléchargement</a></em>.</p>
+					
+					<div class="manip">
 						<p>A partir de l'explorateur de fichiers de QGIS, ajoutez la couche <em class="data">COMMUNE</em> du sous-dossier <b>ADE_2-X_SHP_UTM22RGFG95_D973</b> (973 correspond au code département de la Guyane, et l'UTM 22 RGFG95 au SCR qui y est utilisé).</p>
 						<figure>
 							<a href="illustrations/tous/3_1_commune_guyane_explorateur.png" >
 								<img src="illustrations/tous/3_1_commune_guyane_explorateur.png" alt="ajout de la couche de communes de Guyane via l'explorateur QGIS" width="90%">
 							</a>
 						</figure>
+						<p>Une fenêtre peut alors s'ouvrir pour vous demander quelle transformation vous souhaitez utiliser pour passer du SCR RGFG95 (utilisé en Guyane) et WGS84. Dans ce cas, choisissez la 1ère de ces transformations, normalement sélectionnée par défaut.</p>
+						<figure>
+							<a href="illustrations/tous/3_1_choix_transformation.png" >
+								<img src="illustrations/tous/3_1_choix_transformation.png" alt="Choix de la transformation pour passer d'un SCR à un autre" width="90%">
+							</a>
+						</figure>
 					</div>
 					
-					<p class="note">Si le téléchargement échoue, cette couche est également accessible <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">en téléchargement</a></em>.</p>
+					<p class="note">Il semblerait que les 2 transformations disponibles ici aient les mêmes paramètres. Pour ajouter ou supprimer des transformations dans un projet : Propriétés du projet &#8594; rubrique Transformations.</p>
+					
+					<p>Les <a class="ext" target="_blank" href="https://docs.qgis.org/3.10/fr/docs/user_manual/working_with_projections/working_with_projections.html#datum-transformations">transformations</a> sont des formules mathématiques permettant la conversion des coordonnées d'un point d'un SCR à un autre. Il existe en effet parfois plusieurs transformations possibles pour passer d'un SCR à un autre !</p>
+					
+					<div class="manip">
+					   <p>Il est possible de paramétrer QGIS pour être informé ou non lorsqu'il existe plusieurs transformations disponibles entre 2 SCR :</p>
+					   <p><b>Menu Préférences &#8594; Options &#8594; rubrique Transformations</b> : vous pouvez décocher ou cocher la case <b>Demander de choisir la transformation de datum si plusieurs sont disponibles</b>.</p>
+					   <figure>
+							<a href="illustrations/tous/3_1_options_transformations.png" >
+								<img src="illustrations/tous/3_1_options_transformations.png" alt="Choix de l'option pour choisir soi-même ou non la transformation lorsque plusieurs sont disponibles" width="90%">
+							</a>
+						</figure>
+						<p>Si cette case est décochée, QGIS choisira la transformation la plus précise : dans la plupart des cas, ce paramétrage est adapté.</p>
+					</div>
 					
 					<p>Dans les données téléchargées sur le site de l'IGN se trouvent également les autres découpages administratifs pour la Guyane, ainsi que pour les autres territoires ultra-marins et la France métropolitaine.</p>
 					
@@ -99,8 +123,8 @@
 								<img src="illustrations/tous/3_1_geodatagouv_recherche_3.png" alt="téléchargement au format geojson sur le site geo.data.gouv.fr" width="90%">
 							</a>
 						</figure>
-						<p class="note">Si le téléchargement échoue, cette couche est également disponible dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees/COMMUNE.shp</b> accessible en <a href="telechargement.php" >téléchargement</a>.</p>
-						<p>Ajoutez ensuite ces données à QGIS. Attention, l'extension étant JSON et non GeoJSON, l'explorateur de QGIS n'affichera pas le fichier. Utilisez plutôt le gestionnaire de sources de données, ou bien faites glisser directement le fichier dans QGIS.</p>
+						<p class="note">Si le téléchargement échoue, cette couche est également disponible dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees/COMMUNE.shp</b> accessible en <a href="donnees/TutoQGIS_03_RechercheDonnees.zip." >téléchargement</a>.</p>
+						<p>Ajoutez ensuite ces données à QGIS.</p>
 						<figure>
 							<a href="illustrations/tous/3_1_guyane_communes_hopitaux.png" >
 								<img src="illustrations/tous/3_1_guyane_communes_hopitaux.png" alt="affichage des communes et des hôpitaux de Guyane" width="70%">
@@ -160,7 +184,7 @@
 						<img src="illustrations/tous/3_1_srtm_kenya.png" alt="superposition des cours d'eau, des régions et du SRTM" width="90%" >
 					</a>
 				</figure>
-				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
+				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les autres données du tutoriel.</a></em>.</p>
 			</div>
 			
 			<h3><a class="titre" id="III13">Et tout le reste ?</a></h3>

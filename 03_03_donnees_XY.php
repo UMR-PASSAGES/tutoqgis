@@ -60,7 +60,7 @@
 					<div class="question">
 						<input type="checkbox" id="faq-4">
 						<p><label for="faq-4">A votre avis, dans quel SCR sont mesurées la latitude et la longitude? Pouvez-vous trouver cette info dans les métadonnées?</label></p>
-						<p class="reponse">Comme précisé dans le fichier de métadonnées, les coordonnées sont mesurées en degrés décimaux dans le SCR WGS84.</p>
+						<p class="reponse">Comme précisé dans le fichier de métadonnées (voir TutoQGIS_03_RechercheDonnees_liste_donnees.pdf dans le dossier liste_donnees), les coordonnées sont mesurées en degrés décimaux dans le SCR WGS84.</p>
 						<p class="reponse">Dans le cas d'un fichier avec des coordonnées en latitude et longitude et un SCR inconnu, il s'agit fréquemment de coordonnées en WGS84.</p>
 					</div>
 				</div>
@@ -135,7 +135,7 @@
 	
 			<br>
 			<a class="prec" href="03_02_donnees_flux.php">chapitre précédent</a>
-			<a class="suiv" href="03_04_donnees_osm.php">chapitre suivant</a>
+			<a class="suiv" href="03_04_fonds_carte.php">chapitre suivant</a>
 			<br>
 			<a class="hautpage" href="#wrap">haut de page</a>						
 				

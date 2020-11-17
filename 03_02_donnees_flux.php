@@ -65,7 +65,7 @@
 						</a>
 					    </figure>
 						<li class="espace">Rendez-vous dans la rubrique <b>0 GEOSERVICES_GEOLOGIE &#8594; 1 GEOLOGIE</b> et sélectionnez la couche correspondant à la <b>carte géologique image de la France au 1/1 000 000</b> (million).</li>
-						<li class="espace">Vérifiez que les SCR de cette couche soit bien <b>RGF93 / Lambert-93 (code EPSG 2154)</b> afin que la couche ait le même SCR que notre projet</li>
+						<li class="espace">Vérifiez que les SCR de cette couche soit bien <b>RGF93 / Lambert-93 (code EPSG 2154)</b> afin que la couche ait le même SCR que notre projet : il faudra peut-être cliquer que le bouton <b>Modifier...</b> pour sélectionner le Lambert 93</li>
 						<li class="espace">Cliquez sur <b>Ajouter</b>, patientez...</li>
 						<li class="espace">Modifiez éventuellement votre <b>niveau de zoom</b> : cette carte étant au 1/1 000 000, la couche n'est visible qu'autour de cette échelle (vous pouvez lire l'échelle en cours dans la barre en bas de la fenêtre de QGIS)</li>
 					</ul>
@@ -79,23 +79,14 @@
 				</div>
 				
 				<p class="note">Pour aller plus loin : le niveau de zoom auquel une couche est visible est parfois indiqué dans le résumé ; sinon, il est possible d'interroger le serveur qui propose les couches, en allant par exemple ici à l'URL <a class="ext" target="_blank" href="http://geoservices.brgm.fr/geologie?service=wms&request=GetCapabilities" >http://geoservices.brgm.fr/geologie?service=wms&request=GetCapabilities</a> dans un navigateur internet, puis en recherchant les balises <b>MinScaleDenominator</b> et <b>MaxScaleDenominator</b> pour la couche choisie. Pour en savoir plus, rendez-vous sur le <a class="ext" target="_blank" href="https://georezo.net/wiki/main/standards/wms" >wiki du GeoRezo</a>.</p>
-				
-				<p>Ici, l'adresse du serveur WMS vous était fournie ; si vous cherchez des adresses de flux, deux solutions : une recherche internet, ou bien l'onglet <b>Recherche de serveurs</b> de la fenêtre d'ajout d'une couche WMS :</p>
-				<figure>
-					<a href="illustrations/tous/3_2_recherche_serveur_wms.png" >
-						<img src="illustrations/tous/3_2_recherche_serveur_wms.png" alt="Onglet recherche de serveurs de la fenêtre d'ajout d'une couche WMS" width="550" >
-					</a>
-				</figure>
-				<p>Dans cette fenêtre, vous pouvez taper du texte dans la partie <b>Recherche</b>, voir la liste des serveurs contenant ce texte, et ajouter une ligne de cette liste à la liste de vos connexions visible dans l'onglet <b>Couche</b>, grâce au bouton <b>Ajoutez les lignes sélectionnées à la liste des serveurs WMS</b>.</p>
-				<p>La nouvelle connexion sera alors accessible dans l'onglet <b>Couches</b>, aux côtés de la connexion BRGM créée précédemment.</p>
-			
+							
 			
 			<h3><a class="titre" id="III23">Ajout de données via un flux WFS : cours d'eau</a></h3>
 			
 				<p>Le but va être ici d'ajouter les cours d'eau de la <a class="ext" target="_blank" href="http://professionnels.ign.fr/bdcarthage">BD Carthage</a> du Sandre (Service d'Administration Nationale des Données et Référentiels sur l'Eau).</p>
 				
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône gestionnaire de source de données" >Cliquez sur l'icône du gestionnaire des sources de données, rubrique <b>WFS</b> :</p>
+					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône gestionnaire de source de données" >Cliquez sur l'icône du gestionnaire des sources de données, rubrique <b>WFS / OGC API - Features</b> :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_ajout_wfs_fenetre.png" >
 							<img src="illustrations/tous/3_2_ajout_wfs_fenetre.png" alt="Fenêtre ajout couche WFS" width="480">
@@ -120,7 +111,7 @@
 					<ul>
 						<li class="espace">Après avoir vérifier que votre connexion est bien sélectionnée dans la liste déroulante en haut de la fenêtre, cliquez sur <b>Connexion</b></li>
 						<li class="espace">Sélectionnez la couche correspondant aux <b>cours d'eau métropole de plus de 100km (CoursEau1) (il faut descendre un peu dans la liste des couches proposées)</b></li>
-						<li class="espace">Vérifiez que le SCR soit bien le Lambert 93 RGF93 (code EPSG 2154) afin que toutes nos couches aient le même SCR</li>
+						<li class="espace">Vérifiez que le SCR soit bien le Lambert 93 RGF93 (code EPSG 2154) afin que toutes nos couches aient le même SCR, en cliquant éventuellement sur le bouton <b>Modifier...</b></li>
 						<li class="espace">Cliquez sur <b>Ajouter</b></li>
 					</ul>
 					<p>Vous devriez obtenir quelque chose de similaire à ceci :</p>

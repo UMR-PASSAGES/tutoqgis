@@ -52,10 +52,10 @@
                          <p>Double-cliquez sur ce fonds pour l'ajouter à QGIS.</p>
     		        </div>
     		        
-    		        <p>Beaucoup d'autres fonds sont disponibles de la même manière, mais il faut d'abord créer les connexions correspondantes. Cette manipulation ne devra être effectuée qu'une seule fois, les fonds seront ensuite accessibles dans le panneau explorateur de la même manière que les 2 fonds proposés par défaut.</p>
+    		        <p>Beaucoup d'autres fonds sont disponibles de la même manière, mais il faut d'abord créer les connexions correspondantes. Cette manipulation ne devra être effectuée qu'une seule fois, les fonds seront ensuite accessibles dans le panneau explorateur de la même manière que le fonds OpenStreetMap proposé par défaut.</p>
     		    <h4><a class="titre" id="III42b">Ajouter de nouveaux fonds</a></h4>
     		    
-    		        <p>Il faut tout d'abord trouver des adresses de fonds à ajouter à QGIS. Vous pouvez trouver quelques adresses <a class="ext" target="_blank" href="https://www.spatialbias.com/2018/02/qgis-3.0-xyz-tile-layers/">au bas de cette page</a>, qui explique par ailleurs comment en obtenir d'autres.</p>
+    		        <p>Il faut tout d'abord trouver des adresses de fonds à ajouter à QGIS. Vous pouvez trouver quelques adresses <a class="ext" target="_blank" href="https://www.spatialbias.com/2018/02/qgis-3.0-xyz-tile-layers/">au bas de cette page</a>, qui explique par ailleurs comment en obtenir d'autres. Voir aussi <a class="ext" target="_blank" href="https://wiki.openstreetmap.org/wiki/Tile_servers" >la page Tile Servers du wiki OpenStreetMap</a>, comme décrit <a href="03_05_donnees_osm.php#III52" >plus loin</a>.</p>
     		        <p>Ici, nous allons ajouter un fonds en niveaux de gris utilisant les données OpenStreetMap, qui se nomme Carto Positron.</p>
 		        
     		        <div class="manip">
@@ -84,6 +84,9 @@
                             </a>
                         </figure>
     		        </div>
+    		        
+    		        <p class="note">Attention à ne pas utiliser le caractère / (&#171;&nbsp;slash&nbsp;&#187;) dans le nom des connexions !</p>
+    		        <p class="note">Attention également, certaines url de serveurs de tuiles sont sous la forme <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.png</b> : il faut alors supprimer les <b>$</b> pour obtenir <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.png</b>.</p>
 			   
 		    <h3><a class="titre" id="III43">Ajouter un fonds avec l'extension QuickMapServices</a></h4>
 		    
@@ -126,7 +129,7 @@
 					</figure>
 			    </div>
 				    
-				<p class="attention">Quelle que soit la méthode utilisée pour charger un fonds de carte OSM, il aura pour SCR WGS84/Pseudo-Mercator (EPSG 3857). Il est possible de modifier le SCR du projet pour afficher les fonds OSM dans d'autres SCR, mais ceci peut éventuellement provoquer des problèmes d'affichage.</p>	
+				<p class="attention">Quelle que soit la méthode utilisée pour charger un fonds de carte OSM, il aura pour SCR WGS84/Pseudo-Mercator (EPSG 3857). Il est possible de modifier le SCR du projet pour afficher les fonds OSM dans d'autres SCR, mais ceci peut parfois provoquer des problèmes d'affichage.</p>	
 			<br>
 			<a class="prec" href="03_03_donnees_XY.php">chapitre précédent</a>
 			<a class="suiv" href="03_05_donnees_osm.php">chapitre suivant</a>
