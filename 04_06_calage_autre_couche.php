@@ -15,7 +15,7 @@
 			<h2>IV.6 Points de calage : en se basant sur une couche de référence</h2>
 				<ul class="listetitres">
 					<li><a href="#IV61">Ajout d'un fonds OpenStreetMap</a></li>
-					<li><a href="#IV62">Zoom sur la zone d'étude avec l'extension GeoSearch</a></li>
+					<li><a href="#IV62">Zoom sur la zone d'étude avec l'extension Nominatim Locator Filter</a></li>
 					<li><a href="#IV63">Création des points de calage</a></li>
 				</ul>
 				<br>
@@ -52,7 +52,7 @@
 						<p>Pour cela, rendez-vous dans les propriétés du projet et sélectionnez le SCR Pseudo Mercator, code EPSG 3857 (cf. <a href="02_04_changer_systeme.php#II41">ici</a>).</p>
 					</div>
 				
-				<h3><a class="titre" id="IV62">Zoom sur la zone d'étude avec l'extension OSM place search</a></h3>
+				<h3><a class="titre" id="IV62">Zoom sur la zone d'étude avec l'extension Nominatim Locator Filter</a></h3>
 				
 				    <p>Nous cherchons ici à zoomer sur la zone qui concerne notre carte, à savoir Doncaster East dans le banlieue de Melbourne, en Australie. Il est bien sûr possible d'utiliser les outils de zoom pour cela, mais nous allons en profiter pour découvrir une autre méthode parfois bien pratique, avec l'extension OSM place search.</p>
 				    <div class="manip">
@@ -133,7 +133,7 @@
 							</a>
 						</figure>
 					</div>
-					<p>L'image est calée, son SCR est WGS84 Pseudo-Mercator (vous pouvez le vérifier en allant dans les propriétés de la couche, rubrique Général). Si vous désirez modifier le SCR de cette couche, comme indiqué dans la <a href="02_04_changer_systeme.php#II42">partie II.4.2</a>, clic-droit sur le nom de la couche, Enregistrer sous...</p>
+					<p>L'image est calée, son SCR est WGS84 Pseudo-Mercator (vous pouvez le vérifier en allant dans les propriétés de la couche, rubrique Général). Si vous désirez modifier le SCR de cette couche, comme indiqué dans la <a href="02_04_changer_systeme.php#II42">partie II.4.2</a>, utilisez l'outil <b>Reprojeter une couche</b>.</p>
 				<br>
 				<a class="prec" href="04_05_lancement.php">chapitre précédent</a>
 				<a class="suiv" href="05_00_numerisation.php">partie V : numérisation</a>

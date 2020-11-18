@@ -40,7 +40,7 @@
 								<img src="illustrations/tous/4_3_georeferenceur_fenetre.png" alt="Fenêtre du géoréférenceur" width="600">
 							</a>
 						</figure>
-						<p class="note">Il est possible d'afficher le géoréferenceur comme une fenêtre à part ou ancrée. Pour changer de mode, dans la fenêtre du géoréférenceur, <b>menu Paramètres &#8594; Configurer géoréférenceur...</b>, cochez ou décochez la case <b>Afficher la fenêtre de géoréférencement dans la fenêtre principale</b>.</p>
+						<p class="note">Il est possible d'afficher le géoréferenceur comme une fenêtre à part ou ancrée. Pour changer de mode, dans la fenêtre du géoréférenceur, <b>menu Paramètres &#8594; Configurer le géoréférenceur...</b>, cochez ou décochez la case <b>Afficher la fenêtre de géoréférencement dans la fenêtre principale</b>.</p>
 						<p><img class="icone" src="illustrations/tous/4_3_ouvrir_raster_icone.png" alt="icône ouvrir un raster du géoréférenceur" >Dans cette fenêtre, ajoutez au géoréférenceur l'image à caler en cliquant sur l'icône <b>Ouvrir un raster</b>, ou bien
 							<a class="thumbnail_bottom" href="#thumb">menu Fichier &#8594; Ouvrir raster...
 								<span>
@@ -118,19 +118,13 @@
 						<p><img class="icone" src="illustrations/tous/4_3_effacer_point_icone.png" alt="Icône effacer un point du géoréférenceur" >Si vous faites une erreur, vous pouvez supprimer un point en cliquant sur l'icône <b>Effacer un point</b>, puis sur le point à effacer.</p>
 						<p><img class="icone" src="illustrations/tous/4_3_deplacer_point_icone.png" alt="Icône déplacer un point du géoréférenceur" >Vous pouvez également déplacer un point déjà créé en cliquant sur l'icône <b>Deplacer les points de contrôle</b>, puis en faisant glisser le point à déplacer.</p>
 						<p><img class="icone" src="illustrations/tous/4_3_sauv_points_icone.png" alt="Icône sauvegarder les points de contrôle" >Une fois vos points créés, vous pouvez les sauvegarder au moyen du menu
-							<a class="thumbnail_bottom" href="#thumb">Fichier &#8594; Sauver Points GCP en tant que...
+							<a class="thumbnail_bottom" href="#thumb">Fichier &#8594; Enregistrer les points de contrôle sous...
 								<span>
-									<img src="illustrations/tous/4_3_sauv_points_menu.png" alt="Menu Projet, Fichier, Sauver Points GCP en tant que" height="170" >
+									<img src="illustrations/tous/4_3_sauv_points_menu.png" alt="Menu Projet, Fichier, Enregistrer les points de contrôle sous..." height="170" >
 								</span>
 							</a>	
 						 ou bien en cliquant sur l'icône correspondante.</p>
-						 <p>Cette manipulation crée un fichier avec l'extension .POINTS. Par défaut, ce fichier aura le même nom et sera dans le même dossier que l'image que vous êtes en train de caler. Ces points de calage pourront être chargés dans le géoréférenceur au moyen du menu
-						 	<a class="thumbnail_bottom" href="#thumb">Fichier &#8594; Charger Points GCP
-								<span>
-									<img src="illustrations/tous/4_3_charger_points_menu.png" alt="Menu Fichier, charger les points GCP" height="170" >
-								</span>
-							</a>	
-						 .</p>
+						 <p>Cette manipulation crée un fichier avec l'extension .POINTS. Par défaut, ce fichier aura le même nom et sera dans le même dossier que l'image que vous êtes en train de caler. Ces points de calage pourront être chargés dans le géoréférenceur au moyen du <b>menu Fichier &#8594; Charger les points de contrôle...</b>.</p>
 					</div>
 						 
 					 <p>Voici à quoi ressemble la fenêtre du géoréférenceur une fois tous les poins de calage correspondant à des intersections du carroyage renseignés :</p>

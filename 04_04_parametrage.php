@@ -153,7 +153,7 @@
 				
 					<h4><a class="titre" id="IV44b">SCR cible</a></h4>
 						
-						<p>Comme décidé en partie <a href="04_02_preliminaires.php#IV21">IV.2.1</a>, nous allons partir du principe que les coordonnées de cette carte sont exprimées dans un système proche du WGS84.</p>
+						<p>Comme décidé en partie <a href="04_02_preliminaires.php#IV22">précédemment</a>, nous allons partir du principe que les coordonnées de cette carte sont exprimées dans un système proche du WGS84.</p>
 						<div class="manip">
 							<p>Cliquez sur l'icône à droite de la ligne <b>SCR cible</b>, ou bien utilisez la liste déroulante pour choisir directement le SCR.</p>
 							<figure>
