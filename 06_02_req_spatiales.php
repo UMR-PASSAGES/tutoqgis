@@ -190,8 +190,13 @@
 				<h3><a class="titre" id="VI23">Quelques exemples</a></h3>
 					
 					<div class="manip">
-    					<p>Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">depts_Bretagne_wgs84</a></em>.</p>
     					<p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">Cours d'eau métropole de plus de 100km</em>.</p>
+    					<p>Votre projet doit donc contenir les 4 couche suivantes :</p>
+    					<figure>
+                        	<a href="illustrations/tous/6_2_projet.png" >
+                        		<img src="illustrations/tous/6_2_projet.png" alt="CProjet avec les 4 couches chargées" width="100%">
+                        	</a>
+                        </figure>   
     					<p>En utilisant différents opérateurs, pouvez-vous dire ?...</p>
     					<p class="note">Entre deux requêtes, n'oubliez pas de tout désélectionner :<img class="iconemid" src="illustrations/tous/6_3_deselection_icone.png" alt="icône de désélection"  height="30"></p>
     					<p class="note">Attention, le nombre d'entités sélectionnées peut varier légèrement si vous chargez des données via des flux WFS et que ces données ont été mises à jour depuis la rédaction de ce tutoriel.</p>
@@ -204,7 +209,7 @@
 						<div class="question">
 							<input type="checkbox" id="faq-3">
 							<p><label for="faq-3">Combien de cours d'eau de plus de 100 km traversent la Bretagne ?</label></p>
-							<p class="reponse">Sélection des cours d'eau qui intersectent les communes (ou les départements) : <b>68 cours d'eau sélectionnés</b>.</p>
+							<p class="reponse">Sélection des cours d'eau qui intersectent les communes (ou les départements bretons préalablement sélectionnés) : <b>68 cours d'eau sélectionnés</b>.</p>
 							<p class="reponse"><img src="illustrations/tous/6_2_coursdeau_inters_communes.png" alt="Cours d'eau de intersectant les communes" width="70%"></p>
 						</div>
 						<div class="question">
@@ -219,7 +224,7 @@
 							<p><label for="faq-5">Combien le département du Finistère contient-il d'éoliennes ?</label></p>
 							<p class="reponse">Il faut procéder en 2 étapes : 1/ sélectionner &#171; à la main &#187; le département du Finistère 2/ utiliser l'outil de sélection par localisation pour sélectionner les éoliennes à l'intérieur des départements, en cochant la case <b>Entités sélectionnées uniquement</b>.</p>
 							<p class="reponse"><img src="illustrations/tous/6_2_eoliennes_finistere.png" alt="Eoliennes du Finistère" width="70%"></p>
-							<p class="reponse">Au final, on trouve <b>610 éoliennes sélectionnées</b>. Notez que cette requête fonctionne alors même que les 2 couches en jeu ont 2 SCR différents ! Ceci n'était pas le cas avec la version 2 de QGIS.</p>
+							<p class="reponse">Au final, on trouve <b>610 éoliennes sélectionnées</b>.</p>
 						</div>
 					</div>
 						

@@ -40,7 +40,7 @@
 					</figure>
 					<p>Tapez ensuite la requête suivante, pour sélectionner les communes du Morbihan...</p>
 					<p> "INSEE_DEP"  =  '56' </p>
-					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection courante</b> :</p>
+					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection actuelle</b> :</p>
 					<figure>
 					    <a href="illustrations/tous/6_3_selection_liste.png" >
 						    <img src="illustrations/tous/6_3_selection_liste.png" alt="liste accessible à partir du bouton sélection" width="90%" >
@@ -105,7 +105,7 @@
 			
 			<h3><a class="titre" id="VI33">Combiner requêtes spatiales et attributaires</a></h3>
 			
-				<p>Le principe est le même que précédemment. Sélectionnons par exemple les communes de + de 10 000 habitants avec éolienne.</p>
+				<p>Le principe est le même que précédemment. Sélectionnons par exemple les communes de + de 10&nbsp;000 habitants avec éolienne.</p>
 				
 				<div class="manip">
 					<p>Commencez par sélectionner au moyen d'une requête attributaire les communes de + de 10&nbsp;000 habitants : <b>"POPULATION" > 10000</b>.</p>

@@ -25,7 +25,7 @@
 				
 			<p>Nous allons voir ici comment utiliser les données de la table attributaire pour sélectionner des éléments d'une couche, par exemple comment sélectionner les départements dans le nom commence par &#171; A &#187; .</p>
 			<p>Beaucoup d'opérateurs sont disponibles pour les requêtes attributaires; nous ne les passerons pas tous en revue mais allons simplement utiliser quelques-uns des plus courants.</p>
-			<p>Pour une description de tous les opérateurs et fonctions possibles : voir le <a class="ext" target="_blank" href="https://docs.qgis.org/3.4/fr/docs/user_manual/working_with_vector/expression.html#vector-expressions" >manuel de QGIS</a>.</p>
+			<p>Pour une description de tous les opérateurs et fonctions possibles : voir le <a class="ext" target="_blank" href="https://docs.qgis.org/3.16/fr/docs/user_manual/working_with_vector/expression.html" >manuel de QGIS</a>.</p>
 
 			<h3><a class="titre" id="VI11">Faire une requête simple</a></h3>
 
@@ -52,7 +52,7 @@
 							<li class="espace">Cliquez sur le bouton <b>Toutes</b> pour voir dans la case <b>Valeurs</b> la liste des valeurs uniques du champ sélectionné (ici, NOM_DEPT)</li>
 							<li class="espace">Double-cliquez sur la valeur <b>'NORD'</b> (notez les guillemets simples)</li>
 							<li class="espace">A ce stade, la case <b>Expression</b> doit contenir  : <b>"NOM_DEPT" = 'NORD'</b></li>
-							<li class="espace">Cliquez sur le bouton <b>Sélection</b> en bas de la fenêtre</li>
+							<li class="espace">Cliquez sur le bouton <b>Sélectionner des entités</b> en bas de la fenêtre</li>
 						</ul>
 					<p class="note">Il est également possible de taper la requête &#171; à la main &#187; directement dans la case Expression. Attention dans ce cas à bien respecter la syntaxe utilisée par QGIS : par exemple, les noms de champs sont entourés de guillemets doubles et les chaînes de caractères de guillemets simples.</p>
 					<p>La fenêtre de requête attributaire ne se ferme pas automatiquement ; vous pouvez ou la fermer en cliquant sur le bouton <b>Fermer</b> ou bien simplement la déplacer pour vérifier sur la carte le résultat de votre sélection.</p>
@@ -98,10 +98,7 @@
 			 
 			 <div class="manip">
 					<p><img class="icone" src="illustrations/tous/6_3_deselection_icone.png" alt="icône de désélection" >Pour désélectionner toutes les entités dans toutes les couches : cliquez sur le bouton <b>Désélectionner toutes les entités</b> de la barre d'outils Attributs.</p>
-					<p><img class="icone" src="illustrations/tous/6_3_deselection_table_icone.png" alt="icône de désélection pour une couche (table)" >Pour désélectionner les entités d'une seule couche : ouvrez la table attributaire de cette couche. Dans la barre d'outils en haut de la table cliquez sur l'outil <b>Tout désélectionner</b>.</p>
-				</ul>
-				
-				<p>Attention, ces deux outils ont la même icône, mais ils ne sont pas situés au même endroit !</p>
+					<p>Pour désélectionner les entités d'une seule couche, cliquez sur la flèche à côté du même bouton, pour choisir l'option <b>Désélectionner les entités de la couche courante</b>, ou bien cliquez sur le bouton <b>Désélectionner toutes les entités de la couche</b> en haut de la table attributaire de celle-ci.</p>
 			 </div>
 			 
 			<h3><a class="titre" id="VI14">Quelques opérateurs</a></h3>
@@ -123,9 +120,9 @@
 					</figure>
 						<ul>
 							<li class="espace">Cliquez sur <b>Champs et valeurs</b> pour voir la liste des champs, puis double-cliquez sur le champ <b>POPULATION</b></li>
-							<li class="espace">Dans la case <b>Expression</b>, tapez <b>> 100000</b></li>
+							<li class="espace">Dans la case <b>Expression</b>, tapez <b>> 10000</b></li>
 						</ul>
-					<p>Il est également possible d'aller chercher l'opérateur <b>></b> dans la liste des opérateurs, dans la colonne de gauche. Il faut ensuite taper la valeur 10 à la main.</p>
+					<p>Il est également possible d'aller chercher l'opérateur <b>></b> dans la liste des opérateurs, dans la colonne de gauche. Il faut ensuite taper la valeur 10000 à la main.</p>
 					<p>Une fois votre requête tapée : <b>"POPULATION" > 10000</b>, cliquez sur le bouton <b>Sélectionner des entités</b> pour voir le résultat :</p>
 					<figure>
 						<a href="illustrations/tous/6_1_popsup10000_res.png" >
@@ -194,7 +191,7 @@
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-5">
-						<p><label for="faq-5">La commune du département des Côtes d'Armor (22) ?</label></p>
+						<p><label for="faq-5">Les communes du département des Côtes d'Armor (22) ?</label></p>
 						<p class="reponse">"INSEE_DEP"  =  '22' : 348 communes sélectionnées</p>
 					</div>
 					<div class="question">
@@ -214,7 +211,7 @@
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-10">
-						<p><label for="faq-10">Les communes du département du Morbihan (56), dont le nom contient ou 'PLOU' ou 'EC', et dont la population est inférieure ou égale à 10 000 habitants ?</label></p>
+						<p><label for="faq-10">Les communes du département du Morbihan (56), dont le nom contient 'PLOU' ou 'EC', et dont la population est inférieure ou égale à 10 000 habitants ?</label></p>
 						<p class="reponse">"INSEE_DEP" LIKE '56' AND ( "NOM_COM_M" LIKE '%PLOU%' OR "NOM_COM_M" LIKE '%EC%') AND  "POPULATION"  <= 10000 : 12 communes sélectionnées</p>
 					</div>
 				</div>

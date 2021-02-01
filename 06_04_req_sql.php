@@ -36,7 +36,7 @@
 				
 			<p>Nous avons vu dans les chapitres précédents que QGIS offre de nombreux opérateurs pour les requêtes spatiales et attributaires. Néanmoins, ceux d'entre vous maîtrisant le <b><a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Structured_Query_Language" >langage SQL</a></b> regretteront certains manques, notamment les <a class="ext" target="_blank" href="http://sql.sh/fonctions/agregation">fonctions d'agrégation</a>. En outre, l'impossibilité d'écrire une requête portant à la fois sur des critères spatiaux et attributaires peut être gênante.</p>
 			<p>Une des possibilités pour pallier ces manques est d'utiliser un logiciel de <b>gestion de bases de données</b> (SGBD) à composante spatiale, tel que <a class="ext" target="_blank" href="http://www.postgis.fr/chrome/site/docs/workshop-foss4g/doc/index.html">PostgreSQL/PostGIS</a>, ou <a class="ext" target="_blank" href="http://www.sigterritoires.fr/index.php/tutoriel-bases-de-donnees-spatialite-sous-qgis-2-8-wien/">SQLite/SpatiaLite</a>, ce dont ne traitera pas ce tutoriel.</p>
-			<p>Mais si votre but est uniquement de jouir de toutes les possibilités du SQL sans avoir besoin d'une base de données, il existe une autre possibilité consistant à utiliser des <b><a class="ext" target="_blank" href="https://docs.qgis.org/2.14/fr/docs/user_manual/working_with_vector/virtual_layers.html">couches virtuelles</a></b>. Pour cela, aucune installation de logiciel supplémentaire n'est nécessaire.</p>
+			<p>Mais si votre but est uniquement de jouir de toutes les possibilités du SQL sans avoir besoin d'une base de données, il existe une autre possibilité consistant à utiliser des <b><a class="ext" target="_blank" href="https://docs.qgis.org/3.16/en/docs/user_manual/managing_data_source/create_layers.html#index-9">couches virtuelles</a></b>. Pour cela, aucune installation de logiciel supplémentaire n'est nécessaire.</p>
 			<p><b>Cette partie ne constitue pas un cours de SQL</b>, se limitant à expliquer l'interface de QGIS et à montrer quelques exemples. Il existe sur internet de nombreuses ressources sur l'apprentissage du SQL, comme par exemple <a class="ext" target="_blank" href="http://sql.sh/cours/select" >ici</a>.</p>
 			
 			<h3><a class="titre" id="VI41">Utiliser du SQL sans passer par un logiciel de bases de données : le concept de couche virtuelle</a></h3>
@@ -70,8 +70,8 @@
 				<h4><a class="titre" id="VI42b">Ecrire une requête</a></h4>
 				
 				    <div class="manip">
-				        <p>Ouvrez un nouveau projet dans QGIS et ajoutez-y les 3 couches <em class="data">eoliennes_bretagne</em>, <em class="data">communes_Bretagne</em> et <em class="data">depts_Bretagne_wgs84</em> situées dans le dossier <b><a href="donnees/TutoQGIS_06_Requetes.zip">TutoQGIS_06_Requetes/donnees</a></b>.</p>
-				        <p><img class="icone" src="illustrations/tous/6_4_dbmanager_icone.png" alt="icône gestionnaire de bases de données">Ouvrez la fenêtre du gestionnaire de bases de données : menu <b>Base de données &#8594; DB Manager...</b>, ou bien cliquez sur l'icône correspondante dans la barre d'outils Base de données.</p>
+				        <p>Ouvrez un nouveau projet dans QGIS et ajoutez-y les 3 couches <em class="data">eoliennes_bretagne</em>, <em class="data">communes_Bretagne</em> et <em class="data">DEPARTEMENT</em> situées dans le dossier <b><a href="donnees/TutoQGIS_06_Requetes.zip">TutoQGIS_06_Requetes/donnees</a></b>.</p>
+				        <p><img class="icone" src="illustrations/tous/6_4_dbmanager_icone.png" alt="icône gestionnaire de bases de données">Ouvrez la fenêtre du gestionnaire de bases de données : menu <b>Base de données &#8594; Gestionnaire BD...</b>, ou bien cliquez sur l'icône correspondante dans la barre d'outils Base de données.</p>
 				        <figure>
                         	<a href="illustrations/tous/6_4_dbmanager_fenetre.png" >
                         		<img src="illustrations/tous/6_4_dbmanager_fenetre.png" alt="Fenêtre du gestionnaire de bases de données" width="600">
@@ -88,8 +88,8 @@
                         </figure>
 				        <p>Un quatrième onglet s'ajoute, permettant d'écrire une requête SQL (il est possible d'ouvrir ainsi plusieurs onglets de requête SQL).</p>
 				        <p>Dans la moitié supérieure de cet onglet, tapez la requête suivante (cette requête sera explicitée en détail un peu plus loin) :</p>
-				        <p class="code">select * from depts_bretagne_wgs84 where NOM_DEP = 'MORBIHAN'</p>
-				        <p class="note">Vous pouvez utiliser ou non des retours à la ligne, le résultat sera le même.</p>
+				        <p class="code">SELECT * FROM DEPARTEMENT WHERE NOM_DEP = 'MORBIHAN'</p>
+				        <p class="note">Vous pouvez utiliser ou non des retours à la ligne, ou des majuscules ou minuscules pour les mots clés comme Select, le résultat sera le même.</p>
 				        <p>et cliquez sur le bouton <b>Exécuter</b> : le résultat de la requête s'affiche dans la moitié inférieure de la fenêtre.</p>
 				    </div>
 				    
@@ -121,13 +121,13 @@
 			<h3><a class="titre" id="VI43">Tirer parti du SQL par rapport à une requête attributaire ou spatiale</a></h3>
 			
 			    <p>La requête utilisée était :</p>
-			    <p class="code">select * <br>from depts_bretagne_wgs84<br>where "NOM_DEPT" = 'NORD'</p>
+			    <p class="code">SELECT * <br>FROM DEPARTEMENT<br>WHERE "NOM_DEPT" = 'MORBIHAN'</p>
 			    <p>A quoi correspond cette requête ? Regardons-la ligne par ligne :</p>
-		        <p class="code">select *</p>
+		        <p class="code">SELECT *</p>
 		        <p>signifie que nous allons sélectionner (<b>select</b>) toutes (la mention <b>*</b>) les colonnes de la table attributaire, ainsi que la géométrie, qui est considérée comme une colonne nommée geometry, comme vous pouvez le vérifier dans l'onglet <b>Info</b>.</p>
-		        <p class="code">from depts_bretagne_wgs84</p>
-		        <p>signifie que nous allons sélectionner les colonnes de la couche <em class="data">departements</em>.</p>
-		        <p class="code">where "NOM_DEPT" = 'MORBIHAN'</p>
+		        <p class="code">FROM DEPARTEMENT</p>
+		        <p>signifie que nous allons sélectionner les colonnes de la couche <em class="data">DEPARTEMENT</em>.</p>
+		        <p class="code">WHERE "NOM_DEPT" = 'MORBIHAN'</p>
 		        <p>applique un critère à la requête : seules seront sélectionnées les lignes répondant à ce critère, c'est-à-dire dont la valeur pour le champ NOM_DEPT est égale à &#171;&nbsp;MORBIHAN&nbsp;&#187;.</p>
 			    <p>Comparons avec <a href="06_01_req_attrib.php#VI11">la même requête dans la fenêtre de requête attributaire</a>, où seul le critère <b>"NOM_DEPT" = 'MORBIHAN'</b> est nécessaire, le début de la requête étant &#171;&nbsp;sous-entendu&nbsp;&#187;.</p>
 			    <p>Par rapport à une requête attributaire, une requête SQL nous offre donc la possibilité :
@@ -146,7 +146,7 @@
                         	</a>
                         </figure>
 			             <p>Toujours dans l'onglet <b>Requête</b> du gestionnaire de bases données, remplacez l'étoile par <b>INSEE_DEP, geometry</b> :</p>
-			             <p class="code">select INSEE_DEP, NOM_DEP, geometry from depts_bretagne_wgs84 where NOM_DEP = 'MORBIHAN'</p>
+			             <p class="code">SELECT INSEE_DEP, NOM_DEP, geometry<br>FROM DEPARTEMENT<br>WHERE NOM_DEP = 'MORBIHAN'</p>
 			             <p>Et cliquez sur le bouton <b>Exécuter</b> : seules les colonnes voulues sont renvoyées par la requête. Notez que vous pouvez choisir l'ordre des colonnes.</p>
 			         </div>
 			         <p>Comme précédemment, vous pouvez si vous le désirez charger ce résultat dans QGIS en tant que nouvelle couche.</p>
@@ -158,9 +158,11 @@
 			         <p>Cette manipulation revient en fait à effectuer une <a href="08_01_jointure_attrib.php">jointure attributaire</a>.</p>
 			         
 			         <div class="manip">
-			             <p>La première étape est de vérifier qu'il existe bien un champ permettant de faire le lien entre les deux couches. Ici, il s'agit  du champ <b>CODE_DEPT</b> présent dans les deux couches, ce que vous pouvez vérifier en ouvrant leurs tables attributaires (à noter que ce champ pourrait avoir un nom différent dans chacune des couches sans que cela ne pose problème).</p>
+			             <p>La première étape est de vérifier qu'il existe bien un champ permettant de faire le lien entre les deux couches. Ici, il s'agit  du champ <b>INSEE_DEP</b> présent dans les deux couches, ce que vous pouvez vérifier en ouvrant leurs tables attributaires (à noter que ce champ pourrait avoir un nom différent dans chacune des couches sans que cela ne pose problème).</p>
 			             <p>Tapez ensuite la requête suivante (vous pouvez effacer la précédente) :</p>
-			             <p class="code">select c.INSEE_COM, c.NOM_COM, d.NOM_DEP, c.geometry from communes_Bretagne as c, depts_Bretagne_wgs84 as d where c.INSEE_DEP = d.INSEE_DEP</p>
+			             <p class="code">SELECT c.INSEE_COM, c.NOM_COM, d.NOM_DEP, c.geometry<br>
+			             FROM communes_Bretagne as c, DEPARTEMENT as d<br>
+			             WHERE c.INSEE_DEP = d.INSEE_DEP</p>
 			             <figure>
                         	<a href="illustrations/tous/6_4_croiser_couches.png" >
                         		<img src="illustrations/tous/6_4_croiser_couches.png" alt="Exemple de requête SQL croisant deux couches" width="100%">
@@ -170,7 +172,7 @@
                      </div>
                     <p>Prenons cette requête ligne par ligne (mais dans le désordre !) :</p>
                     <p class="code">from communes_Bretagne as c, depts_Bretagne_wgs84</p>
-                    <p>signifie deux choses : que les deux couches en jeu seront <em class="data">communes_Bretagne</em> et <em class="data">depts_Bretagne_wgs84</em>, et que dans le reste de la requête, les noms de ces deux couches seront abrégés respectivement en <b>c</b> et <b>d</b>.</p>
+                    <p>signifie deux choses : que les deux couches en jeu seront <em class="data">communes_Bretagne</em> et <em class="data">DEPARTEMENT</em>, et que dans le reste de la requête, les noms de ces deux couches seront abrégés respectivement en <b>c</b> et <b>d</b>.</p>
                     <p>Cette abréviation des noms de couches n'est pas obligatoire ; elle permet néanmoins de taper moins de texte, et de gagner en clarté. Un autre avantage est que si vous deviez réutiliser cette requête pour d'autres couches, vous n'aurier à modifier qu'une seule fois leur nom.</p>
                     <p class="code">select c.INSEE_COM, c.NOM_COM, d.NOM_DEP, c.geometry</p>
                     indique quelles colonnes vont être récupérées. Comme il est possible qu'une colonne existe dans les deux couches (cas de <b>geometry</b> ici), le nom abrégé de la table (<b>c</b> ou <b>d</b>) est indiqué devant. Même si cette désambiguïsation n'est pas toujours nécessaire (pour <b>INSEE_COM</b> par exemple), il est conseillé de toujours indiquer le nom de la couche pour des raisons de clarté.
@@ -185,15 +187,15 @@
 			         <p>Pour rappel, croiser deux couches est plus facile si elles sont dans le même SCR (même s'il est possible de modifier le SCR en SQL directement dans la requête&nbsp;!).</p>
 			         <div class="manip">
 			             <p>Nous pouvons déjà écrire les deux premières lignes de notre requête, par exemple :</p>
-			             <p class="code">select c.INSEE_COM, c.NOM_COM, c.geometry from communes_Bretagne as c, eoliennes_bretagne as e</p>
+			             <p class="code">SELECT c.INSEE_COM, c.NOM_COM, c.geometry<br>FROM communes_Bretagne as c, eoliennes_bretagne as e</p>
 			             <p>mais il nous manque le critère spatial indiquant que les communes doivent contenir au moins une éolienne.</p>
-			             <p>Une recherche dans la <a class="ext" target="_blank" href="http://www.gaia-gis.it/spatialite-2.4.0/spatialite-sql-2.4.html" >liste des fonctions SpatiaLite</a> et plus spécifiquement dans la partie consacrée aux <a class="ext" target="_blank" href="http://www.gaia-gis.it/spatialite-2.4.0/spatialite-sql-2.4.html#p12">fonctions testant les relations spatiales</a> nous permet de trouver l'opérateur <b>Contains</b> et de compléter notre requête :</p>
-			             <p class="code">where Contains(c.geometry, e.geometry)</p>
+			             <p>Une recherche dans la <a class="ext" target="_blank" href="http://www.gaia-gis.it/gaia-sins/spatialite-sql-latest.html" >liste des fonctions SpatiaLite</a> et plus spécifiquement dans la partie consacrée aux <a class="ext" target="_blank" href="http://www.gaia-gis.it/gaia-sins/spatialite-sql-latest.html#p12">fonctions testant les relations spatiales</a> nous permet de trouver l'opérateur <b>Contains</b> et de compléter notre requête :</p>
+			             <p class="code">WHERE Contains(c.geometry, e.geometry)</p>
 			             <p>ce qui se traduit par : la géométrie des communes doit contenir la géométrie des éoliennes.</p>
 			             <p>A ce stade, notre requête ressemble à ceci :</p>
-			             <p class="code">select c.INSEE_COM, c.NOM_COM, c.geometry from communes_Bretagne as c, eoliennes_bretagne as e where contains(c.geometry, e.geometry)</p>
+			             <p class="code">SELECT c.INSEE_COM, c.NOM_COM, c.geometry<br>FROM communes_Bretagne as c, eoliennes_bretagne as e<br>WHERE contains(c.geometry, e.geometry)</p>
 			             <p>Cette requête fonctionne, mais mettra du temps à s'exécuter. Pour accélerer les choses, nous pouvons ajouter un critère avec cette ligne :</p>
-			             <p class="code">and e._search_frame_ = c.geometry</p>
+			             <p class="code">AND e._search_frame_ = c.geometry</p>
 			             <p>Cette commande un peu obscure veut dire en réalité que les éoliennes doivent être recherchées uniquement dans les communes : le logiciel ne perd donc pas de temps avec les éoliennes qui seraient hors des communes. Pour nous autres humains, tout cela est un peu obscur, mais ça marche&nbsp;!</p>
 			             <p class="note">Dans PostGIS, les index sont gérés de manière transparente et cette ligne n'est donc pas nécessaire.</p>
                         <p>Exécutez la requête :</p>
@@ -204,8 +206,8 @@
                         </figure>
                         <p class="note">Si la requête ne renvoie pas de résultat, vérifiez que votre couche de communes et d'éoliennes ont bien le même SCR.</p>
                         <p>Dans l'aperçu des résultats, vous voyez qu'une même commune peut apparaître plusieurs fois. En fait, <b>chaque commune apparaît autant de fois qu'elle compte d'éoliennes.</b></p>
-                        <p>Pour pallier cela, nous allons grouper toutes les lignes qui possèdent le même code INSEE, le même nom de commune et la même géométrie avec cette ligne :</p>
-                        <p class="code">group by c.INSEE_COM, c.NOM_COM, c.geometry</p>
+                        <p>Pour éviter cela, nous allons grouper toutes les lignes qui possèdent le même code INSEE, le même nom de commune et la même géométrie avec cette ligne :</p>
+                        <p class="code">GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
                         <figure>
                         	<a href="illustrations/tous/6_4_contains_2.png" >
                         		<img src="illustrations/tous/6_4_contains_2.png" alt="Exemple de requête SQL spatiale croisant deux couches avec clause group by" width="80%">
@@ -213,12 +215,18 @@
                         </figure>
                         <p>Cette fois, chaque commune contenant au moins une éolienne n'apparaît qu'une seule fois.</p>
                         <p>Il est relativement simple à partir de cette requête de compter pour chaque commune le nombre d'éoliennes qu'elle contient, en rajoutant un champ comptant le nombre d'identifiants d'éoliennes associés à une commune :</p>
-                        <p class="code">select c.INSEE_COM, c.NOM_COM, <b>count(e.id_mat) as nb_eoliennes</b>, c.geometry</p>
+                        <p class="code">SELECT c.INSEE_COM, c.NOM_COM, <b>count(e.id_mat) as nb_eoliennes</b>, c.geometry</p>
                         <figure>
                         	<a href="illustrations/tous/6_4_contains_3.png" >
                         		<img src="illustrations/tous/6_4_contains_3.png" alt="Exemple de requête SQL spatiale croisant deux couches avec clause group by et count" width="80%">
                         	</a>
                         </figure>
+                        <p>La requête finale complète est donc :</p>
+                        <p class="code">SELECT c.INSEE_COM, c.NOM_COM, count(e.id_mat) as nb_eoliennes, c.geometry<br>
+                        FROM communes_Bretagne as c, eoliennes_bretagne as e<br>
+                        WHERE contains(c.geometry, e.geometry)<br>
+                        AND e._search_frame_ = c.geometry<br>
+                        GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
 			         </div>
 			         <p>Ceci peut servir par exemple à visualiser le nombre d'éoliennes par commune au moyen d'une carte en cercles proportionnels :</p>
 			         <figure>
