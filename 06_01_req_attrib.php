@@ -177,11 +177,18 @@
 						<p class="reponse">Une autre possibilité, moins lourde, consiste à utiliser l'opérateur <b>IN</b> : "NOM_COMM_M"  IN ('BREST', 'PLOUZANE')</p>
 					</div>
 				</div>
+				
+				<p>Petite astuce : vous pouvez retrouver les dernières requêtes utilisées dans la rubrique <b>Récent</b>, il suffit de double-cliquer sur une requête pour qu'elle apparaisse dans la case Expression :</p>
+				<figure>
+					<a href="illustrations/tous/6_1_requetes_recentes.png" >
+						<img src="illustrations/tous/6_1_requetes_recentes.png" alt="Accès aux requêtes attributaires récentes" width="100%">
+					</a>
+				</figure>
 			
 			<h3><a class="titre" id="VI16">Quelques exemples à tester</a></h3>
 			
+			    <p>Voici quelques exemples à tester, plusieurs requêtes sont parfois possibles pour un même résultat.</p>
 				<p>Pouvez-vous sélectionner ? ...</p>
-				<p>(plusieurs requêtes sont parfois possibles pour un même résultat)</p>
 				
 				<div class="manip">
 					<div class="question">
