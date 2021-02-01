@@ -96,7 +96,7 @@
 						<li class="espace"><b>champs joints :</b> ici, nous voulons joindre tous les champs donc vous pouvez laisser cette case décochée</li>
 						<li class="espace"><b>Préfixe de nom de champ personnalisé :</b> les champs joints peuvent avoir le préfixe de votre choix, pour bien les différencier des champs originaux ou issus d'autres jointures. Choisissez un préfixe court, par exemple <b>tab_</b></li>
 					</ul>
-					<p>Cliquez sur <b>OK</b> pour créer la jointure : la ligne correspondante apparaît dans la fenêtre des propriétés.</p>
+					<p>Cliquez sur <b>OK</b> pour créer la jointure : la ligne correspondante apparaît dans la fenêtre des propriétés. Vous pouvez fermer la fenêtre des propriétés.</p>
 					<p>Ouvrez la table attributaire de la couche  <em class="data">regions_bhutan.shp</em> : les données de la table ont été ajoutées (champ tab_POPEST95).</p>
 					<figure>
 						<a href="illustrations/tous/8_1_jointure_res.png">
@@ -104,7 +104,7 @@
 						</a>
 					</figure>
 				</div>
-				<p>Cependant, la couche n'a pas été modifiée, la jointure n'est que temporaire. Pour sauvegarder définitivement la jointure, il faut sauvegarder la couche sous un autre nom.</p>
+				<p>Cependant, la couche n'a pas été modifiée, la jointure n'est que temporaire. Pour sauvegarder définitivement la jointure, il faut sauvegarder la couche sous un autre nom (clic droit sur le nom de la couche &#8594; Exporter &#8594; Sauvegarder les entités sous).</p>
 			
 			
 			<h3><a class="titre" id="VIII13">Quelques exemples supplémentaires</a></h3>
@@ -113,6 +113,7 @@
 				
 					<div class="manip">
 						<p>Ouvrez un nouveau projet QGIS. Ajoutez-y la couche <em class="data">gadm36_KEN_1</em> de la base GeoPackage <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">gadm36_KEN.gpkg</a></em> et le fichier CSV <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">County_Population_2009</a></em>.</p>
+						<p>La couche <em class="data">gadm36_KEN_1</em> correspond à des sous-régions administratives du Kenya, et le tableau <em  class="data">County_Population_2009</em> contient les populations correspondantes.</p>
 						<p class="note">Notez que <em class="data">gadm36_KEN.gpkg</em> contient plusieurs couches correspondant aux différents niveaux administratifs. En passant par l'explorateur de données, vous pouvez &#171; ouvrir &#187; la base pour ajouter directement la couche de votre choix. En utilisant le gestionnaire des sources, vous choisissez les couches à ajouter après avoir cliqué sur le bouton Ajouter.</p>
 						<div class="question">
 							<input type="checkbox" id="faq-2">
@@ -135,6 +136,7 @@
 				
 					<div class="manip">
 						<p>Ouvrez un nouveau projet QGIS. Ajoutez-y les couches <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_licences_sportives_2016-2017</a></em> et <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_CSP_2016</a></em>.</p>
+						<p>La couche <em class="data">depts_licences_sportives_2016-2017</em> correspond aux nombres de licences pour différents sports par département, et la couche <em class="data">depts_CSP_2016</em> aux % des différentes catégories socio-professionnelles par département.</p>
 						<div class="question">
 							<input type="checkbox" id="faq-4">
 							<p><label for="faq-4">Ouvrez les deux tables attributaires. A votre avis, sur quels champs faire la jointure ?</label></p>
@@ -142,6 +144,12 @@
 						</div>
 						<p>Joignez les données attributaires d'une couche à l'autre couche.</p>
 					</div>
+					<p>On peut ensuite explorer la relation entre catégories socio-professionnelles et sports pratiqués, par exemple en utilisant l'extension <a class="ext" target="_blank" href="https://github.com/ghtmtt/DataPlotly">Plotly</a> pour visualiser le nombre de licences de golf en fonction de la part de cadres et professions intellectuelles supérieures :</p>
+					<figure>
+						<a href="illustrations/tous/8_1_golf_cadres.png">
+							<img src="illustrations/tous/8_1_golf_cadres.png" alt="graphique du nombre de licences de golf en fonction du % de cadres, réalisé avec Plotly" width="90%">
+						</a>
+					</figure>
 
 
             <h3><a class="titre" id="VIII14">Et si une entité correspond à plusieurs entités de la couche à joindre&nbsp;?</a></h3>
@@ -235,14 +243,14 @@
                         	</a>
                         </figure>
                         <p>Tapez la requête suivante :</p>
-                        <p class="code">select c.INSEE_COM, c.NOM_COM, count(m.INSEE) as nb_monuments, c.geometry from communes_oise as c, L_MONUMENT_HISTO_S_060 as m where c.INSEE_COM = m.INSEE group by c.INSEE_COM, c.NOM_COM, c.geometry</p>
+                        <p class="code">SELECT c.INSEE_COM, c.NOM_COM, count(m.INSEE) as nb_monuments, c.geometry<br>FROM communes_oise as c, L_MONUMENT_HISTO_S_060 as m<br>WHERE c.INSEE_COM = m.INSEE<br>GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
                         <p>Vérifiez le résultat : chaque ligne correspond à une commune, avec pour chacune le nombre de monuments.</p>
                         <p>Cochez la case <b>Charger en tant que nouvelle couche</b>.</p>
                         <p>Choisissez la colonne avec des valeurs uniques : <b>INSEE_COM</b>, et la colonne de géométrie : <b>geometry</b>.</p>
                         <p>Donnez un nom à la couche qui sera créée, <b>communes_monuments</b> par exemple, et cliquez sur le bouton <b>Charger</b>.</p>
                         <p>Le résultat est équivalent à celui obtenu avec la première méthode, mis à part le fait que les communes sans monuments n'existent pas dans la nouvelle couche.</p>
                         <p>Une autre requête utilisant <b>left join</b> permet de les conserver :</p>
-                        <p class="code">select c.INSEE_COM, c.NOM_COM, count(m.INSEE) as nb_monuments, c.geometry from communes_oise as c left join L_MONUMENT_HISTO_S_060 as m on c.INSEE_COM = m.INSEE group by c.INSEE_COM, c.NOM_COM, c.geometry</p>
+                        <p class="code">SELECT c.INSEE_COM, c.NOM_COM, count(m.INSEE) as nb_monuments, c.geometry<br>FROM communes_oise as c<br>LEFT JOIN L_MONUMENT_HISTO_S_060 as m<br>ON c.INSEE_COM = m.INSEE<br>GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
                     </div>
 				
 				<br>

@@ -111,26 +111,6 @@
 				
 				<p>Avez-vous noté que les 2 couches de départ ont <b>2 SCR différents</b>&nbsp;? (WGS84 pour les cours d'eau, RGF93/Lambert 93 pour les départements). Pourtant, le découpage fonctionne correctement. Ce comportement n'existe que depuis la version 3 de QGIS, la version 2.18 retournait dans ce cas une couche vide.</p>
 				<p><b>Même si ça n'est plus obligatoire, cela reste une bonne pratique de travailler avec des couches dans le même SCR.</b></p>
-				
-				<div class="manip">
-				    <div class="question">
-                		<input type="checkbox" id="faq-1">
-                		<p><label for="faq-1">Quel SCR commun pourrait-on utiliser pour cette opération&nbsp;?</label></p>
-                		<p class="reponse">Le WGS84 (code EPSG 4326) et le RGF93 Lambert 93 (code EPSG 2154) sont tous deux techniquement possibles. Cependant, la zone d'étude étant un département français, il est plus logique de travailler en Lambert 93.</p>
-                	</div>
-                	<p><a href="02_04_changer_systeme.php#II42">Modifiez le SCR</a> de la couche <em class="data">gis_osm_waterways_free_1</em>, pour passer du WGS84 vers le <b>RGF93/Lambert-93 (code EPSG 2154)</b> grâce à l'outil <b>Reprojeter une couche</b> (Outils généraux pour les vecteurs) de la boîte à outils. Nommez la nouvelle couche <em class="data">gis_osm_waterways_free_1_L93</em>.</p>
-                	<p>Vérifiez dans les propriétés de cette nouvelle couche, rubrique <b>Source</b>, que son SCR soit bien le Lambert 93 :</p>
-                	<figure>
-						<a href="illustrations/tous/9_1_verif_l93.png" >
-							<img src="illustrations/tous/9_1_verif_l93.png" alt="Propriétés de la couche, rubrique Source : le SCR est " width="90%" >
-						</a>
-					</figure>
-				</div>
-				<p>Attention, si le SCR n'est pas le bon, ne le modifiez pas ici&nbsp;! Utilisez l'outil <b>Reprojeter une couche</b> de la boîte à outils. Modifier le SCR et <a href="02_04_changer_systeme.php#II43">redéfinir le SCR</a> sont 2 manipulations différentes.</p>
-				<div class="manip">
-                	<p>Effectuez ensuite le découpage comme précédemment, sans oublier de choisir en entrée <em class="data">gis_osm_waterways_free_1_L93</em> et de sélectionner au préalable le département 44. Nommez la couche obtenue <em class="data">coursdeau_osm_44_L93</em> par exemple.</p>
-				</div>
-
 			
 			
 			<h3><a class="titre" id="IX12">Création d'une zone tampon autour d'un cours d'eau</a></h3>
