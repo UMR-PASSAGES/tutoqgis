@@ -32,13 +32,13 @@
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>.</p>
-					<p>Pour voir les champs de la table attributaire de cette couche, vous pouvez bien sûr ouvrir la table attributaire, mais vous pouvez également ouvrir les propriétés de la couche, rubrique <b>Champs source</b> :</p>
+					<p>Pour voir les champs de la table attributaire de cette couche, vous pouvez bien sûr ouvrir la table attributaire, mais vous pouvez également ouvrir les propriétés de la couche, rubrique <b>Champs</b> :</p>
 					<figure>
 						<a href="illustrations/tous/7_1_proprietes_champs.png" >
 							<img src="illustrations/tous/7_1_proprietes_champs.png" alt="fenêtre des propriétés de la couche, rubrique champs" width="600" >
 						</a>
 					</figure>
-					<p>Cette fenêtre vous permet de voir d'un seul coup d'œil la liste des champs, leur type : <b>String</b> (texte), <b>Integer</b> (nombre entier) ou <b>Real</b> (nombre décimal), le <a href="05_03_donnees_attrib.php#V32">mode d'édition</a> ...</p>
+					<p>Cette fenêtre vous permet de voir d'un seul coup d'œil la liste des champs, leur nom et leur type&nbsp;: <b>String</b> (texte), <b>Integer</b> (nombre entier) ou <b>Real</b> (nombre décimal)...</p>
 				</div>		
 			
 			
@@ -50,7 +50,8 @@
     				<p>Nous allons ajouter un champs à la couche <em class="data">communes_Bretagne_calcul</em>, nommé <b>NOM_DEPT</b>, destiné à contenir le nom du département de la commune.</p>
     				
     				<div class="manip">
-    					<p>Ouvrez la table attributaire de la couche <em class="data">communes_Bretagne_calcul</em>. <a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
+    					<p>Ouvrez la table attributaire de la couche <em class="data">communes_Bretagne_calcul</em>.</p>
+    					<p><img class="icone" src="illustrations/tous/7_1_edition_icone.png" alt="icône passer en mode édition" ><a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
     					<p>Cliquez sur l'icône <b>Ajouter un champ</b> en haut de la table attributaire :</p>
     					<figure>
     						<img src="illustrations/tous/7_1_BO_table_ajout.png" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" width="600" >

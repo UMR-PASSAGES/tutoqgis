@@ -52,12 +52,13 @@
 				<p><em class="numero">1</em> : Si cette case est cochée, seules les lignes sélectionnées seront modifiées (en grisé si aucune entité n'est sélectionnée).</p>
 				<p><em class="numero">2</em> : Cocher cette case pour créer un nouveau champ.</p>
 				<p><em class="numero">3</em> : Cocher cette case pour mettre à jour un champ existant.</p>
-				<p><em class="numero">4</em> : Les opérateurs les plus couramment utilisés.</p>
-				<p><em class="numero">5</em> : Expression servant à calculer les valeurs du champ.</p>
+				<p><em class="numero">4</em> : Expression servant à calculer les valeurs du champ.</p>
+				<p><em class="numero">5</em> : Les opérateurs les plus couramment utilisés.</p>
 				<p><em class="numero">6</em> : Liste des opérateurs et fonctions disponibles pour le calcul de champ.</p>
 				<p><em class="numero">7</em> : Si un opérateur ou une fonction est choisi en 6, l'aide correspondante apparaît dans cette partie.</p>
-				<p><em class="numero">8</em> : Ici, une fois l'expression remplie, vous pourrez voir un aperçu du résultat du calcul.</p>
-				<p>Comme vous avez pu le constater, le mode de fonctionnement de la calculatrice de champ est assez similaire à celui d'une <a href="06_01_req_attrib.php">requête attributaire</a>. </p>
+				<p><em class="numero">8</em> : Ici, une fois l'expression remplie, vous pourrez voir un aperçu du résultat du calcul pour l'entité choisie.</p>
+				<p>L'onglet <b>Editeur de fonction</b>, derrière l'onglet <b>Expression</b>, permet le calcul de champs à l'aide du langage Python : cette possibilité ne sera pas abordée ici.</p>
+				<p>Comme vous pouvez le constater, le mode de fonctionnement de la calculatrice de champ est assez similaire à celui d'une <a href="06_01_req_attrib.php">requête attributaire</a>. </p>
 				<p class="note">Il n'est pas obligatoire de passer en mode édition pour utiliser la calculatrice de champ ; dans ce cas, cliquer sur OK dans la calculatrice enclenche le mode édition.</p>
 				
 			
@@ -86,7 +87,7 @@
 						
 				<h4><a class="titre" id="VII22b">Vérification</a></h4>
 					
-					<p>Parfois, il peut arriver de se mélanger dans les unités... Il peut être utile de vérifier les calculs de géométrie. Nous allons voir 2 méthodes pour le faire; cela vous indique aussi comment connaître par exemple la surface d'un polygone donné sans forcément créer et calculer un champ.</p>
+					<p>Parfois, il peut arriver de se mélanger dans les unités... Il peut être utile de vérifier les calculs de géométrie. Nous allons voir 2 méthodes pour le faire&nbsp;; cela vous indique aussi comment connaître par exemple la surface d'un polygone donné sans forcément créer et calculer un champ.</p>
 					<p>La première méthode consiste à <b>mesurer &#171;&nbsp;à la main&nbsp;&#187; la surface d'une commune et à comparer le résultat avec celui du champ SURF_KM2</b>.</p>
 					<div class="manip">
 						<p><img class="iconemid" src="illustrations/tous/7_2_mesure_icone.png" alt="icône mesurer une aire" >Vous pouvez vérifier votre calcul au moyen de l'outil <b>Mesurer une aire</b> : </p>
@@ -209,12 +210,7 @@
                     	<div class="question">
                     		<input type="checkbox" id="faq-3">
                     		<p><label for="faq-3">Pouvez-vous écrire dans son entier l'expression utilisée pour écrire le nom du département en fonction de son code&nbsp;?</label></p>
-                    		<p class="reponse">L'expression sera la suivante : <b>CASE
-WHEN  "INSEE_DEP" = '29' THEN 'Finistère'
-WHEN  "INSEE_DEP" = '22' THEN 'Côtes-d\'Armor'
-WHEN  "INSEE_DEP" = '35' THEN 'Ille-et-Vilaine'
-WHEN  "INSEE_DEP" = '56' THEN 'Morbihan' 
-END</b></p>
+                    		<p class="reponse">CASE<br>WHEN  "INSEE_DEP" = '29' THEN 'Finistère'<br>WHEN  "INSEE_DEP" = '22' THEN 'Côtes-d\'Armor'<br>WHEN  "INSEE_DEP" = '35' THEN 'Ille-et-Vilaine'<br>WHEN  "INSEE_DEP" = '56' THEN 'Morbihan'<br>END</p>
                             <p class="reponse">Attention, il y a un piège&nbsp;! Pour que l'apostrophe de &#171; Côtes-d'Armor &#187; ne soit pas considéré comme celui de fin de la chaîne de caractères, il faut &#171; l'échapper &#187; avec le caractère antislash <b>\</b>.</p>
                     	</div>
                     	<p>Au final, la calculatrice doit être paramétrée comme suit :</p>
