@@ -20,6 +20,7 @@
 							<li><a href="#X11b">Faire varier la taille de points en fonction d'un champ</a>
 							<li><a href="#X11c">Surface, rayon, Flannery... Pour en savoir plus sur les différentes méthodes</a>
 							<li><a href="#X11d">Les plus petits devant ! Modifier l'ordre d'affichage des symboles</a>
+							<li><a href="#X11e">C'est mieux avec la légende</a>
 						</ul>
 					</li>
 					<li><a href="#X12">Représenter des variables relatives à des surfaces : cartes choroplèthes</a>
@@ -29,6 +30,12 @@
 						</ul>
 					</li>
 					<li><a href="#X13">Représenter des quantités ou des effectifs : cartes en semis de points</a></li>
+                    <li><a href="#X14">Connaître la distribution de ses données</a>
+					    <ul class="listesoustitres">
+							<li><a href="#X14a">Histogramme simple</a>
+							<li><a href="#X14b">Histogramme avec l'extension Plotly</a>
+						</ul>
+					</li>
 				</ul>
 				
 
@@ -43,6 +50,9 @@
 					<li><em>Manuel de cartographie</em> de Nicolas Lambert et Christine Zanin</li>
 					<li><em>Pratiques de la cartographie</em> d'Anne Le Fur</li>
 				</ul>
+				
+				
+				    
 				
 				<h3><a class="titre" id="X11">Représenter des quantités ou des effectifs : carte en symboles proportionnels</a></h3>
 				
@@ -194,6 +204,38 @@
 								<img src="illustrations/tous/10_01_prop_visu.png" alt="Une partie de la carte en cercles proportionnels" width="40%">
 							</a>
 					   </figure>
+					   
+					<h4><a class="titre" id="X11e">C'est mieux avec la légende</a></h4>
+					   
+					   <p>QGIS gère normalement les légendes pour les différents types de représentation, mais les cartes en cercles proportionnels présentent un cas particulier où nous devrons nous-même créer la légende.</p>
+					   <p>Cette fonctionnalité a été rajoutée récemment, ce qui illustre bien le fait que les logiciels SIG ne sont pas initialement pensés comme des logiciels de cartographie (mais ils ont aujourd'hui tellement de possibilité en ce sens que ce serait dommage de se priver&nbsp;!).</p>
+					   
+					   <div class="manip">
+					       <p>Ouvrez la fenêtre des propriétés, rubrique <b>Symbologie</b>, et cliquez en bas à droite sur <b>Avancé</b> pour choisir <b>Légende pour la Taille définie par des données</b> :</p>
+					       <figure>
+								<a href="illustrations/tous/10_01_legende_symbolprop_acces.png" >
+									<img src="illustrations/tous/10_01_legende_symbolprop_acces.png" alt="Fenêtre des propriétés, symbologie, clic sur le bouton avancé" width="100%">
+								</a>
+							</figure>
+					   
+					       <p>Sous cet intitulé un peu obscur se cache une légende paramétrable pour notre carte en cercles proportionnels :</p>
+					       <figure>
+    							<a href="illustrations/tous/10_01_legende_symbolprop.png" >
+    								<img src="illustrations/tous/10_01_legende_symbolprop.png" alt="Fenêtre de la légende des symbols proportionnels" width="70%">
+    							</a>
+    						</figure>
+    						
+    						<p>Dans la partie gauche, on peut spécifier les différents paramètres, un aperçu est mis à jour automatiquement dans la partie droite.</p>
+    						<ul>
+    						  <li class="espace">Par défaut, la légende n'est pas activée. Nous allons choisir ici le mode <b>Légende repliée</b>, où les cercles sont superposés. Dans le mode <b>Eléments de légende séparés</b>, les cercles sont au-dessous les uns des autres, mais se retrouvent souvent tronqués</li>
+    						  <li class="espace">On peut donner un titre à la légende, par exemple <b>Population</b>, par défaut il s'agit du nom de la couche</li>
+    						  <li class="espace">Cochez la case <b>Taille manuelle des classes</b> pour définir vous-même quelles valeurs comportera la légende</li>
+    						  <li class="espace">Cliquez ensuite sur le bouton <b>+</b> pour ajouter ces valeurs. On recommande généralement de mettre les valeurs minimales et maximales, ainsi qu'une ou deux valeurs intermédiaires. Ici, la valeur minimale étant de 1, elle n'est pas montrée. Notez que vous pouvez choisir quelle sera la valeur affichée dans la légende en modifiant l'étiquette&nbsp;!</li>
+    						 </ul>
+    						 <p>Cliquer ensuite sur OK, fermez la fenêtre des propriétés. La légende est visible dans la liste des couches, et pourra également être affichée dans une <a href="10_02_mise_en_page.php">mise en page</a>.</p>
+					   
+					   </div>
+					   
 						
 				<h3><a class="titre" id="X12">Représenter des variables relatives à des surfaces : cartes choroplèthes</a></h3>
 					
@@ -202,7 +244,7 @@
 						<a href="illustrations/tous/10_01_carte_choroplethe.png" >
 							<img src="illustrations/tous/10_01_carte_choroplethe.png" alt="Exemple de carte choroplethe : carte de densité de population par commune, France métropolitaine, discrétisation par quantiles" width="90%">
 						</a>
-						<figcaption>Exemple de carte choroplethe montrant la densité de population par commune en France métropolitaine, avec une discrétisation par quantiles.</figcaption>
+						<figcaption>Exemple de carte choroplethe réalisée sous QGIS montrant la densité de population par commune en France métropolitaine, avec une discrétisation par quantiles.</figcaption>
 				   </figure>
 					
 					
@@ -241,14 +283,14 @@
 							</figure>
 							<ul>
     							<li class="espace">Sélectionnez le style <b>Gradué</b> pour discrétiser les valeurs</li>
-    							<li class="espace">Choisissez la colonne <b>densite</b> créée précédemment</li>
+    							<li class="espace">Choisissez la colonne <b>densite</b> créée précédemment (notez que l'on pourrait aussi cliquer sur le bouton Expression pour calculer ici la densité, sans créer de nouveau champ)</li>
     							<li class="espace">Choisissez éventuellement une palette de couleur</li>
     							<li class="espace">Sélectionnez un <b>mode de discrétisation</b> (quantile, intervalles égaux, Jenks) et un <b>nombre de classes</b></li>
     							<li class="espace">Cliquez sur <b>Classer</b> pour voir apparaître les classes avec les couleurs qui leur sont attribuées</li>
 							</ul>
 							<p>Appliquez ensuite les changements. Vous pouvez tester différents modes de discrétisation et nombres de classes.</p>
 							<p>Pour voir l'effectif de chaque classe, clic droit sur le nom de la couche &#8594; <b>Montrer le décompte des entités</b>.</p>
-							<p>Pour un meilleur rendu, vous pouvez supprimer les bordures des communes en cliquant sur <b>Modifier...</b> puis sur <b>Remplissage simple &#8594; Style de trait &#8594; Pas de ligne</b>.</p>
+							<p>Pour un meilleur rendu, vous pouvez supprimer les bordures des communes en cliquant sur le symbole puis sur <b>Remplissage simple &#8594; Style de trait &#8594; Pas de ligne</b>.</p>
 							<figure>
 								<a href="illustrations/tous/10_01_enlever_bordure.png" >
 									<img src="illustrations/tous/10_01_enlever_bordure.png" alt="Cliquer sur Modifier pour enlever les bordures" width="70%">
@@ -309,6 +351,54 @@
 								<img src="illustrations/tous/10_01_pts_aleatoires_visu.png" alt="Exemple de carte en semis de points" width="400">
 							</a>
 						</figure>
+						
+					<h3><a class="titre" id="X14">Connaître la distribution de ses données</a></h3>
+				
+				        <p>Il peut être utile pour mieux comprendre et représenter ses données de connaître leur distribution, par exemple avec un histogramme de fréquence. Ceci peut aider notamment à définir des classes pour une discrétisation.</p>
+				        <p>Il est plus logique de faire cette étape avant de choisir un mode de représentation&nbsp;; néanmoins, parce-qu'il est plus simple de l'aborder en sachant déjà discrétiser des données dans QGIS, cette partie arrive en fin de chapitre.</p>
+				        <p>Nous allons voir 2 méthodes, une directement dans la fenêtre des propriétés de la couche, et l'autre avec l'extension Plotly.</p>
+    			        <p>Ici, nous allons prendre l'exemple de la densité de population pour les communes de France métropolitaine.</p>
+                        <div class="manip">
+                            <p>Si ce n'est pas déjà fait, ajoutez à votre projet la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">COMMUNE.shp</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
+                        </div>	
+    				
+    				    <h4><a class="titre" id="X14a">Histogramme simple</a></h4>
+    				    
+    				        <p>Il existe une méthode simple directement inclue dans QGIS pour avoir un aperçu de la distribution de vos données.</p>
+    				        
+    				        <div class="manip">
+    				            <p>Ouvrez les propriétés de la couche de communes, et <a href="10_01_representation.php#X12b">choisissez le mode gradué</a> pour le champ densité <a href="10_01_representation.php#X12a">créé précédemment</a> avec une discrétisation par exemple par quantiles.
+    				            <p>Cliquez ensuite sur l'onglet <b>Histogramme</b> puis sur <b>Charger les valeurs</b> :</p>
+    				            <figure>
+        							<a href="illustrations/tous/10_01_histogramme.png" >
+        								<img src="illustrations/tous/10_01_histogramme.png" alt="Histogramme dans la fenêtres des propriétés" width="85%">
+        							</a>
+        						</figure>
+    				        </div>
+    				        
+    				        <p>On ne voit pas grand chose... L'axe des x est créé en fonction des valeurs minimales et maximales, et la plupart des communes ayant une densité inférieure à 1000 habitants / km&#178;, elles ne sont pas visibles ici.</p>
+    				        <p>Les axes ne sont pas paramétrables et il n'est pas possible de zoomer, ce qui est une limite importante de cet outil. Testons néanmoins pour un jeu de données ne présentant pas de valeur maximale extrême, par exemple pour les communes de densité inférieure à 600 habitants/km&#178;.</p>
+    				        <p>Pour cela, nous allons <a href="01_02_info_geo.php#I23c">filtrer les données</a>, ce qui ne modifie pas la couche elle-même.</p>
+    				        
+    				        <div class="manip">
+    				            <p>Toujours dans la fenêtre des propriétés, rendez-vous dans l'onglet <b>Source</b> et cliquez sur le bouton <b>Constructeur de requête</b> tout en bas de la fenêtre.</p>
+        						<p>Filtrez uniquement les communes de densité < 300 habitants/km&#178;  avec la requête <b>"densite" < 300</b>. Cliquez ensuite sur <b>OK</b>.</p>
+        						<p>Retournez dans la rubrique <b>Symbologie</b>, onglet <b>Classes</b> et cliquez sur le bouton <b>Classer</b> pour mettre à jour les classes. Dans l'onglet <b>Histogramme</b>, cliquez sur <b>Charger les valeurs</b> pour mettre à jour l'histogramme.</p>
+        						<figure>
+        							<a href="illustrations/tous/10_01_histogramme_filtre.png" >
+        								<img src="illustrations/tous/10_01_histogramme_filtre.png" alt="Histogramme de fréquence pour les communes de densite<300" width="85%">
+        							</a>
+        						</figure>
+        						<p>On y voit plus clair&nbsp;! Au passage, profitez-en pour cocher les cases <b>moyenne</b> et <b>écart-type</b>. Et vous pouvez ainsi vous rendre compte de l'intérêt principal de cet histogramme : les couleurs sont celles de la discrétisation choisie, et il est possible de modifier les bornes des classes directement dans l'histogramme.</p>
+        						<p>Testez-le en faisant glisser un des traits correspondant à une borne. En cliquant sur le bouton <b>Appliquer</b>, les changements sont visibles dans la fenêtre de QGIS.</p>
+        						<p>Ceci peut être très utile pour appliquer la méthode des <b>seuils observés</b> : délimiter les classes à la main, en se basant sur les ruptures visibles dans l'histogramme.</p>
+        						
+    				        </div>
+    				        <p class="note">Filtrer les données est très utile, mais parfois on oublie qu'un filtre est actif. N'oubliez pas si vous souhaitez à nouveau travailler sur l'ensemble de vos données d'effacer la requête&nbsp;!</p>
+    				    
+    				    <h4><a class="titre" id="X14b">Histogramme avec l'extension Plotly</a></h4>
+    				    
+    				        <p>Une autre méthode, permettant plus de souplesse au niveau de la représentation de l'histogramme, mais n'étant pas liée aux classes, consiste à utiliser l'extension <a class="ext" target="_blank" href="https://github.com/ghtmtt/DataPlotly">Plotly</a> créée par Matteo Ghetta (Faunalia).</p>
 						
 					
 					<p>Nous avons vu ici trois manières de représenter une même donnée : la population des communes. Il en existe beaucoup d'autres&nbsp;!</p>

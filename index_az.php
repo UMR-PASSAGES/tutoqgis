@@ -43,7 +43,7 @@
 						<li><a href="#U">U</a></li>
 						<li><a href="#V">V</a></li>
 						<li><a href="#W">W</a></li>
-						<li>X</li>
+						<li><a href="#X">X</a></li>
 						<li>Y</li>
 						<li><a href="#Z">Z</a></li>
 					</ul>
@@ -187,12 +187,11 @@
 							<li class="index_02"><a href="06_01_req_attrib.php#VI11">Expression</a></li>
 							<li class="index_02">Extension
 								<ul>
-									<li class="index_03"><a href="04_02_preliminaires.php#IV22b">Activer une extension</a></li>
+									<li class="index_03"><a href="06_04_req_sql.php#VI42a">Activer une extension</a></li>
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV63">GeoSearch</a></li>
 									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">Gestionnaire de table</a></li>
-									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">Installer une extension</a></li>
-									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">OpenLayers</a></li>
-									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV61">QuickMapServices</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV62">ici</a></li>
+									<li class="index_03"><a href="03_04_fonds_carte.php#III43">Installer une extension</a></li>
+									<li class="index_03"><a href="03_04_fonds_carte.php#III43">QuickMapServices</a></li>
 									<li class="index_03"><a href="03_05_donnees_osm.php#III55">QuickOSM</a></li>
 									<li class="index_03"><a href="06_02_req_spatiales.php#VI21b">Requête spatiale</a></li>
 								</ul>
@@ -203,6 +202,7 @@
 					<li class="index_01" id="F">F
 						<ul>
 							<li class="index_02"><a href="03_05_donnees_osm.php#III54">Fichier de style QML ou SLD</a></li>
+							<li class="index_02"><a href="01_02_info_geo.php#I23c">Filtrer les données</a></li>
 							<li class="index_02"><a href="10_02_mise_en_page.php#X22d">Flèche Nord</a></li>
 							<li class="index_02"><a href="03_02_donnees_flux.php">Flux</a>
 								<ul>
@@ -558,6 +558,12 @@
 					<li class="index_01" id="W">W
 						<ul>
 							<li class="index_02"><a href="02_02_coord.php#II21b">WGS84 (SCR)</a></li>
+						</ul>
+					</li>
+					
+					<li class="index_01" id="X">X
+						<ul>
+							<li class="index_02"><a href="03_04_fonds_carte.php#III42">XYZ Tiles</a></li>
 						</ul>
 					</li>
 					

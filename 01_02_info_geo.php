@@ -25,6 +25,7 @@
 						<ul class= "listesoustitres">
 							<li><a href="#I23a" >Changer la représentation d'une couche</a></li>
 							<li><a href="#I23b" >Connaître l'emplacement d'une couche</a></li>
+							<li><a href="#I23c" >Filtrer les données</a></li>
 						</ul>
 					</li>
 					<li><a href="#I24">Ajout d'une couche raster</a>
@@ -195,6 +196,37 @@
 							</div>
 						</div>
 						<p class="note">Vous pouvez aussi vérifier l'emplacement d'une couche en passant simplement la souris sur son nom dans le panneau des couches !</p>
+						
+					<h4><a class="titre" id="I23c">Filtrer les données</a></h4>
+					
+					   <p>Le logiciel offre également la possibilité de de <b>filtrer les données</b>. Cette opération ne modifie pas les données elles-mêmes, mais seules les données filtrées seront affichées aussi bien sur la carte que dans la table attributaire. Toutes les opérations effectuées sur la couche ne le seront que sur les données filtrées.</p>
+					   <p>Ceci est très utile pour masquer temporairement certaines données. Si vous souhaitez vraiment ne travailler que sur une partie des données, il est peut-être plus clair de créer une nouvelle couche contenant uniquement les données étudiées.</p>
+					   <p>Ici, nous allons filtrer uniquement le département du Finistère.</p>
+					   
+					   <div class="manip">
+					       <p>Faites un clic droit sur la couche de départements &#8594; <b>Filtrer...</b></p>
+					       <figure>
+								<a href="illustrations/tous/1_2_filtrer.png" >
+									<img src="illustrations/tous/1_2_filtrer.png" alt="Fenêtre du constructeur de requêtes" width="80%">
+								</a>
+							</figure>
+							<p>Nous allons ici construire une requête simple pour sélectionner le département du Finistère. Les requêtes sont vues plus en détail <a href="06_01_req_attrib.php" >ici</a> !</p>
+							<ul>
+							 <li class="espace">Double-cliquez sur le champ <b>NOM_DEP</b> pour le faire apparaître en bas dans l'expression de filtrage</li>
+							 <li class="espace">Cliquez sur l'opérateur <b>LIKE</b></li>
+							 <li class="espace">Cliquez sur le bouton <b>Toutes</b> à droite pour voir toutes les valeurs possibles pour le champ NOM_DEP, puis double-cliquez sur <b>FINISTERE</b></li>
+							</ul>
+							<p>Cliquez ensuite sur le bouton <b>Tester</b> : la requête renvoie un résultat. Cliquez sur <b>OK</b>.</p>
+							<figure>
+								<a href="illustrations/tous/1_2_filtrer_resultat.png" >
+									<img src="illustrations/tous/1_2_filtrer_resultat.png" alt="couche et table après filtre" width="100%">
+								</a>
+							</figure>
+							<p>Seul le département du Finistère est visible dans la carte et la couche. Notez qu'un petit entonnoir à droite du nom de la couche indique qu'un filtre est actif.</p>
+							<p>Filtrer ses données est très pratique, mais le risque est d'oublier qu'on ne travaille pas sur toutes les données&nbsp;!</p>
+							<p>Pour désactiver le filtre, clic droit sur la couche de départements &#8594; <b>Filtrer...</b>, cliquer sur <b>Effacer</b> puis sur <b>OK</b>.</p>
+					   </div>
+					   <p class="note">Le filtres est également accessible à partir des propriétés de la couche &#8594; rubrique Source &#8594; bouton Constructeur de requête tout en bas de la fenêtre.</p>
 						
 						
 				<h3><a class="titre" id="I24">Ajout d'une couche raster</a></h3>		
