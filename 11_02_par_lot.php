@@ -21,8 +21,8 @@
 					<p>Il est également possible d'utiliser l'outil en mode &#171; par lot &#187; : <b>clic droit sur Couper, Exécuter par lot</b>. Dans la fenêtre qui s'ouvre, <b>chaque ligne correspond à une instance de l'outil</b>. Chaque colonne correspond à un paramètre : la 1ère colonne à la couche en entrée, la 2ème à la couche de découpage (masque), la 3ème à la couche qui sera créée.</p>
 					<p>Pour remplir chacune des colonnes :</p>
 					<ul>
-						<li class="espace"><b>Couche source:</b> cliquer sur les <b>…</b> de la première ligne &#8594; <b>Select from open layers</b> et cochez les 4 couches OSM à découper (si ces couches n'étaient pas chargées 	dans QGIS, utiliser l'option Select from file system).</li>
-						<li class="espace"><b>Couche de superposition :</b> comme précédemment, cliquer sur les <b>…</b> de la première ligne &#8594; <b>Select from open layers</b> et cocher <b>SAINTE_RADEGONDE</b>. La première ligne est maintenant remplie. Pour remplir toutes les lignes de manière identique : double-cliquez sur l'en-tête de colonne <b>Couche de superposition</b>.</li>
+						<li class="espace"><b>Couche source:</b> cliquer sur les <b>…</b> de la première ligne &#8594; <b>Sélectionner à partir des couches chargées</b> et cochez les 4 couches OSM à découper (si ces couches n'étaient pas chargées 	dans QGIS, utiliser l'option Sélectionner des fichiers).</li>
+						<li class="espace"><b>Couche de superposition :</b> comme précédemment, cliquer sur les <b>…</b> de la première ligne &#8594; <b>Sélectionner à partir des couches chargées</b> et cocher <b>SAINTE_RADEGONDE</b>. La première ligne est maintenant remplie. Pour remplir toutes les lignes de manière identique : double-cliquez sur l'en-tête de colonne <b>Couche de superposition</b>.</li>
 						<li class="espace"><b>Découpé :</b> cliquer sur les <b>…</b>, rendez-vous dans le dossier où vous voulez créer les nouvelles couches, tapez <b>decoupe_</b> et cliquez sur <b>Enregistrer</b>. Dans la fenêtre suivante : choisir 
 						<a class="thumbnail_bottom" href="#thumb">Remplir avec les valeurs du paramètre, Couche source
                         	<span>

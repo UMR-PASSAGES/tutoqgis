@@ -59,7 +59,7 @@
 					<h4><a class="titre" id="XI31a">Création du premier paramètre en entrée : couche à découper</a></h4>
 					
 						<div class="manip">
-							<p>Cliquez sur l'onglet <b>Entrées</b> en bas à gauche de la fenêtre, puis double-cliquez sur <b>Couche vecteur</b>&nbsp;:</p>
+							<p>Dans l'onglet <b>Entrées</b> dans la partie gauche de la fenêtre, double-cliquez sur <b>Couche vecteur</b>&nbsp;:</p>
 							<figure>
     							<a href="illustrations/tous/11_03_modeleur_fenetre.png" >
     								<img src="illustrations/tous/11_03_modeleur_fenetre.png" alt="Fenêtre du modeleur de traitement" width="100%">
@@ -67,16 +67,16 @@
 							</figure>
 							<figure>
     							<a href="illustrations/tous/11_03_def_parametre_fenetre.png" >
-    								<img src="illustrations/tous/11_03_def_parametre_fenetre.png" alt="Fenêtre de définition d'un paramètre" width="90%">
+    								<img src="illustrations/tous/11_03_def_parametre_fenetre.png" alt="Fenêtre de définition d'un paramètre" width="80%">
     							</a>
 							</figure>
 							<ul>
-								<li class="espace">Nom du paramètre : <b>couche source</b></li>
+								<li class="espace">Nom du paramètre : <b>couche à découper</b></li>
 								<li class="espace">Type de géométrie : <b>Tout type de géométrie</b>, puisque cette couche peut aussi bien être de type point, ligne ou polygone</li>
 								<li class="espace"><b>Obligatoire</b> : cochez la case, il ne s'agit pas d'un paramètre optionnel</li>
 							</ul>	
 						</div>
-						<p>Le paramètre est ajouté au modèle sous forme d'une boîte jaune. Vous pouvez éditer ses caractéristiques en double-cliquant sur cette boîte.</p>
+						<p>Le paramètre est ajouté au modèle sous forme d'une boîte verte. Vous pouvez éditer ses caractéristiques en double-cliquant sur cette boîte, ou bien en cliquant sur les poinst de suspension en bas à droite de la boîte.</p>
 						<figure>
 							<a href="illustrations/tous/11_03_modele_01.png" >
 								<img src="illustrations/tous/11_03_modele_01.png" alt="Boîte pour la couche source" width="100%">
@@ -118,17 +118,17 @@
 							</figure>
 							<figure>
 								<a href="illustrations/tous/11_03_def_algo_fenetre.png" >
-									<img src="illustrations/tous/11_03_def_algo_fenetre.png" alt="Fenêtre de définition d'un algo" width="500">
+									<img src="illustrations/tous/11_03_def_algo_fenetre.png" alt="Fenêtre de définition d'un algo" width="80%">
 								</a>
 							</figure>
 							<ul>
 								<li>Description : <b>Couper</b></li>
-								<li>Couche en entrée : <b>couche source</b></li>
-								<li>Couche de découpage : <b>couche masque</b></li>
+								<li>Couche en entrée : cliquez sur le bouton à gauche pour choisir <b>Entrée du modèle</b> à la place de valeur, pour choisir <b>couche à découper</b> dans la liste à droite</li>
+								<li>Couche de découpage : idem, choisir <b>Entrée du modèle</b> puis <b>couche masque</b></li>
 								<li>Découpé : ne rentrez rien dans cette partie, pour que la couche créée soit temporaire</li>
 							</ul>
 						</div>
-						<p>L'algorithme apparaît sous forme d'une boîte blanche reliée aux 2 couches en entrée&nbsp;; de même, vous pouvez éditer ses caractéristiques en cliquant sur l'icône de crayon de cette boîte.</p>
+						<p>L'algorithme apparaît sous forme d'une boîte blanche reliée aux 2 couches en entrée&nbsp;; de même, vous pouvez éditer ses caractéristiques en double-cliquant sur la boîte.</p>
 						<figure>
 							<a href="illustrations/tous/11_03_modele_03.png" >
 								<img src="illustrations/tous/11_03_modele_03.png" alt="Modèle avec les 3 boîtes pour les 2 couches en entrée et l'algo couper" width="100%">
@@ -152,9 +152,9 @@
 							</figure>
 							<ul>
 								<li>Description : <b>Reprojeter une couche</b></li>
-								<li>Couche en entrée : <b>'Découpé' créé par l'algorithme 'Couper'</b></li>
-								<li>SCR cible : laissez EPSG:4326, ce qui correspond au WGS84 (l'idée étant de passer du Lambert 93 au WGS84)</li>
-								<li>Reprojecté : tapez le nom de votre choix, par exemple <b>reprojeté+découpé</b></li>
+								<li>Couche source : cliquez sur le bouton à gauche pour choisir <b>Sortie d'un algorithme</b> puis dans la liste à droite <b>'Découpé' créé par l'algorithme 'Couper'</b></li>
+								<li>SCR cible : laissez <b>EPSG:4326</b>, ce qui correspond au WGS84 (l'idée étant de passer du Lambert 93 au WGS84)</li>
+								<li>Reprojecté : tapez le nom de votre choix, par exemple <b>découpé+reprojeté</b></li>
 							</ul>
 						</div>
 						
@@ -177,10 +177,11 @@
         							<img src="illustrations/tous/11_03_enregistrer_modele_fenetre.png" alt="Fenêtre du modeleur, choix du nom du modèle et du groupe et icône de sauvegarde entourés en rouge" width="100%">
         						</a>
         					</figure>
-    						<p>Tapez d'abord son nom en haut à gauche de la fenêtre, <b>couper et modifier SCR</b> par exemple, et le nom de son groupe, <b>tests</b> par exemple.</p>
+    						<p>Dans l'onglet <b>Propriétés du modèle</b> de la partie gauche de la fenêtre, choisissez le nom sous lequel votre modèle sera disponible dans la boîte à outils, par exemple <b>découper et modifier SCR</b> par exemple.</p>
+    						<p>Tapez également le nom de son groupe, c'est-à-dire la rubrique dans laquelle votre modèle apparaîtra au sein de la boîte à outils : <b>tests</b> par exemple.</p>
     					</div>
     					
-    					<p>Le groupe correspond à la rubrique dans laquelle votre modèle apparaîtra au sein de la boîte à outils. S'il n'existe pas déjà, il sera créé.</p>
+    					<p>Si le groupe n'existe pas déjà, il sera créé.</p>
     					
     					<div class="manip">
     						<p><img class="icone" src="illustrations/tous/11_03_enregistrer_modele_icone.png" alt="icône Enregistrer" >Cliquez ensuite sur l'icône <b>Enregistrer le modèle sous</b>. Dans la fenêtre qui s'ouvre alors, choisissez un nom pour votre modèle, par exemple <b>couper_modifSCR</b>.</p>
@@ -204,7 +205,7 @@
         							<img src="illustrations/tous/11_03_emplacement_modele.png" alt="Emplacement du modèle dans la boîte à outils" width="80%">
         						</a>
         				   </figure>
-        				   <p>Dans la barre d'outils en haut de la fenêtre d'édition du modèle, cliquez sur l'icône <b>Editeur d'aide du modèle</b>.</p>
+        				   <p>Dans la barre d'outils en haut de la fenêtre d'édition du modèle, cliquez sur l'icône <b>Éditer l'aide du modèle</b>.</p>
                            <figure>
         						<a href="illustrations/tous/11_03_modele_aide_icone.png" >
         							<img src="illustrations/tous/11_03_modele_aide_icone.png" alt="Barre d'outils de la fenêtr d'édition du modèle, icône Aide entourée en rouge" width="90%">
@@ -271,7 +272,7 @@
 						
 						<p>Les modèles permettent de créer une chaîne de traitement, en enchaînant autant d'algorithmes que vous le souhaitez, et <b>sont donc très pratiques si vous êtes amenés à répéter souvent la même séquence d'opérations</b>.</p>
 						<p>Au-delà de la création du modèle, il peut être utile quand vous réfléchissez à une manipulation de dessiner au papier et crayon l'enchaînement des étapes. Et une fois finalisé de noter le tout dans un fichier texte, pour vous aider à comprendre ce que vous avez fait quand vous reprendrez ce dossier dans 6 mois&nbsp;!</p>
-						<p>Dans le chapitre suivant, nous allons voir une autre méthode pour automatiser des tâches dans QGIS, plus puissante mais avec un coup d'entrée plus important, en utilisant le langage de programmation Python.</p>
+						<p>Dans le chapitre suivant, nous allons voir une autre méthode pour automatiser des tâches dans QGIS, plus puissante mais avec un coût d'entrée plus important, en utilisant le langage de programmation Python.</p>
 						
 				<br>
 				<a class="prec" href="11_02_par_lot.php">chapitre précédent</a>

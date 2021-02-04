@@ -81,7 +81,7 @@
                         </figure>
 						<p>Lisez le contenu du script. <b>Les lignes commençant par un # sont des commentaires</b> : leur contenu ne sera pas pris en compte, ils sont uniquement utiles pour mieux comprendre le script.</p>
 					</div>
-					<p>L'objectif n'est pas de comprendre dans le détail tout ce que fait ce script, mais de comprendre globalement ce qui s'y passe, notamment au moyen des commentaires. Il s'agit ici d'un script faisant le même travail que le modèle que vous avez réalisé en <a href="11_03_modeleur.php">XI.3</a> en mode par lot, à savoir découper plusieurs couches par une même couche et reprojeter les couches obtenues en WGS84.</p>
+					<p>L'objectif n'est pas de comprendre dans le détail tout ce que fait ce script, mais de comprendre globalement ce qui s'y passe, notamment au moyen des commentaires. Il s'agit ici d'un script faisant le même travail que le modèle que vous avez réalisé en <a href="11_03_modeleur.php#XI33b">précédemment</a>, à savoir découper plusieurs couches par une même couche et reprojeter les couches obtenues en WGS84.</p>
 
 				
 				<h3><a class="titre" id="XI43">Paramétrer le script</a></h3>

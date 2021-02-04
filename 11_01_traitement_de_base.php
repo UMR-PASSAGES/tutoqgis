@@ -15,7 +15,7 @@
 			<h2>XI.1  Traitement de base pour une seule couche</h2>
 				
 				<p>Nous allons (re)voir ici une manipulation simple&nbsp;: comment <a href="09_01_vecteur.php#IX11">découper une couche par une autre</a>.</p>
-				<p>Nous verrons dans les chapitres suivant comment <b>automatiser ce traitement</b>, pour par exemple découper rapidement 10 couches par une autre.</p>
+				<p>Nous verrons dans les chapitres suivants comment <b>automatiser ce traitement</b>, pour par exemple découper rapidement 10 couches par une autre.</p>
 				
 				<div class="manip">
 					<p>Lancer QGIS et ouvrir le projet <em class='data'><a href="donnees/TutoQGIS_11_Automatisation.zip">decoupe.qgz</a></em> situé dans <b>TutoQGIS_11_automatisation/projets</b>.</p>
