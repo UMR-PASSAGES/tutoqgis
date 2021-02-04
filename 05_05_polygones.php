@@ -29,17 +29,17 @@
 			<center>
 			<figure>
 			    <a href="illustrations/tous/5_5_oahu_legende.png" >
-					<img src="illustrations/tous/5_5_oahu_legende.png" alt="légende de la carte de l'île d'Oahu" width="70%">
+					<img src="illustrations/tous/5_5_oahu_legende.png" alt="légende de la carte de l'île d'Oahu" width="450">
 				</a>
 			</figure>
 			</center>
 			<p>Vous voyez ici la carte originale à gauche, et avec superposée la couche de polygones à droite.</p>
 			<figure>
 				<a href="illustrations/tous/5_5_oahu_avant.png" >
-					<img src="illustrations/tous/5_5_oahu_avant.png" alt="détail de la carte de l'île d'Oahu" width="40%">
+					<img src="illustrations/tous/5_5_oahu_avant.png" alt="détail de la carte de l'île d'Oahu" width="300">
 				</a>
 				<a href="illustrations/tous/5_5_oahu_apres.png" >
-					<img src="illustrations/tous/5_5_oahu_apres.png" alt="détail de la carte de l'île d'Oahu avec la couche de polygones superposée" width="40%">
+					<img src="illustrations/tous/5_5_oahu_apres.png" alt="détail de la carte de l'île d'Oahu avec la couche de polygones superposée" width="300">
 				</a>
 			</figure>
 			<p>L'idée est de numériser le polygone de la réserve forestière, avec des contours bleus sur la carte, puis de le découper pour différencier les zones de cette réserve classées comme &#171; Public lands &#187; (en vert) ou comme &#171; Dederal Reservations &#187; (en rose).</p>
@@ -118,7 +118,7 @@
 					<p>Vous pouvez ensuite mettre à jour les données attributaires :</p>
 					<figure>
 						<a href="illustrations/tous/5_5_attributs_remplis.png" >
-							<img src="illustrations/tous/5_5_attributs_remplis.png" alt="Table attributaire de la couche de polygones" width="80%">
+							<img src="illustrations/tous/5_5_attributs_remplis.png" alt="Table attributaire de la couche de polygones" width="270">
 						</a>
 					</figure>
 				</div>
@@ -139,7 +139,11 @@
 						<p class="reponse">Les deux polygones ne sont plus jointifs. Le déplacement d'un sommet d'un des polygones n'a pas eu d'effet sur le sommet correspondant du deuxième polygone.</p>
 					</div>
 						<p>Rendez-vous maintenant dans le <b>menu Projet &#8594; Options d'accrochage</b> et <b>activez l'édition topologique</b> en enclenchant le bouton correspondant si ça n'est pas déjà fait.</p>
-						<img src="illustrations/tous/5_5_edition_topologique.png" alt="case d'activation de l'édition topologique cochée" width="100%">
+						<figure>
+						  <a href="illustrations/tous/5_5_edition_topologique.png" >
+						      <img src="illustrations/tous/5_5_edition_topologique.png" alt="case d'activation de l'édition topologique cochée" width="600">
+						  </a>
+						</figure>
 						<p>Déplacez à nouveau un sommet d'un des polygones et sélectionnez successivement les deux polygones.</p>
 						<div class="question">
 						<input type="checkbox" id="faq-2">
@@ -173,13 +177,13 @@
 					<p>Cliquez sur l'icône <b>Ajouter une entité</b>, et approchez-vous d'un sommet d'un polygone déjà créé : votre curseur est aimanté par ce sommet, qui apparaît alors en rose.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_curseur_aimante.png" >
-							<img src="illustrations/tous/5_5_curseur_aimante.png" alt="Curseur aimanté prenant la forme d'un carré rose" width="90%">
+							<img src="illustrations/tous/5_5_curseur_aimante.png" alt="Curseur aimanté prenant la forme d'un carré rose" width="250">
 						</a>
 					</figure>
 					<p>Profitez-en pour numériser la partie Est de la bande d'Aiea, de manière à ce que les deux parties soient parfaitement jointives.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_aiea.png" >
-							<img src="illustrations/tous/5_5_aiea.png" alt="bande d'Aiea numérisée" width="70%">
+							<img src="illustrations/tous/5_5_aiea.png" alt="bande d'Aiea numérisée" width="400">
 						</a>
 					</figure>
 				</div>
@@ -199,10 +203,10 @@
 					<p>Faites un clic droit pour terminer le polygone : les parties du polygone que vous venez de dessiner qui étaient superposées à des polygones déjà existants ont été automatiquement supprimées.</p>
 					<figure>
 					   <a href="illustrations/tous/5_5_eviter_intersections_avant.png" >
-					       <img src="illustrations/tous/5_5_eviter_intersections_avant.png" alt="polygone en cours d'édition, avec des débordements sur le polygone voisin" width="40%">
+					       <img src="illustrations/tous/5_5_eviter_intersections_avant.png" alt="polygone en cours d'édition, avec des débordements sur le polygone voisin" width="300">
 					   </a>
 					   <a href="illustrations/tous/5_5_eviter_intersections_apres.png" >
-					       <img src="illustrations/tous/5_5_eviter_intersections_apres.png" alt="polygone fini sans débordements" width="40%">
+					       <img src="illustrations/tous/5_5_eviter_intersections_apres.png" alt="polygone fini sans débordements" width="300">
 					   </a>
 					   <figcaption>&#192; gauche, polygone en cours d'édition juste avant le clic droit final, à droite après ce clic droit.</figcaption>
 					</figure>

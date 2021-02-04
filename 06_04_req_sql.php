@@ -83,7 +83,7 @@
 				        <p><img class="icone" src="illustrations/tous/6_4_fenetre_sql_icone.png" alt="icône de la fenêtre SQL" >Cliquez ensuite sur l'icône <b>Fenêtre SQL</b>, ou bien menu <b>Base de données</b> &#8594; <b>Fenêtre SQL</b>.</p>
 				        <figure>
                         	<a href="illustrations/tous/6_4_dbmanager_requete.png" >
-                        		<img src="illustrations/tous/6_4_dbmanager_requete.png" alt="Ecriture d'une requête dans le gestionnaire de bases de données" width="100%">
+                        		<img src="illustrations/tous/6_4_dbmanager_requete.png" alt="Ecriture d'une requête dans le gestionnaire de bases de données" width="600">
                         	</a>
                         </figure>
 				        <p>Un quatrième onglet s'ajoute, permettant d'écrire une requête SQL (il est possible d'ouvrir ainsi plusieurs onglets de requête SQL).</p>
@@ -111,7 +111,7 @@
 				        </p>
 				        <figure>
                         	<a href="illustrations/tous/6_4_res_selection.png" >
-                        		<img src="illustrations/tous/6_4_res_selection.png" alt="Résultat de la requête (département du Morbihan) chargé dans QGIS" width="80%">
+                        		<img src="illustrations/tous/6_4_res_selection.png" alt="Résultat de la requête (département du Morbihan) chargé dans QGIS" width="400">
                         	</a>
                         </figure>
 				    </div>
@@ -165,7 +165,7 @@
 			             WHERE c.INSEE_DEP = d.INSEE_DEP</p>
 			             <figure>
                         	<a href="illustrations/tous/6_4_croiser_couches.png" >
-                        		<img src="illustrations/tous/6_4_croiser_couches.png" alt="Exemple de requête SQL croisant deux couches" width="100%">
+                        		<img src="illustrations/tous/6_4_croiser_couches.png" alt="Exemple de requête SQL croisant deux couches" width="600">
                         	</a>
                         </figure>
                         <p>Le résultat s'affiche : une ligne par commune, avec les colonnes choisies. Par rapport à la couche originale de communes, une information provenant de la couche de départements a été ajoutée, le nom du département.</p>
@@ -201,7 +201,7 @@
                         <p>Exécutez la requête :</p>
 			             <figure>
                         	<a href="illustrations/tous/6_4_contains_1.png" >
-                        		<img src="illustrations/tous/6_4_contains_1.png" alt="Exemple de requête SQL spatiale croisant deux couches" width="80%">
+                        		<img src="illustrations/tous/6_4_contains_1.png" alt="Exemple de requête SQL spatiale croisant deux couches" width="550">
                         	</a>
                         </figure>
                         <p class="note">Si la requête ne renvoie pas de résultat, vérifiez que votre couche de communes et d'éoliennes ont bien le même SCR.</p>
@@ -210,7 +210,7 @@
                         <p class="code">GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
                         <figure>
                         	<a href="illustrations/tous/6_4_contains_2.png" >
-                        		<img src="illustrations/tous/6_4_contains_2.png" alt="Exemple de requête SQL spatiale croisant deux couches avec clause group by" width="80%">
+                        		<img src="illustrations/tous/6_4_contains_2.png" alt="Exemple de requête SQL spatiale croisant deux couches avec clause group by" width="550">
                         	</a>
                         </figure>
                         <p>Cette fois, chaque commune contenant au moins une éolienne n'apparaît qu'une seule fois.</p>
@@ -218,7 +218,7 @@
                         <p class="code">SELECT c.INSEE_COM, c.NOM_COM, <b>count(e.id_mat) as nb_eoliennes</b>, c.geometry</p>
                         <figure>
                         	<a href="illustrations/tous/6_4_contains_3.png" >
-                        		<img src="illustrations/tous/6_4_contains_3.png" alt="Exemple de requête SQL spatiale croisant deux couches avec clause group by et count" width="80%">
+                        		<img src="illustrations/tous/6_4_contains_3.png" alt="Exemple de requête SQL spatiale croisant deux couches avec clause group by et count" width="550">
                         	</a>
                         </figure>
                         <p>La requête finale complète est donc :</p>
@@ -231,7 +231,7 @@
 			         <p>Ceci peut servir par exemple à visualiser le nombre d'éoliennes par commune au moyen d'une carte en cercles proportionnels :</p>
 			         <figure>
                         	<a href="illustrations/tous/6_4_carte_nb_eoliennes.png" >
-                        		<img src="illustrations/tous/6_4_carte_nb_eoliennes.png" alt="Carte en cercles proportionnels du nombre d'éoliennes par commune" width="80%">
+                        		<img src="illustrations/tous/6_4_carte_nb_eoliennes.png" alt="Carte en cercles proportionnels du nombre d'éoliennes par commune" width="500">
                         	</a>
                         </figure>
                      <p class="note">Pour apprendre à créer ce type de carte, rendez-vous dans la partie consacrée à la <a href="10_01_representation.php#X11">représentation des données</a>&nbsp;!</p>
@@ -246,7 +246,7 @@
 			     <p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône du gestionnaire de sources de données" >Ouvrez le gestionnaire de source de données, rubrique <b>Couche virtuelle</b> :</p> 
                     <figure>
                     	<a href="illustrations/tous/6_4_ajout_vl_fenetre.png" >
-                    		<img src="illustrations/tous/6_4_ajout_vl_fenetre.png" alt="Fenêtre d'ajout/édition d'une couche virtuelle avec un exemple de requête" width="90%">
+                    		<img src="illustrations/tous/6_4_ajout_vl_fenetre.png" alt="Fenêtre d'ajout/édition d'une couche virtuelle avec un exemple de requête" width="600">
                     	</a>
                     </figure>
                     <ul>

@@ -59,7 +59,7 @@
 					<p>Les cartes en symbole proportionnels permettent la représentation de quantités ou d'effectifs par des symboles, généralement des cercles. La surface des symboles sera proportionnelle à la quantité ou l'effectif.</p>
 					<figure>
 						<a href="https://neocarto.hypotheses.org/5064" >
-							<img src="illustrations/tous/10_01_exemple_cercleprop.png" alt="Exemple d'une carte en cercles proportionnels sur les ouvriers et cadres en Occitanie" width="100%">
+							<img src="illustrations/tous/10_01_exemple_cercleprop.png" alt="Exemple d'une carte en cercles proportionnels sur les ouvriers et cadres en Occitanie" width="600px">
 						</a>
 						<figcaption>Exemple d'une carte en cercles proportionnels réalisée par Nicolas Lambert et Ronan Ysebaert (2018). Source : <a href="https://neocarto.hypotheses.org/5064">carnet (néo)cartographique</a>.</figcaption>
 					</figure>

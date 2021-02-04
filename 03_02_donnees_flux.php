@@ -49,7 +49,7 @@
 					<p>Cliquez sur le bouton <b>Nouveau</b> pour créer une nouvelle connexion. La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_wms_nouveau.png" >
-							<img src="illustrations/tous/3_2_wms_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WMS" width="80%">
+							<img src="illustrations/tous/3_2_wms_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WMS" width="400">
 						</a>
 					</figure>
 					<ul>
@@ -95,7 +95,7 @@
 					<p>Cliquez sur le bouton <b>Nouveau</b> pour créer une nouvelle connexion. La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_wfs_nouveau.png" >
-							<img src="illustrations/tous/3_2_wfs_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WFS" width="75%">
+							<img src="illustrations/tous/3_2_wfs_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WFS" width="420">
 						</a>
 					</figure>
 					<ul>
@@ -105,7 +105,7 @@
 					<p>Laissez les autres paramètres tels quels et cliquez sur <b>OK</b>. Vous voilà à nouveau dans la fenêtre d'ajout d'une couche WFS :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_wfs_connexion.png" >
-							<img src="illustrations/tous/3_2_wfs_connexion.png" alt="Fenêtre ajout d'une couche WFS, connexion au serveur du Sandre et choix de la couche à ajouter" width="90%" >
+							<img src="illustrations/tous/3_2_wfs_connexion.png" alt="Fenêtre ajout d'une couche WFS, connexion au serveur du Sandre et choix de la couche à ajouter" width="600" >
 						</a>
 					</figure>
 					<ul>

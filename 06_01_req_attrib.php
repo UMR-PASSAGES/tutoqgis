@@ -41,7 +41,7 @@
 					<p>La fenêtre de requête attributaire s'ouvre :</p>
 					<figure>
 						<a href="illustrations/tous/6_1_selection_fenetre.png" >
-							<img src="illustrations/tous/6_1_selection_fenetre.png" alt="fenêtre de sélection, avec une requête simple" width="80%">
+							<img src="illustrations/tous/6_1_selection_fenetre.png" alt="fenêtre de sélection, avec une requête simple" width="500">
 						</a>
 					</figure>
 					<p>Pour faire une requête simple, par exemple pour sélectionner le département du Nord :</p>
@@ -79,7 +79,7 @@
 					<p>Votre département du Nord étant toujours sélectionné, faites un clic droit sur la couche de départements &#8594; <b>Exporter &#8594; Sauvegarder les entités sélectionnées sous...</b></p>
 					<figure>
 						<a href="illustrations/tous/6_1_sauv_selection_fenetre.png" >
-							<img src="illustrations/tous/6_1_sauv_selection_fenetre.png" alt="fenêtre pour sauvegarder la sélection" width="90%">
+							<img src="illustrations/tous/6_1_sauv_selection_fenetre.png" alt="fenêtre pour sauvegarder la sélection" width="500">
 						</a>
 					</figure>
 					<ul>
@@ -181,7 +181,7 @@
 				<p>Petite astuce : vous pouvez retrouver les dernières requêtes utilisées dans la rubrique <b>Récent</b>, il suffit de double-cliquer sur une requête pour qu'elle apparaisse dans la case Expression :</p>
 				<figure>
 					<a href="illustrations/tous/6_1_requetes_recentes.png" >
-						<img src="illustrations/tous/6_1_requetes_recentes.png" alt="Accès aux requêtes attributaires récentes" width="100%">
+						<img src="illustrations/tous/6_1_requetes_recentes.png" alt="Accès aux requêtes attributaires récentes" width="600">
 					</a>
 				</figure>
 			

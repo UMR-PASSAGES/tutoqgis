@@ -80,7 +80,7 @@
 						<p>On distingue généralement deux types de données : <b>vecteur et raster</b>.</p>
 						<figure>
 							<a href="illustrations/tous/1_1_vecteur.png" >
-							<img src="illustrations/tous/1_1_vecteur.png" alt="Exemple de données vecteur" width="90%">
+							<img src="illustrations/tous/1_1_vecteur.png" alt="Exemple de données vecteur" width="600">
 							</a>
 							<figcaption >Exemple de données vecteur, l'exemple du Sénégal : régions sous forme de polygones, rivières sous forme de lignes et villes sous forme de points (source : Agence Nationale de l'Aménagement du Territoire (ANAT) du Sénégal).</figcaption>
 						</figure>

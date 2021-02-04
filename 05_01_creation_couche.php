@@ -23,7 +23,7 @@
 			<p>Ci-dessous, à gauche, la carte originale, et à droite, la carte avec par-dessus la couche vecteur contenant les bâtiments.</p>
 			<figure>
 				<a href="illustrations/tous/5_1_principe_numerisation.png" >
-					<img src="illustrations/tous/5_1_principe_numerisation.png" alt="carte de l'île d'Oahu avant et après numérisation des bâtiments" width="100%">
+					<img src="illustrations/tous/5_1_principe_numerisation.png" alt="carte de l'île d'Oahu avant et après numérisation des bâtiments" width="650">
 				</a>
 			</figure>
 			<p>Il sera ensuite plus facile de manipuler des données vecteurs, pour par exemple visualiser la répartition spatiale des écoles, et si on a numérisé également les routes travailler sur l'accessibilité des ces écoles...</p>
@@ -49,7 +49,7 @@
 					<p>La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/5_1_nouvellecouche_fenetre.png" >
-							<img src="illustrations/tous/5_1_nouvellecouche_fenetre.png" alt="fenêtre de création d'une nouvelle couche" width="90%">
+							<img src="illustrations/tous/5_1_nouvellecouche_fenetre.png" alt="fenêtre de création d'une nouvelle couche" width="500">
 						</a>
 					</figure>
 					<ul>
@@ -75,14 +75,14 @@
 				        <p>Allez dans les propriétés de la couche, rubrique <b>Information</b> :</p>
 				        <figure>
     						<a href="illustrations/tous/5_1_informations.png" >
-    							<img src="illustrations/tous/5_1_informations.png" alt="informations sur la couche (emplacement, SCR...)" width="90%">
+    							<img src="illustrations/tous/5_1_informations.png" alt="informations sur la couche (emplacement, SCR...)" width="530">
     						</a>
 					   </figure>
 					   <p>Vous pouvez vérifier ici l'emplacement de votre couche (<b>chemin</b>), son <b>SCR</b>, le <b>nombre d'entités</b> qu'elle contient (à ce stade, 0).</p>
 					   <p>Ouvrez la table attributaire :</p>
 					   <figure>
     						<a href="illustrations/tous/5_1_table_vide.png" >
-    							<img src="illustrations/tous/5_1_table_vide.png" alt="table attributaire de la couche batiments_oahu" width="90%">
+    							<img src="illustrations/tous/5_1_table_vide.png" alt="table attributaire de la couche batiments_oahu" width="570">
     						</a>
 					   </figure>
 					   <p>Cette table ne contien aucune ligne, ce qui est normal car la couche ne contient aucune entité.</p>

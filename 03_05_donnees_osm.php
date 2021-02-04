@@ -27,10 +27,10 @@
                 <p>La partie la plus connue du projet est peut-être la visualisation des données OSM sous forme de <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=19/44.79461/-0.61780" >carte</a> ; mais OSM est avant tout un ensemble de <a class="ext" target="_blank" href="https://www.openstreetmap.org/way/226888023">données</a> géographiques, utilisables entre autres dans un logiciel SIG.</p>
                 <figure>
                     <a href="illustrations/tous/3_4_carte.png" >
-                		<img src="illustrations/tous/3_4_carte.png" alt="OpenStreetMap : extrait de carte" width="48%">
+                		<img src="illustrations/tous/3_4_carte.png" alt="OpenStreetMap : extrait de carte" width="290">
                 	</a>
                     <a href="illustrations/tous/3_4_carte.png" >
-                		<img src="illustrations/tous/3_4_donnees.jpg" alt="OpenStreetMap : extrait de carte avec les données en bleu" width="48%">
+                		<img src="illustrations/tous/3_4_donnees.jpg" alt="OpenStreetMap : extrait de carte avec les données en bleu" width="290">
                 	</a>
                 	<figcaption>Sous la carte... les données !</figcaption>
                 </figure>
@@ -51,14 +51,14 @@
 	            <p>Ici, nous allons ajouter le fonds <b>Stamen Toner</b> en noir et blanc.</p>
 	            <figure>
                 	<a href="illustrations/tous/3_5_stamen_toner.png" >
-                	    <img src="illustrations/tous/3_5_stamen_toner.png" alt="page du wiki OSM sur les serveurs de tuiles, ligne correspondant au fonds Stamen Toner" width="100%">
+                	    <img src="illustrations/tous/3_5_stamen_toner.png" alt="page du wiki OSM sur les serveurs de tuiles, ligne correspondant au fonds Stamen Toner" width="600">
                     </a>
                 </figure>
 	            <p>Copiez l'url du serveur : <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.png</b></p>
 	            <p>Dans QGIS, panneau explorateur, clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</p>
 	            <figure>
                 	<a href="illustrations/tous/3_5_stamen_connexion.png" >
-                	    <img src="illustrations/tous/3_5_stamen_connexion.png" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="80%">
+                	    <img src="illustrations/tous/3_5_stamen_connexion.png" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="430">
                     </a>
                 </figure>
                 <ul>
@@ -69,13 +69,13 @@
                 <p>Le fonds Stamen Toner apparaît maintenant avec les autres fonds dans la rubrique XYZ Tiles.</p>
                 <figure>
                     <a href="illustrations/tous/3_5_stamen_xyz.png" >
-                	    <img src="illustrations/tous/3_5_stamen_xyz.png" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Stamen Toner apparaît avec les autres" width="80%">
+                	    <img src="illustrations/tous/3_5_stamen_xyz.png" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Stamen Toner apparaît avec les autres" width="180">
                 	</a>
                 </figure>
                 <p>Double-cliquez pour l'ajouter :</p>
                 <figure>
                 	<a href="illustrations/tous/3_5_stamen_visu.png" >
-                	    <img src="illustrations/tous/3_5_stamen_visu.png" alt="Aperçu du fonds Stamen Toner" width="70%">
+                	    <img src="illustrations/tous/3_5_stamen_visu.png" alt="Aperçu du fonds Stamen Toner" width="500">
                     </a>
                 </figure>
 	        </div>
@@ -95,12 +95,12 @@
                      <p>Dans la colonne <b>Sub-Region</b>, cliquez sur <b>South America</b>, puis sur téléchargez les données au format shapefile pour le <b>Suriname</b>.</p>
                      <figure>
                     	<a href="illustrations/tous/3_5_geofabrik_southamerica.png" >
-                    		<img src="illustrations/tous/3_5_geofabrik_southamerica.png" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="80%">
+                    		<img src="illustrations/tous/3_5_geofabrik_southamerica.png" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="500">
                     	</a>
                      </figure>
                      <figure>
                     	<a href="illustrations/tous/3_5_geofabrik_suriname.png" >
-                    		<img src="illustrations/tous/3_5_geofabrik_suriname.png" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="80%">
+                    		<img src="illustrations/tous/3_5_geofabrik_suriname.png" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="500">
                     	</a>
                     </figure>
                      <p class="note">Au cas où le téléchargement échouerait, ces données sont également disponibles <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les données de la partie III</a>.</p>
@@ -161,7 +161,7 @@
                         <p>En bas de la fenêtre, cliquez sur la liste déroulante <b>Style</b> puis sur <b>Charger le style</b>.</p>
                         <figure>
                         	<a href="illustrations/tous/3_5_charger_style_fenetre.png" >
-                        		<img src="illustrations/tous/3_5_charger_style_fenetre.png" alt="Sélectionner un style depuis un fichier" width="75%">
+                        		<img src="illustrations/tous/3_5_charger_style_fenetre.png" alt="Sélectionner un style depuis un fichier" width="450">
                         	</a>
                         </figure>
                         <p>Dans la fenêtre qui s'affiche :</p>
@@ -177,7 +177,7 @@
                         <p>Pour finir, donnez un fond bleu à votre carte : <b>menu Projet &#8594; Propriétés... &#8594; rubrique Général, Paramètres généraux (en haut)</b> : cliquez sur la couleur à droite de <b>Couleur d'arrière-plan</b>.</p>
                         <figure>
                         	<a href="illustrations/tous/3_5_modif_couleur_fond.png" >
-                        		<img src="illustrations/tous/3_5_modif_couleur_fond.png" alt="Propriétés du projet, Général : modification de la couleur d'arrière-plan" width="100%">
+                        		<img src="illustrations/tous/3_5_modif_couleur_fond.png" alt="Propriétés du projet, Général : modification de la couleur d'arrière-plan" width="600">
                         	</a>
                         </figure>
                         <p>Dans la boîte de dialogue qui s'affiche alors, choisissez une couleur pour la mer, par exemple dans l'exemple ci-dessous <b>R 184 V 217 B 247</b>.</p>
@@ -213,7 +213,7 @@
 			        <p>Pour accéder à QuickOSM : <b>menu Vecteur &#8594; Quick OSM &#8594; QuickOSM</b>. La fenêtre suivante s'ouvre :</p>
 			        <figure>
                     	<a href="illustrations/tous/3_5_quickosm_fenetre.png" >
-                    		<img src="illustrations/tous/3_5_quickosm_fenetre.png" alt="Fenêtre de QuickOSM, choix des options" width="75%">
+                    		<img src="illustrations/tous/3_5_quickosm_fenetre.png" alt="Fenêtre de QuickOSM, choix des options" width="480">
                     	</a>
                     </figure>
                     <p>Dans la rubrique <b>Requête rapide</b> :</p>

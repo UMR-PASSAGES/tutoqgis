@@ -87,7 +87,7 @@
 						:</p>
 						<figure>
 							<a href="illustrations/tous/5_6_verif_fenetre.png" >
-								<img src="illustrations/tous/5_6_verif_fenetre.png" alt="fenêtre de validation de la géométrie" width="100%">
+								<img src="illustrations/tous/5_6_verif_fenetre.png" alt="fenêtre de validation de la géométrie" width="600">
 							</a>
 						</figure>
 						<p>Sélectionnez la couche <em class="data">zones_oahu</em> et cliquez sur <b>Exécuter</b>.</p>

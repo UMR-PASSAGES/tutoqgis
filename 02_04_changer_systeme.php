@@ -44,7 +44,7 @@
 					, rubrique SCR :</p>
 					<figure>
 						<a href="illustrations/tous/2_4_modif_scr_projet.png" >
-							<img src="illustrations/tous/2_4_modif_scr_projet.png" alt="Modifier le SCR d'un projet" width="100%">
+							<img src="illustrations/tous/2_4_modif_scr_projet.png" alt="Modifier le SCR d'un projet" width="600">
 						</a>
 					</figure>
 					<p><em class="numero">1. </em>Vérifiez que la case <b>Aucune projection</b> soit bien décochée.</p>
@@ -104,7 +104,7 @@
 					<p>La fenêtre suivante apparaît :</p>
 					<figure>
 						<a href="illustrations/tous/2_4_reprojeter_fenetre.png" >
-							<img src="illustrations/tous/2_4_reprojeter_fenetre.png" alt="Fenêtre de l'outil reprojeter" width="95%" >
+							<img src="illustrations/tous/2_4_reprojeter_fenetre.png" alt="Fenêtre de l'outil reprojeter" width="600" >
 						</a>
 					</figure>
 					<ul>

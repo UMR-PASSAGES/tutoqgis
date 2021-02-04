@@ -186,13 +186,14 @@ hov         #1D3437     hover colour
    	    box-shadow: none; 
 	}
 	/* pour les figures */
-	figure.image {
-   	width: 100%;
+	figure .image {
+   	    width: 100%;
 	}
 	figure {
 		text-align: center;
     	display: table;
     	max-width: 100%;
+    	width: 95%;
   		border: none;
   		margin: 15px;
 	}

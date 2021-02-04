@@ -43,7 +43,7 @@
 					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection actuelle</b> :</p>
 					<figure>
 					    <a href="illustrations/tous/6_3_selection_liste.png" >
-						    <img src="illustrations/tous/6_3_selection_liste.png" alt="liste accessible à partir du bouton sélection" width="90%" >
+						    <img src="illustrations/tous/6_3_selection_liste.png" alt="liste accessible à partir du bouton sélection" width="600" >
 						</a>
 					</figure>
 					<p>Ainsi, cette deuxième requête s'appliquera uniquement aux communes déjà sélectionnées : les communes du Morbihan seront sélectionnées parmi les communes de + de 10 000 habitants.</p>
@@ -72,30 +72,30 @@
 					<p>A ce stade, votre projet contient donc ces 3 couches :</p>
 					<figure>
 						<a href="illustrations/tous/6_3_couches_chargees.png" >
-							<img src="illustrations/tous/6_3_couches_chargees.png" alt="projet QGIS avec les 3 couches communes, éoliennes et cours d'eau" width="90%" >
+							<img src="illustrations/tous/6_3_couches_chargees.png" alt="projet QGIS avec les 3 couches communes, éoliennes et cours d'eau" width="570" >
 						</a>
 					</figure>
 					<p>Avec l'<a href="06_02_req_spatiales.php#VI21">outil de sélection par localisation</a>, sélectionnez tout d'abord les communes avec éoliennes.</p>
 					<figure>
 						<a href="illustrations/tous/6_2_select_localisation_fenetre.png" >
-							<img src="illustrations/tous/6_2_select_localisation_fenetre.png" alt="Fenêtre de l'outil de sélection par localisation" width="90%" >
+							<img src="illustrations/tous/6_2_select_localisation_fenetre.png" alt="Fenêtre de l'outil de sélection par localisation" width="600" >
 						</a>
 					</figure>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_eoliennes.png" >
-							<img src="illustrations/tous/6_3_communes_eoliennes.png" alt="communes avec éoliennes sélectionnées" width="90%" >
+							<img src="illustrations/tous/6_3_communes_eoliennes.png" alt="communes avec éoliennes sélectionnées" width="500" >
 						</a>
 					</figure>
 					<p>A ce stade, 249 communes sont sélectionnées.</p>
 					<p>Il ne reste plus ensuite qu'à sélectionner les communes intersectant des cours d'eau <b>à partir de cette sélection</b> :</p>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_eoliennes_coursdeau_fenetre.png" >
-							<img src="illustrations/tous/6_3_communes_eoliennes_coursdeau_fenetre.png" alt="Fenêtre de l'outil de sélection par localisation" width="90%" >
+							<img src="illustrations/tous/6_3_communes_eoliennes_coursdeau_fenetre.png" alt="Fenêtre de l'outil de sélection par localisation" width="600" >
 						</a>
 					</figure>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_eoliennes_coursdeau.png" >
-							<img src="illustrations/tous/6_3_communes_eoliennes_coursdeau.png" alt="communes avec éoliennes et cours d'eau sélectionnées" width="90%" >
+							<img src="illustrations/tous/6_3_communes_eoliennes_coursdeau.png" alt="communes avec éoliennes et cours d'eau sélectionnées" width="500" >
 						</a>
 					</figure>
 					<p>Au final, 107 communes contiennent à la fois une éolienne et sont traversées par un cours d'eau de + de 100 km.</p>
@@ -113,13 +113,13 @@
 					<p>Ensuite, au moyen d'une requête spatiale, sélectionnez parmi ces communes celles avec une éolienne, avec l'option <b>Sélection au sein de la sélection courante</b> :</p>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_sup10000_eoliennes_fenetre.png" >
-							<img src="illustrations/tous/6_3_communes_sup10000_eoliennes_fenetre.png" alt="outil de sélection" width="90%" >
+							<img src="illustrations/tous/6_3_communes_sup10000_eoliennes_fenetre.png" alt="outil de sélection" width="600" >
 						</a>
 					</figure>
 					<p>Au final, <b>2 communes</b> restent sélectionnées : Lamballe-Armor et Pacé.</p>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_sup10000_eoliennes.png" >
-							<img src="illustrations/tous/6_3_communes_sup10000_eoliennes.png" alt="communes avec éolienne et cours d'eau" width="90%" >
+							<img src="illustrations/tous/6_3_communes_sup10000_eoliennes.png" alt="communes avec éolienne et cours d'eau" width="500" >
 						</a>
 					</figure>
 					<p class="note">Pour connaître le nom des communes sélectionnées, ouvrez la table attributaire de la couche de communes et choisir <b>Ne montrer que les entités sélectionnées</b> dans la liste déroulante en bas à gauche de la table.</p>

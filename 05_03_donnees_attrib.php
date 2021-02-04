@@ -59,7 +59,7 @@
 				<div class="manip">
 					<figure>
 						<a href="illustrations/tous/5_3_formulaire_fenetre.png">
-							<img src="illustrations/tous/5_3_formulaire_fenetre.png" alt="propriétés de la couche, rubrique formulaire d'attributs" width="100%">
+							<img src="illustrations/tous/5_3_formulaire_fenetre.png" alt="propriétés de la couche, rubrique formulaire d'attributs" width="600">
 						</a>
 					</figure>
 					<p>Sélectionnez le champ <b>type</b> dans la partie gauche de la fenêtre.</p>

@@ -46,7 +46,7 @@
     			        <p>Dans ce panneau Explorateur, allez dans la rubrique <b>XYZ Tiles</b> : un fonds s'y trouve par défaut : OpenStreetMap.</p>
     			        <figure>
                         	<a href="illustrations/tous/3_4_xyz_tiles.png" >
-                        		<img src="illustrations/tous/3_4_xyz_tiles.png" alt="panneau explorateur, rubrique xyz tiles" width="80%">
+                        		<img src="illustrations/tous/3_4_xyz_tiles.png" alt="panneau explorateur, rubrique xyz tiles" width="220">
                         	</a>
                          </figure>
                          <p>Double-cliquez sur ce fonds pour l'ajouter à QGIS.</p>
@@ -63,7 +63,7 @@
     		            <p>Dans QGIS, panneau explorateur, clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</p>
     		            <figure>
                         	<a href="illustrations/tous/3_4_positron_connexion.png" >
-                        	    <img src="illustrations/tous/3_4_positron_connexion.png" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="80%">
+                        	    <img src="illustrations/tous/3_4_positron_connexion.png" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="400">
                             </a>
                         </figure>
                         <ul>
@@ -74,13 +74,13 @@
                         <p>Le fonds Carto Positron apparaît maintenant avec le fonds OpenStreetMap dans la rubrique XYZ Tiles.</p>
                         <figure>
                             <a href="illustrations/tous/3_4_positron_xyz.png" >
-                        	    <img src="illustrations/tous/3_4_positron_xyz.png" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Carto Positron apparaît" width="80%">
+                        	    <img src="illustrations/tous/3_4_positron_xyz.png" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Carto Positron apparaît" width="180">
                         	</a>
                         </figure>
                         <p>Double-cliquez pour l'ajouter :</p>
                         <figure>
                         	<a href="illustrations/tous/3_4_positron_visu.png" >
-                        	    <img src="illustrations/tous/3_4_positron_visu.png" alt="Aperçu du fonds Carto Positron : Brest" width="70%">
+                        	    <img src="illustrations/tous/3_4_positron_visu.png" alt="Aperçu du fonds Carto Positron : Brest" width="500">
                             </a>
                         </figure>
     		        </div>
@@ -117,14 +117,14 @@
 				   <p>Dans l'onglet <b>More services</b>, cliquez sur le bouton <b>Get contributed pack</b>.</p>
 				   <figure>
 						<a href="illustrations/tous/4_6_quickmapservices_moreservices.png" >
-							<img src="illustrations/tous/4_6_quickmapservices_moreservices.png" alt="Ajouter des fonds dans QuickMapServices" width="80%">
+							<img src="illustrations/tous/4_6_quickmapservices_moreservices.png" alt="Ajouter des fonds dans QuickMapServices" width="500">
 						</a>
 					</figure>
 					<p>Rendez-vous ensuite dans l'onglet <b>Visibility</b> pour décocher les fonds qui ne vous semblent pas à première vue utiles, pour plus de clarté.</p>
 				<p>Pour ajouter les données OSM : le menu QuickMapServices est maintenant visible dans le menu Internet. Chargez la couche <b>OSM standard</b> dans la rubrique OSM.</p>
 					<figure>
 						<a href="illustrations/tous/4_6_menu_quickmapservices.png" >
-							<img src="illustrations/tous/4_6_menu_quickmapservices.png" alt="Menu QuickMapServices" width="100%">
+							<img src="illustrations/tous/4_6_menu_quickmapservices.png" alt="Menu QuickMapServices" width="600">
 						</a>
 					</figure>
 			    </div>

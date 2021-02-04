@@ -25,7 +25,7 @@
 				<p>L'image que nous allons caler est une carte de Doncaster East, dans la banlieue de Melbourne (source : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File:Doncaster_east_locality_map.PNG">Wikimedia</a>).</p>
 				<figure>
 					<a href="illustrations/tous/4_6_doncaster_east.png" >
-						<img src="illustrations/tous/4_6_doncaster_east.png" alt="Carte à caler de Doncaster East (Australie)" width="80%">
+						<img src="illustrations/tous/4_6_doncaster_east.png" alt="Carte à caler de Doncaster East (Australie)" width="500">
 					</a>
 				</figure>
 				<p>Pour caler cette carte, nous allons nous baser sur les données <a class="ext" target="_blank" href="http://www.openstreetmap.org/">OpenStreetMap</a>. OpenStreetMap est une base de données cartographique libre ; on décrit souvent ce projet comme un "wikipedia cartographique". Pour en savoir plus, voir aussi <a href="03_05_donnees_osm.php" >ici</a> !</p>
@@ -38,7 +38,7 @@
 				        <p>Vous pouvez par exemple vous rendre dans le panneau Explorateur (s'il n'est pas déjà activé : menu Vue &#8594; Panneaux &#8594; Explorateur), rubrique <b>XYZ Tiles</b>, et double-cliquez sur le fonds <b>OpenStreetMap</b>.</p>
 				        <figure>
         					<a href="illustrations/tous/4_6_ajout_OSM.png" >
-        						<img src="illustrations/tous/4_6_ajout_OSM.png" alt="Panneau Explorateur, XYZ Tiles, OpenStreetMap" width="80%">
+        						<img src="illustrations/tous/4_6_ajout_OSM.png" alt="Panneau Explorateur, XYZ Tiles, OpenStreetMap" width="200">
         					</a>
         				</figure>
 					
@@ -78,7 +78,7 @@
 						<p>Appuyez sur la touche entrée pour valider la suggestion qui doit normalement apparaître : la carte est maintenant zoomée sur ce lieu.</p>
 						<figure>
 						  <a href="illustrations/tous/4_6_osm_zoom1.png" >
-							<img src="illustrations/tous/4_6_osm_zoom1.png" alt="Données OSM : Melbourne" width="100%">
+							<img src="illustrations/tous/4_6_osm_zoom1.png" alt="Données OSM : Melbourne" width="600">
 						  </a>
 						</figure>
 					</div>

@@ -88,7 +88,7 @@
 					<p>Survolez une ligne existante : les sommets prennent la forme de ronds rouges.</p>
 					<figure>
 						<a href="illustrations/tous/5_4_fleuve_noeud.png" >
-							<img src="illustrations/tous/5_4_fleuve_noeud.png" alt="ligne avec les noeuds visibles sous forme de carrés rouges" width="80%" >
+							<img src="illustrations/tous/5_4_fleuve_noeud.png" alt="ligne avec les noeuds visibles sous forme de carrés rouges" width="500" >
 						</a>
 					</figure>
 					<p>Si vous survolez un sommet, il devient plus gros. Vous pouvez alors :</p>

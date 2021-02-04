@@ -32,7 +32,7 @@
 					<p class="note">Au cas où la connexion au flux échouerait, cette couche est également disponible dans le dossier <a href="donnees/TutoQGIS_06_Requetes.zip">TutoQGIS_06_Requetes</a>.</p>
 					<figure>
                     	<a href="illustrations/tous/6_2_eoliennes_bretagne.png" >
-                    		<img src="illustrations/tous/6_2_eoliennes_bretagne.png" alt="Eoliennes en Bretagne" width="80%">
+                    		<img src="illustrations/tous/6_2_eoliennes_bretagne.png" alt="Eoliennes en Bretagne" width="500">
                     	</a>
                     </figure>
 				</div>
@@ -43,13 +43,13 @@
     				
 					<figure>
                     	<a href="illustrations/tous/6_2_select_localisation_emplacement.png" >
-                    		<img src="illustrations/tous/6_2_select_localisation_emplacement.png" alt="Emplacement de l'outil de sélection par localisation dans la boîte à outils" width="80%">
+                    		<img src="illustrations/tous/6_2_select_localisation_emplacement.png" alt="Emplacement de l'outil de sélection par localisation dans la boîte à outils" width="400">
                     	</a>
                     </figure>
                     <p>Dans la rubrique <b>Sélection dans un vecteur</b>, double-cliquez sur l'outil <b>Sélection par localisation</b> :</p>
                     <figure>
                     	<a href="illustrations/tous/6_2_select_localisation_fenetre.png" >
-                    		<img src="illustrations/tous/6_2_select_localisation_fenetre.png" alt="Fenêtre de l'outil de sélection par localisation" width="100%">
+                    		<img src="illustrations/tous/6_2_select_localisation_fenetre.png" alt="Fenêtre de l'outil de sélection par localisation" width="600">
                     	</a>
                     </figure>
                     <ul>
@@ -68,13 +68,13 @@
                     <p>Vous pouvez voir le nombre d'entités sélectionnées dans la barre tout en bas de la fenêtre de QGIS :</p>
                     <figure>
                     	<a href="illustrations/tous/6_2_barre_nb_entites_select.png" >
-                    		<img src="illustrations/tous/6_2_barre_nb_entites_select.png" alt="barre du bas avec le nombre d'entités sélectionnées" width="100%">
+                    		<img src="illustrations/tous/6_2_barre_nb_entites_select.png" alt="barre du bas avec le nombre d'entités sélectionnées" width="600">
                     	</a>
                     </figure>
                     <p>ou bien en haut de la table attributaire des communes :</p>
                     <figure>
                     	<a href="illustrations/tous/6_2_table_nb_entites_select.png" >
-                    		<img src="illustrations/tous/6_2_table_nb_entites_select.png" alt="haut de la table attributaire avec le nombre d'entités sélectionnées" width="80%">
+                    		<img src="illustrations/tous/6_2_table_nb_entites_select.png" alt="haut de la table attributaire avec le nombre d'entités sélectionnées" width="550">
                     	</a>
                     </figure>
                 </div>
@@ -194,7 +194,7 @@
     					<p>Votre projet doit donc contenir les 4 couche suivantes :</p>
     					<figure>
                         	<a href="illustrations/tous/6_2_projet.png" >
-                        		<img src="illustrations/tous/6_2_projet.png" alt="CProjet avec les 4 couches chargées" width="100%">
+                        		<img src="illustrations/tous/6_2_projet.png" alt="CProjet avec les 4 couches chargées" width="600">
                         	</a>
                         </figure>   
     					<p>En utilisant différents opérateurs, pouvez-vous dire ?...</p>
@@ -204,26 +204,26 @@
 							<input type="checkbox" id="faq-2">
 							<p><label for="faq-2">Combien de communes bretonnes sont traversées par des cours d'eau de plus de 100 km&nbsp;?</label></p>
 							<p class="reponse">Sélection des communes qui intersectent les cours d'eau : <b>447 communes sélectionnées</b>.</p>
-                            <p class="reponse"><img src="illustrations/tous/6_2_communes_inters_coursdeau.png" alt="Communes intersectant les cours d'eau" width="70%"></p>
+                            <p class="reponse"><img src="illustrations/tous/6_2_communes_inters_coursdeau.png" alt="Communes intersectant les cours d'eau" width="400"></p>
 						</div>
 						<div class="question">
 							<input type="checkbox" id="faq-3">
 							<p><label for="faq-3">Combien de cours d'eau de plus de 100 km traversent la Bretagne ?</label></p>
 							<p class="reponse">Sélection des cours d'eau qui intersectent les communes (ou les départements bretons préalablement sélectionnés) : <b>68 cours d'eau sélectionnés</b>.</p>
-							<p class="reponse"><img src="illustrations/tous/6_2_coursdeau_inters_communes.png" alt="Cours d'eau de intersectant les communes" width="70%"></p>
+							<p class="reponse"><img src="illustrations/tous/6_2_coursdeau_inters_communes.png" alt="Cours d'eau de intersectant les communes" width="400"></p>
 						</div>
 						<div class="question">
 							<input type="checkbox" id="faq-4">
 							<p><label for="faq-4">Combien de communes ne contiennent pas d'éoliennes ?</label></p>
 							<p class="reponse">Sélection des communes disjointes des éoliennes : <b>959 communes sélectionnées</b></p>
 							<p class="reponse"><img class="icone" src="illustrations/tous/6_2_inverser_selection_icone.png" alt="icône inverser la sélection" >Vous pouvez aussi repartir des communes contenant des éoliennes, et <b>inverser la sélection</b> avec le bouton correspondant en haut de la table attributaire des communes.</p>
-							<p class="reponse"><img src="illustrations/tous/6_2_communes_disjoint_eoliennes.png" alt="Communes sans éoliennes" width="70%"></p>
+							<p class="reponse"><img src="illustrations/tous/6_2_communes_disjoint_eoliennes.png" alt="Communes sans éoliennes" width="400"></p>
 						</div>
 						<div class="question">
 							<input type="checkbox" id="faq-5">
 							<p><label for="faq-5">Combien le département du Finistère contient-il d'éoliennes ?</label></p>
 							<p class="reponse">Il faut procéder en 2 étapes : 1/ sélectionner &#171; à la main &#187; le département du Finistère 2/ utiliser l'outil de sélection par localisation pour sélectionner les éoliennes à l'intérieur des départements, en cochant la case <b>Entités sélectionnées uniquement</b>.</p>
-							<p class="reponse"><img src="illustrations/tous/6_2_eoliennes_finistere.png" alt="Eoliennes du Finistère" width="70%"></p>
+							<p class="reponse"><img src="illustrations/tous/6_2_eoliennes_finistere.png" alt="Eoliennes du Finistère" width="400"></p>
 							<p class="reponse">Au final, on trouve <b>610 éoliennes sélectionnées</b>.</p>
 						</div>
 					</div>

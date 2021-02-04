@@ -80,7 +80,7 @@
 					<p class="note">Si cette fenêtre ne s'ouvre pas, menu Préférences &#8594; Options &#8594; rubrique Numérisation : décochez la case &#171; Supprimer la fenêtre de saisie des attributs lors de la création de chaque nouvelle entité &#187; (tout en haut).</p>
 					<figure>
 						<a href="illustrations/tous/5_2_remplissage_type.png" >
-							<img src="illustrations/tous/5_2_remplissage_type.png" alt="remplir l'attribut type par 'école' par exemple" width="80%" >
+							<img src="illustrations/tous/5_2_remplissage_type.png" alt="remplir l'attribut type par 'école' par exemple" width="400" >
 						</a>
 					</figure>
 					<p>Le point s'affiche sur la carte, avec le style de la couche (ici un rond turquoise) :</p>

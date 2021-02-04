@@ -47,7 +47,7 @@
 					<div class="manip">
 					   <figure>
 							<a href="illustrations/tous/3_1_ign_telechargement.png" >
-								<img src="illustrations/tous/3_1_ign_telechargement.png" alt="page de téléchargement des données IGN" width="90%">
+								<img src="illustrations/tous/3_1_ign_telechargement.png" alt="page de téléchargement des données IGN" width="500">
 							</a>
 						</figure>
 					   <p>Sur la page internet <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html">https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html</a>, cliquez sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#admin-express">ADMIN-EXPRESS</a>.</p>
@@ -56,7 +56,7 @@
 					<div class="manip">
 					   <figure>
 							<a href="illustrations/tous/3_1_ign_telechargement_2.png" >
-								<img src="illustrations/tous/3_1_ign_telechargement_2.png" alt="page de téléchargement des données ADMIN EXPRESS (IGN)" width="90%">
+								<img src="illustrations/tous/3_1_ign_telechargement_2.png" alt="page de téléchargement des données ADMIN EXPRESS (IGN)" width="600">
 							</a>
 						</figure>
 						<p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS par territoire</b> (ici celle de mai 2020).</p>
@@ -70,13 +70,13 @@
 						<p>A partir de l'explorateur de fichiers de QGIS, ajoutez la couche <em class="data">COMMUNE</em> du sous-dossier <b>ADE_2-X_SHP_UTM22RGFG95_D973</b> (973 correspond au code département de la Guyane, et l'UTM 22 RGFG95 au SCR qui y est utilisé).</p>
 						<figure>
 							<a href="illustrations/tous/3_1_commune_guyane_explorateur.png" >
-								<img src="illustrations/tous/3_1_commune_guyane_explorateur.png" alt="ajout de la couche de communes de Guyane via l'explorateur QGIS" width="90%">
+								<img src="illustrations/tous/3_1_commune_guyane_explorateur.png" alt="ajout de la couche de communes de Guyane via l'explorateur QGIS" width="600">
 							</a>
 						</figure>
 						<p>Une fenêtre peut alors s'ouvrir pour vous demander quelle transformation vous souhaitez utiliser pour passer du SCR RGFG95 (utilisé en Guyane) et WGS84. Dans ce cas, choisissez la 1ère de ces transformations, normalement sélectionnée par défaut.</p>
 						<figure>
 							<a href="illustrations/tous/3_1_choix_transformation.png" >
-								<img src="illustrations/tous/3_1_choix_transformation.png" alt="Choix de la transformation pour passer d'un SCR à un autre" width="90%">
+								<img src="illustrations/tous/3_1_choix_transformation.png" alt="Choix de la transformation pour passer d'un SCR à un autre" width="600">
 							</a>
 						</figure>
 					</div>
@@ -90,7 +90,7 @@
 					   <p><b>Menu Préférences &#8594; Options &#8594; rubrique Transformations</b> : vous pouvez décocher ou cocher la case <b>Demander de choisir la transformation de datum si plusieurs sont disponibles</b>.</p>
 					   <figure>
 							<a href="illustrations/tous/3_1_options_transformations.png" >
-								<img src="illustrations/tous/3_1_options_transformations.png" alt="Choix de l'option pour choisir soi-même ou non la transformation lorsque plusieurs sont disponibles" width="90%">
+								<img src="illustrations/tous/3_1_options_transformations.png" alt="Choix de l'option pour choisir soi-même ou non la transformation lorsque plusieurs sont disponibles" width="600">
 							</a>
 						</figure>
 						<p>Si cette case est décochée, QGIS choisira la transformation la plus précise : dans la plupart des cas, ce paramétrage est adapté.</p>
@@ -107,27 +107,27 @@
 					   <p>Dans la barre de recherche du site internet <a class="ext" target="_blank" href="https://geo.data.gouv.fr/fr/">https://geo.data.gouv.fr/fr/</a>, tapez <b>hôpitaux guyane puis appuyez sur Entrée</b>.</p>
 					   <figure>
 							<a href="illustrations/tous/3_1_geodatagouv_recherche.png" >
-								<img src="illustrations/tous/3_1_geodatagouv_recherche.png" alt="recherche sur le site geo.data.gouv.fr" width="90%">
+								<img src="illustrations/tous/3_1_geodatagouv_recherche.png" alt="recherche sur le site geo.data.gouv.fr" width="600">
 							</a>
 						</figure>
 						<p>Cliquez sur le résultat <b>Guyane - Finess cat1100 - Etablissements Hospitaliers</b>.</p>
 						<figure>
 							<a href="illustrations/tous/3_1_geodatagouv_recherche_2.png" >
-								<img src="illustrations/tous/3_1_geodatagouv_recherche_2.png" alt="recherche sur le site geo.data.gouv.fr" width="90%">
+								<img src="illustrations/tous/3_1_geodatagouv_recherche_2.png" alt="recherche sur le site geo.data.gouv.fr" width="600">
 							</a>
 						</figure>
 						<p>Les métadonnées nous apprennent que ces données proviennent de la BD Adresse et datent de  2013.</p>
 						<p>Téléchargez ces données au format GeoJSON, en cliquant sur le bouton <b>GeoJSON</b> en bas à gauche de la fenêtre : </p>
 						<figure>
 							<a href="illustrations/tous/3_1_geodatagouv_recherche_3.png" >
-								<img src="illustrations/tous/3_1_geodatagouv_recherche_3.png" alt="téléchargement au format geojson sur le site geo.data.gouv.fr" width="90%">
+								<img src="illustrations/tous/3_1_geodatagouv_recherche_3.png" alt="téléchargement au format geojson sur le site geo.data.gouv.fr" width="600">
 							</a>
 						</figure>
 						<p class="note">Si le téléchargement échoue, cette couche est également disponible dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees/COMMUNE.shp</b> accessible en <a href="donnees/TutoQGIS_03_RechercheDonnees.zip." >téléchargement</a>.</p>
 						<p>Ajoutez ensuite ces données à QGIS.</p>
 						<figure>
 							<a href="illustrations/tous/3_1_guyane_communes_hopitaux.png" >
-								<img src="illustrations/tous/3_1_guyane_communes_hopitaux.png" alt="affichage des communes et des hôpitaux de Guyane" width="70%">
+								<img src="illustrations/tous/3_1_guyane_communes_hopitaux.png" alt="affichage des communes et des hôpitaux de Guyane" width="500">
 							</a>
 						</figure>
 					</div>
@@ -143,14 +143,14 @@
 			         <p>Sur la page internet <a class="ext" target="_blank" href="https://www.naturalearthdata.com/downloads/">https://www.naturalearthdata.com/downloads/</a>, dans la rubrique <b>Small scale data 1:110m</b>, cliquez sur le bouton <b>Cultural</b>.</p>
 			         <figure>
 						<a href="illustrations/tous/3_1_naturalearth_telechargement.png" >
-							<img src="illustrations/tous/3_1_naturalearth_telechargement.png" alt="téléchargement des données Natural Earth" width="70%">
+							<img src="illustrations/tous/3_1_naturalearth_telechargement.png" alt="téléchargement des données Natural Earth" width="500">
 						</a>
 					 </figure>
 					 <p>Ces données sont utilisables à l'échelle mondiale mais ne seront pas assez détaillées pour travailler à l'échelle d'un pays.</p>
 					 <p>Sur la page suivante, dans <b>Admin 0 - Countries</b>, cliquez sur le bouton <b>Download countries</b>.</p>
 					 <figure>
 						<a href="illustrations/tous/3_1_naturalearth_telechargement_2.png" >
-							<img src="illustrations/tous/3_1_naturalearth_telechargement_2.png" alt="téléchargement des données Natural Earth" width="70%">
+							<img src="illustrations/tous/3_1_naturalearth_telechargement_2.png" alt="téléchargement des données Natural Earth" width="500">
 						</a>
 					 </figure>
 					 <p class="note">Si le téléchargement échoue, cette couche est également accessible <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">en téléchargement</a></em>.</p>
@@ -158,7 +158,7 @@
 					 <p>Ouvrez un nouveau projet QGIS, et à partir de l'explorateur, ajoutez la couche <em class="data">ne_110m_admin_0_countries</em>. <b>Notez qu'il n'est pas nécessaire de dézipper le fichier pour visualiser les données dans QGIS !</b> Ceci est très pratique quand on est par exemple à la recherche de données sur internet et évite de dézipper tous les fichiers et donc de se retrouver avec beaucoup de dossiers. Il faudra cependant décompresser les données pour pouvoir les éditer.</p>
 					 <figure>
 						<a href="illustrations/tous/3_1_donnees_naturalearth.png" >
-							<img src="illustrations/tous/3_1_donnees_naturalearth.png" alt="visualisation dans QGIS de la couche ne_110m_admin_0_countries" width="70%">
+							<img src="illustrations/tous/3_1_donnees_naturalearth.png" alt="visualisation dans QGIS de la couche ne_110m_admin_0_countries" width="450">
 						</a>
 					 </figure>
 			     </div>
@@ -181,7 +181,7 @@
 				<p>Dans QGIS, ajoutez le fichier TIF téléchargé au moyen de l'explorateur.</p>
 				<figure>
 					<a href="illustrations/tous/3_1_srtm_kenya.png" >
-						<img src="illustrations/tous/3_1_srtm_kenya.png" alt="superposition des cours d'eau, des régions et du SRTM" width="90%" >
+						<img src="illustrations/tous/3_1_srtm_kenya.png" alt="superposition des cours d'eau, des régions et du SRTM" width="500" >
 					</a>
 				</figure>
 				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les autres données du tutoriel.</a></em>.</p>

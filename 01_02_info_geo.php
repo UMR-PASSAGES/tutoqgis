@@ -207,7 +207,7 @@
 					       <p>Faites un clic droit sur la couche de départements &#8594; <b>Filtrer...</b></p>
 					       <figure>
 								<a href="illustrations/tous/1_2_filtrer.png" >
-									<img src="illustrations/tous/1_2_filtrer.png" alt="Fenêtre du constructeur de requêtes" width="80%">
+									<img src="illustrations/tous/1_2_filtrer.png" alt="Fenêtre du constructeur de requêtes" width="500">
 								</a>
 							</figure>
 							<p>Nous allons ici construire une requête simple pour sélectionner le département du Finistère. Les requêtes sont vues plus en détail <a href="06_01_req_attrib.php" >ici</a> !</p>
@@ -219,7 +219,7 @@
 							<p>Cliquez ensuite sur le bouton <b>Tester</b> : la requête renvoie un résultat. Cliquez sur <b>OK</b>.</p>
 							<figure>
 								<a href="illustrations/tous/1_2_filtrer_resultat.png" >
-									<img src="illustrations/tous/1_2_filtrer_resultat.png" alt="couche et table après filtre" width="100%">
+									<img src="illustrations/tous/1_2_filtrer_resultat.png" alt="couche et table après filtre" width="600">
 								</a>
 							</figure>
 							<p>Seul le département du Finistère est visible dans la carte et la couche. Notez qu'un petit entonnoir à droite du nom de la couche indique qu'un filtre est actif.</p>
