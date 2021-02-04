@@ -377,7 +377,7 @@
     				        </div>
     				        
     				        <p>On ne voit pas grand chose... L'axe des x est créé en fonction des valeurs minimales et maximales, et la plupart des communes ayant une densité inférieure à 1000 habitants / km&#178;, elles ne sont pas visibles ici.</p>
-    				        <p>Les axes ne sont pas paramétrables et il n'est pas possible de zoomer, ce qui est une limite importante de cet outil. Testons néanmoins pour un jeu de données ne présentant pas de valeur maximale extrême, par exemple pour les communes de densité inférieure à 600 habitants/km&#178;.</p>
+    				        <p>Les axes ne sont pas paramétrables et il n'est pas possible de zoomer, ce qui est une limite importante de cet outil. Testons néanmoins pour un jeu de données ne présentant pas de valeur maximale extrême, par exemple pour les communes de densité inférieure à 300 habitants/km&#178;.</p>
     				        <p>Pour cela, nous allons <a href="01_02_info_geo.php#I23c">filtrer les données</a>, ce qui ne modifie pas la couche elle-même.</p>
     				        
     				        <div class="manip">
@@ -392,16 +392,54 @@
         						<p>On y voit plus clair&nbsp;! Au passage, profitez-en pour cocher les cases <b>moyenne</b> et <b>écart-type</b>. Et vous pouvez ainsi vous rendre compte de l'intérêt principal de cet histogramme : les couleurs sont celles de la discrétisation choisie, et il est possible de modifier les bornes des classes directement dans l'histogramme.</p>
         						<p>Testez-le en faisant glisser un des traits correspondant à une borne. En cliquant sur le bouton <b>Appliquer</b>, les changements sont visibles dans la fenêtre de QGIS.</p>
         						<p>Ceci peut être très utile pour appliquer la méthode des <b>seuils observés</b> : délimiter les classes à la main, en se basant sur les ruptures visibles dans l'histogramme.</p>
-        						
+        						<p>N'oubliez pas de <b>supprimer le filtre</b> pour travailler à nouveau sur l'ensemble de vos données.</p>
     				        </div>
-    				        <p class="note">Filtrer les données est très utile, mais parfois on oublie qu'un filtre est actif. N'oubliez pas si vous souhaitez à nouveau travailler sur l'ensemble de vos données d'effacer la requête&nbsp;!</p>
+    				        
     				    
     				    <h4><a class="titre" id="X14b">Histogramme avec l'extension Plotly</a></h4>
     				    
-    				        <p>Une autre méthode, permettant plus de souplesse au niveau de la représentation de l'histogramme, mais n'étant pas liée aux classes, consiste à utiliser l'extension <a class="ext" target="_blank" href="https://github.com/ghtmtt/DataPlotly">Plotly</a> créée par Matteo Ghetta (Faunalia).</p>
+    				        <p>Une autre méthode, permettant plus de souplesse au niveau du paramétrage de l'histogramme, mais n'étant pas liée à la discrétisation, consiste à utiliser l'extension <a class="ext" target="_blank" href="https://github.com/ghtmtt/DataPlotly">Plotly</a> créée par Matteo Ghetta (Faunalia).</p>
+    				        <p>Cette extension permet la création de graphiques de différents types (nuages de points, boîtes à moustaches, histogramme...) à partir des données chargées dans QGIS. Nous ne verrons pas ici toutes les fonctionnalités liées à cette extension, mais vous aurez une petite entrevue de ses riches possibilités&nbsp;!</p>
+    				        
+    				        <div class="manip">
+    				            <p>Il faut tout d'abord <a href="03_04_fonds_carte.php#III43" >installer l'extension</a> : <b>menu Extension &#8594; Installer/Gérer les extensions</b>, tapez <b>plotly</b> dans la barre de recherche et cliquez sur <b>Installer l'extension</b>.</p>
+    				            <p><img class="icone" src="illustrations/tous/10_01_plotly_icone.png" alt="icône extension Plotly" >Plotly est ensuite accessible via le <b>menu Extension &#8594; DataPlotly &#8594; DataPlotly</b> ou bien en cliquant sur son icône.</p>
+    				            <p>Un nouveau panneau appraît : il peut être nécessaire de l'agrandir un peu.</p>
+                                <p>Pour affficher un histogramme de fréquence de la densité de population&nbsp;:</p>
+    				            <figure>
+        							<a href="illustrations/tous/10_01_plotly_config.png" >
+        								<img src="illustrations/tous/10_01_plotly_config.png" alt="Configuration de l'extension plotly pour afficher un histogramme de la densité de pop" width="85%">
+        							</a>
+        						</figure>
+        						<ul>
+        						  <li>Choisissez le type <b>Histogram</b></li>
+        						  <li>Les données à représenter proviennent de la couche <b>COMMUNE</b>...</li>
+        						  <li>...et de son champ <b>densite</b></li>
+        						  <li>Cliquez ensuite sur le bouton <b>Créer le graphique</b> tout en bas&nbsp;:</li>
+        						</ul>
+        						<figure>
+        							<a href="illustrations/tous/10_01_plotly_graphique_v1.png" >
+        								<img src="illustrations/tous/10_01_plotly_graphique_v1.png" alt="Exemple d'histogramme de fréquence pour la densité réalisé avec Plotly" width="75%">
+        							</a>
+        						</figure>
+        						<p>La barre d'outils en haut à droite permet de zoomer, dézoomer etc. dans le graphique.</p>
+        						<p>Tout est ensuite paramétrable, ou presque, notamment ici :</p>
+        						<figure>
+        							<a href="illustrations/tous/10_01_plotly_config2.png" >
+        								<img src="illustrations/tous/10_01_plotly_config2.png" alt="Paramétrage du graphique dans Plotly" width="85%">
+        							</a>
+        						</figure>
+        						<p>Par exemple en diminuant la taille des barres et en zoomant&nbsp;:</p>
+        						<figure>
+        							<a href="illustrations/tous/10_01_plotly_graphique_v2.png" >
+        								<img src="illustrations/tous/10_01_plotly_graphique_v2.png" alt="Exemple d'histogramme de fréquence pour la densité réalisé avec Plotly" width="75%">
+        							</a>
+        						</figure>
+        						<p>N'hésitez pas à tester les différents paramètres&nbsp;!</p>
+    				        </div>
 						
 					
-					<p>Nous avons vu ici trois manières de représenter une même donnée : la population des communes. Il en existe beaucoup d'autres&nbsp;!</p>
+					<p>En conclusion de ce chapitre, nous avons vu ici trois manières de représenter une même donnée : la population des communes. Il en existe beaucoup d'autres&nbsp;!</p>
 					<p>Dans le chapitre suivant, nous aborderons la <b>mise en page de cartes</b> afin par exemple de pouvoir les intégrer dans un article : ajout d'un titre, d'une légende... et export au format image ou vectoriel. L'export au format vectoriel vous permettra de retravailler la carte dans un logiciel de dessin vectoriel.</p>
 
 				<br>

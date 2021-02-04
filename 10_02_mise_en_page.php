@@ -73,7 +73,7 @@
 					<p><em class="numero">4. </em><b>Onglet Historique :</b> retrouvez ici la liste des dernières opérations que vous avez effectuées, par exemple modifier l'ordre des éléments. En cliquant sur une opération, vous l'effectuez à nouveau.</p>
 					<p><em class="numero">5. </em><b>Onglet Mise en page :</b> cet onglet permet notamment de définir une grille d'accrochage, et une résolution pour l'export. Le contenu de cet onglet ne change jamais.</p>
 					<p><em class="numero">6. </em><b>Onglet Propriétés de l'objet :</b> cet onglet contient les propriétés de l'objet actuellement sélectionné, son contenu varie donc en fonction du type d'objet : carte, légende, texte...</p>
-					<p><em class="numero">7. </em><b>Onglet Atlas :</b> QGIS possède un mode Atlas, très pratique si vous avez une série de cartes à faire sur des zones différentes. Nous n'aborderons pas son fonctionnement, mais vous pouvez en savoir plus par exemple <a class="ext" target="_blank" href="https://docs.qgis.org/2.8/fr/docs/training_manual/forestry/forest_maps.html">ici</a>.</p>
+					<p><em class="numero">7. </em><b>Onglet Atlas :</b> QGIS possède un mode Atlas, très pratique si vous avez une série de cartes à faire sur des zones différentes. Nous n'aborderons pas son fonctionnement, mais vous pouvez en savoir plus par exemple <a class="ext" target="_blank" href="https://docs.qgis.org/3.16/en/docs/training_manual/forestry/forest_maps.html?highlight=atlas">ici</a>.</p>
 					<p><em class="numero">8. </em><b>Barre d'état :</b> vous pouvez lire ici les coordonnées de votre souris dans la page (il ne s'agit pas de coordonnées géographiques, mais de coordonnées en mm par rapport au coin en haut à gauche de la page) et vous pourrez aussi modifier le niveau de zoom sur la page.</p>
 					
 					
@@ -99,7 +99,7 @@
 				<h3><a class="titre" id="X24">Ajouter une carte</a></h3>
 						
 					<div class="manip">
-						<p><img class="icone" src="illustrations/tous/10_02_nouvelle_carte_icone.png" alt="icône ajouter une nouvelle carte" >Cliquez ensuite sur l'icône <b>Ajouter une nouvelle carte à la mise en page</b> (ou <b>menu Ajouter un élément &#8594; Ajouter Carte</b>).</p>
+						<p><img class="icone" src="illustrations/tous/10_02_nouvelle_carte_icone.png" alt="icône ajouter une nouvelle carte" >Cliquez ensuite sur l'icône <b>Ajouter Carte</b> (ou <b>menu Ajouter un objet &#8594; Ajouter Carte</b>).</p>
 						<p>Dessinez un rectangle n'importe où sur la page, de la taille que vous voulez. Puis rendez-vous dans l'onglet <b>Propriétés de l'objet</b>, rubrique <b>Position et taille</b> (vers le bas de l'onglet).</p>
 						<p>Fixez <b>X et Y à 0</b> et la <b>largeur et hauteur à 200 mm</b> pour que la carte coïncide avec la page.</p>
 						<figure>
@@ -115,15 +115,22 @@
 					<div class="manip">
 					
 						<p><img class="icone" src="illustrations/tous/10_02_deplacer_contenu_icone.png" alt="icône déplacer le contenu de l'objet" >Pour <b>centrer la carte</b> : cliquez sur l'icône <b>Déplacer le contenu de l'objet</b> et faites glisser le contenu de la carte.</p>
-						<p>Pour <b>zoomer et dézoomer</b>, 2 méthodes :</p>
+						<p>Pour <b>zoomer et dézoomer</b>, 3 méthodes :</p>
 						<ul>
 						    <li class="espace">pour un zoom &#171;&nbsp;à la louche&nbsp;&#187;, utilisez la <b>molette</b> de la souris après avoir sélectionné l'outil <b>Déplacer le contenu de l'objet</b></li>
 						    <li class="espace"><img class="icone" src="illustrations/tous/10_02_selection_deplace_icone.png" alt="Icône de l'outil de sélection du mode mise en page" >pour un zoom plus précis : sélectionnez la carte au moyen de l'<b>outil de sélection</b>, puis <b>modifiez l'échelle</b> dans l'onglet Propriétés de l'objet &#8594; Propriétés principales</li>
-						<figure>
-							<a href="illustrations/tous/10_02_zoom.png" >
-								<img src="illustrations/tous/10_02_zoom.png" alt="Fixer l'échelle de la carte" width="90%">
-							</a>
-						</figure>
+        						<figure>
+        							<a href="illustrations/tous/10_02_zoom.png" >
+        								<img src="illustrations/tous/10_02_zoom.png" alt="Fixer l'échelle de la carte" width="90%">
+        							</a>
+        						</figure>
+        					<li class="espace">Synchroniser la carte de la mise en page avec celle de la fenêtre principale de QGIS : cliquez sur la 2ème icône dans la barre d'outils en haut des propriétés de l'objet&nbsp;:</li>
+        					   <figure>
+        							<a href="illustrations/tous/10_02_zoom2.png" >
+        								<img src="illustrations/tous/10_02_zoom2.png" alt="Fixer l'échelle de la carte sur celle de la fenêtre QGIS" width="90%">
+        							</a>
+        						</figure>
+        						<p>Il est probable que les 2 cartes ne coïncident pas exactement car elles n'ont pas le même rapport hauteur/largeur. Vous pouvez aussi cliquer sur la 4ème icône pour donner à la carte de votre mise en page la même échelle que dans la fenêtre principale QGIS.</p>
 						
 					</div>
 					
@@ -134,7 +141,7 @@
 					<h4><a class="titre" id="X25a">Création de la légende</a></h4>
     					<div class="manip">
     					
-    						<p><img class="icone" src="illustrations/tous/10_02_legende_icone.png" alt="icône ajouter une nouvelle légende" >Pour ajouter une <b>légende</b> : icône <b>Ajouter une nouvelle légende à la mise en page</b>, puis cliquez n’importe où sur la carte.</p>
+    						<p><img class="icone" src="illustrations/tous/10_02_legende_icone.png" alt="icône ajouter légende" >Pour ajouter une <b>légende</b> : icône <b>Ajouter Légende</b>, puis cliquez n’importe où sur la carte.</p>
     						<p>La fenêtre <b>Propriétés de l'élément</b> s'ouvre : cliquez sur OK sans modifiez les paramètres, ce que vous pourrez toujours faire par la suite.</p>
     						<p>La légende reprend celle de la couche dans QGIS&nbsp;: si vous modifiez les étiquettes de la légende dans la propriété de la couche, la légende de la mise en page prendra en compte ces modifications.</p>
     						<p>Dans la fenêtre principale de QGIS, ouvrez les propriétés de la couche, rubrique Style. Vous pouvez&nbsp;:</p>
@@ -212,7 +219,7 @@
     					<p>Un exemple de légende :</p>
     					<figure>
     						<a href="illustrations/tous/10_02_legende_visu.png" >
-    							<img src="illustrations/tous/10_02_legende_visu.png" alt="Exemple de légende pour la densité de population" width="90%">
+    							<img src="illustrations/tous/10_02_legende_visu.png" alt="Exemple de légende pour la densité de population" width="100%">
     						</a>
     					</figure>
 					
@@ -226,7 +233,7 @@
 				    <h4><a class="titre" id="X26a">Création de l'échelle</a></h4>
 				    
     					<div class="manip">
-    						<p><img class="icone" src="illustrations/tous/10_02_echelle_icone.png" alt="icône ajouter une nouvelle échelle graphique" >Pour ajouter une échelle : outil <b>Ajouter une nouvelle échelle graphique à la mise en page</b> puis cliquez sur la carte.</p>
+    						<p><img class="icone" src="illustrations/tous/10_02_echelle_icone.png" alt="icône ajouter une nouvelle échelle graphique" >Pour ajouter une échelle : outil <b>Ajouter Barre d'échelle</b> puis dessinez un rectangle sur la carte.</p>
     						<p>Cliquez sur <b>OK</b> dans la fenêtre des propriétés de l'élément qui s'ouvre ensuite (vous pourrez toujours modifier ces paramètres par la suite).</p>
     						<p>Modifiez ensuite éventuellement la taille du rectangle de l'échelle, en cliquant sur un des bords et en maintenant la souris enfoncée&nbsp;:</p>
     						<figure>
@@ -309,9 +316,9 @@
 				<h3><a class="titre" id="X27">Ajout d'éléments supplémentaires : titre, logo, flèche nord...</a></h3>
 				
 					<div class="manip">
-						<p><img class="icone" src="illustrations/tous/10_02_etiquette_icone.png" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter une nouvelle étiquette à la mise en page</b>.</p>
+						<p><img class="icone" src="illustrations/tous/10_02_etiquette_icone.png" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter Etiquette</b>.</p>
 						<p>Dans les propriétés de cet objet, vous pouvez ensuite modifier le texte, la police, la couleur...</p>
-						<p><img class="icone" src="illustrations/tous/10_02_image_icone.png" alt="icône ajouter une image" >Si vous voulez ajouter une image, par exemple un logo : outil <b>Ajouter une nouvelle image à la mise en page</b> puis dessinez un rectangle sur la page.</p>
+						<p><img class="icone" src="illustrations/tous/10_02_image_icone.png" alt="icône ajouter une image" >Si vous voulez ajouter une image, par exemple un logo : outil <b>Ajouter Image</b> puis dessinez un rectangle sur la page.</p>
 						<p>Dans les propriétés principales, choisissez ensuite une image sur votre ordinateur :</p>
 						<figure>
 							<a href="illustrations/tous/10_02_image_parcourir.png" >
@@ -322,13 +329,13 @@
 						<p>Par convention, le Nord est situé en haut de votre carte. Ajouter une flèche Nord si tel est bien le cas n'est donc pas indispensable et peut même alourdir inutilement votre carte. Par ailleurs, suivant la projection que vous utilisez, la flèche Nord peut ne pas être valable pour toute la carte, mais par exemple seulement le long du méridien de référence.</p>
 						<p>Peut-être avez-vous néanmoins besoin d'une flèche Nord, par exemple si le Nord n'est pas en haut de votre carte&nbsp;?</p>
 					<div class="manip">
-						<p>Dans ce cas, utilisez également l'outil <b>Ajouter une image</b> et choisissez comme image un symbole de flèche Nord. Pour cela, vous pouvez utiliser la bibliothèque de symboles de QGIS, dans la rubrique <b>Rechercher dans les répertoires</b>.</p>
+						<p>Dans ce cas, utilisez également l'outil <b>Ajouter Image</b> et choisissez comme image un symbole de flèche Nord. Pour cela, vous pouvez regarder dans les groupes SVG <b>arrows</b> ou <b>wind roses</b>.</p>
 						<figure>
 							<a href="illustrations/tous/10_02_fleche_nord.png" >
-								<img src="illustrations/tous/10_02_fleche_nord.png" alt="Choix d'un symbole de fleche nord à partir de la bibliotheque de symboles" width="350">
+								<img src="illustrations/tous/10_02_fleche_nord.png" alt="Choix d'un symbole de fleche nord à partir de la bibliotheque de symboles" width="90%">
 							</a>
 						</figure>
-						<p class="note">Il est possible d'ajouter de nouveaux symboles au format SVG à cette bibliothèque, au moyen du bouton <b>Ajouter...</b></p>
+						<p class="note">Il est possible d'ajouter de nouveaux symboles au format SVG à cette bibliothèque, au moyen du bouton <b>...</b> situé au-dessous.</p>
 						
 					</div>
 					
