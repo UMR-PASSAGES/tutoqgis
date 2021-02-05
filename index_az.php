@@ -191,6 +191,7 @@
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV63">GeoSearch</a></li>
 									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">Gestionnaire de table</a></li>
 									<li class="index_03"><a href="03_04_fonds_carte.php#III43">Installer une extension</a></li>
+									<li class="index_03"><a href="10_01_representation.php#X14b">Plotly</a></li>
 									<li class="index_03"><a href="03_04_fonds_carte.php#III43">QuickMapServices</a></li>
 									<li class="index_03"><a href="03_05_donnees_osm.php#III55">QuickOSM</a></li>
 									<li class="index_03"><a href="06_02_req_spatiales.php#VI21b">Requête spatiale</a></li>
@@ -259,6 +260,8 @@
 					<li class="index_01" id="H">H
 						<ul>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Helmert (transformation)</a></li>
+							<li class="index_02"><a href="09_02_raster.php#IX22a">Histogramme (données raster)</a></li>
+							<li class="index_02"><a href="10_01_representation.php#X14">Histogramme (données vecteur)</a></li>
 						</ul>
 					</li>
 					
@@ -383,6 +386,7 @@
 							<li class="index_02"><a href="11_02_par_lot.php">Par lot (traitement par lot)</a></li>
 							<li class="index_02"><a href="09_02_raster.php#IX23b">Pente</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22d">Peters (projection)</a></li>
+							<li class="index_02"><a href="10_01_representation.php#X14b">Plotly (extension)</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV42">Plus proche voisin (rééchantillonnage)</a></li>
 							<li class="index_02"><a href="04_03_calage_carroyage.php">Point de calage</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV63">ici</a></li>
 							<li class="index_02"><a href="09_03_vecteur_raster.php#IX32">Point sampling tool (extension)</a></li>
