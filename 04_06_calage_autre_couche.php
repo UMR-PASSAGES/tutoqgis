@@ -91,6 +91,7 @@
 							</a>
 						</figure>
 					</div>
+					<p class="note">Savez-vous qu'il existe une version française de cette extension, <a class="ext" target="_blank" href="https://github.com/Oslandia/french_locator_filter" >French locator Filter</a>, basée sur l'API publique <a class="ext" target="_blank" href="https://geo.api.gouv.fr/adresse" >https://geo.api.gouv.fr/adresse</a> ?</p>
 					<p>Nous allons maintenant pouvoir procéder à la création des points de calage.</p>
 					
 				<h3><a class="titre" id="IV63">Création des points de calage</a></h3>
