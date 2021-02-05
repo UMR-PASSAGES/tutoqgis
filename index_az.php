@@ -191,6 +191,7 @@
 									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV63">GeoSearch</a></li>
 									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">Gestionnaire de table</a></li>
 									<li class="index_03"><a href="03_04_fonds_carte.php#III43">Installer une extension</a></li>
+									<li class="index_03"><a href="04_06_calage_autre_couche.php#IV62">Nominatim Locator Filter</a></li>
 									<li class="index_03"><a href="10_01_representation.php#X14b">Plotly</a></li>
 									<li class="index_03"><a href="03_04_fonds_carte.php#III43">QuickMapServices</a></li>
 									<li class="index_03"><a href="03_05_donnees_osm.php#III55">QuickOSM</a></li>
@@ -335,6 +336,7 @@
 					
 					<li class="index_01" id="N">N
 						<ul>
+						    <li class="index_02"><a href="04_06_calage_autre_couche.php#IV62">Nominatim Locator Filter (extension)</a></li>
 							<li class="index_02"><a href="05_01_creation_couche.php">Nouvelle couche shapefile</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II21b">NTF (SCR)</a></li>
 							<li class="index_02"><a href="05_00_numerisation.php">Numérisation</a></li>
