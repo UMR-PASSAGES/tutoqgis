@@ -17,12 +17,7 @@
         </td>
     </tr>
     <tr>
-        <td colspan="3">
-            <a href="ancienne_version/" >
-            	<img class="logo" src="illustrations/tous/logo_qgis_3_4.png" alt="logo QGIS 3.4" height="70">
-            </a>
-        </td>
-        <td colspan="3">
+        <td colspan="6">
             <a href="" >
             	<img class="logo" src="illustrations/tous/logo_qgis_3_16.png" alt="logo QGIS 3.16" height="70">
             </a>
