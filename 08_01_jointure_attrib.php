@@ -19,7 +19,7 @@
 					<li><a href="#VIII13">Quelques exemples supplémentaires</a>
 						<ul class="listesoustitres">
 							<li><a href="#VIII13a">Jointure d'une couche et d'une table : recensement de la population au Kenya</a></li>
-							<li><a href="#VIII13b">Jointure de deux couches : entrées de cinéma et célibat en France</a></li>
+							<li><a href="#VIII13b">Jointure de deux couches : licences sportives et catégories socio-professionnelles en France</a></li>
 						</ul>
 					</li>
 					<li><a href="#VIII14">Et si une entité correspond à plusieurs entités de la couche à joindre&nbsp;?</li>
