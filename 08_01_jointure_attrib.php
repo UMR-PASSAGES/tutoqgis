@@ -60,7 +60,7 @@
 					<p>Ajoutez également au projet la table <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">pop_bhutan.csv</a></em> : pour cela, procédez comme pour <a href="03_03_donnees_XY.php">ajouter une couche de texte délimité</a> en choisissant l'option <b>Pas de géométrie</b> :</p>
 					<figure>
 						<a href="illustrations/tous/8_1_ajout_csv.png" >
-							<img src="illustrations/tous/8_1_ajout_csv.png" alt="ajout d'un csv : choisir tous les fichiers comme format" width="100%">
+							<img src="illustrations/tous/8_1_ajout_csv.png" alt="ajout d'un csv : choisir tous les fichiers comme format" width="600">
 						</a>
 					</figure>
 					<p>Vous pouvez également ajouter ce fichier via le <a href="01_02_info_geo.php#I21b">panneau Explorateur</a> ou en procédant comme pour une couche vecteur.</p>
@@ -85,7 +85,7 @@
 					<p>Cliquez sur le symbole <img class="iconemid" src="illustrations/tous/8_1_plus.png" alt="symbole + d'ajout de jointure" > pour ajouter une jointure :</p>
 					<figure>
 						<a href="illustrations/tous/8_1_jointure_fenetre.png" >
-							<img src="illustrations/tous/8_1_jointure_fenetre.png" alt="création d'une jointure : choix de la couche à joindre et des champs clés" width="90%">
+							<img src="illustrations/tous/8_1_jointure_fenetre.png" alt="création d'une jointure : choix de la couche à joindre et des champs clés" width="400">
 						</a>
 					</figure>
 					<ul>
@@ -144,10 +144,10 @@
 						</div>
 						<p>Joignez les données attributaires d'une couche à l'autre couche.</p>
 					</div>
-					<p>On peut ensuite explorer la relation entre catégories socio-professionnelles et sports pratiqués, par exemple en utilisant l'extension <a class="ext" target="_blank" href="https://github.com/ghtmtt/DataPlotly">Plotly</a> pour visualiser le nombre de licences de golf en fonction de la part de cadres et professions intellectuelles supérieures :</p>
+					<p>On peut ensuite explorer la relation entre catégories socio-professionnelles et sports pratiqués, par exemple en utilisant l'extension <a href="10_01_representation.php#X14b">Plotly</a> pour visualiser le nombre de licences de golf en fonction de la part de cadres et professions intellectuelles supérieures :</p>
 					<figure>
 						<a href="illustrations/tous/8_1_golf_cadres.png">
-							<img src="illustrations/tous/8_1_golf_cadres.png" alt="graphique du nombre de licences de golf en fonction du % de cadres, réalisé avec Plotly" width="90%">
+							<img src="illustrations/tous/8_1_golf_cadres.png" alt="graphique du nombre de licences de golf en fonction du % de cadres, réalisé avec Plotly" width="550">
 						</a>
 					</figure>
 
@@ -194,7 +194,7 @@
                         <p>Dans la boîte à outils, rubrique <b>Analyse vectorielle</b>, double-cliquez sur l'outil <b>Statistiques par catégories</b>.</p>
                         <figure>
                         	<a href="illustrations/tous/8_1_stats_cats_emplacement.png" >
-                        		<img src="illustrations/tous/8_1_stats_cats_emplacement.png" alt="Emplacement dans la boîte à outils de Statistiques par catégories" width="80%">
+                        		<img src="illustrations/tous/8_1_stats_cats_emplacement.png" alt="Emplacement dans la boîte à outils de Statistiques par catégories" width="370">
                         	</a>
                         </figure>
                     </div>
@@ -204,7 +204,7 @@
                     <div class="manip">
                         <figure>
                         	<a href="illustrations/tous/8_1_stats_cats_fenetre.png" >
-                        		<img src="illustrations/tous/8_1_stats_cats_fenetre.png" alt="Outil Statistiques par catégories" width="80%">
+                        		<img src="illustrations/tous/8_1_stats_cats_fenetre.png" alt="Outil Statistiques par catégories" width="500">
                         	</a>
                         </figure>
                         <ul>
@@ -216,14 +216,14 @@
                         <p>Ouvrez la table attributaire de cette couche temporaire :</p>
                         <figure>
                         	<a href="illustrations/tous/8_1_stats_cats_res.png" >
-                        		<img src="illustrations/tous/8_1_stats_cats_res.png" alt="tableau résultat de Statistiques par catégories" width="90%">
+                        		<img src="illustrations/tous/8_1_stats_cats_res.png" alt="tableau résultat de Statistiques par catégories" width="230">
                         	</a>
                         </figure>
                         <p>Chaque ligne correspond à une commune (un code INSEE) et le champ count indique combien cette commune contient de monuments.</p>
                         <p>Il ne reste plus qu'à joindre ce tableau à la couche de communes ! Ceci vous permet par exemple de créer une <a href="10_01_representation.php#X11b" >carte en cercles proportionnels</a> du nombre de monuments par communes :</p>
                         <figure>
                         	<a href="illustrations/tous/8_1_carte_monuments_communes.png" >
-                        		<img src="illustrations/tous/8_1_carte_monuments_communes.png" alt="carte en cercles proportionnels du nombre de monuments par commune" width="60%">
+                        		<img src="illustrations/tous/8_1_carte_monuments_communes.png" alt="carte en cercles proportionnels du nombre de monuments par commune" width="400">
                         	</a>
                         </figure>
                     </div>
@@ -239,7 +239,7 @@
                         <p><img class="icone" src="illustrations/tous/6_4_fenetre_sql_icone.png" alt="icône de la fenêtre SQL" >Cliquez ensuite sur l'icône <b>Fenêtre SQL</b>, ou bien menu <b>Base de données</b> &#8594; <b>Fenêtre SQL</b>.</p>
                         <figure>
                         	<a href="illustrations/tous/8_1_requete_sql.png" >
-                        		<img src="illustrations/tous/8_1_requete_sql.png" alt=" dans le gestionnaire de bases de données, requête SQL pour compter le nombre de nombre de monuments par commune" width="100%">
+                        		<img src="illustrations/tous/8_1_requete_sql.png" alt=" dans le gestionnaire de bases de données, requête SQL pour compter le nombre de nombre de monuments par commune" width="600">
                         	</a>
                         </figure>
                         <p>Tapez la requête suivante :</p>

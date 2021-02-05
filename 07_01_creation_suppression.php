@@ -86,13 +86,13 @@
 			             <p>Double-cliquez dans une case du champ <b>NOM_DEPT</b> :</p>
 			             <figure>
     						<a href="illustrations/tous/7_1_table_modifier.png" >
-    							<img src="illustrations/tous/7_1_table_modifier.png" alt="double clic dans une case du champ CODE_DEPT vide" width="90%" >
+    							<img src="illustrations/tous/7_1_table_modifier.png" alt="double clic dans une case du champ CODE_DEPT vide" width="520" >
     						</a>
     					 </figure>
     					 <p>Et tapez-y la valeur correspondante (en vous aidant du champ INSEE_DEP qui contient le <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais#Liste_des_d%C3%A9partements">code du département</a>), terminez en appuyant sur la touche entrée&nbsp;:</p>
     					 <figure>
     						<a href="illustrations/tous/7_1_table_modifier_ok.png" >
-    							<img src="illustrations/tous/7_1_table_modifier_ok.png" alt="double clic dans une case du champ CODE_DEPT vide" width="90%" >
+    							<img src="illustrations/tous/7_1_table_modifier_ok.png" alt="double clic dans une case du champ CODE_DEPT vide" width="100" >
     						</a>
     					 </figure>
     					 <p>Vous pouvez tapez ainsi quelques valeurs.</p>
@@ -142,7 +142,7 @@
  			          			    
 				   <figure>
 				    <a href="illustrations/tous/7_1_refactoriser_fenetre.png" >
-					 <img src="illustrations/tous/7_1_refactoriser_fenetre.png" alt="Fenêtre de l'outil refactoriser" width="100%" >
+					 <img src="illustrations/tous/7_1_refactoriser_fenetre.png" alt="Fenêtre de l'outil refactoriser" width="620" >
 					</a>
 				   </figure>
     					 

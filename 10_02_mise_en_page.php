@@ -54,14 +54,14 @@
 						<p>
 							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Nouvelle mise en page...
 								<span>
-									<img src="illustrations/tous/10_02_composeur_menu.png" alt="Menu Projet, Nouvelle mise en page..." width="100%">
+									<img src="illustrations/tous/10_02_composeur_menu.png" alt="Menu Projet, Nouvelle mise en page..." width="300">
 								</span>
 							</a>
 						</p>
 						<p>Tapez un titre, par exemple densité communes. La fenêtre de mise en page s'ouvre :</p>
 						<figure>
 							<a href="illustrations/tous/10_02_misenpage_general.png" >
-								<img src="illustrations/tous/10_02_misenpage_general.png" alt="Fenêtre de mise en page, avec des numéros pour les différentes parties (menus et outils, carte...)" width="100%">
+								<img src="illustrations/tous/10_02_misenpage_general.png" alt="Fenêtre de mise en page, avec des numéros pour les différentes parties (menus et outils, carte...)" width="600">
 							</a>
 						</figure>
 					</div>
@@ -104,7 +104,7 @@
 						<p>Fixez <b>X et Y à 0</b> et la <b>largeur et hauteur à 200 mm</b> pour que la carte coïncide avec la page.</p>
 						<figure>
 							<a href="illustrations/tous/10_02_position_carte.png" >
-								<img src="illustrations/tous/10_02_position_carte.png" alt="Fixer l'emplacement et la taille de la carte sur la page" width="90%">
+								<img src="illustrations/tous/10_02_position_carte.png" alt="Fixer l'emplacement et la taille de la carte sur la page" width="400">
 							</a>
 						</figure>
 					
@@ -121,13 +121,13 @@
 						    <li class="espace"><img class="icone" src="illustrations/tous/10_02_selection_deplace_icone.png" alt="Icône de l'outil de sélection du mode mise en page" >pour un zoom plus précis : sélectionnez la carte au moyen de l'<b>outil de sélection</b>, puis <b>modifiez l'échelle</b> dans l'onglet Propriétés de l'objet &#8594; Propriétés principales</li>
         						<figure>
         							<a href="illustrations/tous/10_02_zoom.png" >
-        								<img src="illustrations/tous/10_02_zoom.png" alt="Fixer l'échelle de la carte" width="90%">
+        								<img src="illustrations/tous/10_02_zoom.png" alt="Fixer l'échelle de la carte" width="450">
         							</a>
         						</figure>
         					<li class="espace">Synchroniser la carte de la mise en page avec celle de la fenêtre principale de QGIS : cliquez sur la 2ème icône dans la barre d'outils en haut des propriétés de l'objet&nbsp;:</li>
         					   <figure>
         							<a href="illustrations/tous/10_02_zoom2.png" >
-        								<img src="illustrations/tous/10_02_zoom2.png" alt="Fixer l'échelle de la carte sur celle de la fenêtre QGIS" width="90%">
+        								<img src="illustrations/tous/10_02_zoom2.png" alt="Fixer l'échelle de la carte sur celle de la fenêtre QGIS" width="270">
         							</a>
         						</figure>
         						<p>Il est probable que les 2 cartes ne coïncident pas exactement car elles n'ont pas le même rapport hauteur/largeur. Vous pouvez aussi cliquer sur la 4ème icône pour donner à la carte de votre mise en page la même échelle que dans la fenêtre principale QGIS.</p>
@@ -192,7 +192,7 @@
                                <p>Si vous voulez que ce titre soit sur plusieurs lignes, vous pouvez taper un caractère utilisé rarement dans la case <b>Activer le retour à la ligne après</b>. Ce caractère ne sera pas représenté mais provoquera un retour à la ligne.</p>
         				       <figure>
         					       <a href="illustrations/tous/10_02_legende_titre.png" >
-        						      <img src="illustrations/tous/10_02_legende_titre.png" alt="Exemple de titre de légende avec un retour à la ligne" width="90%">
+        						      <img src="illustrations/tous/10_02_legende_titre.png" alt="Exemple de titre de légende avec un retour à la ligne" width="500">
         					       </a>
         					   </figure>
         					   <p>Le $ provoquera également une retour à la ligne pour les autres objets de la légende (étiquettes, nom de la couche...).</p>
@@ -203,7 +203,7 @@
         				    <p>Il est possible de modifier beaucoup de paramètres de la légende, comme par exemple la police, l'espacement des éléments...</p>
         				    <figure>
     					       <a href="illustrations/tous/10_02_legende_autreparametres.png" >
-    						      <img src="illustrations/tous/10_02_legende_autreparametres.png" alt="Dans l'onglet propriétés de l'objet, paramètres de la légende de 'Polices' à 'Variables'" width="90%">
+    						      <img src="illustrations/tous/10_02_legende_autreparametres.png" alt="Dans l'onglet propriétés de l'objet, paramètres de la légende de 'Polices' à 'Variables'" width="200">
     					       </a>
     					   </figure>
     					   <p>Voici quelques uns de ces éléments passés en revue, n'hésitez pas à tester&nbsp;!</p>
@@ -219,7 +219,7 @@
     					<p>Un exemple de légende :</p>
     					<figure>
     						<a href="illustrations/tous/10_02_legende_visu.png" >
-    							<img src="illustrations/tous/10_02_legende_visu.png" alt="Exemple de légende pour la densité de population" width="100%">
+    							<img src="illustrations/tous/10_02_legende_visu.png" alt="Exemple de légende pour la densité de population" width="250">
     						</a>
     					</figure>
 					
@@ -238,7 +238,7 @@
     						<p>Modifiez ensuite éventuellement la taille du rectangle de l'échelle, en cliquant sur un des bords et en maintenant la souris enfoncée&nbsp;:</p>
     						<figure>
         						<a href="illustrations/tous/10_02_echelle_reduire.png" >
-        							<img src="illustrations/tous/10_02_echelle_reduire.png" alt="Réduire la taille de l'échelle en cliquant sur le bord" width="100%">
+        							<img src="illustrations/tous/10_02_echelle_reduire.png" alt="Réduire la taille de l'échelle en cliquant sur le bord" width="170">
         						</a>
         					</figure>
         				</div>
@@ -252,28 +252,28 @@
 						  <p>Vous pouvez notamment modifier son style, ce qui vous permet de choisir entre 5 styles d'échelle graphique et un type d'échelle numérique, le style par défaut étant <b>Boîte unique</b>&nbsp;:</p>
     						<figure>
         						<a href="illustrations/tous/10_02_echelle_style.png" >
-        							<img src="illustrations/tous/10_02_echelle_style.png" alt="Où modifier le style de l'échelle" width="90%">
+        							<img src="illustrations/tous/10_02_echelle_style.png" alt="Où modifier le style de l'échelle" width="500">
         						</a>
         					</figure>
         				   <p>Testez les différents styles&nbsp;:</p>
         				   <figure>
         						<a href="illustrations/tous/10_02_echelle_boiteunique.png" >
-        							<img src="illustrations/tous/10_02_echelle_boiteunique.png" alt="Echelle style boîte unique" width="16%">
+        							<img src="illustrations/tous/10_02_echelle_boiteunique.png" alt="Echelle style boîte unique" width="90">
         						</a>
         						<a href="illustrations/tous/10_02_echelle_boitedouble.png" >
-        							<img src="illustrations/tous/10_02_echelle_boitedouble.png" alt="Echelle style boîte double" width="16%">
+        							<img src="illustrations/tous/10_02_echelle_boitedouble.png" alt="Echelle style boîte double" width="90">
         						</a>
                                 <a href="illustrations/tous/10_02_echelle_reperemilieu.png" >
-        							<img src="illustrations/tous/10_02_echelle_reperemilieu.png" alt="Echelle style repère au milieu de la ligne" width="16%">
+        							<img src="illustrations/tous/10_02_echelle_reperemilieu.png" alt="Echelle style repère au milieu de la ligne" width="90">
         						</a>
                                 <a href="illustrations/tous/10_02_echelle_reperedessous.png" >
-        							<img src="illustrations/tous/10_02_echelle_reperedessous.png" alt="Echelle style repère au dessous de la ligne" width="16%">
+        							<img src="illustrations/tous/10_02_echelle_reperedessous.png" alt="Echelle style repère au dessous de la ligne" width="90">
         						</a>
                                 <a href="illustrations/tous/10_02_echelle_reperedessus.png" >
-        							<img src="illustrations/tous/10_02_echelle_reperedessus.png" alt="Echelle style repère au dessus de la ligne" width="16%">
+        							<img src="illustrations/tous/10_02_echelle_reperedessus.png" alt="Echelle style repère au dessus de la ligne" width="90">
         						</a>
                                 <a href="illustrations/tous/10_02_echelle_numerique.png" >
-        							<img src="illustrations/tous/10_02_echelle_numerique.png" alt="Echelle style numérique" width="16%">
+        							<img src="illustrations/tous/10_02_echelle_numerique.png" alt="Echelle style numérique" width="90">
         						</a>
         				   </figure>
 						</div>
@@ -281,19 +281,19 @@
 						<p>Vous pouvez également modifier les unités de l'échelle, et l'étiquette des unités&nbsp;:</p>
 						<figure>
 							<a href="illustrations/tous/10_02_echelle_unites.png" >
-								<img src="illustrations/tous/10_02_echelle_unites.png" alt="Paramétrer les unités de l'échelle" width="90%">
+								<img src="illustrations/tous/10_02_echelle_unites.png" alt="Paramétrer les unités de l'échelle" width="500">
 							</a>
 						</figure>
     					<p>Ainsi que le nombre de segments, et la hauteur de la barre d'échelle&nbsp;:</p>
     					<figure>
     						<a href="illustrations/tous/10_02_echelle_segments.png" >
-    							<img src="illustrations/tous/10_02_echelle_segments.png" alt="Paramétrer le nombre de segments de l'échelle" width="90%">
+    							<img src="illustrations/tous/10_02_echelle_segments.png" alt="Paramétrer le nombre de segments de l'échelle" width="500">
     						</a>
     					</figure>
 					   <p>Sans oublier les couleurs, et la police de caractères&nbsp;:</p>
 					   <figure>
     						<a href="illustrations/tous/10_02_echelle_police.png" >
-    							<img src="illustrations/tous/10_02_echelle_police.png" alt="Paramétrer les couleurs et la taille de l'échelle" width="90%">
+    							<img src="illustrations/tous/10_02_echelle_police.png" alt="Paramétrer les couleurs et la taille de l'échelle" width="470">
     						</a>
     					</figure>
     					<p>Et bien d'autres paramètres encore&nbsp;!</p>
@@ -301,13 +301,13 @@
     					<p>Vous pouvez opter pour un style épuré...</p>
     					<figure>
     						<a href="illustrations/tous/10_02_echelle_visu.png" >
-    							<img src="illustrations/tous/10_02_echelle_visu.png" alt="Exemple d'échelle simple" width="40%">
+    							<img src="illustrations/tous/10_02_echelle_visu.png" alt="Exemple d'échelle simple" width="200">
     						</a>
     					</figure>
     					<p>...ou bien laisser parler l'artiste qui est en vous&nbsp;:</p>
     					<figure>
     					   <a href="illustrations/tous/10_02_echelle_coupemulet.png" >
-    							<img src="illustrations/tous/10_02_echelle_coupemulet.png" alt="Exemple d'échelle simple" width="80%">
+    							<img src="illustrations/tous/10_02_echelle_coupemulet.png" alt="Exemple d'échelle simple" width="400">
     						</a>
     					</figure>
     					<p class="note">(Notez bien que je décline toute responsabilité dans ce cas)</p>
@@ -332,7 +332,7 @@
 						<p>Dans ce cas, utilisez également l'outil <b>Ajouter Image</b> et choisissez comme image un symbole de flèche Nord. Pour cela, vous pouvez regarder dans les groupes SVG <b>arrows</b> ou <b>wind roses</b>.</p>
 						<figure>
 							<a href="illustrations/tous/10_02_fleche_nord.png" >
-								<img src="illustrations/tous/10_02_fleche_nord.png" alt="Choix d'un symbole de fleche nord à partir de la bibliotheque de symboles" width="90%">
+								<img src="illustrations/tous/10_02_fleche_nord.png" alt="Choix d'un symbole de fleche nord à partir de la bibliotheque de symboles" width="550">
 							</a>
 						</figure>
 						<p class="note">Il est possible d'ajouter de nouveaux symboles au format SVG à cette bibliothèque, au moyen du bouton <b>...</b> situé au-dessous.</p>
@@ -345,7 +345,7 @@
 					<p>Il est possible de faire figurer dans cette deuxième carte un rectangle correspondant à l'emprise de la première carte.</p>
 					<figure>
 						<a href="illustrations/tous/10_02_apercu.png" >
-							<img src="illustrations/tous/10_02_apercu.png" alt="exemple : une carte de France, avec en haut une petite carte d'Europe et un rectangle correspondant à l'emprise de la carte de France" width="90%">
+							<img src="illustrations/tous/10_02_apercu.png" alt="exemple : une carte de France, avec en haut une petite carte d'Europe et un rectangle correspondant à l'emprise de la carte de France" width="500">
 						</a>
 					</figure>
 					
@@ -370,10 +370,10 @@
 						<ul>
 						  <li class="espace">Dans QGIS, créez autant de groupes que de cartes dans votre mise en page (clic droit dans la liste des couches, Ajouter un groupe), ici un groupe <b>carte principale</b> et un groupe <b>carte de situation</b></li>
 						  <li class="espace">Dans QGIS, mettez dans chacun des groupes les couches que vous voulez voir figurer dans la mise en page correspondante, quitte à dupliquer certaines couches (clic droit, Dupliquer la couche)</li>
-                          <img src="illustrations/tous/10_02_groupes_qgis.png" alt="2 groupes de couches dans QGIS" width="50%">
+                          <img src="illustrations/tous/10_02_groupes_qgis.png" alt="2 groupes de couches dans QGIS" width="300">
 						  <li class="espace">Toujours dans QGIS, rendez visible uniquement les couches d'un groupe</li>
 						  <li class="espace">Dans le mode mise en page, sélectionnez la carte correspondant au groupe visible dans QGIS, et cochez la case <b>Verrouiller les couches</b> dans la rubrique <b>Couches</b> des propriétés de la carte</li>
-						  <img src="illustrations/tous/10_02_verrouiller_couches.png" alt="case pour verrouiller les couches dans les propriétés de la carte" width="65%">
+						  <img src="illustrations/tous/10_02_verrouiller_couches.png" alt="case pour verrouiller les couches dans les propriétés de la carte" width="370">
 						  <li class="espace">Faites de même pour les autres groupes</li>
 						</ul>
 					</div>
@@ -417,7 +417,7 @@
 					<p>Un exemple de carte réalisée dans QGIS :</p>
 					<figure>
 						<a href="illustrations/tous/10_02_carte_exemple.png" >
-							<img src="illustrations/tous/10_02_carte_exemple.png" alt="exemple d'une carte de densité de population dans QGIS" width="90%">
+							<img src="illustrations/tous/10_02_carte_exemple.png" alt="exemple d'une carte de densité de population dans QGIS" width="500">
 						</a>
 					</figure>
 				
@@ -432,7 +432,7 @@
 						<p>Un projet peut contenir plusieurs mises en page. Pour renommer, ajouter, supprimer ou dupliquer des mises en page&nbsp;: <b>menu Projet &#8594; Gestionnaire de mise en page...</b>.</p>
 						<figure>
 							<a href="illustrations/tous/10_02_gestionnaire_misenpage.png" >
-								<img src="illustrations/tous/10_02_gestionnaire_misenpage.png" alt="Fenêtre du gestionnaire de mise en page" width="85%">
+								<img src="illustrations/tous/10_02_gestionnaire_misenpage.png" alt="Fenêtre du gestionnaire de mise en page" width="400">
 							</a>
 						</figure>
 					</div>

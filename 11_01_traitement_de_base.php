@@ -22,7 +22,7 @@
 					<p>Ce projet contient une couche correspondant aux limites communales de la commune de Sainte-Radégonde, ainsi que 4 autres couches de lieux, routes, espaces naturels et bâtiments.</p>
 					<figure>
 							<a href="illustrations/tous/11_01_projet.png" >
-								<img src="illustrations/tous/11_01_projet.png" alt="Aperçu du projet decoupe.qgz" width="100%">
+								<img src="illustrations/tous/11_01_projet.png" alt="Aperçu du projet decoupe.qgz" width="550">
 							</a>
 					</figure>
 					<div class="question">
@@ -34,13 +34,13 @@
 					<p>Pour découper la couche de routes par la commune :
 					   <a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; Recouvrement de vecteur &#8594; Couper
                         	<span>
-                        		<img src="illustrations/tous/11_01_couper_menu.png" alt="Emplacement de l'outil Couper dans la boîte à outils" width="100%" >
+                        		<img src="illustrations/tous/11_01_couper_menu.png" alt="Emplacement de l'outil Couper dans la boîte à outils" width="280" >
                         	</span>
                         </a> 
 					</p>
 					<figure>
 							<a href="illustrations/tous/11_01_decouper_fenetre.png" >
-								<img src="illustrations/tous/11_01_decouper_fenetre.png" alt="Fenêtre de l'outil Couper" width="100%">
+								<img src="illustrations/tous/11_01_decouper_fenetre.png" alt="Fenêtre de l'outil Couper" width="600">
 							</a>
 					</figure>
 					<p>Une nouvelle couche temporaire est créée, qui ne contient que les portions de routes à l'intérieur de la commune.</p>

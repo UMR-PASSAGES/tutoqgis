@@ -43,7 +43,7 @@
 					<p>Dans la boîte à outils Traitements, cliquez sur l'icône <b>Modèles</b> tout en haut à gauche et choisissez <b>Créer un nouveau modèle</b>.</p>
 					<figure>
 						<a href="illustrations/tous/11_03_creer_modele.png" >
-							<img src="illustrations/tous/11_03_creer_modele.png" alt="Emplacement de l'outil de création de modèles dans la boîte à outils Traitements" width="90%">
+							<img src="illustrations/tous/11_03_creer_modele.png" alt="Emplacement de l'outil de création de modèles dans la boîte à outils Traitements" width="300">
 						</a>
 					</figure>
 				</div>
@@ -51,7 +51,7 @@
 				<p>Notre modèle comportera 2 paramètres en entrée : une couche vecteur qui sera découpée et une couche vecteur qui servira de masque de découpe. L'outil de découpage va utiliser ces deux paramètres en entrée pour créer une nouvelle couche temporaire. Cette couche temporaire sera utilisée comme paramètre d'entrée pour l'outil de reprojection, qui produira la couche finale.</p>
 				<figure>
 				    <a href="illustrations/tous/11_03_organigramme.svg" >
-						<img src="illustrations/tous/11_03_organigramme.svg" alt="Organigramme du modèle qui sera créé" width="100%">
+						<img src="illustrations/tous/11_03_organigramme.svg" alt="Organigramme du modèle qui sera créé" width="600">
 					</a>
 				</figure>
 				
@@ -62,12 +62,12 @@
 							<p>Dans l'onglet <b>Entrées</b> dans la partie gauche de la fenêtre, double-cliquez sur <b>Couche vecteur</b>&nbsp;:</p>
 							<figure>
     							<a href="illustrations/tous/11_03_modeleur_fenetre.png" >
-    								<img src="illustrations/tous/11_03_modeleur_fenetre.png" alt="Fenêtre du modeleur de traitement" width="100%">
+    								<img src="illustrations/tous/11_03_modeleur_fenetre.png" alt="Fenêtre du modeleur de traitement" width="600">
     							</a>
 							</figure>
 							<figure>
     							<a href="illustrations/tous/11_03_def_parametre_fenetre.png" >
-    								<img src="illustrations/tous/11_03_def_parametre_fenetre.png" alt="Fenêtre de définition d'un paramètre" width="80%">
+    								<img src="illustrations/tous/11_03_def_parametre_fenetre.png" alt="Fenêtre de définition d'un paramètre" width="250">
     							</a>
 							</figure>
 							<ul>
@@ -79,7 +79,7 @@
 						<p>Le paramètre est ajouté au modèle sous forme d'une boîte verte. Vous pouvez éditer ses caractéristiques en double-cliquant sur cette boîte, ou bien en cliquant sur les poinst de suspension en bas à droite de la boîte.</p>
 						<figure>
 							<a href="illustrations/tous/11_03_modele_01.png" >
-								<img src="illustrations/tous/11_03_modele_01.png" alt="Boîte pour la couche source" width="100%">
+								<img src="illustrations/tous/11_03_modele_01.png" alt="Boîte pour la couche source" width="250">
 							</a>
 						</figure>
 						<div class="manip">
@@ -94,18 +94,22 @@
 							<p>Dans l'onglet Entrées, double-cliquez à nouveau sur <b>Couche vecteur</b> :</p>
 							<figure>
 								<a href="illustrations/tous/11_03_def_parametre2_fenetre.png" >
-									<img src="illustrations/tous/11_03_def_parametre2_fenetre.png" alt="Fenêtre de définition d'un paramètre" width="90%">
+									<img src="illustrations/tous/11_03_def_parametre2_fenetre.png" alt="Fenêtre de définition d'un paramètre" width="250">
 								</a>
 								</figure>
 							<ul>
-								<li class="espace">Nom du paramètre : <b>couche masque</b></li>
-								<li class="espace">Type de géométrie : <b>polygone</b></li>
-								<li class="espace"><b>Obligatoire</b></li>
+								<li>Nom du paramètre : <b>couche masque</b></li>
+								<li>Type de géométrie : <b>polygone</b></li>
+								<li><b>Obligatoire</b></li>
 							</ul>
+							<p>Une deuxième boîte apparait aux côtés de la première&nbsp;:</p>
+							<figure>
+    							<a href="illustrations/tous/11_03_modele_02.png" >
+    							   <img src="illustrations/tous/11_03_modele_02.png" alt="Les 2 boîtes pour la couche source et la couche masque" width="450">
+    						    </a>
+						    </figure>
 						</div>
-						<a href="illustrations/tous/11_03_modele_02.png" >
-							<img src="illustrations/tous/11_03_modele_02.png" alt="Les 2 boîtes pour la couche source et la couche masque" width="70%">
-						</a>
+						
 					
 					<h4><a class="titre" id="XI31c">Création du premier algorithme : découpage</a></h4>
 						
@@ -113,12 +117,12 @@
 							<p>Dans l'onglet <b>Algorithmes</b>, rubrique <b>Recouvrement de vecteur</b> &#8594; double-cliquez sur l'outil <b>Couper</b> :</p>
 							<figure>
 								<a href="illustrations/tous/11_03_modeleur_fenetre_algos.png" >
-									<img src="illustrations/tous/11_03_modeleur_fenetre_algos.png" alt="Fenêtre du modeleur, onglet algorithmes" width="100%">
+									<img src="illustrations/tous/11_03_modeleur_fenetre_algos.png" alt="Fenêtre du modeleur, onglet algorithmes" width="600">
 								</a>
 							</figure>
 							<figure>
 								<a href="illustrations/tous/11_03_def_algo_fenetre.png" >
-									<img src="illustrations/tous/11_03_def_algo_fenetre.png" alt="Fenêtre de définition d'un algo" width="80%">
+									<img src="illustrations/tous/11_03_def_algo_fenetre.png" alt="Fenêtre de définition d'un algo" width="400">
 								</a>
 							</figure>
 							<ul>
@@ -131,7 +135,7 @@
 						<p>L'algorithme apparaît sous forme d'une boîte blanche reliée aux 2 couches en entrée&nbsp;; de même, vous pouvez éditer ses caractéristiques en double-cliquant sur la boîte.</p>
 						<figure>
 							<a href="illustrations/tous/11_03_modele_03.png" >
-								<img src="illustrations/tous/11_03_modele_03.png" alt="Modèle avec les 3 boîtes pour les 2 couches en entrée et l'algo couper" width="100%">
+								<img src="illustrations/tous/11_03_modele_03.png" alt="Modèle avec les 3 boîtes pour les 2 couches en entrée et l'algo couper" width="450">
 							</a>
 						</figure>
 						
@@ -142,12 +146,12 @@
 							<p>Toujours dans la fenêtre du modeleur de traitement, 
 							<a class="thumbnail_bottom" href="#thumb">onglet Algorithmes &#8594; Outils généraux pour les vecteur&#8594; Reprojeter une couche
                             	<span>
-                            		<img src="illustrations/tous/11_03_reprojeter.png" alt="Emplacement de l'outil 'Reprojeter une couche'" width="90%" >
+                            		<img src="illustrations/tous/11_03_reprojeter.png" alt="Emplacement de l'outil 'Reprojeter une couche'" width="300" >
                             	</span>
                             </a>  :</p>
 							<figure>
 								<a href="illustrations/tous/11_03_def_algo2_fenetre.png" >
-									<img src="illustrations/tous/11_03_def_algo2_fenetre.png" alt="Fenêtre de définition d'un algo" width="500">
+									<img src="illustrations/tous/11_03_def_algo2_fenetre.png" alt="Fenêtre de définition d'un algo" width="600">
 								</a>
 							</figure>
 							<ul>
@@ -161,7 +165,7 @@
 						<p>Votre modèle est maintenant fini&nbsp;! Il doit ressembler à ceci&nbsp;:</p>
 						<figure>
 							<a href="illustrations/tous/11_03_modele_fini.png" >
-								<img src="illustrations/tous/11_03_modele_fini.png" alt="Modèle fini, avec les 2 boîtes pour les couches en entrée, les 2 boîte pour les algos et la boîte pour la couche en sortie" width="90%">
+								<img src="illustrations/tous/11_03_modele_fini.png" alt="Modèle fini, avec les 2 boîtes pour les couches en entrée, les 2 boîte pour les algos et la boîte pour la couche en sortie" width="450">
 							</a>
 						</figure>
 				
@@ -174,7 +178,7 @@
     					<div class="manip">
         					<figure>
         						<a href="illustrations/tous/11_03_enregistrer_modele_fenetre.png" >
-        							<img src="illustrations/tous/11_03_enregistrer_modele_fenetre.png" alt="Fenêtre du modeleur, choix du nom du modèle et du groupe et icône de sauvegarde entourés en rouge" width="100%">
+        							<img src="illustrations/tous/11_03_enregistrer_modele_fenetre.png" alt="Fenêtre du modeleur, choix du nom du modèle et du groupe et icône de sauvegarde entourés en rouge" width="600">
         						</a>
         					</figure>
     						<p>Dans l'onglet <b>Propriétés du modèle</b> de la partie gauche de la fenêtre, choisissez le nom sous lequel votre modèle sera disponible dans la boîte à outils, par exemple <b>découper et modifier SCR</b> par exemple.</p>
@@ -193,7 +197,7 @@
     				    <p>Si ce modèle est destiné à être utilisé par d'autres personnes, ou tout simplement si vous comptez vous en servir régulièrement, documenter un peu ce modèle sera très pratique. Il s'agit en fait de <b>rédiger l'aide de l'outil</b>, telle qu'on peut la voir dans la partie droite de la fenêtre pour les outils QGIS.</p>
     				    <figure>
     						<a href="illustrations/tous/11_03_aide_exemple.png" >
-    							<img src="illustrations/tous/11_03_aide_exemple.png" alt="Fenêtre de l'outil Couper, avec la partie Aide à droite entourée en rouge" width="80%">
+    							<img src="illustrations/tous/11_03_aide_exemple.png" alt="Fenêtre de l'outil Couper, avec la partie Aide à droite entourée en rouge" width="500">
     						</a>
     						<figcaption>Exemple d'aide&nbsp;: l'outil Couper.</figcaption>
     					</figure>
@@ -202,19 +206,19 @@
     					   <p>Si vous avez fermé la fenêtre d'édition du modèle, vous pouvez y accéder à nouveau : <b>boîte à outils &#8594; modèles &#8594; tests (ou le nom de votre groupe) &#8594; clic droit sur le nom de votre outil, Editer le modèle...</b></p>
     					   <figure>
         						<a href="illustrations/tous/11_03_emplacement_modele.png" >
-        							<img src="illustrations/tous/11_03_emplacement_modele.png" alt="Emplacement du modèle dans la boîte à outils" width="80%">
+        							<img src="illustrations/tous/11_03_emplacement_modele.png" alt="Emplacement du modèle dans la boîte à outils" width="300">
         						</a>
         				   </figure>
         				   <p>Dans la barre d'outils en haut de la fenêtre d'édition du modèle, cliquez sur l'icône <b>Éditer l'aide du modèle</b>.</p>
                            <figure>
         						<a href="illustrations/tous/11_03_modele_aide_icone.png" >
-        							<img src="illustrations/tous/11_03_modele_aide_icone.png" alt="Barre d'outils de la fenêtr d'édition du modèle, icône Aide entourée en rouge" width="90%">
+        							<img src="illustrations/tous/11_03_modele_aide_icone.png" alt="Barre d'outils de la fenêtr d'édition du modèle, icône Aide entourée en rouge" width="450">
         						</a>
         				   </figure>
         				   <p>La fenêtre de l'éditeur d'aide s'ouvre&nbsp;:</p>
         				   <figure>
         						<a href="illustrations/tous/11_03_aide_fenetre.png" >
-        							<img src="illustrations/tous/11_03_aide_fenetre.png" alt="Fenêtre de l'éditeur d'aide du modèle" width="90%">
+        							<img src="illustrations/tous/11_03_aide_fenetre.png" alt="Fenêtre de l'éditeur d'aide du modèle" width="470">
         						</a>
         				   </figure>
         				   <p>Cliquez par exemple sur <b>Description de l'algorithme</b> à gauche, puis rédigez le texte correspondant à droite.</p>
@@ -241,7 +245,7 @@
 							<p>Lancez votre modèle&nbsp;: <b>boîte à outils &#8594; modèles &#8594; tests (ou le nom de votre groupe) &#8594; double clic sur le nom de votre outil</b>.</p>
 							<figure>
 								<a href="illustrations/tous/11_03_test_modele.png" >
-									<img src="illustrations/tous/11_03_test_modele.png" alt="fenêtre du modele clip and project, paramètres remplis" width="100%">
+									<img src="illustrations/tous/11_03_test_modele.png" alt="fenêtre du modele clip and project, paramètres remplis" width="550">
 								</a>
 							</figure>
 							<ul>

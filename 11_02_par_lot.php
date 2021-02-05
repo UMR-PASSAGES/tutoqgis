@@ -26,7 +26,7 @@
 						<li class="espace"><b>Découpé :</b> cliquer sur les <b>…</b>, rendez-vous dans le dossier où vous voulez créer les nouvelles couches, tapez <b>decoupe_</b> et cliquez sur <b>Enregistrer</b>. Dans la fenêtre suivante : choisir 
 						<a class="thumbnail_bottom" href="#thumb">Remplir avec les valeurs du paramètre, Couche source
                         	<span>
-                        		<img src="illustrations/tous/11_02_remplir_val_parametre.png" alt="Fenêtre pour choisir de compléter le nom de chaque couche résultat en fonction de la couche en entrée" width="100%" >
+                        		<img src="illustrations/tous/11_02_remplir_val_parametre.png" alt="Fenêtre pour choisir de compléter le nom de chaque couche résultat en fonction de la couche en entrée" width="600" >
                         	</span>
                         </a>, afin que le nom de chaque couche qui sera créée soit complété par le nom de la couche OSM de départ.</li>
 					</ul>

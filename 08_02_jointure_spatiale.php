@@ -54,7 +54,7 @@
     					<p>Ouvrez un nouveau projet QGIS, ajoutez les deux couches shapefile <em class="data">DEPARTEMENT</em> et <em class="data">CHEF_LIEU</em>.</p>
     					<figure>
     						<a href="illustrations/tous/8_2_cheflieux_depts.png" >
-    							<img src="illustrations/tous/8_2_cheflieux_depts.png" alt="superposition des chefs-lieux et des départements" width="60%" >
+    							<img src="illustrations/tous/8_2_cheflieux_depts.png" alt="superposition des chefs-lieux et des départements" width="400" >
     						</a>
     					</figure>
                         <p>Ouvrez les tables attributaires des 2 couches : il n'existe pas de champ permettant de faire une jointure attributaire entre les couches (même s'il serait possible de récupérer le code du département à partir du code INSEE, mais nous ferons comme si pour les besoins de l'exercice...).</p>
@@ -68,12 +68,12 @@
                         <p>Dans la boît à outils de traitements, rubrique <b>Outils généraux pour les vecteurs</b>, double-cliquez sur <b>Joindre les attributs par localisation</b>.</p>
                         <figure>
     						<a href="illustrations/tous/8_2_join_emplacement.png" >
-    							<img src="illustrations/tous/8_2_join_emplacement.png" alt="Emplacement de l'outil de jointure spatiale dans la boît à outils" width="80%" >
+    							<img src="illustrations/tous/8_2_join_emplacement.png" alt="Emplacement de l'outil de jointure spatiale dans la boît à outils" width="350" >
     						</a>
     					</figure>
     					 <figure>
     						<a href="illustrations/tous/8_2_join_fenetre.png" >
-    							<img src="illustrations/tous/8_2_join_fenetre.png" alt="Fenêtre de l'outil de jointure spatiale dans la boît à outils" width="100%" >
+    							<img src="illustrations/tous/8_2_join_fenetre.png" alt="Fenêtre de l'outil de jointure spatiale dans la boît à outils" width="600" >
     						</a>
     					</figure>
     					<ul>
@@ -90,7 +90,7 @@
     					<p>Ouvrez sa table attributaire : elle contient les attributs des départements et des chefs-lieux.</p>
     					<figure>
     						<a href="illustrations/tous/8_2_table_apres_jointure.png" >
-    							<img src="illustrations/tous/8_2_table_apres_jointure.png" alt="Table attributaire de la couche créée par jointure spatiale, avec les données attributaires des départements et des chefs-lieux" width="100%" >
+    							<img src="illustrations/tous/8_2_table_apres_jointure.png" alt="Table attributaire de la couche créée par jointure spatiale, avec les données attributaires des départements et des chefs-lieux" width="600" >
     						</a>
     					</figure>
                     </div>
@@ -101,7 +101,7 @@
                         <p>Ouvrez un nouveau projet QGIS, ajoutez les couches <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip" >Counties</a></em> et <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip" >Heritage</a></em>, correspondant aux comtés et sites remarquables irlandais.</p>
                         <figure>
     						<a href="illustrations/tous/8_2_irlande_carte.png" >
-    							<img src="illustrations/tous/8_2_irlande_carte.png" alt="Comtés et sites remarquables irlandais" width="70%" >
+    							<img src="illustrations/tous/8_2_irlande_carte.png" alt="Comtés et sites remarquables irlandais" width="300" >
     						</a>
     					</figure>
     					<div class="question">
@@ -109,7 +109,7 @@
                     		<p><label for="faq-1">Prenez connaissance des données attributaires de ces 2 couches. Comment ajouter aux sites remarquables (données ponctuelles) les données attributaires de leur comté&nbsp;?</label></p>
                     		<p class="reponse">Boîte à outils de traitements &#8594; Outils généraux pour les vecteurs &#8594; Joindre les attributs par localisation, avec en couche source <em class="data">Heritage</em> et en couche à joindre <em class="data">Counties</em>. Une fois la nouvelle couche créée, vérifiez sa géométrie (sites remarquables) et ses données attributaires :</p>
                     		<p class="reponse">
-                    		  <a href="illustrations/tous/8_2_heritage_join_counties_res.png"><img src="illustrations/tous/8_2_heritage_join_counties_res.png" alt="Résultat de la jointure spatiale : points et table attributaire" width="70%" ></a>
+                    		  <a href="illustrations/tous/8_2_heritage_join_counties_res.png"><img src="illustrations/tous/8_2_heritage_join_counties_res.png" alt="Résultat de la jointure spatiale : points et table attributaire" width="600" ></a>
                     		</p>
                     	</div>
                     </div>
@@ -137,7 +137,7 @@
         			    <p>Boîte à outils de traitement &#8594; Outils généraux pour les vecteurs &#8594; <b>Joindre les attributs par localisation (résumé)</b></p>
         			    <figure>
     						<a href="illustrations/tous/8_2_join_resume_fenetre.png" >
-    							<img src="illustrations/tous/8_2_join_resume_fenetre.png" alt="Fenêtre de l'outil de jointure spatiale (résumé)" width="100%" >
+    							<img src="illustrations/tous/8_2_join_resume_fenetre.png" alt="Fenêtre de l'outil de jointure spatiale (résumé)" width="600" >
     						</a>
     					</figure>
     					<ul>
@@ -155,7 +155,7 @@
                     		<p><label for="faq-2">Quel est le comté avec le plus de sites&nbsp;? Y a-t-il des comtés qui n'ont pas de sites&nbsp;?</label></p>
                     		<p class="reponse">En cliquant sur la colonne <b>OBJECTID_count</b> (tout à droite), on peut classer les comtés en fonction de leur nombre de sites.</p>
                     		<p class="reponse">Le comté de Galway possède 8 sites remarquables&nbsp;; les comtés de Offaly, Monaghan et Carlow n'en possèdent aucun.</p>
-                    		<p class="reponse"><a href="illustrations/tous/8_2_counties_join_heritage_table.png" ><img src="illustrations/tous/8_2_counties_join_heritage_table.png" alt="Extrait de la table attributaire de la couche résultat, classé par nombre de sites croissant" width="100%" ></a></p>
+                    		<p class="reponse"><a href="illustrations/tous/8_2_counties_join_heritage_table.png" ><img src="illustrations/tous/8_2_counties_join_heritage_table.png" alt="Extrait de la table attributaire de la couche résultat, classé par nombre de sites croissant" width="600" ></a></p>
                     	</div>
     			    </div>
     				
@@ -170,7 +170,7 @@
     					<p>Boîte à outils de traitement &#8594; Outils généraux pour les vecteurs &#8594; <b>Joindre les attributs par localisation (résumé)</b></p>
     					<figure>
     						<a href="illustrations/tous/8_2_join_resume_fenetre_2.png" >
-    							<img src="illustrations/tous/8_2_join_resume_fenetre_2.png" alt="Fenêtre de l'outil de jointure spatiale (résumé)" width="100%" >
+    							<img src="illustrations/tous/8_2_join_resume_fenetre_2.png" alt="Fenêtre de l'outil de jointure spatiale (résumé)" width="600" >
     						</a>
     					</figure>
     					<ul>
@@ -181,7 +181,7 @@
     					   <li class="espace">Résumés à calculer : cliquez sur le bouton <b>...</b> à droite, et cochez <b>somme</b>, <b>moyenne</b> et <b>médiane</b> pour calculer ces valeurs pour chaque département.</li>
     					   <figure>
     						<a href="illustrations/tous/8_2_choix_resumes.png" >
-    							<img src="illustrations/tous/8_2_choix_resumes.png" alt="Fenêtre de choix des opérations d'agrégation : sum, moyenne et median sont cochés" width="80%" >
+    							<img src="illustrations/tous/8_2_choix_resumes.png" alt="Fenêtre de choix des opérations d'agrégation : sum, moyenne et median sont cochés" width="320" >
     						</a>
     					   </figure>
     					   <li class="espace">Couche issue de la jointure spatiale : laissez la valeur par défaut pour créer une couche temporaire</li>
@@ -192,7 +192,7 @@
                     		<input type="checkbox" id="faq-3">
                     		<p><label for="faq-3">Quel est le département le moins peuplé&nbsp;?</label></p>
                     		<p class="reponse">En cliquant sur la colonne <b>POPULATION_sum</b>, on peut classer les départements en fonction de leur population. La Lozère est le département le moins peuplé avec une population de 76422 habitants.</p>
-                    		<p class="reponse"><a href="illustrations/tous/8_2_depts_pop_communes_table.png" ><img src="illustrations/tous/8_2_depts_pop_communes_table.png" alt="Extrait de la table attributaire de la couche résultat, du moins peuplé au plus peuplé" width="100%" ></a></p>
+                    		<p class="reponse"><a href="illustrations/tous/8_2_depts_pop_communes_table.png" ><img src="illustrations/tous/8_2_depts_pop_communes_table.png" alt="Extrait de la table attributaire de la couche résultat, du moins peuplé au plus peuplé" width="600" ></a></p>
                     	</div>
     				</div>
     				

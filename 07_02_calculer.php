@@ -70,7 +70,7 @@
 					<div class="manip">
 						<figure>
 							<a href="illustrations/tous/7_2_calc_fenetre_surface.png">
-								<img src="illustrations/tous/7_2_calc_fenetre_surface.png" alt="Fenêtre de la calculatrice de champs, pour calculer la surface d'une commune en km2" width="100%" >
+								<img src="illustrations/tous/7_2_calc_fenetre_surface.png" alt="Fenêtre de la calculatrice de champs, pour calculer la surface d'une commune en km2" width="600" >
 							</a>
 						</figure>
 						<ul>
@@ -99,7 +99,7 @@
 						<p>Sélectionnez une commune, mesurez son aire en faisant un clic droit sur le dernier sommet pour terminer, choisissez dans la table l'option <b>Ne montrer que les entités sélectionnées</b> et comparer l'aire que vous avez mesuré et l'aire du champ SURF_KM2.</p>
 						<figure>
 							<a href="illustrations/tous/7_2_verif_surf.png" >
-								<img src="illustrations/tous/7_2_verif_surf.png" alt="Vérification de la surface au moyen de l'outil mesurer une aire" width="100%" >
+								<img src="illustrations/tous/7_2_verif_surf.png" alt="Vérification de la surface au moyen de l'outil mesurer une aire" width="600" >
 							</a>
 						</figure>
 						<p>Les deux aires devraient être sensiblement égales.</p>
@@ -112,7 +112,7 @@
 					   <p>Cette commune prend une transparence rouge avec une bordure rouge, et les informations relatives à cette entité apparaissent dans le panneau <b>Résultats de l'identification</b>. On peut y lire les données de la table attributaire pour cette commune, mais également des informations <b>dérivées</b> liées à sa géométrie telles que son périmètre, sa surface...</p>
 					   <figure>
 							<a href="illustrations/tous/7_2_verif_surf_identifier.png" >
-								<img src="illustrations/tous/7_2_verif_surf_identifier.png" alt="Vérification de la surface au moyen de l'outil d'identification" width="100%" >
+								<img src="illustrations/tous/7_2_verif_surf_identifier.png" alt="Vérification de la surface au moyen de l'outil d'identification" width="600" >
 							</a>
 						</figure>
 					   <p>Comparez la surface du champ SURF_KM2 et la surface indiquée dans les résultats de l'identification (rubrique Dérivé). Les deux aires devraient être sensiblement égales (attention à convertir les unités).</p>
@@ -151,7 +151,7 @@
 						</ul>
 						<figure>
 						  <a href="illustrations/tous/7_2_densite_table.png" >
-							<img src="illustrations/tous/7_2_densite_table.png" alt="Table attributaire avec les 3 colonnes population, surface et densité" width="80%" >
+							<img src="illustrations/tous/7_2_densite_table.png" alt="Table attributaire avec les 3 colonnes population, surface et densité" width="230" >
 						  </a>
 						</figure>
 					</div>
@@ -179,7 +179,7 @@
 						</ul>
 						<figure>
 						  <a href="illustrations/tous/7_2_table_codeinsee.png" >
-							<img src="illustrations/tous/7_2_table_codeinsee.png" alt="extrait de la table avec les champs INSEE_CM et CODE_COM" width="80%" >
+							<img src="illustrations/tous/7_2_table_codeinsee.png" alt="extrait de la table avec les champs INSEE_CM et CODE_COM" width="200" >
 						  </a>
 						</figure>
 					</div>
@@ -196,7 +196,7 @@
 				        <p>Dans la rubrique <b>Conditions</b> de la liste des opérateurs, cliquez sur <b>CASE</b> et lisez l'aide associée à cette fonction dans la partie droite de la fenêtre.</p>
 				        <figure>
 						  <a href="illustrations/tous/7_2_aide_case.png" >
-							<img src="illustrations/tous/7_2_aide_case.png" alt="CASE et la rubrique d'aide associée" width="80%" >
+							<img src="illustrations/tous/7_2_aide_case.png" alt="CASE et la rubrique d'aide associée" width="500" >
 						  </a>
 						</figure>
 						<p>Cette fonction commence par <b>CASE</b> et se termine par <b>END</b>. Entre les deux, on trouve une série de clauses avec les 2 mots-clés <b>WHEN</b>, pour définir un critère, et <b>THEN</b>, pour définir comment sera calculée la valeur si le critère est rempli. Nous n'utiliserons pas <b>ELSE</b> ici.</p>
@@ -216,13 +216,13 @@
                     	<p>Au final, la calculatrice doit être paramétrée comme suit :</p>
                     	<figure>
 						  <a href="illustrations/tous/7_2_calc_case.png" >
-							<img src="illustrations/tous/7_2_calc_case.png" alt="calculatrice de champ avec une expression utilisant CASE" width="100%" >
+							<img src="illustrations/tous/7_2_calc_case.png" alt="calculatrice de champ avec une expression utilisant CASE" width="600" >
 						  </a>
 						</figure>
 						<p>Et le résultat :</p>
 						<figure>
 						  <a href="illustrations/tous/7_2_table_nomdep.png" >
-							<img src="illustrations/tous/7_2_table_nomdep.png" alt="Extrait de la table avec le code et le nom du département" width="80%" >
+							<img src="illustrations/tous/7_2_table_nomdep.png" alt="Extrait de la table avec le code et le nom du département" width="200" >
 						  </a>
 						</figure>
 

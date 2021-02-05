@@ -56,13 +56,13 @@
 				    <p>
 				        <a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; Analyse raster &#8594; Prélever des valeurs raster
                         	<span>
-                        		<img src="illustrations/tous/9_3_prelev_raster_emplacement.png" alt="Emplacement de l'outil Prélever des valeurs raster dans la boîte à outils" width="80%" >
+                        		<img src="illustrations/tous/9_3_prelev_raster_emplacement.png" alt="Emplacement de l'outil Prélever des valeurs raster dans la boîte à outils" width="400" >
                         	</span>
                         </a>
 				    </p>
 				    <figure>
 						<a href="illustrations/tous/9_3_prelev_raster_fenetre.png" >
-							<img src="illustrations/tous/9_3_prelev_raster_fenetre.png" alt="Fenêtre de l'outil de prélèvement des valeurs raster" width="100%" >
+							<img src="illustrations/tous/9_3_prelev_raster_fenetre.png" alt="Fenêtre de l'outil de prélèvement des valeurs raster" width="600" >
 						</a>
 					</figure>
 					<ul>
@@ -80,7 +80,7 @@
 					<p>Ouvrez sa table attributaire pour le vérifier : une colonne <b>elev_1</b> a été ajoutée, où l'élévation de chaque point est renseignée.</p>
 					 <figure>
 						<a href="illustrations/tous/9_3_table.png" >
-							<img src="illustrations/tous/9_3_table.png" alt="Table attributaire de la couche créée, avec la colonne elev_1" width="90%" >
+							<img src="illustrations/tous/9_3_table.png" alt="Table attributaire de la couche créée, avec la colonne elev_1" width="400" >
 						</a>
 					</figure>
 				</div>
