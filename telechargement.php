@@ -35,21 +35,21 @@
 				<p><a href="donnees/TutoQGIS_10_Representation.zip">Données de la partie X : représentation et mise en page</a></p>
 				<p><a href="donnees/TutoQGIS_11_Automatisation.zip">Données de la partie XI : automatisation de traitements</a></p>
 				
-			<!--<h2>Téléchargement du tutoriel au format PDF</h2>
+			<h2>Téléchargement du tutoriel au format PDF</h2>
 				<p>Vous pouvez télécharger ici des PDF correspondant à la version en ligne du tutoriel QGIS. Ces PDF ont été générés grâce à l'outil <a class="ext" target="_blank" href="http://wkhtmltopdf.org/">wkhtmltopdf</a>.</p>
 				<p>Attention, ces PDF étant des exports de la version en ligne, les mises à jour sont moins régulières et toutes les fonctionnalités ne seront pas affichées.</p>
 				<p><a href="exports_pdf/tutoqgis.pdf">Tout le tutoriel au format PDF</a></p>
-				<p><a href="exports_pdf/tuto01.pdf">PDF de la partie I : prise en main</a></p>
-				<p><a href="exports_pdf/tuto02.pdf">PDF de la partie II : géodésie</a></p>
-				<p><a href="exports_pdf/tuto03.pdf">PDF de la partie III : recherche et ajout de données</a></p>
-				<p><a href="exports_pdf/tuto04.pdf">PDF de la partie IV : géoréférencement</a></p>
-				<p><a href="exports_pdf/tuto05.pdf">PDF de la partie V : numérisation</a></p>
-				<p><a href="exports_pdf/tuto06.pdf">PDF de la partie VI : requêtes</a> </p>
-				<p><a href="exports_pdf/tuto07.pdf">PDF de la partie VII : calcul de champs</a></p>
-				<p><a href="exports_pdf/tuto08.pdf">PDF de la partie VIII : jointures</a> </p>
-				<p><a href="exports_pdf/tuto09.pdf">PDF de la partie IX : analyse spatiale</a></p>
-				<p><a href="exports_pdf/tuto10.pdf">PDF de la partie X : représentation et mise en page</a></p>
-				<p><a href="exports_pdf/tuto11.pdf">PDF de la partie XI : automatisation de traitements</a></p>-->
+				<p><a href="exports_pdf/tutoqgis_01_priseenmain.pdf">PDF de la partie I : prise en main</a></p>
+				<p><a href="exports_pdf/tutoqgis_02_geodesie.pdf">PDF de la partie II : géodésie</a></p>
+				<p><a href="exports_pdf/tutoqgis_03_recherche_donnees.pdf">PDF de la partie III : recherche et ajout de données</a></p>
+				<p><a href="exports_pdf/tutoqgis_04_georeferencement.pdf">PDF de la partie IV : géoréférencement</a></p>
+				<p><a href="exports_pdf/tutoqgis_05_numerisation.pdf">PDF de la partie V : numérisation</a></p>
+				<p><a href="exports_pdf/tutoqgis_06_requetes.pdf">PDF de la partie VI : requêtes</a> </p>
+				<p><a href="exports_pdf/tutoqgis_07_calcul_champs.pdf">PDF de la partie VII : calcul de champs</a></p>
+				<p><a href="exports_pdf/tutoqgis_08_jointures.pdf">PDF de la partie VIII : jointures</a> </p>
+				<p><a href="exports_pdf/tutoqgis_09_analyse_spatiale.pdf">PDF de la partie IX : analyse spatiale</a></p>
+				<p><a href="exports_pdf/tutoqgis_10_miseenpage.pdf">PDF de la partie X : représentation et mise en page</a></p>
+				<p><a href="exports_pdf/tutoqgis_11_automatisation.pdf">PDF de la partie XI : automatisation de traitements</a></p>
 
 			    </br>
 			    

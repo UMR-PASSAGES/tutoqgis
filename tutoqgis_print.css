@@ -55,7 +55,7 @@ hov         #1D3437     hover colour
 	.main {	/* la zone de texte */
 		float: left;
 		position: relative;
-		width:665px;
+		width:100%;
 		padding-left:20px;
 		padding-right:20px;
 		padding-bottom: 0;
@@ -63,6 +63,7 @@ hov         #1D3437     hover colour
 
 	/* les menus horizontaux */
 	#wrapdanswrap {	/* le contenant global des menus horizontaux */
+	    display: none;
 		padding:0px 0px;
 		background:#FFFFFF url(illustrations/tous/bandeau.png);
 	}
@@ -106,6 +107,7 @@ hov         #1D3437     hover colour
 	
 	/* les menus sur la droite (liste des chapitres) */
 	.sidebar {
+	    display: none;
 		float: left;
 		position: relative;
 		width:275px;
@@ -175,6 +177,9 @@ hov         #1D3437     hover colour
 		box-shadow: none;
 		-webkit-box-shadow: none;
    	    box-shadow: none;
+	}
+	.table_logos {
+	    display: none;
 	}
 	img.logo {
 		padding-top: 10px;
