@@ -17,9 +17,9 @@
 					<li><a href="#IX21">Préparation des données : découpage d'un raster</a></li>
 					<li><a href="#IX22">Explorer les données en modifiant le mode de représentation</a>
 					   <ul class="listesoustitres">
-					       <li><a href="#IX22a">Répartition des valeurs : histogramme de fréquence</li>
-					       <li><a href="#IX22b">La valeur des pixels sans valeur</li>
-					       <li><a href="#IX22c">Modifier le style pour explorer les données</li>
+					       <li><a href="#IX22a">Répartition des valeurs : histogramme de fréquence</a></li>
+					       <li><a href="#IX22b">La valeur des pixels sans valeur</a></li>
+					       <li><a href="#IX22c">Modifier le style pour explorer les données</a></li>
 					   </ul>
 					</li>
 					<li><a href="#IX23">Manipuler les données : extraction de valeurs</a></li>
@@ -63,12 +63,10 @@
 					</figure>
 					<ul>
 						<li class="espace">Couche source : sélectionnez <em class="data">srtm_21_09</em></li>
-						<li class="espace">Etendue de découpage : cliquez sur le bouton <b>...</b> tout à droite, choisissez <b>Sélectionner l'emprise depuis le canevas</b>. Il faut ensuite dessiner l'emprise à garder, toujours dans l'outil de découpage. Dessinez un rectangle approximatif autour de l'île de la Jamaïque :</li>
-						<figure>
+						<li class="espace">Etendue de découpage : cliquez sur le bouton <b>...</b> tout à droite, choisissez <b>Sélectionner l'emprise depuis le canevas</b>. Il faut ensuite dessiner l'emprise à garder, toujours dans l'outil de découpage. Dessinez un rectangle approximatif autour de l'île de la Jamaïque :
     						<a href="illustrations/tous/9_2_decoupe_jam.png" >
     							<img src="illustrations/tous/9_2_decoupe_jam.png" alt="Menu Raster, Extraction, Découper" width="400" >
-    						</a>
-    					</figure>
+    						</a></li>
 						<li class="espace">Découpé (étendue)&nbsp;: cliquez sur le bouton à droite <b>...</b> et choisissez où la nouvelle couche sera créée, et son nom : <em class="data">srtm_jamaique</em></li>
 						<li class="espace">Cliquez ensuite sur <b>Exécuter</b>.</li>
 					</ul>
@@ -96,7 +94,7 @@
 			    
 			    <h4><a class="titre" id="IX22a">Répartition des valeurs : histogramme de fréquence</a></h4>
 			    
-			        <p>Une manière simple d'avoir un aperçu du contenu des données est de visualiser l'histogramme de fréquence des valeurs des pixels. Vous pourrez ainsi voir d'un coup d'&#156;il la répartition des valeurs d'élévation.</p>
+			        <p>Une manière simple d'avoir un aperçu du contenu des données est de visualiser l'histogramme de fréquence des valeurs des pixels. Vous pourrez ainsi voir d'un coup d'&#339;il la répartition des valeurs d'élévation.</p>
 			        
 			        <div class="manip">
 			            <p><b>Propriétés de la couche <em class="data">srtm_jamaique</em> &#8594; rubrique Histogramme</b> : cliquez sur le bouton <b>Calculer l'histogramme</b>.</p>
@@ -107,7 +105,7 @@
     					</figure>
     				</div>
     				<p>L'axe horizontal représente les valeurs de pixels, donc ici d'élévation. L'axe vertical représente le nombre de pixels ayant une valeur donnée. Il est également possible de lire les valeurs minimale et maximale sou l'histogramme.</p>
-    				<p>On peut voir d'un seul coup d'&#156;il que beaucoup de pixels ont une valeur inférieure à 100 mètres d'élévation.</p>
+    				<p>On peut voir d'un seul coup d'&#339;il que beaucoup de pixels ont une valeur inférieure à 100 mètres d'élévation.</p>
     				<div class="manip">
     					<p>Il est possible de zoomer sur le graphique en dessinant un rectangle, ou bien en modifiant les valeurs min et max. Un clic droit permet de revenir à la vue initiale.</p>
 			        </div>
@@ -215,16 +213,16 @@
 			    <div class="manip">
 			        <ul>
 			            <li class="espace">Dans la partie <b>Couches</b> en haut à gauche, double-cliquez sur <em class="data">srtm_jamaique</em> pour faire apparaître le nom de la couche dans la partie <b>Expression</b> en-dessous</li>
-			            <li class="espace">Complétez l'expression en rajoutant à la main <b>< 100</b> : l'expression complète est donc <b>"srtm_jamaique@1" < 100</b></li>
+			            <li class="espace">Complétez l'expression en rajoutant à la main <b>&lt; 100</b> : l'expression complète est donc <b>"srtm_jamaique@1" &lt; 100</b></li>
 			            <li class="espace">Dans la partie <b>Reference Layer(s)</b>, cliquez sur le bouton <b>...</b> à doite et sélectionnez la couche <em class="data">srtm_jamaique</em>, pour que le raster créé ait la même emprise, résolution et CRS</li>
 			        </ul>
 			        <p>Exécutez... Le nouveau raster (temporaire) est ajouté.</p>
 			    </div>
 			    
-			    <p>Comment l'expression <b>"srtm_jamaique@1" < 100</b> nous pemet-elle d'obtenir le résultat souhaité&nbsp;? Cette expression est évaluée pour chaque pixel, le résultat est soit vrai (1) soit faux (0).</p>
+			    <p>Comment l'expression <b>"srtm_jamaique@1" &lt; 100</b> nous pemet-elle d'obtenir le résultat souhaité&nbsp;? Cette expression est évaluée pour chaque pixel, le résultat est soit vrai (1) soit faux (0).</p>
 			    
 			    <div class="manip">
-			        <p>Contrairement à ce à quoi on aurait pu s'attendre, on peut voir en noir les valeurs supérieure à 100 mètres. Cependant, en interrogeant le raster avec l'outil d'identification on peut voir que les pixels qui avaient une élévation < 100 mètres ont maintenant une valeur de 1, et les autres 0.</p>
+			        <p>Contrairement à ce à quoi on aurait pu s'attendre, on peut voir en noir les valeurs supérieure à 100 mètres. Cependant, en interrogeant le raster avec l'outil d'identification on peut voir que les pixels qui avaient une élévation &lt; 100 mètres ont maintenant une valeur de 1, et les autres 0.</p>
 			        <p>Il est facile de changer le mode de représentation, par exemple dans les <b>propriétés &#8594; Symbologie &#8594; Dégradé de couleur</b> : choisir <b>Blanc vers noir</b> au lieu de Noir vers blanc.</p>
 			        <figure>
 						<a href="illustrations/tous/9_2_blancversnoir.png" >
@@ -331,7 +329,7 @@
     							</a>
     						</figure>
     						<ul>
-    							<li class="espace"Couche source : sélectionnez <em class="data">srtm_jamaique</em> dans la liste</li>
+    							<li class="espace">Couche source : sélectionnez <em class="data">srtm_jamaique</em> dans la liste</li>
     							<li class="espace">SCR cible : cliquez sur le bouton à droite pour rechercher le SCR <b>JAD2001 code EPSG:3448</b></li>
     							<li class="espace">Valeur Nodata : tapez la <a href="09_02_raster.php#IX22b">valeur des pixels sans données</a> : <b>-32768</b></li>
     							<li class="espace">Laissez tous les autres paramètres par défaut, cliquez sur <b>Exécuter</b>.</li>

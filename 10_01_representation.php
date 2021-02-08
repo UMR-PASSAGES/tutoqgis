@@ -59,7 +59,7 @@
 					<p>Les cartes en symbole proportionnels permettent la représentation de quantités ou d'effectifs par des symboles, généralement des cercles. La surface des symboles sera proportionnelle à la quantité ou l'effectif.</p>
 					<figure>
 						<a href="https://neocarto.hypotheses.org/5064" >
-							<img src="illustrations/tous/10_01_exemple_cercleprop.png" alt="Exemple d'une carte en cercles proportionnels sur les ouvriers et cadres en Occitanie" width="600px">
+							<img src="illustrations/tous/10_01_exemple_cercleprop.png" alt="Exemple d'une carte en cercles proportionnels sur les ouvriers et cadres en Occitanie" width="600">
 						</a>
 						<figcaption>Exemple d'une carte en cercles proportionnels réalisée par Nicolas Lambert et Ronan Ysebaert (2018). Source : <a href="https://neocarto.hypotheses.org/5064">carnet (néo)cartographique</a>.</figcaption>
 					</figure>
@@ -151,7 +151,7 @@
 
                     <h4><a class="titre" id="X11c">Surface, rayon, Flannery... Pour en savoir plus sur les différentes méthodes</a></h4>
 
-                        <p>Pourquoi faire varier la surface des cercles et non leur rayon&nbsp;? Tout simplement parce qu'ainsi les variations de forme vues par l'&#156;il seront proportionnelles aux variations de la variable représentée. En faisant varier le rayon, l'&#156;il verra un écart plus grand entre une valeur moyenne et une valeur élevée qu'entre une valeur faible et une valeur moyenne, même si la différence est la même.</p>
+                        <p>Pourquoi faire varier la surface des cercles et non leur rayon&nbsp;? Tout simplement parce qu'ainsi les variations de forme vues par l'&#339;il seront proportionnelles aux variations de la variable représentée. En faisant varier le rayon, l'&#339;il verra un écart plus grand entre une valeur moyenne et une valeur élevée qu'entre une valeur faible et une valeur moyenne, même si la différence est la même.</p>
                         <p>La méthode de <a class="ext" target="_blank" href="http://wiki.gis.com/wiki/index.php/Proportional_symbol_map#Apparent_Magnitude_.28Flannery.29_Scaling">Flannery</a> est une technique utilisée pour compenser le fait que, même si l'oeil lit mieux les variations de surface que de taille, il ne les interprète cependant pas toujours exactement. Même si cette méthode est intéressante, étant donné que la méthode la plus utilisée en cartographie est de faire varier la surface, il n'est pas forcément recommandé de l'utiliser, à moins de bien le préciser sur votre carte.</p>
                         <p>La méthode exponentielle permet de surreprésenter les valeurs extrêmes (en ajustant l'exposant) et peut être utile à des fins d'exploration.</p>
                         <figure>
@@ -382,7 +382,7 @@
     				        
     				        <div class="manip">
     				            <p>Toujours dans la fenêtre des propriétés, rendez-vous dans l'onglet <b>Source</b> et cliquez sur le bouton <b>Constructeur de requête</b> tout en bas de la fenêtre.</p>
-        						<p>Filtrez uniquement les communes de densité < 300 habitants/km&#178;  avec la requête <b>"densite" < 300</b>. Cliquez ensuite sur <b>OK</b>.</p>
+        						<p>Filtrez uniquement les communes de densité &lt; 300 habitants/km&#178;  avec la requête <b>"densite" &lt; 300</b>. Cliquez ensuite sur <b>OK</b>.</p>
         						<p>Retournez dans la rubrique <b>Symbologie</b>, onglet <b>Classes</b> et cliquez sur le bouton <b>Classer</b> pour mettre à jour les classes. Dans l'onglet <b>Histogramme</b>, cliquez sur <b>Charger les valeurs</b> pour mettre à jour l'histogramme.</p>
         						<figure>
         							<a href="illustrations/tous/10_01_histogramme_filtre.png" >

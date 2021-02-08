@@ -184,7 +184,7 @@
 						<img src="illustrations/tous/3_1_srtm_kenya.png" alt="superposition des cours d'eau, des régions et du SRTM" width="500" >
 					</a>
 				</figure>
-				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les autres données du tutoriel.</a></em>.</p>
+				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les autres données du tutoriel.</a>.</p>
 			</div>
 			
 			<h3><a class="titre" id="III13">Et tout le reste ?</a></h3>

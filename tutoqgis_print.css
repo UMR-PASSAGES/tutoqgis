@@ -243,17 +243,18 @@ hov         #1D3437     hover colour
 	/* Pour afficher une image quand on passe la souris sur un texte (capture d'écran) */
 	/* quand on veut que l'image s'affiche au-dessous du texte */
 	.thumbnail_bottom{
-		color: /*hov*/#1D3437;
-		border-bottom: 1px dotted;
+		color: #323232;
 		position: relative;
 		z-index: 0;
 	}
 	.thumbnail_bottom:hover{
+	    display: none;
 	    color: /*hov*/#1D3437;
 		background-color: transparent;
 		z-index: 50;
 	}
 	.thumbnail_bottom span{ /*CSS for enlarged image when invisible (without hover)*/
+	    display: none;
 		position: absolute;
 		background-color: white;
 		padding: 0;
@@ -265,27 +266,32 @@ hov         #1D3437     hover colour
 		text-decoration: none;
 	}
 	.thumbnail_bottom span img{ /*CSS for enlarged image*/
+	    display: none;
 		border-width: 0;
 		padding: 5px;
 	}
 	.thumbnail_bottom:hover span{ /*CSS for enlarged image on hover*/
+	    display: none;
 		visibility: visible;
 		top: 20px;
 		left: 0; /*position where enlarged image should offset horizontally */	
 	}
 	/* quand on veut que l'image s'affiche au-dessus du texte (bas de page) */
 	.thumbnail_top{
+	    display: none;
 		color: /*hov*/#1D3437;
 		border-bottom: 1px dotted;
 		position: relative;
 		z-index: 0;
 	}
 	.thumbnail_top:hover{
+	    display: none;
 	    color: /*hov*/#1D3437;
 		background-color: transparent;
 		z-index: 50;
 	}
 	.thumbnail_top span{ /*CSS for enlarged image when invisible (without hover)*/
+	    display: none;
 		position: absolute;
 		background-color: white;
 		padding: 0;
@@ -297,10 +303,12 @@ hov         #1D3437     hover colour
 		text-decoration: none;
 	}
 	.thumbnail_top span img{ /*CSS for enlarged image*/
+	    display: none;
 		border-width: 0;
 		padding: 0;
 	}
 	.thumbnail_top:hover span{ /*CSS for enlarged image on hover*/
+	    display: none;
 		visibility: visible;
 		bottom: 20px;
 		left: 0; /*position where enlarged image should offset horizontally */	
@@ -661,9 +669,10 @@ hov         #1D3437     hover colour
 		margin-top: -7px
 	}
 	p.reponse {
-		max-height: 0;
-		overflow: hidden;
+		/*max-height: 0;*/
+		/*overflow: hidden;*/
 		padding-left: 5px;
+		padding-bottom: 10px;
 		font-style: italic;
 	}
 	input[type=checkbox]:checked ~ p {

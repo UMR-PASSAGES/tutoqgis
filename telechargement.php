@@ -51,7 +51,7 @@
 				<p><a href="exports_pdf/tutoqgis_10_miseenpage.pdf">PDF de la partie X : représentation et mise en page</a></p>
 				<p><a href="exports_pdf/tutoqgis_11_automatisation.pdf">PDF de la partie XI : automatisation de traitements</a></p>
 
-			    </br>
+			    <br>
 			    
 		</div>
 		<div class="sidebar">

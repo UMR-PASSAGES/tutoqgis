@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -14,9 +12,9 @@
    height="1628.1085"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="8_2_principe_jointure_spatiale_2.svg"
-   inkscape:export-filename="/run/user/1000/gvfs/smb-share:server=et,share=tutoqgis/2_0_Dufour_Ouebe/illustrations/tous/7_2_principe_jointure_spatiale.png"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   sodipodi:docname="8_2_principe_jointure_spatiale.svg"
+   inkscape:export-filename="/home/pierson/Travail/projets/tutoqgis/illustrations/tous/8_2_principe_jointure_spatiale.png"
    inkscape:export-xdpi="100"
    inkscape:export-ydpi="100">
   <defs
@@ -30,7 +28,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
      inkscape:cx="496.25789"
-     inkscape:cy="808.70101"
+     inkscape:cy="390.43466"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,11 +36,12 @@
      fit-margin-left="50"
      fit-margin-right="50"
      fit-margin-bottom="50"
-     inkscape:window-width="1920"
-     inkscape:window-height="1124"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1872"
+     inkscape:window-height="983"
+     inkscape:window-x="48"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -90,42 +89,42 @@
        width="498" />
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="-247.89725"
        y="284.75671"
-       id="text3295"
-       sodipodi:linespacing="125%"><tspan
+       id="text3295"><tspan
          sodipodi:role="line"
          id="tspan3297"
          x="-247.89725"
          y="284.75671"
-         style="font-size:32px">Table attributaire des départements</tspan></text>
+         style="font-size:32px;line-height:1.25">Table attributaire des départements</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="610.05804"
        y="287.88171"
-       id="text3295-5"
-       sodipodi:linespacing="125%"><tspan
+       id="text3295-5"><tspan
          sodipodi:role="line"
          id="tspan3297-5"
          x="610.05804"
-         y="287.88171">Table attributaire des chef-lieux</tspan></text>
+         y="287.88171"
+         style="font-size:32px;line-height:1.25">Table attributaire des chef-lieux</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="-247.69412"
        y="713.80304"
-       id="text3320"
-       sodipodi:linespacing="125%"><tspan
+       id="text3320"><tspan
          sodipodi:role="line"
          x="-247.69412"
          y="713.80304"
-         id="tspan4335">Jointure spatiale des chef-lieux</tspan><tspan
+         id="tspan4335"
+         style="font-size:32px;line-height:1.25">Jointure spatiale des chef-lieux</tspan><tspan
          sodipodi:role="line"
          x="-247.69412"
          y="753.80304"
-         id="tspan4339">aux départements : couche résultat</tspan></text>
+         id="tspan4339"
+         style="font-size:32px;line-height:1.25">aux départements : couche résultat</tspan></text>
     <image
        y="-234.70227"
        x="343.91553"
@@ -149,19 +148,20 @@
        y="303.70969" />
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Arial Bold"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="-248.16287"
        y="-97.217712"
-       id="text3320-1"
-       sodipodi:linespacing="125%"><tspan
+       id="text3320-1"><tspan
          sodipodi:role="line"
          id="tspan3322-0"
          x="-248.16287"
-         y="-97.217712">Couches de départ :</tspan><tspan
+         y="-97.217712"
+         style="font-size:32px;line-height:1.25">Couches de départ :</tspan><tspan
          sodipodi:role="line"
          x="-248.16287"
          y="-57.217712"
-         id="tspan4333">départements et chef-lieux</tspan></text>
+         id="tspan4333"
+         style="font-size:32px;line-height:1.25">départements et chef-lieux</tspan></text>
     <rect
        style="fill:#000000;fill-opacity:0.19607843;stroke:#8d8d8d;stroke-width:3.44368577;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect3480-3"

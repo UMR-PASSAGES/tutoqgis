@@ -26,13 +26,11 @@
 			<p>Pour numériser des polygones, les choses se compliquent un peu... Nous n'allons pas ici numériser toutes les zones de l'île, mais passer en revue quelques techniques d'édition de polygones au moyen de quelques exemples.</p>
 			
 			<p>Il s'agira ici de numériser des zones en fonction de leur type. Comme l'indique la légende, certaines zones peuvent avoir 2 types différents, par exemple réserve forestière et réserve fédérale. La couche que nous allons créer contiendra 2 champs, type1 et type2</p>
-			<center>
 			<figure>
 			    <a href="illustrations/tous/5_5_oahu_legende.png" >
 					<img src="illustrations/tous/5_5_oahu_legende.png" alt="légende de la carte de l'île d'Oahu" width="450">
 				</a>
 			</figure>
-			</center>
 			<p>Vous voyez ici la carte originale à gauche, et avec superposée la couche de polygones à droite.</p>
 			<figure>
 				<a href="illustrations/tous/5_5_oahu_avant.png" >

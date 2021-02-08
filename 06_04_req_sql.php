@@ -102,13 +102,12 @@
                         		<img src="illustrations/tous/6_4_dbmanager_charger.png" alt="Charger le résultat d'un requête dans QGIS" width="600">
                         	</a>
                         </figure>
-				        <p>En bas de le fenêtre du gestionnaire, cochez la case <b>Charger en tant que nouvelle couche</b> : une nouvelle rubrique apparaît :
-				            <ul>
-				                <li>Vérifiez que la colonne de géométrie <b>geometry</b> soit bien sélectionnée</li>
-				                <li>Tapez éventuellement un nom pour la nouvelle couche (par défaut, elle se nommera QueryLayer)</li>
-				                <li>Et cliquez sur le bouton <b>Charger</b> pour voir le résultat dans QGIS :</li>
-				            </ul>
-				        </p>
+				        <p>En bas de le fenêtre du gestionnaire, cochez la case <b>Charger en tant que nouvelle couche</b> : une nouvelle rubrique apparaît :</p>
+			            <ul>
+			                <li>Vérifiez que la colonne de géométrie <b>geometry</b> soit bien sélectionnée</li>
+			                <li>Tapez éventuellement un nom pour la nouvelle couche (par défaut, elle se nommera QueryLayer)</li>
+			                <li>Et cliquez sur le bouton <b>Charger</b> pour voir le résultat dans QGIS :</li>
+			            </ul>
 				        <figure>
                         	<a href="illustrations/tous/6_4_res_selection.png" >
                         		<img src="illustrations/tous/6_4_res_selection.png" alt="Résultat de la requête (département du Morbihan) chargé dans QGIS" width="400">
@@ -130,12 +129,12 @@
 		        <p class="code">WHERE "NOM_DEPT" = 'MORBIHAN'</p>
 		        <p>applique un critère à la requête : seules seront sélectionnées les lignes répondant à ce critère, c'est-à-dire dont la valeur pour le champ NOM_DEPT est égale à &#171;&nbsp;MORBIHAN&nbsp;&#187;.</p>
 			    <p>Comparons avec <a href="06_01_req_attrib.php#VI11">la même requête dans la fenêtre de requête attributaire</a>, où seul le critère <b>"NOM_DEPT" = 'MORBIHAN'</b> est nécessaire, le début de la requête étant &#171;&nbsp;sous-entendu&nbsp;&#187;.</p>
-			    <p>Par rapport à une requête attributaire, une requête SQL nous offre donc la possibilité :
-			        <ul>
-			            <li>de choisir les colonnes qui nous intéressent</li>
-			            <li>d'effectuer des requêtes sur la géométrie</li>
-			            <li>de croiser plusieurs tables</li>
-			        </ul></p>  
+			    <p>Par rapport à une requête attributaire, une requête SQL nous offre donc la possibilité :</p>
+		        <ul>
+		            <li>de choisir les colonnes qui nous intéressent</li>
+		            <li>d'effectuer des requêtes sur la géométrie</li>
+		            <li>de croiser plusieurs tables</li>
+		        </ul>
 			        
 			    <h4><a class="titre" id="VI43a">Choisir les colonnes</a></h4>
 			         <p>Pour que le résultat de la requête ne comporte que les colonnes voulues, il suffit de les lister dans la requête.</p>
@@ -243,7 +242,7 @@
 			
 			 <p>Nous avons vu comment écrire une requête SQL à partir du gestionnaire de bases de données. Il existe une autre interface possible, en passant par le gestionnaire des sources de données.</p>
 			 <div class="manip">
-			     <p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône du gestionnaire de sources de données" >Ouvrez le gestionnaire de source de données, rubrique <b>Couche virtuelle</b> :</p> 
+			     <p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône du gestionnaire de sources de données" >Ouvrez le gestionnaire de source de données, rubrique <b>Couche virtuelle</b> :</p>
                     <figure>
                     	<a href="illustrations/tous/6_4_ajout_vl_fenetre.png" >
                     		<img src="illustrations/tous/6_4_ajout_vl_fenetre.png" alt="Fenêtre d'ajout/édition d'une couche virtuelle avec un exemple de requête" width="600">
@@ -256,7 +255,6 @@
                         <li class="espace"><b>Test :</b> ce bouton permet de détecter les éventuelles erreurs présentes dans la requête</li>
                         <li class="espace"><b>Ajouter :</b> exécute la requête et ajoute le résultat dans QGIS.</li>
                     </ul>
-                </p>
                 <p>Vous devriez obtenir une couche temporaire similaire à celle créée précédemment.</p>
 			 </div>
 			 

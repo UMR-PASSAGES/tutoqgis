@@ -118,19 +118,16 @@
 						<p>Pour <b>zoomer et dézoomer</b>, 3 méthodes :</p>
 						<ul>
 						    <li class="espace">pour un zoom &#171;&nbsp;à la louche&nbsp;&#187;, utilisez la <b>molette</b> de la souris après avoir sélectionné l'outil <b>Déplacer le contenu de l'objet</b></li>
-						    <li class="espace"><img class="icone" src="illustrations/tous/10_02_selection_deplace_icone.png" alt="Icône de l'outil de sélection du mode mise en page" >pour un zoom plus précis : sélectionnez la carte au moyen de l'<b>outil de sélection</b>, puis <b>modifiez l'échelle</b> dans l'onglet Propriétés de l'objet &#8594; Propriétés principales</li>
-        						<figure>
-        							<a href="illustrations/tous/10_02_zoom.png" >
-        								<img src="illustrations/tous/10_02_zoom.png" alt="Fixer l'échelle de la carte" width="450">
-        							</a>
-        						</figure>
-        					<li class="espace">Synchroniser la carte de la mise en page avec celle de la fenêtre principale de QGIS : cliquez sur la 2ème icône dans la barre d'outils en haut des propriétés de l'objet&nbsp;:</li>
-        					   <figure>
-        							<a href="illustrations/tous/10_02_zoom2.png" >
-        								<img src="illustrations/tous/10_02_zoom2.png" alt="Fixer l'échelle de la carte sur celle de la fenêtre QGIS" width="270">
-        							</a>
-        						</figure>
-        						<p>Il est probable que les 2 cartes ne coïncident pas exactement car elles n'ont pas le même rapport hauteur/largeur. Vous pouvez aussi cliquer sur la 4ème icône pour donner à la carte de votre mise en page la même échelle que dans la fenêtre principale QGIS.</p>
+						    <li class="espace"><img class="icone" src="illustrations/tous/10_02_selection_deplace_icone.png" alt="Icône de l'outil de sélection du mode mise en page" >pour un zoom plus précis : sélectionnez la carte au moyen de l'<b>outil de sélection</b>, puis <b>modifiez l'échelle</b> dans l'onglet Propriétés de l'objet &#8594; Propriétés principales
+    							<a href="illustrations/tous/10_02_zoom.png" >
+    								<img src="illustrations/tous/10_02_zoom.png" alt="Fixer l'échelle de la carte" width="450">
+    							</a></li>
+        					<li class="espace">Synchroniser la carte de la mise en page avec celle de la fenêtre principale de QGIS : cliquez sur la 2ème icône dans la barre d'outils en haut des propriétés de l'objet&nbsp;:
+    							<a href="illustrations/tous/10_02_zoom2.png" >
+    								<img src="illustrations/tous/10_02_zoom2.png" alt="Fixer l'échelle de la carte sur celle de la fenêtre QGIS" width="270">
+    							</a></li>
+    					</ul>
+        				<p>Il est probable que les 2 cartes ne coïncident pas exactement car elles n'ont pas le même rapport hauteur/largeur. Vous pouvez aussi cliquer sur la 4ème icône pour donner à la carte de votre mise en page la même échelle que dans la fenêtre principale QGIS.</p>
 						
 					</div>
 					
@@ -370,10 +367,18 @@
 						<ul>
 						  <li class="espace">Dans QGIS, créez autant de groupes que de cartes dans votre mise en page (clic droit dans la liste des couches, Ajouter un groupe), ici un groupe <b>carte principale</b> et un groupe <b>carte de situation</b></li>
 						  <li class="espace">Dans QGIS, mettez dans chacun des groupes les couches que vous voulez voir figurer dans la mise en page correspondante, quitte à dupliquer certaines couches (clic droit, Dupliquer la couche)</li>
-                          <img src="illustrations/tous/10_02_groupes_qgis.png" alt="2 groupes de couches dans QGIS" width="300">
+						 </ul>
+						 <figure>
+                            <img src="illustrations/tous/10_02_groupes_qgis.png" alt="2 groupes de couches dans QGIS" width="300">
+                         </figure>
+                         <ul>
 						  <li class="espace">Toujours dans QGIS, rendez visible uniquement les couches d'un groupe</li>
 						  <li class="espace">Dans le mode mise en page, sélectionnez la carte correspondant au groupe visible dans QGIS, et cochez la case <b>Verrouiller les couches</b> dans la rubrique <b>Couches</b> des propriétés de la carte</li>
+						 </ul>
+						 <figure>
 						  <img src="illustrations/tous/10_02_verrouiller_couches.png" alt="case pour verrouiller les couches dans les propriétés de la carte" width="370">
+						 </figure>
+						 <ul>
 						  <li class="espace">Faites de même pour les autres groupes</li>
 						</ul>
 					</div>

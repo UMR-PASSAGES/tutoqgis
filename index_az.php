@@ -388,8 +388,7 @@
 							<li class="index_02"><a href="04_03_calage_carroyage.php">Point de calage</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV63">ici</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X13">Points aléatoires</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Polynomiale (transformation)</a></li>
-							<li class="index_02"><a href="02_02_coord.php#II22">Projection</a></ul>
-							</li>
+							<li class="index_02"><a href="02_02_coord.php#II22">Projection</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Projective (transformation)</a></li>
 							<li class="index_02"><a href="01_04_projets.php">Projet</a></li>
 							<li class="index_02">Propriétés

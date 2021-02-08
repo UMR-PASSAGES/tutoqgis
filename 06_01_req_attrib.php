@@ -85,7 +85,7 @@
 					<ul>
 						<li class="espace">Choisissez le format <b>GeoPackage</b></li>
 						<li class="espace">Cliquez sur <b>...</b> pour choisir à quel endroit sera sauvegardée la nouvelle couche, et sous quel nom, <em class="data">dept59</em> par exemple</li>
-						<li class="espace">Vérifiez que la case <b>N'enregistrer que les entités sélectionnées</b> soit cochée.</p></li>
+						<li class="espace">Vérifiez que la case <b>N'enregistrer que les entités sélectionnées</b> soit cochée</li>
 						<li class="espace">et cliquez sur <b>OK</b></li>
 					</ul>
 					<p>La nouvelle couche est automatiquement ajoutée à QGIS. Elle ne contient qu'un seul département, celui du Nord.</p>
@@ -214,12 +214,12 @@
 					<div class="question">
 						<input type="checkbox" id="faq-9">
 						<p><label for="faq-9">Les communes dont la population est comprise entre 10 000 et 50 000 habitants inclus ?</label></p>
-						<p class="reponse">"POPULATION" >= 10000 AND  "POPULATION"  <= 50000 : 32 communes sélectionnées</p>
+						<p class="reponse">"POPULATION" >= 10000 AND  "POPULATION"  &lt;= 50000 : 32 communes sélectionnées</p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-10">
 						<p><label for="faq-10">Les communes du département du Morbihan (56), dont le nom contient 'PLOU' ou 'EC', et dont la population est inférieure ou égale à 10 000 habitants ?</label></p>
-						<p class="reponse">"INSEE_DEP" LIKE '56' AND ( "NOM_COM_M" LIKE '%PLOU%' OR "NOM_COM_M" LIKE '%EC%') AND  "POPULATION"  <= 10000 : 12 communes sélectionnées</p>
+						<p class="reponse">"INSEE_DEP" LIKE '56' AND ( "NOM_COM_M" LIKE '%PLOU%' OR "NOM_COM_M" LIKE '%EC%') AND  "POPULATION"  &lt;= 10000 : 12 communes sélectionnées</p>
 					</div>
 				</div>
 				

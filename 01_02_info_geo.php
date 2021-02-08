@@ -63,7 +63,6 @@
     								<li><img class="icone" src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="Icône ajout couche vecteur">Cliquer sur l'icône <b>Ajouter une couche vecteur</b> (il faut activer la barre d'outils <b>Gestion des couches</b> si ce n'est pas déjà fait : menu Vue &#8594; Barres d'outils &#8594; Gestion des couches)</li>
     								<li>utiliser le raccourci clavier <b>ctrl + majuscule + v</b></li>
     							</ul>
-    					   </p>
     					   <p>Dans tous les cas, vous arrivez normalement à cette fenêtre :</p>
     						<figure>
     							<a href="illustrations/tous/1_2_ajout_couche_vecteur_gestionnaire.png" >
@@ -190,7 +189,7 @@
 								La couche est stockée à l'endroit indiqué dans la partie <b>Chemin</b>.
 								 Cet emplacement varie bien sûr en fonction de l'endroit où vous avez enregistré les données du tutoriel.
 							 	<a href="illustrations/tous/1_2_emplacement_couche.png">
-							 		<img src="illustrations/tous/1_2_emplacement_couche.png" alt="Onglet Général des propriétés d'une couche" width="95%">
+							 		<img src="illustrations/tous/1_2_emplacement_couche.png" alt="Onglet Général des propriétés d'une couche" width="600">
 							 	</a>
 								</p>
 							</div>

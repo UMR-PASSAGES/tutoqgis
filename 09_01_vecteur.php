@@ -180,21 +180,21 @@
     						</a>
     					</figure>
 						<ul>
-							<li class="espace">Couche source :</b> il s'agit de la couche autour de laquelle sera créée la ou les zones tampons, donc ici la couche de cours d'eau <em class="data">coursdeau_osm_44_L93</em></li>
+							<li class="espace">Couche source : il s'agit de la couche autour de laquelle sera créée la ou les zones tampons, donc ici la couche de cours d'eau <em class="data">coursdeau_osm_44_L93</em></li>
 							<li class="espace">Entité(s) sélectionnée(s) uniquement : <b>cocher cette case</b> afin de ne créer de zone tampon qu'autour de l'Erdre</li>
 							<li class="espace">Distance tampon : la couche étant projetée en Lambert 93, son unité est le mètre. Choisissez une distance de <b>100 mètres</b>. Le bouton tout à droite permet de faire varier la largeur de la zone en fonction des valeurs d'un champ ou d'une expression&nbsp;; nous ne l'utiliserons pas ici</li>
-							<li class="espace"><b>Regrouper le résultat :</b> cette case permet de fusionner toutes les zones tampon qui seront créées&nbsp;; sinon, une zone tampon est créée par entité de la couche source. Cochez cette case pour cet exercice</li>
-							<figure>
-        						<a href="illustrations/tous/9_1_tampon_nonregroupe.png" >
-        							<img src="illustrations/tous/9_1_tampon_nonregroupe.png" alt="Détail du résultat de la zone tampon sans regrouper" width="200" >
-        						</a>
-        						<a href="illustrations/tous/9_1_tampon_regroupe.png" >
-        							<img src="illustrations/tous/9_1_tampon_regroupe.png" alt="Détail du résultat de la zone tampon en regroupant" width="200" >
-        						</a>
-        						<figcaption>Détail du résultat de la zone tampon : à gauche sans regrouper, à droite en regroupant.</figcaption>
-        					</figure>
+							<li class="espace"><b>Regrouper le résultat :</b> cette case permet de fusionner toutes les zones tampon qui seront créées&nbsp;; sinon, une zone tampon est créée par entité de la couche source. Cochez cette case pour cet exercice (cf. image ci-dessous)</li>
 							<li class="espace">Mis en tampon : cliquez tout à droite sur le bouton <b>... &#8594; Enregistrer vers un fichier...</b> choisir le nom : <em class="data">Erdre_tampon100m.gpkg</em> par exemple et l'emplacement de la couche qui sera créée</li>
 						</ul>
+						<figure>
+    						<a href="illustrations/tous/9_1_tampon_nonregroupe.png" >
+    							<img src="illustrations/tous/9_1_tampon_nonregroupe.png" alt="Détail du résultat de la zone tampon sans regrouper" width="200" >
+    						</a>
+    						<a href="illustrations/tous/9_1_tampon_regroupe.png" >
+    							<img src="illustrations/tous/9_1_tampon_regroupe.png" alt="Détail du résultat de la zone tampon en regroupant" width="200" >
+    						</a>
+    						<figcaption>Détail du résultat de la zone tampon : à gauche sans regrouper, à droite en regroupant.</figcaption>
+    					</figure>
 						<p>Cliquez sur <b>Exécuter</b>, observez le résultat :</p>
 						<figure>
     						<a href="illustrations/tous/9_1_res_tampon_erdre.png" >
@@ -209,34 +209,38 @@
 					<ul>
 					    <li class="espace"><b>Segments :</b> plus cette valeur est élevée, plus les contours de la zone seront « arrondis ». Il s'agit en fait du nombre de segments utilisés pour représenter un quart de cercle.</li>
     					<li class="espace"><b>Style d'extrémité :</b> il s'agit de la manière dont les zones tampons sont &#171; terminées &#187;. 3 valeurs sont possibles : rond, plat et carré</li>
-    					<figure>
-    						<a href="illustrations/tous/9_1_tampon_extr_rond.png" >
-    							<img src="illustrations/tous/9_1_tampon_extr_rond.png" alt="Style d'extrémité rond pour une zone tampon" width="170" >
-    						</a>
-    						<a href="illustrations/tous/9_1_tampon_extr_plat.png" >
-    							<img src="illustrations/tous/9_1_tampon_extr_plat.png" alt="Style d'extrémité plat pour une zone tampon" width="170" >
-    						</a>
-    <a href="illustrations/tous/9_1_tampon_extr_rond.png" >
-    							<img src="illustrations/tous/9_1_tampon_extr_carre.png" alt="Style d'extrémité carré pour une zone tampon" width="170" >
-    						</a>
-    						<figcaption>Différents types d'extrémité pour les zones tampon : de gauche à droite, rond, plat et carré.</figcaption>
-    					</figure>
+    				</ul>
+					<figure>
+						<a href="illustrations/tous/9_1_tampon_extr_rond.png" >
+							<img src="illustrations/tous/9_1_tampon_extr_rond.png" alt="Style d'extrémité rond pour une zone tampon" width="170" >
+						</a>
+						<a href="illustrations/tous/9_1_tampon_extr_plat.png" >
+							<img src="illustrations/tous/9_1_tampon_extr_plat.png" alt="Style d'extrémité plat pour une zone tampon" width="170" >
+						</a>
+<a href="illustrations/tous/9_1_tampon_extr_rond.png" >
+							<img src="illustrations/tous/9_1_tampon_extr_carre.png" alt="Style d'extrémité carré pour une zone tampon" width="170" >
+						</a>
+						<figcaption>Différents types d'extrémité pour les zones tampon : de gauche à droite, rond, plat et carré.</figcaption>
+					</figure>
+					<ul>
     					<li class="espace"><b>Style de jointure :</b> les zones tampons sont créées en &#171; décalant &#187; les sommets d'une entité, ici une ligne. Il existe plusieurs manières de réaliser ce décalage, ce que contrôle ce paramètre. 3 valeurs sont possibles : rond, angle droit et oblique.</li>
-    					<figure>
-    						<a href="illustrations/tous/9_1_tampon_jointure_rond.png" >
-    							<img src="illustrations/tous/9_1_tampon_jointure_rond.png" alt="Style de jointure rond pour une zone tampon" width="140" >
-    						</a>
-    						<a href="illustrations/tous/9_1_tampon_jointure_angledroit.png" >
-    							<img src="illustrations/tous/9_1_tampon_jointure_angledroit.png" alt="Style de jointure angle droit pour une zone tampon" width="140" >
-    						</a>
-                            <a href="illustrations/tous/9_1_tampon_jointure_oblique.png" >
-    							<img src="illustrations/tous/9_1_tampon_jointure_oblique.png" alt="Style de jointure oblique pour une zone tampon" width="140" >
-    						</a>
-    						<a href="illustrations/tous/9_1_tampon_jointure_tous.png" >
-    							<img src="illustrations/tous/9_1_tampon_jointure_tous.png" alt="Comparaison des 3 styles de jointure pour une zone tampon" width="140" >
-    						</a>
-    						<figcaption>Différents types de jointure pour les zones tampon : de gauche à droite, rond, angle droit, oblique et superposition des 3.</figcaption>
-    					</figure>
+    				</ul>
+					<figure>
+						<a href="illustrations/tous/9_1_tampon_jointure_rond.png" >
+							<img src="illustrations/tous/9_1_tampon_jointure_rond.png" alt="Style de jointure rond pour une zone tampon" width="140" >
+						</a>
+						<a href="illustrations/tous/9_1_tampon_jointure_angledroit.png" >
+							<img src="illustrations/tous/9_1_tampon_jointure_angledroit.png" alt="Style de jointure angle droit pour une zone tampon" width="140" >
+						</a>
+                        <a href="illustrations/tous/9_1_tampon_jointure_oblique.png" >
+							<img src="illustrations/tous/9_1_tampon_jointure_oblique.png" alt="Style de jointure oblique pour une zone tampon" width="140" >
+						</a>
+						<a href="illustrations/tous/9_1_tampon_jointure_tous.png" >
+							<img src="illustrations/tous/9_1_tampon_jointure_tous.png" alt="Comparaison des 3 styles de jointure pour une zone tampon" width="140" >
+						</a>
+						<figcaption>Différents types de jointure pour les zones tampon : de gauche à droite, rond, angle droit, oblique et superposition des 3.</figcaption>
+					</figure>
+					<ul>
     					<li class="espace"><b>Limite d'angle droite :</b> ce paramètre n'est utilisé que pour les styles jointure à angle droit. D'après l'aide, il contrôle &#171; la distance maximale de la courbe de décalage &#187;. Personnellement je trouve cette définition peu claire, et d'après mes observations les différences sont minimes (on peut les observer en passant de 1 à 2 par exemple). Ecrivez-moi si vous en savez plus&nbsp;!</li>
     				</ul>
 					

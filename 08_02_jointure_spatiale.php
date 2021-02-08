@@ -38,7 +38,7 @@
 				<p>Notez bien que comme pour une jointure attributaire, les données qui seront jointes sont toujours les données attributaires.</p>
 				<figure>
 					<a href="illustrations/tous/8_2_principe_jointure_spatiale.svg" >
-						<img src="illustrations/tous/8_2_principe_jointure_spatiale.svg" alt="principe d'une jointure spatiale" width="620">
+						<img src="illustrations/tous/8_2_principe_jointure_spatiale.png" alt="principe d'une jointure spatiale" width="620">
 					</a>
 				</figure>
 				<p>Dans l'exemple ci-dessus, les deux couches de départ sont une couche de département et une couche de chefs-lieux. Les données attributaires des chefs-lieux (leur nom, code et coordonnées) sont jointes aux départements en se basant sur leur position : <b>chaque département récupère les données du chef-lieu intersectant ce département</b>.</p>
@@ -65,15 +65,15 @@
                     <p>Le but de l'opération est d'<b>ajouter des colonnes</b> dans la table attributaire de la couche de départements, avec le nom du chef-lieu, son statut etc. Bien sûr, l'inverse est également possible : ajouter dans la table attributaire des chefs-lieux des colonnes avec le nom du département, son code etc.</p>
                     
                     <div class="manip">
-                        <p>Dans la boît à outils de traitements, rubrique <b>Outils généraux pour les vecteurs</b>, double-cliquez sur <b>Joindre les attributs par localisation</b>.</p>
+                        <p>Dans la boîte à outils de traitements, rubrique <b>Outils généraux pour les vecteurs</b>, double-cliquez sur <b>Joindre les attributs par localisation</b>.</p>
                         <figure>
     						<a href="illustrations/tous/8_2_join_emplacement.png" >
-    							<img src="illustrations/tous/8_2_join_emplacement.png" alt="Emplacement de l'outil de jointure spatiale dans la boît à outils" width="350" >
+    							<img src="illustrations/tous/8_2_join_emplacement.png" alt="Emplacement de l'outil de jointure spatiale dans la boîte à outils" width="350" >
     						</a>
     					</figure>
-    					 <figure>
+    					<figure>
     						<a href="illustrations/tous/8_2_join_fenetre.png" >
-    							<img src="illustrations/tous/8_2_join_fenetre.png" alt="Fenêtre de l'outil de jointure spatiale dans la boît à outils" width="600" >
+    							<img src="illustrations/tous/8_2_join_fenetre.png" alt="Fenêtre de l'outil de jointure spatiale dans la boîte à outils" width="600" >
     						</a>
     					</figure>
     					<ul>
@@ -178,12 +178,10 @@
     					   <li class="espace">Joindre la couche : <em class="data">COMMUNE</em></li>
     					   <li class="espace">Prédicat géométrique : choisissez <b>contient</b>. Avec l'opérateur Intersecte, les communes limitrophes seraient également prises en compte, ce qui n'est pas souhaité ici.</li>
     					   <li class="espace">Champs à résumer : cliquez sur le bouton <b>...</b> à droite, et choisissez le champ <b>POPULATION</b></li>
-    					   <li class="espace">Résumés à calculer : cliquez sur le bouton <b>...</b> à droite, et cochez <b>somme</b>, <b>moyenne</b> et <b>médiane</b> pour calculer ces valeurs pour chaque département.</li>
-    					   <figure>
+    					   <li class="espace">Résumés à calculer : cliquez sur le bouton <b>...</b> à droite, et cochez <b>somme</b>, <b>moyenne</b> et <b>médiane</b> pour calculer ces valeurs pour chaque département.
     						<a href="illustrations/tous/8_2_choix_resumes.png" >
     							<img src="illustrations/tous/8_2_choix_resumes.png" alt="Fenêtre de choix des opérations d'agrégation : sum, moyenne et median sont cochés" width="320" >
-    						</a>
-    					   </figure>
+    						</a></li>
     					   <li class="espace">Couche issue de la jointure spatiale : laissez la valeur par défaut pour créer une couche temporaire</li>
     					   <li class="espace">Cliquez sur <b>Exécuter</b>. Attention, le temps de traitement peut être un peu long.</li>
     					</ul>

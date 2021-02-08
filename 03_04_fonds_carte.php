@@ -88,7 +88,7 @@
     		        <p class="note">Attention à ne pas utiliser le caractère / (&#171;&nbsp;slash&nbsp;&#187;) dans le nom des connexions !</p>
     		        <p class="note">Attention également, certaines url de serveurs de tuiles sont sous la forme <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.png</b> : il faut alors supprimer les <b>$</b> pour obtenir <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.png</b>.</p>
 			   
-		    <h3><a class="titre" id="III43">Ajouter un fonds avec l'extension QuickMapServices</a></h4>
+		    <h3><a class="titre" id="III43">Afficher un fonds avec l'extension QuickMapServices</a></h3>
 		    
 		        <p>Une autre méthode pour ajouter des fonds de carte consiste à utiliser l'extension <a class="ext" target="_blank" href="https://github.com/nextgis/quickmapservices">QuickMapServices</a>, qui propose un certain nombre de fonds, notamment des fonds OpenStreetMap et Google Maps.</p>
 		        

@@ -22,12 +22,13 @@
 							<li><a href="#VIII13b">Jointure de deux couches : licences sportives et catégories socio-professionnelles en France</a></li>
 						</ul>
 					</li>
-					<li><a href="#VIII14">Et si une entité correspond à plusieurs entités de la couche à joindre&nbsp;?</li>
+					<li><a href="#VIII14">Et si une entité correspond à plusieurs entités de la couche à joindre&nbsp;?</a>
 					   <ul class="listesoustitres">
 							<li><a href="#VIII14a">Pour bien comprendre le problème</a></li>
 							<li><a href="#VIII14b">Agréger les données en 2 étapes</a></li>
 							<li><a href="#VIII14c">Pour aller plus loin : une deuxième méthode avec une requête SQL</a></li>
 						</ul>
+					</li>
 				</ul>
 				<br>
 				
@@ -160,18 +161,18 @@
                         <p>Ouvrez un nouveau projet QGIS. Ajoutez-y la couche GeoPackage <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">communes_oise</a></em> et le fichier CSV <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">L_MONUMENT_HISTO_S_060</a></em> qui correspond à l'ensemble des monuments historiques classés et inscrits dans le département de l'Oise.</p>
                         <div class="question">
                     		<input type="checkbox" id="faq-5">
-                    		<p><label for="faq-5">Explorez ces données : pouvez-vous joindre les données du fichier CSV à la couche de communes&nbsp;? Grâce à quels champs&nbsp;?</p>
+                    		<p><label for="faq-5">Explorez ces données : pouvez-vous joindre les données du fichier CSV à la couche de communes&nbsp;? Grâce à quels champs&nbsp;?</label></p>
                     		<p class="reponse">Il est possible de joindre les couches en se basant sur le code INSEE : champ INSEE_COM pour la couche de communes et INSEE pour le tableau des monuments historiques.</p>
                     	</div>
                         <p>Faites la jointure.</p>
                         <div class="question">
                     		<input type="checkbox" id="faq-6">
-                    		<p><label for="faq-6">Combien y a-t-il de communes&nbsp;? De monuments historiques&nbsp;?</p>
+                    		<p><label for="faq-6">Combien y a-t-il de communes&nbsp;? De monuments historiques&nbsp;?</label></p>
                     		<p class="reponse">La couche de communes contient 679 entités, le CSV 700 lignes.</p>
                     	</div>
                     	<div class="question">
                     		<input type="checkbox" id="faq-7">
-                    		<p><label for="faq-7">Comment la jointure a-t-elle géré cela&nbsp;?</p>
+                    		<p><label for="faq-7">Comment la jointure a-t-elle géré cela&nbsp;?</label></p>
                     		<p class="reponse">A chaque commune ont été joints les attributs du 1er monument ayant le même code INSEE rencontré dans le CSV. Si une commune possède plusieurs monuments, les données d'un seul ont été jointes.</p>
                     	</div>
                     </div>

@@ -51,7 +51,7 @@
 				<p>Notre modèle comportera 2 paramètres en entrée : une couche vecteur qui sera découpée et une couche vecteur qui servira de masque de découpe. L'outil de découpage va utiliser ces deux paramètres en entrée pour créer une nouvelle couche temporaire. Cette couche temporaire sera utilisée comme paramètre d'entrée pour l'outil de reprojection, qui produira la couche finale.</p>
 				<figure>
 				    <a href="illustrations/tous/11_03_organigramme.svg" >
-						<img src="illustrations/tous/11_03_organigramme.svg" alt="Organigramme du modèle qui sera créé" width="600">
+						<img src="illustrations/tous/11_03_organigramme.png" alt="Organigramme du modèle qui sera créé" width="600">
 					</a>
 				</figure>
 				
@@ -240,7 +240,7 @@
 							<div class="question">
 								<input type="checkbox" id="faq-1">
 								<p><label for="faq-1">Dans quel SCR sont ces deux couches ?</label></p>
-								<p class="reponse">Les 2 couches sont en RGF93 Lambert 93, code EPSG 2154 (cf. <a href="02_03_couches_projets.php#II32">SCR d'une couche</a> )</b>.</p>
+								<p class="reponse">Les 2 couches sont en RGF93 Lambert 93, code EPSG 2154 (cf. <a href="02_03_couches_projets.php#II32">SCR d'une couche</a>).</p>
 							</div>
 							<p>Lancez votre modèle&nbsp;: <b>boîte à outils &#8594; modèles &#8594; tests (ou le nom de votre groupe) &#8594; double clic sur le nom de votre outil</b>.</p>
 							<figure>

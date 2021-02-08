@@ -29,7 +29,7 @@
 			<p>Il sera ensuite plus facile de manipuler des données vecteurs, pour par exemple visualiser la répartition spatiale des écoles, et si on a numérisé également les routes travailler sur l'accessibilité des ces écoles...</p>
 			<p>Ces écoles et postes sont représentées dans la carte sous forme de points bleus ou rouges :</p>
 			<figure>
-			    <img src="illustrations/tous/5_1_leg_pts.png" alt="extrait de la légende de la carte d'Oahu correspondant aux écoles et postes" width="150" hspace="50">
+			    <img src="illustrations/tous/5_1_leg_pts.png" alt="extrait de la légende de la carte d'Oahu correspondant aux écoles et postes" width="150" >
 			    <img src="illustrations/tous/5_1_ex_pts.png" alt="extrait de la carte d'Oahu avec écoles et postes" width="200">
 			</figure>
 			
