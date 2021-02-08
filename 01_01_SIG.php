@@ -57,7 +57,7 @@
 						<p>Les données sont organisées sous forme de couches superposables.</p>
 						<figure>
 							<a href="illustrations/tous/1_1_couches.svg" >
-								<img src="illustrations/tous/1_1_couches.svg" alt="Organisation sous forme de couches" width="400">
+								<img src="illustrations/tous/1_1_couches.png" alt="Organisation sous forme de couches" width="400">
 							</a>
 							<figcaption>Source : pôle ARD, adess (domaine public)</figcaption>
 						</figure>

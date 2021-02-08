@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,9 +11,9 @@
    height="499.76721"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="1_1_couches_02.svg"
-   inkscape:export-filename="/run/user/julie/gvfs/smb-share:server=et,share=tutoqgis/1_8_Lisboa_mieux/illustrations/tous/1_1_couches.png"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   sodipodi:docname="1_1_couches.svg"
+   inkscape:export-filename="/home/pierson/Travail/projets/tutoqgis/illustrations/tous/1_1_couches.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <defs
@@ -217,23 +215,24 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3546913"
+     inkscape:zoom="0.67734565"
      inkscape:cx="509.71024"
      inkscape:cy="249.88361"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1124"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-width="1872"
+     inkscape:window-height="983"
+     inkscape:window-x="48"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
      fit-margin-top="0.2"
      fit-margin-left="0.2"
      fit-margin-right="0.2"
-     fit-margin-bottom="0.2" />
+     fit-margin-bottom="0.2"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -242,7 +241,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -383,15 +382,15 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
        x="591.11707"
        y="434.72372"
-       id="text4519-6"
-       sodipodi:linespacing="125%"><tspan
+       id="text4519-6"><tspan
          sodipodi:role="line"
          id="tspan4521-5"
          x="591.11707"
-         y="434.72372">Régions (polygones)</tspan></text>
+         y="434.72372"
+         style="font-size:40px;line-height:1.25">Régions (polygones)</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -401,15 +400,15 @@
      transform="translate(-130.00906,-49.846761)">
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
        x="591.05847"
        y="295.87805"
-       id="text4519-5"
-       sodipodi:linespacing="125%"><tspan
+       id="text4519-5"><tspan
          sodipodi:role="line"
          id="tspan4521-9"
          x="591.05847"
-         y="295.87805">Rivières (lignes)</tspan></text>
+         y="295.87805"
+         style="font-size:40px;line-height:1.25">Rivières (lignes)</tspan></text>
     <path
        style="fill:none;stroke:#fefefe;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 185.29965,720.02906 c 1.55388,0 3.12337,0.21976 4.66163,0 1.2161,-0.17372 2.31504,-0.82792 3.49622,-1.1654 3.08014,-0.88004 6.31272,-1.23608 9.32325,-2.33082 2.78037,-1.01104 5.29925,-2.73392 8.15785,-3.49621 3.02619,-0.80699 6.29707,-0.35843 9.32325,-1.16541 2.8586,-0.76229 5.39655,-2.43419 8.15785,-3.49622 2.29313,-0.88197 4.68347,-1.49119 6.99244,-2.33081 1.96602,-0.71492 3.91537,-1.48119 5.82703,-2.33082 4.46023,-1.98232 4.48269,-2.89115 9.32326,-3.49622 1.54187,-0.19273 3.10775,0 4.66162,0 2.28281,0 4.70963,0 6.99244,0 6.60397,0 13.20794,0 19.81191,0 4.66163,0 9.32326,0 13.98488,0 0.38847,0 0.77694,0 1.16541,0 0.38847,0 0.81795,-0.17373 1.16541,0 0.49138,0.24569 0.67403,0.91972 1.1654,1.16541 0.34746,0.17373 0.81795,-0.17373 1.16541,0 1.03294,0.51647 2.43533,2.78896 3.49622,3.49622 0.72275,0.48183 1.71659,0.55118 2.33081,1.16541 0.27469,0.27468 -0.17373,0.81794 0,1.1654 0.5734,1.1468 4.08823,3.51483 4.66163,4.66163 0.17373,0.34746 -0.17373,0.81795 0,1.16541 0.24569,0.49137 0.77694,0.77693 1.16541,1.1654 0.38847,0.38847 0.67402,0.91972 1.1654,1.16541 0.34746,0.17373 0.81795,-0.17373 1.16541,0 4.85014,2.42507 -1.24586,-0.0805 1.16541,2.33081 0.27469,0.27469 0.89071,-0.27469 1.1654,0 0.54938,0.54938 -0.34745,1.6359 0,2.33081 0.24569,0.49138 0.91972,0.67403 1.16541,1.16541 0.17373,0.34746 -0.27469,0.89072 0,1.16541 0.27469,0.27469 0.89072,-0.27469 1.16541,0 0.27469,0.27469 0,0.77694 0,1.1654 0,0.38847 0,0.77694 0,1.16541"
@@ -496,14 +495,14 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Arial;-inkscape-font-specification:Arial"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none"
        x="594.02722"
        y="161.44012"
-       id="text4519"
-       sodipodi:linespacing="125%"><tspan
+       id="text4519"><tspan
          sodipodi:role="line"
          id="tspan4521"
          x="594.02722"
-         y="161.44012">Villes (points)</tspan></text>
+         y="161.44012"
+         style="font-size:40px;line-height:1.25">Villes (points)</tspan></text>
   </g>
 </svg>

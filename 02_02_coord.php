@@ -155,7 +155,7 @@
 					<br>Cette projection conserve les angles, mais déforme de plus en plus les surfaces au fur et à mesure qu'on se rapproche des pôles. Elle est largement utilisée, notamment par Google.</p>
 					<figure>
 						<a href="http://commons.wikimedia.org/wiki/File:Tissot_indicatrix_world_map_Mercator_proj.svg" >
-							<img src="illustrations/tous/2_2_mercator.svg" alt="projection de Mercator" width="300">
+							<img src="illustrations/tous/2_2_mercator.png" alt="projection de Mercator" width="300">
 						</a>
 						<figcaption>Projection de Mercator (source : Eric Gaba – utilisateur Wikimedia Commons : Sting, licence GFDL).</figcaption>
 					</figure>
@@ -165,7 +165,7 @@
 					Cette projection permet une vision juste des proportions des surfaces des continents, mais ne garde pas les bonnes formes au contraire de la carte de Mercator. Elle permet notamment d'éviter de sous-dimensionner les pays du Sud.</p>
 					<figure>
 						<a href="http://commons.wikimedia.org/wiki/File:Tissot_indicatrix_world_map_Gall-Peters_equal-area_proj.svg" >
-							<img src="illustrations/tous/2_2_peters.svg" alt="projection de Peters" width="400">
+							<img src="illustrations/tous/2_2_peters.png" alt="projection de Peters" width="400">
 						</a>
 						<figcaption>Projection de Peters (source : Eric Gaba – utilisateur Wikimedia Commons : Sting, licence GFDL).</figcaption>
 					</figure>
@@ -195,7 +195,7 @@
 					<br>
 					<figure>
 						<a href="http://commons.wikimedia.org/wiki/File%3AUtm_projections.svg" >
-							<img src="illustrations/tous/2_2_Utm_projections.svg" alt="rotation d'un cylindre autour de la Terre" width="200">
+							<img src="illustrations/tous/2_2_Utm_projections.png" alt="rotation d'un cylindre autour de la Terre" width="200">
 						</a>
 						<figcaption>Projection UTM : rotation d'un cylindre autour de la Terre.<br>Par Javiersanp (Travail personnel) [<a class="ext" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA-3.0</a> ou <a class="ext" target="_blank" href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>], <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3AUtm_projections.svg">via Wikimedia Commons</a></figcaption>
 					</figure>

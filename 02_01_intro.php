@@ -43,7 +43,7 @@
 				<p>Il existe une infinité d'ellipsoïdes, qui peuvent coïncider avec la surface de la Terre sur toute leur surface (ellipsoïde global) ou seulement sur une partie de leur surface (ellipsoïde local). A l'inverse, il n'existe qu'un seul géoïde.</p>
 				<figure>
 					<a href="illustrations/tous/2_1_geoide_ellipsoide.svg" >
-						<img src="illustrations/tous/2_1_geoide_ellipsoide.svg" alt="ellipsoïdes et géoïde" width="450" >
+						<img src="illustrations/tous/2_1_geoide_ellipsoide.png" alt="ellipsoïdes et géoïde" width="450" >
 					</a>
 				</figure>
 				

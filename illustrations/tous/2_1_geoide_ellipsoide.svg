@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -13,8 +11,11 @@
    height="363.5433"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="2_1_geoide_ellipsoide.svg">
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   sodipodi:docname="2_1_geoide_ellipsoide.svg"
+   inkscape:export-filename="/home/pierson/Travail/projets/tutoqgis/illustrations/tous/2_1_geoide_ellipsoide.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -67,18 +68,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.5278969"
+     inkscape:zoom="0.89374652"
      inkscape:cx="234.73734"
      inkscape:cy="181.77165"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1172"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
+     inkscape:window-width="1872"
+     inkscape:window-height="983"
+     inkscape:window-x="48"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
-     units="cm" />
+     units="cm"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -123,7 +125,7 @@
        transform="matrix(0.98480776,0.17364818,-0.17364818,0.98480776,187.68559,-538.71696)" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#c9083b;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#c9083b;fill-opacity:1;stroke:none"
        x="117.619"
        y="148.89032"
        id="text3602"><tspan
@@ -131,10 +133,10 @@
          id="tspan3604"
          x="117.619"
          y="148.89032"
-         style="font-size:28px;fill:#c9083b;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">Géoïde</tspan></text>
+         style="font-size:28px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#c9083b;fill-opacity:1">Géoïde</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#0028ba;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#0028ba;fill-opacity:1;stroke:none"
        x="154.32816"
        y="404.31241"
        id="text3602-1"><tspan
@@ -142,10 +144,10 @@
          id="tspan3604-7"
          x="154.32816"
          y="404.31241"
-         style="font-size:28px;fill:#0028ba;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">Ellipsoïde global</tspan></text>
+         style="font-size:28px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#0028ba;fill-opacity:1">Ellipsoïde global</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-weight:normal;fill:#3c9262;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#3c9262;fill-opacity:1;stroke:none"
        x="552.96967"
        y="96.481583"
        id="text3602-1-4"><tspan
@@ -153,7 +155,7 @@
          id="tspan3604-7-0"
          x="552.96967"
          y="96.481583"
-         style="font-size:20px;fill:#000000;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">Point fondamental</tspan></text>
+         style="font-size:20px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#000000;fill-opacity:1">Point fondamental</tspan></text>
     <path
        sodipodi:type="arc"
        style="fill:#3c9262;fill-opacity:1;stroke:none"
@@ -176,7 +178,7 @@
        transform="translate(130.59046,-380.36607)" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#3c9262;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#3c9262;fill-opacity:1;stroke:none"
        x="523.42035"
        y="371.41006"
        id="text3602-1-4-4"><tspan
@@ -184,7 +186,7 @@
          id="tspan3604-7-0-8"
          x="523.42035"
          y="371.41006"
-         style="font-size:28px;fill:#3c9262;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">Ellipsoïde local</tspan></text>
+         style="font-size:28px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#3c9262;fill-opacity:1">Ellipsoïde local</tspan></text>
     <g
        id="g3723"
        transform="translate(253.32491,-4.8629162)">
@@ -252,7 +254,7 @@
        transform="matrix(-0.55289654,-0.83324991,0.83324991,-0.55289654,485.07739,349.85309)" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#3c9262;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';fill:#3c9262;fill-opacity:1;stroke:none"
        x="261.2438"
        y="80.250816"
        id="text3602-1-4-4-3"><tspan
@@ -260,11 +262,11 @@
          id="tspan3604-7-0-8-5"
          x="261.2438"
          y="80.250816"
-         style="font-size:20px;fill:#3c9262;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial">Zone d'utilisation</tspan><tspan
+         style="font-size:20px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#3c9262;fill-opacity:1">Zone d'utilisation</tspan><tspan
          sodipodi:role="line"
          x="261.2438"
          y="105.25082"
-         style="font-size:20px;fill:#3c9262;fill-opacity:1;font-family:Arial;-inkscape-font-specification:Arial"
+         style="font-size:20px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#3c9262;fill-opacity:1"
          id="tspan3840">de l'ellipsoïde local</tspan></text>
   </g>
 </svg>
