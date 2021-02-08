@@ -54,9 +54,9 @@
 				
 				<h3><a class="titre" id="IV62">Zoom sur la zone d'étude avec l'extension Nominatim Locator Filter</a></h3>
 				
-				    <p>Nous cherchons ici à zoomer sur la zone qui concerne notre carte, à savoir Doncaster East dans le banlieue de Melbourne, en Australie. Il est bien sûr possible d'utiliser les outils de zoom pour cela, mais nous allons en profiter pour découvrir une autre méthode parfois bien pratique, avec l'extension OSM place search.</p>
+				    <p>Nous cherchons ici à zoomer sur la zone qui concerne notre carte, à savoir Doncaster East dans le banlieue de Melbourne, en Australie. Il est bien sûr possible d'utiliser les outils de zoom pour cela, mais nous allons en profiter pour découvrir une autre méthode parfois bien pratique, avec l'extension <a class="ext" target="_blank" href="https://github.com/rduivenvoorde/nominatim_locator_filter">Nominatim Locator Filter</a>.</p>
 				    <div class="manip">
-						<p>Commençons par installer l'extension Nominatim Locator Filter : procédez comme pour QuickMapServices, via le <b>menu Extensions &#8594; Installer/Gérer les extensions</b>.</p>
+						<p>Commençons par installer l'extension <b>Nominatim Locator Filter</b> : procédez comme pour QuickMapServices, via le <b>menu Extensions &#8594; Installer/Gérer les extensions</b>.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_install_nlf.png">
 								<img src="illustrations/tous/4_6_install_nlf.png" alt="Installation de l'extension Nominatim Locator Filter" width="600">

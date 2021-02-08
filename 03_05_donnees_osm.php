@@ -198,7 +198,7 @@
                 
 			<h3><a class="titre" id="III55">Charger des données OpenStreetMap à partir de QGIS</a></h3>
 			 
-			    <p>Nous allons utiliser ici l'extension <b>QuickOSM</b> pour charger des données OpenStreetMap directement dans QGIS.</p>
+			    <p>Nous allons utiliser ici l'extension <a class="ext" target="_blank" href="https://github.com/3liz/QuickOSM">QuickOSM</a> pour charger des données OpenStreetMap directement dans QGIS.</p>
 			    <p>Cette extension permet le téléchargement de données OSM sous forme de couches temporaires, pour l'emprise de votre choix.</p>
 			    <p>Elle offre par rapport aux solutions précédentes une possibilité supplémentaire : <b>choisir la clé et les valeurs voulues</b>. Vous pouvez ainsi télécharger uniquement les cours d'eau de type rivière pour une zone.</p>
 			    <div class="manip">

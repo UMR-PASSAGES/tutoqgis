@@ -90,7 +90,7 @@
 			   
 		    <h3><a class="titre" id="III43">Ajouter un fonds avec l'extension QuickMapServices</a></h4>
 		    
-		        <p>Une autre méthode pour ajouter des fonds de carte consiste à utiliser l'extension QuickMapServices, qui propose un certain nombre de fonds, notamment des fonds OpenStreetMap et Google Maps.</p>
+		        <p>Une autre méthode pour ajouter des fonds de carte consiste à utiliser l'extension <a class="ext" target="_blank" href="https://github.com/nextgis/quickmapservices">QuickMapServices</a>, qui propose un certain nombre de fonds, notamment des fonds OpenStreetMap et Google Maps.</p>
 		        
 		        <p class="note">L'extension QuickMapServices est similaire à l'extension <b>OpenLayers</b> sur laquelle elle est d'ailleurs basée, mais propose plus de couches et utilise un serveur de tuilage, ce qui semble provoquer moins d'erreur lors de changements de niveau de zoom et de SCR.</p>
 				<div class="manip">
