@@ -33,7 +33,7 @@
 			    <img src="illustrations/tous/5_1_ex_pts.png" alt="extrait de la carte d'Oahu avec écoles et postes" width="200">
 			</figure>
 			
-			<h3><a class="titre" id="V11">Choix du type (point, ligne, polygone) et du SCR</a></h3>
+			<h3>Création d'une couche vide<a class="headerlink" id="V11" href="#V11"></a></h3>
 			
 				<p>La première étape consiste à créer une couche vierge, qui accueillera les données que nous allons créer.</p>
 				<div class="manip">
@@ -69,29 +69,29 @@
 					<p>La couche est automatiquement ajoutée à QGIS.</p>
 				</div>
 				
-				<h3><a class="titre" id="V12">Vérification</a></h3>
+			<h3>Vérification<a class="headerlink" id="V12" href="#V12"></a></h3>
 				
-				    <div class="manip">
-				        <p>Allez dans les propriétés de la couche, rubrique <b>Information</b> :</p>
-				        <figure>
-    						<a href="illustrations/tous/5_1_informations.png" >
-    							<img src="illustrations/tous/5_1_informations.png" alt="informations sur la couche (emplacement, SCR...)" width="530">
-    						</a>
-					   </figure>
-					   <p>Vous pouvez vérifier ici l'emplacement de votre couche (<b>chemin</b>), son <b>SCR</b>, le <b>nombre d'entités</b> qu'elle contient (à ce stade, 0).</p>
-					   <p>Ouvrez la table attributaire :</p>
-					   <figure>
-    						<a href="illustrations/tous/5_1_table_vide.png" >
-    							<img src="illustrations/tous/5_1_table_vide.png" alt="table attributaire de la couche batiments_oahu" width="570">
-    						</a>
-					   </figure>
-					   <p>Cette table ne contien aucune ligne, ce qui est normal car la couche ne contient aucune entité.</p>
-					   <p>Par contre, elle contient 2 champs, <b>fid</b> et <b>type</b>, alors qu'on se serait attendu à ne voir que le champ type.</p>
-				 </div>
-				 
-				   <p><b>A quoi correspond ce champ fid ?</b> Le GeoPackage étant une base de données, une colonne d'identifiant unique (<a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Cl%C3%A9_primaire">clé primaire</a>) est créée automatiquement lors de la création de la couche, afin d'identifier de manière unique chaque entité.</p>
-				   <p>Cette colonne sera remplie automatiquement, mais néanmoins modifiable par l'utilisateur (vous&nbsp;!). Si 2 entités ont la même valeur pour ce champ fid, un message d'erreur sera affiché et il ne sera pas possible d'enregistrer les modifications. Le plus simple est donc de laisser le logiciel gérer ce champ.</p>
-				   <p>Dans le chapitre suivant, nous allons ajouter des points à cette couche.</p>
+			    <div class="manip">
+			        <p>Allez dans les propriétés de la couche, rubrique <b>Information</b> :</p>
+			        <figure>
+						<a href="illustrations/tous/5_1_informations.png" >
+							<img src="illustrations/tous/5_1_informations.png" alt="informations sur la couche (emplacement, SCR...)" width="530">
+						</a>
+				   </figure>
+				   <p>Vous pouvez vérifier ici l'emplacement de votre couche (<b>chemin</b>), son <b>SCR</b>, le <b>nombre d'entités</b> qu'elle contient (à ce stade, 0).</p>
+				   <p>Ouvrez la table attributaire :</p>
+				   <figure>
+						<a href="illustrations/tous/5_1_table_vide.png" >
+							<img src="illustrations/tous/5_1_table_vide.png" alt="table attributaire de la couche batiments_oahu" width="570">
+						</a>
+				   </figure>
+				   <p>Cette table ne contien aucune ligne, ce qui est normal car la couche ne contient aucune entité.</p>
+				   <p>Par contre, elle contient 2 champs, <b>fid</b> et <b>type</b>, alors qu'on se serait attendu à ne voir que le champ type.</p>
+			    </div>
+			 
+			    <p><b>A quoi correspond ce champ fid ?</b> Le GeoPackage étant une base de données, une colonne d'identifiant unique (<a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Cl%C3%A9_primaire">clé primaire</a>) est créée automatiquement lors de la création de la couche, afin d'identifier de manière unique chaque entité.</p>
+			    <p>Cette colonne sera remplie automatiquement, mais néanmoins modifiable par l'utilisateur (vous&nbsp;!). Si 2 entités ont la même valeur pour ce champ fid, un message d'erreur sera affiché et il ne sera pas possible d'enregistrer les modifications. Le plus simple est donc de laisser le logiciel gérer ce champ.</p>
+			    <p>Dans le chapitre suivant, nous allons ajouter des points à cette couche.</p>
 				   
 				
 				<br>

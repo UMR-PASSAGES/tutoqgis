@@ -33,7 +33,7 @@
 				
 			<p>Il est possible de calculer automatiquement les valeurs d'un champ au moyen de la calculatrice de champ, un peu à la manière d'une formule dans un tableur.</p>
 
-			<h3><a class="titre" id="VII21">Comment fonctionne la calculatrice de champ ?</a></h3>
+			<h3>Comment fonctionne la calculatrice de champ ?<a class="headerlink" id="VII21" href="#VII21"></a></h3>
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>. Ouvrez sa table attributaire.</p>
@@ -62,9 +62,9 @@
 				<p class="note">Il n'est pas obligatoire de passer en mode édition pour utiliser la calculatrice de champ ; dans ce cas, cliquer sur OK dans la calculatrice enclenche le mode édition.</p>
 				
 			
-			<h3><a class="titre" id="VII22">Calcul de géométrie : l'exemple de la surface</a></h3>
+			<h3>Calcul de géométrie : l'exemple de la surface<a class="headerlink" id="VII22" href="#VII22"></a></h3>
 			
-				<h4><a class="titre" id="VII22a">Calcul de la surface</a></h4>
+				<h4>Calcul de la surface<a class="headerlink" id="VII22a" href="#VII22a"></a></h4>
 			
 					<p>Nous allons ici calculer la surface de chaque commune en km<sup>2</sup>.</p>
 					<div class="manip">
@@ -85,7 +85,7 @@
 					<p class="note">Avez-vous noté qu'il est possible de créer des <b>champs virtuels</b> (case à cocher en haut à gauche sous &#171;&nbsp;créer un nouveau champ&#187;&nbsp;) ? Ces champs ne sont pas permanents et ne seront pas sauvegardés (il est donc possible d'en créer sans passer en mode édition).</p>
 					<p class="note">Si un champ virtuel est utilisé pour calculer par exemple une surface, et si les polygones sont modifiés, <b>la surface sera automatiquement mise à jour</b>. </p>
 						
-				<h4><a class="titre" id="VII22b">Vérification</a></h4>
+				<h4>Vérification<a class="headerlink" id="VII22b" href="#VII22b"></a></h4>
 					
 					<p>Parfois, il peut arriver de se mélanger dans les unités... Il peut être utile de vérifier les calculs de géométrie. Nous allons voir 2 méthodes pour le faire&nbsp;; cela vous indique aussi comment connaître par exemple la surface d'un polygone donné sans forcément créer et calculer un champ.</p>
 					<p>La première méthode consiste à <b>mesurer &#171;&nbsp;à la main&nbsp;&#187; la surface d'une commune et à comparer le résultat avec celui du champ SURF_KM2</b>.</p>
@@ -120,14 +120,13 @@
 					
 					<p>Vous remarquerez qu'on peut lire 2 surfaces dans les résultats de l'identification : <b>la surface cartésienne, et la surface basée sur une ellipsoïde</b>. La première est basée sur des distances en ligne droite, qui ne prennent pas en compte la courbure de la Terre. La deuxième prend en compte la courbure de la Terre en se basant sur l'ellipsoïde indiquée.</p>
 					<p>Pour de faibles distances, les 2 résultats seront donc très proches, la différence augmentant avec la distance.</p>
-									
 				
 			
-			<h3><a class="titre" id="VII23">Quelques exemples supplémentaires de calculs</a></h3>
+			<h3>Quelques exemples supplémentaires de calculs<a class="headerlink" id="VII23" href="#VII23"></a></h3>
 			
 				<p>La calculatrice de champs offre beaucoup de fonctions que nous ne passerons pas toutes en revue&nbsp;; nous verrons simplement quelques exemples pour vous donner un aperçu des possibilités.</p>
 
-				<h4><a class="titre" id="VII23a">Opérations mathématiques : calcul de densité</a></h4>
+				<h4>Opérations mathématiques : calcul de densité<a class="headerlink" id="VII23a" href="#VII23a"></a></h4>
 				
 					<p>L'objectif sera ici de calculer la densité en habitants par km<sup>2</sup> de chaque commune, à partir de la population et la surface.</p>
 					<div class="question">
@@ -156,7 +155,7 @@
 						</figure>
 					</div>
 					
-				<h4><a class="titre" id="VII23b">Opérations sur du texte : extraction</a></h4>
+				<h4>Opérations sur du texte : extraction<a class="headerlink" id="VII23b" href="#VII23b"></a></h4>
 				
 					<p>La couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em> comporte une colonne INSEE_COM avec le code INSEE des communes. Ce code INSEE est constitué du code du département (2 chiffres pour la Bretagne) et du code commune (3 chiffres).</p>
 					<p>Le but est ici d'<b>extraire le code commune</b> du code INSEE, donc les 3 derniers chiffres de ce dernier. Par exemple, la commune de Dirinon a comme code INSEE 29045 : le nouveau champ CODE_COM aura la valeur 045 pour cette commune.</p>
@@ -184,7 +183,7 @@
 						</figure>
 					</div>
 					
-				<h4><a class="titre" id="VII23c">Pour aller plus loin : utiliser une expression conditionnelle avec CASE</a></h4>
+				<h4>Pour aller plus loin : utiliser une expression conditionnelle avec CASE<a class="headerlink" id="VII23c" href="#VII23c"></a></h4>
 				
 				    <p>Nous allons ici voir un exemple d'expression un peu plus complexe pour écrire dans un nouveau champ le nom du département en fonction de son code.</p>
 				    <p>Le but est ici de vous montrer que tout est possible, ou presque ! Il est possible de faire les calculs dans un tableur pour joindre ensuite les données, mais cela nécessite moins d'étapes de tout faire dans QGIS.</p>

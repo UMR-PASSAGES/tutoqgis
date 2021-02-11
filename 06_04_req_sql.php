@@ -39,17 +39,17 @@
 			<p>Mais si votre but est uniquement de jouir de toutes les possibilités du SQL sans avoir besoin d'une base de données, il existe une autre possibilité consistant à utiliser des <b><a class="ext" target="_blank" href="https://docs.qgis.org/3.16/en/docs/user_manual/managing_data_source/create_layers.html#index-9">couches virtuelles</a></b>. Pour cela, aucune installation de logiciel supplémentaire n'est nécessaire.</p>
 			<p><b>Cette partie ne constitue pas un cours de SQL</b>, se limitant à expliquer l'interface de QGIS et à montrer quelques exemples. Il existe sur internet de nombreuses ressources sur l'apprentissage du SQL, comme par exemple <a class="ext" target="_blank" href="http://sql.sh/cours/select" >ici</a>.</p>
 			
-			<h3><a class="titre" id="VI41">Utiliser du SQL sans passer par un logiciel de bases de données : le concept de couche virtuelle</a></h3>
+			<h3>Utiliser du SQL sans passer par un logiciel de bases de données : le concept de couche virtuelle<a class="headerlink" id="VI41" href="#VI41"></a></h3>
 			
-			 <p>Les <b>couches virtuelles</b> (virtual layers) sont un type particulier de couches vecteur ne contenant pas de données mais renvoyant vers d'autres couches.</p>
-			 <p>Elles permettent d'utiliser le langage SQL sur une ou plusieurs couches vectorielles chargées dans QGIS, au format shapefile, geopackage ou autre.</p>
-			 <p>Pour information, les fonctions SQL disponibles sont celles de <a class="ext" target="_blank" href="https://www.sqlite.org/lang.html">SQLite</a>/<a class="ext" target="_blank" href="http://www.gaia-gis.it/gaia-sins/spatialite-sql-latest.html">SpatiaLite</a>. Elles sont donc un peu moins riches que celles offertes par PostgreSQL/PostGIS mais offrent tout de même beaucoup de possibilités.</p>
+    			 <p>Les <b>couches virtuelles</b> (virtual layers) sont un type particulier de couches vecteur ne contenant pas de données mais renvoyant vers d'autres couches.</p>
+    			 <p>Elles permettent d'utiliser le langage SQL sur une ou plusieurs couches vectorielles chargées dans QGIS, au format shapefile, geopackage ou autre.</p>
+    			 <p>Pour information, les fonctions SQL disponibles sont celles de <a class="ext" target="_blank" href="https://www.sqlite.org/lang.html">SQLite</a>/<a class="ext" target="_blank" href="http://www.gaia-gis.it/gaia-sins/spatialite-sql-latest.html">SpatiaLite</a>. Elles sont donc un peu moins riches que celles offertes par PostgreSQL/PostGIS mais offrent tout de même beaucoup de possibilités.</p>
 			
-			<h3><a class="titre" id="VI42">Effectuer une requête simple avec le gestionnaire de bases de données</a></h3>
+			<h3>Faire une requête simple avec le gestionnaire de bases de données<a class="headerlink" id="VI42" href="#VI42"></a></h3>
 			
 			 <p>Une des manières d'utiliser les couches virtuelles dans QGIS est de passer par le <b>gestionnaire de bases de données</b> (DB Manager). Il s'agit d'une extension installée par défaut dans QGIS.</p>
 			
-				<h4><a class="titre" id="VI42a">Activer le gestionnaire de bases de données</a></h4>
+				<h4>Activer le gestionnaire de bases de données<a class="headerlink" id="VI42a" href="#VI42a"></a></h4>
 				    <div class="manip">
 				        <p>A partir du menu <b>Base de données</b> de QGIS, vérifiez si vous avez accès au sous-menu du 
 				        <a class="thumbnail_bottom" href="#thumb">gestionnaire de base de données
@@ -67,7 +67,7 @@
                         <p>Dans la rubrique <b>Installées</b>, recherchez l'extension <b>DB Manager</b> et cochez la case correspondante, puis fermez la fenêtre du gestionnaire d'extensions.</p>
 				    </div>
 					
-				<h4><a class="titre" id="VI42b">Ecrire une requête</a></h4>
+				<h4>Ecrire une requête<a class="headerlink" id="VI42b" href="#VI42b"></a></h4>
 				
 				    <div class="manip">
 				        <p>Ouvrez un nouveau projet dans QGIS et ajoutez-y les 3 couches <em class="data">eoliennes_bretagne</em>, <em class="data">communes_Bretagne</em> et <em class="data">DEPARTEMENT</em> situées dans le dossier <b><a href="donnees/TutoQGIS_06_Requetes.zip">TutoQGIS_06_Requetes/donnees</a></b>.</p>
@@ -93,7 +93,7 @@
 				        <p>et cliquez sur le bouton <b>Exécuter</b> : le résultat de la requête s'affiche dans la moitié inférieure de la fenêtre.</p>
 				    </div>
 				    
-				<h4><a class="titre" id="VI42c">Visualiser le résultat d'une requête</a></h4>
+				<h4>Visualiser le résultat d'une requête<a class="headerlink" id="VI42c" href="#VI42c"></a></h4>
 				    
 				    <p>Seule la ligne correspondante de la table attributaire est affichée dans le gestionnaire de bases de données. Comment faire pour voir les géométries correspondantes dans QGIS ?</p>
 				    <div class="manip">
@@ -117,7 +117,7 @@
 				    <p>Notez que la nouvelle couche est une couche temporaire, non éditable. Pour la sauvegarder, il faut faire un clic droit sur son nom dans QGIS, Exporter, Sauvegarder les entités sous...</p>
 				    <p>Par ailleurs, si dans la fenêtre du gestionnaire de bases de données vous actualisez la liste des couches virtuelles, vous verrez cette nouvelle couche y apparaître.</p>
 		
-			<h3><a class="titre" id="VI43">Tirer parti du SQL par rapport à une requête attributaire ou spatiale</a></h3>
+			<h3>Tirer parti du SQL par rapport à une requête attributaire ou spatiale<a class="headerlink" id="VI43" href="#VI43"></a></h3>
 			
 			    <p>La requête utilisée était :</p>
 			    <p class="code">SELECT * <br>FROM DEPARTEMENT<br>WHERE "NOM_DEPT" = 'MORBIHAN'</p>
@@ -136,7 +136,7 @@
 		            <li>de croiser plusieurs tables</li>
 		        </ul>
 			        
-			    <h4><a class="titre" id="VI43a">Choisir les colonnes</a></h4>
+			    <h4>Choisir les colonnes<a class="headerlink" id="VI43a" href="#VI43a"></a></h4>
 			         <p>Pour que le résultat de la requête ne comporte que les colonnes voulues, il suffit de les lister dans la requête.</p>
 			         <div class="manip">
 			             <figure>
@@ -150,7 +150,7 @@
 			         </div>
 			         <p>Comme précédemment, vous pouvez si vous le désirez charger ce résultat dans QGIS en tant que nouvelle couche.</p>
 			         
-			    <h4><a class="titre" id="VI43b">Croiser plusieurs tables</a></h4>
+			    <h4>Croiser plusieurs tables<a class="headerlink" id="VI43b" href="#VI43b"></a></h4>
 			     
 			         <p>Comment faire si nous voulons maintenant croiser plusieurs tables, par exemple obtenir pour chaque commune le nom de son département ?</p>
 			         <p>Cette information n'existe pas dans la couche de communes mais on peut la trouver dans la couche de département. On peut faire le lien entre les 2 couches grâce au code de département, présent dans les 2 couches. Il sera donc possible de &#171; rapatrier &#187; le nom du département de la couche de départements vers la couche de communes.</p>
@@ -180,7 +180,7 @@
                     <p>Il est donc possible de faire intervenir dans une même requête autant de couches que vous le désirez, à condition de pouvoir faire le lien entre ces couches (dernière ligne de la requête).</p>
 			     
 			         
-			     <h4><a class="titre" id="VI43c">Un peu de spatial</a></h4>
+			     <h4>Un peu de spatial<a class="headerlink" id="VI43c" href="#VI43c"></a></h4>
 			         
 			         <p>Comment est-il possible d'utiliser la colonne de géométrie ? Essayons par exemple de sélectionner les communes contenant des éoliennes, comme déjà réalisé précédemment au moyen d'une <a href="06_02_req_spatiales.php#VI21" >requête spatiale</a>.</p>
 			         <p>Pour rappel, croiser deux couches est plus facile si elles sont dans le même SCR (même s'il est possible de modifier le SCR en SQL directement dans la requête&nbsp;!).</p>
@@ -238,28 +238,28 @@
 			         <p>Cette approche nécessite de prendre un peu de temps pour apprendre le langage SQL, mais est intéressante en terme de temps de traitement et de reproductibilité, toutes les requêtes pouvant être gardées dans un fichier texte et rejouées. Il est possible d'exécuter plusieurs requêtes à la suite, en terminant chaque requête par un point-virgule.</p>
 			     
 			
-			<h3><a class="titre" id="VI44">Effectuer une requête en ajoutant une couche virtuelle</a></h3>
+			<h3>Effectuer une requête en ajoutant une couche virtuelle<a class="headerlink" id="VI44" href="#VI44"></a></h3>
 			
-			 <p>Nous avons vu comment écrire une requête SQL à partir du gestionnaire de bases de données. Il existe une autre interface possible, en passant par le gestionnaire des sources de données.</p>
-			 <div class="manip">
-			     <p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône du gestionnaire de sources de données" >Ouvrez le gestionnaire de source de données, rubrique <b>Couche virtuelle</b> :</p>
-                    <figure>
-                    	<a href="illustrations/tous/6_4_ajout_vl_fenetre.png" >
-                    		<img src="illustrations/tous/6_4_ajout_vl_fenetre.png" alt="Fenêtre d'ajout/édition d'une couche virtuelle avec un exemple de requête" width="600">
-                    	</a>
-                    </figure>
-                    <ul>
-                        <li class="espace"><b>Nom de la couche :</b> il s'agit du nom qu'aura la couche virtuelle</li>
-                        <li class="espace"><b>Requête :</b> la dernière requête tapée dans le gestionnaire de bases de données s'affiche automatiquement. Si ce n'est pas le cas, tapez une requête de votre choix</li>
-                        <li class="espace"><b>Géométrie :</b> Autodétecter laisse au logiciel le soin de déterminer quelle est la colonne de géométrie. Il est également possible de spécifier <b>Aucune géométrie</b> si la couche n'en contient pas, ou bien de spécifier manuellement la colonne de géométrie</li>
-                        <li class="espace"><b>Test :</b> ce bouton permet de détecter les éventuelles erreurs présentes dans la requête</li>
-                        <li class="espace"><b>Ajouter :</b> exécute la requête et ajoute le résultat dans QGIS.</li>
-                    </ul>
-                <p>Vous devriez obtenir une couche temporaire similaire à celle créée précédemment.</p>
-			 </div>
-			 
-			<p>Dans cette fenêtre, la rubrique <b>Couche intégrées</b> permet de lister les couches présentes dans QGIS (bouton <b>Importer</b>) ou bien d'autres couches non chargées (bouton <b>Ajouter</b>).</p>
-			<p>Cette fenêtre permet donc globalement la même chose que le gestionnaire de bases de données, avec une interface un peu différente. A vous de choisir celle que vous préférez !</p>
+    			 <p>Nous avons vu comment écrire une requête SQL à partir du gestionnaire de bases de données. Il existe une autre interface possible, en passant par le gestionnaire des sources de données.</p>
+    			 <div class="manip">
+    			     <p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône du gestionnaire de sources de données" >Ouvrez le gestionnaire de source de données, rubrique <b>Couche virtuelle</b> :</p>
+                        <figure>
+                        	<a href="illustrations/tous/6_4_ajout_vl_fenetre.png" >
+                        		<img src="illustrations/tous/6_4_ajout_vl_fenetre.png" alt="Fenêtre d'ajout/édition d'une couche virtuelle avec un exemple de requête" width="600">
+                        	</a>
+                        </figure>
+                        <ul>
+                            <li class="espace"><b>Nom de la couche :</b> il s'agit du nom qu'aura la couche virtuelle</li>
+                            <li class="espace"><b>Requête :</b> la dernière requête tapée dans le gestionnaire de bases de données s'affiche automatiquement. Si ce n'est pas le cas, tapez une requête de votre choix</li>
+                            <li class="espace"><b>Géométrie :</b> Autodétecter laisse au logiciel le soin de déterminer quelle est la colonne de géométrie. Il est également possible de spécifier <b>Aucune géométrie</b> si la couche n'en contient pas, ou bien de spécifier manuellement la colonne de géométrie</li>
+                            <li class="espace"><b>Test :</b> ce bouton permet de détecter les éventuelles erreurs présentes dans la requête</li>
+                            <li class="espace"><b>Ajouter :</b> exécute la requête et ajoute le résultat dans QGIS.</li>
+                        </ul>
+                    <p>Vous devriez obtenir une couche temporaire similaire à celle créée précédemment.</p>
+    			 </div>
+    			 
+    			<p>Dans cette fenêtre, la rubrique <b>Couche intégrées</b> permet de lister les couches présentes dans QGIS (bouton <b>Importer</b>) ou bien d'autres couches non chargées (bouton <b>Ajouter</b>).</p>
+    			<p>Cette fenêtre permet donc globalement la même chose que le gestionnaire de bases de données, avec une interface un peu différente. A vous de choisir celle que vous préférez !</p>
 			 
 				
 		<br>

@@ -35,7 +35,7 @@
 				</ul>
 			</div>
 			
-			<h3><a class="titre" id="V21">Rendre une couche éditable</a></h3>
+			<h3>Rendre une couche éditable<a class="headerlink" id="V21" href="#V21"></a></h3>
 			
 				<p>Par défaut, toutes les couches ajoutées dans QGIS sont &#171; verrouillées &#187; donc non modifiables (modifier le style ne modifie pas les données mais seulement leur représentation).</p>
 				<p>Pour rendre une couche éditable, que ce soit pour modifier les données de la table attributaire ou la géométrie d'un élément, il faut donc passer en mode édition. Nous allons faire cette manipulation pour la couche <em class="data">batiments_oahu</em> afin de pouvoir y ajouter des points.</p>
@@ -66,7 +66,7 @@
 				<p><b>De manière générale, il vaut mieux quitter le mode édition dès que vous n'en avez plus besoin, et limiter le nombre de couches éditables.</b></p>
 				<p>Les couches raster ne sont jamais modifiables : si vous sélectionnez la carte de l'île d'Oahu, le passage en mode édition n'est pas possible pour cette couche.</p>
 			
-			<h3><a class="titre" id="V22">Ajout d'un point</a></h3>
+			<h3>Ajout d'un point<a class="headerlink" id="V22" href="#V22"></a></h3>
 			
 				<div class="manip">
 					<p>Commencez par repérer une école ou une poste, représentées respectivement par un point bleu ou rouge, par exemple la poste de la baie de Kaneohe :</p>
@@ -107,11 +107,11 @@
 				</div>
 				
 			
-			<h3><a class="titre" id="V23">Modification d'un point</a></h3>
+			<h3>Modification d'un point<a class="headerlink" id="V23" href="#V23"></a></h3>
 				
 				<p>Il peut arriver bien sûr de vouloir modifier un point déjà existant, soit que vous vouliez le déplacer, soit que vous souhaitiez modifier ses données attributaires.</p>
 				
-				<h4><a class="titre" id="V23a">Déplacement</a></h4>
+				<h4>Déplacement<a class="headerlink" id="V23a" href="#V23a"></a></h4>
 				
 					<p>Imaginons qu'un de vos points soit mal placé et que vous vouliez le déplacer.</p>
 					<div class="manip">
@@ -121,7 +121,7 @@
 						<p>Le curseur prend la forme d'une croix. Cliquez sur le point à déplacer, puis cliquez sur l'endroit où vous souhaitez déplacer ce point.</p>
 					</div>
 				
-				<h4><a class="titre" id="V23b">Modification des données attributaires</a></h4>
+				<h4>Modification des données attributaires<a class="headerlink" id="V23b" href="#V23b"></a></h4>
 				
 					<p>Que faire dans le cas où vous voulez modifier les données attributaires d'un point, par exemple le passer de poste à école?</p>
 					
@@ -136,7 +136,7 @@
                         </figure>
 					</div>
 					
-			<h3><a class="titre" id="V24">Quitter le mode édition</a></h3>
+			<h3>Quitter le mode édition<a class="headerlink" id="V24" href="#V24"></a></h3>
 			
 				<p>Une fois vos ajouts et modifications terminés, il est important de quitter le mode édition, pour plusieurs raisons :</p>
 				<ul>

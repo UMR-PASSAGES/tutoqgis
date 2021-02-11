@@ -28,7 +28,7 @@
 				
 			<p>Nous verrons ici comment ajouter et supprimer des champs dans la table attributaire d'une couche existante, et comment modifier l'ordre des champs.</p>
 
-			<h3><a class="titre" id="VII11">Quels sont les champs présents dans une table ?</a></h3>
+			<h3>Quels sont les champs présents dans une table ?<a class="headerlink" id="VII11" href="#VII11"></a></h3>
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>.</p>
@@ -43,9 +43,9 @@
 			
 			
 			
-			<h3><a class="titre" id="VII12">Créer et supprimer un champ à partir de la table attributaire</a></h3>
+			<h3>Créer et supprimer un champ à partir de la table attributaire<a class="headerlink" id="VII12" href="#VII12"></a></h3>
 			
-			    <h4><a class="titre" id="VII12a">Créer un champ</a></h4>
+			    <h4>Créer un champ<a class="headerlink" id="VII12a" href="#VII12a"></a></h4>
 			
     				<p>Nous allons ajouter un champs à la couche <em class="data">communes_Bretagne_calcul</em>, nommé <b>NOM_DEPT</b>, destiné à contenir le nom du département de la commune.</p>
     				
@@ -77,7 +77,7 @@
     					<p>Quittez le mode édition en enregistrant les modifications.</p>
     				</div>
 			
-			     <h4><a class="titre" id="VII12b">Modifier les valeurs d'un champ manuellement</a></h4>
+			     <h4>Modifier les valeurs d'un champ manuellement<a class="headerlink" id="VII12b" href="#VII12b"></a></h4>
 			     
 			         <p>Il est maintenant possible de taper du texte pour remplir le champ NOM_DEPT que nous venons de créer.</p>
 			         <div class="manip">
@@ -105,7 +105,7 @@
     			     </div>
 			     
 			     
-			     <h4><a class="titre" id="VII12c">Supprimer un champ existant</a></h4>
+			     <h4>Supprimer un champ existant<a class="headerlink" id="VII12c" href="#VII12c"></a></h4>
 			
     				<p>Nous allons <b>supprimer le champ NOM_DEPT</b> que vous venez de créer (nous créerons un autre champ NOM_DEPT dans le <a href="07_02_calculer.php">chapitre suivant</a> que nous remplirons automatiquement).</p>
     				
@@ -126,7 +126,7 @@
     					<p>Le champ est supprimé. Quittez le mode édition en enregistrant les modifications.</p>
     				</div>
 			
-			    <h3><a class="titre" id="VII13">Pour aller plus loin : refactoriser les champs</a></h3>
+			    <h3>Pour aller plus loin : refactoriser les champs<a class="headerlink" id="VII13" href="#VII13"></a></h3>
 			    
 			       <p>Sous le nom un peu barbare de &#171; refactoriser &#187; se cache la possibilité de <b>renommer les champs</b>, ainsi que d'en <b>modifier l'ordre et le type</b> (texte, nombre...). Cet outil offre également la possibilité de créer ou supprimer des champs.</p>
 			       <p>Notez que la couche en entrée ne sera pas directement modifiée, une nouvelle couche sera créée.</p>

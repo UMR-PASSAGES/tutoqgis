@@ -24,7 +24,7 @@
 			<p>Contrairement aux requêtes attributaires, les requêtes spatiales mettent donc le plus souvent deux couches en jeu : une couche dans laquelle sera faite la sélection, et une couche de référence.</p>
 			<p>On peut par exemple, à l'aide d'une couche de points et d'une couche de polygones, sélectionner tous les points situés dans les polygones.</p>
 			
-			<h3><a class="titre" id="VI21">Faire une requête spatiale simple</a></h3>
+			<h3>Faire une requête spatiale simple<a class="headerlink" id="VI21" href="#VI21"></a></h3>
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_Bretagne</a></em>.</p>
@@ -79,7 +79,7 @@
                     </figure>
                 </div>
 			
-			<h3><a class="titre" id="VI22">Les opérateurs</a></h3>
+			<h3>Les opérateurs<a class="headerlink" id="VI22" href="#VI22"></a></h3>
 			
 				<p>Dans l'exemple ci-dessus, nous avons utilisé l'opérateur <b>Intersecte</b> ou <b>Contient</b>. Il en existe d'autres&nbsp;; les opérateurs possibles varient en fonction de la nature des couches source et de référence (point, ligne, polygone).</p>
 			
@@ -187,7 +187,7 @@
 					
 					<p>Pour en savoir plus sur les différents opérateurs, rendez-vous <a class="ext" target="_blank" href="https://gis.stackexchange.com/questions/217444/understanding-join-attributes-by-location-in-qgis/305193#305193" >ici</a> ou <a class="ext" target="_blank" href="https://github.com/boundlessgeo/workshops/blob/master/workshops/postgis/source/en/spatial_relationships.rst#spatial-relationships" >là</a> (en anglais, mais les dessins sont parlants !).</p>
 					
-				<h3><a class="titre" id="VI23">Quelques exemples</a></h3>
+				<h3>Quelques exemples<a class="headerlink" id="VI23" href="#VI23"></a></h3>
 					
 					<div class="manip">
     					<p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">Cours d'eau métropole de plus de 100km</em>.</p>

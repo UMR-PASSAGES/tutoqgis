@@ -28,7 +28,7 @@
 			<p>Nous avons vu précédemment comment numériser des points. Comment procéder quand le but est de numériser des lignes ? Nous allons numériser des fleuves de la carte de l'île d'Oahu.</p>
 
 			
-			<h3><a class="titre" id="V41">Création d'une couche de lignes</a></h3>
+			<h3>Création d'une couche de lignes<a class="headerlink" id="V41" href="#V41"></a></h3>
 				
 				<div class="manip">
 					<p>Reportez-vous à la <a href="05_01_creation_couche.php">partie V.1</a> pour créer une couche de ligne, en lui donnant :</p>
@@ -40,31 +40,31 @@
 					<p>Vérifiez que cette couche soit bien chargée dans votre projet, ainsi que la carte <em class="data"><a href="donnees/TutoQGIS_05_Numerisation.zip">Oahu_Hawaiian_Islands_1906_wgs84.tif</a></em>.</p>
 				</div>
 			
-			<h3><a class="titre" id="V42">Ajout d'une ligne</a></h3>
+			<h3>Ajout d'une ligne<a class="headerlink" id="V42" href="#V42"></a></h3>
 			
-				<h4><a class="titre" id="V42a">Première ligne</a></h4>
+				<h4>Première ligne<a class="headerlink" id="V42a" href="#V42a"></a></h4>
 				
-				<div class="manip">
-					<p>Zoomez sur un fleuve, par exemple dans l'ouest de l'île, dans la région de Makaha :</p>
-					<figure>
-						<a href="illustrations/tous/5_4_makaha.png" >
-							<img class="noshadow" src="illustrations/tous/5_4_makaha.png" alt="zoom sur Makaha" width="232">
-						</a>
-						<a href="illustrations/tous/5_4_makaha_zoom.png" >
-							<img class="noshadow" src="illustrations/tous/5_4_makaha_zoom.png" alt="zoom sur la rivière de Makaha" width="266">
-						</a>
-					</figure>
-					<p>Passez en mode édition pour votre couche de fleuves.</p>
-					<p><img class="icone" src="illustrations/tous/5_4_ajout_icone.png" alt="icône ajouter une entité">Cliquez sur l'icône <b>Ajouter une entité</b> (vous remarquerez que cette icône varie en fonction du type de la couche éditée, point, ligne ou polygone).</p>
-					<p>Cliquez sur le début du fleuve pour créer un premier sommet, puis rajoutez d'autres points à votre ligne. Pour terminer, faites un clic-droit n'importe où.</p>
-					<figure>
-						<a href="illustrations/tous/5_4_fleuve.png" >
-							<img src="illustrations/tous/5_4_fleuve.png" alt="fleuve numérisé" width="500">
-						</a>
-					</figure>
-				</div>
+    				<div class="manip">
+    					<p>Zoomez sur un fleuve, par exemple dans l'ouest de l'île, dans la région de Makaha :</p>
+    					<figure>
+    						<a href="illustrations/tous/5_4_makaha.png" >
+    							<img class="noshadow" src="illustrations/tous/5_4_makaha.png" alt="zoom sur Makaha" width="232">
+    						</a>
+    						<a href="illustrations/tous/5_4_makaha_zoom.png" >
+    							<img class="noshadow" src="illustrations/tous/5_4_makaha_zoom.png" alt="zoom sur la rivière de Makaha" width="266">
+    						</a>
+    					</figure>
+    					<p>Passez en mode édition pour votre couche de fleuves.</p>
+    					<p><img class="icone" src="illustrations/tous/5_4_ajout_icone.png" alt="icône ajouter une entité">Cliquez sur l'icône <b>Ajouter une entité</b> (vous remarquerez que cette icône varie en fonction du type de la couche éditée, point, ligne ou polygone).</p>
+    					<p>Cliquez sur le début du fleuve pour créer un premier sommet, puis rajoutez d'autres points à votre ligne. Pour terminer, faites un clic-droit n'importe où.</p>
+    					<figure>
+    						<a href="illustrations/tous/5_4_fleuve.png" >
+    							<img src="illustrations/tous/5_4_fleuve.png" alt="fleuve numérisé" width="500">
+    						</a>
+    					</figure>
+    				</div>
 				
-				<h4><a class="titre" id="V42b">Quelques astuces</a></h4>
+				<h4>Quelques astuces<a class="headerlink" id="V42b" href="#V42b"></a></h4>
 				
 					<ul>
 					<li class="espace">Si pendant la numérisation vous avez des <b>difficultés à voir votre ligne</b> : menu Préférences &#8594; Options &#8594; rubrique Numérisation : réglez l'épaisseur de la ligne, par exemple 2, et la couleur. Pour la 
@@ -79,7 +79,7 @@
 					<li class="espace"><b>Abandonner la ligne en cours :</b> terminez-la avec un clic droit, puis si les fenêtres de saisie d'attributs sont activées cliquez sur annuler, sinon utilisez ctrl + z</li>
 					</ul>
 			
-			<h3><a class="titre" id="V43">Modification du tracé d'une ligne</a></h3>
+			<h3>Modification du tracé d'une ligne<a class="headerlink" id="V43" href="#V43"></a></h3>
 			
 				<p>Il est possible de modifier le tracé d'une ligne existante en déplaçant des sommets, en en rajoutant ou supprimant.</p>
 				

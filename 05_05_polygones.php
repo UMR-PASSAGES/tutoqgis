@@ -42,7 +42,7 @@
 			</figure>
 			<p>L'idée est de numériser le polygone de la réserve forestière, avec des contours bleus sur la carte, puis de le découper pour différencier les zones de cette réserve classées comme &#171; Public lands &#187; (en vert) ou comme &#171; Dederal Reservations &#187; (en rose).</p>
 				
-			<h3><a class="titre" id="V51">Création d'une couche de polygones</a></h3>
+			<h3>Création d'une couche de polygones<a class="headerlink" id="V51" href="#V51"></a></h3>
 				
 				<div class="manip">
 					<p>Reportez-vous à la <a href="05_01_creation_couche.php">partie V.1</a> pour créer une couche de polygones, en lui donnant :</p>
@@ -55,7 +55,7 @@
 				</div>
 				
 									
-			<h3><a class="titre" id="V52">Ajout d'un polygone</a></h3>
+			<h3>Ajout d'un polygone<a class="headerlink" id="V52" href="#V52"></a></h3>
 			
 				<p>Nous allons commencer par numériser la réserve forestière de l'île (hachurée en rouge dans l'image ci-dessous) :</p>
 				<figure>
@@ -87,7 +87,7 @@
 					<p>Vous pouvez maintenant remplir les données attributaires pour ce polygone, par exemple en donnant la valeur <b>Forest Reserves</b> en type1, et la valeur <b>None</b> en type2.</p>
 				</div>
 				
-			<h3><a class="titre" id="V53">Découpage d'un polygone</a></h3>
+			<h3>Découpage d'un polygone<a class="headerlink" id="V53" href="#V53"></a></h3>
 			
 				<p>La partie Nord de notre réserve est occupée par des terres publiques (Public Lands) puis par une réserve fédérale (Federal Reservation). Comment diviser notre polygone pour faire apparaître ces zones ?</p>
 				
@@ -121,7 +121,7 @@
 					</figure>
 				</div>
 
-			<h3><a class="titre" id="V54">Frontière commune entre 2 polygones : comment est-elle gérée ?</a></h3>
+			<h3>Frontière commune entre 2 polygones&nbsp;: comment est-elle gérée ?<a class="headerlink" id="V54" href="#V54"></a></h3>
 			
 				<div class="manip">
 					<p><img class="icone" src="illustrations/tous/5_4_noeud_icone.png" alt="icône de l'outil de noeud" >A l'aide de <a href="05_04_lignes.php#V43">l'outil de nœud</a>, déplacez un sommet de la petite langue de terre d'Aiea.</p>
@@ -151,7 +151,7 @@
 				</div>
 			
 			
-			<h3><a class="titre" id="V55">Ajout d'un élément en s'appuyant sur un autre : l'accrochage</a></h3>
+			<h3>Ajout d'un élément en s'appuyant sur un autre : l'accrochage<a class="headerlink" id="V55" href="#V55"></a></h3>
 			
 				<p>Pour rajouter un élément qui en touche un autre, il est possible de s'aimanter sur les sommets ou les segments de l'élément déjà existant. Cette propriété n'est bien sûr pas propre seulement aux couches de polygones mais fonctionne aussi pour les couches de lignes et de points.</p>
 				<p>Ceci permet de faire en sorte que deux polygones soient parfaitement contigus, sans aucun trou ou superposition.</p>
@@ -186,7 +186,7 @@
 					</figure>
 				</div>
 				
-			<h3><a class="titre" id="V56">Éviter les intersections entre polygones jointifs</a></h3>
+			<h3>Éviter les intersections entre polygones jointifs<a class="headerlink" id="V56" href="#V56"></a></h3>
 			
 				<p>L'accrochage est une propriété pratique pour quelques sommets, mais si vous souhaitez créer un polygone contigu à une autre sur une longue portion (par exemple le polygone en pointillés bleus sur la carte), cela peut être fastidieux de cliquer un à un sur tous les sommets communs.</p>
 				
