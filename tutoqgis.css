@@ -384,6 +384,18 @@ hov         #1D3437     hover colour
 	table.table_logos td {
 	    text-align: center;
 	}
+	
+	/* tableau contenant une série d'images à la manière de vignettes */
+	table.table_images{
+	    background-color: none;
+	}
+	table.table_images tr {
+	    background-color: transparent;
+	}
+    table.table_images td {
+	    text-align: center;
+	    font-style: italic;
+	}
 
 	/* différents styles de listes */
 	OL.withroman {	/* liste numérotée avec chiffres romains */
@@ -493,6 +505,20 @@ hov         #1D3437     hover colour
 	a.prec:before {
 		content: "\2190\0000a0";
 	}
+	/* link in header */
+	a.headerlink{
+	    color: transparent;
+	}
+    a.headerlink:hover{
+	    color: /*link*/#28A6B7;
+	}
+	.headerlink::after {
+        content: "\f0c1";
+        font-family: FontAwesome;
+    }
+    .headerlink::before {
+        content: " ";
+    }
 
 	/* texte mis en évidence (donnees, numeros...) */
 	em.data { 

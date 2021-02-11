@@ -92,7 +92,7 @@
 		
 				<br>
 				<a class="prec" href="09_02_raster.php">chapitre précédent</a>
-				<a class="suiv" href="10_00_carto.php">partie X : représentation et mise en page</a>
+				<a class="suiv" href="09_04_maillage.php">chapitre suivant</a>
 				<br>
 				<a class="hautpage" href="#wrap">haut de page</a>					
 				

@@ -43,7 +43,7 @@
 			
 			 <p>Les <b>couches virtuelles</b> (virtual layers) sont un type particulier de couches vecteur ne contenant pas de données mais renvoyant vers d'autres couches.</p>
 			 <p>Elles permettent d'utiliser le langage SQL sur une ou plusieurs couches vectorielles chargées dans QGIS, au format shapefile, geopackage ou autre.</p>
-			 <p>Pour information, les fonctions SQL disponibles sont celles de <a class="ext" target="_blank" href="https://www.sqlite.org/lang.html">SQLite</a>/<a class="ext" target="_blank" href="http://www.gaia-gis.it/spatialite-2.4.0/spatialite-sql-2.4.html">SpatiaLite</a>. Elles sont donc un peu moins riches que celles offertes par PostgreSQL/PostGIS mais offrent tout de même beaucoup de possibilités.</p>
+			 <p>Pour information, les fonctions SQL disponibles sont celles de <a class="ext" target="_blank" href="https://www.sqlite.org/lang.html">SQLite</a>/<a class="ext" target="_blank" href="http://www.gaia-gis.it/gaia-sins/spatialite-sql-latest.html">SpatiaLite</a>. Elles sont donc un peu moins riches que celles offertes par PostgreSQL/PostGIS mais offrent tout de même beaucoup de possibilités.</p>
 			
 			<h3><a class="titre" id="VI42">Effectuer une requête simple avec le gestionnaire de bases de données</a></h3>
 			
