@@ -29,17 +29,16 @@
 							<li><a href="#I12e" >A quoi sert un SIG ?</a></li>
 						</ul>
 					</li>
-<!-- 					<li><a href="#I13">Quelques limites des SIG</a></li> -->
 				</ul>
 				
 				
-				<h3><a class="titre" id="I11">Définitions</a></h3>
+				<h3>Définitions<a class="headerlink" id="I11" href="#I11"></a></h3>
 				
-					<h4><a class="titre" id="I11a">Qu'est-ce que la géomatique ?</a></h4>
+					<h4>Qu'est-ce que la géomatique ?<a class="headerlink" id="I11a" href="#I11a"></a></h4>
 						<p>La géomatique est l'ensemble des techniques de traitement informatique des données géographiques (Journal Officiel, 1994). Elle regroupe donc les outils et méthodes permettant l'acquisition, le stockage, le traitement et la diffusion de données à référence spatiale.</p>
 					
 					
-					<h4><a class="titre" id="I11b">Qu'est-ce qu'un Système d'Information Géographique ?</a></h4>
+					<h4>Qu'est-ce qu'un Système d'Information Géographique ?<a class="headerlink" id="I11b" href="#I11b"></a></h4>
 						<p>C'est un système permettant de gérer des informations localisées géographiquement. Ce système est composé de :</p>
 							<ul>
 								<li>données</li>
@@ -51,9 +50,9 @@
 						<p>Par abus de langage, un SIG signifie souvent aujourd'hui le logiciel utilisé dans un SIG.</p>
 						
 						
-				<h3><a class="titre" id="I12">Les données des SIG</a></h3>
+				<h3>Les données des SIG<a class="headerlink" id="I12" href="#I12"></a></h3>
 				
-					<h4><a class="titre" id="I12a">Une organisation par couches</a></h4>
+					<h4>Une organisation par couches<a class="headerlink" id="I12a" href="#I12a"></a></h4>
 						<p>Les données sont organisées sous forme de couches superposables.</p>
 						<figure>
 							<a href="illustrations/tous/1_1_couches.svg" >
@@ -76,7 +75,7 @@
 						</div>
 						
 						
-					<h4><a class="titre" id="I12b">Deux grands types de données : vecteur et raster</a></h4>
+					<h4>Deux grands types de données : vecteur et raster<a class="headerlink" id="I12b" href="#I12b"></a></h4>
 						<p>On distingue généralement deux types de données : <b>vecteur et raster</b>.</p>
 						<figure>
 							<a href="illustrations/tous/1_1_vecteur.png" >
@@ -99,7 +98,7 @@
 						<p>Certains formats, comme le <a class="ext" target="_blank" href="https://www.geopackage.org/" >GeoPackage</a>, peuvent contenir des données vecteur ou raster.</p>
 						
 						
-					<h4><a class="titre" id="I12c">Les données vecteur : à chaque géométrie ses attributs (et vice-versa)</a></h4>
+					<h4>Les données vecteur : à chaque géométrie ses attributs (et vice-versa)<a class="headerlink" id="I12c" href="#I12c"></a></h4>
 						<p>On distingue deux composantes dans les données utilisées dans un SIG : spatiale et attributaire. La <b>composante spatiale</b> est constituée de la localisation et la géométrie d'un objet, donc de ses coordonnées. La <b>composante attributaire</b> est constituée des données qui y sont associées. Par exemple, la composante spatiale d'un département sera le polygone représentant ce département, et sa composante attributaire sera son nom, son code, sa population...</p>
 						<figure>					
 							<a href="illustrations/tous/1_1_spatial_attrib.png" >					
@@ -133,7 +132,7 @@
 						</div>
 						
 						
-					<h4><a class="titre" id="I12d">Des données sur les données : les métadonnées</a></h4>
+					<h4>Des données sur les données : les métadonnées<a class="headerlink" id="I12d" href="#I12d"></a></h4>
 						<p>Afin de savoir quelles sont les utilisations que l'on peut faire d'une donnée, il est indispensable de posséder des informations sur la manière dont a été fabriquée cette donnée, sa date, ses limites éventuelles d'utilisation... <b>Ces « données sur la donnée » constituent ce qu'on appelle des métadonnées</b>. Elles peuvent se présenter sous diverses formes : un simple fichier texte, une fiche PDF...</p>
 						<p class="manip">Vous pouvez voir ici les métadonnées de la couche Corine Land Cover : <a class="ext" target="_blank" href="http://www.geocatalogue.fr/Detail.do?id=7665">www.geocatalogue.fr/Detail.do?id=7665</a></p>
 						<p>Il existe aujourd'hui des normes régissant la manière dont sont construites ces métadonnées : nombres de rubriques présentes, choix des rubriques... Ceci permet de construire des catalogues de métadonnées, et facilite <i>in fine</i> l'échange de données entre organismes.</p>
@@ -141,7 +140,7 @@
 						<p class="note">Le géocatalogue est mis en oeuvre par le <a class="ext" target="_blank" href="http://www.brgm.fr/">BRGM</a>, la visualisation étant opérée par l'<a class="ext" target="_blank" href="http://www.ign.fr/">IGN</a> au travers du <a class="ext" target="_blank" href="http://www.geoportail.gouv.fr/">géoportail</a>.</p>
 						
 						
-					<h4><a class="titre" id="I12e">A quoi sert un SIG ?</a></h4>
+					<h4>A quoi sert un SIG ?<a class="headerlink" id="I12e" href="#I12e"></a></h4>
 						<p>Un SIG permet de saisir, représenter, interroger, et mettre à jour l’information géographique. Il peut notamment répondre aux questions suivantes : </p>
 							<ul>
 								<li>où : localisation, étendue</li>
@@ -156,7 +155,7 @@
 						<p>Le SIG va permettre de croiser les parcelles et le MNT pour aboutir à une couche de parcelles où seront renseignées pour chaque parcelle par exemple sa taille, sa pente moyenne, son altitude moyenne. Ces données pourront être ensuite visualisées dans le SIG, et/ou être le point de départ d'analyses statistiques dans un autre logiciel.</p>
 						
 						
-<!-- 				<h3><a class="titre" id="I13">Quelques limites des SIG</a></h3>
+<!-- 				<h3><a class="headerlink" id="I13">Quelques limites des SIG</a></h3>
 				
 					<p>Les limites d'un SIG sont en premier lieu celles de ses données. Leur pertinence, richesse, mise à jour, droits d'auteur... ne permettent pas toujours en effet de réaliser le travail voulu, sans parler de leur coût. Certaines données n'existent tout simplement pas, ce qui peut nécessiter de longues campagnes de terrain.</p>
 					<p>La puissance des ordinateurs utilisés peut aussi entrer en jeu. Certains calculs pourront en effet s'avérer impossibles si elle n'est pas suffisante. Enfin, la compétence des utilisateurs est évidemment à prendre en compte.</p>

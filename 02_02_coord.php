@@ -36,10 +36,10 @@
 			<p>Les coordonnées peuvent être exprimées en degrés, en mètres... et dans des référentiels différents. Un même point aura des coordonnées différentes selon le système de coordonnées utilisé.</p>
 	
 	
-			<h3><a class="titre" id="II21">Systèmes de coordonnées</a></h3>
+			<h3>Systèmes de coordonnées<a class="headerlink" id="II21" href="#II21"></a></h3>
 			
 			
-				<h4><a class="titre" id="II21a">Qu'est-ce qu'un système de coordonnées ?</a></h4>
+				<h4>Qu'est-ce qu'un système de coordonnées ?<a class="headerlink" id="II21a" href="#II21a"></a></h4>
 			
 					<p>Un système de coordonnées est un système utilisé pour mesurer des coordonnées. Il peut être défini par un ellipsoïde. Un point sera alors localisé par ses coordonnées géographiques, exprimées par la latitude <b>Ф</b>, la longitude <b>λ</b>, et la hauteur ellipsoïdale <b>h</b> mesurée suivant la normale à l'ellipsoïde.</p>
 					<figure>
@@ -50,7 +50,7 @@
 					<p>Longitude et latitude sont des mesures d'angles et peuvent être exprimées en degrés, en grades ou en radians.</p>
 					<p class="note">Attention à ne pas confondre la hauteur ellipsoïdale, mesurée par rapport à l'ellipsoïde, et l'altitude normale mesurée par rapport au géoïde. Avant les années 1960, les altitudes étaient mesurées par rapport au niveau de la mer (altitude orthométrique).</p>
 	
-				<h4><a class="titre" id="II21b">Quelques exemples de systèmes de coordonnées</a></h4>
+				<h4>Quelques exemples de systèmes de coordonnées<a class="headerlink" id="II21b" href="#II21b"></a></h4>
 				
 					<p>Il existe de nombreux systèmes de coordonnées. Ils sont recensés par l'<b>EPSG</b> (European Petroleum Survey Group) qui a attribué un code à chacun. Quelques exemples :</p>
 				
@@ -108,9 +108,9 @@
 				<p class="attention">On sait maintenant comment un point peut être défini par 3 coordonnées X, Y et Z. Comment représenter maintenant la Terre en 2 dimensions, pour en faire une carte par exemple ?</p>		
 					
 					
-			<h3><a class="titre" id="II22">Coordonnées en deux dimensions : les projections</a></h3>
+			<h3>Coordonnées en deux dimensions : les projections<a class="headerlink" id="II22" href="#II22"></a></h3>
 				
-				<h4><a class="titre" id="II22a">Qu'est-ce qu'une projection ?</a></h4>		
+				<h4>Qu'est-ce qu'une projection ?<a class="headerlink" id="II22a" href="#II22a"></a></h4>		
 				
 					<p><b>Le principe est de projeter des données 3D sur une surface plane</b>. Il y aura donc forcément des déformations : pensez à une peau d'orange qu'on écrase, et qui va se déchirer.</p>
 					<p>On appelle projection cartographique le système de correspondance entre les coordonnées géographiques (donc mesurées avec un système de référence) et les points du plan de projection.</p>
@@ -122,7 +122,7 @@
 							<li>de rendre plus facile une évaluation des distances</li>
 						</ul>
 						
-				<h4><a class="titre" id="II22b">Trois grands types de projections : cylindriques, coniques et azimutales</a></h4>					
+				<h4>Trois grands types de projections : cylindriques, coniques et azimutales<a class="headerlink" id="II22b" href="#II22b"></a></h4>					
 					
 					<p>Dans tous les cas, on va projeter la surface de la Terre sur une forme que l'on peut dérouler pour obtenir une surface plane : un cylindre, un cône ou un plan. On distingue ainsi les <b>projections cylindriques, coniques et azimutales</b>. Il existe d'autres types de projections.</p>
 					<figure>
@@ -138,7 +138,7 @@
 						<figcaption>Projection cylindrique, conique et azimutale (Source : Traroth, Wikimedia Commons, licence GFDL).</figcaption>
 					</figure>
 					
-				<h4><a class="titre" id="II22c">A chaque projection ses déformations</a></h4>					
+				<h4>A chaque projection ses déformations<a class="headerlink" id="II22c" href="#II22c"></a></h4>					
 					
 					<p>On peut aussi classer les projections selon leurs propriétés. On distingue ainsi :</p>
 					<ul>
@@ -149,7 +149,7 @@
 					<p>Une projection ne peut être à la fois conforme et équivalente.</p>
 					<p>Pour visualiser les déformations liées à une projection, on peut utiliser les <b>indicatrices de Tissot</b>. Ce sont des cercles identiques dessinés sur la Terre avant projection, qui se retrouveront donc déformés après projection. Si la projection déforme les angles, les cercles seront transformés en ellipses, si elle déforme les surfaces les cercles auront des surfaces différentes.</p>
 					
-				<h4><a class="titre" id="II22d">Quelques exemples de projections</a></h4>
+				<h4>Quelques exemples de projections<a class="headerlink" id="II22d" href="#II22d"></a></h4>
 	
 					<p><b>Projection cylindrique conforme de Mercator</b>
 					<br>Cette projection conserve les angles, mais déforme de plus en plus les surfaces au fur et à mesure qu'on se rapproche des pôles. Elle est largement utilisée, notamment par Google.</p>
@@ -241,7 +241,7 @@
 					
 					<p><b>En résumé, la projection parfaite n'existe pas</b> ; il faut essayer de faire au mieux pour l'usage auquel on destine la carte (à ce sujet, vous pouvez voir <a class="ext" target="_blank" href="https://www.onf.ca/film/carte_impossible#temp-share-panel">ce film</a>). Par exemple, les cartes utilisées pour la navigation conservent généralement les angles et non les distances. L'échelle de la carte influe également sur le choix de la projection.</p>
 				
-			<h3><a class="titre" id="II23">A retenir</a></h3>
+			<h3>A retenir<a class="headerlink" id="II23" href="#II23"></a></h3>
 			
 				<p>On peut exprimer les coordonnées d'un point :</p>
 				<ul>
@@ -254,7 +254,7 @@
 				<p class="attention">Pour simplifier, dans le reste de ce tutoriel, le système de coordonnées et sa projection associée s'il y en a une seront nommés SCR (Système de Coordonnées de Référence) suivant la terminologie utilisée par QGIS.</p>
 				
 			
-			<h3><a class="titre" id="II24">Quelques ressources internet</a></h3>
+			<h3>Quelques ressources internet<a class="headerlink" id="II24" href="#II24"></a></h3>
 			
 				<ul>
 					<li>Comprendre le principe des projections : <a class="ext" target="_blank" href="https://www.onf.ca/film/carte_impossible#temp-share-panel">la carte impossible</a></li>

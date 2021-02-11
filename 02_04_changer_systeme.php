@@ -20,7 +20,7 @@
 				</ul>
 	
 				
-			<h3><a class="titre" id="II41">Modifier le SCR du projet</a></h3>
+			<h3>Modifier le SCR du projet<a class="headerlink" id="II41" href="#II41"></a></h3>
 			
 				<p>Vous avez pu constater dans la partie <a href="02_03_couches_projets.php">II.3 Couches et projets : à chacun son système</a> que les couches d'un projet sont affichées dans le SCR du projet. Comment modifier le SCR du projet pour afficher les couches dans le SCR de votre choix&nbsp;?</p>
 				<p>Nous allons modifier le SCR du projet <em class="data">monde.qgz</em> du WGS84 vers <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Projection_de_Robinson" >Robinson</a> (code EPSG 53030).</p>
@@ -54,9 +54,9 @@
 					<p><em class="numero">5. </em><b>Vous devez voir dans cette partie le SCR que vous venez de sélectionner.</b></p>
 					<p>Cliquez sur <b>OK</b>.</p>
 				
-				<p>Toutes les couches du projet sont désormais affichées en Robinson. Leur SCR n'a cependant pas été modifié, ce que vous pouvez <a href="02_03_couches_projets.php#II32">vérifier</a>. Observez les modifications apportées aux pays et aux indicatrices de Tissot.</p>
+				    <p>Toutes les couches du projet sont désormais affichées en Robinson. Leur SCR n'a cependant pas été modifié, ce que vous pouvez <a href="02_03_couches_projets.php#II32">vérifier</a>. Observez les modifications apportées aux pays et aux indicatrices de Tissot.</p>
 				
-				<p class="note">Si des bugs d'affichage apparaissent, zoomez ou dézoomez.</p>
+				    <p class="note">Si des bugs d'affichage apparaissent, zoomez ou dézoomez.</p>
 	
 					<p>Répétez cette manipulation pour que le SCR du projet passe en :</p>
 					<ul>
@@ -82,7 +82,7 @@
 				<p class="attention">Vous avez pu constater que modifier le SCR du projet ne modifie pas les données. Cette manipulation permet de visualiser les données dans le SCR de votre choix, à des fins cartographiques par exemple.</p>
 			
 			
-			<h3><a class="titre" id="II42">Modifier le SCR d'une couche</a></h3>
+			<h3>Modifier le SCR d'une couche<a class="headerlink" id="II42" href="#II42"></a></h3>
 			
 				<p>Nous avons vu que QGIS gère le cas où plusieurs couches dans différents SCR sont affichés dans un même projet. Cependant, certaines manipulations nécessitent que toutes les couches soient dans le même SCR. Par ailleurs, par souci de clarté et pour éviter les erreurs, on peut vouloir travailler avec des couches dans le même SCR.</p>
 				<p>Pour toutes ces raisons, il est utile de savoir modifier le SCR d'une couche.</p>
@@ -131,7 +131,7 @@
 				<p class="attention">Modifier le SCR d'une couche crée une nouvelle couche. Cette manipulation est utile pour pouvoir effectuer ensuite des traitements sur les données, ou pour éviter toute source de confusion en ayant uniquement des données dans le même SCR.</p>
 				
 				
-			<h3><a class="titre" id="II43">Redéfinir le SCR d'une couche</a></h3>			
+			<h3>Redéfinir le SCR d'une couche<a class="headerlink" id="II43" href="#II43"></a></h3>			
 				
 				<p>Il existe une autre manipulation souvent confondue avec le fait de modifier le SCR d'une couche : <b>redéfinir le SCR d'une couche</b>. Dans ce cas, les coordonnées ne sont pas recalculées et aucune nouvelle couche n'est créée, le SCR associé à la couche est simplement modifié.</p>
 				<p>Pour reprendre l'exemple utilisé plus haut d'une couche en WGS84 contenant un point correspondant à la ville de Paris de coordonnées (48,856700 2,351000), si le SCR de cette couche est redéfini en RGF93 / Lambert-93, les coordonnées du point resteront (48,856700 2,351000) mais ces coordonnées seront renseignées comme étant mesurées dans le SCR RGF93 / Lambert-93.</p>

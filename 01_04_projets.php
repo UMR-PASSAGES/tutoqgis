@@ -18,7 +18,7 @@
 					<li><a href="#I32">Comment un projet appelle-t-il les données ?</a></li>
 				</ul>	
 			
-				<h3><a class="titre" id="I31">Qu'est-ce qu'un projet dans un logiciel SIG ?</a></h3>
+				<h3>Qu'est-ce qu'un projet dans un logiciel SIG ?<a class="headerlink" id="I31" href="#I31"></a></h3>
 				
 					<p>Un projet est un espace de travail. Sauvegarder un projet équivaut à sauvegarder le style utilisé pour chaque couche, le zoom... mais pas les données !</p>
 					<p><b>Depuis la version 3 de QGIS, le format par défaut pour les projets est le QGZ et non plus le QGS</b>. Un fichier QGZ est en fait un fichier QGS plus d'autres informations compressées dans un seul fichier. Il est toujours possible d'ouvrir et d'enregistrer des projets au format QGS.</p>
@@ -51,9 +51,9 @@
 					<p><b>Si vous fournissez à un collègue votre seul fichier QGZ ou QGS, sans les données correspondantes, ce collègue ne pourra pas visualiser les données !</b></p>
 				
 				
-				<h3><a class="titre" id="I32">Comment un projet appelle-t-il les données ?</a></h3>
+				<h3>Comment un projet appelle-t-il les données ?<a class="headerlink" id="I32" href="#I32"></a></h3>
 				
-				<p>Le chemin des couches peut être stocké de deux manières dans le projet : </p>
+				    <p>Le chemin des couches peut être stocké de deux manières dans le projet : </p>
 					<ol>
 						<li>soit <b>par rapport</b> à l'emplacement du QGZ ou QGS <b>(en relatif)</b></li>
 						<li>soit <b>"en dur"</b>, sous la forme du chemin en entier</li>

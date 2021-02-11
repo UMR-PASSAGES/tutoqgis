@@ -21,7 +21,7 @@
 						</ul>
 					</li>
 					<li><a href="#I22">L'interface de QGIS</a></li>
-					<li><a href="#I23">Propriétés d'une couche</a>
+					<li><a href="#I23">Propriétés d'une couche vecteur</a>
 						<ul class= "listesoustitres">
 							<li><a href="#I23a" >Changer la représentation d'une couche</a></li>
 							<li><a href="#I23b" >Connaître l'emplacement d'une couche</a></li>
@@ -33,36 +33,36 @@
 				</ul>
 
 				
-				<h3><a class="titre" id="I21">Ajout d'une couche de données vecteur</a></h3>
+				<h3>Ajout d'une couche de données vecteur<a class="headerlink" id="I21" href="#I21"></a></h3>
 				
-				    <h4><a class="titre" id="I21a">Par le menu</a></h4>
+				    <h4>Par le menu<a class="headerlink" id="I21a" href="#I21a"></a></h4>
 				
     					<div class="manip">
     						<p>Lancez QGIS. Depuis QGIS 3, il existe une interface unique pour ajouter des couches vecteurs, rasters etc. : le gestionnaire des sources de données.</p>
     						<p>Pour ajouter une couche vecteur via cette interface, plusieurs solutions au choix :</p>
-    							<ul>
-    								<li>
-    									<a class="thumbnail_bottom" href="#thumb">Menu couche &#8594; Gestionnaire des sources de données
-    										<span>
-    											<img src="illustrations/tous/1_2_ajout_couche_gestionnaire_menu.png" alt="Menu Couche, gestionnaire des sources de données" height="120" >
-    										</span>
-    									</a>	
-    								</li>
-    								<li>cliquer sur l'icône <b>Ouvrir le gestionnaire des sources de données</b><img class="iconemid" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône du gestionnaire des sources de données"></li>
-    								<li>utiliser le raccourci clavier <b>ctrl + L</b> (minuscule)</li>
-    							</ul>
-    					   <p>Si vous souhaitez retrouver vos habitudes de QGIS 2.18, vous pouvez également procéder ainsi : </p>
-    					       <ul>
-    					           <li>
-    									<a class="thumbnail_bottom" href="#thumb">Menu couche &#8594; Ajouter une couche &#8594; Ajouter une couche vecteur...
-    										<span>
-    											<img src="illustrations/tous/1_2_ajout_couche_vecteur_menu.png" alt="Menu Couche, ajouter une couche vecteur" height="300" >
-    										</span>
-    									</a>	
-    								</li>
-    								<li><img class="icone" src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="Icône ajout couche vecteur">Cliquer sur l'icône <b>Ajouter une couche vecteur</b> (il faut activer la barre d'outils <b>Gestion des couches</b> si ce n'est pas déjà fait : menu Vue &#8594; Barres d'outils &#8594; Gestion des couches)</li>
-    								<li>utiliser le raccourci clavier <b>ctrl + majuscule + v</b></li>
-    							</ul>
+							<ul>
+								<li>
+									<a class="thumbnail_bottom" href="#thumb">Menu couche &#8594; Gestionnaire des sources de données
+										<span>
+											<img src="illustrations/tous/1_2_ajout_couche_gestionnaire_menu.png" alt="Menu Couche, gestionnaire des sources de données" height="120" >
+										</span>
+									</a>	
+								</li>
+								<li>cliquer sur l'icône <b>Ouvrir le gestionnaire des sources de données</b><img class="iconemid" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône du gestionnaire des sources de données"></li>
+								<li>utiliser le raccourci clavier <b>ctrl + L</b> (minuscule)</li>
+							</ul>
+    					    <p>Si vous souhaitez retrouver vos habitudes de QGIS 2.18, vous pouvez également procéder ainsi : </p>
+					       <ul>
+					           <li>
+									<a class="thumbnail_bottom" href="#thumb">Menu couche &#8594; Ajouter une couche &#8594; Ajouter une couche vecteur...
+										<span>
+											<img src="illustrations/tous/1_2_ajout_couche_vecteur_menu.png" alt="Menu Couche, ajouter une couche vecteur" height="300" >
+										</span>
+									</a>	
+								</li>
+								<li><img class="icone" src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="Icône ajout couche vecteur">Cliquer sur l'icône <b>Ajouter une couche vecteur</b> (il faut activer la barre d'outils <b>Gestion des couches</b> si ce n'est pas déjà fait : menu Vue &#8594; Barres d'outils &#8594; Gestion des couches)</li>
+								<li>utiliser le raccourci clavier <b>ctrl + majuscule + v</b></li>
+							</ul>
     					   <p>Dans tous les cas, vous arrivez normalement à cette fenêtre :</p>
     						<figure>
     							<a href="illustrations/tous/1_2_ajout_couche_vecteur_gestionnaire.png" >
@@ -86,7 +86,7 @@
     					</div>
     						<p>Cette manipulation enlève seulement la couche de QGIS&#160;; elle reste présente sur votre ordinateur, prête à être ajoutée à nouveau dans QGIS.</p>
     						
-    				<h4><a class="titre" id="I21b">Par l'explorateur de fichiers</a></h4>
+    				<h4>Par l'explorateur de fichiers<a class="headerlink" id="I21b" href="#I21b"></a></h4>
     				
     				    <div class="manip">
     					
@@ -105,7 +105,7 @@
                             </figure>
     					</div>
 	
-				<h3><a class="titre" id="I22">L'interface de QGIS</a></h3>
+				<h3>L'interface de QGIS<a class="headerlink" id="I22" href="#I22"></a></h3>
 					
 					<figure>
 						<a href="illustrations/tous/1_2_interface.png" >
@@ -131,7 +131,7 @@
 					</div>
 	
 	
-				<h3><a class="titre" id="I23">Propriétés d'une couche vecteur</a></h3>
+				<h3>Propriétés d'une couche vecteur<a class="headerlink" id="I23" href="#I23"></a></h3>
 						
 					<div class="manip">
 						<p>Pour accéder aux propriétés de la couche, clic-droit sur le nom de la couche dans la table des matières,
@@ -149,37 +149,37 @@
 						<li>l'emplacement de la couche, dans la rubrique <b>Information</b></li>
 					</ol>
 					
-					<h4><a class="titre" id="I23a">Changer la représentation d'une couche</a></h4>
+					<h4>Changer la représentation d'une couche<a class="headerlink" id="I23a" href="#I23a"></a></h4>
 					
-					<div class="manip">
-						<p>Dans les propriétés de la couche, rubrique <b>Symbologie</b> :</p>
-						<figure>
-							<a href="illustrations/tous/1_2_style_couche.png" >
-								<img src="illustrations/tous/1_2_style_couche.png" alt="Onglet Style des propriétés d'une couche" width="600">
-							</a>
-						</figure>
-						<p>Cliquez sur <b>Remplissage simple</b>. </p>
-					</div>
-					<p>Vous pouvez modifier ici notamment :</p>
-					<p><em class="numero">1. </em>La couleur et le style du remplissage (continu, hachures, pas de remplissage...)</p>
-					<p><em class="numero">2. </em>La couleur et le style de la bordure (ligne continue, pas de bordure, pointillés...)</p>
+    					<div class="manip">
+    						<p>Dans les propriétés de la couche, rubrique <b>Symbologie</b> :</p>
+    						<figure>
+    							<a href="illustrations/tous/1_2_style_couche.png" >
+    								<img src="illustrations/tous/1_2_style_couche.png" alt="Onglet Style des propriétés d'une couche" width="600">
+    							</a>
+    						</figure>
+    						<p>Cliquez sur <b>Remplissage simple</b>. </p>
+    					</div>
+    					<p>Vous pouvez modifier ici notamment :</p>
+    					<p><em class="numero">1. </em>La couleur et le style du remplissage (continu, hachures, pas de remplissage...)</p>
+    					<p><em class="numero">2. </em>La couleur et le style de la bordure (ligne continue, pas de bordure, pointillés...)</p>
+    					
+    					<div class="manip">
+    						<p>Essayez de donner à votre couche ces différents styles :</p>
+    						<figure>
+    							<a href="illustrations/tous/1_2_style1.png" >
+    								<img src="illustrations/tous/1_2_style1.png" alt="Surfaces en gris clair, bordures en blanc" width="170">
+    							</a>
+    							<a href="illustrations/tous/1_2_style2.png" >
+    								<img src="illustrations/tous/1_2_style2.png" alt="Surfaces sans remplissage, bordures épaisses en gris foncé" width="170">
+    							</a>
+    							<a href="illustrations/tous/1_2_style3.png" >
+    								<img src="illustrations/tous/1_2_style3.png" alt="Surfaces jaunes, pas de bordures" width="170">
+    							</a>
+    						</figure>
+    					</div>
 					
-					<div class="manip">
-						<p>Essayez de donner à votre couche ces différents styles :</p>
-						<figure>
-							<a href="illustrations/tous/1_2_style1.png" >
-								<img src="illustrations/tous/1_2_style1.png" alt="Surfaces en gris clair, bordures en blanc" width="170">
-							</a>
-							<a href="illustrations/tous/1_2_style2.png" >
-								<img src="illustrations/tous/1_2_style2.png" alt="Surfaces sans remplissage, bordures épaisses en gris foncé" width="170">
-							</a>
-							<a href="illustrations/tous/1_2_style3.png" >
-								<img src="illustrations/tous/1_2_style3.png" alt="Surfaces jaunes, pas de bordures" width="170">
-							</a>
-						</figure>
-					</div>
-					
-					<h4><a class="titre" id="I23b">Connaître l'emplacement d'une couche</a></h4>
+					<h4>Connaître l'emplacement d'une couche<a class="headerlink" id="I23b" href="#I23b"></a></h4>
 					
 						<div class="manip">			
 							<div class="question">
@@ -196,7 +196,7 @@
 						</div>
 						<p class="note">Vous pouvez aussi vérifier l'emplacement d'une couche en passant simplement la souris sur son nom dans le panneau des couches !</p>
 						
-					<h4><a class="titre" id="I23c">Filtrer les données</a></h4>
+					<h4>Filtrer les données<a class="headerlink" id="I23c" href="#I23c"></a></h4>
 					
 					   <p>Le logiciel offre également la possibilité de de <b>filtrer les données</b>. Cette opération ne modifie pas les données elles-mêmes, mais seules les données filtrées seront affichées aussi bien sur la carte que dans la table attributaire. Toutes les opérations effectuées sur la couche ne le seront que sur les données filtrées.</p>
 					   <p>Ceci est très utile pour masquer temporairement certaines données. Si vous souhaitez vraiment ne travailler que sur une partie des données, il est peut-être plus clair de créer une nouvelle couche contenant uniquement les données étudiées.</p>
@@ -228,7 +228,7 @@
 					   <p class="note">Le filtres est également accessible à partir des propriétés de la couche &#8594; rubrique Source &#8594; bouton Constructeur de requête tout en bas de la fenêtre.</p>
 						
 						
-				<h3><a class="titre" id="I24">Ajout d'une couche raster</a></h3>		
+				<h3>Ajout d'une couche raster<a class="headerlink" id="I24" href="#I24"></a></h3>		
 				
 					<div class="manip">
 						<p>Comme lors de l'ajout d'une couche vecteur, vous avez plusieurs possibilités pour ajouter une couche raster. Par exemple, en utilisant le <b>gestionnaire des sources de données :</b></p>
@@ -277,7 +277,7 @@
 						</div>
 					
 				
-				<h3><a class="titre" id="I25">Propriétés d'une couche raster : modifier le style</a></h3>	
+				<h3>Propriétés d'une couche raster : modifier le style<a class="headerlink" id="I25" href="#I25"></a></h3>	
 					
 					<div class="manip">
 						<p>Comme pour accéder aux propriétés d'une couche vecteur, clic-droit sur le nom de la couche dans la table des matières, <b>Propriétés</b> (ou bien double-clic sur le nom de la couche).</p>

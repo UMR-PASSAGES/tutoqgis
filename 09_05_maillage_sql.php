@@ -14,26 +14,17 @@
 		<div class="main">
 			<h2>IX.4  Application 2&nbsp;: dites-le avec du SQL !</h2>
 				<ul class="listetitres">
-					<li><a href="#IX41">Créer un maillage avec les outils QGIS</a>
-					   <ul class="listesoustitres">
-							<li><a href="#IX41a">Principe</a>
-							<li><a href="#IX41b">Création d'une grille</a>
-							<li><a href="#IX41c">Union&nbsp;!</a>
-							<li><a href="#IX41d">Recalcul de la surface</a>
-							<li><a href="#IX41e">Agrégation des données par maille</a>
-							<li><a href="#IX41f">Rastérisation</a>
-						</ul>
-					</li>
-					<li><a href="#IX42">Créer un maillage avec un modèle&nbsp;?</a></li>
-					<li><a href="#IX43">Créer un maillage avec des requêtes SQL</a></li>
-					<li><a href="#IX44">Évolution temporelle&nbsp;: soustraction de 2 maillages</a></li>
+					<li><a href="#IX51">Création d'une base SpatiaLite ou PostGIS et import des données</a></li>
+					<li><a href="#IX52">Création d'une grille</a></li>
+					<li><a href="#IX53">Union et agrégation</a></li>
+					<li><a href="#IX54">Pour finir...</a></li>
+					<li><a href="#IX55">Évolution temporelle&nbsp;: soustraction de 2 maillages</a></li>
 				</ul>
 				<br>
 				
 						 
 			   <p>Comment faire pour automatiser les opérations réalisées au <a href="09_04_maillage.php" >chapitre précédent</a>, afin de pouvoir rendre le processus plus reproductible&nbsp;?</p>
 			   <p>Une première solution serait d'utiliser un <b>modèle</b>. Nous ne verrons pas ici le pas à pas pour créer le modèle en question, mais vous pouvez essayer vous-même en vous référant <a href="11_03_modeleur.php" >ici</a>&nbsp;!</p>
-			   <p class="note">Et un jour j'ajouterai le modèle en question en téléchargement...</p>
 			
 			   <p>Une autre solution pour automatiser ce traitement est d'utiliser des requêtes SQL. Il s'agit d'une partie &#171;&nbsp;pour aller plus loin&nbsp;&#187; et vous pouvez très bien décider de vous arrêter ici&nbsp;! Nous nous appuierons sur <a href="06_04_req_sql.php" >cette partie</a>.</p>
 			   

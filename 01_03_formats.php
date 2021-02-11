@@ -38,9 +38,9 @@
 				<p class="note">Si dans Windows, vous ne voyez pas les extensions de tous les fichiers : dans la fenêtre, Outils &#8594; Options des dossier, onglet Affichage, décocher la case "Masquer les extensions dont le type est connu".</p>
 				
 				
-				<h3><a class="titre" id="I31">Formats vecteur : SHP, GPKG et TAB</a></h3>
+				<h3>Formats vecteur : SHP, GPKG et TAB<a class="headerlink" id="I31" href="#I31"></a></h3>
 				
-					<h4><a class="titre" id="I31a">Format Shapefile ou SHP : un "standard" vieillissant !</a></h4>
+					<h4>Format Shapefile ou SHP : un "standard" vieillissant !<a class="headerlink" id="I31a" href="#I31a"></a></h4>
 					
 					    <figure>
 						  <a href="illustrations/tous/1_3_fichiers_shp.png" >
@@ -55,18 +55,17 @@
 							<li><b>DBF</b> : contient les informations attributaires</li>
 							<li><b>SHX</b> : fichier d'index</li>
 						</ul>
-					<p>Deux autres fichiers sont aussi bien utiles :</p>
-					<ul>
-						<li><b>PRJ</b> : contient le code du système de coordonnées et éventuellement de la projection, lisible par le logiciel ArcGIS</li>
-						<li><b>QPJ</b> : contient le code du système de coordonnées et éventuellement de la projection, lisible par le logiciel QGIS</li>
-					</ul>
-					<p>Le fichier QPJ contient plus d'informations que le fichier PRJ&nbsp;; néanmoins, QGIS crée également un fichier PRJ pour des raisons de compatibilité avec ArcGIS. Si les 2 fichiers sont présents, QGIS utilisera le QPJ.
-					</p>
-					<p>Pour que le shapefile s'ouvre correctement, tous ces fichiers doivent avoir exactement le même nom. QGIS peut ouvrir et éditer les fichiers SHP.</p>
-					
-					<p>Outre le fait d'être constitué de plusieurs fichiers, le format Shapefile possède plusieurs limitations&nbsp;: les noms de colonnes sont limités à 10 caractères et doivent éviter les accents (limites dues à l'utilisation du format DBF), la taille est limitée à 2Go... Pour en savoir plus sur ces aspects, et pour connaître des formats alternatifs&nbsp;: <a class="ext" target="_blank" href="http://switchfromshapefile.org/" >Switch from Shapefile</a>.</p>
+    					<p>Deux autres fichiers sont aussi bien utiles :</p>
+    					<ul>
+    						<li><b>PRJ</b> : contient le code du système de coordonnées et éventuellement de la projection, lisible par le logiciel ArcGIS</li>
+    						<li><b>QPJ</b> : contient le code du système de coordonnées et éventuellement de la projection, lisible par le logiciel QGIS</li>
+    					</ul>
+    					<p>Le fichier QPJ contient plus d'informations que le fichier PRJ&nbsp;; néanmoins, QGIS crée également un fichier PRJ pour des raisons de compatibilité avec ArcGIS. Si les 2 fichiers sont présents, QGIS utilisera le QPJ.</p>
+    					<p>Pour que le shapefile s'ouvre correctement, tous ces fichiers doivent avoir exactement le même nom. QGIS peut ouvrir et éditer les fichiers SHP.</p>
+    					
+    					<p>Outre le fait d'être constitué de plusieurs fichiers, le format Shapefile possède plusieurs limitations&nbsp;: les noms de colonnes sont limités à 10 caractères et doivent éviter les accents (limites dues à l'utilisation du format DBF), la taille est limitée à 2Go... Pour en savoir plus sur ces aspects, et pour connaître des formats alternatifs&nbsp;: <a class="ext" target="_blank" href="http://switchfromshapefile.org/" >Switch from Shapefile</a>.</p>
 	
-					<h4><a class="titre" id="I31b">Format GPKG (GeoPackage)</a></h4>
+					<h4>Format GPKG (GeoPackage)<a class="headerlink" id="I31b" href="#I31b"></a></h4>
 					
 					   <figure>
 						  <a href="illustrations/tous/1_3_fichiers_gpkg.png" >
@@ -86,7 +85,7 @@
 					   <p>Pour en savoir plus : <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Geopackage" >https://fr.wikipedia.org/wiki/Geopackage</a> (en français) ou <a class="ext" target="_blank" href="http://switchfromshapefile.org/#geopackage">http://switchfromshapefile.org/#geopackage</a> (en anglais).</p>
 					   
 					
-					<h4><a class="titre" id="I31c">Format TAB (MapInfo)</a></h4>
+					<h4>Format TAB (MapInfo)<a class="headerlink" id="I31c" href="#I31c"></a></h4>
 					
  					    <figure>
 						  <a href="illustrations/tous/1_3_fichiers_tab.png" >
@@ -104,11 +103,11 @@
 						</ul>
 						<p>QGIS peut ouvrir et éditer les fichiers au format TAB.</p>
 						
-				    <h4><a class="titre" id="I31d">Et bien d'autres...</a></h4>
+				    <h4>Et bien d'autres...<a class="headerlink" id="I31d" href="#I31d"></a></h4>
 				    
 				        <p>Il existe de nombreux autres formats de fichiers vecteur lisibles par QGIS. Citons par exemple le <b>GeoJSON</b>, utilisé notamment pour les cartes interactives en ligne, le <b>KML</b>, utilisé par Google Maps et Google Earth...</p>
 	
-				<h3><a class="titre" id="I32">Un exemple de format raster : le GeoTIFF</a></h3>
+				<h3>Un exemple de format raster : le GeoTIFF<a class="headerlink" id="I32" href="#I32"></a></h3>
 				
 			        <figure>
 					  <a href="illustrations/tous/1_3_fichiers_tif.png" >
@@ -126,7 +125,7 @@
 						<li class="espace"><b>TFW :</b> souvent appelé <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/World_file">"World file"</a>, ce fichier stocke les coordonnées de l'image et la taille des pixels. Ce type de fichier existe pour plusieurs formats d'image : l'extension sera JGW pour un JPG, PGW pour un PNG etc. Ce fichier n'est pas nécessaire si les informations sont déjà contenues dans l'en-tête de l'image (ce qui est le cas pour notre GeoTIFF). Les world file sont de moins en moins utilisés dans les SIG&nbsp;; ils peuvent cependant être utiles pour un logiciel non SIG ou pour un format d'image ne permettant pas le stockage d'informations de localisation dans son en-tête.</li>
 					</ul>
 				
-				<h3><a class="titre" id="I33">Quel format utiliser parmi tout ça ?</a></h3>
+				<h3>Quel format utiliser parmi tout ça ?<a class="headerlink" id="I33" href="#I33"></a></h3>
 				
 				    <p>La réponse à cette question dépend de plusieurs critères :</p>
 				    <ul>

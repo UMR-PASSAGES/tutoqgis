@@ -320,7 +320,7 @@
     			     </figure>
     		     </div>
     		     
-    		     <p>Avec cette représentation utilisant une interpolation linéaire, contrairement à ce que la fenêtre pourrait laisser croire, il n'y a pas de classes : chaque valeur correspond à une couleur, en étirant les couleurs de début et de fin du dégradé pour les faire correspondre aux valeurs minimales et maximales.</p>
+    		     <p>Avec cette représentation utilisant une interpolation linéaire, contrairement à ce que la fenêtre pourrait laisser croire, il n'y a pas de classes : chaque valeur correspond à une couleur unique, en étirant les couleurs de début et de fin du dégradé pour les faire correspondre aux valeurs minimales et maximales.</p>
     		     
     		     <p>Bravo&nbsp;! Vous êtes arrivés au résultat final&nbsp;!</p>
     		     

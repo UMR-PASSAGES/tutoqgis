@@ -20,7 +20,7 @@
 				</ul>
 				
 				
-			<h3><a class="titre" id="II31">SCR du projet</a></h3>
+			<h3>SCR du projet<a class="headerlink" id="II31" href="#II31"></a></h3>
 					
 				<div class="manip">
 					<p><img class="icone" src="illustrations/tous/1_4_ouvrir_projet_icone.png" alt="Icône Ouvrir">A partir de QGIS, ouvrez le projet <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">regions_france.qgz</a></em> situé dans le dossier <b>TutoQGIS_02_geodesie/projets</b>.</p>
@@ -67,7 +67,7 @@
 					</a>
 				</figure>
 			
-			<h3><a class="titre" id="II32">SCR d'une couche</a></h3>
+			<h3>SCR d'une couche<a class="headerlink" id="II32" href="#II32"></a></h3>
 			
 				<div class="manip">
 					<p>Nous allons maintenant nous poser la question de savoir dans quel SCR est la couche <em class="data">REGION</em>.</p>
@@ -88,7 +88,7 @@
 			
 				<p>Vous avez donc pu constater que notre projet et la couche qui y est présente ont deux SCR différents. Comment cela est-il possible ?</p>		
 			
-			<h3><a class="titre" id="II33">Projection à la volée</a></h3>
+			<h3>Projection à la volée<a class="headerlink" id="II33" href="#II33"></a></h3>
 			
 				<p>La <b>projection à la volée</b> est une fonctionnalité qui permet d'afficher des couches dans un autre SCR que le leur, le SCR du projet.</p>
 				<p>Ainsi, la couche <em class="data">REGION</em> est affichée en WGS84 bien que son SCR soit le RGF93 Lambert93. Il s'agit bien uniquement d'une question d'affichage, le SCR de la couche n'est pas modifié.</p>
