@@ -31,10 +31,10 @@
 				<br>
 			
 			
-			<h3><a class="titre" id="IV51">Vérification avant calage : les erreurs</a></h3>
+			<h3>Vérification avant calage : les erreurs<a class="headerlink" id="IV51" href="#IV51"></a></h3>
 			
 			
-				<h4><a class="titre" id="IV51a">Erreur locale : en chaque point de contrôle</a></h4>
+				<h4>Erreur locale : en chaque point de contrôle<a class="headerlink" id="IV51a" href="#IV51a"></a></h4>
 				
 					<p>Maintenant que le type de transformation est renseigné, les erreurs pour chaque pixel ont été calculées dans la table des points de contrôle :</p>
 					<figure>
@@ -60,7 +60,7 @@
 					</div>
 				
 				
-				<h4><a class="titre" id="IV51b">Erreur globale : Erreur Quadratique Moyenne</a></h4>
+				<h4>Erreur globale : Erreur Quadratique Moyenne<a class="headerlink" id="IV51b" href="#IV51b"></a></h4>
 				
 					<p>Tout en bas de la table des points de contrôle est indiqué le type de transformation utilisée (polynomiale 1 dans notre cas) et l'erreur moyenne :</p>
 					<figure>
@@ -77,7 +77,7 @@
 						<p>Vérifiez ce qui se passe si vous décochez tous les points (colonne on/off) sauf trois. Cochez un quatrième point. Cochez à nouveau tous les points, sauf ceux ayant éventuellement des valeurs d'erreur aberrantes.</p>
 					</div>
 				
-			<h3><a class="titre" id="IV52">Lancement du géoréférencement</a></h3>
+			<h3>Lancement du géoréférencement<a class="headerlink" id="IV52" href="#IV52"></a></h3>
 			
 				<div class="manip">
 					<p><img class="icone" src="illustrations/tous/4_5_lancement_icone.png" alt="icône de lancement du géoréférencement" >Pour procéder au géoréférencement proprement dit :
@@ -92,9 +92,9 @@
 					<p>Une fois le géoréférencement terminé, l'image calée s'affiche dans QGIS (en plus de s'afficher dans la fenêtre du géoréférenceur).</p>
 					<p class="manip">Fermez la fenêtre du géoréférenceur.</p>
 				
-			<h3><a class="titre" id="IV53">Vérification de la précision du calage</a></h3>
+			<h3>Vérification de la précision du calage<a class="headerlink" id="IV53" href="#IV53"></a></h3>
 					
-				<h4><a class="titre" id="IV53a">Lecture de la carte et du rapport PDF</a></h4>
+				<h4>Lecture de la carte et du rapport PDF<a class="headerlink" id="IV53a" href="#IV53a"></a></h4>
 				
 					<p class="manip">Ouvrez tout d'abord la carte PDF, qui se situe à l'emplacement que vous avez choisi précédemment.</p>
 					<figure>
@@ -112,7 +112,7 @@
 					<p>En effet, les informations des cases dX[pixels] et dY[pixels] indiquent un déplacement de 2,77 pixels en Y (vers le bas) et -0,82 pixels en Y (vers la gauche). Ces chiffres seront différents dans votre cas, mais ils seront cohérents avec votre carte PDF.</p>
 					<p>Le rapport PDF contient la carte, la visualisation séparée des erreurs de calage en chaque point, ainsi que la table des points de contrôle avec les erreurs en X, en Y et totale pour chacun d'eux. Il n'indique malheureusement pas la RMSE (ou l'EMQ). Il demeure cependant possible de la recalculer sous un tableur en important le fichier-texte des points de contrôle (extension .points).</p>
 				
-				<h4><a class="titre" id="IV53b">Vérification par superposition d'une autre couche</a></h4>
+				<h4>Vérification par superposition d'une autre couche<a class="headerlink" id="IV53b" href="#IV53b"></a></h4>
 				
 					<p>Une bonne manière de vérifier l'exactitude du géoréférencement est de superposer notre couche calée à une couche déjà correctement géoréférencée.</p>
 					<p>Ici, nous allons utiliser la couche de pays de <a class="ext" target="_blank" href="http://www.naturalearthdata.com/">NaturalEarth</a>.</p>

@@ -24,7 +24,7 @@
 					<li><a href="#III43">Afficher un fonds avec l'extension QuickMapServices</a></li>
 				</ul>
 	
-			<h3><a class="titre" id="III41">Principe</a></h3>
+			<h3>Principe<a class="headerlink" id="III41" href="#III41"></a></h3>
 			
 			    <p>Il est possible d'afficher dans QGIS des fonds de carte &#171;&nbsp;en ligne &nbsp;&#187;, comme par exemple les fonds <a class="ext" target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> ou Google Maps. <b>Ces fonds ne seront pas modifiables</b>, la seule possibilité étant de les rendre plus ou moins transparents pour les atténuer.</p>
 			    
@@ -34,11 +34,11 @@
 			    
 			    <p>De tels fonds sont dits &#171;&nbsp;tuilés &nbsp;&#187; car ils sont découpés en carrés jointifs (tuiles) pour faciliter l'affichage, à chaque niveau de zoom. On parle également de tuiles XYZ, X et Y correspondant à  la position de la tuile et Z au niveau de zoom. Pour en savoir plus : <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Tiled_web_map">la page (en anglais) de wikipedia</a></p>
 			
-			<h3><a class="titre" id="III42">Ajouter un fonds via l'explorateur</a></h3>
+			<h3>Ajouter un fonds via l'explorateur<a class="headerlink" id="III42" href="#III42"></a></h3>
 
 		        <p>Depuis QGIS 3, il existe une solution pour ajouter des fonds de carte sans installation d'extension.</p>
 		        
-		        <h4><a class="titre" id="III42a">Ajouter un fonds proposé par défaut</a></h4>
+		        <h4>Ajouter un fonds proposé par défaut<a class="headerlink" id="III42a" href="#III42a"></a></h4>
 		        
     		        <div class="manip">
     		            <p>Ouvrez un nouveau projet QGIS.</p>
@@ -53,7 +53,8 @@
     		        </div>
     		        
     		        <p>Beaucoup d'autres fonds sont disponibles de la même manière, mais il faut d'abord créer les connexions correspondantes. Cette manipulation ne devra être effectuée qu'une seule fois, les fonds seront ensuite accessibles dans le panneau explorateur de la même manière que le fonds OpenStreetMap proposé par défaut.</p>
-    		    <h4><a class="titre" id="III42b">Ajouter de nouveaux fonds</a></h4>
+    		        
+    		    <h4>Ajouter de nouveaux fonds<a class="headerlink" id="III42b" href="#III42b"></a></h4>
     		    
     		        <p>Il faut tout d'abord trouver des adresses de fonds à ajouter à QGIS. Vous pouvez trouver quelques adresses <a class="ext" target="_blank" href="https://www.spatialbias.com/2018/02/qgis-3.0-xyz-tile-layers/">au bas de cette page</a>, qui explique par ailleurs comment en obtenir d'autres. Voir aussi <a class="ext" target="_blank" href="https://wiki.openstreetmap.org/wiki/Tile_servers" >la page Tile Servers du wiki OpenStreetMap</a>, comme décrit <a href="03_05_donnees_osm.php#III52" >plus loin</a>.</p>
     		        <p>Ici, nous allons ajouter un fonds en niveaux de gris utilisant les données OpenStreetMap, qui se nomme Carto Positron.</p>
@@ -88,7 +89,7 @@
     		        <p class="note">Attention à ne pas utiliser le caractère / (&#171;&nbsp;slash&nbsp;&#187;) dans le nom des connexions !</p>
     		        <p class="note">Attention également, certaines url de serveurs de tuiles sont sous la forme <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.png</b> : il faut alors supprimer les <b>$</b> pour obtenir <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.png</b>.</p>
 			   
-		    <h3><a class="titre" id="III43">Afficher un fonds avec l'extension QuickMapServices</a></h3>
+		    <h3>Afficher un fonds avec l'extension QuickMapServices<a class="headerlink" id="III43" href="#III43"></a></h3>
 		    
 		        <p>Une autre méthode pour ajouter des fonds de carte consiste à utiliser l'extension <a class="ext" target="_blank" href="https://github.com/nextgis/quickmapservices">QuickMapServices</a>, qui propose un certain nombre de fonds, notamment des fonds OpenStreetMap et Google Maps.</p>
 		        

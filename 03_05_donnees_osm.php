@@ -21,7 +21,7 @@
 					<li><a href="#III55">Charger des données OpenStreetMap à partir de QGIS</a></li>
 				</ul>
 	
-			<h3><a class="titre" id="III51">Qu'est-ce qu'OpenStreetMap ?</a></h3>
+			<h3>Qu'est-ce qu'OpenStreetMap ?<a class="headerlink" id="III51" href="#III51"></a></h3>
 			
                 <p><a class="ext" target="_blank" href="http://www.openstreetmap.org">OpenStreetMap ou OSM</a> est un projet qui a pour but de constituer une base de données géographiques libre du monde. A l'instar de <a class="ext" target="_blank" href="https://fr.wikipedia.org">Wikipédia</a>, tout un chacun peut participer et enrichir le projet. On peut donc visualiser, réutiliser et même après inscription modifier gratuitement les données.</p>
                 <p>La partie la plus connue du projet est peut-être la visualisation des données OSM sous forme de <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=19/44.79461/-0.61780" >carte</a> ; mais OSM est avant tout un ensemble de <a class="ext" target="_blank" href="https://www.openstreetmap.org/way/226888023">données</a> géographiques, utilisables entre autres dans un logiciel SIG.</p>
@@ -38,50 +38,50 @@
                 <p>Il existe plusieurs valeurs possibles pour chaque clé, la clé <b>waterway</b> peut par exemple avoir comme valeur <b>river</b> (rivière), <b>stream</b> (ruisseau), <b>canal</b>... Retrouvez <a target="_blank" class="ext" href="http://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques">ici</a> la liste des clés et des valeurs couramment utilisées.</p>
                 <p>Nous allons découvrir ici différentes manières pour non seulement visualiser un fonds OSM, mais également pour utiliser les données OSM dans QGIS. Il est possible de télécharger ces données à partir de différents sites pour ensuite les ajouter à QGIS, mais aussi de les charger directement dans QGIS.</p>
 
-			<h3><a class="titre" id="III52">Visualiser un fonds OpenStreetMap</a></h3>
+			<h3>Visualiser un fonds OpenStreetMap<a class="headerlink" id="III52" href="#III52"></a></h3>
 			
-			<p>Il s'agira ici de simplement visualiser les données OSM comme un fonds raster, c'est-à-dire une image non modifiable. OSM étant une base de données, il est possible de représenter ces données comme on le souhaite ; plusieurs organismes proposent ainsi leur représentation des données OSM. Ces représentations peuvent avoir des objectifs différents : servir de fonds de carte discret, représenter les itinéraires cyclables, les données utiles pour les organisations humanitaires...</p>
-			
-			<p>Il est possible d'afficher un fonds OpenStreetMap, comme décrit précédemment, soit <a href="03_04_fonds_carte.php#III42">via l'explorateur avec un serveur de tuiles</a>, soit <a href="03_04_fonds_carte.php#III43">via l'extension QuickMapServices</a>.</p>
-			
-			 <p>Si vous choisissez la première méthode, voici comment ajouter de nombreux fonds utilisant les données OSM :</p>
-	        
-	        <div class="manip">
-	            <p>Dans un navigateur internet, rendez-vous dans <a target="_blank" class="ext" href="https://wiki.openstreetmap.org/wiki/Tile_servers">la page du wiki OSM dédiée aux serveurs de tuiles raster</a> : cette page liste les adresses des fonds de carte utilisant les données OSM accessibles en ligne.</p>
-	            <p>Ici, nous allons ajouter le fonds <b>Stamen Toner</b> en noir et blanc.</p>
-	            <figure>
-                	<a href="illustrations/tous/3_5_stamen_toner.png" >
-                	    <img src="illustrations/tous/3_5_stamen_toner.png" alt="page du wiki OSM sur les serveurs de tuiles, ligne correspondant au fonds Stamen Toner" width="600">
-                    </a>
-                </figure>
-	            <p>Copiez l'url du serveur : <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.png</b></p>
-	            <p>Dans QGIS, panneau explorateur, clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</p>
-	            <figure>
-                	<a href="illustrations/tous/3_5_stamen_connexion.png" >
-                	    <img src="illustrations/tous/3_5_stamen_connexion.png" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="430">
-                    </a>
-                </figure>
-                <ul>
-                    <li>Nom : il s'agit du nom qui apparaîtra dans le panneau explorateur, vous pouvez taper par exemple <b>Stamen Toner</b></li>
-                    <li>URL : collez l'URL que vous avez préalablement copiée, et <b>supprimez les &#171;&nbsp;$&nbsp;&#187;</b> : l'URL finale est donc <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.png</b></li>
-                </ul>
-                <p>Laissez les valeurs par défaut pour les autres paramètres, cliquez sur OK.</p>
-                <p>Le fonds Stamen Toner apparaît maintenant avec les autres fonds dans la rubrique XYZ Tiles.</p>
-                <figure>
-                    <a href="illustrations/tous/3_5_stamen_xyz.png" >
-                	    <img src="illustrations/tous/3_5_stamen_xyz.png" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Stamen Toner apparaît avec les autres" width="180">
-                	</a>
-                </figure>
-                <p>Double-cliquez pour l'ajouter :</p>
-                <figure>
-                	<a href="illustrations/tous/3_5_stamen_visu.png" >
-                	    <img src="illustrations/tous/3_5_stamen_visu.png" alt="Aperçu du fonds Stamen Toner" width="500">
-                    </a>
-                </figure>
-	        </div>
+    			<p>Il s'agira ici de simplement visualiser les données OSM comme un fonds raster, c'est-à-dire une image non modifiable. OSM étant une base de données, il est possible de représenter ces données comme on le souhaite ; plusieurs organismes proposent ainsi leur représentation des données OSM. Ces représentations peuvent avoir des objectifs différents : servir de fonds de carte discret, représenter les itinéraires cyclables, les données utiles pour les organisations humanitaires...</p>
+    			
+    			<p>Il est possible d'afficher un fonds OpenStreetMap, comme décrit précédemment, soit <a href="03_04_fonds_carte.php#III42">via l'explorateur avec un serveur de tuiles</a>, soit <a href="03_04_fonds_carte.php#III43">via l'extension QuickMapServices</a>.</p>
+    			
+    			 <p>Si vous choisissez la première méthode, voici comment ajouter de nombreux fonds utilisant les données OSM :</p>
+    	        
+    	        <div class="manip">
+    	            <p>Dans un navigateur internet, rendez-vous dans <a target="_blank" class="ext" href="https://wiki.openstreetmap.org/wiki/Tile_servers">la page du wiki OSM dédiée aux serveurs de tuiles raster</a> : cette page liste les adresses des fonds de carte utilisant les données OSM accessibles en ligne.</p>
+    	            <p>Ici, nous allons ajouter le fonds <b>Stamen Toner</b> en noir et blanc.</p>
+    	            <figure>
+                    	<a href="illustrations/tous/3_5_stamen_toner.png" >
+                    	    <img src="illustrations/tous/3_5_stamen_toner.png" alt="page du wiki OSM sur les serveurs de tuiles, ligne correspondant au fonds Stamen Toner" width="600">
+                        </a>
+                    </figure>
+    	            <p>Copiez l'url du serveur : <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.png</b></p>
+    	            <p>Dans QGIS, panneau explorateur, clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</p>
+    	            <figure>
+                    	<a href="illustrations/tous/3_5_stamen_connexion.png" >
+                    	    <img src="illustrations/tous/3_5_stamen_connexion.png" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="430">
+                        </a>
+                    </figure>
+                    <ul>
+                        <li>Nom : il s'agit du nom qui apparaîtra dans le panneau explorateur, vous pouvez taper par exemple <b>Stamen Toner</b></li>
+                        <li>URL : collez l'URL que vous avez préalablement copiée, et <b>supprimez les &#171;&nbsp;$&nbsp;&#187;</b> : l'URL finale est donc <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.png</b></li>
+                    </ul>
+                    <p>Laissez les valeurs par défaut pour les autres paramètres, cliquez sur OK.</p>
+                    <p>Le fonds Stamen Toner apparaît maintenant avec les autres fonds dans la rubrique XYZ Tiles.</p>
+                    <figure>
+                        <a href="illustrations/tous/3_5_stamen_xyz.png" >
+                    	    <img src="illustrations/tous/3_5_stamen_xyz.png" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Stamen Toner apparaît avec les autres" width="180">
+                    	</a>
+                    </figure>
+                    <p>Double-cliquez pour l'ajouter :</p>
+                    <figure>
+                    	<a href="illustrations/tous/3_5_stamen_visu.png" >
+                    	    <img src="illustrations/tous/3_5_stamen_visu.png" alt="Aperçu du fonds Stamen Toner" width="500">
+                        </a>
+                    </figure>
+    	        </div>
 			   
 			
-			<h3><a class="titre" id="III53">Télécharger des données OpenStreetMap</a></h3>
+			<h3>Télécharger des données OpenStreetMap<a class="headerlink" id="III53" href="#III53"></a></h3>
 			
 			    <p>Il existe plusieurs possibilités pour <a class="ext" target="_blank" href="http://wiki.openstreetmap.org/wiki/Downloading_data">télécharger des données OSM</a>, notamment <a class="ext" target="_blank" href="http://wiki.openstreetmap.org/wiki/Shapefiles#Download_shapefiles">au format Shapefile</a>.</p>
 			
@@ -119,84 +119,84 @@
                 </div>
                    
                     
-                <h3><a class="titre" id="III54">Représenter des données OpenStreetMap</a></h3>
+            <h3>Représenter des données OpenStreetMap<a class="headerlink" id="III54" href="#III54"></a></h3>
                 
-                    <p>Les données OpenStreetMap ajoutées dans QGIS, comme toute autre donnée, ont un style &#171; par défaut &#187;, ne convenant pas pour une carte. Nous allons voir ici comment représenter ces données pour obtenir quelque chose de similaire à ceci :</p>
-                    <figure>
-                    	<a href="illustrations/tous/3_5_style_resultat.png" >
-                    		<img src="illustrations/tous/3_5_style_resultat.png" alt="Exemple de données OSM stylées, grande échelle" width="500">
+                <p>Les données OpenStreetMap ajoutées dans QGIS, comme toute autre donnée, ont un style &#171; par défaut &#187;, ne convenant pas pour une carte. Nous allons voir ici comment représenter ces données pour obtenir quelque chose de similaire à ceci :</p>
+                <figure>
+                	<a href="illustrations/tous/3_5_style_resultat.png" >
+                		<img src="illustrations/tous/3_5_style_resultat.png" alt="Exemple de données OSM stylées, grande échelle" width="500">
+                	</a>
+                </figure>
+                
+                <div class="manip">
+                    <p>Chargez dans QGIS les couches GeoFabrik suivantes :</p>
+                    <ul>
+                        <li>qgis.osm_roads_free.1</li>
+                        <li>qgis.osm_buildings_a_free.1</li>
+                        <li>qgis.osm_railways_free.1</li>
+                        <li>qgis.osm_waterways_free.1</li>
+                        <li>qgis.osm_water_a_free.1</li>
+                        <li>qgis.osm_natural_a_free.1</li>
+                        <li>qgis.osm_landuse_a_free.1</li>
+                    </ul>
+                    <p>Une dernière couche sera nécessaire : ajoutez également la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">land_polygons_suriname</a></em>.</p>
+                </div>
+                <p>Dans QGIS, le style d'une couche est enregistré dans le projet. Il est également possible de créer des fichiers de style, au format <b>QML</b> (fichier de style QGIS, propre au logiciel) ou <b>SLD</b> (Style Layer Descriptor, utilisé plus largement en cartographie web).</p>
+                <p>Nous allons ici charger pour chaque couche un fichier de style QML approprié. Ces fichiers ont été élaborés à partir de ceux créés par Charley Glynn et disponibles sur <a class="ext" target="_blank" href="https://github.com/charleyglynn/OSM-Shapefile-QGIS-stylesheets" >https://github.com/charleyglynn/OSM-Shapefile-QGIS-stylesheets</a>.</p>
+                <p>Ces fichiers de style sont adaptés pour un SCR projeté, car certaines taille de symboles sont définies en suivant les unités de la carte et adaptés pour des unités métriques et non en degrés. La première étape consistera donc à adopter un SCR projeté.</p>
+                <div class="manip">
+                    <p><a href="02_04_changer_systeme.php#II41">Modifiez le SCR du projet</a> pour choisir par exemple le SCR World_Robinson (code EPSG 54030), et activez la projection à la volée.</p>
+                    <p>Modifiez l'ordre des couches pour obtenir ceci :</p>
+                     <figure>
+                    	<a href="illustrations/tous/3_5_ordre_couches.png" >
+                    		<img src="illustrations/tous/3_5_ordre_couches.png" alt="Ordre des couches OSM" width="250">
                     	</a>
                     </figure>
-                    
-                    <div class="manip">
-                        <p>Chargez dans QGIS les couches GeoFabrik suivantes :</p>
-                        <ul>
-                            <li>qgis.osm_roads_free.1</li>
-                            <li>qgis.osm_buildings_a_free.1</li>
-                            <li>qgis.osm_railways_free.1</li>
-                            <li>qgis.osm_waterways_free.1</li>
-                            <li>qgis.osm_water_a_free.1</li>
-                            <li>qgis.osm_natural_a_free.1</li>
-                            <li>qgis.osm_landuse_a_free.1</li>
-                        </ul>
-                        <p>Une dernière couche sera nécessaire : ajoutez également la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">land_polygons_suriname</a></em>.</p>
-                    </div>
-                    <p>Dans QGIS, le style d'une couche est enregistré dans le projet. Il est également possible de créer des fichiers de style, au format <b>QML</b> (fichier de style QGIS, propre au logiciel) ou <b>SLD</b> (Style Layer Descriptor, utilisé plus largement en cartographie web).</p>
-                    <p>Nous allons ici charger pour chaque couche un fichier de style QML approprié. Ces fichiers ont été élaborés à partir de ceux créés par Charley Glynn et disponibles sur <a class="ext" target="_blank" href="https://github.com/charleyglynn/OSM-Shapefile-QGIS-stylesheets" >https://github.com/charleyglynn/OSM-Shapefile-QGIS-stylesheets</a>.</p>
-                    <p>Ces fichiers de style sont adaptés pour un SCR projeté, car certaines taille de symboles sont définies en suivant les unités de la carte et adaptés pour des unités métriques et non en degrés. La première étape consistera donc à adopter un SCR projeté.</p>
-                    <div class="manip">
-                        <p><a href="02_04_changer_systeme.php#II41">Modifiez le SCR du projet</a> pour choisir par exemple le SCR World_Robinson (code EPSG 54030), et activez la projection à la volée.</p>
-                        <p>Modifiez l'ordre des couches pour obtenir ceci :</p>
-                         <figure>
-                        	<a href="illustrations/tous/3_5_ordre_couches.png" >
-                        		<img src="illustrations/tous/3_5_ordre_couches.png" alt="Ordre des couches OSM" width="250">
-                        	</a>
-                        </figure>
-                        <p>Ouvrez la fenêtre <b>Propriétés</b> de la couche <em class="data">gis.osm_roads_free_1</em>, rubrique <b>Symbologie</b> :</p>
-                        <figure>
-                        	<a href="illustrations/tous/3_5_charger_style.png" >
-                        		<img src="illustrations/tous/3_5_charger_style.png" alt="Charger un style" width="600">
-                        	</a>
-                        </figure>
-                        <p>En bas de la fenêtre, cliquez sur la liste déroulante <b>Style</b> puis sur <b>Charger le style</b>.</p>
-                        <figure>
-                        	<a href="illustrations/tous/3_5_charger_style_fenetre.png" >
-                        		<img src="illustrations/tous/3_5_charger_style_fenetre.png" alt="Sélectionner un style depuis un fichier" width="450">
-                        	</a>
-                        </figure>
-                        <p>Dans la fenêtre qui s'affiche :</p>
-                        <ul>
-                           <li class="espace">sélectionnez <b>depuis un fichier</b> dans la liste déroulante</li>
-                           <li class="espace">Fichier : cliquez sur le bouton <b>...</b> et sélectionnez le fichier de style <b><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">roads.qml</a></b> situé dans le dossier <b>TutoQGIS_03_RechercheDonnees/legendes</b>.</li>
-                           <li class="espace">Catégories : laissez les valeurs par défaut</li>
-                           <li class="espace">Cliquez sur <b>Charger le style</b></li>
-                        </ul>
-                        <p>Cliquez ensuite sur <b>OK</b> pour fermer la fenêtre des propriétés.</p>
-                        <p>Zoomez et dézoomez : le style change suivant le niveau de zoom.</p>
-                        <p>Procédez de manière similaire pour chacune des couches, en choisissant à chaque fois le fichier de style approprié.</p>
-                        <p>Pour finir, donnez un fond bleu à votre carte : <b>menu Projet &#8594; Propriétés... &#8594; rubrique Général, Paramètres généraux (en haut)</b> : cliquez sur la couleur à droite de <b>Couleur d'arrière-plan</b>.</p>
-                        <figure>
-                        	<a href="illustrations/tous/3_5_modif_couleur_fond.png" >
-                        		<img src="illustrations/tous/3_5_modif_couleur_fond.png" alt="Propriétés du projet, Général : modification de la couleur d'arrière-plan" width="600">
-                        	</a>
-                        </figure>
-                        <p>Dans la boîte de dialogue qui s'affiche alors, choisissez une couleur pour la mer, par exemple dans l'exemple ci-dessous <b>R 184 V 217 B 247</b>.</p>
-                        <figure>
-                        	<a href="illustrations/tous/3_5_couleur_rvb.png" >
-                        		<img src="illustrations/tous/3_5_couleur_rvb.png" alt="Choix d'une couleur RVB" width="300">
-                        	</a>
-                        </figure>
-                        <p class="note">Notez qu'une manipulation équivalente peut être effectuée dans le <a href="10_02_mise_en_page.php#X22">composeur d'impression</a>, sans changer la couleur de fond dans QGIS.</p>
-                        <figure>
-                        	<a href="illustrations/tous/3_5_style_resultat_2.png" >
-                        		<img src="illustrations/tous/3_5_style_resultat_2.png" alt="Exemple de données OSM stylées, petite échelle" width="500">
-                        	</a>
-                        </figure>
-                    </div>
-                    <p>Vous pouvez ensuite si vous le désirez modifier le style des couches pour créer votre propre version. Pour enregistrer un fichier de style QML, procédez comme pour charger un style, mais choisissez <b>Enregistrer le style</b>.</p>
-               
+                    <p>Ouvrez la fenêtre <b>Propriétés</b> de la couche <em class="data">gis.osm_roads_free_1</em>, rubrique <b>Symbologie</b> :</p>
+                    <figure>
+                    	<a href="illustrations/tous/3_5_charger_style.png" >
+                    		<img src="illustrations/tous/3_5_charger_style.png" alt="Charger un style" width="600">
+                    	</a>
+                    </figure>
+                    <p>En bas de la fenêtre, cliquez sur la liste déroulante <b>Style</b> puis sur <b>Charger le style</b>.</p>
+                    <figure>
+                    	<a href="illustrations/tous/3_5_charger_style_fenetre.png" >
+                    		<img src="illustrations/tous/3_5_charger_style_fenetre.png" alt="Sélectionner un style depuis un fichier" width="450">
+                    	</a>
+                    </figure>
+                    <p>Dans la fenêtre qui s'affiche :</p>
+                    <ul>
+                       <li class="espace">sélectionnez <b>depuis un fichier</b> dans la liste déroulante</li>
+                       <li class="espace">Fichier : cliquez sur le bouton <b>...</b> et sélectionnez le fichier de style <b><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">roads.qml</a></b> situé dans le dossier <b>TutoQGIS_03_RechercheDonnees/legendes</b>.</li>
+                       <li class="espace">Catégories : laissez les valeurs par défaut</li>
+                       <li class="espace">Cliquez sur <b>Charger le style</b></li>
+                    </ul>
+                    <p>Cliquez ensuite sur <b>OK</b> pour fermer la fenêtre des propriétés.</p>
+                    <p>Zoomez et dézoomez : le style change suivant le niveau de zoom.</p>
+                    <p>Procédez de manière similaire pour chacune des couches, en choisissant à chaque fois le fichier de style approprié.</p>
+                    <p>Pour finir, donnez un fond bleu à votre carte : <b>menu Projet &#8594; Propriétés... &#8594; rubrique Général, Paramètres généraux (en haut)</b> : cliquez sur la couleur à droite de <b>Couleur d'arrière-plan</b>.</p>
+                    <figure>
+                    	<a href="illustrations/tous/3_5_modif_couleur_fond.png" >
+                    		<img src="illustrations/tous/3_5_modif_couleur_fond.png" alt="Propriétés du projet, Général : modification de la couleur d'arrière-plan" width="600">
+                    	</a>
+                    </figure>
+                    <p>Dans la boîte de dialogue qui s'affiche alors, choisissez une couleur pour la mer, par exemple dans l'exemple ci-dessous <b>R 184 V 217 B 247</b>.</p>
+                    <figure>
+                    	<a href="illustrations/tous/3_5_couleur_rvb.png" >
+                    		<img src="illustrations/tous/3_5_couleur_rvb.png" alt="Choix d'une couleur RVB" width="300">
+                    	</a>
+                    </figure>
+                    <p class="note">Notez qu'une manipulation équivalente peut être effectuée dans le <a href="10_02_mise_en_page.php#X22">composeur d'impression</a>, sans changer la couleur de fond dans QGIS.</p>
+                    <figure>
+                    	<a href="illustrations/tous/3_5_style_resultat_2.png" >
+                    		<img src="illustrations/tous/3_5_style_resultat_2.png" alt="Exemple de données OSM stylées, petite échelle" width="500">
+                    	</a>
+                    </figure>
+                </div>
+                <p>Vous pouvez ensuite si vous le désirez modifier le style des couches pour créer votre propre version. Pour enregistrer un fichier de style QML, procédez comme pour charger un style, mais choisissez <b>Enregistrer le style</b>.</p>
+           
                 
-			<h3><a class="titre" id="III55">Charger des données OpenStreetMap à partir de QGIS</a></h3>
+			<h3>Charger des données OpenStreetMap à partir de QGIS<a class="headerlink" id="III55" href="#III55"></a></h3>
 			 
 			    <p>Nous allons utiliser ici l'extension <a class="ext" target="_blank" href="https://github.com/3liz/QuickOSM">QuickOSM</a> pour charger des données OpenStreetMap directement dans QGIS.</p>
 			    <p>Cette extension permet le téléchargement de données OSM sous forme de couches temporaires, pour l'emprise de votre choix.</p>

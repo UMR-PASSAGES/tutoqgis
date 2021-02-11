@@ -23,7 +23,7 @@
 			<p>Pour ce faire, nous utiliserons la <a href="04_01_principe.php#IV12a">première méthode décrite dans la partie IV.1</a> : nous nous baserons sur le carroyage de cette carte pour créer les points de calage (la deuxième méthode sera abordée dans la <a href="04_06_calage_autre_couche.php"> partie IV.6</a>).</p>
 			
 		
-				<h3><a class="titre" id="IV31">Création du premier point</a></h3>
+				<h3>Création du premier point<a class="headerlink" id="IV31" href="#IV31"></a></h3>
 				
 					<div class="manip">
 						<p>Lancez QGIS ou créez un nouveau projet. <b>Il est inutile d'ajouter la carte d'Oahu à QGIS</b> (si vous le faites néanmoins, profitez-en pour observer qu'en l'absence d'informations de localisation pour cette image, QGIS positionne son coin supérieur gauche aux coordonnées (0,0)).</p>
@@ -99,7 +99,7 @@
 				
 
 	
-				<h3><a class="titre" id="IV32">Quelques astuces pour créer les points suivants</a></h3>
+				<h3>Quelques astuces pour créer les points suivants<a class="headerlink" id="IV32" href="#IV32"></a></h3>
 					
 					<div class="manip">
 						<p>Procédez de la même manière pour rajouter 5 autres points de calage. Faites en sorte que ces points soient bien répartis sur l'image.</p>

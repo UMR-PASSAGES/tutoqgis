@@ -37,9 +37,9 @@
 			<p>Cette partie se borne à donner quelques exemples de sites permettant le téléchargement de données SIG. Il en existe beaucoup d'autres !</p>
 			<p>Ne vous offusquez pas de ne pas voir ici les <b>données OpenStreetMap</b> : il existe <a href="03_05_donnees_osm.php">une partie qui leur est spécialement dédiée !</a></p>
 				
-			<h3><a class="titre" id="III11">Données nationales pour la France</a></h3>
+			<h3>Données nationales pour la France<a class="headerlink" id="III11" href="#III11"></a></h3>
 			
-				<h4><a class="titre" id="III11a">Avec l'IGN</a></h4>
+				<h4>Avec l'IGN<a class="headerlink" id="III11a" href="#III11a"></a></h4>
 				
 					<p>L'IGN (Institut National de l'Information Géographique et Forestière) diffuse gratuitement une partie de ses données ici : <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html">https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html</a>.</p>
 					<p class="note">Si vous êtes étudiant ou bien si vous travaillez dans un laboratoire de recherche, il existe peut-être entre votre structure et l'IGN une convention recherche et enseignement vous donnant accès à plus de données !</p>
@@ -99,7 +99,7 @@
 					<p>Dans les données téléchargées sur le site de l'IGN se trouvent également les autres découpages administratifs pour la Guyane, ainsi que pour les autres territoires ultra-marins et la France métropolitaine.</p>
 					
 					
-				<h4><a class="titre" id="III11b">Avec geo.data.gouv.fr</a></h4>				
+				<h4>Avec geo.data.gouv.fr<a class="headerlink" id="III11b" href="#III11b"></a></h4>				
 					
 					<p>Le site <a class="ext" target="_blank" href="https://geo.data.gouv.fr/fr/">https://geo.data.gouv.fr/fr/</a> recense les jeux de données géographiques en accès libre pour la France. Nous allons utiliser ce site pour rechercher des données sur les hôpitaux en Guyane.</p>
 					
@@ -132,9 +132,9 @@
 						</figure>
 					</div>
 	
-			<h3><a class="titre" id="III12">Données mondiales</a></h3>
+			<h3>Données mondiales<a class="headerlink" id="III12" href="#III12"></a></h3>
 			
-			    <h4><a class="titre" id="III12a">Avec Natural Earth</a></h4>
+			    <h4>Avec Natural Earth<a class="headerlink" id="III12a" href="#III12a"></a></h4>
 			    
 			     <p><a class="ext" target="_blank" href="https://www.naturalearthdata.com/">Natural Earth</a> est un jeu de données cartographiques public mondial disponible à 3 échelles différentes. De nombreuses données sont disponibles, notamment les limites administratives, routes, cours d'eau et fonds raster.</p>
 			     <p>Nous allons télécharger ici les <b>limites administratives des pays à petite échelle</b> (peu de niveau de détail).</p>
@@ -163,31 +163,31 @@
 					 </figure>
 			     </div>
 			    
-			    <h4><a class="titre" id="III12b">Avec les données SRTM</a></h4>
+			    <h4>Avec les données SRTM<a class="headerlink" id="III12b" href="#III12b"></a></h4>
 			
-			<p>Nous avons vu jusqu'ici le téléchargement de quelques données vecteur. Les données raster seront par exemple des images satellite, des fonds de carte, des <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain">modèles numériques de terrain (MNT)</a>...</p>
-			<p>Nous allons ici télécharger un <b>modèle d'élévation pour le Kenya</b>.</p>
-			<p>Un <b>modèle d'élévation numérique (Digital Elevation Model ou DEM)</b> se rapproche d'un MNT, mais il ne mesure pas l'altitude au sol mais l'altitude des éléments présents au sol. Si une forêt est présente, ce sera donc l'altitude du sommet des arbres qui sera mesurée et non l'altitude du sol, idem si des bâtiments sont présents.</p>
-			<p>On trouve sur internet deux DEM à couverture mondiale en libre accès : le modèle <b>ASTER</b> issu d'une collaboration NASA/METI (Ministry of Economy, Trade and Industry of Japan) et le modèle <b>SRTM</b> issu d'une collaboration NASA/NGA (National Geospatial-Intelligence Agency). Nous allons voir ici le cas du SRTM.</p>
+        			<p>Nous avons vu jusqu'ici le téléchargement de quelques données vecteur. Les données raster seront par exemple des images satellite, des fonds de carte, des <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain">modèles numériques de terrain (MNT)</a>...</p>
+        			<p>Nous allons ici télécharger un <b>modèle d'élévation pour le Kenya</b>.</p>
+        			<p>Un <b>modèle d'élévation numérique (Digital Elevation Model ou DEM)</b> se rapproche d'un MNT, mais il ne mesure pas l'altitude au sol mais l'altitude des éléments présents au sol. Si une forêt est présente, ce sera donc l'altitude du sommet des arbres qui sera mesurée et non l'altitude du sol, idem si des bâtiments sont présents.</p>
+        			<p>On trouve sur internet deux DEM à couverture mondiale en libre accès : le modèle <b>ASTER</b> issu d'une collaboration NASA/METI (Ministry of Economy, Trade and Industry of Japan) et le modèle <b>SRTM</b> issu d'une collaboration NASA/NGA (National Geospatial-Intelligence Agency). Nous allons voir ici le cas du SRTM.</p>
+        			
+        			<div class="manip">
+        				<p>Rendez-vous sur <a class="ext" target="_blank" href="http://dwtkns.com/srtm/">http://dwtkns.com/srtm/</a> et cliquez sur une des cases recouvrant le Kenya (par exemple la dalle <b>srtm_44_12</b>) :</p>
+        				<figure>
+        					<a href="illustrations/tous/3_1_telechargement_srtm.png" >
+        						<img src="illustrations/tous/3_1_telechargement_srtm.png" alt="téléchargement d'une dalle du SRTM" width="350">
+        					</a>
+        				</figure>
+        				<p>Téléchargez la dalle au format GeoTIFF, placez-le fichier dans votre dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>. Il n'est pas nécessaire de dézipper le fichier obtenu.</p>
+        				<p>Dans QGIS, ajoutez le fichier TIF téléchargé au moyen de l'explorateur.</p>
+        				<figure>
+        					<a href="illustrations/tous/3_1_srtm_kenya.png" >
+        						<img src="illustrations/tous/3_1_srtm_kenya.png" alt="superposition des cours d'eau, des régions et du SRTM" width="500" >
+        					</a>
+        				</figure>
+        				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les autres données du tutoriel.</a>.</p>
+        			</div>
 			
-			<div class="manip">
-				<p>Rendez-vous sur <a class="ext" target="_blank" href="http://dwtkns.com/srtm/">http://dwtkns.com/srtm/</a> et cliquez sur une des cases recouvrant le Kenya (par exemple la dalle <b>srtm_44_12</b>) :</p>
-				<figure>
-					<a href="illustrations/tous/3_1_telechargement_srtm.png" >
-						<img src="illustrations/tous/3_1_telechargement_srtm.png" alt="téléchargement d'une dalle du SRTM" width="350">
-					</a>
-				</figure>
-				<p>Téléchargez la dalle au format GeoTIFF, placez-le fichier dans votre dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>. Il n'est pas nécessaire de dézipper le fichier obtenu.</p>
-				<p>Dans QGIS, ajoutez le fichier TIF téléchargé au moyen de l'explorateur.</p>
-				<figure>
-					<a href="illustrations/tous/3_1_srtm_kenya.png" >
-						<img src="illustrations/tous/3_1_srtm_kenya.png" alt="superposition des cours d'eau, des régions et du SRTM" width="500" >
-					</a>
-				</figure>
-				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les autres données du tutoriel.</a>.</p>
-			</div>
-			
-			<h3><a class="titre" id="III13">Et tout le reste ?</a></h3>
+			<h3>Et tout le reste ?<a class="headerlink" id="III13" href="#III13"></a></h3>
 			 
 			    <p>Selon la zone sur laquelle vous travaillez et votre sujet, il existe de nombreux sites avec des données géographiques en téléchargement. En voici quelques uns en vrac, qui seront ou non pertinents pour vous :</p>
 			
