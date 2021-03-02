@@ -12,7 +12,7 @@
 		</div>	
 	
 		<div class="main">
-			<h2>IX.5  Application 1&nbsp;: créer un maillage</h2>
+			<h2>IX.5  Un exemple d'application&nbsp;: créer un maillage</h2>
 				<ul class="listetitres">
 					<li><a href="#IX41">Principe</a></li>
 					<li><a href="#IX42">Création d'une grille</a></li>
@@ -25,8 +25,8 @@
 				
     			<p>Pour finir cette partie sur l'analyse spatiale, voici un exemple d'application mettant en jeu plusieurs notions. Il s'agira ici, à partir de données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0">Corine Land Cover</a> d'occupation du sol, de <b>créer un maillage sous forme de grille à l'échelle de la France métropolitaine, avec pour chaque case de cette grille la surface en vignes</b>.</p>
     			<p>Les mailles sont beaucoup utilisées dans différents domaines, par exemple pour étudier la répartition des espèces en écologie. Cette méthode permet de créer des représentations facilement comparables, et de travailler à différentes échelles en faisant varier la taille des mailles.</p>
-    			<p>Nous verrons d'abord comment réaliser cela avec les outils QGIS, puis 2 manières d'automatiser cette tâche, afin de pouvoir facilement reproduire ce traitement sur d'autres données d'occupation du sol, avec une autre taille de grille...</p>
-    			<p>...Et pour tirer partie de cette automatisation, nous finirons en soustrayant 2 maillages afin de voir l'évolution de la surface en vignes entre 2 dates.</p>
+    			<p>Nous verrons d'abord comment réaliser cela avec les outils QGIS, puis dans le <a href="09_05_maillage_sql.php">chapitre suivant</a> deux manières d'automatiser cette tâche, afin de pouvoir facilement reproduire ce traitement sur d'autres données d'occupation du sol, avec une autre taille de grille...</p>
+    			<p>...Et pour tirer partie de cette automatisation, nous finirons en <a href="09_05_maillage_sql.php#IX55">soustrayant 2 maillages</a> afin de voir l'évolution de la surface en vignes entre 2 dates.</p>
     		
     		    <figure>
     				<a href="illustrations/tous/9_4_apercu_resultatfinal.png" >

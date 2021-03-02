@@ -13,8 +13,8 @@
 				<li><a href="09_01_vecteur.php">Opérations sur données vecteur</a></li>
 				<li><a href="09_02_raster.php">Opérations sur données raster</a></li>
 				<li><a href="09_03_vecteur_raster.php">Croiser vecteur et raster</a></li>
-				<li><a href="09_04_maillage.php">Application 1&nbsp;: créer un maillage</a></li>
-				<li><a href="09_05_maillage_sql.php">Application 2&nbsp;: dites-le avec du SQL !</a></li>
+				<li><a href="09_04_maillage.php">Créer un maillage</a></li>
+				<li><a href="09_05_maillage_sql.php">Dites-le avec du SQL&nbsp;!</a></li>
 			</ol>
 		</li>
 		<li><a href="10_00_carto.php">Représentation et mise en page</a></li>
