@@ -209,8 +209,8 @@
                     	<div class="question">
                     		<input type="checkbox" id="faq-3">
                     		<p><label for="faq-3">Pouvez-vous écrire dans son entier l'expression utilisée pour écrire le nom du département en fonction de son code&nbsp;?</label></p>
-                    		<p class="reponse">CASE<br>WHEN  "INSEE_DEP" = '29' THEN 'Finistère'<br>WHEN  "INSEE_DEP" = '22' THEN 'Côtes-d\'Armor'<br>WHEN  "INSEE_DEP" = '35' THEN 'Ille-et-Vilaine'<br>WHEN  "INSEE_DEP" = '56' THEN 'Morbihan'<br>END</p>
-                            <p class="reponse">Attention, il y a un piège&nbsp;! Pour que l'apostrophe de &#171; Côtes-d'Armor &#187; ne soit pas considéré comme celui de fin de la chaîne de caractères, il faut &#171; l'échapper &#187; avec le caractère antislash <b>\</b>.</p>
+                    		<p class="reponse">CASE<br>WHEN  "INSEE_DEP" = '29' THEN 'Finistère'<br>WHEN  "INSEE_DEP" = '22' THEN 'Côtes-d''Armor'<br>WHEN  "INSEE_DEP" = '35' THEN 'Ille-et-Vilaine'<br>WHEN  "INSEE_DEP" = '56' THEN 'Morbihan'<br>END</p>
+                            <p class="reponse">Attention, il y a un piège&nbsp;! Pour que l'apostrophe de &#171; Côtes-d'Armor &#187; ne soit pas considérée comme celle de fin de la chaîne de caractères, il faut utiliser une double apostrophe&nbsp;: 'Côtes-d<b>''</b>Armor'.</p>
                     	</div>
                     	<p>Au final, la calculatrice doit être paramétrée comme suit :</p>
                     	<figure>

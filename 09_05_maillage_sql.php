@@ -162,7 +162,6 @@
 			   <h3>Évolution temporelle&nbsp;: soustraction de 2 maillages<a class="headerlink" id="IX56" href="#IX56"></a></h3>
 			
 				
-					
 		
 				<br>
 				<a class="prec" href="09_03_vecteur_raster.php">chapitre précédent</a>
