@@ -12,7 +12,7 @@
 		</div>	
 	
 		<div class="main">
-			<h2>IX.4  Un exemple d'application&nbsp;: dites-le avec du SQL !</h2>
+			<h2>IX.5  Un exemple d'application&nbsp;: dites-le avec du SQL !</h2>
 				<ul class="listetitres">
 					<li><a href="#IX51">Création d'une nouvelle base SpatiaLite ou PostGIS</a>
 					   <ul class="listesoustitres">

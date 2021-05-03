@@ -12,7 +12,7 @@
 		</div>	
 	
 		<div class="main">
-			<h2>IX.5  Un exemple d'application&nbsp;: créer un maillage</h2>
+			<h2>IX.4  Un exemple d'application&nbsp;: créer un maillage</h2>
 				<ul class="listetitres">
 					<li><a href="#IX41">Principe</a></li>
 					<li><a href="#IX42">Création d'une grille</a></li>

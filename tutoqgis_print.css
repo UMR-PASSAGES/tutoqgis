@@ -148,35 +148,35 @@ hov         #1D3437     hover colour
 		padding-left: 0px;
 		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
 		border: none;
-		box-shadow: 2px 2px 4px #ccc;
+		/*box-shadow: 2px 2px 4px #ccc;
    	    -webkit-box-shadow: 2px 2px 4px #ccc;
-   	    box-shadow: 2px 2px 4px #ccc; 
+   	    box-shadow: 2px 2px 4px #ccc; */
 	}
 	img.droite {	/* image à droite, avec texte autour, et pas d'ombre */
 		float: right;
 		padding-left: 10px;
 		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
 		border: none;
-		box-shadow: none;
+		/*box-shadow: none;
 		-webkit-box-shadow: none;
-   	    box-shadow: none;
+   	    box-shadow: none;*/
    }
    img.gauche {	/* image à droite, avec texte autour, et pas d'ombre */
 		float: left;
 		padding-right: 10px;
 		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
 		border: none;
-		box-shadow: none;
+		/*box-shadow: none;
 		-webkit-box-shadow: none;
-   	    box-shadow: none;
+   	    box-shadow: none;*/
    }
 	img.noshadow {	/* sans ombre */
 		padding-left: 0px;
 		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
 		border: none;
-		box-shadow: none;
+		/*box-shadow: none;
 		-webkit-box-shadow: none;
-   	    box-shadow: none;
+   	    box-shadow: none;*/
 	}
 	.table_logos {
 	    display: none;
@@ -188,17 +188,17 @@ hov         #1D3437     hover colour
 		padding-right: 10px;
 		color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
 		border: none;
-		box-shadow: none;
+		/*box-shadow: none;
 		-webkit-box-shadow: none;
-   	    box-shadow: none; 
+   	    box-shadow: none; */
 	}
 	/* pour les figures */
 	figure.image {
-   	width: 100%;
+   	    width: 100%;
 	}
 	figure {
 		text-align: center;
-    	display: table;
+    	/*display: table;*/
     	max-width: 100%;
   		border: none;
   		margin: 15px;
@@ -479,6 +479,9 @@ hov         #1D3437     hover colour
 	a.ext:after {  /* une icône différente pour les liens externes */
   		content: "\0000a0[\2197]";
 	}
+	a[download]:before {  /* une icône différente pour les liens externes */
+  		content: "[\2B73]\0000a0";
+	}
 	a.hautpage {
 	    visibility: hidden;
 		display: block;
@@ -521,7 +524,7 @@ hov         #1D3437     hover colour
 		border-left: 6px;
 		border-left-style: solid;
 		border-left-color: #1F9DAA;
-		background-color: /*bgm*/#F0F4F4;
+		/*background-color: /*bgm*/#F0F4F4;*/
 	}
 	p.note{
 		font-size: 0.9em;
@@ -542,6 +545,7 @@ hov         #1D3437     hover colour
 	}
 	p.code {
 		font-family: courier;
+		white-space: pre-wrap;
 	}
 
 	
@@ -554,7 +558,7 @@ hov         #1D3437     hover colour
 		border-left: 6px;
 		border-left-style: solid;
 		border-left-color: /*link*/#28A6B7;
-		background-color: /*bgm*/#F0F4F4;
+		/*background-color: /*bgm*/#F0F4F4;*/
 	}
 	div.bonus {
 		background-color: #FFDDDD;
