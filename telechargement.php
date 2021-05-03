@@ -22,7 +22,7 @@
 					<li class="espace">un sous-dossier <b>metadonnees</b>, avec les fichier de métadonnées. Si toutes les métadonnées sont disponibles en ligne, ce sous-dossier n'existe pas.</li>
 				</ul>
 				<p>Vous pouvez télécharger ici :</p>
-				<p><a download href="donnees/TutoQGIS_Donnees.zip">Toutes les données (282 Mo,4)</a></p>
+				<p><a download href="donnees/TutoQGIS_Donnees.zip">Toutes les données (282,4 Mo)</a></p>
 				<p><a download href="donnees/TutoQGIS_01_PriseEnMain.zip">Données de la partie I : prise en main (13,1 Mo)</a></p>
 				<p><a download href="donnees/TutoQGIS_02_Geodesie.zip">Données de la partie II : géodésie (2,8 Mo)</a></p>
 				<p><a download href="donnees/TutoQGIS_03_RechercheDonnees.zip">Données de la partie III : recherche et ajout de données (47,6 Mo)</a></p>
