@@ -34,6 +34,8 @@
     				</a>
     				<figcaption>Un exemple de résultat avec une taille de maille de 10km</figcaption>
     			</figure>
+    			
+    			<p class="attention">Pour ce chapitre et le suivant, vous pouvez soit télécharger les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a>&nbsp;: <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip" >Données Métropole 2000</a> puis les filtrer pour ne garder que les vignes, comme détaillé dans le tutoriel, ou bien utiliser les <a href="telechargement.php">données en téléchargement</a> déjà filtrées (pour un téléchargement moins lourd).</p>
     
     			
     		    <h3>Principe<a class="headerlink" id="IX41" href="#IX41"></a></h3>
@@ -130,6 +132,7 @@
     		     </figure>
     		     
     		     <p>Notre but sera ici de faire une union entre la grille et les données CLC sur la vigne. La première étape sera de ne garder que les données CLC qui nous intéressent.</p>
+    		     <p class="attention">Cette étape n'est pas nécessaire si vous utilisez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em> disponible en téléchargement.</p>
     		     <p>Il existe plusieurs possibilités pour cela, on pourrait par exemple sélectionner les vignes avec une requête attributaire puis exporter la sélection pour en faire une nouvelle couche.</p>
     		     <p>Pour changer un peu, nous allons ici <a href="01_02_info_geo.php#I23c" >filtrer</a> les données, ce qui permet de n'afficher que les données répondant à un critère, à la fois dans la table et sur la carte.</p>
     		     <p class="note">Quelle que soit la méthode choisie, l'important est de garder les données originales, pour pouvoir y revenir en cas de besoin&nbsp;!</p>

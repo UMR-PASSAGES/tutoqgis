@@ -51,7 +51,8 @@
 			   </ul>
                <p>Il n'y a pas une solution meilleure qu'une autre mais elles répondent à des besoins différents.</p>
                <p><b>Pour cet exercice les 2 logiciels peuvent être utilisés.</b> Si vous choisissez Postgresql/PostGIS, l'installation ne sera pas détaillée ici mais on trouve de nombreuses ressources sur internet. La syntaxe étant légèrement différente d'un logiciel à l'autre, les requêtes seront proposées en 2 versions.</p>			
-			
+			   
+			   <p class="attention">Pour ce chapitre, vous pouvez soit télécharger les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a>&nbsp;: <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip" >Données Métropole 2000</a> et <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC12_FR_RGF_SHP.zip" >Données Métropole 2012</a> puis les filtrer pour ne garder que les vignes, comme détaillé dans le tutoriel, ou bien utiliser les <a href="telechargement.php">données en téléchargement</a> déjà filtrées (pour un téléchargement moins lourd).</p>
 			
 			   <h3>Création d'une base vide SpatiaLite ou PostGIS<a class="headerlink" id="IX51" href="#IX51"></a></h3>
 			   
@@ -164,6 +165,7 @@
 			     <p>Avant d'importer les données, nous allons sélectionner dans la couche Corine Land Cover les entités correspondant au vignoble, pour n'importer que celles-ci. Cette étape pourrait tout à fait être effectuée une fois les données importées dans la base, mais comme cela le temps d'import dans SpatiaLite ou PostGIS sera plus court.</p>
 			     
 			     <div class="manip">
+			         <p class="attention">Cette sélection n'est pas nécessaire si vous utilisez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em> disponible en téléchargement.</p>
 			         <p>Utilisez une <a href="06_01_req_attrib.php" >requête attributaire</a> sur la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_FR_RGF</a></em>  pour ne sélectionner que les vignes :  <b>"CODE_00"  = '221'</b> (en jaune ci-dessous).</p>
 			         <figure>
         			     <a href="illustrations/tous/9_5_selection_vignes.png" >
@@ -561,7 +563,7 @@ ORDER BY g.gid</p>
 			         <p>Nous allons donc relancer l'opération précédente (union et agrégation) sur la couche CLC 2012.</p>
 			         
 			         <div class="manip">
-			             <p>Ajoutez à QGIS la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC12_FR_RGF</a></em>. Sélectionnez les vignes ("CODE_12" = '221') et <a href="09_05_maillage_sql.php#IX52">importez</a> cette sélection dans votre base SpatiaLite ou PostGIS sous le nom <b>clc12_vignes.</b></p>
+			             <p>Ajoutez à QGIS la couche <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC12_FR_RGF_SHP.zip">CLC12_FR_RGF</a> ou <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC12_221_FR_RGF</a></em>. Sélectionnez éventuellement les vignes ("CODE_12" = '221') et <a href="09_05_maillage_sql.php#IX52">importez-les</a> dans votre base SpatiaLite ou PostGIS sous le nom <b>clc12_vignes.</b></p>
 			             <p>Il faut ensuite relancer les mêmes requêtes que précédemment, en remplaçant les noms des couches&nbsp;:</p>
 			             <ul>
 			                 <li><b>clc00_vignes</b> par <b>clc12_vignes</b></li>
