@@ -488,6 +488,9 @@ hov         #1D3437     hover colour
 	a.ext:after {  /* une icône différente pour les liens externes */
   		content: "\0000a0[\2197]";
 	}
+	a[download]:before {  /* une icône différente pour les liens externes */
+  		content: "[\2B73]\0000a0";
+	}
 	a.hautpage {
 		display: block;
 		padding-top: 10px;
