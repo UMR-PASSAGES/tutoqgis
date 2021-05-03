@@ -56,6 +56,7 @@
 							<li class="index_02"><a href="05_05_polygones.php#V55">Accrochage</a></li>
 							<li class="index_02"><a href="10_02_mise_en_page.php#X25c">Activer le retour à la ligne après (mise en page)</a></li>
 							<li class="index_02"><a href="06_04_req_sql.php#VI42a">Activer une extension</a></li>
+							<li class="index_02"><a href="09_04_maillage.php#IX45">Agrégation</a> et <a href="09_05_maillage_sql.php#IX55" >en SQL</a></li>
 							<li class="index_02"><a href="07_02_calculer.php#VII22">Aire (mesurer)</a></li>
 							<li class="index_02">Ajouter
 								<ul>
@@ -85,6 +86,7 @@
 							<li class="index_02"><a href="04_00_georeferencement.php">Calage (géoréférencement)</a></li>
 							<li class="index_02"><a href="07_00_champs.php">Calcul de champ</a></li>
 							<li class="index_02"><a href="07_02_calculer.php#VII21">Calculatrice de champ</a></li>
+							<li class="index_02"><a href="09_05_maillage_sql.php#IX56b">Calculatrice raster</a></li>
 							<li class="index_02"><a href="10_01_representation.php">Carte</a>
 								<ul>
 									<li class="index_03"><a href="10_01_representation.php#X12">choroplèthe</a></li>
@@ -253,6 +255,7 @@
 							</li>
 							<li class="index_02"><a href="06_04_req_sql.php#VI42">Gestionnaire de bases de données</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X12b">Gradué (style de couche)</a></li>
+							<li class="index_02"><a href="09_04_maillage.php#IX42">Grille</a>, et <a href="09_05_maillage_sql.php#IX54" >en SQL</a></li>
 						</ul>
 					</li>
 					
@@ -388,6 +391,8 @@
 							<li class="index_02"><a href="04_03_calage_carroyage.php">Point de calage</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV63">ici</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X13">Points aléatoires</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Polynomiale (transformation)</a></li>
+							<li class="index_02"><a href="09_05_maillage_sql.php">PostGIS</a></li>
+							<li class="index_02"><a href="09_05_maillage_sql.php">PostgreSQL</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22">Projection</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Projective (transformation)</a></li>
 							<li class="index_02"><a href="01_04_projets.php">Projet</a></li>
@@ -418,6 +423,7 @@
 									<li class="index_03"><a href="09_02_raster.php#IX22b">type de raster (8bits, 16bits...)</a></li>
 								</ul>
 							</li>
+							<li class="index_02"><a href="09_04_maillage.php#IX46">Rastérisation</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV42">Rééchantillonnage</a>
 								<ul>
 									<li class="index_03"><a href="04_04_parametrage.php#IV42">cubique</a></li>
@@ -432,7 +438,7 @@
 									<li class="index_03"><a href="06_01_req_attrib.php">attributaire</a></li>
 									<li class="index_03"><a href="01_02_info_geo.php#I23c">constructeur de</a></li>
 									<li class="index_03"><a href="06_02_req_spatiales.php">spatiale</a></li>
-									<li class="index_03"><a href="06_04_req_sql.php">SQL</a></li>
+									<li class="index_03"><a href="06_04_req_sql.php">SQL</a>, et aussi <a href="09_05_maillage_sql.php" >ici</a></li>
 								</ul>
 							</li>
 							<li class="index_02"><a href="08_02_jointure_spatiale.php#VIII23">Résumé des entités intersectées (jointure spatiale)</a></li>
@@ -472,7 +478,9 @@
 							<li class="index_02"><a href="01_03_formats.php#I31a">Shapefile</a></li>
 							<li class="index_02"><a href="01_01_SIG.php#I11b">SIG</a></li>
 							<li class="index_02"><a href="03_05_donnees_osm.php#III54">SLD (Style Layer Descriptor)</a></li>
-							<li class="index_02"><a href="06_04_req_sql.php">SQL</a></li>
+							<li class="index_02"><a href="09_05_maillage_sql.php">SpatiaLite</a></li>
+							<li class="index_02"><a href="06_04_req_sql.php">SQL</a> et aussi <a href="09_05_maillage_sql.php" >ici</a></li>
+							<li class="index_02"><a href="09_05_maillage_sql.php">SQLite</a></li>
 							<li class="index_02"><a href="03_01_donnees_internet.php#III12b">SRTM</a></li>
 							<li class="index_02"><a href="08_01_jointure_attrib.php#VIII14b">Statistiques par catégories (outil)</a></li>
 							<li class="index_02">Style d'une couche
@@ -520,6 +528,7 @@
 					
 					<li class="index_01" id="U">U
 						<ul>
+							<li class="index_02"><a href="09_04_maillage.php#IX43">Union</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22d">UTM (projection)</a></li>
 						</ul>
 					</li>
@@ -554,6 +563,7 @@
 				</ul>
 
 			<br>
+			<a class="hautpage" href="#wrap">haut de page</a>
 		</div>
 		
 		<div class="sidebar">
