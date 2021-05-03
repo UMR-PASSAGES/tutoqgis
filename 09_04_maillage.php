@@ -72,7 +72,7 @@
     		      <p>Première étape : créer une grille. Elle devra avoir la même emprise que la couche de départ, et pour que les temps de calcul soient raisonnables nous utiliserons une taille de maille de 50 km.</p>
     		      
     		      <div class="manip">
-    		          <p>Ouvrez un nouveau projet QGIS, chargez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_FR_RGF.shp</a></em> située dans le dossier <b>TutoQGIS_09_AnalyseSpat/donnees</b>.</p>
+    		          <p>Ouvrez un nouveau projet QGIS, chargez la couche shapefile <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip">CLC00_FR_RGF</a> ou bien <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em> (données déjà filtrées pour ne garder que les vignes).</p>
     		          <p>Vous pouvez également chargez la couche de pays <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">ne_50m_admin_0_countries</a></em> qui nous aidera à nous repérer.</p>
     		          <p>Pour comprendre les données CLC, ouvrez la table attributaire, qui comporte 3 champs&nbsp;:</p>
     		          <ul>

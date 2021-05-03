@@ -60,7 +60,7 @@
 			     <p><b>Si vous choisissez d'utiliser Postgresql/PostGIS, assurez-vous d'avoir installé ces logiciels avant de poursuivre&nbsp;!</b></p>
 			     
 			     <div class="manip">
-			         <p>Commencez par ouvrir un nouveau projet QGIS et chargez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_FR_RGF.shp</a></em> située dans le dossier <b>TutoQGIS_09_AnalyseSpat/donnees</b>.</p>
+			         <p>Commencez par ouvrir un nouveau projet QGIS et chargez la couche <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip">CLC00_FR_RGF</a> ou bien <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em> (données déjà filtrées pour ne garder que les vignes).</p>
 			     </div>
 			     
 			     <h4>Création d'une base SpatiaLite<a class="headerlink" id="IX51a" href="#IX51a"></a></h4>
