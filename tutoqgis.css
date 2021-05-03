@@ -560,8 +560,9 @@ hov         #1D3437     hover colour
 		color: #A81111;
 		font-weight: bold;
 	}
-	p.code {
+	.code {
 		font-family: courier;
+		white-space: pre-wrap;
 	}
 
 	
