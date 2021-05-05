@@ -90,7 +90,7 @@
     				
     				    <div class="manip">
     					
-    						<p>Une autre méthode, peut-être plus pratique, consiste à utiliser l'explorateur de fichiers&#160;: activez-le éventuellement dans le menu
+    						<p>Une autre méthode, peut-être plus pratique, consiste à utiliser l'explorateur de fichiers&#160;: activez-le éventuellement dans le 
     						<a class="thumbnail_bottom" href="#thumb">Menu Vue &#8594; Panneaux &#8594; Panneau Explorateur
                             	<span>
                             		<img src="illustrations/tous/1_2_explorateur_menu.png" alt="menu Vue → Panneaux → Explorateur" height="700" >

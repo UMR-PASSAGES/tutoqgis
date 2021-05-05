@@ -17,9 +17,8 @@
 					<li><a href="#III21">Qu'est-ce qu'un flux WMS ou WFS ?</a></li>
 					<li><a href="#III22">Ajout de données via un flux WMS : carte géologique</a></li>
 					<li><a href="#III23">Ajout de données via un flux WFS : cours d'eau</a></li>
-					<li><a href="#III24">Ajout de données WMS ou WFS via le panneau explorateur</a></li>
-					<li><a href="#III25">Avantages et inconvénients des flux</a></li>
-					<li><a href="#III26">Quelques adresses de flux WMS et WFS</a></li>
+					<li><a href="#III24">Avantages et inconvénients des flux</a></li>
+					<li><a href="#III25">Quelques adresses de flux WMS et WFS</a></li>
 				</ul>
 	
 			
@@ -83,83 +82,57 @@
 			<h3>Ajout de données via un flux WFS : cours d'eau<a class="headerlink" id="III23" href="#III23"></a></h3>
 			
 				<p>Le but va être ici d'ajouter une couche WFS de cours d'eau disponible via le <a class="ext" target="_blank" href="https://www.sandre.eaufrance.fr/">Sandre</a> (Service d'Administration Nationale des Données et Référentiels sur l'Eau). Les adresses des flux du Sandre sont disponible sur <a class="ext" target="_blank" href="https://www.sandre.eaufrance.fr/actualite/evolution-des-services-web-g%C3%A9ographiques" >cette page</a>.</p>
-				<p>Cette opération est similaire à celle décrite ci-dessus pour une couche WMS.</p>
+				<p>Cette opération est similaire à celle décrite ci-dessus pour une couche WMS. Pour changer un peu, nous n'allons pas cette fois utiliser le gestionnaire de sources de données mais le panneau Explorateur.</p>
+				<p>L'ajout de connexions et de couches WMS et WFS peut se faire par l'une ou l'autre méthode&nbsp;; le gestionnaire de sources de données permet plus de paramétrage, notamment le choix du SCR, et le panneau explorateur est plus rapide.</p>
 				
 				<div class="manip">
-				    <p>Cliquez sur l'icône du gestionnaire des sources de données, rubrique <b>WFS / OGC API - Features</b>&nbsp;:</p>
-				    <figure>
-						<a href="illustrations/tous/3_2_ajout_wfs_fenetre.png" >
-							<img src="illustrations/tous/3_2_ajout_wfs_fenetre.png" alt="Fenêtre du gestionnaire de sources de données, rubrique WFS" width="600" >
+				    <p>Allez dans le <a href="01_02_info_geo.php#I21b">panneau Exporateur</a>. Si ce panneau n'est pas visible, activez-le dans le Menu Vue &#8594; Panneaux &#8594; Panneau Explorateur.</p>
+				    <p>Faites un clic droit sur <b>WFS / OGS API - Features &#8594; Nouvelle connexion...</b></p>
+					<figure>
+						<a href="illustrations/tous/3_2_wfs_connexion_explo.png" >
+							<img src="illustrations/tous/3_2_wfs_connexion_explo.png" alt="Clic droit sur WFS dans l'explorateur, nouvelle connexion" width="350" >
 						</a>
 					</figure>
-					<p>Cliquez sur le bouton <b>Nouveau</b> pour créer une nouvelle connexion. La fenêtre suivante apparaît&nbsp;:</p>
 					<figure>
-						<a href="illustrations/tous/3_2_wfs_nouveau.png" >
-							<img src="illustrations/tous/3_2_wfs_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WFS (gestionnaire de sources de données)" width="400" >
+						<a href="illustrations/tous/3_2_ajout_wfs_fenetre.png" >
+							<img src="illustrations/tous/3_2_ajout_wfs_fenetre.png" alt="Fenêtre d'ajout d'une connexion WFS" width="400" >
 						</a>
 					</figure>
 					<ul>
 					   <li class="espace">Nom&nbsp;: tapez le nom de votre choix, par exemple <b>Sandre</b></li>
 					   <li class="espace">URL&nbsp;: tapez l'adresse <b>https://services.sandre.eaufrance.fr/geo/sandre</b></li>
 					</ul>
-					
-					<p class="note">Cette url est disponible <a href="https://www.sandre.eaufrance.fr/actualite/evolution-des-services-web-g%C3%A9ographiques" >sur le site du Sandre</a>.</p>
-					<p>Laissez les autres paramètres tels quels et cliquez sur OK. Vous voilà à nouveau dans la fenêtre d'ajout d'une couche WFS&nbsp;:</p>
-					
+					<p>Cliquez sur <b>OK</b>&nbsp;: la connexion est maintenant visible dans le panneau Explorateur.</p>
 					<figure>
-						<a href="illustrations/tous/3_2_wfs_connexion.png" >
-							<img src="illustrations/tous/3_2_wfs_connexion.png" alt="Fenêtre du gestionnaire de source de données : connexion au Sandre et choix de la couche de cours d'eau" width="600" >
+						<a href="illustrations/tous/3_2_wfs_connexion_explo_res.png" >
+							<img src="illustrations/tous/3_2_wfs_connexion_explo_res.png" alt="Connexion 'Sandre' visible dans la rubrique WFS du panneau explorateur" width="190" >
 						</a>
 					</figure>
+					<p>Il ne vous reste plus qu'à cliquer sur le petit triangle devant Sandre et à trouver la couche</p>
+					
 					<ul>
 						<li class="espace">Après avoir vérifier que votre connexion est bien sélectionnée dans la liste déroulante en haut de la fenêtre, cliquez sur <b>Connexion</b></li>
-						<li class="espace">En vous aidant éventuellement d'un filtre (<b>plans</b>), sélectionnez la couche correspondant aux <b>Plans d'eau - Métropole - BD Carthage</b></li>
-						<li class="espace">Vérifiez que le SCR soit bien le Lambert 93 RGF93 (code EPSG 2154) afin que toutes nos couches aient le même SCR, en cliquant éventuellement sur le bouton <b>Changer...</b></li>
+						<li class="espace">Sélectionnez la couche correspondant aux <b>cours d'eau métropole de plus de 100km (CoursEau1) (il faut descendre un peu dans la liste des couches proposées)</b></li>
+						<li class="espace">Vérifiez que le SCR soit bien le Lambert 93 RGF93 (code EPSG 2154) afin que toutes nos couches aient le même SCR, en cliquant éventuellement sur le bouton <b>Modifier...</b></li>
 						<li class="espace">Cliquez sur <b>Ajouter</b></li>
 					</ul>
 					<p>Vous devriez obtenir quelque chose de similaire à ceci :</p>
 					<figure>
 						<a href="illustrations/tous/3_2_superposition_creuse_courdo.png" >
-							<img src="illustrations/tous/3_2_superposition_creuse_courdo.png" alt="superposition du département de la Creuse, de la carte géol et des plans d'eau" width="350" >
+							<img src="illustrations/tous/3_2_superposition_creuse_courdo.png" alt="superposition du département de la Creuse et des cours d'eau de plus de 100km" width="300" >
 						</a>
 					</figure>
-					<p>Il peut être nécessaire de changer l'ordre des couches en les faisant glisser dans la table des matières, et de <a href="01_02_info_geo.php#I23a">modifier le style</a> de la couche du département de la Creuse. Vu qu'il s'agit ici d'un flux WFS et non WMS, il est également possible de modifier le style des cours d'eau. La carte géologique étant une couche WMS, on ne peut modifier son style mais il est possible de lui donner une <b>transparence</b> afin de l'atténuer.</p>
+					<p>Il peut être nécessaire de changer l'ordre des couches en les faisant glisser dans la table des matières, et de <a href="01_02_info_geo.php#I23a">modifier le style</a> de la couche du département de la Creuse. Vu qu'il s'agit ici d'un flux WFS et non WMS, il est également possible de modifier le style des cours d'eau. La carte géologique étant une couche WMS, on ne peut modifier son style mais il est possible de lui donner une transparence afin de l'atténuer.</p>
 				</div>
-				<p>De même, s'agissant d'un flux WFS, il est possible de <b>sauvegarder les cours d'eau</b> au format vectoriel sur votre ordinateur : clic droit sur la couche &#8594; Exporter &#8594; Sauvegarder les entités sous...</p>
+				<p>De même, s'agissant d'un flux WFS, il est possible de sauvegarder les cours d'eau au format shapefile : clic droit sur la couche, Exporter, Sauvegarder les entités sous...</p>
 	
-			<h3>Ajout de données WMS ou WFS via le panneau explorateur<a class="headerlink" id="III24" href="#III24"></a></h3>
-			
-			 <p>Une autre méthode, plus rapide, pour créer des connexions et ajouter des couches WMS et WFS est de passer par le <a href="01_02_info_geo.php#I21b">panneau explorateur</a>.</p>
-			 <p>Cependant, cette méthode ne permet pas autant de paramétrage que le gestionnaire de sources de données&nbsp;: par exemple, il n'est pas possible de choisir le SCR d'une couche.</p>
-			 <p>Nous allons voir ici comment ajouter une couche de mines accessible via la connexion aux flux WMS du BRGM créée <a href="03_02_donnees_flux.php#III22" >plus haut</a>, en utilisant le panneau explorateur.</p>
-			 
-			 <div class="manip">
-			     <p>Le <a href="01_02_info_geo.php#I21b">panneau explorateur</a> permet de charger rapidement des couches, en explorant vos dossiers sur votre ordinateur mais aussi vos connexions à des flux ou des bases de données.</p>
-			     <p>Si vous ne le voyez pas, activez-le dans le Menu Vue &#8594; Panneaux &#8594; Panneau Explorateur.</p>
-			     <p>Dépliez la rubrique <b>WMS/WMTS</b> en cliquant sur le petit triangle, puis <b>BRGM &#8594; Géoservices... &#8594; Mines</b> et double-cliquer sur <b>Mines Substances principales - Points</b> pour l'ajouter à QGIS.</p>
-			     <figure>
-					<a href="illustrations/tous/3_2_explorateur_mines.png" >
-						<img src="illustrations/tous/3_2_explorateur_mines.png" alt="Ajout de la couche WMS de mines du BRGM via l'explorateur" width="350" >
-					</a>
-				</figure>
-				<p>La légende de la couche est lisible dans la liste des couches&nbsp;:</p>
-				<figure>
-					<a href="illustrations/tous/3_2_superposition_creuse_courdo_mines.png" >
-						<img src="illustrations/tous/3_2_superposition_creuse_courdo_mines.png" alt="superposition du département de la Creuse, de la carte géol, des plans d'eaux et des mines avec la légende" width="600" >
-					</a>
-				</figure>
-			 </div>
-			 
-			 <p>Attention, si la couche avait été par défaut dans un autre SCR que celui du projet et des autres couches (Lambert 93), il y aurait eu des problèmes d'affichage. Il vaut mieux dans ce cas passer par le gestionnaire de sources de données pour spécifier le SCR voulu, s'il est disponible.</p>
-			
-			
-			<h3>Avantages et inconvénients des flux<a class="headerlink" id="III25" href="#III25"></a></h3>
+			<h3>Avantages et inconvénients des flux<a class="headerlink" id="III24" href="#III24"></a></h3>
 				
 				<p>Un inconvénient d'utiliser des flux est le temps de chargement et la nécessité d'avoir une connexion internet.</p>
 				<p>Cependant, ils vous assurent de toujours visualiser la dernière mise à jour des données, vous évitent d'encombrer vos ordinateurs et vous permettent de transmettre des projets QGS à des collègues en étant sûr que ceux-ci puissent en visualiser les données (s'ils sont connectés à internet).</p>
 				<p>En résumé, c'est probablement l'usage que vous ferez des données qui vous fera opter pour l'une ou l'autre solution.</p>
 				
-			<h3>Quelques adresses de flux WMS et WFS<a class="headerlink" id="III26" href="#III26"></a></h3>
+			<h3>Quelques adresses de flux WMS et WFS<a class="headerlink" id="III25" href="#III25"></a></h3>
 			
 			    <p>Vous pouvez trouver <a class="ext" target="_blank" href="https://github.com/igeofr/qgis2/tree/master/flux">ici</a> une liste de flux WFS et WMS, créée par l'utilisateur github <a class="ext" target="_blank" href="https://github.com/igeofr">igeofr</a>.</p>
 			    <p>Vous pouvez soit ajouter ces flux manuellement, un par un, comme décrit plus haut, en copiant l'url, soit tous les ajouter en même temps. Pour cela, par exemple pour les flux WFS, collez le contenu entier du fichier QGIS_WFS.xml dans un fichier texte vierge, enregistrez ce fichier sous le nom QGIS_WFS.xml. Ensuite, dans QGIS : gestionnaire de sources &#8594; WFS&#8594; Charger &#8594; sélectionnez le fichier XML, et choisissez les flux que vous souhaitez ajouter.</p>
