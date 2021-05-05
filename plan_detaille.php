@@ -95,6 +95,8 @@
 							<li><a href="09_01_vecteur.php">Opérations sur données vecteur</a></li>
 							<li><a href="09_02_raster.php">Opérations sur données raster</a></li>
 							<li><a href="09_03_vecteur_raster.php">Croiser vecteur et raster</a></li>
+							<li><a href="09_04_maillage.php">Créer un maillage</a></li>
+							<li><a href="09_05_maillage_sql.php">Dites-le avec du SQL !</a></li>
 						</ol>
 					</li>
 					
