@@ -29,7 +29,7 @@
                     <a href="illustrations/tous/3_4_carte.png" >
                 		<img src="illustrations/tous/3_4_carte.png" alt="OpenStreetMap : extrait de carte" width="290">
                 	</a>
-                    <a href="illustrations/tous/3_4_carte.png" >
+                    <a href="illustrations/tous/3_4_donnees.jpg" >
                 		<img src="illustrations/tous/3_4_donnees.jpg" alt="OpenStreetMap : extrait de carte avec les données en bleu" width="290">
                 	</a>
                 	<figcaption>Sous la carte... les données !</figcaption>
