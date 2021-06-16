@@ -23,15 +23,15 @@
 					</li>
 					<li><a href="#IX12">Création d'une zone tampon autour d'un cours d'eau</a>
 						<ul class="listesoustitres">
-							<li><a href="#IX12a">Qu'est-ce qu'une zone tampon ?</a>
+							<li><a href="#IX12a">Qu'est-ce qu'une zone tampon&nbsp;?</a>
 							<li><a href="#IX12b">Sélection d'un cours d'eau</a>
 							<li><a href="#IX12c">Création d'une zone tampon autour de la sélection</a>
-							<li><a href="#IX12d">Pour aller plus loin : détail des autres paramètres</a>
+							<li><a href="#IX12d">Pour aller plus loin&nbsp;: détail des autres paramètres</a>
 						</ul>
 					</li>
 					<li><a href="#IX13">Données communes entre deux couches : intersection</a>
 						<ul class="listesoustitres">
-							<li><a href="#IX13a">Qu'est-ce qu'une intersection ?</a>
+							<li><a href="#IX13a">Qu'est-ce qu'une intersection&nbsp;?</a>
 							<li><a href="#IX13b">Intersection entre communes et zone tampon</a>
 							<li><a href="#IX13c">Si on voulait aller plus loin...</a>
 						</ul>
@@ -42,9 +42,9 @@
 			<p>Nous aborderons ici quelques traitements possibles sur des données vecteur. Il en existe bien sûr beaucoup d'autres !</p>
 			
 
-			<h3><a class="titre" id="IX11">Découper des données par d'autres données</a></h3>
+			<h3>Découper des données par d'autres données<a class="headerlink" id="IX11" href="#IX11"></a></h3>
 			
-			    <h4><a class="titre" id="IX11a">Quel est le principe&nbsp;?</a></h4>
+			    <h4>Quel est le principe&nbsp;?<a class="headerlink" id="IX11a" href="#IX11a"></a></h4>
 			
     				<p>Le but sera ici, à partir d'une couche de cours d'eau de la région Pays de la Loire et d'une couche des départements de France métropolitaine, de <b>découper les cours d'eau pour ne garder que ceux dans notre zone d'étude</b>, en l'occurrence le département de la Loire-Atlantique (44).</p>
     				<figure>
@@ -59,7 +59,7 @@
     				
     				<p>Une telle opération est utile pour avoir des données moins lourdes, ce qui diminue les temps de traitement. Par ailleurs, votre travail sera plus clair si vous utilisez des données adaptées à votre zone d'étude.</p>
 				
-				<h4><a class="titre" id="IX11b">Découpage, mode d'emploi</a></h4>
+				<h4>Découpage, mode d'emploi<a class="headerlink" id="IX11b" href="#IX11b"></a></h4>
 				
     				<div class="manip">
     					<p>Ouvrez un nouveau projet QGIS. Ajoutez les couches <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">DEPARTEMENT</a></em> et <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">gis_osm_waterways_free_1</a></em>.</p>
@@ -107,15 +107,15 @@
     					<figcaption>A gauche, cours d'eau intersectant un département sélectionné par une requête spatiale (en jaune). A droite, cours d'eau découpé par un département (en rouge).</figcaption>
     				</figure>
     				
-    			<h4><a class="titre" id="IX11c">Sans oublier de penser aux systèmes de coordonnées...</a></h4>
+    			<h4>Sans oublier de penser aux systèmes de coordonnées...<a class="headerlink" id="IX11c" href="#IX11c"></a></h4>
 				
 				<p>Avez-vous noté que les 2 couches de départ ont <b>2 SCR différents</b>&nbsp;? (WGS84 pour les cours d'eau, RGF93/Lambert 93 pour les départements). Pourtant, le découpage fonctionne correctement. Ce comportement n'existe que depuis la version 3 de QGIS, la version 2.18 retournait dans ce cas une couche vide.</p>
 				<p><b>Même si ça n'est plus obligatoire, cela reste une bonne pratique de travailler avec des couches dans le même SCR.</b></p>
 			
 			
-			<h3><a class="titre" id="IX12">Création d'une zone tampon autour d'un cours d'eau</a></h3>
+			<h3><a class="titre" id="IX12">Création d'une zone tampon autour d'un cours d'eau<a class="headerlink" id="VIII23b" href="#VIII23b"></a></h3>
 			
-				<h4><a class="titre" id="IX12a">Qu'est-ce qu'une zone tampon ?</a></h4>
+				<h4>Qu'est-ce qu'une zone tampon ?<a class="headerlink" id="IX12a" href="#IX12a"></a></h4>
 			
 					<p>Une zone tampon (aussi appelée « buffer ») est une <b>zone épousant la forme des objets d'une couche, d'une largeur donnée</b>. Si elles sont tracées autour de points, les zones tampons seront des cercles. Autour de lignes et de polygones, ce sera des polygones de forme variable. Une zone tampon peut servir par exemple à modéliser une zone inondable, un périmètre de sécurité, une zone d'achalandage...</p>
 					<figure>
@@ -125,7 +125,7 @@
 					</figure>
 					<p>L'objectif est ici de créer une zone tampon de 100 mètres autour de l'Erdre. Cette zone pourra représenter par exemple une zone inondable, ou bien une zone s'interposant entre rivière et cultures.</p>
 				
-				<h4><a class="titre" id="IX12b">Sélection d'un cours d'eau</a></h4>
+				<h4>Sélection d'un cours d'eau<a class="headerlink" id="IX12b" href="#IX12b"></a></h4>
 				
 					<div class="manip">
 						<div class="question">
@@ -143,7 +143,7 @@
 						<p>Ce cours d'eau est donc constitué de plusieurs entités.</p>
 					</div>
 								
-				<h4><a class="titre" id="IX12c">Création d'une zone tampon autour de la sélection</a></h4>
+				<h4>Création d'une zone tampon autour de la sélection<a class="headerlink" id="IX12c" href="#IX12c"></a></h4>
 				
 					<div class="manip">
 						<p>Pour créer la zone tampon : <b>Boîte à outils de traitements &#8594; Géométrie vectorielle &#8594; Tampon</b></p>
@@ -203,7 +203,7 @@
     					</figure>
 					</div>
 					
-				<h4><a class="titre" id="IX12d">Pour aller plus loin : détail des autres paramètres</a></h4>
+				<h4>Pour aller plus loin&nbsp;: détail des autres paramètres<a class="headerlink" id="IX12d" href="#IX12d"></a></h4>
 					
 					<p>Les autres paramètres de l'outil de zone tampon sont moins fréquemment modifiés et vous pouvez souvent laisser les valeurs par défaut. Voici leur description pour information, que vous pouvez également retrouver dans l'aide (partie droite de la fenêtre de l'outil) ou bien la <a class="ext" target="_blank" href="https://docs.qgis.org/3.4/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html?highlight=buffer#buffer" >documentation QGIS</a> :</p>
 					<ul>
@@ -217,7 +217,7 @@
 						<a href="illustrations/tous/9_1_tampon_extr_plat.png" >
 							<img src="illustrations/tous/9_1_tampon_extr_plat.png" alt="Style d'extrémité plat pour une zone tampon" width="170" >
 						</a>
-<a href="illustrations/tous/9_1_tampon_extr_rond.png" >
+                        <a href="illustrations/tous/9_1_tampon_extr_rond.png" >
 							<img src="illustrations/tous/9_1_tampon_extr_carre.png" alt="Style d'extrémité carré pour une zone tampon" width="170" >
 						</a>
 						<figcaption>Différents types d'extrémité pour les zones tampon : de gauche à droite, rond, plat et carré.</figcaption>
@@ -244,9 +244,9 @@
     					<li class="espace"><b>Limite d'angle droite :</b> ce paramètre n'est utilisé que pour les styles jointure à angle droit. D'après l'aide, il contrôle &#171; la distance maximale de la courbe de décalage &#187;. Personnellement je trouve cette définition peu claire, et d'après mes observations les différences sont minimes (on peut les observer en passant de 1 à 2 par exemple). Ecrivez-moi si vous en savez plus&nbsp;!</li>
     				</ul>
 					
-			<h3><a class="titre" id="IX13">Données communes entre deux couches : intersection</a></h3>
+			<h3>Données communes entre deux couches&nbsp;: intersection<a class="headerlink" id="IX13" href="#IX13"></a></h3>
 			
-				<h4><a class="titre" id="IX13a">Qu'est-ce qu'une intersection ?</a></h4>
+				<h4>Qu'est-ce qu'une intersection&nbsp;?<a class="headerlink" id="IX13a" href="#IX13a"></a></h4>
 				
 					<p>L'intersection entre deux couches crée une troisième couche, avec uniquement les parties communes aux deux couches.</p>
 					
@@ -257,7 +257,7 @@
 						<figcaption>La zone hachurée correspond à l'intersection entre le rectangle et le cercle.</figcaption>
 					</figure>
 					
-				<h4><a class="titre" id="IX13b">Intersection entre communes et zone tampon</a></h4>
+				<h4>Intersection entre communes et zone tampon<a class="headerlink" id="IX13b" href="#IX13b"></a></h4>
 				
 				    <p>L'idée sera ici de créer la couche d'intersection entre les communes et la zone tampon autour de l'Erdre créée ci-dessus. Ceci pourrait permettre de visualiser par exemple pour chaque commune la partie qui se trouve en zone inondable.</p>
 					
@@ -287,7 +287,7 @@
 						<p>Ouvrez la table attributaire de cette couche : notez que les champs des deux couches sont présents.</p>
 					</div>
 					
-				<h4><a class="titre" id="IX13c">Si on voulait aller plus loin...</a></h4>
+				<h4>Si on voulait aller plus loin...<a class="headerlink" id="IX13c" href="#IX13c"></a></h4>
 				
 				    <p>A titre d'exemple d'application, comment faire pour obtenir pour chaque commune le pourcentage de sa surface en zone inondable&nbsp;?</p>
 				    <p>Plusieurs étapes seraient nécessaires&nbsp;:</p>
@@ -298,10 +298,7 @@
 				    </ol>
 				    
 				    <p>En combinant les outils vus dans ce tutoriel (et d'autres !), on peut essayer de répondre à des questions sur des données spatiales.</p>
-						
 
-				
-				
 			<br>
 			<a class="prec" href="09_00_analyse_spatiale.php">chapitre précédent</a>
 			<a class="suiv" href="09_02_raster.php">chapitre suivant</a>

@@ -54,7 +54,7 @@
 				
 				    
 				
-				<h3><a class="titre" id="X11">Représenter des quantités ou des effectifs : carte en symboles proportionnels</a></h3>
+				<h3>Représenter des quantités ou des effectifs : carte en symboles proportionnels<a class="headerlink" id="X11" href="#X11"></a></h3>
 				
 					<p>Les cartes en symbole proportionnels permettent la représentation de quantités ou d'effectifs par des symboles, généralement des cercles. La surface des symboles sera proportionnelle à la quantité ou l'effectif.</p>
 					<figure>
@@ -64,7 +64,7 @@
 						<figcaption>Exemple d'une carte en cercles proportionnels réalisée par Nicolas Lambert et Ronan Ysebaert (2018). Source : <a href="https://neocarto.hypotheses.org/5064">carnet (néo)cartographique</a>.</figcaption>
 					</figure>
 					
-					<h4><a class="titre" id="X11a">Créer une couche de points à partir d'une couche de polygones</a></h4>
+					<h4>Créer une couche de points à partir d'une couche de polygones<a class="headerlink" id="X11a" href="#X11a"></a></h4>
 					
 						<p>Dans QGIS, la visualisation de données sous forme de cercles proportionnels peut se faire directement à partir d'une couche de polygone (c'est alors les centroïdes des polygones qui sont représentés) mais est plus simple à partir d'une couche de points.</p>
 						<p><b>A partir de la couche de communes, nous allons créer les centroïdes (barycentres) des communes.</b></p>
@@ -115,7 +115,7 @@
 							</figure>
 						</div>
 
-					<h4><a class="titre" id="X11b">Faire varier la surface de points en fonction d'un champ</a></h4>
+					<h4>Faire varier la surface de points en fonction d'un champ<a class="headerlink" id="X11b" href="#X11b"></a></h4>
 					
 						<p>Il est ensuite possible de faire varier la surface des centroïdes des communes en fonction d'un champ, ou d'une expression :</p>
 
@@ -149,7 +149,7 @@
 							</ul>
 						</div>
 
-                    <h4><a class="titre" id="X11c">Surface, rayon, Flannery... Pour en savoir plus sur les différentes méthodes</a></h4>
+                    <h4>Surface, rayon, Flannery... Pour en savoir plus sur les différentes méthodes<a class="headerlink" id="X11c" href="#X11c"></a></h4>
 
                         <p>Pourquoi faire varier la surface des cercles et non leur rayon&nbsp;? Tout simplement parce qu'ainsi les variations de forme vues par l'&#339;il seront proportionnelles aux variations de la variable représentée. En faisant varier le rayon, l'&#339;il verra un écart plus grand entre une valeur moyenne et une valeur élevée qu'entre une valeur faible et une valeur moyenne, même si la différence est la même.</p>
                         <p>La méthode de <a class="ext" target="_blank" href="http://wiki.gis.com/wiki/index.php/Proportional_symbol_map#Apparent_Magnitude_.28Flannery.29_Scaling">Flannery</a> est une technique utilisée pour compenser le fait que, même si l'oeil lit mieux les variations de surface que de taille, il ne les interprète cependant pas toujours exactement. Même si cette méthode est intéressante, étant donné que la méthode la plus utilisée en cartographie est de faire varier la surface, il n'est pas forcément recommandé de l'utiliser, à moins de bien le préciser sur votre carte.</p>
@@ -170,7 +170,7 @@
 						</figure>
 						<p>Si vous ne devez retenir qu'une chose : <b>faites varier la surface de vos cercles, pas leur rayon&nbsp;!</b> Cela permettra une lecture plus juste du phénomène que vous représentez.</p>
 						
-					<h4><a class="titre" id="X11d">Les plus petits devant&nbsp;! Modifier l'ordre d'affichage des symboles</a></h4>
+					<h4>Les plus petits devant&nbsp;! Modifier l'ordre d'affichage des symboles<a class="headerlink" id="X11d" href="#X11d"></a></h4>
 						
 						<p>Comme vous l'avez peut-être remarqué, QGIS affiche les cercles dans l'ordre de la table ; il peut donc arriver que de petits cercles soient masqués par de plus gros cercles.</p>
 						<p>Nous allons voir ici comment afficher les cercles par ordre de population, les plus faibles populations par-dessus.</p>
@@ -205,7 +205,7 @@
 							</a>
 					   </figure>
 					   
-					<h4><a class="titre" id="X11e">C'est mieux avec la légende</a></h4>
+					<h4>C'est mieux avec la légende<a class="headerlink" id="X11e" href="#X11e"></a></h4>
 					   
 					   <p>QGIS gère normalement les légendes pour les différents types de représentation, mais les cartes en cercles proportionnels présentent un cas particulier où nous devrons nous-même créer la légende.</p>
 					   <p>Cette fonctionnalité a été rajoutée récemment, ce qui illustre bien le fait que les logiciels SIG ne sont pas initialement pensés comme des logiciels de cartographie (mais ils ont aujourd'hui tellement de possibilité en ce sens que ce serait dommage de se priver&nbsp;!).</p>
@@ -237,7 +237,7 @@
 					   </div>
 					   
 						
-				<h3><a class="titre" id="X12">Représenter des variables relatives à des surfaces : cartes choroplèthes</a></h3>
+				<h3>Représenter des variables relatives à des surfaces&nbsp;: cartes choroplèthes<a class="headerlink" id="X12" href="#X12"></a></h3>
 					
 					<p>Une carte choroplèthe est une carte en aplats de couleurs. Les régions sont colorées selon une mesure statistique telle que la densité de population ou le revenu par habitant. Ce type de carte <a class="ext" target="_blank" href="https://neocarto.hypotheses.org/5717">ne peut donc être utilisé pour représenter des quantités ou des effectifs</a>. Les variables continues doivent être <a class="ext" target="_blank" href="http://www.hypergeo.eu/spip.php?article374">discrétisées</a> pour produire des classes.</p>
 					<figure>
@@ -248,7 +248,7 @@
 				   </figure>
 					
 					
-					<h4><a class="titre" id="X12a">Créer un champ de densité de population</a></h4>
+					<h4>Créer un champ de densité de population<a class="headerlink" id="X12a" href="#X12a"></a></h4>
 						<p>La première étape consistera pour nous à créer un champ densité de population, rempli en fonction de la population et de la surface.</p>
 						
 						<div class="manip">
@@ -269,7 +269,7 @@
 							</figure>
 						</div>
 						
-					<h4><a class="titre" id="X12b">Faire varier la couleur des communes en fonction du champ densité</a></h4>
+					<h4>Faire varier la couleur des communes en fonction du champ densité<a class="headerlink" id="X12b" href="#X12b"></a></h4>
 					
 						<p>Maintenant que ce champ est créé et à jour, il est possible de faire varier la couleur des communes en fonction de la densité.</p>
 						
@@ -308,7 +308,7 @@
 						</figure>
 
 						
-				<h3><a class="titre" id="X13">Représenter des quantités ou des effectifs : cartes en semis de points</a></h3>
+				<h3>Représenter des quantités ou des effectifs&nbsp;: cartes en semis de points<a class="headerlink" id="X13" href="#X13"></a></h3>
 					
 					<p>Une carte en semis de points permet, à partir d'un maillage surfacique, de représenter des quantités ou effectifs par des points placés aléatoirement au sein de chaque polygone. Le nombre de ces points est proportionnel à la quantité ou l'effectif lié au polygone.</p>
 					<figure>
@@ -352,7 +352,7 @@
 							</a>
 						</figure>
 						
-					<h3><a class="titre" id="X14">Connaître la distribution de ses données</a></h3>
+					<h3>Connaître la distribution de ses données<a class="headerlink" id="X14" href="#X14"></a></h3>
 				
 				        <p>Il peut être utile pour mieux comprendre et représenter ses données de connaître leur distribution, par exemple avec un histogramme de fréquence. Ceci peut aider notamment à définir des classes pour une discrétisation.</p>
 				        <p>Il est plus logique de faire cette étape avant de choisir un mode de représentation&nbsp;; néanmoins, parce-qu'il est plus simple de l'aborder en sachant déjà discrétiser des données dans QGIS, cette partie arrive en fin de chapitre.</p>
@@ -362,7 +362,7 @@
                             <p>Si ce n'est pas déjà fait, ajoutez à votre projet la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">COMMUNE.shp</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
                         </div>	
     				
-    				    <h4><a class="titre" id="X14a">Histogramme simple</a></h4>
+    				    <h4>Histogramme simple<a class="headerlink" id="X14a" href="#X14a"></a></h4>
     				    
     				        <p>Il existe une méthode simple directement inclue dans QGIS pour avoir un aperçu de la distribution de vos données.</p>
     				        
@@ -396,7 +396,7 @@
     				        </div>
     				        
     				    
-    				    <h4><a class="titre" id="X14b">Histogramme avec l'extension Plotly</a></h4>
+    				    <h4>Histogramme avec l'extension Plotly<a class="headerlink" id="X14b" href="#X14b"></a></h4>
     				    
     				        <p>Une autre méthode, permettant plus de souplesse au niveau du paramétrage de l'histogramme, mais n'étant pas liée à la discrétisation, consiste à utiliser l'extension <a class="ext" target="_blank" href="https://github.com/ghtmtt/DataPlotly">Plotly</a> créée par Matteo Ghetta (Faunalia).</p>
     				        <p>Cette extension permet la création de graphiques de différents types (nuages de points, boîtes à moustaches, histogramme...) à partir des données chargées dans QGIS. Nous ne verrons pas ici toutes les fonctionnalités liées à cette extension, mais vous aurez une petite entrevue de ses riches possibilités&nbsp;!</p>

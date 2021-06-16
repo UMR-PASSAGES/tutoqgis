@@ -36,7 +36,7 @@
 			<p>Vous verrez ici quelques manipulations sur un raster d'altitude, appliquées au <a href="03_01_donnees_internet.php#III12b">modèle d'élévation numérique (MNE)</a> de la Jamaïque.</p>	
 		
 
-			<h3><a class="titre" id="IX21">Préparation des données : découpage d'un raster</a></h3>
+			<h3>Préparation des données : découpage d'un raster<a class="headerlink" id="IX21" href="#IX21"></a></h3>
 			
 				<p>Le but sera ici de découper un raster pour ne  garder que la zone qui nous intéresse. Cette manipulation permet d'alléger les données et les futurs traitements.</p>
 				
@@ -87,12 +87,12 @@
 				<p>Notez qu'il est également possible de découper un raster suivant l'emprise d'une couche de polygones, en utilisant l'option <b>Utiliser l'emprise de la couche</b>. Vous pouvez aussi directement rentrer à la main les coordonnées de l'emprise à conserver.</p>
 			
 			
-			<h3><a class="titre" id="IX22">Explorer les données en modifiant le mode de représentation</a></h3>
+			<h3>Explorer les données en modifiant le mode de représentation<a class="headerlink" id="IX22" href="#IX22"></a></h3>
 			
 			    <p>Les données ne contiennent maintenant plus que la zone d'étude et sont donc prêtes pour la suite... Mais au fait, que contiennent-elles, ces données&nbsp;?</p>
 			    <p>Avant de créer de nouvelles données à partir de ce MNE, ou bien de le croiser avec d'autres couches, il peut être judicieux d'explorer un peu ces données. Pour cela, il est possible de faire beaucoup de choses en allant simplement dans les propriétés de la couche &nbsp;!</p>
 			    
-			    <h4><a class="titre" id="IX22a">Répartition des valeurs : histogramme de fréquence</a></h4>
+			    <h4>Répartition des valeurs : histogramme de fréquence<a class="headerlink" id="IX22a" href="#IX22a"></a></h4>
 			    
 			        <p>Une manière simple d'avoir un aperçu du contenu des données est de visualiser l'histogramme de fréquence des valeurs des pixels. Vous pourrez ainsi voir d'un coup d'&#339;il la répartition des valeurs d'élévation.</p>
 			        
@@ -110,7 +110,7 @@
     					<p>Il est possible de zoomer sur le graphique en dessinant un rectangle, ou bien en modifiant les valeurs min et max. Un clic droit permet de revenir à la vue initiale.</p>
 			        </div>
 			        
-			    <h4><a class="titre" id="IX22b">La valeur des pixels sans valeur</a></h4>
+			    <h4>La valeur des pixels sans valeur<a class="headerlink" id="IX22b" href="#IX22b"></a></h4>
 			    
 			        <p>Une information utile à savoir est la <b>valeur des pixels &#171; sans données &#187;</b>. En effet, vous ne voyez dans QGIS que les pixels de la Jamaïque et non ceux de l'océan les environnant, bien que nous ayons précédemment découpé cette couche suivant un rectangle.</p>
 			        <p>En fait, <b>un raster étant un tableau, son emprise sera toujours rectangulaire et tous les pixels auront toujours une valeur</b>. Cependant, par commodité, on donne une valeur aberrante aux pixels &#171; sans données &#187;. D'où ce titre énigmatique&nbsp;!</p>
@@ -143,7 +143,7 @@
 			        <p>Rendez-vous <a class="ext" target="_blank" href="http://desktop.arcgis.com/fr/arcmap/10.3/manage-data/raster-and-images/bit-depth-capacity-for-raster-dataset-cells.htm" >ici</a> pour en savoir plus sur les différents types de raster et les données qu'ils peuvent contenir. En règle général, on choisit le type codé sur le moins de bits possibles en restant compatible avec les données, pour obtenir des rasters moins lourds.</p>
 			        
 			        
-			    <h4><a class="titre" id="IX22c">Modifier le style pour explorer les données</a></h4>
+			    <h4>Modifier le style pour explorer les données<a class="headerlink" id="IX22c" href="#IX22c"></a></h4>
 			    
 			        <p>Une manière simple d'explorer les données, aussi bien pour un vecteur que pour un raster, est de modifier la manière dont sont représentées les données.</p>
 			        
@@ -188,7 +188,7 @@
 			        </div>
 			        <p>En modifiant le style des données, notamment en discrétisant les données et en faisant varier les classes, on peut avoir une meilleure idée du sujet étudié, ici l'élévation de la Jamaïque. C'est une première approche !</p>
 			
-			<h3><a class="titre" id="IX23">Manipuler les données : extraction de valeurs</a></h3>
+			<h3>Manipuler les données : extraction de valeurs<a class="headerlink" id="IX23" href="#IX23"></a></h3>
 			
 			    <p>Admettons maintenant que l'étape précédente nous ait permis de décider qu'on souhaite s'intéresser uniquement à la zone inférieure à 100 mètres d'altitude.</p>
 			    <p><b>Comment faire pour obtenir un nouveau raster, où les pixels d'élévation inférieure à 100 mètres ont une valeur de 1 et les autres une valeur de 0&nbsp;?</b> Une telle couche pourra servir par exemple de masque, ou bien pour ne garder que les valeurs d'un raster portant sur un autre thème de la zone inférieure à 100 mètres.</p>
@@ -238,11 +238,11 @@
 			    
 			    <p>Cette couche pourra servir par exemple de masque, telle quelle ou bien en la transformant en couche vecteur au moyen de l'outil Polygoniser.</p>
 			
-			<h3><a class="titre" id="IX24">Exemples d'opérations sur des données d'altitude</a></h3>
+			<h3>Exemples d'opérations sur des données d'altitude<a class="headerlink" id="IX24" href="#IX24"></a></h3>
 			
 			    <p>Il existe un certain nombre d'opérations proposées par les logiciels SIG sur les rasters d'altitude, par exemple la création de courbes de niveaux, d'ombrage, de pente... Nous verrons ici 2 exemples, sur les courbes de niveau et le calcul de pente.</p>
 			
-			    <h4><a class="titre" id="IX24a">Création de courbes de niveau</a></h4>
+			    <h4>Création de courbes de niveau<a class="headerlink" id="IX24a" href="#IX24a"></a></h4>
 				
     				<p>Les courbes de niveaux sont des lignes imaginaires joignant tous les points situés à la même altitude. Nous allons créer des courbes de niveau distantes de 100 mètres à partir du MNE de la Jamaïque.</p>
     				
@@ -287,7 +287,7 @@
     				
     					
     				
-    			<h4><a class="titre" id="IX24b">Projection d'un raster</a></h4>
+    			<h4>Projection d'un raster<a class="headerlink" id="IX24b" href="#IX24b"></a></h4>
     			
     				<p>Il est également possible de créer à partir d'un raster d'altitude un raster de pente : chaque pixel aura la valeur de la pente en ce point. Pour en savoir plus sur la manière dont est calculée la pente, vous pouvez vous référer à <a class="ext" target="_blank" href="http://resources.arcgis.com/fr/help/main/10.1/index.html#//00q90000001r000000" >l'aide d'ArcGIS</a> sur ce point.</p>
     				<a href="illustrations/tous/9_2_pente.svg">
@@ -344,7 +344,7 @@
     					</div>
     				
     				
-    				<h4><a class="titre" id="IX24c">Calcul de pente à partir du raster projeté</a></h4>
+    				<h4>Calcul de pente à partir du raster projeté<a class="headerlink" id="IX24c" href="#IX24c"></a></h4>
     				
     					<div class="manip">
     						<p>Rendez-vous dans la 

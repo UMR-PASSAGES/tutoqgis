@@ -35,32 +35,32 @@
 				
 				<p>Qu'allons-nous voir dans ce chapitre&nbsp;? Il ne s'agit pas ici d'apprendre à coder en Python, mais simplement <b>d'ouvrir un script Python existant, voir comment est constitué ce script, comment le paramétrer et le lancer</b>. En quelque sorte une introduction à cette face cachée de QGIS&nbsp;!</p>
 				
-				<h3><a class="titre" id="XI41">Lancer une commande Python dans QGIS</a></h3>
+				<h3>Lancer une commande Python dans QGIS<a class="headerlink" id="XI41" href="#XI41"></a></h3>
 				
-				<div class="manip">
-					<p>Rendez-vous dans le menu <b>Extension &#8594; Console Python</b>.</p>
-					<p>La console s'ouvre en bas de la fenêtre de QGIS. Dans cette console, vous pouvez taper des commandes Python qui seront exécutées une à une.</p>
-					<p>Tapez <b>print ('hello !')</b> en bas de la console :</p>
-					<figure>
-						<a href="illustrations/tous/11_04_test_console.png" >
-							<img src="illustrations/tous/11_04_test_console.png" alt="test de la console : taper une commande" width="620">
-						</a>
-					</figure>
-					<p>Puis appuyez sur la touche entrée. Vous devriez voir votre commande, suivie du résultat, en haut de la console :</p>
-					<figure>
-						<a href="illustrations/tous/11_04_test_console_resultat.png" >
-							<img src="illustrations/tous/11_04_test_console_resultat.png" alt="test de la console : taper une commande" width="620">
-						</a>
-					</figure>
-					<p>Vous venez d’utiliser la commande <b>Print</b>, qui permet d'afficher du texte dans la console. Vous pouvez également tester la commande citée plus haut pour ajouter une couche vecteur :</p>
-					<p class="code">qgis.utils.iface.addVectorLayer("/mnt/travail/temp/SAINTE_RADEGONDE.shp", "SAINTE_RADEGONDE", "ogr")</p>
-					<p>Il faut remplacer le chemin ("/mnt/travail/temp/SAINTE_RADEGONDE.shp") par le chemin vers la couche sur votre ordinateur.</p>
-					<p class="note">Sur Windows, les chemins seront de la forme 'C:/…' par exemple.</p>
-				</div>
+    				<div class="manip">
+    					<p>Rendez-vous dans le menu <b>Extension &#8594; Console Python</b>.</p>
+    					<p>La console s'ouvre en bas de la fenêtre de QGIS. Dans cette console, vous pouvez taper des commandes Python qui seront exécutées une à une.</p>
+    					<p>Tapez <b>print ('hello !')</b> en bas de la console :</p>
+    					<figure>
+    						<a href="illustrations/tous/11_04_test_console.png" >
+    							<img src="illustrations/tous/11_04_test_console.png" alt="test de la console : taper une commande" width="620">
+    						</a>
+    					</figure>
+    					<p>Puis appuyez sur la touche entrée. Vous devriez voir votre commande, suivie du résultat, en haut de la console :</p>
+    					<figure>
+    						<a href="illustrations/tous/11_04_test_console_resultat.png" >
+    							<img src="illustrations/tous/11_04_test_console_resultat.png" alt="test de la console : taper une commande" width="620">
+    						</a>
+    					</figure>
+    					<p>Vous venez d’utiliser la commande <b>Print</b>, qui permet d'afficher du texte dans la console. Vous pouvez également tester la commande citée plus haut pour ajouter une couche vecteur :</p>
+    					<p class="code">qgis.utils.iface.addVectorLayer("/mnt/travail/temp/SAINTE_RADEGONDE.shp", "SAINTE_RADEGONDE", "ogr")</p>
+    					<p>Il faut remplacer le chemin ("/mnt/travail/temp/SAINTE_RADEGONDE.shp") par le chemin vers la couche sur votre ordinateur.</p>
+    					<p class="note">Sur Windows, les chemins seront de la forme 'C:/…' par exemple.</p>
+    				</div>
+    				
+    				<p>Il est possible de travailler uniquement en lançant ainsi des commandes une à une ; seulement, les commandes utilisées ne seront pas sauvegardées et ne pourront donc être réutilisées sans tout retaper à la main (même s'il est possible de faire défiler les dernières commandes utilisées en appuyant sur la touche flèche haut du clavier).</p>
 				
-				<p>Il est possible de travailler uniquement en lançant ainsi des commandes une à une ; seulement, les commandes utilisées ne seront pas sauvegardées et ne pourront donc être réutilisées sans tout retaper à la main (même s'il est possible de faire défiler les dernières commandes utilisées en appuyant sur la touche flèche haut du clavier).</p>
-				
-				<h3><a class="titre" id="XI42">Ouvrir un script Python</a></h3>
+				<h3><a class="titre" id="XI42">Ouvrir un script Python<a class="headerlink" id="XI42" href="#XI42"></a></h3>
 					
 					<p>Pour sauvegarder et réutiliser facilement votre travail, le plus simple est d'utiliser ce qu'on appelle un script. Il s'agit simplement d'un fichier texte comportant une suite de commandes, et qui porte l'extension PY puisqu'il s'agit d'un script Python.</p>
 					<p>Ce tutoriel n'étant pas un tutoriel Python, nous nous contenterons d'ouvrir un script existant plutôt que d'en créer un nous-mêmes.</p>
@@ -84,7 +84,7 @@
 					<p>L'objectif n'est pas de comprendre dans le détail tout ce que fait ce script, mais de comprendre globalement ce qui s'y passe, notamment au moyen des commentaires. Il s'agit ici d'un script faisant le même travail que le modèle que vous avez réalisé en <a href="11_03_modeleur.php#XI33b">précédemment</a>, à savoir découper plusieurs couches par une même couche et reprojeter les couches obtenues en WGS84.</p>
 
 				
-				<h3><a class="titre" id="XI43">Paramétrer le script</a></h3>
+				<h3>Paramétrer le script<a class="headerlink" id="XI43" href="#XI43"></a></h3>
 				
 					<p>Au début du script (ligne 15), vous trouverez ces lignes :</p>
 					<figure>
@@ -104,7 +104,7 @@
 					</div>
 					
 				
-				<h3><a class="titre" id="XI44">Lancer et éditer un script</a></h3>
+				<h3><a class="titre" id="XI44">Lancer et éditer un script<a class="headerlink" id="XI44" href="#XI44"></a></h3>
 					<div class="manip">
 					    <figure>
 						  <a href="illustrations/tous/11_04_executer_script_icone.png" >
