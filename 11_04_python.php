@@ -127,8 +127,6 @@
 					
 					<p>Pour en savoir plus sur le sujet, vous pouvez lire par exemple <a href="https://docs.qgis.org/3.4/fr/docs/pyqgis_developer_cookbook/intro.html" >ici</a>.</p>
 					
-					
-						
 				<br>
 				<a class="prec" href="11_03_modeleur.php">chapitre précédent</a>
 				<a class="suiv" href="12_00_teledetection.php">partie XII : télédétection</a>
