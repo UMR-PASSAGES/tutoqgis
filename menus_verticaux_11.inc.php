@@ -18,4 +18,5 @@
 				<li><a href="11_04_python.php">Comprendre et lancer un script Python</a></li>
 			</ol>
 		</li>
+		<li><a href="12_00_teledetection.php">Télédétection</a></li>
 	</ol>

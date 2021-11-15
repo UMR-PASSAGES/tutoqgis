@@ -127,10 +127,11 @@
 					
 					<p>Pour en savoir plus sur le sujet, vous pouvez lire par exemple <a href="https://docs.qgis.org/3.4/fr/docs/pyqgis_developer_cookbook/intro.html" >ici</a>.</p>
 					
-					<p>Vous êtes arrivé.e au bout de ce tutoriel. Si vous le suivez depuis le début, bravo pour votre patience, et sinon bravo également&nbsp;!</p>
+					
 						
 				<br>
 				<a class="prec" href="11_03_modeleur.php">chapitre précédent</a>
+				<a class="suiv" href="12_00_teledetection.php">partie XII : télédétection</a>
 				<br>
 				<a class="hautpage" href="#wrap">haut de page</a>
 
