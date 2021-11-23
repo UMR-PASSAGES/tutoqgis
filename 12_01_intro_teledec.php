@@ -44,6 +44,8 @@
                     </ul>
                     
                     <h4>Type de satellite<a class="headerlink" id="XII11a" href="#XII11a"></a></h3>
+					
+						<p>blabla</p>
                     
                     
                     <h4>Localisation de l'image<a class="headerlink" id="XII11b" href="#XII11a"></a></h3>
