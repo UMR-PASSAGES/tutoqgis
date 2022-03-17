@@ -14,7 +14,7 @@
 		<div class="main">
 			<h2>VI.4  Pour aller plus loin : requêtes SQL</h2>
 				<ul class="listetitres">
-					<li><a href="#VI41">Utiliser du SQL sans passer par un logiciel de bases de données : le concept de couche virtuelle</a>
+					<li><a href="#VI41">Utiliser du SQL sans passer par un logiciel de bases de données : le concept de couche virtuelle</a></li>
 					<li><a href="#VI42">Effectuer une requête simple avec le gestionnaire de bases de données</a>
 					   <ul class="listesoustitres">
 							<li><a href="#VI42a">Activer le gestionnaire de bases de données</a></li>
@@ -45,7 +45,7 @@
     			 <p>Elles permettent d'utiliser le langage SQL sur une ou plusieurs couches vectorielles chargées dans QGIS, au format shapefile, geopackage ou autre.</p>
     			 <p>Pour information, les fonctions SQL disponibles sont celles de <a class="ext" target="_blank" href="https://www.sqlite.org/lang.html">SQLite</a>/<a class="ext" target="_blank" href="http://www.gaia-gis.it/gaia-sins/spatialite-sql-latest.html">SpatiaLite</a>. Elles sont donc un peu moins riches que celles offertes par PostgreSQL/PostGIS mais offrent tout de même beaucoup de possibilités.</p>
 			
-			<h3>Faire une requête simple avec le gestionnaire de bases de données<a class="headerlink" id="VI42" href="#VI42"></a></h3>
+			<h3>Effectuer une requête simple avec le gestionnaire de bases de données<a class="headerlink" id="VI42" href="#VI42"></a></h3>
 			
 			 <p>Une des manières d'utiliser les couches virtuelles dans QGIS est de passer par le <b>gestionnaire de bases de données</b> (DB Manager). Il s'agit d'une extension installée par défaut dans QGIS.</p>
 			

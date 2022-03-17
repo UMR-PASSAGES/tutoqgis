@@ -23,7 +23,7 @@
 				</ul>
 	
 			
-			<h3>Qu'est-ce qu'un flux WMS ou WFS?<a class="headerlink" id="III21" href="#III21"></a></h3>
+			<h3>Qu'est-ce qu'un flux WMS ou WFS ?<a class="headerlink" id="III21" href="#III21"></a></h3>
 			
 				<p>Il est possible de visualiser directement dans un SIG des données accessibles sur un serveur, sans devoir préalablement les télécharger sur votre ordinateur. Ceci se fait via des flux. Les deux types de flux les plus courant permettant ceci sont les <b>flux WMS (Web Map Service)</b> et <b>WFS (Web Feature Service)</b>.</p>
 				<ul>

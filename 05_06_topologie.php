@@ -17,7 +17,7 @@
 					<li><a href="#V61">Qu'est-ce que la topologie ?</a>
 						<ul class="listesoustitres">
 							<li><a href="#V61a">Définition et exemples</a></li>
-							<li><a href="#V61b">Pourquoi faire attention la topologie ?</a></li>
+							<li><a href="#V61b">Pourquoi faire attention à la topologie ?</a></li>
 						</ul>
 					</li>
 					<li><a href="#V62">Pour aller plus loin : comment vérifier la topologie d'une couche ?</a>
@@ -141,7 +141,7 @@
 			
 			       <p>Pour corriger les erreurs de topologie d'une couche, vous pouvez procéder &#171; à la main &#187;, en corrigeant les erreurs une à une avec les outils d'édition de QGIS, en utilisant les <b>propriétés d'accrochage</b> et l'<b>outil de noeud</b>. Cliquer sur la ligne correspondant à une erreur dans le vérificateur de topologie zoome sur cette erreur.</p>
 			       
-			    <h4>Corriger les erreurs de topologie avec l'outil &#171;&nbsp; Réparer les géométries &nbsp;&#187;<a class="headerlink" id="V63b" href="#V63b"></a></h4>
+			    <h4>Corriger les erreurs de topologie avec l'outil &#171;&nbsp; réparer les géométries &#187;&nbsp;<a class="headerlink" id="V63b" href="#V63b"></a></h4>
 			    
 			       <p>Il existe un outil <b>Réparer les géométries</b> accessible dans la boîte à outils de traitement. Pour afficher (ou masquer si elle est déjà affichée) cette boîte, <b>menu Traitement &#8594; Boîte à outils</b>. Tapez ensuite <b>réparer</b> dans la partie filtre pour trouver facilement cet outil :</p>
 			       <figure>

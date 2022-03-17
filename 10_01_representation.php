@@ -16,11 +16,11 @@
 				<ul class="listetitres">
 					<li><a href="#X11">Représenter des quantités ou des effectifs : carte en symboles proportionnels</a>
 						<ul class="listesoustitres">
-							<li><a href="#X11a">Créer une couche de points à partir d'une couche de polygones</a>
-							<li><a href="#X11b">Faire varier la taille de points en fonction d'un champ</a>
-							<li><a href="#X11c">Surface, rayon, Flannery... Pour en savoir plus sur les différentes méthodes</a>
-							<li><a href="#X11d">Les plus petits devant ! Modifier l'ordre d'affichage des symboles</a>
-							<li><a href="#X11e">C'est mieux avec la légende</a>
+							<li><a href="#X11a">Créer une couche de points à partir d'une couche de polygones</a></li>
+							<li><a href="#X11b">Faire varier la surface de points en fonction d'un champ</a></li>
+							<li><a href="#X11c">Surface, rayon, Flannery... Pour en savoir plus sur les différentes méthodes</a></li>
+							<li><a href="#X11d">Les plus petits devant ! Modifier l'ordre d'affichage des symboles</a></li>
+							<li><a href="#X11e">C'est mieux avec la légende</a></li>
 						</ul>
 					</li>
 					<li><a href="#X12">Représenter des variables relatives à des surfaces : cartes choroplèthes</a>
@@ -30,10 +30,10 @@
 						</ul>
 					</li>
 					<li><a href="#X13">Représenter des quantités ou des effectifs : cartes en semis de points</a></li>
-                    <li><a href="#X14">Connaître la distribution de ses données</a>
+          <li><a href="#X14">Connaître la distribution de ses données</a>
 					    <ul class="listesoustitres">
-							<li><a href="#X14a">Histogramme simple</a>
-							<li><a href="#X14b">Histogramme avec l'extension Plotly</a>
+							<li><a href="#X14a">Histogramme simple</a></li>
+							<li><a href="#X14b">Histogramme avec l'extension Plotly</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -170,7 +170,7 @@
 						</figure>
 						<p>Si vous ne devez retenir qu'une chose : <b>faites varier la surface de vos cercles, pas leur rayon&nbsp;!</b> Cela permettra une lecture plus juste du phénomène que vous représentez.</p>
 						
-					<h4>Les plus petits devant&nbsp;! Modifier l'ordre d'affichage des symboles<a class="headerlink" id="X11d" href="#X11d"></a></h4>
+					<h4>Les plus petits devant ! Modifier l'ordre d'affichage des symboles<a class="headerlink" id="X11d" href="#X11d"></a></h4>
 						
 						<p>Comme vous l'avez peut-être remarqué, QGIS affiche les cercles dans l'ordre de la table ; il peut donc arriver que de petits cercles soient masqués par de plus gros cercles.</p>
 						<p>Nous allons voir ici comment afficher les cercles par ordre de population, les plus faibles populations par-dessus.</p>
@@ -237,7 +237,7 @@
 					   </div>
 					   
 						
-				<h3>Représenter des variables relatives à des surfaces&nbsp;: cartes choroplèthes<a class="headerlink" id="X12" href="#X12"></a></h3>
+				<h3>Représenter des variables relatives à des surfaces : cartes choroplèthes<a class="headerlink" id="X12" href="#X12"></a></h3>
 					
 					<p>Une carte choroplèthe est une carte en aplats de couleurs. Les régions sont colorées selon une mesure statistique telle que la densité de population ou le revenu par habitant. Ce type de carte <a class="ext" target="_blank" href="https://neocarto.hypotheses.org/5717">ne peut donc être utilisé pour représenter des quantités ou des effectifs</a>. Les variables continues doivent être <a class="ext" target="_blank" href="http://www.hypergeo.eu/spip.php?article374">discrétisées</a> pour produire des classes.</p>
 					<figure>
@@ -308,7 +308,7 @@
 						</figure>
 
 						
-				<h3>Représenter des quantités ou des effectifs&nbsp;: cartes en semis de points<a class="headerlink" id="X13" href="#X13"></a></h3>
+				<h3>Représenter des quantités ou des effectifs : cartes en semis de points<a class="headerlink" id="X13" href="#X13"></a></h3>
 					
 					<p>Une carte en semis de points permet, à partir d'un maillage surfacique, de représenter des quantités ou effectifs par des points placés aléatoirement au sein de chaque polygone. Le nombre de ces points est proportionnel à la quantité ou l'effectif lié au polygone.</p>
 					<figure>

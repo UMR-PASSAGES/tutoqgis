@@ -16,7 +16,7 @@
 				<ul class="listetitres">
 					<li><a href="#IV41">Type de transformation, ou comment calculer les nouvelles coordonnées des points ?</a>
 						<ul class= "listesoustitres">
-							<li><a href="#IV41a" >Qu'est-ce qu'une transformation?</a></li>
+							<li><a href="#IV41a" >Qu'est-ce qu'une transformation ?</a></li>
 							<li><a href="#IV41b" >Quelques types de transformations</a></li>
 							<li><a href="#IV41c" >Choisir une transformation</a></li>
 						</ul>

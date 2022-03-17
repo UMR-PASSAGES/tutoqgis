@@ -15,7 +15,7 @@
 			<h2>X.2  Mettre en page une carte</h2>
 				<ul class="listetitres">
 					<li><a href="#X21">Préparation de la mise en page</a></li>
-					<li><a href="#X22">Mise en page&nbsp;: une fenêtre dédiée</a>
+					<li><a href="#X22">Mise en page&nbsp;: une fenêtre dédiée</a></li>
 					<li><a href="#X23">Modifier les dimensions de la page</a></li>
 					<li><a href="#X24">Ajouter une carte</a></li>
 					<li><a href="#X25">Ajouter une légende</a>
@@ -341,7 +341,7 @@
 						
 					</div>
 					
-				<h3><a class="titre" id="X28">Ajouter une carte de situation<a class="headerlink" id="X28" href="#X28"></a></h3>
+				<h3><a class="titre" id="X28">Ajout d'une carte de situation<a class="headerlink" id="X28" href="#X28"></a></h3>
 				
 					<p>Vous pouvez également ajouter une deuxième carte à votre page, qui servira par exemple de carte de situation.</p>
 					<p>Il est possible de faire figurer dans cette deuxième carte un rectangle correspondant à l'emprise de la première carte.</p>

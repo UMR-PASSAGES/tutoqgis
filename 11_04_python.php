@@ -17,7 +17,7 @@
 					<li><a href="#XI41">Lancer une commande Python dans QGIS</a></li>
 					<li><a href="#XI42">Ouvrir un script Python</a></li>
 					<li><a href="#XI43">Paramétrer le script</a></li>
-					<li><a href="#XI44">Lancer le script</a></li>
+					<li><a href="#XI44">Lancer et éditer un script</a></li>
 				</ul>
 				<br>
 				

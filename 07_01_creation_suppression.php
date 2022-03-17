@@ -28,7 +28,7 @@
 				
 			<p>Nous verrons ici comment ajouter et supprimer des champs dans la table attributaire d'une couche existante, et comment modifier l'ordre des champs.</p>
 
-			<h3>Quels sont les champs présents dans une table ?<a class="headerlink" id="VII11" href="#VII11"></a></h3>
+			<h3>Quels sont les champs présents dans une table&nbsp;?<a class="headerlink" id="VII11" href="#VII11"></a></h3>
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>.</p>

@@ -14,7 +14,7 @@
 		<div class="main">
 			<h2>I.3  Formats de données SIG</h2>
 				<ul class="listetitres">
-					<li><a href="#I31">Formats vecteur : SHP et TAB</a>
+					<li><a href="#I31">Formats vecteur : SHP, GPKG et TAB</a>
 						<ul class= "listesoustitres">
 							<li><a href="#I31a">Format Shapefile ou SHP : un "standard"</a></li>
 							<li><a href="#I31b">Format GPKG (GeoPackage)</a></li>
@@ -40,7 +40,7 @@
 				
 				<h3>Formats vecteur : SHP, GPKG et TAB<a class="headerlink" id="I31" href="#I31"></a></h3>
 				
-					<h4>Format Shapefile ou SHP : un "standard" vieillissant !<a class="headerlink" id="I31a" href="#I31a"></a></h4>
+					<h4>Format Shapefile ou SHP : un "standard"<a class="headerlink" id="I31a" href="#I31a"></a></h4>
 					
 					    <figure>
 						  <a href="illustrations/tous/1_3_fichiers_shp.png" >

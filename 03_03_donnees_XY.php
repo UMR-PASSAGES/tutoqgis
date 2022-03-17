@@ -22,7 +22,7 @@
 			<p>Nous avons vu quelques pistes pour rechercher et afficher des données au format SIG dans QGIS, que ce soit en les téléchargeant ou via des flux. Il arrive aussi de disposer d'un tableau avec deux colonnes X et Y : comment utiliser ces données dans un SIG ?</p>
 			<p>Nous prendrons ici l'exemple d'un fichier au <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Comma-separated_values">format CSV</a>. Pour information, il est possible de créer un fichier au format CSV à partir d'un fichier ODS (LibreOffice) ou XLS (Microsoft Office) par exemple.</p>
 			
-			<h3>Qu'y a-t-il dans le fichier texte?<a class="headerlink" id="III31" href="#III31"></a></h3>
+			<h3>Qu'y a-t-il dans le fichier texte ?<a class="headerlink" id="III31" href="#III31"></a></h3>
 				
 				<div class="manip">
 					<p>Dans l'explorateur de votre ordinateur, ouvrez le fichier <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">villes_bhutan_geonames.csv</a></em> situé dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b> à l'aide d'un éditeur de texte simple (<b>pas dans un tableur</b>) : par exemple, WordPad dans Windows, TextEdit sous Mac, gedit sous Ubuntu.</p>

@@ -28,12 +28,12 @@
 							<li><a href="#I23c" >Filtrer les données</a></li>
 						</ul>
 					</li>
-					<li><a href="#I24">Ajout d'une couche raster</a>
-					<li><a href="#I25">Propriétés d'une couche raster : modifier le style</a>
+					<li><a href="#I24">Ajout d'une couche raster</a></li>
+					<li><a href="#I25">Propriétés d'une couche raster : modifier le style</a></li>
 				</ul>
 
 				
-				<h3>Ajout d'une couche de données vecteur<a class="headerlink" id="I21" href="#I21"></a></h3>
+				<h3>Ajout et suppression d'une couche de données vecteur<a class="headerlink" id="I21" href="#I21"></a></h3>
 				
 				    <h4>Par le menu<a class="headerlink" id="I21a" href="#I21a"></a></h4>
 				

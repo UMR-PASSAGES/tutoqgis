@@ -67,7 +67,7 @@
         		 
         		 <p>Si ça n'est pas clair, ne vous inquiétez pas, tout devrait s'éclaircir par la pratique&nbsp;!</p>
         			 
-        	   <h3>Créer une grille<a class="headerlink" id="IX42" href="#IX42"></a></h3>
+        	   <h3>Création d'une grille<a class="headerlink" id="IX42" href="#IX42"></a></h3>
         		  
     		      <p>Première étape : créer une grille. Elle devra avoir la même emprise que la couche de départ, et pour que les temps de calcul soient raisonnables nous utiliserons une taille de maille de 50 km.</p>
     		      

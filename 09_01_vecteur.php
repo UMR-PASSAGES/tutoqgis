@@ -16,24 +16,24 @@
 				<ul class="listetitres">
 					<li><a href="#IX11">Découper des données par d'autres données</a>
 					   <ul class="listesoustitres">
-							<li><a href="#IX11a">Quel est le principe&nbsp;?</a>
-							<li><a href="#IX11b">Découpage, mode d'emploi</a>
-							<li><a href="#IX11c">Sans oublier de penser aux systèmes de coordonnées...</a>
+							<li><a href="#IX11a">Quel est le principe ?</a></li>
+							<li><a href="#IX11b">Découpage, mode d'emploi</a></li>
+							<li><a href="#IX11c">Sans oublier de penser aux systèmes de coordonnées...</a></li>
 						</ul>
 					</li>
 					<li><a href="#IX12">Création d'une zone tampon autour d'un cours d'eau</a>
 						<ul class="listesoustitres">
-							<li><a href="#IX12a">Qu'est-ce qu'une zone tampon&nbsp;?</a>
-							<li><a href="#IX12b">Sélection d'un cours d'eau</a>
-							<li><a href="#IX12c">Création d'une zone tampon autour de la sélection</a>
-							<li><a href="#IX12d">Pour aller plus loin&nbsp;: détail des autres paramètres</a>
+							<li><a href="#IX12a">Qu'est-ce qu'une zone tampon ?</a></li>
+							<li><a href="#IX12b">Sélection d'un cours d'eau</a></li>
+							<li><a href="#IX12c">Création d'une zone tampon autour de la sélection</a></li>
+							<li><a href="#IX12d">Pour aller plus loin&nbsp;: détail des autres paramètres</a></li>
 						</ul>
 					</li>
 					<li><a href="#IX13">Données communes entre deux couches : intersection</a>
 						<ul class="listesoustitres">
-							<li><a href="#IX13a">Qu'est-ce qu'une intersection&nbsp;?</a>
-							<li><a href="#IX13b">Intersection entre communes et zone tampon</a>
-							<li><a href="#IX13c">Si on voulait aller plus loin...</a>
+							<li><a href="#IX13a">Qu'est-ce qu'une intersection&nbsp;?</a></li>
+							<li><a href="#IX13b">Intersection entre communes et zone tampon</a></li>
+							<li><a href="#IX13c">Si on voulait aller plus loin...</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -44,7 +44,7 @@
 
 			<h3>Découper des données par d'autres données<a class="headerlink" id="IX11" href="#IX11"></a></h3>
 			
-			    <h4>Quel est le principe&nbsp;?<a class="headerlink" id="IX11a" href="#IX11a"></a></h4>
+			    <h4>Quel est le principe ?<a class="headerlink" id="IX11a" href="#IX11a"></a></h4>
 			
     				<p>Le but sera ici, à partir d'une couche de cours d'eau de la région Pays de la Loire et d'une couche des départements de France métropolitaine, de <b>découper les cours d'eau pour ne garder que ceux dans notre zone d'étude</b>, en l'occurrence le département de la Loire-Atlantique (44).</p>
     				<figure>
@@ -244,7 +244,7 @@
     					<li class="espace"><b>Limite d'angle droite :</b> ce paramètre n'est utilisé que pour les styles jointure à angle droit. D'après l'aide, il contrôle &#171; la distance maximale de la courbe de décalage &#187;. Personnellement je trouve cette définition peu claire, et d'après mes observations les différences sont minimes (on peut les observer en passant de 1 à 2 par exemple). Ecrivez-moi si vous en savez plus&nbsp;!</li>
     				</ul>
 					
-			<h3>Données communes entre deux couches&nbsp;: intersection<a class="headerlink" id="IX13" href="#IX13"></a></h3>
+			<h3>Données communes entre deux couches : intersection<a class="headerlink" id="IX13" href="#IX13"></a></h3>
 			
 				<h4>Qu'est-ce qu'une intersection&nbsp;?<a class="headerlink" id="IX13a" href="#IX13a"></a></h4>
 				

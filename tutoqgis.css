@@ -312,38 +312,38 @@ hov         #1D3437     hover colour
 	}
 	th{
 		color: white;
-	   background-color: #28A6B7;
-	   padding-top: 3px;
-	   padding-bottom: 3px;
-	   padding-left: 10px;
-	   padding-right: 10px;
+	    background-color: #28A6B7;
+	    padding-top: 3px;
+	    padding-bottom: 3px;
+	    padding-left: 10px;
+	    padding-right: 10px;
 	}
 	th.clair{
 		color: white;
-	   background-color: #59CFDF;
-	   padding-top: 3px;
-	   padding-bottom: 3px;
-	   padding-left: 10px;
-	   padding-right: 10px;
-	   text-align: center;
+	    background-color: #59CFDF;
+	    padding-top: 3px;
+	    padding-bottom: 3px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    text-align: center;
 	}
 	th.centre{
 		color: white;
-	   background-color: #28A6B7;
+	    background-color: #28A6B7;
 		padding-top: 3px;
-	   padding-bottom: 3px;
-	   padding-left: 10px;
-	   padding-right: 10px;
-	   text-align: center;
+	    padding-bottom: 3px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    text-align: center;
 	}
 	td{
-		padding-top: 3px;
+	   padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
 	   padding-right: 10px;
 	}
 	td.centre{
-		padding-top: 3px;
+	   padding-top: 3px;
 	   padding-bottom: 3px;
 	   padding-left: 10px;
 	   padding-right: 10px;
@@ -372,6 +372,10 @@ hov         #1D3437     hover colour
 	tr.alt{
 		color: black;
 		background-color: #9CDDE4;
+	}
+	tr.white{
+	    color: black;
+		background-color: #f4fbff;
 	}
 	
 	/* pour les logos dans la partie droite */
@@ -567,6 +571,10 @@ hov         #1D3437     hover colour
 		font-family: courier;
 		white-space: pre-wrap;
 	}
+	p.keskonfai{
+	    color: #FF00DB;
+	    font-style: italic;
+	}
 
 	
 	/* syles de div */
@@ -579,6 +587,19 @@ hov         #1D3437     hover colour
 		border-left-style: solid;
 		border-left-color: /*link*/#28A6B7;
 		background-color: /*bgm*/#F0F4F4;
+	}
+    div.theorie:before{
+	    content: "Point théorique \A";
+	    color: #737373;
+	    font-weight: bold;
+	    font-style: italic;
+	    white-space: pre;
+	    /*position: relative;*/
+	    /*bottom: 20px;*/
+	}
+	div.theorie{
+	    background-color:#e7e7e7;
+	    padding: 10px;
 	}
 	div.bonus {
 		background-color: #FFDDDD;

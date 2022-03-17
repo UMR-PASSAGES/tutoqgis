@@ -17,7 +17,7 @@
 					<li><a href="#V51">Création d'une couche de polygones</a></li>
 					<li><a href="#V52">Ajout d'un polygone</a></li>
 					<li><a href="#V53">Découpage d'un polygone</a></li>
-					<li><a href="#V54">Frontière commune entre 2 polygones : comment est-elle gérée ?</a></li>
+					<li><a href="#V54">Frontière commune entre 2 polygones&nbsp;: comment est-elle gérée ?</a></li>
 					<li><a href="#V55">Ajout d'un élément en s'appuyant sur un autre : l'accrochage</a></li>
 					<li><a href="#V56">Éviter les intersections entre polygones jointifs</a></li>
 				</ul>

@@ -16,10 +16,10 @@
 				<ul class="listetitres">
 					<li><a href="#XI31">Création d'un modèle</a>
 						<ul class="listesoustitres">
-							<li><a href="#XI31a">Création du premier paramètre en entrée&nbsp;: couche à découper</a>
+							<li><a href="#XI31a">Création du premier paramètre en entrée&nbsp;: couche à découper</a></li>
 							<li><a href="#XI31b">Création du deuxième paramètre en entrée&nbsp;: masque de découpe</a></li>
 							<li><a href="#XI31c">Création du premier algorithme&nbsp;: découpage</a></li>
-							<li><a href="#XI31d">Création du second algorithme&nbso;: modification du SCR</a></li>
+							<li><a href="#XI31d">Création du second algorithme&nbsp;: modification du SCR</a></li>
 						</ul>
 					</li>
 					<li><a href="#XI32">Enregistrement et documentation d'un modèle</a>

@@ -14,8 +14,8 @@
 		<div class="main">
 			<h2>IV.1  Principe du géoréférencement</h2>
 				<ul class="listetitres">
-					<li><a href="#IV11">Qu'est-ce que le géoréférencement?</a></li>
-					<li><a href="#IV12">Géoréférencer par rapport à quoi? Deux méthodes</a>
+					<li><a href="#IV11">Qu'est-ce que le géoréférencement ?</a></li>
+					<li><a href="#IV12">Géoréférencer par rapport à quoi ? Deux méthodes</a>
 						<ul class= "listesoustitres">
 							<li><a href="#IV12a" >En se basant sur les informations contenues dans l'image</a></li>
 							<li><a href="#IV12b" >En se basant sur des informations contenues dans une autre couche</a></li>

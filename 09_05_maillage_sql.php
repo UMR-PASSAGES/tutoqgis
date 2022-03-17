@@ -16,23 +16,23 @@
 				<ul class="listetitres">
 					<li><a href="#IX51">Création d'une nouvelle base SpatiaLite ou PostGIS</a>
 					   <ul class="listesoustitres">
-					       <li><a href="#IX51a">Création d'une base SpatiaLite</a>
-					       <li><a href="#IX51b">Création d'une base PostGIS</a>
+					       <li><a href="#IX51a">Création d'une base SpatiaLite</a></li>
+					       <li><a href="#IX51b">Création d'une base PostGIS</a></li>
 					   </ul>
 					</li>
-					<li><a href="#IX52">Import de données dans SpatiaLite ou PostGIS</a>
-					<li><a href="#IX53">Lancer une requête simple</a>
+					<li><a href="#IX52">Import de données dans SpatiaLite ou PostGIS</a></li>
+					<li><a href="#IX53">Lancer une requête simple</a></li>
 					<li><a href="#IX54">Création d'une grille</a>
 					   <ul class="listesoustitres">
-					       <li><a href="#IX54a">Créer une grille avec SpatiaLite</a>
-					       <li><a href="#IX54b">Créer une grille avec PostGIS</a>
+					       <li><a href="#IX54a">Créer une grille avec SpatiaLite</a></li>
+					       <li><a href="#IX54b">Créer une grille avec PostGIS</a></li>
 					   </ul>
 					</li>
 					<li><a href="#IX55">Union et agrégation</a></li>
 					<li><a href="#IX56">Évolution temporelle&nbsp;: soustraction de 2 maillages</a>
 					   <ul class="listesoustitres">
-					       <li><a href="#IX56a">Relancer l'opération sur les données Corine Land Cover 2012</a>
-					       <li><a href="#IX56b">Soustraire les 2 maillages 2012 et 2000</a>
+					       <li><a href="#IX56a">Relancer l'opération sur les données Corine Land Cover 2012</a></li>
+					       <li><a href="#IX56b">Soustraire les 2 maillages 2012 et 2000</a></li>
 					   </ul>
 					</li>
 				</ul>
@@ -54,7 +54,7 @@
 			   
 			   <p class="attention">Pour ce chapitre, vous pouvez soit télécharger les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a>&nbsp;: <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip" >Données Métropole 2000</a> et <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC12_FR_RGF_SHP.zip" >Données Métropole 2012</a> puis les filtrer pour ne garder que les vignes, comme détaillé dans le tutoriel, ou bien utiliser les <a href="telechargement.php">données en téléchargement</a> déjà filtrées (pour un téléchargement moins lourd).</p>
 			
-			   <h3>Création d'une base vide SpatiaLite ou PostGIS<a class="headerlink" id="IX51" href="#IX51"></a></h3>
+			   <h3>Création d'une nouvelle base SpatiaLite ou PostGIS<a class="headerlink" id="IX51" href="#IX51"></a></h3>
 			   
 			     <p>La première étape consiste à créer une base de données vides dans le logiciel choisi, et à y importer les données de départ, à savoir la couche Corine Land Cover.</p>
 			     <p><b>Si vous choisissez d'utiliser Postgresql/PostGIS, assurez-vous d'avoir installé ces logiciels avant de poursuivre&nbsp;!</b></p>

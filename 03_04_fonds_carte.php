@@ -34,7 +34,7 @@
 			    
 			    <p>De tels fonds sont dits &#171;&nbsp;tuilés &nbsp;&#187; car ils sont découpés en carrés jointifs (tuiles) pour faciliter l'affichage, à chaque niveau de zoom. On parle également de tuiles XYZ, X et Y correspondant à  la position de la tuile et Z au niveau de zoom. Pour en savoir plus : <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Tiled_web_map">la page (en anglais) de wikipedia</a></p>
 			
-			<h3>Ajouter un fonds via l'explorateur<a class="headerlink" id="III42" href="#III42"></a></h3>
+			<h3>Afficher un fonds via l'explorateur<a class="headerlink" id="III42" href="#III42"></a></h3>
 
 		        <p>Depuis QGIS 3, il existe une solution pour ajouter des fonds de carte sans installation d'extension.</p>
 		        

@@ -184,7 +184,7 @@
         						<img src="illustrations/tous/3_1_srtm_kenya.png" alt="superposition des cours d'eau, des régions et du SRTM" width="500" >
         					</a>
         				</figure>
-        				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les autres données du tutoriel.</a>.</p>
+        				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les autres données du tutoriel</a>.</p>
         			</div>
 			
 			<h3>Et tout le reste ?<a class="headerlink" id="III13" href="#III13"></a></h3>
@@ -215,6 +215,11 @@
 					<li class="espace">IGN : nombreuses données disponibles pour la France, certaines gratuites pour les établissements de recherche
 						<br>
 						<a class="ext" target="_blank" href="http://professionnels.ign.fr/catalogue">http://professionnels.ign.fr/catalogue</a>
+					</li>
+					<li class="espace">cadastre.data.gouv.fr : données cadastrales françaises en opendata
+						<br>
+						<a class="ext" target="_blank" href="https://cadastre.data.gouv.fr/datasets/plan-cadastral-informatise">https://cadastre.data.gouv.fr/datasets/plan-cadastral-informatise</a>
+						(pour exploiter les données du cadastre au format edigeo sous QGIS : voir <a class="ext" target="_blank" href="http://atelier.adullact.org/projects/edigeo/">ce projet</a> et <a class="ext" target="_blank" href="http://atelier.adullact.org/frs/download.php/file/8387/documentationEDIGEO-0.90.pdf">sa documentation</a>)
 					</li>
 					<li class="espace">THEIA : structure nationale inter-organismes ayant pour vocation de faciliter l’usage des images satellite
 						<br>

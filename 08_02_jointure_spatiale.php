@@ -14,11 +14,11 @@
 		<div class="main">
 			<h2>VIII.2  Lier des données en fonction de leur position : jointures spatiales</h2>
 				<ul class="listetitres">
-					<li><a href="#VIII21">Comment fonctionne une jointure spatiale&nbsp;?</a></li>
+					<li><a href="#VIII21">Comment fonctionne une jointure spatiale ?</a></li>
 					<li><a href="#VIII22">Joindre des éléments un à un</a>
 						<ul class="listesoustitres">
-							<li><a href="#VIII22a">Premier exemple détaillé : quel chef-lieu pour quel département&nbsp;?</a></li>
-							<li><a href="#VIII22b">Pour s'entraîner : quel comté pour quel site remarquable&nbsp;?</a></li>
+							<li><a href="#VIII22a">Premier exemple détaillé : quel chef-lieu pour quel département ?</a></li>
+							<li><a href="#VIII22b">Pour s'entraîner : quel comté pour quel site remarquable ?</a></li>
 						</ul>
 					</li>
 					<li><a href="#VIII23">Joindre plusieurs éléments à un seul</a>
@@ -95,7 +95,7 @@
     					</figure>
                     </div>
                     
-                <h4>Pour s'entraîner : quel comté pour quel site remarquable&nbsp;?<a class="headerlink" id="VIII22b" href="#VIII22b"></a></h4>
+                <h4>Pour s'entraîner : quel comté pour quel site remarquable ?<a class="headerlink" id="VIII22b" href="#VIII22b"></a></h4>
                 
                     <div class="manip">
                         <p>Ouvrez un nouveau projet QGIS, ajoutez les couches <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip" >Counties</a></em> et <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip" >Heritage</a></em>, correspondant aux comtés et sites remarquables irlandais.</p>

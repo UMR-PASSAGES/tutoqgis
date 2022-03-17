@@ -30,7 +30,7 @@
 				</figure>
 				<p>Pour caler cette carte, nous allons nous baser sur les données <a class="ext" target="_blank" href="http://www.openstreetmap.org/">OpenStreetMap</a>. OpenStreetMap est une base de données cartographique libre ; on décrit souvent ce projet comme un "wikipedia cartographique". Pour en savoir plus, voir aussi <a href="03_05_donnees_osm.php" >ici</a> !</p>
 			
-				<h3>Ajout d'un fond OpenStreetMap<a class="headerlink" id="IV61" href="#IV61"></a></h3>
+				<h3>Ajout d'un fonds OpenStreetMap<a class="headerlink" id="IV61" href="#IV61"></a></h3>
 				
 				    <p>2 méthodes permettant d'afficher un fonds OpenStreetMap sont décrites <a href="03_04_fonds_carte.php">ici</a>.</p>
 				    
