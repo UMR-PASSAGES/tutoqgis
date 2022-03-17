@@ -1,0 +1,50 @@
+---
+title: "En savoir plus"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+## Sur QGIS
+
+QGIS est un [logiciel libre](https://fr.wikipedia.org/wiki/Logiciel_libre) et peut donc être utilisé, étudié, modifié et redistribué sans restriction par la personne à qui il a été distribué.
+
+QGIS.org est une association dont la [gouvernance](https://www.qgis.org/fr/site/getinvolved/governance/governance.html) comprend différentes instances : bureau, comité de projet, groupes d'utilisateurs... Le fonctionnement de l'association, ses rapports annuels et financiers ainsi que bien d'autres informations sont [disponibles en ligne](https://www.qgis.org/fr/site/getinvolved/governance/index.html).
+
+Toute personne peut contribuer à QGIS, même sans savoir programmer. Vous pouvez par exemple participer à la [rédaction de la documentation](https://www.qgis.org/fr/site/getinvolved/document.html) ou bien à la [traduction de QGIS](https://www.qgis.org/fr/site/getinvolved/translate.html). Le logiciel évoluant rapidement, ce travail est toujours nécessaire.
+
+Vous pouvez également [faire remonter les bugs](https://github.com/qgis/QGIS/issues) que vous rencontrez, en vous assurant que cela n'a pas déjà été fait. Il vous faudra alors détailler la version de QGIS utilisée, les circonstances dans lesquelles le bug se produit en joignant éventuellement une capture d'écran.
+
+Enfin, vous pouvez tout simplement [faire un don au projet](https://www.qgis.org/fr/site/getinvolved/donations.html), ou bien acheter une tasse, un t-shirt, une gourde... via la [boutique QGIS](https://qgis.org/fr/site/about/shop_goodies.html).
+
+A l'instar des logiciels SIG propriétaires, QGIS dispose également d'un [support commercial](https://www.qgis.org/fr/site/forusers/commercial_support.html) proposé par plusieurs entreprises. Il est également possible via ces entreprises de financer du développement pour améliorer ou ajouter certaines fonctionnalités.
+
+QGIS est **votre** logiciel. En y contribuant, au-delà de participer à son amélioration, vous apprendrez également des outils et méthodes collaboratifs qui seront un atout lors d'une recherche d'emploi !
+
+## Sur ce tutoriel
+
+Ce tutoriel est produit par le pôle Analyse et Représentation des Données de [l'UMR PASSAGES](http://www.passages.cnrs.fr). Il côtoie d'autres passionnants tutoriels sur la plate-forme [OUVRIR](http://ouvrir.passages.cnrs.fr).
+
+Il a bénéficié de relectures et conseils avisés de (par ordre alphabétique, UMR Passages sauf mention contraire) : Xavier Amelot, Véronique André-Lamat, Gaëlle Deletraz, Marina Duféal, Grégoire Le Campion, Delphine Montagne, Claude Monteil (INP-ENSAT - Toulouse), Guilhem Mousselin, Matthieu Noucher, Olivier Pissoat, Jean-Michel Poux (Ministère de la Transition Écologique et Solidaire), Raphaël Schirmer, David Sheeren (INP-ENSAT - Toulouse). Merci à eux !
+
+La [partie XII sur la télédétection](12_00_teledetection.html) est basée sur le cours créé par Samuel Corgne pour les étudiants en licence 3 de géographie de l'Université Rennes 2.
+
+Ce tutoriel est diffusé sous **licence Creative Commons** : vous êtes autorisé à le partager et l'adapter, pour toute utilisation y compris commerciale, à condition de citer l'auteur (*Julie Pierson, UMR 5319 PASSAGES, www.passages.cnrs.fr*), et de redistribuer votre travail sous les mêmes conditions. Le texte complet est disponible ici : [http://creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Cela signifie donc que vous pouvez en faire ce que bon vous semble, y compris l'utiliser pour vos propres formations. Et dans ce cas, un petit message nous fait plaisir et nous encourage à continuer ! Faites-nous part également de vos remarques, critiques et idées d'amélioration !
+
+**Pour tout contact :** envoyez un courriel à julie.pierson (at) univ-brest.fr, ou bien [@sigomatique](https://twitter.com/sigomatique) sur Twitter.
+
+Enfin, tout le code du tutoriel (HTML, CSS...) est **disponible sur GitHub** : <https://github.com/UMR-PASSAGES/tutoqgis>
+
+*L'image du bandeau est tirée des archives de l'art américain et est disponible sur [Wikimedia](http://commons.wikimedia.org/wiki/File:archives_of_American_Art_-_Guy_Maccoy_-_2905.jpg). Cette image est dans le domaine public.*
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc.html")
+```
+
+:::
+

@@ -1,0 +1,50 @@
+---
+title: "Géoréférencement : les préliminaires"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+* [Objectif](#IV21)
+* [Découverte de l'image à caler](#IV22)
+
+## [Objectif](#IV21) {#IV21}
+
+Notre but sera ici de caler une carte de l'île d'Oahu (Hawaii) de 1902 (source : [Wikimedia](http://commons.wikimedia.org/wiki/File%3A1902_Land_Office_Map_of_the_Island_of_Oahu%2C_Hawaii_(_Honolulu_)_-_Geographicus_-_OhauHawaii-lo-1902.jpg)).
+
+[![carte à caler de l'île d'Oahu](illustrations/tous/4_2_carte_oahu.jpg)](illustrations/tous/4_2_carte_oahu.jpg)
+
+Une fois cette carte calée, vous pourrez la superposer à d'autres données dans QGIS.
+
+La première étape consiste à prendre connaissance de cette carte, et à vérifier que le module de géoréférencement de QGIS soit activé.
+
+## [Découverte de l'image à caler](#IV22) {#IV22}
+
+Où se situe l'île d'Oahu? Rendez-vous par exemple sur Wikipedia pour le savoir : <http://fr.wikipedia.org/wiki/Oahu>.
+
+Quelles sont les coordonnées de l'île d'Oahu ? Dans quel SCR sont mesurées ces coordonnées ?
+
+L'île est située approximativement aux coordonnées 21° 28' Nord et 157° 59' Ouest (SCR WGS84).
+
+A partir de l'explorateur de fichiers de votre ordinateur, ouvrez l'image *[Oahu\_Hawaiian\_Islands\_1906.jpg](donnees/TutoQGIS_04_Georef.zip)* située dans le dossier **TutoQGIS\_04\_Georef/donnees**.
+
+Pouvez-vous dire dans quel système sont mesurées les coordonnées de cette carte ?
+
+Aucune mention d'un SCR n'est faite sur cette carte. Nous pouvons néanmoins être sûr qu'il s'agit d'un système géographique (non projeté) puisque les coordonnées sont exprimées en degrés.
+
+Connaître quel système a été utilisé ici nécessiterait des recherches, en se basant sur la date de la carte et la zone couverte. Nous allons supposer ici, pour les besoins de l'exercice, que les coordonnées sont en WGS84 (ce qui n'est évidemment pas le cas, ce système datant de 1984). Nous vérifierons que ce choix nous donne une précision acceptable.
+
+[chapitre précédent](04_01_principe.html)
+[chapitre suivant](04_03_calage_carroyage.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc04.html")
+```
+
+:::
+

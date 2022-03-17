@@ -1,0 +1,169 @@
+---
+title: "Numériser des polygones"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+* [Création d'une couche de polygones](#V51)
+* [Ajout d'un polygone](#V52)
+* [Découpage d'un polygone](#V53)
+* [Frontière commune entre 2 polygones : comment est-elle gérée ?](#V54)
+* [Ajout d'un élément en s'appuyant sur un autre : l'accrochage](#V55)
+* [Éviter les intersections entre polygones jointifs](#V56)
+
+Pour numériser des polygones, les choses se compliquent un peu... Nous n'allons pas ici numériser toutes les zones de l'île, mais passer en revue quelques techniques d'édition de polygones au moyen de quelques exemples.
+
+Il s'agira ici de numériser des zones en fonction de leur type. Comme l'indique la légende, certaines zones peuvent avoir 2 types différents, par exemple réserve forestière et réserve fédérale. La couche que nous allons créer contiendra 2 champs, type1 et type2
+
+[![légende de la carte de l'île d'Oahu](illustrations/tous/5_5_oahu_legende.png)](illustrations/tous/5_5_oahu_legende.png)
+
+Vous voyez ici la carte originale à gauche, et avec superposée la couche de polygones à droite.
+
+[![détail de la carte de l'île d'Oahu](illustrations/tous/5_5_oahu_avant.png)](illustrations/tous/5_5_oahu_avant.png)
+[![détail de la carte de l'île d'Oahu avec la couche de polygones superposée](illustrations/tous/5_5_oahu_apres.png)](illustrations/tous/5_5_oahu_apres.png)
+
+L'idée est de numériser le polygone de la réserve forestière, avec des contours bleus sur la carte, puis de le découper pour différencier les zones de cette réserve classées comme « Public lands » (en vert) ou comme « Dederal Reservations » (en rose).
+
+## [Création d'une couche de polygones](#V51) {#V51}
+
+Reportez-vous à la [partie V.1](05_01_creation_couche.html) pour créer une couche de polygones, en lui donnant :
+
+* le nom *zones\_oahu*.
+* le type **polygone**
+* deux champs de type texte, de longueur 80, nommés **type1** et **type2** (ils contiendront les types de zone, tels qu'indiqués dans la légende)
+
+Vérifiez que cette couche soit bien chargée dans votre projet, ainsi que la carte *[Oahu\_Hawaiian\_Islands\_1906\_wgs84.tif](donnees/TutoQGIS_05_Numerisation.zip)*.
+
+## [Ajout d'un polygone](#V52) {#V52}
+
+Nous allons commencer par numériser la réserve forestière de l'île (hachurée en rouge dans l'image ci-dessous) :
+
+[![réserve forestière de l'île hachurée en rouge](illustrations/tous/5_5_reserve_foret.png)](illustrations/tous/5_5_reserve_foret.png)
+
+Passez en mode édition pour votre couche de polygones. Zoomez sur la réserve forestière.
+
+[![zoom sur la réserve](illustrations/tous/5_5_zoom_reserve.png)](illustrations/tous/5_5_zoom_reserve.png)
+
+![icône ajouter une entité](illustrations/tous/5_5_ajout_icone.png)Cliquez sur l'icône **Ajouter une entité** qui a pris la forme d'un polygone.
+
+Cliquez sur un point du polygone, puis ajoutez d'autres sommets comme pour une ligne. La forme du polygone évolue au fur et à mesure.
+
+[![numérisation d'un polygone en cours](illustrations/tous/5_5_debut_num.png)](illustrations/tous/5_5_debut_num.png)
+
+Lorsque le polygone est complet, faites un clic droit n'importe où pour le terminer. Il est inutile de cliquer à nouveau sur le premier sommet !
+
+[![numérisation d'un polygone en cours](illustrations/tous/5_5_premier_polygone.png)](illustrations/tous/5_5_premier_polygone.png)
+
+Vous pouvez maintenant remplir les données attributaires pour ce polygone, par exemple en donnant la valeur **Forest Reserves** en type1, et la valeur **None** en type2.
+
+## [Découpage d'un polygone](#V53) {#V53}
+
+La partie Nord de notre réserve est occupée par des terres publiques (Public Lands) puis par une réserve fédérale (Federal Reservation). Comment diviser notre polygone pour faire apparaître ces zones ?
+
+Vérifiez que la barre d'outils **Numérisation avancée** soit activée : Numérisation avancée doit être cochée dans le
+ [Menu Vue → Barres d'outils
+
+![Menu Vue, Barres d'outils](illustrations/tous/5_5_num_avancee_menu.png)](#thumb)
+ .
+
+![icône séparer les entités](illustrations/tous/5_5_decoupe_icone.png)Dans la barre d'outils **Numérisation avancée**, cliquez sur l'icône **Séparer les entités**.
+
+Attention à ne pas confondre cet outil avec celui pour **Séparer les parties** juste à sa droite !
+
+Cliquez à l'extérieur du polygone, puis de l'autre côté du polygone en suivant la ligne selon laquelle le découper. Terminez par un clic droit n'importe où. Il est possible de créer des points à l'intérieur du polygone mais il faut terminer par un point à l'extérieur du polygone.
+
+[![découpe d'un polygone](illustrations/tous/5_5_decoupe.png)](illustrations/tous/5_5_decoupe.png)
+
+Procédez de la même manière pour découper la bande de terrain public de Waimano, et la petite langue de terre de Aiea.
+
+[![Sélection de la bande de terrain public de Waimano en réserve forestière](illustrations/tous/5_5_public_lands.png)](illustrations/tous/5_5_public_lands.png)
+
+Vous pouvez ensuite mettre à jour les données attributaires :
+
+[![Table attributaire de la couche de polygones](illustrations/tous/5_5_attributs_remplis.png)](illustrations/tous/5_5_attributs_remplis.png)
+
+## [Frontière commune entre 2 polygones : comment est-elle gérée ?](#V54) {#V54}
+
+![icône de l'outil de noeud](illustrations/tous/5_4_noeud_icone.png)A l'aide de [l'outil de nœud](05_04_lignes.html#V43), déplacez un sommet de la petite langue de terre d'Aiea.
+
+[![déplacement d'un noeud de polygone](illustrations/tous/5_5_deplacement_noeud.png)](illustrations/tous/5_5_deplacement_noeud.png)
+
+![icône de sélection](illustrations/tous/1_1_selection_icone.png)A l'aide de l'outil de sélection, sélectionnez successivement le polygone d'Aiea, et celui qui l'entoure.
+
+Que constatez-vous ?
+
+Les deux polygones ne sont plus jointifs. Le déplacement d'un sommet d'un des polygones n'a pas eu d'effet sur le sommet correspondant du deuxième polygone.
+
+Rendez-vous maintenant dans le **menu Projet → Options d'accrochage** et **activez l'édition topologique** en enclenchant le bouton correspondant si ça n'est pas déjà fait.
+
+[![case d'activation de l'édition topologique cochée](illustrations/tous/5_5_edition_topologique.png)](illustrations/tous/5_5_edition_topologique.png)
+
+Déplacez à nouveau un sommet d'un des polygones et sélectionnez successivement les deux polygones.
+
+Que constatez-vous ?
+
+Les deux polygones sont toujours jointifs. Le déplacement d'un sommet d'un des polygones a provoqué le déplacement du sommet correspondant du deuxième polygone.
+
+## [Ajout d'un élément en s'appuyant sur un autre : l'accrochage](#V55) {#V55}
+
+Pour rajouter un élément qui en touche un autre, il est possible de s'aimanter sur les sommets ou les segments de l'élément déjà existant. Cette propriété n'est bien sûr pas propre seulement aux couches de polygones mais fonctionne aussi pour les couches de lignes et de points.
+
+Ceci permet de faire en sorte que deux polygones soient parfaitement contigus, sans aucun trou ou superposition.
+
+Par exemple, comment faire pour rajouter la partie ouest de la bande de Waimano en s'aimantant aux polygones déjà existants ?
+
+Rendez-vous dans le Menu **Projet → Options d'accrochage** :
+
+[![activation de l'accrochage pour la couche de polygones avec une tolérance de 10 pixels](illustrations/tous/5_5_accrochage_fenetre.png)](illustrations/tous/5_5_accrochage_fenetre.png)
+
+![icône de l'outil d'activation de l'accrochage](illustrations/tous/5_5_accrochage_icone.png)Cliquez sur le bouton **Activer l'accrochage** tout en haut à gauche de la fenêtre.
+
+Choisissez le mode **Configuration avancée** dans la liste déroulante à droite. La liste des couches présentes dans votre projet QGIS s'affiche.
+
+Vous pouvez ici définir à quelle(s) couche(s) le curseur sera aimanté, s'il sera aimanté uniquement par les sommets ou également par les segments, et à quelle distance d'un sommet ou segment l'aimantage prend effet.
+
+Par exemple, pour être automatiquement aimanté à votre couche de polygone dès que votre curseur approche à moins de 10 pixels d'un sommet de cette couche, cochez la case de **zones\_oahu**, choisissez le mode **sommet** et fixez la tolérance à **10 pixels**.
+
+Fermez la fenêtre des paramètres d'accrochage.
+
+Cliquez sur l'icône **Ajouter une entité**, et approchez-vous d'un sommet d'un polygone déjà créé : votre curseur est aimanté par ce sommet, qui apparaît alors en rose.
+
+[![Curseur aimanté prenant la forme d'un carré rose](illustrations/tous/5_5_curseur_aimante.png)](illustrations/tous/5_5_curseur_aimante.png)
+
+Profitez-en pour numériser la partie Est de la bande d'Aiea, de manière à ce que les deux parties soient parfaitement jointives.
+
+[![bande d'Aiea numérisée](illustrations/tous/5_5_aiea.png)](illustrations/tous/5_5_aiea.png)
+
+## [Éviter les intersections entre polygones jointifs](#V56) {#V56}
+
+L'accrochage est une propriété pratique pour quelques sommets, mais si vous souhaitez créer un polygone contigu à une autre sur une longue portion (par exemple le polygone en pointillés bleus sur la carte), cela peut être fastidieux de cliquer un à un sur tous les sommets communs.
+
+Pour éviter cela, rendez-vous à nouveau dans le menu Projet → Options d'accrochage et cochez la case **Éviter les intersections** pour la couche zones\_oahu.
+
+[![cocher la case éviter les intersections](illustrations/tous/5_5_eviter_intersections.png)](illustrations/tous/5_5_eviter_intersections.png)
+
+Cliquez sur l'icône **Ajouter une entité**, et dessinez un par exemple le polygone en pointillés bleu correspondant à la surface des terres forestières qui ne sont pas en réserve. Ce polygone est contigu sur une longue portion à des polygones que vous avez déjà créés : ne suivez pas les bords pour cette partie mais contentez-vous de passer au milieu des polygones déjà existants.
+
+Faites un clic droit pour terminer le polygone : les parties du polygone que vous venez de dessiner qui étaient superposées à des polygones déjà existants ont été automatiquement supprimées.
+
+[![polygone en cours d'édition, avec des débordements sur le polygone voisin](illustrations/tous/5_5_eviter_intersections_avant.png)](illustrations/tous/5_5_eviter_intersections_avant.png)
+[![polygone fini sans débordements](illustrations/tous/5_5_eviter_intersections_apres.png)](illustrations/tous/5_5_eviter_intersections_apres.png)
+À gauche, polygone en cours d'édition juste avant le clic droit final, à droite après ce clic droit.
+
+Dans le chapitre suivant, découvrez ce qu'est la topologie !
+
+[chapitre précédent](05_04_lignes.html)
+[chapitre suivant](05_06_topologie.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc05.html")
+```
+
+:::
+

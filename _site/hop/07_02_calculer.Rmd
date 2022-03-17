@@ -1,0 +1,205 @@
+---
+title: "Calcul de champs"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+* [Comment fonctionne la calculatrice de champ ?](#VII21)
+* [Calcul de géométrie : l'exemple de la surface](#VII22)
+	+ [Calcul de la surface](#VII22a)
+	+ [Vérification](#VII22b)
+* [Quelques exemples supplémentaires de calculs](#VII23)
+	+ [Opérations mathématiques : calcul de densité](#VII23a)
+	+ [Opérations sur du texte : extraction](#VII23b)
+	+ [Pour aller plus loin : utiliser une expression conditionnelle avec CASE](#VII23c)
+
+Il est possible de calculer automatiquement les valeurs d'un champ au moyen de la calculatrice de champ, un peu à la manière d'une formule dans un tableur.
+
+## [Comment fonctionne la calculatrice de champ ?](#VII21) {#VII21}
+
+Ouvrez un nouveau projet QGIS, ajoutez la couche *[communes\_Bretagne\_calcul](donnees/TutoQGIS_07_Champs.zip)*. Ouvrez sa table attributaire.
+
+Passez en [mode édition](05_02_points.html#V21). Cliquez sur l'icône **Ouvrir la calculatrice de champs** parmi les icônes de la table attributaire :
+
+![barre d'outils de la table attributaire, avec icône de la calculatrice de champs entourée en rouge](illustrations/tous/7_2_BO_table_calc.png)
+
+La fenêtre suivante s'ouvre :
+
+[![Fenêtre de la calculatrice de champs](illustrations/tous/7_2_calc_fenetre.png)](illustrations/tous/7_2_calc_fenetre.png)
+
+*1* : Si cette case est cochée, seules les lignes sélectionnées seront modifiées (en grisé si aucune entité n'est sélectionnée).
+
+*2* : Cocher cette case pour créer un nouveau champ.
+
+*3* : Cocher cette case pour mettre à jour un champ existant.
+
+*4* : Expression servant à calculer les valeurs du champ.
+
+*5* : Les opérateurs les plus couramment utilisés.
+
+*6* : Liste des opérateurs et fonctions disponibles pour le calcul de champ.
+
+*7* : Si un opérateur ou une fonction est choisi en 6, l'aide correspondante apparaît dans cette partie.
+
+*8* : Ici, une fois l'expression remplie, vous pourrez voir un aperçu du résultat du calcul pour l'entité choisie.
+
+L'onglet **Editeur de fonction**, derrière l'onglet **Expression**, permet le calcul de champs à l'aide du langage Python : cette possibilité ne sera pas abordée ici.
+
+Comme vous pouvez le constater, le mode de fonctionnement de la calculatrice de champ est assez similaire à celui d'une [requête attributaire](06_01_req_attrib.html). 
+
+Il n'est pas obligatoire de passer en mode édition pour utiliser la calculatrice de champ ; dans ce cas, cliquer sur OK dans la calculatrice enclenche le mode édition.
+
+## [Calcul de géométrie : l'exemple de la surface](#VII22) {#VII22}
+
+### [Calcul de la surface](#VII22a) {#VII22a}
+
+Nous allons ici calculer la surface de chaque commune en km2.
+
+[![Fenêtre de la calculatrice de champs, pour calculer la surface d'une commune en km2](illustrations/tous/7_2_calc_fenetre_surface.png)](illustrations/tous/7_2_calc_fenetre_surface.png)
+
+* Choisissez **Créer un nouveau champ**
+* Nommez le **SURF\_KM2**
+* Choisissez le type **Nombre décimal**. Contrairement au shapefile, avec le format GeoPackage les valeurs sont toujours stockées « telles quelles » et il n'est donc pas possible de définir une longueur (nombre total de chiffres) ou une précision (nombre de chiffres après la virgule)
+* Dans la liste des fonctions, dans la rubrique **Géométrie**, double-cliquez sur la fonction **$area** puis rajoutez à la main dans la case expression **/ 1000000** (par défaut, la surface est calculée en unités de la couche, donc en m² puisque cette couche est projetée en Lambert 93)
+* Au final, l'expression est donc **$area / 1000000**
+* cliquez sur **OK**
+
+Avez-vous noté qu'il est possible de créer des **champs virtuels** (case à cocher en haut à gauche sous « créer un nouveau champ» ) ? Ces champs ne sont pas permanents et ne seront pas sauvegardés (il est donc possible d'en créer sans passer en mode édition).
+
+Si un champ virtuel est utilisé pour calculer par exemple une surface, et si les polygones sont modifiés, **la surface sera automatiquement mise à jour**. 
+
+### [Vérification](#VII22b) {#VII22b}
+
+Parfois, il peut arriver de se mélanger dans les unités... Il peut être utile de vérifier les calculs de géométrie. Nous allons voir 2 méthodes pour le faire ; cela vous indique aussi comment connaître par exemple la surface d'un polygone donné sans forcément créer et calculer un champ.
+
+La première méthode consiste à **mesurer « à la main » la surface d'une commune et à comparer le résultat avec celui du champ SURF\_KM2**.
+
+![icône mesurer une aire](illustrations/tous/7_2_mesure_icone.png)Vous pouvez vérifier votre calcul au moyen de l'outil **Mesurer une aire** : 
+
+[![Sélection de l'outil mesurer une aire dans la liste](illustrations/tous/7_2_aire_selection.png)](illustrations/tous/7_2_aire_selection.png)
+
+Sélectionnez une commune, mesurez son aire en faisant un clic droit sur le dernier sommet pour terminer, choisissez dans la table l'option **Ne montrer que les entités sélectionnées** et comparer l'aire que vous avez mesuré et l'aire du champ SURF\_KM2.
+
+[![Vérification de la surface au moyen de l'outil mesurer une aire](illustrations/tous/7_2_verif_surf.png)](illustrations/tous/7_2_verif_surf.png)
+
+Les deux aires devraient être sensiblement égales.
+
+La deuxième méthode utilise l'outil **Identifier des entités**.
+
+![icône Identifier des entités](illustrations/tous/7_2_identifier_icone.png)Cliquer sur l'icône **Identifier des entités** puis sur une commune.
+
+Cette commune prend une transparence rouge avec une bordure rouge, et les informations relatives à cette entité apparaissent dans le panneau **Résultats de l'identification**. On peut y lire les données de la table attributaire pour cette commune, mais également des informations **dérivées** liées à sa géométrie telles que son périmètre, sa surface...
+
+[![Vérification de la surface au moyen de l'outil d'identification](illustrations/tous/7_2_verif_surf_identifier.png)](illustrations/tous/7_2_verif_surf_identifier.png)
+
+Comparez la surface du champ SURF\_KM2 et la surface indiquée dans les résultats de l'identification (rubrique Dérivé). Les deux aires devraient être sensiblement égales (attention à convertir les unités).
+
+Vous remarquerez qu'on peut lire 2 surfaces dans les résultats de l'identification : **la surface cartésienne, et la surface basée sur une ellipsoïde**. La première est basée sur des distances en ligne droite, qui ne prennent pas en compte la courbure de la Terre. La deuxième prend en compte la courbure de la Terre en se basant sur l'ellipsoïde indiquée.
+
+Pour de faibles distances, les 2 résultats seront donc très proches, la différence augmentant avec la distance.
+
+## [Quelques exemples supplémentaires de calculs](#VII23) {#VII23}
+
+La calculatrice de champs offre beaucoup de fonctions que nous ne passerons pas toutes en revue ; nous verrons simplement quelques exemples pour vous donner un aperçu des possibilités.
+
+### [Opérations mathématiques : calcul de densité](#VII23a) {#VII23a}
+
+L'objectif sera ici de calculer la densité en habitants par km2 de chaque commune, à partir de la population et la surface.
+
+Savez-vous comment calculer la densité à partir de la population et la surface ?
+
+La densité se calcule en divisant la population par la surface. Si la population est en nombre d'habitants et la surface en km2, alors la densité sera en nombre d'habitants par km2.
+
+Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche *[communes\_Bretagne\_calcul](donnees/TutoQGIS_07_Champs.zip)*. Ouvrez la calculatrice de champs :
+
+[![Fenêtre de la calculatrice de champ, calcul de la densité](illustrations/tous/7_2_calc_densite.png)](illustrations/tous/7_2_calc_densite.png)
+
+* Choisissez l'option **Créer un nouveau champ**, nommez-le **DENSITE**, type **Nombre décimal**
+* Dans la liste des **fonctions**, rubrique **Champs et valeurs**, double-cliquez sur **POPULATION**, le diviseur **/** puis double-cliquez sur le champ **SURF\_KM2**
+* Au final, l'expression est  **"POPULATION" / "SURF\_KM2"**
+* Cliquez sur **OK** : le champ densité est ajouté et calculé, en nombre d'habitants par km² :
+
+[![Table attributaire avec les 3 colonnes population, surface et densité](illustrations/tous/7_2_densite_table.png)](illustrations/tous/7_2_densite_table.png)
+
+### [Opérations sur du texte : extraction](#VII23b) {#VII23b}
+
+La couche *[communes\_Bretagne\_calcul](donnees/TutoQGIS_07_Champs.zip)* comporte une colonne INSEE\_COM avec le code INSEE des communes. Ce code INSEE est constitué du code du département (2 chiffres pour la Bretagne) et du code commune (3 chiffres).
+
+Le but est ici d'**extraire le code commune** du code INSEE, donc les 3 derniers chiffres de ce dernier. Par exemple, la commune de Dirinon a comme code INSEE 29045 : le nouveau champ CODE\_COM aura la valeur 045 pour cette commune.
+
+Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche *communes\_Bretagne*. Ouvrez la calculatrice de champs :
+
+[![Calculatrice de champ : calcul du code commune à partir du code INSEE avec la fonction right](illustrations/tous/7_2_calcul_fenetre_right.png)](illustrations/tous/7_2_calcul_fenetre_right.png)
+
+* Vérifiez que la case **Ne mettre à jour que les x entités sélectionnées** soit décochée, puisque le but est de mettre à jour toutes les lignes de la table
+* Choisissez **Créer un nouveau champ**
+* Nommez-le **CODE\_COM**, type **Texte**, longueur **3**
+* Dans la liste des fonctions, allez dans la rubrique **Chaîne** (texte) et cliquez sur la fonction **right** : vous pouvez lire l'aide à droite. Cette fonction extrait les caractères les plus à droite d'un texte.
+* La fonction right nécessite deux paramètres : le texte d'où seront extraits les caractères (ici, le champ **INSEE\_COM**) et le nombre de caractères à extraire (ici, **3** puisque le code commune codé sur 3 caractères)
+* L'expression est donc **right( "INSEE\_COM", 3)**
+* Cliquez sur **OK** : le champ CODE\_COM est créé et mis à jour :
+
+[![extrait de la table avec les champs INSEE_CM et CODE_COM](illustrations/tous/7_2_table_codeinsee.png)](illustrations/tous/7_2_table_codeinsee.png)
+
+### [Pour aller plus loin : utiliser une expression conditionnelle avec CASE](#VII23c) {#VII23c}
+
+Nous allons ici voir un exemple d'expression un peu plus complexe pour écrire dans un nouveau champ le nom du département en fonction de son code.
+
+Le but est ici de vous montrer que tout est possible, ou presque ! Il est possible de faire les calculs dans un tableur pour joindre ensuite les données, mais cela nécessite moins d'étapes de tout faire dans QGIS.
+
+Pour cette étape, il vous faudra connaître les noms des 4 départements bretons associés à leur code ! Vous pouvez aussi consulter [cette carte](https://fr.wikipedia.org/wiki/Num%C3%A9rotation_des_d%C3%A9partements_fran%C3%A7ais#/media/Fichier:D%C3%A9partements_de_France_nom+num.svg) issue de Wikipedia.
+
+Comme d'habitude, ouvrez la calculatrice de champs.
+
+Nous allons créer un nouveau champ nommé **NOM\_DEP** de type **texte** et de longueur maximale **50**.
+
+Dans la rubrique **Conditions** de la liste des opérateurs, cliquez sur **CASE** et lisez l'aide associée à cette fonction dans la partie droite de la fenêtre.
+
+[![CASE et la rubrique d'aide associée](illustrations/tous/7_2_aide_case.png)](illustrations/tous/7_2_aide_case.png)
+
+Cette fonction commence par **CASE** et se termine par **END**. Entre les deux, on trouve une série de clauses avec les 2 mots-clés **WHEN**, pour définir un critère, et **THEN**, pour définir comment sera calculée la valeur si le critère est rempli. Nous n'utiliserons pas **ELSE** ici.
+
+A votre avis, combien de clauses WHEN ... THEN ... devra comporter notre expression ?
+
+Nous devrons écrire 4 clauses différentes, une pour chaque département.
+
+Pour le département du Finistère, nous écrirons par exemple
+
+WHEN "INSEE\_DEP" = '29' THEN 'Finistère'
+
+Pouvez-vous écrire dans son entier l'expression utilisée pour écrire le nom du département en fonction de son code ?
+
+CASE  
+WHEN "INSEE\_DEP" = '29' THEN 'Finistère'  
+WHEN "INSEE\_DEP" = '22' THEN 'Côtes-d''Armor'  
+WHEN "INSEE\_DEP" = '35' THEN 'Ille-et-Vilaine'  
+WHEN "INSEE\_DEP" = '56' THEN 'Morbihan'  
+END
+
+Attention, il y a un piège ! Pour que l'apostrophe de « Côtes-d'Armor » ne soit pas considérée comme celle de fin de la chaîne de caractères, il faut utiliser une double apostrophe : 'Côtes-d**''**Armor'.
+
+Au final, la calculatrice doit être paramétrée comme suit :
+
+[![calculatrice de champ avec une expression utilisant CASE](illustrations/tous/7_2_calc_case.png)](illustrations/tous/7_2_calc_case.png)
+
+Et le résultat :
+
+[![Extrait de la table avec le code et le nom du département](illustrations/tous/7_2_table_nomdep.png)](illustrations/tous/7_2_table_nomdep.png)
+
+Avez-vous remarqué qu'il existe dans la liste des opérateurs une rubrique **Récent** vous permettant de retrouver en un clic les expressions que vous avez déjà utilisées dans la calculatrice de champs ?
+
+[chapitre précédent](07_01_creation_suppression.html)
+[partie VIII : jointures](08_00_jointures.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc07.html")
+```
+
+:::
+

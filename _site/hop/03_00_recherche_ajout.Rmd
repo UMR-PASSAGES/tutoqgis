@@ -1,0 +1,32 @@
+---
+title: "Recherche et ajout de données"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+Vous avez maintenant vos premières bases sous SIG, et les systèmes de coordonnées n'ont plus de secrets pour vous... Il est temps de s'attaquer à une question cruciale en SIG : comment trouver des données ?
+
+Selon votre problématique et votre zone d'étude, les réponses seront bien sûr très différentes. Nous vous fournirons ici quelques pistes, à vous d'aller plus loin !
+
+Notions abordées :
+
+* télécharger des données sur internet
+* flux WMS et WFS
+* données XY
+* fonds de carte en ligne (tuiles raster)
+* données OpenStreetMap
+
+Les données pour cette partie ainsi qu'une version PDF du tutoriel sont accessibles dans la rubrique  [téléchargement](telechargement.html).
+
+[démarrer](03_01_donnees_internet.html)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc03.html")
+```
+
+:::
+

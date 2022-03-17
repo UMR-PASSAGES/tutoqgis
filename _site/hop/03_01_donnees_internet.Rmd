@@ -1,0 +1,208 @@
+---
+title: "Recherche de données SIG sur internet"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+* [Données nationales pour la France](#III11)
+	+ [Avec l'IGN](#III11a)
+	+ [Avec geo.data.gouv.fr](#III11b)
+* [Données mondiales](#III12)
+	+ [Avec Natural Earth](#III12a)
+	+ [Avec les données SRTM](#III12b)
+* [Et tout le reste ?](#III13)
+
+Il est possible de trouver sur internet des **données déjà géoréférencées, c'est-à-dire possédant déjà des coordonnées, donc directement utilisables dans un SIG**. Ces données peuvent être vecteur ou raster.
+
+Dans le cas de **données vecteur**, le format le plus courant est sans doute le shapefile ; on trouvera aussi des données dans d'autres formats, par exemple GeoPackage, GeoJSON, KML...
+
+Dans le cas de **données raster**, on pourra trouver par exemple des données au format geotiff (TIF géoréférencé, c'est-à-dire avec des coordonnées lui permettant de se superposer correctement à d'autres couches).
+
+Parfois, on ne trouvera que des **données non géoréférencées** (carte papier par exemple, ou simple image trouvée sur internet). Ce cas sera traité dans la [partie 4 : géoréférencement](04_00_georeferencement.html).
+
+Cette partie se borne à donner quelques exemples de sites permettant le téléchargement de données SIG. Il en existe beaucoup d'autres !
+
+Ne vous offusquez pas de ne pas voir ici les **données OpenStreetMap** : il existe [une partie qui leur est spécialement dédiée !](03_05_donnees_osm.html)
+
+## [Données nationales pour la France](#III11) {#III11}
+
+### [Avec l'IGN](#III11a) {#III11a}
+
+L'IGN (Institut National de l'Information Géographique et Forestière) diffuse gratuitement une partie de ses données ici : <https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html>.
+
+Si vous êtes étudiant ou bien si vous travaillez dans un laboratoire de recherche, il existe peut-être entre votre structure et l'IGN une convention recherche et enseignement vous donnant accès à plus de données !
+
+Nous allons ici télécharger les communes de la Guyane.
+
+[![page de téléchargement des données IGN](illustrations/tous/3_1_ign_telechargement.png)](illustrations/tous/3_1_ign_telechargement.png)
+
+Sur la page internet <https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html>, cliquez sur [ADMIN-EXPRESS](https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#admin-express).
+
+La base ADMIN EXPRESS contient des couches de régions, départements, arrondissements, EPCI, communes et chef-lieux pour la France métropolitaine et ultra-marine. Elle remplace la base GEOFLA® qui n'est plus mise à jour et dont la dernière édition est celle de 2016.
+
+[![page de téléchargement des données ADMIN EXPRESS (IGN)](illustrations/tous/3_1_ign_telechargement_2.png)](illustrations/tous/3_1_ign_telechargement_2.png)
+
+Téléchargez la dernière édition des données **ADMIN EXPRESS par territoire** (ici celle de mai 2020).
+
+Vous pouvez également télécharger la version [COG (Code Officiel Géographique)](https://geoservices.ign.fr/ressources_documentaires/Espace_documentaire/BASES_VECTORIELLES/ADMIN_EXPRESS_COG/SE_ADMIN_EXPRESS_COG.pdf) mais celle-ci est plus lourde.
+
+Dézippez le fichier téléchargé (vous pouvez par exemple utiliser [7-zip](https://www.7-zip.org/)).
+
+Si le téléchargement échoue, cette couche est également accessible *[en téléchargement](donnees/TutoQGIS_03_RechercheDonnees.zip)*.
+
+A partir de l'explorateur de fichiers de QGIS, ajoutez la couche *COMMUNE* du sous-dossier **ADE\_2-X\_SHP\_UTM22RGFG95\_D973** (973 correspond au code département de la Guyane, et l'UTM 22 RGFG95 au SCR qui y est utilisé).
+
+[![ajout de la couche de communes de Guyane via l'explorateur QGIS](illustrations/tous/3_1_commune_guyane_explorateur.png)](illustrations/tous/3_1_commune_guyane_explorateur.png)
+
+Une fenêtre peut alors s'ouvrir pour vous demander quelle transformation vous souhaitez utiliser pour passer du SCR RGFG95 (utilisé en Guyane) et WGS84. Dans ce cas, choisissez la 1ère de ces transformations, normalement sélectionnée par défaut.
+
+[![Choix de la transformation pour passer d'un SCR à un autre](illustrations/tous/3_1_choix_transformation.png)](illustrations/tous/3_1_choix_transformation.png)
+
+Il semblerait que les 2 transformations disponibles ici aient les mêmes paramètres. Pour ajouter ou supprimer des transformations dans un projet : Propriétés du projet → rubrique Transformations.
+
+Les [transformations](https://docs.qgis.org/3.10/fr/docs/user_manual/working_with_projections/working_with_projections.html#datum-transformations) sont des formules mathématiques permettant la conversion des coordonnées d'un point d'un SCR à un autre. Il existe en effet parfois plusieurs transformations possibles pour passer d'un SCR à un autre !
+
+Il est possible de paramétrer QGIS pour être informé ou non lorsqu'il existe plusieurs transformations disponibles entre 2 SCR :
+
+**Menu Préférences → Options → rubrique Transformations** : vous pouvez décocher ou cocher la case **Demander de choisir la transformation de datum si plusieurs sont disponibles**.
+
+[![Choix de l'option pour choisir soi-même ou non la transformation lorsque plusieurs sont disponibles](illustrations/tous/3_1_options_transformations.png)](illustrations/tous/3_1_options_transformations.png)
+
+Si cette case est décochée, QGIS choisira la transformation la plus précise : dans la plupart des cas, ce paramétrage est adapté.
+
+Dans les données téléchargées sur le site de l'IGN se trouvent également les autres découpages administratifs pour la Guyane, ainsi que pour les autres territoires ultra-marins et la France métropolitaine.
+
+### [Avec geo.data.gouv.fr](#III11b) {#III11b}
+
+Le site <https://geo.data.gouv.fr/fr/> recense les jeux de données géographiques en accès libre pour la France. Nous allons utiliser ce site pour rechercher des données sur les hôpitaux en Guyane.
+
+Dans la barre de recherche du site internet <https://geo.data.gouv.fr/fr/>, tapez **hôpitaux guyane puis appuyez sur Entrée**.
+
+[![recherche sur le site geo.data.gouv.fr](illustrations/tous/3_1_geodatagouv_recherche.png)](illustrations/tous/3_1_geodatagouv_recherche.png)
+
+Cliquez sur le résultat **Guyane - Finess cat1100 - Etablissements Hospitaliers**.
+
+[![recherche sur le site geo.data.gouv.fr](illustrations/tous/3_1_geodatagouv_recherche_2.png)](illustrations/tous/3_1_geodatagouv_recherche_2.png)
+
+Les métadonnées nous apprennent que ces données proviennent de la BD Adresse et datent de 2013.
+
+Téléchargez ces données au format GeoJSON, en cliquant sur le bouton **GeoJSON** en bas à gauche de la fenêtre : 
+
+[![téléchargement au format geojson sur le site geo.data.gouv.fr](illustrations/tous/3_1_geodatagouv_recherche_3.png)](illustrations/tous/3_1_geodatagouv_recherche_3.png)
+
+Si le téléchargement échoue, cette couche est également disponible dans le dossier **TutoQGIS\_03\_RechercheDonnees/donnees/COMMUNE.shp** accessible en [téléchargement](donnees/TutoQGIS_03_RechercheDonnees.zip.).
+
+Ajoutez ensuite ces données à QGIS.
+
+[![affichage des communes et des hôpitaux de Guyane](illustrations/tous/3_1_guyane_communes_hopitaux.png)](illustrations/tous/3_1_guyane_communes_hopitaux.png)
+
+## [Données mondiales](#III12) {#III12}
+
+### [Avec Natural Earth](#III12a) {#III12a}
+
+[Natural Earth](https://www.naturalearthdata.com/) est un jeu de données cartographiques public mondial disponible à 3 échelles différentes. De nombreuses données sont disponibles, notamment les limites administratives, routes, cours d'eau et fonds raster.
+
+Nous allons télécharger ici les **limites administratives des pays à petite échelle** (peu de niveau de détail).
+
+Sur la page internet <https://www.naturalearthdata.com/downloads/>, dans la rubrique **Small scale data 1:110m**, cliquez sur le bouton **Cultural**.
+
+[![téléchargement des données Natural Earth](illustrations/tous/3_1_naturalearth_telechargement.png)](illustrations/tous/3_1_naturalearth_telechargement.png)
+
+Ces données sont utilisables à l'échelle mondiale mais ne seront pas assez détaillées pour travailler à l'échelle d'un pays.
+
+Sur la page suivante, dans **Admin 0 - Countries**, cliquez sur le bouton **Download countries**.
+
+[![téléchargement des données Natural Earth](illustrations/tous/3_1_naturalearth_telechargement_2.png)](illustrations/tous/3_1_naturalearth_telechargement_2.png)
+
+Si le téléchargement échoue, cette couche est également accessible *[en téléchargement](donnees/TutoQGIS_03_RechercheDonnees.zip)*.
+
+Une fois le fichier téléchargé, placez-le dans votre dossier **TutoQGIS\_03\_RechercheDonnees/donnees**.
+
+Ouvrez un nouveau projet QGIS, et à partir de l'explorateur, ajoutez la couche *ne\_110m\_admin\_0\_countries*. **Notez qu'il n'est pas nécessaire de dézipper le fichier pour visualiser les données dans QGIS !** Ceci est très pratique quand on est par exemple à la recherche de données sur internet et évite de dézipper tous les fichiers et donc de se retrouver avec beaucoup de dossiers. Il faudra cependant décompresser les données pour pouvoir les éditer.
+
+[![visualisation dans QGIS de la couche ne_110m_admin_0_countries](illustrations/tous/3_1_donnees_naturalearth.png)](illustrations/tous/3_1_donnees_naturalearth.png)
+
+### [Avec les données SRTM](#III12b) {#III12b}
+
+Nous avons vu jusqu'ici le téléchargement de quelques données vecteur. Les données raster seront par exemple des images satellite, des fonds de carte, des [modèles numériques de terrain (MNT)](http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain)...
+
+Nous allons ici télécharger un **modèle d'élévation pour le Kenya**.
+
+Un **modèle d'élévation numérique (Digital Elevation Model ou DEM)** se rapproche d'un MNT, mais il ne mesure pas l'altitude au sol mais l'altitude des éléments présents au sol. Si une forêt est présente, ce sera donc l'altitude du sommet des arbres qui sera mesurée et non l'altitude du sol, idem si des bâtiments sont présents.
+
+On trouve sur internet deux DEM à couverture mondiale en libre accès : le modèle **ASTER** issu d'une collaboration NASA/METI (Ministry of Economy, Trade and Industry of Japan) et le modèle **SRTM** issu d'une collaboration NASA/NGA (National Geospatial-Intelligence Agency). Nous allons voir ici le cas du SRTM.
+
+Rendez-vous sur <http://dwtkns.com/srtm/> et cliquez sur une des cases recouvrant le Kenya (par exemple la dalle **srtm\_44\_12**) :
+
+[![téléchargement d'une dalle du SRTM](illustrations/tous/3_1_telechargement_srtm.png)](illustrations/tous/3_1_telechargement_srtm.png)
+
+Téléchargez la dalle au format GeoTIFF, placez-le fichier dans votre dossier **TutoQGIS\_03\_RechercheDonnees/donnees**. Il n'est pas nécessaire de dézipper le fichier obtenu.
+
+Dans QGIS, ajoutez le fichier TIF téléchargé au moyen de l'explorateur.
+
+[![superposition des cours d'eau, des régions et du SRTM](illustrations/tous/3_1_srtm_kenya.png)](illustrations/tous/3_1_srtm_kenya.png)
+
+Au cas où le téléchargement échouerait, cette couche est également disponible [avec les autres données du tutoriel](donnees/TutoQGIS_03_RechercheDonnees.zip).
+
+## [Et tout le reste ?](#III13) {#III13}
+
+Selon la zone sur laquelle vous travaillez et votre sujet, il existe de nombreux sites avec des données géographiques en téléchargement. En voici quelques uns en vrac, qui seront ou non pertinents pour vous :
+
+* L'annuaire de données de l'incontournable GeoRezo, portail francophone de la géomatique
+
+<http://georezo.net/annuaire/donnees-c-4.html>
+* Natural Earth : données à l'échelle mondiale : limites administratives, hydrographie, bathymétrie, fonds de carte raster...
+
+<http://www.naturalearthdata.com/downloads/>
+* FAO (Food and Agriculture Organisation) : catalogue de métadonnées donnant accès à un large éventail de données vecteur ou raster, en particulier sur les pays du Sud.
+
+<http://www.fao.org/geonetwork/>
+* geo.data.gouv.fr : portail national français de données géographiques
+
+<https://geo.data.gouv.fr/fr/>
+* OpenStreetMap : extractions de données au format SHP ou OSM, fourni par Geofabrik :
+
+<http://download.geofabrik.de/openstreetmap/>
+* IGN : nombreuses données disponibles pour la France, certaines gratuites pour les établissements de recherche
+
+<http://professionnels.ign.fr/catalogue>
+* cadastre.data.gouv.fr : données cadastrales françaises en opendata
+
+<https://cadastre.data.gouv.fr/datasets/plan-cadastral-informatise>
+ (pour exploiter les données du cadastre au format edigeo sous QGIS : voir [ce projet](http://atelier.adullact.org/projects/edigeo/) et [sa documentation](http://atelier.adullact.org/frs/download.html/file/8387/documentationEDIGEO-0.90.pdf))
+* THEIA : structure nationale inter-organismes ayant pour vocation de faciliter l’usage des images satellite
+
+<http://www.theia-land.fr/>
+* GADM : limites administratives accessibles par pays
+
+<http://www.gadm.org/>
+* DIVA-GIS : site du logiciel SIG libre DIVA, où sont aussi disponibles des données vecteur sur les limites administratives, l'hydrographie, le transport, la population... classées par pays
+
+<http://www.diva-gis.org/gdata>
+* ASTER : modèle d'élévation, données mondiales téléchargeables par dalles
+
+<https://search.earthdata.nasa.gov/>
+* SRTM : modèle d'élévation, données mondiales téléchargeables par dalles
+
+<http://dwtkns.com/srtm/>
+* Global Land Cover Facility : images satellites
+
+<http://glcfapp.glcf.umd.edu:8080/esdi/>
+
+Vous pouvez également tester une recherche internet avec quelques mots clés, de préférence dans la langue du pays ou en anglais, ainsi que par exemple le mot clé *shapefile*, qui reste un format de données SIG très utilisé. De manière générale, on trouve beaucoup de données accessibles en téléchargement, mais attention à la date de ces données, à leur échelle, leur mode de fabrication... qui peuvent ne pas être en adéquation avec vos questions.
+
+[chapitre précédent](03_00_recherche_ajout.html)
+[chapitre suivant](03_02_donnees_flux.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc03.html")
+```
+
+:::
+

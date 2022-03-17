@@ -1,0 +1,85 @@
+---
+title: "Plan détaillé"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+::: {.plandetaille}
+
+- [Prise en main](01_00_prise_en_main.html)
+  1. [Qu'est-ce qu'un SIG?](01_01_SIG.html)
+  2. [Manipuler de l'information géographique](01_02_info_geo.html)
+  3. [Formats de données SIG](01_03_formats.html)
+  4. [Espace de travail (projet QGS)](01_04_projets.html)
+
+- [Géodésie](02_00_geodesie.html)
+  1. [Introduction à la géodésie](02_01_intro.html)- [Des coordonnées, oui mais dans quel système?](02_02_coord.html)
+  2. [Couches et projets : à chacun son système](02_03_couches_projets.html)
+  3. [Passer d'un système de coordonnées à un autre](02_04_changer_systeme.html)
+
+- [Recherche et ajout de données](03_00_recherche_ajout.html)
+  1. [Recherche de données SIG sur internet](03_01_donnees_internet.html)
+  2. [Ajout de données via des flux](03_02_donnees_flux.html)
+  3. [Ajout de données ponctuelles à partir d'un fichier texte](03_03_donnees_XY.html)
+  4. [Ajout d'un fonds de carte en ligne](03_04_fonds_carte.html)
+  5. [QGIS et OpenStreetMap](03_05_donnees_osm.html)
+	
+- [Géoréférencement](04_00_georeferencement.html)
+	1. [Principe](04_01_principe.html)
+	2. [Préliminaires](04_02_preliminaires.html)
+	3. [Avec un carroyage](04_03_calage_carroyage.html)
+	4. [Paramétrage du géoréférenceur](04_04_parametrage.html)
+	5. [Lancer le géoréférencement](04_05_lancement.html)
+	6. [Avec une couche de référence](04_06_calage_autre_couche.html)
+	
+- [Numérisation](05_00_numerisation.html)
+	1. [Création d'une couche vide](05_01_creation_couche.html)
+	2. [Ajout de points](05_02_points.html)
+	3. [Données attributaires](05_03_donnees_attrib.html)
+	4. [Numériser des lignes](05_04_lignes.html)
+	5. [Numériser des polygones](05_05_polygones.html)
+	6. [Quelques notions de topologie](05_06_topologie.html)
+	
+- [Requêtes](06_00_requetes.html)
+	1. [Requêtes attributaires](06_01_req_attrib.html)
+	2. [Requêtes spatiales](06_02_req_spatiales.html)
+	3. [Combiner des requêtes](06_03_req_combinees.html)
+	4. [Requêtes SQL](06_04_req_sql.html)
+	
+- [Calcul de champs](07_00_champs.html)
+	1. [Créer et supprimer des champs](07_01_creation_suppression.html)
+	2. [Calcul de champ](07_02_calculer.html)
+	
+- [Jointures](08_00_jointures.html)
+	1. [Jointures attributaires](08_01_jointure_attrib.html)
+	2. [Jointures spatiales](08_02_jointure_spatiale.html)
+	
+- [Analyse spatiale](09_00_analyse_spatiale.html)
+	1. [Opérations sur données vecteur](09_01_vecteur.html)
+	2. [Opérations sur données raster](09_02_raster.html)
+	3. [Croiser vecteur et raster](09_03_vecteur_raster.html)
+	4. [Créer un maillage](09_04_maillage.html)
+	5. [Dites-le avec du SQL !](09_05_maillage_sql.html)
+	
+- [Représentation et mise en page](10_00_carto.html)
+	1. [Représentation](10_01_representation.html)
+	2. [Mise en page](10_02_mise_en_page.html)
+	
+- [Automatisation de traitements](11_00_automatisation.html)
+	1. [Traitement de base](11_01_traitement_de_base.html)
+	2. [Exécution d'un outil par lot](11_02_par_lot.html)
+	3. [Construire et utiliser un modèle](11_03_modeleur.html)
+	4. [Comprendre et lancer un script Python](11_04_python.html)
+
+:::
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc.html")
+```
+
+:::
+

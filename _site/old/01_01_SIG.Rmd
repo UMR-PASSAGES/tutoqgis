@@ -1,0 +1,204 @@
+---
+title: "Qu'est-ce qu'un SIG ? (un peu de théorie...)"
+---
+
+
+* [Définitions](#I11)
+	+ [Qu'est-ce que la géomatique ?](#I11a)
+	+ [Qu'est-ce qu'un Système d'Information Géographique ?](#I11b)
+* [Les données des SIG](#I12)
+	+ [Une organisation par couches](#I12a)
+	+ [Deux grands types de données : vecteur et raster](#I12b)
+	+ [Les données vecteur : à chaque géométrie ses attributs (et vice-versa)](#I12c)
+	+ [Des données sur les données : les métadonnées](#I12d)
+	+ [A quoi sert un SIG ?](#I12e)
+
+## [Définitions](#I11) {#I11}
+
+
+### [Qu'est-ce que la géomatique ?](#I11a) {#I11a}
+
+
+La géomatique est l'ensemble des techniques de traitement informatique des données géographiques (Journal Officiel, 1994). Elle regroupe donc les outils et méthodes permettant l'acquisition, le stockage, le traitement et la diffusion de données à référence spatiale.
+
+
+### [Qu'est-ce qu'un Système d'Information Géographique ?](#I11b) {#I11b}
+
+
+C'est un système permettant de gérer des informations localisées géographiquement. Ce système est composé de :
+
+
+* données
+* logiciels
+* matériel informatique
+* savoir-faire
+* utilisateurs
+
+
+Par abus de langage, un SIG signifie souvent aujourd'hui le logiciel utilisé dans un SIG.
+
+
+## [Les données des SIG](#I12) {#I12}
+
+
+### [Une organisation par couches](#I12a) {#I12a}
+
+
+Les données sont organisées sous forme de couches superposables.
+
+
+
+[![Organisation sous forme de couches](illustrations/tous/1_1_couches.png)](illustrations/tous/1_1_couches.svg)
+Source : pôle ARD, adess (domaine public)
+
+
+![icône ouvrir un projet](illustrations/tous/1_1_ouvrir_projet_icone.png)Lancez le logiciel QGIS. Ouvrez un projet :
+   
+
+[Menu Projet → Ouvrir
+ 
+![Menu Projet, Ouvrir](illustrations/tous/1_1_ouvrir_projet.png)](#thumb)
+
+
+
+Sélectionnez le projet *senegal.qgz* situé dans **TutoQIS\_01\_PriseEnMain/projets**, cliquez sur **Ouvrir**.
+
+
+Trois couches de données sont affichées dans QGIS, correspondant aux villes, rivières et régions du Sénégal.
+
+
+Ces données proviennent de [l'Agence Nationale de l'Aménagement du Territoire (ANAT) du Sénégal](http://www.basegeo.gouv.sn/), comme vous pouvez le voir dans la liste des données fournie avec les données du tutoriel (fichier PDF TutoQGIS\_01\_PriseEnMain\_liste\_donnees).
+
+
+
+### [Deux grands types de données : vecteur et raster](#I12b) {#I12b}
+
+
+On distingue généralement deux types de données : **vecteur et raster**.
+
+
+
+[![Exemple de données vecteur](illustrations/tous/1_1_vecteur.png)](illustrations/tous/1_1_vecteur.png)
+Exemple de données vecteur, l'exemple du Sénégal : régions sous forme de polygones, rivières sous forme de lignes et villes sous forme de points (source : Agence Nationale de l'Aménagement du Territoire (ANAT) du Sénégal).
+
+Les **données vecteurs** se définissent uniquement par des coordonnées. On trouvera des données vecteurs de type **point**, **ligne** et **polygone**. Un point sera défini par un couple de coordonnées XY, une ligne ou un polygone par les coordonnées de leurs sommets. Une couche vecteur sera soit de type point, soit de type ligne, soit de type polygone, mais ne pourra contenir de données de deux types différents (sauf dans le cas particuliers de certains formats qui ne seront pas abordés dans ce tutoriel).
+
+
+On pourra choisir par exemple de représenter des cours d'eau sous forme de ligne, des villes sous forme de points...
+
+
+Les données vecteur sont généralement moins volumineuses que les données raster. Quelques exemples de formats vecteur : SVG, AI, SHP, Geo...
+
+
+Les **données raster**, ou images, sont constituées de pixels. En zoomant sur un raster, on finit par distinguer les pixels. Chaque pixel possède une valeur correspondant par exemple à sa couleur, ou à son altitude. Un raster est caractérisé par la taille d'un pixel, ou résolution. Exemples de données raster : carte IGN scannée, photographie aérienne, image satellite...
+
+
+
+[![Données raster](illustrations/tous/1_1_raster.png)](illustrations/tous/1_1_raster.png)
+Exemple de données raster (source : IGN).
+
+Quelques exemples de formats raster : JPG, TIFF, PNG...
+
+
+Certains formats, comme le [GeoPackage](https://www.geopackage.org/), peuvent contenir des données vecteur ou raster.
+
+
+### [Les données vecteur : à chaque géométrie ses attributs (et vice-versa)](#I12c) {#I12c}
+
+
+On distingue deux composantes dans les données utilisées dans un SIG : spatiale et attributaire. La **composante spatiale** est constituée de la localisation et la géométrie d'un objet, donc de ses coordonnées. La **composante attributaire** est constituée des données qui y sont associées. Par exemple, la composante spatiale d'un département sera le polygone représentant ce département, et sa composante attributaire sera son nom, son code, sa population...
+
+
+
+[![Composantes spatiales et attributaires](illustrations/tous/1_1_spatial_attrib.png)](illustrations/tous/1_1_spatial_attrib.png)
+Données spatiales et attributaires d'une couche SIG (source : données Geofla IGN) 
+
+Le lien entre composante spatiale et attributaire constitue une différence fondamentale avec les logiciels de dessin (DAO) type AutoCAD.
+
+
+
+![icône ouvrir un projet](illustrations/tous/1_1_ouvrir_projet_icone.png)Ouvrez le projet 
+ *depts\_france.qgz* qui se trouve situé dans le dossier **TutoQIS\_01\_PriseEnMain/projets**.
+ 
+
+
+![icône ouvrir la table d'attributs](illustrations/tous/1_1_ouvrir_table_icone.png)Ouvrez la table attributaire de la couche de départements :
+   
+
+[Clic droit sur le nom de la couche → Ouvrir la table d'attributs
+ 
+![Clic droit sur la couche, ouvrir la table d'attributs](illustrations/tous/1_1_ouvrir_table.png)](#thumb)
+
+
+
+Sélectionner un département dans la table attributaire, en cliquant sur le numéro de la ligne. Le département correspondant apparaît dans une couleur différente (jaune par défaut) dans la carte. 
+
+
+![icône zoom sur la sélection](illustrations/tous/1_1_zoom_selection_icone.png) Vous pouvez ensuite cliquer sur l'outil **zoom sur la sélection** pour zoomer sur ce département.
+
+
+![icône outil de sélection](illustrations/tous/1_1_selection_icone.png)Vous pouvez maintenant faire l'inverse : sélectionner un département sur la carte, au moyen de l'outil de sélection. La ligne correspondante passe alors en surbrillance dans la table attributaire.
+
+
+Vous pouvez choisir **Ne montrer que les entités sélectionnées** dans la liste déroulante en bas à gauche de la table, pour ne voir que les lignes correspondant aux départements sélectionnés.
+
+
+
+[![Table attributaire : ne montrer que les entités sélectionnées](illustrations/tous/1_1_table_liste_deroulante.png)](illustrations/tous/1_1_table_liste_deroulante.png)
+
+Pour que la fenêtre de la table attributaire soit "ancrée" dans QGIS : menu **Préférences → Options → Sources de données** : cocher la case **Ouvrir la table d'attributs dans une fenêtre intégrée**.
+
+
+
+### [Des données sur les données : les métadonnées](#I12d) {#I12d}
+
+
+Afin de savoir quelles sont les utilisations que l'on peut faire d'une donnée, il est indispensable de posséder des informations sur la manière dont a été fabriquée cette donnée, sa date, ses limites éventuelles d'utilisation... **Ces « données sur la donnée » constituent ce qu'on appelle des métadonnées**. Elles peuvent se présenter sous diverses formes : un simple fichier texte, une fiche PDF...
+
+
+Vous pouvez voir ici les métadonnées de la couche Corine Land Cover : [www.geocatalogue.fr/Detail.do?id=7665](http://www.geocatalogue.fr/Detail.do?id=7665)
+
+
+Il existe aujourd'hui des normes régissant la manière dont sont construites ces métadonnées : nombres de rubriques présentes, choix des rubriques... Ceci permet de construire des catalogues de métadonnées, et facilite *in fine* l'échange de données entre organismes.
+
+
+La métadonnée ci-dessus est tirée du catalogue de métadonnées national, le géocatalogue : [www.geocatalogue.fr](http://www.geocatalogue.fr/).
+
+
+Le géocatalogue est mis en oeuvre par le [BRGM](http://www.brgm.fr/), la visualisation étant opérée par l'[IGN](http://www.ign.fr/) au travers du [géoportail](http://www.geoportail.gouv.fr/).
+
+
+### [A quoi sert un SIG ?](#I12e) {#I12e}
+
+
+Un SIG permet de saisir, représenter, interroger, et mettre à jour l’information géographique. Il peut notamment répondre aux questions suivantes : 
+
+
+* où : localisation, étendue
+* quoi : quelles informations
+* comment : analyse spatiale
+* quand : analyse temporelle
+* et si... : modélisation
+
+
+Les SIG sont utilisés aujourd'hui dans des domaines très variés : géographie, géologie, écologie, urbanisme, archéologie, économie...
+
+
+On peut par exemple chercher à répondre à la question : "la taille des parcelles de vignes est-elle corrélée avec la pente et l'altitude de la parcelle, sur une zone donnée ?"
+
+
+Les données nécessaires seront une couche contenant les parcelles de vignes, et un [Modèle Numérique de Terrain (MNT)](http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain) de la zone d'étude. La résolution du MNT devra être suffisante en comparaison de la taille moyenne des parcelles.
+
+
+Le SIG va permettre de croiser les parcelles et le MNT pour aboutir à une couche de parcelles où seront renseignées pour chaque parcelle par exemple sa taille, sa pente moyenne, son altitude moyenne. Ces données pourront être ensuite visualisées dans le SIG, et/ou être le point de départ d'analyses statistiques dans un autre logiciel.
+
+
+
+  
+
+[chapitre suivant](01_02_info_geo.html)
+  
+
+[haut de page](#wrap)
+
+

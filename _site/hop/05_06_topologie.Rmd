@@ -1,0 +1,134 @@
+---
+title: "Quelques notions de topologie"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+* [Qu'est-ce que la topologie ?](#V61)
+	+ [Définition et exemples](#V61a)
+	+ [Pourquoi faire attention à la topologie ?](#V61b)
+* [Pour aller plus loin : comment vérifier la topologie d'une couche ?](#V62)
+	+ [Vérification simple](#V62a)
+	+ [Utilisation du vérificateur de topologie](#V62b)
+* [Corriger les erreurs de topologie : quelques pistes](#V63)
+	+ [Corriger les erreurs de topologie manuellement](#V63a)
+	+ [Corriger les erreurs de topologie avec l'outil «  réparer les géométries »](#V63b)
+	+ [Corriger les erreurs de topologie avec l'outil v.clean de Grass](#V63c)
+
+Au cours de la dernière partie notamment, nous avons vu comment éviter que deux polygones soient "presque" jointifs, au moyen de propriétés telles que l'accrochage, ou par l'utilisation d'outils de découpage par exemple. Nous avons également vu comment utiliser le mode d'édition topologique de QGIS.
+
+Nous allons ici en apprendre un peu plus sur ce qu'est la topologie, et comment vérifier la topologie d'une couche.
+
+## [Qu'est-ce que la topologie ?](#V61) {#V61}
+
+### [Définition et exemples](#V61a) {#V61a}
+
+La [topologie](http://www.cnrtl.fr/definition/topologie) est la « partie de la géométrie qui considère uniquement les relations de position » (Aur.-Weil 1981).
+
+En géomatique, la topologie est utilisée pour décrire les relations entre les géométries des entités. Des règles de topologie peuvent être définies, et les erreurs de topologie détectées.
+
+Par exemple, on peut décider qu'il ne doit y avoir aucune superposition de polygones dans une couche :
+
+[![deux polygones se superposant en partie](illustrations/tous/5_6_overlap.png)](illustrations/tous/5_6_overlap.png)
+
+Ou bien qu'il ne doit pas y avoir de trous entre les polygones :
+
+[![deux polygones avec un trou entre les deux](illustrations/tous/5_6_gap.png)](illustrations/tous/5_6_gap.png)
+
+Les règles de topologie peuvent aussi mettre en jeu plusieurs couches. Par exemple, tous les points d'une couche doivent être dans un polygone d'une autre couche :
+
+[![des points dans des polygones sauf deux](illustrations/tous/5_6_pts_dans_polygones.png)](illustrations/tous/5_6_pts_dans_polygones.png)
+
+Il est bien sûr possible de combiner plusieurs règles. Vous trouverez dans le [manuel de QGIS](https://docs.qgis.org/testing/en/docs/gentle_gis_introduction/topology.html) la description d'un certain nombre de règles de topologie.
+
+### [Pourquoi faire attention à la topologie ?](#V61b) {#V61b}
+
+Ne pas respecter les règles de topologie peut poser des problèmes lors de l'utilisation d'outils d'analyse spatiale, qui donneront alors des résultats inattendus.
+
+## [Pour aller plus loin : comment vérifier la topologie d'une couche ?](#V62) {#V62}
+
+Cette partie est pour « aller un peu plus loin » : vous pouvez donc passer directement à la partie suivante si vous le désirez !
+
+### [Vérification simple](#V62a) {#V62a}
+
+Pour vérifier rapidement la topologie d'une couche, rendez-vous dans le menu
+ [Vecteur → Outils de géométrie → Vérifier la validité
+
+![Menu Vecteur, Outils de géométrie, vérifier la validité](illustrations/tous/5_6_verif_menu.png)](#thumb) 
+ :
+
+[![fenêtre de validation de la géométrie](illustrations/tous/5_6_verif_fenetre.png)](illustrations/tous/5_6_verif_fenetre.png)
+
+Sélectionnez la couche *zones\_oahu* et cliquez sur **Exécuter**.
+
+3 couches temporaires sont ajoutées au projet :
+
+* **sortie valide** liste les entités valide
+* **sortie invalide** liste les entités invalides (avec une ou plusieurs erreurs de topologie
+* **erreur de sortie** liste les erreurs de topologie rencontrées, un point par erreur.
+
+Si vous n'avez pas d'erreur de topologie dans votre couche, la couche **sortie valide** contiendra autant d'entités que la couche d'origine, et les couches **sortie invalide** et **erreur de sortie** n'en contiendront aucune.
+
+### [Utilisation du vérificateur de topologie](#V62b) {#V62b}
+
+Le vérificateur de topologie est un outil plus perfectionné qui permet de spécifier un certains nombre de règles, et de de voir les erreurs à ces règles.
+
+Pour accéder au vérificateur de topologie : 
+ [menu Vecteur → Vérificateur de topologie
+
+![Menu Vecteur, Vérificateur de topologie](illustrations/tous/5_6_veriftopo_menu.png)](#thumb) 
+ :
+
+[![fenêtre (intégrée) du vérificateur de topologie](illustrations/tous/5_6_veriftopo_fenetre.png)](illustrations/tous/5_6_veriftopo_fenetre.png)
+
+Cliquez sur le bouton **Configuration** pour ajouter ou supprimer des règles de topologie. Nous allons ajouter une règle pour interdire les superpositions de polygones dans la couche *zones\_oahu*.
+
+[![fenêtre de gestion des règles de topologie](illustrations/tous/5_6_regle_fenetre.png)](illustrations/tous/5_6_regle_fenetre.png)
+
+Sélectionnez la couche **zones\_oahu** dans la liste déroulante, puis la propriété **ne doit pas se superposer** et cliquez enfin sur le bouton **Ajouter une règle**. Cliquez sur **OK**.
+
+Pour visualiser les erreurs à cette règle, cliquez sur le bouton **Valider tout** du vérificateur de topologie.
+
+[![fenêtre du vérificateur de topologie, pas d'erreurs](illustrations/tous/5_6_veriftopo_erreurs.png)](illustrations/tous/5_6_veriftopo_erreurs.png)
+
+La liste des éventuelles erreurs apparaît ; il est possible de zoomer sur une erreur en double-cliquant sur la ligne correspondante.
+
+## [Corriger les erreurs de topologie : quelques pistes](#V63) {#V63}
+
+Cette partie n'est pas très étoffée et mériterait un chapitre à part entière ! A venir ?
+
+### [Corriger les erreurs de topologie manuellement](#V63a) {#V63a}
+
+Pour corriger les erreurs de topologie d'une couche, vous pouvez procéder « à la main », en corrigeant les erreurs une à une avec les outils d'édition de QGIS, en utilisant les **propriétés d'accrochage** et l'**outil de noeud**. Cliquer sur la ligne correspondant à une erreur dans le vérificateur de topologie zoome sur cette erreur.
+
+### [Corriger les erreurs de topologie avec l'outil «  réparer les géométries »](#V63b) {#V63b}
+
+Il existe un outil **Réparer les géométries** accessible dans la boîte à outils de traitement. Pour afficher (ou masquer si elle est déjà affichée) cette boîte, **menu Traitement → Boîte à outils**. Tapez ensuite **réparer** dans la partie filtre pour trouver facilement cet outil :
+
+[![accès à l'outil réparer les géométries à partir de la boîte à outils](illustrations/tous/5_6_reparer.png)](illustrations/tous/5_6_reparer.png)
+
+Cet outil prend une couche en entrée (la couche contenant des erreurs) et génère une nouvelle couche, normalement sans erreurs de topologie, en sortie.
+
+### [Corriger les erreurs de topologie avec l'outil v.clean de Grass](#V63c) {#V63c}
+
+Vous pouvez également utiliser l'outil **v.clean** issu de **Grass**, toujours dans la boîte à outils de traitements. Tapez **clean** dans le filtre pour accéder à l'outil **v.clean**.
+
+[![accès à l'outil vclean à partir de la boîte à outils](illustrations/tous/5_6_vclean.png)](illustrations/tous/5_6_vclean.png)
+
+En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <https://grass.osgeo.org/grass70/manuals/v.clean.html>. Regardez également [ici](http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning) pour plus de documentation.
+
+[chapitre précédent](05_05_polygones.html)
+[partie VI : requêtes](06_00_requetes.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc05.html")
+```
+
+:::
+

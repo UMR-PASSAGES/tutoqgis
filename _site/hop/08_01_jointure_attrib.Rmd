@@ -1,0 +1,244 @@
+---
+title: "Lier des données en fonction de leurs attributs : jointures attributaires"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+* [Comment fonctionne une jointure attributaire ?](#VIII11)
+* [Application : population au Bhoutan](#VIII12)
+* [Quelques exemples supplémentaires](#VIII13)
+	+ [Jointure d'une couche et d'une table : recensement de la population au Kenya](#VIII13a)
+	+ [Jointure de deux couches : licences sportives et catégories socio-professionnelles en France](#VIII13b)
+* [Si une entité correspond à plusieurs entités de la couche à joindre](#VIII14)
+	+ [Pour bien comprendre le problème](#VIII14a)
+	+ [Agréger les données en 2 étapes](#VIII14b)
+	+ [Pour aller plus loin : une deuxième méthode avec une requête SQL](#VIII14c)
+
+## [Comment fonctionne une jointure attributaire ?](#VIII11) {#VIII11}
+
+Dans un logiciel SIG, une jointure attributaire consiste à lier à une couche des données provenant d'une table ou d'une autre couche. On se base pour cela sur les données attributaires.
+
+Un champ de la couche de départ et un champ de la table contenant les données à joindre servent de **champs clé**. Ces champs doivent être de même type (texte, nombre) et contenir les mêmes données. Le logiciel se base sur le contenu de ces champs pour déterminer quel élément de la table est lié à quel élément de la couche.
+
+[![principe d'une jointure attributaire](illustrations/tous/8_1_principe_jointure_attrib.png)](illustrations/tous/8_1_principe_jointure_attrib.svg)
+
+Dans l'illustration ci-dessus, les données de départ sont :
+
+* une couche de polygone avec les régions du Bhoutan. La table attributaire comporte le nom et le code de chaque région, mais pas leur population.
+* un tableau avec le code de chaque région et sa population en 1995
+
+Les données de la table sont jointes aux données du shapefile, en se basant sur le code région : champ **CODEREGION** pour le shapefile et champ **REG\_CODE** pour le tableau.
+
+Au final, on obtient une couche shapefile des régions du Bhoutan, **avec en données attributaires les données de la couche de départ et les données du tableau**, donc la population.
+
+Il arrive qu'un élément de la couche de départ corresponde à plusieurs éléments de la table. Différentes stratégies sont alors possibles selon les logiciels et le type de champ : ne prendre en compte que les données du premier élément lié, calculer la moyenne des données...
+
+## [Application : population au Bhoutan](#VIII12) {#VIII12}
+
+Ouvrez un nouveau projet QGIS et ajoutez-y la couche des régions du [Bhoutan](http://fr.wikipedia.org/wiki/Bhoutan) *[regions\_bhutan.shp](donnees/TutoQGIS_08_Jointures.zip)*.
+
+Ajoutez également au projet la table *[pop\_bhutan.csv](donnees/TutoQGIS_08_Jointures.zip)* : pour cela, procédez comme pour [ajouter une couche de texte délimité](03_03_donnees_XY.html) en choisissant l'option **Pas de géométrie** :
+
+[![ajout d'un csv : choisir tous les fichiers comme format](illustrations/tous/8_1_ajout_csv.png)](illustrations/tous/8_1_ajout_csv.png)
+
+Vous pouvez également ajouter ce fichier via le [panneau Explorateur](01_02_info_geo.html#I21b) ou en procédant comme pour une couche vecteur.
+
+Cependant la méthode présentée ici permet de **détecter automatiquement les types des champs** (texte, entier...). En passant par une autre méthode, tous les champs seront considérés comme du texte.
+
+Le [format CSV](http://fr.wikipedia.org/wiki/Comma-separated_values) est un format texte contenant des colonnes séparées par un caractère délimiteur, habituellement la virgule, le point-virgule ou la tabulation.
+
+Vous devez donc avoir dans QGIS ces deux données (notez l'icône de tableau pour le CSV) :
+
+![la table et la couche dans la table des matières](illustrations/tous/8_1_donnees_chargees.png)
+
+Ouvrez les deux tables attributaires.
+
+À votre avis, pour pouvoir effectuer une jointure entre les 2 tables, quels seront les 2 champs clés ?
+
+Le champ clé pour regions\_bhutan est **CODEREGION** et le champ clé pour pop\_bhutan est **REG\_CODE**.
+
+Allez dans les propriétés de la couche *regions\_bhutan*, rubrique **Jointure** :
+
+[![rubrique jointure des propriétés de la couche](illustrations/tous/8_1_proprietes_jointure.png)](illustrations/tous/8_1_proprietes_jointure.png)
+
+Cliquez sur le symbole ![symbole + d'ajout de jointure](illustrations/tous/8_1_plus.png) pour ajouter une jointure :
+
+[![création d'une jointure : choix de la couche à joindre et des champs clés](illustrations/tous/8_1_jointure_fenetre.png)](illustrations/tous/8_1_jointure_fenetre.png)
+
+* **Joindre la couche :** choisissez la couche qui sera jointe, ici le CSV *pop\_bhutan*
+* **Champs de jointure :** choisissez le champs clé dans le CSV, à savoir **REG\_CODE**
+* **Champs dans la couche cible :** choisissez le champs clé dans la couche région, à savoir **CODEREGION**
+* **Mettre la couche jointe en cache dans la mémoire virtuelle :** si cette case est cochée, l'affichage de la table sera plus rapide, mais les données ne seront pas mises à jour si des modifications sont effectuées dans la couche jointe
+* **champs joints :** ici, nous voulons joindre tous les champs donc vous pouvez laisser cette case décochée
+* **Préfixe de nom de champ personnalisé :** les champs joints peuvent avoir le préfixe de votre choix, pour bien les différencier des champs originaux ou issus d'autres jointures. Choisissez un préfixe court, par exemple **tab\_**
+
+Cliquez sur **OK** pour créer la jointure : la ligne correspondante apparaît dans la fenêtre des propriétés. Vous pouvez fermer la fenêtre des propriétés.
+
+Ouvrez la table attributaire de la couche *regions\_bhutan.shp* : les données de la table ont été ajoutées (champ tab\_POPEST95).
+
+[![table attributaire de la couche regions_bhutan une fois les données de populations jointes](illustrations/tous/8_1_jointure_res.png)](illustrations/tous/8_1_jointure_res.png)
+
+Cependant, la couche n'a pas été modifiée, la jointure n'est que temporaire. Pour sauvegarder définitivement la jointure, il faut sauvegarder la couche sous un autre nom (clic droit sur le nom de la couche → Exporter → Sauvegarder les entités sous).
+
+## [Quelques exemples supplémentaires](#VIII13) {#VIII13}
+
+### [Jointure d'une couche et d'une table : recensement de la population au Kenya](#VIII13a) {#VIII13a}
+
+Ouvrez un nouveau projet QGIS. Ajoutez-y la couche *gadm36\_KEN\_1* de la base GeoPackage *[gadm36\_KEN.gpkg](donnees/TutoQGIS_08_Jointures.zip)* et le fichier CSV *[County\_Population\_2009](donnees/TutoQGIS_08_Jointures.zip)*.
+
+La couche *gadm36\_KEN\_1* correspond à des sous-régions administratives du Kenya, et le tableau *County\_Population\_2009* contient les populations correspondantes.
+
+Notez que *gadm36\_KEN.gpkg* contient plusieurs couches correspondant aux différents niveaux administratifs. En passant par l'explorateur de données, vous pouvez « ouvrir » la base pour ajouter directement la couche de votre choix. En utilisant le gestionnaire des sources, vous choisissez les couches à ajouter après avoir cliqué sur le bouton Ajouter.
+
+Ouvrez les deux tables attributaires. A votre avis, sur quels champs faire la jointure ? Quel problème va se poser ?
+
+Il est possible de faire la jointure en utilisant le nom du County : champ **NAME\_1** pour *KEN\_adm1* et champ **County** pour *County\_Population\_2009.csv*.
+
+Cependant, les noms sont en minuscules dans la couche et en majuscule dans le CSV. Il faut donc créer et calculer un nouveau champ dans la couche GeoPackage, rempli à l'aide de la formule **upper("NAME\_1")**.
+
+Par ailleurs, le champ étant un nom et non un code, il est possible que des lignes ne soient pas jointes si les noms sont orthographiés de manière légèrement différente.
+
+Faites la jointure.
+
+Combien de lignes n'ont pas été jointes ? Pourquoi ?
+
+Deux counties n'ont pas de données jointes : **ELGEYO-MARAKWET** et **THARAKA-NITHI**, orthographiés sans tirets dans le fichier CSV.
+
+Pour que tous les enregistrements soient joints, vous pouvez modifier à la main les noms des counties qui posent problème, soit dans la couche GeoPackage soit dans le fichier CSV.
+
+### [Jointure de deux couches : licences sportives et catégories socio-professionnelles en France](#VIII13b) {#VIII13b}
+
+Ouvrez un nouveau projet QGIS. Ajoutez-y les couches *[depts\_licences\_sportives\_2016-2017](donnees/TutoQGIS_08_Jointures.zip)* et *[depts\_CSP\_2016](donnees/TutoQGIS_08_Jointures.zip)*.
+
+La couche *depts\_licences\_sportives\_2016-2017* correspond aux nombres de licences pour différents sports par département, et la couche *depts\_CSP\_2016* aux % des différentes catégories socio-professionnelles par département.
+
+Ouvrez les deux tables attributaires. A votre avis, sur quels champs faire la jointure ?
+
+Il est possible de faire la jointure sur les champs **INSEE\_DEP**, ou **NOM\_DEP**, ou bien **NOM\_DEPT**. C'est généralement un bon réflexe de faire si possible la jointure sur des identifiants (INSEE\_DEP) plutôt que des noms (NOM\_DEP) au cas où ceux-ci seraient orthographiés différemment dans les 2 fichiers.
+
+Joignez les données attributaires d'une couche à l'autre couche.
+
+On peut ensuite explorer la relation entre catégories socio-professionnelles et sports pratiqués, par exemple en utilisant l'extension [Plotly](10_01_representation.html#X14b) pour visualiser le nombre de licences de golf en fonction de la part de cadres et professions intellectuelles supérieures :
+
+[![graphique du nombre de licences de golf en fonction du % de cadres, réalisé avec Plotly](illustrations/tous/8_1_golf_cadres.png)](illustrations/tous/8_1_golf_cadres.png)
+
+## [Si une entité correspond à plusieurs entités de la couche à joindre](#VIII14) {#VIII14}
+
+### [Pour bien comprendre le problème](#VIII14a) {#VIII14a}
+
+Ouvrez un nouveau projet QGIS. Ajoutez-y la couche GeoPackage *[communes\_oise](donnees/TutoQGIS_08_Jointures.zip)* et le fichier CSV *[L\_MONUMENT\_HISTO\_S\_060](donnees/TutoQGIS_08_Jointures.zip)* qui correspond à l'ensemble des monuments historiques classés et inscrits dans le département de l'Oise.
+
+Explorez ces données : pouvez-vous joindre les données du fichier CSV à la couche de communes ? Grâce à quels champs ?
+
+Il est possible de joindre les couches en se basant sur le code INSEE : champ INSEE\_COM pour la couche de communes et INSEE pour le tableau des monuments historiques.
+
+Faites la jointure.
+
+Combien y a-t-il de communes ? De monuments historiques ?
+
+La couche de communes contient 679 entités, le CSV 700 lignes.
+
+Comment la jointure a-t-elle géré cela ?
+
+A chaque commune ont été joints les attributs du 1er monument ayant le même code INSEE rencontré dans le CSV. Si une commune possède plusieurs monuments, les données d'un seul ont été jointes.
+
+Certaines communes ont plusieurs monuments historiques, d'autres n'en ont aucun. Comment faire la jointure dans ce cas ?
+
+Il existe plusieurs possibilités, il faut ici bien se poser la question de ce que l'on veut.
+
+Ici, si l'on travaille à l'échelle de la commune, les informations sur les monuments devront être agrégées à la commune. On peut par exemple avoir pour chaque commune le nombre de monuments présents.
+
+On peut également concaténer du texte, c'est-à-dire avoir dans un champ par exemple tous les intitulés des monuments présents séparés par des virgules. Cependant, cette manière d'organiser les informations n'est pas forcément la plus pratique pour exploiter les données par la suite.
+
+Il importe de bien réfléchir aux questions qu'on veut pouvoir poser à ses données et à les structurer en conséquence, ce qui sort de l'objectif de ce tutoriel. Pour cela, vous pouvez discuter avec quelqu'un ayant l'habitude de travailler avec des bases de données, de préférence spatiales !
+
+Nous allons ici ajouter à la couche de communes un champ contenant le nombre de monuments.
+
+### [Agréger les données en 2 étapes](#VIII14b) {#VIII14b}
+
+Une première possibilité consiste à procéder en 2 étapes :
+
+* A partir du CSV, créer un tableau avec le nombre de monuments par communes
+* Joindre ce tableau à la couche de communes
+
+Dans la boîte à outils, rubrique **Analyse vectorielle**, double-cliquez sur l'outil **Statistiques par catégories**.
+
+[![Emplacement dans la boîte à outils de Statistiques par catégories](illustrations/tous/8_1_stats_cats_emplacement.png)](illustrations/tous/8_1_stats_cats_emplacement.png)
+
+Cet outil permet de calculer des statistiques (nombre, moyenne etc.) sur des champs d'une table attributaire.
+
+Par exemple, on peut savoir pour chaque type de monument (église, château...) les dates d'inscription min et max, et le nombre de dates d'inscription différentes. Ainsi, on compte 240 églises correspondant à 162 dates d'inscription différentes, entre le 01/01/1840 et le 27/10/2016.
+
+Nous allons ici utiliser cet outil de manière très simple, pour compter le nombre de monuments par commune :
+
+[![Outil Statistiques par catégories](illustrations/tous/8_1_stats_cats_fenetre.png)](illustrations/tous/8_1_stats_cats_fenetre.png)
+
+* Couche vectorielle en entrée : choisir la couche de monuments *L\_MONUMENT\_HISTO\_S\_060*
+* Champ pour calculer les statistiques : laisser vide puisqu'on veut simplement compter les monuments
+* Champs avec catégories : cliquez sur **...** et cocher le champ **INSEE** pour compter le nombre de monuments par code INSEE. On pourrait ici choisir commune mais ce sera moins sûr pour faire la jointure par la suite
+* Cliquez sur **Exécuter**, l'outil va créer une couche temporaire. Vous pouvez ensuite fermer la fenêtre.
+
+Ouvrez la table attributaire de cette couche temporaire :
+
+[![tableau résultat de Statistiques par catégories](illustrations/tous/8_1_stats_cats_res.png)](illustrations/tous/8_1_stats_cats_res.png)
+
+Chaque ligne correspond à une commune (un code INSEE) et le champ count indique combien cette commune contient de monuments.
+
+Il ne reste plus qu'à joindre ce tableau à la couche de communes ! Ceci vous permet par exemple de créer une [carte en cercles proportionnels](10_01_representation.html#X11b) du nombre de monuments par communes :
+
+[![carte en cercles proportionnels du nombre de monuments par commune](illustrations/tous/8_1_carte_monuments_communes.png)](illustrations/tous/8_1_carte_monuments_communes.png)
+
+### [Pour aller plus loin : une deuxième méthode avec une requête SQL](#VIII14c) {#VIII14c}
+
+Cette autre méthode fait ici appel à une requête SQL. Une [partie spécifique](06_04_req_sql.html) étant dédiée à ces requêtes, voici sans plus de détails une requête répondant à notre question. Pour mieux comprendre cette méthode, si vous n'êtes pas familier du SQL, merci donc de vous reporter [ici](06_04_req_sql.html) avant d'aller plus loin !
+
+Vous pouvez bien sûr sauter cette étape et passer directement au [chapitre suivant sur les jointures spatiales](08_02_jointure_spatiale.html).
+
+![icône gestionnaire de bases de données](illustrations/tous/6_4_dbmanager_icone.png)Ouvrez la fenêtre du gestionnaire de bases de données : menu **Base de données → DB Manager...**, ou bien cliquez sur l'icône correspondante dans la barre d'outils Base de données.
+
+Dans l'arborescence située dans la partie gauche de la fenêtre, allez dans **Couches virtuelle** → **Couches du projet** : vous devriez voir vos couches chargées dans QGIS.
+
+![icône de la fenêtre SQL](illustrations/tous/6_4_fenetre_sql_icone.png)Cliquez ensuite sur l'icône **Fenêtre SQL**, ou bien menu **Base de données** → **Fenêtre SQL**.
+
+[![ dans le gestionnaire de bases de données, requête SQL pour compter le nombre de nombre de monuments par commune](illustrations/tous/8_1_requete_sql.png)](illustrations/tous/8_1_requete_sql.png)
+
+Tapez la requête suivante :
+
+SELECT c.INSEE\_COM, c.NOM\_COM, count(m.INSEE) as nb\_monuments, c.geometry  
+FROM communes\_oise as c, L\_MONUMENT\_HISTO\_S\_060 as m  
+WHERE c.INSEE\_COM = m.INSEE  
+GROUP BY c.INSEE\_COM, c.NOM\_COM, c.geometry
+
+Vérifiez le résultat : chaque ligne correspond à une commune, avec pour chacune le nombre de monuments.
+
+Cochez la case **Charger en tant que nouvelle couche**.
+
+Choisissez la colonne avec des valeurs uniques : **INSEE\_COM**, et la colonne de géométrie : **geometry**.
+
+Donnez un nom à la couche qui sera créée, **communes\_monuments** par exemple, et cliquez sur le bouton **Charger**.
+
+Le résultat est équivalent à celui obtenu avec la première méthode, mis à part le fait que les communes sans monuments n'existent pas dans la nouvelle couche.
+
+Une autre requête utilisant **left join** permet de les conserver :
+
+SELECT c.INSEE\_COM, c.NOM\_COM, count(m.INSEE) as nb\_monuments, c.geometry  
+FROM communes\_oise as c  
+LEFT JOIN L\_MONUMENT\_HISTO\_S\_060 as m  
+ON c.INSEE\_COM = m.INSEE  
+GROUP BY c.INSEE\_COM, c.NOM\_COM, c.geometry
+
+[chapitre précédent](08_00_jointures.html)
+[chapitre suivant](08_02_jointure_spatiale.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc08.html")
+```
+
+:::
+

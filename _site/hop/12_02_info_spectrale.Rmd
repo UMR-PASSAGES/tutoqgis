@@ -1,0 +1,21 @@
+---
+title: "Extraction de l'information spectrale"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+[chapitre précédent](12_01_intro_teledec.html)
+[chapitre suivant](12_03_classif.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc12.html")
+```
+
+:::
+

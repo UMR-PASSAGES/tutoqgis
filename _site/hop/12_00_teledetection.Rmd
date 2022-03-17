@@ -1,0 +1,34 @@
+---
+title: "Télédétection"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+Cette douxième partie est basée sur le cours créé par [Samuel Corgne](https://perso.univ-rennes2.fr/samuel.corgne) pour les étudiants en [licence 3 de Géographie de l'Université Rennes 2](https://formations.univ-rennes2.fr/fr/formations/licence-22/licence-mention-geographie-JE70TNDB.html).
+
+Elle traite de télédétection, et aborde les notions suivantes :
+
+* Caractéristiques spectrales, spatiales, radiométriques et temporelles associées à une image satellitaire
+* Interprétation d'une image satellitaire, extraction de l’information spatiale et spectrale
+* Extraction des signatures spectrales d’objets géographiques sur une image satellitaire
+* Extraction et analyse des indices spectraux NDVI (Normalized Diference Vegetation Indes) et NBR (Normalized Burn Ratio)
+* Métadonnées d'une image satellitaire
+* Classification non supervisée
+* Classification supervisée avec échantillonnage terrain au moyen de différents algorithmes : bayésiens, machine learning (SVM, Random Forest, réseaux de neurones...) et Deep Learning
+
+Cette partie utilise [l'extension de classification semi-automatique pour QGIS](https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html) créée par [Luca Congedo](https://github.com/semiautomaticgit).
+
+Les données pour cette partie ainsi qu'une version PDF du tutoriel sont accessibles dans la rubrique  [téléchargement](telechargement.html).
+
+[démarrer](12_01_intro_teledec.html)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc12.html")
+```
+
+:::
+

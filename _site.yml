@@ -1,0 +1,16 @@
+name: "tuto-qgis"
+title: "Tutoriel QGIS"
+output_dir: "_site"
+exclude: ["readme.md"]
+output:
+  html_document:
+    # toc: true
+    # toc_depth: 3
+    # toc_float:
+    #   collapse: false
+    theme: default
+    highlight: textmate
+    include:
+      before_body: header.html
+      after_body: footer.html
+    css: styles.css

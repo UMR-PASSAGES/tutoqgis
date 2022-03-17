@@ -1,0 +1,81 @@
+---
+title: "Téléchargement des données"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+Les données nécessaires au tutoriel sont des données libres d'accès.
+
+Chaque dossier contient :
+
+* un sous-dossier **donnees**, avec les données elles-mêmes
+* éventuellement un sous-dossier **projets** contenant des projets QGIS
+* un sous-dossier **liste\_donnees**, avec la liste des données, le nom de l'organisme qui les a produites, son site internet, et si possible le lien vers les [métadonnées](01_01_SIG.html#I12d), ou à défaut le nom du fichier de métadonnées
+* un sous-dossier **metadonnees**, avec les fichier de métadonnées. Si toutes les métadonnées sont disponibles en ligne, ce sous-dossier n'existe pas.
+
+Vous pouvez télécharger ici :
+
+[Toutes les données (282,4 Mo)](donnees/TutoQGIS_Donnees.zip)
+
+[Données de la partie I : prise en main (13,1 Mo)](donnees/TutoQGIS_01_PriseEnMain.zip)
+
+[Données de la partie II : géodésie (2,8 Mo)](donnees/TutoQGIS_02_Geodesie.zip)
+
+[Données de la partie III : recherche et ajout de données (47,6 Mo)](donnees/TutoQGIS_03_RechercheDonnees.zip)
+
+[Données de la partie IV : géoréférencement (7,7 Mo)](donnees/TutoQGIS_04_Georef.zip)
+
+[Données de la partie V : numérisation (20,3 Mo)](donnees/TutoQGIS_05_Numerisation.zip)
+
+[Données de la partie VI : requêtes (9,6 Mo)](donnees/TutoQGIS_06_Requetes.zip)
+
+[Données de la partie VII : calcul de champs (6,3 Mo)](donnees/TutoQGIS_07_Champs.zip)
+
+[Données de la partie VIII : jointures (85,5 Mo)](donnees/TutoQGIS_08_Jointures.zip)
+
+[Données de la partie IX : analyse spatiale (29,8 Mo)](donnees/TutoQGIS_09_AnalyseSpat.zip)
+
+[Données de la partie X : représentation et mise en page (59,7 Mo)](donnees/TutoQGIS_10_Representation.zip)
+
+[Données de la partie XI : automatisation de traitements (0,6 Mo)](donnees/TutoQGIS_11_Automatisation.zip)
+
+## Téléchargement du tutoriel au format PDF
+
+Vous pouvez télécharger ici des PDF correspondant à la version en ligne du tutoriel QGIS. Ces PDF ont été générés grâce à l'outil [wkhtmltopdf](http://wkhtmltopdf.org/).
+
+Attention, ces PDF étant des exports de la version en ligne, les mises à jour sont moins régulières et toutes les fonctionnalités ne seront pas affichées.
+
+[Tout le tutoriel au format PDF (38,9 Mo)](exports_pdf/tutoqgis.pdf)
+
+[PDF de la partie I : prise en main (3 Mo)](exports_pdf/tutoqgis_01_priseenmain.pdf)
+
+[PDF de la partie II : géodésie (2,3 Mo)](exports_pdf/tutoqgis_02_geodesie.pdf)
+
+[PDF de la partie III : recherche et ajout de données (5 Mo)](exports_pdf/tutoqgis_03_recherche_donnees.pdf)
+
+[PDF de la partie IV : géoréférencement (5,2 Mo)](exports_pdf/tutoqgis_04_georeferencement.pdf)
+
+[PDF de la partie V : numérisation (5,5 Mo)](exports_pdf/tutoqgis_05_numerisation.pdf)
+
+[PDF de la partie VI : requêtes (3,3 Mo)](exports_pdf/tutoqgis_06_requetes.pdf) 
+
+[PDF de la partie VII : calcul de champs (1,6 Mo)](exports_pdf/tutoqgis_07_calcul_champs.pdf)
+
+[PDF de la partie VIII : jointures (2,3 Mo)](exports_pdf/tutoqgis_08_jointures.pdf) 
+
+[PDF de la partie IX : analyse spatiale (6,4 Mo)](exports_pdf/tutoqgis_09_analyse_spatiale.pdf)
+
+[PDF de la partie X : représentation et mise en page (4,5 Mo)](exports_pdf/tutoqgis_10_miseenpage.pdf)
+
+[PDF de la partie XI : automatisation de traitements (1,4 Mo)](exports_pdf/tutoqgis_11_automatisation.pdf)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc.html")
+```
+
+:::
+

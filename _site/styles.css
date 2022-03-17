@@ -1,0 +1,321 @@
+/* import police open sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+  font-family: "Open Sans", helvetica, arial, verdana;
+  /*background-color: #e6e6e6;
+  padding-top: 0 !important;*/
+}
+.container-fluid.main-container{
+  background-color: white;
+}
+
+/* TITRES */
+h1{
+	color: /*link*/#28A6B7;
+	font-size: 1.5em !important;
+	font-weight: bold !important;
+}
+
+h2{
+	color: /*link*/#28A6B7;
+	font-size: 1.3em !important;
+	font-weight: bold !important;
+	margin-top: -4em !important;
+	border-bottom: 2px solid /*link*/#28A6B7;
+}
+h2 a:hover{
+  color: /*link*/#28A6B7;
+}
+
+h3{
+  color: /*link*/#28A6B7;
+	font-size: 1.2em;
+	font-style: italic;
+	font-weight: normal;
+	margin-top: -5em !important;
+}
+h3 a:hover{
+  color: /*link*/#28A6B7;
+}
+
+/* LIENS */
+/* par défaut, les hyperliens s'affichent en bleu */
+a {
+	color: /*link*/#28A6B7;
+  text-decoration: none;
+}
+/* et en orange quand on passe la souris au-dessus */
+a:hover {
+	color:#FF7D00;
+	text-decoration: none;
+}
+/* liens externes */
+a.ext{
+  color:#646464;
+	border-bottom: 1px dotted;
+}
+a.ext:hover {
+  color: #FF7D00;
+	}
+a.ext:after {  /* une icône différente pour les liens externes */
+  content: "\0000a0[\2197]";
+	}
+
+/* BARRE DE NAVIGATION */
+a.navbar-brand{
+	font-size: 1.8em; /* font-size of title */
+	color: white !important;
+}
+a.amenu{
+  color: white !important;
+}
+a.amenu:hover{
+  background-color: rgba(255,255,255,100) !important;
+  color: #2c2b28 !important;
+}
+/* le lien actif */
+.nav-item.active a{
+  background-color: rgba(255,255,255,100) !important;
+  color: #2c2b28 !important;
+}
+#navbar-primary.navbar-default {
+  background: linear-gradient(to bottom, rgba(25,25,25,0) 0px, rgba(25,25,25,0) 50px, rgba(25,25,25,0.5) 50px, rgba(25,25,25,0.5) 100%), /* this is for semi-transparent background on menu titles */
+    #403d38 url(illustrations/tous/bandeau.png) no-repeat center; /* and this is the background image */
+  background-position: 0 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.nav{
+  font-size: 1.2em; /* font size of menus*/
+}
+.navbar-custom{
+  height:100px; /* navbar height */
+}
+#navbar-primary-collapse{
+  /*background: rgba(25,25,25,0.5);*/ /* transparent background for menus */
+  /*margin-left: -50px;*/ /* no margin for background */
+  /*margin-right: -50px;*/
+  margin-top: 50px; /* menus on bottom of bar */
+}
+.navbar-nav {
+  width: 100%;
+}
+
+/* PLAN COLONNE DE DROITE */
+/*#TOC{
+  position: fixed;
+  top: 100;
+}*/
+.list-group.list-group-root {
+  text-align: start; /* non justifié */
+  padding: 0;
+  overflow: hidden;
+  border: 0 none;
+}
+.list-group.list-group-root .list-group {
+  margin-bottom: 0;
+}
+.list-group.list-group-root .list-group-item {
+  border-radius: 0;
+  border-width: 1px 0 0 0;
+}
+.list-group.list-group-root > .list-group-item:first-child {
+  border-top-width: 0;
+}
+.list-group.list-group-root > .list-group > .list-group-item {
+  padding-left: 30px;
+}
+.list-group.list-group-root > .list-group > .list-group > .list-group-item {
+  padding-left: 45px;
+}
+a.list-group-item{
+  color: /*link*/#28A6B7;
+  text-decoration: none;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-top: 0 none;
+}
+a.current{
+  color: white;
+  background-color: #28A6B7;
+}
+a.subitem{
+  font-size: 0.9em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-top: 0 none;
+}
+
+/* LOGOS */
+img.logo {
+	color:#FF00DB;	/* quand une image est prévue mais ne s'affiche pas, affiche le texte en rose */
+}
+td.logo-left{
+  /*border: 1px solid black;*/
+  vertical-align: middle;
+}
+td.logo-right{
+  /*border: 1px solid black;*/
+  text-align: right;
+  vertical-align: middle;
+}
+td.logo-center{
+  /*border: 1px solid black;*/
+  text-align: center;
+  vertical-align: middle;
+}
+table.table_logos{
+  /*border: 1px solid black;*/
+  width: 100%;
+}
+
+/* IMAGES */
+/* quand on veut afficher l'icône d'un outil avec après du texte sur plusieurs lignes */
+.icone {
+	padding:0;
+	float: left;
+	margin-right: 7px;
+	border: thin solid;
+	border-color: silver;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+ 	box-shadow: none;
+/* quand on veut afficher l'icône d'un outil avec avant ou après du texte sur une seule ligne */
+}
+/* légende des images */
+p.caption{
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+}
+/* le lien pour les images qui s'affiche quand on passe la souris dessus */
+u {
+  color: /*hov*/#1D3437;
+	border-bottom: 1px dotted;
+	text-decoration: none;
+}
+u:hover{
+  color: /*hov*/#1D3437;
+}
+
+/* DIV */
+div.manip{
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-left: 6px;
+	border-left-style: solid;
+	border-left-color: /*link*/#28A6B7;
+	background-color: /*bgm*/#F0F4F4;
+}
+div.note{
+	font-size: 0.9em;
+	font-style: italic;
+}
+div.suiv{
+  text-align: right;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.suiv a:after{
+  content: "\0000a0\2192";
+}
+
+/* pour le système de questions-réponses */
+div.question { position: relative; }
+input[type=checkbox] {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 10%;
+   height: 10%;
+   opacity: 0;
+}
+label {
+  font-weight: normal;
+	cursor: pointer;
+	position: relative;
+	display: block;
+	padding-left: 30px; /* espacement entre le pointeur et le texte de la question */
+}
+label:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 50%;
+	left: 10px; /* décalage du pointeur vers la droite */
+	border-left: 7px solid black; /* apparence du pointeur */
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	margin-top: -7px;
+}
+input[type=checkbox]:checked ~ p label:before {
+	border-left: 7px solid transparent;
+	border-top: 7px solid black;
+	border-right: 7px solid transparent;
+	margin-left: -7px;
+	margin-top: -7px
+}
+p.reponse {
+	max-height: 0;
+	overflow: hidden;
+	padding-left: 5px;
+	font-style: italic;
+}
+input[type=checkbox]:checked ~ p {
+	max-height: 600px; /* la hauteur max que pourra prendre la réponse */
+}
+
+/* DIVERS */
+blockquote {
+  font-style: italic
+}
+.tippy{
+  max-width: 600px !important;
+  width: 600px !important;
+}
+.lettre a{
+  margin-right: 10px;
+}
+
+/* LISTES */
+div.plan UL{
+  list-style-type: none;
+}
+div.plandetaille > ul > li{
+  list-style-type: none;
+  margin-top: 20px;
+}
+div.index_sommaire ul{	/* pour les lettres tout en haut de l'index qui renvoient plus bas */
+  margin:0;
+	/*padding:5px;*/
+	list-style:none;
+}
+div.index_az_lettres li {
+	display:inline;
+	margin:0;
+	padding:5px;
+}
+div.index_az_lettres{
+  margin-bottom: 40px;
+}
+div.index_az li{
+		list-style: none;
+		line-height: 20px !important;
+}
+div.index_az > div > ul > li::before{	/* pour la puce de cette liste */
+	content: '\002022';
+	color: lightgray;
+		font-size: 1.7em;
+		padding-right: 0.25em;
+		vertical-align: top;
+}
+
+

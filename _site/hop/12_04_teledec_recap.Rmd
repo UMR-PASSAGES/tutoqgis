@@ -1,0 +1,22 @@
+---
+title: "Exercice récapitulatif"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+Vous êtes arrivé.e au bout de ce tutoriel. Si vous le suivez depuis le début, bravo pour votre patience, et sinon bravo également !
+
+[chapitre précédent](12_03_classif.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc12.html")
+```
+
+:::
+

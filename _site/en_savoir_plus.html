@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>En savoir plus</title>
+
+<script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<!-- https://codepen.io/davidcochran/pen/MWeyzL -->
+<!--<header role="banner">
+  <a class="bigtitle" href="index.html">Tutoriel QGIS</a>-->
+<nav id="navbar-primary" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Tutoriel QGIS</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="amenu" href="index.html">Présentation</a></li>
+        <li class="nav-item"><a class="amenu" href="plan_detaille.html">Plan détaillé</a></li>
+        <li class="nav-item"><a class="amenu" href="index_az.html">Index</a></li>
+        <li class="nav-item"><a class="amenu" href="telechargement.html">Téléchargement</a></li>
+        <li class="nav-item"><a class="amenu" href="en_savoir_plus.html">En savoir plus</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<!--</header><!-- header role="banner" -->
+<style>
+  body {
+    text-align: justify
+  }
+</style>
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">En savoir plus</h1>
+
+</div>
+
+
+<div class="row">
+<div class="content col-xs-12 col-sm-8 col-md-9">
+<div id="sur-qgis" class="section level2">
+<h2>Sur QGIS</h2>
+<p>QGIS est un <a href="https://fr.wikipedia.org/wiki/Logiciel_libre">logiciel libre</a> et peut donc être utilisé, étudié, modifié et redistribué sans restriction par la personne à qui il a été distribué.</p>
+<p>QGIS.org est une association dont la <a href="https://www.qgis.org/fr/site/getinvolved/governance/governance.html">gouvernance</a> comprend différentes instances : bureau, comité de projet, groupes d’utilisateurs… Le fonctionnement de l’association, ses rapports annuels et financiers ainsi que bien d’autres informations sont <a href="https://www.qgis.org/fr/site/getinvolved/governance/index.html">disponibles en ligne</a>.</p>
+<p>Toute personne peut contribuer à QGIS, même sans savoir programmer. Vous pouvez par exemple participer à la <a href="https://www.qgis.org/fr/site/getinvolved/document.html">rédaction de la documentation</a> ou bien à la <a href="https://www.qgis.org/fr/site/getinvolved/translate.html">traduction de QGIS</a>. Le logiciel évoluant rapidement, ce travail est toujours nécessaire.</p>
+<p>Vous pouvez également <a href="https://github.com/qgis/QGIS/issues">faire remonter les bugs</a> que vous rencontrez, en vous assurant que cela n’a pas déjà été fait. Il vous faudra alors détailler la version de QGIS utilisée, les circonstances dans lesquelles le bug se produit en joignant éventuellement une capture d’écran.</p>
+<p>Enfin, vous pouvez tout simplement <a href="https://www.qgis.org/fr/site/getinvolved/donations.html">faire un don au projet</a>, ou bien acheter une tasse, un t-shirt, une gourde… via la <a href="https://qgis.org/fr/site/about/shop_goodies.html">boutique QGIS</a>.</p>
+<p>A l’instar des logiciels SIG propriétaires, QGIS dispose également d’un <a href="https://www.qgis.org/fr/site/forusers/commercial_support.html">support commercial</a> proposé par plusieurs entreprises. Il est également possible via ces entreprises de financer du développement pour améliorer ou ajouter certaines fonctionnalités.</p>
+<p>QGIS est <strong>votre</strong> logiciel. En y contribuant, au-delà de participer à son amélioration, vous apprendrez également des outils et méthodes collaboratifs qui seront un atout lors d’une recherche d’emploi !</p>
+</div>
+<div id="sur-ce-tutoriel" class="section level2">
+<h2>Sur ce tutoriel</h2>
+<p>Ce tutoriel est produit par le pôle Analyse et Représentation des Données de <a href="http://www.passages.cnrs.fr">l’UMR PASSAGES</a>. Il côtoie d’autres passionnants tutoriels sur la plate-forme <a href="http://ouvrir.passages.cnrs.fr">OUVRIR</a>.</p>
+<p>Il a bénéficié de relectures et conseils avisés de (par ordre alphabétique, UMR Passages sauf mention contraire) : Xavier Amelot, Véronique André-Lamat, Gaëlle Deletraz, Marina Duféal, Grégoire Le Campion, Delphine Montagne, Claude Monteil (INP-ENSAT - Toulouse), Guilhem Mousselin, Matthieu Noucher, Olivier Pissoat, Jean-Michel Poux (Ministère de la Transition Écologique et Solidaire), Raphaël Schirmer, David Sheeren (INP-ENSAT - Toulouse). Merci à eux !</p>
+<p>La <a href="12_00_teledetection.html">partie XII sur la télédétection</a> est basée sur le cours créé par Samuel Corgne pour les étudiants en licence 3 de géographie de l’Université Rennes 2.</p>
+<p>Ce tutoriel est diffusé sous <strong>licence Creative Commons</strong> : vous êtes autorisé à le partager et l’adapter, pour toute utilisation y compris commerciale, à condition de citer l’auteur (<em>Julie Pierson, UMR 5319 PASSAGES, www.passages.cnrs.fr</em>), et de redistribuer votre travail sous les mêmes conditions. Le texte complet est disponible ici : <a href="https://creativecommons.org/licenses/by-sa/4.0/">http://creativecommons.org/licenses/by/4.0/legalcode</a></p>
+<p>Cela signifie donc que vous pouvez en faire ce que bon vous semble, y compris l’utiliser pour vos propres formations. Et dans ce cas, un petit message nous fait plaisir et nous encourage à continuer ! Faites-nous part également de vos remarques, critiques et idées d’amélioration !</p>
+<p><strong>Pour tout contact :</strong> envoyez un courriel à julie.pierson (at) univ-brest.fr, ou bien <span class="citation">[@sigomatique]</span>(<a href="https://twitter.com/sigomatique" class="uri">https://twitter.com/sigomatique</a>) sur Twitter.</p>
+<p>Enfin, tout le code du tutoriel (HTML, CSS…) est <strong>disponible sur GitHub</strong> : <a href="https://github.com/UMR-PASSAGES/tutoqgis" class="uri">https://github.com/UMR-PASSAGES/tutoqgis</a></p>
+<p><em>L’image du bandeau est tirée des archives de l’art américain et est disponible sur <a href="http://commons.wikimedia.org/wiki/File:archives_of_American_Art_-_Guy_Maccoy_-_2905.jpg">Wikimedia</a>. Cette image est dans le domaine public.</em></p>
+</div>
+</div>
+<!-- https://jsfiddle.net/u3gd85cj/ -->
+<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 fixed-top">
+
+  <div id="logos">
+    <table class="table_logos">
+      <tr>
+        <td class="logo-left" colspan="1">
+          <a target="_blank" href="https://letg.cnrs.fr/" >
+            <img class="logo-left" src="illustrations/tous/logo_letg.png" alt="logo LETG" height="75">
+          </a>
+        </td>
+        <td class="logo-right" colspan="1">
+          <a target="_blank" href="http://www.passages.cnrs.fr/" >
+            <img class="logo-right" src="illustrations/tous/logo_passages.png" alt="logo passages" height="33">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="logo-center" colspan="2">
+          <a target="_blank" href="http://www.qgis.org/" >
+            <img class="logo-center" src="illustrations/tous/logo_qgis_3_16.png" alt="logo QGIS 3.16" height="70">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div> <!-- div logos -->
+  <br>
+
+  <div id="TOC">
+    <div class="list-group list-group-root well">
+        <a href="01_00_prise_en_main.html" class="list-group-item">Prise en main</a>
+        <a href="02_00_geodesie.html" class="list-group-item">Géodésie</a>
+        <a href="03_00_recherche_ajout.html" class="list-group-item">Recherche et ajout de données</a>
+        <a href="04_00_georeferencement.html" class="list-group-item">Géoréférencement</a>
+        <a href="05_00_numerisation.html" class="list-group-item">Numérisation</a>
+        <a href="06_00_requetes.html" class="list-group-item">Requêtes</a>
+        <a href="07_00_champs.html" class="list-group-item">Calcul de champs</a>
+        <a href="08_00_jointures.html" class="list-group-item">Jointures</a>
+        <a href="09_00_analyse_spatiale.html" class="list-group-item">Analyse spatiale</a>
+        <a href="10_00_carto.html" class="list-group-item">Représentation et mise en page</a>
+        <a href="11_00_automatisation.html" class="list-group-item">Automatisation de traitements</a>
+        <a href="12_00_teledetection.html" class="list-group-item">Télédétection</a>
+    </div>
+    </div> <!-- div TOC -->
+
+</div>
+</div>
+
+<div id="footer">
+	<hr class="simple">
+	<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">
+		<img alt="Licence Creative Commons" src="illustrations/tous/by-sa.png" height="27" >
+	</a>
+	Ce tutoriel est mis à disposition selon les termes de la <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">Licence Creative Commons Attribution 4.0 International</a>
+</div>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1500.5359"
+   height="463.81726"
+   id="svg2"
+   version="1.1"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   sodipodi:docname="9_4_union_principe.svg"
+   inkscape:export-filename="/home/pierson/Travail/projets/tutoqgis/illustrations/tous/9_4_union_principe.png"
+   inkscape:export-xdpi="150.0591"
+   inkscape:export-ydpi="150.0591">
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3805">
+      <circle
+         style="fill:#ffd453;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="path3807"
+         transform="translate(0,-50.11246)"
+         cx="391.57663"
+         cy="216.76562"
+         r="118.87148" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3805-6">
+      <circle
+         style="fill:#ffd453;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+         id="path3807-8"
+         transform="translate(0,-50.11246)"
+         cx="391.57663"
+         cy="216.76562"
+         r="118.87148" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1867">
+      <ellipse
+         style="fill:none;stroke:#0b00ff;stroke-width:1.99376;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="ellipse1869"
+         cx="595.16119"
+         cy="138.51329"
+         rx="118.8746"
+         ry="118.12749" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1901">
+      <circle
+         style="fill:none;stroke:#0b00ff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle1903"
+         cx="595.85138"
+         cy="116.43178"
+         r="118.87148" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1953">
+      <circle
+         style="fill:none;stroke:#0b00ff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle1955"
+         cx="596.57355"
+         cy="138.89412"
+         r="118.87148" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.76506001"
+     inkscape:cx="750.26794"
+     inkscape:cy="231.90863"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     fit-margin-top="20"
+     fit-margin-left="20"
+     fit-margin-right="20"
+     fit-margin-bottom="20"
+     inkscape:window-width="1872"
+     inkscape:window-height="983"
+     inkscape:window-x="48"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid903"
+       originx="0.26795898"
+       originy="1.9086302" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(724.39642,42.624818)">
+    <path
+       id="path2987-6-2-1-7"
+       style="fill:none;stroke:#ff00f4;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 595.87154,19.283812 a 118.87148,118.87148 0 0 0 -117.2422,99.261718 h 96.5391 v 136.66602 a 118.87148,118.87148 0 0 0 20.7031,1.8164 118.87148,118.87148 0 0 0 118.8711,-118.87109 118.87148,118.87148 0 0 0 -118.8711,-118.873048 z" />
+    <rect
+       style="fill:none;stroke:#ff0000;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2985-3"
+       width="241.23917"
+       height="240.00002"
+       x="-665.36761"
+       y="119.28381" />
+    <circle
+       style="fill:none;stroke:#0b00ff;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path2987-6"
+       cx="96.646591"
+       cy="140.57216"
+       r="118.87148" />
+    <rect
+       style="fill:none;stroke:#686868;stroke-width:3.81726"
+       id="rect871"
+       width="458.35931"
+       height="420"
+       x="-702.48779"
+       y="-20.716188" />
+    <rect
+       style="fill:none;stroke:#686868;stroke-width:3.81726"
+       id="rect871-7"
+       width="458.35931"
+       height="420"
+       x="-204.12846"
+       y="-20.716188" />
+    <rect
+       style="fill:none;stroke:#686868;stroke-width:3.81726"
+       id="rect871-7-5"
+       width="458.35931"
+       height="420"
+       x="295.87152"
+       y="-20.716188" />
+    <path
+       id="rect2985-3-6-9"
+       style="fill:none;stroke:#ff00f4;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 1059.0293 161.9082 L 1059.0293 401.9082 L 1300.2676 401.9082 L 1300.2676 298.57422 A 118.87148 118.87148 0 0 1 1202.0977 181.51953 A 118.87148 118.87148 0 0 1 1203.7285 161.9082 L 1059.0293 161.9082 z "
+       transform="translate(-724.39642,-42.624818)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.6667px;line-height:1.25;font-family:FreeSans;-inkscape-font-specification:FreeSans;fill:#ff00f4;fill-opacity:1;stroke:none;"
+       x="413.87299"
+       y="276.56604"
+       id="text2059"><tspan
+         sodipodi:role="line"
+         id="tspan2057"
+         x="413.87299"
+         y="276.56604">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.6667px;line-height:1.25;font-family:FreeSans;-inkscape-font-specification:FreeSans;fill:#ff00f4;fill-opacity:1;stroke:none"
+       x="513.28595"
+       y="196.37756"
+       id="text2059-0"><tspan
+         sodipodi:role="line"
+         id="tspan2057-3"
+         x="513.28595"
+         y="196.37756">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.6667px;line-height:1.25;font-family:FreeSans;-inkscape-font-specification:FreeSans;fill:#ff00f4;fill-opacity:1;stroke:none"
+       x="613.87299"
+       y="156.56604"
+       id="text2059-1"><tspan
+         sodipodi:role="line"
+         id="tspan2057-8"
+         x="613.87299"
+         y="156.56604">3</tspan></text>
+  </g>
+</svg>

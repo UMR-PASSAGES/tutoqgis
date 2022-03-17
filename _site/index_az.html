@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Index</title>
+
+<script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<!-- https://codepen.io/davidcochran/pen/MWeyzL -->
+<!--<header role="banner">
+  <a class="bigtitle" href="index.html">Tutoriel QGIS</a>-->
+<nav id="navbar-primary" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Tutoriel QGIS</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="amenu" href="index.html">Présentation</a></li>
+        <li class="nav-item"><a class="amenu" href="plan_detaille.html">Plan détaillé</a></li>
+        <li class="nav-item"><a class="amenu" href="index_az.html">Index</a></li>
+        <li class="nav-item"><a class="amenu" href="telechargement.html">Téléchargement</a></li>
+        <li class="nav-item"><a class="amenu" href="en_savoir_plus.html">En savoir plus</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<!--</header><!-- header role="banner" -->
+<style>
+  body {
+    text-align: justify
+  }
+</style>
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Index</h1>
+
+</div>
+
+
+<div class="row">
+<div class="content col-xs-12 col-sm-8 col-md-9">
+<p>Cette liste recense les notions abordées dans ce tutoriel et n’est donc pas un catalogue exhaustif des fonctionnalités de QGIS.</p>
+<p>Chaque terme renvoie à la ou les partie(s) ou sous-partie(s) où il est abordé.</p>
+<div class="index_az_lettres">
+<ul>
+<li><a href="#A">A</a></li>
+<li><a href="#B">B</a></li>
+<li><a href="#C">C</a></li>
+<li><a href="#D">D</a></li>
+<li><a href="#E">E</a></li>
+<li><a href="#F">F</a></li>
+<li><a href="#G">G</a></li>
+<li><a href="#H">H</a></li>
+<li><a href="#I">I</a></li>
+<li><a href="#J">J</a></li>
+<li>K</li>
+<li><a href="#L">L</a></li>
+<li><a href="#M">M</a></li>
+<li><a href="#N">N</a></li>
+<li><a href="#O">O</a></li>
+<li><a href="#P">P</a></li>
+<li><a href="#Q">Q</a></li>
+<li><a href="#R">R</a></li>
+<li><a href="#S">S</a></li>
+<li><a href="#T">T</a></li>
+<li><a href="#U">U</a></li>
+<li><a href="#V">V</a></li>
+<li><a href="#W">W</a></li>
+<li><a href="#X">X</a></li>
+<li>Y</li>
+<li><a href="#Z">Z</a></li>
+</ul>
+</div>
+<div class="index_az">
+<div id="A" class="section level4">
+<h4><a href="#A">A</a></h4>
+<ul>
+<li><a href="05_05_polygones.html#V55">Accrochage</a></li>
+<li><a href="10_02_mise_en_page.html#X25c">Activer le retour à la ligne après (mise en page)</a></li>
+<li><a href="06_04_req_sql.html#VI42a">Activer une extension</a></li>
+<li><a href="09_04_maillage.html#IX45">Agrégation</a> et <a href="09_05_maillage_sql.html#IX55">en SQL</a></li>
+<li><a href="07_02_calculer.html#VII22">Aire (mesurer)</a></li>
+<li>Ajouter
+<ul>
+<li><a href="08_01_jointure_attrib.html#VIII12">un fichier CSV</a></li>
+<li><a href="03_03_donnees_XY.html#III32b">une couche de texte délimité</a></li>
+<li><a href="01_02_info_geo.html#I24">une couche raster</a></li>
+<li><a href="01_02_info_geo.html#I21">une couche vecteur</a></li>
+</ul></li>
+<li><a href="10_01_representation.html#X13">Aléatoires (points)</a></li>
+<li><a href="06_01_req_attrib.html#VI14">And (opérateur)</a></li>
+<li><a href="10_02_mise_en_page.html#X28">Aperçu (mise en page)</a></li>
+<li><a href="01_01_SIG.html#I12c">Attribut</a></li>
+</ul>
+</div>
+<div id="B" class="section level4">
+<h4><a href="#B">B</a></h4>
+<ul>
+<li><a href="01_02_info_geo.html#I22">Barre d’état</a></li>
+<li><a href="01_02_info_geo.html#I22">Barre d’outils</a></li>
+<li><a href="09_01_vecteur.html#IX12">Buffer (tampon)</a></li>
+</ul>
+</div>
+<div id="C" class="section level4">
+<h4><a href="#C">C</a></h4>
+<ul>
+<li><a href="04_00_georeferencement.html">Calage (géoréférencement)</a></li>
+<li><a href="07_00_champs.html">Calcul de champ</a></li>
+<li><a href="07_02_calculer.html#VII21">Calculatrice de champ</a></li>
+<li><a href="09_05_maillage_sql.html#IX56b">Calculatrice raster</a></li>
+<li><a href="10_01_representation.html">Carte</a>
+<ul>
+<li><a href="10_01_representation.html#X12">choroplèthe</a></li>
+<li><a href="10_01_representation.html#X13">en semis de points</a></li>
+<li><a href="10_01_representation.html#X11">en symboles proportionnels</a></li>
+</ul></li>
+<li><a href="07_02_calculer.html#VII23c">Case (expression)</a></li>
+<li><a href="01_01_SIG.html#I12d">Catalogue de métadonnées</a></li>
+<li><a href="05_02_points.html#V22">Catégorisé (style)</a></li>
+<li><a href="10_01_representation.html#X11a">Centroïde</a></li>
+<li><a href="10_01_representation.html#X11">Cercles proportionnels</a></li>
+<li>Champ
+<ul>
+<li><a href="07_02_calculer.html">calculer</a></li>
+<li><a href="07_01_creation_suppression.html#VII12">créer</a>, voir aussi <a href="07_01_creation_suppression.html#VII13">ici</a></li>
+<li><a href="10_01_representation.html#X11b">de proportion</a></li>
+<li><a href="07_01_creation_suppression.html#VII13">ordre (modifier)</a></li>
+<li><a href="07_01_creation_suppression.html#VII13">renommer</a></li>
+<li><a href="07_01_creation_suppression.html#VII12">supprimer</a>, voir aussi <a href="07_01_creation_suppression.html#VII13">ici</a></li>
+<li><a href="07_01_creation_suppression.html#VII12">type</a></li>
+</ul></li>
+<li><a href="10_01_representation.html#X12">Choroplèthe</a>* <a href="11_04_python.html">Commande Python</a>* <a href="10_02_mise_en_page.html#X22">Composeur d’impression</a>* <a href="04_04_parametrage.html#IV43">Compression</a>
+<ul>
+<li><a href="04_04_parametrage.html#IV43">Deflate</a></li>
+<li><a href="04_04_parametrage.html#IV43">LZW</a></li>
+<li><a href="04_04_parametrage.html#IV43">Packbits</a></li>
+</ul></li>
+<li><a href="01_02_info_geo.html#I23c">Constructeur de requête</a></li>
+<li><a href="09_02_raster.html#IX24a">Contour (courbe de niveau)</a></li>
+<li>Couche
+<ul>
+<li><a href="05_01_creation_couche.html">créer une couche shapefile</a></li>
+<li><a href="01_03_formats.html#I31a">shapefile</a></li>
+<li><a href="03_03_donnees_XY.html#III33">temporaire</a></li>
+<li><a href="06_04_req_sql.html#VI41">virtuelle</a></li>
+</ul></li>
+<li><a href="09_02_raster.html#IX24a">Courbe de niveau</a></li>
+<li><a href="07_01_creation_suppression.html#VII12">Créer un champ</a>, voir aussi <a href="07_01_creation_suppression.html#VII13">ici</a></li>
+<li><a href="05_01_creation_couche.html">Créer une couche shapefile</a></li>
+<li><a href="03_03_donnees_XY.html#III31">CSV</a>
+<ul>
+<li><a href="08_01_jointure_attrib.html#VIII12">ajouter un fichier</a></li>
+</ul></li>
+<li><a href="04_04_parametrage.html#IV42">Cubique (rééchantillonnage)</a></li>
+</ul>
+</div>
+<div id="D" class="section level4">
+<h4><a href="#D">D</a></h4>
+<ul>
+<li><a href="06_04_req_sql.html#VI42">DB Manager</a></li>
+<li>Découper
+<ul>
+<li><a href="05_05_polygones.html#V53">un polygone en mode édition</a></li>
+<li><a href="09_02_raster.html#IX21">une couche raster</a></li>
+<li><a href="09_01_vecteur.html#IX11">une couche vecteur</a></li>
+</ul></li>
+<li><a href="02_04_changer_systeme.html#II43">Définir le SCR d’une couche</a></li>
+<li><a href="04_04_parametrage.html#IV43">Deflate (compression)</a></li>
+<li><a href="01_02_info_geo.html#I24">DEM (MNE)</a>, voir aussi <a href="03_01_donnees_internet.html#III12b">ici</a></li>
+<li><a href="05_02_points.html#V23a">Déplacer une entité (mode édition)</a></li>
+<li><a href="06_01_req_attrib.html#VI13">Désélectionner des entités</a></li>
+<li><a href="10_01_representation.html#X12b">Discrétisation</a></li>
+</ul>
+</div>
+<div id="E" class="section level4">
+<h4><a href="E">E</a></h4>
+<ul>
+<li><a href="10_02_mise_en_page.html#X26">Echelle (mise en page)</a></li>
+<li><a href="02_02_coord.html#II21b">ED50 (SCR)</a></li>
+<li><a href="05_02_points.html#V21">Editer une couche</a></li>
+<li><a href="05_04_lignes.html">Editer une ligne</a></li>
+<li><a href="05_05_polygones.html#V54">Edition topologique</a></li>
+<li><a href="02_01_intro.html#II12">Ellipsoïde</a></li>
+<li>Emplacement
+<ul>
+<li><a href="01_02_info_geo.html#I23b">d’une couche</a></li>
+<li><a href="01_04_projets.html#I32">des données par rapport au projet</a></li>
+</ul></li>
+<li><a href="01_02_info_geo.html#I21">Encodage</a></li>
+<li>Erreur
+<ul>
+<li><a href="04_05_lancement.html#IV51">de calage</a></li>
+<li><a href="05_06_topologie.html">de topologie</a></li>
+<li><a href="04_05_lancement.html#IV51b">quadratique moyenne (EMQ)</a></li>
+<li><a href="04_05_lancement.html#IV51a">résiduelle</a></li>
+</ul></li>
+<li><a href="05_05_polygones.html#V56">Eviter les intersections</a></li>
+<li><a href="01_02_info_geo.html#I21b">Explorateur de fichiers</a></li>
+<li><a href="10_02_mise_en_page.html#X29">Export (mise en page)</a></li>
+<li><a href="06_01_req_attrib.html#VI11">Expression</a></li>
+<li>Extension
+<ul>
+<li><a href="06_04_req_sql.html#VI42a">Activer une extension</a></li>
+<li><a href="03_04_fonds_carte.html#III43">Installer une extension</a></li>
+<li><a href="04_06_calage_autre_couche.html#IV62">Nominatim Locator Filter</a></li>
+<li><a href="10_01_representation.html#X14b">Plotly</a></li>
+<li><a href="03_04_fonds_carte.html#III43">QuickMapServices</a></li>
+<li><a href="03_05_donnees_osm.html#III55">QuickOSM</a></li>
+<li><a href="06_02_req_spatiales.html#VI21b">Requête spatiale</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="F" class="section level4">
+<h4><a href="F">F</a></h4>
+<ul>
+<li><a href="03_05_donnees_osm.html#III54">Fichier de style QML ou SLD</a></li>
+<li><a href="01_02_info_geo.html#I23c">Filtrer les données</a></li>
+<li><a href="10_02_mise_en_page.html#X27">Flèche Nord</a></li>
+<li><a href="03_02_donnees_flux.html">Flux</a>
+<ul>
+<li><a href="03_02_donnees_flux.html#III23">WFS</a></li>
+<li><a href="03_02_donnees_flux.html#III22">WMS</a></li>
+</ul></li>
+<li>Fonction (calcul de champ)
+<ul>
+<li><a href="07_02_calculer.html#VII22a">$area</a></li>
+<li><a href="07_02_calculer.html#VII23c">case</a></li>
+<li><a href="07_02_calculer.html#VII23b">left</a></li>
+<li><a href="07_02_calculer.html#VII23b">right</a></li>
+</ul></li>
+<li><a href="01_03_formats.html">Formats de données</a>
+<ul>
+<li><a href="01_03_formats.html#I31b">GeoPackage</a></li>
+<li><a href="01_03_formats.html#I32">GeoTIFF</a></li>
+<li><a href="01_03_formats.html#I31a">Shapefile</a></li>
+<li><a href="01_03_formats.html#I31c">TAB (MapInfo)</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="G" class="section level4">
+<h4><a href="G">G</a></h4>
+<ul>
+<li><a href="02_00_geodesie.html">Géodésie</a></li>
+<li><a href="02_01_intro.html#II12">Géoïde</a></li>
+<li><a href="01_01_SIG.html#I11a">Géomatique</a></li>
+<li><a href="01_03_formats.html#I31b">GeoPackage</a></li>
+<li><a href="04_00_georeferencement.html">Géoréférencement</a></li>
+<li>Géoréférenceur
+<ul>
+<li><a href="04_03_calage_carroyage.html#IV31">Accéder au</a></li>
+<li><a href="04_04_parametrage.html">Paramétrage</a></li>
+</ul></li>
+<li><a href="01_03_formats.html#I32">GeoTIFF</a></li>
+<li><a href="09_01_vecteur.html">Géotraitement</a>
+<ul>
+<li><a href="09_01_vecteur.html#IX11">découper</a></li>
+<li><a href="09_01_vecteur.html#IX13">intersection</a></li>
+<li><a href="09_01_vecteur.html#IX12">zone tampon</a></li>
+</ul></li>
+<li><a href="06_04_req_sql.html#VI42">Gestionnaire de bases de données</a></li>
+<li><a href="10_01_representation.html#X12b">Gradué (style de couche)</a></li>
+<li><a href="09_04_maillage.html#IX42">Grille</a>, et <a href="09_05_maillage_sql.html#IX54">en SQL</a></li>
+</ul>
+</div>
+<div id="H" class="section level4">
+<h4><a href="H">H</a></h4>
+<ul>
+<li><a href="04_04_parametrage.html#IV41b">Helmert (transformation)</a></li>
+<li><a href="09_02_raster.html#IX22a">Histogramme (données raster)</a></li>
+<li><a href="10_01_representation.html#X14">Histogramme (données vecteur)</a></li>
+</ul>
+</div>
+<div id="I" class="section level4">
+<h4><a href="I">I</a></h4>
+<ul>
+<li><a href="06_01_req_attrib.html#VI14">Ilike</a></li>
+<li><a href="06_01_req_attrib.html#VI15">In (opérateur)</a></li>
+<li><a href="02_02_coord.html#II22c">Indicatrice de Tissot</a></li>
+<li><a href="03_04_fonds_carte.html#III43">Installer une extension</a></li>
+<li>Intersection
+<ul>
+<li><a href="06_02_req_spatiales.html#VI22">opérateur de requête spatiale</a></li>
+<li><a href="09_01_vecteur.html#IX13">de deux couches vecteur</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="J" class="section level4">
+<h4><a href="J">J</a></h4>
+<ul>
+<li><a href="08_00_jointures.html">Jointure</a>
+<ul>
+<li><a href="08_01_jointure_attrib.html">attributaire</a></li>
+<li><a href="08_02_jointure_spatiale.html">spatiale</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="L" class="section level4">
+<h4><a href="L">L</a></h4>
+<ul>
+<li><a href="02_02_coord.html#II22d">Lambert (projection)</a></li>
+<li><a href="02_02_coord.html#II22d">Lambert 93 (projection)</a></li>
+<li><a href="10_02_mise_en_page.html#X25">Légende (mise en page)</a></li>
+<li><a href="06_01_req_attrib.html#VI14">Like</a></li>
+<li><a href="04_04_parametrage.html#IV41b">Linéaire (transformation)</a></li>
+<li><a href="05_03_donnees_attrib.html#V32">Liste déroulante (outils d’édition)</a></li>
+<li><a href="11_02_par_lot.html">Lot (traitement par lot)</a></li>
+<li><a href="04_04_parametrage.html#IV43">LZW (compression)</a></li>
+</ul>
+</div>
+<div id="M" class="section level4">
+<h4><a href="M">M</a></h4>
+<ul>
+<li><a href="02_02_coord.html#II22d">Mercator (projection)</a></li>
+<li><a href="07_02_calculer.html#VII22">Mesurer une aire</a></li>
+<li><a href="01_01_SIG.html#I12d">Métadonnée</a></li>
+<li><a href="10_02_mise_en_page.html">Mise en page</a></li>
+<li><a href="01_02_info_geo.html#I24">MNE (Modèle Numérique d’Elevation)</a>, voir aussi <a href="03_01_donnees_internet.html#III12b">ici</a></li>
+<li><a href="03_01_donnees_internet.html#III12b">MNT (Modèle Numérique de Terrain)</a></li>
+<li>Mode édition
+<ul>
+<li><a href="05_02_points.html#V21">passer en mode édition</a></li>
+<li><a href="05_02_points.html#V24">quitter le mode édition</a></li>
+</ul></li>
+<li><a href="11_03_modeleur.html">Modèle graphique</a>* <a href="11_03_modeleur.html">Modeleur de traitement</a>* <a href="02_04_changer_systeme.html">Modifier le SCR</a>
+<ul>
+<li><a href="02_04_changer_systeme.html#II41">d’un projet</a></li>
+<li><a href="09_02_raster.html#IX24b">d’une couche raster</a></li>
+<li><a href="02_04_changer_systeme.html#II42">d’une couche vecteur</a></li>
+</ul></li>
+<li><a href="05_02_points.html#V23b">Modifier les données attributaires</a>, voir aussi <a href="05_03_donnees_attrib.html">ici</a> et <a href="07_00_champs.html">ici</a></li>
+<li><a href="05_02_points.html#V23">Modifier une entité</a>, voir aussi <a href="05_04_lignes.html#V43">ici</a></li>
+</ul>
+</div>
+<div id="N" class="section level4">
+<h4><a href="N">N</a></h4>
+<ul>
+<li><a href="04_06_calage_autre_couche.html#IV62">Nominatim Locator Filter (extension)</a></li>
+<li><a href="05_01_creation_couche.html">Nouvelle couche shapefile</a></li>
+<li><a href="02_02_coord.html#II21b">NTF (SCR)</a></li>
+<li><a href="05_00_numerisation.html">Numérisation</a></li>
+</ul>
+</div>
+<div id="O" class="section level4">
+<h4><a href="O">O</a></h4>
+<ul>
+<li><a href="03_05_donnees_osm.html">OpenStreetMap (OSM)</a>
+<ul>
+<li><a href="03_05_donnees_osm.html#III53">Accéder aux données</a>, voir aussi <a href="03_05_donnees_osm.html#III55">ici</a></li>
+<li><a href="03_05_donnees_osm.html#III54">Représenter les données</a></li>
+<li><a href="03_05_donnees_osm.html#III52">Visualiser un fonds de carte</a>, voir aussi <a href="03_04_fonds_carte.html">ici</a></li>
+</ul></li>
+<li><a href="06_01_req_attrib.html#VI14">Opérateur (requête attributaire)</a>* <a href="06_02_req_spatiales.html#VI22">Opérateur (requête spatiale)</a>
+<ul>
+<li><a href="06_02_req_spatiales.html#VI22">à l’intérieur</a></li>
+<li><a href="06_02_req_spatiales.html#VI22">contient</a></li>
+<li><a href="06_02_req_spatiales.html#VI22">croise</a></li>
+<li><a href="06_02_req_spatiales.html#VI22">est disjoint</a></li>
+<li><a href="06_02_req_spatiales.html#VI22">est égal</a></li>
+<li><a href="06_02_req_spatiales.html#VI22">intersecte</a></li>
+<li><a href="06_02_req_spatiales.html#VI22">touche</a></li>
+</ul></li>
+<li><a href="06_01_req_attrib.html#VI14">Or (opérateur)</a></li>
+<li><a href="10_01_representation.html#X11d">Ordre de rendu des entités</a></li>
+<li><a href="07_01_creation_suppression.html#VII13">Ordre des champs (modifier)</a></li>
+<li><a href="05_03_donnees_attrib.html#V32">Outils d’édition</a>
+<ul>
+<li><a href="05_03_donnees_attrib.html#V32">liste déroulante</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="P" class="section level4">
+<h4><a href="P">P</a></h4>
+<ul>
+<li><a href="04_04_parametrage.html#IV43">Packbits (compression)</a></li>
+<li><a href="01_02_info_geo.html#I22">Panneau</a>
+<ul>
+<li><a href="01_02_info_geo.html#I21b">Explorateur</a></li>
+</ul></li>
+<li><a href="11_02_par_lot.html">Par lot (traitement par lot)</a></li>
+<li><a href="09_02_raster.html#IX24c">Pente</a></li>
+<li><a href="02_02_coord.html#II22d">Peters (projection)</a></li>
+<li><a href="10_01_representation.html#X14b">Plotly (extension)</a></li>
+<li><a href="04_04_parametrage.html#IV42">Plus proche voisin (rééchantillonnage)</a></li>
+<li><a href="04_03_calage_carroyage.html">Point de calage</a>, voir aussi <a href="04_06_calage_autre_couche.html#IV63">ici</a></li>
+<li><a href="10_01_representation.html#X13">Points aléatoires</a></li>
+<li><a href="04_04_parametrage.html#IV41b">Polynomiale (transformation)</a></li>
+<li><a href="09_05_maillage_sql.html">PostGIS</a></li>
+<li><a href="09_05_maillage_sql.html">PostgreSQL</a></li>
+<li><a href="02_02_coord.html#II22">Projection</a></li>
+<li><a href="04_04_parametrage.html#IV41b">Projective (transformation)</a></li>
+<li><a href="01_04_projets.html">Projet</a></li>
+<li>Propriétés
+<ul>
+<li><a href="01_02_info_geo.html#I23">d’une couche</a></li>
+<li><a href="10_02_mise_en_page.html#X22">de l’objet (mise en page)</a></li>
+</ul></li>
+<li><a href="11_04_python.html">Python</a></li>
+</ul>
+</div>
+<div id="Q" class="section level4">
+<h4><a href="Q">Q</a></h4>
+<ul>
+<li><a href="03_05_donnees_osm.html#III54">QML (fichier de style QGIS)</a></li>
+<li><a href="03_04_fonds_carte.html#III43">QuickMapServices (extension)</a></li>
+<li><a href="03_05_donnees_osm.html#III55">QuickOSM (extension)</a></li>
+<li><a href="05_02_points.html#V24">Quitter le mode édition</a></li>
+</ul>
+</div>
+<div id="R" class="section level4">
+<h4><a href="R">R</a></h4>
+<ul>
+<li><a href="01_01_SIG.html#I12b">Raster</a>
+<ul>
+<li><a href="09_02_raster.html#IX24b">modifier le SCR</a></li>
+<li><a href="09_02_raster.html#IX22b">type de raster (8bits, 16bits…)</a></li>
+</ul></li>
+<li><a href="09_04_maillage.html#IX46">Rastérisation</a></li>
+<li><a href="04_04_parametrage.html#IV42">Rééchantillonnage</a>
+<ul>
+<li><a href="04_04_parametrage.html#IV42">cubique</a></li>
+<li><a href="04_04_parametrage.html#IV42">linéaire</a></li>
+<li><a href="04_04_parametrage.html#IV42">plus proche voisin</a></li>
+</ul></li>
+<li><a href="07_01_creation_suppression.html#VII13">Refactoriser les champs</a></li>
+<li><a href="07_01_creation_suppression.html#VII13">Renommer un champ</a></li>
+<li><a href="06_00_requetes.html">Requête</a>
+<ul>
+<li><a href="06_01_req_attrib.html">attributaire</a></li>
+<li><a href="01_02_info_geo.html#I23c">constructeur de</a></li>
+<li><a href="06_02_req_spatiales.html">spatiale</a></li>
+<li><a href="06_04_req_sql.html">SQL</a>, et aussi <a href="09_05_maillage_sql.html">ici</a></li>
+</ul></li>
+<li><a href="08_02_jointure_spatiale.html#VIII23">Résumé des entités intersectées (jointure spatiale)</a></li>
+<li><a href="10_02_mise_en_page.html#X25c">Retour à la ligne (mise en page)</a></li>
+<li><a href="02_02_coord.html#II21b">RGF93 (SCR)</a></li>
+<li><a href="07_02_calculer.html#VII23b">Right (fonction de calcul de champ)</a></li>
+<li><a href="02_04_changer_systeme.html#II41">Robinson (projection)</a></li>
+<li><a href="04_05_lancement.html#IV51b">Root Mean Square RMS (Erreur Quadratique Moyenne EMQ)</a></li>
+</ul>
+</div>
+<div id="S" class="section level4">
+<h4><a href="S">S</a></h4>
+<ul>
+<li><a href="05_02_points.html#V23b">Saisie de données attributaires</a>, voir aussi <a href="05_03_donnees_attrib.html">ici</a> et <a href="07_00_champs.html">ici</a></li>
+<li><a href="03_03_donnees_XY.html#III33">Sauvegarder une couche</a>
+<ul>
+<li><a href="05_02_points.html#V24">à partir du mode édition</a></li>
+</ul></li>
+<li><a href="02_02_coord.html">SCR</a>
+<ul>
+<li><a href="02_03_couches_projets.html#II31">d’un projet</a></li>
+<li><a href="02_03_couches_projets.html#II32">d’une couche</a></li>
+<li><a href="02_02_coord.html#II21b">ED50</a></li>
+<li><a href="02_04_changer_systeme.html#II41">modifier le SCR d’un projet</a></li>
+<li><a href="09_02_raster.html#IX24b">modifier le SCR d’une couche raster</a></li>
+<li><a href="02_04_changer_systeme.html#II42">modifier le SCR d’une couche vecteur</a></li>
+<li><a href="02_02_coord.html#II21b">NTF</a></li>
+<li><a href="02_02_coord.html#II21b">RGF93</a></li>
+<li><a href="02_02_coord.html#II21b">WGS84</a></li>
+</ul></li>
+<li><a href="11_04_python.html">Script Python</a></li>
+<li><a href="09_01_vecteur.html#IX12d">Segments pour l’approximation (zone tampon)</a></li>
+<li><a href="10_01_representation.html#X13">Semis de points</a></li>
+<li><a href="01_01_SIG.html#I12c">Sélection (outil de)</a></li>
+<li><a href="01_03_formats.html#I31a">Shapefile</a></li>
+<li><a href="01_01_SIG.html#I11b">SIG</a></li>
+<li><a href="03_05_donnees_osm.html#III54">SLD (Style Layer Descriptor)</a></li>
+<li><a href="09_05_maillage_sql.html">SpatiaLite</a></li>
+<li><a href="06_04_req_sql.html">SQL</a> et aussi <a href="09_05_maillage_sql.html">ici</a></li>
+<li><a href="09_05_maillage_sql.html">SQLite</a></li>
+<li><a href="03_01_donnees_internet.html#III12b">SRTM</a></li>
+<li><a href="08_01_jointure_attrib.html#VIII14b">Statistiques par catégories (outil)</a></li>
+<li>Style d’une couche
+<ul>
+<li><a href="05_02_points.html#V22">catégorisé</a></li>
+<li><a href="03_05_donnees_osm.html#III54">fichier de style QML ou SLD</a></li>
+<li><a href="10_01_representation.html#X12b">gradué</a></li>
+<li><a href="01_02_info_geo.html#I25">raster</a></li>
+<li><a href="01_02_info_geo.html#I23a">vecteur</a>, voir aussi <a href="10_01_representation.html">ici</a></li>
+</ul></li>
+<li><a href="07_01_creation_suppression.html#VII12c">Supprimer un champ</a></li>
+<li><a href="01_02_info_geo.html#I21a">Supprimer une couche</a></li>
+<li>Surface
+<ul>
+<li><a href="07_02_calculer.html#VII22a">calculer la surface dans un champ</a></li>
+<li><a href="07_02_calculer.html#VII22b">mesurer la surface</a></li>
+</ul></li>
+<li><a href="10_01_representation.html#X11">Symbole proportionnel</a></li>
+</ul>
+</div>
+<div id="T" class="section level4">
+<h4><a href="T">T</a></h4>
+<ul>
+<li><a href="01_03_formats.html#I31c">TAB (MapInfo)</a></li>
+<li><a href="10_01_representation.html#X11b">Taille (Assistant)</a></li>
+<li><a href="09_01_vecteur.html#IX12">Tampon</a></li>
+<li><a href="04_04_parametrage.html#IV41b">Thin Plate Spline TPS (transformation)</a></li>
+<li><a href="02_02_coord.html#II22c">Tissot (indicatrice de)</a></li>
+<li><a href="05_05_polygones.html#V55">Tolérance d’accrochage</a></li>
+<li><a href="05_06_topologie.html">Topologie</a></li>
+<li><a href="04_04_parametrage.html#IV41">Transformation</a>
+<ul>
+<li><a href="04_04_parametrage.html#IV41b">Helmert</a></li>
+<li><a href="04_04_parametrage.html#IV41b">linéaire</a></li>
+<li><a href="04_04_parametrage.html#IV41b">polynomiale</a></li>
+<li><a href="04_04_parametrage.html#IV41b">projective</a></li>
+<li><a href="04_04_parametrage.html#IV41b">Thin Plate Spline TPS</a></li>
+</ul></li>
+<li><a href="07_01_creation_suppression.html#VII12">Type de champ</a></li>
+</ul>
+</div>
+<div id="U" class="section level4">
+<h4><a href="U">U</a></h4>
+<ul>
+<li><a href="09_04_maillage.html#IX43">Union</a></li>
+<li><a href="02_02_coord.html#II22d">UTM (projection)</a></li>
+</ul>
+</div>
+<div id="V" class="section level4">
+<h4><a href="V">V</a></h4>
+<ul>
+<li><a href="05_06_topologie.html#V62">Validité d’une géométrie (vérifier)</a></li>
+<li><a href="01_01_SIG.html#I12b">Vecteur</a></li>
+<li><a href="05_06_topologie.html#V62b">Vérificateur de topologie</a></li>
+<li><a href="06_04_req_sql.html#VI41">Virtuelle (couche)</a></li>
+</ul>
+</div>
+<div id="W" class="section level4">
+<h4><a href="W">W</a></h4>
+<ul>
+<li><a href="02_02_coord.html#II21b">WGS84 (SCR)</a></li>
+</ul>
+</div>
+<div id="X" class="section level4">
+<h4><a href="X">X</a></h4>
+<ul>
+<li><a href="03_04_fonds_carte.html#III42">XYZ Tiles</a></li>
+</ul>
+</div>
+<div id="Z" class="section level4">
+<h4><a href="Z">Z</a></h4>
+<ul>
+<li><a href="09_01_vecteur.html#IX12">Zone tampon</a></li>
+<li><a href="01_02_info_geo.html#I22">Zoom</a></li>
+</ul>
+</div>
+</div>
+<p><a href="#wrap">haut de page</a></p>
+</div>
+<!-- https://jsfiddle.net/u3gd85cj/ -->
+<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 fixed-top">
+
+  <div id="logos">
+    <table class="table_logos">
+      <tr>
+        <td class="logo-left" colspan="1">
+          <a target="_blank" href="https://letg.cnrs.fr/" >
+            <img class="logo-left" src="illustrations/tous/logo_letg.png" alt="logo LETG" height="75">
+          </a>
+        </td>
+        <td class="logo-right" colspan="1">
+          <a target="_blank" href="http://www.passages.cnrs.fr/" >
+            <img class="logo-right" src="illustrations/tous/logo_passages.png" alt="logo passages" height="33">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="logo-center" colspan="2">
+          <a target="_blank" href="http://www.qgis.org/" >
+            <img class="logo-center" src="illustrations/tous/logo_qgis_3_16.png" alt="logo QGIS 3.16" height="70">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div> <!-- div logos -->
+  <br>
+
+  <div id="TOC">
+    <div class="list-group list-group-root well">
+        <a href="01_00_prise_en_main.html" class="list-group-item">Prise en main</a>
+        <a href="02_00_geodesie.html" class="list-group-item">Géodésie</a>
+        <a href="03_00_recherche_ajout.html" class="list-group-item">Recherche et ajout de données</a>
+        <a href="04_00_georeferencement.html" class="list-group-item">Géoréférencement</a>
+        <a href="05_00_numerisation.html" class="list-group-item">Numérisation</a>
+        <a href="06_00_requetes.html" class="list-group-item">Requêtes</a>
+        <a href="07_00_champs.html" class="list-group-item">Calcul de champs</a>
+        <a href="08_00_jointures.html" class="list-group-item">Jointures</a>
+        <a href="09_00_analyse_spatiale.html" class="list-group-item">Analyse spatiale</a>
+        <a href="10_00_carto.html" class="list-group-item">Représentation et mise en page</a>
+        <a href="11_00_automatisation.html" class="list-group-item">Automatisation de traitements</a>
+        <a href="12_00_teledetection.html" class="list-group-item">Télédétection</a>
+    </div>
+    </div> <!-- div TOC -->
+
+</div>
+</div>
+
+<div id="footer">
+	<hr class="simple">
+	<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">
+		<img alt="Licence Creative Commons" src="illustrations/tous/by-sa.png" height="27" >
+	</a>
+	Ce tutoriel est mis à disposition selon les termes de la <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">Licence Creative Commons Attribution 4.0 International</a>
+</div>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

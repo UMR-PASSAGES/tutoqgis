@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Manipuler de l’information géographique</title>
+
+<script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<!-- https://codepen.io/davidcochran/pen/MWeyzL -->
+<!--<header role="banner">
+  <a class="bigtitle" href="index.html">Tutoriel QGIS</a>-->
+<nav id="navbar-primary" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Tutoriel QGIS</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="amenu" href="index.html">Présentation</a></li>
+        <li class="nav-item"><a class="amenu" href="plan_detaille.html">Plan détaillé</a></li>
+        <li class="nav-item"><a class="amenu" href="index_az.html">Index</a></li>
+        <li class="nav-item"><a class="amenu" href="telechargement.html">Téléchargement</a></li>
+        <li class="nav-item"><a class="amenu" href="en_savoir_plus.html">En savoir plus</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<!--</header><!-- header role="banner" -->
+<style>
+  body {
+    text-align: justify
+  }
+</style>
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Manipuler de l’information géographique</h1>
+
+</div>
+
+
+<div class="row">
+<div class="content col-xs-12 col-sm-8 col-md-9">
+<ul>
+<li><a href="#I21">Ajout et suppression d’une couche de données vecteur</a>
+<ul>
+<li><a href="#I21a">Par le menu</a></li>
+<li><a href="#I21b">Par l’explorateur de fichiers</a></li>
+</ul></li>
+<li><a href="#I22">L’interface de QGIS</a></li>
+<li><a href="#I23">Propriétés d’une couche vecteur</a>
+<ul>
+<li><a href="#I23a">Changer la représentation d’une couche</a></li>
+<li><a href="#I23b">Connaître l’emplacement d’une couche</a></li>
+<li><a href="#I23c">Filtrer les données</a></li>
+</ul></li>
+<li><a href="#I24">Ajout d’une couche raster</a></li>
+<li><a href="#I25">Propriétés d’une couche raster : modifier le style</a></li>
+</ul>
+<div id="I21" class="section level2">
+<h2><a href="#I21">Ajout et suppression d’une couche de données vecteur</a></h2>
+<div id="I21a" class="section level3">
+<h3><a href="#I21a">Par le menu</a></h3>
+<p>Lancez QGIS. Depuis QGIS 3, il existe une interface unique pour ajouter des couches vecteurs, rasters etc. : le gestionnaire des sources de données.</p>
+<p>Pour ajouter une couche vecteur via cette interface, plusieurs solutions au choix :</p>
+<ul>
+<li>[Menu couche → Gestionnaire des sources de données</li>
+</ul>
+<p><img src="illustrations/tous/1_2_ajout_couche_gestionnaire_menu.png" alt="Menu Couche, gestionnaire des sources de données" />](#thumb) * cliquer sur l’icône <strong>Ouvrir le gestionnaire des sources de données</strong><img src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône du gestionnaire des sources de données" /> * utiliser le raccourci clavier <strong>ctrl + L</strong> (minuscule)</p>
+<p>Si vous souhaitez retrouver vos habitudes de QGIS 2.18, vous pouvez également procéder ainsi :</p>
+<ul>
+<li>[Menu couche → Ajouter une couche → Ajouter une couche vecteur…</li>
+</ul>
+<p><img src="illustrations/tous/1_2_ajout_couche_vecteur_menu.png" alt="Menu Couche, ajouter une couche vecteur" />](#thumb) * <img src="illustrations/tous/1_2_ajout_vecteur_icone.png" alt="Icône ajout couche vecteur" />Cliquer sur l’icône <strong>Ajouter une couche vecteur</strong> (il faut activer la barre d’outils <strong>Gestion des couches</strong> si ce n’est pas déjà fait : menu Vue → Barres d’outils → Gestion des couches) * utiliser le raccourci clavier <strong>ctrl + majuscule + v</strong></p>
+<p>Dans tous les cas, vous arrivez normalement à cette fenêtre :</p>
+<p><a href="illustrations/tous/1_2_ajout_couche_vecteur_gestionnaire.png"><img src="illustrations/tous/1_2_ajout_couche_vecteur_gestionnaire.png" alt="Fenêtre du gestionnaire des sources de données, rubrique vecteur" /></a></p>
+<ul>
+<li>Vérifiez que vous êtes bien dans la rubrique <strong>Vecteur</strong>. Par défaut, le gestionnaire des sources de données s’ouvre dans la dernière rubrique utilisée.</li>
+<li>Type de source et encodage : laissez les valeurs par défaut. Pour en savoir plus sur ce qu’est l’encodage : <a href="http://fr.wikipedia.org/wiki/Codage_de_caract%C3%A8res">http://fr.wikipedia.org/wiki/Codage_de_caractères</a></li>
+<li>Cliquez sur <strong>…</strong> à gauche de <strong>Jeux de données vectorielles</strong> et sélectionnez la couche <em><a href="donnees/TutoQGIS_01_PriseEnMain.zip">DEPARTEMENT_BRETAGNE.shp</a></em> située dans le dossier <strong>TutoQGIS_01_PriseEnMain/donnees</strong>.</li>
+</ul>
+<p>Cliquez sur <strong>Ajouter</strong> : vous pouvez voir à l’écran les départements de la région Bretagne.</p>
+<p>Pour <strong>supprimer cette couche</strong> : clic droit sur son nom dans la table des matières, [Supprimer la couche…</p>
+<p><img src="illustrations/tous/1_2_supprimer_couche.png" alt="Clic droit sur une couche, supprimer" />](#thumb)</p>
+<p>Cette manipulation enlève seulement la couche de QGIS ; elle reste présente sur votre ordinateur, prête à être ajoutée à nouveau dans QGIS.</p>
+</div>
+<div id="I21b" class="section level3">
+<h3><a href="#I21b">Par l’explorateur de fichiers</a></h3>
+<p>Une autre méthode, peut-être plus pratique, consiste à utiliser l’explorateur de fichiers : activez-le éventuellement dans le [Menu Vue → Panneaux → Panneau Explorateur</p>
+<p><img src="illustrations/tous/1_2_explorateur_menu.png" alt="menu Vue → Panneaux → Explorateur" />](#thumb).</p>
+<p>Dans ce panneau, naviguez dans l’arborescence de vos fichiers jusqu’au dossier où vous avez téléchargé les données de ce tutoriel. Faites un <strong>clic droit sur ce dossier → Ajouter aux marque-pages</strong>.</p>
+<p>A partir des marque-pages, rendez-vous dans le dossier <strong>TutoQGIS_01_PriseEnMain/donnees</strong> et double-cliquez sur la couche <em>DEPARTEMENT_BRETAGNE.shp</em>.</p>
+<p><a href="illustrations/tous/1_2_explorateur.png"><img src="illustrations/tous/1_2_explorateur.png" alt="Panneau Explorateur" /></a></p>
+</div>
+</div>
+<div id="I22" class="section level2">
+<h2><a href="#I22">L’interface de QGIS</a></h2>
+<p><a href="illustrations/tous/1_2_interface.png"><img src="illustrations/tous/1_2_interface.png" alt="Interface de QGIS" /></a></p>
+<p>On peut distinguer 6 zones dans QGIS :</p>
+<p><em>1.</em> <strong>Menus</strong></p>
+<p><em>2.</em> <strong>Barres d’outils</strong>. On y trouve la même chose que dans les menus, mais sous forme d’icônes. Pour savoir que fait un outil, passez la souris au-dessus et lisez l’infobulle. Pour rajouter ou enlever des barres d’outils, clic-droit n’importe où dans cette zone sauf sur un outil désactivé, cocher ou décocher les barres d’outils voulues.</p>
+<p><em>3.</em> <strong>Panneau couches</strong>, avec la liste des couches chargées, aussi appelé parfois table des matières ou table of contents (TOC). Si plusieurs couches sont présentes, vous pouvez en modifier ici l’ordre d’affichage en les faisant glisser. Pour faire apparaître ou disparaître cette zone : menu <strong>Vue → Panneaux → Couches</strong></p>
+<p><em>4.</em> <strong>Zone de visualisation</strong>. On peut zoomer ou se déplacer dans cette zone.</p>
+<p><em>5.</em> <strong>Panneaux supplémentaires</strong>, par exemple le panneau <strong>Explorateur</strong>. Pour ajouter des panneaux, <strong>Menu Vue → Panneaux</strong></p>
+<p><em>6.</em> <strong>Barre d’état</strong>. On y trouve les coordonnées du point où se trouve la souris, l’échelle…</p>
+<p><a href="illustrations/tous/1_2_navigation_bo.png"><img src="illustrations/tous/1_2_navigation_bo.png" alt="Barre d’outils navigateur de carte" /></a></p>
+<p>Testez les différents boutons de zoom et de déplacement.</p>
+<p>Pouvez-vous déterminer l’effet de chacun d’entre eux ? A noter : on peut aussi zoomer et dézoomer en utilisant la molette de la souris, ainsi que le trackpad.</p>
+<p>Vous pouvez aussi vous déplacer dans la carte (équivalent de l’outil “main”) en maintenant la touche espace appuyée, quelque soit l’outil en cours dans QGIS. Le même résultat est obtenu en maintenant la molette de la souris enfoncée (clic molette prolongé).</p>
+</div>
+<div id="I23" class="section level2">
+<h2><a href="#I23">Propriétés d’une couche vecteur</a></h2>
+<p>Pour accéder aux propriétés de la couche, clic-droit sur le nom de la couche dans la table des matières, [Propriétés</p>
+<p><img src="illustrations/tous/1_2_proprietes_couche.png" alt="Clic-droit sur une couche, propriétés" />](#thumb) (ou bien double-clic sur le nom de la couche).</p>
+<p>Vous avez accès ici à plusieurs propriétés, notamment :</p>
+<ol style="list-style-type: decimal">
+<li>la manière dont la couche est représentée, dans la rubrique <strong>Symbologie</strong>. Vous pouvez par exemple changer ici la couleur des départements</li>
+<li>l’emplacement de la couche, dans la rubrique <strong>Information</strong></li>
+</ol>
+<div id="I23a" class="section level3">
+<h3><a href="#I23a">Changer la représentation d’une couche</a></h3>
+<p>Dans les propriétés de la couche, rubrique <strong>Symbologie</strong> :</p>
+<p><a href="illustrations/tous/1_2_style_couche.png"><img src="illustrations/tous/1_2_style_couche.png" alt="Onglet Style des propriétés d’une couche" /></a></p>
+<p>Cliquez sur <strong>Remplissage simple</strong>.</p>
+<p>Vous pouvez modifier ici notamment :</p>
+<p><em>1.</em> La couleur et le style du remplissage (continu, hachures, pas de remplissage…)</p>
+<p><em>2.</em> La couleur et le style de la bordure (ligne continue, pas de bordure, pointillés…)</p>
+<p>Essayez de donner à votre couche ces différents styles :</p>
+<p><a href="illustrations/tous/1_2_style1.png"><img src="illustrations/tous/1_2_style1.png" alt="Surfaces en gris clair, bordures en blanc" /></a> <a href="illustrations/tous/1_2_style2.png"><img src="illustrations/tous/1_2_style2.png" alt="Surfaces sans remplissage, bordures épaisses en gris foncé" /></a> <a href="illustrations/tous/1_2_style3.png"><img src="illustrations/tous/1_2_style3.png" alt="Surfaces jaunes, pas de bordures" /></a></p>
+</div>
+<div id="I23b" class="section level3">
+<h3><a href="#I23b">Connaître l’emplacement d’une couche</a></h3>
+<p>Dans les propriétés de la couche, rubrique <strong>Information</strong> : pouvez-vous dire à quel endroit est stockée la couche <em>DEPARTEMENT_BRETAGNE</em> sur votre ordinateur ?</p>
+<p>La couche est stockée à l’endroit indiqué dans la partie <strong>Chemin</strong>. Cet emplacement varie bien sûr en fonction de l’endroit où vous avez enregistré les données du tutoriel. <a href="illustrations/tous/1_2_emplacement_couche.png"><img src="illustrations/tous/1_2_emplacement_couche.png" alt="Onglet Général des propriétés d’une couche" /></a></p>
+<p>Vous pouvez aussi vérifier l’emplacement d’une couche en passant simplement la souris sur son nom dans le panneau des couches !</p>
+</div>
+<div id="I23c" class="section level3">
+<h3><a href="#I23c">Filtrer les données</a></h3>
+<p>Le logiciel offre également la possibilité de de <strong>filtrer les données</strong>. Cette opération ne modifie pas les données elles-mêmes, mais seules les données filtrées seront affichées aussi bien sur la carte que dans la table attributaire. Toutes les opérations effectuées sur la couche ne le seront que sur les données filtrées.</p>
+<p>Ceci est très utile pour masquer temporairement certaines données. Si vous souhaitez vraiment ne travailler que sur une partie des données, il est peut-être plus clair de créer une nouvelle couche contenant uniquement les données étudiées.</p>
+<p>Ici, nous allons filtrer uniquement le département du Finistère.</p>
+<p>Faites un clic droit sur la couche de départements → <strong>Filtrer…</strong></p>
+<p><a href="illustrations/tous/1_2_filtrer.png"><img src="illustrations/tous/1_2_filtrer.png" alt="Fenêtre du constructeur de requêtes" /></a></p>
+<p>Nous allons ici construire une requête simple pour sélectionner le département du Finistère. Les requêtes sont vues plus en détail <a href="06_01_req_attrib.html">ici</a> !</p>
+<ul>
+<li>Double-cliquez sur le champ <strong>NOM_DEP</strong> pour le faire apparaître en bas dans l’expression de filtrage</li>
+<li>Cliquez sur l’opérateur <strong>LIKE</strong></li>
+<li>Cliquez sur le bouton <strong>Toutes</strong> à droite pour voir toutes les valeurs possibles pour le champ NOM_DEP, puis double-cliquez sur <strong>FINISTERE</strong></li>
+</ul>
+<p>Cliquez ensuite sur le bouton <strong>Tester</strong> : la requête renvoie un résultat. Cliquez sur <strong>OK</strong>.</p>
+<p><a href="illustrations/tous/1_2_filtrer_resultat.png"><img src="illustrations/tous/1_2_filtrer_resultat.png" alt="couche et table après filtre" /></a></p>
+<p>Seul le département du Finistère est visible dans la carte et la couche. Notez qu’un petit entonnoir à droite du nom de la couche indique qu’un filtre est actif.</p>
+<p>Filtrer ses données est très pratique, mais le risque est d’oublier qu’on ne travaille pas sur toutes les données !</p>
+<p>Pour désactiver le filtre, clic droit sur la couche de départements → <strong>Filtrer…</strong>, cliquer sur <strong>Effacer</strong> puis sur <strong>OK</strong>.</p>
+<p>Le filtres est également accessible à partir des propriétés de la couche → rubrique Source → bouton Constructeur de requête tout en bas de la fenêtre.</p>
+</div>
+</div>
+<div id="I24" class="section level2">
+<h2><a href="#I24">Ajout d’une couche raster</a></h2>
+<p>Comme lors de l’ajout d’une couche vecteur, vous avez plusieurs possibilités pour ajouter une couche raster. Par exemple, en utilisant le <strong>gestionnaire des sources de données :</strong></p>
+<ul>
+<li>menu couche → Gestionnaire des sources de données</li>
+<li><img src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône du gestionnaire des sources de données" />cliquer sur l’icône du gestionnaire des sources de données</li>
+<li>utiliser le raccourci clavier <strong>ctrl + L</strong></li>
+</ul>
+<p><a href="illustrations/tous/1_2_ajout_couche_raster_fenetre.png"><img src="illustrations/tous/1_2_ajout_couche_raster_fenetre.png" alt="Gestionnaire de sources de données rubrique raster" /></a></p>
+<p>Allez dans la rubrique <strong>Raster</strong> et cliquez sur les <strong>…</strong> à droite de <strong>Jeux de données Raster</strong>.</p>
+<p><a href="illustrations/tous/1_2_ajout_couche_raster.png"><img src="illustrations/tous/1_2_ajout_couche_raster.png" alt="Interface de QGIS" /></a></p>
+<p>Rendez-vous dans le dossier <strong>TutoQGIS_01_PriseEnMain/donnees</strong> et sélectionnez la couche <em><a href="donnees/TutoQGIS_01_PriseEnMain.zip">srtm_bretagne.tif</a></em>.</p>
+<p>Cliquez sur <strong>Ouvrir</strong>, puis sur <strong>Ajouter</strong> dans la fenêtre du gestionnaire de données.</p>
+<p>Vous pouvez également double cliquer sur la couche dans l’explorateur de fichiers.</p>
+<p><a href="illustrations/tous/1_2_srtm.png"><img src="illustrations/tous/1_2_srtm.png" alt="srtm affiché dans QGIS" /></a> Pour obtenir cette représentation, la couche de départements est affichée au-dessus du raster, sans remplissage, avec un contour rouge.</p>
+<p>Pour modifier l’ordre des couches et donc l’ordre dans lequel elles sont affichée, [faites-les glisser dans la liste des couches</p>
+<p><img src="illustrations/tous/1_2_modifier_ordre_couches.gif" alt="GIF montrant comment faire glisser une couche par-dessus une autre" />](#thumb).</p>
+<p>Il s’agit d’un <a href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain">modèle d’élévation numérique</a> : chaque pixel possède une valeur correspondant à l’altitude en mètres des éléments présents au sol. Si une forêt est présente, ce sera donc l’altitude du sommet des arbres qui sera mesurée et non l’altitude du sol, idem si des bâtiments sont présents.</p>
+<p><img src="illustrations/tous/1_2_informations_icone.png" alt="icône identifier les entités" />Après avoir sélectionné la couche <em>srtm_bretagne.tif</em> en cliquant sur son nom dans la table des matières, utilisez l’outil <strong>Identifier les entités</strong> pour cliquer sur un point du raster et connaître l’altitude de ce point.</p>
+<p><a href="illustrations/tous/1_2_identifier_fenetre.png"><img src="illustrations/tous/1_2_identifier_fenetre.png" alt="résultat de l’identification d’un point au hasard du srtm : altitude = 143m" /></a></p>
+<p>Par exemple, ici, c’est un pixel d’altitude 336 mètres qui a été identifié.</p>
+</div>
+<div id="I25" class="section level2">
+<h2><a href="#I25">Propriétés d’une couche raster : modifier le style</a></h2>
+<p>Comme pour accéder aux propriétés d’une couche vecteur, clic-droit sur le nom de la couche dans la table des matières, <strong>Propriétés</strong> (ou bien double-clic sur le nom de la couche).</p>
+<p>Pour une couche raster, les différentes rubriques des propriétés sont un peu différentes de celles d’une couche vecteur ; on retrouve néanmoins les rubriques <strong>Information</strong> et <strong>Symbologie.</strong></p>
+<p>Rendez-vous dans la rubrique <strong>Symbologie</strong> :</p>
+<p><a href="illustrations/tous/1_2_style_raster.png"><img src="illustrations/tous/1_2_style_raster.png" alt="style d’un raster" /></a></p>
+<p>Pour ce raster, les valeurs minimum sont représentées en noir et les valeurs maximum en blanc : plus l’altitude est élevée, plus le point est clair.</p>
+<p>Vous pouvez modifier les valeurs minimum et maximum, et inverser les couleurs en choisissant <strong>Blanc vers noir</strong> au lieu de <strong>Noir vers blanc</strong>. Cliquez à chaque fois sur <strong>Appliquer</strong> en bas de la fenêtre pour voir le résultat de vos changements.</p>
+<p>Il est également possible de faire des classes en fonction des valeurs des pixels, en choisissant le <strong>type de rendu</strong> (en haut de la fenêtre des propriétés rubrique Symbologie) <strong>Pseudo-couleur à bande unique</strong>.</p>
+<p><a href="01_01_SIG.html">chapitre précédent</a> <a href="01_03_formats.html">chapitre suivant</a></p>
+<p><a href="#wrap">haut de page</a></p>
+</div>
+</div>
+<!-- https://jsfiddle.net/u3gd85cj/ -->
+<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 fixed-top">
+
+  <div id="logos">
+    <table class="table_logos">
+      <tr>
+        <td class="logo-left" colspan="1">
+          <a target="_blank" href="https://letg.cnrs.fr/" >
+            <img class="logo-left" src="illustrations/tous/logo_letg.png" alt="logo LETG" height="75">
+          </a>
+        </td>
+        <td class="logo-right" colspan="1">
+          <a target="_blank" href="http://www.passages.cnrs.fr/" >
+            <img class="logo-right" src="illustrations/tous/logo_passages.png" alt="logo passages" height="33">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="logo-center" colspan="2">
+          <a target="_blank" href="http://www.qgis.org/" >
+            <img class="logo-center" src="illustrations/tous/logo_qgis_3_16.png" alt="logo QGIS 3.16" height="70">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br>
+
+  <div id="TOC">
+    <div class="list-group list-group-root well">
+        <a href="01_00_prise_en_main.html" class="list-group-item border-0 current">Prise en main</a>
+            <div class="list-group">
+              <a href="01_01_SIG.html" class="list-group-item border-0 subitem">Qu'est-ce qu'un SIG ?</a>
+              <a href="01_02_info_geo.html" class="list-group-item border-0 subitem">Manipuler de l'information géographique</a>
+              <a href="01_03_formats.html" class="list-group-item border-0 subitem">Formats de données SIG</a>
+              <a href="01_04_projets.html" class="list-group-item border-0 subitem">Espace de travail (projet QGIS)</a>
+            </div>
+
+        <a href="02_00_geodesie.html" class="list-group-item">Géodésie</a>
+        <a href="03_00_recherche_ajout.html" class="list-group-item">Recherche et ajout de données</a>
+        <a href="04_00_georeferencement.html" class="list-group-item">Géoréférencement</a>
+        <a href="05_00_numerisation.html" class="list-group-item">Numérisation</a>
+        <a href="06_00_requetes.html" class="list-group-item">Requêtes</a>
+        <a href="07_00_champs.html" class="list-group-item">Calcul de champs</a>
+        <a href="08_00_jointures.html" class="list-group-item">Jointures</a>
+        <a href="09_00_analyse_spatiale.html" class="list-group-item">Analyse spatiale</a>
+        <a href="10_00_carto.html" class="list-group-item">Représentation et mise en page</a>
+        <a href="11_00_automatisation.html" class="list-group-item">Automatisation de traitements</a>
+        <a href="12_00_teledetection.html" class="list-group-item">Télédétection</a>
+    </div>
+    </div>
+</div>
+</div>
+
+<div id="footer">
+	<hr class="simple">
+	<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">
+		<img alt="Licence Creative Commons" src="illustrations/tous/by-sa.png" height="27" >
+	</a>
+	Ce tutoriel est mis à disposition selon les termes de la <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.fr">Licence Creative Commons Attribution 4.0 International</a>
+</div>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

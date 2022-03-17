@@ -1,0 +1,416 @@
+---
+title: "Index"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+Cette liste recense les notions abordées dans ce tutoriel et n'est donc pas un catalogue exhaustif des fonctionnalités de QGIS.
+
+Chaque terme renvoie à la ou les partie(s) ou sous-partie(s) où il est abordé.
+
+::: {.index_az_lettres}
+
+- [A](#A)
+- [B](#B)
+- [C](#C)
+- [D](#D)
+- [E](#E)
+- [F](#F)
+- [G](#G)
+- [H](#H)
+- [I](#I)
+- [J](#J)
+- K
+- [L](#L)
+- [M](#M)
+- [N](#N)
+- [O](#O)
+- [P](#P)
+- [Q](#Q)
+- [R](#R)
+- [S](#S)
+- [T](#T)
+- [U](#U)
+- [V](#V)
+- [W](#W)
+- [X](#X)
+- Y
+- [Z](#Z)
+
+:::
+
+::: {.index_az}
+
+#### [A](#A) {#A}
+* [Accrochage](05_05_polygones.html#V55)
+* [Activer le retour à la ligne après (mise en page)](10_02_mise_en_page.html#X25c)
+* [Activer une extension](06_04_req_sql.html#VI42a)
+* [Agrégation](09_04_maillage.html#IX45) et [en SQL](09_05_maillage_sql.html#IX55)
+* [Aire (mesurer)](07_02_calculer.html#VII22)
+* Ajouter
+	+ [un fichier CSV](08_01_jointure_attrib.html#VIII12)
+	+ [une couche de texte délimité](03_03_donnees_XY.html#III32b)
+	+ [une couche raster](01_02_info_geo.html#I24)
+	+ [une couche vecteur](01_02_info_geo.html#I21)
+* [Aléatoires (points)](10_01_representation.html#X13)
+* [And (opérateur)](06_01_req_attrib.html#VI14)
+* [Aperçu (mise en page)](10_02_mise_en_page.html#X28)
+* [Attribut](01_01_SIG.html#I12c)
+
+#### [B](#B) {#B}
+
+* [Barre d'état](01_02_info_geo.html#I22)
+* [Barre d'outils](01_02_info_geo.html#I22)
+* [Buffer (tampon)](09_01_vecteur.html#IX12)
+
+#### [C](#C) {#C}
+
+* [Calage (géoréférencement)](04_00_georeferencement.html)
+* [Calcul de champ](07_00_champs.html)
+* [Calculatrice de champ](07_02_calculer.html#VII21)
+* [Calculatrice raster](09_05_maillage_sql.html#IX56b)
+* [Carte](10_01_representation.html)
+	+ [choroplèthe](10_01_representation.html#X12)
+	+ [en semis de points](10_01_representation.html#X13)
+	+ [en symboles proportionnels](10_01_representation.html#X11)
+* [Case (expression)](07_02_calculer.html#VII23c)
+* [Catalogue de métadonnées](01_01_SIG.html#I12d)
+* [Catégorisé (style)](05_02_points.html#V22)
+* [Centroïde](10_01_representation.html#X11a)
+* [Cercles proportionnels](10_01_representation.html#X11)
+* Champ
+	+ [calculer](07_02_calculer.html)
+	+ [créer](07_01_creation_suppression.html#VII12), voir aussi [ici](07_01_creation_suppression.html#VII13)
+	+ [de proportion](10_01_representation.html#X11b)
+	+ [ordre (modifier)](07_01_creation_suppression.html#VII13)
+	+ [renommer](07_01_creation_suppression.html#VII13)
+	+ [supprimer](07_01_creation_suppression.html#VII12), voir aussi [ici](07_01_creation_suppression.html#VII13)
+	+ [type](07_01_creation_suppression.html#VII12)
+* [Choroplèthe](10_01_representation.html#X12)* [Commande Python](11_04_python.html)* [Composeur d'impression](10_02_mise_en_page.html#X22)* [Compression](04_04_parametrage.html#IV43)
+	+ [Deflate](04_04_parametrage.html#IV43)
+	+ [LZW](04_04_parametrage.html#IV43)
+	+ [Packbits](04_04_parametrage.html#IV43)
+* [Constructeur de requête](01_02_info_geo.html#I23c)
+* [Contour (courbe de niveau)](09_02_raster.html#IX24a)
+* Couche
+	+ [créer une couche shapefile](05_01_creation_couche.html)
+	+ [shapefile](01_03_formats.html#I31a)
+	+ [temporaire](03_03_donnees_XY.html#III33)
+	+ [virtuelle](06_04_req_sql.html#VI41)
+* [Courbe de niveau](09_02_raster.html#IX24a)
+* [Créer un champ](07_01_creation_suppression.html#VII12), voir aussi [ici](07_01_creation_suppression.html#VII13)
+* [Créer une couche shapefile](05_01_creation_couche.html)
+* [CSV](03_03_donnees_XY.html#III31)
+	+ [ajouter un fichier](08_01_jointure_attrib.html#VIII12)
+* [Cubique (rééchantillonnage)](04_04_parametrage.html#IV42)
+
+#### [D](#D) {#D}
+
+* [DB Manager](06_04_req_sql.html#VI42)
+* Découper
+	+ [un polygone en mode édition](05_05_polygones.html#V53)
+	+ [une couche raster](09_02_raster.html#IX21)
+	+ [une couche vecteur](09_01_vecteur.html#IX11)
+* [Définir le SCR d'une couche](02_04_changer_systeme.html#II43)
+* [Deflate (compression)](04_04_parametrage.html#IV43)
+* [DEM (MNE)](01_02_info_geo.html#I24), voir aussi [ici](03_01_donnees_internet.html#III12b)
+* [Déplacer une entité (mode édition)](05_02_points.html#V23a)
+* [Désélectionner des entités](06_01_req_attrib.html#VI13)
+* [Discrétisation](10_01_representation.html#X12b)
+
+#### [E](E) {#E}
+
+* [Echelle (mise en page)](10_02_mise_en_page.html#X26)
+* [ED50 (SCR)](02_02_coord.html#II21b)
+* [Editer une couche](05_02_points.html#V21)
+* [Editer une ligne](05_04_lignes.html)
+* [Edition topologique](05_05_polygones.html#V54)
+* [Ellipsoïde](02_01_intro.html#II12)
+* Emplacement
+	+ [d'une couche](01_02_info_geo.html#I23b)
+	+ [des données par rapport au projet](01_04_projets.html#I32)
+* [Encodage](01_02_info_geo.html#I21)
+* Erreur
+	+ [de calage](04_05_lancement.html#IV51)
+	+ [de topologie](05_06_topologie.html)
+	+ [quadratique moyenne (EMQ)](04_05_lancement.html#IV51b)
+	+ [résiduelle](04_05_lancement.html#IV51a)
+* [Eviter les intersections](05_05_polygones.html#V56)
+* [Explorateur de fichiers](01_02_info_geo.html#I21b)
+* [Export (mise en page)](10_02_mise_en_page.html#X29)
+* [Expression](06_01_req_attrib.html#VI11)
+* Extension
+	+ [Activer une extension](06_04_req_sql.html#VI42a)
+	+ [Installer une extension](03_04_fonds_carte.html#III43)
+	+ [Nominatim Locator Filter](04_06_calage_autre_couche.html#IV62)
+	+ [Plotly](10_01_representation.html#X14b)
+	+ [QuickMapServices](03_04_fonds_carte.html#III43)
+	+ [QuickOSM](03_05_donnees_osm.html#III55)
+	+ [Requête spatiale](06_02_req_spatiales.html#VI21b)
+	
+#### [F](F) {#F}
+
+* [Fichier de style QML ou SLD](03_05_donnees_osm.html#III54)
+* [Filtrer les données](01_02_info_geo.html#I23c)
+* [Flèche Nord](10_02_mise_en_page.html#X27)
+* [Flux](03_02_donnees_flux.html)
+	+ [WFS](03_02_donnees_flux.html#III23)
+	+ [WMS](03_02_donnees_flux.html#III22)
+* Fonction (calcul de champ)
+	+ [$area](07_02_calculer.html#VII22a)
+	+ [case](07_02_calculer.html#VII23c)
+	+ [left](07_02_calculer.html#VII23b)
+	+ [right](07_02_calculer.html#VII23b)
+* [Formats de données](01_03_formats.html)
+	+ [GeoPackage](01_03_formats.html#I31b)
+	+ [GeoTIFF](01_03_formats.html#I32)
+	+ [Shapefile](01_03_formats.html#I31a)
+	+ [TAB (MapInfo)](01_03_formats.html#I31c)
+	
+#### [G](G) {#G}
+
+* [Géodésie](02_00_geodesie.html)
+* [Géoïde](02_01_intro.html#II12)
+* [Géomatique](01_01_SIG.html#I11a)
+* [GeoPackage](01_03_formats.html#I31b)
+* [Géoréférencement](04_00_georeferencement.html)
+* Géoréférenceur
+	+ [Accéder au](04_03_calage_carroyage.html#IV31)
+	+ [Paramétrage](04_04_parametrage.html)
+* [GeoTIFF](01_03_formats.html#I32)
+* [Géotraitement](09_01_vecteur.html)
+	+ [découper](09_01_vecteur.html#IX11)
+	+ [intersection](09_01_vecteur.html#IX13)
+	+ [zone tampon](09_01_vecteur.html#IX12)
+* [Gestionnaire de bases de données](06_04_req_sql.html#VI42)
+* [Gradué (style de couche)](10_01_representation.html#X12b)
+* [Grille](09_04_maillage.html#IX42), et [en SQL](09_05_maillage_sql.html#IX54)
+
+#### [H](H) {#H}
+
+* [Helmert (transformation)](04_04_parametrage.html#IV41b)
+* [Histogramme (données raster)](09_02_raster.html#IX22a)
+* [Histogramme (données vecteur)](10_01_representation.html#X14)
+
+#### [I](I) {#I}
+
+* [Ilike](06_01_req_attrib.html#VI14)
+* [In (opérateur)](06_01_req_attrib.html#VI15)
+* [Indicatrice de Tissot](02_02_coord.html#II22c)
+* [Installer une extension](03_04_fonds_carte.html#III43)
+* Intersection
+	+ [opérateur de requête spatiale](06_02_req_spatiales.html#VI22)
+	+ [de deux couches vecteur](09_01_vecteur.html#IX13)
+	
+#### [J](J) {#J}
+
+* [Jointure](08_00_jointures.html)
+	+ [attributaire](08_01_jointure_attrib.html)
+	+ [spatiale](08_02_jointure_spatiale.html)
+	
+#### [L](L) {#L}
+
+* [Lambert (projection)](02_02_coord.html#II22d)
+* [Lambert 93 (projection)](02_02_coord.html#II22d)
+* [Légende (mise en page)](10_02_mise_en_page.html#X25)
+* [Like](06_01_req_attrib.html#VI14)
+* [Linéaire (transformation)](04_04_parametrage.html#IV41b)
+* [Liste déroulante (outils d'édition)](05_03_donnees_attrib.html#V32)
+* [Lot (traitement par lot)](11_02_par_lot.html)
+* [LZW (compression)](04_04_parametrage.html#IV43)
+
+#### [M](M) {#M}
+
+* [Mercator (projection)](02_02_coord.html#II22d)
+* [Mesurer une aire](07_02_calculer.html#VII22)
+* [Métadonnée](01_01_SIG.html#I12d)
+* [Mise en page](10_02_mise_en_page.html)
+* [MNE (Modèle Numérique d'Elevation)](01_02_info_geo.html#I24), voir aussi [ici](03_01_donnees_internet.html#III12b)
+* [MNT (Modèle Numérique de Terrain)](03_01_donnees_internet.html#III12b)
+* Mode édition
+	+ [passer en mode édition](05_02_points.html#V21)
+	+ [quitter le mode édition](05_02_points.html#V24)
+* [Modèle graphique](11_03_modeleur.html)* [Modeleur de traitement](11_03_modeleur.html)* [Modifier le SCR](02_04_changer_systeme.html)
+	+ [d'un projet](02_04_changer_systeme.html#II41)
+	+ [d'une couche raster](09_02_raster.html#IX24b)
+	+ [d'une couche vecteur](02_04_changer_systeme.html#II42)
+* [Modifier les données attributaires](05_02_points.html#V23b), voir aussi [ici](05_03_donnees_attrib.html) et [ici](07_00_champs.html)
+* [Modifier une entité](05_02_points.html#V23), voir aussi [ici](05_04_lignes.html#V43)
+
+#### [N](N) {#N}
+
+* [Nominatim Locator Filter (extension)](04_06_calage_autre_couche.html#IV62)
+* [Nouvelle couche shapefile](05_01_creation_couche.html)
+* [NTF (SCR)](02_02_coord.html#II21b)
+* [Numérisation](05_00_numerisation.html)
+
+#### [O](O) {#O}
+
+* [OpenStreetMap (OSM)](03_05_donnees_osm.html)
+	+ [Accéder aux données](03_05_donnees_osm.html#III53), voir aussi [ici](03_05_donnees_osm.html#III55)
+	+ [Représenter les données](03_05_donnees_osm.html#III54)
+	+ [Visualiser un fonds de carte](03_05_donnees_osm.html#III52), voir aussi [ici](03_04_fonds_carte.html)
+* [Opérateur (requête attributaire)](06_01_req_attrib.html#VI14)* [Opérateur (requête spatiale)](06_02_req_spatiales.html#VI22)
+	+ [à l'intérieur](06_02_req_spatiales.html#VI22)
+	+ [contient](06_02_req_spatiales.html#VI22)
+	+ [croise](06_02_req_spatiales.html#VI22)
+	+ [est disjoint](06_02_req_spatiales.html#VI22)
+	+ [est égal](06_02_req_spatiales.html#VI22)
+	+ [intersecte](06_02_req_spatiales.html#VI22)
+	+ [touche](06_02_req_spatiales.html#VI22)
+* [Or (opérateur)](06_01_req_attrib.html#VI14)
+* [Ordre de rendu des entités](10_01_representation.html#X11d)
+* [Ordre des champs (modifier)](07_01_creation_suppression.html#VII13)
+* [Outils d'édition](05_03_donnees_attrib.html#V32)
+	+ [liste déroulante](05_03_donnees_attrib.html#V32)
+	
+#### [P](P) {#P}
+
+* [Packbits (compression)](04_04_parametrage.html#IV43)
+* [Panneau](01_02_info_geo.html#I22)
+	+ [Explorateur](01_02_info_geo.html#I21b)
+* [Par lot (traitement par lot)](11_02_par_lot.html)
+* [Pente](09_02_raster.html#IX24c)
+* [Peters (projection)](02_02_coord.html#II22d)
+* [Plotly (extension)](10_01_representation.html#X14b)
+* [Plus proche voisin (rééchantillonnage)](04_04_parametrage.html#IV42)
+* [Point de calage](04_03_calage_carroyage.html), voir aussi [ici](04_06_calage_autre_couche.html#IV63)
+* [Points aléatoires](10_01_representation.html#X13)
+* [Polynomiale (transformation)](04_04_parametrage.html#IV41b)
+* [PostGIS](09_05_maillage_sql.html)
+* [PostgreSQL](09_05_maillage_sql.html)
+* [Projection](02_02_coord.html#II22)
+* [Projective (transformation)](04_04_parametrage.html#IV41b)
+* [Projet](01_04_projets.html)
+* Propriétés
+	+ [d'une couche](01_02_info_geo.html#I23)
+	+ [de l'objet (mise en page)](10_02_mise_en_page.html#X22)
+* [Python](11_04_python.html)
+
+#### [Q](Q) {#Q}
+
+* [QML (fichier de style QGIS)](03_05_donnees_osm.html#III54)
+* [QuickMapServices (extension)](03_04_fonds_carte.html#III43)
+* [QuickOSM (extension)](03_05_donnees_osm.html#III55)
+* [Quitter le mode édition](05_02_points.html#V24)
+
+#### [R](R) {#R}
+
+* [Raster](01_01_SIG.html#I12b)
+	+ [modifier le SCR](09_02_raster.html#IX24b)
+	+ [type de raster (8bits, 16bits...)](09_02_raster.html#IX22b)
+* [Rastérisation](09_04_maillage.html#IX46)
+* [Rééchantillonnage](04_04_parametrage.html#IV42)
+	+ [cubique](04_04_parametrage.html#IV42)
+	+ [linéaire](04_04_parametrage.html#IV42)
+	+ [plus proche voisin](04_04_parametrage.html#IV42)
+* [Refactoriser les champs](07_01_creation_suppression.html#VII13)
+* [Renommer un champ](07_01_creation_suppression.html#VII13)
+* [Requête](06_00_requetes.html)
+	+ [attributaire](06_01_req_attrib.html)
+	+ [constructeur de](01_02_info_geo.html#I23c)
+	+ [spatiale](06_02_req_spatiales.html)
+	+ [SQL](06_04_req_sql.html), et aussi [ici](09_05_maillage_sql.html)
+* [Résumé des entités intersectées (jointure spatiale)](08_02_jointure_spatiale.html#VIII23)
+* [Retour à la ligne (mise en page)](10_02_mise_en_page.html#X25c)
+* [RGF93 (SCR)](02_02_coord.html#II21b)
+* [Right (fonction de calcul de champ)](07_02_calculer.html#VII23b)
+* [Robinson (projection)](02_04_changer_systeme.html#II41)
+* [Root Mean Square RMS (Erreur Quadratique Moyenne EMQ)](04_05_lancement.html#IV51b)
+
+#### [S](S) {#S}
+
+* [Saisie de données attributaires](05_02_points.html#V23b), voir aussi [ici](05_03_donnees_attrib.html) et [ici](07_00_champs.html)
+* [Sauvegarder une couche](03_03_donnees_XY.html#III33)
+	+ [à partir du mode édition](05_02_points.html#V24)
+* [SCR](02_02_coord.html)
+	+ [d'un projet](02_03_couches_projets.html#II31)
+	+ [d'une couche](02_03_couches_projets.html#II32)
+	+ [ED50](02_02_coord.html#II21b)
+	+ [modifier le SCR d'un projet](02_04_changer_systeme.html#II41)
+	+ [modifier le SCR d'une couche raster](09_02_raster.html#IX24b)
+	+ [modifier le SCR d'une couche vecteur](02_04_changer_systeme.html#II42)
+	+ [NTF](02_02_coord.html#II21b)
+	+ [RGF93](02_02_coord.html#II21b)
+	+ [WGS84](02_02_coord.html#II21b)
+* [Script Python](11_04_python.html)
+* [Segments pour l'approximation (zone tampon)](09_01_vecteur.html#IX12d)
+* [Semis de points](10_01_representation.html#X13)
+* [Sélection (outil de)](01_01_SIG.html#I12c)
+* [Shapefile](01_03_formats.html#I31a)
+* [SIG](01_01_SIG.html#I11b)
+* [SLD (Style Layer Descriptor)](03_05_donnees_osm.html#III54)
+* [SpatiaLite](09_05_maillage_sql.html)
+* [SQL](06_04_req_sql.html) et aussi [ici](09_05_maillage_sql.html)
+* [SQLite](09_05_maillage_sql.html)
+* [SRTM](03_01_donnees_internet.html#III12b)
+* [Statistiques par catégories (outil)](08_01_jointure_attrib.html#VIII14b)
+* Style d'une couche
+	+ [catégorisé](05_02_points.html#V22)
+	+ [fichier de style QML ou SLD](03_05_donnees_osm.html#III54)
+	+ [gradué](10_01_representation.html#X12b)
+	+ [raster](01_02_info_geo.html#I25)
+	+ [vecteur](01_02_info_geo.html#I23a), voir aussi [ici](10_01_representation.html)
+* [Supprimer un champ](07_01_creation_suppression.html#VII12c)
+* [Supprimer une couche](01_02_info_geo.html#I21a)
+* Surface
+	+ [calculer la surface dans un champ](07_02_calculer.html#VII22a)
+	+ [mesurer la surface](07_02_calculer.html#VII22b)
+* [Symbole proportionnel](10_01_representation.html#X11)
+
+#### [T](T) {#T}
+
+* [TAB (MapInfo)](01_03_formats.html#I31c)
+* [Taille (Assistant)](10_01_representation.html#X11b)
+* [Tampon](09_01_vecteur.html#IX12)
+* [Thin Plate Spline TPS (transformation)](04_04_parametrage.html#IV41b)
+* [Tissot (indicatrice de)](02_02_coord.html#II22c)
+* [Tolérance d'accrochage](05_05_polygones.html#V55)
+* [Topologie](05_06_topologie.html)
+* [Transformation](04_04_parametrage.html#IV41)
+	+ [Helmert](04_04_parametrage.html#IV41b)
+	+ [linéaire](04_04_parametrage.html#IV41b)
+	+ [polynomiale](04_04_parametrage.html#IV41b)
+	+ [projective](04_04_parametrage.html#IV41b)
+	+ [Thin Plate Spline TPS](04_04_parametrage.html#IV41b)
+* [Type de champ](07_01_creation_suppression.html#VII12)
+
+#### [U](U) {#U}
+
+* [Union](09_04_maillage.html#IX43)
+* [UTM (projection)](02_02_coord.html#II22d)
+
+#### [V](V) {#V}
+
+* [Validité d'une géométrie (vérifier)](05_06_topologie.html#V62)
+* [Vecteur](01_01_SIG.html#I12b)
+* [Vérificateur de topologie](05_06_topologie.html#V62b)
+* [Virtuelle (couche)](06_04_req_sql.html#VI41)
+
+#### [W](W) {#W}
+
+* [WGS84 (SCR)](02_02_coord.html#II21b)
+
+#### [X](X) {#X}
+
+* [XYZ Tiles](03_04_fonds_carte.html#III42)
+
+#### [Z](Z) {#Z}
+
+* [Zone tampon](09_01_vecteur.html#IX12)
+* [Zoom](01_02_info_geo.html#I22)
+
+:::
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc.html")
+```
+
+:::
+

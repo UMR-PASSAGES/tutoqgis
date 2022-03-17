@@ -1,0 +1,89 @@
+---
+title: "Analyse spatiale : croisement de données vecteur et raster"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+* [Préparation des données : un seul SCR pour tous](#IX31)
+* [Attribuer à chaque point une valeur d'élévation](#IX32)
+
+Pour compléter ce chapitre, voici un exemple d'analyse mettant en jeu données vecteur et raster : en partant d'une couche de pente, et d'une couche de points représentant des échantillons, nous allons calculer la valeur de la pente pour chacun des échantillons.
+
+## [Préparation des données : un seul SCR pour tous](#IX31) {#IX31}
+
+Ouvrez un nouveau projet QGIS, ajoutez-y la couche *srtm\_21\_09.tif*.
+
+Ajoutez également la couche *[echantillons\_jamaique\_JAD2001](donnees/TutoQGIS_09_AnalyseSpat.zip)* fournie dans le dossier **TutoQGIS\_09\_AnalyseSpat/donnees**. Cette couche correspond à la localisation de points d'études imaginaires.
+
+Dans quel(s) SCR sont ces deux couches ?
+
+On peut lire le SCR dans les propriétés de la couche, rubrique Source :
+
+srtm\_21\_09.tif → WGS84 EPSG:4326
+
+echantillons\_jamaique\_JAD2001 → JAD2001 EPSG:3448
+
+Comment vous-y prendriez-vous pour passer ces deux couches dans le même SCR ?
+
+Il est possible soit de changer le SCR du raster, soit de changer le SCR du vecteur. Néanmoins, le temps de calcul est généralement moins long lorsqu'il s'agit de modifier le SCR d'une couche vecteur, en particulier pour une couche de points.
+
+[Modifiez le SCR de la couche](02_04_changer_systeme.html#II42) *echantillons\_jamaique\_JAD2001* vers le **WGS84 EPSG:4326**. Nommez la nouvelle couche *echantillons\_jamaique\_WGS84*.
+
+Supprimez de QGIS *echantillons\_jamaique\_JAD2001*.
+
+Votre projet QGIS doit contenir uniquement les 2 couches *echantillons\_jamaique\_WGS84* et *srtm\_21\_09*. Vérifiez qu'elles sont toutes deux en WGS84.
+
+Nous avons vu qu'il n'est pas toujours nécessaire de travailler avec des couches dans le même SCR, certains outils acceptant de croiser 2 couches dans 2 SCR différents. Cependant, cela reste une bonne pratique et peut éviter des problèmes !
+
+## [Attribuer à chaque point une valeur d'élévation](#IX32) {#IX32}
+
+Comment faire pour donner à chacun des points sa valeur d'élévation ? Il faut pour cela attribuer à chaque point la valeur du pixel qui le recouvre.
+
+Une recherche dans la boîte à outils, rubrique Analyse Raster, permet de découvrir l'outil **Prélever des valeurs raster** qui semble correspondre à ce que l'on cherche.
+
+[Boîte à outils → Analyse raster → Prélever des valeurs raster
+
+![Emplacement de l'outil Prélever des valeurs raster dans la boîte à outils](illustrations/tous/9_3_prelev_raster_emplacement.png)](#thumb)
+
+[![Fenêtre de l'outil de prélèvement des valeurs raster](illustrations/tous/9_3_prelev_raster_fenetre.png)](illustrations/tous/9_3_prelev_raster_fenetre.png)
+
+* Couche de points en entrée : *echantillons\_jamaique\_WGS84*
+* Raster layer to sample : *srtm\_21\_09*
+* Préfixe de la colonne en sortie : vous pouvez taper par exemple **elev**
+* Laissez l'option de sortie par défaut, pour créer une couche temporaire
+
+Ici, notre raster ne possède qu'une seule bande. Certains raster en possèdent plusieurs, c'est le cas par exemple des images satellites qui ont différentes bandes pour le vert, le rouge, l'infrarouge etc.
+
+Cet outil ajoutera autant de colonnes à la table de la couche de points que de bandes dans le raster. Ces champs auront en suffixe le numéro de bande (\_01, \_02...), auquel il est donc possible de rajouter un préfixe.
+
+Ici, le nouveau champ sera donc nommé elev\_1.
+
+Cliquez sur **Exécuter**, la couche temporaire est ajoutée et se nomme **Sampled Points**. Elle possède les mêmes géométries que la couche de points en entrée, et une colonne de plus dans sa table.
+
+Ouvrez sa table attributaire pour le vérifier : une colonne **elev\_1** a été ajoutée, où l'élévation de chaque point est renseignée.
+
+[![Table attributaire de la couche créée, avec la colonne elev_1](illustrations/tous/9_3_table.png)](illustrations/tous/9_3_table.png)
+
+Attention toutefois, la résolution des données d'élévation est de 90 mètres : si les points représentent une location précise par exemple au mètre près, l'élévation que nous leur avons attribué n'aura pas cette précision.
+
+Nous avons vu ici un exemple très simple montrant qu'on peut croiser données vecteur et raster. Il est également possible de **transformer des données vecteur en raster (rastérisation) et inversement (polygonisation)**.
+
+Par exemple, on peut vouloir rasteriser une série de couches vecteurs surfaciques pour pouvoir les additionner facilement, ou bien vectoriser une couche raster représentant des zones pour pouvoir y affecter des données attributaires...
+
+Chaque type de données a une utilisation différente, mais il est utile de garder à l'esprit que les 2 existent !
+
+[chapitre précédent](09_02_raster.html)
+[chapitre suivant](09_04_maillage.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc09.html")
+```
+
+:::
+

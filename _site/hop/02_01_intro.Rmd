@@ -1,0 +1,50 @@
+---
+title: "Introduction à la géodésie"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+* [Bref historique](#II11)
+* [Deux notions préliminaires : géoïde et ellipsoïde](#II12)
+
+## [Bref historique](#II11) {#II11}
+
+La géodésie est la science qui étudie la forme et les dimensions de la Terre, en tenant compte de son champ de pesanteur.
+
+La géodésie est une science ancienne ; on attribue au grec [Eratosthène](http://fr.wikipedia.org/wiki/%C3%89ratosth%C3%A8ne) (276 à 194 av. JC) la première mesure de la circonférence de la Terre, qu'il évalua à environ 39 375 km. Cette mesure s'est révélée proche de la réalité puisque les estimations actuelles sont d'environ 40 075 km.
+
+## [Deux notions préliminaires : géoïde et ellipsoïde](#II12) {#II12}
+
+La surface de la Terre est très irrégulière et complexe, on peut la modéliser de différentes manières.
+
+La **sphère** est le modèle le plus simple.
+
+L'**ellipsoïde** est une sphère aplatie, plus simple à modéliser. On le définit généralement par ses demis-axes (***a***, ***b*** et ***c***) et son centre (***O***).
+
+[![ellipsoïde](illustrations/tous/2_1_ellipsoide.png)](http://en.wikipedia.org/wiki/File:Ellipsoid_tri-axial_abc.svg)
+Ellipsoïde (Source : Peter Mercator, Wikimedia Commons, licence Creative Commons Attribution-Share Alike 3.0 Unported).
+
+Le **géoïde** est une surface perpendiculaire en tout point à la direction de la gravité (fil à plomb). Cette surface passe par le niveau moyen des mers. Les altitudes sont mesurées par rapport au géoïde depuis les années 1960 (altitude normale). On peut considérer le géoïde comme un sphère cabossée. C'est une représentation exacte mais compliquée à utiliser.
+
+[![géoïde](illustrations/tous/2_1_geoide.jpg)](http://en.wikipedia.org/wiki/File:Geoids_sm.jpg)
+Géoïde (Source : NASA, Wikimedia Commons, domaine public)
+
+Il existe une infinité d'ellipsoïdes, qui peuvent coïncider avec la surface de la Terre sur toute leur surface (ellipsoïde global) ou seulement sur une partie de leur surface (ellipsoïde local). A l'inverse, il n'existe qu'un seul géoïde.
+
+[![ellipsoïdes et géoïde](illustrations/tous/2_1_geoide_ellipsoide.png)](illustrations/tous/2_1_geoide_ellipsoide.svg)
+
+[chapitre précédent](02_00_geodesie.html)
+[chapitre suivant](02_02_coord.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc02.html")
+```
+
+:::
+

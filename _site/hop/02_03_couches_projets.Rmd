@@ -1,0 +1,91 @@
+---
+title: "Couches et projets : à chacun son système"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+* [SCR du projet](#II31)
+* [SCR d'une couche](#II32)
+* [Projection à la volée](#II33)
+
+## [SCR du projet](#II31) {#II31}
+
+![Icône Ouvrir](illustrations/tous/1_4_ouvrir_projet_icone.png)A partir de QGIS, ouvrez le projet *[regions\_france.qgz](donnees/TutoQGIS_02_Geodesie.zip)* situé dans le dossier **TutoQGIS\_02\_geodesie/projets**.
+
+Toutes les couches chargées dans ce projet seront **affichées** dans le SCR du projet. Quel est ce SCR ? Trois manières pour accéder à cette information :
+
+* [Menu Projet → Propriétés...
+
+![Menu Projet, Propriétés du projet](illustrations/tous/2_3_proprietes_projet_menu.png)](#thumb)
+ , rubrique SCR
+* Icône **SCR actuel** tout en bas à droite de la fenêtre de QGIS ![icône SCR actuel](illustrations/tous/2_3_scr_projet_icone.png)
+* raccourci clavier **Ctrl+Maj+P → rubrique SCR**
+
+La fenêtre suivante s'ouvre :
+
+[![fenêtre SCR du projet](illustrations/tous/2_3_scr_projet.png)](illustrations/tous/2_3_scr_projet.png)
+
+*1.* **Aucune projection** : cette case à cocher permet de visualiser facilement si les différentes couches d'un projet utilisent des SCR différents.
+
+*2.* **Partie "Filtre"** : vous pouvez taper ici un code ou un nom pour rechercher un SCR précis.
+
+*3.* **SCR récemment utilisés** (cette partie peut être vide). Cette liste permet d'accéder facilement aux SCR que vous utilisez souvent.
+
+*4.* **Liste de tous les SCR disponibles dans QGIS**. Ils sont classés selon 3 grandes rubriques : systèmes de coordonnées géographiques, systèmes de coordonnées projetés et systèmes de coordonnées définis par l'utilisateur (soit qu'ils aient été créés par vous-même, soit qu'ils aient été lus par QGIS dans une couche).
+
+*5.* **SCR actuellement utilisé par le projet** avec sa définition dans 2 formats, WKT et Proj4, et sa zone d'application (également visible dans la carte à droite)
+
+La rubrique SCR de la fenêtre des propriétés du projet permet donc de modifier le système de coordonnées du projet, ou bien simplement de vérifier quel est ce système, ce que nous nous bornerons à faire pour le moment.
+
+A votre avis, quel est le SCR du projet ?
+
+Le projet est en WGS84, comme indiqué dans la partie *5* de la fenêtre.
+
+Notez également que le [code EPSG](02_02_coord.html#II21b) du SCR du projet est indiqué tout en bas à droite de la fenêtre de QGIS, dans la [barre d'état de QGIS](01_02_info_geo.html#I22).
+
+[![Indication du code du SCR dans la barre d'état](illustrations/tous/2_3_barre_etat_scr.png)](illustrations/tous/2_3_barre_etat_scr.png)
+
+## [SCR d'une couche](#II32) {#II32}
+
+Nous allons maintenant nous poser la question de savoir dans quel SCR est la couche *REGION*.
+
+Ouvrez les propriétés de cette couche (double clic sur le nom de la couche) et allez dans la rubrique **Information**.
+
+[![Fenêtre Propriétés d'une couche, rubrique Général, lire le SCR](illustrations/tous/2_3_scr_couche.png)](illustrations/tous/2_3_scr_couche.png)
+Lire le SCR d'une couche.
+
+A votre avis, quel est le SCR de la couche *REGION* ?
+
+Cette couche est en RGF93 / Lambert-93, code EPSG 2154.
+
+Vous avez donc pu constater que notre projet et la couche qui y est présente ont deux SCR différents. Comment cela est-il possible ?
+
+## [Projection à la volée](#II33) {#II33}
+
+La **projection à la volée** est une fonctionnalité qui permet d'afficher des couches dans un autre SCR que le leur, le SCR du projet.
+
+Ainsi, la couche *REGION* est affichée en WGS84 bien que son SCR soit le RGF93 Lambert93. Il s'agit bien uniquement d'une question d'affichage, le SCR de la couche n'est pas modifié.
+
+Depuis la version 3 de QGIS, **il n'est plus possible de désactive la projection à la volée**. **Toutes les couches sont donc toujours affichées dans le SCR du projet**.
+
+Il est donc possible de superposer plusieurs couches dans des SCR différents. C'est ce que nous allons vérifier!
+
+Ajoutez la couche *[ne\_110m\_admin\_0\_countries.shp](donnees/TutoQGIS_02_Geodesie.zip)* au projet. Vérifiez son SCR. Les deux couches doivent se superposer correctement (même si elles ont des niveaux de généralisation différents, elles ne présentent pas de décalage l'une par rapport à l'autre).
+
+[![Superposition des 2 couches France et monde](illustrations/tous/2_3_superposition_couches.png)](illustrations/tous/2_3_superposition_couches.png)
+
+[chapitre précédent](02_02_coord.html)
+[chapitre suivant](02_04_changer_systeme.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc02.html")
+```
+
+:::
+

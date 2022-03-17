@@ -1,0 +1,201 @@
+---
+title: "Construire et utiliser un modèle"
+---
+
+::: {.row}
+
+::: {.content .col-xs-12 .col-sm-8 .col-md-9}
+
+* [Création d'un modèle](#XI31)
+	+ [Création du premier paramètre en entrée : couche à découper](#XI31a)
+	+ [Création du deuxième paramètre en entrée : masque de découpe](#XI31b)
+	+ [Création du premier algorithme : découpage](#XI31c)
+	+ [Création du second algorithme : modification du SCR](#XI31d)
+* [Enregistrement et documentation d'un modèle](#XI32)
+	+ [Enregistrer un modèle](#XI32a)
+	+ [Documenter un modèle](#XI32b)
+* [Application](#XI33)
+	+ [Découpage et reprojection d'une couche](#XI33a)
+	+ [Découpage et reprojection de plusieurs couches (utilisation « par lot »)](#XI33b)
+
+Les modèles sont surtout utiles pour chaîner plusieurs traitements. Par exemple, imaginons que notre but soit non seulement de découper une couche par une autre, mais ensuite de changer le SCR de la couche découpée pour la passer en WGS84 par exemple.
+
+Il est possible de **créer un modèle enchaînant les deux outils**, qui pourra être lancé facilement sur plusieurs couches, et même être exécuté [par lot](11_02_par_lot.html).
+
+Dans la boîte à outils Traitements, cliquez sur l'icône **Modèles** tout en haut à gauche et choisissez **Créer un nouveau modèle**.
+
+[![Emplacement de l'outil de création de modèles dans la boîte à outils Traitements](illustrations/tous/11_03_creer_modele.png)](illustrations/tous/11_03_creer_modele.png)
+
+La fenêtre qui s'ouvre comporte une partie à gauche avec 2 onglets, Entrées et Algorithmes, qui vont vous servir à créer le modèle, et une partie vide à droite où votre modèle sera représenté.
+
+Notre modèle comportera 2 paramètres en entrée : une couche vecteur qui sera découpée et une couche vecteur qui servira de masque de découpe. L'outil de découpage va utiliser ces deux paramètres en entrée pour créer une nouvelle couche temporaire. Cette couche temporaire sera utilisée comme paramètre d'entrée pour l'outil de reprojection, qui produira la couche finale.
+
+[![Organigramme du modèle qui sera créé](illustrations/tous/11_03_organigramme.png)](illustrations/tous/11_03_organigramme.svg)
+
+## [Création d'un modèle](#XI31) {#XI31}
+
+### [Création du premier paramètre en entrée : couche à découper](#XI31a) {#XI31a}
+
+Dans l'onglet **Entrées** dans la partie gauche de la fenêtre, double-cliquez sur **Couche vecteur** :
+
+[![Fenêtre du modeleur de traitement](illustrations/tous/11_03_modeleur_fenetre.png)](illustrations/tous/11_03_modeleur_fenetre.png)
+
+[![Fenêtre de définition d'un paramètre](illustrations/tous/11_03_def_parametre_fenetre.png)](illustrations/tous/11_03_def_parametre_fenetre.png)
+
+* Nom du paramètre : **couche à découper**
+* Type de géométrie : **Tout type de géométrie**, puisque cette couche peut aussi bien être de type point, ligne ou polygone
+* **Obligatoire** : cochez la case, il ne s'agit pas d'un paramètre optionnel
+
+Le paramètre est ajouté au modèle sous forme d'une boîte verte. Vous pouvez éditer ses caractéristiques en double-cliquant sur cette boîte, ou bien en cliquant sur les poinst de suspension en bas à droite de la boîte.
+
+[![Boîte pour la couche source](illustrations/tous/11_03_modele_01.png)](illustrations/tous/11_03_modele_01.png)
+
+![icône zoom complet](illustrations/tous/11_03_zoom_icone.png)Si à un moment donné vous ne voyez plus votre modèle dans la partir droite de la fenêtre, cliquez sur l'icône **Zoom complet**.
+
+### [Création du deuxième paramètre en entrée : masque de découpe](#XI31b) {#XI31b}
+
+Dans l'onglet Entrées, double-cliquez à nouveau sur **Couche vecteur** :
+
+[![Fenêtre de définition d'un paramètre](illustrations/tous/11_03_def_parametre2_fenetre.png)](illustrations/tous/11_03_def_parametre2_fenetre.png)
+
+* Nom du paramètre : **couche masque**
+* Type de géométrie : **polygone**
+* **Obligatoire**
+
+Une deuxième boîte apparait aux côtés de la première :
+
+[![Les 2 boîtes pour la couche source et la couche masque](illustrations/tous/11_03_modele_02.png)](illustrations/tous/11_03_modele_02.png)
+
+### [Création du premier algorithme : découpage](#XI31c) {#XI31c}
+
+Dans l'onglet **Algorithmes**, rubrique **Recouvrement de vecteur** → double-cliquez sur l'outil **Couper** :
+
+[![Fenêtre du modeleur, onglet algorithmes](illustrations/tous/11_03_modeleur_fenetre_algos.png)](illustrations/tous/11_03_modeleur_fenetre_algos.png)
+
+[![Fenêtre de définition d'un algo](illustrations/tous/11_03_def_algo_fenetre.png)](illustrations/tous/11_03_def_algo_fenetre.png)
+
+* Description : **Couper**
+* Couche en entrée : cliquez sur le bouton à gauche pour choisir **Entrée du modèle** à la place de valeur, pour choisir **couche à découper** dans la liste à droite
+* Couche de découpage : idem, choisir **Entrée du modèle** puis **couche masque**
+* Découpé : ne rentrez rien dans cette partie, pour que la couche créée soit temporaire
+
+L'algorithme apparaît sous forme d'une boîte blanche reliée aux 2 couches en entrée ; de même, vous pouvez éditer ses caractéristiques en double-cliquant sur la boîte.
+
+[![Modèle avec les 3 boîtes pour les 2 couches en entrée et l'algo couper](illustrations/tous/11_03_modele_03.png)](illustrations/tous/11_03_modele_03.png)
+
+### [Création du second algorithme : modification du SCR](#XI31d) {#XI31d}
+
+Toujours dans la fenêtre du modeleur de traitement, 
+ [onglet Algorithmes → Outils généraux pour les vecteur→ Reprojeter une couche
+
+![Emplacement de l'outil 'Reprojeter une couche'](illustrations/tous/11_03_reprojeter.png)](#thumb)  :
+
+[![Fenêtre de définition d'un algo](illustrations/tous/11_03_def_algo2_fenetre.png)](illustrations/tous/11_03_def_algo2_fenetre.png)
+
+* Description : **Reprojeter une couche**
+* Couche source : cliquez sur le bouton à gauche pour choisir **Sortie d'un algorithme** puis dans la liste à droite **'Découpé' créé par l'algorithme 'Couper'**
+* SCR cible : laissez **EPSG:4326**, ce qui correspond au WGS84 (l'idée étant de passer du Lambert 93 au WGS84)
+* Reprojecté : tapez le nom de votre choix, par exemple **découpé+reprojeté**
+
+Votre modèle est maintenant fini ! Il doit ressembler à ceci :
+
+[![Modèle fini, avec les 2 boîtes pour les couches en entrée, les 2 boîte pour les algos et la boîte pour la couche en sortie](illustrations/tous/11_03_modele_fini.png)](illustrations/tous/11_03_modele_fini.png)
+
+## [Enregistrement et documentation d'un modèle](#XI32) {#XI32}
+
+### [Enregistrer un modèle](#XI32a) {#XI32a}
+
+Comment faire maintenant pour sauvegarder notre modèle ?
+
+[![Fenêtre du modeleur, choix du nom du modèle et du groupe et icône de sauvegarde entourés en rouge](illustrations/tous/11_03_enregistrer_modele_fenetre.png)](illustrations/tous/11_03_enregistrer_modele_fenetre.png)
+
+Dans l'onglet **Propriétés du modèle** de la partie gauche de la fenêtre, choisissez le nom sous lequel votre modèle sera disponible dans la boîte à outils, par exemple **découper et modifier SCR** par exemple.
+
+Tapez également le nom de son groupe, c'est-à-dire la rubrique dans laquelle votre modèle apparaîtra au sein de la boîte à outils : **tests** par exemple.
+
+Si le groupe n'existe pas déjà, il sera créé.
+
+![icône Enregistrer](illustrations/tous/11_03_enregistrer_modele_icone.png)Cliquez ensuite sur l'icône **Enregistrer le modèle sous**. Dans la fenêtre qui s'ouvre alors, choisissez un nom pour votre modèle, par exemple **couper\_modifSCR**.
+
+Notez qu'il va être enregistré dans le répertoire par défaut des modèles : processing/models dans le dossier qgis, et qu'il possède l'extension *.model3* (pour QGIS 3).
+
+### [Documenter un modèle](#XI32b) {#XI32b}
+
+Si ce modèle est destiné à être utilisé par d'autres personnes, ou tout simplement si vous comptez vous en servir régulièrement, documenter un peu ce modèle sera très pratique. Il s'agit en fait de **rédiger l'aide de l'outil**, telle qu'on peut la voir dans la partie droite de la fenêtre pour les outils QGIS.
+
+[![Fenêtre de l'outil Couper, avec la partie Aide à droite entourée en rouge](illustrations/tous/11_03_aide_exemple.png)](illustrations/tous/11_03_aide_exemple.png)
+Exemple d'aide : l'outil Couper.
+
+Si vous avez fermé la fenêtre d'édition du modèle, vous pouvez y accéder à nouveau : **boîte à outils → modèles → tests (ou le nom de votre groupe) → clic droit sur le nom de votre outil, Editer le modèle...**
+
+[![Emplacement du modèle dans la boîte à outils](illustrations/tous/11_03_emplacement_modele.png)](illustrations/tous/11_03_emplacement_modele.png)
+
+Dans la barre d'outils en haut de la fenêtre d'édition du modèle, cliquez sur l'icône **Éditer l'aide du modèle**.
+
+[![Barre d'outils de la fenêtr d'édition du modèle, icône Aide entourée en rouge](illustrations/tous/11_03_modele_aide_icone.png)](illustrations/tous/11_03_modele_aide_icone.png)
+
+La fenêtre de l'éditeur d'aide s'ouvre :
+
+[![Fenêtre de l'éditeur d'aide du modèle](illustrations/tous/11_03_aide_fenetre.png)](illustrations/tous/11_03_aide_fenetre.png)
+
+Cliquez par exemple sur **Description de l'algorithme** à gauche, puis rédigez le texte correspondant à droite.
+
+L'aide doit être courte et claire !
+
+Vous pouvez également rédiger l'aide pour d'autres parties, par exemple pour les 2 paramètres en entrée et le rendu.
+
+Votre modèle est fini et possède même une aide... C'est le moment de le tester !
+
+## [Application](#XI33) {#XI33}
+
+### [Découpage et reprojection d'une couche](#XI33a) {#XI33a}
+
+L'objectif est de découper la couche de routes par la commune, pour ne garder que les routes à l'intérieur de cette commune, la couche obtenue devant être en WGS84.
+
+Si elles ne sont pas déjà chargées, ajoutez à QGIS les couches *OSM\_routes* et *SAINTE\_RADEGONDE* situées dans le dossier **TutoQGIS\_11\_Automatisation/donnees**.
+
+Dans quel SCR sont ces deux couches ?
+
+Les 2 couches sont en RGF93 Lambert 93, code EPSG 2154 (cf. [SCR d'une couche](02_03_couches_projets.html#II32)).
+
+Lancez votre modèle : **boîte à outils → modèles → tests (ou le nom de votre groupe) → double clic sur le nom de votre outil**.
+
+[![fenêtre du modele clip and project, paramètres remplis](illustrations/tous/11_03_test_modele.png)](illustrations/tous/11_03_test_modele.png)
+
+* couche source : *OSM\_routes*
+* couche masque : *SAINTE\_RADEGONDE*
+* découpé+reprojeté : ne tapez rien, pour que le résultat soit une couche temporaire
+
+**Exécutez**, vérifiez le SCR de la couche obtenue, ainsi que son contenu : elle ne doit comporter que les routes à l'intérieur de la commune de Sainte-Radégonde (en gris foncé dans la figure ci-dessous).
+
+[![résultat de la découpe : les 2 couches de route et la couche de commune](illustrations/tous/11_03_resultat_decoupe.png)](illustrations/tous/11_03_resultat_decoupe.png)
+
+### [Découpage et reprojection de plusieurs couches (utilisation « par lot »)](#XI33b) {#XI33b}
+
+Le but est ici de découper et reprojeter plusieurs couches, sans avoir à lancer plusieurs fois le modèle.
+
+A partir de la boîte à outils de traitements, clic droit sur le modèle, **Exécuter comme processus de lot...**. Remplissez les différents paramètres, en vous aidant éventuellement de la [partie XI.2](11_02_par_lot.html).
+
+[![remplissage des paramètres de l'outil clip and project en mode par lot](illustrations/tous/11_03_test_modele_lot.png)](illustrations/tous/11_03_test_modele_lot.png)
+
+Exécutez et vérifiez les couches obtenues.
+
+Les modèles permettent de créer une chaîne de traitement, en enchaînant autant d'algorithmes que vous le souhaitez, et **sont donc très pratiques si vous êtes amenés à répéter souvent la même séquence d'opérations**.
+
+Au-delà de la création du modèle, il peut être utile quand vous réfléchissez à une manipulation de dessiner au papier et crayon l'enchaînement des étapes. Et une fois finalisé de noter le tout dans un fichier texte, pour vous aider à comprendre ce que vous avez fait quand vous reprendrez ce dossier dans 6 mois !
+
+Dans le chapitre suivant, nous allons voir une autre méthode pour automatiser des tâches dans QGIS, plus puissante mais avec un coût d'entrée plus important, en utilisant le langage de programmation Python.
+
+[chapitre précédent](11_02_par_lot.html)
+[chapitre suivant](11_04_python.html)
+
+[haut de page](#wrap)
+
+:::
+
+```{r, echo=FALSE}
+htmltools::includeHTML("toc11.html")
+```
+
+:::
+
