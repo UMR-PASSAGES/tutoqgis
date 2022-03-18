@@ -6,24 +6,31 @@ Réécriture en RMarkdown !
 
 Avec une légende et un texte alternatif :
 
-```r, echo = FALSE, out.width = "600px", fig.cap="ma légende", class = "fig"}`r ''`
+~~~
+```{r, echo = FALSE, out.width = "600px", fig.cap="ma légende", class = "fig"}
 include_graphics(path = "path/to/image.png")
 ```
+~~~
 
 Avec un texte alternatif sans légende :
 
-```{r, echo = FALSE, out.width = "600px", fig.alt="bla bla", class = "fig"}`r ''`
+~~~
+```{r, echo = FALSE, out.width = "600px", fig.alt="bla bla", class = "fig"}
 include_graphics(path = "path/to/image.png")
 ```
+~~~
 
 Icône d'outil à placer au début d'un paragraphe :
 
+~~~
 ```{r, echo = FALSE, out.width = "35px", class = "icone"}`r ''`
 include_graphics(path = "illustrations/tous/1_1_ouvrir_projet_icone.png")
 ```
+~~~
 
 Image qui apparaît quand on passe la souris sur un texte (avec le package tippy) :
 
+~~~
 Lancez le logiciel QGIS. Ouvrez un projet : <u id = 'menuprojet'>Menu Projet → Ouvrir</u>.
 ```{r, echo=FALSE}
 tippy_this(elementId = "menuprojet",
@@ -31,6 +38,7 @@ tippy_this(elementId = "menuprojet",
            theme = "light",
            placement = "bottom")
 ```
+~~~
 
 ### Manipulation
 
