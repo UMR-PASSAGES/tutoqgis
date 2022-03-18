@@ -1,5 +1,0 @@
----
-title: "En savoir plu"
----
-
-More about this website.

@@ -11,7 +11,7 @@
 
 
 
-<title>readme</title>
+<title>Présentation</title>
 
 <script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -32,6 +32,13 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/tippyjs-3.2.0/themes/google.css" rel="stylesheet" />
+<link href="site_libs/tippyjs-3.2.0/themes/light-border.css" rel="stylesheet" />
+<link href="site_libs/tippyjs-3.2.0/themes/light.css" rel="stylesheet" />
+<link href="site_libs/tippyjs-3.2.0/themes/translucent.css" rel="stylesheet" />
+<script src="site_libs/tippyjs-3.2.0/tippy.all.min.js"></script>
+<script src="site_libs/tippy-binding-0.1.0/tippy.js"></script>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -270,30 +277,44 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Présentation</h1>
 
 </div>
 
 
-<div id="tutoriel-qgis" class="section level2">
-<h2>Tutoriel QGIS</h2>
-<p>Réécriture en RMarkdown !</p>
-<div id="images" class="section level3">
-<h3>Images</h3>
-<p>Avec une légende et un texte alternatif : <code>{r, echo = FALSE, out.width = "600px", fig.cap="ma légende", class = "fig"} include_graphics(path = "path/to/image.png")</code></p>
-<p>Avec un texte alternatif sans légende : <code>{r, echo = FALSE, out.width = "600px", fig.alt="bla bla", class = "fig"} include_graphics(path = "path/to/image.png")</code></p>
-<p>Icône d’outil à placer au début d’un paragraphe : <code>{r, echo = FALSE, out.width = "35px", class = "icone"} include_graphics(path = "illustrations/tous/1_1_ouvrir_projet_icone.png")</code></p>
-<p>Image qui apparaît quand on passe la souris sur un texte (avec le package tippy) : Lancez le logiciel QGIS. Ouvrez un projet : <u id = 'menuprojet'>Menu Projet → Ouvrir</u>. <code>{r, echo=FALSE} tippy_this(elementId = "menuprojet",            tooltip = '&lt;img class="icone" src="illustrations/tous/1_1_ouvrir_projet.png" alt="menu ouvrir un projet"&gt;',            theme = "light",            placement = "bottom")</code></p>
+<div class="row">
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+<div id="en-quelques-mots" class="section level2">
+<h2>En quelques mots</h2>
+<p>Ce tutoriel QGIS a été créé par le pôle Analyse et Représentation des données de l’UMR <a href="http://www.passages.cnrs.fr/" class="ext">PASSAGES</a>. Son but est de permettre aux débutants en SIG de s’initier à ceux-ci via le logiciel libre QGIS. Pour installer QGIS, rendez-vous sur <a href="http://www.qgis.org/" class="ext">http://www.qgis.org/</a>.</p>
+<p>Le tutoriel est mis à jour pour chaque version maintenue « à long terme » de QGIS : actuellement il s’agit de la version <a href="https://www.qgis.org/fr/site/forusers/visualchangelog316/index.html" class="ext">3.16 ‘Hannover’</a>.</p>
 </div>
+<div id="accès-au-tutoriel" class="section level2">
+<h2>Accès au tutoriel</h2>
+<p>Le tutoriel comporte 11 parties auxquelles vous pouvez accéder par le plan dans la partie droite de la page, ou bien via le <a href="plan_detaille.html">plan détaillé</a>.</p>
+<p>Chaque partie peut être réalisée indépendamment des autres ; cependant, la progression présentée suit un ordre logique.</p>
+<p>Si vous recherchez une notion précise, utilisez <a href="index_az.html">l’index</a>.</p>
+</div>
+<div id="mode-demploi" class="section level2">
+<h2>Mode d’emploi</h2>
 <div id="manipulation" class="section level3">
 <h3>Manipulation</h3>
-<p>Pour indiquer une manipulation à faire dans QGIS (crée une div HTML avec la classe <strong>manip</strong>) :</p>
+<p>Tout au long du tutoriel, les parties décrivant des manipulations à effectuer dans QGIS sont différenciées par une bordure bleue et un fond bleu-gris :</p>
 <div class="manip">
-<p>Hop</p>
+<p>Ceci décrit une manipulation à effectuer dans QGIS.</p>
 </div>
+<p>Les données nécessaires pour effectuer ces manipulations sont accessibles dans la rubrique <a href="telechargement.html">téléchargement</a>.</p>
+</div>
+<div id="aide" class="section level3">
+<h3>Aide</h3>
+<p>Quand une partie du texte apparaît soulignée en pointillés en bleu foncé, si vous passez la souris dessus, une image apparaît pour vous aider par exemple à trouver l’emplacement d’un menu ou d’un bouton dans QGIS.</p>
+<p>Sauvegardez votre projet sous un nouveau nom : <u id = "menusauv">Menu Projet → Sauvegarder sous…</u></p>
+<span id="htmlwidget-4e804c5d5ae8fa77c314" class="tippy html-widget" width="672" height="480"></span>
+<script type="application/json" data-for="htmlwidget-4e804c5d5ae8fa77c314">{"x":{"element":"menusauv","opts":{"content":"<img class=\"icone\" src=\"illustrations/tous/1_4_sauvegarder_projet_sous.png\" alt=\"menu projet, sauvegarder sous\" height=\"300px\">","theme":"light","placement":"top"}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div id="questionréponse" class="section level3">
 <h3>Question/réponse</h3>
-<p>Avec du HTML (attention, sans indentation, une ligne vide avant et après) :</p>
+<p>Des questions vous seront posées tout au long du tutoriel ; les réponses sont visibles en cliquant sur le petit triangle devant la question.</p>
 <div class="question">
 <input type="checkbox" id="faq-1">
 <p>
@@ -304,10 +325,57 @@ Parce-que c’est une légende !
 </p>
 </div>
 </div>
-<div id="hyperliens" class="section level3">
-<h3>Hyperliens</h3>
-<p>Liens externes au tutoriel : <a href="http://www.qgis.org/" class="ext">http://www.qgis.org/</a></p>
-<p>Liens internes : <a href="plan_detaille.html">plan détaillé</a></p>
+<div id="liens" class="section level3">
+<h3>Liens</h3>
+<p>Les liens internes au <a href="en_savoir_plus.html">tutoriel</a> sont affichés en bleu, les <a href="http://fr.wikipedia.org/wiki/Liens" class="ext">liens</a> externes sont en gris et s’ouvriront dans une nouvelle fenêtre ou onglet.</p>
+</div>
+</div>
+</div>
+<!-- https://jsfiddle.net/u3gd85cj/ -->
+<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 fixed-top">
+
+  <div id="logos">
+    <table class="table_logos">
+      <tr>
+        <td class="logo-left" colspan="1">
+          <a target="_blank" href="https://letg.cnrs.fr/" >
+            <img class="logo-left" src="illustrations/tous/logo_letg.png" alt="logo LETG" height="75">
+          </a>
+        </td>
+        <td class="logo-right" colspan="1">
+          <a target="_blank" href="http://www.passages.cnrs.fr/" >
+            <img class="logo-right" src="illustrations/tous/logo_passages.png" alt="logo passages" height="33">
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="logo-center" colspan="2">
+          <a target="_blank" href="http://www.qgis.org/" >
+            <img class="logo-center" src="illustrations/tous/logo_qgis_3_16.png" alt="logo QGIS 3.16" height="70">
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div> <!-- div logos -->
+  <br>
+
+  <div id="TOC">
+    <div class="list-group list-group-root well">
+        <a href="01_00_prise_en_main.html" class="list-group-item">Prise en main</a>
+        <a href="02_00_geodesie.html" class="list-group-item">Géodésie</a>
+        <a href="03_00_recherche_ajout.html" class="list-group-item">Recherche et ajout de données</a>
+        <a href="04_00_georeferencement.html" class="list-group-item">Géoréférencement</a>
+        <a href="05_00_numerisation.html" class="list-group-item">Numérisation</a>
+        <a href="06_00_requetes.html" class="list-group-item">Requêtes</a>
+        <a href="07_00_champs.html" class="list-group-item">Calcul de champs</a>
+        <a href="08_00_jointures.html" class="list-group-item">Jointures</a>
+        <a href="09_00_analyse_spatiale.html" class="list-group-item">Analyse spatiale</a>
+        <a href="10_00_carto.html" class="list-group-item">Représentation et mise en page</a>
+        <a href="11_00_automatisation.html" class="list-group-item">Automatisation de traitements</a>
+        <a href="12_00_teledetection.html" class="list-group-item">Télédétection</a>
+    </div>
+    </div> <!-- div TOC -->
+
 </div>
 </div>
 

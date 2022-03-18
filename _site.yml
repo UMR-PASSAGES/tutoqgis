@@ -1,6 +1,6 @@
 name: "tuto-qgis"
 title: "Tutoriel QGIS"
-output_dir: "_site"
+output_dir: "public"
 exclude: ["readme.md"]
 output:
   html_document:
