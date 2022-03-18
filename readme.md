@@ -6,19 +6,19 @@ Réécriture en RMarkdown !
 
 Avec une légende et un texte alternatif :
 
-```{r, echo = FALSE, out.width = "600px", fig.cap="ma légende", class = "fig"}
+```r, echo = FALSE, out.width = "600px", fig.cap="ma légende", class = "fig"}`r ''`
 include_graphics(path = "path/to/image.png")
 ```
 
 Avec un texte alternatif sans légende :
 
-```{r, echo = FALSE, out.width = "600px", fig.alt="bla bla", class = "fig"}
+```{r, echo = FALSE, out.width = "600px", fig.alt="bla bla", class = "fig"}`r ''`
 include_graphics(path = "path/to/image.png")
 ```
 
 Icône d'outil à placer au début d'un paragraphe :
 
-```{r, echo = FALSE, out.width = "35px", class = "icone"}
+```{r, echo = FALSE, out.width = "35px", class = "icone"}`r ''`
 include_graphics(path = "illustrations/tous/1_1_ouvrir_projet_icone.png")
 ```
 
