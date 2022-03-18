@@ -6,7 +6,7 @@ pages:
   - echo 'Nothing to do...'
   artifacts:
     paths:
-    - _site
+    - '_site'
   only:
   - master
 
