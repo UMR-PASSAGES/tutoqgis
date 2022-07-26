@@ -134,7 +134,7 @@
 			<h3>Redéfinir le SCR d'une couche<a class="headerlink" id="II43" href="#II43"></a></h3>			
 				
 				<p>Il existe une autre manipulation souvent confondue avec le fait de modifier le SCR d'une couche : <b>redéfinir le SCR d'une couche</b>. Dans ce cas, les coordonnées ne sont pas recalculées et aucune nouvelle couche n'est créée, le SCR associé à la couche est simplement modifié.</p>
-				<p>Pour reprendre l'exemple utilisé plus haut d'une couche en WGS84 contenant un point correspondant à la ville de Paris de coordonnées (48,856700 2,351000), si le SCR de cette couche est redéfini en RGF93 / Lambert-93, les coordonnées du point resteront (48,856700 2,351000) mais ces coordonnées seront renseignées comme étant mesurées dans le SCR RGF93 / Lambert-93.</p>
+				<p>Pour reprendre l'exemple utilisé plus haut d'une couche en WGS84 contenant un point correspondant à la ville de Paris de coordonnées (48,89 2,35), si le SCR de cette couche est redéfini en RGF93 / Lambert-93, les coordonnées du point resteront (48,89 2,35) mais ces coordonnées seront renseignées comme étant mesurées dans le SCR RGF93 / Lambert-93.</p>
 				<p>Le point ne sera donc pas affiché, ou affiché à un endroit aberrant, puisqu'il n'est pas possible de trouver de telles coordonnées dans ce SCR (en RGF93 / Lambert-93, les X varient de 100 000 à 1 200 000 et les Y de 6 000 000 à 7 100 000).</p>
 				<p>Redéfinir le SCR d'une couche n'est donc utile que dans deux cas bien précis :</p>
 					<ul>
