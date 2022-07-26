@@ -45,7 +45,7 @@
 					</a>
 				</figure>
 				
-				<p><em class="numero">1. </em><b>Aucune projection</b> : cette case à cocher permet de visualiser facilement si les différentes couches d'un projet utilisent des SCR différents.</p>
+				<p><em class="numero">1. </em><b>Aucun SCR</b> : cette case à cocher permet de visualiser facilement si les différentes couches d'un projet utilisent des SCR différents.</p>
 				<p><em class="numero">2. </em><b>Partie "Filtre"</b> : vous pouvez taper ici un code ou un nom pour rechercher un SCR précis.</p>
 				<p><em class="numero">3. </em><b>SCR récemment utilisés</b> (cette partie peut être vide). Cette liste permet d'accéder facilement aux SCR que vous utilisez souvent.</p>
 				<p><em class="numero">4. </em><b>Liste de tous les SCR disponibles dans QGIS</b>. Ils sont classés selon 3 grandes rubriques : systèmes de coordonnées géographiques, systèmes de coordonnées projetés et systèmes de coordonnées définis par l'utilisateur (soit qu'ils aient été créés par vous-même, soit qu'ils aient été lus par QGIS dans une couche).</p>

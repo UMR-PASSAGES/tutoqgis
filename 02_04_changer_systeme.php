@@ -47,7 +47,7 @@
 							<img src="illustrations/tous/2_4_modif_scr_projet.png" alt="Modifier le SCR d'un projet" width="600">
 						</a>
 					</figure>
-					<p><em class="numero">1. </em>Vérifiez que la case <b>Aucune projection</b> soit bien décochée.</p>
+					<p><em class="numero">1. </em>Vérifiez que la case <b>Aucun SCR</b> soit bien décochée.</p>
 					<p><em class="numero">2. </em>Tapez <b>robinson</b> dans cette partie, ou bien 53030 (code EPSG).</p>
 					<p><em class="numero">3. </em>Le filtre est activé dans la liste des derniers SCR utilisés. Selon si vous avez déjà utilisé Robinson ou non, cette partie sera donc ou vide ou avec une ou deux lignes correspondant à ce système.</p>
 					<p><em class="numero">4. </em>Le filtre est également activé dans la liste de tous les SCR disponibles : seuls les SCR dont le nom contient "Robinson" sont affichés. <b>Sélectionnez Sphere Robinson, code EPSG 53030</b>.</p>
@@ -73,7 +73,7 @@
 						<br>
 						<a class="thumbnail_bottom" href="#thumb">Clic-droit sur une couche (n'importe laquelle puisqu'elles sont toutes trois en WGS84) &#8594; SCR de la couche &#8594; Définir le SCR du projet depuis cette couche
 							<span>
-								<img src="illustrations/tous/2_4_def_scr_projet_couche.png" alt="Définir le SCR du projet à partir du SCR d'une couche" height="320" >
+								<img src="illustrations/tous/2_4_def_scr_projet_couche.png" alt="Définir le SCR du projet à partir du SCR d'une couche" height="420" >
 							</span>
 						</a>
 					</p>
@@ -88,7 +88,7 @@
 				<p>Pour toutes ces raisons, il est utile de savoir modifier le SCR d'une couche.</p>
 				<p>Cette manipulation implique de <b>recalculer les coordonnées de tous les objets de la couche dans un autre SCR</b>.</p>
 				<p>Par exemple, si la couche d'origine est en WGS84 et contient un point correspondant à la ville de Paris, et que le but est d'obtenir une couche en RGF93 / Lambert-93 , les coordonnées initiales du point (48,89 2,35) en WGS84 seront recalculées pour devenir (652381 6862047) en RGF93 / Lambert-93.</p>
-				<p>Cette manipulation <b>crée une nouvelle couche</b>. La couche d'origine et la couche résultat se superposeront exactement dans QGIS si la projection à la volée est activée, puisqu'elles contiendront exactement les mêmes objets.</p>
+				<p>Cette manipulation <b>crée une nouvelle couche</b>. La couche d'origine et la couche résultat se superposeront exactement dans QGIS, puisqu'elles contiendront exactement les mêmes objets.</p>
 				<div class="manip">
 					<p>L'objectif sera ici de créer une nouvelle couche pays dans la projection de Bonne (code ESRI 53024).</p>
 					<p>Pour cela, affichez la <b>boîte à outils de traitements</b> : menu Traitements &#8594; Boîte à outils.</p>
