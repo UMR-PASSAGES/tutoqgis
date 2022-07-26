@@ -75,7 +75,7 @@
         						<a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Codage_de_caract%C3%A8res" >http://fr.wikipedia.org/wiki/Codage_de_caractères</a></li>
         						<li>Cliquez sur <b>...</b> à gauche de <b>Jeux de données vectorielles</b> et sélectionnez la couche <em class="data"><a href="donnees/TutoQGIS_01_PriseEnMain.zip">DEPARTEMENT_BRETAGNE.shp</a></em> située dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>.</li>
     						</ul>
-    						<p>Cliquez sur <b>Ajouter</b> : vous pouvez voir à l'écran les départements de la région Bretagne.</p>
+    						<p>Cliquez sur <b>Ajouter</b> : vous pouvez voir à l'écran les départements de la région Bretagne. Vous pouvez fermer la fenêtre du gestionnaire de source de données.</p>
     						<p>Pour <b>supprimer cette couche</b> : clic droit sur son nom dans la table des matières,
     						<a class="thumbnail_bottom" href="#thumb">Supprimer la couche...
                             	<span>
@@ -104,7 +104,7 @@
                             	</a>
                             </figure>
     					</div>
-	
+    					
 				<h3>L'interface de QGIS<a class="headerlink" id="I22" href="#I22"></a></h3>
 					
 					<figure>
