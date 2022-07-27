@@ -514,18 +514,20 @@ hov         #1D3437     hover colour
 	}
 	/* link in header */
 	a.headerlink{
-	    color: transparent;
+	  opacity: 0;
 	}
     a.headerlink:hover{
-	    color: /*link*/#28A6B7;
+	  opacity: 1;
 	}
 	.headerlink::after {
-        content: "\f0c1";
-        font-family: FontAwesome;
-    }
-    .headerlink::before {
-        content: " ";
-    }
+    content: url('illustrations/tous/link-solid.svg');
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  .headerlink::before {
+     content: " ";
+  }
 
 	/* texte mis en évidence (donnees, numeros...) */
 	em.data { 
