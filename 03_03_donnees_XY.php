@@ -19,7 +19,7 @@
 					<li><a href="#III33">Création du shapefile de points</a></li>
 				</ul>
 	
-			<p>Nous avons vu quelques pistes pour rechercher et afficher des données au format SIG dans QGIS, que ce soit en les téléchargeant ou via des flux. Il arrive aussi de disposer d'un tableau avec deux colonnes X et Y : comment utiliser ces données dans un SIG ?</p>
+			<p>Nous avons vu quelques pistes pour rechercher et afficher des données au format SIG dans QGIS, que ce soit en les <a href="03_01_donnees_internet.php">téléchargeant</a> ou via des <a href="03_02_donnees_flux.php">flux</a>. Il arrive aussi de disposer d'un tableau avec deux colonnes X et Y : comment utiliser ces données dans un SIG ?</p>
 			<p>Nous prendrons ici l'exemple d'un fichier au <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Comma-separated_values">format CSV</a>. Pour information, il est possible de créer un fichier au format CSV à partir d'un fichier ODS (LibreOffice) ou XLS (Microsoft Office) par exemple.</p>
 			
 			<h3>Qu'y a-t-il dans le fichier texte ?<a class="headerlink" id="III31" href="#III31"></a></h3>
@@ -50,7 +50,7 @@
 						<input type="checkbox" id="faq-3">
 						<p><label for="faq-3">A quoi correspond la colonne "dem" ? Pouvez-vous trouver la réponse dans les métadonnées&nbsp;?</label></p>
 						<p class="note">Pour rappel, dans les données que vous avez téléchargées pour chaque partie, il existe dans le dossier <b>liste_donnees</b> une liste de ces données avec l'emplacement de leurs métadonnées.</p>
-						<p class="reponse">En vous rendant sur http://download.geonames.org/export/dump/readme.txt dans un navigateur internet, vous pouvez lire la définition suivante pour la colonne dem (dans la partie "The main 'geoname' table has the following fields" ) : <b>digital elevation model, srtm3 or gtopo30, average elevation of 3''x3'' (ca 90mx90m) or 30''x30'' (ca 900mx900m) area in meters, integer. srtm processed by cgiar/ciat.</b></p>
+						<p class="reponse">En vous rendant sur <a class="ext" target="_blank" href="http://download.geonames.org/export/dump/readme.txt">http://download.geonames.org/export/dump/readme.txt</a> dans un navigateur internet, vous pouvez lire la définition suivante pour la colonne dem (dans la partie "The main 'geoname' table has the following fields" ) : <b>digital elevation model, srtm3 or gtopo30, average elevation of 3''x3'' (ca 90mx90m) or 30''x30'' (ca 900mx900m) area in meters, integer. srtm processed by cgiar/ciat.</b></p>
 						<p class="reponse">Il s'agit donc de la valeur d'un <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain" >modèle d'élévation numérique</a>, correspondant approximativement à l'altitude. Différents modèles ont été utilisés, à différentes résolutions. </p>
 					</div>
 					<p>Fermez le fichier sans enregistrer les éventuelles modifications, quittez l'éditeur de texte.</p>
@@ -60,7 +60,7 @@
 					<div class="question">
 						<input type="checkbox" id="faq-4">
 						<p><label for="faq-4">A votre avis, dans quel SCR sont mesurées la latitude et la longitude? Pouvez-vous trouver cette info dans les métadonnées?</label></p>
-						<p class="reponse">Comme précisé dans le fichier de métadonnées (voir TutoQGIS_03_RechercheDonnees_liste_donnees.pdf dans le dossier liste_donnees), les coordonnées sont mesurées en degrés décimaux dans le SCR WGS84.</p>
+						<p class="reponse">Comme précisé dans le fichier de métadonnées (voir fichier pdf dans le dossier liste_donnees), les coordonnées sont mesurées en degrés décimaux dans le SCR WGS84.</p>
 						<p class="reponse">Dans le cas d'un fichier avec des coordonnées en latitude et longitude et un SCR inconnu, il s'agit fréquemment de coordonnées en WGS84.</p>
 					</div>
 				</div>
@@ -69,7 +69,8 @@
 			<h3>Visualisation des données dans QGIS<a class="headerlink" id="III32" href="#III32"></a></h3>
 				
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône ajout d'une couche vecteur">A partir de QGIS, chargez la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">ne_10m_admin_0_countries.shp</a></em> située dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
+				  <p>Ouvrez un nouveau projet vide dans QGIS.</p>
+					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône ajout d'une couche vecteur">Chargez la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">ne_10m_admin_0_countries.shp</a></em> située dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
 					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône ajout fichier texte délimité" >Toujours à partir du gestionnaire des sources, cliquez sur <b>Texte délimité</b> :</p>
 					<figure>
 						<a href="illustrations/tous/3_3_ajout_csv_fenetre.png" >
@@ -123,7 +124,7 @@
 				<p><img class="icone" src="illustrations/tous/3_3_supprimer_couche_icone.png" alt="Icône supprimer une couche" >
 					<a class="thumbnail_top" href="#thumb">Supprimez la couche temporaire
 						<span>
-							<img src="illustrations/tous/3_3_supprimer_couche_menu.png" alt="clic-droit sur la couche, supprimer" height="300" >
+							<img src="illustrations/tous/3_3_supprimer_couche_menu.png" alt="clic-droit sur la couche, supprimer" height="370" >
 						</span>
 					</a>	
 				 pour éviter toute confusion (en vous aidant éventuellement de son emplacement pour déterminer laquelle est-ce).

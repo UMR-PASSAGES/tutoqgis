@@ -64,8 +64,8 @@
 							<img src="illustrations/tous/3_2_wms_connexion.png" alt="Fenêtre ajout d'une couche WMS, connexion au serveur du BRGM et choix de la couche à ajouter" width="500" >
 						</a>
 						<li class="espace">Rendez-vous dans la rubrique <b>0 GEOSERVICES_GEOLOGIE &#8594; 1 GEOLOGIE</b> et sélectionnez la couche correspondant à la <b>carte géologique image de la France au 1/1 000 000</b> (million).</li>
-						<li class="espace">Vérifiez que les SCR de cette couche soit bien <b>RGF93 / Lambert-93 (code EPSG 2154)</b> afin que la couche ait le même SCR que notre projet : il faudra peut-être cliquer que le bouton <b>Modifier...</b> pour sélectionner le Lambert 93</li>
-						<li class="espace">Cliquez sur <b>Ajouter</b>, patientez...</li>
+						<li class="espace">Vérifiez que les SCR de cette couche soit bien <b>RGF93 / Lambert-93 (code EPSG 2154)</b> afin que la couche ait le même SCR que notre projet : il faudra peut-être cliquer que le bouton à droite du SCR pour sélectionner le Lambert 93</li>
+						<li class="espace">Cliquez sur <b>Ajouter</b>, patientez... Une fois la couche affichée, vous pouvez fermer la fenêtre du gestionnaire de sources de données</li>
 						<li class="espace">Modifiez éventuellement votre <b>niveau de zoom</b> : cette carte étant au 1/1 000 000, la couche n'est visible qu'autour de cette échelle (vous pouvez lire l'échelle en cours dans la barre en bas de la fenêtre de QGIS)</li>
 					</ul>
 					<p>Vous devriez obtenir quelque chose de similaire à ceci :</p>
@@ -103,7 +103,7 @@
 					   <li class="espace">URL&nbsp;: tapez l'adresse <b>https://services.sandre.eaufrance.fr/geo/sandre</b></li>
 					</ul>
 					
-					<p class="note">Cette url est disponible <a href="https://www.sandre.eaufrance.fr/actualite/evolution-des-services-web-g%C3%A9ographiques" >sur le site du Sandre</a>.</p>
+					<p class="note">Cette url est disponible <a class="ext" target="_blank" href="https://www.sandre.eaufrance.fr/actualite/evolution-des-services-web-g%C3%A9ographiques" >sur le site du Sandre</a>.</p>
 					<p>Laissez les autres paramètres tels quels et cliquez sur OK. Vous voilà à nouveau dans la fenêtre d'ajout d'une couche WFS&nbsp;:</p>
 					
 					<figure>
@@ -161,8 +161,8 @@
 				
 			<h3>Quelques adresses de flux WMS et WFS<a class="headerlink" id="III26" href="#III26"></a></h3>
 			
-			    <p>Vous pouvez trouver <a class="ext" target="_blank" href="https://github.com/igeofr/qgis2/tree/master/flux">ici</a> une liste de flux WFS et WMS, créée par l'utilisateur github <a class="ext" target="_blank" href="https://github.com/igeofr">igeofr</a>.</p>
-			    <p>Vous pouvez soit ajouter ces flux manuellement, un par un, comme décrit plus haut, en copiant l'url, soit tous les ajouter en même temps. Pour cela, par exemple pour les flux WFS, collez le contenu entier du fichier QGIS_WFS.xml dans un fichier texte vierge, enregistrez ce fichier sous le nom QGIS_WFS.xml. Ensuite, dans QGIS : gestionnaire de sources &#8594; WFS&#8594; Charger &#8594; sélectionnez le fichier XML, et choisissez les flux que vous souhaitez ajouter.</p>
+			    <p>Vous pouvez trouver <a class="ext" target="_blank" href="https://github.com/igeofr/qgis2/tree/master/flux">ici</a> une liste de flux WFS et WMS, créée par l'utilisateur github <a class="ext" target="_blank" href="https://github.com/igeofr">igeofr</a>, merci à lui !</p>
+			    <p>Vous pouvez soit ajouter ces flux manuellement, un par un, comme décrit plus haut, en copiant l'url, soit tous les ajouter en même temps. Pour cela, par exemple pour les flux WFS, collez le contenu entier du fichier QGIS_WFS.xml dans un fichier texte vierge, enregistrez ce fichier sous le nom QGIS_WFS.xml. Ensuite, dans QGIS : gestionnaire de sources &#8594; WFS ou WMS &#8594; Charger &#8594; sélectionnez le fichier XML, et choisissez les flux que vous souhaitez ajouter.</p>
 	
 				<br>
 				<a class="prec" href="03_01_donnees_internet.php">chapitre précédent</a>

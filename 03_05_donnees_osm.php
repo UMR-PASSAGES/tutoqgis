@@ -51,10 +51,10 @@
     	            <p>Ici, nous allons ajouter le fonds <b>Stamen Toner</b> en noir et blanc.</p>
     	            <figure>
                     	<a href="illustrations/tous/3_5_stamen_toner.png" >
-                    	    <img src="illustrations/tous/3_5_stamen_toner.png" alt="page du wiki OSM sur les serveurs de tuiles, ligne correspondant au fonds Stamen Toner" width="600">
+                    	    <img src="illustrations/tous/3_5_stamen_toner.png" alt="page du wiki OSM sur les serveurs de tuiles, ligne correspondant au fonds Stamen Toner" width="620">
                         </a>
                     </figure>
-    	            <p>Copiez l'url du serveur : <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.png</b></p>
+    	            <p>Copiez l'url du serveur : <b>https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png</b></p>
     	            <p>Dans QGIS, panneau explorateur, clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</p>
     	            <figure>
                     	<a href="illustrations/tous/3_5_stamen_connexion.png" >
@@ -63,8 +63,9 @@
                     </figure>
                     <ul>
                         <li>Nom : il s'agit du nom qui apparaîtra dans le panneau explorateur, vous pouvez taper par exemple <b>Stamen Toner</b></li>
-                        <li>URL : collez l'URL que vous avez préalablement copiée, et <b>supprimez les &#171;&nbsp;$&nbsp;&#187;</b> : l'URL finale est donc <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.png</b></li>
+                        <li>URL : collez l'URL que vous avez préalablement copiée : <b>https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png</b></li>
                     </ul>
+                    <p class="note">Si l'URL contient le caractère <b>$</b>, il faut le supprimer, par exemple http://c.tile.stamen.com/watercolor/${z}/${x}/${y}.jpg devient http://c.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg.</p>
                     <p>Laissez les valeurs par défaut pour les autres paramètres, cliquez sur OK.</p>
                     <p>Le fonds Stamen Toner apparaît maintenant avec les autres fonds dans la rubrique XYZ Tiles.</p>
                     <figure>
@@ -186,7 +187,7 @@
                     		<img src="illustrations/tous/3_5_couleur_rvb.png" alt="Choix d'une couleur RVB" width="300">
                     	</a>
                     </figure>
-                    <p class="note">Notez qu'une manipulation équivalente peut être effectuée dans le <a href="10_02_mise_en_page.php#X22">composeur d'impression</a>, sans changer la couleur de fond dans QGIS.</p>
+                    <p class="note">Notez qu'une manipulation équivalente peut être effectuée dans le <a href="10_02_mise_en_page.php#X22">mode mise en page</a>, sans changer la couleur de fond dans QGIS.</p>
                     <figure>
                     	<a href="illustrations/tous/3_5_style_resultat_2.png" >
                     		<img src="illustrations/tous/3_5_style_resultat_2.png" alt="Exemple de données OSM stylées, petite échelle" width="500">
@@ -213,13 +214,13 @@
 			        <p>Pour accéder à QuickOSM : <b>menu Vecteur &#8594; Quick OSM &#8594; QuickOSM</b>. La fenêtre suivante s'ouvre :</p>
 			        <figure>
                     	<a href="illustrations/tous/3_5_quickosm_fenetre.png" >
-                    		<img src="illustrations/tous/3_5_quickosm_fenetre.png" alt="Fenêtre de QuickOSM, choix des options" width="480">
+                    		<img src="illustrations/tous/3_5_quickosm_fenetre.png" alt="Fenêtre de QuickOSM, choix des options" width="600">
                     	</a>
                     </figure>
                     <p>Dans la rubrique <b>Requête rapide</b> :</p>
                     <ul>
                         <li class="espace">Choisissez la clé <b>waterway</b> puis la valeur <b>river</b> pour ne récupérer que les cours d'eau de type rivière</li>
-                        <li class="espace">Sélectionnez l'option <b>Emprise du canevas</b> pour limiter le volume de données à charger à la zone visible dans QGIS</li>
+                        <li class="espace">Dans la liste déroulante <b>Dans</b>, sélectionnez l'option <b>Emprise du canevas</b> pour limiter le volume de données à charger à la zone visible dans QGIS</li>
                         <li class="espace">Cliquez enfin sur le bouton <b>Exécuter</b>.</li>
                     </ul>
                     <p>Patientez (plus la zone visible dans QGIS est grande, plus c'est long !)... Les données sont chargées et affichées :</p>
@@ -229,8 +230,8 @@
                     	</a>
                     </figure>
 			    </div>
-			    <p>Ces données sont temporaires&nbsp;: pour les sauvegarder, clic droit sur la couche &#8594; Enregistrer sous...</p>
-			    <p>Pour savoir où sont stockées les données temporaires : propriétés de la couche, rubrique Information.</p>
+			    <p>Ces données sont temporaires&nbsp;: pour les sauvegarder, clic droit sur la couche &#8594; Exporter &#8594; Sauvegarder les entités sous...</p>
+			    <p>Pour savoir où sont stockées les données temporaires : propriétés de la couche, rubrique Information, ou bien dans l'infobulle qui s'affiche en survolant le nom de la couche.</p>
 			    <p>Nous avons vu ici quelques méthodes pour accéder aux données OSM dans QGIS, mais il en existe d'autres !</p>
 	
 			<br>

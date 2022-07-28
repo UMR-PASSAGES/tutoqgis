@@ -30,7 +30,7 @@
 			    
 			    <p class="note">Pour en savoir plus sur OpenSreetMap, c'est au <a href="03_05_donnees_osm.php">chapitre suivant</a> !</p>
 			    
-			    <p>Ajouter de tels fonds est utile pour se repérer rapidement, ou bien pour servir de fonds pour une carte ;  dans ce dernier cas il faut que le fonds soit adapté à l'objectif de la carte et y apporte des informations utiles sans l'alourdir.</p>
+			    <p>Ajouter de tels fonds est utile pour se repérer rapidement, ou bien pour servir de fonds pour une carte&nbsp;;  dans ce dernier cas il faut que le fonds soit adapté à l'objectif de la carte et y apporte des informations utiles sans l'alourdir.</p>
 			    
 			    <p>De tels fonds sont dits &#171;&nbsp;tuilés &nbsp;&#187; car ils sont découpés en carrés jointifs (tuiles) pour faciliter l'affichage, à chaque niveau de zoom. On parle également de tuiles XYZ, X et Y correspondant à  la position de la tuile et Z au niveau de zoom. Pour en savoir plus : <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Tiled_web_map">la page (en anglais) de wikipedia</a></p>
 			

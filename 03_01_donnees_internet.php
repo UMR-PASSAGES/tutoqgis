@@ -41,25 +41,27 @@
 			
 				<h4>Avec l'IGN<a class="headerlink" id="III11a" href="#III11a"></a></h4>
 				
-					<p>L'IGN (Institut National de l'Information Géographique et Forestière) diffuse gratuitement une partie de ses données ici : <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html">https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html</a>.</p>
+					<p>L'IGN (Institut National de l'Information Géographique et Forestière) diffuse gratuitement la plupart de ses données ici : <a class="ext" target="_blank" href="https://geoservices.ign.fr/catalogue">https://geoservices.ign.fr/catalogue</a>.</p>
 					<p class="note">Si vous êtes étudiant ou bien si vous travaillez dans un laboratoire de recherche, il existe peut-être entre votre structure et l'IGN une convention recherche et enseignement vous donnant accès à plus de données !</p>
-					<p>Nous allons ici télécharger les communes de la Guyane.</p>
+					<p>Nous allons ici télécharger les <b>communes de la Guyane</b>.</p>
 					<div class="manip">
+					   <p>Sur la page internet <a class="ext" target="_blank" href="https://geoservices.ign.fr/catalogue">https://geoservices.ign.fr/catalogue</a>, cliquez sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/adminexpress">ADMIN-EXPRESS</a>.</p>
+					   <p class="note">La page listant beaucoup de données, vous pouvez faire une recherche sur le terme <b>admin</b> avec la fonction <b>rechercher</b> de votre navigateur (ou le raccourci clavier <b>ctrl + F</b>). Vous pouvez aussi filtrer les données sur <b>Données/services</b> puis <b>Bases de données au format vectoriel</b>.</p>
 					   <figure>
 							<a href="illustrations/tous/3_1_ign_telechargement.png" >
 								<img src="illustrations/tous/3_1_ign_telechargement.png" alt="page de téléchargement des données IGN" width="500">
 							</a>
 						</figure>
-					   <p>Sur la page internet <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html">https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html</a>, cliquez sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/diffusion/telechargement-donnees-libres.html#admin-express">ADMIN-EXPRESS</a>.</p>
 					</div>
 					   <p>La base ADMIN EXPRESS contient des couches de régions, départements, arrondissements, EPCI, communes et chef-lieux pour la France métropolitaine et ultra-marine. Elle remplace la base GEOFLA® qui n'est plus mise à jour et dont la dernière édition est celle de 2016.</p>
 					<div class="manip">
+					   <p class="note">Attention, le téléchargement de ces données peut être un peu long (environ 255 Mo pour la version de juin 2022), vous pouvez également utiliser directement la couche <a href="donnees/TutoQGIS_03_RechercheDonnees.zip" ><em class="data">COMMUNE</em></a> disponible en téléchargement.</p>
+					   <p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS par territoire</b> (ici celle de juin 2022) :</p>
 					   <figure>
 							<a href="illustrations/tous/3_1_ign_telechargement_2.png" >
-								<img src="illustrations/tous/3_1_ign_telechargement_2.png" alt="page de téléchargement des données ADMIN EXPRESS (IGN)" width="600">
+								<img src="illustrations/tous/3_1_ign_telechargement_2.png" alt="page de téléchargement des données ADMIN EXPRESS (IGN)" width="500">
 							</a>
 						</figure>
-						<p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS par territoire</b> (ici celle de mai 2020).</p>
 						<p class="note">Vous pouvez également télécharger la version <a class="ext" target="_blank" href="https://geoservices.ign.fr/ressources_documentaires/Espace_documentaire/BASES_VECTORIELLES/ADMIN_EXPRESS_COG/SE_ADMIN_EXPRESS_COG.pdf">COG (Code Officiel Géographique)</a> mais celle-ci est plus lourde.</p>
 						<p>Dézippez le fichier téléchargé (vous pouvez par exemple utiliser <a class="ext" target="_blank" href="https://www.7-zip.org/">7-zip</a>).</p>
 					</div>
@@ -67,13 +69,27 @@
 					<p class="note">Si le téléchargement échoue, cette couche est également accessible <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">en téléchargement</a></em>.</p>
 					
 					<div class="manip">
-						<p>A partir de l'explorateur de fichiers de QGIS, ajoutez la couche <em class="data">COMMUNE</em> du sous-dossier <b>ADE_2-X_SHP_UTM22RGFG95_D973</b> (973 correspond au code département de la Guyane, et l'UTM 22 RGFG95 au SCR qui y est utilisé).</p>
+					  <p>Une fois le fichier dézippé, vous pouvez constater qu'il contient une arborescence de dossiers complexe. Comment y voir plus clair ?</p>
+					  <p>En commençant par les métadonnées ! Sur la page de téléchargement d'Admin Express, cliquez sur le bouton <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/donnees/vecteur/adminexpress" >Documentation</a> puis sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/sites/default/files/2021-11/DC_DL_ADMIN_EXPRESS_3-1_0.pdf" >ADMIN EXPRESS - Descriptif de contenu et de livraison</a>, ce qui ouvre un fichier PDF.</p>
+					  <p>En parcourant ce PDF, vous en saurez plus sur les données que vous venez de télécharger. Vous y trouverez notamment page 7 la liste des différents SCR utilisés pour la France métropolitaine ainsi que pour l'Outre-Mer : le SCR utilisé pour la Guyane est le <b>RGF95 UTM 22, code EPSG 2972</b>.</p>
+					</div>
+					
+					<p>Pour rappel, le but de l'exercice est ici d'afficher les communes de la Guyane, mais vous pouvez très bien décider de travailler sur un autre département !</p>
+					
+					<div class="manip">
+					  <p>La couche <em class="data">COMMUNE</em> de la Guyane est donc située dans le sous-dossier <b>ADE_X-X_SHP_UTM22RGFG95_D973</b> où :</p>
+					  <ul>
+					   <li><b>X-X</b> correspond à la version d'ADMIN EXPRESS téléchargée, par exemple 3-1</li>
+					   <li><b>UTM22RGF95</b> correspond au SCR des données (voir plus haut)</li>
+					   <li><b>D973</b> est le code du département</li>
+					  </ul>
+						<p>A partir de l'explorateur de fichiers de QGIS, ajoutez les communes de Guyane à la carte.</p>
 						<figure>
 							<a href="illustrations/tous/3_1_commune_guyane_explorateur.png" >
 								<img src="illustrations/tous/3_1_commune_guyane_explorateur.png" alt="ajout de la couche de communes de Guyane via l'explorateur QGIS" width="600">
 							</a>
 						</figure>
-						<p>Une fenêtre peut alors s'ouvrir pour vous demander quelle transformation vous souhaitez utiliser pour passer du SCR RGFG95 (utilisé en Guyane) et WGS84. Dans ce cas, choisissez la 1ère de ces transformations, normalement sélectionnée par défaut.</p>
+						<p>Selon votre version de QGIS et votre configuration, une fenêtre peut alors s'ouvrir pour vous demander quelle transformation vous souhaitez utiliser pour passer du SCR RGFG95 (utilisé en Guyane) et WGS84. Dans ce cas, choisissez la 1ère de ces transformations, normalement sélectionnée par défaut.</p>
 						<figure>
 							<a href="illustrations/tous/3_1_choix_transformation.png" >
 								<img src="illustrations/tous/3_1_choix_transformation.png" alt="Choix de la transformation pour passer d'un SCR à un autre" width="600">
@@ -98,6 +114,8 @@
 					
 					<p>Dans les données téléchargées sur le site de l'IGN se trouvent également les autres découpages administratifs pour la Guyane, ainsi que pour les autres territoires ultra-marins et la France métropolitaine.</p>
 					
+					<p class="note">Pour télécharger les données de l'IGN, vous pouvez également passer par <a class="ext" target="_blank" href="https://geotribu.github.io/ign-fr-opendata-download-ui/index.html" >ign2map</a> (et profitez-en pour aller faire un tour sur l'excellent site <a class="ext" target="_blank" href="https://static.geotribu.fr/" >Geotribu</a> !)</p>
+					
 					
 				<h4>Avec geo.data.gouv.fr<a class="headerlink" id="III11b" href="#III11b"></a></h4>				
 					
@@ -110,20 +128,20 @@
 								<img src="illustrations/tous/3_1_geodatagouv_recherche.png" alt="recherche sur le site geo.data.gouv.fr" width="600">
 							</a>
 						</figure>
-						<p>Cliquez sur le résultat <b>Guyane - Finess cat1100 - Etablissements Hospitaliers</b>.</p>
+						<p>Vous obtenez plusieurs résultats. Ici, nous allons télécharger les données <b>Guyane - Finess cat1100 - Etablissements Hospitaliers</b>.</p>
 						<figure>
 							<a href="illustrations/tous/3_1_geodatagouv_recherche_2.png" >
-								<img src="illustrations/tous/3_1_geodatagouv_recherche_2.png" alt="recherche sur le site geo.data.gouv.fr" width="600">
+								<img src="illustrations/tous/3_1_geodatagouv_recherche_2.png" alt="recherche sur le site geo.data.gouv.fr" width="500">
 							</a>
 						</figure>
-						<p>Les métadonnées nous apprennent que ces données proviennent de la BD Adresse et datent de  2013.</p>
+						<p>Les métadonnées nous apprennent que ces données proviennent de la BD Adresse, datent de  2013 et ont été mises à jour il y a 3 ans.</p>
 						<p>Téléchargez ces données au format GeoJSON, en cliquant sur le bouton <b>GeoJSON</b> en bas à gauche de la fenêtre : </p>
 						<figure>
 							<a href="illustrations/tous/3_1_geodatagouv_recherche_3.png" >
 								<img src="illustrations/tous/3_1_geodatagouv_recherche_3.png" alt="téléchargement au format geojson sur le site geo.data.gouv.fr" width="600">
 							</a>
 						</figure>
-						<p class="note">Si le téléchargement échoue, cette couche est également disponible dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees/COMMUNE.shp</b> accessible en <a href="donnees/TutoQGIS_03_RechercheDonnees.zip." >téléchargement</a>.</p>
+						<p class="note">Si le téléchargement échoue, cette couche est également accessible en <a href="donnees/TutoQGIS_03_RechercheDonnees.zip." >téléchargement</a>.</p>
 						<p>Ajoutez ensuite ces données à QGIS.</p>
 						<figure>
 							<a href="illustrations/tous/3_1_guyane_communes_hopitaux.png" >
@@ -131,6 +149,8 @@
 							</a>
 						</figure>
 					</div>
+					
+					<p class="note">Si vous téléchargez les autres jeux de données résultant de la recherche sur "hôpitaux guyane", vous constaterez qu'ils présentent entre eux des différences de localisation et de données attributaires. Quel jeu de données vaut-il mieux utiliser ? Cette question est celle que vous vous poserez systématiquement à chaque nouveau projet, et y répondre peut parfois prendre un temps considérable et représenter un projet en soi ! La première piste de réponse est bien sûr d'aller voir les métadonnées, si elles sont disponibles.</p>
 	
 			<h3>Données mondiales<a class="headerlink" id="III12" href="#III12"></a></h3>
 			
@@ -171,7 +191,8 @@
         			<p>On trouve sur internet deux DEM à couverture mondiale en libre accès : le modèle <b>ASTER</b> issu d'une collaboration NASA/METI (Ministry of Economy, Trade and Industry of Japan) et le modèle <b>SRTM</b> issu d'une collaboration NASA/NGA (National Geospatial-Intelligence Agency). Nous allons voir ici le cas du SRTM.</p>
         			
         			<div class="manip">
-        				<p>Rendez-vous sur <a class="ext" target="_blank" href="http://dwtkns.com/srtm/">http://dwtkns.com/srtm/</a> et cliquez sur une des cases recouvrant le Kenya (par exemple la dalle <b>srtm_44_12</b>) :</p>
+        				<p>Rendez-vous sur <a class="ext" target="_blank" href="http://dwtkns.com/srtm/">http://dwtkns.com/srtm/</a>. Un avertissement en haut de la page indique que l'outil ne fonctionne plus, mais il semble néanmoins opérationnel.</p>
+        				<p>Cliquez sur une des cases recouvrant le Kenya (par exemple la dalle <b>srtm_44_12</b>) :</p>
         				<figure>
         					<a href="illustrations/tous/3_1_telechargement_srtm.png" >
         						<img src="illustrations/tous/3_1_telechargement_srtm.png" alt="téléchargement d'une dalle du SRTM" width="350">
@@ -192,10 +213,6 @@
 			    <p>Selon la zone sur laquelle vous travaillez et votre sujet, il existe de nombreux sites avec des données géographiques en téléchargement. En voici quelques uns en vrac, qui seront ou non pertinents pour vous :</p>
 			
 				<ul>
-					<li class="espace">L'annuaire de données de l'incontournable GeoRezo, portail francophone de la géomatique
-						<br>
-						<a class="ext" target="_blank" href="http://georezo.net/annuaire/donnees-c-4.html">http://georezo.net/annuaire/donnees-c-4.html</a>
-					</li>
 					<li class="espace">Natural Earth : données à l'échelle mondiale : limites administratives, hydrographie, bathymétrie, fonds de carte raster...
 						<br>
 						<a class="ext" target="_blank" href="http://www.naturalearthdata.com/downloads/">http://www.naturalearthdata.com/downloads/</a>
@@ -210,11 +227,11 @@
 					</li>
 					<li class="espace">OpenStreetMap : extractions de données au format SHP ou OSM, fourni par Geofabrik :
 						<br>
-						<a class="ext" target="_blank" href="http://download.geofabrik.de/openstreetmap/">http://download.geofabrik.de/openstreetmap/</a>
+						<a class="ext" target="_blank" href="http://download.geofabrik.de/">http://download.geofabrik.de/</a>
 					</li>
-					<li class="espace">IGN : nombreuses données disponibles pour la France, certaines gratuites pour les établissements de recherche
+					<li class="espace">IGN : nombreuses données disponibles pour la France, dont un grand nombre en libre accès
 						<br>
-						<a class="ext" target="_blank" href="http://professionnels.ign.fr/catalogue">http://professionnels.ign.fr/catalogue</a>
+						<a class="ext" target="_blank" href="https://geoservices.ign.fr/catalogue">https://geoservices.ign.fr/catalogue</a>
 					</li>
 					<li class="espace">cadastre.data.gouv.fr : données cadastrales françaises en opendata
 						<br>
@@ -240,10 +257,6 @@
 					<li class="espace">SRTM : modèle d'élévation, données mondiales téléchargeables par dalles
 						<br>
 						<a class="ext" target="_blank" href="http://dwtkns.com/srtm/">http://dwtkns.com/srtm/</a>
-					</li>
-					<li class="espace">Global Land Cover Facility : images satellites
-						<br>
-						<a class="ext" target="_blank" href="http://glcfapp.glcf.umd.edu:8080/esdi/">http://glcfapp.glcf.umd.edu:8080/esdi/</a>
 					</li>
 				</ul>
 				
