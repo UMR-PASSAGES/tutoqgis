@@ -49,7 +49,12 @@
 						</div>
 						<p>La couche ajoutée est projetée à la volée dans le SCR du projet.</p>
 						<p>Pour simplifier les choses, nous allons passer le projet également en Pseudo Mercator, afin que la couche de base pour le géoréférencement et le projet aient le même SCR.</p>
-						<p>Pour cela, rendez-vous dans les propriétés du projet et sélectionnez le SCR Pseudo Mercator, code EPSG 3857 (cf. <a href="02_04_changer_systeme.php#II41">ici</a>).</p>
+						<p>Pour cela, rendez-vous dans les propriétés du projet et sélectionnez le SCR Pseudo Mercator, code EPSG 3857 (cf. <a href="02_04_changer_systeme.php#II41">ici</a>). Vous devez maintenant voir le SCR 3857 dans la barre en bas de la fenêtre de QGIS :</p>
+            <figure>						
+  						<a href="illustrations/tous/4_6_scr_projet_3857.png" >
+  						  <img src="illustrations/tous/4_6_scr_projet_3857.png" alt="SCR du projet lisible dans la barre du bas de la fenêtre de QGIS (ici EPSG:3857)" width="620">
+  					  </a>
+  					</figure>
 					</div>
 				
 				<h3>Zoom sur la zone d'étude avec l'extension Nominatim Locator Filter<a class="headerlink" id="IV62" href="#IV62"></a></h3>
@@ -98,24 +103,20 @@
 					
 					<div class="manip">
 						<p>Ouvrez la fenêtre du géoréférenceur et ajoutez l'image à caler : <em class="data"><a href="donnees/TutoQGIS_04_Georef.zip">Doncaster_east_locality_map.PNG</a></em> située dans le dossier <b>TutoQGIS_04_Georef/donnees</b> (si nécessaire, aidez-vous pour cela du début de la <a href="04_03_calage_carroyage.php#IV31">partie IV.3.1</a>).</p>
-						<p>Lorsque QGIS vous demande dans quel SCR est cette image, choisissez le <b>WGS84 / Pseudo-Mercator EPSG:3857</b>.</p>
-						<figure>
-							<a href="illustrations/tous/4_6_scr_3857.png">
-								<img src="illustrations/tous/4_6_scr_3857.png" alt="choix du scr wgs84 pseudo-mercator epsg:3857" width="350">
-							</a>
-						</figure>
+						<p class="note">Si QGIS vous demande dans quel SCR est cette image, choisissez le <b>WGS84 / Pseudo-Mercator EPSG:3857</b>.</p>
 						<p>Cliquez sur une intersection de routes, par exemple entre Reynolds Road et Blackburn Road. La fenêtre de saisie des coordonnées apparaît : cliquez sur le bouton <b>Depuis le canevas de la carte</b>.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_depuis_canevas.png">
-								<img src="illustrations/tous/4_6_depuis_canevas.png" alt="fenêtre de saisie des coordonnées" width="570">
+								<img src="illustrations/tous/4_6_depuis_canevas.png" alt="fenêtre de saisie des coordonnées" width="500">
 							</a>
 						</figure>
 						<p>Dans la fenêtre de QGIS, cliquez sur cette intersection sur les données OSM : les coordonnées de la fenêtre de saisie sont automatiquement remplies avec les coordonnées du point sur lequel vous venez de cliquer.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_coord_remplies.png">
-								<img src="illustrations/tous/4_6_coord_remplies.png" alt="les coordonnées sont remplies en fonction du point cliqué dans QGIS" width="600">
+								<img src="illustrations/tous/4_6_coord_remplies.png" alt="les coordonnées sont remplies en fonction du point cliqué dans QGIS" width="500">
 							</a>
 						</figure>
+						<p>Notez également que le SCR du projet est automatiquement sélectionné&nbsp;!</p>
 						<p>Cliquez sur <b>OK</b>.</p>
 						<figure>
 							<a href="illustrations/tous/4_6_point_0.png">

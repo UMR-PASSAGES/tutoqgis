@@ -23,17 +23,21 @@
 					</li>
 					<li><a href="#IV42">Rééchantillonnage, ou comment calculer les valeurs des pixels ?</a></li>
 					<li><a href="#IV43">Mode de compression utilisé pour la création de la nouvelle image</a></li>
-					<li><a href="#IV44">Les autres paramètres</a>
+					<li><a href="#IV44">Raster en sortie et SCR</a>
 						<ul class= "listesoustitres">
 							<li><a href="#IV44a" >Raster de sortie</a></li>
 							<li><a href="#IV44b" >SCR cible</a></li>
-							<li><a href="#IV44c" >Carte et rapport PDF</a></li>
-							<li><a href="#IV44d" >Définir la résolution de la cible</a></li>
-							<li><a href="#IV44e" >Transparence</a></li>
-							<li><a href="#IV44f" >Charger directement le raster dans QGIS</a></li>
+						</ul>
+					<li><a href="#IV45">Les autres paramètres</a>
+					   <ul class= "listesoustitres">
+							<li><a href="#IV45a" >Enregistrer les points de contrôle</a></li>
+							<li><a href="#IV45b" >Transparence</a></li>
+							<li><a href="#IV45c" >Définir la résolution de la cible</a></li>
+							<li><a href="#IV45d" >Carte et rapport PDF</a></li>
+							<li><a href="#IV45e" >Charger directement le raster dans QGIS</a></li>
 						</ul>
 					</li>
-					<li><a href="#IV45">Une fois tous les paramètres choisis...</a></li>
+					<li><a href="#IV46">Une fois tous les paramètres choisis...</a></li>
 				</ul>
 				<br>
 	
@@ -104,6 +108,7 @@
 						<li class="espace"><b>Linéaire :</b> la valeur du nouveau pixel est déterminée à partir des valeurs des 4 pixels les plus proches. Cette méthode est utilisée pour des données continues et permet un lissage du raster.</li>
 						<li class="espace"><b>Cubique :</b> la valeur du nouveau pixel est déterminée à partir des valeurs des 16 pixels les plus proches. Ceci provoque moins de distorsion géométrique de l'image mais nécessite un temps de calcul relativement long. Par ailleurs, il y a plus de possibilités d'obtenir avec cette méthode de nouvelles valeurs de pixel par rapport aux valeurs de départ.</li>
 					</ul>
+					<p class="note">Il est aussi possible de choisir les méthodes <b>Cubic Spline</b> et <b>Lanczos</b>, mais au-delà du fait que ce sont des méthodes plus complexes que les précédentes, je ne saurais pas les expliquer et encore moins leurs avantages et inconvénients&nbsp;! A vous de tester...</p>
 					<p>Le choix d'une méthode de rééchantillonnage a surtout une influence dans le cas où la taille des pixels est importante par rapport à la taille des objets qui seront étudiés sur l'image, par exemple une photo aérienne où chaque maison est constituée de seulement quelques pixels.</p>
 					<p>Dans notre cas (carte scannée avec une bonne résolution), le choix du type de rééchantillonnage influencera peu le résultat.</p>
 					
@@ -121,14 +126,14 @@
 					<p>La compression permet d'obtenir un raster moins volumineux, mais peut provoquer une perte de qualité. Une image compressée peut par ailleurs être illisible par certains logiciels.</p>
 					<p>QGIS propose les méthodes suivantes :</p>
 					<ul>
-						<li class="espace"><b>NONE :</b> pas de compression</li>
+						<li class="espace"><b>Aucun :</b> pas de compression</li>
 						<li class="espace"><b>LZW :</b> utilisé pour les images au format GIF et TIF. Assez largement utilisé, permet une compression jusqu'au 1:10</li>
 						<li class="espace"><b>PACKBITS :</b> offre une compression moindre que la méthode LZW, mais ce format est plus courant</li>
 						<li class="espace"><b>DEFLATE :</b> similaire à LZW, mais principalement prise en charge par les logiciels Adobe</li>
 					</ul>
 					
 					<div class="manip">
-						<p>Notre image de base étant peu volumineuse, nous allons choisir le type <b>NONE</b>.</p>
+						<p>Notre image de base étant peu volumineuse, nous allons choisir le type <b>Aucun</b>.</p>
 						<figure>
 							<a href="illustrations/tous/4_4_compression.png" >
 								<img src="illustrations/tous/4_4_compression.png" alt="Choix du type de compression" width="380">
@@ -136,7 +141,7 @@
 						</figure>	
 					</div>
 				
-				<h3>Les autres paramètres<a class="headerlink" id="IV44" href="#IV44"></a></h3>
+				<h3>Raster en sortie et SCR<a class="headerlink" id="IV44" href="#IV44"></a></h3>
 				
 					<h4>Raster de sortie<a class="headerlink" id="IV44a" href="#IV44a"></a></h4>
 					
@@ -167,33 +172,15 @@
 									<img src="illustrations/tous/4_4_choix_scr_fenetre.png" alt="Sélection du SCR WGS84" width="430">
 								</a>							
 							</figure>
-						</div>	
+						</div>
+						
+				<h3>Les autres paramètres<a class="headerlink" id="IV45" href="#IV4"></a></h3>
 
-					<h4>Carte et rapport PDF<a class="headerlink" id="IV44c" href="#IV44c"></a></h4>
-						
-						<p>La carte PDF permettra de visualiser le décalage qu'aura subi chaque point de contrôle. Le rapport PDF comportera notamment les coordonnées et erreurs pour chaque point.</p>
-						<div class="manip">
-							<p>Cliquez sur les icônes à droite des lignes carte PDF et rapport PDF pour spécifier un nom (à votre convenance) et l'emplacement (par exemple dans le même dossier que l'image de départ) pour la carte et le rapport qui seront créés.</p>
-							<figure>
-								<a href="illustrations/tous/4_4_carte_rapport_icone.png" >
-									<img src="illustrations/tous/4_4_carte_rapport_icone.png" alt="icônes pour choisir le nom et l'emplacement de la carte et du rapport PDF" width="460">
-								</a>							
-							</figure>
-						</div>
-	
-	
-					<h4>Définir la résolution de la cible<a class="headerlink" id="IV44d" href="#IV44d"></a></h4>	
+					<h4>Enregistrer les points de contrôle<a class="headerlink" id="IV45a" href="#IV45a"></a></h4>
 					
-						<div class="manip">
-							<p>Laisser cette case décochée pour que l'image créée ait la même résolution que l'image de départ.</p>
-							<figure>
-								<a href="illustrations/tous/4_4_resolution.png" >
-									<img src="illustrations/tous/4_4_resolution.png" alt="résolution de la cible : la case est décochée" width="230">
-								</a>							
-							</figure>	
-						</div>
-						
-					<h4>Transparence<a class="headerlink" id="IV44e" href="#IV44e"></a></h4>
+            <p>Si vous n'avez pas déjà enregistré les points de contrôle, ça peut être une bonne idée de cocher cette case afin de sauvegarder votre travail, et de garder trace des points utilisés, pour tester ensuite avec une autre transformation par exemple.</p>					
+					
+					<h4>Transparence<a class="headerlink" id="IV45b" href="#IV45b"></a></h4>
 					
 						<p>Employer 0 pour la transparence : cette option est utile principalement pour les photographies aériennes ou satellites et permet de ne pas visualiser les pixels noirs (bords de l'image), ce qui serait gênant dans notre cas.</p>
 						<div class="manip">
@@ -204,9 +191,31 @@
 								</a>							
 							</figure>	
 						</div>
-		
+	
+					<h4>Définir la résolution de la cible<a class="headerlink" id="IV45c" href="#IV45c"></a></h4>	
+					
+						<div class="manip">
+							<p>Laisser cette case décochée pour que l'image créée ait la même résolution que l'image de départ.</p>
+							<figure>
+								<a href="illustrations/tous/4_4_resolution.png" >
+									<img src="illustrations/tous/4_4_resolution.png" alt="résolution de la cible : la case est décochée" width="230">
+								</a>							
+							</figure>	
+						</div>
 						
-					<h4>Charger directement le raster dans QGIS<a class="headerlink" id="IV44f" href="#IV44f"></a></h4>
+					<h4>Carte et rapport PDF<a class="headerlink" id="IV45d" href="#IV45d"></a></h4>
+						
+						<p>La carte PDF permettra de visualiser le décalage qu'aura subi chaque point de contrôle. Le rapport PDF comportera notamment les coordonnées et erreurs pour chaque point.</p>
+						<div class="manip">
+							<p>Cliquez sur les icônes à droite des lignes carte PDF et rapport PDF pour spécifier un nom (à votre convenance) et l'emplacement (par exemple dans le même dossier que l'image de départ) pour la carte et le rapport qui seront créés.</p>
+							<figure>
+								<a href="illustrations/tous/4_4_carte_rapport_icone.png" >
+									<img src="illustrations/tous/4_4_carte_rapport_icone.png" alt="icônes pour choisir le nom et l'emplacement de la carte et du rapport PDF" width="460">
+								</a>							
+							</figure>
+						</div>
+						
+					<h4>Charger directement le raster dans QGIS<a class="headerlink" id="IV45e" href="#IV45e"></a></h4>
 					
 						<div class="manip">
 							<p>Charger dans QGIS lorsque terminé : cocher cette case pour que le nouveau raster soit chargé automatiquement dans QGIS une fois le géoréférencement effectué.</p>
@@ -218,7 +227,7 @@
 						</div>
 
 									
-				<h3>Une fois tous les paramètres choisis...<a class="headerlink" id="IV45" href="#IV45"></a></h3>
+				<h3>Une fois tous les paramètres choisis...<a class="headerlink" id="IV46" href="#IV46"></a></h3>
 				
 					<p>...Cliquez sur OK : les paramètres sont sauvegardés... Mais rien ne semble se passer. Rendez-vous dans la partie suivante pour l'étape finale !</p>						
 					

@@ -26,7 +26,8 @@
 				<h3>Création du premier point<a class="headerlink" id="IV31" href="#IV31"></a></h3>
 				
 					<div class="manip">
-						<p>Lancez QGIS ou créez un nouveau projet. <b>Il est inutile d'ajouter la carte d'Oahu à QGIS</b> (si vous le faites néanmoins, profitez-en pour observer qu'en l'absence d'informations de localisation pour cette image, QGIS positionne son coin supérieur gauche aux coordonnées (0,0)).</p>
+						<p>Lancez QGIS ou créez un nouveau projet, et assurez-vous que le <a href="02_03_couches_projets.php#II31">SCR de ce projet</a> soit le <b>WGS84 EPSG 4326</b>.</p>
+						<p><b>Il est inutile d'ajouter la carte d'Oahu à QGIS</b> (si vous le faites néanmoins, profitez-en pour observer qu'en l'absence d'informations de localisation pour cette image, QGIS positionne son coin supérieur gauche aux coordonnées (0,0)).</p>
 						<p><img class="icone" src="illustrations/tous/4_3_georeferenceur_icone.png" alt="icône du géoréférenceur" >
 						Ouvrez la fenêtre du géoréférenceur :
 							<a class="thumbnail_bottom" href="#thumb">Menu Raster &#8594; Géoréférencer...
@@ -49,7 +50,7 @@
 							</a>
 						.</p>
 						<p>Sélectionnez la carte de l'île d'Oahu : fichier <em class="data"><a href="donnees/TutoQGIS_04_Georef.zip">Oahu_Hawaiian_Islands_1906.jpg</a></em>.</p>
-						<p>Une fenêtre s'ouvre demandant le SCR de l'image ; puisque nous avons décidé de partir du principe que les coordonnées de cette carte était en WGS84, 
+						<p class="note">Selon votre version de QGIS, une fenêtre peut s'ouvrir pour demander le SCR de l'image ; puisque nous avons décidé de partir du principe que les coordonnées de cette carte était en WGS84, 
 							<a class="thumbnail_bottom" href="#thumb">choisissez ce SCR
 								<span>
 									<img src="illustrations/tous/4_3_choix_scr_wgs84.png" alt="Choix du SCR WGS84 en utilisant le filtre 4326" height="500" >
@@ -66,7 +67,7 @@
 						<p><img class="icone" src="illustrations/tous/4_3_ajout_point_icone.png" alt="icône d'ajout de point du géoréférenceur" >Vérifiez que l'icône <b>Ajouter un point</b> soit bien sélectionnée et cliquez à l'intersection des deux lignes du carroyage :</p>
 						<figure>
 							<a href="illustrations/tous/4_3_ajout_point_fenetre.png" >
-								<img src="illustrations/tous/4_3_ajout_point_fenetre.png" alt="Fenêtre de saisie des coordonnées d'un point de calage" width="550" >
+								<img src="illustrations/tous/4_3_ajout_point_fenetre.png" alt="Fenêtre de saisie des coordonnées d'un point de calage" width="450" >
 							</a>
 						</figure>
 						<div class="question">
@@ -74,9 +75,9 @@
 							<p><label for="faq-3">Comment saisir les coordonnées de ce point ?</label></p>
 							<p class="reponse">Ce point est situé aux coordonnées -158° 15' Est (longitude négative car le point est à l'ouest du méridien de Greeenwich) et 21° 40' Nord (latitude positive car le point est au Nord de l'équateur).</p>
 							<p class="reponse">QGIS propose de saisir les coordonnées en degrés minutes secondes sous la forme dd mm ss.ss. Ici, nous avons juste des degrés et des minutes : le point a donc pour coordonnées <b>-158 15</b> Est et <b>21 40</b> Nord.</p>
-							<p class="reponse"><a href="illustrations/tous/4_3_ajout_point_fenetre_rempli.png" ><img src="illustrations/tous/4_3_ajout_point_fenetre_rempli.png" alt="Fenêtre de saisie des coordonnées d'un point de calage, coordonnées remplies" width="500" ></a></p>
+							<p class="reponse"><a href="illustrations/tous/4_3_ajout_point_fenetre_rempli.png" ><img src="illustrations/tous/4_3_ajout_point_fenetre_rempli.png" alt="Fenêtre de saisie des coordonnées d'un point de calage, coordonnées remplies" width="450" ></a></p>
 						</div>
-						<p>Après avoir saisi les coordonnées, cliquez sur <b>OK</b>.</p>
+						<p>Depuis la version 3.22, le choix du SCR se fait directement dans cette fenêtre de saisie d'un point. Vérifiez que le SCR sélectionné soit bien le WGS84, puis cliquez sur <b>OK</b>.</p>
 					</div>
 					
 					<p>Le point apparaît sous forme d'une ligne dans la table des points de contrôle, sous la carte dans la fenêtre géoréférenceur :</p>
