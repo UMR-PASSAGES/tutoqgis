@@ -75,7 +75,7 @@
 							<img src="illustrations/tous/5_2_ecole_kaneohe.png" alt="zoom sur l'école de Kaneohe" width="430">
 						</a>
 					</figure>
-					<p><img class="icone" src="illustrations/tous/5_2_ajout_icone.png" alt="icône d'ajout d'une entité" >Assurez-vous que votre couche de bâtiments soit bien sélectionnée dans la table des matières, puis cliquez sur l'icône <b>Ajouter une entité</b>.</p>
+					<p><img class="icone" src="illustrations/tous/5_2_ajout_icone.png" alt="icône d'ajout d'une entité ponctuelle" >Assurez-vous que votre couche de bâtiments soit bien sélectionnée dans la table des matières, puis cliquez sur l'icône <b>Ajouter une entité ponctuelle</b>.</p>
 					<p>Cliquez sur l'école ou la poste que vous avez choisie; une fenêtre s'ouvre vous demandant de renseigner les attributs pour ce point. Laissez <b>Génération automatique</b> pour le champ fid, et renseignez le type de bâtiment : <b>poste</b>. Cliquez sur <b>OK</b>.</p>
 					<p class="note">Si cette fenêtre ne s'ouvre pas, menu Préférences &#8594; Options &#8594; rubrique Numérisation : décochez la case &#171; Supprimer la fenêtre de saisie des attributs lors de la création de chaque nouvelle entité &#187; (tout en haut).</p>
 					<figure>
@@ -116,7 +116,7 @@
 					<p>Imaginons qu'un de vos points soit mal placé et que vous vouliez le déplacer.</p>
 					<div class="manip">
 						<p>La couche doit être en mode édition.</p>
-						<p>Il faut également <b>activer la barre d'outils de numérisation avancée</b> : clic droit sur n'importe quel barre d'outils (sauf sur un outil désactivé) et cochez si ça n'est pas déjà le cas la case Barre d'outils de numérisation avancée. Vous pouvez également passer par le menu Vue &#8594; Barres d'outils.</p>
+						<p>Il faut également <b>activer la barre d'outils de numérisation avancée</b> : clic droit sur n'importe quelle barre d'outils (sauf sur un outil désactivé) et cochez si ça n'est pas déjà le cas la case Barre d'outils de numérisation avancée. Vous pouvez également passer par le menu Vue &#8594; Barres d'outils.</p>
 						<p><img class="icone" src="illustrations/tous/5_2_deplacer_icone.png" alt="icône déplacer l'entité" >Sélectionnez votre couche de bâtiments dans la table des matières, puis cliquez sur l'icône <b>Déplacer l'entité</b>.</p>
 						<p>Le curseur prend la forme d'une croix. Cliquez sur le point à déplacer, puis cliquez sur l'endroit où vous souhaitez déplacer ce point.</p>
 					</div>

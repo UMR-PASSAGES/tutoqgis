@@ -34,7 +34,7 @@
 					<p>Reportez-vous à la <a href="05_01_creation_couche.php">partie V.1</a> pour créer une couche de ligne, en lui donnant :</p>
 					<ul>
   					    <li>le nom <em class="data">fleuves_oahu</em>.</li>
-						<li>le type de géométrie <b>ligne</b></li>
+						<li>le type de géométrie <b>polyligne</b></li>
 						<li>un seul champ de type texte, de longueur 80, nommé <b>nom</b> (il contiendra le nom des fleuves)</li>
 					</ul>
 					<p>Vérifiez que cette couche soit bien chargée dans votre projet, ainsi que la carte <em class="data"><a href="donnees/TutoQGIS_05_Numerisation.zip">Oahu_Hawaiian_Islands_1906_wgs84.tif</a></em>.</p>
@@ -55,7 +55,8 @@
     						</a>
     					</figure>
     					<p>Passez en mode édition pour votre couche de fleuves.</p>
-    					<p><img class="icone" src="illustrations/tous/5_4_ajout_icone.png" alt="icône ajouter une entité">Cliquez sur l'icône <b>Ajouter une entité</b> (vous remarquerez que cette icône varie en fonction du type de la couche éditée, point, ligne ou polygone).</p>
+    					<p><img class="icone" src="illustrations/tous/5_4_ajout_icone.png" alt="icône ajouter une entité linéaire">Cliquez sur l'icône <b>Ajouter une entité linéaire</b>. Attention, elle ressemble beaucoup à l'icône pour créer une nouvelle couche shapefile&nbsp;!</p>
+    					<p class="note">Vous remarquerez que cette icône varie en fonction du type de couche éditée : point, ligne ou polygone.</p>
     					<p>Cliquez sur le début du fleuve pour créer un premier sommet, puis rajoutez d'autres points à votre ligne. Pour terminer, faites un clic-droit n'importe où.</p>
     					<figure>
     						<a href="illustrations/tous/5_4_fleuve.png" >

@@ -85,7 +85,7 @@
 							<img src="illustrations/tous/5_1_table_vide.png" alt="table attributaire de la couche batiments_oahu" width="570">
 						</a>
 				   </figure>
-				   <p>Cette table ne contien aucune ligne, ce qui est normal car la couche ne contient aucune entité.</p>
+				   <p>Cette table ne contient aucune ligne, ce qui est normal car la couche ne contient aucune entité.</p>
 				   <p>Par contre, elle contient 2 champs, <b>fid</b> et <b>type</b>, alors qu'on se serait attendu à ne voir que le champ type.</p>
 			    </div>
 			 

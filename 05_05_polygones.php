@@ -40,15 +40,15 @@
 					<img src="illustrations/tous/5_5_oahu_apres.png" alt="détail de la carte de l'île d'Oahu avec la couche de polygones superposée" width="300">
 				</a>
 			</figure>
-			<p>L'idée est de numériser le polygone de la réserve forestière, avec des contours bleus sur la carte, puis de le découper pour différencier les zones de cette réserve classées comme &#171; Public lands &#187; (en vert) ou comme &#171; Dederal Reservations &#187; (en rose).</p>
+			<p>L'idée est de numériser le polygone de la réserve forestière, avec des contours bleus sur la carte, puis de le découper pour différencier les zones de cette réserve classées comme &#171; Public lands &#187; (en vert) ou comme &#171; Federal Reservations &#187; (en rose).</p>
 				
 			<h3>Création d'une couche de polygones<a class="headerlink" id="V51" href="#V51"></a></h3>
 				
 				<div class="manip">
-					<p>Reportez-vous à la <a href="05_01_creation_couche.php">partie V.1</a> pour créer une couche de polygones, en lui donnant :</p>
+					<p>Créez une couche de polygones en vous reportant si besoin à la <a href="05_01_creation_couche.php">partie V.1</a>, avec les paramètres suivants&nbsp;:</p>
 					<ul>
-					    <li class="espace">le nom <em class="data">zones_oahu</em>.</li>
-						<li class="espace">le type <b>polygone</b></li>
+					    <li class="espace">nom : <em class="data">zones_oahu</em>.</li>
+						<li class="espace">type : <b>polygone</b></li>
 						<li class="espace">deux champs de type texte, de longueur 80, nommés <b>type1</b> et <b>type2</b> (ils contiendront les types de zone, tels qu'indiqués dans la légende)</li>
 					</ul>
 					<p>Vérifiez que cette couche soit bien chargée dans votre projet, ainsi que la carte <em class="data"><a href="donnees/TutoQGIS_05_Numerisation.zip">Oahu_Hawaiian_Islands_1906_wgs84.tif</a></em>.</p>
@@ -71,7 +71,7 @@
 							<img src="illustrations/tous/5_5_zoom_reserve.png" alt="zoom sur la réserve" width="350">
 						</a>
 					</figure>
-					<p><img class="iconemid" src="illustrations/tous/5_5_ajout_icone.png" alt="icône ajouter une entité">Cliquez sur l'icône <b>Ajouter une entité</b> qui a pris la forme d'un polygone.</p>
+					<p><img class="iconemid" src="illustrations/tous/5_5_ajout_icone.png" alt="icône ajouter une entité">Cliquez sur l'icône <b>Ajouter une entité polygonale</b> qui a pris la forme d'un polygone.</p>
 					<p>Cliquez sur un point du polygone, puis ajoutez d'autres sommets comme pour une ligne. La forme du polygone évolue au fur et à mesure.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_debut_num.png" >
@@ -158,20 +158,18 @@
 				<p>Par exemple, comment faire pour rajouter la partie ouest de la bande de Waimano en s'aimantant aux polygones déjà existants ?</p>
 				
 				<div class="manip">
-					<p>Rendez-vous dans le Menu <b>Projet &#8594; Options d'accrochage</b> :</p>
+					<p>Rendez-vous dans le Menu <b>Projet &#8594; Options d'accrochage</b> (cliquez sur l'image pour voir la fenêtre en plus grand) :</p>
 					<figure>
 						<a href="illustrations/tous/5_5_accrochage_fenetre.png" >
 							<img src="illustrations/tous/5_5_accrochage_fenetre.png" alt="activation de l'accrochage pour la couche de polygones avec une tolérance de 10 pixels" width="600">
 						</a>
 					</figure>
-				</div>
-				
-				<div class="manip">
-				    <p><img class="iconemid" src="illustrations/tous/5_5_accrochage_icone.png" alt="icône de l'outil d'activation de l'accrochage" >Cliquez sur le bouton <b>Activer l'accrochage</b> tout en haut à gauche de la fenêtre.</p>
-				    <p>Choisissez le mode <b>Configuration avancée</b> dans la liste déroulante à droite. La liste des couches présentes dans votre projet QGIS s'affiche.</p>
-				    <p>Vous pouvez ici définir à quelle(s) couche(s) le curseur sera aimanté, s'il sera aimanté uniquement par les sommets ou également par les segments, et à quelle distance d'un sommet ou segment l'aimantage prend effet.</p>
+
+				  <p><img class="iconemid" src="illustrations/tous/5_5_accrochage_icone.png" alt="icône de l'outil d'activation de l'accrochage" >Cliquez sur le bouton <b>Activer l'accrochage</b> tout en haut à gauche de la fenêtre.</p>
+				  <p>Choisissez le mode <b>Configuration avancée</b> dans la liste déroulante à droite. La liste des couches présentes dans votre projet QGIS s'affiche.</p>
+				  <p>Vous pouvez ici définir à quelle(s) couche(s) le curseur sera aimanté, s'il sera aimanté uniquement par les sommets ou également par les segments, et à quelle distance d'un sommet ou segment l'aimantage prend effet.</p>
 					<p>Par exemple, pour être automatiquement aimanté à votre couche de polygone dès que votre curseur approche à moins de 10 pixels d'un sommet de cette couche, cochez la case de <b>zones_oahu</b>, choisissez le mode <b>sommet</b> et fixez la tolérance à <b>10 pixels</b>.</p>
-					<p>Fermez la fenêtre des paramètres d'accrochage.</p>
+					<p>Fermez la fenêtre des paramètres d'accrochage (ou déplacez-là là où elle ne vous gênera pas).</p>
 					<p>Cliquez sur l'icône <b>Ajouter une entité</b>, et approchez-vous d'un sommet d'un polygone déjà créé : votre curseur est aimanté par ce sommet, qui apparaît alors en rose.</p>
 					<figure>
 						<a href="illustrations/tous/5_5_curseur_aimante.png" >
@@ -191,13 +189,20 @@
 				<p>L'accrochage est une propriété pratique pour quelques sommets, mais si vous souhaitez créer un polygone contigu à une autre sur une longue portion (par exemple le polygone en pointillés bleus sur la carte), cela peut être fastidieux de cliquer un à un sur tous les sommets communs.</p>
 				
 				<div class="manip">
-					<p>Pour éviter cela, rendez-vous à nouveau dans le menu Projet &#8594; Options d'accrochage et cochez la case <b>Éviter les intersections</b> pour la couche zones_oahu.</p>
+					<p>Pour éviter cela, rendez-vous à nouveau dans le menu Projet &#8594; Options d'accrochage et cochez la case <b>Éviter le chevauchement</b> pour la couche zones_oahu.</p>
 					<figure>
 					   <a href="illustrations/tous/5_5_eviter_intersections.png" >
-					       <img src="illustrations/tous/5_5_eviter_intersections.png" alt="cocher la case éviter les intersections" width="500">
+					       <img src="illustrations/tous/5_5_eviter_intersections.png" alt="cocher la case éviter les intersections" width="600">
 					   </a>
 					</figure>
-					<p>Cliquez sur l'icône <b>Ajouter une entité</b>, et dessinez un par exemple le polygone en pointillés bleu correspondant à la surface des terres forestières qui ne sont pas en réserve. Ce polygone est contigu sur une longue portion à des polygones que vous avez déjà créés : ne suivez pas les bords pour cette partie mais contentez-vous de passer au milieu des polygones déjà existants.</p>
+					<p>Dans la barre d'outils Accrochage, il faut maintenant sélectionner <b>Suivre la configuration avancée</b> dans la liste déroulante :</p>
+					<figure>
+					   <a href="illustrations/tous/5_5_suivre_config_avancee.png" >
+					       <img src="illustrations/tous/5_5_suivre_config_avancee.png" alt="sélection de l'option 'suivre la configuration avancée' dans la barre d'outils accrochage" width="480">
+					   </a>
+					</figure>
+					<p class="note">Vous pouvez aussi simplement choisir <b>Eviter le chevauchement sur la couche active</b>, sans modifier la configuration avancée.</p>
+					<p>Cliquez sur l'icône <b>Ajouter une entité</b>, et dessinez par exemple le polygone en pointillés bleu correspondant à la surface des terres forestières qui ne sont pas en réserve. Ce polygone est contigu sur une longue portion à des polygones que vous avez déjà créés : ne suivez pas les bords pour cette partie mais contentez-vous de passer au milieu des polygones déjà existants.</p>
 					<p>Faites un clic droit pour terminer le polygone : les parties du polygone que vous venez de dessiner qui étaient superposées à des polygones déjà existants ont été automatiquement supprimées.</p>
 					<figure>
 					   <a href="illustrations/tous/5_5_eviter_intersections_avant.png" >

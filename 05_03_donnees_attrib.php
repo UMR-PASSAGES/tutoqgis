@@ -81,7 +81,7 @@
 				        <img src="illustrations/tous/5_3_liste_fenetre.png" alt="la fenêtre de saisie des attributs, avec la liste déroulante" width="370">
 				    </a>
 				</figure>
-				<p>Pour en savoir plus, les différents outils d'édition sont décrits dans le <a class="ext" target="_blank" href="https://docs.qgis.org/3.4/fr/docs/user_manual/working_with_vector/vector_properties.html?#attributes-form-properties" >manuel QGIS</a>.</p>
+				<p>Pour en savoir plus, les différents outils d'édition sont décrits dans le <a class="ext" target="_blank" href="https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector/vector_properties.html#configure-the-field-behavior" >manuel QGIS</a>.</p>
 				
 				<p>Dans le chapitre suivant, dessinez des lignes avec QGIS&nbsp;!</p>
 				

@@ -31,12 +31,13 @@
 							<li><a href="#V63a">Corriger les erreurs de topologie manuellement</a></li>
 							<li><a href="#V63b">Corriger les erreurs de topologie avec l'outil &#171;&nbsp; réparer les géométries &#187;&nbsp;</a></li>
 							<li><a href="#V63c">Corriger les erreurs de topologie avec l'outil v.clean de Grass</a></li>
+							<li><a href="#V63d">Cas particulier des erreurs de type &#171;&nbsp;auto-intersection&nbsp;&#187;</a></li>
 						</ul>
 				    </li>
 				</ul>
 				<br>
 				
-			<p>Au cours de la dernière partie notamment, nous avons vu comment éviter que deux polygones soient "presque" jointifs, au moyen de propriétés telles que l'accrochage, ou par l'utilisation d'outils de découpage par exemple. Nous avons également vu comment utiliser le mode d'édition topologique de QGIS.</p>
+			<p>Au cours de la dernière partie notamment, nous avons vu comment éviter que deux polygones soient &#171;&nbsp;presque&nbsp;&#187; jointifs, au moyen de propriétés telles que l'accrochage, ou par l'utilisation d'outils de découpage par exemple. Nous avons également vu comment utiliser le mode d'édition topologique de QGIS.</p>
 			<p>Nous allons ici en apprendre un peu plus sur ce qu'est la topologie, et comment vérifier la topologie d'une couche.</p>
 
 			
@@ -46,7 +47,7 @@
 				
 					<p>La <a class="ext" target="_blank" href="http://www.cnrtl.fr/definition/topologie">topologie</a> est la &#171; partie de la géométrie qui considère uniquement les relations de position &#187; (Aur.-Weil 1981).</p>
 					<p>En géomatique, la topologie est utilisée pour décrire les relations entre les géométries des entités. Des règles de topologie peuvent être définies, et les erreurs de topologie détectées.</p>
-					<p>Par exemple, on peut décider qu'il ne doit y avoir aucune superposition de polygones dans une couche :</p>
+					<p>Par exemple, on peut décider qu'il ne doit y avoir aucune superposition de polygones dans une couche (les erreurs sont en rouge) :</p>
 					<figure>
 						<a href="illustrations/tous/5_6_overlap.png" >
 							<img src="illustrations/tous/5_6_overlap.png" alt="deux polygones se superposant en partie" width="300">
@@ -74,17 +75,19 @@
 			<h3>Pour aller plus loin : comment vérifier la topologie d'une couche ?<a class="headerlink" id="V62" href="#V62"></a></h3>
 			
 				<p>Cette partie est pour &#171; aller un peu plus loin &#187; : vous pouvez donc passer directement à la partie suivante si vous le désirez !</p>
+				<p>Sinon, vous aurez besoin d'un projet QGIS avec une couche de polygones, par exemple <em class="data">zones_oahu</em>.</p>
 			
 				<h4>Vérification simple<a class="headerlink" id="V62a" href="#V62a"></a></h4>
 					
 					<div class="manip">
-						<p>Pour vérifier rapidement la topologie d'une couche, rendez-vous dans le menu
-							<a class="thumbnail_bottom" href="#thumb">Vecteur &#8594; Outils de géométrie &#8594; Vérifier la validité
-								<span>
-									<img src="illustrations/tous/5_6_verif_menu.png" alt="Menu Vecteur, Outils de géométrie, vérifier la validité" height="400" >
-								</span>
-							</a>	
-						:</p>
+					  <p>Vérifiez d'abord que votre couche de polygones <em class="data">zones_oahu</em> n'est pas en mode édition.</p>
+						<p>Pour vérifier rapidement la topologie d'une couche, utilisez l'outil <b>Vérifier la validité</b>, accessible dans la boîte à outils (en tapant <em>valid</em> dans la barre de recherche par exemple)&nbsp;:</p>
+						<figure>
+							<a href="illustrations/tous/5_6_verif_toolbox.png" >
+								<img src="illustrations/tous/5_6_verif_toolbox.png" alt="accéder à l'outil vérifier la validité dans la toolbox" width="370">
+							</a>
+						</figure>
+						<p class="note">Si la boîte à outils n'est pas visible, allez dans le menu Traitement &#8594; Boîte à outils.</p>
 						<figure>
 							<a href="illustrations/tous/5_6_verif_fenetre.png" >
 								<img src="illustrations/tous/5_6_verif_fenetre.png" alt="fenêtre de validation de la géométrie" width="600">
@@ -143,23 +146,27 @@
 			       
 			    <h4>Corriger les erreurs de topologie avec l'outil &#171;&nbsp; réparer les géométries &#187;&nbsp;<a class="headerlink" id="V63b" href="#V63b"></a></h4>
 			    
-			       <p>Il existe un outil <b>Réparer les géométries</b> accessible dans la boîte à outils de traitement. Pour afficher (ou masquer si elle est déjà affichée) cette boîte, <b>menu Traitement &#8594; Boîte à outils</b>. Tapez ensuite <b>réparer</b> dans la partie filtre pour trouver facilement cet outil :</p>
-			       <figure>
+			      <p>Il existe un outil <b>Réparer les géométries</b> accessible dans la boîte à outils de traitement. Pour afficher (ou masquer si elle est déjà affichée) cette boîte, <b>menu Traitement &#8594; Boîte à outils</b>. Tapez ensuite <b>réparer</b> dans la partie filtre pour trouver facilement cet outil :</p>
+			      <figure>
 						<a href="illustrations/tous/5_6_reparer.png" >
 							<img src="illustrations/tous/5_6_reparer.png" alt="accès à l'outil réparer les géométries à partir de la boîte à outils" width="300">
 						</a>
-					</figure>
-					<p>Cet outil prend une couche en entrée (la couche contenant des erreurs) et génère une nouvelle couche, normalement sans erreurs de topologie, en sortie.</p>
+					  </figure>
+					  <p>Cet outil prend une couche en entrée (la couche contenant des erreurs) et génère une nouvelle couche, normalement sans erreurs de topologie, en sortie.</p>
 			    
 			    <h4>Corriger les erreurs de topologie avec l'outil v.clean de Grass<a class="headerlink" id="V63c" href="#V63c"></a></h4>
 			    
-					<p>Vous pouvez également utiliser l'outil <b>v.clean</b> issu de <b>Grass</b>, toujours dans la boîte à outils de traitements. Tapez <b>clean</b> dans le filtre pour accéder à l'outil <b>v.clean</b>.</p>
-					<figure>
-						<a href="illustrations/tous/5_6_vclean.png" >
-							<img src="illustrations/tous/5_6_vclean.png" alt="accès à l'outil vclean à partir de la boîte à outils" width="300">
-						</a>
-					</figure>
-					<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass70/manuals/v.clean.html" >https://grass.osgeo.org/grass70/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>
+  					<p>Vous pouvez également utiliser l'outil <b>v.clean</b> issu de <b>Grass</b>, toujours dans la boîte à outils de traitements. Tapez <b>clean</b> dans le filtre pour accéder à l'outil <b>v.clean</b>.</p>
+  					<figure>
+  						<a href="illustrations/tous/5_6_vclean.png" >
+  							<img src="illustrations/tous/5_6_vclean.png" alt="accès à l'outil vclean à partir de la boîte à outils" width="300">
+  						</a>
+  					</figure>
+  					<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass70/manuals/v.clean.html" >https://grass.osgeo.org/grass70/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>
+					
+					<h4>Cas particulier des erreurs de type &#171;&nbsp;auto-intersection&nbsp;&#187;<a class="headerlink" id="V63d" href="#V63d"></a></h4>
+					
+					   <p>Vous rencontrerez peut-être des erreurs de topologie de type &#171;&nbsp;self-intersection&nbsp;&#187; dans une couche de polygones&nbsp;: ces erreurs peuvent généralement être réparées en créant une <a href="09_01_vecteur.php#VIII23b">zone tampon</a> de 0 autour de la couche originale.</p>
 
 				<br>
 				<a class="prec" href="05_05_polygones.php">chapitre précédent</a>
