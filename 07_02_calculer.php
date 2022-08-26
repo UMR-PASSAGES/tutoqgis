@@ -187,7 +187,7 @@
 				
 				    <p>Nous allons ici voir un exemple d'expression un peu plus complexe pour écrire dans un nouveau champ le nom du département en fonction de son code.</p>
 				    <p>Le but est ici de vous montrer que tout est possible, ou presque ! Il est possible de faire les calculs dans un tableur pour joindre ensuite les données, mais cela nécessite moins d'étapes de tout faire dans QGIS.</p>
-				    <p>Pour cette étape, il vous faudra connaître les noms des 4 départements bretons associés à leur code ! Vous pouvez aussi consulter <a href="https://fr.wikipedia.org/wiki/Num%C3%A9rotation_des_d%C3%A9partements_fran%C3%A7ais#/media/Fichier:D%C3%A9partements_de_France_nom+num.svg" >cette carte</a> issue de Wikipedia.</p>
+				    <p>Pour cette étape, il vous faudra connaître les noms des 4 départements bretons associés à leur code ! Vous pouvez aussi consulter <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Num%C3%A9rotation_des_d%C3%A9partements_fran%C3%A7ais#/media/Fichier:D%C3%A9partements_de_France_nom+num.svg" >cette carte</a> issue de Wikipedia.</p>
 				    
 				    <div class="manip">
 				        <p>Comme d'habitude, ouvrez la calculatrice de champs.</p>
