@@ -24,8 +24,8 @@
 				<br>
 				
 			<p>Nous allons voir ici comment utiliser les données de la table attributaire pour sélectionner des éléments d'une couche, par exemple comment sélectionner les départements dans le nom commence par &#171; A &#187; .</p>
-			<p>Beaucoup d'opérateurs sont disponibles pour les requêtes attributaires; nous ne les passerons pas tous en revue mais allons simplement utiliser quelques-uns des plus courants.</p>
-			<p>Pour une description de tous les opérateurs et fonctions possibles : voir le <a class="ext" target="_blank" href="https://docs.qgis.org/3.16/fr/docs/user_manual/working_with_vector/expression.html" >manuel de QGIS</a>.</p>
+			<p>Beaucoup d'opérateurs sont disponibles pour les requêtes attributaires&nbsp;; nous ne les passerons pas tous en revue mais allons simplement utiliser quelques-uns des plus courants.</p>
+			<p>Pour une description de tous les opérateurs et fonctions possibles : voir le <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/working_with_vector/expression.html" >manuel de QGIS</a>.</p>
 
 			<h3>Faire une requête simple<a class="headerlink" id="VI11" href="#VI11"></a></h3>
 
@@ -37,25 +37,24 @@
 				<div class="manip">
 					<p>Dans la barre d'outils située en haut de la table attributaire, cliquez sur l'icône <b>Sélectionner les entités en utilisant une expression</b>.</p>
 					<img src="illustrations/tous/6_1_BO_icone_selection.png" alt="barre d'outils de la table attributaire avec icône sélection entourée en rouge" width="600">
-					<p class="note">Cette icône est aussi accessible dans la barre d'outils <b>attributs</b>, à condition que vous ayez au préalable sélectionné la couche dans la table des matières.</p>
 					<p>La fenêtre de requête attributaire s'ouvre :</p>
 					<figure>
 						<a href="illustrations/tous/6_1_selection_fenetre.png" >
-							<img src="illustrations/tous/6_1_selection_fenetre.png" alt="fenêtre de sélection, avec une requête simple" width="500">
+							<img src="illustrations/tous/6_1_selection_fenetre.png" alt="fenêtre de sélection, avec une requête simple" width="600">
 						</a>
 					</figure>
 					<p>Pour faire une requête simple, par exemple pour sélectionner le département du Nord :</p>
 						<ul>
 							<li class="espace">Cliquez sur <b>Champs et valeurs</b> dans la colonne du milieu : la liste des champs de la table apparaît</li>
-							<li class="espace">Double-cliquez sur le champ <b>NOM_DEPT</b> pour le faire apparaître dans la case <b>Expression</b> à gauche de la fenêtre (notez les guillemets doubles)</li>
+							<li class="espace">Double-cliquez sur le champ <b>NOM_DEP</b> pour le faire apparaître dans la case <b>Expression</b> à gauche de la fenêtre (notez les guillemets doubles)</li>
 							<li class="espace">Cliquez sur l'opérateur <b>=</b></li>
-							<li class="espace">Cliquez sur le bouton <b>Toutes</b> pour voir dans la case <b>Valeurs</b> la liste des valeurs uniques du champ sélectionné (ici, NOM_DEPT)</li>
+							<li class="espace">Cliquez sur le bouton <b>Tous uniques</b> pour voir dans la case <b>Valeurs</b> la liste des valeurs uniques du champ sélectionné (ici, NOM_DEP)</li>
 							<li class="espace">Double-cliquez sur la valeur <b>'NORD'</b> (notez les guillemets simples)</li>
-							<li class="espace">A ce stade, la case <b>Expression</b> doit contenir  : <b>"NOM_DEPT" = 'NORD'</b></li>
+							<li class="espace">A ce stade, la case <b>Expression</b> doit contenir  : <b>"NOM_DEP" = 'NORD'</b></li>
 							<li class="espace">Cliquez sur le bouton <b>Sélectionner des entités</b> en bas de la fenêtre</li>
 						</ul>
 					<p class="note">Il est également possible de taper la requête &#171; à la main &#187; directement dans la case Expression. Attention dans ce cas à bien respecter la syntaxe utilisée par QGIS : par exemple, les noms de champs sont entourés de guillemets doubles et les chaînes de caractères de guillemets simples.</p>
-					<p>La fenêtre de requête attributaire ne se ferme pas automatiquement ; vous pouvez ou la fermer en cliquant sur le bouton <b>Fermer</b> ou bien simplement la déplacer pour vérifier sur la carte le résultat de votre sélection.</p>
+					<p>La fenêtre de requête attributaire ne se ferme pas automatiquement&nbsp;; vous pouvez ou la fermer en cliquant sur le bouton <b>Fermer</b> ou bien simplement la déplacer pour vérifier sur la carte le résultat de votre sélection.</p>
 					<figure>
 						<a href="illustrations/tous/6_1_selection_nord.png" >
 							<img src="illustrations/tous/6_1_selection_nord.png" alt="carte avec le département du Nord sélectionné" width="300">
@@ -70,11 +69,11 @@
 				</div>
 				<p>Vous venez d'effectuer une requête attributaire simple. Il est important de comprendre qu'une requête ne modifie pas les données, elle les sélectionne simplement.</p>
 				<p>Bien sûr, il est plus intéressant d'utiliser les requêtes pour sélectionner plusieurs éléments en même temps!</p>
-								<p class="note">Pourquoi pour cette requête l'aperçu du résultat (en bas à gauche de la fenêtre de sélection) est-il égal à 0 ? Cette expression est traitée pour chaque ligne de la table et est évaluée par vrai ou faux, 0 ou 1 pour l'ordinateur. L'aperçu donne un des résultats trouvés, ici le 0.</p>
+				<p class="note">Pourquoi pour cette requête l'aperçu du résultat (en bas à gauche de la fenêtre de sélection) est-il égal à 0&nbsp;? Cette expression est traitée pour chaque ligne de la table et est évaluée par vrai ou faux, 0 ou 1 pour l'ordinateur. L'aperçu donne le 1er résultat trouvé, ici 0 pour le département de l'Ain.</p>
 				
 			<h3>Créer une nouvelle couche à partir d'une sélection<a class="headerlink" id="VI12" href="#VI12"></a></h3>
 				
-				<p>Il est possible de créer une nouvelle couche shapefile à partir d'une sélection.</p>
+				<p>Il est possible de créer une nouvelle couche vecteur à partir d'une sélection.</p>
 				<div class="manip">
 					<p>Votre département du Nord étant toujours sélectionné, faites un clic droit sur la couche de départements &#8594; <b>Exporter &#8594; Sauvegarder les entités sélectionnées sous...</b></p>
 					<figure>
@@ -93,11 +92,11 @@
 			
 			<h3>Désélectionner des entités<a class="headerlink" id="VI13" href="#VI13"></a></h3>
 			
-    			 <p>Par défaut, une nouvelle requête attributaire "part de zéro", en ne tenant pas compte des entités déjà sélectionnées (pour au contraire tenir compte d'une requête précédente, cf. <a href="06_03_req_combinees.php#VI31" >partie VI.3.1 : Combiner deux requêtes attributaires</a>).</p>
+    			 <p>Par défaut, une nouvelle requête attributaire &#171;&nbsp;part de zéro&nbsp;&#187;, en ne tenant pas compte des entités déjà sélectionnées (pour au contraire tenir compte d'une requête précédente, cf. <a href="06_03_req_combinees.php#VI31" >partie VI.3.1 : Combiner deux requêtes attributaires</a>).</p>
     			 <p>Néanmoins, pour plus de clarté, il peut être utile de désélectionner des entités.</p>
     			 
     			 <div class="manip">
-    					<p><img class="icone" src="illustrations/tous/6_3_deselection_icone.png" alt="icône de désélection" >Pour désélectionner toutes les entités dans toutes les couches : cliquez sur le bouton <b>Désélectionner toutes les entités</b> de la barre d'outils Attributs.</p>
+    					<p><img class="icone" src="illustrations/tous/6_3_deselection_icone.png" alt="icône de désélection" >Pour désélectionner toutes les entités dans toutes les couches&nbsp;: cliquez sur le bouton <b>Désélectionner toutes les entités</b> de la barre d'outils Sélection.</p>
     					<p>Pour désélectionner les entités d'une seule couche, cliquez sur la flèche à côté du même bouton, pour choisir l'option <b>Désélectionner les entités de la couche courante</b>, ou bien cliquez sur le bouton <b>Désélectionner toutes les entités de la couche</b> en haut de la table attributaire de celle-ci.</p>
     			 </div>
 			 
@@ -148,6 +147,7 @@
 							<img src="illustrations/tous/6_1_res_plou.png" alt="communes dont le nom commence par PLOU" width="450">
 						</a>
 					</figure>
+					<p>Pour lire les noms des communes sélectionnées dans la table attributaire, vous pouvez sélectionner l'option <b>Ne montrer que les entités sélectionnées</b> en bas de la table attributaires. N'oubliez pas de revenir à <b>Montrer toutes les entités</b> ensuite&nbsp;!</p>
 				</div>
 				
 				<p>Notez que, pour du texte, si le caractère % n'est pas utilisé, les opérateurs <b>=</b> et <b>LIKE</b> sont équivalents.</p>

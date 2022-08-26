@@ -20,8 +20,8 @@
 				</ul>
 				<br>
 				
-			<p>Nous venons de voir comment sélectionner des éléments en fonction des données de la table attributaire ; nous allons voir ici comment sélectionner des éléments en fonction de leur position par rapport aux éléments d'une autre couche.</p>
-			<p>Contrairement aux requêtes attributaires, les requêtes spatiales mettent donc le plus souvent deux couches en jeu : une couche dans laquelle sera faite la sélection, et une couche de référence.</p>
+			<p>Nous venons de voir comment sélectionner des éléments en fonction des données de la table attributaire&nbsp;; nous allons voir ici comment sélectionner des éléments en fonction de leur position par rapport aux éléments d'une autre couche.</p>
+			<p>Contrairement aux requêtes attributaires, les requêtes spatiales mettent donc le plus souvent deux couches en jeu&nbsp;: une couche dans laquelle sera faite la sélection, et une couche de référence.</p>
 			<p>On peut par exemple, à l'aide d'une couche de points et d'une couche de polygones, sélectionner tous les points situés dans les polygones.</p>
 			
 			<h3>Faire une requête spatiale simple<a class="headerlink" id="VI21" href="#VI21"></a></h3>
@@ -37,6 +37,7 @@
                     </figure>
 				</div>
 				<p>Le but va être ici de sélectionner toutes les communes de Bretagne sur lesquelles sont implantées une ou plusieurs éoliennes.</p>
+				<p><b>Les données provenant d'un flux, il est possible que vos requêtes donnent des résultats légèrement différents de ceux présentés ici, si le flux a été mis à jour&nbsp;!</b></p>
 				
 			    <div class="manip">
     				<p>Si la boîte à outils de traitements n'est pas visible, activez-la en vous rendant dans le <b>menu Traitement &#8594; Boîte à outils</b>.</p>
@@ -59,7 +60,7 @@
                         <li class="espace">Vérifiez que <b>Créer une nouvelle sélection</b> soit bien l'option choisie, afin de ne pas partir d'une sélection existante</li>
                         <li class="espace">Cliquez sur <b>Exécuter</b>, vous pouvez ensuite fermer la fenêtre.</li>
                     </ul>
-					<p>Vous devriez obtenir 249 communes sélectionnées (mais ce nombre peut varier légèrement si vous chargez les données via le flux WFS et qu'elles ont été mises à jour depuis la rédaction de ce tutoriel) :</p>
+					<p>Vous devriez obtenir 256 communes sélectionnées (mais ce nombre peut varier légèrement si vous chargez les données via le flux WFS et qu'elles ont été mises à jour depuis la rédaction de ce tutoriel) :</p>
 					<figure>
                     	<a href="illustrations/tous/6_2_select_localisation_res.png" >
                     		<img src="illustrations/tous/6_2_select_localisation_res.png" alt="Communes sélectionnées" width="450">
@@ -190,7 +191,8 @@
 				<h3>Quelques exemples<a class="headerlink" id="VI23" href="#VI23"></a></h3>
 					
 					<div class="manip">
-    					<p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">Cours d'eau métropole de plus de 100km</em>.</p>
+    					<p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">Cours d'eau de plus de 100km - BD Carthage - France entière</em>.</p>
+    					<p>Ajoutez également si ça n'est pas déjà fait la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">DEPARTEMENT</a></em>.</p>
     					<p>Votre projet doit donc contenir les 4 couche suivantes :</p>
     					<figure>
                         	<a href="illustrations/tous/6_2_projet.png" >
@@ -215,7 +217,7 @@
 						<div class="question">
 							<input type="checkbox" id="faq-4">
 							<p><label for="faq-4">Combien de communes ne contiennent pas d'éoliennes ?</label></p>
-							<p class="reponse">Sélection des communes disjointes des éoliennes : <b>959 communes sélectionnées</b></p>
+							<p class="reponse">Sélection des communes disjointes des éoliennes : <b>952 communes sélectionnées</b></p>
 							<p class="reponse"><img class="icone" src="illustrations/tous/6_2_inverser_selection_icone.png" alt="icône inverser la sélection" >Vous pouvez aussi repartir des communes contenant des éoliennes, et <b>inverser la sélection</b> avec le bouton correspondant en haut de la table attributaire des communes.</p>
 							<p class="reponse"><img src="illustrations/tous/6_2_communes_disjoint_eoliennes.png" alt="Communes sans éoliennes" width="400"></p>
 						</div>
@@ -224,7 +226,7 @@
 							<p><label for="faq-5">Combien le département du Finistère contient-il d'éoliennes ?</label></p>
 							<p class="reponse">Il faut procéder en 2 étapes : 1/ sélectionner &#171; à la main &#187; le département du Finistère 2/ utiliser l'outil de sélection par localisation pour sélectionner les éoliennes à l'intérieur des départements, en cochant la case <b>Entités sélectionnées uniquement</b>.</p>
 							<p class="reponse"><img src="illustrations/tous/6_2_eoliennes_finistere.png" alt="Eoliennes du Finistère" width="400"></p>
-							<p class="reponse">Au final, on trouve <b>610 éoliennes sélectionnées</b>.</p>
+							<p class="reponse">Au final, on trouve <b>656 éoliennes sélectionnées</b>.</p>
 						</div>
 					</div>
 						

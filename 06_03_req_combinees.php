@@ -20,33 +20,33 @@
 				</ul>
 				<br>
 				
-			<p>Comment faire quand on souhaite combiner plusieurs requêtes, par exemple sélectionner les communes traversées par un cours d'eau et ayant une population de + de 10 000 habitants ?</p>
+			<p>Comment faire quand on souhaite combiner plusieurs requêtes, par exemple sélectionner les communes traversées par un cours d'eau et ayant une population de + de 10&nbsp;000 habitants ?</p>
 			
 			<h3>Combiner deux requêtes attributaires<a class="headerlink" id="VI31" href="#VI31"></a></h3>
 			
 				<p>Pour combiner deux requêtes attributaires, nous avons vu dans la <a href="06_01_req_attrib.php#VI15" >partie VI.1.5</a> qu'il est possible d'utiliser les opérateurs AND et OR.</p>
 				<p>Il est également possible de faire deux requêtes successives.</p>
-				<p>Nous allons ici sélectionner les communes du Morbihan de + de 10 000 habitants.</p>
+				<p>Nous allons ici sélectionner les communes du Morbihan de + de 10&nbsp;000 habitants.</p>
 				
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS, ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_Bretagne</a></em>.</p>
 					<p><img class="iconemid" src="illustrations/tous/6_3_selection_attrib_icone.png" alt="icône de sélection attributaire" >Ouvrez la table attributaire de cette couche puis la fenêtre de requête attributaire.</p>
 					<p>Sélectionnez tout d'abord les communes de + de 10 000 habitants au moyen d'une requête attributaire :</p>
-					<p> "POPULATION" > 10000</p>
+					<p class="code">"POPULATION" > 10000</p>
 					<figure>
 						<a href="illustrations/tous/6_3_sup10000hab.png" >
 							<img src="illustrations/tous/6_3_sup10000hab.png" alt="Communes de + de 10 000 habitants sélectionnées" width="400" >
 						</a>
 					</figure>
 					<p>Tapez ensuite la requête suivante, pour sélectionner les communes du Morbihan...</p>
-					<p> "INSEE_DEP"  =  '56' </p>
-					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection actuelle</b> :</p>
+					<p class="code">"INSEE_DEP" = '56' </p>
+					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection courante</b> :</p>
 					<figure>
 					    <a href="illustrations/tous/6_3_selection_liste.png" >
 						    <img src="illustrations/tous/6_3_selection_liste.png" alt="liste accessible à partir du bouton sélection" width="600" >
 						</a>
 					</figure>
-					<p>Ainsi, cette deuxième requête s'appliquera uniquement aux communes déjà sélectionnées : les communes du Morbihan seront sélectionnées parmi les communes de + de 10 000 habitants.</p>
+					<p>Ainsi, cette deuxième requête s'appliquera uniquement aux communes déjà sélectionnées : les communes du Morbihan seront sélectionnées parmi les communes de + de 10&nbsp;000 habitants.</p>
 					<figure>
 						<a href="illustrations/tous/6_3_sup10000hab_morbihan.png" >
 							<img src="illustrations/tous/6_3_sup10000hab_morbihan.png" alt="Communes de + de 10 000 habitants du département du Morbihan sélectionnées" width="400" >
@@ -54,7 +54,7 @@
 					</figure>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">Pouvez-vous au moyen des mêmes 2 requêtes ("POPULATION" > 10000 et "INSEE_DEP"  =  '56') sélectionner les communes bretonnes de + de 10 000 habitants qui ne sont pas dans le département du Morbihan ?</label></p>
+						<p><label for="faq-1">Pouvez-vous au moyen des mêmes 2 requêtes ("POPULATION" > 10000 et "INSEE_DEP" = '56') sélectionner les communes bretonnes de + de 10 000 habitants qui ne sont pas dans le département du Morbihan ?</label></p>
 						<p class="reponse">Utilisez cette fois pour la deuxième requête le bouton <b>Supprimer de la sélection actuelle</b> : les communes du Morbihan seront désélectionnées et il ne restera de sélectionnées que les communes de + de 10 000 des autres départements.</p>
 					</div>
 				</div>
@@ -63,12 +63,12 @@
 			
 			<h3>Combiner deux requêtes spatiales<a class="headerlink" id="VI32" href="#VI32"></a></h3>
 			
-				<p>Comment faire maintenant pour combiner deux requêtes spatiales, par exemple pour sélectionner les communes avec éolienne et cours d'eau ?</p>
+				<p>Comment faire maintenant pour combiner deux requêtes spatiales, par exemple pour sélectionner les communes avec éolienne et cours d'eau&nbsp;?</p>
 				<p>Attention, le nombre d'entités sélectionnées peut varier légèrement par rapport à ceux indiqués ici si vous chargez des données via des flux WFS et que ces données ont été mises à jour depuis la rédaction de ce tutoriel.</p>
 				
 				<div class="manip">
-				    <p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">Cours d'eau métropole de plus de 100km</em>.</p>
-					<p>Ajoutez également au projet la couche <em class="data">Eoliennes en Bretagne</em> issue du flux WFS <b>https://geobretagne.fr/geoserver/dreal_b/wfs</b>.</p>
+				    <p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">Cours d'eau de plus de 100km - BD Carthage - France entière</em>.</p>
+					<p>Ajoutez également au projet la couche <em class="data">Eoliennes implantations en Bretagne</em> issue du flux WFS <b>https://geobretagne.fr/geoserver/dreal_b/wfs</b>.</p>
 					<p>A ce stade, votre projet contient donc ces 3 couches :</p>
 					<figure>
 						<a href="illustrations/tous/6_3_couches_chargees.png" >
@@ -86,7 +86,7 @@
 							<img src="illustrations/tous/6_3_communes_eoliennes.png" alt="communes avec éoliennes sélectionnées" width="500" >
 						</a>
 					</figure>
-					<p>A ce stade, 249 communes sont sélectionnées.</p>
+					<p>A ce stade, 256 communes sont sélectionnées.</p>
 					<p>Il ne reste plus ensuite qu'à sélectionner les communes intersectant des cours d'eau <b>à partir de cette sélection</b> :</p>
 					<figure>
 						<a href="illustrations/tous/6_3_communes_eoliennes_coursdeau_fenetre.png" >
@@ -98,7 +98,7 @@
 							<img src="illustrations/tous/6_3_communes_eoliennes_coursdeau.png" alt="communes avec éoliennes et cours d'eau sélectionnées" width="500" >
 						</a>
 					</figure>
-					<p>Au final, 107 communes contiennent à la fois une éolienne et sont traversées par un cours d'eau de + de 100 km.</p>
+					<p>Au final, 109 communes contiennent à la fois une éolienne et sont traversées par un cours d'eau de + de 100 km.</p>
 				</div>
 				<p>Le résultat serait le même en procédant à l'inverse, c'est-à-dire en sélectionnant d'abord les communes traversées par un cours d'eau puis à partir de cette sélection les communes contenant une éolienne.</p>
 			
@@ -125,7 +125,7 @@
 					<p class="note">Pour connaître le nom des communes sélectionnées, ouvrez la table attributaire de la couche de communes et choisir <b>Ne montrer que les entités sélectionnées</b> dans la liste déroulante en bas à gauche de la table.</p>
 				</div>
 				
-				<p>Il est aussi possible de procéder à l'inverse : sélectionner d'abord les communes avec éoliennes puis parmi celles-ci celles de + de 10 000 habitants.</p>
+				<p>Il est aussi possible de procéder à l'inverse : sélectionner d'abord les communes avec éoliennes puis parmi celles-ci celles de + de 10&nbsp;000 habitants.</p>
 				
 				<p>Dans le chapitre suivant, nous verrons comment aller encore plus loin en écrivant directement des requêtes en langage SQL !</p>
 

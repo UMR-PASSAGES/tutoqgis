@@ -22,7 +22,7 @@
 							<li><a href="#VI42c">Visualiser le résultat d'une requête</a></li>
 						</ul>
 					</li>
-					<li><a href="#VI43">Tirer parti du SQL par rapport à une requête attributaire ou spatiale</a>
+					<li><a href="#VI43">Pourquoi utiliser du SQL plutôt qu'une requête attributaire ou spatiale&nbsp;?</a>
 					   <ul class="listesoustitres">
 							<li><a href="#VI43a">Choisir les colonnes</a></li>
 							<li><a href="#VI43b">Croiser plusieurs tables</a></li>
@@ -36,7 +36,7 @@
 				
 			<p>Nous avons vu dans les chapitres précédents que QGIS offre de nombreux opérateurs pour les requêtes spatiales et attributaires. Néanmoins, ceux d'entre vous maîtrisant le <b><a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Structured_Query_Language" >langage SQL</a></b> regretteront certains manques, notamment les <a class="ext" target="_blank" href="http://sql.sh/fonctions/agregation">fonctions d'agrégation</a>. En outre, l'impossibilité d'écrire une requête portant à la fois sur des critères spatiaux et attributaires peut être gênante.</p>
 			<p>Une des possibilités pour pallier ces manques est d'utiliser un logiciel de <b>gestion de bases de données</b> (SGBD) à composante spatiale, tel que <a class="ext" target="_blank" href="http://www.postgis.fr/chrome/site/docs/workshop-foss4g/doc/index.html">PostgreSQL/PostGIS</a>, ou <a class="ext" target="_blank" href="http://www.sigterritoires.fr/index.php/tutoriel-bases-de-donnees-spatialite-sous-qgis-2-8-wien/">SQLite/SpatiaLite</a>, ce dont ne traitera pas ce tutoriel.</p>
-			<p>Mais si votre but est uniquement de jouir de toutes les possibilités du SQL sans avoir besoin d'une base de données, il existe une autre possibilité consistant à utiliser des <b><a class="ext" target="_blank" href="https://docs.qgis.org/3.16/en/docs/user_manual/managing_data_source/create_layers.html#index-9">couches virtuelles</a></b>. Pour cela, aucune installation de logiciel supplémentaire n'est nécessaire.</p>
+			<p>Mais si votre but est uniquement de jouir de toutes les possibilités du SQL sans avoir besoin d'une base de données, il existe une autre possibilité consistant à utiliser des <b><a class="ext" target="_blank" href="https://docs.qgis.org/latest/en/docs/user_manual/managing_data_source/create_layers.html#creating-virtual-layers">couches virtuelles</a></b>. Pour cela, aucune installation de logiciel supplémentaire n'est nécessaire.</p>
 			<p><b>Cette partie ne constitue pas un cours de SQL</b>, se limitant à expliquer l'interface de QGIS et à montrer quelques exemples. Il existe sur internet de nombreuses ressources sur l'apprentissage du SQL, comme par exemple <a class="ext" target="_blank" href="http://sql.sh/cours/select" >ici</a>.</p>
 			
 			<h3>Utiliser du SQL sans passer par un logiciel de bases de données : le concept de couche virtuelle<a class="headerlink" id="VI41" href="#VI41"></a></h3>
@@ -95,7 +95,7 @@
 				    
 				<h4>Visualiser le résultat d'une requête<a class="headerlink" id="VI42c" href="#VI42c"></a></h4>
 				    
-				    <p>Seule la ligne correspondante de la table attributaire est affichée dans le gestionnaire de bases de données. Comment faire pour voir les géométries correspondantes dans QGIS ?</p>
+				    <p>Seule la ligne correspondante de la table attributaire est affichée dans le gestionnaire de bases de données. La sélection n'est pas visible dans la fenêtre principale de QGIS. Comment faire pour voir les géométries correspondantes dans QGIS ?</p>
 				    <div class="manip">
 				        <figure>
                         	<a href="illustrations/tous/6_4_dbmanager_charger.png" >
@@ -105,7 +105,7 @@
 				        <p>En bas de le fenêtre du gestionnaire, cochez la case <b>Charger en tant que nouvelle couche</b> : une nouvelle rubrique apparaît :</p>
 			            <ul>
 			                <li>Vérifiez que la colonne de géométrie <b>geometry</b> soit bien sélectionnée</li>
-			                <li>Tapez éventuellement un nom pour la nouvelle couche (par défaut, elle se nommera QueryLayer)</li>
+			                <li>Tapez éventuellement un nom pour la nouvelle couche (par défaut, elle se nommera CoucheRequête ou QueryLayer)</li>
 			                <li>Et cliquez sur le bouton <b>Charger</b> pour voir le résultat dans QGIS :</li>
 			            </ul>
 				        <figure>
@@ -117,7 +117,7 @@
 				    <p>Notez que la nouvelle couche est une couche temporaire, non éditable. Pour la sauvegarder, il faut faire un clic droit sur son nom dans QGIS, Exporter, Sauvegarder les entités sous...</p>
 				    <p>Par ailleurs, si dans la fenêtre du gestionnaire de bases de données vous actualisez la liste des couches virtuelles, vous verrez cette nouvelle couche y apparaître.</p>
 		
-			<h3>Tirer parti du SQL par rapport à une requête attributaire ou spatiale<a class="headerlink" id="VI43" href="#VI43"></a></h3>
+			<h3>Pourquoi utiliser du SQL plutôt qu'une requête attributaire ou spatiale&nbsp;?<a class="headerlink" id="VI43" href="#VI43"></a></h3>
 			
 			    <p>La requête utilisée était :</p>
 			    <p class="code">SELECT * <br>FROM DEPARTEMENT<br>WHERE "NOM_DEPT" = 'MORBIHAN'</p>
@@ -144,7 +144,7 @@
                         		<img src="illustrations/tous/6_4_colonnes.png" alt="Choix des colonnes dans la requête SQL" width="600">
                         	</a>
                         </figure>
-			             <p>Toujours dans l'onglet <b>Requête</b> du gestionnaire de bases données, remplacez l'étoile par <b>INSEE_DEP, geometry</b> :</p>
+			             <p>Toujours dans l'onglet <b>Requête</b> du gestionnaire de bases données, remplacez l'étoile par <b>INSEE_DEP, NOM_DEP, geometry</b> :</p>
 			             <p class="code">SELECT INSEE_DEP, NOM_DEP, geometry<br>FROM DEPARTEMENT<br>WHERE NOM_DEP = 'MORBIHAN'</p>
 			             <p>Et cliquez sur le bouton <b>Exécuter</b> : seules les colonnes voulues sont renvoyées par la requête. Notez que vous pouvez choisir l'ordre des colonnes.</p>
 			         </div>
@@ -159,9 +159,9 @@
 			         <div class="manip">
 			             <p>La première étape est de vérifier qu'il existe bien un champ permettant de faire le lien entre les deux couches. Ici, il s'agit  du champ <b>INSEE_DEP</b> présent dans les deux couches, ce que vous pouvez vérifier en ouvrant leurs tables attributaires (à noter que ce champ pourrait avoir un nom différent dans chacune des couches sans que cela ne pose problème).</p>
 			             <p>Tapez ensuite la requête suivante (vous pouvez effacer la précédente) :</p>
-			             <p class="code">SELECT c.INSEE_COM, c.NOM_COM, d.NOM_DEP, c.geometry<br>
-			             FROM communes_Bretagne as c, DEPARTEMENT as d<br>
-			             WHERE c.INSEE_DEP = d.INSEE_DEP</p>
+			             <p class="code">SELECT c.INSEE_COM, c.NOM_COM, d.NOM_DEP, c.geometry
+FROM communes_Bretagne as c, DEPARTEMENT as d
+WHERE c.INSEE_DEP = d.INSEE_DEP</p>
 			             <figure>
                         	<a href="illustrations/tous/6_4_croiser_couches.png" >
                         		<img src="illustrations/tous/6_4_croiser_couches.png" alt="Exemple de requête SQL croisant deux couches" width="600">
@@ -221,11 +221,11 @@
                         	</a>
                         </figure>
                         <p>La requête finale complète est donc :</p>
-                        <p class="code">SELECT c.INSEE_COM, c.NOM_COM, count(e.id_mat) as nb_eoliennes, c.geometry<br>
-                        FROM communes_Bretagne as c, eoliennes_bretagne as e<br>
-                        WHERE contains(c.geometry, e.geometry)<br>
-                        AND e._search_frame_ = c.geometry<br>
-                        GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
+                        <p class="code">SELECT c.INSEE_COM, c.NOM_COM, count(e.id_mat) as nb_eoliennes, c.geometry
+FROM communes_Bretagne as c, eoliennes_bretagne as e
+WHERE contains(c.geometry, e.geometry)
+AND e._search_frame_ = c.geometry
+GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
 			         </div>
 			         <p>Ceci peut servir par exemple à visualiser le nombre d'éoliennes par commune au moyen d'une carte en cercles proportionnels :</p>
 			         <figure>
