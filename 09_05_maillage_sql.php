@@ -346,7 +346,7 @@ WHERE area_ha < 25</p>
 			             <p>Après avoir exécuté cette requête et actualisé la base, la table grid00 est visible. Elle ne comporte aucune ligne et une seule colonne <b>id</b>.</p>
 			             <p>Il faut ensuite lui ajouter une colonne de géométrie de type multipolygone&nbsp;:</p>
 			             <p class="code">SELECT AddGeometryColumn('grid00','geom',2154,'MULTIPOLYGON','XY');</p>
-			             <p>La table est maintenant une couche de polygones avec une colonne de géométrie <b>geom</b>.</p>
+			             <p>La table est maintenant une couche de polygones avec une colonne de géométrie <b>geom</b>. Elle ne contient encore aucune entité, ce que vous pouvez vérifier dans les onglets table et aperçu.</p>
 			             <p>Il ne reste plus qu'à mettre à jour la géométrie avec la fonction <a class="ext" target="_blank" href="http://www.gaia-gis.it/gaia-sins/spatialite-sql-5.0.0.html" >ST_SquareGrid</a>&nbsp;:</p>
 			             <p class="code">INSERT INTO grid00 (geom) SELECT ST_SquareGrid(Extent(v.geom), 50000) AS geom FROM clc00_vignes AS v</p>
 			             <p>Cette dernière requête créer une grille avec la même étendue que clc00_vignes, et une maille de 50 km. La fonction <b>ST_SquareGrid</b> prend 2 arguments :</p>
@@ -658,6 +658,7 @@ WHERE g1.gid = g2.gid;</p>
         	               <li class="espace">...sur le champ <b>diff_surf</b></li>
         	               <li class="espace">Sélectionnez une palette de couleur divergente, pour représenter d'une couleur les diminutions et d'une autre les augmentations</li>
         	               <li class="espace">Choissisez une discrétisation par intervalles égaux</li>
+        	               <li class="espace">Cliquez sur le bouton <b>Classer</b></li>
         	               <li class="espace">Cochez la case <b>Classification symétrique</b>, pour représenter avec la même intensité de couleur des variations positives et négatives de même ampleur, avec comme valeur du milieu <b>0</b></li>
         	            </ul>
         	            <figure>

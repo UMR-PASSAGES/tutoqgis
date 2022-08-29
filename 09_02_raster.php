@@ -63,7 +63,7 @@
 					</figure>
 					<ul>
 						<li class="espace">Couche source : sélectionnez <em class="data">srtm_21_09</em></li>
-						<li class="espace">Etendue de découpage : cliquez sur le bouton <b>...</b> tout à droite, choisissez <b>Sélectionner l'emprise depuis le canevas</b>. Il faut ensuite dessiner l'emprise à garder, toujours dans l'outil de découpage. Dessinez un rectangle approximatif autour de l'île de la Jamaïque :
+						<li class="espace">Etendue de découpage : cliquez sur le bouton <b>...</b> tout à droite, choisissez <b>Dessiner sur le canevas</b>. Il faut ensuite dessiner l'emprise à garder, toujours dans l'outil de découpage. Dessinez un rectangle approximatif autour de l'île de la Jamaïque :
     						<a href="illustrations/tous/9_2_decoupe_jam.png" >
     							<img src="illustrations/tous/9_2_decoupe_jam.png" alt="Menu Raster, Extraction, Découper" width="400" >
     						</a></li>
@@ -255,12 +255,12 @@
     				
     				<div class="manip">
     					<p>Rendez-vous dans la
-    						<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; GDAL &#8594; Extraction raster &#8594; Contour
+    						<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; GDAL &#8594; Extraction raster &#8594; Courbe de niveau
     							<span>
-    								<img src="illustrations/tous/9_2_contours_menu.png" alt="Emplacement de l'outil Contour dans la boîte à outils" width="600" >
+    								<img src="illustrations/tous/9_2_contours_menu.png" alt="Emplacement de l'outil Contour dans la boîte à outils" width="350" >
     							</span>
     						</a>
-    					:</p>
+    					(dans les versions pécédentes de QGIS, cet outil peut se nommer <em>contour</em>)&nbsp;:</p>
     					<figure>
     					   <a href="illustrations/tous/9_2_contours_fenetre.png" >
     					       <img src="illustrations/tous/9_2_contours_fenetre.png" alt="Fenêtre de l'outil de création de contours" width="600" >
@@ -296,91 +296,91 @@
     				<p>La pente est calculée en fonction de la distance horizontale et de la hauteur. Dans notre cas, la hauteur est en mètres, et la distance horizontale en degrés. Les deux unités étant différentes, le calcul de pente donnera des valeurs aberrantes.</p>
     				<p>La première étape est donc de <b>projeter notre raster, pour obtenir des unités identiques verticalement et horizontalement.</b></p>
     			
+  					<p>Quelle projection utiliser pour notre raster ?</p>
+  					<p>En règle générale, il y a deux possibilités quand on cherche une projection pour un pays : utiliser une projection nationale, ou bien une <a href="02_02_coord.php#II22d" >projection UTM</a>.</p>
+  					<p>Pour savoir s'il existe dans QGIS des projections  nationales pour la Jamaïque, vous pouvez faire une recherche dans les SCR proposés.</p>
+  					
+  					<div class="manip">
+  						<p><img class="icone" src="illustrations/tous/2_3_scr_projet_icone.png" alt="icône SCR" >Rendez-vous dans les propriétés du projet, rubrique SCR, par exemple en cliquant sur l'icône de sphère tout en bas à droite de la fenêtre de QGIS :</p>
+  						<figure>						
+  							<a href="illustrations/tous/9_2_scr_jamaica.png">
+  								<img src="illustrations/tous/9_2_scr_jamaica.png" alt="Recherche d'un SCR pour la Jamaïque" width="600" >
+  							</a>
+  						</figure>
+  						<p>Tapez <b>jamaica</b> dans la rubrique <b>Filtre</b> : plusieurs réponses sont proposées, dont 3 SCR projetés. Une rapide recherche internet semble indiquer que le SCR <b>JAD2001</b> est le plus récent (source : <a class="ext" target="_blank" href="http://www.jamaicancaves.org/jad2001.htm" >http://www.jamaicancaves.org/jad2001.htm</a>). C'est donc ce SCR que nous utiliserons.</p>
+  						<p>Sélectionnez <b>JAD2001 (code EPSG:3448) et cliquez sur <b>OK</b>.</b></p>
+  					</div>
+  					
+  					<p>Nous venons de changer le SCR du projet, mais pas celui de notre raster (pour rappel, voir <a href="02_03_couches_projets.php">ici</a>).</p>
+  					
+  					<div class="manip">
+  						<p>Une étape préliminaire avant de projeter le raster : ouvrez les propriétés du raster, rubrique <b>Information</b>, sous-rubrique <b>Bandes</b>, recherchez <b>Aucune valeur de données</b>. Vous devriez avoir -32768, notez cette valeur. C'est celle utilisée pour les pixels &#171; sans valeur &#187; (qui ont donc en réalité la valeur -32768), en-dehors de l'île.</p>
+  						<p>Ensuite, pour changer le SCR du raster :
+  							<a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; GDAL &#8594; Projections raster &#8594; Projection (warp)
+  								<span>
+  									<img src="illustrations/tous/9_2_reproj_raster_menu.png" alt="Menu Raster , Projections, Projection..." width="280" >
+  								</span>
+  							</a>
+  						:</p>
+  						<figure>
+  							<a href="illustrations/tous/9_2_reproj_raster_fenetre.png">
+  								<img src="illustrations/tous/9_2_reproj_raster_fenetre.png" alt="Fenêtre de reprojection du raster" width="600" >
+  							</a>
+  						</figure>
+  						<ul>
+  							<li class="espace">Couche source : sélectionnez <em class="data">srtm_jamaique</em> dans la liste</li>
+  							<li class="espace">SCR cible : cliquez sur le bouton à droite pour rechercher le SCR <b>JAD2001 code EPSG:3448</b></li>
+  							<li class="espace">Valeur Nodata : tapez la <a href="09_02_raster.php#IX22b">valeur des pixels sans données</a> : <b>-32768</b></li>
+  							<li class="espace">Laissez tous les autres paramètres par défaut, cliquez sur <b>Exécuter</b>.</li>
+  						</ul>
+  						<p>Patientez... La nouvelle couche est ajoutée, vous pouvez vérifier dans ses propriétés (rubrique Source) que son SCR soit bien le JAD2001.</p>
+  						<figure>
+  							<a href="illustrations/tous/9_2_scr_ok.png">
+  								<img src="illustrations/tous/9_2_scr_ok.png" alt="scr de la nouvelle couche : JAD2001" width="500" >
+  							</a>
+  						</figure>
+  						<p class="note">Il semblerait qu'il ne soit plus utile de préciser la valeur NoData, celle-ci étant automatiquement lue dans les propriétés du raster en entrée&nbsp;!</p>
+  						<p>Supprimez les autres couches, pour ne garder dans le projet que la couche <em class="data">srtm_jamaique_JAD2001</em>.</p>
+  					</div>
     				
-    					<p>Quelle projection utiliser pour notre raster ?</p>
-    					<p>En règle générale, il y a deux possibilités quand on cherche une projection pour un pays : utiliser une projection nationale, ou bien une <a href="02_02_coord.php#II22d" >projection UTM</a>.</p>
-    					<p>Pour savoir s'il existe dans QGIS des projections  nationales pour la Jamaïque, vous pouvez faire une recherche dans les SCR proposés.</p>
-    					
-    					<div class="manip">
-    						<p><img class="icone" src="illustrations/tous/2_3_scr_projet_icone.png" alt="icône SCR" >Rendez-vous dans les propriétés du projet, rubrique SCR, par exemple en cliquant sur l'icône de sphère tout en bas à droite de la fenêtre de QGIS :</p>
-    						<figure>						
-    							<a href="illustrations/tous/9_2_scr_jamaica.png">
-    								<img src="illustrations/tous/9_2_scr_jamaica.png" alt="Recherche d'un SCR pour la Jamaïque" width="600" >
-    							</a>
-    						</figure>
-    						<p>Tapez <b>jamaica</b> dans la rubrique <b>Filtre</b> : plusieurs réponses sont proposées, dont 3 SCR projetés. Une rapide recherche internet semble indiquer que le SCR <b>JAD2001</b> est le plus récent (source : <a class="ext" target="_blank" href="http://www.jamaicancaves.org/jad2001.htm" >http://www.jamaicancaves.org/jad2001.htm</a>). C'est donc ce SCR que nous utiliserons.</p>
-    						<p>Sélectionnez <b>JAD2001 (code EPSG:3448) et cliquez sur <b>OK</b>.</b></p>
-    					</div>
-    					
-    					<p>Nous venons de changer le SCR du projet, mais pas celui de notre raster (pour rappel, voir <a href="02_03_couches_projets.php">ici</a>).</p>
-    					
-    					<div class="manip">
-    						<p>Une étape préliminaire avant de projeter le raster : ouvrez les propriétés du raster, rubrique <b>Information</b>, sous-rubrique <b>Bandes</b>, recherchez <b>Aucune valeur de données</b>. Vous devriez avoir -32768, notez cette valeur. C'est celle utilisée pour les pixels &#171; sans valeur &#187; (qui ont donc en réalité la valeur -32768), en-dehors de l'île.</p>
-    						<p>Ensuite, pour changer le SCR du raster :
-    							<a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; GDAL &#8594; Projections raster &#8594; Projection (warp)
-    								<span>
-    									<img src="illustrations/tous/9_2_reproj_raster_menu.png" alt="Menu Raster , Projections, Projection..." width="280" >
-    								</span>
-    							</a>
-    						:</p>
-    						<figure>
-    							<a href="illustrations/tous/9_2_reproj_raster_fenetre.png">
-    								<img src="illustrations/tous/9_2_reproj_raster_fenetre.png" alt="Fenêtre de reprojection du raster" width="600" >
-    							</a>
-    						</figure>
-    						<ul>
-    							<li class="espace">Couche source : sélectionnez <em class="data">srtm_jamaique</em> dans la liste</li>
-    							<li class="espace">SCR cible : cliquez sur le bouton à droite pour rechercher le SCR <b>JAD2001 code EPSG:3448</b></li>
-    							<li class="espace">Valeur Nodata : tapez la <a href="09_02_raster.php#IX22b">valeur des pixels sans données</a> : <b>-32768</b></li>
-    							<li class="espace">Laissez tous les autres paramètres par défaut, cliquez sur <b>Exécuter</b>.</li>
-    						</ul>
-    						<p>Patientez... La nouvelle couche est ajoutée, vous pouvez vérifier dans ses propriétés (rubrique Source) que son SCR soit bien le JAD2001.</p>
-    						<figure>
-    							<a href="illustrations/tous/9_2_scr_ok.png">
-    								<img src="illustrations/tous/9_2_scr_ok.png" alt="scr de la nouvelle couche : JAD2001" width="500" >
-    							</a>
-    						</figure>
-    						<p>Supprimez les autres couches, pour ne garder dans le projet que la couche <em class="data">srtm_jamaique_JAD2001</em>.</p>
-    					</div>
     				
-    				
-    				<h4>Calcul de pente à partir du raster projeté<a class="headerlink" id="IX24c" href="#IX24c"></a></h4>
-    				
-    					<div class="manip">
-    						<p>Rendez-vous dans la 
-    							<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; GDAL &#8594; Analyse raster &#8594; Pente
-    								<span>
-    									<img src="illustrations/tous/9_2_pente_menu.png" alt="Menu Raster, Analyse, MNT/DEM (Modèles de terrain)" width="350" >
-    								</span>
-    							</a>
-    						:</p>
-    						<figure>
-    							<a href="illustrations/tous/9_2_pente_fenetre.png">
-    								<img src="illustrations/tous/9_2_pente_fenetre.png" alt="Fenêtre de calcul de pente" width="500" >
-    							</a>
-    						</figure>
-    						<ul>
-    							<li class="espace">Couche source : sélectionnez <em class="data">srtm_jamaique_JAD2001</em></li>
-    							<li class="espace">Laissez les autres paramètres par défaut (pour plus d'infos sur les méthodes de Zevenberger & Thorne et Horn : <a class="ext" target="_blank" href="http://www.macaulay.ac.uk/LADSS/documents/DEMs-for-spatial-modelling.pdf" >http://www.macaulay.ac.uk/LADSS/documents/DEMs-for-spatial-modelling.pdf</a>, pp. 12 et 13).</li>
-    						</ul>
-    						<p>Cliquez sur <b>Exécuter</b>, patientez... la couche s'affiche :</p>
-    						<figure>
-    							<a href="illustrations/tous/9_2_pente_res.png">
-    								<img src="illustrations/tous/9_2_pente_res.png" alt="la couche de pentes" width="400" >
-    							</a>
-    						</figure>
-    						<p>Ici, les pixels sombres représentent des pentes faibles et les pixels clairs de fortes pentes.</p>
-    						<p><img class="icone" src="illustrations/tous/8_2_id_icone.png" alt="menu projet, sauvegarder sous..." >En cliquant sur un pixel avec l'outil <b>Identifier les entités</b>, vous pouvez connaître la valeur de la pente pour ce pixel :</p>
-    						<figure>
-    							<a href="illustrations/tous/9_2_id_pente.png">
-    								<img src="illustrations/tous/9_2_id_pente.png" alt="la couche de pentes" width="400" >
-    							</a>
-    						</figure>
-    						<p>Ici, le pixel a une pente de 13,5° environ.</p>
-    					</div>
-    					
-    					<p>Il existe beaucoup d'autres traitements possibles sur les données raster. Mais pourquoi toujours opposer raster et vecteur&nbsp;? Dans le prochain chapitre, découvrez comment les faire fonctionner main dans la main&nbsp;!</p>
-			
+  				<h4>Calcul de pente à partir du raster projeté<a class="headerlink" id="IX24c" href="#IX24c"></a></h4>
+  				
+  					<div class="manip">
+  						<p>Rendez-vous dans la 
+  							<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; GDAL &#8594; Analyse raster &#8594; Pente
+  								<span>
+  									<img src="illustrations/tous/9_2_pente_menu.png" alt="Menu Raster, Analyse, MNT/DEM (Modèles de terrain)" width="350" >
+  								</span>
+  							</a>
+  						:</p>
+  						<figure>
+  							<a href="illustrations/tous/9_2_pente_fenetre.png">
+  								<img src="illustrations/tous/9_2_pente_fenetre.png" alt="Fenêtre de calcul de pente" width="500" >
+  							</a>
+  						</figure>
+  						<ul>
+  							<li class="espace">Couche source : sélectionnez <em class="data">srtm_jamaique_JAD2001</em></li>
+  							<li class="espace">Laissez les autres paramètres par défaut (pour plus d'infos sur les méthodes de Zevenberger & Thorne et Horn : <a class="ext" target="_blank" href="http://www.macaulay.ac.uk/LADSS/documents/DEMs-for-spatial-modelling.pdf" >http://www.macaulay.ac.uk/LADSS/documents/DEMs-for-spatial-modelling.pdf</a>, pp. 12 et 13).</li>
+  						</ul>
+  						<p>Cliquez sur <b>Exécuter</b>, patientez... la couche s'affiche :</p>
+  						<figure>
+  							<a href="illustrations/tous/9_2_pente_res.png">
+  								<img src="illustrations/tous/9_2_pente_res.png" alt="la couche de pentes" width="400" >
+  							</a>
+  						</figure>
+  						<p>Ici, les pixels sombres représentent des pentes faibles et les pixels clairs de fortes pentes.</p>
+  						<p><img class="icone" src="illustrations/tous/8_2_id_icone.png" alt="menu projet, sauvegarder sous..." >En cliquant sur un pixel avec l'outil <b>Identifier les entités</b>, vous pouvez connaître la valeur de la pente pour ce pixel :</p>
+  						<figure>
+  							<a href="illustrations/tous/9_2_id_pente.png">
+  								<img src="illustrations/tous/9_2_id_pente.png" alt="la couche de pentes" width="400" >
+  							</a>
+  						</figure>
+  						<p>Ici, le pixel a une pente de 13,5° environ.</p>
+  					</div>
+  					
+  					<p>Il existe beaucoup d'autres traitements possibles sur les données raster. Mais pourquoi toujours opposer raster et vecteur&nbsp;? Dans le prochain chapitre, découvrez comment les faire fonctionner main dans la main&nbsp;!</p>
+		
 		
 				<br>
 				<a class="suiv" href="09_03_vecteur_raster.php">chapitre suivant</a>

@@ -49,13 +49,13 @@
 			<h3><a class="titre" id="IX32">Attribuer à chaque point une valeur d'élévation<a class="headerlink" id="IX32" href="#IX32"></a></h3>
 			
 				<p>Comment faire pour donner à chacun des points sa valeur d'élévation&nbsp;? Il faut pour cela attribuer à chaque point la valeur du pixel qui le recouvre.</p>
-				<p>Une recherche dans la boîte à outils, rubrique Analyse Raster, permet de découvrir l'outil <b>Prélever des valeurs raster</b> qui semble correspondre à ce que l'on cherche.</p>
+				<p>Une recherche dans la boîte à outils, rubrique Analyse Raster, permet de découvrir l'outil <b>Prélèvement des valeurs rasters vers ponctuels</b> qui semble correspondre à ce que l'on cherche.</p>
 				
 				<div class="manip">
 				    <p>
-				        <a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; Analyse raster &#8594; Prélever des valeurs raster
+				        <a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; Analyse raster &#8594; Prélèvement des valeurs rasters vers ponctuels
                         	<span>
-                        		<img src="illustrations/tous/9_3_prelev_raster_emplacement.png" alt="Emplacement de l'outil Prélever des valeurs raster dans la boîte à outils" width="400" >
+                        		<img src="illustrations/tous/9_3_prelev_raster_emplacement.png" alt="Emplacement de l'outil Prélever des valeurs raster dans la boîte à outils" width="350" >
                         	</span>
                         </a>
 				    </p>
@@ -72,11 +72,11 @@
 					</ul>
 			     </div>
 			     <p>Ici, notre raster ne possède qu'une seule bande. Certains raster en possèdent plusieurs, c'est le cas par exemple des images satellites qui ont différentes bandes pour le vert, le rouge, l'infrarouge etc.</p>
-			     <p>Cet outil ajoutera autant de colonnes à la table de la couche de points que de bandes dans le raster. Ces champs auront en suffixe le numéro de bande (_01, _02...), auquel il est donc possible de rajouter un préfixe.</p>
-			     <p>Ici, le nouveau champ sera donc nommé elev_1.</p>
+			     <p>Cet outil ajoutera autant de colonnes à la table de la couche de points que de bandes dans le raster. Ces champs auront en suffixe le numéro de bande (1, 2...), auquel il est donc possible de rajouter un préfixe.</p>
+			     <p>Ici, le nouveau champ sera donc nommé elev1.</p>
 			     <div class="manip">
 					<p>Cliquez sur <b>Exécuter</b>, la couche temporaire est ajoutée et se nomme <b>Sampled Points</b>. Elle possède les mêmes géométries que la couche de points en entrée, et une colonne de plus dans sa table.</p>
-					<p>Ouvrez sa table attributaire pour le vérifier : une colonne <b>elev_1</b> a été ajoutée, où l'élévation de chaque point est renseignée.</p>
+					<p>Ouvrez sa table attributaire pour le vérifier : une colonne <b>elev1</b> a été ajoutée, où l'élévation de chaque point est renseignée.</p>
 					 <figure>
 						<a href="illustrations/tous/9_3_table.png" >
 							<img src="illustrations/tous/9_3_table.png" alt="Table attributaire de la couche créée, avec la colonne elev_1" width="400" >

@@ -205,7 +205,7 @@
 					
 				<h4>Pour aller plus loin&nbsp;: détail des autres paramètres<a class="headerlink" id="IX12d" href="#IX12d"></a></h4>
 					
-					<p>Les autres paramètres de l'outil de zone tampon sont moins fréquemment modifiés et vous pouvez souvent laisser les valeurs par défaut. Voici leur description pour information, que vous pouvez également retrouver dans l'aide (partie droite de la fenêtre de l'outil) ou bien la <a class="ext" target="_blank" href="https://docs.qgis.org/3.4/en/docs/user_manual/processing_algs/qgis/vectorgeometry.html?highlight=buffer#buffer" >documentation QGIS</a> :</p>
+					<p>Les autres paramètres de l'outil de zone tampon sont moins fréquemment modifiés et vous pouvez souvent laisser les valeurs par défaut. Voici leur description pour information, que vous pouvez également retrouver dans l'aide (partie droite de la fenêtre de l'outil) ou bien la <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/processing_algs/qgis/vectorgeometry.html#buffer" >documentation QGIS</a> :</p>
 					<ul>
 					    <li class="espace"><b>Segments :</b> plus cette valeur est élevée, plus les contours de la zone seront « arrondis ». Il s'agit en fait du nombre de segments utilisés pour représenter un quart de cercle.</li>
     					<li class="espace"><b>Style d'extrémité :</b> il s'agit de la manière dont les zones tampons sont &#171; terminées &#187;. 3 valeurs sont possibles : rond, plat et carré</li>
