@@ -129,7 +129,7 @@
 							<p><label for="faq-3">Combien de lignes n'ont pas été jointes ? Pourquoi ?</label></p>
 							<p class="reponse">Deux counties n'ont pas de données jointes : <b>ELGEYO-MARAKWET</b> et <b>THARAKA-NITHI</b>, orthographiés sans tirets dans le fichier CSV.</p>
 						</div>
-						<p>Pour que tous les enregistrements soient joints, vous pouvez modifier à la main les noms des counties qui posent problème, soit dans la couche GeoPackage soit dans le fichier CSV.</p>
+						<p>Pour que tous les enregistrements soient joints, vous pouvez modifier à la main les noms des counties qui posent problème, soit dans la couche GeoPackage soit dans le fichier CSV (ces opérations peuvent être effectuées dans QGIS).</p>
 					</div>
 				
 				
