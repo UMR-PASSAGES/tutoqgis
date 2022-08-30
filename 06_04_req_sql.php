@@ -27,7 +27,6 @@
 							<li><a href="#VI43a">Choisir les colonnes</a></li>
 							<li><a href="#VI43b">Croiser plusieurs tables</a></li>
 							<li><a href="#VI43c">Un peu de spatial</a></li>
-
 						</ul>
 					</li>
 					<li><a href="#VI44">Effectuer une requête en ajoutant une couche virtuelle</a></li>
@@ -170,7 +169,7 @@ WHERE c.INSEE_DEP = d.INSEE_DEP</p>
                         <p>Le résultat s'affiche : une ligne par commune, avec les colonnes choisies. Par rapport à la couche originale de communes, une information provenant de la couche de départements a été ajoutée, le nom du département.</p>
                      </div>
                     <p>Prenons cette requête ligne par ligne (mais dans le désordre !) :</p>
-                    <p class="code">from communes_Bretagne as c, depts_Bretagne_wgs84</p>
+                    <p class="code">from communes_Bretagne as c, DEPARTEMENT as d</p>
                     <p>signifie deux choses : que les deux couches en jeu seront <em class="data">communes_Bretagne</em> et <em class="data">DEPARTEMENT</em>, et que dans le reste de la requête, les noms de ces deux couches seront abrégés respectivement en <b>c</b> et <b>d</b>.</p>
                     <p>Cette abréviation des noms de couches n'est pas obligatoire ; elle permet néanmoins de taper moins de texte, et de gagner en clarté. Un autre avantage est que si vous deviez réutiliser cette requête pour d'autres couches, vous n'aurier à modifier qu'une seule fois leur nom.</p>
                     <p class="code">select c.INSEE_COM, c.NOM_COM, d.NOM_DEP, c.geometry</p>

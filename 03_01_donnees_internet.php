@@ -198,7 +198,7 @@
         						<img src="illustrations/tous/3_1_telechargement_srtm.png" alt="téléchargement d'une dalle du SRTM" width="350">
         					</a>
         				</figure>
-        				<p>Téléchargez la dalle au format GeoTIFF, placez-le fichier dans votre dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>. Il n'est pas nécessaire de dézipper le fichier obtenu.</p>
+        				<p>Téléchargez la dalle au format GeoTIFF, placez le fichier dans votre dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>. Il n'est pas nécessaire de dézipper le fichier obtenu.</p>
         				<p>Dans QGIS, ajoutez le fichier TIF téléchargé au moyen de l'explorateur.</p>
         				<figure>
         					<a href="illustrations/tous/3_1_srtm_kenya.png" >
