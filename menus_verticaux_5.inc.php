@@ -20,5 +20,4 @@
 		<li><a href="09_00_analyse_spatiale.php">Analyse spatiale</a></li>
 		<li><a href="10_00_carto.php">Représentation et mise en page</a></li>
 		<li><a href="11_00_automatisation.php">Automatisation de traitements</a></li>
-		<li><a href="12_00_teledetection.php">Télédétection</a></li>
 	</ol>

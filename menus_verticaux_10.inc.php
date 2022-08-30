@@ -16,5 +16,4 @@
 			</ol>
 		</li>
 		<li><a href="11_00_automatisation.php">Automatisation de traitements</a></li>
-		<li><a href="12_00_teledetection.php">Télédétection</a></li>
 	</ol>
