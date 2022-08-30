@@ -31,7 +31,7 @@
 					<li>le nom du fournisseur de données : <b>ogr</b> car QGIS utilise en interne une <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_logicielle">bibliothèque</a> nommée ogr pour accéder aux shapefiles</li>
 				</ul>
 				
-                <p>Quel est l'intérêt&nbsp;? D'abord, mieux comprendre comment fonctionne le logiciel. Ensuite, <b>créer exactement l'outil dont vous avez besoin</b>, avec plus de souplesse et de possibilités qu'un <a href="11_03_modeleur.php" >modèle</a>&nbsp;! Bien sûr, <b>on peut parfaitement utiliser QGIS sans jamais lire une ligne de Python</b>. Il s'agit d'un autre mode d'utilisation de QGIS.</p>				
+        <p>Quel est l'intérêt&nbsp;? D'abord, mieux comprendre comment fonctionne le logiciel. Ensuite, <b>créer exactement l'outil dont vous avez besoin</b>, avec plus de souplesse et de possibilités qu'un <a href="11_03_modeleur.php" >modèle</a>&nbsp;! Bien sûr, <b>on peut parfaitement utiliser QGIS sans jamais lire une ligne de Python</b>. Il s'agit d'un autre mode d'utilisation de QGIS.</p>				
 				
 				<p>Qu'allons-nous voir dans ce chapitre&nbsp;? Il ne s'agit pas ici d'apprendre à coder en Python, mais simplement <b>d'ouvrir un script Python existant, voir comment est constitué ce script, comment le paramétrer et le lancer</b>. En quelque sorte une introduction à cette face cachée de QGIS&nbsp;!</p>
 				
@@ -112,7 +112,7 @@
 			       <img class="icone" src="illustrations/tous/11_04_historique.png" alt="Fenêtre Historique" width="600">
 			      </a>
 			    </figure>
-			    <p class="note">L'historique est aussi très utile pour relancer rapidement un outil avec exactement les mêmes paramètres que la fois précédente, il suffit de double-cliquer sur la ligne correspondante&nbsp;!</p>
+			    <p class="note">Comme indiqué <a href="09_01_vecteur.php#IX14">ici</a>, l'historique est aussi très utile pour relancer rapidement un outil avec exactement les mêmes paramètres que la fois précédente, il suffit de double-cliquer sur la ligne correspondante&nbsp;!</p>
 					    
 					<div class="manip">
 					    <figure>
@@ -130,11 +130,11 @@
 						<div class="question">
 							<input type="checkbox" id="faq-2">
 							<p><label for="faq-2">au lieu de l'outil Clip de découpage, ce soit l'outil Intersection qui soit utilisé ?</label></p>
-							<p class="reponse">Ligne 46 remplacez <b>native:clip</b> par ce nom : <b>native:intersection</b>. Pour en savoir plus, vous pouvez voir <a href="https://docs.qgis.org/testing/en/docs/user_manual/processing/console.html#using-processing-algorithms-from-the-console" >ici</a>.</p>
+							<p class="reponse">Ligne 46 remplacez <b>native:clip</b> par ce nom : <b>native:intersection</b>. Pour en savoir plus, vous pouvez voir <a class="ext" target="_blank" href="https://docs.qgis.org/testing/en/docs/user_manual/processing/console.html#using-processing-algorithms-from-the-console" >ici</a>.</p>
 						</div>
 					</div>
 					
-					<p>Pour en savoir plus sur le sujet, vous pouvez lire par exemple <a href="https://docs.qgis.org/latest/fr/docs/pyqgis_developer_cookbook/intro.html" >ici</a>.</p>
+					<p>Pour en savoir plus sur le sujet, vous pouvez lire par exemple <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/pyqgis_developer_cookbook/intro.html" >ici</a>.</p>
 					
 				<br>
 				<a class="prec" href="11_03_modeleur.php">chapitre précédent</a>
