@@ -16,7 +16,7 @@
 			<h1>X.  Représenter des données et les mettre en page</h1>
 			
 							<p>Les logiciels SIG sont avant tout des logiciels d'analyse spatiale. Ils permettent également la représentation des données sous différentes formes, et la mise en page de cartes. Les règles de sémiologie graphique ne seront pas ou peu abordées ici, nous verrons avant tout l'aspect &#171;&nbsp;technique&nbsp;&#187; sous QGIS.</p>
-			<p>Nous verrons ici comment représenter des données dans QGIS : quels types de cartes sont possibles, quelles en sont les limites, et comment mettre en page une carte.</p>
+			<p>Nous verrons ici comment représenter des données dans QGIS&nbsp;: quels types de cartes sont possibles, quelles en sont les limites, et comment mettre en page une carte.</p>
 			
 			<p>Notions abordées :</p>
 				<ul>

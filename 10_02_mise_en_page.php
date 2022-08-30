@@ -56,14 +56,9 @@
 					<p class="note">Dans la version 2.18 de QGIS, le mode mise en page se nommait &#171;&nbsp;composeur d'impression&nbsp;&#187;.</p>
 					
 					<div class="manip">
-						<p>
-							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Nouvelle mise en page...
-								<span>
-									<img src="illustrations/tous/10_02_composeur_menu.png" alt="Menu Projet, Nouvelle mise en page..." width="300">
-								</span>
-							</a>
-						</p>
-						<p>Tapez un titre, par exemple densité communes. La fenêtre de mise en page s'ouvre :</p>
+						<p>Si vous partez du projet tout fait <a href="donnees/TutoQGIS_10_Representation.zip" >misenpage_densite.qgz</a>, ouvrez la mise en page déjà présente dans ce projet : <b>menu Projet &#8594; Mises en page &#8594; densité de population</b>.</p>
+						<p>Sinon, créez une nouvelle mise en page&nbsp;: <b>menu Projet &#8594; Nouvelle mise en page...</b> Tapez un titre, par exemple densité communes.</p>
+						<p>La fenêtre de mise en page s'ouvre (ici pour la mise en page déjà existante) :</p>
 						<figure>
 							<a href="illustrations/tous/10_02_misenpage_general.png" >
 								<img src="illustrations/tous/10_02_misenpage_general.png" alt="Fenêtre de mise en page, avec des numéros pour les différentes parties (menus et outils, carte...)" width="600">
@@ -78,7 +73,7 @@
 					<p><em class="numero">4. </em><b>Onglet Historique :</b> retrouvez ici la liste des dernières opérations que vous avez effectuées, par exemple modifier l'ordre des éléments. En cliquant sur une opération, vous l'effectuez à nouveau.</p>
 					<p><em class="numero">5. </em><b>Onglet Mise en page :</b> cet onglet permet notamment de définir une grille d'accrochage, et une résolution pour l'export. Le contenu de cet onglet ne change jamais.</p>
 					<p><em class="numero">6. </em><b>Onglet Propriétés de l'objet :</b> cet onglet contient les propriétés de l'objet actuellement sélectionné, son contenu varie donc en fonction du type d'objet : carte, légende, texte...</p>
-					<p><em class="numero">7. </em><b>Onglet Atlas :</b> QGIS possède un mode Atlas, très pratique si vous avez une série de cartes à faire sur des zones différentes. Nous n'aborderons pas son fonctionnement, mais vous pouvez en savoir plus par exemple <a class="ext" target="_blank" href="https://docs.qgis.org/3.16/en/docs/training_manual/forestry/forest_maps.html?highlight=atlas">ici</a>.</p>
+					<p><em class="numero">7. </em><b>Onglet Atlas :</b> QGIS possède un mode Atlas, très pratique si vous avez une série de cartes à faire sur des zones différentes. Nous n'aborderons pas son fonctionnement, mais vous pouvez en savoir plus par exemple <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/training_manual/forestry/forest_maps.html?highlight=atlas">ici</a>.</p>
 					<p><em class="numero">8. </em><b>Barre d'état :</b> vous pouvez lire ici les coordonnées de votre souris dans la page (il ne s'agit pas de coordonnées géographiques, mais de coordonnées en mm par rapport au coin en haut à gauche de la page) et vous pourrez aussi modifier le niveau de zoom sur la page.</p>
 					
 					
@@ -115,7 +110,7 @@
 					
 					</div>
 					
-						<p><b>La carte ainsi créée est synchronisée avec les données visibles dans QGIS</b> : si vous changer le style d'une des couches dans la fenêtre principale de QGIS et revenez à la mise en page, la carte aura été mise à jour (si besoin en cliquant sur le bouton actualiser).</p>
+					<p><b>La carte ainsi créée est synchronisée avec les données visibles dans QGIS</b> : si vous changer le style d'une des couches dans la fenêtre principale de QGIS et revenez à la mise en page, la carte aura été mise à jour (si besoin en cliquant sur le bouton actualiser).</p>
 						
 					<div class="manip">
 					
@@ -132,7 +127,7 @@
     								<img src="illustrations/tous/10_02_zoom2.png" alt="Fixer l'échelle de la carte sur celle de la fenêtre QGIS" width="270">
     							</a></li>
     					</ul>
-        				<p>Il est probable que les 2 cartes ne coïncident pas exactement car elles n'ont pas le même rapport hauteur/largeur. Vous pouvez aussi cliquer sur la 4ème icône pour donner à la carte de votre mise en page la même échelle que dans la fenêtre principale QGIS.</p>
+        			<p>Il est probable que les 2 cartes ne coïncident pas exactement car elles n'ont pas le même rapport hauteur/largeur. Vous pouvez aussi cliquer sur la 4ème icône pour donner à la carte de votre mise en page la même échelle que dans la fenêtre principale QGIS.</p>
 						
 					</div>
 					
@@ -246,7 +241,7 @@
         				</div>
         				<p>Comme pour la légende, il est possible de régler assez finement les différents paramètres de cette échelle.</p>
         					
-        		     <h4>A chaque échelle son style<a class="headerlink" id="X26b" href="#X26b"></a></h4>
+        		 <h4>A chaque échelle son style<a class="headerlink" id="X26b" href="#X26b"></a></h4>
     					
     					<div class="manip">
 						  <p><img class="icone" src="illustrations/tous/10_02_selection_deplace_icone.png" alt="icône sélectionner/déplacer un objet" >Après avoir sélectionné l'échelle au moyen de l'outil de sélection, vous pouvez en modifier les propriétés dans l'onglet <b>Propriétés de l'objet.</b></p>
@@ -321,10 +316,17 @@
 						<p><img class="icone" src="illustrations/tous/10_02_etiquette_icone.png" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter Etiquette</b>.</p>
 						<p>Dans les propriétés de cet objet, vous pouvez ensuite modifier le texte, la police, la couleur...</p>
 						<p><img class="icone" src="illustrations/tous/10_02_image_icone.png" alt="icône ajouter une image" >Si vous voulez ajouter une image, par exemple un logo : outil <b>Ajouter Image</b> puis dessinez un rectangle sur la page.</p>
-						<p>Dans les propriétés principales, choisissez ensuite une image sur votre ordinateur :</p>
+						<p>Dans les propriétés principales, choisissez ensuite une image sur votre ordinateur. Attention, il faut choisir <b>image raster</b> si votre image est au format JPG, PNG... ou bien <b>image SVG</b> si elle est au format vectoriel SVG.</p>
+						<p>Pour une image raster&nbsp;:</p>
 						<figure>
-							<a href="illustrations/tous/10_02_image_parcourir.png" >
-								<img src="illustrations/tous/10_02_image_parcourir.png" alt="Choix d'une image" width="350">
+							<a href="illustrations/tous/10_02_ajout_image_raster.png" >
+								<img src="illustrations/tous/10_02_ajout_image_raster.png" alt="Choix d'une image raster" width="450">
+							</a>
+						</figure>
+						<p>Pour une image SVG&nbsp;:</p>
+						<figure>
+							<a href="illustrations/tous/10_02_ajout_image_svg.png" >
+								<img src="illustrations/tous/10_02_ajout_image_svg.png" alt="Choix d'une image vecteur" width="450">
 							</a>
 						</figure>
 					</div>
@@ -338,7 +340,13 @@
 							</a>
 						</figure>
 						<p class="note">Il est possible d'ajouter de nouveaux symboles au format SVG à cette bibliothèque, au moyen du bouton <b>...</b> situé au-dessous.</p>
-						
+						<p>Pour que cette flèche Nord soit synchronisée avec la carte, si la carte présente une rotation, descendez jusqu'à la rubrique rotation et cochez <b>Synchroniser avec la carte</b>&nbsp:</p>
+						<figure>
+							<a href="illustrations/tous/10_02_nord_rotation.png" >
+								<img src="illustrations/tous/10_02_nord_rotation.png" alt="Synchronisation de la rotation de la flèche nord avec la carte" width="500">
+							</a>
+						</figure>
+						<p>Si la carte présente une rotation (à spécifier dans ses propriétés, toujours dans la mise en page), la flèche aura cette même rotation.</p>
 					</div>
 					
 				<h3><a class="titre" id="X28">Ajout d'une carte de situation<a class="headerlink" id="X28" href="#X28"></a></h3>

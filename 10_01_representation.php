@@ -75,17 +75,6 @@
 							</a>
 							<figcaption>Exemple de polygones (en gris) et de leurs centroïdes (en rouge).</figcaption>
 						</figure>
-						
-						<div class="manip">
-						    <p> Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">COMMUNE.shp</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
-							<p>Pour trouver l'outil voulu, tapez <b>centro</b> dans la barre de recherche de la boîte à outils (centro et non centroïde pour que la recherche fonctionne également avec les noms d'outils en anglais).</p>
-							<figure>
-								<a href="illustrations/tous/10_01_centroides_menu.png" >
-									<img src="illustrations/tous/10_01_centroides_menu.png" alt="Boîte à outil, centro dans la barre de recherche" width="470">
-								</a>
-							</figure>
-							<p>On voit notamment 2 outils dans la rubrique Géométrie vectorielle : <b>Centroïdes</b> et <b>Point dans la surface</b>.</p>
-					   </div>
 					   
 					   <p><b>Les centroïdes peuvent se situer en-dehors des polygones</b>, comme par exemple dans le cas de la commune de Remoiville dans la Meuse&nbsp;:</p>
 					   <figure>
@@ -96,8 +85,15 @@
 						<p>Dans notre utilisation, cela nous est égal que le centroïde soit au centre exact du polygone&nbsp;; par contre, <b>il sera plus lisible qu'il tombe toujours à l'intérieur du polygone</b>. Il existe donc généralement dans les logiciels SIG une variante de l'outil de centroïdes, qui crée des centroïdes parfois imparfaits mais toujours dans les polygones&nbsp;!</p>
 						<p>C'est la raison pour laquelle nous allons utiliser ici l'outil <b>Point dans la surface</b> plutôt que l'outil <b>Centroïdes</b>.</p>
 					   
-					   <div class="manip">
-					       <p>Dans la boîte à outils, double-cliquez sur <b>Point dans la surface</b> (rubrique Géométrie vectorielle) :</p>
+					  <div class="manip">
+						  <p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">COMMUNE.shp</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
+						  <p>Dans la barre de recherche de la boîte à outils, tapez par exemple <em>point dans</em> pour trouver plus facilement l'outil <b>point dans la surface</b> (rubrique Géométrie vectorielle)&nbsp;:</p>
+						  <figure>
+								<a href="illustrations/tous/10_01_centroides_menu.png" >
+									<img src="illustrations/tous/10_01_centroides_menu.png" alt="Emplacement de l'outil 'point dans la surface' dans la toolbox" width="400">
+								</a>
+							</figure>
+					    <p>Double-cliquez sur cet outil&nbsp;:</p>
 							<figure>
 								<a href="illustrations/tous/10_01_centroides_fenetre.png" >
 									<img src="illustrations/tous/10_01_centroides_fenetre.png" alt="Fenêtre de l'outil centroïdes" width="600">
@@ -149,12 +145,12 @@
 							</ul>
 						</div>
 
-                    <h4>Surface, rayon, Flannery... Pour en savoir plus sur les différentes méthodes<a class="headerlink" id="X11c" href="#X11c"></a></h4>
+        <h4>Surface, rayon, Flannery... Pour en savoir plus sur les différentes méthodes<a class="headerlink" id="X11c" href="#X11c"></a></h4>
 
-                        <p>Pourquoi faire varier la surface des cercles et non leur rayon&nbsp;? Tout simplement parce qu'ainsi les variations de forme vues par l'&#339;il seront proportionnelles aux variations de la variable représentée. En faisant varier le rayon, l'&#339;il verra un écart plus grand entre une valeur moyenne et une valeur élevée qu'entre une valeur faible et une valeur moyenne, même si la différence est la même.</p>
-                        <p>La méthode de <a class="ext" target="_blank" href="http://wiki.gis.com/wiki/index.php/Proportional_symbol_map#Apparent_Magnitude_.28Flannery.29_Scaling">Flannery</a> est une technique utilisée pour compenser le fait que, même si l'oeil lit mieux les variations de surface que de taille, il ne les interprète cependant pas toujours exactement. Même si cette méthode est intéressante, étant donné que la méthode la plus utilisée en cartographie est de faire varier la surface, il n'est pas forcément recommandé de l'utiliser, à moins de bien le préciser sur votre carte.</p>
-                        <p>La méthode exponentielle permet de surreprésenter les valeurs extrêmes (en ajustant l'exposant) et peut être utile à des fins d'exploration.</p>
-                        <figure>
+            <p>Pourquoi faire varier la surface des cercles et non leur rayon&nbsp;? Tout simplement parce qu'ainsi les variations de forme vues par l'&#339;il seront proportionnelles aux variations de la variable représentée. En faisant varier le rayon, l'&#339;il verra un écart plus grand entre une valeur moyenne et une valeur élevée qu'entre une valeur faible et une valeur moyenne, même si la différence est la même.</p>
+            <p>La méthode de <a class="ext" target="_blank" href="http://wiki.gis.com/wiki/index.php/Proportional_symbol_map#Apparent_Magnitude_.28Flannery.29_Scaling">Flannery</a> est une technique utilisée pour compenser le fait que, même si l'&#156;il lit mieux les variations de surface que de taille, il ne les interprète cependant pas toujours exactement. Même si cette méthode est intéressante, étant donné que la méthode la plus utilisée en cartographie est de faire varier la surface, il n'est pas forcément recommandé de l'utiliser, à moins de bien le préciser sur votre carte.</p>
+            <p>La méthode exponentielle permet de surreprésenter les valeurs extrêmes (en ajustant l'exposant) et peut être utile à des fins d'exploration.</p>
+            <figure>
 							<a href="illustrations/tous/10_01_methode_flannery.png" >
 								<img src="illustrations/tous/10_01_methode_flannery.png" alt="Légende cercles proportionnels avec la méthode Flannery (valeurs 1000, 100000, 1000000 et 2190327" width="150">
 							</a>
@@ -244,7 +240,7 @@
 						<a href="illustrations/tous/10_01_carte_choroplethe.png" >
 							<img src="illustrations/tous/10_01_carte_choroplethe.png" alt="Exemple de carte choroplethe : carte de densité de population par commune, France métropolitaine, discrétisation par quantiles" width="500">
 						</a>
-						<figcaption>Exemple de carte choroplethe réalisée sous QGIS montrant la densité de population par commune en France métropolitaine, avec une discrétisation par quantiles.</figcaption>
+						<figcaption>Exemple de carte choroplèthe réalisée sous QGIS montrant la densité de population par commune en France métropolitaine, avec une discrétisation par quantiles.</figcaption>
 				   </figure>
 					
 					
@@ -289,7 +285,12 @@
     							<li class="espace">Cliquez sur <b>Classer</b> pour voir apparaître les classes avec les couleurs qui leur sont attribuées</li>
 							</ul>
 							<p>Appliquez ensuite les changements. Vous pouvez tester différents modes de discrétisation et nombres de classes.</p>
-							<p>Pour voir l'effectif de chaque classe, clic droit sur le nom de la couche &#8594; <b>Montrer le décompte des entités</b>.</p>
+							<p>Pour voir l'effectif de chaque classe, clic droit sur le nom de la couche &#8594; 
+								<a class="thumbnail_bottom" href="#thumb">Afficher le nombre d'entités
+              		<span>
+              			<img src="illustrations/tous/10_01_menu_nb_entites.png" alt="clic droit sur la couche, afficher le nombre d'entités" height="420" >
+              		</span>
+              	</a> (les nombres peuvent mettre un peu de temps à s'afficher avec une couche un peu lourde comme ici).</p>
 							<p>Pour un meilleur rendu, vous pouvez supprimer les bordures des communes en cliquant sur le symbole puis sur <b>Remplissage simple &#8594; Style de trait &#8594; Pas de ligne</b>.</p>
 							<figure>
 								<a href="illustrations/tous/10_01_enlever_bordure.png" >
@@ -312,7 +313,7 @@
 					
 					<p>Une carte en semis de points permet, à partir d'un maillage surfacique, de représenter des quantités ou effectifs par des points placés aléatoirement au sein de chaque polygone. Le nombre de ces points est proportionnel à la quantité ou l'effectif lié au polygone.</p>
 					<figure>
-					   <iframe src="https://demographics.virginia.edu/DotMap/" width="600" height="400" style="border:1px solid darkgrey;"></iframe>
+					   <iframe src="http://www.radicalcartography.net/index.html?chicagodots" width="600" height="400" style="border:1px solid darkgrey;"></iframe>
 					   <figcaption>Carte en semis de points des Etats-Unis&nbsp;: 1 point représente un personne, sa couleur est fonction de l'origine de cette personne. Cette carte met en lumière la ségrégation qui a lieu notamment dans certains quartiers des grandes villes.</figcaption>
 				    </figure>
 					
@@ -329,13 +330,13 @@
 						</p>
 						<figure>
 							<a href="illustrations/tous/10_01_pts_aleatoires_fenetre.png" >
-								<img src="illustrations/tous/10_01_pts_aleatoires_fenetre.png" alt="Fenêtre de création des points aléatoires" width="500">
+								<img src="illustrations/tous/10_01_pts_aleatoires_fenetre.png" alt="Fenêtre de création des points aléatoires" width="600">
 							</a>
 						</figure>
 						<ul>
 							<li class="espace">Couche source : <b>COMMUNE</b></li>
 							<li class="espace">Stratégie d'échantillonnage : <b>Nombre de points</b>, pour créer un nombre de points directement proportionnel à la population</li>
-							<li class="espace">Expression : cliquez sur le bouton à droite, et tapez l'expression suivante : <b>  round("POPULATION"/100)</b>, pour diviser la population par 100 et arrondir le résultat pour obtenir un nombre entier</li>
+							<li class="espace">Comptage de points : cliquez sur le bouton à droite, choisissez <b>éditer</b> et tapez l'expression suivante : <b>  round("POPULATION"/100)</b>, pour diviser la population par 100 et arrondir le résultat pour obtenir un nombre entier</li>
 							<li class="espace">Laissez les autres paramètres par défaut, pour créer une couche temporaire</li>
 							<li class="espace"><b>Exécuter</b>, patientez, l'opération est un peu longue... et fermez la fenêtre une fois terminé.</li>
 						</ul>
@@ -368,7 +369,7 @@
     				        
     				        <div class="manip">
     				            <p>Ouvrez les propriétés de la couche de communes, et <a href="10_01_representation.php#X12b">choisissez le mode gradué</a> pour le champ densité <a href="10_01_representation.php#X12a">créé précédemment</a> avec une discrétisation par exemple par quantiles.
-    				            <p>Cliquez ensuite sur l'onglet <b>Histogramme</b> puis sur <b>Charger les valeurs</b> :</p>
+    				            <p>Cliquez ensuite sur l'onglet <b>Histogramme</b> (toujours dans la rubrique symbologie) puis sur <b>Charger les valeurs</b> :</p>
     				            <figure>
         							<a href="illustrations/tous/10_01_histogramme.png" >
         								<img src="illustrations/tous/10_01_histogramme.png" alt="Histogramme dans la fenêtres des propriétés" width="550">
@@ -403,39 +404,47 @@
     				        
     				        <div class="manip">
     				            <p>Il faut tout d'abord <a href="03_04_fonds_carte.php#III43" >installer l'extension</a> : <b>menu Extension &#8594; Installer/Gérer les extensions</b>, tapez <b>plotly</b> dans la barre de recherche et cliquez sur <b>Installer l'extension</b>.</p>
-    				            <p><img class="icone" src="illustrations/tous/10_01_plotly_icone.png" alt="icône extension Plotly" >Plotly est ensuite accessible via le <b>menu Extension &#8594; DataPlotly &#8594; DataPlotly</b> ou bien en cliquant sur son icône.</p>
+    				            <p><img class="icone" src="illustrations/tous/10_01_plotly_icone.png" alt="icône extension Plotly" >Plotly est ensuite accessible via le <b>menu Extension &#8594; DataPlotly</b> ou bien en cliquant sur son icône.</p>
     				            <p>Un nouveau panneau appraît : il peut être nécessaire de l'agrandir un peu.</p>
                                 <p>Pour affficher un histogramme de fréquence de la densité de population&nbsp;:</p>
     				            <figure>
-        							<a href="illustrations/tous/10_01_plotly_config.png" >
-        								<img src="illustrations/tous/10_01_plotly_config.png" alt="Configuration de l'extension plotly pour afficher un histogramme de la densité de pop" width="550">
-        							</a>
-        						</figure>
-        						<ul>
-        						  <li>Choisissez le type <b>Histogram</b></li>
-        						  <li>Les données à représenter proviennent de la couche <b>COMMUNE</b>...</li>
-        						  <li>...et de son champ <b>densite</b></li>
-        						  <li>Cliquez ensuite sur le bouton <b>Créer le graphique</b> tout en bas&nbsp;:</li>
-        						</ul>
-        						<figure>
-        							<a href="illustrations/tous/10_01_plotly_graphique_v1.png" >
-        								<img src="illustrations/tous/10_01_plotly_graphique_v1.png" alt="Exemple d'histogramme de fréquence pour la densité réalisé avec Plotly" width="500">
-        							</a>
-        						</figure>
-        						<p>La barre d'outils en haut à droite permet de zoomer, dézoomer etc. dans le graphique.</p>
-        						<p>Tout est ensuite paramétrable, ou presque, notamment ici :</p>
-        						<figure>
-        							<a href="illustrations/tous/10_01_plotly_config2.png" >
-        								<img src="illustrations/tous/10_01_plotly_config2.png" alt="Paramétrage du graphique dans Plotly" width="550">
-        							</a>
-        						</figure>
-        						<p>Par exemple en diminuant la taille des barres et en zoomant&nbsp;:</p>
-        						<figure>
-        							<a href="illustrations/tous/10_01_plotly_graphique_v2.png" >
-        								<img src="illustrations/tous/10_01_plotly_graphique_v2.png" alt="Exemple d'histogramme de fréquence pour la densité réalisé avec Plotly" width="500">
-        							</a>
-        						</figure>
-        						<p>N'hésitez pas à tester les différents paramètres&nbsp;!</p>
+            							<a href="illustrations/tous/10_01_plotly_config.png" >
+            								<img src="illustrations/tous/10_01_plotly_config.png" alt="Configuration de l'extension plotly pour afficher un histogramme de la densité de pop" width="550">
+            							</a>
+            						</figure>
+            						<ul>
+            						  <li>Choisissez le type <b>Histogram</b></li>
+            						  <li>Les données à représenter proviennent de la couche <b>COMMUNE</b>...</li>
+            						  <li>...et de son champ <b>densite</b></li>
+            						  <li>Cliquez ensuite sur le bouton <b>Créer le graphique</b> tout en bas&nbsp;:</li>
+            						</ul>
+            						<figure>
+            							<a href="illustrations/tous/10_01_plotly_graphique_v1.png" >
+            								<img src="illustrations/tous/10_01_plotly_graphique_v1.png" alt="Exemple d'histogramme de fréquence pour la densité réalisé avec Plotly" width="500">
+            							</a>
+            						</figure>
+            						<p>La barre d'outils en haut à droite permet de zoomer, dézoomer etc. dans le graphique.</p>
+            						<p>Tout est ensuite paramétrable, ou presque, notamment ici :</p>
+            						<figure>
+            							<a href="illustrations/tous/10_01_plotly_config1.png" >
+            								<img src="illustrations/tous/10_01_plotly_config1.png" alt="Paramétrage du graphique dans Plotly" width="550">
+            							</a>
+            						</figure>
+            						<p>Ou là&nbsp;:</p>
+            						<figure>
+            							<a href="illustrations/tous/10_01_plotly_config2.png" >
+            								<img src="illustrations/tous/10_01_plotly_config2.png" alt="Paramétrage du graphique dans Plotly" width="550">
+            							</a>
+            						</figure>
+            						<p>Pour appliquer les changements, il faut cliquer sur <b>Mettre à jour le graphique</b> en bas de la fenêtre.</p>
+            						<p>Par exemple en diminuant la taille des barres et en zoomant&nbsp;:</p>
+            						<figure>
+            							<a href="illustrations/tous/10_01_plotly_graphique_v2.png" >
+            								<img src="illustrations/tous/10_01_plotly_graphique_v2.png" alt="Exemple d'histogramme de fréquence pour la densité réalisé avec Plotly" width="500">
+            							</a>
+            						</figure>
+            						<p>N'hésitez pas à tester les différents paramètres&nbsp;!</p>
+            						<p class="note">En-dessous du graphique, il y a 2 boutons pour l'exporter au format HTML (interactif) ou PNG (image).</p>
     				        </div>
 						
 					
