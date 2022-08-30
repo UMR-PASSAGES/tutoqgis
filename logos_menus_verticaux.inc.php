@@ -18,8 +18,8 @@
     </tr>
     <tr>
         <td colspan="3">
-            <a href="" >
-            	<img class="logo" src="illustrations/tous/logo_qgis_3_16.png" alt="logo QGIS 3.16" height="70">
+            <a target="_blank" href="https://qgis.org/fr/site/" >
+            	<img class="logo" src="illustrations/tous/logo_qgis_3_22.png" alt="logo QGIS 3.22" height="70">
             </a>
         </td>
     </tr>
