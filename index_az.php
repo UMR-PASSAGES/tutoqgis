@@ -264,6 +264,7 @@
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Helmert (transformation)</a></li>
 							<li class="index_02"><a href="09_02_raster.php#IX22a">Histogramme (données raster)</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X14">Histogramme (données vecteur)</a></li>
+							<li class="index_02"><a href="09_01_vecteur.php#IX14">Historique</a></li>
 						</ul>
 					</li>
 					
