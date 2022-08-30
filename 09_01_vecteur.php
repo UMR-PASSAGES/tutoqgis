@@ -36,6 +36,7 @@
 							<li><a href="#IX13c">Si on voulait aller plus loin...</a></li>
 						</ul>
 					</li>
+					<li><a href="#IX14">Relancer rapidement un outil à l'aide de l'historique</a></li>
 				</ul>
 				<br>
 				
@@ -298,6 +299,22 @@
 				    </ol>
 				    
 				    <p>En combinant les outils vus dans ce tutoriel (et d'autres !), on peut essayer de répondre à des questions sur des données spatiales.</p>
+				    
+			<h3>Relancer rapidement un outil à l'aide de l'historique<a class="headerlink" id="IX14" href="#IX14"></a></h3>
+			
+			 <p>Cette astuce est valable pour tous les outils de la boîte à outils, sur les vecteurs, rasters ou autres&nbsp;!</p>
+			 
+			 <div class="manip">
+			   <p>Rendez-vous dans le <b>menu Traitement &#8594; Historique</b>&nbsp;:</p>
+			   <figure>
+  					<a href="illustrations/tous/9_1_historique.png" >
+  						<img src="illustrations/tous/9_1_historique.png" alt="Fenêtre de l'historique" width="600" >
+  					</a>
+  				</figure>
+  				<p>Dans cette fenêtre, chaque ligne correspond à une fois où vous avez lancé un outil de la boîte à outils, le tout classé par ordre chronologique.</p>
+  				<p>Cliquez sur une des lignes&nbsp;: dans la partie basse de la fenêtre, vous pouvez voir la commande Python correspondante, que le logiciel a lancé pour exécuter l'outil (voir partie <a href="11_04_python.php" >XI.4</a>).</p>
+  				<p><b>Si vous double-cliquez sur une ligne, la fenêtre de l'outil se lance avec exactement le même paramétrage que celui utilisé cette fois-là.</b> Ce qui est très utile en particulier pour les outils avec beaucoup de paramètres, par exemple quand on fait des tests et qu'on est amené à relancer plusieurs fois un outil.</p>
+			 </div>
 
 			<br>
 			<a class="prec" href="09_00_analyse_spatiale.php">chapitre précédent</a>
