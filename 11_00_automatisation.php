@@ -17,7 +17,7 @@
 			<p>Nous allons utiliser 3 méthodes différentes pour cela.</p>
 			<p>Notions abordées :</p>
 				<ul>
-					<li>Exécution d'un outil "par lot"</li>
+					<li>Exécution d'un outil &#171;&nbsp;par lot&nbsp;&#187;</li>
 					<li>Modeleur de traitement (graphical modeler)</li>
 					<li>Script Python</li>
 				</ul>

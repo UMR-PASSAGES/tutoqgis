@@ -28,7 +28,7 @@
 					<div class="question">
                 		<input type="checkbox" id="faq-1">
                 		<p><label for="faq-1">Vérifier que toutes les couches aient bien le même SCR. Quel est ce SCR&nbsp;?</label></p>
-                		<p class="reponse">En allant dans les propriétés de chaque couche, rubrique Source, on peut constater qu'elles sont toutes en RGF93/Lambert 93, code EPSG 2154.</p>
+                		<p class="reponse">En allant dans les propriétés de chaque couche, rubrique Source (ou bien en survolant le nom de chaque couche et en lisant l'infobulle), on peut constater qu'elles sont toutes en RGF93/Lambert 93, code EPSG 2154.</p>
                 	</div>
                 	
 					<p>Pour découper la couche de routes par la commune :

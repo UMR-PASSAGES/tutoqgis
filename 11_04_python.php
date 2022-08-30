@@ -26,7 +26,7 @@
 				<p class="code">qgis.utils.iface.addVectorLayer("/mnt/travail/temp/SAINTE_RADEGONDE.shp", "SAINTE_RADEGONDE", "ogr")</p>
 				<p>Ce qui revient à lancer l'outil d'ajout de couche vecteur <b>addVectorLayer</b> de QGIS, avec 3 paramètres :</p>
 				<ul>
-					<li>l'emplacement de la couche : <b>/mnt/travail/temp/SAINTE_RADEGONDE.shp</b></li>
+					<li>l'emplacement de la couche : <b>/mnt/travail/temp/SAINTE_RADEGONDE.shp</b> (ce chemin va bien sûr varier)</li>
 					<li>le nom avec lequel la couche sera affichée dans QGIS : <b>SAINTE_RADEGONDE</b></li>
 					<li>le nom du fournisseur de données : <b>ogr</b> car QGIS utilise en interne une <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_logicielle">bibliothèque</a> nommée ogr pour accéder aux shapefiles</li>
 				</ul>
@@ -105,9 +105,18 @@
 					
 				
 				<h3><a class="titre" id="XI44">Lancer et éditer un script<a class="headerlink" id="XI44" href="#XI44"></a></h3>
+				
+          <p>Pour savoir comment appeler un outil en python, une astuce est de d'abord le lancer &#171;&nbsp;normalement&nbsp;&#187; puis d'aller dans le <b>menu Traitement &#8594; Historique</b> et cliquer sur la ligne correspondante. En bas de la fenêtre, vous aurez la commande Python qui a été exécutée cette fois-là&nbsp;:</p>				
+				  <figure>
+				    <a href="illustrations/tous/11_04_historique.png" >
+			       <img class="icone" src="illustrations/tous/11_04_historique.png" alt="Fenêtre Historique" width="600">
+			      </a>
+			    </figure>
+			    <p class="note">L'historique est aussi très utile pour relancer rapidement un outil avec exactement les mêmes paramètres que la fois précédente, il suffit de double-cliquer sur la ligne correspondante&nbsp;!</p>
+					    
 					<div class="manip">
 					    <figure>
-						  <a href="illustrations/tous/11_04_executer_script_icone.png" >
+						    <a href="illustrations/tous/11_04_executer_script_icone.png" >
 					       <img class="icone" src="illustrations/tous/11_04_executer_script_icone.png" alt="icône exécuter le script dans la barre d'outil de l'éditeur de scripts" >
 					      </a>
 					    </figure>
@@ -121,11 +130,11 @@
 						<div class="question">
 							<input type="checkbox" id="faq-2">
 							<p><label for="faq-2">au lieu de l'outil Clip de découpage, ce soit l'outil Intersection qui soit utilisé ?</label></p>
-							<p class="reponse">Ligne 46 remplacez <b>qgis:clip</b> par ce nom : <b>qgis:intersection</b>. Pour en savoir plus, vous pouvez voir <a href="https://docs.qgis.org/testing/en/docs/user_manual/processing/console.html#using-processing-algorithms-from-the-console" >ici</a>.</p>
+							<p class="reponse">Ligne 46 remplacez <b>native:clip</b> par ce nom : <b>native:intersection</b>. Pour en savoir plus, vous pouvez voir <a href="https://docs.qgis.org/testing/en/docs/user_manual/processing/console.html#using-processing-algorithms-from-the-console" >ici</a>.</p>
 						</div>
 					</div>
 					
-					<p>Pour en savoir plus sur le sujet, vous pouvez lire par exemple <a href="https://docs.qgis.org/3.4/fr/docs/pyqgis_developer_cookbook/intro.html" >ici</a>.</p>
+					<p>Pour en savoir plus sur le sujet, vous pouvez lire par exemple <a href="https://docs.qgis.org/latest/fr/docs/pyqgis_developer_cookbook/intro.html" >ici</a>.</p>
 					
 				<br>
 				<a class="prec" href="11_03_modeleur.php">chapitre précédent</a>

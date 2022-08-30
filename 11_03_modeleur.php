@@ -84,7 +84,7 @@
 							</a>
 						</figure>
 						<div class="manip">
-						  <p><img class="icone" src="illustrations/tous/11_03_zoom_icone.png" alt="icône zoom complet" >Si à un moment donné vous ne voyez plus votre modèle dans la partir droite de la fenêtre, cliquez sur l'icône <b>Zoom complet</b>.</p>
+						  <p><img class="icone" src="illustrations/tous/11_03_zoom_icone.png" alt="icône zoom complet" >Si à un moment donné vous ne voyez plus votre modèle dans la partie droite de la fenêtre, cliquez sur l'icône <b>Zoom complet</b>.</p>
 						</div>
 						
 						
