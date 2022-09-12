@@ -163,6 +163,8 @@
 			
 			    <p>Vous pouvez trouver <a class="ext" target="_blank" href="https://github.com/igeofr/qgis2/tree/master/flux">ici</a> une liste de flux WFS et WMS, créée par l'utilisateur github <a class="ext" target="_blank" href="https://github.com/igeofr">igeofr</a>, merci à lui !</p>
 			    <p>Vous pouvez soit ajouter ces flux manuellement, un par un, comme décrit plus haut, en copiant l'url, soit tous les ajouter en même temps. Pour cela, par exemple pour les flux WFS, collez le contenu entier du fichier QGIS_WFS.xml dans un fichier texte vierge, enregistrez ce fichier sous le nom QGIS_WFS.xml. Ensuite, dans QGIS : gestionnaire de sources &#8594; WFS ou WMS &#8594; Charger &#8594; sélectionnez le fichier XML, et choisissez les flux que vous souhaitez ajouter.</p>
+			    
+			    <p>L'<b>IGN</b> propose une grande quantité de <a class="ext" target="_blank" href="https://geoservices.ign.fr/services-web">flux WMS et WFS</a> accessibles gratuitement, n'hésitez pas à aller voir les services webs &#171;&nbsp;experts&nbsp;&#187;&nbsp;!</p>
 	
 				<br>
 				<a class="prec" href="03_01_donnees_internet.php">chapitre précédent</a>
