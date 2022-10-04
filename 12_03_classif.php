@@ -14,6 +14,7 @@
 		<div class="main">
 			<h2>XII.3  Classification supervisée / non supervisée</h2>
 				
+				<p>L'objectif de ce chapitre est de réaliser des classifications, c'est-à-dire de partir d'une image satellite</p>
 
 				
 				<br>

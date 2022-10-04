@@ -181,8 +181,6 @@
               
           <h3>Visualisation et présentation des images<a class="headerlink" id="XII14" href="#XII14"></a></h3> 
                 
-            <p>Dans cette partie, nous allons travailler avec l'image Sentinel-2 <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>.</p>
-            
             <div class="manip">
               <p>Ouvrez un nouveau projet QGIS, ajoutez l'image Sentinel-2 <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>.</p>
             </div>
@@ -366,7 +364,7 @@
   						
   						<p class="keskonfai">Ici il y a l'exo "Interpréter une composition colorée : méthode". On fait un truc là-dessus ??</p>
   						
-				      <p>Dans une <b>composition colorée fausse couleur</b>, il n'y a pas d’ adéquation entre les couleurs utilisées pour l’affichage et les bandes spectrales !</p>
+				      <p>Dans une <b>composition colorée fausse couleur</b>, il n'y a pas d'adéquation entre les couleurs utilisées pour l’affichage et les bandes spectrales !</p>
 				      <p>Le but peut être par exemple de mieux voir la végétation, des zones brûlées...</p>
 				      <p class="keskonfai">Dans l'exemple ci-dessous, le but est bien de voir les zones qui ont brûlées ?</p>
 				      

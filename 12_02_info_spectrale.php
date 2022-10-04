@@ -30,9 +30,9 @@
   				<p>Les objectifs de ce chapitre sont les suivants&nbsp;:</p>
   				
   				<ul>
-  				  <li>Extraire les signatures spectrales d’objets géographiques sur une image satellitaire</li>
-  				  <li>Interprétez vos signatures spectrales</li>
-  				  <li>Extraire et analyser des indices spectraux : NDVI (Normalized Diference Vegetation Indes) et NBR (Normalized Burn Ratio)</li>
+  				  <li>Extraire les <b>signatures spectrales</b> d’objets géographiques sur une image satellitaire</li>
+  				  <li><b>Interprétez</b> vos signatures spectrales</li>
+  				  <li>Extraire et analyser des <b>indices spectraux</b> : <b>NDVI</b> (Normalized Difference Vegetation Index) et <b>NBR</b> (Normalized Burn Ratio)</li>
   				</ul>
   				
   				<h3>Extraction de signature spectrale<a class="headerlink" id="XII21" href="#XII21"></a></h3>
@@ -43,7 +43,7 @@
   				  </div>
   				  
   				  <p>Nous allons ici digitaliser (dessiner) des polygones dans des zones avec différents types d'occupation du sol (eau, urbain, forêt...), afin de voir ensuite la signature spectrale de chacune de ces classes.</p>
-  				  <p>Ces polygones sont souvent nommés <b>ROI</b> en télédétection (Region Of Interest).</p>
+  				  <p>Ces polygones sont souvent nommés <b>ROI</b> en télédétection pour &#171;&nbsp;Region Of Interest&nbsp;&#187;.</p>
   				  
   				  <div class="manip">
   				    <p>Dans le panneau SCP (s'il n'est pas visible, menu Vue &#8594; Panneaux &#8594; Menu SCP), cliquez sur l'onglet vertical <b>Entrée données d'entraînement</b>&nbsp;:</p>
@@ -52,7 +52,7 @@
     							<img src="illustrations/tous/12_02_entree_rois.png" alt="onglet 'entrée données d'entrainement' du panneau SCP" width="450">
     						</a>
     					</figure>
-    					<p>Cliquez sur l'icône <b>Créer une nouvelle données d'entraînement</b> en haut du panneau SCP. Choisir l'emplacement et le nom de la couche SCP qui sera créée et qui contiendra les ROIs.</p>
+    					<p><img class="icone" src="illustrations/tous/12_02_ouvrir_roi_icone.png" alt="icône ouvrir un jeu d'entrainement dans le panneau SCP" >Cliquez sur l'icône <b>Créer une nouvelle données d'entraînement</b> en haut du panneau SCP. Choisir l'emplacement et le nom de la couche SCP qui sera créée et qui contiendra les ROIs.</p>
     					<p>Cette couche est ajoutée à QGIS (ici, elle se nomme <em>signatures_spectrales</em>)&nbsp;:</p>
     					<figure>
     						<a href="illustrations/tous/12_02_couche_rois.png" >
@@ -76,7 +76,7 @@
     						</a>
     					</figure>
     					<p>MC signifie <em>Macro-Classe</em>, et C <em>Classe</em> : une macro-classe peut regrouper plusieurs classes.</p>
-    					<p>Il ne reste plus maintenant qu'à digitaliser un polygone correspondant à cette classe&nbsp;!</p>
+    					<p>Il ne reste plus maintenant qu'à digitaliser un polygone correspondant à cette classe.</p>
     					<p><img class="icone" src="illustrations/tous/12_02_create_roi_icon.png" alt="icône de création de ROI">Cliquez sur l'icône <b>Create a ROI polygon</b> dans la barre d'outil <b>SCP working toolbar</b>.</p>
     					<p class="note">Si vous ne voyez pas cette barre d'outils, menu Vue &#8594; Barres d'outils &#8594; SCP Working Toolbar.</p>
     					<figure>
@@ -153,7 +153,7 @@
     					</ul>
   				  </div>
   				  
-  				  <p>Tous vos polygones sont sauvegardées dans la couche au format SCP <em class="data">signatures_spectrales</em> (ou le nom que vous lui avez donné). Il est possible de charger une couche SCP au moyen du bouton <b>Ouvrir un fichier de données d'entraînement</b>.</p>
+  				  <p>Tous vos polygones sont sauvegardés dans la couche au format SCP <em class="data">signatures_spectrales</em> (ou le nom que vous lui avez donné). Il est possible de charger une couche SCP au moyen du bouton <b>Ouvrir un fichier de données d'entraînement</b>.</p>
   				  <figure>
   						<a href="illustrations/tous/12_02_charger_rois.png" >
   							<img src="illustrations/tous/12_02_charger_rois.png" alt="haut du panneau SCP, onglet 'entrée données d'entraînement', avec le bouton 'ouvrir un fichier de données d'entraînement' entouré en rouge" width="420">
@@ -169,6 +169,8 @@
   				  <h4>Indice de végétation NDVI<a class="headerlink" id="XII23a" href="#XII23a"></a></h4>
   				  
   				    <p>L'indice de végétation ou <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">NDVI (Normalized Difference Vegetation Index)</a> permet de mesurer la présence de végétation vivante.</p>
+  				    <p>Il se calcule à partire des bandes Proche Infra-Rouge (PIR) et Rouge (R) de la manière suivante&nbsp;:</p>
+  				    <p class="code">NDVI = (PIR - R) / (PIR + R)</p>
   				    <p>Ici, nous allons calculer cette indice de 2 manières différentes : avec l'extension SCP, et avec la calculatrice raster de QGIS.</p>
   				    
   				    <p>Voici tout d'abord comment calculer le NDVI avec SCP&nbsp;:</p>
@@ -204,8 +206,66 @@
   				    </ul>
   				    <p>Certaines de ces &#171;&nbsp;bandes&nbsp;&#187; sont donc en réalité des listes de bandes et pourront être utilisées dans des expressions acceptant ces listes.</p>
   				    <p>Ici, nous utiliserons uniquement les 13 premiers éléments de la liste correspondant aux 13 bandes de notre image&nbsp;!</p>
+  				    
+  				    <div class="manip">
+      						<a href="illustrations/tous/12_02_scp_ndvi.png" >
+      							<img class="droite" src="illustrations/tous/12_02_scp_ndvi.png" alt="SCP, calcul de bandes, partie Fonctions : NDVI" width="250">
+      						</a>
+      					<p>Dans la partie <b>Fonctions</b> à droite de la fenêtre, descendez pour arriver jusqu'à la rubrique <b>Indices</b> et double-cliquez sur <b>NDVI</b>.</p>
+      					<p>La formule suivante s'affiche dans la partie <b>Expression</b>&nbsp;:</p>
+      					<p class="code">( "#NIR#" - "#RED#" ) / ( "#NIR#" + "#RED#" ) @NDVI</p>
+      					<p class="note">Dans cette formule, <b>@NDVI</b> sera le nom de la couche qui sera créée.</p>
+      					<p>Vous pouvez également choisir de taper la formule du NDVI &#171;&nbsp;à la main&nbsp;&#187; en double-cliquant sur les bandes dans la partie haute de la fenêtre&nbsp:</p>
+      					<p class="code">("raster8" - "raster4") / ("raster8" + "raster4") @NDVI</p>
+      					<p class="note">Le résultat sera le même en utilisant <em>bandset#b8</em> et <em>bandset#b4</em>, ou bien <em>bandset1b8</em> et <em>bandset1b4</em>...</p>
+      					<p><img class="icone" src="illustrations/tous/12_02_ndvi_lancer_icone.png" alt="bouton Lancer en bas à droite du panneau SCP" >Pour lancer le calcul du NDVI, cliquez sur le bouton <b>Lancer</b> en bas à droite de la fenêtre.</p>
+      					<p>Une nouvelle fenêtre s'ouvre pour vous demander l'emplacement où enregistrer la couche qui sera créee (son nom est défini par le texte à droite de l'arobase dans la formule, ici ce sera NDVI).</p>
+      					<p>Patientez... Le nouveau raster est ajouté à QGIS&nbsp;:</p>
+      					<figure>
+      						<a href="illustrations/tous/12_02_ndvi_resultat.png" >
+      							<img src="illustrations/tous/12_02_ndvi_resultat.png" alt="image NDVI" width="500">
+      						</a>
+      					</figure>
+  				    </div>
+  				    
+  				    <p>On peut également calculer le NDVI sans utiliser l'extension SCP, directement dans QGIS, à l'aide de la calculatrice raster.</p>
+  				    
+  				    <div class="manip">
+  				      <p>Dans la boîte à outils &#8594; Analyse raster &#8594; Raster Calculator&nbsp;:</p>
+  				      <figure>
+      						<a href="illustrations/tous/12_02_ndvi_rastercalc.png" >
+      							<img src="illustrations/tous/12_02_ndvi_rastercalc.png" alt="calcul du NDVI dans la calculatrice raster" width="600">
+      						</a>
+      					</figure>
+      					<ul>
+      					 <li class="espace">Dans <b>Expressions prédéfinies</b>, sélectionnez <b>NDVI</b> puis cliquez sur <b>Ajouter...</b> pour sélectionner les bandes rouges et proche infra-rouges</li>
+      					 <li class="espace">Dans la case <b>Expression</b>, la formule est maintenant la suivante : <em>(Sentinel2_2021_08_17@8 - Sentinel2_2021_08_17@4) / (Sentinel2_2021_08_17@8 + Sentinel2_2021_08_17@4)</em></li>
+      					 <li class="espace">Dans <b>Reference layer(s)</b>, cliquez sur les <b>...</b> à droite et sélectionnez l'image Sentinel, pour que la couche NDVI en sortie aie la même emprise, résolution et SCR</li>
+      					 <li class="espace">Dans <b>Output</b> en bas de la fenêtre, laissez la valeur par défaut <b>Enregistrer dans un fichier temporaire</b></li>
+      					</ul>
+      					<p>Exécutez... La couche temporaire est ajoutée à QGIS, elle est similaire à celle créée avec SCP.</p>
+  				    </div>
+  				    
+  				    <p class="keskonfai">TODO : interprétation NDVI</p>
+  				    <p class="keskonfai">TODO : calcul NDVI pour les surfaces en eau, forêt etc.</p>
   				  
   				  <h4>Normalized Burn Ratio (NBR)<a class="headerlink" id="XII23b" href="#XII23b"></a></h4>
+  				  
+  				    <p>L'indice de ratio de brûlure normalisé (Normalized Burn Ration ou NBR) est utilisé pour identifier les zones brûlées et donner une mesure de la gravité.</p>
+  				    <p>De la même manière que le NDVI, c'est un ratio basé sur 2 bandes, mais cette fois il s'agit des bandes <b>Proche Infra-Rouge (PIR)</b> et <b>Infra-Rouge Court (SWIR)</b> :</p>
+  				    <p class="code">NBR = (NIR - SWIR) / (NIR + SWIR)</p>
+  				    
+  				    <div class="manip">
+  				      <p>De la même manière que vous avez calculé le NDVI, à vous de <b>calculer le NBR</b>, avec l'extension SCP et/ou avec la calculatrice raster&nbsp;!</p>
+  				      <p>Vous devez obtenir un résultat similaire à ceci&nbsp;:</p>
+  				      <figure>
+      						<a href="illustrations/tous/12_02_nbr_resultat.png" >
+      							<img src="illustrations/tous/12_02_nbr_resultat.png" alt="image NBR" width="500">
+      						</a>
+      					</figure>
+  				    </div>
+  				    
+  				    <p class="keskonfai">TODO : analyse et interprétation NBR</p>
 
 				
 				<br>
