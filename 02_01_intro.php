@@ -33,7 +33,7 @@
 					</a>
 					<figcaption>Ellipsoïde (Source : Peter Mercator, Wikimedia Commons, licence Creative Commons Attribution-Share Alike 3.0 Unported).</figcaption>
 				</figure>		
-				<p>Le <b>géoïde</b> est une surface perpendiculaire en tout point à la direction de la gravité (fil à plomb). Cette surface passe par le niveau moyen des mers. Les altitudes sont mesurées par rapport au géoïde depuis les années 1960 (altitude normale). On peut considérer le géoïde comme un sphère cabossée. C'est une représentation exacte mais compliquée à utiliser.</p>
+				<p>Le <b>géoïde</b> est une surface perpendiculaire en tout point à la direction de la gravité (fil à plomb). Cette surface passe par le niveau moyen des mers. Les altitudes sont mesurées par rapport au géoïde depuis les années 1960 (altitude normale). On peut considérer le géoïde comme une sphère cabossée. C'est une représentation exacte mais compliquée à utiliser.</p>
 				<figure>
 					<a href="http://en.wikipedia.org/wiki/File:Geoids_sm.jpg" >
 						<img src="illustrations/tous/2_1_geoide.jpg" alt="géoïde" width="400">

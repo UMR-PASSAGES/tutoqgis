@@ -14,7 +14,7 @@
 		<div class="main">
 			<h1>VI.  Sélectionner des données : les requêtes</h1>
 			<p>A partir d'une couche vecteur, il est possible de <b>sélectionner des éléments répondant à un ou plusieurs critères</b>, en se basant sur les données <b>contenues dans la table attributaire</b> ou bien sur <b>la position de ces éléments</b>.</p>
-			<p>Vous pouvez ainsi sélectionner par exemple des communes dans la population est supérieure à 10&nbsp;000 habitants, ou les communes à l'intérieur d'un département...</p>
+			<p>Vous pouvez ainsi sélectionner par exemple des communes dont la population est supérieure à 10&nbsp;000 habitants, ou les communes à l'intérieur d'un département...</p>
 			<p>Ceci vous permet par exemple de compter le nombre d'éléments répondant à vos critères, ou bien de créer une nouvelle couche à partir de votre sélection, pour y réaliser ensuite d'autres traitements.</p>
 			<p>Notions abordées :</p>
 				<ul>

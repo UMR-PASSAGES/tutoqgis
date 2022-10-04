@@ -171,7 +171,7 @@ WHERE c.INSEE_DEP = d.INSEE_DEP</p>
                     <p>Prenons cette requête ligne par ligne (mais dans le désordre !) :</p>
                     <p class="code">from communes_Bretagne as c, DEPARTEMENT as d</p>
                     <p>signifie deux choses : que les deux couches en jeu seront <em class="data">communes_Bretagne</em> et <em class="data">DEPARTEMENT</em>, et que dans le reste de la requête, les noms de ces deux couches seront abrégés respectivement en <b>c</b> et <b>d</b>.</p>
-                    <p>Cette abréviation des noms de couches n'est pas obligatoire ; elle permet néanmoins de taper moins de texte, et de gagner en clarté. Un autre avantage est que si vous deviez réutiliser cette requête pour d'autres couches, vous n'aurier à modifier qu'une seule fois leur nom.</p>
+                    <p>Cette abréviation des noms de couches n'est pas obligatoire ; elle permet néanmoins de taper moins de texte, et de gagner en clarté. Un autre avantage est que si vous deviez réutiliser cette requête pour d'autres couches, vous n'auriez à modifier qu'une seule fois leur nom.</p>
                     <p class="code">select c.INSEE_COM, c.NOM_COM, d.NOM_DEP, c.geometry</p>
                     indique quelles colonnes vont être récupérées. Comme il est possible qu'une colonne existe dans les deux couches (cas de <b>geometry</b> ici), le nom abrégé de la table (<b>c</b> ou <b>d</b>) est indiqué devant. Même si cette désambiguïsation n'est pas toujours nécessaire (pour <b>INSEE_COM</b> par exemple), il est conseillé de toujours indiquer le nom de la couche pour des raisons de clarté.
                     <p class="code">where c.INSEE_DEP = d.INSEE_DEP</p>
@@ -257,7 +257,7 @@ GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
                     <p>Vous devriez obtenir une couche temporaire similaire à celle créée précédemment.</p>
     			 </div>
     			 
-    			<p>Dans cette fenêtre, la rubrique <b>Couche intégrées</b> permet de lister les couches présentes dans QGIS (bouton <b>Importer</b>) ou bien d'autres couches non chargées (bouton <b>Ajouter</b>).</p>
+    			<p>Dans cette fenêtre, la rubrique <b>Couches intégrées</b> permet de lister les couches présentes dans QGIS (bouton <b>Importer</b>) ou bien d'autres couches non chargées (bouton <b>Ajouter</b>).</p>
     			<p>Cette fenêtre permet donc globalement la même chose que le gestionnaire de bases de données, avec une interface un peu différente. A vous de choisir celle que vous préférez !</p>
 			 
 				

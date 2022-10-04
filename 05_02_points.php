@@ -62,7 +62,7 @@
 				<p>Certains outils de la barre d'outil d'édition deviennent actifs, et dans la table des matières un symbole de crayon apparaît à gauche du nom de la couche :</p>
 				<img src="illustrations/tous/5_2_couche_editable.png" alt="symbole de crayon à gauche d'une couche éditable" width="170">
 				<p>La couche est maintenant modifiable.</p>
-				<p>Dans QGIS, le passage en mode édition est géré &#171; par couches &#187; : certaines couches peuvent être éditables et d'autres non. Il est facile de voir dans la tables des matières quelle couche est éditable.</p>
+				<p>Dans QGIS, le passage en mode édition est géré &#171; par couches &#187; : certaines couches peuvent être éditables et d'autres non. Il est facile de voir dans la table des matières quelle couche est éditable.</p>
 				<p><b>De manière générale, il vaut mieux quitter le mode édition dès que vous n'en avez plus besoin, et limiter le nombre de couches éditables.</b></p>
 				<p>Les couches raster ne sont jamais modifiables : si vous sélectionnez la carte de l'île d'Oahu, le passage en mode édition n'est pas possible pour cette couche.</p>
 			
