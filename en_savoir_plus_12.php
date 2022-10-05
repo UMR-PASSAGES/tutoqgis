@@ -28,7 +28,7 @@
 			    <h3>Sur ce tutoriel</h3>
 			
         			<p>Ce tutoriel a été initialement créé par le pôle Analyse et Représentation des Données de <a href="http://www.passages.cnrs.fr">l'UMR PASSAGES</a> (de même que les autres passionnants tutoriels sur la plate-forme <a href="http://ouvrir.passages.cnrs.fr">OUVRIR</a>). Il est aujourd'hui et depuis 2020 maintenu par <a href="https://letg.cnrs.fr/" >l'UMR LETG</a>.</p>
-        			<p>Il a bénéficié de relectures et conseils avisés de (par ordre alphabétique, UMR Passages sauf mention contraire) : Xavier Amelot, Véronique André-Lamat, Gaëlle Deletraz, Marina Duféal, Grégoire Le Campion, Delphine Montagne, Claude Monteil (INP-ENSAT - Toulouse), Guilhem Mousselin, Matthieu Noucher, Olivier Pissoat, Jean-Michel Poux (Ministère de la Transition Écologique et Solidaire), Raphaël Schirmer, David Sheeren (INP-ENSAT - Toulouse). Merci à eux&nbsp;!</p>
+        			<p>Il a bénéficié de relectures et conseils avisés de (par ordre alphabétique, UMR Passages sauf mention contraire) : Xavier Amelot, Véronique André-Lamat, Gaëlle Deletraz, Marina Duféal, Thierry Feuillet (Université de Caen Normandie - UMR IDEES), Grégoire Le Campion, Delphine Montagne, Claude Monteil (INP-ENSAT - Toulouse), Guilhem Mousselin, Matthieu Noucher, Olivier Pissoat, Jean-Michel Poux (Ministère de la Transition Écologique et Solidaire), Raphaël Schirmer, David Sheeren (INP-ENSAT - Toulouse). Merci à eux&nbsp;!</p>
         			
         			<p>La <a href="12_00_teledetection.php">partie XII sur la télédétection</a> est basée sur le cours créé par Samuel Corgne pour les étudiants en licence 3 de géographie de l'Université Rennes 2.</p>
         			
