@@ -55,8 +55,9 @@
 					</figure>
 					<ul>
 						<li class="espace"><b>Nom :</b> tapez le nom de votre choix, par exemple BRGM</li>
-						<li class="espace"><b>URL :</b> tapez l’URL suivante, qui correspond à l'adresse du serveur WMS du BRGM : http://geoservices.brgm.fr/geologie</li>
+						<li class="espace"><b>URL :</b> tapez l’URL suivante, qui correspond à l'adresse du serveur WMS du BRGM : https://geoservices.brgm.fr/geologie</li>
 					</ul>
+					<p class="note">Les adresses des flux produits par le <a class="ext" target="_blank" href="https://www.brgm.fr/" >Bureau des Recherches Géologiques et Minières (BRGM)</a> sont disponibles <a class="ext" target="_blank" href="https://infoterre.brgm.fr/page/geoservices-ogc" >ici</a>.</p>
 					<p>Laissez les autres paramètres tels quels et cliquez sur <b>OK</b>. Vous voilà à nouveau dans la fenêtre d'ajout d'une couche WMS :</p>
 					<ul>
 						<li class="espace">Après avoir vérifié que votre connexion est bien sélectionnée dans la liste déroulante en haut de la fenêtre, cliquez sur <b>Connexion</b></li>
@@ -113,7 +114,7 @@
 					</figure>
 					<ul>
 						<li class="espace">Après avoir vérifier que votre connexion est bien sélectionnée dans la liste déroulante en haut de la fenêtre, cliquez sur <b>Connexion</b></li>
-						<li class="espace">En vous aidant éventuellement d'un filtre (<b>plans</b>), sélectionnez la couche correspondant aux <b>Plans d'eau - Métropole - BD Carthage</b></li>
+						<li class="espace">En vous aidant éventuellement d'un filtre (<b>plans</b>), sélectionnez la couche correspondant aux <b>Plans d'eau - BD Topage - Métropole - 2022</b></li>
 						<li class="espace">Vérifiez que le SCR soit bien le Lambert 93 RGF93 (code EPSG 2154) afin que toutes nos couches aient le même SCR, en cliquant éventuellement sur le bouton <b>Changer...</b></li>
 						<li class="espace">Cliquez sur <b>Ajouter</b></li>
 					</ul>
