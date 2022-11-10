@@ -45,6 +45,24 @@
   				  <p>Nous allons ici digitaliser (dessiner) des polygones dans des zones avec différents types d'occupation du sol (eau, urbain, forêt...), afin de voir ensuite la signature spectrale de chacune de ces classes.</p>
   				  <p>Ces polygones sont souvent nommés <b>ROI</b> en télédétection pour &#171;&nbsp;Region Of Interest&nbsp;&#187;.</p>
   				  
+  				  <p>Il faut tout d'abord définir l'image satellite en entrée pour l'extension SCP.</p>
+  				  
+  				  <div class="manip">
+  				    <p><img class="icone" src="illustrations/tous/12_01_jeu_bandes_icone.png" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
+  				    <figure>
+    						<a href="illustrations/tous/12_02_jeu_bandes.png" >
+    							<img src="illustrations/tous/12_02_jeu_bandes.png" alt="Choix du jeu de bandes dans le plugin SCP" width="600">
+    						</a>
+    					</figure>
+    					<ul>
+    					 <li class="espace">Sélectionnez l'image <em class="data">Sentinel2_2021_08_17.tif</em> dans la liste déroulante en haut de la fenêtre (si vous ne la voyez pas, rafraîchissez la liste au moyen du bouton à droite)</li>
+    					 <li class="espace">En bas de la fenêtre, dans la liste <em>Paramétrage rapide des longueurs d'onde</em>, sélectionnez <b>Sentinel-2</b>.</li>
+    					</ul>
+    					<p>Il est inutile de cliquer sur le bouton <em>Lancer</em>.</p>
+  				  </div>
+  				  
+  				  <p>L'extension SCP est maintenant paramétrée pour travailler sur notre image Sentinel-2. Nous allons pouvoir dessiner nos ROI&nbsp;!</p>
+  				  
   				  <div class="manip">
   				    <p>Dans le panneau SCP (s'il n'est pas visible, menu Vue &#8594; Panneaux &#8594; Menu SCP), cliquez sur l'onglet vertical <b>Entrée données d'entraînement</b>&nbsp;:</p>
   				    <figure>
@@ -251,9 +269,22 @@
   				  
   				  <h4>Normalized Burn Ratio (NBR)<a class="headerlink" id="XII23b" href="#XII23b"></a></h4>
   				  
-  				    <p>L'indice de ratio de brûlure normalisé (Normalized Burn Ration ou NBR) est utilisé pour identifier les zones brûlées et donner une mesure de la gravité.</p>
+  				    <p>L'<a class="ext" target="_blank" href="https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio">indice de ratio de brûlure normalisé</a> (Normalized Burn Ration ou NBR) est utilisé pour identifier les zones brûlées et donner une mesure de la gravité.</p>
   				    <p>De la même manière que le NDVI, c'est un ratio basé sur 2 bandes, mais cette fois il s'agit des bandes <b>Proche Infra-Rouge (PIR)</b> et <b>Infra-Rouge Court (SWIR)</b> :</p>
   				    <p class="code">NBR = (NIR - SWIR) / (NIR + SWIR)</p>
+  				    
+  				    <figure>
+      						<a href="illustrations/tous/12_02_nbr.jpg" >
+      							<img src="illustrations/tous/12_02_nbr.jpg" alt="graphique NBR, réflectance en fonction de la longueur d'onde" width="500">
+      						</a>
+      						<figcaption>Source: U.S. Forest service.</figcaption>
+      					</figure>
+  				    
+  				    <p><em>Comme indiqué sur le site <a class="ext" target="_blank" href="https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio" >UN-SPIDER Knowledge Portal</a></em>&nbsp;:</p>
+  				    
+  				    <p>Cet indice est basé sur le fait que la végétation saine a une forte réflectance dans le PIR et une faible réflectance dans le SWIR, à l'inverse de la végétation brûlée.</p>
+  				    
+  				    <p>Comme pour le NDVI, les valeurs du NBR varient de -1 à 1. Une valeur élevée indique une végétation saine, une valeur faible indique du sol nu et des zones récemment brûlées.</p>
   				    
   				    <div class="manip">
   				      <p>De la même manière que vous avez calculé le NDVI, à vous de <b>calculer le NBR</b>, avec l'extension SCP et/ou avec la calculatrice raster&nbsp;!</p>
@@ -262,6 +293,7 @@
       						<a href="illustrations/tous/12_02_nbr_resultat.png" >
       							<img src="illustrations/tous/12_02_nbr_resultat.png" alt="image NBR" width="500">
       						</a>
+      						<figcaption>Ici, les valeurs élevées sont représentées en blanc et les valeurs faibles en noir.</figcaption>
       					</figure>
   				    </div>
   				    

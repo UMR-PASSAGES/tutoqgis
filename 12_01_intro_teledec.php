@@ -190,7 +190,7 @@
             
             <div class="manip">
               <p><img class="icone" src="illustrations/tous/12_01_jeu_bandes_icone.png" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
-              <p class="keskonfai">Quel est l'outil de jeu de bandes qui est utilisé ? Dans quel but ?</p>
+              <p class="keskonfai">Peut-être intégrer cette manip dans le chapitre suivant, puisque le plugin SCP n'est pas utilisée dans ce chapitre ?</p>
             </div>
             
             <p>Sentinel-2 est un satellite qui fournit des images composées de 13 bandes spectrales&nbsp;:</p>
