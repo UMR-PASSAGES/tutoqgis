@@ -16,7 +16,13 @@
 			<h2>XII.2  Extraction de l'information spectrale</h2>
 				
 				<ul class="listetitres">
-  					<li><a href="#XII21">Extraction de signature spectrale</a></li>
+  					<li><a href="#XII21">Extraction de signature spectrale</a>
+  					 <ul class="listesoustitres">
+  					   <li><a href="#XII21a">Définition du jeu de bandes en entrée dans l'extension SCP</a></li>
+  					   <li><a href="#XII21b">Création des polygones d'entraînement (ROI)</a></li>
+  					   <li><a href="#XII21c">Affichage des signatures spectrales</a></li>
+  					 </ul>
+  					</li>
   					<li><a href="#XII22">Interprétation de signature spectrale</a></li>
   					<li><a href="#XII23">Extraction et analyse d'indices spectraux</a>
   					  <ul class="listesoustitres">
@@ -45,138 +51,144 @@
   				  <p>Nous allons ici digitaliser (dessiner) des polygones dans des zones avec différents types d'occupation du sol (eau, urbain, forêt...), afin de voir ensuite la signature spectrale de chacune de ces classes.</p>
   				  <p>Ces polygones sont souvent nommés <b>ROI</b> en télédétection pour &#171;&nbsp;Region Of Interest&nbsp;&#187;.</p>
   				  
-  				  <p>Il faut tout d'abord définir l'image satellite en entrée pour l'extension SCP.</p>
+  				  <h4>Définition du jeu de bandes en entrée dans l'extension SCP<a class="headerlink" id="XII21a" href="#XII21a"></a></h4>
   				  
-  				  <div class="manip">
-  				    <p><img class="icone" src="illustrations/tous/12_01_jeu_bandes_icone.png" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
-  				    <figure>
-    						<a href="illustrations/tous/12_02_jeu_bandes.png" >
-    							<img src="illustrations/tous/12_02_jeu_bandes.png" alt="Choix du jeu de bandes dans le plugin SCP" width="600">
-    						</a>
-    					</figure>
-    					<ul>
-    					 <li class="espace">Sélectionnez l'image <em class="data">Sentinel2_2021_08_17.tif</em> dans la liste déroulante en haut de la fenêtre (si vous ne la voyez pas, rafraîchissez la liste au moyen du bouton à droite)</li>
-    					 <li class="espace">En bas de la fenêtre, dans la liste <em>Paramétrage rapide des longueurs d'onde</em>, sélectionnez <b>Sentinel-2</b>.</li>
-    					</ul>
-    					<p>Il est inutile de cliquer sur le bouton <em>Lancer</em>.</p>
-  				  </div>
+    				  <p>Il faut tout d'abord définir l'image satellite en entrée pour l'extension SCP.</p>
+    				  
+    				  <div class="manip">
+    				    <p><img class="icone" src="illustrations/tous/12_01_jeu_bandes_icone.png" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
+    				    <figure>
+      						<a href="illustrations/tous/12_02_jeu_bandes.png" >
+      							<img src="illustrations/tous/12_02_jeu_bandes.png" alt="Choix du jeu de bandes dans le plugin SCP" width="600">
+      						</a>
+      					</figure>
+      					<ul>
+      					 <li class="espace">Sélectionnez l'image <em class="data">Sentinel2_2021_08_17.tif</em> dans la liste déroulante en haut de la fenêtre (si vous ne la voyez pas, rafraîchissez la liste au moyen du bouton à droite)</li>
+      					 <li class="espace">En bas de la fenêtre, dans la liste <em>Paramétrage rapide des longueurs d'onde</em>, sélectionnez <b>Sentinel-2</b>.</li>
+      					</ul>
+      					<p>Il est inutile de cliquer sur le bouton <em>Lancer</em>. Vous pouvez maintenant fermer cette fenêtre.</p>
+    				  </div>
+    				  
+    				  <p>L'extension SCP est maintenant paramétrée pour travailler sur notre image Sentinel-2. Nous allons pouvoir dessiner nos ROI&nbsp;!</p>
+    				  
+    				<h4>Création des polygones d'entraînement (ROI)<a class="headerlink" id="XII21b" href="#XII21b"></a></h4>
   				  
-  				  <p>L'extension SCP est maintenant paramétrée pour travailler sur notre image Sentinel-2. Nous allons pouvoir dessiner nos ROI&nbsp;!</p>
-  				  
-  				  <div class="manip">
-  				    <p>Dans le panneau SCP (s'il n'est pas visible, menu Vue &#8594; Panneaux &#8594; Menu SCP), cliquez sur l'onglet vertical <b>Entrée données d'entraînement</b>&nbsp;:</p>
-  				    <figure>
-    						<a href="illustrations/tous/12_02_entree_rois.png" >
-    							<img src="illustrations/tous/12_02_entree_rois.png" alt="onglet 'entrée données d'entrainement' du panneau SCP" width="450">
-    						</a>
-    					</figure>
-    					<p><img class="icone" src="illustrations/tous/12_02_ouvrir_roi_icone.png" alt="icône ouvrir un jeu d'entrainement dans le panneau SCP" >Cliquez sur l'icône <b>Créer une nouvelle données d'entraînement</b> en haut du panneau SCP. Choisir l'emplacement et le nom de la couche SCP qui sera créée et qui contiendra les ROIs.</p>
-    					<p>Cette couche est ajoutée à QGIS (ici, elle se nomme <em>signatures_spectrales</em>)&nbsp;:</p>
-    					<figure>
-    						<a href="illustrations/tous/12_02_couche_rois.png" >
-    							<img src="illustrations/tous/12_02_couche_rois.png" alt="liste des couches dans QGIS, avec l'image sentinel-2 et la couche scp" width="250">
-    						</a>
-    					</figure>
-    					<p class="note">Cette couche semble une couche temporaire (icône grise à côté de son nom), mais il s'agit bien d'une couche sauvegardée sur votre disque, comme vous pouvez vous en assurer dans votre explorateur de fichiers. Elle possède l'extension .scp propre à l'extension QGIS SCP.</p>
-  				  </div>
-  				  
-  				  <p>Nous allons maintenant ajouter des polygones dans cette couche&nbsp;!</p>
-  				  
-  				  <div class="manip">
-  				    <p>Tout d’abord, dans le bas du panneau SCP, écrire le type d’objet géographique que l’on souhaite digitaliser, par exemple :</p>
-  				    <ul>
-    					 <li>Nom de MC : Surface en eau</li>
-    					 <li>Nom de C : Eau</li>
-    					</ul>
-  				    <figure>
-    						<a href="illustrations/tous/12_02_noms_rois.png" >
-    							<img src="illustrations/tous/12_02_noms_rois.png" alt="Nom de MC et Nom de C remplis par 'Surface en eau' et 'Eau'" width="400">
-    						</a>
-    					</figure>
-    					<p>MC signifie <em>Macro-Classe</em>, et C <em>Classe</em> : une macro-classe peut regrouper plusieurs classes.</p>
-    					<p>Il ne reste plus maintenant qu'à digitaliser un polygone correspondant à cette classe.</p>
-    					<p><img class="icone" src="illustrations/tous/12_02_create_roi_icon.png" alt="icône de création de ROI">Cliquez sur l'icône <b>Create a ROI polygon</b> dans la barre d'outil <b>SCP working toolbar</b>.</p>
-    					<p class="note">Si vous ne voyez pas cette barre d'outils, menu Vue &#8594; Barres d'outils &#8594; SCP Working Toolbar.</p>
-    					<figure>
-    						<a href="illustrations/tous/12_02_working_toolbar.png" >
-    							<img src="illustrations/tous/12_02_working_toolbar.png" alt="SCP working toolbar avec l'outil de création de ROIs entouré en rouge" width="500">
-    						</a>
-    					</figure>
-    					<p>Le curseur est maintenant une croix. Dans QGIS, zoomez sur une zone avec de l'eau et dessinez un polygone contenant uniquement de l'eau, en faisant un clic droit pour terminer&nbsp;:</p>
-    					<figure>
-    						<a href="illustrations/tous/12_02_roi_eau.png" >
-    							<img src="illustrations/tous/12_02_roi_eau.png" alt="ROI temporaire eau, orange transparent" width="400">
-    						</a>
-    					</figure>
-    					<p>Ce ROI est temporaire&nbsp;; s'il ne vous convient pas, dessinez-en simplement un autre et le premier sera supprimé.</p>
-    					<figure>
-    						<a href="illustrations/tous/12_02_sauver_roi_icone.png" >
-    							<img src="illustrations/tous/12_02_sauver_roi_icone.png" alt="bas du panneau SCP avec l'icône pour sauver les ROIs entourée en rouge" width="400">
-    						</a>
-    					</figure>
-    					<p>Une fois satisfait-e de votre ROI, cliquez sur le bouton en bas à droite du panneau SCP <b>Sauvez les ROI temporaires dans les données d'entraînement</b>.</p>
-    					<p>Patientez... Le ROI est ajouté dans le haut du panneau SCP&nbsp;:</p>
-    					<figure>
-    						<a href="illustrations/tous/12_02_roi_ajoute.png" >
-    							<img src="illustrations/tous/12_02_roi_ajoute.png" alt="haut du panneau SCP avec le 1er ROI visible" width="400">
-    						</a>
-    					</figure>
-    					<p>Il a aussi changé d'aspect dans la fenêtre de QGIS&nbsp;:</p>
-              <figure>
-    						<a href="illustrations/tous/12_02_roi_definitif.png" >
-    							<img src="illustrations/tous/12_02_roi_definitif.png" alt="fenêtre de QGIS : ROI sauvegardé, en noir avec contour en pointillés blancs" width="400">
-    						</a>
-    					</figure>
-  				  </div>
-  				  
-  				  <p>Une couleur par défaut lui est attribuée. Cependant, dans la fenêtre de QGIS, il est représenté en noir avec un contour en pointillés blanc. En fait, il est représenté suivant le style de la couche de signatures spectrales, que vous pouvez modifier comme pour n'importe quelle couche (double clic sur son nom &#8594; Symbologie). Les couleurs du panneau SCP seront utilisées pour les grahiques, comme nous allons le voir très bientôt&nbsp;!</p>
-  				  
-  				  <div class="manip">
-  				    <p>De la même manière, digitalisez un polygone pour chacune des macro-classes suivantes&nbsp;:</p>
-  				    <ul>
-  				      <li>Surface bâtie</li>
-  				      <li>Surface en forêt</li>
-  				      <li>Surface en culture</li>
-  				      <li>Surface brulée</li>
-  				      <li>Feux</li>
-  				    </ul>
-  				    <p class="note">N'oubliez pas d'incrémenter l'ID de la macro-classe (MC ID) à chaque nouveau polygone&nbsp;! Sinon, il est possible de le faire par la suite en double-cliquant sur la case à modifier, puis en tapant un chiffre.</p>
-  				    <p>Au final, votre panneau SCP doit ressembler à ceci&nbsp;:</p>
-  				    <figure>
-    						<a href="illustrations/tous/12_02_liste_rois.png" >
-    							<img src="illustrations/tous/12_02_liste_rois.png" alt="panneau SCP avec les 6 ROIs correspondant aux 6 classes définies + haut" width="470">
-    						</a>
-    					</figure>
-    				</div>
-
-   					<p>Nous allons maintenant afficher les signatures spectrales de nos ROIs.</p>
+    				  <div class="manip">
+    				    <p>Dans le panneau SCP (s'il n'est pas visible, menu Vue &#8594; Panneaux &#8594; Menu SCP), cliquez sur l'onglet vertical <b>Entrée données d'entraînement</b>&nbsp;:</p>
+    				    <figure>
+      						<a href="illustrations/tous/12_02_entree_rois.png" >
+      							<img src="illustrations/tous/12_02_entree_rois.png" alt="onglet 'entrée données d'entrainement' du panneau SCP" width="450">
+      						</a>
+      					</figure>
+      					<p><img class="icone" src="illustrations/tous/12_02_ouvrir_roi_icone.png" alt="icône ouvrir un jeu d'entrainement dans le panneau SCP" >Cliquez sur l'icône <b>Créer une nouvelle données d'entraînement</b> en haut du panneau SCP. Choisir l'emplacement et le nom de la couche SCP qui sera créée et qui contiendra les ROIs.</p>
+      					<p>Cette couche est ajoutée à QGIS (ici, elle se nomme <em>signatures_spectrales</em>)&nbsp;:</p>
+      					<figure>
+      						<a href="illustrations/tous/12_02_couche_rois.png" >
+      							<img src="illustrations/tous/12_02_couche_rois.png" alt="liste des couches dans QGIS, avec l'image sentinel-2 et la couche scp" width="250">
+      						</a>
+      					</figure>
+      					<p class="note">Cette couche semble une couche temporaire (icône grise à côté de son nom), mais il s'agit bien d'une couche sauvegardée sur votre disque, comme vous pouvez vous en assurer dans votre explorateur de fichiers. Elle possède l'extension .scp propre à l'extension QGIS SCP.</p>
+    				  </div>
+    				  
+    				  <p>Nous allons maintenant ajouter des polygones dans cette couche&nbsp;!</p>
+    				  
+    				  <div class="manip">
+    				    <p>Tout d’abord, dans le bas du panneau SCP, écrire le type d’objet géographique que l’on souhaite digitaliser, par exemple :</p>
+    				    <ul>
+      					 <li>Nom de MC : Surface en eau</li>
+      					 <li>Nom de C : Eau</li>
+      					</ul>
+    				    <figure>
+      						<a href="illustrations/tous/12_02_noms_rois.png" >
+      							<img src="illustrations/tous/12_02_noms_rois.png" alt="Nom de MC et Nom de C remplis par 'Surface en eau' et 'Eau'" width="400">
+      						</a>
+      					</figure>
+      					<p>MC signifie <em>Macro-Classe</em>, et C <em>Classe</em> : une macro-classe peut regrouper plusieurs classes.</p>
+      					<p>Il ne reste plus maintenant qu'à digitaliser un polygone correspondant à cette classe.</p>
+      					<p><img class="icone" src="illustrations/tous/12_02_create_roi_icon.png" alt="icône de création de ROI">Cliquez sur l'icône <b>Create a ROI polygon</b> dans la barre d'outil <b>SCP working toolbar</b>.</p>
+      					<p class="note">Si vous ne voyez pas cette barre d'outils, menu Vue &#8594; Barres d'outils &#8594; SCP Working Toolbar.</p>
+      					<figure>
+      						<a href="illustrations/tous/12_02_working_toolbar.png" >
+      							<img src="illustrations/tous/12_02_working_toolbar.png" alt="SCP working toolbar avec l'outil de création de ROIs entouré en rouge" width="500">
+      						</a>
+      					</figure>
+      					<p>Le curseur est maintenant une croix. Dans QGIS, zoomez sur une zone avec de l'eau et dessinez un polygone contenant uniquement de l'eau, en faisant un clic droit pour terminer&nbsp;:</p>
+      					<figure>
+      						<a href="illustrations/tous/12_02_roi_eau.png" >
+      							<img src="illustrations/tous/12_02_roi_eau.png" alt="ROI temporaire eau, orange transparent" width="400">
+      						</a>
+      					</figure>
+      					<p>Ce ROI est temporaire&nbsp;; s'il ne vous convient pas, dessinez-en simplement un autre et le premier sera supprimé.</p>
+      					<figure>
+      						<a href="illustrations/tous/12_02_sauver_roi_icone.png" >
+      							<img src="illustrations/tous/12_02_sauver_roi_icone.png" alt="bas du panneau SCP avec l'icône pour sauver les ROIs entourée en rouge" width="400">
+      						</a>
+      					</figure>
+      					<p>Une fois satisfait-e de votre ROI, cliquez sur le bouton en bas à droite du panneau SCP <b>Sauvez les ROI temporaires dans les données d'entraînement</b>.</p>
+      					<p>Patientez... Le ROI est ajouté dans le haut du panneau SCP&nbsp;:</p>
+      					<figure>
+      						<a href="illustrations/tous/12_02_roi_ajoute.png" >
+      							<img src="illustrations/tous/12_02_roi_ajoute.png" alt="haut du panneau SCP avec le 1er ROI visible" width="400">
+      						</a>
+      					</figure>
+      					<p>Il a aussi changé d'aspect dans la fenêtre de QGIS&nbsp;:</p>
+                <figure>
+      						<a href="illustrations/tous/12_02_roi_definitif.png" >
+      							<img src="illustrations/tous/12_02_roi_definitif.png" alt="fenêtre de QGIS : ROI sauvegardé, en noir avec contour en pointillés blancs" width="400">
+      						</a>
+      					</figure>
+    				  </div>
+    				  
+    				  <p>Une couleur par défaut lui est attribuée. Cependant, dans la fenêtre de QGIS, il est représenté en noir avec un contour en pointillés blanc. En fait, il est représenté suivant le style de la couche de signatures spectrales, que vous pouvez modifier comme pour n'importe quelle couche (double clic sur son nom &#8594; Symbologie). Les couleurs du panneau SCP seront quant à elles utilisées pour les graphiques, comme nous allons le voir très bientôt&nbsp;!</p>
+    				  
+    				  <div class="manip">
+    				    <p>De la même manière, digitalisez un polygone pour chacune des macro-classes suivantes&nbsp;:</p>
+    				    <ul>
+    				      <li>Surface bâtie</li>
+    				      <li>Surface en forêt</li>
+    				      <li>Surface en culture</li>
+    				      <li>Surface brulée</li>
+    				      <li>Feux</li>
+    				    </ul>
+    				    <p class="note">N'oubliez pas d'incrémenter l'ID de la macro-classe (MC ID) à chaque nouveau polygone&nbsp;! Sinon, il est possible de le faire par la suite en double-cliquant sur la case à modifier, puis en tapant un chiffre.</p>
+    				    <p>Au final, votre panneau SCP doit ressembler à ceci&nbsp;:</p>
+    				    <figure>
+      						<a href="illustrations/tous/12_02_liste_rois.png" >
+      							<img src="illustrations/tous/12_02_liste_rois.png" alt="panneau SCP avec les 6 ROIs correspondant aux 6 classes définies + haut" width="470">
+      						</a>
+      					</figure>
+      				</div>
+  
+     					<p>Nous allons maintenant afficher les signatures spectrales de nos ROIs.</p>
+     					
+     				<h4>Affichage des signatures spectrales<a class="headerlink" id="XII21c" href="#XII21c"></a></h4>
     				
-    				<div class="manip">
-    				  <p><img class="icone" src="illustrations/tous/12_02_signature_spectrale_icone.png" alt="icône d'ajout des singatures spectrales au graphique"> Sélectionnez par exemple un polygone par classe, puis cliquez sur l'icône <b>Ajouter les signatures spectrales surlignées au graphique</b> dans la partie gauche du panneau&nbsp;:</p>
+      				<div class="manip">
+      				  <p><img class="icone" src="illustrations/tous/12_02_signature_spectrale_icone.png" alt="icône d'ajout des singatures spectrales au graphique"> Sélectionnez par exemple un polygone par classe, puis cliquez sur l'icône <b>Ajouter les signatures spectrales surlignées au graphique</b> dans la partie gauche du panneau&nbsp;:</p>
+      				  <figure>
+      						<a href="illustrations/tous/12_02_selection_rois.png" >
+      							<img src="illustrations/tous/12_02_selection_rois.png" alt="panneau SCP avec les 6 classes sélectionnées et le bouton de signature spectrale entouré en rouge" width="470">
+      						</a>
+      					</figure>
+      					<p>La fenêtre suivante s'ouvre (cliquez si vous voulez la voir en plus grand)&nbsp;:</p>
+      					<figure>
+      						<a href="illustrations/tous/12_02_graphique_signatures.png" >
+      							<img src="illustrations/tous/12_02_graphique_signatures.png" alt="Fenêtre du graphique des signatures spectrales, pour chacune des 6 classes" width="600">
+      						</a>
+      					</figure>
+      					<p>La signature spectrale de chacune des 6 classes est représentée sous forme d'un graphique, de la couleur spécifiée dans le panneau SCP. Testez les différentes possibilités, par exemple&nbsp;:</p>
+      					<ul>
+      					 <li>cochez/décochez une ligne dans le tableau en haut de la fenêtre pour afficher/masquer une courbe</li>
+      					 <li>cochez/décochez la case <em>étendue des valeurs du graphique</em> en bas de la fenêtre pour voir l'amplitude des signatures spectrales</li>
+      					</ul>
+    				  </div>
+    				  
+    				  <p>Tous vos polygones sont sauvegardés dans la couche au format SCP <em class="data">signatures_spectrales</em> (ou le nom que vous lui avez donné). Il est possible de charger une couche SCP au moyen du bouton <b>Ouvrir un fichier de données d'entraînement</b>.</p>
     				  <figure>
-    						<a href="illustrations/tous/12_02_selection_rois.png" >
-    							<img src="illustrations/tous/12_02_selection_rois.png" alt="panneau SCP avec les 6 classes sélectionnées et le bouton de signature spectrale entouré en rouge" width="470">
+    						<a href="illustrations/tous/12_02_charger_rois.png" >
+    							<img src="illustrations/tous/12_02_charger_rois.png" alt="haut du panneau SCP, onglet 'entrée données d'entraînement', avec le bouton 'ouvrir un fichier de données d'entraînement' entouré en rouge" width="420">
     						</a>
     					</figure>
-    					<p>La fenêtre suivante s'ouvre (cliquez si vous voulez la voir en plus grand)&nbsp;:</p>
-    					<figure>
-    						<a href="illustrations/tous/12_02_graphique_signatures.png" >
-    							<img src="illustrations/tous/12_02_graphique_signatures.png" alt="Fenêtre du graphique des signatures spectrales, pour chacune des 6 classes" width="600">
-    						</a>
-    					</figure>
-    					<p>La signature spectrale de chacune des 6 classes est représentée sous forme d'un graphique, de la couleur spécifiée dans le panneau SCP. Testez les différentes possibilités, par exemple&nbsp;:</p>
-    					<ul>
-    					 <li>cochez/décochez une ligne dans le tableau en haut de la fenêtre pour afficher/masquer une courbe</li>
-    					 <li>cochez/décochez la case <em>étendue des valeurs du graphique</em> en bas de la fenêtre pour voir l'amplitude des signatures spectrales</li>
-    					</ul>
-  				  </div>
-  				  
-  				  <p>Tous vos polygones sont sauvegardés dans la couche au format SCP <em class="data">signatures_spectrales</em> (ou le nom que vous lui avez donné). Il est possible de charger une couche SCP au moyen du bouton <b>Ouvrir un fichier de données d'entraînement</b>.</p>
-  				  <figure>
-  						<a href="illustrations/tous/12_02_charger_rois.png" >
-  							<img src="illustrations/tous/12_02_charger_rois.png" alt="haut du panneau SCP, onglet 'entrée données d'entraînement', avec le bouton 'ouvrir un fichier de données d'entraînement' entouré en rouge" width="420">
-  						</a>
-  					</figure>
   				  
   				<h3>Interprétation de signature spectrale<a class="headerlink" id="XII22" href="#XII22"></a></h3>
   				
