@@ -35,9 +35,9 @@
         			<p>Ce tutoriel est diffusé sous <b>licence Creative Commons</b> : vous êtes autorisé à le partager et l'adapter, pour toute utilisation y compris commerciale, à condition de citer l'auteur (<em>UMR 5319 PASSAGES/UMR 6554 LETG, https://ouvrir.passages.cnrs.fr/tutoqgis/</em>), et de redistribuer votre travail sous les mêmes conditions. Le texte complet est disponible ici : <a class="ext" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">http://creativecommons.org/licenses/by/4.0/legalcode</a></p>
         			<p>Cela signifie donc que vous pouvez en faire ce que bon vous semble, y compris l'utiliser pour vos propres formations. Et dans ce cas, un petit message nous fait plaisir et nous encourage à continuer ! Faites-nous part également de vos remarques, critiques et idées d'amélioration !</p>
         
-        			<p><b>Pour tout contact :</b> envoyez un courriel à julie.pierson (at) univ-brest.fr, ou bien <a class="ext" target="_blank" href="https://twitter.com/sigomatique">@sigomatique</a> sur Twitter.</p>
+        			<p><b>Pour tout contact :</b> envoyez un courriel à julie.pierson (at) univ-brest.fr, ou bien <a class="ext" target="_blank" href="https://mapstodon.space/@sigomatique">@sigomatique</a> sur Mastodon (<a class="ext" target="_blank" href="https://mapstodon.space/">mapstodon.space</a>).</p>
         			
-        			<p>Enfin, tout le code du tutoriel (HTML, CSS...) est <b>disponible sur GitHub</b> : <a class="ext" target="_blank" href="https://github.com/UMR-PASSAGES/tutoqgis" >https://github.com/UMR-PASSAGES/tutoqgis</a></p>
+        			<p>Enfin, tout le code du tutoriel (HTML, CSS...) est <b>disponible sur GitLab</b> : <a class="ext" target="_blank" href="https://gitlab.in2p3.fr/letg/tutoqgis/-/tree/html" >https://gitlab.in2p3.fr/letg/tutoqgis/</a></p>
         			
         			<p><em>L'image du bandeau est tirée des archives de l'art américain et est disponible sur <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File:archives_of_American_Art_-_Guy_Maccoy_-_2905.jpg" >Wikimedia</a>. Cette image est dans le domaine public.</em></p>
         			
