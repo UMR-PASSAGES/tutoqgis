@@ -16,7 +16,7 @@
 			
 			
 			 
-                <p>Vous êtes arrivé.e au bout de ce tutoriel. Si vous le suivez depuis le début, bravo pour votre patience, et sinon bravo également&nbsp;!</p>				
+        <p>Vous êtes arrivé.e au bout de ce tutoriel. Si vous le suivez depuis le début, bravo pour votre patience, et sinon bravo également&nbsp;!</p>				
 
 				<br>
 				<a class="prec" href="12_03_classif.php">chapitre précédent</a>

@@ -138,7 +138,6 @@
 					
 				<br>
 				<a class="prec" href="11_03_modeleur.php">chapitre précédent</a>
-				<a class="suiv" href="12_00_teledetection.php">partie XII : télédétection</a>
 				<br>
 				<a class="hautpage" href="#wrap">haut de page</a>
 
