@@ -114,7 +114,7 @@
 				<p><b>Même si ça n'est plus obligatoire, cela reste une bonne pratique de travailler avec des couches dans le même SCR.</b></p>
 			
 			
-			<h3><a class="titre" id="IX12">Création d'une zone tampon autour d'un cours d'eau<a class="headerlink" id="VIII23b" href="#VIII23b"></a></h3>
+			<h3>Création d'une zone tampon autour d'un cours d'eau<a class="headerlink" id="IX12" href="#IX12"></a></h3>
 			
 				<h4>Qu'est-ce qu'une zone tampon ?<a class="headerlink" id="IX12a" href="#IX12a"></a></h4>
 			

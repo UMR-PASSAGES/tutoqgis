@@ -310,7 +310,7 @@
     					<p class="note">(Notez bien que je décline toute responsabilité dans ce cas)</p>
 						
 				
-				<h3><a class="titre" id="X27">Ajout d'éléments supplémentaires&nbsp;: titre, logo, flèche nord...<a class="headerlink" id="X27" href="#X27"></a></h3>
+				<h3>Ajout d'éléments supplémentaires&nbsp;: titre, logo, flèche nord...<a class="headerlink" id="X27" href="#X27"></a></h3>
 				
 					<div class="manip">
 						<p><img class="icone" src="illustrations/tous/10_02_etiquette_icone.png" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter Etiquette</b>.</p>
@@ -340,7 +340,7 @@
 							</a>
 						</figure>
 						<p class="note">Il est possible d'ajouter de nouveaux symboles au format SVG à cette bibliothèque, au moyen du bouton <b>...</b> situé au-dessous.</p>
-						<p>Pour que cette flèche Nord soit synchronisée avec la carte, si la carte présente une rotation, descendez jusqu'à la rubrique rotation et cochez <b>Synchroniser avec la carte</b>&nbsp:</p>
+						<p>Pour que cette flèche Nord soit synchronisée avec la carte, si la carte présente une rotation, descendez jusqu'à la rubrique rotation et cochez <b>Synchroniser avec la carte</b>&nbsp;:</p>
 						<figure>
 							<a href="illustrations/tous/10_02_nord_rotation.png" >
 								<img src="illustrations/tous/10_02_nord_rotation.png" alt="Synchronisation de la rotation de la flèche nord avec la carte" width="500">
@@ -349,7 +349,7 @@
 						<p>Si la carte présente une rotation (à spécifier dans ses propriétés, toujours dans la mise en page), la flèche aura cette même rotation.</p>
 					</div>
 					
-				<h3><a class="titre" id="X28">Ajout d'une carte de situation<a class="headerlink" id="X28" href="#X28"></a></h3>
+				<h3>Ajout d'une carte de situation<a class="headerlink" id="X28" href="#X28"></a></h3>
 				
 					<p>Vous pouvez également ajouter une deuxième carte à votre page, qui servira par exemple de carte de situation.</p>
 					<p>Il est possible de faire figurer dans cette deuxième carte un rectangle correspondant à l'emprise de la première carte.</p>

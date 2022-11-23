@@ -61,9 +61,13 @@
 					<p>Laissez les autres paramètres tels quels et cliquez sur <b>OK</b>. Vous voilà à nouveau dans la fenêtre d'ajout d'une couche WMS :</p>
 					<ul>
 						<li class="espace">Après avoir vérifié que votre connexion est bien sélectionnée dans la liste déroulante en haut de la fenêtre, cliquez sur <b>Connexion</b></li>
+					</ul>
+					<figure>
 						<a href="illustrations/tous/3_2_wms_connexion.png">
 							<img src="illustrations/tous/3_2_wms_connexion.png" alt="Fenêtre ajout d'une couche WMS, connexion au serveur du BRGM et choix de la couche à ajouter" width="500" >
 						</a>
+					</figure>
+					<ul>
 						<li class="espace">Rendez-vous dans la rubrique <b>0 GEOSERVICES_GEOLOGIE &#8594; 1 GEOLOGIE</b> et sélectionnez la couche correspondant à la <b>carte géologique image de la France au 1/1 000 000</b> (million).</li>
 						<li class="espace">Vérifiez que les SCR de cette couche soit bien <b>RGF93 / Lambert-93 (code EPSG 2154)</b> afin que la couche ait le même SCR que notre projet : il faudra peut-être cliquer que le bouton à droite du SCR pour sélectionner le Lambert 93</li>
 						<li class="espace">Cliquez sur <b>Ajouter</b>, patientez... Une fois la couche affichée, vous pouvez fermer la fenêtre du gestionnaire de sources de données</li>

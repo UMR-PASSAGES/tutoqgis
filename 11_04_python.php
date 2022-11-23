@@ -60,7 +60,7 @@
     				
     				<p>Il est possible de travailler uniquement en lançant ainsi des commandes une à une ; seulement, les commandes utilisées ne seront pas sauvegardées et ne pourront donc être réutilisées sans tout retaper à la main (même s'il est possible de faire défiler les dernières commandes utilisées en appuyant sur la touche flèche haut du clavier).</p>
 				
-				<h3><a class="titre" id="XI42">Ouvrir un script Python<a class="headerlink" id="XI42" href="#XI42"></a></h3>
+				<h3>Ouvrir un script Python<a class="headerlink" id="XI42" href="#XI42"></a></h3>
 					
 					<p>Pour sauvegarder et réutiliser facilement votre travail, le plus simple est d'utiliser ce qu'on appelle un script. Il s'agit simplement d'un fichier texte comportant une suite de commandes, et qui porte l'extension PY puisqu'il s'agit d'un script Python.</p>
 					<p>Ce tutoriel n'étant pas un tutoriel Python, nous nous contenterons d'ouvrir un script existant plutôt que d'en créer un nous-mêmes.</p>
@@ -104,7 +104,7 @@
 					</div>
 					
 				
-				<h3><a class="titre" id="XI44">Lancer et éditer un script<a class="headerlink" id="XI44" href="#XI44"></a></h3>
+				<h3>Lancer et éditer un script<a class="headerlink" id="XI44" href="#XI44"></a></h3>
 				
           <p>Pour savoir comment appeler un outil en python, une astuce est de d'abord le lancer &#171;&nbsp;normalement&nbsp;&#187; puis d'aller dans le <b>menu Traitement &#8594; Historique</b> et cliquer sur la ligne correspondante. En bas de la fenêtre, vous aurez la commande Python qui a été exécutée cette fois-là&nbsp;:</p>				
 				  <figure>

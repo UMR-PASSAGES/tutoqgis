@@ -262,8 +262,8 @@
     	         
     	         <div class="manip">
     	           <p>Tapez la requête suivante (pour une base SpatiaLite ou PostGIS)&nbsp;:</p>
-    	           <p class="code">SELECT * FROM clc00_vignes WHERE area_ha < 25</p>
-    	           <p>Puis cliquez sur le bouton <b>Exécuter</b>&nbsp;: les 10 lignes correspondant à des polygones de surface < 25 hectares s'affichent.</p>
+    	           <p class="code">SELECT * FROM clc00_vignes WHERE area_ha &lt; 25</p>
+    	           <p>Puis cliquez sur le bouton <b>Exécuter</b>&nbsp;: les 10 lignes correspondant à des polygones de surface &lt; 25 hectares s'affichent.</p>
     	           <figure>
     			     <a href="illustrations/tous/9_5_requete_exemple.png" >
     			         <img src="illustrations/tous/9_5_requete_exemple.png" alt="Requête exemple et son résultat" width="600">
@@ -277,7 +277,7 @@
 		        <p>signifie que nous allons sélectionner (<b>select</b>) toutes (la mention <b>*</b>) les colonnes de la table attributaire, ainsi que la géométrie, qui est considérée comme une colonne nommée geom, comme vous pouvez le vérifier dans l'onglet <b>Info</b>.</p>
 		        <p class="code">FROM clc00_vignes</p>
 		        <p>signifie que nous allons sélectionner les colonnes de la couche <em class="data">clc00_vignes</em>.</p>
-		        <p class="code">WHERE area_ha < 25</p>
+		        <p class="code">WHERE area_ha &lt; 25</p>
 		        <p>applique un critère à la requête : seules seront sélectionnées les lignes répondant à ce critère, c'est-à-dire dont la valeur pour le champ area_ha est inférieure à 25.</p>
 		        
 		        <p>Ici, la requête ne crée pas de nouvelles couches mais renvoie les lignes sélectionnées. Comment faire pour créer une nouvelle couche à partir de cette sélection ?</p>
@@ -286,7 +286,7 @@
 		          <p>Dans PostGIS, il suffira d'ajouter devant cette requête <b>CREATE TABLE nouvelle_table AS</b> : la requête complète sera donc</p>
 		          <p class="code">CREATE TABLE tutoqgis.inf25ha AS
 SELECT * FROM clc00_vignes
-WHERE area_ha < 25</p>
+WHERE area_ha &lt; 25</p>
 		          <p>pour créer une nouvelle couche nommée inf25ha dans le schéma tutoqgis par exemple.</p>
 		          <p>Cliquez sur <b>Exécuter</b> : aucun résultat n'est renvoyé mais une nouvelle couche est ajoutée à la base, visible après l'avoir actualisée.</p>
 		          <figure>
@@ -439,7 +439,7 @@ LANGUAGE 'plpgsql';</p>
                     </div>
                     
                     <p>La fonction <b>makegrid_2d</b> est maintenant accessible dans PostGIS&nbsp;: vous n'aurez plus besoin de retaper ce code.</p>
-                    <p>Il ne reste plus qu'à appeler cette fonction avec en entrée&nbsp:</p>
+                    <p>Il ne reste plus qu'à appeler cette fonction avec en entrée&nbsp;:</p>
                     <ul>
                         <li>l'étendue de la grille, c'est-à-dire l'étendue de <em class="data">clc00_vignes</em></li>
                         <li>la taille de maille, soit 50&nbsp;000 mètres</li>

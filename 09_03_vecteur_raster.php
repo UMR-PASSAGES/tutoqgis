@@ -22,7 +22,7 @@
 			<p>Pour compléter ce chapitre, voici un exemple d'analyse mettant en jeu données vecteur et raster : en partant d'une couche de pente, et d'une couche de points représentant des échantillons, nous allons calculer la valeur de la pente pour chacun des échantillons.</p>	
 		
 
-			<h3><a class="titre" id="IX31">Préparation des données&nbsp;: un seul SCR pour tous<a class="headerlink" id="IX31" href="#IX31"></a></h3>
+			<h3>Préparation des données&nbsp;: un seul SCR pour tous<a class="headerlink" id="IX31" href="#IX31"></a></h3>
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS, ajoutez-y la couche <em class="data">srtm_21_09.tif</em>.</p>
@@ -46,7 +46,7 @@
 				<p>Nous avons vu qu'il n'est pas toujours nécessaire de travailler avec des couches dans le même SCR, certains outils acceptant de croiser 2 couches dans 2 SCR différents. Cependant, cela reste une bonne pratique et peut éviter des problèmes&nbsp;!</p>
 			
 			
-			<h3><a class="titre" id="IX32">Attribuer à chaque point une valeur d'élévation<a class="headerlink" id="IX32" href="#IX32"></a></h3>
+			<h3>Attribuer à chaque point une valeur d'élévation<a class="headerlink" id="IX32" href="#IX32"></a></h3>
 			
 				<p>Comment faire pour donner à chacun des points sa valeur d'élévation&nbsp;? Il faut pour cela attribuer à chaque point la valeur du pixel qui le recouvre.</p>
 				<p>Une recherche dans la boîte à outils, rubrique Analyse Raster, permet de découvrir l'outil <b>Prélèvement des valeurs rasters vers ponctuels</b> qui semble correspondre à ce que l'on cherche.</p>

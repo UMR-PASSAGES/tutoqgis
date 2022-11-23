@@ -245,7 +245,7 @@
       					<p>La formule suivante s'affiche dans la partie <b>Expression</b>&nbsp;:</p>
       					<p class="code">( "#NIR#" - "#RED#" ) / ( "#NIR#" + "#RED#" ) @NDVI</p>
       					<p class="note">Dans cette formule, <b>@NDVI</b> sera le nom de la couche qui sera créée.</p>
-      					<p>Vous pouvez également choisir de taper la formule du NDVI &#171;&nbsp;à la main&nbsp;&#187; en double-cliquant sur les bandes dans la partie haute de la fenêtre&nbsp:</p>
+      					<p>Vous pouvez également choisir de taper la formule du NDVI &#171;&nbsp;à la main&nbsp;&#187; en double-cliquant sur les bandes dans la partie haute de la fenêtre&nbsp;:</p>
       					<p class="code">("raster8" - "raster4") / ("raster8" + "raster4") @NDVI</p>
       					<p class="note">Le résultat sera le même en utilisant <em>bandset#b8</em> et <em>bandset#b4</em>, ou bien <em>bandset1b8</em> et <em>bandset1b4</em>...</p>
       					<p><img class="icone" src="illustrations/tous/12_02_ndvi_lancer_icone.png" alt="bouton Lancer en bas à droite du panneau SCP" >Pour lancer le calcul du NDVI, cliquez sur le bouton <b>Lancer</b> en bas à droite de la fenêtre.</p>
