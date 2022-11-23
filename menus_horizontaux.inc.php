@@ -3,6 +3,7 @@
 	<!-- titre -->
 	<div id="header">
 		<a class="grostitre" href="index.php">Tutoriel QGIS</a>
+		<span style="float:right">Attention, le tutoriel a déménagé ! Mettez vos marque-pages à jour :-) <br> http://ouvrir.passages.cnrs.fr/tutoqgis/ &#8594; https://tutoqgis.cnrs.fr/</span>
 	</div>
 	
 	<!-- menus horizontaux -->
