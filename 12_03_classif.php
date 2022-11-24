@@ -22,6 +22,7 @@
 				  <ul class="listesoustitres">
 				    <li><a href="#XII34a">K-Means : comment ça marche&nbsp;?</a></li>
 				    <li><a href="#XII34b">Mise en pratique sur l'image Sentinel-2</a></li>
+				    <li><a href="#XII34c">Reclassification : regrouper des classes pour y voir plus clair</a></li>
 				  </ul>
 				</li>
 			</ul>
@@ -136,6 +137,7 @@
     						<a href="illustrations/tous/12_03_clustering_fenetre.png" >
     							<img src="illustrations/tous/12_03_clustering_fenetre.png" alt="Paramétrage de l'outil de clustering dans l'extension SCP" width="600">
     						</a>
+    						<figcaption>Cliquez sur l'image pour la voir en plus grand&nbsp;!</figcaption>
     					</figure>
     					
     					<p>Les principaux paramètres à définir ici sont les suivants&nbsp;:</p>
@@ -158,7 +160,7 @@
   					<p class="keskonfai">Pas trop sûre de l'explication sur les 3 options pour choisir la manière dont seront déterminées les centres des classes la 1ère fois !</p>
 				  
 				    <div class="manip">
-				      <p>Une fois vos paramètres choisis, cliquez sur le bouton <b>Lancer</b> en bas de la fenêtre. Choisissez le nom et l'emplacement de l'image GeoTIFF qui sera créée en sortie, et patientez...</p>
+				      <p>Une fois vos paramètres choisis, cliquez sur le bouton <b>Lancer</b> en bas de la fenêtre. Choisissez le nom et l'emplacement de l'image GeoTIFF qui sera créée en sortie, et patientez... (une barre de progression est visible en haut de la fenêtre de QGIS)</p>
 				      <p>Dans la fenêtre SCP s'affiche maintenant un tableau comportant une ligne par classe, et 3 colonnes&nbsp;:</p>
 				      <ul>
 				        <li>La première colonne correspond à l'identifiant de la classe</li>
@@ -168,8 +170,40 @@
 				      <p class="keskonfai">Je ne sais pas à quoi correspond la distance dans la 3ème colonne ?</p>
 				      <p>L'image en sortie est automatiquement ajoutée à QGIS.</p>
 				    </div>
+				    
+				    <p>C'est un premier résultat, qui est peu lisible à cause du grand nombre de classes. L'étape suivante est donc d'opérer des regroupements de classes manuellement, afin d'obtenir une image plus lisible.</p>
+				    
+				    
+				   <h4>Reclassification : regrouper des classes pour y voir plus clair<a class="headerlink" id="XII34c" href="#XII34c"></a></h4>
+				   
+				    <p>Notre objectif sera ici de regrouper des classes pour n'en obtenir que 4&nbsp;:</p>
+				    <ul>
+				      <li>Surface en eau</li>
+				      <li>Surface en sol nu</li>
+				      <li>Surface en forêt</li>
+				      <li>Surface en cultures</li>
+				    </ul>
+				    
+				    <p>Nous allons utiliser pour cela l'outil de <b>reclassification</b> de l'extension SCP.</p>
 				  
-				
+				    <div class="manip">
+				      <p>Si vous n'avez pas fermé la fenêtre SCP après avoir généré le résultat de la classification, vous pouvez accéder à l'outil de reclassification dans la rubrique <b>Post-traitement &#8594; Reclassification</b>&nbsp;; sinon <b>menu SCP &#8594; Post-traitement &#8594; Reclassification</b>.</p>
+				      
+				      <figure>
+    						<a href="illustrations/tous/12_03_reclass_fenetre.png" >
+    							<img src="illustrations/tous/12_03_reclass_fenetre.png" alt="Paramétrage de l'outil de reclassification dans l'extension SCP" width="600">
+    						</a>
+    					</figure>
+    					
+    					<ul>
+    					 <li>Il faut d'abord <b>actualiser la liste</b> des images disponibles en cliquant sur le bouton avec une flèche en haut à droite de la fenêtre</li>
+    					 <li>Vous pouvez maintenant <b>sélectionner l'image</b> créé par la classification K-means dans la liste déroulante</li>
+    					 <li>Cliquez ensuite sur le bouton <b>Calculer les valeurs uniques</b> pour faire apparaître une ligne par classe (si vous avez suivi l'exemple, il y en aura donc 20) dans le tableau</li>
+    					</ul>
+
+    					<p class="keskonfai">Je ne comprends pas bien ce qui se passe quand on coche <em>Valeur C ID vers MC ID</em> ? Comment peut-on reclasser sans avoir la liste des classes ?</p>
+    					
+				    </div>
 				  
 				
 				  
