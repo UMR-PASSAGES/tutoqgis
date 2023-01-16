@@ -25,7 +25,7 @@
 				<p>Vous avez pu constater dans la partie <a href="02_03_couches_projets.php">II.3 Couches et projets : à chacun son système</a> que les couches d'un projet sont affichées dans le SCR du projet. Comment modifier le SCR du projet pour afficher les couches dans le SCR de votre choix&nbsp;?</p>
 				<p>Nous allons modifier le SCR du projet <em class="data">monde.qgz</em> du WGS84 vers <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Projection_de_Robinson" >Robinson</a> (code EPSG 53030).</p>
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/1_4_ouvrir_projet_icone.png" alt="Icône Ouvrir">A partir de QGIS, ouvrez le projet <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">monde.qgz</a></em> situé dans le dossier <b>TutoQGIS_02_Geodesie/projets</b></p>
+					<p><img class="icone" src="illustrations/1_4_ouvrir_projet_icone.jpg" alt="Icône Ouvrir">A partir de QGIS, ouvrez le projet <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">monde.qgz</a></em> situé dans le dossier <b>TutoQGIS_02_Geodesie/projets</b></p>
 					<p>(Si vous avez déjà un autre projet du tutoriel ouvert, il est inutile de le sauvegarder).</p>
 				</div>
 					<p>Ce projet comporte une couche de pays, une couche avec les <a href="02_02_coord.php#II22c">indicatrices de Tissot</a>, et une couche de graticule, c'est-à-dire de méridiens et de parallèles distants ici de 15 degrés.</p>
@@ -38,13 +38,13 @@
 					<p>
 						<a class="thumbnail_bottom" href="#thumb">Ouvrez les propriétés du projet
 								<span>
-									<img src="illustrations/tous/2_3_proprietes_projet_menu.png" alt="Menu Projet, Propriétés du projet" height="300" >
+									<img src="illustrations/2_3_proprietes_projet_menu.jpg" alt="Menu Projet, Propriétés du projet" height="300" >
 								</span>
 						</a>
 					, rubrique SCR :</p>
 					<figure>
-						<a href="illustrations/tous/2_4_modif_scr_projet.png" >
-							<img src="illustrations/tous/2_4_modif_scr_projet.png" alt="Modifier le SCR d'un projet" width="600">
+						<a href="illustrations/2_4_modif_scr_projet.jpg" >
+							<img src="illustrations/2_4_modif_scr_projet.jpg" alt="Modifier le SCR d'un projet" width="600">
 						</a>
 					</figure>
 					<p><em class="numero">1. </em>Vérifiez que la case <b>Aucun SCR</b> soit bien décochée.</p>
@@ -73,7 +73,7 @@
 						<br>
 						<a class="thumbnail_bottom" href="#thumb">Clic-droit sur une couche (n'importe laquelle puisqu'elles sont toutes trois en WGS84) &#8594; SCR de la couche &#8594; Définir le SCR du projet depuis cette couche
 							<span>
-								<img src="illustrations/tous/2_4_def_scr_projet_couche.png" alt="Définir le SCR du projet à partir du SCR d'une couche" height="420" >
+								<img src="illustrations/2_4_def_scr_projet_couche.jpg" alt="Définir le SCR du projet à partir du SCR d'une couche" height="420" >
 							</span>
 						</a>
 					</p>
@@ -93,8 +93,8 @@
 					<p>L'objectif sera ici de créer une nouvelle couche pays dans la projection de Bonne (code ESRI 53024).</p>
 					<p>Pour cela, affichez la <b>boîte à outils de traitements</b> : menu Traitements &#8594; Boîte à outils.</p>
 					<figure>
-						<a href="illustrations/tous/2_4_traitement_reprojeter.png" >
-							<img src="illustrations/tous/2_4_traitement_reprojeter.png" alt="Emplacement de l'outil reprojeter dans la boîte à outils de traitements" width="400" >
+						<a href="illustrations/2_4_traitement_reprojeter.jpg" >
+							<img src="illustrations/2_4_traitement_reprojeter.jpg" alt="Emplacement de l'outil reprojeter dans la boîte à outils de traitements" width="400" >
 						</a>
 					</figure>
 					<p>Dans la barre de recherche de cette boîte à outils, tapez <b>projection</b> et double-cliquez sur l'outil <b>Reprojeter une couche</b>.</p>
@@ -103,8 +103,8 @@
 				<div class="manip">
 					<p>La fenêtre suivante apparaît :</p>
 					<figure>
-						<a href="illustrations/tous/2_4_reprojeter_fenetre.png" >
-							<img src="illustrations/tous/2_4_reprojeter_fenetre.png" alt="Fenêtre de l'outil reprojeter" width="600" >
+						<a href="illustrations/2_4_reprojeter_fenetre.jpg" >
+							<img src="illustrations/2_4_reprojeter_fenetre.jpg" alt="Fenêtre de l'outil reprojeter" width="600" >
 						</a>
 					</figure>
 					<ul>
@@ -123,8 +123,8 @@
                 		<p class="reponse">Clic droit sur le nom de la couche &#8594; SCR de la couche &#8594; Définir le SCR du projet depuis cette couche, ou bien dans les propriétés du projet, rubrique SCR, choisissez le SCR Sphere Bonne.</p>
                 	</div>
 					<figure>
-						<a href="illustrations/tous/2_4_bonne.png" >
-							<img src="illustrations/tous/2_4_bonne.png" alt="Projection de Bonne" width="300">
+						<a href="illustrations/2_4_bonne.jpg" >
+							<img src="illustrations/2_4_bonne.jpg" alt="Projection de Bonne" width="300">
 						</a>
 					</figure>
 				</div>
@@ -145,14 +145,14 @@
 					<p>Pour être sûr de vous rendre compte si une couche n'a pas de SCR défini, rendez-vous dans le menu
 						<a class="thumbnail_bottom" href="#thumb">Préférences  &#8594; Options
 							<span>
-								<img src="illustrations/tous/2_3_preferences_options_menu.png" alt="Menu Préférences, Options" height="150" >
+								<img src="illustrations/2_3_preferences_options_menu.jpg" alt="Menu Préférences, Options" height="150" >
 							</span>
 						</a>
 						, rubrique <b>SCR</b> :
 					</p>
 					<figure>
-						<a href="illustrations/tous/2_4_options_sans_scr.png" >
-							<img src="illustrations/tous/2_4_options_sans_scr.png" alt="Options, rubrique SCR" width="600">
+						<a href="illustrations/2_4_options_sans_scr.jpg" >
+							<img src="illustrations/2_4_options_sans_scr.jpg" alt="Options, rubrique SCR" width="600">
 						</a>
 					</figure>
 					<p>Pour l'option <b>Quand une nouvelle couche est créée ou quand une couche est chargée sans SCR</b>, choisissez l'option <b>Demander le SCR</b>.</p>

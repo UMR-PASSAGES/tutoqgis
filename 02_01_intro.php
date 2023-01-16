@@ -29,21 +29,21 @@
 				<p>L'<b>ellipsoïde</b> est une sphère aplatie, plus simple à modéliser. On le définit généralement par ses demis-axes (<b><em>a</em></b>,  <b><em>b</em></b> et  <b><em>c</em></b>) et son centre (<b><em>O</em></b>).</p>
 				<figure>	
 					<a href="http://en.wikipedia.org/wiki/File:Ellipsoid_tri-axial_abc.svg" >		
-						<img src="illustrations/tous/2_1_ellipsoide.png" alt="ellipsoïde" width="230">
+						<img src="illustrations/2_1_ellipsoide.jpg" alt="ellipsoïde" width="230">
 					</a>
 					<figcaption>Ellipsoïde (Source : Peter Mercator, Wikimedia Commons, licence Creative Commons Attribution-Share Alike 3.0 Unported).</figcaption>
 				</figure>		
 				<p>Le <b>géoïde</b> est une surface perpendiculaire en tout point à la direction de la gravité (fil à plomb). Cette surface passe par le niveau moyen des mers. Les altitudes sont mesurées par rapport au géoïde depuis les années 1960 (altitude normale). On peut considérer le géoïde comme une sphère cabossée. C'est une représentation exacte mais compliquée à utiliser.</p>
 				<figure>
 					<a href="http://en.wikipedia.org/wiki/File:Geoids_sm.jpg" >
-						<img src="illustrations/tous/2_1_geoide.jpg" alt="géoïde" width="400">
+						<img src="illustrations/2_1_geoide.jpg" alt="géoïde" width="400">
 					</a>
 					<figcaption>Géoïde (Source : NASA, Wikimedia Commons, domaine public)</figcaption>
 				</figure>
 				<p>Il existe une infinité d'ellipsoïdes, qui peuvent coïncider avec la surface de la Terre sur toute leur surface (ellipsoïde global) ou seulement sur une partie de leur surface (ellipsoïde local). A l'inverse, il n'existe qu'un seul géoïde.</p>
 				<figure>
-					<a href="illustrations/tous/2_1_geoide_ellipsoide.svg" >
-						<img src="illustrations/tous/2_1_geoide_ellipsoide.png" alt="ellipsoïdes et géoïde" width="450" >
+					<a href="illustrations/2_1_geoide_ellipsoide.svg" >
+						<img src="illustrations/2_1_geoide_ellipsoide.jpg" alt="ellipsoïdes et géoïde" width="450" >
 					</a>
 				</figure>
 				

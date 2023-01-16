@@ -34,7 +34,7 @@
 						<p class="manip">Sauvegardez votre projet sous un nouveau nom : 
 							<a class="thumbnail_top" href="#thumb">Menu Projet &#8594; Enregistrer sous...
 								<span>
-									<img src="illustrations/tous/1_4_sauvegarder_projet_sous.png" alt="Menu Projet, sauvegarder sous" height="350" >
+									<img src="illustrations/1_4_sauvegarder_projet_sous.jpg" alt="Menu Projet, sauvegarder sous" height="350" >
 								</span>
 							</a>
 						</p>

@@ -42,14 +42,14 @@
     					<p>La console s'ouvre en bas de la fenêtre de QGIS. Dans cette console, vous pouvez taper des commandes Python qui seront exécutées une à une.</p>
     					<p>Tapez <b>print ('hello !')</b> en bas de la console :</p>
     					<figure>
-    						<a href="illustrations/tous/11_04_test_console.png" >
-    							<img src="illustrations/tous/11_04_test_console.png" alt="test de la console : taper une commande" width="620">
+    						<a href="illustrations/11_04_test_console.jpg" >
+    							<img src="illustrations/11_04_test_console.jpg" alt="test de la console : taper une commande" width="620">
     						</a>
     					</figure>
     					<p>Puis appuyez sur la touche entrée. Vous devriez voir votre commande, suivie du résultat, en haut de la console :</p>
     					<figure>
-    						<a href="illustrations/tous/11_04_test_console_resultat.png" >
-    							<img src="illustrations/tous/11_04_test_console_resultat.png" alt="test de la console : taper une commande" width="620">
+    						<a href="illustrations/11_04_test_console_resultat.jpg" >
+    							<img src="illustrations/11_04_test_console_resultat.jpg" alt="test de la console : taper une commande" width="620">
     						</a>
     					</figure>
     					<p>Vous venez d’utiliser la commande <b>Print</b>, qui permet d'afficher du texte dans la console. Vous pouvez également tester la commande citée plus haut pour ajouter une couche vecteur :</p>
@@ -66,17 +66,17 @@
 					<p>Ce tutoriel n'étant pas un tutoriel Python, nous nous contenterons d'ouvrir un script existant plutôt que d'en créer un nous-mêmes.</p>
 					
 					<div class="manip">
-						<p><img class="icone" src="illustrations/tous/11_04_editeur_icone.png" alt="icône Afficher l'éditeur" >Pour ouvrir un script : cliquez sur l'icône <b>Afficher l'éditeur</b> de la console : l'éditeur de script s'ouvre.</p>
+						<p><img class="icone" src="illustrations/11_04_editeur_icone.jpg" alt="icône Afficher l'éditeur" >Pour ouvrir un script : cliquez sur l'icône <b>Afficher l'éditeur</b> de la console : l'éditeur de script s'ouvre.</p>
 						<figure>
-							<a href="illustrations/tous/11_04_editeur.png" >
-								<img src="illustrations/tous/11_04_editeur.png" alt="console Python avec l'icône Afficher l'éditeur" width="620">
+							<a href="illustrations/11_04_editeur.jpg" >
+								<img src="illustrations/11_04_editeur.jpg" alt="console Python avec l'icône Afficher l'éditeur" width="620">
 							</a>
 						</figure>
 						<p>Redimensionnez éventuellement la fenêtre, pour que la partie éditeur, à droite, soit suffisamment large, et que la hauteur soit suffisante.</p>
-						<p><img class="icone" src="illustrations/tous/11_04_ouvrir_script_icone.png" alt="icône d'ouverture de script" >Dans l'éditeur, cliquez sur l'icône <b>Ouvrir le script...</b> et allez chercher le script <a href="donnees/TutoQGIS_11_Automatisation.zip">clip_and_reproject.py</a> situé dans <b>TutoQGIS_11_Automatisation/scripts</b>.</p>
+						<p><img class="icone" src="illustrations/11_04_ouvrir_script_icone.jpg" alt="icône d'ouverture de script" >Dans l'éditeur, cliquez sur l'icône <b>Ouvrir le script...</b> et allez chercher le script <a href="donnees/TutoQGIS_11_Automatisation.zip">clip_and_reproject.py</a> situé dans <b>TutoQGIS_11_Automatisation/scripts</b>.</p>
 						<figure>
-                        	<a href="illustrations/tous/11_04_ouvrir_script.png" >
-                        		<img src="illustrations/tous/11_04_ouvrir_script.png" alt="Editeur Python avec l'icône d'ouverture de script" width="620">
+                        	<a href="illustrations/11_04_ouvrir_script.jpg" >
+                        		<img src="illustrations/11_04_ouvrir_script.jpg" alt="Editeur Python avec l'icône d'ouverture de script" width="620">
                         	</a>
                         </figure>
 						<p>Lisez le contenu du script. <b>Les lignes commençant par un # sont des commentaires</b> : leur contenu ne sera pas pris en compte, ils sont uniquement utiles pour mieux comprendre le script.</p>
@@ -88,8 +88,8 @@
 				
 					<p>Au début du script (ligne 15), vous trouverez ces lignes :</p>
 					<figure>
-						<a href="illustrations/tous/11_04_parametres.png" >
-							<img src="illustrations/tous/11_04_parametres.png" alt="lignes du script correspondant aux paramètres en entrée" width="550">
+						<a href="illustrations/11_04_parametres.jpg" >
+							<img src="illustrations/11_04_parametres.jpg" alt="lignes du script correspondant aux paramètres en entrée" width="550">
 						</a>
 					</figure>
 					<p>Il s'agit des paramètres en entrée et sortie du script :</p>
@@ -108,16 +108,16 @@
 				
           <p>Pour savoir comment appeler un outil en python, une astuce est de d'abord le lancer &#171;&nbsp;normalement&nbsp;&#187; puis d'aller dans le <b>menu Traitement &#8594; Historique</b> et cliquer sur la ligne correspondante. En bas de la fenêtre, vous aurez la commande Python qui a été exécutée cette fois-là&nbsp;:</p>				
 				  <figure>
-				    <a href="illustrations/tous/11_04_historique.png" >
-			       <img class="icone" src="illustrations/tous/11_04_historique.png" alt="Fenêtre Historique" width="600">
+				    <a href="illustrations/11_04_historique.jpg" >
+			       <img class="icone" src="illustrations/11_04_historique.jpg" alt="Fenêtre Historique" width="600">
 			      </a>
 			    </figure>
 			    <p class="note">Comme indiqué <a href="09_01_vecteur.php#IX14">ici</a>, l'historique est aussi très utile pour relancer rapidement un outil avec exactement les mêmes paramètres que la fois précédente, il suffit de double-cliquer sur la ligne correspondante&nbsp;!</p>
 					    
 					<div class="manip">
 					    <figure>
-						    <a href="illustrations/tous/11_04_executer_script_icone.png" >
-					       <img class="icone" src="illustrations/tous/11_04_executer_script_icone.png" alt="icône exécuter le script dans la barre d'outil de l'éditeur de scripts" >
+						    <a href="illustrations/11_04_executer_script_icone.jpg" >
+					       <img class="icone" src="illustrations/11_04_executer_script_icone.jpg" alt="icône exécuter le script dans la barre d'outil de l'éditeur de scripts" >
 					      </a>
 					    </figure>
 						<p>Pour lancer le script, cliquez sur l'icône <b>Lancer le script</b> en haut de l'éditeur. Vérifiez que tout ait bien fonctionné.</p>

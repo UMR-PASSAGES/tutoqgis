@@ -55,13 +55,13 @@
 				    <p>
 				        <a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; Analyse raster &#8594; Prélèvement des valeurs rasters vers ponctuels
                         	<span>
-                        		<img src="illustrations/tous/9_3_prelev_raster_emplacement.png" alt="Emplacement de l'outil Prélever des valeurs raster dans la boîte à outils" width="350" >
+                        		<img src="illustrations/9_3_prelev_raster_emplacement.jpg" alt="Emplacement de l'outil Prélever des valeurs raster dans la boîte à outils" width="350" >
                         	</span>
                         </a>
 				    </p>
 				    <figure>
-						<a href="illustrations/tous/9_3_prelev_raster_fenetre.png" >
-							<img src="illustrations/tous/9_3_prelev_raster_fenetre.png" alt="Fenêtre de l'outil de prélèvement des valeurs raster" width="600" >
+						<a href="illustrations/9_3_prelev_raster_fenetre.jpg" >
+							<img src="illustrations/9_3_prelev_raster_fenetre.jpg" alt="Fenêtre de l'outil de prélèvement des valeurs raster" width="600" >
 						</a>
 					</figure>
 					<ul>
@@ -78,8 +78,8 @@
 					<p>Cliquez sur <b>Exécuter</b>, la couche temporaire est ajoutée et se nomme <b>Sampled Points</b>. Elle possède les mêmes géométries que la couche de points en entrée, et une colonne de plus dans sa table.</p>
 					<p>Ouvrez sa table attributaire pour le vérifier : une colonne <b>elev1</b> a été ajoutée, où l'élévation de chaque point est renseignée.</p>
 					 <figure>
-						<a href="illustrations/tous/9_3_table.png" >
-							<img src="illustrations/tous/9_3_table.png" alt="Table attributaire de la couche créée, avec la colonne elev_1" width="400" >
+						<a href="illustrations/9_3_table.jpg" >
+							<img src="illustrations/9_3_table.jpg" alt="Table attributaire de la couche créée, avec la colonne elev_1" width="400" >
 						</a>
 					</figure>
 				</div>

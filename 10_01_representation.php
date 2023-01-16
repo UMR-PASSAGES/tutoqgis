@@ -59,7 +59,7 @@
 					<p>Les cartes en symbole proportionnels permettent la représentation de quantités ou d'effectifs par des symboles, généralement des cercles. La surface des symboles sera proportionnelle à la quantité ou l'effectif.</p>
 					<figure>
 						<a href="https://neocarto.hypotheses.org/5064" >
-							<img src="illustrations/tous/10_01_exemple_cercleprop.png" alt="Exemple d'une carte en cercles proportionnels sur les ouvriers et cadres en Occitanie" width="600">
+							<img src="illustrations/10_01_exemple_cercleprop.jpg" alt="Exemple d'une carte en cercles proportionnels sur les ouvriers et cadres en Occitanie" width="600">
 						</a>
 						<figcaption>Exemple d'une carte en cercles proportionnels réalisée par Nicolas Lambert et Ronan Ysebaert (2018). Source : <a href="https://neocarto.hypotheses.org/5064">carnet (néo)cartographique</a>.</figcaption>
 					</figure>
@@ -70,16 +70,16 @@
 						<p><b>A partir de la couche de communes, nous allons créer les centroïdes (barycentres) des communes.</b></p>
 						<p>Qu'est-ce que le <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Centroid">centroïde</a> d'un polygone ? Il s'agit du centre géométrique de ce polygone. Concrètement, cela correspond au point où une forme en papier du polygone tiendrait en équilibre sur une épingle. Sans entrer dans le détail du calcul des coordonnées d'un centroïde, l'idée est de minimiser la distance au carré de ce centroïde à chacun des sommets du polygone.</p>
 						<figure>
-							<a href="illustrations/tous/10_01_centroides_principe.png" >
-								<img src="illustrations/tous/10_01_centroides_principe.png" alt="Communes et leur centroïde" width="300">
+							<a href="illustrations/10_01_centroides_principe.jpg" >
+								<img src="illustrations/10_01_centroides_principe.jpg" alt="Communes et leur centroïde" width="300">
 							</a>
 							<figcaption>Exemple de polygones (en gris) et de leurs centroïdes (en rouge).</figcaption>
 						</figure>
 					   
 					   <p><b>Les centroïdes peuvent se situer en-dehors des polygones</b>, comme par exemple dans le cas de la commune de Remoiville dans la Meuse&nbsp;:</p>
 					   <figure>
-							<a href="illustrations/tous/10_01_centroides_dehors.png" >
-								<img src="illustrations/tous/10_01_centroides_dehors.png" alt="Exemple d'un polygone biscornu et de son centroïde qui tombe en-dehors" width="300">
+							<a href="illustrations/10_01_centroides_dehors.jpg" >
+								<img src="illustrations/10_01_centroides_dehors.jpg" alt="Exemple d'un polygone biscornu et de son centroïde qui tombe en-dehors" width="300">
 							</a>
 						</figure>
 						<p>Dans notre utilisation, cela nous est égal que le centroïde soit au centre exact du polygone&nbsp;; par contre, <b>il sera plus lisible qu'il tombe toujours à l'intérieur du polygone</b>. Il existe donc généralement dans les logiciels SIG une variante de l'outil de centroïdes, qui crée des centroïdes parfois imparfaits mais toujours dans les polygones&nbsp;!</p>
@@ -89,14 +89,14 @@
 						  <p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">COMMUNE.shp</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
 						  <p>Dans la barre de recherche de la boîte à outils, tapez par exemple <em>point dans</em> pour trouver plus facilement l'outil <b>point dans la surface</b> (rubrique Géométrie vectorielle)&nbsp;:</p>
 						  <figure>
-								<a href="illustrations/tous/10_01_centroides_menu.png" >
-									<img src="illustrations/tous/10_01_centroides_menu.png" alt="Emplacement de l'outil 'point dans la surface' dans la toolbox" width="400">
+								<a href="illustrations/10_01_centroides_menu.jpg" >
+									<img src="illustrations/10_01_centroides_menu.jpg" alt="Emplacement de l'outil 'point dans la surface' dans la toolbox" width="400">
 								</a>
 							</figure>
 					    <p>Double-cliquez sur cet outil&nbsp;:</p>
 							<figure>
-								<a href="illustrations/tous/10_01_centroides_fenetre.png" >
-									<img src="illustrations/tous/10_01_centroides_fenetre.png" alt="Fenêtre de l'outil centroïdes" width="600">
+								<a href="illustrations/10_01_centroides_fenetre.jpg" >
+									<img src="illustrations/10_01_centroides_fenetre.jpg" alt="Fenêtre de l'outil centroïdes" width="600">
 								</a>
 							</figure>
 							<ul>
@@ -105,8 +105,8 @@
 							</ul>
 							<p><b>Exécuter</b>... La couche de centroïdes est ajoutée à QGIS : un point a été créé par commune.</p>
 							<figure>
-								<a href="illustrations/tous/10_01_centroides_visu.png" >
-									<img src="illustrations/tous/10_01_centroides_visu.png" alt="Visualisation des centroïdes sur la carte" width="200">
+								<a href="illustrations/10_01_centroides_visu.jpg" >
+									<img src="illustrations/10_01_centroides_visu.jpg" alt="Visualisation des centroïdes sur la carte" width="200">
 								</a>
 							</figure>
 						</div>
@@ -118,13 +118,13 @@
 						<div class="manip">
 							<p>Couche <em class="data">communes_centroides</em> : <b>Propriétés &#8594; Symbologie &#8594; bouton à droite de Taille &#8594; Assistant...</b> :</p>
 							<figure>
-								<a href="illustrations/tous/10_01_assistant_taille_acces.png" >
-									<img src="illustrations/tous/10_01_assistant_taille_acces.png" alt="Accès à l'Assistant Taille dans la rubrique style des propriétés de la couche" width="600">
+								<a href="illustrations/10_01_assistant_taille_acces.jpg" >
+									<img src="illustrations/10_01_assistant_taille_acces.jpg" alt="Accès à l'Assistant Taille dans la rubrique style des propriétés de la couche" width="600">
 								</a>
 							</figure>
                             <figure>
-								<a href="illustrations/tous/10_01_assistant_fenetre.png" >
-									<img src="illustrations/tous/10_01_assistant_fenetre.png" alt="Fenêtre de l'Assistant Taille" width="500">
+								<a href="illustrations/10_01_assistant_fenetre.jpg" >
+									<img src="illustrations/10_01_assistant_fenetre.jpg" alt="Fenêtre de l'Assistant Taille" width="500">
 								</a>
 							</figure>
 						</div>
@@ -151,17 +151,17 @@
             <p>La méthode de <a class="ext" target="_blank" href="http://wiki.gis.com/wiki/index.php/Proportional_symbol_map#Apparent_Magnitude_.28Flannery.29_Scaling">Flannery</a> est une technique utilisée pour compenser le fait que, même si l'&oelig;il lit mieux les variations de surface que de taille, il ne les interprète cependant pas toujours exactement. Même si cette méthode est intéressante, étant donné que la méthode la plus utilisée en cartographie est de faire varier la surface, il n'est pas forcément recommandé de l'utiliser, à moins de bien le préciser sur votre carte.</p>
             <p>La méthode exponentielle permet de surreprésenter les valeurs extrêmes (en ajustant l'exposant) et peut être utile à des fins d'exploration.</p>
             <figure>
-							<a href="illustrations/tous/10_01_methode_flannery.png" >
-								<img src="illustrations/tous/10_01_methode_flannery.png" alt="Légende cercles proportionnels avec la méthode Flannery (valeurs 1000, 100000, 1000000 et 2190327" width="150">
+							<a href="illustrations/10_01_methode_flannery.jpg" >
+								<img src="illustrations/10_01_methode_flannery.jpg" alt="Légende cercles proportionnels avec la méthode Flannery (valeurs 1000, 100000, 1000000 et 2190327" width="150">
 							</a>
-							<a href="illustrations/tous/10_01_methode_surface.png" >
-								<img src="illustrations/tous/10_01_methode_surface.png" alt="Légende cercles proportionnels avec la méthode surface (valeurs 1000, 100000, 1000000 et 2190327" width="150">
+							<a href="illustrations/10_01_methode_surface.jpg" >
+								<img src="illustrations/10_01_methode_surface.jpg" alt="Légende cercles proportionnels avec la méthode surface (valeurs 1000, 100000, 1000000 et 2190327" width="150">
 							</a>
-							<a href="illustrations/tous/10_01_methode_rayon.png" >
-								<img src="illustrations/tous/10_01_methode_rayon.png" alt="Légende cercles proportionnels avec la méthode rayon (valeurs 1000, 100000, 1000000 et 2190327" width="150">
+							<a href="illustrations/10_01_methode_rayon.jpg" >
+								<img src="illustrations/10_01_methode_rayon.jpg" alt="Légende cercles proportionnels avec la méthode rayon (valeurs 1000, 100000, 1000000 et 2190327" width="150">
 							</a>
-							<a href="illustrations/tous/10_01_methode_exponentiel.png" >
-								<img src="illustrations/tous/10_01_methode_exponentiel.png" alt="Légende cercles proportionnels avec la méthode exponentiel (valeurs 1000, 100000, 1000000 et 2190327" width="150">
+							<a href="illustrations/10_01_methode_exponentiel.jpg" >
+								<img src="illustrations/10_01_methode_exponentiel.jpg" alt="Légende cercles proportionnels avec la méthode exponentiel (valeurs 1000, 100000, 1000000 et 2190327" width="150">
 							</a>
 						</figure>
 						<p>Si vous ne devez retenir qu'une chose : <b>faites varier la surface de vos cercles, pas leur rayon&nbsp;!</b> Cela permettra une lecture plus juste du phénomène que vous représentez.</p>
@@ -171,11 +171,11 @@
 						<p>Comme vous l'avez peut-être remarqué, QGIS affiche les cercles dans l'ordre de la table ; il peut donc arriver que de petits cercles soient masqués par de plus gros cercles.</p>
 						<p>Nous allons voir ici comment afficher les cercles par ordre de population, les plus faibles populations par-dessus.</p>
 						<figure>
-							<a href="illustrations/tous/10_01_ordre_avant.png" >
-								<img src="illustrations/tous/10_01_ordre_avant.png" alt="Cercles dessinés dans l'ordre de la table" width="180">
+							<a href="illustrations/10_01_ordre_avant.jpg" >
+								<img src="illustrations/10_01_ordre_avant.jpg" alt="Cercles dessinés dans l'ordre de la table" width="180">
 							</a>
-                            <a href="illustrations/tous/10_01_ordre_apres.png" >
-								<img src="illustrations/tous/10_01_ordre_apres.png" alt="Cercles dessinés du plus peuplé au moins peuplé" width="180">
+                            <a href="illustrations/10_01_ordre_apres.jpg" >
+								<img src="illustrations/10_01_ordre_apres.jpg" alt="Cercles dessinés du plus peuplé au moins peuplé" width="180">
 							</a>
 							<figcaption>A gauche, cercles dessinés dans l'ordre de la table&nbsp;; à droite, cercles dessinés du plus grand au plus petit.</figcaption>
 						</figure>
@@ -183,21 +183,21 @@
 						<div class="manip">
 							<p>Dans les propriétés de la couche <em class="data">communes_centroides</em>, <b>Symbologie</b>, tout en bas de la fenêtre, cliquez sur <b>Rendu de couche</b>&nbsp;:</p>
 							<figure>
-								<a href="illustrations/tous/10_01_ordre_entites.png" >
-									<img src="illustrations/tous/10_01_ordre_entites.png" alt="Activer l'ordre de rendu des entités" width="500">
+								<a href="illustrations/10_01_ordre_entites.jpg" >
+									<img src="illustrations/10_01_ordre_entites.jpg" alt="Activer l'ordre de rendu des entités" width="500">
 								</a>
 							</figure>
 							<p>Cochez la case <b>Contrôle de l'ordre de rendu des entités</b> et cliquez sur le bouton tout à droite&nbsp;:</p>
 							<figure>
-								<a href="illustrations/tous/10_01_ordre_entites_2.png" >
-									<img src="illustrations/tous/10_01_ordre_entites_2.png" alt="Fenêtre de définition de l'ordre de rendu des entités" width="550">
+								<a href="illustrations/10_01_ordre_entites_2.jpg" >
+									<img src="illustrations/10_01_ordre_entites_2.jpg" alt="Fenêtre de définition de l'ordre de rendu des entités" width="550">
 								</a>
 							</figure>
 							<p>Choisissez le champ <b>POPULATION</b> et l'ordre <b>Descendant</b> : ainsi, les cercles seront dessinés du plus peuplé au moins peuplé.</p>
 						</div>
 		  	           <figure>
-							<a href="illustrations/tous/10_01_prop_visu.png" >
-								<img src="illustrations/tous/10_01_prop_visu.png" alt="Une partie de la carte en cercles proportionnels" width="300">
+							<a href="illustrations/10_01_prop_visu.jpg" >
+								<img src="illustrations/10_01_prop_visu.jpg" alt="Une partie de la carte en cercles proportionnels" width="300">
 							</a>
 					   </figure>
 					   
@@ -209,15 +209,15 @@
 					   <div class="manip">
 					       <p>Ouvrez la fenêtre des propriétés, rubrique <b>Symbologie</b>, et cliquez en bas à droite sur <b>Avancé</b> pour choisir <b>Légende pour la Taille définie par des données</b> :</p>
 					       <figure>
-								<a href="illustrations/tous/10_01_legende_symbolprop_acces.png" >
-									<img src="illustrations/tous/10_01_legende_symbolprop_acces.png" alt="Fenêtre des propriétés, symbologie, clic sur le bouton avancé" width="600">
+								<a href="illustrations/10_01_legende_symbolprop_acces.jpg" >
+									<img src="illustrations/10_01_legende_symbolprop_acces.jpg" alt="Fenêtre des propriétés, symbologie, clic sur le bouton avancé" width="600">
 								</a>
 							</figure>
 					   
 					       <p>Sous cet intitulé un peu obscur se cache une légende paramétrable pour notre carte en cercles proportionnels :</p>
 					       <figure>
-    							<a href="illustrations/tous/10_01_legende_symbolprop.png" >
-    								<img src="illustrations/tous/10_01_legende_symbolprop.png" alt="Fenêtre de la légende des symbols proportionnels" width="470">
+    							<a href="illustrations/10_01_legende_symbolprop.jpg" >
+    								<img src="illustrations/10_01_legende_symbolprop.jpg" alt="Fenêtre de la légende des symbols proportionnels" width="470">
     							</a>
     						</figure>
     						
@@ -237,8 +237,8 @@
 					
 					<p>Une carte choroplèthe est une carte en aplats de couleurs. Les régions sont colorées selon une mesure statistique telle que la densité de population ou le revenu par habitant. Ce type de carte <a class="ext" target="_blank" href="https://neocarto.hypotheses.org/5717">ne peut donc être utilisé pour représenter des quantités ou des effectifs</a>. Les variables continues doivent être <a class="ext" target="_blank" href="http://www.hypergeo.eu/spip.php?article374">discrétisées</a> pour produire des classes.</p>
 					<figure>
-						<a href="illustrations/tous/10_01_carte_choroplethe.png" >
-							<img src="illustrations/tous/10_01_carte_choroplethe.png" alt="Exemple de carte choroplethe : carte de densité de population par commune, France métropolitaine, discrétisation par quantiles" width="500">
+						<a href="illustrations/10_01_carte_choroplethe.jpg" >
+							<img src="illustrations/10_01_carte_choroplethe.jpg" alt="Exemple de carte choroplethe : carte de densité de population par commune, France métropolitaine, discrétisation par quantiles" width="500">
 						</a>
 						<figcaption>Exemple de carte choroplèthe réalisée sous QGIS montrant la densité de population par commune en France métropolitaine, avec une discrétisation par quantiles.</figcaption>
 				   </figure>
@@ -258,8 +258,8 @@
 							</div>
 							<p>Quittez le mode édition. Vérifiez le contenu du champ densite.</p>
                             <figure>
-								<a href="illustrations/tous/10_01_densite_res.png" >
-									<img src="illustrations/tous/10_01_densite_res.png" alt="Champ densité dans la table attributaire" width="90">
+								<a href="illustrations/10_01_densite_res.jpg" >
+									<img src="illustrations/10_01_densite_res.jpg" alt="Champ densité dans la table attributaire" width="90">
 								</a>
 							    <figcaption>densité des communes classées par code INSEE.</figcaption>
 							</figure>
@@ -273,8 +273,8 @@
 							<p>Pour faire varier la couleur des communes en fonction de la densité :</p>
 							<p><b>Propriétés de la couche COMMUNE &#8594; rubrique Symbologie</b></p>
 							<figure>
-								<a href="illustrations/tous/10_01_choroplethe_fenetre.png" >
-									<img src="illustrations/tous/10_01_choroplethe_fenetre.png" alt="Choix des paramètres du style pour une carte choroplèthe en 5 classes par la méthode des quantiles" width="600">
+								<a href="illustrations/10_01_choroplethe_fenetre.jpg" >
+									<img src="illustrations/10_01_choroplethe_fenetre.jpg" alt="Choix des paramètres du style pour une carte choroplèthe en 5 classes par la méthode des quantiles" width="600">
 								</a>
 							</figure>
 							<ul>
@@ -288,23 +288,23 @@
 							<p>Pour voir l'effectif de chaque classe, clic droit sur le nom de la couche &#8594; 
 								<a class="thumbnail_bottom" href="#thumb">Afficher le nombre d'entités
               		<span>
-              			<img src="illustrations/tous/10_01_menu_nb_entites.png" alt="clic droit sur la couche, afficher le nombre d'entités" height="420" >
+              			<img src="illustrations/10_01_menu_nb_entites.jpg" alt="clic droit sur la couche, afficher le nombre d'entités" height="420" >
               		</span>
               	</a> (les nombres peuvent mettre un peu de temps à s'afficher avec une couche un peu lourde comme ici).</p>
 							<p>Pour un meilleur rendu, vous pouvez supprimer les bordures des communes en cliquant sur le symbole puis sur <b>Remplissage simple &#8594; Style de trait &#8594; Pas de ligne</b>.</p>
 							<figure>
-								<a href="illustrations/tous/10_01_enlever_bordure.png" >
-									<img src="illustrations/tous/10_01_enlever_bordure.png" alt="Cliquer sur Modifier pour enlever les bordures" width="500">
+								<a href="illustrations/10_01_enlever_bordure.jpg" >
+									<img src="illustrations/10_01_enlever_bordure.jpg" alt="Cliquer sur Modifier pour enlever les bordures" width="500">
 								</a>
-								<a href="illustrations/tous/10_01_enlever_bordure_02.png" >
-									<img src="illustrations/tous/10_01_enlever_bordure_02.png" alt="Cliquer sur Modifier pour enlever les bordures" width="400">
+								<a href="illustrations/10_01_enlever_bordure_02.jpg" >
+									<img src="illustrations/10_01_enlever_bordure_02.jpg" alt="Cliquer sur Modifier pour enlever les bordures" width="400">
 								</a>
 							</figure>
 							<p class="note">Toutefois, même ainsi, les limites restent un peu visibles. Pour ne vraiment plus les voir, il faut rendre visibles ces limites avec une épaisseur fine et leur donner la même couleur que la couleur de remplissage.</p>
 						</div>
 						<figure>
-							<a href="illustrations/tous/10_01_choroplethe_visu.png" >
-								<img src="illustrations/tous/10_01_choroplethe_visu.png" alt="Exemple de carte choroplethe : 5 classes, méthode des quantiles, dégradé de bleu" width="400">
+							<a href="illustrations/10_01_choroplethe_visu.jpg" >
+								<img src="illustrations/10_01_choroplethe_visu.jpg" alt="Exemple de carte choroplethe : 5 classes, méthode des quantiles, dégradé de bleu" width="400">
 							</a>
 						</figure>
 
@@ -324,13 +324,13 @@
 						<p>Pour créer les points aléatoires :
 							<a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; Création de vecteurs &#8594; Points aléatoires à l'intérieur des polygones
 								<span>
-									<img src="illustrations/tous/10_01_pts_aleatoires_menu.png" alt="Emplacement de l'outil de points aléatoires à l'intérieur des polygones dans la boîte à outils" width="350">
+									<img src="illustrations/10_01_pts_aleatoires_menu.jpg" alt="Emplacement de l'outil de points aléatoires à l'intérieur des polygones dans la boîte à outils" width="350">
 								</span>
 							</a>
 						</p>
 						<figure>
-							<a href="illustrations/tous/10_01_pts_aleatoires_fenetre.png" >
-								<img src="illustrations/tous/10_01_pts_aleatoires_fenetre.png" alt="Fenêtre de création des points aléatoires" width="600">
+							<a href="illustrations/10_01_pts_aleatoires_fenetre.jpg" >
+								<img src="illustrations/10_01_pts_aleatoires_fenetre.jpg" alt="Fenêtre de création des points aléatoires" width="600">
 							</a>
 						</figure>
 						<ul>
@@ -342,14 +342,14 @@
 						</ul>
 						<p>Ajustez le style de la couche, par exemple à l'échelle du pays :</p>
 						<figure>
-							<a href="illustrations/tous/10_01_style_pts_aleatoires.png" >
-								<img src="illustrations/tous/10_01_style_pts_aleatoires.png" alt="paramètres de représentation de la couche de points" width="520">
+							<a href="illustrations/10_01_style_pts_aleatoires.jpg" >
+								<img src="illustrations/10_01_style_pts_aleatoires.jpg" alt="paramètres de représentation de la couche de points" width="520">
 							</a>
 						</figure>
 					</div>
 						<figure>
-							<a href="illustrations/tous/10_01_pts_aleatoires_visu.png" >
-								<img src="illustrations/tous/10_01_pts_aleatoires_visu.png" alt="Exemple de carte en semis de points" width="400">
+							<a href="illustrations/10_01_pts_aleatoires_visu.jpg" >
+								<img src="illustrations/10_01_pts_aleatoires_visu.jpg" alt="Exemple de carte en semis de points" width="400">
 							</a>
 						</figure>
 						
@@ -371,8 +371,8 @@
     				            <p>Ouvrez les propriétés de la couche de communes, et <a href="10_01_representation.php#X12b">choisissez le mode gradué</a> pour le champ densité <a href="10_01_representation.php#X12a">créé précédemment</a> avec une discrétisation par exemple par quantiles.
     				            <p>Cliquez ensuite sur l'onglet <b>Histogramme</b> (toujours dans la rubrique symbologie) puis sur <b>Charger les valeurs</b> :</p>
     				            <figure>
-        							<a href="illustrations/tous/10_01_histogramme.png" >
-        								<img src="illustrations/tous/10_01_histogramme.png" alt="Histogramme dans la fenêtres des propriétés" width="550">
+        							<a href="illustrations/10_01_histogramme.jpg" >
+        								<img src="illustrations/10_01_histogramme.jpg" alt="Histogramme dans la fenêtres des propriétés" width="550">
         							</a>
         						</figure>
     				        </div>
@@ -386,8 +386,8 @@
         						<p>Filtrez uniquement les communes de densité &lt; 300 habitants/km&#178;  avec la requête <b>"densite" &lt; 300</b>. Cliquez ensuite sur <b>OK</b>.</p>
         						<p>Retournez dans la rubrique <b>Symbologie</b>, onglet <b>Classes</b> et cliquez sur le bouton <b>Classer</b> pour mettre à jour les classes. Dans l'onglet <b>Histogramme</b>, cliquez sur <b>Charger les valeurs</b> pour mettre à jour l'histogramme.</p>
         						<figure>
-        							<a href="illustrations/tous/10_01_histogramme_filtre.png" >
-        								<img src="illustrations/tous/10_01_histogramme_filtre.png" alt="Histogramme de fréquence pour les communes de densite<300" width="530">
+        							<a href="illustrations/10_01_histogramme_filtre.jpg" >
+        								<img src="illustrations/10_01_histogramme_filtre.jpg" alt="Histogramme de fréquence pour les communes de densite<300" width="530">
         							</a>
         						</figure>
         						<p>On y voit plus clair&nbsp;! Au passage, profitez-en pour cocher les cases <b>moyenne</b> et <b>écart-type</b>. Et vous pouvez ainsi vous rendre compte de l'intérêt principal de cet histogramme : les couleurs sont celles de la discrétisation choisie, et il est possible de modifier les bornes des classes directement dans l'histogramme.</p>
@@ -404,12 +404,12 @@
     				        
     				        <div class="manip">
     				            <p>Il faut tout d'abord <a href="03_04_fonds_carte.php#III43" >installer l'extension</a> : <b>menu Extension &#8594; Installer/Gérer les extensions</b>, tapez <b>plotly</b> dans la barre de recherche et cliquez sur <b>Installer l'extension</b>.</p>
-    				            <p><img class="icone" src="illustrations/tous/10_01_plotly_icone.png" alt="icône extension Plotly" >Plotly est ensuite accessible via le <b>menu Extension &#8594; DataPlotly</b> ou bien en cliquant sur son icône.</p>
+    				            <p><img class="icone" src="illustrations/10_01_plotly_icone.jpg" alt="icône extension Plotly" >Plotly est ensuite accessible via le <b>menu Extension &#8594; DataPlotly</b> ou bien en cliquant sur son icône.</p>
     				            <p>Un nouveau panneau appraît : il peut être nécessaire de l'agrandir un peu.</p>
                                 <p>Pour affficher un histogramme de fréquence de la densité de population&nbsp;:</p>
     				            <figure>
-            							<a href="illustrations/tous/10_01_plotly_config.png" >
-            								<img src="illustrations/tous/10_01_plotly_config.png" alt="Configuration de l'extension plotly pour afficher un histogramme de la densité de pop" width="550">
+            							<a href="illustrations/10_01_plotly_config.jpg" >
+            								<img src="illustrations/10_01_plotly_config.jpg" alt="Configuration de l'extension plotly pour afficher un histogramme de la densité de pop" width="550">
             							</a>
             						</figure>
             						<ul>
@@ -419,28 +419,28 @@
             						  <li>Cliquez ensuite sur le bouton <b>Créer le graphique</b> tout en bas&nbsp;:</li>
             						</ul>
             						<figure>
-            							<a href="illustrations/tous/10_01_plotly_graphique_v1.png" >
-            								<img src="illustrations/tous/10_01_plotly_graphique_v1.png" alt="Exemple d'histogramme de fréquence pour la densité réalisé avec Plotly" width="500">
+            							<a href="illustrations/10_01_plotly_graphique_v1.jpg" >
+            								<img src="illustrations/10_01_plotly_graphique_v1.jpg" alt="Exemple d'histogramme de fréquence pour la densité réalisé avec Plotly" width="500">
             							</a>
             						</figure>
             						<p>La barre d'outils en haut à droite permet de zoomer, dézoomer etc. dans le graphique.</p>
             						<p>Tout est ensuite paramétrable, ou presque, notamment ici :</p>
             						<figure>
-            							<a href="illustrations/tous/10_01_plotly_config1.png" >
-            								<img src="illustrations/tous/10_01_plotly_config1.png" alt="Paramétrage du graphique dans Plotly" width="550">
+            							<a href="illustrations/10_01_plotly_config1.jpg" >
+            								<img src="illustrations/10_01_plotly_config1.jpg" alt="Paramétrage du graphique dans Plotly" width="550">
             							</a>
             						</figure>
             						<p>Ou là&nbsp;:</p>
             						<figure>
-            							<a href="illustrations/tous/10_01_plotly_config2.png" >
-            								<img src="illustrations/tous/10_01_plotly_config2.png" alt="Paramétrage du graphique dans Plotly" width="550">
+            							<a href="illustrations/10_01_plotly_config2.jpg" >
+            								<img src="illustrations/10_01_plotly_config2.jpg" alt="Paramétrage du graphique dans Plotly" width="550">
             							</a>
             						</figure>
             						<p>Pour appliquer les changements, il faut cliquer sur <b>Mettre à jour le graphique</b> en bas de la fenêtre.</p>
             						<p>Par exemple en diminuant la taille des barres et en zoomant&nbsp;:</p>
             						<figure>
-            							<a href="illustrations/tous/10_01_plotly_graphique_v2.png" >
-            								<img src="illustrations/tous/10_01_plotly_graphique_v2.png" alt="Exemple d'histogramme de fréquence pour la densité réalisé avec Plotly" width="500">
+            							<a href="illustrations/10_01_plotly_graphique_v2.jpg" >
+            								<img src="illustrations/10_01_plotly_graphique_v2.jpg" alt="Exemple d'histogramme de fréquence pour la densité réalisé avec Plotly" width="500">
             							</a>
             						</figure>
             						<p>N'hésitez pas à tester les différents paramètres&nbsp;!</p>

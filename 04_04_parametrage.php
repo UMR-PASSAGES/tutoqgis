@@ -44,16 +44,16 @@
 
 				<p>Avant de pouvoir procéder au géoréférencement proprement dit, il va nous falloir définir plusieurs paramètres.</p>
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/4_4_parametres_icone.png" alt="Icône paramètres de transformation du géoréférenceur" >Ces paramètres sont accessibles dans le menu
+					<p><img class="icone" src="illustrations/4_4_parametres_icone.jpg" alt="Icône paramètres de transformation du géoréférenceur" >Ces paramètres sont accessibles dans le menu
 								<a class="thumbnail_bottom" href="#thumb">Paramètres &#8594; Paramètres de transformation
 									<span>
-										<img src="illustrations/tous/4_4_parametres_menu.png" alt="Menu Paramètres, Paramètres de transformation" height="90" >
+										<img src="illustrations/4_4_parametres_menu.jpg" alt="Menu Paramètres, Paramètres de transformation" height="90" >
 									</span>
 								</a>	
 							ou bien en cliquant sur l'icône correspondante.</p>
 							<figure>
-								<a href="illustrations/tous/4_4_parametres_fenetre.png" >
-									<img src="illustrations/tous/4_4_parametres_fenetre.png" alt="Fenêtre de saisie des paramètres de transformation" width="430">
+								<a href="illustrations/4_4_parametres_fenetre.jpg" >
+									<img src="illustrations/4_4_parametres_fenetre.jpg" alt="Fenêtre de saisie des paramètres de transformation" width="430">
 								</a>							
 							</figure>
 				</div>
@@ -87,8 +87,8 @@
 						<div class="manip">
 							<p>Sélectionnez la transformation <b>polynomiale 1</b> dans la liste déroulante de la fenêtre de paramétrage.</p>
 							<figure>
-								<a href="illustrations/tous/4_4_type_transfo.png" >
-									<img src="illustrations/tous/4_4_type_transfo.png" alt="Choix du type de transformation" width="400">
+								<a href="illustrations/4_4_type_transfo.jpg" >
+									<img src="illustrations/4_4_type_transfo.jpg" alt="Choix du type de transformation" width="400">
 								</a>							
 							</figure>
 						</div>					
@@ -99,8 +99,8 @@
 					<p>Si on utilise une transformation qui déforme le raster d'origine (transformation polynomiale d'ordre supérieur à 1, ou transformation de type Spline par exemple), la valeur (couleur) de chaque pixel du nouveau raster sera déterminée par un calcul en se basant sur le raster original.</p>
 					<p>Cette valeur sera différente selon la méthode de rééchantillonnage choisie. QGIS, comme d'autres logiciels SIG, propose trois méthodes de rééchantillonnage :</p>
 						<figure>
-							<a href="illustrations/tous/4_4_resampling.svg" >
-								<img src="illustrations/tous/4_4_resampling.png" alt="3 types de rééchantillonnage" width="600">
+							<a href="illustrations/4_4_resampling.svg" >
+								<img src="illustrations/4_4_resampling.jpg" alt="3 types de rééchantillonnage" width="600">
 							</a>							
 						</figure>					
 					<ul>
@@ -115,8 +115,8 @@
 					<div class="manip">
 						<p>Ici, nous allons donc choisir la méthode la plus simple et la plus rapide : <b>plus proche voisin</b>.</p>
 						<figure>
-							<a href="illustrations/tous/4_4_reechantillonnage" >
-								<img src="illustrations/tous/4_4_reechantillonnage.png" alt="Choix du type de rééchantillonnage" width="400">
+							<a href="illustrations/4_4_reechantillonnage" >
+								<img src="illustrations/4_4_reechantillonnage.jpg" alt="Choix du type de rééchantillonnage" width="400">
 							</a>							
 						</figure>	
 					</div>
@@ -135,8 +135,8 @@
 					<div class="manip">
 						<p>Notre image de base étant peu volumineuse, nous allons choisir le type <b>Aucun</b>.</p>
 						<figure>
-							<a href="illustrations/tous/4_4_compression.png" >
-								<img src="illustrations/tous/4_4_compression.png" alt="Choix du type de compression" width="380">
+							<a href="illustrations/4_4_compression.jpg" >
+								<img src="illustrations/4_4_compression.jpg" alt="Choix du type de compression" width="380">
 							</a>							
 						</figure>	
 					</div>
@@ -148,8 +148,8 @@
 						<div class="manip">
 							<p>Spécifiez ici le nom et l'emplacement de l'image géoréférencée qui sera créée, en cliquant sur l'icône à droite de la ligne <b>Raster de sortie</b>.</p>
 							<figure>
-								<a href="illustrations/tous/4_4_raster_sortie.png" >
-									<img src="illustrations/tous/4_4_raster_sortie.png" alt="Choisir le nom et l'emplacement du raster de sortie" width="440">
+								<a href="illustrations/4_4_raster_sortie.jpg" >
+									<img src="illustrations/4_4_raster_sortie.jpg" alt="Choisir le nom et l'emplacement du raster de sortie" width="440">
 								</a>							
 							</figure>
 							<p>Choisissez à quel endroit vous souhaitez créer cette couche, et donnez-lui un nom, par exemple <b>Oahu_Hawaiian_Islands_1906_pol1_wgs84.tif</b>.</p>
@@ -162,14 +162,14 @@
 						<div class="manip">
 							<p>Cliquez sur l'icône à droite de la ligne <b>SCR cible</b>, ou bien utilisez la liste déroulante pour choisir directement le SCR.</p>
 							<figure>
-								<a href="illustrations/tous/4_4_choisir_scr.png" >
-									<img src="illustrations/tous/4_4_choisir_scr.png" alt="Choisir le SCR" width="440">
+								<a href="illustrations/4_4_choisir_scr.jpg" >
+									<img src="illustrations/4_4_choisir_scr.jpg" alt="Choisir le SCR" width="440">
 								</a>							
 							</figure>
 							<p>Choisissez le SCR <b>WGS 84, code EPSG 4326</b>, en vous aidant éventuellement de la partie filtre.</p>
 							<figure>
-								<a href="illustrations/tous/4_4_choix_scr_fenetre.png" >
-									<img src="illustrations/tous/4_4_choix_scr_fenetre.png" alt="Sélection du SCR WGS84" width="430">
+								<a href="illustrations/4_4_choix_scr_fenetre.jpg" >
+									<img src="illustrations/4_4_choix_scr_fenetre.jpg" alt="Sélection du SCR WGS84" width="430">
 								</a>							
 							</figure>
 						</div>
@@ -186,8 +186,8 @@
 						<div class="manip">
 							<p>Laissez cette case décochée.</p>
 							<figure>
-								<a href="illustrations/tous/4_4_transparence.png" >
-									<img src="illustrations/tous/4_4_transparence.png" alt="employer 0 pour la transparence : la case est décochée" width="400">
+								<a href="illustrations/4_4_transparence.jpg" >
+									<img src="illustrations/4_4_transparence.jpg" alt="employer 0 pour la transparence : la case est décochée" width="400">
 								</a>							
 							</figure>	
 						</div>
@@ -197,8 +197,8 @@
 						<div class="manip">
 							<p>Laisser cette case décochée pour que l'image créée ait la même résolution que l'image de départ.</p>
 							<figure>
-								<a href="illustrations/tous/4_4_resolution.png" >
-									<img src="illustrations/tous/4_4_resolution.png" alt="résolution de la cible : la case est décochée" width="230">
+								<a href="illustrations/4_4_resolution.jpg" >
+									<img src="illustrations/4_4_resolution.jpg" alt="résolution de la cible : la case est décochée" width="230">
 								</a>							
 							</figure>	
 						</div>
@@ -209,8 +209,8 @@
 						<div class="manip">
 							<p>Cliquez sur les icônes à droite des lignes carte PDF et rapport PDF pour spécifier un nom (à votre convenance) et l'emplacement (par exemple dans le même dossier que l'image de départ) pour la carte et le rapport qui seront créés.</p>
 							<figure>
-								<a href="illustrations/tous/4_4_carte_rapport_icone.png" >
-									<img src="illustrations/tous/4_4_carte_rapport_icone.png" alt="icônes pour choisir le nom et l'emplacement de la carte et du rapport PDF" width="460">
+								<a href="illustrations/4_4_carte_rapport_icone.jpg" >
+									<img src="illustrations/4_4_carte_rapport_icone.jpg" alt="icônes pour choisir le nom et l'emplacement de la carte et du rapport PDF" width="460">
 								</a>							
 							</figure>
 						</div>
@@ -220,8 +220,8 @@
 						<div class="manip">
 							<p>Charger dans QGIS lorsque terminé : cocher cette case pour que le nouveau raster soit chargé automatiquement dans QGIS une fois le géoréférencement effectué.</p>
 							<figure>
-								<a href="illustrations/tous/4_4_charger_dans_qgis.png" >
-									<img src="illustrations/tous/4_4_charger_dans_qgis.png" alt="charger dans qgis : la case est cochée" width="400">
+								<a href="illustrations/4_4_charger_dans_qgis.jpg" >
+									<img src="illustrations/4_4_charger_dans_qgis.jpg" alt="charger dans qgis : la case est cochée" width="400">
 								</a>							
 							</figure>	
 						</div>

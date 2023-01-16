@@ -39,8 +39,8 @@
 					<p>Si on connaît précisément les coordonnées de quelques points sur l'image, grâce à un carroyage avec des amorces de coordonnées, on va pouvoir se servir de ces coordonnées pour géoréférencer l'image.</p>
 					<p>Il faut néanmoins connaître le système de coordonnées utilisé, ce qui peut nécessiter des recherches.</p>
 					<figure>
-						<a href="illustrations/tous/4_1_calage_methode1.png" >
-							<img src="illustrations/tous/4_1_calage_methode1.png" alt="calage grâce à un carroyage avec coordonnées" width="480" >
+						<a href="illustrations/4_1_calage_methode1.jpg" >
+							<img src="illustrations/4_1_calage_methode1.jpg" alt="calage grâce à un carroyage avec coordonnées" width="480" >
 						</a>
 						<figcaption>Calage grâce à un carroyage avec amorces de coordonnées (Source de l'image : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3A1902_Land_Office_Map_of_the_Island_of_Oahu%2C_Hawaii_(_Honolulu_)_-_Geographicus_-_OhauHawaii-lo-1902.jpg">Wikimedia</a>, domaine public)</figcaption>
 					</figure>
@@ -50,8 +50,8 @@
 					<p>Si l'image ne possède pas d'indications de coordonnées, il va falloir utiliser une couche déjà géoréférencée possédant une zone commune avec l'image à géoréférencer. On pourra alors indiquer que tel point sur l'image correspond à tel point sur la couche déjà géoréférencée. Cette méthode sera employée pour caler des photographies aériennes par exemple.</p>
 					<p>La carte résultante aura le même système de coordonnées que la couche de référence. La précision du calage dépend alors notamment de la précision de la couche de référence.</p>
 					<figure>
-						<a href="illustrations/tous/4_1_calage_methode2.svg" >
-							<img class="noshadow" src="illustrations/tous/4_1_calage_methode2.png" alt="calage grâce à une couche déjà calée servant de référence" width="600" >
+						<a href="illustrations/4_1_calage_methode2.svg" >
+							<img class="noshadow" src="illustrations/4_1_calage_methode2.jpg" alt="calage grâce à une couche déjà calée servant de référence" width="600" >
 						</a>
 						<figcaption>Calage grâce à une couche de référence (Source de l'image à caler : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File:Doncaster_east_locality_map.PNG">Wikimedia</a>, domaine public, source des données de référence <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=14/-37.7762/145.1778">OpenStreetMap</a> © les contributeurs d’OpenStreetMap).</figcaption>
 					</figure>

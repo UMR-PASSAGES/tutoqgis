@@ -29,8 +29,8 @@
     			<p>...Et pour tirer partie de cette automatisation, nous finirons en <a href="09_05_maillage_sql.php#IX56">soustrayant 2 maillages</a> afin de voir l'évolution de la surface en vignes entre 2 dates.</p>
     		
     		    <figure>
-    				<a href="illustrations/tous/9_4_apercu_resultatfinal.png" >
-    					<img src="illustrations/tous/9_4_apercu_resultatfinal.png" alt="maillage 10km surface en vignes 5 classes intervalles égaux" width="400">
+    				<a href="illustrations/9_4_apercu_resultatfinal.jpg" >
+    					<img src="illustrations/9_4_apercu_resultatfinal.jpg" alt="maillage 10km surface en vignes 5 classes intervalles égaux" width="400">
     				</a>
     				<figcaption>Un exemple de résultat avec une taille de maille de 10km</figcaption>
     			</figure>
@@ -43,8 +43,8 @@
         		 <p>Pour bien comprendre la manip, nous allons commencer par créer un maillage en utilisant les outils QGIS.</p>
         		 <p>Nous partirons des données Corine Land Cover (CLC) d'occupation du sol, en filtrant les données pour ne garder que celles correspondant au vignoble&nbsp;:
         		 <figure>
-        		     <a href="illustrations/tous/9_4_principe_depart.png" >
-        		         <img src="illustrations/tous/9_4_principe_depart.png" alt="données Corine Land Cover France métro vignes" width="250">
+        		     <a href="illustrations/9_4_principe_depart.jpg" >
+        		         <img src="illustrations/9_4_principe_depart.jpg" alt="données Corine Land Cover France métro vignes" width="250">
         		     </a>
         		 </figure>
         		 <p>Nous passerons ensuite par 4 étapes&nbsp;:
@@ -58,10 +58,10 @@
         		 <p>Avec une grille de résolution 50 km&nbsp;:</p>
         		 <table class="table_images">
         		     <tr>
-        		         <td><a href="illustrations/tous/9_4_principe_grille.png" ><img src="illustrations/tous/9_4_principe_grille.png" alt="grille maille 50km france métropolitaine" width="150"></a>1. Grille</td>
-        		         <td><a href="illustrations/tous/9_4_principe_union.png" ><img src="illustrations/tous/9_4_principe_union.png" alt="résultat de l'union grille-données CLC vignes" width="150"></a>2. Union</td>
-        		         <td><a href="illustrations/tous/9_4_principe_agreg.png" ><img src="illustrations/tous/9_4_principe_agreg.png" alt="résultat de l'agrégation par maille de la surface en vignes avec discrétisation" width="150"></a>3. Agrégation</td>
-        		         <td><a href="illustrations/tous/9_4_principe_raster.png" ><img src="illustrations/tous/9_4_principe_raster.png" alt="résultat de la rastérisation avec discrétisation" width="150"></a>4. Rastérisation</td>
+        		         <td><a href="illustrations/9_4_principe_grille.jpg" ><img src="illustrations/9_4_principe_grille.jpg" alt="grille maille 50km france métropolitaine" width="150"></a>1. Grille</td>
+        		         <td><a href="illustrations/9_4_principe_union.jpg" ><img src="illustrations/9_4_principe_union.jpg" alt="résultat de l'union grille-données CLC vignes" width="150"></a>2. Union</td>
+        		         <td><a href="illustrations/9_4_principe_agreg.jpg" ><img src="illustrations/9_4_principe_agreg.jpg" alt="résultat de l'agrégation par maille de la surface en vignes avec discrétisation" width="150"></a>3. Agrégation</td>
+        		         <td><a href="illustrations/9_4_principe_raster.jpg" ><img src="illustrations/9_4_principe_raster.jpg" alt="résultat de la rastérisation avec discrétisation" width="150"></a>4. Rastérisation</td>
         		     </tr>
         		 </table>
         		 
@@ -87,14 +87,14 @@
                       </div>
     		          <p>Laissons de côté ces données pour le moment, et créons la grille. Pour cela, ouvrez la boîte à outils et faites une recherche sur le mot <b>grille</b>&nbsp;:</p>
     		          <figure>
-        			     <a href="illustrations/tous/9_4_toolbox_grille.png" >
-        			         <img src="illustrations/tous/9_4_toolbox_grille.png" alt="Recherche du mot grille dans la boîte à outils et emplacement de l'outil 'créer une grille'" width="450">
+        			     <a href="illustrations/9_4_toolbox_grille.jpg" >
+        			         <img src="illustrations/9_4_toolbox_grille.jpg" alt="Recherche du mot grille dans la boîte à outils et emplacement de l'outil 'créer une grille'" width="450">
         			     </a>
         			 </figure>
         			 <p>Double-cliquez sur l'outil <b>Créer une grille</b> dans la rubrique <b>Création de vecteurs</b>.</p>
         			 <figure>
-        			     <a href="illustrations/tous/9_4_grille_fenetre.png" >
-        			         <img src="illustrations/tous/9_4_grille_fenetre.png" alt="Paramétrage de l'outil 'créer une grille'" width="600">
+        			     <a href="illustrations/9_4_grille_fenetre.jpg" >
+        			         <img src="illustrations/9_4_grille_fenetre.jpg" alt="Paramétrage de l'outil 'créer une grille'" width="600">
         			     </a>
         			 </figure>
         			 <ul>
@@ -105,14 +105,14 @@
         			 </ul>
         			 <p>Ciquez sur <b>Exécuter</b>&nbsp;: la grille est automatiquement ajoutée à QGIS.</p>
         			 <figure>
-        			     <a href="illustrations/tous/9_4_grille_resultat.png" >
-        			         <img src="illustrations/tous/9_4_grille_resultat.png" alt="grille superposée aux données CLC et au fond NaturalEarth" width="400">
+        			     <a href="illustrations/9_4_grille_resultat.jpg" >
+        			         <img src="illustrations/9_4_grille_resultat.jpg" alt="grille superposée aux données CLC et au fond NaturalEarth" width="400">
         			     </a>
         			 </figure>
         			 <p>Ouvrez la table attributaire de la grille&nbsp;:</p>
         			 <figure>
-        			     <a href="illustrations/tous/9_4_grille_table.png" >
-        			         <img src="illustrations/tous/9_4_grille_table.png" alt="Extrait de la table attributaire de la grille" width="500">
+        			     <a href="illustrations/9_4_grille_table.jpg" >
+        			         <img src="illustrations/9_4_grille_table.jpg" alt="Extrait de la table attributaire de la grille" width="500">
         			     </a>
         			 </figure>
         			 <p>La table comporte un champ d'identifiant unique, et 4 champs correspondant aux coordonnées minimales et maximales de chaque case. Les cases sont numérotées de haut en bas et de gauche à droite.</p>
@@ -125,8 +125,8 @@
     		     <p>Qu'est-ce que l'union&nbsp;? Il s'agit d'une opération du même type que l'intersection, mettant en jeu 2 couches. A la différence de l'intersection où seules les parties communes aux 2 couches sont gardées, on récupère après une union les parties communes mais aussi les parties présentes dans une seule des couches.</p>
     		     <p>La couche résultat est une couche &#171;&nbsp;à plat&nbsp;&#187;, sans superposition.</p>
     		     <figure>
-    		         <a href="illustrations/tous/9_4_union_principe.svg" >
-    			         <img src="illustrations/tous/9_4_union_principe.png" alt="Explication union : couches en entrée et couche résultat" width="600">
+    		         <a href="illustrations/9_4_union_principe.svg" >
+    			         <img src="illustrations/9_4_union_principe.jpg" alt="Explication union : couches en entrée et couche résultat" width="600">
     			     </a>
     			     <figcaption>Union : couche en entrée 1, couche en entrée 2 et couche résultat : elle contient 3 polygones distincts, sans superposition.</figcaption>
     		     </figure>
@@ -141,8 +141,8 @@
     		         <p>Il faut d'abord rechercher quel est le code correspondant au vignoble&nbsp;: ouvrez le fichier <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC_nomenclature.xls</a></em> dans le dossier <b>TutoQGIS_09_AnalyseSpat/metadonnees</b>.</p>
     		         <p>Recherchez le code correspondant au vignoble&nbsp;:</p>
     		         <figure>
-    			         <a href="illustrations/tous/9_4_code_vignoble.png" >
-        			         <img src="illustrations/tous/9_4_code_vignoble.png" alt="fichier tableur avec le code 2210 pour le vignoble" width="500">
+    			         <a href="illustrations/9_4_code_vignoble.jpg" >
+        			         <img src="illustrations/9_4_code_vignoble.jpg" alt="fichier tableur avec le code 2210 pour le vignoble" width="500">
         			     </a>
     			     </figure>
     			     <p>Il s'agit du code <b>2210</b>.</p>
@@ -153,8 +153,8 @@
     		     
     		     <p>A ce stade, votre projet doit donc ressembler à ceci&nbsp;:</p>
     		     <figure>
-    		         <a href="illustrations/tous/9_4_couches.png" >
-    			         <img src="illustrations/tous/9_4_couches.png" alt="projet QGIS avec les 3 couches CLC vignes, grille et fonds Natural Eartg" width="500">
+    		         <a href="illustrations/9_4_couches.jpg" >
+    			         <img src="illustrations/9_4_couches.jpg" alt="projet QGIS avec les 3 couches CLC vignes, grille et fonds Natural Eartg" width="500">
     			     </a>
     		     </figure>
     		     
@@ -162,14 +162,14 @@
     		     <div class="manip">
     		         <p>Nous pouvons maintenant procéder à l'union. Comme d'habitude, pour trouver l'outil adéquat, utilisez la barre de recherche de la boîte à outils avec le mot <b>union</b>&nbsp;:</p>
     		         <figure>
-    			         <a href="illustrations/tous/9_4_union_toolbox.png" >
-        			         <img src="illustrations/tous/9_4_union_toolbox.png" alt="Emplacement de l'outil Union dans la boîte à outils" width="330">
+    			         <a href="illustrations/9_4_union_toolbox.jpg" >
+        			         <img src="illustrations/9_4_union_toolbox.jpg" alt="Emplacement de l'outil Union dans la boîte à outils" width="330">
         			     </a>
     			     </figure>
     		         <p>Double-cliquez sur <b>Union</b> dans la rubrique <b>Recouvrement de vecteur</b>&nbsp;:</p>
     		         <figure>
-    			         <a href="illustrations/tous/9_4_union_fenetre.png" >
-        			         <img src="illustrations/tous/9_4_union_fenetre.png" alt="Paramétrage de l'outil d'union" width="600">
+    			         <a href="illustrations/9_4_union_fenetre.jpg" >
+        			         <img src="illustrations/9_4_union_fenetre.jpg" alt="Paramétrage de l'outil d'union" width="600">
         			     </a>
     			     </figure>
     			     <ul>
@@ -179,14 +179,14 @@
     			     <p><b>Exécuter</b>, patientez...</p>
     			     <p>Vous pouvez vérifiez dans le résultat que l'union a bien été exécuté, les vignobles ayant été découpés selon les cases de la grille&nbsp;:</p>
     			     <figure>
-    			         <a href="illustrations/tous/9_4_union_resultat.png" >
-        			         <img src="illustrations/tous/9_4_union_resultat.png" alt="aperçu de la couche d'union avec sélection d'un polygone de vignes" width="250">
+    			         <a href="illustrations/9_4_union_resultat.jpg" >
+        			         <img src="illustrations/9_4_union_resultat.jpg" alt="aperçu de la couche d'union avec sélection d'un polygone de vignes" width="250">
         			     </a>
     			     </figure>
     			     <p>Ouvrez la table attributaire&nbsp;:</p>
     			     <figure>
-    			         <a href="illustrations/tous/9_4_union_table.png" >
-        			         <img src="illustrations/tous/9_4_union_table.png" alt="aperçu de la table attributaire de la couche d'union" width="600">
+    			         <a href="illustrations/9_4_union_table.jpg" >
+        			         <img src="illustrations/9_4_union_table.jpg" alt="aperçu de la table attributaire de la couche d'union" width="600">
         			     </a>
     			     </figure>
     			     <p>Les champs des 2 couches en entrée sont présents.</p>
@@ -197,8 +197,8 @@
     		     <p>Notre but étant de calculer la surface en vigne par maille, nous allons mettre à jour le champ AREA_HA. En effet, les valeurs contenues dans ce champ correspondent à la surface des polygones avant découpage et ne sont donc pas à jour.</p>
     		     <p>Il faut donc recalculer la surface de chaque polygone, et mettre une surface nulle pour les polygones ne correspondant pas à la vigne (sélectionné en jaune ci-dessous par exemple)&nbsp;:</p>
     		     <figure>
-    		         <a href="illustrations/tous/9_4_non_vigne.png" >
-    			         <img src="illustrations/tous/9_4_non_vigne.png" alt="polygone 'de fond' sélectionné en jaune" width="600">
+    		         <a href="illustrations/9_4_non_vigne.jpg" >
+    			         <img src="illustrations/9_4_non_vigne.jpg" alt="polygone 'de fond' sélectionné en jaune" width="600">
     			     </a>
     		     </figure>
     		     <p>Ces polygones étaient présent uniquement dans la couche de grille, ils n'ont donc pas reçu d'attributs de la couche de vignes&nbsp;: <b>les champs ID_2, CODE_00 et AREA_HA ont une valeur nulle</b>.</p>
@@ -208,8 +208,8 @@
     		     <div class="manip">
     		         <p>Passez en <a href="05_02_points.php#V21">mode édition</a> pour la couche d'union, et ouvrez la <a href="07_02_calculer.php">calculatrice de champ</a> à partir de la table attributaire&nbsp;:</p>
     		         <figure>
-    			         <a href="illustrations/tous/9_4_recalc_fenetre.png" >
-        			         <img src="illustrations/tous/9_4_recalc_fenetre.png" alt="fenêtre de la calculatrice de champ avec la formule pour recalculer la surface" width="600">
+    			         <a href="illustrations/9_4_recalc_fenetre.jpg" >
+        			         <img src="illustrations/9_4_recalc_fenetre.jpg" alt="fenêtre de la calculatrice de champ avec la formule pour recalculer la surface" width="600">
         			     </a>
     			     </figure>
     			     <ul>
@@ -233,13 +233,13 @@
     		     <div class="manip">
     		         <p>L'outil permettant cela se nomme <b>agrégation</b>&nbsp;:</p>
     		         <figure>
-    			         <a href="illustrations/tous/9_4_agreg_toolbox.png" >
-        			         <img src="illustrations/tous/9_4_agreg_toolbox.png" alt="emplacement de l'outil d'agrégation dans la boîte à outils" width="300">
+    			         <a href="illustrations/9_4_agreg_toolbox.jpg" >
+        			         <img src="illustrations/9_4_agreg_toolbox.jpg" alt="emplacement de l'outil d'agrégation dans la boîte à outils" width="300">
         			     </a>
     			     </figure>
     			     <figure>
-    			         <a href="illustrations/tous/9_4_agreg_fenetre.png" >
-        			         <img src="illustrations/tous/9_4_agreg_fenetre.png" alt="Paramétrage de l'outil d'agrégation" width="600">
+    			         <a href="illustrations/9_4_agreg_fenetre.jpg" >
+        			         <img src="illustrations/9_4_agreg_fenetre.jpg" alt="Paramétrage de l'outil d'agrégation" width="600">
         			     </a>
     			     </figure>
     			     <ul>
@@ -256,16 +256,16 @@
     			     </ul>
     			     <p><b>Exécuter</b>, patientez... et admirez le résultat :</p>
     			     <figure>
-    			         <a href="illustrations/tous/9_4_agreg_resultat.png" >
-        			         <img src="illustrations/tous/9_4_agreg_resultat.png" alt="Couche d'agrégation" width="350">
+    			         <a href="illustrations/9_4_agreg_resultat.jpg" >
+        			         <img src="illustrations/9_4_agreg_resultat.jpg" alt="Couche d'agrégation" width="350">
         			     </a>
     			     </figure>
     			     <p>La couche a la même géométrie que notre grille, avec un champ supplémentaire indiquant pour chaque case la surface en vignes correspondante.</p>
     			     <p class="note">Selon que votre couche est au format GeoPackage ou non, un champ fid sera présent ou non.</p>
     			     <p>En modifiant le style de cette couche, on peut avoir un aperçu de la répartition des vignes en France, par exemple avec un style gradué et 7 classes selon une discrétisation de Jenks&nbsp;, et en filtrant pour ne garder que les valeurs différentes de zéro&nbsp;:</p>
     			     <figure>
-    			         <a href="illustrations/tous/9_4_agreg_discretisation.png" >
-        			         <img src="illustrations/tous/9_4_agreg_discretisation.png" alt="discrétisation en 7 classes de la surface en vigne (Jenks) sur les valeurs non nulles" width="350">
+    			         <a href="illustrations/9_4_agreg_discretisation.jpg" >
+        			         <img src="illustrations/9_4_agreg_discretisation.jpg" alt="discrétisation en 7 classes de la surface en vigne (Jenks) sur les valeurs non nulles" width="350">
         			     </a>
     			     </figure>
     		     </div>
@@ -282,13 +282,13 @@
     		     <div class="manip">
     		         <p>Nous allons utiliser l'outil <b>rasteriser (vecteur vers raster)</b> de la boîte à outils&nbsp;:</p>
     		         <figure>
-    			         <a href="illustrations/tous/9_4_raster_toolbox.png" >
-        			         <img src="illustrations/tous/9_4_raster_toolbox.png" alt="emplacement de l'outil gdal rasteriser (vecteur vers raster) dans la boîte à outils" width="300">
+    			         <a href="illustrations/9_4_raster_toolbox.jpg" >
+        			         <img src="illustrations/9_4_raster_toolbox.jpg" alt="emplacement de l'outil gdal rasteriser (vecteur vers raster) dans la boîte à outils" width="300">
         			     </a>
     			     </figure>
                     <figure>
-    			         <a href="illustrations/tous/9_4_raster_fenetre.png" >
-        			         <img src="illustrations/tous/9_4_raster_fenetre.png" alt="paramétrage de l'outil gdal rasteriser (vecteur vers raster)" width="550">
+    			         <a href="illustrations/9_4_raster_fenetre.jpg" >
+        			         <img src="illustrations/9_4_raster_fenetre.jpg" alt="paramétrage de l'outil gdal rasteriser (vecteur vers raster)" width="550">
         			     </a>
     			     </figure>
     			     <ul>
@@ -301,8 +301,8 @@
     			     </ul>
     			     <p>Par défaut, les valeurs égales à 0 ne sont pas représentées&nbsp;:</p>
     			     <figure>
-    			         <a href="illustrations/tous/9_4_raster_resultat1.png" >
-        			         <img src="illustrations/tous/9_4_raster_resultat1.png" alt="Raster résultat avec le style par défaut" width="300">
+    			         <a href="illustrations/9_4_raster_resultat1.jpg" >
+        			         <img src="illustrations/9_4_raster_resultat1.jpg" alt="Raster résultat avec le style par défaut" width="300">
         			     </a>
     			     </figure>
     		     </div>
@@ -312,13 +312,13 @@
     		     <div class="manip">
     		         <p>Pour afficher la répartition des vignes, modifiez le style de la couche en choisissant le type de rendu <b>pseudo-couleur à bande unique</b>, par exemple avec une représentation en couleur continue&nbsp;:</p>
     		         <figure>
-    			         <a href="illustrations/tous/9_4_couleur_continue.png" >
-        			         <img src="illustrations/tous/9_4_couleur_continue.png" alt="Style du raster pour une représentation en couleur continue" width="600">
+    			         <a href="illustrations/9_4_couleur_continue.jpg" >
+        			         <img src="illustrations/9_4_couleur_continue.jpg" alt="Style du raster pour une représentation en couleur continue" width="600">
         			     </a>
     			     </figure>
     			     <figure>
-    			         <a href="illustrations/tous/9_4_raster_resultat2.png" >
-        			         <img src="illustrations/tous/9_4_raster_resultat2.png" alt="Raster résultat en couleur continue" width="300">
+    			         <a href="illustrations/9_4_raster_resultat2.jpg" >
+        			         <img src="illustrations/9_4_raster_resultat2.jpg" alt="Raster résultat en couleur continue" width="300">
         			     </a>
     			     </figure>
     		     </div>

@@ -30,13 +30,13 @@
 					<p>Rendez-vous dans le menu
 						<a class="thumbnail_bottom" href="#thumb">Menu Préférences &#8594; Options
 							<span>
-								<img src="illustrations/tous/5_3_options_menu.png" alt="Menu Préférences, Options" height="150" >
+								<img src="illustrations/5_3_options_menu.jpg" alt="Menu Préférences, Options" height="150" >
 							</span>
 						</a>	 
 					:</p>
 					<figure>
-						<a href="illustrations/tous/5_3_options_fenetre.png" >
-							<img src="illustrations/tous/5_3_options_fenetre.png" alt="Fenêtre Options, rubrique numérisation" width="600">
+						<a href="illustrations/5_3_options_fenetre.jpg" >
+							<img src="illustrations/5_3_options_fenetre.jpg" alt="Fenêtre Options, rubrique numérisation" width="600">
 						</a>
 					</figure>
 					<p>Dans la rubrique <b>Numérisation</b>, cochez la case <b>Supprimer la fenêtre de saisie des attributs lors de la création de chaque entité</b>. Cliquez sur <b>OK</b> pour valider et fermer la fenêtre.</p>
@@ -58,8 +58,8 @@
 				
 				<div class="manip">
 					<figure>
-						<a href="illustrations/tous/5_3_formulaire_fenetre.png">
-							<img src="illustrations/tous/5_3_formulaire_fenetre.png" alt="propriétés de la couche, rubrique formulaire d'attributs" width="600">
+						<a href="illustrations/5_3_formulaire_fenetre.jpg">
+							<img src="illustrations/5_3_formulaire_fenetre.jpg" alt="propriétés de la couche, rubrique formulaire d'attributs" width="600">
 						</a>
 					</figure>
 					<p>Sélectionnez le champ <b>type</b> dans la partie gauche de la fenêtre.</p>
@@ -69,16 +69,16 @@
 					<p>Passez en mode édition si ce n'est pas déjà fait. Ouvrez la table attributaire.</p>
 					<p>Double-cliquez dans une case : une liste déroulante avec les deux valeurs poste et école apparaît.</p>
 					<figure>
-						<a href="illustrations/tous/5_3_liste.png">
-							<img src="illustrations/tous/5_3_liste.png" alt="la liste qui apparaît quand on clique sur une case" width="160">
+						<a href="illustrations/5_3_liste.jpg">
+							<img src="illustrations/5_3_liste.jpg" alt="la liste qui apparaît quand on clique sur une case" width="160">
 						</a>
 					</figure>
 				</div>
 				
 				<p>Notez que cette liste déroulante sera également utilisable dans la fenêtre de saisie des attributs, si la case <b>Supprimer les fenêtres d'avertissement lors de la création de chaque entité</b> des options de numérisation est décochée (cf. plus haut).</p>
 				<figure>
-				    <a href="illustrations/tous/5_3_liste_fenetre.png" >
-				        <img src="illustrations/tous/5_3_liste_fenetre.png" alt="la fenêtre de saisie des attributs, avec la liste déroulante" width="370">
+				    <a href="illustrations/5_3_liste_fenetre.jpg" >
+				        <img src="illustrations/5_3_liste_fenetre.jpg" alt="la fenêtre de saisie des attributs, avec la liste déroulante" width="370">
 				    </a>
 				</figure>
 				<p>Pour en savoir plus, les différents outils d'édition sont décrits dans le <a class="ext" target="_blank" href="https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector/vector_properties.html#configure-the-field-behavior" >manuel QGIS</a>.</p>

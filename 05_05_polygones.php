@@ -27,17 +27,17 @@
 			
 			<p>Il s'agira ici de numériser des zones en fonction de leur type. Comme l'indique la légende, certaines zones peuvent avoir 2 types différents, par exemple réserve forestière et réserve fédérale. La couche que nous allons créer contiendra 2 champs, type1 et type2</p>
 			<figure>
-			    <a href="illustrations/tous/5_5_oahu_legende.png" >
-					<img src="illustrations/tous/5_5_oahu_legende.png" alt="légende de la carte de l'île d'Oahu" width="450">
+			    <a href="illustrations/5_5_oahu_legende.jpg" >
+					<img src="illustrations/5_5_oahu_legende.jpg" alt="légende de la carte de l'île d'Oahu" width="450">
 				</a>
 			</figure>
 			<p>Vous voyez ici la carte originale à gauche, et avec superposée la couche de polygones à droite.</p>
 			<figure>
-				<a href="illustrations/tous/5_5_oahu_avant.png" >
-					<img src="illustrations/tous/5_5_oahu_avant.png" alt="détail de la carte de l'île d'Oahu" width="300">
+				<a href="illustrations/5_5_oahu_avant.jpg" >
+					<img src="illustrations/5_5_oahu_avant.jpg" alt="détail de la carte de l'île d'Oahu" width="300">
 				</a>
-				<a href="illustrations/tous/5_5_oahu_apres.png" >
-					<img src="illustrations/tous/5_5_oahu_apres.png" alt="détail de la carte de l'île d'Oahu avec la couche de polygones superposée" width="300">
+				<a href="illustrations/5_5_oahu_apres.jpg" >
+					<img src="illustrations/5_5_oahu_apres.jpg" alt="détail de la carte de l'île d'Oahu avec la couche de polygones superposée" width="300">
 				</a>
 			</figure>
 			<p>L'idée est de numériser le polygone de la réserve forestière, avec des contours bleus sur la carte, puis de le découper pour différencier les zones de cette réserve classées comme &#171; Public lands &#187; (en vert) ou comme &#171; Federal Reservations &#187; (en rose).</p>
@@ -59,29 +59,29 @@
 			
 				<p>Nous allons commencer par numériser la réserve forestière de l'île (hachurée en rouge dans l'image ci-dessous) :</p>
 				<figure>
-					<a href="illustrations/tous/5_5_reserve_foret.png" >
-						<img src="illustrations/tous/5_5_reserve_foret.png" alt="réserve forestière de l'île hachurée en rouge" width="420">
+					<a href="illustrations/5_5_reserve_foret.jpg" >
+						<img src="illustrations/5_5_reserve_foret.jpg" alt="réserve forestière de l'île hachurée en rouge" width="420">
 					</a>
 				</figure>
 				
 				<div class="manip">
 					<p>Passez en mode édition pour votre couche de polygones. Zoomez sur la réserve forestière.</p>
 					<figure>
-						<a href="illustrations/tous/5_5_zoom_reserve.png" >
-							<img src="illustrations/tous/5_5_zoom_reserve.png" alt="zoom sur la réserve" width="350">
+						<a href="illustrations/5_5_zoom_reserve.jpg" >
+							<img src="illustrations/5_5_zoom_reserve.jpg" alt="zoom sur la réserve" width="350">
 						</a>
 					</figure>
-					<p><img class="iconemid" src="illustrations/tous/5_5_ajout_icone.png" alt="icône ajouter une entité">Cliquez sur l'icône <b>Ajouter une entité polygonale</b> qui a pris la forme d'un polygone.</p>
+					<p><img class="iconemid" src="illustrations/5_5_ajout_icone.jpg" alt="icône ajouter une entité">Cliquez sur l'icône <b>Ajouter une entité polygonale</b> qui a pris la forme d'un polygone.</p>
 					<p>Cliquez sur un point du polygone, puis ajoutez d'autres sommets comme pour une ligne. La forme du polygone évolue au fur et à mesure.</p>
 					<figure>
-						<a href="illustrations/tous/5_5_debut_num.png" >
-							<img src="illustrations/tous/5_5_debut_num.png" alt="numérisation d'un polygone en cours" width="350">
+						<a href="illustrations/5_5_debut_num.jpg" >
+							<img src="illustrations/5_5_debut_num.jpg" alt="numérisation d'un polygone en cours" width="350">
 						</a>
 					</figure>
 					<p>Lorsque le polygone est complet, faites un clic droit n'importe où pour le terminer. Il est inutile de cliquer à nouveau sur le premier sommet !</p>
 					<figure>
-						<a href="illustrations/tous/5_5_premier_polygone.png" >
-							<img src="illustrations/tous/5_5_premier_polygone.png" alt="numérisation d'un polygone en cours" width="350">
+						<a href="illustrations/5_5_premier_polygone.jpg" >
+							<img src="illustrations/5_5_premier_polygone.jpg" alt="numérisation d'un polygone en cours" width="350">
 						</a>
 					</figure>
 					<p>Vous pouvez maintenant remplir les données attributaires pour ce polygone, par exemple en donnant la valeur <b>Forest Reserves</b> en type1, et la valeur <b>None</b> en type2.</p>
@@ -95,28 +95,28 @@
 					<p>Vérifiez que la barre d'outils <b>Numérisation avancée</b> soit activée : Numérisation avancée doit être cochée dans le
 						<a class="thumbnail_bottom" href="#thumb">Menu Vue &#8594; Barres d'outils
 							<span>
-								<img src="illustrations/tous/5_5_num_avancee_menu.png" alt="Menu Vue, Barres d'outils" height="600" >
+								<img src="illustrations/5_5_num_avancee_menu.jpg" alt="Menu Vue, Barres d'outils" height="600" >
 							</span>
 						</a>
 					.</p>
-					<p><img class="iconemid" src="illustrations/tous/5_5_decoupe_icone.png" alt="icône séparer les entités" >Dans la barre d'outils <b>Numérisation avancée</b>, cliquez sur l'icône <b>Séparer les entités</b>.</p>
+					<p><img class="iconemid" src="illustrations/5_5_decoupe_icone.jpg" alt="icône séparer les entités" >Dans la barre d'outils <b>Numérisation avancée</b>, cliquez sur l'icône <b>Séparer les entités</b>.</p>
 					<p class="note">Attention à ne pas confondre cet outil avec celui pour <b>Séparer les parties</b> juste à sa droite !</p>
 					<p>Cliquez à l'extérieur du polygone, puis de l'autre côté du polygone en suivant la ligne selon laquelle le découper. Terminez par un clic droit n'importe où. Il est possible de créer des points à l'intérieur du polygone mais il faut terminer par un point à l'extérieur du polygone.</p>
 					<figure>
-						<a href="illustrations/tous/5_5_decoupe.png" >
-							<img src="illustrations/tous/5_5_decoupe.png" alt="découpe d'un polygone" width="550">
+						<a href="illustrations/5_5_decoupe.jpg" >
+							<img src="illustrations/5_5_decoupe.jpg" alt="découpe d'un polygone" width="550">
 						</a>
 					</figure>
 					<p>Procédez de la même manière pour découper la bande de terrain public de Waimano, et la petite langue de terre de Aiea.</p>
 					<figure>
-						<a href="illustrations/tous/5_5_public_lands.png" >
-							<img src="illustrations/tous/5_5_public_lands.png" alt="Sélection de la bande de terrain public de Waimano en réserve forestière" width="330">
+						<a href="illustrations/5_5_public_lands.jpg" >
+							<img src="illustrations/5_5_public_lands.jpg" alt="Sélection de la bande de terrain public de Waimano en réserve forestière" width="330">
 						</a>
 					</figure>
 					<p>Vous pouvez ensuite mettre à jour les données attributaires :</p>
 					<figure>
-						<a href="illustrations/tous/5_5_attributs_remplis.png" >
-							<img src="illustrations/tous/5_5_attributs_remplis.png" alt="Table attributaire de la couche de polygones" width="270">
+						<a href="illustrations/5_5_attributs_remplis.jpg" >
+							<img src="illustrations/5_5_attributs_remplis.jpg" alt="Table attributaire de la couche de polygones" width="270">
 						</a>
 					</figure>
 				</div>
@@ -124,13 +124,13 @@
 			<h3>Frontière commune entre 2 polygones&nbsp;: comment est-elle gérée ?<a class="headerlink" id="V54" href="#V54"></a></h3>
 			
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/5_4_noeud_icone.png" alt="icône de l'outil de noeud" >A l'aide de <a href="05_04_lignes.php#V43">l'outil de nœud</a>, déplacez un sommet de la petite langue de terre d'Aiea.</p>
+					<p><img class="icone" src="illustrations/5_4_noeud_icone.jpg" alt="icône de l'outil de noeud" >A l'aide de <a href="05_04_lignes.php#V43">l'outil de nœud</a>, déplacez un sommet de la petite langue de terre d'Aiea.</p>
 					<figure>
-						<a href="illustrations/tous/5_5_deplacement_noeud.png" >
-							<img src="illustrations/tous/5_5_deplacement_noeud.png" alt="déplacement d'un noeud de polygone" width="400">
+						<a href="illustrations/5_5_deplacement_noeud.jpg" >
+							<img src="illustrations/5_5_deplacement_noeud.jpg" alt="déplacement d'un noeud de polygone" width="400">
 						</a>
 					</figure>
-					<p><img class="icone" src="illustrations/tous/1_1_selection_icone.png" alt="icône de sélection" >A l'aide de l'outil de sélection, sélectionnez successivement le polygone d'Aiea, et celui qui l'entoure.</p>
+					<p><img class="icone" src="illustrations/1_1_selection_icone.jpg" alt="icône de sélection" >A l'aide de l'outil de sélection, sélectionnez successivement le polygone d'Aiea, et celui qui l'entoure.</p>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
 						<p><label for="faq-1">Que constatez-vous ?</label></p>
@@ -138,8 +138,8 @@
 					</div>
 						<p>Rendez-vous maintenant dans le <b>menu Projet &#8594; Options d'accrochage</b> et <b>activez l'édition topologique</b> en enclenchant le bouton correspondant si ça n'est pas déjà fait.</p>
 						<figure>
-						  <a href="illustrations/tous/5_5_edition_topologique.png" >
-						      <img src="illustrations/tous/5_5_edition_topologique.png" alt="case d'activation de l'édition topologique cochée" width="600">
+						  <a href="illustrations/5_5_edition_topologique.jpg" >
+						      <img src="illustrations/5_5_edition_topologique.jpg" alt="case d'activation de l'édition topologique cochée" width="600">
 						  </a>
 						</figure>
 						<p>Déplacez à nouveau un sommet d'un des polygones et sélectionnez successivement les deux polygones.</p>
@@ -160,26 +160,26 @@
 				<div class="manip">
 					<p>Rendez-vous dans le Menu <b>Projet &#8594; Options d'accrochage</b> (cliquez sur l'image pour voir la fenêtre en plus grand) :</p>
 					<figure>
-						<a href="illustrations/tous/5_5_accrochage_fenetre.png" >
-							<img src="illustrations/tous/5_5_accrochage_fenetre.png" alt="activation de l'accrochage pour la couche de polygones avec une tolérance de 10 pixels" width="600">
+						<a href="illustrations/5_5_accrochage_fenetre.jpg" >
+							<img src="illustrations/5_5_accrochage_fenetre.jpg" alt="activation de l'accrochage pour la couche de polygones avec une tolérance de 10 pixels" width="600">
 						</a>
 					</figure>
 
-				  <p><img class="iconemid" src="illustrations/tous/5_5_accrochage_icone.png" alt="icône de l'outil d'activation de l'accrochage" >Cliquez sur le bouton <b>Activer l'accrochage</b> tout en haut à gauche de la fenêtre.</p>
+				  <p><img class="iconemid" src="illustrations/5_5_accrochage_icone.jpg" alt="icône de l'outil d'activation de l'accrochage" >Cliquez sur le bouton <b>Activer l'accrochage</b> tout en haut à gauche de la fenêtre.</p>
 				  <p>Choisissez le mode <b>Configuration avancée</b> dans la liste déroulante à droite. La liste des couches présentes dans votre projet QGIS s'affiche.</p>
 				  <p>Vous pouvez ici définir à quelle(s) couche(s) le curseur sera aimanté, s'il sera aimanté uniquement par les sommets ou également par les segments, et à quelle distance d'un sommet ou segment l'aimantage prend effet.</p>
 					<p>Par exemple, pour être automatiquement aimanté à votre couche de polygone dès que votre curseur approche à moins de 10 pixels d'un sommet de cette couche, cochez la case de <b>zones_oahu</b>, choisissez le mode <b>sommet</b> et fixez la tolérance à <b>10 pixels</b>.</p>
 					<p>Fermez la fenêtre des paramètres d'accrochage (ou déplacez-là là où elle ne vous gênera pas).</p>
 					<p>Cliquez sur l'icône <b>Ajouter une entité</b>, et approchez-vous d'un sommet d'un polygone déjà créé : votre curseur est aimanté par ce sommet, qui apparaît alors en rose.</p>
 					<figure>
-						<a href="illustrations/tous/5_5_curseur_aimante.png" >
-							<img src="illustrations/tous/5_5_curseur_aimante.png" alt="Curseur aimanté prenant la forme d'un carré rose" width="250">
+						<a href="illustrations/5_5_curseur_aimante.jpg" >
+							<img src="illustrations/5_5_curseur_aimante.jpg" alt="Curseur aimanté prenant la forme d'un carré rose" width="250">
 						</a>
 					</figure>
 					<p>Profitez-en pour numériser la partie Est de la bande d'Aiea, de manière à ce que les deux parties soient parfaitement jointives.</p>
 					<figure>
-						<a href="illustrations/tous/5_5_aiea.png" >
-							<img src="illustrations/tous/5_5_aiea.png" alt="bande d'Aiea numérisée" width="400">
+						<a href="illustrations/5_5_aiea.jpg" >
+							<img src="illustrations/5_5_aiea.jpg" alt="bande d'Aiea numérisée" width="400">
 						</a>
 					</figure>
 				</div>
@@ -191,25 +191,25 @@
 				<div class="manip">
 					<p>Pour éviter cela, rendez-vous à nouveau dans le menu Projet &#8594; Options d'accrochage et cochez la case <b>Éviter le chevauchement</b> pour la couche zones_oahu.</p>
 					<figure>
-					   <a href="illustrations/tous/5_5_eviter_intersections.png" >
-					       <img src="illustrations/tous/5_5_eviter_intersections.png" alt="cocher la case éviter les intersections" width="600">
+					   <a href="illustrations/5_5_eviter_intersections.jpg" >
+					       <img src="illustrations/5_5_eviter_intersections.jpg" alt="cocher la case éviter les intersections" width="600">
 					   </a>
 					</figure>
 					<p>Dans la barre d'outils Accrochage, il faut maintenant sélectionner <b>Suivre la configuration avancée</b> dans la liste déroulante :</p>
 					<figure>
-					   <a href="illustrations/tous/5_5_suivre_config_avancee.png" >
-					       <img src="illustrations/tous/5_5_suivre_config_avancee.png" alt="sélection de l'option 'suivre la configuration avancée' dans la barre d'outils accrochage" width="480">
+					   <a href="illustrations/5_5_suivre_config_avancee.jpg" >
+					       <img src="illustrations/5_5_suivre_config_avancee.jpg" alt="sélection de l'option 'suivre la configuration avancée' dans la barre d'outils accrochage" width="480">
 					   </a>
 					</figure>
 					<p class="note">Vous pouvez aussi simplement choisir <b>Eviter le chevauchement sur la couche active</b>, sans modifier la configuration avancée.</p>
 					<p>Cliquez sur l'icône <b>Ajouter une entité</b>, et dessinez par exemple le polygone en pointillés bleu correspondant à la surface des terres forestières qui ne sont pas en réserve. Ce polygone est contigu sur une longue portion à des polygones que vous avez déjà créés : ne suivez pas les bords pour cette partie mais contentez-vous de passer au milieu des polygones déjà existants.</p>
 					<p>Faites un clic droit pour terminer le polygone : les parties du polygone que vous venez de dessiner qui étaient superposées à des polygones déjà existants ont été automatiquement supprimées.</p>
 					<figure>
-					   <a href="illustrations/tous/5_5_eviter_intersections_avant.png" >
-					       <img src="illustrations/tous/5_5_eviter_intersections_avant.png" alt="polygone en cours d'édition, avec des débordements sur le polygone voisin" width="300">
+					   <a href="illustrations/5_5_eviter_intersections_avant.jpg" >
+					       <img src="illustrations/5_5_eviter_intersections_avant.jpg" alt="polygone en cours d'édition, avec des débordements sur le polygone voisin" width="300">
 					   </a>
-					   <a href="illustrations/tous/5_5_eviter_intersections_apres.png" >
-					       <img src="illustrations/tous/5_5_eviter_intersections_apres.png" alt="polygone fini sans débordements" width="300">
+					   <a href="illustrations/5_5_eviter_intersections_apres.jpg" >
+					       <img src="illustrations/5_5_eviter_intersections_apres.jpg" alt="polygone fini sans débordements" width="300">
 					   </a>
 					   <figcaption>&#192; gauche, polygone en cours d'édition juste avant le clic droit final, à droite après ce clic droit.</figcaption>
 					</figure>

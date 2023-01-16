@@ -30,8 +30,8 @@
 				<div class="manip">
 					<p>Réduire la fenêtre de QGIS. Ouvrir dans l'explorateur de fichiers de votre ordinateur le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b></p>
 					<figure>
-						<a href="illustrations/tous/1_3_fichiers.png" >
-							<img src="illustrations/tous/1_3_fichiers.png" alt="fichiers format SIG" width="250">
+						<a href="illustrations/1_3_fichiers.jpg" >
+							<img src="illustrations/1_3_fichiers.jpg" alt="fichiers format SIG" width="250">
 						</a>
 					</figure>
 				</div>
@@ -43,8 +43,8 @@
 					<h4>Format Shapefile ou SHP : un "standard"<a class="headerlink" id="I31a" href="#I31a"></a></h4>
 					
 					    <figure>
-						  <a href="illustrations/tous/1_3_fichiers_shp.png" >
-							 <img src="illustrations/tous/1_3_fichiers_shp.png" alt="fichiers format shapefile" width="250">
+						  <a href="illustrations/1_3_fichiers_shp.jpg" >
+							 <img src="illustrations/1_3_fichiers_shp.jpg" alt="fichiers format shapefile" width="250">
 						  </a>
 					    </figure>
 					    <p>La couche <em class="data">DEPARTEMENT_BRETAGNE</em> est au format <b>shapefile</b> ou <b>SHP</b>.</p>
@@ -68,13 +68,13 @@
 					<h4>Format GPKG (GeoPackage)<a class="headerlink" id="I31b" href="#I31b"></a></h4>
 					
 					   <figure>
-						  <a href="illustrations/tous/1_3_fichiers_gpkg.png" >
-							 <img src="illustrations/tous/1_3_fichiers_gpkg.png" alt="fichiers format geopackage" width="250">
+						  <a href="illustrations/1_3_fichiers_gpkg.jpg" >
+							 <img src="illustrations/1_3_fichiers_gpkg.jpg" alt="fichiers format geopackage" width="250">
 						  </a>
 					    </figure>
 					    <figure>
-						  <a href="illustrations/tous/1_3_fichiers_gpkg_2.png" >
-							 <img src="illustrations/tous/1_3_fichiers_gpkg_2.png" alt="fichiers format geopackage (suite)" width="250">
+						  <a href="illustrations/1_3_fichiers_gpkg_2.jpg" >
+							 <img src="illustrations/1_3_fichiers_gpkg_2.jpg" alt="fichiers format geopackage (suite)" width="250">
 						  </a>
 					    </figure>
 					    <p>Les 4 couches <em class="data">LA_DEPARTEMENT</em>, <em class="data">LA_LOCALITE_P</em>, <em class="data">LA_REGION_S</em> et <em class="data">TR_SEGMENT_ROUTIER_L</em> sont au format GeoPackage ou GPKG.</p>
@@ -88,8 +88,8 @@
 					<h4>Format TAB (MapInfo)<a class="headerlink" id="I31c" href="#I31c"></a></h4>
 					
  					    <figure>
-						  <a href="illustrations/tous/1_3_fichiers_tab.png" >
-							 <img src="illustrations/tous/1_3_fichiers_tab.png" alt="fichiers format TAB" width="180">
+						  <a href="illustrations/1_3_fichiers_tab.jpg" >
+							 <img src="illustrations/1_3_fichiers_tab.jpg" alt="fichiers format TAB" width="180">
 						  </a>
 					    </figure>
 					    <p>La couche <em class="data">DEPARTEMENT</em> est au format TAB.</p>
@@ -110,8 +110,8 @@
 				<h3>Un exemple de format raster : le GeoTIFF<a class="headerlink" id="I32" href="#I32"></a></h3>
 				
 			        <figure>
-					  <a href="illustrations/tous/1_3_fichiers_tif.png" >
-						 <img src="illustrations/tous/1_3_fichiers_tif.png" alt="fichiers format TIF" width="250">
+					  <a href="illustrations/1_3_fichiers_tif.jpg" >
+						 <img src="illustrations/1_3_fichiers_tif.jpg" alt="fichiers format TIF" width="250">
 					  </a>
 				    </figure>
 				    <p>La couche <em class="data">srtm_bretagne</em> est au format TIF.</p>

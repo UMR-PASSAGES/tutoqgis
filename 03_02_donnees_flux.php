@@ -36,21 +36,21 @@
 				
 				<div class="manip">
 					<p>Lancez QGIS si ce n'est pas déjà fait, ou bien créez un nouveau projet.</p>
-					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône gestionnaire de source de données" > Ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">DEPARTEMENT_CREUSE.gpkg</a></em> que vous trouverez dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
+					<p><img class="icone" src="illustrations/1_2_gestionnaire_donnees_icone.jpg" alt="icône gestionnaire de source de données" > Ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">DEPARTEMENT_CREUSE.gpkg</a></em> que vous trouverez dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
 					<p>Donnez au projet le même SCR que la couche  <em class="data">DEPARTEMENT_CREUSE.shp</em>.</p>
 				</div>
 				<p>Nous allons maintenant ajouter au projet la carte géologique de la France au 1/1 000 000è via un flux WMS.</p>
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône gestionnaire de source de données" >Cliquez sur l'icône du gestionnaire des sources de données, allez dans la rubrique <b>WMS/WMTS</b> :</p>
+					<p><img class="icone" src="illustrations/1_2_gestionnaire_donnees_icone.jpg" alt="icône gestionnaire de source de données" >Cliquez sur l'icône du gestionnaire des sources de données, allez dans la rubrique <b>WMS/WMTS</b> :</p>
 					<figure>
-						<a href="illustrations/tous/3_2_ajout_wms_fenetre.png" >
-							<img src="illustrations/tous/3_2_ajout_wms_fenetre.png" alt="Fenêtre ajout couche WMS" width="580">
+						<a href="illustrations/3_2_ajout_wms_fenetre.jpg" >
+							<img src="illustrations/3_2_ajout_wms_fenetre.jpg" alt="Fenêtre ajout couche WMS" width="580">
 						</a>
 					</figure>
 					<p>Cliquez sur le bouton <b>Nouveau</b> pour créer une nouvelle connexion. La fenêtre suivante apparaît :</p>
 					<figure>
-						<a href="illustrations/tous/3_2_wms_nouveau.png" >
-							<img src="illustrations/tous/3_2_wms_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WMS" width="400">
+						<a href="illustrations/3_2_wms_nouveau.jpg" >
+							<img src="illustrations/3_2_wms_nouveau.jpg" alt="Fenêtre de création d'une nouvelle connexion WMS" width="400">
 						</a>
 					</figure>
 					<ul>
@@ -63,8 +63,8 @@
 						<li class="espace">Après avoir vérifié que votre connexion est bien sélectionnée dans la liste déroulante en haut de la fenêtre, cliquez sur <b>Connexion</b></li>
 					</ul>
 					<figure>
-						<a href="illustrations/tous/3_2_wms_connexion.png">
-							<img src="illustrations/tous/3_2_wms_connexion.png" alt="Fenêtre ajout d'une couche WMS, connexion au serveur du BRGM et choix de la couche à ajouter" width="500" >
+						<a href="illustrations/3_2_wms_connexion.jpg">
+							<img src="illustrations/3_2_wms_connexion.jpg" alt="Fenêtre ajout d'une couche WMS, connexion au serveur du BRGM et choix de la couche à ajouter" width="500" >
 						</a>
 					</figure>
 					<ul>
@@ -75,8 +75,8 @@
 					</ul>
 					<p>Vous devriez obtenir quelque chose de similaire à ceci :</p>
 					<figure>
-						<a href="illustrations/tous/3_2_superposition_creuse_geol.png" >
-							<img src="illustrations/tous/3_2_superposition_creuse_geol.png" alt="superposition du département de la Creuse et de la carte géologique" width="300" >
+						<a href="illustrations/3_2_superposition_creuse_geol.jpg" >
+							<img src="illustrations/3_2_superposition_creuse_geol.jpg" alt="superposition du département de la Creuse et de la carte géologique" width="300" >
 						</a>
 					</figure>
 					<p>Il peut être nécessaire de changer l'ordre des couches en les faisant glisser dans la table des matières, et de <a href="01_02_info_geo.php#I23a">modifier le style</a> de la couche du département de la Creuse (ici, pas de remplissage et une bordure blanche).</p>
@@ -93,14 +93,14 @@
 				<div class="manip">
 				    <p>Cliquez sur l'icône du gestionnaire des sources de données, rubrique <b>WFS / OGC API - Features</b>&nbsp;:</p>
 				    <figure>
-						<a href="illustrations/tous/3_2_ajout_wfs_fenetre.png" >
-							<img src="illustrations/tous/3_2_ajout_wfs_fenetre.png" alt="Fenêtre du gestionnaire de sources de données, rubrique WFS" width="600" >
+						<a href="illustrations/3_2_ajout_wfs_fenetre.jpg" >
+							<img src="illustrations/3_2_ajout_wfs_fenetre.jpg" alt="Fenêtre du gestionnaire de sources de données, rubrique WFS" width="600" >
 						</a>
 					</figure>
 					<p>Cliquez sur le bouton <b>Nouveau</b> pour créer une nouvelle connexion. La fenêtre suivante apparaît&nbsp;:</p>
 					<figure>
-						<a href="illustrations/tous/3_2_wfs_nouveau.png" >
-							<img src="illustrations/tous/3_2_wfs_nouveau.png" alt="Fenêtre de création d'une nouvelle connexion WFS (gestionnaire de sources de données)" width="400" >
+						<a href="illustrations/3_2_wfs_nouveau.jpg" >
+							<img src="illustrations/3_2_wfs_nouveau.jpg" alt="Fenêtre de création d'une nouvelle connexion WFS (gestionnaire de sources de données)" width="400" >
 						</a>
 					</figure>
 					<ul>
@@ -112,8 +112,8 @@
 					<p>Laissez les autres paramètres tels quels et cliquez sur OK. Vous voilà à nouveau dans la fenêtre d'ajout d'une couche WFS&nbsp;:</p>
 					
 					<figure>
-						<a href="illustrations/tous/3_2_wfs_connexion.png" >
-							<img src="illustrations/tous/3_2_wfs_connexion.png" alt="Fenêtre du gestionnaire de source de données : connexion au Sandre et choix de la couche de cours d'eau" width="600" >
+						<a href="illustrations/3_2_wfs_connexion.jpg" >
+							<img src="illustrations/3_2_wfs_connexion.jpg" alt="Fenêtre du gestionnaire de source de données : connexion au Sandre et choix de la couche de cours d'eau" width="600" >
 						</a>
 					</figure>
 					<ul>
@@ -124,8 +124,8 @@
 					</ul>
 					<p>Vous devriez obtenir quelque chose de similaire à ceci :</p>
 					<figure>
-						<a href="illustrations/tous/3_2_superposition_creuse_courdo.png" >
-							<img src="illustrations/tous/3_2_superposition_creuse_courdo.png" alt="superposition du département de la Creuse, de la carte géol et des plans d'eau" width="350" >
+						<a href="illustrations/3_2_superposition_creuse_courdo.jpg" >
+							<img src="illustrations/3_2_superposition_creuse_courdo.jpg" alt="superposition du département de la Creuse, de la carte géol et des plans d'eau" width="350" >
 						</a>
 					</figure>
 					<p>Il peut être nécessaire de changer l'ordre des couches en les faisant glisser dans la table des matières, et de <a href="01_02_info_geo.php#I23a">modifier le style</a> de la couche du département de la Creuse. Vu qu'il s'agit ici d'un flux WFS et non WMS, il est également possible de modifier le style des cours d'eau. La carte géologique étant une couche WMS, on ne peut modifier son style mais il est possible de lui donner une <b>transparence</b> afin de l'atténuer.</p>
@@ -143,14 +143,14 @@
 			     <p>Si vous ne le voyez pas, activez-le dans le Menu Vue &#8594; Panneaux &#8594; Panneau Explorateur.</p>
 			     <p>Dépliez la rubrique <b>WMS/WMTS</b> en cliquant sur le petit triangle, puis <b>BRGM &#8594; Géoservices... &#8594; Mines</b> et double-cliquer sur <b>Mines Substances principales - Points</b> pour l'ajouter à QGIS.</p>
 			     <figure>
-					<a href="illustrations/tous/3_2_explorateur_mines.png" >
-						<img src="illustrations/tous/3_2_explorateur_mines.png" alt="Ajout de la couche WMS de mines du BRGM via l'explorateur" width="350" >
+					<a href="illustrations/3_2_explorateur_mines.jpg" >
+						<img src="illustrations/3_2_explorateur_mines.jpg" alt="Ajout de la couche WMS de mines du BRGM via l'explorateur" width="350" >
 					</a>
 				</figure>
 				<p>La légende de la couche est lisible dans la liste des couches&nbsp;:</p>
 				<figure>
-					<a href="illustrations/tous/3_2_superposition_creuse_courdo_mines.png" >
-						<img src="illustrations/tous/3_2_superposition_creuse_courdo_mines.png" alt="superposition du département de la Creuse, de la carte géol, des plans d'eaux et des mines avec la légende" width="600" >
+					<a href="illustrations/3_2_superposition_creuse_courdo_mines.jpg" >
+						<img src="illustrations/3_2_superposition_creuse_courdo_mines.jpg" alt="superposition du département de la Creuse, de la carte géol, des plans d'eaux et des mines avec la légende" width="600" >
 					</a>
 				</figure>
 			 </div>

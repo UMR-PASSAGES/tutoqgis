@@ -60,8 +60,8 @@
 						<p>Sinon, créez une nouvelle mise en page&nbsp;: <b>menu Projet &#8594; Nouvelle mise en page...</b> Tapez un titre, par exemple densité communes.</p>
 						<p>La fenêtre de mise en page s'ouvre (ici pour la mise en page déjà existante) :</p>
 						<figure>
-							<a href="illustrations/tous/10_02_misenpage_general.png" >
-								<img src="illustrations/tous/10_02_misenpage_general.png" alt="Fenêtre de mise en page, avec des numéros pour les différentes parties (menus et outils, carte...)" width="600">
+							<a href="illustrations/10_02_misenpage_general.jpg" >
+								<img src="illustrations/10_02_misenpage_general.jpg" alt="Fenêtre de mise en page, avec des numéros pour les différentes parties (menus et outils, carte...)" width="600">
 							</a>
 						</figure>
 					</div>
@@ -84,8 +84,8 @@
 					<div class="manip">
 						<p>Faites un <b>clic droit sur la page &#8594; Propriétés de la page</b>.</p>
 						<figure>
-							<a href="illustrations/tous/10_02_taille_page.png" >
-								<img src="illustrations/tous/10_02_taille_page.png" alt="Fixer la taille de la page dans la mise en page" width="400">
+							<a href="illustrations/10_02_taille_page.jpg" >
+								<img src="illustrations/10_02_taille_page.jpg" alt="Fixer la taille de la page dans la mise en page" width="400">
 							</a>
 						</figure>
 						<ul>
@@ -93,18 +93,18 @@
 						 <li class="espace">Largeur et hauteur : <b>200 mm</b></li>
 						</ul>
 						
-						<p><img class="icone" src="illustrations/tous/10_02_zoom_page_icone.png" alt="icône zoom sur l'emprise totale de la page" >Pour zoomer sur votre page : cliquez sur l'icône <b>Zoom complet</b> (ou <b>menu Vue &#8594; Zoom sur l'emprise totale</b>).</p>
+						<p><img class="icone" src="illustrations/10_02_zoom_page_icone.jpg" alt="icône zoom sur l'emprise totale de la page" >Pour zoomer sur votre page : cliquez sur l'icône <b>Zoom complet</b> (ou <b>menu Vue &#8594; Zoom sur l'emprise totale</b>).</p>
 					</div>
 						
 				<h3>Ajouter une carte<a class="headerlink" id="X24" href="#X24"></a></h3>
 						
 					<div class="manip">
-						<p><img class="icone" src="illustrations/tous/10_02_nouvelle_carte_icone.png" alt="icône ajouter une nouvelle carte" >Cliquez ensuite sur l'icône <b>Ajouter Carte</b> (ou <b>menu Ajouter un objet &#8594; Ajouter Carte</b>).</p>
+						<p><img class="icone" src="illustrations/10_02_nouvelle_carte_icone.jpg" alt="icône ajouter une nouvelle carte" >Cliquez ensuite sur l'icône <b>Ajouter Carte</b> (ou <b>menu Ajouter un objet &#8594; Ajouter Carte</b>).</p>
 						<p>Dessinez un rectangle n'importe où sur la page, de la taille que vous voulez. Puis rendez-vous dans l'onglet <b>Propriétés de l'objet</b>, rubrique <b>Position et taille</b> (vers le bas de l'onglet).</p>
 						<p>Fixez <b>X et Y à 0</b> et la <b>largeur et hauteur à 200 mm</b> pour que la carte coïncide avec la page.</p>
 						<figure>
-							<a href="illustrations/tous/10_02_position_carte.png" >
-								<img src="illustrations/tous/10_02_position_carte.png" alt="Fixer l'emplacement et la taille de la carte sur la page" width="400">
+							<a href="illustrations/10_02_position_carte.jpg" >
+								<img src="illustrations/10_02_position_carte.jpg" alt="Fixer l'emplacement et la taille de la carte sur la page" width="400">
 							</a>
 						</figure>
 					
@@ -114,17 +114,17 @@
 						
 					<div class="manip">
 					
-						<p><img class="icone" src="illustrations/tous/10_02_deplacer_contenu_icone.png" alt="icône déplacer le contenu de l'objet" >Pour <b>centrer la carte</b> : cliquez sur l'icône <b>Déplacer le contenu de l'objet</b> et faites glisser le contenu de la carte.</p>
+						<p><img class="icone" src="illustrations/10_02_deplacer_contenu_icone.jpg" alt="icône déplacer le contenu de l'objet" >Pour <b>centrer la carte</b> : cliquez sur l'icône <b>Déplacer le contenu de l'objet</b> et faites glisser le contenu de la carte.</p>
 						<p>Pour <b>zoomer et dézoomer</b>, 3 méthodes :</p>
 						<ul>
 						    <li class="espace">pour un zoom &#171;&nbsp;à la louche&nbsp;&#187;, utilisez la <b>molette</b> de la souris après avoir sélectionné l'outil <b>Déplacer le contenu de l'objet</b></li>
-						    <li class="espace"><img class="icone" src="illustrations/tous/10_02_selection_deplace_icone.png" alt="Icône de l'outil de sélection du mode mise en page" >pour un zoom plus précis : sélectionnez la carte au moyen de l'<b>outil de sélection</b>, puis <b>modifiez l'échelle</b> dans l'onglet Propriétés de l'objet &#8594; Propriétés principales
-    							<a href="illustrations/tous/10_02_zoom.png" >
-    								<img src="illustrations/tous/10_02_zoom.png" alt="Fixer l'échelle de la carte" width="450">
+						    <li class="espace"><img class="icone" src="illustrations/10_02_selection_deplace_icone.jpg" alt="Icône de l'outil de sélection du mode mise en page" >pour un zoom plus précis : sélectionnez la carte au moyen de l'<b>outil de sélection</b>, puis <b>modifiez l'échelle</b> dans l'onglet Propriétés de l'objet &#8594; Propriétés principales
+    							<a href="illustrations/10_02_zoom.jpg" >
+    								<img src="illustrations/10_02_zoom.jpg" alt="Fixer l'échelle de la carte" width="450">
     							</a></li>
         					<li class="espace">Synchroniser la carte de la mise en page avec celle de la fenêtre principale de QGIS : cliquez sur la 2ème icône dans la barre d'outils en haut des propriétés de l'objet&nbsp;:
-    							<a href="illustrations/tous/10_02_zoom2.png" >
-    								<img src="illustrations/tous/10_02_zoom2.png" alt="Fixer l'échelle de la carte sur celle de la fenêtre QGIS" width="270">
+    							<a href="illustrations/10_02_zoom2.jpg" >
+    								<img src="illustrations/10_02_zoom2.jpg" alt="Fixer l'échelle de la carte sur celle de la fenêtre QGIS" width="270">
     							</a></li>
     					</ul>
         			<p>Il est probable que les 2 cartes ne coïncident pas exactement car elles n'ont pas le même rapport hauteur/largeur. Vous pouvez aussi cliquer sur la 4ème icône pour donner à la carte de votre mise en page la même échelle que dans la fenêtre principale QGIS.</p>
@@ -138,7 +138,7 @@
 					<h4>Création de la légende<a class="headerlink" id="X25a" href="#X25a"></a></h4>
     					<div class="manip">
     					
-    						<p><img class="icone" src="illustrations/tous/10_02_legende_icone.png" alt="icône ajouter légende" >Pour ajouter une <b>légende</b> : icône <b>Ajouter Légende</b>, puis cliquez n’importe où sur la carte.</p>
+    						<p><img class="icone" src="illustrations/10_02_legende_icone.jpg" alt="icône ajouter légende" >Pour ajouter une <b>légende</b> : icône <b>Ajouter Légende</b>, puis cliquez n’importe où sur la carte.</p>
     						<p>La fenêtre <b>Propriétés de l'élément</b> s'ouvre : cliquez sur OK sans modifiez les paramètres, ce que vous pourrez toujours faire par la suite.</p>
     						<p>La légende reprend celle de la couche dans QGIS&nbsp;: si vous modifiez les étiquettes de la légende dans la propriété de la couche, la légende de la mise en page prendra en compte ces modifications.</p>
     						<p>Dans la fenêtre principale de QGIS, ouvrez les propriétés de la couche, rubrique Style. Vous pouvez&nbsp;:</p>
@@ -147,11 +147,11 @@
     							<li class="espace"><b>Modifier l'étiquette des classes</b> en double-cliquant sur une ligne dans la colonne étiquette</li>
     						</ul>
     						<figure>
-    							<a href="illustrations/tous/10_02_style_etiquettes.png" >
-    								<img src="illustrations/tous/10_02_style_etiquettes.png" alt="Modifier les bornes des classes et leurs étiquettes dans les propriétés de la couche" width="600">
+    							<a href="illustrations/10_02_style_etiquettes.jpg" >
+    								<img src="illustrations/10_02_style_etiquettes.jpg" alt="Modifier les bornes des classes et leurs étiquettes dans les propriétés de la couche" width="600">
     							</a>
     						</figure>
-    						<p><img class="icone" src="illustrations/tous/10_02_selection_deplace_icone.png" alt="icône sélectionner/déplacer un objet" >Revenez ensuite dans la mise en page, les changements que vous avez effectués sont visibles dans la légende puisque la case <b>Mise à jour auto</b> est cochée par défaut.</p>
+    						<p><img class="icone" src="illustrations/10_02_selection_deplace_icone.jpg" alt="icône sélectionner/déplacer un objet" >Revenez ensuite dans la mise en page, les changements que vous avez effectués sont visibles dans la légende puisque la case <b>Mise à jour auto</b> est cochée par défaut.</p>
     					</div>
 					
 					<h4>Modifier les éléments<a class="headerlink" id="X25b" href="#X25b"></a></h4>
@@ -164,19 +164,19 @@
     					   <p>Cliquez sur votre légende avec l'outil <b>Sélectionner / Déplacer un objet</b>.</p>
     					   <p>Décochez la case <b>Mise à jour auto</b>. Les outils sous la légende sont maintenant activés&nbsp;:</p>
     						<figure>
-    							<a href="illustrations/tous/10_02_objets_legende.png" >
-    								<img src="illustrations/tous/10_02_objets_legende.png" alt="Rubrique objets de légende dans les propriétés de la légende" width="500">
+    							<a href="illustrations/10_02_objets_legende.jpg" >
+    								<img src="illustrations/10_02_objets_legende.jpg" alt="Rubrique objets de légende dans les propriétés de la légende" width="500">
     							</a>
     						</figure>
     						<p>Vous pouvez maintenant, au moyen de ces outils&nbsp;:</p>
-    					    <p><img class="icone" src="illustrations/tous/10_02_legende_ordre_icone.png" alt="2 icônes pour monter ou descendre les éléménts de la légende" ><b>Modifier l'ordre</b> des éléments dans la légende : utile pour mettre les éléments plus importants en premier</p>
-    					    <p><img class="icone" src="illustrations/tous/10_02_legende_groupe_icone.png" alt="icône pour créer des groupes dans la légende" ><b>Créer des groupes</b>, pour hiérarchiser l'information</p>
-    					    <p><img class="icone" src="illustrations/tous/10_02_legende_plus_icone.png" alt="icône pour ajouter des éléments dans la légende" ><b>Ajouter des couches</b> présentes dans QGIS et non visibles dans la légende</p>
-    					    <p><img class="icone" src="illustrations/tous/10_02_legende_moins_icone.png" alt="icône pour supprimer des éléments de la légende" ><b>Supprimer des couches</b> de la légende, par exemple ici la couche <em class="data">ne_10m_land</em>, qui n'apporte rien à la compréhension de la carte en étant présente dans la légende</p>
-    					    <p><img class="icone" src="illustrations/tous/10_02_legende_texte_icone.png" alt="icône pour modifier le texte des éléments de la légende" ><b>Modifier le texte</b> des éléments, si vous ne l'avez pas déjà fait dans QGIS, par exemple densité de population à la place de COMMUNE</p>
-    					    <p><img class="icone" src="illustrations/tous/10_02_legende_compter_icone.png" alt="icône pour compter le nombre d'entités dans la légende" ><b>Afficher le nombre d'entités</b> dans une couche et éventuellement dans chaque classe, après avoir sélectionné une couche</p>
-    					    <p><img class="icone" src="illustrations/tous/10_02_legende_filtrecarte_icone.png" alt="icône pour filtrer les éléments de la légende en fonction de la carte" ><b>Filtrer la légende en fonction de ce qui est visible sur la carte</b></p>
-    					    <p><img class="icone" src="illustrations/tous/10_02_legende_filtrexpression_icone.png" alt="icône pour filtrer les éléments de la légende en fonction d'une expression" ><b>Filtrer la légende en fonction d'une expression</b></p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_ordre_icone.jpg" alt="2 icônes pour monter ou descendre les éléménts de la légende" ><b>Modifier l'ordre</b> des éléments dans la légende : utile pour mettre les éléments plus importants en premier</p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_groupe_icone.jpg" alt="icône pour créer des groupes dans la légende" ><b>Créer des groupes</b>, pour hiérarchiser l'information</p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_plus_icone.jpg" alt="icône pour ajouter des éléments dans la légende" ><b>Ajouter des couches</b> présentes dans QGIS et non visibles dans la légende</p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_moins_icone.jpg" alt="icône pour supprimer des éléments de la légende" ><b>Supprimer des couches</b> de la légende, par exemple ici la couche <em class="data">ne_10m_land</em>, qui n'apporte rien à la compréhension de la carte en étant présente dans la légende</p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_texte_icone.jpg" alt="icône pour modifier le texte des éléments de la légende" ><b>Modifier le texte</b> des éléments, si vous ne l'avez pas déjà fait dans QGIS, par exemple densité de population à la place de COMMUNE</p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_compter_icone.jpg" alt="icône pour compter le nombre d'entités dans la légende" ><b>Afficher le nombre d'entités</b> dans une couche et éventuellement dans chaque classe, après avoir sélectionné une couche</p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_filtrecarte_icone.jpg" alt="icône pour filtrer les éléments de la légende en fonction de la carte" ><b>Filtrer la légende en fonction de ce qui est visible sur la carte</b></p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_filtrexpression_icone.jpg" alt="icône pour filtrer les éléments de la légende en fonction d'une expression" ><b>Filtrer la légende en fonction d'une expression</b></p>
     					</div>
     					
     					<h4>Ajouter un titre<a class="headerlink" id="X25c" href="#X25c"></a></h4>
@@ -188,8 +188,8 @@
                                <p>Dans les propriétés de la légende  Propriétés principales, vous pouvez taper un titre.</p>
                                <p>Si vous voulez que ce titre soit sur plusieurs lignes, vous pouvez taper un caractère utilisé rarement dans la case <b>Activer le retour à la ligne après</b>. Ce caractère ne sera pas représenté mais provoquera un retour à la ligne.</p>
         				       <figure>
-        					       <a href="illustrations/tous/10_02_legende_titre.png" >
-        						      <img src="illustrations/tous/10_02_legende_titre.png" alt="Exemple de titre de légende avec un retour à la ligne" width="500">
+        					       <a href="illustrations/10_02_legende_titre.jpg" >
+        						      <img src="illustrations/10_02_legende_titre.jpg" alt="Exemple de titre de légende avec un retour à la ligne" width="500">
         					       </a>
         					   </figure>
         					   <p>Le $ provoquera également une retour à la ligne pour les autres objets de la légende (étiquettes, nom de la couche...).</p>
@@ -199,8 +199,8 @@
         				
         				    <p>Il est possible de modifier beaucoup de paramètres de la légende, comme par exemple la police, l'espacement des éléments...</p>
         				    <figure>
-    					       <a href="illustrations/tous/10_02_legende_autreparametres.png" >
-    						      <img src="illustrations/tous/10_02_legende_autreparametres.png" alt="Dans l'onglet propriétés de l'objet, paramètres de la légende de 'Polices' à 'Variables'" width="200">
+    					       <a href="illustrations/10_02_legende_autreparametres.jpg" >
+    						      <img src="illustrations/10_02_legende_autreparametres.jpg" alt="Dans l'onglet propriétés de l'objet, paramètres de la légende de 'Polices' à 'Variables'" width="200">
     					       </a>
     					   </figure>
     					   <p>Voici quelques uns de ces éléments passés en revue, n'hésitez pas à tester&nbsp;!</p>
@@ -215,8 +215,8 @@
     						
     					<p>Un exemple de légende :</p>
     					<figure>
-    						<a href="illustrations/tous/10_02_legende_visu.png" >
-    							<img src="illustrations/tous/10_02_legende_visu.png" alt="Exemple de légende pour la densité de population" width="250">
+    						<a href="illustrations/10_02_legende_visu.jpg" >
+    							<img src="illustrations/10_02_legende_visu.jpg" alt="Exemple de légende pour la densité de population" width="250">
     						</a>
     					</figure>
 					
@@ -230,12 +230,12 @@
 				    <h4>Création de l'échelle<a class="headerlink" id="X26a" href="#X26a"></a></h4>
 				    
     					<div class="manip">
-    						<p><img class="icone" src="illustrations/tous/10_02_echelle_icone.png" alt="icône ajouter une nouvelle échelle graphique" >Pour ajouter une échelle : outil <b>Ajouter Barre d'échelle</b> puis dessinez un rectangle sur la carte.</p>
+    						<p><img class="icone" src="illustrations/10_02_echelle_icone.jpg" alt="icône ajouter une nouvelle échelle graphique" >Pour ajouter une échelle : outil <b>Ajouter Barre d'échelle</b> puis dessinez un rectangle sur la carte.</p>
     						<p>Cliquez sur <b>OK</b> dans la fenêtre des propriétés de l'élément qui s'ouvre ensuite (vous pourrez toujours modifier ces paramètres par la suite).</p>
     						<p>Modifiez ensuite éventuellement la taille du rectangle de l'échelle, en cliquant sur un des bords et en maintenant la souris enfoncée&nbsp;:</p>
     						<figure>
-        						<a href="illustrations/tous/10_02_echelle_reduire.png" >
-        							<img src="illustrations/tous/10_02_echelle_reduire.png" alt="Réduire la taille de l'échelle en cliquant sur le bord" width="170">
+        						<a href="illustrations/10_02_echelle_reduire.jpg" >
+        							<img src="illustrations/10_02_echelle_reduire.jpg" alt="Réduire la taille de l'échelle en cliquant sur le bord" width="170">
         						</a>
         					</figure>
         				</div>
@@ -244,67 +244,67 @@
         		 <h4>A chaque échelle son style<a class="headerlink" id="X26b" href="#X26b"></a></h4>
     					
     					<div class="manip">
-						  <p><img class="icone" src="illustrations/tous/10_02_selection_deplace_icone.png" alt="icône sélectionner/déplacer un objet" >Après avoir sélectionné l'échelle au moyen de l'outil de sélection, vous pouvez en modifier les propriétés dans l'onglet <b>Propriétés de l'objet.</b></p>
+						  <p><img class="icone" src="illustrations/10_02_selection_deplace_icone.jpg" alt="icône sélectionner/déplacer un objet" >Après avoir sélectionné l'échelle au moyen de l'outil de sélection, vous pouvez en modifier les propriétés dans l'onglet <b>Propriétés de l'objet.</b></p>
 						
 						  <p>Vous pouvez notamment modifier son style, ce qui vous permet de choisir entre 5 styles d'échelle graphique et un type d'échelle numérique, le style par défaut étant <b>Boîte unique</b>&nbsp;:</p>
     						<figure>
-        						<a href="illustrations/tous/10_02_echelle_style.png" >
-        							<img src="illustrations/tous/10_02_echelle_style.png" alt="Où modifier le style de l'échelle" width="500">
+        						<a href="illustrations/10_02_echelle_style.jpg" >
+        							<img src="illustrations/10_02_echelle_style.jpg" alt="Où modifier le style de l'échelle" width="500">
         						</a>
         					</figure>
         				   <p>Testez les différents styles&nbsp;:</p>
         				   <figure>
-        						<a href="illustrations/tous/10_02_echelle_boiteunique.png" >
-        							<img src="illustrations/tous/10_02_echelle_boiteunique.png" alt="Echelle style boîte unique" width="90">
+        						<a href="illustrations/10_02_echelle_boiteunique.jpg" >
+        							<img src="illustrations/10_02_echelle_boiteunique.jpg" alt="Echelle style boîte unique" width="90">
         						</a>
-        						<a href="illustrations/tous/10_02_echelle_boitedouble.png" >
-        							<img src="illustrations/tous/10_02_echelle_boitedouble.png" alt="Echelle style boîte double" width="90">
+        						<a href="illustrations/10_02_echelle_boitedouble.jpg" >
+        							<img src="illustrations/10_02_echelle_boitedouble.jpg" alt="Echelle style boîte double" width="90">
         						</a>
-                                <a href="illustrations/tous/10_02_echelle_reperemilieu.png" >
-        							<img src="illustrations/tous/10_02_echelle_reperemilieu.png" alt="Echelle style repère au milieu de la ligne" width="90">
+                                <a href="illustrations/10_02_echelle_reperemilieu.jpg" >
+        							<img src="illustrations/10_02_echelle_reperemilieu.jpg" alt="Echelle style repère au milieu de la ligne" width="90">
         						</a>
-                                <a href="illustrations/tous/10_02_echelle_reperedessous.png" >
-        							<img src="illustrations/tous/10_02_echelle_reperedessous.png" alt="Echelle style repère au dessous de la ligne" width="90">
+                                <a href="illustrations/10_02_echelle_reperedessous.jpg" >
+        							<img src="illustrations/10_02_echelle_reperedessous.jpg" alt="Echelle style repère au dessous de la ligne" width="90">
         						</a>
-                                <a href="illustrations/tous/10_02_echelle_reperedessus.png" >
-        							<img src="illustrations/tous/10_02_echelle_reperedessus.png" alt="Echelle style repère au dessus de la ligne" width="90">
+                                <a href="illustrations/10_02_echelle_reperedessus.jpg" >
+        							<img src="illustrations/10_02_echelle_reperedessus.jpg" alt="Echelle style repère au dessus de la ligne" width="90">
         						</a>
-                                <a href="illustrations/tous/10_02_echelle_numerique.png" >
-        							<img src="illustrations/tous/10_02_echelle_numerique.png" alt="Echelle style numérique" width="90">
+                                <a href="illustrations/10_02_echelle_numerique.jpg" >
+        							<img src="illustrations/10_02_echelle_numerique.jpg" alt="Echelle style numérique" width="90">
         						</a>
         				   </figure>
 						</div>
 						
 						<p>Vous pouvez également modifier les unités de l'échelle, et l'étiquette des unités&nbsp;:</p>
 						<figure>
-							<a href="illustrations/tous/10_02_echelle_unites.png" >
-								<img src="illustrations/tous/10_02_echelle_unites.png" alt="Paramétrer les unités de l'échelle" width="500">
+							<a href="illustrations/10_02_echelle_unites.jpg" >
+								<img src="illustrations/10_02_echelle_unites.jpg" alt="Paramétrer les unités de l'échelle" width="500">
 							</a>
 						</figure>
     					<p>Ainsi que le nombre de segments, et la hauteur de la barre d'échelle&nbsp;:</p>
     					<figure>
-    						<a href="illustrations/tous/10_02_echelle_segments.png" >
-    							<img src="illustrations/tous/10_02_echelle_segments.png" alt="Paramétrer le nombre de segments de l'échelle" width="500">
+    						<a href="illustrations/10_02_echelle_segments.jpg" >
+    							<img src="illustrations/10_02_echelle_segments.jpg" alt="Paramétrer le nombre de segments de l'échelle" width="500">
     						</a>
     					</figure>
 					   <p>Sans oublier les couleurs, et la police de caractères&nbsp;:</p>
 					   <figure>
-    						<a href="illustrations/tous/10_02_echelle_police.png" >
-    							<img src="illustrations/tous/10_02_echelle_police.png" alt="Paramétrer les couleurs et la taille de l'échelle" width="420">
+    						<a href="illustrations/10_02_echelle_police.jpg" >
+    							<img src="illustrations/10_02_echelle_police.jpg" alt="Paramétrer les couleurs et la taille de l'échelle" width="420">
     						</a>
     					</figure>
     					<p>Et bien d'autres paramètres encore&nbsp;!</p>
 					
     					<p>Vous pouvez opter pour un style épuré...</p>
     					<figure>
-    						<a href="illustrations/tous/10_02_echelle_visu.png" >
-    							<img src="illustrations/tous/10_02_echelle_visu.png" alt="Exemple d'échelle simple" width="200">
+    						<a href="illustrations/10_02_echelle_visu.jpg" >
+    							<img src="illustrations/10_02_echelle_visu.jpg" alt="Exemple d'échelle simple" width="200">
     						</a>
     					</figure>
     					<p>...ou bien laisser parler l'artiste qui est en vous&nbsp;:</p>
     					<figure>
-    					   <a href="illustrations/tous/10_02_echelle_coupemulet.png" >
-    							<img src="illustrations/tous/10_02_echelle_coupemulet.png" alt="Exemple d'échelle simple" width="400">
+    					   <a href="illustrations/10_02_echelle_coupemulet.jpg" >
+    							<img src="illustrations/10_02_echelle_coupemulet.jpg" alt="Exemple d'échelle simple" width="400">
     						</a>
     					</figure>
     					<p class="note">(Notez bien que je décline toute responsabilité dans ce cas)</p>
@@ -313,20 +313,20 @@
 				<h3>Ajout d'éléments supplémentaires&nbsp;: titre, logo, flèche nord...<a class="headerlink" id="X27" href="#X27"></a></h3>
 				
 					<div class="manip">
-						<p><img class="icone" src="illustrations/tous/10_02_etiquette_icone.png" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter Etiquette</b>.</p>
+						<p><img class="icone" src="illustrations/10_02_etiquette_icone.jpg" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter Etiquette</b>.</p>
 						<p>Dans les propriétés de cet objet, vous pouvez ensuite modifier le texte, la police, la couleur...</p>
-						<p><img class="icone" src="illustrations/tous/10_02_image_icone.png" alt="icône ajouter une image" >Si vous voulez ajouter une image, par exemple un logo : outil <b>Ajouter Image</b> puis dessinez un rectangle sur la page.</p>
+						<p><img class="icone" src="illustrations/10_02_image_icone.jpg" alt="icône ajouter une image" >Si vous voulez ajouter une image, par exemple un logo : outil <b>Ajouter Image</b> puis dessinez un rectangle sur la page.</p>
 						<p>Dans les propriétés principales, choisissez ensuite une image sur votre ordinateur. Attention, il faut choisir <b>image raster</b> si votre image est au format JPG, PNG... ou bien <b>image SVG</b> si elle est au format vectoriel SVG.</p>
 						<p>Pour une image raster&nbsp;:</p>
 						<figure>
-							<a href="illustrations/tous/10_02_ajout_image_raster.png" >
-								<img src="illustrations/tous/10_02_ajout_image_raster.png" alt="Choix d'une image raster" width="450">
+							<a href="illustrations/10_02_ajout_image_raster.jpg" >
+								<img src="illustrations/10_02_ajout_image_raster.jpg" alt="Choix d'une image raster" width="450">
 							</a>
 						</figure>
 						<p>Pour une image SVG&nbsp;:</p>
 						<figure>
-							<a href="illustrations/tous/10_02_ajout_image_svg.png" >
-								<img src="illustrations/tous/10_02_ajout_image_svg.png" alt="Choix d'une image vecteur" width="450">
+							<a href="illustrations/10_02_ajout_image_svg.jpg" >
+								<img src="illustrations/10_02_ajout_image_svg.jpg" alt="Choix d'une image vecteur" width="450">
 							</a>
 						</figure>
 					</div>
@@ -335,15 +335,15 @@
 					<div class="manip">
 						<p>Dans ce cas, utilisez également l'outil <b>Ajouter Image</b> et choisissez comme image un symbole de flèche Nord. Pour cela, vous pouvez regarder dans les groupes SVG <b>arrows</b> ou <b>wind roses</b>.</p>
 						<figure>
-							<a href="illustrations/tous/10_02_fleche_nord.png" >
-								<img src="illustrations/tous/10_02_fleche_nord.png" alt="Choix d'un symbole de fleche nord à partir de la bibliotheque de symboles" width="550">
+							<a href="illustrations/10_02_fleche_nord.jpg" >
+								<img src="illustrations/10_02_fleche_nord.jpg" alt="Choix d'un symbole de fleche nord à partir de la bibliotheque de symboles" width="550">
 							</a>
 						</figure>
 						<p class="note">Il est possible d'ajouter de nouveaux symboles au format SVG à cette bibliothèque, au moyen du bouton <b>...</b> situé au-dessous.</p>
 						<p>Pour que cette flèche Nord soit synchronisée avec la carte, si la carte présente une rotation, descendez jusqu'à la rubrique rotation et cochez <b>Synchroniser avec la carte</b>&nbsp;:</p>
 						<figure>
-							<a href="illustrations/tous/10_02_nord_rotation.png" >
-								<img src="illustrations/tous/10_02_nord_rotation.png" alt="Synchronisation de la rotation de la flèche nord avec la carte" width="500">
+							<a href="illustrations/10_02_nord_rotation.jpg" >
+								<img src="illustrations/10_02_nord_rotation.jpg" alt="Synchronisation de la rotation de la flèche nord avec la carte" width="500">
 							</a>
 						</figure>
 						<p>Si la carte présente une rotation (à spécifier dans ses propriétés, toujours dans la mise en page), la flèche aura cette même rotation.</p>
@@ -354,16 +354,16 @@
 					<p>Vous pouvez également ajouter une deuxième carte à votre page, qui servira par exemple de carte de situation.</p>
 					<p>Il est possible de faire figurer dans cette deuxième carte un rectangle correspondant à l'emprise de la première carte.</p>
 					<figure>
-						<a href="illustrations/tous/10_02_apercu.png" >
-							<img src="illustrations/tous/10_02_apercu.png" alt="exemple : une carte de France, avec en haut une petite carte d'Europe et un rectangle correspondant à l'emprise de la carte de France" width="500">
+						<a href="illustrations/10_02_apercu.jpg" >
+							<img src="illustrations/10_02_apercu.jpg" alt="exemple : une carte de France, avec en haut une petite carte d'Europe et un rectangle correspondant à l'emprise de la carte de France" width="500">
 						</a>
 					</figure>
 					
 					<div class="manip">
 						<p>Ajoutez une carte, réglez son emprise et son échelle, et allez dans la rubrique <b>Aperçu</b> des propriétés de cette carte, pour visualiser l'emprise de votre première carte dans cette deuxième carte&nbsp;:</p>
 						<figure>
-							<a href="illustrations/tous/10_02_apercu_reglage.png" >
-								<img src="illustrations/tous/10_02_apercu_reglage.png" alt="reglage de l'aperçu pour voir l'emprise de la 1ère carte sur la 2ème" width="350">
+							<a href="illustrations/10_02_apercu_reglage.jpg" >
+								<img src="illustrations/10_02_apercu_reglage.jpg" alt="reglage de l'aperçu pour voir l'emprise de la 1ère carte sur la 2ème" width="350">
 							</a>
 						</figure>
 						<ul>
@@ -382,14 +382,14 @@
 						  <li class="espace">Dans QGIS, mettez dans chacun des groupes les couches que vous voulez voir figurer dans la mise en page correspondante, quitte à dupliquer certaines couches (clic droit, Dupliquer la couche)</li>
 						 </ul>
 						 <figure>
-                            <img src="illustrations/tous/10_02_groupes_qgis.png" alt="2 groupes de couches dans QGIS" width="300">
+                            <img src="illustrations/10_02_groupes_qgis.jpg" alt="2 groupes de couches dans QGIS" width="300">
                          </figure>
                          <ul>
 						  <li class="espace">Toujours dans QGIS, rendez visible uniquement les couches d'un groupe</li>
 						  <li class="espace">Dans le mode mise en page, sélectionnez la carte correspondant au groupe visible dans QGIS, et cochez la case <b>Verrouiller les couches</b> dans la rubrique <b>Couches</b> des propriétés de la carte</li>
 						 </ul>
 						 <figure>
-						  <img src="illustrations/tous/10_02_verrouiller_couches.png" alt="case pour verrouiller les couches dans les propriétés de la carte" width="370">
+						  <img src="illustrations/10_02_verrouiller_couches.jpg" alt="case pour verrouiller les couches dans les propriétés de la carte" width="370">
 						 </figure>
 						 <ul>
 						  <li class="espace">Faites de même pour les autres groupes</li>
@@ -405,37 +405,37 @@
 					<div class="manip">
 						<p>Pour <b>exporter au format image</b> : vous pouvez tout d'abord paramétrer la résolution à laquelle votre carte sera exportée : onglet <b>Mise en page</b>, <b>Paramètres d'export :</b></p>
 						<figure>
-							<a href="illustrations/tous/10_02_export_resolution.png" >
-								<img src="illustrations/tous/10_02_export_resolution.png" alt="choix d'une résolution de 300 dpi pour l'export" width="400">
+							<a href="illustrations/10_02_export_resolution.jpg" >
+								<img src="illustrations/10_02_export_resolution.jpg" alt="choix d'une résolution de 300 dpi pour l'export" width="400">
 							</a>
 						</figure>
 						<p class="note">On considère généralement qu'une résolution de 300 dpi est suffisante pour une impression. Pour en savoir plus sur ce qu'est la résolution d'une image : <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/R%C3%A9solution_%28imagerie_num%C3%A9rique%29" >http://fr.wikipedia.org/wiki/R%C3%A9solution_%28imagerie_num%C3%A9rique%29</a></p>
-						<p><img class="icone" src="illustrations/tous/10_02_export_image_icone.png" alt="icône Exporter comme une image" >Pour ensuite exporter votre mise en page au format image : à partir de la fenêtre de mise en page, <b>menu Mise en page &#8594; Exporter au format image...</b></p>
+						<p><img class="icone" src="illustrations/10_02_export_image_icone.jpg" alt="icône Exporter comme une image" >Pour ensuite exporter votre mise en page au format image : à partir de la fenêtre de mise en page, <b>menu Mise en page &#8594; Exporter au format image...</b></p>
 						<p>De nombreux formats sont disponibles : PNG, JPEG, TIFF...</p>
 					</div>
 					
 					<p>Si vous voulez pouvoir modifier votre carte dans un logiciel de dessin vectoriel, il faut l'exporter dans un format vectoriel, SVG ou PDF.</p>
 					
 					<div class="manip">
-						<p><img class="icone" src="illustrations/tous/10_02_export_svg_icone.png" alt="icône Exporter au format SVG" >Pour <b>exporter au format SVG</b> : <b>menu mise en page &#8594; Exporter au format SVG...</b></p>
+						<p><img class="icone" src="illustrations/10_02_export_svg_icone.jpg" alt="icône Exporter au format SVG" >Pour <b>exporter au format SVG</b> : <b>menu mise en page &#8594; Exporter au format SVG...</b></p>
 					</div>
 					
 					<p>L'export au format SVG peut poser quelques problèmes, en particulier pour gérer la transparence. L'export au format PDF peut parfois être plus pratique pour ensuite retoucher la carte dans un logiciel de dessin.</p>
 					
 					<div class="manip">
-						<p><img class="icone" src="illustrations/tous/10_02_export_pdf_icone.png" alt="icône Exporter au format PDF" >Pour <b>exporter au format PDF</b> : <b>menu mise en page &#8594; Exporter au format PDF...</b></p>
+						<p><img class="icone" src="illustrations/10_02_export_pdf_icone.jpg" alt="icône Exporter au format PDF" >Pour <b>exporter au format PDF</b> : <b>menu mise en page &#8594; Exporter au format PDF...</b></p>
 					</div>
 					
 					<p>Vous pouvez également imprimer directement votre carte, par exemple pour tester son rendu.</p>
 					
 					<div class="manip">
-						<p><img class="icone" src="illustrations/tous/10_02_impression_icone.png" alt="icône Imprimer" >Pour <b>imprimer la carte</b> : <b>menu mise en page &#8594; Imprimer...</b> ou bien <b>Ctrl + P</b></p>
+						<p><img class="icone" src="illustrations/10_02_impression_icone.jpg" alt="icône Imprimer" >Pour <b>imprimer la carte</b> : <b>menu mise en page &#8594; Imprimer...</b> ou bien <b>Ctrl + P</b></p>
 					</div>
 						
 					<p>Un exemple de carte réalisée dans QGIS :</p>
 					<figure>
-						<a href="illustrations/tous/10_02_carte_exemple.png" >
-							<img src="illustrations/tous/10_02_carte_exemple.png" alt="exemple d'une carte de densité de population dans QGIS" width="500">
+						<a href="illustrations/10_02_carte_exemple.jpg" >
+							<img src="illustrations/10_02_carte_exemple.jpg" alt="exemple d'une carte de densité de population dans QGIS" width="500">
 						</a>
 					</figure>
 				
@@ -449,8 +449,8 @@
 						<p>Choisissez un emplacement : dossier <b>TutoQGIS_10_Representation/projets</b> par exemple, et un nom : <b>carte_densite_01</b> par exemple.</p>
 						<p>Un projet peut contenir plusieurs mises en page. Pour renommer, ajouter, supprimer ou dupliquer des mises en page&nbsp;: <b>menu Projet &#8594; Gestionnaire de mise en page...</b>.</p>
 						<figure>
-							<a href="illustrations/tous/10_02_gestionnaire_misenpage.png" >
-								<img src="illustrations/tous/10_02_gestionnaire_misenpage.png" alt="Fenêtre du gestionnaire de mise en page" width="400">
+							<a href="illustrations/10_02_gestionnaire_misenpage.jpg" >
+								<img src="illustrations/10_02_gestionnaire_misenpage.jpg" alt="Fenêtre du gestionnaire de mise en page" width="400">
 							</a>
 						</figure>
 					</div>

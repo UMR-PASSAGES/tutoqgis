@@ -45,8 +45,8 @@
     			        <p>Rendez-vous dans le panneau <b>Explorateur</b> de QGIS. Si vous ne voyez pas ce panneau, activez-le via le <b>menu Vue &#8594; Panneaux &#8594; Explorateur</b>.</p>
     			        <p>Dans ce panneau Explorateur, allez dans la rubrique <b>XYZ Tiles</b> : un fonds s'y trouve par défaut : OpenStreetMap.</p>
     			        <figure>
-                        	<a href="illustrations/tous/3_4_xyz_tiles.png" >
-                        		<img src="illustrations/tous/3_4_xyz_tiles.png" alt="panneau explorateur, rubrique xyz tiles" width="220">
+                        	<a href="illustrations/3_4_xyz_tiles.jpg" >
+                        		<img src="illustrations/3_4_xyz_tiles.jpg" alt="panneau explorateur, rubrique xyz tiles" width="220">
                         	</a>
                          </figure>
                          <p>Double-cliquez sur ce fonds pour l'ajouter à QGIS.</p>
@@ -60,11 +60,11 @@
     		        <p>Ici, nous allons ajouter un fonds en niveaux de gris utilisant les données OpenStreetMap, qui se nomme Carto Positron.</p>
 		        
     		        <div class="manip">
-    		            <p>Copiez l'URL du serveur Carto Positron : <b>https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png</b></p>
+    		            <p>Copiez l'URL du serveur Carto Positron : <b>https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.jpg</b></p>
     		            <p>Dans QGIS, panneau explorateur, clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</p>
     		            <figure>
-                        	<a href="illustrations/tous/3_4_positron_connexion.png" >
-                        	    <img src="illustrations/tous/3_4_positron_connexion.png" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="400">
+                        	<a href="illustrations/3_4_positron_connexion.jpg" >
+                        	    <img src="illustrations/3_4_positron_connexion.jpg" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="400">
                             </a>
                         </figure>
                         <ul>
@@ -74,20 +74,20 @@
                         <p>Laissez les valeurs par défaut pour les autres paramètres, cliquez sur OK.</p>
                         <p>Le fonds Carto Positron apparaît maintenant avec le fonds OpenStreetMap dans la rubrique XYZ Tiles.</p>
                         <figure>
-                            <a href="illustrations/tous/3_4_positron_xyz.png" >
-                        	    <img src="illustrations/tous/3_4_positron_xyz.png" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Carto Positron apparaît" width="180">
+                            <a href="illustrations/3_4_positron_xyz.jpg" >
+                        	    <img src="illustrations/3_4_positron_xyz.jpg" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Carto Positron apparaît" width="180">
                         	</a>
                         </figure>
                         <p>Double-cliquez pour l'ajouter :</p>
                         <figure>
-                        	<a href="illustrations/tous/3_4_positron_visu.png" >
-                        	    <img src="illustrations/tous/3_4_positron_visu.png" alt="Aperçu du fonds Carto Positron : Brest" width="500">
+                        	<a href="illustrations/3_4_positron_visu.jpg" >
+                        	    <img src="illustrations/3_4_positron_visu.jpg" alt="Aperçu du fonds Carto Positron : Brest" width="500">
                             </a>
                         </figure>
     		        </div>
     		        
     		        <p class="note">Attention à ne pas utiliser le caractère / (&#171;&nbsp;slash&nbsp;&#187;) dans le nom des connexions !</p>
-    		        <p class="note">Attention également, certaines url de serveurs de tuiles sont sous la forme <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.png</b> : il faut alors supprimer les <b>$</b> pour obtenir <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.png</b>.</p>
+    		        <p class="note">Attention également, certaines url de serveurs de tuiles sont sous la forme <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.jpg</b> : il faut alors supprimer les <b>$</b> pour obtenir <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.jpg</b>.</p>
 			   
 		    <h3>Afficher un fonds avec l'extension QuickMapServices<a class="headerlink" id="III43" href="#III43"></a></h3>
 		    
@@ -98,13 +98,13 @@
 					<p>Pour installer QuickMapServices : 
 						<a class="thumbnail_bottom" href="#thumb">Menu Extension &#8594; Installer/Gérer les extensions
 							<span>
-								<img src="illustrations/tous/4_6_extensions_menu.png" alt="Menu Extension, Installer/Gérer les extensions" height="100" >
+								<img src="illustrations/4_6_extensions_menu.jpg" alt="Menu Extension, Installer/Gérer les extensions" height="100" >
 							</span>
 						</a>	
 					 : la fenêtre du gestionnaire d'extensions s'ouvre.</p>
 					<figure>
-						<a href="illustrations/tous/4_6_install_quickmapservices.png" >
-							<img src="illustrations/tous/4_6_install_quickmapservices.png" alt="Installation de QuickMapServices" width="600">
+						<a href="illustrations/4_6_install_quickmapservices.jpg" >
+							<img src="illustrations/4_6_install_quickmapservices.jpg" alt="Installation de QuickMapServices" width="600">
 						</a>
 					</figure>
 					<p>Dans la rubrique <b>Tout</b>, tapez &#171; quickmap &#187; dans la partie <b>Rechercher</b> pour limiter les résultats, sélectionnez <b>QuickMapServices</b> puis cliquez sur <b>Installer l'extension</b> en bas à droite de la fenêtre.</p>
@@ -117,15 +117,15 @@
 				   <p>Menu Internet &#8594; QuickMapServices &#8594; Settings :</p>
 				   <p>Dans l'onglet <b>More services</b>, cliquez sur le bouton <b>Get contributed pack</b>.</p>
 				   <figure>
-						<a href="illustrations/tous/4_6_quickmapservices_moreservices.png" >
-							<img src="illustrations/tous/4_6_quickmapservices_moreservices.png" alt="Ajouter des fonds dans QuickMapServices" width="500">
+						<a href="illustrations/4_6_quickmapservices_moreservices.jpg" >
+							<img src="illustrations/4_6_quickmapservices_moreservices.jpg" alt="Ajouter des fonds dans QuickMapServices" width="500">
 						</a>
 					</figure>
 					<p>Rendez-vous ensuite dans l'onglet <b>Visibility</b> pour décocher les fonds qui ne vous semblent pas à première vue utiles, pour plus de clarté.</p>
 				<p>Pour ajouter les données OSM : le menu QuickMapServices est maintenant visible dans le menu Internet. Chargez la couche <b>OSM standard</b> dans la rubrique OSM.</p>
 					<figure>
-						<a href="illustrations/tous/4_6_menu_quickmapservices.png" >
-							<img src="illustrations/tous/4_6_menu_quickmapservices.png" alt="Menu QuickMapServices" width="600">
+						<a href="illustrations/4_6_menu_quickmapservices.jpg" >
+							<img src="illustrations/4_6_menu_quickmapservices.jpg" alt="Menu QuickMapServices" width="600">
 						</a>
 					</figure>
 			    </div>

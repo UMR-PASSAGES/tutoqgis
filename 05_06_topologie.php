@@ -49,20 +49,20 @@
 					<p>En géomatique, la topologie est utilisée pour décrire les relations entre les géométries des entités. Des règles de topologie peuvent être définies, et les erreurs de topologie détectées.</p>
 					<p>Par exemple, on peut décider qu'il ne doit y avoir aucune superposition de polygones dans une couche (les erreurs sont en rouge) :</p>
 					<figure>
-						<a href="illustrations/tous/5_6_overlap.png" >
-							<img src="illustrations/tous/5_6_overlap.png" alt="deux polygones se superposant en partie" width="300">
+						<a href="illustrations/5_6_overlap.jpg" >
+							<img src="illustrations/5_6_overlap.jpg" alt="deux polygones se superposant en partie" width="300">
 						</a>
 					</figure>
 					<p>Ou bien qu'il ne doit pas y avoir de trous entre les polygones :</p>
 					<figure>
-						<a href="illustrations/tous/5_6_gap.png" >
-							<img src="illustrations/tous/5_6_gap.png" alt="deux polygones avec un trou entre les deux" width="300">
+						<a href="illustrations/5_6_gap.jpg" >
+							<img src="illustrations/5_6_gap.jpg" alt="deux polygones avec un trou entre les deux" width="300">
 						</a>
 					</figure>
 					<p>Les règles de topologie peuvent aussi mettre en jeu plusieurs couches. Par exemple, tous les points d'une couche doivent être dans un polygone d'une autre couche :</p>
 					<figure>
-						<a href="illustrations/tous/5_6_pts_dans_polygones.png" >
-							<img src="illustrations/tous/5_6_pts_dans_polygones.png" alt="des points dans des polygones sauf deux" width="300">
+						<a href="illustrations/5_6_pts_dans_polygones.jpg" >
+							<img src="illustrations/5_6_pts_dans_polygones.jpg" alt="des points dans des polygones sauf deux" width="300">
 						</a>
 					</figure>
 					<p>Il est bien sûr possible de combiner plusieurs règles. Vous trouverez dans le <a class="ext" target="_blank" href="https://docs.qgis.org/testing/en/docs/gentle_gis_introduction/topology.html" >manuel de QGIS</a> la description d'un certain nombre de règles de topologie.</p>
@@ -83,14 +83,14 @@
 					  <p>Vérifiez d'abord que votre couche de polygones <em class="data">zones_oahu</em> n'est pas en mode édition.</p>
 						<p>Pour vérifier rapidement la topologie d'une couche, utilisez l'outil <b>Vérifier la validité</b>, accessible dans la boîte à outils (en tapant <em>valid</em> dans la barre de recherche par exemple)&nbsp;:</p>
 						<figure>
-							<a href="illustrations/tous/5_6_verif_toolbox.png" >
-								<img src="illustrations/tous/5_6_verif_toolbox.png" alt="accéder à l'outil vérifier la validité dans la toolbox" width="370">
+							<a href="illustrations/5_6_verif_toolbox.jpg" >
+								<img src="illustrations/5_6_verif_toolbox.jpg" alt="accéder à l'outil vérifier la validité dans la toolbox" width="370">
 							</a>
 						</figure>
 						<p class="note">Si la boîte à outils n'est pas visible, allez dans le menu Traitement &#8594; Boîte à outils.</p>
 						<figure>
-							<a href="illustrations/tous/5_6_verif_fenetre.png" >
-								<img src="illustrations/tous/5_6_verif_fenetre.png" alt="fenêtre de validation de la géométrie" width="600">
+							<a href="illustrations/5_6_verif_fenetre.jpg" >
+								<img src="illustrations/5_6_verif_fenetre.jpg" alt="fenêtre de validation de la géométrie" width="600">
 							</a>
 						</figure>
 						<p>Sélectionnez la couche <em class="data">zones_oahu</em> et cliquez sur <b>Exécuter</b>.</p>
@@ -111,26 +111,26 @@
 						<p>Pour accéder au vérificateur de topologie : 
 							<a class="thumbnail_bottom" href="#thumb">menu Vecteur &#8594; Vérificateur de topologie
 								<span>
-									<img src="illustrations/tous/5_6_veriftopo_menu.png" alt="Menu Vecteur, Vérificateur de topologie" height="200" >
+									<img src="illustrations/5_6_veriftopo_menu.jpg" alt="Menu Vecteur, Vérificateur de topologie" height="200" >
 								</span>
 							</a>	
 						:</p>
 						<figure>
-							<a href="illustrations/tous/5_6_veriftopo_fenetre.png" >
-								<img src="illustrations/tous/5_6_veriftopo_fenetre.png" alt="fenêtre (intégrée) du vérificateur de topologie" width="400">
+							<a href="illustrations/5_6_veriftopo_fenetre.jpg" >
+								<img src="illustrations/5_6_veriftopo_fenetre.jpg" alt="fenêtre (intégrée) du vérificateur de topologie" width="400">
 							</a>
 						</figure>
 						<p>Cliquez sur le bouton <b>Configuration</b> pour ajouter ou supprimer des règles de topologie. Nous allons ajouter une règle pour interdire les superpositions de polygones dans la couche <em class="data">zones_oahu</em>.</p>
 						<figure>
-							<a href="illustrations/tous/5_6_regle_fenetre.png" >
-								<img src="illustrations/tous/5_6_regle_fenetre.png" alt="fenêtre de gestion des règles de topologie" width="430">
+							<a href="illustrations/5_6_regle_fenetre.jpg" >
+								<img src="illustrations/5_6_regle_fenetre.jpg" alt="fenêtre de gestion des règles de topologie" width="430">
 							</a>
 						</figure>
 						<p>Sélectionnez la couche <b>zones_oahu</b> dans la liste déroulante, puis la propriété <b>ne doit pas se superposer</b> et cliquez enfin sur le bouton <b>Ajouter une règle</b>. Cliquez sur <b>OK</b>.</p>
 						<p>Pour visualiser les erreurs à cette règle, cliquez sur le bouton <b>Valider tout</b> du vérificateur de topologie.</p>
 						<figure>
-							<a href="illustrations/tous/5_6_veriftopo_erreurs.png" >
-								<img src="illustrations/tous/5_6_veriftopo_erreurs.png" alt="fenêtre du vérificateur de topologie, pas d'erreurs" width="400">
+							<a href="illustrations/5_6_veriftopo_erreurs.jpg" >
+								<img src="illustrations/5_6_veriftopo_erreurs.jpg" alt="fenêtre du vérificateur de topologie, pas d'erreurs" width="400">
 							</a>
 						</figure>
 						<p>La liste des éventuelles erreurs apparaît ; il est possible de zoomer sur une erreur en double-cliquant sur la ligne correspondante.</p>
@@ -148,8 +148,8 @@
 			    
 			      <p>Il existe un outil <b>Réparer les géométries</b> accessible dans la boîte à outils de traitement. Pour afficher (ou masquer si elle est déjà affichée) cette boîte, <b>menu Traitement &#8594; Boîte à outils</b>. Tapez ensuite <b>réparer</b> dans la partie filtre pour trouver facilement cet outil :</p>
 			      <figure>
-						<a href="illustrations/tous/5_6_reparer.png" >
-							<img src="illustrations/tous/5_6_reparer.png" alt="accès à l'outil réparer les géométries à partir de la boîte à outils" width="300">
+						<a href="illustrations/5_6_reparer.jpg" >
+							<img src="illustrations/5_6_reparer.jpg" alt="accès à l'outil réparer les géométries à partir de la boîte à outils" width="300">
 						</a>
 					  </figure>
 					  <p>Cet outil prend une couche en entrée (la couche contenant des erreurs) et génère une nouvelle couche, normalement sans erreurs de topologie, en sortie.</p>
@@ -158,8 +158,8 @@
 			    
   					<p>Vous pouvez également utiliser l'outil <b>v.clean</b> issu de <b>Grass</b>, toujours dans la boîte à outils de traitements. Tapez <b>clean</b> dans le filtre pour accéder à l'outil <b>v.clean</b>.</p>
   					<figure>
-  						<a href="illustrations/tous/5_6_vclean.png" >
-  							<img src="illustrations/tous/5_6_vclean.png" alt="accès à l'outil vclean à partir de la boîte à outils" width="300">
+  						<a href="illustrations/5_6_vclean.jpg" >
+  							<img src="illustrations/5_6_vclean.jpg" alt="accès à l'outil vclean à partir de la boîte à outils" width="300">
   						</a>
   					</figure>
   					<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass70/manuals/v.clean.html" >https://grass.osgeo.org/grass70/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>

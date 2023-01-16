@@ -23,25 +23,25 @@
 			<h3>SCR du projet<a class="headerlink" id="II31" href="#II31"></a></h3>
 					
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/1_4_ouvrir_projet_icone.png" alt="Icône Ouvrir">A partir de QGIS, ouvrez le projet <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">regions_france.qgz</a></em> situé dans le dossier <b>TutoQGIS_02_geodesie/projets</b>.</p>
+					<p><img class="icone" src="illustrations/1_4_ouvrir_projet_icone.jpg" alt="Icône Ouvrir">A partir de QGIS, ouvrez le projet <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">regions_france.qgz</a></em> situé dans le dossier <b>TutoQGIS_02_geodesie/projets</b>.</p>
 					<p>Toutes les couches chargées dans ce projet seront <b>affichées</b> dans le SCR du projet. Quel est ce SCR ? Trois manières pour accéder à cette information :</p>
 					<ul>
 						<li>
 							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Propriétés...
 									<span>
-										<img src="illustrations/tous/2_3_proprietes_projet_menu.png" alt="Menu Projet, Propriétés du projet" height="350" >
+										<img src="illustrations/2_3_proprietes_projet_menu.jpg" alt="Menu Projet, Propriétés du projet" height="350" >
 									</span>
 							</a>
 						 , rubrique SCR</li>
-						<li>Icône <b>SCR actuel</b> tout en bas à droite de la fenêtre de QGIS <img class="iconemid" src="illustrations/tous/2_3_scr_projet_icone.png" alt="icône SCR actuel" ></li>
+						<li>Icône <b>SCR actuel</b> tout en bas à droite de la fenêtre de QGIS <img class="iconemid" src="illustrations/2_3_scr_projet_icone.jpg" alt="icône SCR actuel" ></li>
 						<li>raccourci clavier <b>Ctrl+Maj+P &#8594; rubrique SCR</b></li>
 					</ul>
 				</div>
 				
 				<p>La fenêtre suivante s'ouvre :</p>
 				<figure>
-					<a href="illustrations/tous/2_3_scr_projet.png" >
-						<img src="illustrations/tous/2_3_scr_projet.png" alt="fenêtre SCR du projet" width="600">
+					<a href="illustrations/2_3_scr_projet.jpg" >
+						<img src="illustrations/2_3_scr_projet.jpg" alt="fenêtre SCR du projet" width="600">
 					</a>
 				</figure>
 				
@@ -62,8 +62,8 @@
 				
 				<p>Notez également que le <a href="02_02_coord.php#II21b">code EPSG</a> du SCR du projet est indiqué tout en bas à droite de la fenêtre de QGIS, dans la <a href="01_02_info_geo.php#I22">barre d'état de QGIS</a>.</p>
 				<figure>
-					<a href="illustrations/tous/2_3_barre_etat_scr.png" >
-						<img src="illustrations/tous/2_3_barre_etat_scr.png" alt="Indication du code du SCR dans la barre d'état" width="640">
+					<a href="illustrations/2_3_barre_etat_scr.jpg" >
+						<img src="illustrations/2_3_barre_etat_scr.jpg" alt="Indication du code du SCR dans la barre d'état" width="640">
 					</a>
 				</figure>
 			
@@ -73,8 +73,8 @@
 					<p>Nous allons maintenant nous poser la question de savoir dans quel SCR est la couche <em class="data">REGION</em>.</p>
 					<p>Ouvrez les propriétés de cette couche (double clic sur le nom de la couche) et allez dans la rubrique <b>Information</b>.</p>			
 					<figure>
-						<a href="illustrations/tous/2_3_scr_couche.png" >
-							<img src="illustrations/tous/2_3_scr_couche.png" alt="Fenêtre Propriétés d'une couche, rubrique Général, lire le SCR" width="600" >
+						<a href="illustrations/2_3_scr_couche.jpg" >
+							<img src="illustrations/2_3_scr_couche.jpg" alt="Fenêtre Propriétés d'une couche, rubrique Général, lire le SCR" width="600" >
 						</a>
 						<figcaption>Lire le SCR d'une couche.</figcaption>
 					</figure>
@@ -97,8 +97,8 @@
 				<div class="manip">
     				<p>Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">ne_110m_admin_0_countries.shp</a></em> au projet. Vérifiez son SCR. Les deux couches doivent se superposer correctement (même si elles ont des niveaux de généralisation différents, elles ne présentent pas de décalage l'une par rapport à l'autre).</p>
     			    <figure>
-						<a href="illustrations/tous/2_3_superposition_couches.png" >
-							<img src="illustrations/tous/2_3_superposition_couches.png" alt="Superposition des 2 couches France et monde" width="600" >
+						<a href="illustrations/2_3_superposition_couches.jpg" >
+							<img src="illustrations/2_3_superposition_couches.jpg" alt="Superposition des 2 couches France et monde" width="600" >
 						</a>
 					</figure>
     			</div>

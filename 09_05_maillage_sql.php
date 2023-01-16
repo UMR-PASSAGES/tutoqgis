@@ -70,14 +70,14 @@
 			         <div class="manip">
 			             <p>Dans le panneau <b>Explorateur</b>, faites un clic droit sur <b>SpatiaLite &#8594; Créer une base de données...</b>&nbsp;:</p>
 			             <figure>
-            			     <a href="illustrations/tous/9_5_creer_sl.png" >
-            			         <img src="illustrations/tous/9_5_creer_sl.png" alt="clic droit sur spatialite" width="400">
+            			     <a href="illustrations/9_5_creer_sl.jpg" >
+            			         <img src="illustrations/9_5_creer_sl.jpg" alt="clic droit sur spatialite" width="400">
             			     </a>
             			 </figure>
             			 <p>Naviguez jusqu'au dossier où vous souhaitez créer votre base, et nommez-la par exemple <b>maillage_clc</b>. Elle est maintenant visible dans l'explorateur&nbsp;:</p>
             			 <figure>
-            			     <a href="illustrations/tous/9_5_bdd_sl.png" >
-            			         <img src="illustrations/tous/9_5_bdd_sl.png" alt="base spatialite créée" width="170">
+            			     <a href="illustrations/9_5_bdd_sl.jpg" >
+            			         <img src="illustrations/9_5_bdd_sl.jpg" alt="base spatialite créée" width="170">
             			     </a>
             			 </figure>
 			         </div>
@@ -114,16 +114,16 @@
 			         <p>Votre base PostGIS est créée, il ne reste plus qu'à s'y connecter dans QGIS&nbsp;!</p>
 			         
 			         <div class="manip">
-			             <p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône du gestionnaire de données" >Menu Couche &#8594; Gestionnaire des sources de données ou bien clic sur l'icône correspondante, rubrique <b>PostgreSQL</b>&nbsp;:</p>
+			             <p><img class="icone" src="illustrations/1_2_gestionnaire_donnees_icone.jpg" alt="icône du gestionnaire de données" >Menu Couche &#8594; Gestionnaire des sources de données ou bien clic sur l'icône correspondante, rubrique <b>PostgreSQL</b>&nbsp;:</p>
 			             <figure>
-            			     <a href="illustrations/tous/9_5_nouvelle_connexion_psql.png" >
-            			         <img src="illustrations/tous/9_5_nouvelle_connexion_psql.png" alt="création d'une connexion à une base PostGIS" width="600">
+            			     <a href="illustrations/9_5_nouvelle_connexion_psql.jpg" >
+            			         <img src="illustrations/9_5_nouvelle_connexion_psql.jpg" alt="création d'une connexion à une base PostGIS" width="600">
             			     </a>
             			 </figure>
             			 <p>Cliquez sur <b>Nouveau</b> pour créer une nouvelle connexion à notre base maillage_clc&nbsp;:</p>
             			 <figure>
-            			     <a href="illustrations/tous/9_5_nouvelle_connexion_fenetre_psql.png" >
-            			         <img src="illustrations/tous/9_5_nouvelle_connexion_fenetre_psql.png" alt="Fenêtre de création d'une connexion à une base PostGIS" width="600">
+            			     <a href="illustrations/9_5_nouvelle_connexion_fenetre_psql.jpg" >
+            			         <img src="illustrations/9_5_nouvelle_connexion_fenetre_psql.jpg" alt="Fenêtre de création d'une connexion à une base PostGIS" width="600">
             			     </a>
             			 </figure>
             			 <ul>
@@ -136,8 +136,8 @@
             			 <p>Si le test de connexion est réussi, vous pouvez cliquer sur OK et fermer la fenêtre. Vous pouvez également fermer la fenêtre du gestionaire de sources de données.</p>
             			 <p>Votre base est maintenant visible dans l'explorateur&nbsp;:</p>
             			 <figure>
-            			     <a href="illustrations/tous/9_5_bdd_psql.png" >
-            			         <img src="illustrations/tous/9_5_bdd_psql.png" alt="Base PostGIS visible dans l'explorateur de fichiers" width="150">
+            			     <a href="illustrations/9_5_bdd_psql.jpg" >
+            			         <img src="illustrations/9_5_bdd_psql.jpg" alt="Base PostGIS visible dans l'explorateur de fichiers" width="150">
             			     </a>
             			 </figure>
 			         </div>
@@ -145,14 +145,14 @@
 			         <div class="manip">
 			             <p>Rien de compliqué : toujours dans l'explorateur, clic droit sur votre base &#8594; <b>Nouveau schéma...</b></p>
 			             <figure>
-            			     <a href="illustrations/tous/9_5_creer_schema.png" >
-            			         <img src="illustrations/tous/9_5_creer_schema.png" alt="clic droit sur la base, créer schéma" width="300">
+            			     <a href="illustrations/9_5_creer_schema.jpg" >
+            			         <img src="illustrations/9_5_creer_schema.jpg" alt="clic droit sur la base, créer schéma" width="300">
             			     </a>
             			 </figure>
             			 <p>Nommez-le par exemple <b>tutoqgis</b>. Votre base doit donc contenir 3 schémas : tutoqgis, public et topology.</p>
             			 <figure>
-            			     <a href="illustrations/tous/9_5_creer_schema_res.png" >
-            			         <img src="illustrations/tous/9_5_creer_schema_res.png" alt="base maillage_clc avec ses 3 schémas" width="150">
+            			     <a href="illustrations/9_5_creer_schema_res.jpg" >
+            			         <img src="illustrations/9_5_creer_schema_res.jpg" alt="base maillage_clc avec ses 3 schémas" width="150">
             			     </a>
             			 </figure>
             			 <p>On peut aussi créer le schéma à partir du gestionnaire de bases de données.</p>
@@ -168,8 +168,8 @@
 			         <p class="attention">Cette sélection n'est pas nécessaire si vous utilisez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em> disponible en téléchargement.</p>
 			         <p>Utilisez une <a href="06_01_req_attrib.php" >requête attributaire</a> sur la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_FR_RGF</a></em>  pour ne sélectionner que les vignes :  <b>"CODE_00"  = '221'</b> (en jaune ci-dessous).</p>
 			         <figure>
-        			     <a href="illustrations/tous/9_5_selection_vignes.png" >
-        			         <img src="illustrations/tous/9_5_selection_vignes.png" alt="Couche CLC, vignes sélectionnées en jaune" width="250">
+        			     <a href="illustrations/9_5_selection_vignes.jpg" >
+        			         <img src="illustrations/9_5_selection_vignes.jpg" alt="Couche CLC, vignes sélectionnées en jaune" width="250">
         			     </a>
         			 </figure>
 			     </div>
@@ -177,27 +177,27 @@
 			     <p>Il ne reste plus qu'à importer les entités sélectionnes, dans SpatiaLite ou PostGIS selon votre choix.</p>
 			     
 			     <div class="manip">
-			         <p><img class="icone" src="illustrations/tous/6_4_dbmanager_icone.png" alt="icône du gestionnaire de bases de données" >Dans QGIS, ouvrez la fenêtre du <b>gestionnaire de bases de données</b>&nbsp;: menu Base de données &#8594; DB Manager... ou bien clic sur l'icône correspondante.</p>
+			         <p><img class="icone" src="illustrations/6_4_dbmanager_icone.jpg" alt="icône du gestionnaire de bases de données" >Dans QGIS, ouvrez la fenêtre du <b>gestionnaire de bases de données</b>&nbsp;: menu Base de données &#8594; DB Manager... ou bien clic sur l'icône correspondante.</p>
 			         <p>Sélectionnez votre base, SpatiaLite...&nbsp;:</p>
 			         <figure>
-        			     <a href="illustrations/tous/9_5_dbmanager_sl.png" >
-        			         <img src="illustrations/tous/9_5_dbmanager_sl.png" alt="Base SpatiaLite sélectionnée dans DB Manager" width="500">
+        			     <a href="illustrations/9_5_dbmanager_sl.jpg" >
+        			         <img src="illustrations/9_5_dbmanager_sl.jpg" alt="Base SpatiaLite sélectionnée dans DB Manager" width="500">
         			     </a>
         			 </figure>
 			         <p>...Ou bien PostGIS&nbsp;:</p>
 			         <figure>
-        			     <a href="illustrations/tous/9_5_dbmanager_psql.png" >
-        			         <img src="illustrations/tous/9_5_dbmanager_psql.png" alt="Base PostGIS sélectionnée dans DB Manager" width="500">
+        			     <a href="illustrations/9_5_dbmanager_psql.jpg" >
+        			         <img src="illustrations/9_5_dbmanager_psql.jpg" alt="Base PostGIS sélectionnée dans DB Manager" width="500">
         			     </a>
         			 </figure>
         			 <p>Dans les 2 cas, <b>cliquez sur le petit triangle devant le nom de la base</b> pour être sûr d'y être bien connecté.</p>
         			 <p>Cliquez ensuite sur le bouton <b>Import de couche/fichier</b> en haut de la fenêtre du gestionnaire de bases de données&nbsp;:</p>
         			 <figure>
-        			     <a href="illustrations/tous/9_5_import_spatialite.png" >
-        			         <img src="illustrations/tous/9_5_import_spatialite.png" alt="Import de données dans SpatiaLite" width="300">
+        			     <a href="illustrations/9_5_import_spatialite.jpg" >
+        			         <img src="illustrations/9_5_import_spatialite.jpg" alt="Import de données dans SpatiaLite" width="300">
         			     </a>
-        			     <a href="illustrations/tous/9_5_import_postgis.png" >
-        			         <img src="illustrations/tous/9_5_import_postgis.png" alt="Import de données dans PostGIS" width="300">
+        			     <a href="illustrations/9_5_import_postgis.jpg" >
+        			         <img src="illustrations/9_5_import_postgis.jpg" alt="Import de données dans PostGIS" width="300">
         			     </a>
         			     <figcaption>Import de données : à gauche dans SpatiaLite, à droite dans PostGIS.</figcaption>
         			 </figure>
@@ -209,13 +209,13 @@
         			     <li class="espace">SCR cible : le SCR original IGNF:LAMB93 n'est pas reconnu par SpatiaLite ou PostGIS : sélectionnez son équivalent <b>RGF93/Lambert93 EPSG 2154</b></li>
         			     <li class="espace">Vous pouvez également cocher la case <b>créer un index spatial</b>, ce qui accélérera certaines opérations spatiales (mais il peut être créé par la suite)</li>
         			 </ul>
-        			 <p><img class="icone" src="illustrations/tous/9_5_actualiser_bdd_icone.png" alt="icône actualiser du gestionnaire de bdd" >Cliquez sur <b>OK</b>, patientez... Il faut éventuellement actualiser la base pour que la nouvelle couche soit visible&nbsp;:</p>
+        			 <p><img class="icone" src="illustrations/9_5_actualiser_bdd_icone.jpg" alt="icône actualiser du gestionnaire de bdd" >Cliquez sur <b>OK</b>, patientez... Il faut éventuellement actualiser la base pour que la nouvelle couche soit visible&nbsp;:</p>
         			 <figure>
-        			     <a href="illustrations/tous/9_5_import_spatialite_res.png" >
-        			         <img src="illustrations/tous/9_5_import_spatialite_res.png" alt="couche importée dans SpatiaLite" width="220">
+        			     <a href="illustrations/9_5_import_spatialite_res.jpg" >
+        			         <img src="illustrations/9_5_import_spatialite_res.jpg" alt="couche importée dans SpatiaLite" width="220">
         			     </a>
-        			     <a href="illustrations/tous/9_5_import_postgis_res.png" >
-        			         <img src="illustrations/tous/9_5_import_postgis_res.png" alt="Couche importée dans PostGIS" width="210">
+        			     <a href="illustrations/9_5_import_postgis_res.jpg" >
+        			         <img src="illustrations/9_5_import_postgis_res.jpg" alt="Couche importée dans PostGIS" width="210">
         			     </a>
         			 </figure>
 			     </div>
@@ -225,8 +225,8 @@
 			     <div class="manip">
     			     <p>Pour chaque couche PostGIS ou SpatiaLite, on peut accéder à partir du gestionnaire de bases de données à 3 onglet : info, table et aperçu.</p>
     			     <figure>
-            			     <a href="illustrations/tous/9_5_info_couche.png" >
-            			         <img src="illustrations/tous/9_5_info_couche.png" alt="3 onglets info, table et aperçu dans le gestionnaire de bdd" width="400">
+            			     <a href="illustrations/9_5_info_couche.jpg" >
+            			         <img src="illustrations/9_5_info_couche.jpg" alt="3 onglets info, table et aperçu dans le gestionnaire de bdd" width="400">
             			     </a>
             	     </figure>
             	     <p>L'onglet <b>info</b> vous permet de voir le nombre d'entités (4215), le type de géométrie (multipolygone), le SCR (RGF93 Lambert93 EPSG 2154), la liste des champs...</p>
@@ -244,10 +244,10 @@
 			     
 			     <div class="manip">
 			         <p>Sélectionnez votre base dans le gestionnaire de bases de données.</p>
-		             <p><img class="icone" src="illustrations/tous/9_5_requete_icone.png" alt="icône 'Fenêtre SQL' du gestionnaire de BDD" >Cliquez ensuite sur l'icône <b>Fenêtre SQL</b> (ou menu Base de données &#8594; Fenêtre SQL)&nbsp;: un nouvel onglet s'ouvre.</p>
+		             <p><img class="icone" src="illustrations/9_5_requete_icone.jpg" alt="icône 'Fenêtre SQL' du gestionnaire de BDD" >Cliquez ensuite sur l'icône <b>Fenêtre SQL</b> (ou menu Base de données &#8594; Fenêtre SQL)&nbsp;: un nouvel onglet s'ouvre.</p>
 		             <figure>
-        			     <a href="illustrations/tous/9_5_requete_fenetre.png" >
-        			         <img src="illustrations/tous/9_5_requete_fenetre.png" alt="Fenêtre du gestionnaire de bdd avec l'onglet requête" width="600">
+        			     <a href="illustrations/9_5_requete_fenetre.jpg" >
+        			         <img src="illustrations/9_5_requete_fenetre.jpg" alt="Fenêtre du gestionnaire de bdd avec l'onglet requête" width="600">
         			     </a>
         	         </figure>
         	      </div>
@@ -265,8 +265,8 @@
     	           <p class="code">SELECT * FROM clc00_vignes WHERE area_ha &lt; 25</p>
     	           <p>Puis cliquez sur le bouton <b>Exécuter</b>&nbsp;: les 10 lignes correspondant à des polygones de surface &lt; 25 hectares s'affichent.</p>
     	           <figure>
-    			     <a href="illustrations/tous/9_5_requete_exemple.png" >
-    			         <img src="illustrations/tous/9_5_requete_exemple.png" alt="Requête exemple et son résultat" width="600">
+    			     <a href="illustrations/9_5_requete_exemple.jpg" >
+    			         <img src="illustrations/9_5_requete_exemple.jpg" alt="Requête exemple et son résultat" width="600">
     			     </a>
     	           </figure>
     	         </div>
@@ -290,8 +290,8 @@ WHERE area_ha &lt; 25</p>
 		          <p>pour créer une nouvelle couche nommée inf25ha dans le schéma tutoqgis par exemple.</p>
 		          <p>Cliquez sur <b>Exécuter</b> : aucun résultat n'est renvoyé mais une nouvelle couche est ajoutée à la base, visible après l'avoir actualisée.</p>
 		          <figure>
-    			     <a href="illustrations/tous/9_5_requete_exemple2.png" >
-    			         <img src="illustrations/tous/9_5_requete_exemple2.png" alt="Requête de création de table" width="600">
+    			     <a href="illustrations/9_5_requete_exemple2.jpg" >
+    			         <img src="illustrations/9_5_requete_exemple2.jpg" alt="Requête de création de table" width="600">
     			     </a>
     	          </figure>
 		        </div>
@@ -303,8 +303,8 @@ WHERE area_ha &lt; 25</p>
 		          <p>Il faudra donc lancer une deuxième requête pour que la colonne <b>geom</b> soit bien reconnue comme colonne de géométrie dans SpatiaLite&nbsp;:</p>
 		          <p class="code">SELECT RecoverGeometryColumn('inf25ha', 'geom', 2154, 'MULTIPOLYGON', 'XY');</p>
 		          <figure>
-    			     <a href="illustrations/tous/9_5_recovergeom.png" >
-    			         <img src="illustrations/tous/9_5_recovergeom.png" alt="Requête RecevoerGeometryColumn" width="600">
+    			     <a href="illustrations/9_5_recovergeom.jpg" >
+    			         <img src="illustrations/9_5_recovergeom.jpg" alt="Requête RecevoerGeometryColumn" width="600">
     			     </a>
     	          </figure>
     	          <p>Après avoir cliqué sur le bouton <b>Exécuter</b>, cette requête doit renvoyer la valeur <b>1</b> indiquant que tout s'est bien passé. Après avoir cliqué sur le bouton <b>Actualiser</b> en haut à gauche, inf25ha a une icône de polygone et est maintenant une couche géographique.</p>
@@ -357,8 +357,8 @@ WHERE area_ha &lt; 25</p>
 			             <p>Notez également que pour simplifier la requête, la couche clc00_vignes est appelée v&nbsp;: <b>clc00_vignes AS v</b>. On peut donc y faire référence dans le reste de la requête par la lettre v sans taper son nom complet.</p>
 			             <p>Vous pouvez ajouter cette couche à QGIS en double-cliquant sur son nom&nbsp;:</p>
 			             <figure>
-            			     <a href="illustrations/tous/9_5_grille_res.png" >
-            			         <img src="illustrations/tous/9_5_grille_res.png" alt="Grille superposée aux vignes" width="300">
+            			     <a href="illustrations/9_5_grille_res.jpg" >
+            			         <img src="illustrations/9_5_grille_res.jpg" alt="Grille superposée aux vignes" width="300">
             			     </a>
             	          </figure>
 			             <p>Cependant, cette couche ne contient qu'une seule entité multi-partie : vous ne pouvez pas sélectionner une seule case. Une dernière requête est donc nécessaire&nbsp;:</p>
@@ -476,8 +476,8 @@ SELECT row_number() over () as gid, geom FROM
                         <p>Actualisez la base&nbsp;: la couche grid00 est visible, on peut l'ajouter à QGIS, mais son type de géométrie n'est pas reconnu. Pour cela, une dernière requête&nbsp;:</p>
                         <p class="code">Select populate_geometry_columns()</p>
                         <figure>
-        			     <a href="illustrations/tous/9_5_grille_postgis_res.png" >
-        			         <img src="illustrations/tous/9_5_grille_postgis_res.png" alt="Fenêtre du gestionnaire de bdd avec aperçu de la grille PostGIS" width="600">
+        			     <a href="illustrations/9_5_grille_postgis_res.jpg" >
+        			         <img src="illustrations/9_5_grille_postgis_res.jpg" alt="Fenêtre du gestionnaire de bdd avec aperçu de la grille PostGIS" width="600">
         			     </a>
         	            </figure>
         	         </div>
@@ -545,8 +545,8 @@ ORDER BY g.gid</p>
 		         <div class="manip">
 		          <p>Ajoutez la couche créée à QGIS. Vous pouvez par exemple lui attribuer un style gradué pour visualiser la présence de vignes&nbsp;:</p>
                     <figure>
-    			     <a href="illustrations/tous/9_5_vignes_jenks7.png" >
-    			         <img src="illustrations/tous/9_5_vignes_jenks7.png" alt="Surface en vignes par maille de 50km, discrétisation Jenks 7 classes" width="400">
+    			     <a href="illustrations/9_5_vignes_jenks7.jpg" >
+    			         <img src="illustrations/9_5_vignes_jenks7.jpg" alt="Surface en vignes par maille de 50km, discrétisation Jenks 7 classes" width="400">
     			     </a>
     	            </figure>
     	          </div>
@@ -649,8 +649,8 @@ WHERE g1.gid = g2.gid;</p>
 			         <div class="manip">
 			             <p>Pour visualiser cette évolution, ajoutez la couche à QGIS, avec un style gradué&nbsp;:</p>
 			             <figure>
-        			         <a href="illustrations/tous/9_5_evol_gradue.png" >
-        			             <img src="illustrations/tous/9_5_evol_gradue.png" alt="Paramétrage du style gradué avec une gamme de couleur divergente et une classification symmétrique" width="600">
+        			         <a href="illustrations/9_5_evol_gradue.jpg" >
+        			             <img src="illustrations/9_5_evol_gradue.jpg" alt="Paramétrage du style gradué avec une gamme de couleur divergente et une classification symmétrique" width="600">
         			         </a>
         	            </figure>
         	            <ul>
@@ -662,8 +662,8 @@ WHERE g1.gid = g2.gid;</p>
         	               <li class="espace">Cochez la case <b>Classification symétrique</b>, pour représenter avec la même intensité de couleur des variations positives et négatives de même ampleur, avec comme valeur du milieu <b>0</b></li>
         	            </ul>
         	            <figure>
-        			         <a href="illustrations/tous/9_5_evol_res.png" >
-        			             <img src="illustrations/tous/9_5_evol_res.png" alt="Exemple de représentation de l'évolution de la surface en vigne, gamme de couleur divergente, intervalles égaux, 5 classes" width="400">
+        			         <a href="illustrations/9_5_evol_res.jpg" >
+        			             <img src="illustrations/9_5_evol_res.jpg" alt="Exemple de représentation de l'évolution de la surface en vigne, gamme de couleur divergente, intervalles égaux, 5 classes" width="400">
         			         </a>
         	            </figure>
         	            <p>Une taille de maille différente donnerait un résultat différent&nbsp;!</p>
@@ -675,14 +675,14 @@ WHERE g1.gid = g2.gid;</p>
 			             <p>Ouvrez un nouveau projet QGIS, ajoutez-y vos 2 couches SpatiaLite ou PostGIS <em class="data">grid00_surf</em> et <em class="data">grid12_surf</em>.</p>
 			             <p>Dans la boîte à outils, cherchez l'outil GDAL <b>Rasteriser (vecteur vers raster)</b>&nbsp;:</p>
 			             <figure>
-        			         <a href="illustrations/tous/9_5_rasteriser_emplacement.png" >
-        			             <img src="illustrations/tous/9_5_rasteriser_emplacement.png" alt="Recherche par filtre de l'outil rasteriser dans la toolbox" width="320">
+        			         <a href="illustrations/9_5_rasteriser_emplacement.jpg" >
+        			             <img src="illustrations/9_5_rasteriser_emplacement.jpg" alt="Recherche par filtre de l'outil rasteriser dans la toolbox" width="320">
         			         </a>
         	            </figure>
         	            <p>Double-cliquez sur cet outil&nbsp;:</p>
         	            <figure>
-        			         <a href="illustrations/tous/9_5_rasteriser_fenetre.png" >
-        			             <img src="illustrations/tous/9_5_rasteriser_fenetre.png" alt="Paramétrage de l'outil rasteriser pour la couche grid00_surf" width="500">
+        			         <a href="illustrations/9_5_rasteriser_fenetre.jpg" >
+        			             <img src="illustrations/9_5_rasteriser_fenetre.jpg" alt="Paramétrage de l'outil rasteriser pour la couche grid00_surf" width="500">
         			         </a>
         	            </figure>
         	            <ul>
@@ -695,21 +695,21 @@ WHERE g1.gid = g2.gid;</p>
         	            </ul>
         	            <p>Lancez la rastérisation... La couche résultat est automatiquement ajoutée à QGIS, et se superpose avec la couche grid00_surf&nbsp;:</p>
         	            <figure>
-        			         <a href="illustrations/tous/9_5_rasteriser_res.png" >
-        			             <img src="illustrations/tous/9_5_rasteriser_res.png" alt="Résultat de la rastérisation, superposé à la couche d'origine" width="550">
+        			         <a href="illustrations/9_5_rasteriser_res.jpg" >
+        			             <img src="illustrations/9_5_rasteriser_res.jpg" alt="Résultat de la rastérisation, superposé à la couche d'origine" width="550">
         			         </a>
         	            </figure>
         	            <p>Si vous avez créé une couche temporaire, renommez-la par exemple <b>rast00</b> (en la sélectionnant puis en appuyant sur la touche F2) afin de ne pas la confondre avec le deuxième raster sur 2012 par la suite.</p>
         	            <p>Effectuez la même opération sur la couche <b>grid12_surf</b> pour créer un deuxième raster. Si c'est une couche temporaire, renommez-la par exemple <b>rast12</b>.</p>
         	            <p>Il ne reste plus qu'à soustraire ces 2 rasters au moyen de la calculatrice raster.</p>
         	            <figure>
-        			         <a href="illustrations/tous/9_5_rastercalc_emplacement.png" >
-        			             <img src="illustrations/tous/9_5_rastercalc_emplacement.png" alt="Emplacement de l'outil Raster calculator dans la toolbox" width="320">
+        			         <a href="illustrations/9_5_rastercalc_emplacement.jpg" >
+        			             <img src="illustrations/9_5_rastercalc_emplacement.jpg" alt="Emplacement de l'outil Raster calculator dans la toolbox" width="320">
         			         </a>
         	            </figure>
         	            <figure>
-        			         <a href="illustrations/tous/9_5_rastercalc_fenetre.png" >
-        			             <img src="illustrations/tous/9_5_rastercalc_fenetre.png" alt="Paramétrage de l'outil Raster calculator" width="600">
+        			         <a href="illustrations/9_5_rastercalc_fenetre.jpg" >
+        			             <img src="illustrations/9_5_rastercalc_fenetre.jpg" alt="Paramétrage de l'outil Raster calculator" width="600">
         			         </a>
         	            </figure>
         	            <ul>
@@ -719,14 +719,14 @@ WHERE g1.gid = g2.gid;</p>
         	            </ul>
         	            <p>Par défaut, le résultat s'affiche en niveau de gris&nbsp;:</p>
         	            <figure>
-        			         <a href="illustrations/tous/9_5_evol_raster1.png" >
-        			             <img src="illustrations/tous/9_5_evol_raster1.png" alt="Résultat de la différence des 2 rasters : style par défaut bande grise unique" width="400">
+        			         <a href="illustrations/9_5_evol_raster1.jpg" >
+        			             <img src="illustrations/9_5_evol_raster1.jpg" alt="Résultat de la différence des 2 rasters : style par défaut bande grise unique" width="400">
         			         </a>
         	            </figure>
         	            <p>Pour une représentation similaire à celle obtenue plus haut, il faut paramétrer le style de ce raster (cliquez sur l'image pour la voir en plus grand)&nbsp;:</p>
         	            <figure>
-        			         <a href="illustrations/tous/9_5_evolraster_discretisation.png" >
-        			             <img src="illustrations/tous/9_5_evolraster_discretisation.png" alt="Paramétrage du style pour obtenir une discrétisation en 5 classes avec gamme de couleur divergente" width="600">
+        			         <a href="illustrations/9_5_evolraster_discretisation.jpg" >
+        			             <img src="illustrations/9_5_evolraster_discretisation.jpg" alt="Paramétrage du style pour obtenir une discrétisation en 5 classes avec gamme de couleur divergente" width="600">
         			         </a>
         	            </figure>
         	            <ul>
@@ -738,8 +738,8 @@ WHERE g1.gid = g2.gid;</p>
         	            </ul>
         	            <p>Au final, le résultat est identique à celui obtenu en mode vecteur&nbsp;:</p>
         	            <figure>
-        			         <a href="illustrations/tous/9_5_evolraster_res.png" >
-        			             <img src="illustrations/tous/9_5_evolraster_res.png" alt="Résultat de la discrétisation en 5 classes, du rose au vert" width="400">
+        			         <a href="illustrations/9_5_evolraster_res.jpg" >
+        			             <img src="illustrations/9_5_evolraster_res.jpg" alt="Résultat de la discrétisation en 5 classes, du rose au vert" width="400">
         			         </a>
         	            </figure>
 			         </div>

@@ -49,11 +49,11 @@
 			
     				<p>Le but sera ici, à partir d'une couche de cours d'eau de la région Pays de la Loire et d'une couche des départements de France métropolitaine, de <b>découper les cours d'eau pour ne garder que ceux dans notre zone d'étude</b>, en l'occurrence le département de la Loire-Atlantique (44).</p>
     				<figure>
-    				    <a href="illustrations/tous/9_1_decoupage_principe_1.png" >
-    						<img src="illustrations/tous/9_1_decoupage_principe_1.png" alt="Couches de départ : cours d'eau et départements" width="300" >
+    				    <a href="illustrations/9_1_decoupage_principe_1.jpg" >
+    						<img src="illustrations/9_1_decoupage_principe_1.jpg" alt="Couches de départ : cours d'eau et départements" width="300" >
     					</a>
-    					<a href="illustrations/tous/9_1_decoupage_principe_2.png" >
-    						<img src="illustrations/tous/9_1_decoupage_principe_2.png" alt="Couche résultat : cours d'eau du département de la Loire-Atlantique" width="300" >
+    					<a href="illustrations/9_1_decoupage_principe_2.jpg" >
+    						<img src="illustrations/9_1_decoupage_principe_2.jpg" alt="Couche résultat : cours d'eau du département de la Loire-Atlantique" width="300" >
     					</a>
     					<figcaption>A gauche, les 2 couches de départ : cours d'eau des Pays de la Loire et départements. A droite, le résultat souhaité : les cours d'eau découpés selon le département de la Loire-Atlantique (44)</figcaption>
     				</figure>
@@ -65,20 +65,20 @@
     				<div class="manip">
     					<p>Ouvrez un nouveau projet QGIS. Ajoutez les couches <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">DEPARTEMENT</a></em> et <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">gis_osm_waterways_free_1</a></em>.</p>
     					<p>Le but sera donc de découper les cours d'eau par le département 44, pour ne garder que les cours d'eau à l'intérieur de ce département. Cette opération crée une nouvelle couche.</p>
-    					<p><img class="icone" src="illustrations/tous/1_1_selection_icone.png" alt="menu projet, sauvegarder sous..." >Tout d'abord, sélectionnez le département 44 au moyen de l'outil de sélection :</p>
+    					<p><img class="icone" src="illustrations/1_1_selection_icone.jpg" alt="menu projet, sauvegarder sous..." >Tout d'abord, sélectionnez le département 44 au moyen de l'outil de sélection :</p>
     					<figure>
-    						<a href="illustrations/tous/9_1_selection_44.png" >
-    							<img src="illustrations/tous/9_1_selection_44.png" alt="Département 44 sélectionné (en jaune)" width="300" >
+    						<a href="illustrations/9_1_selection_44.jpg" >
+    							<img src="illustrations/9_1_selection_44.jpg" alt="Département 44 sélectionné (en jaune)" width="300" >
     						</a>
     					</figure>
     					<p>Puis rendez-vous dans la <a class="thumbnail_bottom" href="#thumb">boîte à outils de traitements &#8594; Recouvrement de vecteur &#8594; Couper
                         	<span>
-                        		<img src="illustrations/tous/9_1_decouper_emplacement.png" alt="Emplacement de l'outil de découpage dans la boîte à outils" height="400" >
+                        		<img src="illustrations/9_1_decouper_emplacement.jpg" alt="Emplacement de l'outil de découpage dans la boîte à outils" height="400" >
                         	</span>
                         </a></p>
     					<figure>
-    						<a href="illustrations/tous/9_1_decouper_fenetre.png" >
-    							<img src="illustrations/tous/9_1_decouper_fenetre.png" alt="Fenêtre de l'outil découper" width="600" >
+    						<a href="illustrations/9_1_decouper_fenetre.jpg" >
+    							<img src="illustrations/9_1_decouper_fenetre.jpg" alt="Fenêtre de l'outil découper" width="600" >
     						</a>
     					</figure>
     					<ul>
@@ -90,8 +90,8 @@
     					</ul>
     					<p>Patientez... La nouvelle couche est ajoutée :</p>
     				    <figure>
-    						<a href="illustrations/tous/9_1_decoupage_resultat.png" >
-    							<img src="illustrations/tous/9_1_decoupage_resultat.png" alt="Les 2 couches de départ et la couche résultat en rouge" width="500" >
+    						<a href="illustrations/9_1_decoupage_resultat.jpg" >
+    							<img src="illustrations/9_1_decoupage_resultat.jpg" alt="Les 2 couches de départ et la couche résultat en rouge" width="500" >
     						</a>
     					</figure>
                         <p>Vérifiez ses données attributaires : <b>elle contient les mêmes champs que la couche de cours d'eau initiale</b>. Les valeurs des champs ne sont pas recalculées (sauf dans le cas de champs virtuels) : s'il y a un champ longueur, ses valeurs seront donc erronées.</p>
@@ -99,11 +99,11 @@
                     
     				<p>Contrairement à une requête spatiale, le découpage modifie les entités en les <b>découpant</b> suivant les limites de la couche de découpage. Une requête se borne à <b>sélectionner</b> par exemple les cours d'eau à l'intérieur d'un département, ou intersectant ce département.</p>
     				<figure>
-    				    <a href="illustrations/tous/9_1_selection.png" >
-    						<img src="illustrations/tous/9_1_selection.png" alt="Cours d'eau intersectant un département : il dépasse du département" width="250" >
+    				    <a href="illustrations/9_1_selection.jpg" >
+    						<img src="illustrations/9_1_selection.jpg" alt="Cours d'eau intersectant un département : il dépasse du département" width="250" >
     					</a>
-    					<a href="illustrations/tous/9_1_decoupage.png" >
-    						<img src="illustrations/tous/9_1_decoupage.png" alt="Cours d'eau découpé par un département" width="250" >
+    					<a href="illustrations/9_1_decoupage.jpg" >
+    						<img src="illustrations/9_1_decoupage.jpg" alt="Cours d'eau découpé par un département" width="250" >
     					</a>
     					<figcaption>A gauche, cours d'eau intersectant un département sélectionné par une requête spatiale (en jaune). A droite, cours d'eau découpé par un département (en rouge).</figcaption>
     				</figure>
@@ -120,8 +120,8 @@
 			
 					<p>Une zone tampon (aussi appelée « buffer ») est une <b>zone épousant la forme des objets d'une couche, d'une largeur donnée</b>. Si elles sont tracées autour de points, les zones tampons seront des cercles. Autour de lignes et de polygones, ce sera des polygones de forme variable. Une zone tampon peut servir par exemple à modéliser une zone inondable, un périmètre de sécurité, une zone d'achalandage...</p>
 					<figure>
-						<a href="illustrations/tous/9_1_principe_tampon.svg" >
-							<img src="illustrations/tous/9_1_principe_tampon.png" alt="Exemples de zones tampon autour d'un point, d'une ligne et d'un polygone" width="500" >
+						<a href="illustrations/9_1_principe_tampon.svg" >
+							<img src="illustrations/9_1_principe_tampon.jpg" alt="Exemples de zones tampon autour d'un point, d'une ligne et d'un polygone" width="500" >
 						</a>
 					</figure>
 					<p>L'objectif est ici de créer une zone tampon de 100 mètres autour de l'Erdre. Cette zone pourra représenter par exemple une zone inondable, ou bien une zone s'interposant entre rivière et cultures.</p>
@@ -137,8 +137,8 @@
 						    <p class="reponse">2/ <a href="06_01_req_attrib.php">utiliser une requête attributaire</a> : <b>"name"  =  'L\'Erdre'</b>. Attention, le caractère <b>\ (antislash)</b> est nécessaire avant l'apostrophe, pour que ce dernier ne soit pas considéré comme la fin de la chaîne de caractères.</p>
 						</div>
 						<figure>
-						  <a href="illustrations/tous/9_1_selection_erdre.png" >
-							<img src="illustrations/tous/9_1_selection_erdre.png" alt="l'Erdre sélectionné, dans la carte et dans la table" width="400" >
+						  <a href="illustrations/9_1_selection_erdre.jpg" >
+							<img src="illustrations/9_1_selection_erdre.jpg" alt="l'Erdre sélectionné, dans la carte et dans la table" width="400" >
 						  </a>
 						</figure>
 						<p>Ce cours d'eau est donc constitué de plusieurs entités.</p>
@@ -149,8 +149,8 @@
 					<div class="manip">
 						<p>Pour créer la zone tampon : <b>Boîte à outils de traitements &#8594; Géométrie vectorielle &#8594; Tampon</b></p>
 						<figure>
-						  <a href="illustrations/tous/9_1_tampon_degres.png" >
-							<img src="illustrations/tous/9_1_tampon_degres.png" alt="Paramètrage de l'outil zone tampon, où l'on voit que les unités de la couche coursdeau_osm_44 sont les degrés" width="600" >
+						  <a href="illustrations/9_1_tampon_degres.jpg" >
+							<img src="illustrations/9_1_tampon_degres.jpg" alt="Paramètrage de l'outil zone tampon, où l'on voit que les unités de la couche coursdeau_osm_44 sont les degrés" width="600" >
 						  </a>
 						</figure>
                         <p>Sélectionnez la couche source : <em class="data">coursdeau_osm_44</em>. En-dessous, la distance permet de paramétrer la taille de la zone tampon.</p>
@@ -165,8 +165,8 @@
                         <p>Nommez la nouvelle couche <em class="data">coursdeau_osm_44_L93</em>.</p>
                     	<p>Vérifiez dans les propriétés de cette nouvelle couche, rubrique <b>Source</b>, que son SCR soit bien le Lambert 93 :</p>
                     	<figure>
-    						<a href="illustrations/tous/9_1_verif_l93.png" >
-    							<img src="illustrations/tous/9_1_verif_l93.png" alt="Propriétés de la couche, rubrique Source : le SCR est le RGF93/Lambert-93" width="450" >
+    						<a href="illustrations/9_1_verif_l93.jpg" >
+    							<img src="illustrations/9_1_verif_l93.jpg" alt="Propriétés de la couche, rubrique Source : le SCR est le RGF93/Lambert-93" width="450" >
     						</a>
     					</figure>
     				</div>
@@ -176,8 +176,8 @@
 				        <p><a href="09_01_vecteur.php#IX12b">Sélectionnez à nouveau l'Erdre</a>.</p>
 				        <p>Vous pouvez ensuite créer la zone tampon :</p>
 				        <figure>
-    						<a href="illustrations/tous/9_1_tampon_fenetre.png" >
-    							<img src="illustrations/tous/9_1_tampon_fenetre.png" alt="Fenêtre de l'outil de zone tampon" width="600" >
+    						<a href="illustrations/9_1_tampon_fenetre.jpg" >
+    							<img src="illustrations/9_1_tampon_fenetre.jpg" alt="Fenêtre de l'outil de zone tampon" width="600" >
     						</a>
     					</figure>
 						<ul>
@@ -188,18 +188,18 @@
 							<li class="espace">Mis en tampon : cliquez tout à droite sur le bouton <b>... &#8594; Enregistrer vers un fichier...</b> choisir le nom : <em class="data">Erdre_tampon100m.gpkg</em> par exemple et l'emplacement de la couche qui sera créée</li>
 						</ul>
 						<figure>
-    						<a href="illustrations/tous/9_1_tampon_nonregroupe.png" >
-    							<img src="illustrations/tous/9_1_tampon_nonregroupe.png" alt="Détail du résultat de la zone tampon sans regrouper" width="200" >
+    						<a href="illustrations/9_1_tampon_nonregroupe.jpg" >
+    							<img src="illustrations/9_1_tampon_nonregroupe.jpg" alt="Détail du résultat de la zone tampon sans regrouper" width="200" >
     						</a>
-    						<a href="illustrations/tous/9_1_tampon_regroupe.png" >
-    							<img src="illustrations/tous/9_1_tampon_regroupe.png" alt="Détail du résultat de la zone tampon en regroupant" width="200" >
+    						<a href="illustrations/9_1_tampon_regroupe.jpg" >
+    							<img src="illustrations/9_1_tampon_regroupe.jpg" alt="Détail du résultat de la zone tampon en regroupant" width="200" >
     						</a>
     						<figcaption>Détail du résultat de la zone tampon : à gauche sans regrouper, à droite en regroupant.</figcaption>
     					</figure>
 						<p>Cliquez sur <b>Exécuter</b>, observez le résultat :</p>
 						<figure>
-    						<a href="illustrations/tous/9_1_res_tampon_erdre.png" >
-    							<img src="illustrations/tous/9_1_res_tampon_erdre.png" alt="Résultat de la zone tampon" width="400" >
+    						<a href="illustrations/9_1_res_tampon_erdre.jpg" >
+    							<img src="illustrations/9_1_res_tampon_erdre.jpg" alt="Résultat de la zone tampon" width="400" >
     						</a>
     					</figure>
 					</div>
@@ -212,14 +212,14 @@
     					<li class="espace"><b>Style d'extrémité :</b> il s'agit de la manière dont les zones tampons sont &#171; terminées &#187;. 3 valeurs sont possibles : rond, plat et carré</li>
     				</ul>
 					<figure>
-						<a href="illustrations/tous/9_1_tampon_extr_rond.png" >
-							<img src="illustrations/tous/9_1_tampon_extr_rond.png" alt="Style d'extrémité rond pour une zone tampon" width="170" >
+						<a href="illustrations/9_1_tampon_extr_rond.jpg" >
+							<img src="illustrations/9_1_tampon_extr_rond.jpg" alt="Style d'extrémité rond pour une zone tampon" width="170" >
 						</a>
-						<a href="illustrations/tous/9_1_tampon_extr_plat.png" >
-							<img src="illustrations/tous/9_1_tampon_extr_plat.png" alt="Style d'extrémité plat pour une zone tampon" width="170" >
+						<a href="illustrations/9_1_tampon_extr_plat.jpg" >
+							<img src="illustrations/9_1_tampon_extr_plat.jpg" alt="Style d'extrémité plat pour une zone tampon" width="170" >
 						</a>
-                        <a href="illustrations/tous/9_1_tampon_extr_rond.png" >
-							<img src="illustrations/tous/9_1_tampon_extr_carre.png" alt="Style d'extrémité carré pour une zone tampon" width="170" >
+                        <a href="illustrations/9_1_tampon_extr_rond.jpg" >
+							<img src="illustrations/9_1_tampon_extr_carre.jpg" alt="Style d'extrémité carré pour une zone tampon" width="170" >
 						</a>
 						<figcaption>Différents types d'extrémité pour les zones tampon : de gauche à droite, rond, plat et carré.</figcaption>
 					</figure>
@@ -227,17 +227,17 @@
     					<li class="espace"><b>Style de jointure :</b> les zones tampons sont créées en &#171; décalant &#187; les sommets d'une entité, ici une ligne. Il existe plusieurs manières de réaliser ce décalage, ce que contrôle ce paramètre. 3 valeurs sont possibles : rond, angle droit et oblique.</li>
     				</ul>
 					<figure>
-						<a href="illustrations/tous/9_1_tampon_jointure_rond.png" >
-							<img src="illustrations/tous/9_1_tampon_jointure_rond.png" alt="Style de jointure rond pour une zone tampon" width="140" >
+						<a href="illustrations/9_1_tampon_jointure_rond.jpg" >
+							<img src="illustrations/9_1_tampon_jointure_rond.jpg" alt="Style de jointure rond pour une zone tampon" width="140" >
 						</a>
-						<a href="illustrations/tous/9_1_tampon_jointure_angledroit.png" >
-							<img src="illustrations/tous/9_1_tampon_jointure_angledroit.png" alt="Style de jointure angle droit pour une zone tampon" width="140" >
+						<a href="illustrations/9_1_tampon_jointure_angledroit.jpg" >
+							<img src="illustrations/9_1_tampon_jointure_angledroit.jpg" alt="Style de jointure angle droit pour une zone tampon" width="140" >
 						</a>
-                        <a href="illustrations/tous/9_1_tampon_jointure_oblique.png" >
-							<img src="illustrations/tous/9_1_tampon_jointure_oblique.png" alt="Style de jointure oblique pour une zone tampon" width="140" >
+                        <a href="illustrations/9_1_tampon_jointure_oblique.jpg" >
+							<img src="illustrations/9_1_tampon_jointure_oblique.jpg" alt="Style de jointure oblique pour une zone tampon" width="140" >
 						</a>
-						<a href="illustrations/tous/9_1_tampon_jointure_tous.png" >
-							<img src="illustrations/tous/9_1_tampon_jointure_tous.png" alt="Comparaison des 3 styles de jointure pour une zone tampon" width="140" >
+						<a href="illustrations/9_1_tampon_jointure_tous.jpg" >
+							<img src="illustrations/9_1_tampon_jointure_tous.jpg" alt="Comparaison des 3 styles de jointure pour une zone tampon" width="140" >
 						</a>
 						<figcaption>Différents types de jointure pour les zones tampon : de gauche à droite, rond, angle droit, oblique et superposition des 3.</figcaption>
 					</figure>
@@ -252,8 +252,8 @@
 					<p>L'intersection entre deux couches crée une troisième couche, avec uniquement les parties communes aux deux couches.</p>
 					
 					<figure>
-						<a href="illustrations/tous/9_1_inters_principe.svg" >
-							<img src="illustrations/tous/9_1_inters_principe.png" alt="Exemple d'une intersection entre une cercle et un rectangle" width="320" >
+						<a href="illustrations/9_1_inters_principe.svg" >
+							<img src="illustrations/9_1_inters_principe.jpg" alt="Exemple d'une intersection entre une cercle et un rectangle" width="320" >
 						</a>
 						<figcaption>La zone hachurée correspond à l'intersection entre le rectangle et le cercle.</figcaption>
 					</figure>
@@ -267,8 +267,8 @@
 						<p><b>Boîte à outils de traitements &#8594; Recouvrement de vecteur &#8594; Intersection</b>
 						:</p>
 						<figure>
-							<a href="illustrations/tous/9_1_inters_fenetre.png" >
-								<img src="illustrations/tous/9_1_inters_fenetre.png" alt="Paramètrage de l'outil d'intersection" width="600" >
+							<a href="illustrations/9_1_inters_fenetre.jpg" >
+								<img src="illustrations/9_1_inters_fenetre.jpg" alt="Paramètrage de l'outil d'intersection" width="600" >
 							</a>
 						</figure>
 						<ul>
@@ -281,8 +281,8 @@
 						
 						<p>Cliquez sur <b>Exécuter</b>, observez le résultat&nbsp;:</p>
 						<figure>
-							<a href="illustrations/tous/9_1_inters_resultat.png" >
-								<img src="illustrations/tous/9_1_inters_resultat.png" alt="Résultat de l'intersection, superposé à la couche de communes" width="400" >
+							<a href="illustrations/9_1_inters_resultat.jpg" >
+								<img src="illustrations/9_1_inters_resultat.jpg" alt="Résultat de l'intersection, superposé à la couche de communes" width="400" >
 							</a>
 						</figure>
 						<p>Ouvrez la table attributaire de cette couche : notez que les champs des deux couches sont présents.</p>
@@ -307,8 +307,8 @@
 			 <div class="manip">
 			   <p>Rendez-vous dans le <b>menu Traitement &#8594; Historique</b>&nbsp;:</p>
 			   <figure>
-  					<a href="illustrations/tous/9_1_historique.png" >
-  						<img src="illustrations/tous/9_1_historique.png" alt="Fenêtre de l'historique" width="600" >
+  					<a href="illustrations/9_1_historique.jpg" >
+  						<img src="illustrations/9_1_historique.jpg" alt="Fenêtre de l'historique" width="600" >
   					</a>
   				</figure>
   				<p>Dans cette fenêtre, chaque ligne correspond à une fois où vous avez lancé un outil de la boîte à outils, le tout classé par ordre chronologique.</p>

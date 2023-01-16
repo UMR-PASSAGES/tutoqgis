@@ -28,24 +28,24 @@
 					<div class="manip">
 						<p>Lancez QGIS ou créez un nouveau projet, et assurez-vous que le <a href="02_03_couches_projets.php#II31">SCR de ce projet</a> soit le <b>WGS84 EPSG 4326</b>.</p>
 						<p><b>Il est inutile d'ajouter la carte d'Oahu à QGIS</b> (si vous le faites néanmoins, profitez-en pour observer qu'en l'absence d'informations de localisation pour cette image, QGIS positionne son coin supérieur gauche aux coordonnées (0,0)).</p>
-						<p><img class="icone" src="illustrations/tous/4_3_georeferenceur_icone.png" alt="icône du géoréférenceur" >
+						<p><img class="icone" src="illustrations/4_3_georeferenceur_icone.jpg" alt="icône du géoréférenceur" >
 						Ouvrez la fenêtre du géoréférenceur :
 							<a class="thumbnail_bottom" href="#thumb">Menu Raster &#8594; Géoréférencer...
 								<span>
-									<img src="illustrations/tous/4_3_georeferenceur_menu.png" alt="Menu Raster, Géoréférencer, Géoréférencer..." height="250" >
+									<img src="illustrations/4_3_georeferenceur_menu.jpg" alt="Menu Raster, Géoréférencer, Géoréférencer..." height="250" >
 								</span>
 							</a>
 						</p>
 						<figure>
-							<a href="illustrations/tous/4_3_georeferenceur_fenetre.png" >
-								<img src="illustrations/tous/4_3_georeferenceur_fenetre.png" alt="Fenêtre du géoréférenceur" width="600">
+							<a href="illustrations/4_3_georeferenceur_fenetre.jpg" >
+								<img src="illustrations/4_3_georeferenceur_fenetre.jpg" alt="Fenêtre du géoréférenceur" width="600">
 							</a>
 						</figure>
 						<p class="note">Il est possible d'afficher le géoréferenceur comme une fenêtre à part ou ancrée. Pour changer de mode, dans la fenêtre du géoréférenceur, <b>menu Paramètres &#8594; Configurer le géoréférenceur...</b>, cochez ou décochez la case <b>Afficher la fenêtre de géoréférencement dans la fenêtre principale</b>.</p>
-						<p><img class="icone" src="illustrations/tous/4_3_ouvrir_raster_icone.png" alt="icône ouvrir un raster du géoréférenceur" >Dans cette fenêtre, ajoutez au géoréférenceur l'image à caler en cliquant sur l'icône <b>Ouvrir un raster</b>, ou bien
+						<p><img class="icone" src="illustrations/4_3_ouvrir_raster_icone.jpg" alt="icône ouvrir un raster du géoréférenceur" >Dans cette fenêtre, ajoutez au géoréférenceur l'image à caler en cliquant sur l'icône <b>Ouvrir un raster</b>, ou bien
 							<a class="thumbnail_bottom" href="#thumb">menu Fichier &#8594; Ouvrir raster...
 								<span>
-									<img src="illustrations/tous/4_3_ouvrir_raster_menu.png" alt="Menu Fichier, ouvrir un raster" height="200" >
+									<img src="illustrations/4_3_ouvrir_raster_menu.jpg" alt="Menu Fichier, ouvrir un raster" height="200" >
 								</span>
 							</a>
 						.</p>
@@ -53,21 +53,21 @@
 						<p class="note">Selon votre version de QGIS, une fenêtre peut s'ouvrir pour demander le SCR de l'image ; puisque nous avons décidé de partir du principe que les coordonnées de cette carte était en WGS84, 
 							<a class="thumbnail_bottom" href="#thumb">choisissez ce SCR
 								<span>
-									<img src="illustrations/tous/4_3_choix_scr_wgs84.png" alt="Choix du SCR WGS84 en utilisant le filtre 4326" height="500" >
+									<img src="illustrations/4_3_choix_scr_wgs84.jpg" alt="Choix du SCR WGS84 en utilisant le filtre 4326" height="500" >
 								</span>
 							</a>	
 						.</p>
 						<p>La carte s'affiche dans la fenêtre du géoréférenceur.</p>
 						<p>Il s'agit maintenant de renseigner les coordonnées de plusieurs points, en se basant sur les indications de la carte. Vous pouvez par exemple commencer par le point en haut à gauche :</p>
 						<figure>
-							<a href="illustrations/tous/4_3_premier_point.png" >
-								<img src="illustrations/tous/4_3_premier_point.png" alt="emplacement du premier point de calage à créer" width="300">
+							<a href="illustrations/4_3_premier_point.jpg" >
+								<img src="illustrations/4_3_premier_point.jpg" alt="emplacement du premier point de calage à créer" width="300">
 							</a>
 						</figure>
-						<p><img class="icone" src="illustrations/tous/4_3_ajout_point_icone.png" alt="icône d'ajout de point du géoréférenceur" >Vérifiez que l'icône <b>Ajouter un point</b> soit bien sélectionnée et cliquez à l'intersection des deux lignes du carroyage :</p>
+						<p><img class="icone" src="illustrations/4_3_ajout_point_icone.jpg" alt="icône d'ajout de point du géoréférenceur" >Vérifiez que l'icône <b>Ajouter un point</b> soit bien sélectionnée et cliquez à l'intersection des deux lignes du carroyage :</p>
 						<figure>
-							<a href="illustrations/tous/4_3_ajout_point_fenetre.png" >
-								<img src="illustrations/tous/4_3_ajout_point_fenetre.png" alt="Fenêtre de saisie des coordonnées d'un point de calage" width="450" >
+							<a href="illustrations/4_3_ajout_point_fenetre.jpg" >
+								<img src="illustrations/4_3_ajout_point_fenetre.jpg" alt="Fenêtre de saisie des coordonnées d'un point de calage" width="450" >
 							</a>
 						</figure>
 						<div class="question">
@@ -75,15 +75,15 @@
 							<p><label for="faq-3">Comment saisir les coordonnées de ce point ?</label></p>
 							<p class="reponse">Ce point est situé aux coordonnées -158° 15' Est (longitude négative car le point est à l'ouest du méridien de Greeenwich) et 21° 40' Nord (latitude positive car le point est au Nord de l'équateur).</p>
 							<p class="reponse">QGIS propose de saisir les coordonnées en degrés minutes secondes sous la forme dd mm ss.ss. Ici, nous avons juste des degrés et des minutes : le point a donc pour coordonnées <b>-158 15</b> Est et <b>21 40</b> Nord.</p>
-							<p class="reponse"><a href="illustrations/tous/4_3_ajout_point_fenetre_rempli.png" ><img src="illustrations/tous/4_3_ajout_point_fenetre_rempli.png" alt="Fenêtre de saisie des coordonnées d'un point de calage, coordonnées remplies" width="450" ></a></p>
+							<p class="reponse"><a href="illustrations/4_3_ajout_point_fenetre_rempli.jpg" ><img src="illustrations/4_3_ajout_point_fenetre_rempli.jpg" alt="Fenêtre de saisie des coordonnées d'un point de calage, coordonnées remplies" width="450" ></a></p>
 						</div>
 						<p>Depuis la version 3.22, le choix du SCR se fait directement dans cette fenêtre de saisie d'un point. Vérifiez que le SCR sélectionné soit bien le WGS84, puis cliquez sur <b>OK</b>.</p>
 					</div>
 					
 					<p>Le point apparaît sous forme d'une ligne dans la table des points de contrôle, sous la carte dans la fenêtre géoréférenceur :</p>
 					<figure>
-						<a href="illustrations/tous/4_3_table_points.png" >
-							<img src="illustrations/tous/4_3_table_points.png" alt="Table des points de contrôle : premier point" width="600">
+						<a href="illustrations/4_3_table_points.jpg" >
+							<img src="illustrations/4_3_table_points.jpg" alt="Table des points de contrôle : premier point" width="600">
 						</a>
 					</figure>
 					<p>Que signifient les différentes colonnes de cette table&nbsp;?</p>
@@ -107,21 +107,21 @@
 						<p>Pour visualiser les identifiants et/ou les coordonnées des points sur la carte du géoréférenceur : 
 							<a class="thumbnail_bottom" href="#thumb">Menu Paramètres &#8594; Configurer le géoréférenceur
 								<span>
-									<img src="illustrations/tous/4_3_config_georeferenceur_menu.png" alt="Menu Paramètres, Configurer le géoréférenceur" height="80" >
+									<img src="illustrations/4_3_config_georeferenceur_menu.jpg" alt="Menu Paramètres, Configurer le géoréférenceur" height="80" >
 								</span>
 							</a>	
 						 :</p>
 						<figure>
-							<a href="illustrations/tous/4_3_config_georeferenceur_fenetre.png" >
-								<img src="illustrations/tous/4_3_config_georeferenceur_fenetre.png" alt="Fenêtre de configuration du géoréférenceur" width="400">
+							<a href="illustrations/4_3_config_georeferenceur_fenetre.jpg" >
+								<img src="illustrations/4_3_config_georeferenceur_fenetre.jpg" alt="Fenêtre de configuration du géoréférenceur" width="400">
 							</a>
 						</figure>
-						<p><img class="icone" src="illustrations/tous/4_3_effacer_point_icone.png" alt="Icône effacer un point du géoréférenceur" >Si vous faites une erreur, vous pouvez supprimer un point en cliquant sur l'icône <b>Effacer un point</b>, puis sur le point à effacer.</p>
-						<p><img class="icone" src="illustrations/tous/4_3_deplacer_point_icone.png" alt="Icône déplacer un point du géoréférenceur" >Vous pouvez également déplacer un point déjà créé en cliquant sur l'icône <b>Deplacer les points de contrôle</b>, puis en faisant glisser le point à déplacer.</p>
-						<p><img class="icone" src="illustrations/tous/4_3_sauv_points_icone.png" alt="Icône sauvegarder les points de contrôle" >Une fois vos points créés, vous pouvez les sauvegarder au moyen du menu
+						<p><img class="icone" src="illustrations/4_3_effacer_point_icone.jpg" alt="Icône effacer un point du géoréférenceur" >Si vous faites une erreur, vous pouvez supprimer un point en cliquant sur l'icône <b>Effacer un point</b>, puis sur le point à effacer.</p>
+						<p><img class="icone" src="illustrations/4_3_deplacer_point_icone.jpg" alt="Icône déplacer un point du géoréférenceur" >Vous pouvez également déplacer un point déjà créé en cliquant sur l'icône <b>Deplacer les points de contrôle</b>, puis en faisant glisser le point à déplacer.</p>
+						<p><img class="icone" src="illustrations/4_3_sauv_points_icone.jpg" alt="Icône sauvegarder les points de contrôle" >Une fois vos points créés, vous pouvez les sauvegarder au moyen du menu
 							<a class="thumbnail_bottom" href="#thumb">Fichier &#8594; Enregistrer les points de contrôle sous...
 								<span>
-									<img src="illustrations/tous/4_3_sauv_points_menu.png" alt="Menu Projet, Fichier, Enregistrer les points de contrôle sous..." height="170" >
+									<img src="illustrations/4_3_sauv_points_menu.jpg" alt="Menu Projet, Fichier, Enregistrer les points de contrôle sous..." height="170" >
 								</span>
 							</a>	
 						 ou bien en cliquant sur l'icône correspondante.</p>
@@ -130,8 +130,8 @@
 						 
 					 <p>Voici à quoi ressemble la fenêtre du géoréférenceur une fois tous les poins de calage correspondant à des intersections du carroyage renseignés :</p>
 				 	<figure>
-				 		<a href="illustrations/tous/4_3_avec_tous_les_points.png" >
-							<img src="illustrations/tous/4_3_avec_tous_les_points.png" alt="Cartes de Oahu avec le maximum de points de calage renseignés" width="600">
+				 		<a href="illustrations/4_3_avec_tous_les_points.jpg" >
+							<img src="illustrations/4_3_avec_tous_les_points.jpg" alt="Cartes de Oahu avec le maximum de points de calage renseignés" width="600">
 						</a>
 					</figure>
 					 <p>Vous n'êtes pas obligé de renseigner autant de points ! Six suffiront pour notre calage.</p>

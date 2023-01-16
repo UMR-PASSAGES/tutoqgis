@@ -34,8 +34,8 @@
 					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>.</p>
 					<p>Pour voir les champs de la table attributaire de cette couche, vous pouvez bien sûr ouvrir la table attributaire, mais vous pouvez également ouvrir les propriétés de la couche, rubrique <b>Champs</b> :</p>
 					<figure>
-						<a href="illustrations/tous/7_1_proprietes_champs.png" >
-							<img src="illustrations/tous/7_1_proprietes_champs.png" alt="fenêtre des propriétés de la couche, rubrique champs" width="600" >
+						<a href="illustrations/7_1_proprietes_champs.jpg" >
+							<img src="illustrations/7_1_proprietes_champs.jpg" alt="fenêtre des propriétés de la couche, rubrique champs" width="600" >
 						</a>
 					</figure>
 					<p>Cette fenêtre vous permet de voir d'un seul coup d'œil la liste des champs, leur nom et leur type&nbsp;: <b>String</b> (texte), <b>Integer</b> (nombre entier) ou <b>Real</b> (nombre décimal)...</p>
@@ -51,15 +51,15 @@
     				
     				<div class="manip">
     					<p>Ouvrez la table attributaire de la couche <em class="data">communes_Bretagne_calcul</em>.</p>
-    					<p><img class="icone" src="illustrations/tous/7_1_edition_icone.png" alt="icône passer en mode édition" ><a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
+    					<p><img class="icone" src="illustrations/7_1_edition_icone.jpg" alt="icône passer en mode édition" ><a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
     					<p>Cliquez sur l'icône <b>Ajouter un champ</b> en haut de la table attributaire :</p>
     					<figure>
-    						<img src="illustrations/tous/7_1_BO_table_ajout.png" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" width="600" >
+    						<img src="illustrations/7_1_BO_table_ajout.jpg" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" width="600" >
     					</figure>
     					<p>La fenêtre suivante s'ouvre :</p>
     					<figure>
-    						<a href="illustrations/tous/7_1_ajout_fenetre.png" >
-    							<img src="illustrations/tous/7_1_ajout_fenetre.png" alt="fenêtre de création de colonne" width="400" >
+    						<a href="illustrations/7_1_ajout_fenetre.jpg" >
+    							<img src="illustrations/7_1_ajout_fenetre.jpg" alt="fenêtre de création de colonne" width="400" >
     						</a>
     					</figure>
     					<ul>
@@ -70,8 +70,8 @@
     					</ul>
     					<p>Cliquez sur <b>OK</b> ; le champ est ajouté à la table, rempli pour l'instant de valeurs nulles.</p>
     					<figure>
-    						<a href="illustrations/tous/7_1_table_nouveau_champ.png" >
-    							<img src="illustrations/tous/7_1_table_nouveau_champ.png" alt="table avec le champ CODE_DEPT vide" width="600" >
+    						<a href="illustrations/7_1_table_nouveau_champ.jpg" >
+    							<img src="illustrations/7_1_table_nouveau_champ.jpg" alt="table avec le champ CODE_DEPT vide" width="600" >
     						</a>
     					</figure>
     					<p>Quittez le mode édition en enregistrant les modifications.</p>
@@ -81,18 +81,18 @@
 			     
 			         <p>Il est maintenant possible de taper du texte pour remplir le champ NOM_DEPT que nous venons de créer.</p>
 			         <div class="manip">
-			             <p><img class="icone" src="illustrations/tous/7_1_edition_icone.png" alt="icône passer en mode édition" >Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
+			             <p><img class="icone" src="illustrations/7_1_edition_icone.jpg" alt="icône passer en mode édition" >Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
 			             <p>Ouvrez sa table attributaire si ce n'est pas déjà fait.</p>
 			             <p>Double-cliquez dans une case du champ <b>NOM_DEPT</b> :</p>
 			             <figure>
-    						<a href="illustrations/tous/7_1_table_modifier.png" >
-    							<img src="illustrations/tous/7_1_table_modifier.png" alt="double clic dans une case du champ CODE_DEPT vide" width="520" >
+    						<a href="illustrations/7_1_table_modifier.jpg" >
+    							<img src="illustrations/7_1_table_modifier.jpg" alt="double clic dans une case du champ CODE_DEPT vide" width="520" >
     						</a>
     					 </figure>
     					 <p>Et tapez-y la valeur correspondante (en vous aidant du champ INSEE_DEP qui contient le <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais#Liste_des_d%C3%A9partements">code du département</a>), terminez en appuyant sur la touche entrée&nbsp;:</p>
     					 <figure>
-    						<a href="illustrations/tous/7_1_table_modifier_ok.png" >
-    							<img src="illustrations/tous/7_1_table_modifier_ok.png" alt="double clic dans une case du champ CODE_DEPT vide" width="100" >
+    						<a href="illustrations/7_1_table_modifier_ok.jpg" >
+    							<img src="illustrations/7_1_table_modifier_ok.jpg" alt="double clic dans une case du champ CODE_DEPT vide" width="100" >
     						</a>
     					 </figure>
     					 <p>Vous pouvez tapez ainsi quelques valeurs.</p>
@@ -113,12 +113,12 @@
     					<p>Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
     					<p>Cliquez sur l'icône <b>Supprimer la colonne</b> en haut de la table attributaire :</p>
     					<figure>
-    						<img src="illustrations/tous/7_1_BO_table_suppression.png" alt="barre d'outils de la table attributaire, icône de suppression de champ entourée en rouge" width="600" >
+    						<img src="illustrations/7_1_BO_table_suppression.jpg" alt="barre d'outils de la table attributaire, icône de suppression de champ entourée en rouge" width="600" >
     					</figure>
     					<p>La fenêtre suivante apparaît :</p>
     					<figure>
-    						<a href="illustrations/tous/7_1_suppression_fenetre.png" >
-    							<img src="illustrations/tous/7_1_suppression_fenetre.png" alt="fenêtre de suppression de colonne" width="240" >
+    						<a href="illustrations/7_1_suppression_fenetre.jpg" >
+    							<img src="illustrations/7_1_suppression_fenetre.jpg" alt="fenêtre de suppression de colonne" width="240" >
     						</a>
     					</figure>
     					<p>Sélectionnez le champ <b>NOM_DEPT</b> puis cliquez sur <b>OK</b>.</p>
@@ -135,14 +135,14 @@
 			       
     		       <p>Pour accéder à l'outil : <b>boîte à outils Traitement  &#8594; Table vecteur &#8594; Refactoriser les champs</b>.</p>
 		           <figure>
-    				   <a href="illustrations/tous/7_1_outil_refactoriser.png" >
-    				       <img src="illustrations/tous/7_1_outil_refactoriser.png" alt="Outil refactoriser dans la boîte à outils Traitement" width="350" >
+    				   <a href="illustrations/7_1_outil_refactoriser.jpg" >
+    				       <img src="illustrations/7_1_outil_refactoriser.jpg" alt="Outil refactoriser dans la boîte à outils Traitement" width="350" >
     				   </a>
 				   </figure>
  			          			    
 				   <figure>
-				    <a href="illustrations/tous/7_1_refactoriser_fenetre.png" >
-					 <img src="illustrations/tous/7_1_refactoriser_fenetre.png" alt="Fenêtre de l'outil refactoriser" width="620" >
+				    <a href="illustrations/7_1_refactoriser_fenetre.jpg" >
+					 <img src="illustrations/7_1_refactoriser_fenetre.jpg" alt="Fenêtre de l'outil refactoriser" width="620" >
 					</a>
 				   </figure>
     					 

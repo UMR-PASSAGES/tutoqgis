@@ -27,8 +27,8 @@
 				<div class="manip">
 					<p>Dans l'explorateur de votre ordinateur, ouvrez le fichier <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">villes_bhutan_geonames.csv</a></em> situé dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b> à l'aide d'un éditeur de texte simple (<b>pas dans un tableur</b>) : par exemple, WordPad dans Windows, TextEdit sous Mac, gedit sous Ubuntu.</p>
 					<figure>
-						<a href="illustrations/tous/3_3_apercu_csv.png" >
-							<img src="illustrations/tous/3_3_apercu_csv.png" alt="capture d'écran du fichier CSV" width="600">
+						<a href="illustrations/3_3_apercu_csv.jpg" >
+							<img src="illustrations/3_3_apercu_csv.jpg" alt="capture d'écran du fichier CSV" width="600">
 						</a>
 					</figure>
 				</div>
@@ -38,13 +38,13 @@
 						<input type="checkbox" id="faq-1">
 						<p><label for="faq-1">Combien de colonnes y a-t-il dans le fichier  <em class="data">villes_bhutan_geonames.csv</em> ?</label></p>
 						<p class="reponse">Le fichier comporte 9 colonnes : geonamesid, name, asciiname, latitude, longitude, country code, population, dem et modification date.</p>
-						<p class="reponse"><img src="illustrations/tous/3_3_csv_colonnes.png" alt="capture d'écran des données du CSV avec les noms de colonnes encadrés en rouge" width="600"></p>
+						<p class="reponse"><img src="illustrations/3_3_csv_colonnes.jpg" alt="capture d'écran des données du CSV avec les noms de colonnes encadrés en rouge" width="600"></p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-2">
 						<p><label for="faq-2">Quelle est la latitude de la ville de Timphu?</label></p>
 						<p class="reponse">La latitude de la ville de Timphu est 27.46609 (la colonne "latitude" est la 4ème colonne : la réponse se trouve donc dans la 4ème colonne de la ligne correspondant à Timphu.</p>
-						<p class="reponse"><img src="illustrations/tous/3_3_lat_timphu.png" alt="capture d'écran des données du CSV avec la latitude de Timphu encadrée en rouge" width="460"></p>
+						<p class="reponse"><img src="illustrations/3_3_lat_timphu.jpg" alt="capture d'écran des données du CSV avec la latitude de Timphu encadrée en rouge" width="460"></p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-3">
@@ -70,11 +70,11 @@
 				
 				<div class="manip">
 				  <p>Ouvrez un nouveau projet vide dans QGIS.</p>
-					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="Icône ajout d'une couche vecteur">Chargez la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">ne_10m_admin_0_countries.shp</a></em> située dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
-					<p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône ajout fichier texte délimité" >Toujours à partir du gestionnaire des sources, cliquez sur <b>Texte délimité</b> :</p>
+					<p><img class="icone" src="illustrations/1_2_gestionnaire_donnees_icone.jpg" alt="Icône ajout d'une couche vecteur">Chargez la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">ne_10m_admin_0_countries.shp</a></em> située dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
+					<p><img class="icone" src="illustrations/1_2_gestionnaire_donnees_icone.jpg" alt="icône ajout fichier texte délimité" >Toujours à partir du gestionnaire des sources, cliquez sur <b>Texte délimité</b> :</p>
 					<figure>
-						<a href="illustrations/tous/3_3_ajout_csv_fenetre.png" >
-							<img src="illustrations/tous/3_3_ajout_csv_fenetre.png" alt="Fenêtre d'ajout d'une couche CSV" width="600">
+						<a href="illustrations/3_3_ajout_csv_fenetre.jpg" >
+							<img src="illustrations/3_3_ajout_csv_fenetre.jpg" alt="Fenêtre d'ajout d'une couche CSV" width="600">
 						</a>
 					</figure>
 					<ul>
@@ -86,8 +86,8 @@
 					</ul>
 					<p>Cliquez sur <b>Ajouter</b>. Faites un clic droit sur le nom de cette couche, <b>zoomer sur la couche</b>.</p>
 					<figure>
-						<a href="illustrations/tous/3_3_visu_villes_bhutan.png" >
-							<img src="illustrations/tous/3_3_visu_villes_bhutan.png" alt="Visualisation des villes du bhutan et de leurs données attributaires sous QGIS" width="550" >
+						<a href="illustrations/3_3_visu_villes_bhutan.jpg" >
+							<img src="illustrations/3_3_visu_villes_bhutan.jpg" alt="Visualisation des villes du bhutan et de leurs données attributaires sous QGIS" width="550" >
 						</a>
 					</figure>
 					<p>Les villes ont bien été ajoutées à QGIS sous la forme d'une couche de points.</p>
@@ -98,7 +98,7 @@
 			
 			<p>Regardez <a href="01_02_info_geo.php#I23b">à quel emplacement</a> est stockée votre couche. Vous pouvez observer que cet emplacement fait référence à un fichier CSV et non à un fichier SHP.</p>
 			<p>Par ailleurs, si vous sélectionnez la couche de villes dans la table des matières, vous pouvez constater que l'icône pour passer en mode édition est désactivée, au contraire de notre couche de pays. La couche de villes n'est donc pas éditable.</p>
-			<p class="note">Icône édition activée : <img class="iconemid" src="illustrations/tous/3_3_edition_icone_activee.png" alt="Icône édition activée" > Icône édition désactivée : <img class="iconemid" src="illustrations/tous/3_3_edition_icone_desactivee.png" alt="Icône édition désactivée" ></p>
+			<p class="note">Icône édition activée : <img class="iconemid" src="illustrations/3_3_edition_icone_activee.jpg" alt="Icône édition activée" > Icône édition désactivée : <img class="iconemid" src="illustrations/3_3_edition_icone_desactivee.jpg" alt="Icône édition désactivée" ></p>
 			<p>Ces indices laissent à penser que bien que nous puissions visualiser les villes dans QGIS, <b>aucune couche n'a été créée sur votre ordinateur</b>, ce qui est d'ailleurs logique dans la mesure où QGIS ne nous a demandé à aucun moment de choisir un emplacement pour cette couche.</p>
 			<p>En fait, nous avons seulement créé <b>une couche temporaire, uniquement stockée dans le projet QGS en cours</b>. Comment faire pour sauvegarder cette couche?</p>
 			
@@ -106,13 +106,13 @@
 				<p>Il suffit pour cela de faire un
 					<a class="thumbnail_bottom" href="#thumb">clic-droit sur la couche <em class="data">villes_bhutan_geonames</em> &#8594; Exporter &#8594; Sauvegarder les entités sous...
 						<span>
-							<img src="illustrations/tous/3_3_sauvegarder_villes_menu.png" alt="clic droit sur la couche, sauvegarder sous" height="300" >
+							<img src="illustrations/3_3_sauvegarder_villes_menu.jpg" alt="clic droit sur la couche, sauvegarder sous" height="300" >
 						</span>
 					</a>
 				</p>
 				<figure>
-					<a href="illustrations/tous/3_3_sauvegarder_villes_fenetre.png" >
-						<img src="illustrations/tous/3_3_sauvegarder_villes_fenetre.png" alt="fenêtre de sauvegarde de la couche" width="370" >
+					<a href="illustrations/3_3_sauvegarder_villes_fenetre.jpg" >
+						<img src="illustrations/3_3_sauvegarder_villes_fenetre.jpg" alt="fenêtre de sauvegarde de la couche" width="370" >
 					</a>
 				</figure>
 				<ul>
@@ -121,10 +121,10 @@
 					<li class="espace">Laissez les autres paramètres par défaut</li>
 				</ul>
 				<p>Cliquez sur <b>OK</b> ; la couche est ajoutée à QGIS, vous devez donc avoir deux couches de villes identiques au premier abord&nbsp;; cependant, l'une est temporaire et l'autre permanente.</p>
-				<p><img class="icone" src="illustrations/tous/3_3_supprimer_couche_icone.png" alt="Icône supprimer une couche" >
+				<p><img class="icone" src="illustrations/3_3_supprimer_couche_icone.jpg" alt="Icône supprimer une couche" >
 					<a class="thumbnail_top" href="#thumb">Supprimez la couche temporaire
 						<span>
-							<img src="illustrations/tous/3_3_supprimer_couche_menu.png" alt="clic-droit sur la couche, supprimer" height="370" >
+							<img src="illustrations/3_3_supprimer_couche_menu.jpg" alt="clic-droit sur la couche, supprimer" height="370" >
 						</span>
 					</a>	
 				 pour éviter toute confusion (en vous aidant éventuellement de son emplacement pour déterminer laquelle est-ce).

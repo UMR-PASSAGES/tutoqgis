@@ -56,10 +56,10 @@
     				  <p>Il faut tout d'abord définir l'image satellite en entrée pour l'extension SCP.</p>
     				  
     				  <div class="manip">
-    				    <p><img class="icone" src="illustrations/tous/12_01_jeu_bandes_icone.png" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
+    				    <p><img class="icone" src="illustrations/12_01_jeu_bandes_icone.jpg" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
     				    <figure>
-      						<a href="illustrations/tous/12_02_jeu_bandes.png" >
-      							<img src="illustrations/tous/12_02_jeu_bandes.png" alt="Choix du jeu de bandes dans le plugin SCP" width="600">
+      						<a href="illustrations/12_02_jeu_bandes.jpg" >
+      							<img src="illustrations/12_02_jeu_bandes.jpg" alt="Choix du jeu de bandes dans le plugin SCP" width="600">
       						</a>
       					</figure>
       					<ul>
@@ -76,15 +76,15 @@
     				  <div class="manip">
     				    <p>Dans le panneau SCP (s'il n'est pas visible, menu Vue &#8594; Panneaux &#8594; Menu SCP), cliquez sur l'onglet vertical <b>Entrée données d'entraînement</b>&nbsp;:</p>
     				    <figure>
-      						<a href="illustrations/tous/12_02_entree_rois.png" >
-      							<img src="illustrations/tous/12_02_entree_rois.png" alt="onglet 'entrée données d'entrainement' du panneau SCP" width="450">
+      						<a href="illustrations/12_02_entree_rois.jpg" >
+      							<img src="illustrations/12_02_entree_rois.jpg" alt="onglet 'entrée données d'entrainement' du panneau SCP" width="450">
       						</a>
       					</figure>
-      					<p><img class="icone" src="illustrations/tous/12_02_ouvrir_roi_icone.png" alt="icône ouvrir un jeu d'entrainement dans le panneau SCP" >Cliquez sur l'icône <b>Créer une nouvelle données d'entraînement</b> en haut du panneau SCP. Choisir l'emplacement et le nom de la couche SCP qui sera créée et qui contiendra les ROIs.</p>
+      					<p><img class="icone" src="illustrations/12_02_ouvrir_roi_icone.jpg" alt="icône ouvrir un jeu d'entrainement dans le panneau SCP" >Cliquez sur l'icône <b>Créer une nouvelle données d'entraînement</b> en haut du panneau SCP. Choisir l'emplacement et le nom de la couche SCP qui sera créée et qui contiendra les ROIs.</p>
       					<p>Cette couche est ajoutée à QGIS (ici, elle se nomme <em>signatures_spectrales</em>)&nbsp;:</p>
       					<figure>
-      						<a href="illustrations/tous/12_02_couche_rois.png" >
-      							<img src="illustrations/tous/12_02_couche_rois.png" alt="liste des couches dans QGIS, avec l'image sentinel-2 et la couche scp" width="250">
+      						<a href="illustrations/12_02_couche_rois.jpg" >
+      							<img src="illustrations/12_02_couche_rois.jpg" alt="liste des couches dans QGIS, avec l'image sentinel-2 et la couche scp" width="250">
       						</a>
       					</figure>
       					<p class="note">Cette couche semble une couche temporaire (icône grise à côté de son nom), mais il s'agit bien d'une couche sauvegardée sur votre disque, comme vous pouvez vous en assurer dans votre explorateur de fichiers. Elle possède l'extension .scp propre à l'extension QGIS SCP.</p>
@@ -99,42 +99,42 @@
       					 <li>Nom de C : Eau</li>
       					</ul>
     				    <figure>
-      						<a href="illustrations/tous/12_02_noms_rois.png" >
-      							<img src="illustrations/tous/12_02_noms_rois.png" alt="Nom de MC et Nom de C remplis par 'Surface en eau' et 'Eau'" width="400">
+      						<a href="illustrations/12_02_noms_rois.jpg" >
+      							<img src="illustrations/12_02_noms_rois.jpg" alt="Nom de MC et Nom de C remplis par 'Surface en eau' et 'Eau'" width="400">
       						</a>
       					</figure>
       					<p>MC signifie <em>Macro-Classe</em>, et C <em>Classe</em> : une macro-classe peut regrouper plusieurs classes.</p>
       					<p>Il ne reste plus maintenant qu'à digitaliser un polygone correspondant à cette classe.</p>
-      					<p><img class="icone" src="illustrations/tous/12_02_create_roi_icon.png" alt="icône de création de ROI">Cliquez sur l'icône <b>Create a ROI polygon</b> dans la barre d'outil <b>SCP working toolbar</b>.</p>
+      					<p><img class="icone" src="illustrations/12_02_create_roi_icon.jpg" alt="icône de création de ROI">Cliquez sur l'icône <b>Create a ROI polygon</b> dans la barre d'outil <b>SCP working toolbar</b>.</p>
       					<p class="note">Si vous ne voyez pas cette barre d'outils, menu Vue &#8594; Barres d'outils &#8594; SCP Working Toolbar.</p>
       					<figure>
-      						<a href="illustrations/tous/12_02_working_toolbar.png" >
-      							<img src="illustrations/tous/12_02_working_toolbar.png" alt="SCP working toolbar avec l'outil de création de ROIs entouré en rouge" width="500">
+      						<a href="illustrations/12_02_working_toolbar.jpg" >
+      							<img src="illustrations/12_02_working_toolbar.jpg" alt="SCP working toolbar avec l'outil de création de ROIs entouré en rouge" width="500">
       						</a>
       					</figure>
       					<p>Le curseur est maintenant une croix. Dans QGIS, zoomez sur une zone avec de l'eau et dessinez un polygone contenant uniquement de l'eau, en faisant un clic droit pour terminer&nbsp;:</p>
       					<figure>
-      						<a href="illustrations/tous/12_02_roi_eau.png" >
-      							<img src="illustrations/tous/12_02_roi_eau.png" alt="ROI temporaire eau, orange transparent" width="400">
+      						<a href="illustrations/12_02_roi_eau.jpg" >
+      							<img src="illustrations/12_02_roi_eau.jpg" alt="ROI temporaire eau, orange transparent" width="400">
       						</a>
       					</figure>
       					<p>Ce ROI est temporaire&nbsp;; s'il ne vous convient pas, dessinez-en simplement un autre et le premier sera supprimé.</p>
       					<figure>
-      						<a href="illustrations/tous/12_02_sauver_roi_icone.png" >
-      							<img src="illustrations/tous/12_02_sauver_roi_icone.png" alt="bas du panneau SCP avec l'icône pour sauver les ROIs entourée en rouge" width="400">
+      						<a href="illustrations/12_02_sauver_roi_icone.jpg" >
+      							<img src="illustrations/12_02_sauver_roi_icone.jpg" alt="bas du panneau SCP avec l'icône pour sauver les ROIs entourée en rouge" width="400">
       						</a>
       					</figure>
       					<p>Une fois satisfait-e de votre ROI, cliquez sur le bouton en bas à droite du panneau SCP <b>Sauvez les ROI temporaires dans les données d'entraînement</b>.</p>
       					<p>Patientez... Le ROI est ajouté dans le haut du panneau SCP&nbsp;:</p>
       					<figure>
-      						<a href="illustrations/tous/12_02_roi_ajoute.png" >
-      							<img src="illustrations/tous/12_02_roi_ajoute.png" alt="haut du panneau SCP avec le 1er ROI visible" width="400">
+      						<a href="illustrations/12_02_roi_ajoute.jpg" >
+      							<img src="illustrations/12_02_roi_ajoute.jpg" alt="haut du panneau SCP avec le 1er ROI visible" width="400">
       						</a>
       					</figure>
       					<p>Il a aussi changé d'aspect dans la fenêtre de QGIS&nbsp;:</p>
                 <figure>
-      						<a href="illustrations/tous/12_02_roi_definitif.png" >
-      							<img src="illustrations/tous/12_02_roi_definitif.png" alt="fenêtre de QGIS : ROI sauvegardé, en noir avec contour en pointillés blancs" width="400">
+      						<a href="illustrations/12_02_roi_definitif.jpg" >
+      							<img src="illustrations/12_02_roi_definitif.jpg" alt="fenêtre de QGIS : ROI sauvegardé, en noir avec contour en pointillés blancs" width="400">
       						</a>
       					</figure>
     				  </div>
@@ -153,8 +153,8 @@
     				    <p class="note">N'oubliez pas d'incrémenter l'ID de la macro-classe (MC ID) à chaque nouveau polygone&nbsp;! Sinon, il est possible de le faire par la suite en double-cliquant sur la case à modifier, puis en tapant un chiffre.</p>
     				    <p>Au final, votre panneau SCP doit ressembler à ceci&nbsp;:</p>
     				    <figure>
-      						<a href="illustrations/tous/12_02_liste_rois.png" >
-      							<img src="illustrations/tous/12_02_liste_rois.png" alt="panneau SCP avec les 6 ROIs correspondant aux 6 classes définies + haut" width="470">
+      						<a href="illustrations/12_02_liste_rois.jpg" >
+      							<img src="illustrations/12_02_liste_rois.jpg" alt="panneau SCP avec les 6 ROIs correspondant aux 6 classes définies + haut" width="470">
       						</a>
       					</figure>
       				</div>
@@ -164,16 +164,16 @@
      				<h4>Affichage des signatures spectrales<a class="headerlink" id="XII21c" href="#XII21c"></a></h4>
     				
       				<div class="manip">
-      				  <p><img class="icone" src="illustrations/tous/12_02_signature_spectrale_icone.png" alt="icône d'ajout des singatures spectrales au graphique"> Sélectionnez par exemple un polygone par classe, puis cliquez sur l'icône <b>Ajouter les signatures spectrales surlignées au graphique</b> dans la partie gauche du panneau&nbsp;:</p>
+      				  <p><img class="icone" src="illustrations/12_02_signature_spectrale_icone.jpg" alt="icône d'ajout des singatures spectrales au graphique"> Sélectionnez par exemple un polygone par classe, puis cliquez sur l'icône <b>Ajouter les signatures spectrales surlignées au graphique</b> dans la partie gauche du panneau&nbsp;:</p>
       				  <figure>
-      						<a href="illustrations/tous/12_02_selection_rois.png" >
-      							<img src="illustrations/tous/12_02_selection_rois.png" alt="panneau SCP avec les 6 classes sélectionnées et le bouton de signature spectrale entouré en rouge" width="470">
+      						<a href="illustrations/12_02_selection_rois.jpg" >
+      							<img src="illustrations/12_02_selection_rois.jpg" alt="panneau SCP avec les 6 classes sélectionnées et le bouton de signature spectrale entouré en rouge" width="470">
       						</a>
       					</figure>
       					<p>La fenêtre suivante s'ouvre (cliquez si vous voulez la voir en plus grand)&nbsp;:</p>
       					<figure>
-      						<a href="illustrations/tous/12_02_graphique_signatures.png" >
-      							<img src="illustrations/tous/12_02_graphique_signatures.png" alt="Fenêtre du graphique des signatures spectrales, pour chacune des 6 classes" width="600">
+      						<a href="illustrations/12_02_graphique_signatures.jpg" >
+      							<img src="illustrations/12_02_graphique_signatures.jpg" alt="Fenêtre du graphique des signatures spectrales, pour chacune des 6 classes" width="600">
       						</a>
       					</figure>
       					<p>La signature spectrale de chacune des 6 classes est représentée sous forme d'un graphique, de la couleur spécifiée dans le panneau SCP. Testez les différentes possibilités, par exemple&nbsp;:</p>
@@ -185,8 +185,8 @@
     				  
     				  <p>Tous vos polygones sont sauvegardés dans la couche au format SCP <em class="data">signatures_spectrales</em> (ou le nom que vous lui avez donné). Il est possible de charger une couche SCP au moyen du bouton <b>Ouvrir un fichier de données d'entraînement</b>.</p>
     				  <figure>
-    						<a href="illustrations/tous/12_02_charger_rois.png" >
-    							<img src="illustrations/tous/12_02_charger_rois.png" alt="haut du panneau SCP, onglet 'entrée données d'entraînement', avec le bouton 'ouvrir un fichier de données d'entraînement' entouré en rouge" width="420">
+    						<a href="illustrations/12_02_charger_rois.jpg" >
+    							<img src="illustrations/12_02_charger_rois.jpg" alt="haut du panneau SCP, onglet 'entrée données d'entraînement', avec le bouton 'ouvrir un fichier de données d'entraînement' entouré en rouge" width="420">
     						</a>
     					</figure>
   				  
@@ -209,8 +209,8 @@
   				      <p>Ouvrez un nouveau projet QGIS, ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>.</p>
   				      <p>Il faut d'abord définir le <b>jeu de bandes</b> pour SCP : Menu SCP &#8594; Jeu de bande :</p>
   				      <figure>
-      						<a href="illustrations/tous/12_02_bandset.png" >
-      							<img src="illustrations/tous/12_02_bandset.png" alt="SCP, jeu de bandes" width="600">
+      						<a href="illustrations/12_02_bandset.jpg" >
+      							<img src="illustrations/12_02_bandset.jpg" alt="SCP, jeu de bandes" width="600">
       						</a>
       					</figure>
       					<ul>
@@ -221,8 +221,8 @@
       					
       					<p>Vous pouvez maintenant aller dans la partie <b>Calcul de bande</b> de SCP, les bandes de notre raster seront listées dans le tableau en haut de la fenêtre.</p>
       					<figure>
-      						<a href="illustrations/tous/12_02_calcul_bandes.png" >
-      							<img src="illustrations/tous/12_02_calcul_bandes.png" alt="SCP, calcul de bandes, liste des bandes en haut de la fenêtre entourée de rouge" width="600">
+      						<a href="illustrations/12_02_calcul_bandes.jpg" >
+      							<img src="illustrations/12_02_calcul_bandes.jpg" alt="SCP, calcul de bandes, liste des bandes en haut de la fenêtre entourée de rouge" width="600">
       						</a>
       					</figure>
   				    </div>
@@ -238,8 +238,8 @@
   				    <p>Ici, nous utiliserons uniquement les 13 premiers éléments de la liste correspondant aux 13 bandes de notre image&nbsp;!</p>
   				    
   				    <div class="manip">
-      						<a href="illustrations/tous/12_02_scp_ndvi.png" >
-      							<img class="droite" src="illustrations/tous/12_02_scp_ndvi.png" alt="SCP, calcul de bandes, partie Fonctions : NDVI" width="250">
+      						<a href="illustrations/12_02_scp_ndvi.jpg" >
+      							<img class="droite" src="illustrations/12_02_scp_ndvi.jpg" alt="SCP, calcul de bandes, partie Fonctions : NDVI" width="250">
       						</a>
       					<p>Dans la partie <b>Fonctions</b> à droite de la fenêtre, descendez pour arriver jusqu'à la rubrique <b>Indices</b> et double-cliquez sur <b>NDVI</b>.</p>
       					<p>La formule suivante s'affiche dans la partie <b>Expression</b>&nbsp;:</p>
@@ -248,12 +248,12 @@
       					<p>Vous pouvez également choisir de taper la formule du NDVI &#171;&nbsp;à la main&nbsp;&#187; en double-cliquant sur les bandes dans la partie haute de la fenêtre&nbsp;:</p>
       					<p class="code">("raster8" - "raster4") / ("raster8" + "raster4") @NDVI</p>
       					<p class="note">Le résultat sera le même en utilisant <em>bandset#b8</em> et <em>bandset#b4</em>, ou bien <em>bandset1b8</em> et <em>bandset1b4</em>...</p>
-      					<p><img class="icone" src="illustrations/tous/12_02_ndvi_lancer_icone.png" alt="bouton Lancer en bas à droite du panneau SCP" >Pour lancer le calcul du NDVI, cliquez sur le bouton <b>Lancer</b> en bas à droite de la fenêtre.</p>
+      					<p><img class="icone" src="illustrations/12_02_ndvi_lancer_icone.jpg" alt="bouton Lancer en bas à droite du panneau SCP" >Pour lancer le calcul du NDVI, cliquez sur le bouton <b>Lancer</b> en bas à droite de la fenêtre.</p>
       					<p>Une nouvelle fenêtre s'ouvre pour vous demander l'emplacement où enregistrer la couche qui sera créee (son nom est défini par le texte à droite de l'arobase dans la formule, ici ce sera NDVI).</p>
       					<p>Patientez... Le nouveau raster est ajouté à QGIS&nbsp;:</p>
       					<figure>
-      						<a href="illustrations/tous/12_02_ndvi_resultat.png" >
-      							<img src="illustrations/tous/12_02_ndvi_resultat.png" alt="image NDVI" width="500">
+      						<a href="illustrations/12_02_ndvi_resultat.jpg" >
+      							<img src="illustrations/12_02_ndvi_resultat.jpg" alt="image NDVI" width="500">
       						</a>
       					</figure>
   				    </div>
@@ -263,8 +263,8 @@
   				    <div class="manip">
   				      <p>Dans la boîte à outils &#8594; Analyse raster &#8594; Raster Calculator&nbsp;:</p>
   				      <figure>
-      						<a href="illustrations/tous/12_02_ndvi_rastercalc.png" >
-      							<img src="illustrations/tous/12_02_ndvi_rastercalc.png" alt="calcul du NDVI dans la calculatrice raster" width="600">
+      						<a href="illustrations/12_02_ndvi_rastercalc.jpg" >
+      							<img src="illustrations/12_02_ndvi_rastercalc.jpg" alt="calcul du NDVI dans la calculatrice raster" width="600">
       						</a>
       					</figure>
       					<ul>
@@ -286,8 +286,8 @@
   				    <p class="code">NBR = (NIR - SWIR) / (NIR + SWIR)</p>
   				    
   				    <figure>
-      						<a href="illustrations/tous/12_02_nbr.jpg" >
-      							<img src="illustrations/tous/12_02_nbr.jpg" alt="graphique NBR, réflectance en fonction de la longueur d'onde" width="500">
+      						<a href="illustrations/12_02_nbr.jpg" >
+      							<img src="illustrations/12_02_nbr.jpg" alt="graphique NBR, réflectance en fonction de la longueur d'onde" width="500">
       						</a>
       						<figcaption>Source: U.S. Forest service.</figcaption>
       					</figure>
@@ -302,8 +302,8 @@
   				      <p>De la même manière que vous avez calculé le NDVI, à vous de <b>calculer le NBR</b>, avec l'extension SCP et/ou avec la calculatrice raster&nbsp;!</p>
   				      <p>Vous devez obtenir un résultat similaire à ceci&nbsp;:</p>
   				      <figure>
-      						<a href="illustrations/tous/12_02_nbr_resultat.png" >
-      							<img src="illustrations/tous/12_02_nbr_resultat.png" alt="image NBR" width="500">
+      						<a href="illustrations/12_02_nbr_resultat.jpg" >
+      							<img src="illustrations/12_02_nbr_resultat.jpg" alt="image NBR" width="500">
       						</a>
       						<figcaption>Ici, les valeurs élevées sont représentées en blanc et les valeurs faibles en noir.</figcaption>
       					</figure>

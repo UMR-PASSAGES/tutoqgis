@@ -39,8 +39,8 @@
 				<p>Dans un logiciel SIG, une jointure attributaire consiste à lier à une couche des données provenant d'une table ou d'une autre couche. On se base pour cela sur les données attributaires.</p>
 				<p>Un champ de la couche de départ et un champ de la table contenant les données à joindre servent de <b>champs clé</b>. Ces champs doivent être de même type (texte, nombre) et contenir les mêmes données. Le logiciel se base sur le contenu de ces champs pour déterminer quel élément de la table est lié à quel élément de la couche.</p>
 				<figure>
-					<a href="illustrations/tous/8_1_principe_jointure_attrib.svg" >
-						<img src="illustrations/tous/8_1_principe_jointure_attrib.png" alt="principe d'une jointure attributaire" width="620">
+					<a href="illustrations/8_1_principe_jointure_attrib.svg" >
+						<img src="illustrations/8_1_principe_jointure_attrib.jpg" alt="principe d'une jointure attributaire" width="620">
 					</a>
 				</figure>
 				<p>Dans l'illustration ci-dessus, les données de départ sont :</p>
@@ -60,8 +60,8 @@
 					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche des régions du <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Bhoutan" >Bhoutan</a> <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">regions_bhutan.shp</a></em>.</p>
 					<p>Ajoutez également au projet la table <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">pop_bhutan.csv</a></em> : pour cela, procédez comme pour <a href="03_03_donnees_XY.php">ajouter une couche de texte délimité</a> en choisissant l'option <b>Pas de géométrie</b> :</p>
 					<figure>
-						<a href="illustrations/tous/8_1_ajout_csv.png" >
-							<img src="illustrations/tous/8_1_ajout_csv.png" alt="ajout d'un csv : choisir tous les fichiers comme format" width="600">
+						<a href="illustrations/8_1_ajout_csv.jpg" >
+							<img src="illustrations/8_1_ajout_csv.jpg" alt="ajout d'un csv : choisir tous les fichiers comme format" width="600">
 						</a>
 					</figure>
 					<p>Vous pouvez également ajouter ce fichier via le <a href="01_02_info_geo.php#I21b">panneau Explorateur</a> ou en procédant comme pour une couche vecteur.</p>
@@ -69,7 +69,7 @@
 					<p class="note">Le <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Comma-separated_values">format CSV</a> est un format texte contenant des colonnes séparées par un caractère délimiteur, habituellement la virgule, le point-virgule ou la tabulation.</p>
 					<p>Vous devez donc avoir dans QGIS ces deux données (notez l'icône de tableau pour le CSV) :</p>
 					<figure>
-						<img src="illustrations/tous/8_1_donnees_chargees.png" alt="la table et la couche dans la table des matières" width="180">
+						<img src="illustrations/8_1_donnees_chargees.jpg" alt="la table et la couche dans la table des matières" width="180">
 					</figure>
 					<p>Ouvrez les deux tables attributaires.</p>
 					<div class="question">
@@ -79,14 +79,14 @@
 					</div>
 					<p>Allez dans les propriétés de la couche <em class="data">regions_bhutan</em>, rubrique <b>Jointure</b> :</p>
 					<figure>
-						<a href="illustrations/tous/8_1_proprietes_jointure.png" >
-							<img src="illustrations/tous/8_1_proprietes_jointure.png" alt="rubrique jointure des propriétés de la couche" width="600">
+						<a href="illustrations/8_1_proprietes_jointure.jpg" >
+							<img src="illustrations/8_1_proprietes_jointure.jpg" alt="rubrique jointure des propriétés de la couche" width="600">
 						</a>
 					</figure>
-					<p>Cliquez sur le symbole <img class="iconemid" src="illustrations/tous/8_1_plus.png" alt="symbole + d'ajout de jointure" > pour ajouter une jointure :</p>
+					<p>Cliquez sur le symbole <img class="iconemid" src="illustrations/8_1_plus.jpg" alt="symbole + d'ajout de jointure" > pour ajouter une jointure :</p>
 					<figure>
-						<a href="illustrations/tous/8_1_jointure_fenetre.png" >
-							<img src="illustrations/tous/8_1_jointure_fenetre.png" alt="création d'une jointure : choix de la couche à joindre et des champs clés" width="400">
+						<a href="illustrations/8_1_jointure_fenetre.jpg" >
+							<img src="illustrations/8_1_jointure_fenetre.jpg" alt="création d'une jointure : choix de la couche à joindre et des champs clés" width="400">
 						</a>
 					</figure>
 					<ul>
@@ -100,8 +100,8 @@
 					<p>Cliquez sur <b>OK</b> pour créer la jointure : la ligne correspondante apparaît dans la fenêtre des propriétés. Vous pouvez fermer la fenêtre des propriétés.</p>
 					<p>Ouvrez la table attributaire de la couche  <em class="data">regions_bhutan.shp</em> : les données de la table ont été ajoutées (champ tab_POPEST95).</p>
 					<figure>
-						<a href="illustrations/tous/8_1_jointure_res.png">
-							<img src="illustrations/tous/8_1_jointure_res.png" alt="table attributaire de la couche regions_bhutan une fois les données de populations jointes" width="450">
+						<a href="illustrations/8_1_jointure_res.jpg">
+							<img src="illustrations/8_1_jointure_res.jpg" alt="table attributaire de la couche regions_bhutan une fois les données de populations jointes" width="450">
 						</a>
 					</figure>
 				</div>
@@ -147,8 +147,8 @@
 					</div>
 					<p>On peut ensuite explorer la relation entre catégories socio-professionnelles et sports pratiqués, par exemple en utilisant l'extension <a href="10_01_representation.php#X14b">Plotly</a> pour visualiser le nombre de licences de golf en fonction de la part de cadres et professions intellectuelles supérieures :</p>
 					<figure>
-						<a href="illustrations/tous/8_1_golf_cadres.png">
-							<img src="illustrations/tous/8_1_golf_cadres.png" alt="graphique du nombre de licences de golf en fonction du % de cadres, réalisé avec Plotly" width="550">
+						<a href="illustrations/8_1_golf_cadres.jpg">
+							<img src="illustrations/8_1_golf_cadres.jpg" alt="graphique du nombre de licences de golf en fonction du % de cadres, réalisé avec Plotly" width="550">
 						</a>
 					</figure>
 
@@ -194,8 +194,8 @@
                     <div class="manip">
                         <p>Dans la boîte à outils, rubrique <b>Analyse vectorielle</b>, double-cliquez sur l'outil <b>Statistiques par catégories</b>.</p>
                         <figure>
-                        	<a href="illustrations/tous/8_1_stats_cats_emplacement.png" >
-                        		<img src="illustrations/tous/8_1_stats_cats_emplacement.png" alt="Emplacement dans la boîte à outils de Statistiques par catégories" width="370">
+                        	<a href="illustrations/8_1_stats_cats_emplacement.jpg" >
+                        		<img src="illustrations/8_1_stats_cats_emplacement.jpg" alt="Emplacement dans la boîte à outils de Statistiques par catégories" width="370">
                         	</a>
                         </figure>
                     </div>
@@ -204,8 +204,8 @@
                     <p>Nous allons ici utiliser cet outil de manière très simple, pour compter le nombre de monuments par commune :</p>
                     <div class="manip">
                         <figure>
-                        	<a href="illustrations/tous/8_1_stats_cats_fenetre.png" >
-                        		<img src="illustrations/tous/8_1_stats_cats_fenetre.png" alt="Outil Statistiques par catégories" width="500">
+                        	<a href="illustrations/8_1_stats_cats_fenetre.jpg" >
+                        		<img src="illustrations/8_1_stats_cats_fenetre.jpg" alt="Outil Statistiques par catégories" width="500">
                         	</a>
                         </figure>
                         <ul>
@@ -216,15 +216,15 @@
                         </ul>
                         <p>Ouvrez la table attributaire de cette couche temporaire :</p>
                         <figure>
-                        	<a href="illustrations/tous/8_1_stats_cats_res.png" >
-                        		<img src="illustrations/tous/8_1_stats_cats_res.png" alt="tableau résultat de Statistiques par catégories" width="230">
+                        	<a href="illustrations/8_1_stats_cats_res.jpg" >
+                        		<img src="illustrations/8_1_stats_cats_res.jpg" alt="tableau résultat de Statistiques par catégories" width="230">
                         	</a>
                         </figure>
                         <p>Chaque ligne correspond à une commune (un code INSEE) et le champ count indique combien cette commune contient de monuments.</p>
                         <p>Il ne reste plus qu'à joindre ce tableau à la couche de communes ! Ceci vous permet par exemple de créer une <a href="10_01_representation.php#X11b" >carte en cercles proportionnels</a> du nombre de monuments par communes :</p>
                         <figure>
-                        	<a href="illustrations/tous/8_1_carte_monuments_communes.png" >
-                        		<img src="illustrations/tous/8_1_carte_monuments_communes.png" alt="carte en cercles proportionnels du nombre de monuments par commune" width="400">
+                        	<a href="illustrations/8_1_carte_monuments_communes.jpg" >
+                        		<img src="illustrations/8_1_carte_monuments_communes.jpg" alt="carte en cercles proportionnels du nombre de monuments par commune" width="400">
                         	</a>
                         </figure>
                     </div>
@@ -235,12 +235,12 @@
                     <p>Vous pouvez bien sûr sauter cette étape et passer directement au <a href="08_02_jointure_spatiale.php">chapitre suivant sur les jointures spatiales</a>.</p>
                     
                     <div class="manip">
-                        <p><img class="icone" src="illustrations/tous/6_4_dbmanager_icone.png" alt="icône gestionnaire de bases de données">Ouvrez la fenêtre du gestionnaire de bases de données : menu <b>Base de données &#8594; DB Manager...</b>, ou bien cliquez sur l'icône correspondante dans la barre d'outils Base de données.</p>
+                        <p><img class="icone" src="illustrations/6_4_dbmanager_icone.jpg" alt="icône gestionnaire de bases de données">Ouvrez la fenêtre du gestionnaire de bases de données : menu <b>Base de données &#8594; DB Manager...</b>, ou bien cliquez sur l'icône correspondante dans la barre d'outils Base de données.</p>
                         <p>Dans l'arborescence située dans la partie gauche de la fenêtre, allez dans <b>Couches virtuelle</b> &#8594; <b>Couches du projet</b> : vous devriez voir vos couches chargées dans QGIS.</p>
-                        <p><img class="icone" src="illustrations/tous/6_4_fenetre_sql_icone.png" alt="icône de la fenêtre SQL" >Cliquez ensuite sur l'icône <b>Fenêtre SQL</b>, ou bien menu <b>Base de données</b> &#8594; <b>Fenêtre SQL</b>.</p>
+                        <p><img class="icone" src="illustrations/6_4_fenetre_sql_icone.jpg" alt="icône de la fenêtre SQL" >Cliquez ensuite sur l'icône <b>Fenêtre SQL</b>, ou bien menu <b>Base de données</b> &#8594; <b>Fenêtre SQL</b>.</p>
                         <figure>
-                        	<a href="illustrations/tous/8_1_requete_sql.png" >
-                        		<img src="illustrations/tous/8_1_requete_sql.png" alt=" dans le gestionnaire de bases de données, requête SQL pour compter le nombre de nombre de monuments par commune" width="600">
+                        	<a href="illustrations/8_1_requete_sql.jpg" >
+                        		<img src="illustrations/8_1_requete_sql.jpg" alt=" dans le gestionnaire de bases de données, requête SQL pour compter le nombre de nombre de monuments par commune" width="600">
                         	</a>
                         </figure>
                         <p>Tapez la requête suivante :</p>

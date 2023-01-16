@@ -55,17 +55,17 @@
 					<h4>Une organisation par couches<a class="headerlink" id="I12a" href="#I12a"></a></h4>
 						<p>Les données sont organisées sous forme de couches superposables.</p>
 						<figure>
-							<a href="illustrations/tous/1_1_couches.svg" >
-								<img src="illustrations/tous/1_1_couches.png" alt="Organisation sous forme de couches" width="400">
+							<a href="illustrations/1_1_couches.svg" >
+								<img src="illustrations/1_1_couches.jpg" alt="Organisation sous forme de couches" width="400">
 							</a>
 							<figcaption>Source : pôle ARD, adess (domaine public)</figcaption>
 						</figure>
 						<div class="manip">
-    						<p><img class="icone" src="illustrations/tous/1_1_ouvrir_projet_icone.png" alt="icône ouvrir un projet" >Lancez le logiciel QGIS. Ouvrez un projet :
+    						<p><img class="icone" src="illustrations/1_1_ouvrir_projet_icone.jpg" alt="icône ouvrir un projet" >Lancez le logiciel QGIS. Ouvrez un projet :
     							<br>
     							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Ouvrir
     								<span>
-    									<img src="illustrations/tous/1_1_ouvrir_projet.png" alt="Menu Projet, Ouvrir" height="500">
+    									<img src="illustrations/1_1_ouvrir_projet.jpg" alt="Menu Projet, Ouvrir" height="500">
     								</span>
     							</a>
     						</p>				
@@ -78,8 +78,8 @@
 					<h4>Deux grands types de données : vecteur et raster<a class="headerlink" id="I12b" href="#I12b"></a></h4>
 						<p>On distingue généralement deux types de données : <b>vecteur et raster</b>.</p>
 						<figure>
-							<a href="illustrations/tous/1_1_vecteur.png" >
-							<img src="illustrations/tous/1_1_vecteur.png" alt="Exemple de données vecteur" width="600">
+							<a href="illustrations/1_1_vecteur.jpg" >
+							<img src="illustrations/1_1_vecteur.jpg" alt="Exemple de données vecteur" width="600">
 							</a>
 							<figcaption >Exemple de données vecteur, l'exemple du Sénégal : régions sous forme de polygones, rivières sous forme de lignes et villes sous forme de points (source : Agence Nationale de l'Aménagement du Territoire (ANAT) du Sénégal).</figcaption>
 						</figure>
@@ -89,8 +89,8 @@
 		
 						<p>Les <b>données raster</b>, ou images, sont constituées de pixels. En zoomant sur un raster, on finit par distinguer les pixels. Chaque pixel possède une valeur correspondant par exemple à sa couleur, ou à son altitude. Un raster est caractérisé par la taille d'un pixel, ou résolution. Exemples de données raster : carte IGN scannée, photographie aérienne, image satellite...</p>
 						<figure>
-							<a href="illustrations/tous/1_1_raster.png" >
-								<img src="illustrations/tous/1_1_raster.png" alt="Données raster" width="470">
+							<a href="illustrations/1_1_raster.jpg" >
+								<img src="illustrations/1_1_raster.jpg" alt="Données raster" width="470">
 							</a>
 							<figcaption>Exemple de données raster (source : IGN).</figcaption>
 						</figure>
@@ -101,31 +101,31 @@
 					<h4>Les données vecteur : à chaque géométrie ses attributs (et vice-versa)<a class="headerlink" id="I12c" href="#I12c"></a></h4>
 						<p>On distingue deux composantes dans les données utilisées dans un SIG : spatiale et attributaire. La <b>composante spatiale</b> est constituée de la localisation et la géométrie d'un objet, donc de ses coordonnées. La <b>composante attributaire</b> est constituée des données qui y sont associées. Par exemple, la composante spatiale d'un département sera le polygone représentant ce département, et sa composante attributaire sera son nom, son code, sa population...</p>
 						<figure>					
-							<a href="illustrations/tous/1_1_spatial_attrib.png" >					
-								<img src="illustrations/tous/1_1_spatial_attrib.png" alt="Composantes spatiales et attributaires" width="550">
+							<a href="illustrations/1_1_spatial_attrib.jpg" >					
+								<img src="illustrations/1_1_spatial_attrib.jpg" alt="Composantes spatiales et attributaires" width="550">
 							</a>
 							<figcaption>Données spatiales et attributaires d'une couche SIG (source : données Geofla IGN) </figcaption>
 						</figure>
 						<p>Le lien entre composante spatiale et attributaire constitue une différence fondamentale avec les logiciels de dessin (DAO) type AutoCAD.</p>
 						<div class="manip">
-							<p><img class="icone" src="illustrations/tous/1_1_ouvrir_projet_icone.png" alt="icône ouvrir un projet" >Ouvrez le projet 
+							<p><img class="icone" src="illustrations/1_1_ouvrir_projet_icone.jpg" alt="icône ouvrir un projet" >Ouvrez le projet 
 								<em class="data">depts_france.qgz</em> qui se trouve situé dans le dossier <b>TutoQIS_01_PriseEnMain/projets</b>.
 							</p>
-							<p><img class="icone" src="illustrations/tous/1_1_ouvrir_table_icone.png" alt="icône ouvrir la table d'attributs" >Ouvrez la table attributaire de la couche de départements :
+							<p><img class="icone" src="illustrations/1_1_ouvrir_table_icone.jpg" alt="icône ouvrir la table d'attributs" >Ouvrez la table attributaire de la couche de départements :
 								<br>
 								<a class="thumbnail_bottom" href="#thumb">Clic droit sur le nom de la couche &#8594; Ouvrir la table d'attributs
 									<span>
-										<img src="illustrations/tous/1_1_ouvrir_table.png" alt="Clic droit sur la couche, ouvrir la table d'attributs" height="320" >
+										<img src="illustrations/1_1_ouvrir_table.jpg" alt="Clic droit sur la couche, ouvrir la table d'attributs" height="320" >
 									</span>
 								</a>								
 							</p>
 							<p>Sélectionner un département dans la table attributaire, en cliquant sur le numéro de la ligne. Le département correspondant apparaît dans une couleur différente (jaune par défaut) dans la carte. </p>
-							<p><img class="icone" src="illustrations/tous/1_1_zoom_selection_icone.png" alt="icône zoom sur la sélection" > Vous pouvez ensuite cliquer sur l'outil <b>zoom sur la sélection</b> pour zoomer sur ce département.</p>
-							<p><img class="icone" src="illustrations/tous/1_1_selection_icone.png" alt="icône outil de sélection" >Vous pouvez maintenant faire l'inverse : sélectionner un département sur la carte, au moyen de l'outil de sélection. La ligne correspondante passe alors en surbrillance dans la table attributaire.</p>
+							<p><img class="icone" src="illustrations/1_1_zoom_selection_icone.jpg" alt="icône zoom sur la sélection" > Vous pouvez ensuite cliquer sur l'outil <b>zoom sur la sélection</b> pour zoomer sur ce département.</p>
+							<p><img class="icone" src="illustrations/1_1_selection_icone.jpg" alt="icône outil de sélection" >Vous pouvez maintenant faire l'inverse : sélectionner un département sur la carte, au moyen de l'outil de sélection. La ligne correspondante passe alors en surbrillance dans la table attributaire.</p>
 							<p>Vous pouvez choisir <b>Ne montrer que les entités sélectionnées</b> dans la liste déroulante en bas à gauche de la table, pour ne voir que les lignes correspondant aux départements sélectionnés.</p>
 							<figure>
-								<a href="illustrations/tous/1_1_table_liste_deroulante.png" >
-									<img src="illustrations/tous/1_1_table_liste_deroulante.png" alt="Table attributaire : ne montrer que les entités sélectionnées" width="600">
+								<a href="illustrations/1_1_table_liste_deroulante.jpg" >
+									<img src="illustrations/1_1_table_liste_deroulante.jpg" alt="Table attributaire : ne montrer que les entités sélectionnées" width="600">
 								</a>
 							</figure>
 							<p class="note">Pour que la fenêtre de la table attributaire soit "ancrée" dans QGIS : menu <b>Préférences &#8594; Options &#8594; Sources de données</b> : cocher la case <b>Ouvrir la table d'attributs dans une fenêtre intégrée</b>.</p>

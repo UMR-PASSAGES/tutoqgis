@@ -83,8 +83,8 @@
                   <div class="theorie">
                       <p class="theorie">Qu'est-ce que la <a target="_blank" class="ext" href="https://fr.wikipedia.org/wiki/R%C3%A9flectance">réflectance</a>&nbsp;? C'est une grandeur physique qui correspond à la lumière réfléchie par un objet géographique. C’est donc un rapport entre l’énergie réfléchie et l’énergie incidente (soleil), il s’exprime en pourcentage.</p>
                       <figure>
-          						<a href="illustrations/tous/12_01_reflectance.svg" >
-          							<img src="illustrations/tous/12_01_reflectance.png" alt="illustration réflectance : flux incident entre soleil et sol et énergie réfléchie entre sol et satellite" width="420">
+          						<a href="illustrations/12_01_reflectance.svg" >
+          							<img src="illustrations/12_01_reflectance.jpg" alt="illustration réflectance : flux incident entre soleil et sol et énergie réfléchie entre sol et satellite" width="420">
           						</a>
           					</figure>
           					<p>Exemple pour une parcelle de maïs en juillet dans le Proche Infra Rouge (PIR) en Bretagne :</p>
@@ -113,8 +113,8 @@
                 <p class="keskonfai">Trouver l'illustration qui va bien : montrer uniquement la grille sentinel-2 ? Les zones UTM aussi ?</p>
                 
                 <figure>
-      						<a href="illustrations/tous/12_01_grille_sentinel.png" >
-      							<img src="illustrations/tous/12_01_grille_sentinel.png" alt="grille sentinel sur la France et les pays voisins" width="600">
+      						<a href="illustrations/12_01_grille_sentinel.jpg" >
+      							<img src="illustrations/12_01_grille_sentinel.jpg" alt="grille sentinel sur la France et les pays voisins" width="600">
       						</a>
       						<figcaption>Grille Sentinel, projection UTM : une tuile mesure 100 km de côté, les tuiles se recouvrent légèrement (source grille : <a class="ext" target="_blank" href="https://github.com/justinelliotmeyers/Sentinel-2-Shapefile-Index">https://github.com/justinelliotmeyers/Sentinel-2-Shapefile-Index</a>).</figcaption>
       					</figure>
@@ -125,8 +125,8 @@
                 <div class="manip">
                     <p>Pour voir où se situe notre image Sentinel-2 <em class="data">Sentinel2_2021_08_17.tif</em>, ajoutez-la à QGIS, avec par exemple un <a href="03_04_fonds_carte.php#III42a">fonds de carte OpenStreetMap</a>&nbsp;:</p>
                     <figure>
-          						<a href="illustrations/tous/12_01_localisation_image_zoom.png" >
-          							<img src="illustrations/tous/12_01_localisation_image_zoom.png" alt="fonds OSM centré vers Saint-Raphaël, avec affichage de l'image S2A par dessus" width="400">
+          						<a href="illustrations/12_01_localisation_image_zoom.jpg" >
+          							<img src="illustrations/12_01_localisation_image_zoom.jpg" alt="fonds OSM centré vers Saint-Raphaël, avec affichage de l'image S2A par dessus" width="400">
           						</a>
           					</figure>
           					<p>L'image est située dans le département du Var, près du golfe de Saint-Tropez.</p>
@@ -134,8 +134,8 @@
                 
                 <p>Les grandes étapes de traitements d’images satellitaires sont les suivantes&nbsp;:</p>
                 <figure>
-      						<a href="illustrations/tous/12_01_etapes_traitement.png" >
-      							<img src="illustrations/tous/12_01_etapes_traitement.png" alt="5 étapes de traitement des images satellitaires : accès, pré-traitements, visualisation, classification et post-traitements" width="650">
+      						<a href="illustrations/12_01_etapes_traitement.jpg" >
+      							<img src="illustrations/12_01_etapes_traitement.jpg" alt="5 étapes de traitement des images satellitaires : accès, pré-traitements, visualisation, classification et post-traitements" width="650">
       						</a>
       					</figure>
                 
@@ -149,8 +149,8 @@
             <div class="manip">
               <p>Pour installer cette extension&nbsp;: <b>menu Extensions &#8594; Installer/Gérer les extensions</b>&bvsp;:</p>
               <figure>
-    						<a href="illustrations/tous/12_01_scp_install.png" >
-    							<img src="illustrations/tous/12_01_scp_install.png" alt="installation de l'extension scp" width="600">
+    						<a href="illustrations/12_01_scp_install.jpg" >
+    							<img src="illustrations/12_01_scp_install.jpg" alt="installation de l'extension scp" width="600">
     						</a>
     					</figure>
     					<ul>
@@ -164,8 +164,8 @@
             </div>
             
             <figure>
-  						<a href="illustrations/tous/12_01_qgis_scp.png" >
-  							<img src="illustrations/tous/12_01_qgis_scp.png" alt="fenêtre de QGIS avec le panneau, les 2 barres d'outils et le menu SCP" width="650">
+  						<a href="illustrations/12_01_qgis_scp.jpg" >
+  							<img src="illustrations/12_01_qgis_scp.jpg" alt="fenêtre de QGIS avec le panneau, les 2 barres d'outils et le menu SCP" width="650">
   						</a>
   						<figcaption>Fenêtre de QGIS avec le menu, les 2 barres d'outils et le panneau SCP (cliquer pour agrandir).</figcaption>
   					</figure>
@@ -189,7 +189,7 @@
             <p>Un GeoTIFF peut être composée de plusieurs sous-images, c’est le cas pour les images satellitaires dites multispectrales !!!</p>
             
             <div class="manip">
-              <p><img class="icone" src="illustrations/tous/12_01_jeu_bandes_icone.png" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
+              <p><img class="icone" src="illustrations/12_01_jeu_bandes_icone.jpg" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
               <p class="keskonfai">Peut-être intégrer cette manip dans le chapitre suivant, puisque le plugin SCP n'est pas utilisée dans ce chapitre ?</p>
             </div>
             
@@ -275,21 +275,21 @@
                 <p>Par défaut, si on charge dans QGIS un raster avec plusieurs bandes, les 3 premières bandes sont affichées dans les canaux rouge, vert et bleu. Si on veut afficher une seule bande spectrale, par exemple celle du rouge (bande 4)&nbsp;:</p>
                 <p>Double-cliquez sur le nom de la couche pour aller dans ses <b>propriétés, rubrique Symbologie</b>&nbsp;:</p>
                 <figure>
-      						<a href="illustrations/tous/12_01_bande_grise_unique.png" >
-      							<img src="illustrations/tous/12_01_bande_grise_unique.png" alt="fenêtre des propriétés, rubrique symbologie, rendu = bande grise unique" width="600">
+      						<a href="illustrations/12_01_bande_grise_unique.jpg" >
+      							<img src="illustrations/12_01_bande_grise_unique.jpg" alt="fenêtre des propriétés, rubrique symbologie, rendu = bande grise unique" width="600">
       						</a>
     						</figure>
     						<p>Choisissez le type de rendu <b>Bande grise unique</b> puis la bande à représenter, ici la bande rouge 4.</p>
                 <p>Pour rehausse le contraste, on peut ensuite choisir d'exclure les valeurs extrêmes&nbsp;:</p>
                 <figure>
-      						<a href="illustrations/tous/12_01_minmax.png" >
-      							<img src="illustrations/tous/12_01_minmax.png" alt="fenêtre des propriétés, rubrique symbologie, valeurs min-max, borne d'exclusion des valeurs extrêmes 2 et 98%" width="400">
+      						<a href="illustrations/12_01_minmax.jpg" >
+      							<img src="illustrations/12_01_minmax.jpg" alt="fenêtre des propriétés, rubrique symbologie, valeurs min-max, borne d'exclusion des valeurs extrêmes 2 et 98%" width="400">
       						</a>
     						</figure>
     						<p>Une fois les changements appliqués, l'image devrait s'afficher comme ceci&nbsp;:</p>
     						<figure>
-      						<a href="illustrations/tous/12_01_image_gris.png" >
-      							<img src="illustrations/tous/12_01_image_gris.png" alt="Affichage de la bande 4 en niveaux de gris" width="500">
+      						<a href="illustrations/12_01_image_gris.jpg" >
+      							<img src="illustrations/12_01_image_gris.jpg" alt="Affichage de la bande 4 en niveaux de gris" width="500">
       						</a>
     						</figure>
               </div>
@@ -297,18 +297,18 @@
               <p>Comment interpréter cet affichage&nbsp;? Les pixels noirs ont des valeurs de réflectance très faibles et les pixels clairs des réflectances plus importantes.</p>
               <p>On peut lire dans les propriétés les valeurs minimum (par défaut, en noir) et maximum (par défaut, en blanc). Entre ces 2 valeurs, la couleur est interpolée entre le noir et le blanc pour aboutir à un gris plus ou moins foncé</p>
               <figure>
-                <a href="illustrations/tous/12_01_minmax_valeurs.png" >
-    							<img src="illustrations/tous/12_01_minmax_valeurs.png" alt="fenêtre des propriétés, rubrique symbologie, lecture des valeurs min-max" width="650">
+                <a href="illustrations/12_01_minmax_valeurs.jpg" >
+    							<img src="illustrations/12_01_minmax_valeurs.jpg" alt="fenêtre des propriétés, rubrique symbologie, lecture des valeurs min-max" width="650">
     						</a>
   						</figure>
   						<p class="note">Il est possible d'inverser le noir et le blanc en choisissant <b>Blanc vers noir</b> au lieu de <b>Noir vers blanc</b> dans <b>Dégradé de couleur</b>.</p>
               <p>Par exemple, une valeur de pixel de 0,2 correspond à 20% de réflectance.</p>
               
               <div class="manip">
-                <p><img class="icone" src="illustrations/tous/1_2_informations_icone.png" alt="icône identifier des entités" >Vous pouvez interroger les valeurs des pixels à l'aide de l'outil <b>Identifier des entités</b>. Cet outil renvoie les valeurs de toutes les bandes du pixel interrogé&nbsp;:</p>
+                <p><img class="icone" src="illustrations/1_2_informations_icone.jpg" alt="icône identifier des entités" >Vous pouvez interroger les valeurs des pixels à l'aide de l'outil <b>Identifier des entités</b>. Cet outil renvoie les valeurs de toutes les bandes du pixel interrogé&nbsp;:</p>
                 <figure>
-                  <a href="illustrations/tous/12_01_identifier_graphique.png" >
-      							<img src="illustrations/tous/12_01_identifier_graphique.png" alt="résultat de l'outil identifier des entités en mode graphique" width="400">
+                  <a href="illustrations/12_01_identifier_graphique.jpg" >
+      							<img src="illustrations/12_01_identifier_graphique.jpg" alt="résultat de l'outil identifier des entités en mode graphique" width="400">
       						</a>
     						</figure>
     						<p>Ici, le résultat est présenté sous forme de graphique, avec un point par bande, le mode par défaut est sous forme d'arborescence. Vous pouvez changer de mode au moyen de la liste déroulante au bas de la fenêtre.</p>
@@ -319,14 +319,14 @@
               <div class="manip">
                 <p>Double-clic sur le nom de la couche pour ouvrir la fenêtre des propriétés, rubrique <b>Histogramme</b>&nbsp;:</p>
                 <figure>
-                  <a href="illustrations/tous/12_01_histo_preferences.png" >
-      							<img src="illustrations/tous/12_01_histo_preferences.png" alt="fenêtre des propriétés, histogramme, choix de la bande" width="600">
+                  <a href="illustrations/12_01_histo_preferences.jpg" >
+      							<img src="illustrations/12_01_histo_preferences.jpg" alt="fenêtre des propriétés, histogramme, choix de la bande" width="600">
       						</a>
     						</figure>
     						<p>Par défaut, toutes les bandes sont affichées. Pour n'afficher qu'une seule bande, cliquer sur le bouton <b>Préférences/Actions</b> et choisir par exemple <b>Afficher la bande sélectionnée</b> puis afficher la bande 04&nbsp;:</p>
     						<figure>
-                  <a href="illustrations/tous/12_01_histo_bande4.png" >
-      							<img src="illustrations/tous/12_01_histo_bande4.png" alt="fenêtre des propriétés, histogramme, bande 4" width="600">
+                  <a href="illustrations/12_01_histo_bande4.jpg" >
+      							<img src="illustrations/12_01_histo_bande4.jpg" alt="fenêtre des propriétés, histogramme, bande 4" width="600">
       						</a>
     						</figure>
     						<p>Vous pouvez zoomer sur le graphique en dessinant un rectangle, et revenir au zoom initial par un clic droit.</p>
@@ -339,7 +339,7 @@
               <p>Selon le site <a class="ext" target="_blank" href="https://www.123couleurs.fr/">123couleurs</a> : &#171;&nbsp;La <b>synthèse additive</b> correspond aux mélanges de couleurs que l’on obtient quand, en partant de l’absence de lumière (le « NOIR »), on allume ensemble plusieurs sources de lumière colorées. Le terme additif vient du fait que les mélanges résultent d’une addition de lumières colorées.&nbsp;&#187;</p>
 				      <figure>
                 <a href="https://fr.wikipedia.org/wiki/Synth%C3%A8se_additive#/media/Fichier:Synthese+.svg" >
-    							<img src="illustrations/tous/12_01_synthese_additive.svg" alt="schéma de la synthèse additive" width="200">
+    							<img src="illustrations/12_01_synthese_additive.svg" alt="schéma de la synthèse additive" width="200">
     						</a>
     						<figcaption>Synthèse additive, source : <a class="ext" target="_blank" href="https://commons.wikimedia.org/wiki/File:Synthese%2B.svg">Wikimedia Commons</a>, auteur Quark67</figcaption>
   						</figure>
@@ -349,8 +349,8 @@
   						<div class="manip">
   						  <p>Ouvrez la fenêtre des propriétés de l'image <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>, rubrique <b>Symbologie</b>&nbsp;:</p>
   						  <figure>
-                  <a href="illustrations/tous/12_01_compocol.png" >
-      							<img src="illustrations/tous/12_01_compocol.png" alt="choix des bandes rouge, vert et bleu en rendu 'couleur à bandes multiples'" width="600">
+                  <a href="illustrations/12_01_compocol.jpg" >
+      							<img src="illustrations/12_01_compocol.jpg" alt="choix des bandes rouge, vert et bleu en rendu 'couleur à bandes multiples'" width="600">
       						</a>
     						</figure>
     						<p>Sélectionnez le type de rendu <b>Couleur à bandes multiples</b> si ça n'est pas déjà fait.</p>
@@ -376,8 +376,8 @@
     						  <li>Bande bleue &#8594; <b>bande 04</b> : rouge, 665 nm</li>
     						</ul>
 				        <figure>
-                  <a href="illustrations/tous/12_01_compocol_2.png" >
-      							<img src="illustrations/tous/12_01_compocol_2.png" alt="image avec les bandes 13, 8 et 4 : les zones brûlées sont bien visibles en rouge" width="600">
+                  <a href="illustrations/12_01_compocol_2.jpg" >
+      							<img src="illustrations/12_01_compocol_2.jpg" alt="image avec les bandes 13, 8 et 4 : les zones brûlées sont bien visibles en rouge" width="600">
       						</a>
     						</figure>
 				      </div>

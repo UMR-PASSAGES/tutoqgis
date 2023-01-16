@@ -22,15 +22,15 @@
 			<p>Le but va être ici, à partir d'une carte déjà géoréférencée, de créer une couche de points qui contiendra les écoles et les postes de l'île d'Oahu. On passera donc d'une couche raster (la carte) à une couche vecteur contenant une partie des informations de la carte.</p>
 			<p>Ci-dessous, à gauche, la carte originale, et à droite, la carte avec par-dessus la couche vecteur contenant les bâtiments.</p>
 			<figure>
-				<a href="illustrations/tous/5_1_principe_numerisation.png" >
-					<img src="illustrations/tous/5_1_principe_numerisation.png" alt="carte de l'île d'Oahu avant et après numérisation des bâtiments" width="650">
+				<a href="illustrations/5_1_principe_numerisation.jpg" >
+					<img src="illustrations/5_1_principe_numerisation.jpg" alt="carte de l'île d'Oahu avant et après numérisation des bâtiments" width="650">
 				</a>
 			</figure>
 			<p>Il sera ensuite plus facile de manipuler des données vecteurs, pour par exemple visualiser la répartition spatiale des écoles, et si on a numérisé également les routes travailler sur l'accessibilité des ces écoles...</p>
 			<p>Ces écoles et postes sont représentées dans la carte sous forme de points bleus ou rouges :</p>
 			<figure>
-			    <img src="illustrations/tous/5_1_leg_pts.png" alt="extrait de la légende de la carte d'Oahu correspondant aux écoles et postes" width="150" >
-			    <img src="illustrations/tous/5_1_ex_pts.png" alt="extrait de la carte d'Oahu avec écoles et postes" width="200">
+			    <img src="illustrations/5_1_leg_pts.jpg" alt="extrait de la légende de la carte d'Oahu correspondant aux écoles et postes" width="150" >
+			    <img src="illustrations/5_1_ex_pts.jpg" alt="extrait de la carte d'Oahu avec écoles et postes" width="200">
 			</figure>
 			
 			<h3>Création d'une couche vide<a class="headerlink" id="V11" href="#V11"></a></h3>
@@ -38,18 +38,18 @@
 				<p>La première étape consiste à créer une couche vierge, qui accueillera les données que nous allons créer.</p>
 				<div class="manip">
 					<p>Dans QGIS, ouvrez un nouveau projet.</p>
-					<p><img class="icone" src="illustrations/tous/5_1_nouvellecouche_icone.png" alt="icône nouvelle couche" >Rendez-vous dans le 
+					<p><img class="icone" src="illustrations/5_1_nouvellecouche_icone.jpg" alt="icône nouvelle couche" >Rendez-vous dans le 
 						<a class="thumbnail_bottom" href="#thumb">Menu Couche &#8594; Créer une couche &#8594; Nouvelle couche GeoPackage...
 							<span>
-								<img src="illustrations/tous/5_1_nouvellecouche_menu.png" alt="Menu Couche, Nouvelle couche GeoPackage.." height="200" >
+								<img src="illustrations/5_1_nouvellecouche_menu.jpg" alt="Menu Couche, Nouvelle couche GeoPackage.." height="200" >
 							</span>
 						</a>					
 					ou bien cliquez sur l'icône correspondante (vous pouvez aussi utiliser le raccourci clavier Ctrl+Maj+N).</p>
 					
 					<p>La fenêtre suivante apparaît :</p>
 					<figure>
-						<a href="illustrations/tous/5_1_nouvellecouche_fenetre.png" >
-							<img src="illustrations/tous/5_1_nouvellecouche_fenetre.png" alt="fenêtre de création d'une nouvelle couche" width="500">
+						<a href="illustrations/5_1_nouvellecouche_fenetre.jpg" >
+							<img src="illustrations/5_1_nouvellecouche_fenetre.jpg" alt="fenêtre de création d'une nouvelle couche" width="500">
 						</a>
 					</figure>
 					<ul>
@@ -74,15 +74,15 @@
 			    <div class="manip">
 			        <p>Allez dans les propriétés de la couche, rubrique <b>Information</b> :</p>
 			        <figure>
-						<a href="illustrations/tous/5_1_informations.png" >
-							<img src="illustrations/tous/5_1_informations.png" alt="informations sur la couche (emplacement, SCR...)" width="530">
+						<a href="illustrations/5_1_informations.jpg" >
+							<img src="illustrations/5_1_informations.jpg" alt="informations sur la couche (emplacement, SCR...)" width="530">
 						</a>
 				   </figure>
 				   <p>Vous pouvez vérifier ici l'emplacement de votre couche (<b>chemin</b>), son <b>SCR</b>, le <b>nombre d'entités</b> qu'elle contient (à ce stade, 0).</p>
 				   <p>Ouvrez la table attributaire :</p>
 				   <figure>
-						<a href="illustrations/tous/5_1_table_vide.png" >
-							<img src="illustrations/tous/5_1_table_vide.png" alt="table attributaire de la couche batiments_oahu" width="570">
+						<a href="illustrations/5_1_table_vide.jpg" >
+							<img src="illustrations/5_1_table_vide.jpg" alt="table attributaire de la couche batiments_oahu" width="570">
 						</a>
 				   </figure>
 				   <p>Cette table ne contient aucune ligne, ce qui est normal car la couche ne contient aucune entité.</p>

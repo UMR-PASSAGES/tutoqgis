@@ -24,8 +24,8 @@
 				<p>La manipulation sera la même que décrite dans les précédentes parties, sauf en ce qui concerne la création des points de calage. Seule cette partie sera donc décrite ici.</p>
 				<p>L'image que nous allons caler est une carte de Doncaster East, dans la banlieue de Melbourne (source : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File:Doncaster_east_locality_map.PNG">Wikimedia</a>).</p>
 				<figure>
-					<a href="illustrations/tous/4_6_doncaster_east.png" >
-						<img src="illustrations/tous/4_6_doncaster_east.png" alt="Carte à caler de Doncaster East (Australie)" width="500">
+					<a href="illustrations/4_6_doncaster_east.jpg" >
+						<img src="illustrations/4_6_doncaster_east.jpg" alt="Carte à caler de Doncaster East (Australie)" width="500">
 					</a>
 				</figure>
 				<p>Pour caler cette carte, nous allons nous baser sur les données <a class="ext" target="_blank" href="http://www.openstreetmap.org/">OpenStreetMap</a>. OpenStreetMap est une base de données cartographique libre ; on décrit souvent ce projet comme un "wikipedia cartographique". Pour en savoir plus, voir aussi <a href="03_05_donnees_osm.php" >ici</a> !</p>
@@ -37,8 +37,8 @@
 				    <div class="manip">
 				        <p>Vous pouvez par exemple vous rendre dans le panneau Explorateur (s'il n'est pas déjà activé : menu Vue &#8594; Panneaux &#8594; Explorateur), rubrique <b>XYZ Tiles</b>, et double-cliquez sur le fonds <b>OpenStreetMap</b>.</p>
 				        <figure>
-        					<a href="illustrations/tous/4_6_ajout_OSM.png" >
-        						<img src="illustrations/tous/4_6_ajout_OSM.png" alt="Panneau Explorateur, XYZ Tiles, OpenStreetMap" width="200">
+        					<a href="illustrations/4_6_ajout_OSM.jpg" >
+        						<img src="illustrations/4_6_ajout_OSM.jpg" alt="Panneau Explorateur, XYZ Tiles, OpenStreetMap" width="200">
         					</a>
         				</figure>
 					
@@ -51,8 +51,8 @@
 						<p>Pour simplifier les choses, nous allons passer le projet également en Pseudo Mercator, afin que la couche de base pour le géoréférencement et le projet aient le même SCR.</p>
 						<p>Pour cela, rendez-vous dans les propriétés du projet et sélectionnez le SCR Pseudo Mercator, code EPSG 3857 (cf. <a href="02_04_changer_systeme.php#II41">ici</a>). Vous devez maintenant voir le SCR 3857 dans la barre en bas de la fenêtre de QGIS :</p>
             <figure>						
-  						<a href="illustrations/tous/4_6_scr_projet_3857.png" >
-  						  <img src="illustrations/tous/4_6_scr_projet_3857.png" alt="SCR du projet lisible dans la barre du bas de la fenêtre de QGIS (ici EPSG:3857)" width="620">
+  						<a href="illustrations/4_6_scr_projet_3857.jpg" >
+  						  <img src="illustrations/4_6_scr_projet_3857.jpg" alt="SCR du projet lisible dans la barre du bas de la fenêtre de QGIS (ici EPSG:3857)" width="620">
   					  </a>
   					</figure>
 					</div>
@@ -63,14 +63,14 @@
 				    <div class="manip">
 						<p>Commençons par installer l'extension <b>Nominatim Locator Filter</b> : procédez comme pour QuickMapServices, via le <b>menu Extensions &#8594; Installer/Gérer les extensions</b>.</p>
 						<figure>
-							<a href="illustrations/tous/4_6_install_nlf.png">
-								<img src="illustrations/tous/4_6_install_nlf.png" alt="Installation de l'extension Nominatim Locator Filter" width="600">
+							<a href="illustrations/4_6_install_nlf.jpg">
+								<img src="illustrations/4_6_install_nlf.jpg" alt="Installation de l'extension Nominatim Locator Filter" width="600">
 							</a>
 						</figure>
 						<p>L'extension n'est pas visible dans QGIS ; en fait, cette extension ajoute une fonctionnalité à la barre de recherche tout en bas à gauche de la fenêtre de QGIS.</p>
 						<figure>
-							<a href="illustrations/tous/4_6_barre_recherche.png">
-								<img src="illustrations/tous/4_6_barre_recherche.png" alt="Fenêtre de QGIS avec la barre de recherche en bas à gauche encadrée en rouge" width="600">
+							<a href="illustrations/4_6_barre_recherche.jpg">
+								<img src="illustrations/4_6_barre_recherche.jpg" alt="Fenêtre de QGIS avec la barre de recherche en bas à gauche encadrée en rouge" width="600">
 							</a>
 						</figure>
 					</div>
@@ -82,8 +82,8 @@
 						<p>Dans la barre de recherche, tapez : <b>Doncaster East, Victoria, Australia </b> en terminant par un espace.</p>
 						<p>Appuyez sur la touche entrée pour valider la suggestion qui doit normalement apparaître : la carte est maintenant zoomée sur ce lieu.</p>
 						<figure>
-						  <a href="illustrations/tous/4_6_osm_zoom1.png" >
-							<img src="illustrations/tous/4_6_osm_zoom1.png" alt="Données OSM : Melbourne" width="600">
+						  <a href="illustrations/4_6_osm_zoom1.jpg" >
+							<img src="illustrations/4_6_osm_zoom1.jpg" alt="Données OSM : Melbourne" width="600">
 						  </a>
 						</figure>
 					</div>
@@ -91,8 +91,8 @@
 					<div class="manip">
 						<p>Zoomez maintenant sur Doncaster East (pour vous aider : <a class="ext" target="_blank" href="http://www.openstreetmap.org/relation/2390038#map=13/-37.7776/145.1615" >carte OpenStreetMap de Doncaster Est</a>).</p>
 						<figure>
-							<a href="illustrations/tous/4_6_osm_doncaster_east.png">
-								<img src="illustrations/tous/4_6_osm_doncaster_east.png" alt="Doncaster East : données OSM et carte à caler en vis à vis" width="600">
+							<a href="illustrations/4_6_osm_doncaster_east.jpg">
+								<img src="illustrations/4_6_osm_doncaster_east.jpg" alt="Doncaster East : données OSM et carte à caler en vis à vis" width="600">
 							</a>
 						</figure>
 					</div>
@@ -106,21 +106,21 @@
 						<p class="note">Si QGIS vous demande dans quel SCR est cette image, choisissez le <b>WGS84 / Pseudo-Mercator EPSG:3857</b>.</p>
 						<p>Cliquez sur une intersection de routes, par exemple entre Reynolds Road et Blackburn Road. La fenêtre de saisie des coordonnées apparaît : cliquez sur le bouton <b>Depuis le canevas de la carte</b>.</p>
 						<figure>
-							<a href="illustrations/tous/4_6_depuis_canevas.png">
-								<img src="illustrations/tous/4_6_depuis_canevas.png" alt="fenêtre de saisie des coordonnées" width="500">
+							<a href="illustrations/4_6_depuis_canevas.jpg">
+								<img src="illustrations/4_6_depuis_canevas.jpg" alt="fenêtre de saisie des coordonnées" width="500">
 							</a>
 						</figure>
 						<p>Dans la fenêtre de QGIS, cliquez sur cette intersection sur les données OSM : les coordonnées de la fenêtre de saisie sont automatiquement remplies avec les coordonnées du point sur lequel vous venez de cliquer.</p>
 						<figure>
-							<a href="illustrations/tous/4_6_coord_remplies.png">
-								<img src="illustrations/tous/4_6_coord_remplies.png" alt="les coordonnées sont remplies en fonction du point cliqué dans QGIS" width="500">
+							<a href="illustrations/4_6_coord_remplies.jpg">
+								<img src="illustrations/4_6_coord_remplies.jpg" alt="les coordonnées sont remplies en fonction du point cliqué dans QGIS" width="500">
 							</a>
 						</figure>
 						<p>Notez également que le SCR du projet est automatiquement sélectionné&nbsp;!</p>
 						<p>Cliquez sur <b>OK</b>.</p>
 						<figure>
-							<a href="illustrations/tous/4_6_point_0.png">
-								<img src="illustrations/tous/4_6_point_0.png" alt="point 0, dans la fenêtre du géoréférenceur et dans celle de QGIS" width="570">
+							<a href="illustrations/4_6_point_0.jpg">
+								<img src="illustrations/4_6_point_0.jpg" alt="point 0, dans la fenêtre du géoréférenceur et dans celle de QGIS" width="570">
 							</a>
 							<figcaption>Premier point : à gauche, dans la fenêtre de QGIS (données OSM) et à droite, dans la fenêtre du géoréférenceur.</figcaption>
 						</figure>
@@ -130,8 +130,8 @@
 						<p><a href="04_05_lancement.php">Lancez le calage</a>.</p>
 						<p>Une fois le calage terminé, vous pouvez en vérifier la précision en donnant de la transparence à votre image calée (dans les propriétés de la couche, rubrique Transparence) :</p>
 						<figure>
-							<a href="illustrations/tous/4_6_superposition.png">
-								<img src="illustrations/tous/4_6_superposition.png" alt="Superposition de l'image calée et des données OSM" width="500">
+							<a href="illustrations/4_6_superposition.jpg">
+								<img src="illustrations/4_6_superposition.jpg" alt="Superposition de l'image calée et des données OSM" width="500">
 							</a>
 						</figure>
 					</div>

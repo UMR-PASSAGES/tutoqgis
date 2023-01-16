@@ -47,20 +47,20 @@
     				<div class="manip">
     					<p>Zoomez sur un fleuve, par exemple dans l'ouest de l'île, dans la région de Makaha :</p>
     					<figure>
-    						<a href="illustrations/tous/5_4_makaha.png" >
-    							<img class="noshadow" src="illustrations/tous/5_4_makaha.png" alt="zoom sur Makaha" width="232">
+    						<a href="illustrations/5_4_makaha.jpg" >
+    							<img class="noshadow" src="illustrations/5_4_makaha.jpg" alt="zoom sur Makaha" width="232">
     						</a>
-    						<a href="illustrations/tous/5_4_makaha_zoom.png" >
-    							<img class="noshadow" src="illustrations/tous/5_4_makaha_zoom.png" alt="zoom sur la rivière de Makaha" width="266">
+    						<a href="illustrations/5_4_makaha_zoom.jpg" >
+    							<img class="noshadow" src="illustrations/5_4_makaha_zoom.jpg" alt="zoom sur la rivière de Makaha" width="266">
     						</a>
     					</figure>
     					<p>Passez en mode édition pour votre couche de fleuves.</p>
-    					<p><img class="icone" src="illustrations/tous/5_4_ajout_icone.png" alt="icône ajouter une entité linéaire">Cliquez sur l'icône <b>Ajouter une entité linéaire</b>. Attention, elle ressemble beaucoup à l'icône pour créer une nouvelle couche shapefile&nbsp;!</p>
+    					<p><img class="icone" src="illustrations/5_4_ajout_icone.jpg" alt="icône ajouter une entité linéaire">Cliquez sur l'icône <b>Ajouter une entité linéaire</b>. Attention, elle ressemble beaucoup à l'icône pour créer une nouvelle couche shapefile&nbsp;!</p>
     					<p class="note">Vous remarquerez que cette icône varie en fonction du type de couche éditée : point, ligne ou polygone.</p>
     					<p>Cliquez sur le début du fleuve pour créer un premier sommet, puis rajoutez d'autres points à votre ligne. Pour terminer, faites un clic-droit n'importe où.</p>
     					<figure>
-    						<a href="illustrations/tous/5_4_fleuve.png" >
-    							<img src="illustrations/tous/5_4_fleuve.png" alt="fleuve numérisé" width="500">
+    						<a href="illustrations/5_4_fleuve.jpg" >
+    							<img src="illustrations/5_4_fleuve.jpg" alt="fleuve numérisé" width="500">
     						</a>
     					</figure>
     				</div>
@@ -71,7 +71,7 @@
 					<li class="espace">Si pendant la numérisation vous avez des <b>difficultés à voir votre ligne</b> : menu Préférences &#8594; Options &#8594; rubrique Numérisation : réglez l'épaisseur de la ligne, par exemple 2, et la couleur. Pour la 
 					<a class="thumbnail_bottom" href="#thumb">couleur
 						<span>
-							<img src="illustrations/tous/5_4_num_style_couleur.png" alt="choix de la couleur de numérisation" height="400" >
+							<img src="illustrations/5_4_num_style_couleur.jpg" alt="choix de la couleur de numérisation" height="400" >
 						</span>
 					</a>
 					, n'oubliez pas de mettre le canal alpha, c'est-à-dire la transparence, à 255 pour éliminer toute transparence (une fois la ligne terminée, elle prend le style spécifié dans les propriétés de la couche)</li>
@@ -85,11 +85,11 @@
 				<p>Il est possible de modifier le tracé d'une ligne existante en déplaçant des sommets, en en rajoutant ou supprimant.</p>
 				
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/5_4_noeud_icone.png" alt="icône outil de noeud">Vérifiez que vous êtes bien en mode édition pour la couche de fleuves. Sélectionnez-la dans la table des matières, puis cliquez sur l'icône <b>Outil de nœud</b>.</p>
+					<p><img class="icone" src="illustrations/5_4_noeud_icone.jpg" alt="icône outil de noeud">Vérifiez que vous êtes bien en mode édition pour la couche de fleuves. Sélectionnez-la dans la table des matières, puis cliquez sur l'icône <b>Outil de nœud</b>.</p>
 					<p>Survolez une ligne existante : les sommets prennent la forme de ronds rouges.</p>
 					<figure>
-						<a href="illustrations/tous/5_4_fleuve_noeud.png" >
-							<img src="illustrations/tous/5_4_fleuve_noeud.png" alt="ligne avec les noeuds visibles sous forme de carrés rouges" width="500" >
+						<a href="illustrations/5_4_fleuve_noeud.jpg" >
+							<img src="illustrations/5_4_fleuve_noeud.jpg" alt="ligne avec les noeuds visibles sous forme de carrés rouges" width="500" >
 						</a>
 					</figure>
 					<p>Si vous survolez un sommet, il devient plus gros. Vous pouvez alors :</p>

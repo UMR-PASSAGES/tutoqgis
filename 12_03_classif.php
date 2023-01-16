@@ -57,8 +57,8 @@
             <p>Ouvrez un nouveau projet QGIS et ajoutez-y l'image geotiff <em class="data">S2A_20200401</em>.</p>
             <p>Pour voir où se situe la zone, <a href="03_04_fonds_carte.php#III42a">ajoutez par exemple un fonds OpenStreetMap</a>.</p>
             <figure>
-  						<a href="illustrations/tous/12_03_imagesat.png" >
-  							<img src="illustrations/tous/12_03_imagesat.png" alt="Vue générale et zoom de l'image satellite" width="600">
+  						<a href="illustrations/12_03_imagesat.jpg" >
+  							<img src="illustrations/12_03_imagesat.jpg" alt="Vue générale et zoom de l'image satellite" width="600">
   						</a>
   					</figure>
   					
@@ -67,8 +67,8 @@
   					<p>Pour explorer cette image, nous pouvons tester différentes <a href="12_01_intro_teledec.php#XII14b">compositions colorées</a>.</p>
   					<p>Commençons par une composition colorée "en vraie couleur", avec les bandes rouge, vert et bleu, soit les bandes 4, 3 et 2&nbsp;:</p>
   					<figure>
-  						<a href="illustrations/tous/12_03_compocol_432.png" >
-  							<img src="illustrations/tous/12_03_compocol_432.png" alt="Composition colorée en vraie couleur de l'image Sentinel-2" width="600">
+  						<a href="illustrations/12_03_compocol_432.jpg" >
+  							<img src="illustrations/12_03_compocol_432.jpg" alt="Composition colorée en vraie couleur de l'image Sentinel-2" width="600">
   						</a>
   					</figure>
   					<p>On peut aussi tester des compositions en fausse couleur&nbsp;:</p>
@@ -103,8 +103,8 @@
   				  <p>La méthode des <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/K-moyennes" >K-Means ou K-moyennes</a> est une méthode de clustering utilisé pour regrouper des individus (dans notre cas, des pixels), de manière à ce qu'au sein de chaque groupe les individus se ressemblent le plus possible, et que les groupes soient le plus différents possibles les uns des autres.</p>
   				  
   				  <figure>
-  						<a href="illustrations/tous/12_03_kmeans_principe.png" >
-  							<img src="illustrations/tous/12_03_kmeans_principe.png" alt="Nuage de points à gauche, le même nuage de points avec 3 groupes déterminés avec la méthode des K-Means à droite" width="600">
+  						<a href="illustrations/12_03_kmeans_principe.jpg" >
+  							<img src="illustrations/12_03_kmeans_principe.jpg" alt="Nuage de points à gauche, le même nuage de points avec 3 groupes déterminés avec la méthode des K-Means à droite" width="600">
   						</a>
   						<figcaption>A gauche, nuage de pixels à classe, à droite, classification des pixels par la méthode des K-Means.</figcaption>
   					</figure>
@@ -130,12 +130,12 @@
   				    <p><em>Le jeu de bande doit bien être <a href="12_02_info_spectrale.php#XII21a">défini</a> au préalable dans l'extension SCP.</em></p>
   				    <p><a class="thumbnail_top" href="#thumb">Menu SCP &#8594; Traitement de bande &#8594; Clustering
               	<span>
-              		<img src="illustrations/tous/12_03_clustering_menu.png" alt="Menu SCP, Traitement de bande, Clustering" height="300" >
+              		<img src="illustrations/12_03_clustering_menu.jpg" alt="Menu SCP, Traitement de bande, Clustering" height="300" >
               	</span>
               </a>&nbsp;:</p>
               <figure>
-    						<a href="illustrations/tous/12_03_clustering_fenetre.png" >
-    							<img src="illustrations/tous/12_03_clustering_fenetre.png" alt="Paramétrage de l'outil de clustering dans l'extension SCP" width="600">
+    						<a href="illustrations/12_03_clustering_fenetre.jpg" >
+    							<img src="illustrations/12_03_clustering_fenetre.jpg" alt="Paramétrage de l'outil de clustering dans l'extension SCP" width="600">
     						</a>
     						<figcaption>Cliquez sur l'image pour la voir en plus grand&nbsp;!</figcaption>
     					</figure>
@@ -190,8 +190,8 @@
 				      <p>Si vous n'avez pas fermé la fenêtre SCP après avoir généré le résultat de la classification, vous pouvez accéder à l'outil de reclassification dans la rubrique <b>Post-traitement &#8594; Reclassification</b>&nbsp;; sinon <b>menu SCP &#8594; Post-traitement &#8594; Reclassification</b>.</p>
 				      
 				      <figure>
-    						<a href="illustrations/tous/12_03_reclass_fenetre.png" >
-    							<img src="illustrations/tous/12_03_reclass_fenetre.png" alt="Paramétrage de l'outil de reclassification dans l'extension SCP" width="600">
+    						<a href="illustrations/12_03_reclass_fenetre.jpg" >
+    							<img src="illustrations/12_03_reclass_fenetre.jpg" alt="Paramétrage de l'outil de reclassification dans l'extension SCP" width="600">
     						</a>
     					</figure>
     					

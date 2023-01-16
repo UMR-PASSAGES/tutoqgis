@@ -26,11 +26,11 @@
                 <p><a class="ext" target="_blank" href="http://www.openstreetmap.org">OpenStreetMap ou OSM</a> est un projet qui a pour but de constituer une base de données géographiques libre du monde. A l'instar de <a class="ext" target="_blank" href="https://fr.wikipedia.org">Wikipédia</a>, tout un chacun peut participer et enrichir le projet. On peut donc visualiser, réutiliser et même après inscription modifier gratuitement les données.</p>
                 <p>La partie la plus connue du projet est peut-être la visualisation des données OSM sous forme de <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=19/44.79461/-0.61780" >carte</a> ; mais OSM est avant tout un ensemble de <a class="ext" target="_blank" href="https://www.openstreetmap.org/way/226888023">données</a> géographiques, utilisables entre autres dans un logiciel SIG.</p>
                 <figure>
-                    <a href="illustrations/tous/3_4_carte.png" >
-                		<img src="illustrations/tous/3_4_carte.png" alt="OpenStreetMap : extrait de carte" width="290">
+                    <a href="illustrations/3_4_carte.jpg" >
+                		<img src="illustrations/3_4_carte.jpg" alt="OpenStreetMap : extrait de carte" width="290">
                 	</a>
-                    <a href="illustrations/tous/3_4_donnees.jpg" >
-                		<img src="illustrations/tous/3_4_donnees.jpg" alt="OpenStreetMap : extrait de carte avec les données en bleu" width="290">
+                    <a href="illustrations/3_4_donnees.jpg" >
+                		<img src="illustrations/3_4_donnees.jpg" alt="OpenStreetMap : extrait de carte avec les données en bleu" width="290">
                 	</a>
                 	<figcaption>Sous la carte... les données !</figcaption>
                 </figure>
@@ -50,33 +50,33 @@
     	            <p>Dans un navigateur internet, rendez-vous dans <a target="_blank" class="ext" href="https://wiki.openstreetmap.org/wiki/Tile_servers">la page du wiki OSM dédiée aux serveurs de tuiles raster</a> : cette page liste les adresses des fonds de carte utilisant les données OSM accessibles en ligne.</p>
     	            <p>Ici, nous allons ajouter le fonds <b>Stamen Toner</b> en noir et blanc.</p>
     	            <figure>
-                    	<a href="illustrations/tous/3_5_stamen_toner.png" >
-                    	    <img src="illustrations/tous/3_5_stamen_toner.png" alt="page du wiki OSM sur les serveurs de tuiles, ligne correspondant au fonds Stamen Toner" width="620">
+                    	<a href="illustrations/3_5_stamen_toner.jpg" >
+                    	    <img src="illustrations/3_5_stamen_toner.jpg" alt="page du wiki OSM sur les serveurs de tuiles, ligne correspondant au fonds Stamen Toner" width="620">
                         </a>
                     </figure>
-    	            <p>Copiez l'url du serveur : <b>https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png</b></p>
+    	            <p>Copiez l'url du serveur : <b>https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.jpg</b></p>
     	            <p>Dans QGIS, panneau explorateur, clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</p>
     	            <figure>
-                    	<a href="illustrations/tous/3_5_stamen_connexion.png" >
-                    	    <img src="illustrations/tous/3_5_stamen_connexion.png" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="430">
+                    	<a href="illustrations/3_5_stamen_connexion.jpg" >
+                    	    <img src="illustrations/3_5_stamen_connexion.jpg" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="430">
                         </a>
                     </figure>
                     <ul>
                         <li>Nom : il s'agit du nom qui apparaîtra dans le panneau explorateur, vous pouvez taper par exemple <b>Stamen Toner</b></li>
-                        <li>URL : collez l'URL que vous avez préalablement copiée : <b>https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png</b></li>
+                        <li>URL : collez l'URL que vous avez préalablement copiée : <b>https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.jpg</b></li>
                     </ul>
                     <p class="note">Si l'URL contient le caractère <b>$</b>, il faut le supprimer, par exemple http://c.tile.stamen.com/watercolor/${z}/${x}/${y}.jpg devient http://c.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg.</p>
                     <p>Laissez les valeurs par défaut pour les autres paramètres, cliquez sur OK.</p>
                     <p>Le fonds Stamen Toner apparaît maintenant avec les autres fonds dans la rubrique XYZ Tiles.</p>
                     <figure>
-                        <a href="illustrations/tous/3_5_stamen_xyz.png" >
-                    	    <img src="illustrations/tous/3_5_stamen_xyz.png" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Stamen Toner apparaît avec les autres" width="180">
+                        <a href="illustrations/3_5_stamen_xyz.jpg" >
+                    	    <img src="illustrations/3_5_stamen_xyz.jpg" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Stamen Toner apparaît avec les autres" width="180">
                     	</a>
                     </figure>
                     <p>Double-cliquez pour l'ajouter :</p>
                     <figure>
-                    	<a href="illustrations/tous/3_5_stamen_visu.png" >
-                    	    <img src="illustrations/tous/3_5_stamen_visu.png" alt="Aperçu du fonds Stamen Toner" width="500">
+                    	<a href="illustrations/3_5_stamen_visu.jpg" >
+                    	    <img src="illustrations/3_5_stamen_visu.jpg" alt="Aperçu du fonds Stamen Toner" width="500">
                         </a>
                     </figure>
     	        </div>
@@ -95,13 +95,13 @@
                 <div class="manip">
                      <p>Dans la colonne <b>Sub-Region</b>, cliquez sur <b>South America</b>, puis sur téléchargez les données au format shapefile pour le <b>Suriname</b>.</p>
                      <figure>
-                    	<a href="illustrations/tous/3_5_geofabrik_southamerica.png" >
-                    		<img src="illustrations/tous/3_5_geofabrik_southamerica.png" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="500">
+                    	<a href="illustrations/3_5_geofabrik_southamerica.jpg" >
+                    		<img src="illustrations/3_5_geofabrik_southamerica.jpg" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="500">
                     	</a>
                      </figure>
                      <figure>
-                    	<a href="illustrations/tous/3_5_geofabrik_suriname.png" >
-                    		<img src="illustrations/tous/3_5_geofabrik_suriname.png" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="500">
+                    	<a href="illustrations/3_5_geofabrik_suriname.jpg" >
+                    		<img src="illustrations/3_5_geofabrik_suriname.jpg" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="500">
                     	</a>
                     </figure>
                      <p class="note">Au cas où le téléchargement échouerait, ces données sont également disponibles <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les données de la partie III</a>.</p>
@@ -109,7 +109,7 @@
                      <p>Que contiennent ces données ? Pour le savoir, cliquez sur le lien <a class="ext" target="_blank" href="http://download.geofabrik.de/osm-data-in-gis-formats-free.pdf" >Format description PDF</a> disponible en cliquant sur <b>Suriname</b>
                      <a class="thumbnail_bottom" href="#thumb">à partir de la page où vous avez téléchargé les données
                     	<span>
-                    		<img src="illustrations/tous/3_5_lien_pdf_geofabrik.png" alt="Page geofabrik Suriname avec le lien vers le PDF des métadonnées entouré en rouge" height="400" >
+                    		<img src="illustrations/3_5_lien_pdf_geofabrik.jpg" alt="Page geofabrik Suriname avec le lien vers le PDF des métadonnées entouré en rouge" height="400" >
                     	</span>
                     </a>.</p>
                 </div>
@@ -124,8 +124,8 @@
                 
                 <p>Les données OpenStreetMap ajoutées dans QGIS, comme toute autre donnée, ont un style &#171; par défaut &#187;, ne convenant pas pour une carte. Nous allons voir ici comment représenter ces données pour obtenir quelque chose de similaire à ceci :</p>
                 <figure>
-                	<a href="illustrations/tous/3_5_style_resultat.png" >
-                		<img src="illustrations/tous/3_5_style_resultat.png" alt="Exemple de données OSM stylées, grande échelle" width="500">
+                	<a href="illustrations/3_5_style_resultat.jpg" >
+                		<img src="illustrations/3_5_style_resultat.jpg" alt="Exemple de données OSM stylées, grande échelle" width="500">
                 	</a>
                 </figure>
                 
@@ -149,20 +149,20 @@
                     <p><a href="02_04_changer_systeme.php#II41">Modifiez le SCR du projet</a> pour choisir par exemple le SCR World_Robinson (code EPSG 54030), et activez la projection à la volée.</p>
                     <p>Modifiez l'ordre des couches pour obtenir ceci :</p>
                      <figure>
-                    	<a href="illustrations/tous/3_5_ordre_couches.png" >
-                    		<img src="illustrations/tous/3_5_ordre_couches.png" alt="Ordre des couches OSM" width="250">
+                    	<a href="illustrations/3_5_ordre_couches.jpg" >
+                    		<img src="illustrations/3_5_ordre_couches.jpg" alt="Ordre des couches OSM" width="250">
                     	</a>
                     </figure>
                     <p>Ouvrez la fenêtre <b>Propriétés</b> de la couche <em class="data">gis.osm_roads_free_1</em>, rubrique <b>Symbologie</b> :</p>
                     <figure>
-                    	<a href="illustrations/tous/3_5_charger_style.png" >
-                    		<img src="illustrations/tous/3_5_charger_style.png" alt="Charger un style" width="600">
+                    	<a href="illustrations/3_5_charger_style.jpg" >
+                    		<img src="illustrations/3_5_charger_style.jpg" alt="Charger un style" width="600">
                     	</a>
                     </figure>
                     <p>En bas de la fenêtre, cliquez sur la liste déroulante <b>Style</b> puis sur <b>Charger le style</b>.</p>
                     <figure>
-                    	<a href="illustrations/tous/3_5_charger_style_fenetre.png" >
-                    		<img src="illustrations/tous/3_5_charger_style_fenetre.png" alt="Sélectionner un style depuis un fichier" width="450">
+                    	<a href="illustrations/3_5_charger_style_fenetre.jpg" >
+                    		<img src="illustrations/3_5_charger_style_fenetre.jpg" alt="Sélectionner un style depuis un fichier" width="450">
                     	</a>
                     </figure>
                     <p>Dans la fenêtre qui s'affiche :</p>
@@ -177,20 +177,20 @@
                     <p>Procédez de manière similaire pour chacune des couches, en choisissant à chaque fois le fichier de style approprié.</p>
                     <p>Pour finir, donnez un fond bleu à votre carte : <b>menu Projet &#8594; Propriétés... &#8594; rubrique Général, Paramètres généraux (en haut)</b> : cliquez sur la couleur à droite de <b>Couleur d'arrière-plan</b>.</p>
                     <figure>
-                    	<a href="illustrations/tous/3_5_modif_couleur_fond.png" >
-                    		<img src="illustrations/tous/3_5_modif_couleur_fond.png" alt="Propriétés du projet, Général : modification de la couleur d'arrière-plan" width="600">
+                    	<a href="illustrations/3_5_modif_couleur_fond.jpg" >
+                    		<img src="illustrations/3_5_modif_couleur_fond.jpg" alt="Propriétés du projet, Général : modification de la couleur d'arrière-plan" width="600">
                     	</a>
                     </figure>
                     <p>Dans la boîte de dialogue qui s'affiche alors, choisissez une couleur pour la mer, par exemple dans l'exemple ci-dessous <b>R 184 V 217 B 247</b>.</p>
                     <figure>
-                    	<a href="illustrations/tous/3_5_couleur_rvb.png" >
-                    		<img src="illustrations/tous/3_5_couleur_rvb.png" alt="Choix d'une couleur RVB" width="300">
+                    	<a href="illustrations/3_5_couleur_rvb.jpg" >
+                    		<img src="illustrations/3_5_couleur_rvb.jpg" alt="Choix d'une couleur RVB" width="300">
                     	</a>
                     </figure>
                     <p class="note">Notez qu'une manipulation équivalente peut être effectuée dans le <a href="10_02_mise_en_page.php#X22">mode mise en page</a>, sans changer la couleur de fond dans QGIS.</p>
                     <figure>
-                    	<a href="illustrations/tous/3_5_style_resultat_2.png" >
-                    		<img src="illustrations/tous/3_5_style_resultat_2.png" alt="Exemple de données OSM stylées, petite échelle" width="500">
+                    	<a href="illustrations/3_5_style_resultat_2.jpg" >
+                    		<img src="illustrations/3_5_style_resultat_2.jpg" alt="Exemple de données OSM stylées, petite échelle" width="500">
                     	</a>
                     </figure>
                 </div>
@@ -213,8 +213,8 @@
 			        </ul>
 			        <p>Pour accéder à QuickOSM : <b>menu Vecteur &#8594; Quick OSM &#8594; QuickOSM</b>. La fenêtre suivante s'ouvre :</p>
 			        <figure>
-                    	<a href="illustrations/tous/3_5_quickosm_fenetre.png" >
-                    		<img src="illustrations/tous/3_5_quickosm_fenetre.png" alt="Fenêtre de QuickOSM, choix des options" width="600">
+                    	<a href="illustrations/3_5_quickosm_fenetre.jpg" >
+                    		<img src="illustrations/3_5_quickosm_fenetre.jpg" alt="Fenêtre de QuickOSM, choix des options" width="600">
                     	</a>
                     </figure>
                     <p>Dans la rubrique <b>Requête rapide</b> :</p>
@@ -225,8 +225,8 @@
                     </ul>
                     <p>Patientez (plus la zone visible dans QGIS est grande, plus c'est long !)... Les données sont chargées et affichées :</p>
                     <figure>
-                    	<a href="illustrations/tous/3_5_quickosm_resultat.png" >
-                    		<img src="illustrations/tous/3_5_quickosm_resultat.png" alt="Aperçu des données récupérées avec OSM : rivières du Suriname" width="600">
+                    	<a href="illustrations/3_5_quickosm_resultat.jpg" >
+                    		<img src="illustrations/3_5_quickosm_resultat.jpg" alt="Aperçu des données récupérées avec OSM : rivières du Suriname" width="600">
                     	</a>
                     </figure>
 			    </div>

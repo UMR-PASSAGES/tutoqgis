@@ -53,14 +53,14 @@
 				        <p>A partir du menu <b>Base de données</b> de QGIS, vérifiez si vous avez accès au sous-menu du 
 				        <a class="thumbnail_bottom" href="#thumb">gestionnaire de base de données
                         	<span>
-                        		<img src="illustrations/tous/6_4_dbmanager_menu.png" alt="Menu Bases de données, Gestionnaire de bases de données" height="40" >
+                        		<img src="illustrations/6_4_dbmanager_menu.jpg" alt="Menu Bases de données, Gestionnaire de bases de données" height="40" >
                         	</span>
                         </a>.</p>
 				        <p>Si oui, vous pouvez passer à la <a href="06_04_req_sql.php#VI42b">partie suivante</a>. Si non :</p>
 				        <p>Rendez-vous dans le menu <b>Extension &#8594; Installer/Gérer les extensions</b> :</p>
 				        <figure>
-                        	<a href="illustrations/tous/6_4_dbmanager_activation.png" >
-                        		<img src="illustrations/tous/6_4_dbmanager_activation.png" alt="Activation du gestionnaire de bases de données" width="600">
+                        	<a href="illustrations/6_4_dbmanager_activation.jpg" >
+                        		<img src="illustrations/6_4_dbmanager_activation.jpg" alt="Activation du gestionnaire de bases de données" width="600">
                         	</a>
                         </figure>
                         <p>Dans la rubrique <b>Installées</b>, recherchez l'extension <b>DB Manager</b> et cochez la case correspondante, puis fermez la fenêtre du gestionnaire d'extensions.</p>
@@ -70,19 +70,19 @@
 				
 				    <div class="manip">
 				        <p>Ouvrez un nouveau projet dans QGIS et ajoutez-y les 3 couches <em class="data">eoliennes_bretagne</em>, <em class="data">communes_Bretagne</em> et <em class="data">DEPARTEMENT</em> situées dans le dossier <b><a href="donnees/TutoQGIS_06_Requetes.zip">TutoQGIS_06_Requetes/donnees</a></b>.</p>
-				        <p><img class="icone" src="illustrations/tous/6_4_dbmanager_icone.png" alt="icône gestionnaire de bases de données">Ouvrez la fenêtre du gestionnaire de bases de données : menu <b>Base de données &#8594; Gestionnaire BD...</b>, ou bien cliquez sur l'icône correspondante dans la barre d'outils Base de données.</p>
+				        <p><img class="icone" src="illustrations/6_4_dbmanager_icone.jpg" alt="icône gestionnaire de bases de données">Ouvrez la fenêtre du gestionnaire de bases de données : menu <b>Base de données &#8594; Gestionnaire BD...</b>, ou bien cliquez sur l'icône correspondante dans la barre d'outils Base de données.</p>
 				        <figure>
-                        	<a href="illustrations/tous/6_4_dbmanager_fenetre.png" >
-                        		<img src="illustrations/tous/6_4_dbmanager_fenetre.png" alt="Fenêtre du gestionnaire de bases de données" width="600">
+                        	<a href="illustrations/6_4_dbmanager_fenetre.jpg" >
+                        		<img src="illustrations/6_4_dbmanager_fenetre.jpg" alt="Fenêtre du gestionnaire de bases de données" width="600">
                         	</a>
                         </figure>
 				        <p>Dans l'arborescence située dans la partie gauche de la fenêtre, allez dans <b>Couches virtuelle</b> &#8594; <b>Couches du projet</b> : vous devriez voir vos 3 couches chargées dans QGIS.</p>
 				        <p>Cliquez sur une des couches et allez dans l'onglet <b>Info</b>, dans la partie droite de la fenêtre. Vous pouvez y lire des informations générales sur la couche, un peu comme dans la fenêtre des propriétés, telles que le nombre d'entités, le SCR ou la liste des champs.</p>
 				        <p>Les onglets <b>Table</b> et <b>Aperçu</b> vous donne respectivement un aperçu des données attributaires et spatiales.</p>
-				        <p><img class="icone" src="illustrations/tous/6_4_fenetre_sql_icone.png" alt="icône de la fenêtre SQL" >Cliquez ensuite sur l'icône <b>Fenêtre SQL</b>, ou bien menu <b>Base de données</b> &#8594; <b>Fenêtre SQL</b>.</p>
+				        <p><img class="icone" src="illustrations/6_4_fenetre_sql_icone.jpg" alt="icône de la fenêtre SQL" >Cliquez ensuite sur l'icône <b>Fenêtre SQL</b>, ou bien menu <b>Base de données</b> &#8594; <b>Fenêtre SQL</b>.</p>
 				        <figure>
-                        	<a href="illustrations/tous/6_4_dbmanager_requete.png" >
-                        		<img src="illustrations/tous/6_4_dbmanager_requete.png" alt="Ecriture d'une requête dans le gestionnaire de bases de données" width="600">
+                        	<a href="illustrations/6_4_dbmanager_requete.jpg" >
+                        		<img src="illustrations/6_4_dbmanager_requete.jpg" alt="Ecriture d'une requête dans le gestionnaire de bases de données" width="600">
                         	</a>
                         </figure>
 				        <p>Un quatrième onglet s'ajoute, permettant d'écrire une requête SQL (il est possible d'ouvrir ainsi plusieurs onglets de requête SQL).</p>
@@ -97,8 +97,8 @@
 				    <p>Seule la ligne correspondante de la table attributaire est affichée dans le gestionnaire de bases de données. La sélection n'est pas visible dans la fenêtre principale de QGIS. Comment faire pour voir les géométries correspondantes dans QGIS ?</p>
 				    <div class="manip">
 				        <figure>
-                        	<a href="illustrations/tous/6_4_dbmanager_charger.png" >
-                        		<img src="illustrations/tous/6_4_dbmanager_charger.png" alt="Charger le résultat d'un requête dans QGIS" width="600">
+                        	<a href="illustrations/6_4_dbmanager_charger.jpg" >
+                        		<img src="illustrations/6_4_dbmanager_charger.jpg" alt="Charger le résultat d'un requête dans QGIS" width="600">
                         	</a>
                         </figure>
 				        <p>En bas de le fenêtre du gestionnaire, cochez la case <b>Charger en tant que nouvelle couche</b> : une nouvelle rubrique apparaît :</p>
@@ -108,8 +108,8 @@
 			                <li>Et cliquez sur le bouton <b>Charger</b> pour voir le résultat dans QGIS :</li>
 			            </ul>
 				        <figure>
-                        	<a href="illustrations/tous/6_4_res_selection.png" >
-                        		<img src="illustrations/tous/6_4_res_selection.png" alt="Résultat de la requête (département du Morbihan) chargé dans QGIS" width="400">
+                        	<a href="illustrations/6_4_res_selection.jpg" >
+                        		<img src="illustrations/6_4_res_selection.jpg" alt="Résultat de la requête (département du Morbihan) chargé dans QGIS" width="400">
                         	</a>
                         </figure>
 				    </div>
@@ -139,8 +139,8 @@
 			         <p>Pour que le résultat de la requête ne comporte que les colonnes voulues, il suffit de les lister dans la requête.</p>
 			         <div class="manip">
 			             <figure>
-                        	<a href="illustrations/tous/6_4_colonnes.png" >
-                        		<img src="illustrations/tous/6_4_colonnes.png" alt="Choix des colonnes dans la requête SQL" width="600">
+                        	<a href="illustrations/6_4_colonnes.jpg" >
+                        		<img src="illustrations/6_4_colonnes.jpg" alt="Choix des colonnes dans la requête SQL" width="600">
                         	</a>
                         </figure>
 			             <p>Toujours dans l'onglet <b>Requête</b> du gestionnaire de bases données, remplacez l'étoile par <b>INSEE_DEP, NOM_DEP, geometry</b> :</p>
@@ -162,8 +162,8 @@
 FROM communes_Bretagne as c, DEPARTEMENT as d
 WHERE c.INSEE_DEP = d.INSEE_DEP</p>
 			             <figure>
-                        	<a href="illustrations/tous/6_4_croiser_couches.png" >
-                        		<img src="illustrations/tous/6_4_croiser_couches.png" alt="Exemple de requête SQL croisant deux couches" width="600">
+                        	<a href="illustrations/6_4_croiser_couches.jpg" >
+                        		<img src="illustrations/6_4_croiser_couches.jpg" alt="Exemple de requête SQL croisant deux couches" width="600">
                         	</a>
                         </figure>
                         <p>Le résultat s'affiche : une ligne par commune, avec les colonnes choisies. Par rapport à la couche originale de communes, une information provenant de la couche de départements a été ajoutée, le nom du département.</p>
@@ -198,8 +198,8 @@ WHERE c.INSEE_DEP = d.INSEE_DEP</p>
 			             <p class="note">Dans PostGIS, les index sont gérés de manière transparente et cette ligne n'est donc pas nécessaire.</p>
                         <p>Exécutez la requête :</p>
 			             <figure>
-                        	<a href="illustrations/tous/6_4_contains_1.png" >
-                        		<img src="illustrations/tous/6_4_contains_1.png" alt="Exemple de requête SQL spatiale croisant deux couches" width="550">
+                        	<a href="illustrations/6_4_contains_1.jpg" >
+                        		<img src="illustrations/6_4_contains_1.jpg" alt="Exemple de requête SQL spatiale croisant deux couches" width="550">
                         	</a>
                         </figure>
                         <p class="note">Si la requête ne renvoie pas de résultat, vérifiez que votre couche de communes et d'éoliennes ont bien le même SCR.</p>
@@ -207,16 +207,16 @@ WHERE c.INSEE_DEP = d.INSEE_DEP</p>
                         <p>Pour éviter cela, nous allons grouper toutes les lignes qui possèdent le même code INSEE, le même nom de commune et la même géométrie avec cette ligne :</p>
                         <p class="code">GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
                         <figure>
-                        	<a href="illustrations/tous/6_4_contains_2.png" >
-                        		<img src="illustrations/tous/6_4_contains_2.png" alt="Exemple de requête SQL spatiale croisant deux couches avec clause group by" width="550">
+                        	<a href="illustrations/6_4_contains_2.jpg" >
+                        		<img src="illustrations/6_4_contains_2.jpg" alt="Exemple de requête SQL spatiale croisant deux couches avec clause group by" width="550">
                         	</a>
                         </figure>
                         <p>Cette fois, chaque commune contenant au moins une éolienne n'apparaît qu'une seule fois.</p>
                         <p>Il est relativement simple à partir de cette requête de compter pour chaque commune le nombre d'éoliennes qu'elle contient, en rajoutant un champ comptant le nombre d'identifiants d'éoliennes associés à une commune :</p>
                         <p class="code">SELECT c.INSEE_COM, c.NOM_COM, <b>count(e.id_mat) as nb_eoliennes</b>, c.geometry</p>
                         <figure>
-                        	<a href="illustrations/tous/6_4_contains_3.png" >
-                        		<img src="illustrations/tous/6_4_contains_3.png" alt="Exemple de requête SQL spatiale croisant deux couches avec clause group by et count" width="550">
+                        	<a href="illustrations/6_4_contains_3.jpg" >
+                        		<img src="illustrations/6_4_contains_3.jpg" alt="Exemple de requête SQL spatiale croisant deux couches avec clause group by et count" width="550">
                         	</a>
                         </figure>
                         <p>La requête finale complète est donc :</p>
@@ -228,8 +228,8 @@ GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
 			         </div>
 			         <p>Ceci peut servir par exemple à visualiser le nombre d'éoliennes par commune au moyen d'une carte en cercles proportionnels :</p>
 			         <figure>
-                        	<a href="illustrations/tous/6_4_carte_nb_eoliennes.png" >
-                        		<img src="illustrations/tous/6_4_carte_nb_eoliennes.png" alt="Carte en cercles proportionnels du nombre d'éoliennes par commune" width="500">
+                        	<a href="illustrations/6_4_carte_nb_eoliennes.jpg" >
+                        		<img src="illustrations/6_4_carte_nb_eoliennes.jpg" alt="Carte en cercles proportionnels du nombre d'éoliennes par commune" width="500">
                         	</a>
                         </figure>
                      <p class="note">Pour apprendre à créer ce type de carte, rendez-vous dans la partie consacrée à la <a href="10_01_representation.php#X11">représentation des données</a>&nbsp;!</p>
@@ -241,10 +241,10 @@ GROUP BY c.INSEE_COM, c.NOM_COM, c.geometry</p>
 			
     			 <p>Nous avons vu comment écrire une requête SQL à partir du gestionnaire de bases de données. Il existe une autre interface possible, en passant par le gestionnaire des sources de données.</p>
     			 <div class="manip">
-    			     <p><img class="icone" src="illustrations/tous/1_2_gestionnaire_donnees_icone.png" alt="icône du gestionnaire de sources de données" >Ouvrez le gestionnaire de source de données, rubrique <b>Couche virtuelle</b> :</p>
+    			     <p><img class="icone" src="illustrations/1_2_gestionnaire_donnees_icone.jpg" alt="icône du gestionnaire de sources de données" >Ouvrez le gestionnaire de source de données, rubrique <b>Couche virtuelle</b> :</p>
                         <figure>
-                        	<a href="illustrations/tous/6_4_ajout_vl_fenetre.png" >
-                        		<img src="illustrations/tous/6_4_ajout_vl_fenetre.png" alt="Fenêtre d'ajout/édition d'une couche virtuelle avec un exemple de requête" width="600">
+                        	<a href="illustrations/6_4_ajout_vl_fenetre.jpg" >
+                        		<img src="illustrations/6_4_ajout_vl_fenetre.jpg" alt="Fenêtre d'ajout/édition d'une couche virtuelle avec un exemple de requête" width="600">
                         	</a>
                         </figure>
                         <ul>

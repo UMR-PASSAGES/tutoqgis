@@ -24,19 +24,19 @@
 					<p><b>Depuis la version 3 de QGIS, le format par défaut pour les projets est le QGZ et non plus le QGS</b>. Un fichier QGZ est en fait un fichier QGS plus d'autres informations compressées dans un seul fichier. Il est toujours possible d'ouvrir et d'enregistrer des projets au format QGS.</p>
 					<p>L'intérêt du format QGZ par rapport au format QGS est de stocker plus d'informations directement dans le projet, par exemple les symboles utilisés, les polices, les rampes de couleurs, les emplacements des étiquettes...</p>
 					<div class="manip">
-						<p><img class="icone" src="illustrations/tous/1_4_ouvrir_projet_icone.png" alt="Icône Ouvrir">
+						<p><img class="icone" src="illustrations/1_4_ouvrir_projet_icone.jpg" alt="Icône Ouvrir">
 							<a class="thumbnail_bottom" href="#thumb">Ouvrez le projet
 								<span>
-									<img src="illustrations/tous/1_4_ouvrir_projet_menu.png" alt="Menu Projet, Ouvrir" height="350" >
+									<img src="illustrations/1_4_ouvrir_projet_menu.jpg" alt="Menu Projet, Ouvrir" height="350" >
 								</span>
 							</a>
 							<em class="data"><a href="donnees/TutoQGIS_01_PriseEnMain.zip">senegal.qgz</a></em> situé dans le dossier  <b>TutoQGIS_01_PriseEnMain/projets</b>. Modifiez le zoom et le style des couches.
 						</p>
-						<p><img class="icone" src="illustrations/tous/1_4_sauvegarder_projet_sous_icone.png" alt="menu projet, sauvegarder sous..." >
+						<p><img class="icone" src="illustrations/1_4_sauvegarder_projet_sous_icone.jpg" alt="menu projet, sauvegarder sous..." >
 							Enregistrez votre projet sous un nouveau nom : clic sur l'icône correspondante, ou bien 
 							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Enregistrer sous...
 								<span>
-									<img src="illustrations/tous/1_4_sauvegarder_projet_sous.png" alt="Menu Projet, sauvegarder sous" height="350" >
+									<img src="illustrations/1_4_sauvegarder_projet_sous.jpg" alt="Menu Projet, sauvegarder sous" height="350" >
 								</span>
 							</a>				
 						</p>
@@ -64,7 +64,7 @@
 					<p class="note">Si vous désirez changer ce comportement pour un projet, 
 						<a class="thumbnail_top" href="#thumb">Menu Projet &#8594; Propriétés... &#8594; rubrique Général
 							<span>
-								<img src="illustrations/tous/1_4_proprietes_projet_general.png" alt="Menu Projet, Propriétés du projet, onglet Général" height="500">
+								<img src="illustrations/1_4_proprietes_projet_general.jpg" alt="Menu Projet, Propriétés du projet, onglet Général" height="500">
 							</span>
 						</a>
 						, changez la propriété <b>Enregistrer les chemins</b> de relatif à absolu.

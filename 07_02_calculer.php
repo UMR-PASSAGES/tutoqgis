@@ -39,14 +39,14 @@
 					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>. Ouvrez sa table attributaire.</p>
 					<p>Passez en <a href="05_02_points.php#V21">mode édition</a>. Cliquez sur l'icône <b>Ouvrir la calculatrice de champs</b> parmi les icônes de la table attributaire :</p>
 					<figure>
-						<img src="illustrations/tous/7_2_BO_table_calc.png" alt="barre d'outils de la table attributaire, avec icône de la calculatrice de champs entourée en rouge" width="600" >
+						<img src="illustrations/7_2_BO_table_calc.jpg" alt="barre d'outils de la table attributaire, avec icône de la calculatrice de champs entourée en rouge" width="600" >
 					</figure>
 				</div>
 				
 				<p>La fenêtre suivante s'ouvre :</p>
 				<figure>
-					<a href="illustrations/tous/7_2_calc_fenetre.png" >
-						<img src="illustrations/tous/7_2_calc_fenetre.png" alt="Fenêtre de la calculatrice de champs" width="620" >
+					<a href="illustrations/7_2_calc_fenetre.jpg" >
+						<img src="illustrations/7_2_calc_fenetre.jpg" alt="Fenêtre de la calculatrice de champs" width="620" >
 					</a>
 				</figure>
 				<p><em class="numero">1</em> : Si cette case est cochée, seules les lignes sélectionnées seront modifiées (en grisé si aucune entité n'est sélectionnée).</p>
@@ -69,8 +69,8 @@
 					<p>Nous allons ici calculer la surface de chaque commune en km<sup>2</sup>.</p>
 					<div class="manip">
 						<figure>
-							<a href="illustrations/tous/7_2_calc_fenetre_surface.png">
-								<img src="illustrations/tous/7_2_calc_fenetre_surface.png" alt="Fenêtre de la calculatrice de champs, pour calculer la surface d'une commune en km2" width="600" >
+							<a href="illustrations/7_2_calc_fenetre_surface.jpg">
+								<img src="illustrations/7_2_calc_fenetre_surface.jpg" alt="Fenêtre de la calculatrice de champs, pour calculer la surface d'une commune en km2" width="600" >
 							</a>
 						</figure>
 						<ul>
@@ -90,16 +90,16 @@
 					<p>Parfois, il peut arriver de se mélanger dans les unités... Il peut être utile de vérifier les calculs de géométrie. Nous allons voir 2 méthodes pour le faire&nbsp;; cela vous indique aussi comment connaître par exemple la surface d'un polygone donné sans forcément créer et calculer un champ.</p>
 					<p>La première méthode consiste à <b>mesurer &#171;&nbsp;à la main&nbsp;&#187; la surface d'une commune et à comparer le résultat avec celui du champ SURF_KM2</b>.</p>
 					<div class="manip">
-						<p><img class="iconemid" src="illustrations/tous/7_2_mesure_icone.png" alt="icône mesurer une aire" >Vous pouvez vérifier votre calcul au moyen de l'outil <b>Mesurer une aire</b> : </p>
+						<p><img class="iconemid" src="illustrations/7_2_mesure_icone.jpg" alt="icône mesurer une aire" >Vous pouvez vérifier votre calcul au moyen de l'outil <b>Mesurer une aire</b> : </p>
 						<figure>
-						  <a href="illustrations/tous/7_2_aire_selection.png" >
-							<img src="illustrations/tous/7_2_aire_selection.png" alt="Sélection de l'outil mesurer une aire dans la liste" width="280" >
+						  <a href="illustrations/7_2_aire_selection.jpg" >
+							<img src="illustrations/7_2_aire_selection.jpg" alt="Sélection de l'outil mesurer une aire dans la liste" width="280" >
 						  </a>
 						</figure>
 						<p>Sélectionnez une commune, mesurez son aire en faisant un clic droit sur le dernier sommet pour terminer, choisissez dans la table l'option <b>Ne montrer que les entités sélectionnées</b> et comparer l'aire que vous avez mesuré et l'aire du champ SURF_KM2.</p>
 						<figure>
-							<a href="illustrations/tous/7_2_verif_surf.png" >
-								<img src="illustrations/tous/7_2_verif_surf.png" alt="Vérification de la surface au moyen de l'outil mesurer une aire" width="600" >
+							<a href="illustrations/7_2_verif_surf.jpg" >
+								<img src="illustrations/7_2_verif_surf.jpg" alt="Vérification de la surface au moyen de l'outil mesurer une aire" width="600" >
 							</a>
 						</figure>
 						<p>Les deux aires devraient être sensiblement égales.</p>
@@ -108,11 +108,11 @@
 					<p>La deuxième méthode utilise l'outil <b>Identifier des entités</b>.</p>
 					
 					<div class="manip">
-					   <p><img class="iconemid" src="illustrations/tous/7_2_identifier_icone.png" alt="icône Identifier des entités" >Cliquer sur l'icône <b>Identifier des entités</b> puis sur une commune.</p>
+					   <p><img class="iconemid" src="illustrations/7_2_identifier_icone.jpg" alt="icône Identifier des entités" >Cliquer sur l'icône <b>Identifier des entités</b> puis sur une commune.</p>
 					   <p>Cette commune prend une transparence rouge avec une bordure rouge, et les informations relatives à cette entité apparaissent dans le panneau <b>Résultats de l'identification</b>. On peut y lire les données de la table attributaire pour cette commune, mais également des informations <b>dérivées</b> liées à sa géométrie telles que son périmètre, sa surface...</p>
 					   <figure>
-							<a href="illustrations/tous/7_2_verif_surf_identifier.png" >
-								<img src="illustrations/tous/7_2_verif_surf_identifier.png" alt="Vérification de la surface au moyen de l'outil d'identification" width="600" >
+							<a href="illustrations/7_2_verif_surf_identifier.jpg" >
+								<img src="illustrations/7_2_verif_surf_identifier.jpg" alt="Vérification de la surface au moyen de l'outil d'identification" width="600" >
 							</a>
 						</figure>
 					   <p>Comparez la surface du champ SURF_KM2 et la surface indiquée dans les résultats de l'identification (rubrique Dérivé). Les deux aires devraient être sensiblement égales (attention à convertir les unités).</p>
@@ -138,8 +138,8 @@
 					<div class="manip">
 						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche  <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>. Ouvrez la calculatrice de champs :</p>
 						<figure>
-							<a href="illustrations/tous/7_2_calc_densite.png" >
-								<img src="illustrations/tous/7_2_calc_densite.png" alt="Fenêtre de la calculatrice de champ, calcul de la densité" width="600" >
+							<a href="illustrations/7_2_calc_densite.jpg" >
+								<img src="illustrations/7_2_calc_densite.jpg" alt="Fenêtre de la calculatrice de champ, calcul de la densité" width="600" >
 							</a>
 						</figure>
 						<ul>
@@ -149,8 +149,8 @@
 							<li class="espace">Cliquez sur <b>OK</b> : le champ densité est ajouté et calculé, en nombre d'habitants par km&#178; :</li>
 						</ul>
 						<figure>
-						  <a href="illustrations/tous/7_2_densite_table.png" >
-							<img src="illustrations/tous/7_2_densite_table.png" alt="Table attributaire avec les 3 colonnes population, surface et densité" width="230" >
+						  <a href="illustrations/7_2_densite_table.jpg" >
+							<img src="illustrations/7_2_densite_table.jpg" alt="Table attributaire avec les 3 colonnes population, surface et densité" width="230" >
 						  </a>
 						</figure>
 					</div>
@@ -163,8 +163,8 @@
 					<div class="manip">
 						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche <em class="data">communes_Bretagne</em>. Ouvrez la calculatrice de champs :</p>
 						<figure>
-							<a href="illustrations/tous/7_2_calcul_fenetre_right.png" >
-								<img src="illustrations/tous/7_2_calcul_fenetre_right.png" alt="Calculatrice de champ : calcul du code commune à partir du code INSEE avec la fonction right" width="600" >
+							<a href="illustrations/7_2_calcul_fenetre_right.jpg" >
+								<img src="illustrations/7_2_calcul_fenetre_right.jpg" alt="Calculatrice de champ : calcul du code commune à partir du code INSEE avec la fonction right" width="600" >
 							</a>
 						</figure>
 						<ul>
@@ -177,8 +177,8 @@
 							<li class="espace">Cliquez sur <b>OK</b> : le champ CODE_COM est créé et mis à jour :</li>
 						</ul>
 						<figure>
-						  <a href="illustrations/tous/7_2_table_codeinsee.png" >
-							<img src="illustrations/tous/7_2_table_codeinsee.png" alt="extrait de la table avec les champs INSEE_CM et CODE_COM" width="200" >
+						  <a href="illustrations/7_2_table_codeinsee.jpg" >
+							<img src="illustrations/7_2_table_codeinsee.jpg" alt="extrait de la table avec les champs INSEE_CM et CODE_COM" width="200" >
 						  </a>
 						</figure>
 					</div>
@@ -194,8 +194,8 @@
 				        <p>Nous allons créer un nouveau champ nommé <b>NOM_DEP</b> de type <b>texte</b> et de longueur maximale <b>50</b>.</p>
 				        <p>Dans la rubrique <b>Conditions</b> de la liste des opérateurs, cliquez sur <b>CASE</b> et lisez l'aide associée à cette fonction dans la partie droite de la fenêtre.</p>
 				        <figure>
-						  <a href="illustrations/tous/7_2_aide_case.png" >
-							<img src="illustrations/tous/7_2_aide_case.png" alt="CASE et la rubrique d'aide associée" width="500" >
+						  <a href="illustrations/7_2_aide_case.jpg" >
+							<img src="illustrations/7_2_aide_case.jpg" alt="CASE et la rubrique d'aide associée" width="500" >
 						  </a>
 						</figure>
 						<p>Cette fonction commence par <b>CASE</b> et se termine par <b>END</b>. Entre les deux, on trouve une série de clauses avec les 2 mots-clés <b>WHEN</b>, pour définir un critère, et <b>THEN</b>, pour définir comment sera calculée la valeur si le critère est rempli. Nous n'utiliserons pas <b>ELSE</b> ici.</p>
@@ -214,14 +214,14 @@
                     	</div>
                     	<p>Au final, la calculatrice doit être paramétrée comme suit :</p>
                     	<figure>
-						  <a href="illustrations/tous/7_2_calc_case.png" >
-							<img src="illustrations/tous/7_2_calc_case.png" alt="calculatrice de champ avec une expression utilisant CASE" width="600" >
+						  <a href="illustrations/7_2_calc_case.jpg" >
+							<img src="illustrations/7_2_calc_case.jpg" alt="calculatrice de champ avec une expression utilisant CASE" width="600" >
 						  </a>
 						</figure>
 						<p>Et le résultat :</p>
 						<figure>
-						  <a href="illustrations/tous/7_2_table_nomdep.png" >
-							<img src="illustrations/tous/7_2_table_nomdep.png" alt="Extrait de la table avec le code et le nom du département" width="200" >
+						  <a href="illustrations/7_2_table_nomdep.jpg" >
+							<img src="illustrations/7_2_table_nomdep.jpg" alt="Extrait de la table avec le code et le nom du département" width="200" >
 						  </a>
 						</figure>
 

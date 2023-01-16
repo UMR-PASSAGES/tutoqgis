@@ -36,11 +36,11 @@
 					<p>Pour sélectionner le département du Nord (59), vous pouvez cliquez sur le numéro de la ligne correspondante ou bien directement sur ce département sur la carte. Vous pouvez aussi utiliser une requête attributaire.</p>
 				<div class="manip">
 					<p>Dans la barre d'outils située en haut de la table attributaire, cliquez sur l'icône <b>Sélectionner les entités en utilisant une expression</b>.</p>
-					<img src="illustrations/tous/6_1_BO_icone_selection.png" alt="barre d'outils de la table attributaire avec icône sélection entourée en rouge" width="600">
+					<img src="illustrations/6_1_BO_icone_selection.jpg" alt="barre d'outils de la table attributaire avec icône sélection entourée en rouge" width="600">
 					<p>La fenêtre de requête attributaire s'ouvre :</p>
 					<figure>
-						<a href="illustrations/tous/6_1_selection_fenetre.png" >
-							<img src="illustrations/tous/6_1_selection_fenetre.png" alt="fenêtre de sélection, avec une requête simple" width="600">
+						<a href="illustrations/6_1_selection_fenetre.jpg" >
+							<img src="illustrations/6_1_selection_fenetre.jpg" alt="fenêtre de sélection, avec une requête simple" width="600">
 						</a>
 					</figure>
 					<p>Pour faire une requête simple, par exemple pour sélectionner le département du Nord :</p>
@@ -56,14 +56,14 @@
 					<p class="note">Il est également possible de taper la requête &#171; à la main &#187; directement dans la case Expression. Attention dans ce cas à bien respecter la syntaxe utilisée par QGIS : par exemple, les noms de champs sont entourés de guillemets doubles et les chaînes de caractères de guillemets simples.</p>
 					<p>La fenêtre de requête attributaire ne se ferme pas automatiquement&nbsp;; vous pouvez ou la fermer en cliquant sur le bouton <b>Fermer</b> ou bien simplement la déplacer pour vérifier sur la carte le résultat de votre sélection.</p>
 					<figure>
-						<a href="illustrations/tous/6_1_selection_nord.png" >
-							<img src="illustrations/tous/6_1_selection_nord.png" alt="carte avec le département du Nord sélectionné" width="300">
+						<a href="illustrations/6_1_selection_nord.jpg" >
+							<img src="illustrations/6_1_selection_nord.jpg" alt="carte avec le département du Nord sélectionné" width="300">
 						</a>
 					</figure>
 					<p>Vous pouvez lire le nombre d'éléments sélectionnés en haut de la table attributaire, ou encore en bas à gauche de la fenêtre de QGIS, dans la barre d'état :</p>
 					<figure>
-					    <a href="illustrations/tous/6_1_nb_selectionnes.png" >
-						    <img src="illustrations/tous/6_1_nb_selectionnes.png" alt="ligne indiquant le nombre d'éléments sélectionnés, en haut de la table et dans la barre d'état" width="550">
+					    <a href="illustrations/6_1_nb_selectionnes.jpg" >
+						    <img src="illustrations/6_1_nb_selectionnes.jpg" alt="ligne indiquant le nombre d'éléments sélectionnés, en haut de la table et dans la barre d'état" width="550">
 						</a>
 					</figure>
 				</div>
@@ -77,8 +77,8 @@
 				<div class="manip">
 					<p>Votre département du Nord étant toujours sélectionné, faites un clic droit sur la couche de départements &#8594; <b>Exporter &#8594; Sauvegarder les entités sélectionnées sous...</b></p>
 					<figure>
-						<a href="illustrations/tous/6_1_sauv_selection_fenetre.png" >
-							<img src="illustrations/tous/6_1_sauv_selection_fenetre.png" alt="fenêtre pour sauvegarder la sélection" width="500">
+						<a href="illustrations/6_1_sauv_selection_fenetre.jpg" >
+							<img src="illustrations/6_1_sauv_selection_fenetre.jpg" alt="fenêtre pour sauvegarder la sélection" width="500">
 						</a>
 					</figure>
 					<ul>
@@ -96,7 +96,7 @@
     			 <p>Néanmoins, pour plus de clarté, il peut être utile de désélectionner des entités.</p>
     			 
     			 <div class="manip">
-    					<p><img class="icone" src="illustrations/tous/6_3_deselection_icone.png" alt="icône de désélection" >Pour désélectionner toutes les entités dans toutes les couches&nbsp;: cliquez sur le bouton <b>Désélectionner toutes les entités</b> de la barre d'outils Sélection.</p>
+    					<p><img class="icone" src="illustrations/6_3_deselection_icone.jpg" alt="icône de désélection" >Pour désélectionner toutes les entités dans toutes les couches&nbsp;: cliquez sur le bouton <b>Désélectionner toutes les entités</b> de la barre d'outils Sélection.</p>
     					<p>Pour désélectionner les entités d'une seule couche, cliquez sur la flèche à côté du même bouton, pour choisir l'option <b>Désélectionner les entités de la couche courante</b>, ou bien cliquez sur le bouton <b>Désélectionner toutes les entités de la couche</b> en haut de la table attributaire de celle-ci.</p>
     			 </div>
 			 
@@ -111,10 +111,10 @@
 						<p><label for="faq-1">Pouvez-vous dire rapidement quelle est la commune la plus peuplée ?</label></p>
 						<p class="reponse">En cliquant une première fois sur le nom de colonne POPULATION pour classer la population par ordre croissant, puis une deuxième fois pour la classer par ordre décroissant, on peut lire que la commune de Rennes est la plus peuplée avec 216&nbsp;268 habitants.</p>
 					</div>
-					<p><img class="icone" src="illustrations/tous/6_1_selection_attr_icone.png" alt="icône de sélection de la table attributaire" >Nous allons faire une requête pour sélectionner les communes de + de 10 000 habitants. Ouvrez la fenêtre de requête pour la couche de communes :</p>
+					<p><img class="icone" src="illustrations/6_1_selection_attr_icone.jpg" alt="icône de sélection de la table attributaire" >Nous allons faire une requête pour sélectionner les communes de + de 10 000 habitants. Ouvrez la fenêtre de requête pour la couche de communes :</p>
 					<figure>
-						<a href="illustrations/tous/6_1_popsup10000.png" >
-							<img src="illustrations/tous/6_1_popsup10000.png" alt="fenêtre de sélection avec une requête pour les communes de population supérieure à 10" width="600">
+						<a href="illustrations/6_1_popsup10000.jpg" >
+							<img src="illustrations/6_1_popsup10000.jpg" alt="fenêtre de sélection avec une requête pour les communes de population supérieure à 10" width="600">
 						</a>
 					</figure>
 						<ul>
@@ -124,16 +124,16 @@
 					<p>Il est également possible d'aller chercher l'opérateur <b>></b> dans la liste des opérateurs, dans la colonne de gauche. Il faut ensuite taper la valeur 10000 à la main.</p>
 					<p>Une fois votre requête tapée : <b>"POPULATION" > 10000</b>, cliquez sur le bouton <b>Sélectionner des entités</b> pour voir le résultat :</p>
 					<figure>
-						<a href="illustrations/tous/6_1_popsup10000_res.png" >
-							<img src="illustrations/tous/6_1_popsup10000_res.png" alt="résultat de la requête pour les communes de population supérieure à 10" width="450">
+						<a href="illustrations/6_1_popsup10000_res.jpg" >
+							<img src="illustrations/6_1_popsup10000_res.jpg" alt="résultat de la requête pour les communes de population supérieure à 10" width="450">
 						</a>
 					</figure>
 				</div>
 
 				<p>Les opérateurs qu'on voit en haut à gauche de la fenêtre de sélection (=, +, - ...) ne représentent qu'une petite partie des opérateurs disponibles ; vous pouvez tous les retrouver dans la catégorie <b>Opérateurs</b> de la colonne du milieu. En cliquant sur un opérateur, vous pouvez lire l'aide dans la partie de droite :</p>
 				<figure>
-					<a href="illustrations/tous/6_1_liste_operateurs.png" >
-						<img src="illustrations/tous/6_1_liste_operateurs.png" alt="liste des opérateurs avec aide pour l'opérateur <>" width="500">
+					<a href="illustrations/6_1_liste_operateurs.jpg" >
+						<img src="illustrations/6_1_liste_operateurs.jpg" alt="liste des opérateurs avec aide pour l'opérateur <>" width="500">
 					</a>
 				</figure>
 				<p>Parmi ces opérateurs se trouvent par exemple <b>LIKE</b> et <b>ILIKE</b>. L'opérateur <b>LIKE</b> permet de comparer une chaîne de caractère à une autre chaîne qui peut utiliser le caractère joker <b>%</b>.</p>
@@ -143,8 +143,8 @@
 				<div class="manip">
 					<p>Ouvrez la fenêtre de sélection pour la couche de communes. Écrivez la requête suivante : <b>"NOM_COM_M" like 'PLOU%'</b> (soit en la tapant à la main soit en double-cliquant sur les différents éléments).</p>
 					<figure>
-						<a href="illustrations/tous/6_1_res_plou.png" >
-							<img src="illustrations/tous/6_1_res_plou.png" alt="communes dont le nom commence par PLOU" width="450">
+						<a href="illustrations/6_1_res_plou.jpg" >
+							<img src="illustrations/6_1_res_plou.jpg" alt="communes dont le nom commence par PLOU" width="450">
 						</a>
 					</figure>
 					<p>Pour lire les noms des communes sélectionnées dans la table attributaire, vous pouvez sélectionner l'option <b>Ne montrer que les entités sélectionnées</b> en bas de la table attributaires. N'oubliez pas de revenir à <b>Montrer toutes les entités</b> ensuite&nbsp;!</p>
@@ -153,7 +153,7 @@
 				<p>Notez que, pour du texte, si le caractère % n'est pas utilisé, les opérateurs <b>=</b> et <b>LIKE</b> sont équivalents.</p>
 				<p>L'opérateur <b>ILIKE</b> est équivalent à <b>LIKE</b> mais ne tient pas compte de la casse (majuscules ou minuscules).</p>
 				
-				<p><img class="iconemid" src="illustrations/tous/6_3_deselection_icone.png" alt="icône de désélection" >Entre deux requêtes, pour être sûr de repartir à zéro, utiliser l'outil <b>tout désélectionner</b>.</p>
+				<p><img class="iconemid" src="illustrations/6_3_deselection_icone.jpg" alt="icône de désélection" >Entre deux requêtes, pour être sûr de repartir à zéro, utiliser l'outil <b>tout désélectionner</b>.</p>
 			
 			<h3>Combiner plusieurs critères<a class="headerlink" id="VI15" href="#VI15"></a></h3>
 			
@@ -180,8 +180,8 @@
 				
 				<p>Petite astuce : vous pouvez retrouver les dernières requêtes utilisées dans la rubrique <b>Récent</b>, il suffit de double-cliquer sur une requête pour qu'elle apparaisse dans la case Expression :</p>
 				<figure>
-					<a href="illustrations/tous/6_1_requetes_recentes.png" >
-						<img src="illustrations/tous/6_1_requetes_recentes.png" alt="Accès aux requêtes attributaires récentes" width="600">
+					<a href="illustrations/6_1_requetes_recentes.jpg" >
+						<img src="illustrations/6_1_requetes_recentes.jpg" alt="Accès aux requêtes attributaires récentes" width="600">
 					</a>
 				</figure>
 			

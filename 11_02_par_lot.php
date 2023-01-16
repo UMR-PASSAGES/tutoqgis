@@ -27,15 +27,15 @@
 						<li class="espace"><b>Découpé :</b> cliquer sur les <b>…</b> de la ligne 2, rendez-vous dans le dossier où vous voulez créer les nouvelles couches, tapez <b>decoupe_</b> et cliquez sur <b>Enregistrer</b>. Dans la fenêtre suivante : choisir 
 						<a class="thumbnail_bottom" href="#thumb">Remplir avec les valeurs du paramètre, Couche source
                         	<span>
-                        		<img src="illustrations/tous/11_02_remplir_val_parametre.png" alt="Fenêtre pour choisir de compléter le nom de chaque couche résultat en fonction de la couche en entrée" width="500" >
+                        		<img src="illustrations/11_02_remplir_val_parametre.jpg" alt="Fenêtre pour choisir de compléter le nom de chaque couche résultat en fonction de la couche en entrée" width="500" >
                         	</span>
                         </a>, afin que le nom de chaque couche qui sera créée soit complété par le nom de la couche OSM de départ.</li>
 					</ul>
 					<p>N'oubliez pas de cocher la case <b>Charger les couches</b> pour que les couches résultat soient automatiquement ajoutées à QGIS.</p>
 					<p>Au final, vous devez obtenir quelque chose de similaire à ceci (cliquez sur l'image pour la voir en plus grand) :</p>
 					<figure>
-						<a href="illustrations/tous/11_02_lot_complet.png" >
-							<img src="illustrations/tous/11_02_lot_complet.png" alt="Traitement par lot : fenêtre avec paramètres complétés" width="600">
+						<a href="illustrations/11_02_lot_complet.jpg" >
+							<img src="illustrations/11_02_lot_complet.jpg" alt="Traitement par lot : fenêtre avec paramètres complétés" width="600">
 						</a>
 					</figure>
 					<p>Cliquer sur <b>Exécuter</b>, patienter… Les 4 couches sont créées et ajoutées à QGIS.</p>

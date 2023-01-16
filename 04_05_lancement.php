@@ -38,8 +38,8 @@
 				
 					<p>Maintenant que le type de transformation est renseigné, les erreurs pour chaque pixel ont été calculées dans la table des points de contrôle :</p>
 					<figure>
-						<a href="illustrations/tous/4_5_table_avec_erreurs.png" >
-							<img src="illustrations/tous/4_5_table_avec_erreurs.png" alt="Tables de points de contrôle une fois les erreurs par pixel calculées" width="620">
+						<a href="illustrations/4_5_table_avec_erreurs.jpg" >
+							<img src="illustrations/4_5_table_avec_erreurs.jpg" alt="Tables de points de contrôle une fois les erreurs par pixel calculées" width="620">
 						</a>
 					</figure>
 					<p>Comme indiqué dans la partie <a href="04_03_calage_carroyage.php#IV31" >IV.3.1</a> :</p>
@@ -64,8 +64,8 @@
 				
 					<p>Tout en bas de la table des points de contrôle est indiqué le type de transformation utilisée (polynomiale 1 dans notre cas) et l'erreur moyenne :</p>
 					<figure>
-						<a href="illustrations/tous/4_5_table_emq.png" >
-							<img src="illustrations/tous/4_5_table_emq.png" alt="Tables de points de contrôle avec l'erreur moyenne insiquée tout en bas" width="650">
+						<a href="illustrations/4_5_table_emq.jpg" >
+							<img src="illustrations/4_5_table_emq.jpg" alt="Tables de points de contrôle avec l'erreur moyenne insiquée tout en bas" width="650">
 						</a>
 					</figure>
 					<p>En plus de l'erreur résiduelle calculée par pixel, la transformation renvoie une erreur globale appelée <b>Erreur Quadratique Moyenne (EMQ)</b> ou bien Root Mean Square (RMS). Cette erreur est calculée de la manière suivante :</p>
@@ -80,10 +80,10 @@
 			<h3>Lancement du géoréférencement<a class="headerlink" id="IV52" href="#IV52"></a></h3>
 			
 				<div class="manip">
-					<p><img class="icone" src="illustrations/tous/4_5_lancement_icone.png" alt="icône de lancement du géoréférencement" >Pour procéder au géoréférencement proprement dit :
+					<p><img class="icone" src="illustrations/4_5_lancement_icone.jpg" alt="icône de lancement du géoréférencement" >Pour procéder au géoréférencement proprement dit :
 						<a class="thumbnail_bottom" href="#thumb">Menu Fichier &#8594; Débuter le géoréférencement
 							<span>
-								<img src="illustrations/tous/4_5_lancement_menu.png" alt="Menu Fichier, Débuter le géoréférencement" height="170" >
+								<img src="illustrations/4_5_lancement_menu.jpg" alt="Menu Fichier, Débuter le géoréférencement" height="170" >
 							</span>
 						</a>	
 					ou bien cliquez sur l'icône correspondante.</p>
@@ -98,15 +98,15 @@
 				
 					<p class="manip">Ouvrez tout d'abord la carte PDF, qui se situe à l'emplacement que vous avez choisi précédemment.</p>
 					<figure>
-						<a href="illustrations/tous/4_5_carte.jpg" >
-							<img src="illustrations/tous/4_5_carte.jpg" alt="carte PDF issue du géoréférencement" width="550" >
+						<a href="illustrations/4_5_carte.jpg" >
+							<img src="illustrations/4_5_carte.jpg" alt="carte PDF issue du géoréférencement" width="550" >
 						</a>
 					</figure>
 					<p>Cette carte montre le déplacement des différents points de calage. Attention, ce déplacement n'est pas représenté à l'échelle de l'image, mais selon une échelle en pixels située en bas à gauche de l'image.</p>
 					<p>Par exemple, le point 0 en haut à gauche s'est déplacé d'environ 2 ou 3 pixels vers le bas et un peu moins d'un pixel vers la gauche. Vous pouvez constater que cette information coïncide avec celle de la table des points :</p>
 					<figure>
-					   <a href="illustrations/tous/4_5_point_0.png" >
-						  <img src="illustrations/tous/4_5_point_0.png" alt="ligne correspondant au point 0 dans la table des points de contrôle" height="40" >
+					   <a href="illustrations/4_5_point_0.jpg" >
+						  <img src="illustrations/4_5_point_0.jpg" alt="ligne correspondant au point 0 dans la table des points de contrôle" height="40" >
 					   </a>
 					</figure>
 					<p>En effet, les informations des cases dX[pixels] et dY[pixels] indiquent un déplacement de 2,77 pixels en Y (vers le bas) et -0,82 pixels en Y (vers la gauche). Ces chiffres seront différents dans votre cas, mais ils seront cohérents avec votre carte PDF.</p>
@@ -122,8 +122,8 @@
 					</div>
 					<p>Les deux couches doivent normalement se superposer (ajustez éventuellement le style de la couche de pays).</p>
 					<figure>
-						<a href="illustrations/tous/4_5_superposition.png">
-							<img src="illustrations/tous/4_5_superposition.png" alt="superposition de la couche de pays et de l'image calée" width="550" >
+						<a href="illustrations/4_5_superposition.jpg">
+							<img src="illustrations/4_5_superposition.jpg" alt="superposition de la couche de pays et de l'image calée" width="550" >
 						</a>
 					</figure>
 					<p>Félicitations, votre géoréférencement a fonctionné ! Vous pouvez si vous le voulez découvrir l'autre méthode pour géoréférencer, en se basant sur une couche déjà calée, dans le chapitre suivant.</p>
