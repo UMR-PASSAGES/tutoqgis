@@ -62,7 +62,7 @@ hov         #1D3437     hover colour
 	/* les menus horizontaux */
 	#wrapdanswrap {	/* le contenant global des menus horizontaux */
 		padding:0px 0px;
-		background:#FFFFFF url(illustrations/tous/bandeau.png);
+		background:#FFFFFF url(illustrations/bandeau.jpg);
 	}
 	/* le div pour les logos à n'afficher qu'à l'impression */
 	#logos_print {
