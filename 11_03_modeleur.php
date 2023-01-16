@@ -51,7 +51,7 @@
 				<p>Notre modèle comportera 2 paramètres en entrée : une couche vecteur qui sera découpée et une couche vecteur qui servira de masque de découpe. L'outil de découpage va utiliser ces deux paramètres en entrée pour créer une nouvelle couche temporaire. Cette couche temporaire sera utilisée comme paramètre d'entrée pour l'outil de reprojection, qui produira la couche finale.</p>
 				<figure>
 				    <a href="illustrations/11_03_organigramme.svg" >
-						<img src="illustrations/11_03_organigramme.jpg" alt="Organigramme du modèle qui sera créé" width="600">
+						<img src="illustrations/11_03_organigramme.svg" alt="Organigramme du modèle qui sera créé" width="600">
 					</a>
 				</figure>
 				

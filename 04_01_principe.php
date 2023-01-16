@@ -51,7 +51,7 @@
 					<p>La carte résultante aura le même système de coordonnées que la couche de référence. La précision du calage dépend alors notamment de la précision de la couche de référence.</p>
 					<figure>
 						<a href="illustrations/4_1_calage_methode2.svg" >
-							<img class="noshadow" src="illustrations/4_1_calage_methode2.jpg" alt="calage grâce à une couche déjà calée servant de référence" width="600" >
+							<img class="noshadow" src="illustrations/4_1_calage_methode2.svg" alt="calage grâce à une couche déjà calée servant de référence" width="600" >
 						</a>
 						<figcaption>Calage grâce à une couche de référence (Source de l'image à caler : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File:Doncaster_east_locality_map.PNG">Wikimedia</a>, domaine public, source des données de référence <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=14/-37.7762/145.1778">OpenStreetMap</a> © les contributeurs d’OpenStreetMap).</figcaption>
 					</figure>

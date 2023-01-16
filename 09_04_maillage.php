@@ -126,7 +126,7 @@
     		     <p>La couche résultat est une couche &#171;&nbsp;à plat&nbsp;&#187;, sans superposition.</p>
     		     <figure>
     		         <a href="illustrations/9_4_union_principe.svg" >
-    			         <img src="illustrations/9_4_union_principe.jpg" alt="Explication union : couches en entrée et couche résultat" width="600">
+    			         <img src="illustrations/9_4_union_principe.svg" alt="Explication union : couches en entrée et couche résultat" width="600">
     			     </a>
     			     <figcaption>Union : couche en entrée 1, couche en entrée 2 et couche résultat : elle contient 3 polygones distincts, sans superposition.</figcaption>
     		     </figure>

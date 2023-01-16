@@ -100,7 +100,7 @@
 					<p>Cette valeur sera différente selon la méthode de rééchantillonnage choisie. QGIS, comme d'autres logiciels SIG, propose trois méthodes de rééchantillonnage :</p>
 						<figure>
 							<a href="illustrations/4_4_resampling.svg" >
-								<img src="illustrations/4_4_resampling.jpg" alt="3 types de rééchantillonnage" width="600">
+								<img src="illustrations/4_4_resampling.svg" alt="3 types de rééchantillonnage" width="600">
 							</a>							
 						</figure>					
 					<ul>

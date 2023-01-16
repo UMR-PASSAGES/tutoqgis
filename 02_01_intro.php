@@ -27,7 +27,7 @@
 				<p>La surface de la Terre est très irrégulière et complexe, on peut la modéliser de différentes manières.</p>
 				<p>La <b>sphère</b> est le modèle le plus simple.</p>
 				<p>L'<b>ellipsoïde</b> est une sphère aplatie, plus simple à modéliser. On le définit généralement par ses demis-axes (<b><em>a</em></b>,  <b><em>b</em></b> et  <b><em>c</em></b>) et son centre (<b><em>O</em></b>).</p>
-				<figure>	
+				<figure>
 					<a href="http://en.wikipedia.org/wiki/File:Ellipsoid_tri-axial_abc.svg" >		
 						<img src="illustrations/2_1_ellipsoide.jpg" alt="ellipsoïde" width="230">
 					</a>
@@ -43,7 +43,7 @@
 				<p>Il existe une infinité d'ellipsoïdes, qui peuvent coïncider avec la surface de la Terre sur toute leur surface (ellipsoïde global) ou seulement sur une partie de leur surface (ellipsoïde local). A l'inverse, il n'existe qu'un seul géoïde.</p>
 				<figure>
 					<a href="illustrations/2_1_geoide_ellipsoide.svg" >
-						<img src="illustrations/2_1_geoide_ellipsoide.jpg" alt="ellipsoïdes et géoïde" width="450" >
+						<img src="illustrations/2_1_geoide_ellipsoide.svg" alt="ellipsoïdes et géoïde" width="450" >
 					</a>
 				</figure>
 				

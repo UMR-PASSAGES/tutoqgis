@@ -88,99 +88,99 @@
 						<caption>Opérateurs de requête spatiale disponibles en fonction des types des couches de de départ et de référence.</caption>
 						 <tr>
 					       <th>Couche de départ :</th>
-					       <th class="clair" colspan="2"><img class="noshadow" src="illustrations/6_2_point.jpg" alt="icône de point" ></th>
-					       <th class="centre" colspan="3"><img class="noshadow" src="illustrations/6_2_ligne.jpg" alt="icône de ligne" ></th>
-					       <th class="clair" colspan="2"><img class="noshadow" src="illustrations/6_2_polygone.jpg" alt="icône de polygone" ></th>
+					       <th class="clair" colspan="2"><img class="noshadow" src="illustrations/6_2_point.png" alt="icône de point" ></th>
+					       <th class="centre" colspan="3"><img class="noshadow" src="illustrations/6_2_ligne.png" alt="icône de ligne" ></th>
+					       <th class="clair" colspan="2"><img class="noshadow" src="illustrations/6_2_polygone.png" alt="icône de polygone" ></th>
 					   </tr>
 					   <tr>
 					       <th>Couche de référence :</th>
-					       <th class="clair"><img class="noshadow" src="illustrations/6_2_point.jpg" alt="icône de point" ></th>
-					       <th class="clair"><img class="noshadow" src="illustrations/6_2_ligne.jpg" alt="icône de ligne" ><img class="noshadow" src="illustrations/6_2_polygone.jpg" alt="icône de polygone" ></th>
-					       <th class="centre"><img class="noshadow" src="illustrations/6_2_point.jpg" alt="icône de point" ></th>
-					       <th class="centre"><img class="noshadow" src="illustrations/6_2_ligne.jpg" alt="icône de ligne" ></th>
-					       <th class="centre"><img class="noshadow" src="illustrations/6_2_polygone.jpg" alt="icône de polygone" ></th>
-					       <th class="clair"><img class="noshadow" src="illustrations/6_2_point.jpg" alt="icône de point" ><img class="noshadow" src="illustrations/6_2_ligne.jpg" alt="icône de ligne" ></th>
-					       <th class="clair"><img class="noshadow" src="illustrations/6_2_polygone.jpg" alt="icône de polygone" ></th>
+					       <th class="clair"><img class="noshadow" src="illustrations/6_2_point.png" alt="icône de point" ></th>
+					       <th class="clair"><img class="noshadow" src="illustrations/6_2_ligne.png" alt="icône de ligne" ><img class="noshadow" src="illustrations/6_2_polygone.png" alt="icône de polygone" ></th>
+					       <th class="centre"><img class="noshadow" src="illustrations/6_2_point.png" alt="icône de point" ></th>
+					       <th class="centre"><img class="noshadow" src="illustrations/6_2_ligne.png" alt="icône de ligne" ></th>
+					       <th class="centre"><img class="noshadow" src="illustrations/6_2_polygone.png" alt="icône de polygone" ></th>
+					       <th class="clair"><img class="noshadow" src="illustrations/6_2_point.png" alt="icône de point" ><img class="noshadow" src="illustrations/6_2_ligne.png" alt="icône de ligne" ></th>
+					       <th class="clair"><img class="noshadow" src="illustrations/6_2_polygone.png" alt="icône de polygone" ></th>
 					   </tr>
 					   <tr>
 					       <td>A l'intérieur</td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
 					   </tr>
 					   <tr class="alt">
 					       <td>Chevauche</td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
 					   </tr>
 					   <tr>
 					       <td>Croise</td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
 					   </tr>
 					   <tr class="alt">
 					       <td>Contient</td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
 					   </tr>
 					   <tr>
 					       <td>Est disjoint</td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
 					   </tr>
 					   <tr class="alt">
 					       <td>Est égal</td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
 					   </tr>
 					   <tr>
 					       <td>Intersecte</td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclair"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
 					   </tr>
 					   <tr class="alt">
 					       <td>Touche</td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.jpg" alt="icône faux" height="12" ></td>
-					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.jpg" alt="icône correct" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centre"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_faux.svg" alt="icône faux" height="12" ></td>
+					       <td class="centreclairalt"><img class="noshadow" src="illustrations/6_2_correct.svg" alt="icône correct" height="12" ></td>
 					   </tr>
 					</table>
 					

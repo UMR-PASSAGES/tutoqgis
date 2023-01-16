@@ -38,7 +38,7 @@
 				<p>Notez bien que comme pour une jointure attributaire, les données qui seront jointes sont toujours les données attributaires.</p>
 				<figure>
 					<a href="illustrations/8_2_principe_jointure_spatiale.svg" >
-						<img src="illustrations/8_2_principe_jointure_spatiale.jpg" alt="principe d'une jointure spatiale" width="620">
+						<img src="illustrations/8_2_principe_jointure_spatiale.svg" alt="principe d'une jointure spatiale" width="620">
 					</a>
 				</figure>
 				<p>Dans l'exemple ci-dessus, les deux couches de départ sont une couche de département et une couche de chefs-lieux. Les données attributaires des chefs-lieux (leur nom, code et coordonnées) sont jointes aux départements en se basant sur leur position : <b>chaque département récupère les données du chef-lieu intersectant ce département</b>.</p>
