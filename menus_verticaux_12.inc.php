@@ -15,8 +15,8 @@
 			<ol class="witharabic">
 				<li><a href="12_01_intro_teledec.php">Introduction à la télédétection</a></li>
 				<li><a href="12_02_info_spectrale.php">Extraction de l’information spectrale</a></li>
-				<li><a href="12_03_classif.php">Classification supervisée / non supervisée</a></li>
-				<li><a href="12_04_teledec_recap.php">Exercice récapitulatif</a></li>
+				<li><a href="12_03_classif_nonsup.php">Classification non supervisée</a></li>
+				<li><a href="12_04_classif_sup.php">Classification supervisée</a></li>
 			</ol>
 		</li>
 	</ol>

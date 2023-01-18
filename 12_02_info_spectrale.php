@@ -69,7 +69,7 @@
       					<p>Il est inutile de cliquer sur le bouton <em>Lancer</em>. Vous pouvez maintenant fermer cette fenêtre.</p>
     				  </div>
     				  
-    				  <p>L'extension SCP est maintenant paramétrée pour travailler sur notre image Sentinel-2. Nous allons pouvoir dessiner nos ROI&nbsp;!</p>
+    				  <p>L'extension SCP est maintenant paramétrée pour travailler sur notre image, qui est reconnue comme une image Sentinel-2. Nous allons pouvoir dessiner nos ROI&nbsp;!</p>
     				  
     				<h4>Création des polygones d'entraînement (ROI)<a class="headerlink" id="XII21b" href="#XII21b"></a></h4>
   				  
@@ -207,7 +207,7 @@
   				    
   				    <div class="manip">
   				      <p>Ouvrez un nouveau projet QGIS, ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>.</p>
-  				      <p>Il faut d'abord définir le <b>jeu de bandes</b> pour SCP : Menu SCP &#8594; Jeu de bande :</p>
+  				      <p>Il faut d'abord si ça n'est pas déjà fait définir le <b>jeu de bandes</b> pour SCP : Menu SCP &#8594; Jeu de bande :</p>
   				      <figure>
       						<a href="illustrations/12_02_bandset.jpg" >
       							<img src="illustrations/12_02_bandset.jpg" alt="SCP, jeu de bandes" width="600">
@@ -257,6 +257,8 @@
       						</a>
       					</figure>
   				    </div>
+  				    
+  				    <p>Bravo, vous venez de calculer un indice de végétation avec l'extension SCP&nbsp;!</p>
   				    
   				    <p>On peut également calculer le NDVI sans utiliser l'extension SCP, directement dans QGIS, à l'aide de la calculatrice raster.</p>
   				    
@@ -314,7 +316,7 @@
 				
 				<br>
 				<a class="prec" href="12_01_intro_teledec.php">chapitre précédent</a>
-				<a class="suiv" href="12_03_classif.php">chapitre suivant</a>
+				<a class="suiv" href="12_03_classif_nonsup.php">chapitre suivant</a>
 				<br>
 				<a class="hautpage" href="#wrap">haut de page</a>
 

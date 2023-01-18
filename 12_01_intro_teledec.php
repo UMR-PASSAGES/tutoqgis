@@ -51,7 +51,7 @@
                   <li><b>Quand&nbsp;?</b> Quelle est la date de prise de vue, l'heure, l'hémisphère...</li>
               </ul>
               
-              <h4>Type de satellite et de produit<a class="headerlink" id="XII11a" href="#XII11a"></a></h4>
+              <h4>Comment&nbsp;? Type de satellite et de produit<a class="headerlink" id="XII11a" href="#XII11a"></a></h4>
               
                   <p>Il s'agit d'une image <a target="_blank" class="ext" href="https://fr.wikipedia.org/wiki/Sentinel-2">Sentinel-2</a> de <a target="_blank" class="ext" href="https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/product-types">niveau 1C</a>, qui contient donc les valeurs de <b>réflectance</b> obtenues en haut de l'atmosphère (&#171;&nbsp;Top Of Atmosphere&nbsp;&#187; ou TOA).</p>
                   
@@ -107,10 +107,7 @@
                   <p class="keskonfai">Mais du coup on n'est pas déjà sur des valeurs de réflectance TOA ?</p>
                     
                 
-              <h4>Géométrie des images Sentinel-2<a class="headerlink" id="XII11b" href="#XII11b"></a></h4>
-                
-                <p class="keskonfai">Ca correspond à la question "Où" d'un peu plus haut ?</p>
-                <p class="keskonfai">Trouver l'illustration qui va bien : montrer uniquement la grille sentinel-2 ? Les zones UTM aussi ?</p>
+              <h4>Où&nbsp;? Géométrie des images Sentinel-2<a class="headerlink" id="XII11b" href="#XII11b"></a></h4>
                 
                 <figure>
       						<a href="illustrations/12_01_grille_sentinel.jpg" >
@@ -138,6 +135,8 @@
       							<img src="illustrations/12_01_etapes_traitement.jpg" alt="5 étapes de traitement des images satellitaires : accès, pré-traitements, visualisation, classification et post-traitements" width="650">
       						</a>
       					</figure>
+      					
+      					<p class="keskonfai">Il n'y a pas de partie "Quand ?"</p>
                 
                 <p>Nous allons voir dans la suite de ce chapitre les étapes 1 et 3 : téléchargement et visualisation.</p>
           
@@ -317,7 +316,7 @@
               <p>Il est également possible dans la fenêtre des propriétés de la couche de voir l'histogramme de fréquence des valeurs de pixel pour une ou plusieurs bandes.</p>
               
               <div class="manip">
-                <p>Double-clic sur le nom de la couche pour ouvrir la fenêtre des propriétés, rubrique <b>Histogramme</b>&nbsp;:</p>
+                <p>Double-clic sur le nom de la couche pour ouvrir la fenêtre des propriétés, rubrique <b>Histogramme</b>, et cliquez sur le bouton <b>Calculer l'histogramme</b>&nbsp;:</p>
                 <figure>
                   <a href="illustrations/12_01_histo_preferences.jpg" >
       							<img src="illustrations/12_01_histo_preferences.jpg" alt="fenêtre des propriétés, histogramme, choix de la bande" width="600">

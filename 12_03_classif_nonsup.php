@@ -14,19 +14,19 @@
 		<div class="main">
 			<h2>XII.3  Classification non supervisée</h2>
 			
-			<ul class="listetitres">
-				<li><a href="#XII31">Qu'est-ce qu'une classification non supervisée ?</a></li>
-				<li><a href="#XII32">Prise en main des données</a></li>
-				<li><a href="#XII33">Extraction des signatures spectrales</a></li>
-				<li><a href="#XII34">Classification non supervisée au moyen de la méthodes des K-Means</a>
-				  <ul class="listesoustitres">
-				    <li><a href="#XII34a">K-Means : comment ça marche&nbsp;?</a></li>
-				    <li><a href="#XII34b">Mise en pratique sur l'image Sentinel-2</a></li>
-				    <li><a href="#XII34c">Reclassification : regrouper des classes pour y voir plus clair</a></li>
-				  </ul>
-				</li>
-			</ul>
-			<br>
+  			<ul class="listetitres">
+  				<li><a href="#XII31">Qu'est-ce qu'une classification non supervisée ?</a></li>
+  				<li><a href="#XII32">Prise en main des données</a></li>
+  				<li><a href="#XII33">Extraction des signatures spectrales</a></li>
+  				<li><a href="#XII34">Classification non supervisée au moyen de la méthodes des K-Means</a>
+  				  <ul class="listesoustitres">
+  				    <li><a href="#XII34a">K-Means : comment ça marche&nbsp;?</a></li>
+  				    <li><a href="#XII34b">Mise en pratique sur l'image Sentinel-2</a></li>
+  				    <li><a href="#XII34c">Reclassification : regrouper des classes pour y voir plus clair</a></li>
+  				  </ul>
+  				</li>
+  			</ul>
+  			<br>
 				
 				<p>L'objectif de ce chapitre est de réaliser une <b>classification</b>, c'est-à-dire de partir d'une image satellite pour obtenir une couche d'occupation du sol avec différentes catégories.</p>
 				
@@ -54,7 +54,7 @@
           <p>L'image que nous allons utiliser est une image Sentinel-2 su Sud de l'Inde d'avril 2020.</p>
           
           <div class="manip">
-            <p>Ouvrez un nouveau projet QGIS et ajoutez-y l'image geotiff <em class="data">S2A_20200401</em>.</p>
+            <p>Ouvrez un nouveau projet QGIS et ajoutez-y l'image geotiff <em class="data"><a href="donnees/TutoQGIS_12_teledetection.zip">S2A_20200401</a></em>.</p>
             <p>Pour voir où se situe la zone, <a href="03_04_fonds_carte.php#III42a">ajoutez par exemple un fonds OpenStreetMap</a>.</p>
             <figure>
   						<a href="illustrations/12_03_imagesat.jpg" >
@@ -119,6 +119,8 @@
   				    <li class="espace">Les barycentres de chacune de ces classes sont calculés</li>
   				    <li class="espace">Et on recommence&nbsp;! Chaque point est affecté au centre le plus proche, et ainsi de suite. On arrête quand les points ne changent plus de classe (en théorie tout au moins, en pratique on peut être obligé d'arrêter avant pour limiter le temps de calcul).</li>
   				  </ul>
+  				  
+  				  <p>Toutes ces étapes sont effectuées par le logiciel, l'utilisateur se bornant à spécifier un nombre de classes.</p>
   				  
   				  <p>Au final, la méthode des K-Means est rapide et son principe est simple. Cependant, elle nécessite de fixer à l'avance un nombre de classes, et ne donnera pas 2 fois le même résultat si on la lance avec les mêmes paramètres, les centres de chaque classe étant déterminés de manière aléatoire lors de la première itération.</p>
   				  
@@ -211,7 +213,7 @@
 				
 				<br>
 				<a class="prec" href="12_02_info_spectrale.php">chapitre précédent</a>
-				<a class="suiv" href="12_04_teledec_recap.php">chapitre suivant</a>
+				<a class="suiv" href="12_04_classif_sup.php">chapitre suivant</a>
 				<br>
 				<a class="hautpage" href="#wrap">haut de page</a>
 
