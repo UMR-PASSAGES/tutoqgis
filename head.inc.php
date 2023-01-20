@@ -3,7 +3,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Tutoriel QGIS Passages</title>
+	<title>Tutoriel QGIS</title>
 	<meta name="description" content="Tutoriel QGIS">
 	<meta name="author" content="Pierson Julie" >
 	<link rel="icon" type="image/x-icon" href="illustrations/icon_letg.png">
