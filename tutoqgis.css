@@ -520,7 +520,7 @@ hov         #1D3437     hover colour
 	  opacity: 1;
 	}
 	.headerlink::after {
-    content: url('illustrations/tous/link-solid.svg');
+    content: url('illustrations/link-solid.svg');
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -752,7 +752,7 @@ hov         #1D3437     hover colour
         #nav li {display: block; text-align: center; font-size: 6vw;}
         #nav ul li, #nav ul li a {width: 100%;}
         #nav li:hover {display: block;}
-        #wrapdanswrap { background:#FFFFFF url(illustrations/tous/bandeau.png); background-size: cover;}
+        #wrapdanswrap { background:#FFFFFF url(illustrations/bandeau.jpg); background-size: cover;}
         /* taille de police pour le titre */
         a.grostitre {font-size: 8vw;}
         /* taille de police pour le plan détaillé */
