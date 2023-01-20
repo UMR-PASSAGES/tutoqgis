@@ -64,7 +64,6 @@
 			  
 			   <h4>Pixels en RFE (Réflectance au sol en pour 10000)<a class="headerlink" id="XII42a" href="#XII42a"></a></h4>
 			   
-			     <p class="keskonfai">?</p>
 			   
 			   <h4>Superficie de l'image<a class="headerlink" id="XII42b" href="#XII42b"></a></h4>
 			   
@@ -128,8 +127,57 @@
   					</figure>
   			   </div>
   			   
-  			   <p class="keskonfai">Comme pour l'image précédente, seulement 10 bandes ? 321 en vraies couleurs ?</p>
-  			   
+  			   <p>En allant dans les propriétés de la couche, rubrique Information, vous pouvez voir que cette image n'a que 10 bandes, contrairement à ce que nous avons pu voir sur les images Sentinel-2 <a href="12_01_intro_teledec.php#XII14" >ici</a>. Les bandes B1 (aérosol côtier), B9 (vapeur d'eau) et B10 (SWIR Cirrus) ne sont pas présentes, ce qui nous donne la correspondance suivante&nbsp;:</p>
+  					
+  					<table>
+                <caption>Correspondance entre numéro de bande visible dans QGIS et bande Sentinel-2</caption>
+                <tr>
+                    <th class="centre">Numéro de bande</th>
+                    <th class="centre">Bande Sentinel-2</th>
+                </tr>
+                <tr>
+                    <td class="centre">Bande 01</td>
+                    <td class="centre">B2 (Bleu)</td>
+                </tr>
+                <tr class="alt">
+                    <td class="centre">Bande 02</td>
+                    <td class="centre">B3 (Vert)</td>
+                </tr>
+                <tr>
+                    <td class="centre">Bande 03</td>
+                    <td class="centre">B4 (Rouge)</td>
+                </tr>
+                <tr class="alt">
+                    <td class="centre">Bande 04</td>
+                    <td class="centre">B5 (Rededge)</td>
+                </tr>
+                <tr>
+                    <td class="centre">Bande 05</td>
+                    <td class="centre">B6 (Rededge)</td>
+                </tr>
+                <tr class="alt">
+                    <td class="centre">Bande 06</td>
+                    <td class="centre">B7 (Rededge)</td>
+                </tr>
+                <tr>
+                    <td class="centre">Bande 07</td>
+                    <td class="centre">B8 (PIR 10mètres)</td>
+                </tr>
+                <tr class="alt">
+                    <td class="centre">Bande 08</td>
+                    <td class="centre">B8A (PIR20 mètres)</td>
+                </tr>
+                <tr>
+                    <td class="centre">Bande 09</td>
+                    <td class="centre">B11 (MIR1)</td>
+                </tr>
+                <tr class="alt">
+                    <td class="centre">Bande 10</td>
+                    <td class="centre">B12 (MIR2)</td>
+                </tr>
+            </table>
+            
+           <br>
   			   <div class="manip">			
           	<div class="question">
           		<input type="checkbox" id="faq-1">
@@ -137,16 +185,65 @@
           		<p class="reponse">Avec les bandes 3, 2 et 1 dans les canaux R, G et B, on obtient cette image en "vraies couleurs"&nbsp:
           		<img src="illustrations/12_04_vraiecouleur.jpg" alt="Composition colorée avec les bandes 3, 2 et 1" width="400"></p>
           	</div>
+           </div>
+           
+           <div class="manip">			
+          	<div class="question">
+          		<input type="checkbox" id="faq-2">
+          		<p><label for="faq-2">Quelles autres compositions colorées pouvez-vous faire avec cette image&nbsp;?</label></p>
+          		<p class="reponse">A compléter !</p>
+          	</div>
            </div>	
            
-			   
-			  
 			  <h3>Extraction des signatures spectrales<a class="headerlink" id="XII43" href="#XII43"></a></h3>
+			  
+			   <p>Pour effectuer une classification supervisée, il nous faut des données d'entraînement, donc des <a href="12_02_info_spectrale.php#XII21">ROI</a>. Ces ROI nous serviront également à lire les signatures spectrales de nos futures classes d'occupation du sol.</p>
+			   
+			   <p>Nous utiliserons les 4 classes suivantes&nbsp;:</p>
+			   
+			     <ul>
+			       <li>surface en eau</li>
+			       <li>végétation arborée</li>
+			       <li>végétation rase</li>
+			       <li>surface en sol nu</li>
+			     </ul>
+			     
+  			    <div class="manip">
+  			     <p><a href="12_02_info_spectrale.php#XII21a">Définissez tout d'abord le jeu de bandes</a> dans SCP.</p>
+  			     <p><a href="12_02_info_spectrale.php#XII21b">Créez ensuite les ROI</a>, en prenant entre 5 et 10 polygones par classe.</p>
+  			     <p>Pour digitaliser plusieurs polygones dans une même macro-classe, il faut cliquer après chaque polygone sur l'icône <b>Sauver les ROI temporaires dans les données d'entraînement</b> (en bas à droite du panneau SCP)&nbsp;:</p>
+  			     <figure>
+    						<a href="illustrations/12_04_enregistrer_roi.jpg" >
+    							<img src="illustrations/12_04_enregistrer_roi.jpg" alt="Bas du panneau SCP avec l'icône de sauvegarde entourée en rouge et la case signature décochée" width="350">
+    						</a>
+    					</figure>
+    					<p>Pour gagner du temps pendant la saisie, vous pouvez décocher la case <b>Signature</b> pour ne pas calculer les signatures spectrales à chaque sauvegarde.</p>
+    					<p><img class="icone" src="illustrations/12_04_calcul_signature_icone.jpg" alt="bouton de calcul de signature" >Dans ce cas, vous pouvez calculer ces signatures en une seule fois une fois tous les ROI créés, en les sélectionnant puis en cliquant sur le bouton <b>calculer les signatures pour les éléments surlignés</b>.</p>
+    					<p>Il est ensuite possible de calculer une signature globale pour chaque classe.</p>
+    					<p><img class="icone" src="illustrations/12_04_fusion_signatures_icone.jpg" alt="bouton de fusion de signature" >Pour cela, sélectionnez tous les éléments d'une même classe puis cliquez sur le bouton <b>Fusionner les signatures spectrales surlignées</b>.</p>
+  			    
+  			    <p><img class="icone" src="illustrations/12_04_graphique_icone.jpg" alt="bouton d'ajout des signatures au graphique" >Il ne vous reste plus ensuite qu'à ajouter les signatures de chaque classe au graphique, à l'aide du bouton <b>Ajouter les signatures spectrales surlignées au graphique</b>&nbsp;:</p>
+  			    <figure>
+  						<a href="illustrations/12_04_signatures_spectrales.jpg" >
+  							<img src="illustrations/12_04_signatures_spectrales.jpg" alt="Graphique des signatures spectrales des 4 classes, en X les longueurs d'ondes et en Y le nombre de pixels" width="600">
+  						</a>
+  					</figure>
+  					<p class="note">Vous remarquerez que les 2 lignes du tableau correspondant à la végétation rase et au sol nu sont surlignées en orange&nbsp;: cela signifie que ces 2 classes se recouvrent partiellement.</p>
+  				</div>
+				
+				  <p>Nous allons maintenant pouvoir faire une classification basée sur ces ROI&nbsp;!</p>
+			   
 			  <h3>Classification supervisée avec l'algorithme du maximum de vraisemblance<a class="headerlink" id="XII44" href="#XII44"></a></h3>
 			  <h3>Interprétation des résultats et mise en page<a class="headerlink" id="XII45" href="#XII45"></a></h3>
-			 
-        <p>Vous êtes arrivé.e au bout de ce tutoriel. Si vous le suivez depuis le début, bravo pour votre patience, et sinon bravo également&nbsp;!</p>				
-
+			  
+			  <br>
+        <p>Vous êtes arrivé.e au bout de ce tutoriel. Si vous le suivez depuis le début, bravo pour votre patience, et sinon bravo également&nbsp;!</p>
+        <div class="question">
+      		<input type="checkbox" id="faq-3">
+      		<p><label for="faq-3">C'est le bon moment pour une petite chorégraphie afin de partager votre joie&nbsp;:</label></p>
+      		<p class="reponse"><img src="https://media.giphy.com/media/DhstvI3zZ598Nb1rFf/giphy-downsized.gif"></p>
+      	</div></p>	
+		    
 				<br>
 				<a class="prec" href="12_03_classif_nonsup.php">chapitre précédent</a>
 				<br>

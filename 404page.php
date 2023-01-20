@@ -12,9 +12,9 @@
 		</div>	
 	
 		<div class="main">
-			<div id="h2Hori">Erreur 404</div>
+			<h3>Erreur 404</h3>
 	
-			<h4>Nous sommes désolés, cette page n'existe pas.</h4>
+			<h4>Désolé, cette page n'existe pas&nbsp;!</h4>
 				<p>Peut-être souhaitez-vous aller à la <a href="index.php" >page d'accueil</a> du tutoriel ?</p>
 				<p>Vous pouvez également accéder directement aux différentes partie du tutoriel grâce aux menus situés dans la colonne de droite.</p>
 			

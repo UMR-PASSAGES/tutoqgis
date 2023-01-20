@@ -61,9 +61,11 @@
   							<img src="illustrations/12_03_imagesat.jpg" alt="Vue générale et zoom de l'image satellite" width="600">
   						</a>
   					</figure>
+  				</div>
   					
-  					<p class="keskonfai">Il n'y a que 10 bandes sur cette image et non 13 ?</p>
-  					
+  				<p class="keskonfai">Il n'y a que 10 bandes sur cette image et non 13 ?</p>
+  				
+  				<div class="manip">	
   					<p>Pour explorer cette image, nous pouvons tester différentes <a href="12_01_intro_teledec.php#XII14b">compositions colorées</a>.</p>
   					<p>Commençons par une composition colorée "en vraie couleur", avec les bandes rouge, vert et bleu, soit les bandes 4, 3 et 2&nbsp;:</p>
   					<figure>

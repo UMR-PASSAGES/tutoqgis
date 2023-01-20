@@ -151,6 +151,9 @@
     				      <li>Feux</li>
     				    </ul>
     				    <p class="note">N'oubliez pas d'incrémenter l'ID de la macro-classe (MC ID) à chaque nouveau polygone&nbsp;! Sinon, il est possible de le faire par la suite en double-cliquant sur la case à modifier, puis en tapant un chiffre.</p>
+    				    
+    				    <p class="keskonfai">Je devrais peut-être ajouter plusieurs polgyones par classe ? (note pour moi-même : sauvegarder après chaque polygone, décocher "signature" pour que la sauvegarde soit plus rapide")</p>
+    				    
     				    <p>Au final, votre panneau SCP doit ressembler à ceci&nbsp;:</p>
     				    <figure>
       						<a href="illustrations/12_02_liste_rois.jpg" >
