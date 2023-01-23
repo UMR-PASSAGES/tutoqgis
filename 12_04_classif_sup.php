@@ -58,13 +58,14 @@
 						</a>
 			   </figure>
 			  
-			   <p class="keskonfai">2 mots sur les avantages et les inconvénients de ce type de classif par rapport à d'autres types de classif supervisées ?</p>
+			   <p class="keskonfai">ici, 2 mots sur les avantages et les inconvénients de ce type de classif par rapport à d'autres types de classif supervisées ?</p>
 			  
 			  <h3>Visualisation de l'image<a class="headerlink" id="XII42" href="#XII42"></a></h3>
 			  
 			   <h4>Pixels en RFE (Réflectance au sol en pour 10000)<a class="headerlink" id="XII42a" href="#XII42a"></a></h4>
 			   
-			   
+			    <p class="keskonfai">A faire !</p>
+			    
 			   <h4>Superficie de l'image<a class="headerlink" id="XII42b" href="#XII42b"></a></h4>
 			   
 			     <p>Comment obtenir la superficie de l'image étudiée&nbsp;?</p>
@@ -95,7 +96,7 @@
     			   <p>La superficie couverte est donc de <code>26,8 * 22,6 = 605,68</code> soit <b>un peu plus de 600 km&#178;</b>.</p>
 			     </div>
 			     
-			     <p>On peut aussi obtenir cette surface avec l'outil de mesure de QGIS, ce sera plus rapide mais un peu moins précis&nbsp;!</p>
+			     <p>On peut aussi obtenir cette surface avec l'outil de mesure de QGIS, ce sera plus rapide mais moins précis&nbsp;!</p>
 			     
 			     <div class="manip">
 			       <p>Cliquez sur l'outil de mesure et sélectionnez <b>Mesurer une aire</b> si ça n'est pas déjà fait (l'icône de cet outil est différente suivant le type de mesure sélectionnée).</p>
@@ -218,7 +219,7 @@
     						</a>
     					</figure>
     					<p>Pour gagner du temps pendant la saisie, vous pouvez décocher la case <b>Signature</b> pour ne pas calculer les signatures spectrales à chaque sauvegarde.</p>
-    					<p><img class="icone" src="illustrations/12_04_calcul_signature_icone.jpg" alt="bouton de calcul de signature" >Dans ce cas, vous pouvez calculer ces signatures en une seule fois une fois tous les ROI créés, en les sélectionnant puis en cliquant sur le bouton <b>calculer les signatures pour les éléments surlignés</b>.</p>
+    					<p><img class="icone" src="illustrations/12_04_calcul_signature_icone.jpg" alt="bouton de calcul de signature" >Et dans ce cas, vous pouvez calculer ces signatures en une seule fois une fois tous les ROI créés, en les sélectionnant puis en cliquant sur le bouton <b>calculer les signatures pour les éléments surlignés</b>.</p>
     					<p>Il est ensuite possible de calculer une signature globale pour chaque classe.</p>
     					<p><img class="icone" src="illustrations/12_04_fusion_signatures_icone.jpg" alt="bouton de fusion de signature" >Pour cela, sélectionnez tous les éléments d'une même classe puis cliquez sur le bouton <b>Fusionner les signatures spectrales surlignées</b>.</p>
   			    
@@ -232,9 +233,63 @@
   				</div>
 				
 				  <p>Nous allons maintenant pouvoir faire une classification basée sur ces ROI&nbsp;!</p>
+				  
+				  <p class="keskonfai">Penser à ajouter dans les données en téléchargement une couche de ROI exemple.</p>
 			   
 			  <h3>Classification supervisée avec l'algorithme du maximum de vraisemblance<a class="headerlink" id="XII44" href="#XII44"></a></h3>
+			  
+			   <p>Ici, nous allons utiliser l'algorithme du maximum de vraisemblance pour regrouper les pixels en catégories, en se basant sur les ROI que nous venons de dessiner.</p>
+			   
+			   <div class="manip">
+			     <p><img class="icone" src="illustrations/12_04_traitement_bande_icone.jpg" alt="Icône de l'outil de traitement de bandes" >Pour accéder à l'outil de classification supervisée, cliquez sur l'icône <b>Traitement de bande</b> puis <b>Classification</b> dans la barre d'outils sur la gauche du panneau SCP, ou bien <b>Menu SCP &#8594; Traitement de bande &#8594; Classification</b> (cliquer pour voir en plus grand)&nbsp;:</p>
+			     
+			     <figure>
+  						<a href="illustrations/12_04_classif_fenetre.jpg" >
+  							<img src="illustrations/12_04_classif_fenetre.jpg" alt="Fenêtre de l'outil de classification, avec les options : utiliser MC ID, algorithme max de vraisemblance, rapport de classification" width="600">
+  						</a>
+  					</figure>
+  					
+  					<ul>
+  					 <li class="espace">Sélectionner un jeu de bande : a priori il y a un seul jeu de bandes dans notre projet, laisser 1</li>
+  					 <li class="espace">Utiliser : sélectionnez <b>MC ID</b> pour obtenir dans l'image finale autant de catégories que de macro-classes, c-est-à-dire de classes d'occupation du sol (en choisissant C ID nous aurions autant de catégories que de polygones)</li>
+  					 <li class="espace">Algorithme : sélectionnez <b>maximum de vraisemblance</b> et laissez le seuil à 0. Si le seuil est défini, avec une valeur entre 0 et 100, les pixels ayant une probabilité inférieure à ce seuil d'appartenir à une classe seront exclus de la classification</li>
+  					 <li class="espace">Classification d'occupation des sols : ne sélectionnez aucune valeur. Il s'agit d'un autre algorithme de classification qui peut être utilisé seul ou bien combiné à celui choisi au-dessus. Pour plus d'infos voir <a class="ext" target="_blank" href="https://semiautomaticclassificationmanual.readthedocs.io/fr/latest/classificationTab.html#land-cover-signature-classification" >la documentation (Land Cover Signature Classification)</a>&nbsp;!</li>
+  					 <li class="espace">Sortie de la classification&nbsp;: il est possible ici de spécifier un style ou un masque pour l'image en sortie, créer un fichier vecteur de sortie en plus du geotiff, créer un <b>rapport de classification</b> qui indiquera pour chaque classe le nombre et le pourcentage de pixels concernés, ainsi que la surface. Ici, <b>vous pouvez ne cocher que la case du rapport de classification</b>.</li>
+  					 <li class="espace">En cochant la case <em>sauvegarder les fichiers temporaires</em>, vous obtiendrez également un raster pour chacun des ROI utilisés, plus un raster &#171;&nbsp;général&nbsp;&#187;&nbsp;; voir <a class="ext" target="_blank" href="https://semiautomaticclassificationmanual.readthedocs.io/fr/latest/classificationTab.html#classification-output-1" >la documentation (Save algorithm files)</a> pour plus d'informations.</li>
+  					</ul>
+  					
+  					<p>Cliquez sur le bouton <b>Lancer</b>. Choisissez un emplacement et un nom pour le fichier geotiff qui sera créé.</p>
+  					<p class="note">Il est possible que le fichier créé n'ait pas d'extension dans son nom&nbsp;; dans ce cas, ajoutez-lui l'extension <em>.tif</em> manuellement dans votre explorateur de fichier, pour qu'il soit bien reconnu comme un fichier geotiff.</p>
+			   </div>
+			   
+			   <p>L'image correspondant au résultat de la classification est chargée dans QGIS. Dans cette image, chaque pixel a une valeur correspondant à une des classes utilisées. Ici, ces valeurs vont de 1 à 4 car nous avons basé notre classification sur 4 macro-classes.</p>
+			   
+			   <div class="manip">
+			     <p>Pour mieux voir ce résultat, il est possible de <b>modifier le style</b> de cette couche. Rendez-vous dans ses propriétés &#8594; Symbologie&nbsp;: vous pouvez modifier la <b>couleur</b> de chaque classe et son <b>étiquette</b> en double-cliquant dessus (oui, il est possible de mettre des caractères accentués dans les étiquettes&nbsp;!)&nbsp;:</p>
+			     <figure>
+  						<a href="illustrations/12_04_classif_res_style.jpg" >
+  							<img src="illustrations/12_04_classif_res_style.jpg" alt="Fenêtre des propriétés du geotiff créé avec la classification, rubrique style, avec des couleurs 'classiques' : bleu pour l'eau, vert foncé pour la végétation arborée, vert clair pour la végétation rase, jaune pour le sol nu, et des étiquettes correspondant aux noms des classes." width="500">
+  						</a>
+  					</figure>
+  					<p>pour un résultat qui doit ressemble à ceci (ce résultat dépendra de vos ROI&nbsp;!)&nbsp;:</p>
+  					<figure>
+  						<a href="illustrations/12_04_classif_res.jpg" >
+  							<img src="illustrations/12_04_classif_res.jpg" alt="Résultat de la classification, avec l'eau en bleu, la végétation arborée en vert foncé, la végétation rase en vert clair et le sol nu en jaune" width="600">
+  						</a>
+  					</figure>
+  					<p class="keskonfai">Alors là, j'ai un truc assez différent du cours, j'ai dû mal choisir mes ROI !!</p>
+  					<p>Vous pouvez également ouvrir le rapport de classification avec un tableur, ce fichier CSV a été créé au même endroit que l'image avec le suffixe <em>_report</em> (le délimiteur est la tabulation)&nbsp;:</p>
+  					<figure>
+  						<a href="illustrations/12_04_rapport_classif.jpg" >
+  							<img src="illustrations/12_04_rapport_classif.jpg" alt="Rapport de classification : tableau avec 4 colonnes Class, PixelSum, Percentage % et Area [metre^2], et 4 lignes pour les 4 classes" width="400">
+  						</a>
+  					</figure>
+  					<p>On peut y lire par exemple que la classe 3 (végétation rase) rassemble un peu plus de 35% des pixels de l'image. Bien sûr, vos résultats seront sûrement un peu différents&nbsp;!</p>
+			   </div>
+			  
 			  <h3>Interprétation des résultats et mise en page<a class="headerlink" id="XII45" href="#XII45"></a></h3>
+			  
+			   <p class="keskonfai">A faire !!</p>
 			  
 			  <br>
         <p>Vous êtes arrivé.e au bout de ce tutoriel. Si vous le suivez depuis le début, bravo pour votre patience, et sinon bravo également&nbsp;!</p>
