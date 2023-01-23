@@ -30,7 +30,7 @@
 						<li><a href="#H">H</a></li>
 						<li><a href="#I">I</a></li>
 						<li><a href="#J">J</a></li>
-						<li>K</li>
+						<li><a href="#K">K</a></li>
 						<li><a href="#L">L</a></li>
 						<li><a href="#M">M</a></li>
 						<li><a href="#N">N</a></li>
@@ -110,9 +110,18 @@
 									<li class="index_03"><a href="07_01_creation_suppression.php#VII12">type</a></li>
 								</ul>
 							</li>
-							<li class="index_02"><a href="10_01_representation.php#X12">Choroplèthe</a>
-							<li class="index_02"><a href="11_04_python.php">Commande Python</a>
-							<li class="index_02"><a href="10_02_mise_en_page.php#X22">Composeur d'impression</a>
+							<li class="index_02"><a href="10_01_representation.php#X12">Choroplèthe</a></li>
+							<li class="index_02">Classification
+							 <ul>
+									<li class="index_03"><a href="12_03_classif_nonsup.php#XII34">K-Means (non supervisée)</a></li>
+									<li class="index_03"><a href="12_04_classif_sup.php#XII41">maximum de vraisemblance (supervisée)</a></li>
+									<li class="index_03"><a href="12_03_classif_nonsup.php">non supervisée</a></li>
+									<li class="index_03"><a href="12_04_classif_sup.php">supervisée</a></li>
+								</ul>
+							</li>
+							<li class="index_02"><a href="11_04_python.php">Commande Python</a></li>
+							<li class="index_02"><a href="10_02_mise_en_page.php#X22">Composeur d'impression</a></li>
+							<li class="index_02"><a href="12_01_intro_teledec.php#XII14b">Composition colorée</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV43">Compression</a>
 								<ul>
 									<li class="index_03"><a href="04_04_parametrage.php#IV43">Deflate</a></li>
@@ -197,6 +206,7 @@
 									<li class="index_03"><a href="03_04_fonds_carte.php#III43">QuickMapServices</a></li>
 									<li class="index_03"><a href="03_05_donnees_osm.php#III55">QuickOSM</a></li>
 									<li class="index_03"><a href="06_02_req_spatiales.php#VI21b">Requête spatiale</a></li>
+									<li class="index_03"><a href="12_01_intro_teledec.php#XII12">SCP</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -273,6 +283,7 @@
 							<li class="index_02"><a href="06_01_req_attrib.php#VI14">Ilike</a></li>
 							<li class="index_02"><a href="06_01_req_attrib.php#VI15">In (opérateur)</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22c">Indicatrice de Tissot</a></li>
+							<li class="index_02"><a href="12_02_info_spectrale.php#XII23a">Indice de végétation(NDVI)</a></li>
 							<li class="index_02"><a href="03_04_fonds_carte.php#III43">Installer une extension</a></li>
 							<li class="index_02">Intersection
 								<ul>
@@ -294,6 +305,12 @@
 						</ul>
 					</li>
 					
+					<li class="index_01" id="K">K
+					 <ul>
+							<li class="index_02"><a href="12_03_classif_nonsup.php#XII34">K-Means (méthode de classification)</a>
+					 </ul>
+					</li>
+					
 					<li class="index_01" id="L">L
 						<ul>
 							<li class="index_02"><a href="02_02_coord.php#II22d">Lambert (projection)</a></li>
@@ -309,6 +326,7 @@
 					
 					<li class="index_01" id="M">M
 						<ul>
+							<li class="index_02"><a href="12_04_classif_sup.php#XII41">Maximum de vraisemblance (méthode de classification)</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22d">Mercator (projection)</a></li>
 							<li class="index_02"><a href="07_02_calculer.php#VII22">Mesurer une aire</a></li>
 							<li class="index_02"><a href="01_01_SIG.php#I12d">Métadonnée</a></li>
@@ -337,7 +355,9 @@
 					
 					<li class="index_01" id="N">N
 						<ul>
-						    <li class="index_02"><a href="04_06_calage_autre_couche.php#IV62">Nominatim Locator Filter (extension)</a></li>
+						  <li class="index_02"><a href="04_06_calage_autre_couche.php#IV62">Nominatim Locator Filter (extension)</a></li>
+						  <li class="index_02"><a href="12_02_info_spectrale.php#XII23b">Normalized Burn Ration(NBR)</a></li>
+              <li class="index_02"><a href="12_02_info_spectrale.php#XII23a">Normalized Difference Vegetation Index (NDVI)</a></li>
 							<li class="index_02"><a href="05_01_creation_couche.php">Nouvelle couche shapefile</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II21b">NTF (SCR)</a></li>
 							<li class="index_02"><a href="05_00_numerisation.php">Numérisation</a></li>
@@ -391,6 +411,7 @@
 							<li class="index_02"><a href="04_04_parametrage.php#IV42">Plus proche voisin (rééchantillonnage)</a></li>
 							<li class="index_02"><a href="04_03_calage_carroyage.php">Point de calage</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV63">ici</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X13">Points aléatoires</a></li>
+							<li class="index_02"><a href="12_02_info_spectrale.php#XII21b">Polygone d'entraînement (ROI)</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Polynomiale (transformation)</a></li>
 							<li class="index_02"><a href="09_05_maillage_sql.php">PostGIS</a></li>
 							<li class="index_02"><a href="09_05_maillage_sql.php">PostgreSQL</a></li>
@@ -447,6 +468,7 @@
 							<li class="index_02"><a href="02_02_coord.php#II21b">RGF93 (SCR)</a></li>
 							<li class="index_02"><a href="07_02_calculer.php#VII23b">Right (fonction de calcul de champ)</a></li>
 							<li class="index_02"><a href="02_04_changer_systeme.php#II41">Robinson (projection)</a></li>
+							<li class="index_02"><a href="12_02_info_spectrale.php#XII21b">Region Of Interest (ROI)</a></li>
 							<li class="index_02"><a href="04_05_lancement.php#IV51b">Root Mean Square RMS (Erreur Quadratique Moyenne EMQ)</a></li>
 						</ul>
 					</li>
@@ -459,6 +481,7 @@
 									<li class="index_03"><a href="05_02_points.php#V24">à partir du mode édition</a>
 								</ul>
 							</li>
+							<li class="index_02"><a href="12_01_intro_teledec.php#XII12">SCP (extension)</a></li>
 							<li class="index_02"><a href="02_02_coord.php">SCR</a>
 								<ul>
 									<li class="index_03"><a href="02_03_couches_projets.php#II31">d'un projet</a></li>
@@ -478,6 +501,7 @@
 							<li class="index_02"><a href="01_01_SIG.php#I12c">Sélection (outil de)</a></li>
 							<li class="index_02"><a href="01_03_formats.php#I31a">Shapefile</a></li>
 							<li class="index_02"><a href="01_01_SIG.php#I11b">SIG</a></li>
+							<li class="index_02"><a href="12_02_info_spectrale.php">Signature spectrale</a></li>
 							<li class="index_02"><a href="03_05_donnees_osm.php#III54">SLD (Style Layer Descriptor)</a></li>
 							<li class="index_02"><a href="09_05_maillage_sql.php">SpatiaLite</a></li>
 							<li class="index_02"><a href="06_04_req_sql.php">SQL</a> et aussi <a href="09_05_maillage_sql.php" >ici</a></li>

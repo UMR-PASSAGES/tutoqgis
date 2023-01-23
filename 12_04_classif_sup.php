@@ -295,7 +295,7 @@
         <p>Vous êtes arrivé.e au bout de ce tutoriel. Si vous le suivez depuis le début, bravo pour votre patience, et sinon bravo également&nbsp;!</p>
         <div class="question">
       		<input type="checkbox" id="faq-3">
-      		<p><label for="faq-3">C'est le bon moment pour une petite chorégraphie afin de partager votre joie&nbsp;:</label></p>
+      		<p><label for="faq-3">C'est le bon moment pour une petite chorégraphie&nbsp;:</label></p>
       		<p class="reponse"><img src="https://media.giphy.com/media/DhstvI3zZ598Nb1rFf/giphy-downsized.gif"></p>
       	</div></p>	
 		    
