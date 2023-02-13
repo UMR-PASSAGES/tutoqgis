@@ -40,7 +40,6 @@
 			<p>Au cours de la dernière partie notamment, nous avons vu comment éviter que deux polygones soient &#171;&nbsp;presque&nbsp;&#187; jointifs, au moyen de propriétés telles que l'accrochage, ou par l'utilisation d'outils de découpage par exemple. Nous avons également vu comment utiliser le mode d'édition topologique de QGIS.</p>
 			<p>Nous allons ici en apprendre un peu plus sur ce qu'est la topologie, et comment vérifier la topologie d'une couche.</p>
 
-			
 			<h3>Qu'est-ce que la topologie ?<a class="headerlink" id="V61" href="#V61"></a></h3>
 			
 				<h4>Définition et exemples<a class="headerlink" id="V61a" href="#V61a"></a></h4>
@@ -105,7 +104,7 @@
 				
 				<h4>Utilisation du vérificateur de topologie<a class="headerlink" id="V62b" href="#V62b"></a></h4>
 				
-					<p>Le <b>vérificateur de topologie</b> est un outil plus perfectionné qui permet de spécifier un certains nombre de règles, et de de voir les erreurs à ces règles. Il s'agit d'une extension principale, qui ne peut pas être désinstallée.</p>
+					<p>Le <b>vérificateur de topologie</b> est un outil plus perfectionné qui permet de spécifier un certain nombre de règles, et de voir les erreurs relatives à ces règles. Il s'agit d'une extension principale, qui ne peut pas être désinstallée.</p>
 					
 					<div class="manip">
 					 <p>Il faut tout d'abord vérifier que cette extension soit activée.</p>

@@ -33,7 +33,7 @@
 					<p>Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">DEPARTEMENT</a></em> située dans le dossier <b>TutoQGIS_06_Requetes/donnees</b>.</p>
 					<p>Ouvrez la table attributaire de cette couche.</p>
 				</div>
-					<p>Pour sélectionner le département du Nord (59), vous pouvez cliquez sur le numéro de la ligne correspondante ou bien directement sur ce département sur la carte. Vous pouvez aussi utiliser une requête attributaire.</p>
+					<p>Pour sélectionner le département du Nord (59), vous pouvez cliquer sur le numéro de la ligne correspondante ou bien directement sur ce département sur la carte. Vous pouvez aussi utiliser une requête attributaire.</p>
 				<div class="manip">
 					<p>Dans la barre d'outils située en haut de la table attributaire, cliquez sur l'icône <b>Sélectionner les entités en utilisant une expression</b>.</p>
 					<img src="illustrations/6_1_BO_icone_selection.jpg" alt="barre d'outils de la table attributaire avec icône sélection entourée en rouge" width="600">
