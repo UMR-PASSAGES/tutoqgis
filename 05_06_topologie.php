@@ -105,10 +105,18 @@
 				
 				<h4>Utilisation du vérificateur de topologie<a class="headerlink" id="V62b" href="#V62b"></a></h4>
 				
-					<p>Le vérificateur de topologie est un outil plus perfectionné qui permet de spécifier un certains nombre de règles, et de de voir les erreurs à ces règles.</p>
-				
+					<p>Le <b>vérificateur de topologie</b> est un outil plus perfectionné qui permet de spécifier un certains nombre de règles, et de de voir les erreurs à ces règles. Il s'agit d'une extension principale, qui ne peut pas être désinstallée.</p>
+					
 					<div class="manip">
-						<p>Pour accéder au vérificateur de topologie : 
+					 <p>Il faut tout d'abord vérifier que cette extension soit activée.</p>
+					 <p>Pour cela, rendez-vous dans le <b>menu Extensions &#8594; Installer/Gérer les extensions</b>. Dans la rubrique <b>Installées</b>, vérifiez que la case du <b>Vérificateur de topologie</b> soit bien cochée, et cochez-la si ça n'est pas le cas&nbsp;:</p>
+					 <figure>
+							<a href="illustrations/5_6_veriftopo_activation.jpg" >
+								<img src="illustrations/5_6_veriftopo_activation.jpg" alt="Gestionnaire d'extensions, rubrique 'Installées', avec la ligne du vérificateur de topologie surlignée en rouge, la case est cochée" width="600">
+							</a>
+						</figure>
+
+						<p>Vous pouvez maintenant accéder au vérificateur de topologie : 
 							<a class="thumbnail_bottom" href="#thumb">menu Vecteur &#8594; Vérificateur de topologie
 								<span>
 									<img src="illustrations/5_6_veriftopo_menu.jpg" alt="Menu Vecteur, Vérificateur de topologie" height="200" >
