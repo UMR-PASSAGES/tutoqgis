@@ -261,7 +261,7 @@
 					<li>&#171;&nbsp;Déplier la Terre&nbsp;&#187; pour mieux comprendre certaines projections : <a class="ext" target="_blank" href="http://philogb.github.io/page/myriahedral/">Myriahedral Projections</a></li>
 					<li>Visualiser les déformations liées à des projections : <a class="ext" target="_blank" href="https://mathigon.org/course/circles/spheres-cones-cylinders#sphere-maps">Surface Area of a Sphere</a></li>
 					<li>Liste des systèmes de coordonnées avec leurs codes EPSG ou autre : <a class="ext" target="_blank" href="http://spatialreference.org/" >http://spatialreference.org/</a></li>
-					<li>Comparaison de projections : <a class="ext" target="_blank" href="http://bl.ocks.org/syntagmatic/ba569633d51ebec6ec6e" >http://bl.ocks.org/syntagmatic/ba569633d51ebec6ec6e</a> et <a class="ext" target="_blank" href="https://www.map-projections.net/imglist.php" >https://www.map-projections.net/imglist.php</a></li>
+					<li>Comparaison de projections : <a class="ext" target="_blank" href="https://blocks.roadtolarissa.com/syntagmatic/ba569633d51ebec6ec6e" >https://blocks.roadtolarissa.com/syntagmatic/ba569633d51ebec6ec6e</a> et <a class="ext" target="_blank" href="https://www.map-projections.net/imglist.php" >https://www.map-projections.net/imglist.php</a></li>
 					<li>Aide au choix d'une projection : <a class="ext" target="_blank" href="http://projectionwizard.org/" >http://projectionwizard.org/</a></li>
 					<li>Sur la précision des coordonnées : jusqu'où faut-il aller dans le nombre de décimales ? <a class="ext" target="_blank" href="https://xkcd.com/2170/" >https://xkcd.com/2170/</a></li>
 				</ul>
