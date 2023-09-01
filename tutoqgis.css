@@ -493,7 +493,7 @@ hov         #1D3437     hover colour
   		content: "\0000a0[\2197]";
 	}
 	a[download]:before {  /* une icône différente pour les liens externes */
-  		content: "[\2B73]\0000a0";
+  		content: "[\2913]\0000a0";
 	}
 	a.hautpage {
 		display: block;
