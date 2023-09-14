@@ -175,9 +175,9 @@
 				
 				<p>La confusion entre les 2 manipulations <b>modifier le SCR</b> (outil reprojeter) et <b>(re)définir le SCR</b> (dans les propriétés de la couche) est une source d'erreur très courante&nbsp;!</p>
 				
-				<p>Pour y voir clair, on peut prendre l'analogie d'un livre. Sur ce livre est collée une étiquette indiquant qu'il est en français. Si vous voulez traduire ce livre en anglais, vous allez traduire tout le contenu du livre, puis enlever l'étiquette &#171;&nbsp;français&nbsp;&#187; pour coller à la place une étiquette &#171;&nbsp;anglais&nbsp;&#187;&nbsp;; c'est l'équivalent de l'opération consistant à modifier le SCR.</p>
+				<p>Pour y voir clair, on peut prendre l'analogie d'un livre. Sur ce livre est collée une étiquette indiquant qu'il est en français. Si vous voulez traduire ce livre en anglais, vous allez traduire tout le contenu du livre (recalculer les coordonnées dans le nouveau SCR), puis enlever l'étiquette &#171;&nbsp;français&nbsp;&#187; pour coller à la place une étiquette &#171;&nbsp;anglais&nbsp;&#187;&nbsp;; c'est l'équivalent de l'opération consistant à modifier le SCR.</p>
 				
-				<p>Redéfinir le SCR consisterait à enlever l'étiquette &#171;&nbsp;français&nbsp;&#187; pour coller à la place une étiquette &#171;&nbsp;anglais&nbsp;&#187;&nbsp; <b>sans traduire le contenu du livre</b>. On aurait donc un livre toujours en français, mais mal étiqueté.</p>
+				<p>Redéfinir le SCR consisterait à enlever l'étiquette &#171;&nbsp;français&nbsp;&#187; pour coller à la place une étiquette &#171;&nbsp;anglais&nbsp;&#187;&nbsp; <b>sans traduire le contenu du livre</b> (pas de recalcul des coordonnées). On aurait donc un livre toujours en français, mais mal étiqueté.</p>
 				
 				<p>Redéfinir le SCR (changer l'étiquette) n'est donc utile que si l'étiquette n'était pas la bonne, ou bien qu'il n'y avait pas d'étiquette du tout (SCR mal défini ou non défini).</p>
 				
