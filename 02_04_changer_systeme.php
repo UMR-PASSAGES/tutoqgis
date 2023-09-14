@@ -17,6 +17,7 @@
 					<li><a href="#II41">Modifier le SCR du projet</a></li>
 					<li><a href="#II42">Modifier le SCR d'une couche</a></li>
 					<li><a href="#II43">Redéfinir le SCR d'une couche</a></li>
+					<li><a href="#II44">Modifier et redéfinir le SCR&nbsp;: à ne pas confondre&nbsp;!</a></li>
 				</ul>
 	
 				
@@ -131,7 +132,7 @@
 				<p class="attention">Modifier le SCR d'une couche crée une nouvelle couche. Cette manipulation est utile pour pouvoir effectuer ensuite des traitements sur les données, ou pour éviter toute source de confusion en ayant uniquement des données dans le même SCR.</p>
 				
 				
-			<h3>Redéfinir le SCR d'une couche<a class="headerlink" id="II43" href="#II43"></a></h3>			
+			<h3>Redéfinir le SCR d'une couche<a class="headerlink" id="II43" href="#II43"></a></h3>
 				
 				<p>Il existe une autre manipulation souvent confondue avec le fait de modifier le SCR d'une couche : <b>redéfinir le SCR d'une couche</b>. Dans ce cas, les coordonnées ne sont pas recalculées et aucune nouvelle couche n'est créée, le SCR associé à la couche est simplement modifié.</p>
 				<p>Pour reprendre l'exemple utilisé plus haut d'une couche en WGS84 contenant un point correspondant à la ville de Paris de coordonnées (48,89 2,35), si le SCR de cette couche est redéfini en RGF93 / Lambert-93, les coordonnées du point resteront (48,89 2,35) mais ces coordonnées seront renseignées comme étant mesurées dans le SCR RGF93 / Lambert-93.</p>
@@ -141,6 +142,9 @@
 						<li><b>le SCR n'est pas défini du tout</b>, ce qui peut arriver par exemple pour certaine couches trouvées sur internet. Il faudra alors retrouver dans quel SCR a été initialement créée la couche</li>
 						<li><b>le SCR est mal défini</b> (quelqu'un - ou vous-même ! - a donc déjà effectué cette manipulation à tort)</li>
 					</ul>
+					
+					<p>Si ça n'est pas clair, une autre <a href="#II44">tentative d'explication plus bas</a>&nbsp!</p>
+					
 				<div class="manip">
 					<p>Pour être sûr de vous rendre compte si une couche n'a pas de SCR défini, rendez-vous dans le menu
 						<a class="thumbnail_bottom" href="#thumb">Préférences  &#8594; Options
@@ -159,8 +163,31 @@
 				</div>
 				<p>Ainsi, si vous chargez une couche dont le SCR n'est pas défini, QGIS vous avertira et vous demandera de spécifier un SCR pour cette couche (ce sera cependant à vous de retrouver le SCR initial dans lequel aura été créée cette couche).</p>
 				
-				<p class="attention">Redéfinir le SCR d'une couche est une opération très (trop !) facilement accessible : à partir des propriétés d'une couche, rubrique <b>Source</b>, il suffit de sélectionner un autre SCR dans la liste déroulante.</p>
-				<p class="attention">Rappelez-vous de ne pas procéder ainsi pour modifier le SCR d'une couche, mais d'utiliser plutôt l'outil <b>Reprojeter</b> de la boîte à outils de traitement. La confusion entre ces 2 opérations est une source d'erreur très courante&nbsp;!</p>
+				<p>Nos couches ayant un SCR correctement défini, cette manip ne nous est pas utile ici, mais pour info, voici comment procéder&nbsp;:</p>
+				
+				<ul>
+					<li>Pour redéfinir <b>temporairement</b> le SCR d'une couche&nbsp;: propriétés de la couche &#8594; rubrique Source (utile pour tester et retrouver le bon SCR)</li>
+					<li>Pour redéfinir le SCR d'une couche de manière permanente (crée une nouvelle couche)&nbsp;: boîte à outils &#8594; Assigner une projection</li>
+					<li>Idem que ci-dessus mais ne crée pas de nouvelle couche, uniquement pour les shapefiles : boîte à outils &#8594; Définir la projection du fichier shapefile</li>
+					</ul>
+				
+			<h3>Modifier et redéfinir le SCR&nbsp;: à ne pas confondre&nbsp;!<a class="headerlink" id="II44" href="#II44"></a></h3>
+				
+				<p>La confusion entre les 2 manipulations <b>modifier le SCR</b> (outil reprojeter) et <b>(re)définir le SCR</b> (dans les propriétés de la couche) est une source d'erreur très courante&nbsp;!</p>
+				
+				<p>Pour y voir clair, on peut prendre l'analogie d'un livre. Sur ce livre est collée une étiquette indiquant qu'il est en français. Si vous voulez traduire ce livre en anglais, vous allez traduire tout le contenu du livre, puis enlever l'étiquette &#171;&nbsp;français&nbsp;&#187; pour coller à la place une étiquette &#171;&nbsp;anglais&nbsp;&#187;&nbsp;; c'est l'équivalent de l'opération consistant à modifier le SCR.</p>
+				
+				<p>Redéfinir le SCR consisterait à enlever l'étiquette &#171;&nbsp;français&nbsp;&#187; pour coller à la place une étiquette &#171;&nbsp;anglais&nbsp;&#187;&nbsp; <b>sans traduire le contenu du livre</b>. On aurait donc un livre toujours en français, mais mal étiqueté.</p>
+				
+				<p>Redéfinir le SCR (changer l'étiquette) n'est donc utile que si l'étiquette n'était pas la bonne, ou bien qu'il n'y avait pas d'étiquette du tout (SCR mal défini ou non défini).</p>
+				
+				<p>Autrement dit&nbsp;:</p>
+				
+				<figure>
+					<a href="illustrations/2_4_ne_pas_confondre.png" >
+						<img src="illustrations/2_4_ne_pas_confondre.png" alt="Analogie d'un livre à traduire pour expliquer la différence entre modifier et redéfinir le SCR" width="500">
+					</a>
+				</figure>
 				
 				<br>
 				<a class="prec" href="02_03_couches_projets.php">chapitre précédent</a>
