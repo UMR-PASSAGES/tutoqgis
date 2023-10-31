@@ -12,7 +12,7 @@
 		</div>	
 	
 		<div class="main">
-			<h2>VI.1  Sélectionner des éléments en fonction de leurs données attributaires : requêtes attributaires</h2>
+			<h1>VI.1  Sélectionner des éléments en fonction de leurs données attributaires : requêtes attributaires</h1>
 				<ul class="listetitres">
 					<li><a href="#VI11">Faire une requête simple</a></li>
 					<li><a href="#VI12">Créer une nouvelle couche à partir d'une sélection</a></li>
@@ -27,7 +27,7 @@
 			<p>Beaucoup d'opérateurs sont disponibles pour les requêtes attributaires&nbsp;; nous ne les passerons pas tous en revue mais allons simplement utiliser quelques-uns des plus courants.</p>
 			<p>Pour une description de tous les opérateurs et fonctions possibles : voir le <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/working_with_vector/expression.html" >manuel de QGIS</a>.</p>
 
-			<h3>Faire une requête simple<a class="headerlink" id="VI11" href="#VI11"></a></h3>
+			<h2>Faire une requête simple<a class="headerlink" id="VI11" href="#VI11"></a></h2>
 
 				<div class="manip">
 					<p>Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">DEPARTEMENT</a></em> située dans le dossier <b>TutoQGIS_06_Requetes/donnees</b>.</p>
@@ -71,7 +71,7 @@
 				<p>Bien sûr, il est plus intéressant d'utiliser les requêtes pour sélectionner plusieurs éléments en même temps!</p>
 				<p class="note">Pourquoi pour cette requête l'aperçu du résultat (en bas à gauche de la fenêtre de sélection) est-il égal à 0&nbsp;? Cette expression est traitée pour chaque ligne de la table et est évaluée par vrai ou faux, 0 ou 1 pour l'ordinateur. L'aperçu donne le 1er résultat trouvé, ici 0 pour le département de l'Ain.</p>
 				
-			<h3>Créer une nouvelle couche à partir d'une sélection<a class="headerlink" id="VI12" href="#VI12"></a></h3>
+			<h2>Créer une nouvelle couche à partir d'une sélection<a class="headerlink" id="VI12" href="#VI12"></a></h2>
 				
 				<p>Il est possible de créer une nouvelle couche vecteur à partir d'une sélection.</p>
 				<div class="manip">
@@ -90,7 +90,7 @@
 					<p>La nouvelle couche est automatiquement ajoutée à QGIS. Elle ne contient qu'un seul département, celui du Nord.</p>
 				</div>
 			
-			<h3>Désélectionner des entités<a class="headerlink" id="VI13" href="#VI13"></a></h3>
+			<h2>Désélectionner des entités<a class="headerlink" id="VI13" href="#VI13"></a></h2>
 			
     			 <p>Par défaut, une nouvelle requête attributaire &#171;&nbsp;part de zéro&nbsp;&#187;, en ne tenant pas compte des entités déjà sélectionnées (pour au contraire tenir compte d'une requête précédente, cf. <a href="06_03_req_combinees.php#VI31" >partie VI.3.1 : Combiner deux requêtes attributaires</a>).</p>
     			 <p>Néanmoins, pour plus de clarté, il peut être utile de désélectionner des entités.</p>
@@ -100,7 +100,7 @@
     					<p>Pour désélectionner les entités d'une seule couche, cliquez sur la flèche à côté du même bouton, pour choisir l'option <b>Désélectionner les entités de la couche courante</b>, ou bien cliquez sur le bouton <b>Désélectionner toutes les entités de la couche</b> en haut de la table attributaire de celle-ci.</p>
     			 </div>
 			 
-			<h3>Quelques opérateurs<a class="headerlink" id="VI14" href="#VI14"></a></h3>
+			<h2>Quelques opérateurs<a class="headerlink" id="VI14" href="#VI14"></a></h2>
 			
 				<p>Dans l'exemple ci-dessus, nous avons utilisé l'opérateur <b>=</b> pour notre requête. Il en existe d'autre, comme par exemple les opérateurs mathématiques inférieur à et supérieur à, multiplier, diviser...</p>
 				<div class="manip">
@@ -155,7 +155,7 @@
 				
 				<p><img class="iconemid" src="illustrations/6_3_deselection_icone.jpg" alt="icône de désélection" >Entre deux requêtes, pour être sûr de repartir à zéro, utiliser l'outil <b>tout désélectionner</b>.</p>
 			
-			<h3>Combiner plusieurs critères<a class="headerlink" id="VI15" href="#VI15"></a></h3>
+			<h2>Combiner plusieurs critères<a class="headerlink" id="VI15" href="#VI15"></a></h2>
 			
 				<p>Comment faire s'il l'on veut sélectionner par exemple les communes de + de 10 000 habitants dont le nom commence par 'PLOU' ?</p>
 				<p>Il s'agit ici de combiner deux critères. Deux opérateurs permettent cela : <b>AND</b> (et) et <b>OR</b> (ou).</p>
@@ -185,7 +185,7 @@
 					</a>
 				</figure>
 			
-			<h3>Quelques exemples à tester<a class="headerlink" id="VI16" href="#VI16"></a></h3>
+			<h2>Quelques exemples à tester<a class="headerlink" id="VI16" href="#VI16"></a></h2>
 			
 			    <p>Voici quelques exemples à tester, plusieurs requêtes sont parfois possibles pour un même résultat.</p>
 				<p>Pouvez-vous sélectionner ? ...</p>

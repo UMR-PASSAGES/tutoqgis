@@ -12,7 +12,7 @@
 		</div>
 		
 		<div class="main">
-			<h2>XI.4  Comprendre et lancer un script Python</h2>
+			<h1>XI.4  Comprendre et lancer un script Python</h1>
 				<ul class="listetitres">
 					<li><a href="#XI41">Lancer une commande Python dans QGIS</a></li>
 					<li><a href="#XI42">Ouvrir un script Python</a></li>
@@ -35,7 +35,7 @@
 				
 				<p>Qu'allons-nous voir dans ce chapitre&nbsp;? Il ne s'agit pas ici d'apprendre à coder en Python, mais simplement <b>d'ouvrir un script Python existant, voir comment est constitué ce script, comment le paramétrer et le lancer</b>. En quelque sorte une introduction à cette face cachée de QGIS&nbsp;!</p>
 				
-				<h3>Lancer une commande Python dans QGIS<a class="headerlink" id="XI41" href="#XI41"></a></h3>
+				<h2>Lancer une commande Python dans QGIS<a class="headerlink" id="XI41" href="#XI41"></a></h2>
 				
     				<div class="manip">
     					<p>Rendez-vous dans le menu <b>Extension &#8594; Console Python</b>.</p>
@@ -60,7 +60,7 @@
     				
     				<p>Il est possible de travailler uniquement en lançant ainsi des commandes une à une ; seulement, les commandes utilisées ne seront pas sauvegardées et ne pourront donc être réutilisées sans tout retaper à la main (même s'il est possible de faire défiler les dernières commandes utilisées en appuyant sur la touche flèche haut du clavier).</p>
 				
-				<h3>Ouvrir un script Python<a class="headerlink" id="XI42" href="#XI42"></a></h3>
+				<h2>Ouvrir un script Python<a class="headerlink" id="XI42" href="#XI42"></a></h2>
 					
 					<p>Pour sauvegarder et réutiliser facilement votre travail, le plus simple est d'utiliser ce qu'on appelle un script. Il s'agit simplement d'un fichier texte comportant une suite de commandes, et qui porte l'extension PY puisqu'il s'agit d'un script Python.</p>
 					<p>Ce tutoriel n'étant pas un tutoriel Python, nous nous contenterons d'ouvrir un script existant plutôt que d'en créer un nous-mêmes.</p>
@@ -84,7 +84,7 @@
 					<p>L'objectif n'est pas de comprendre dans le détail tout ce que fait ce script, mais de comprendre globalement ce qui s'y passe, notamment au moyen des commentaires. Il s'agit ici d'un script faisant le même travail que le modèle que vous avez réalisé en <a href="11_03_modeleur.php#XI33b">précédemment</a>, à savoir découper plusieurs couches par une même couche et reprojeter les couches obtenues en WGS84.</p>
 
 				
-				<h3>Paramétrer le script<a class="headerlink" id="XI43" href="#XI43"></a></h3>
+				<h2>Paramétrer le script<a class="headerlink" id="XI43" href="#XI43"></a></h2>
 				
 					<p>Au début du script (ligne 15), vous trouverez ces lignes :</p>
 					<figure>
@@ -104,7 +104,7 @@
 					</div>
 					
 				
-				<h3>Lancer et éditer un script<a class="headerlink" id="XI44" href="#XI44"></a></h3>
+				<h2>Lancer et éditer un script<a class="headerlink" id="XI44" href="#XI44"></a></h2>
 				
           <p>Pour savoir comment appeler un outil en python, une astuce est de d'abord le lancer &#171;&nbsp;normalement&nbsp;&#187; puis d'aller dans le <b>menu Traitement &#8594; Historique</b> et cliquer sur la ligne correspondante. En bas de la fenêtre, vous aurez la commande Python qui a été exécutée cette fois-là&nbsp;:</p>				
 				  <figure>

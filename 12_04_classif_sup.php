@@ -12,7 +12,7 @@
 		</div>
 		
 		<div class="main">
-			<h2>XII.4  Classification supervisée</h2>
+			<h1>XII.4  Classification supervisée</h1>
 			
 			  <ul class="listetitres">
 			   <li><a href="#XII41">Qu'est-ce qu'une classification supervisée ?</a></li>
@@ -31,7 +31,7 @@
 			 
 			  <p>Dans cette partie, nous allons effectuer une classification supervisée, c'est-à-dire se basant sur des données d'entraînement que vous aurez créées. Nous utiliserons pour cela une image Sentinel 2B acquise sur le bassin <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Endor%C3%A9isme">endoréique</a> de <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Okavango">l'Okavango</a>, au Botswana.</p>
 			  
-			  <h3>Qu'est-ce qu'une classification supervisée ?<a class="headerlink" id="XII41" href="#XII41"></a></h3>
+			  <h2>Qu'est-ce qu'une classification supervisée ?<a class="headerlink" id="XII41" href="#XII41"></a></h2>
 			  
 			   <p>Comme une <a href="12_03_classif_nonsup.php#XII31">classification non supervisée</a>, une classification permet le regroupement des pixels d'une image pour aboutir à des catégories, par exemple d'occupation du sol. Mais à la différence de cette dernière, elle se base sur un <b>échantillonnage terrain</b> fait par l'utilisateur.</p>
 			   
@@ -60,13 +60,13 @@
 			  
 			   <p class="keskonfai">ici, 2 mots sur les avantages et les inconvénients de ce type de classif par rapport à d'autres types de classif supervisées ?</p>
 			  
-			  <h3>Visualisation de l'image<a class="headerlink" id="XII42" href="#XII42"></a></h3>
+			  <h2>Visualisation de l'image<a class="headerlink" id="XII42" href="#XII42"></a></h2>
 			  
-			   <h4>Pixels en RFE (Réflectance au sol en pour 10000)<a class="headerlink" id="XII42a" href="#XII42a"></a></h4>
+			   <h3>Pixels en RFE (Réflectance au sol en pour 10000)<a class="headerlink" id="XII42a" href="#XII42a"></a></h3>
 			   
 			    <p class="keskonfai">A faire !</p>
 			    
-			   <h4>Superficie de l'image<a class="headerlink" id="XII42b" href="#XII42b"></a></h4>
+			   <h3>Superficie de l'image<a class="headerlink" id="XII42b" href="#XII42b"></a></h3>
 			   
 			     <p>Comment obtenir la superficie de l'image étudiée&nbsp;?</p>
 			     
@@ -116,7 +116,7 @@
 			     
 			     <p><b>Notre zone couvre donc environ 23 km par 27 km,soit un peu plus de 600 km&#178;.</b></p>
 			  
-			   <h4>Compositions colorées<a class="headerlink" id="XII42c" href="#XII42c"></a></h4>
+			   <h3>Compositions colorées<a class="headerlink" id="XII42c" href="#XII42c"></a></h3>
 			  
   			   <div class="manip">
   			     <p>Ouvrez un nouveau projet QGIS et ajoutez-y l'image <em class="data"><a href="donnees/TutoQGIS_12_teledetection.zip">SENTINEL2B_20200619-Okavango</a></em>.</p>
@@ -196,7 +196,7 @@
           	</div>
            </div>	
            
-			  <h3>Extraction des signatures spectrales<a class="headerlink" id="XII43" href="#XII43"></a></h3>
+			  <h2>Extraction des signatures spectrales<a class="headerlink" id="XII43" href="#XII43"></a></h2>
 			  
 			   <p>Pour effectuer une classification supervisée, il nous faut des données d'entraînement, donc des <a href="12_02_info_spectrale.php#XII21">ROI</a>. Ces ROI nous serviront également à lire les signatures spectrales de nos futures classes d'occupation du sol.</p>
 			   
@@ -236,7 +236,7 @@
 				  
 				  <p class="keskonfai">Penser à ajouter dans les données en téléchargement une couche de ROI exemple.</p>
 			   
-			  <h3>Classification supervisée avec l'algorithme du maximum de vraisemblance<a class="headerlink" id="XII44" href="#XII44"></a></h3>
+			  <h2>Classification supervisée avec l'algorithme du maximum de vraisemblance<a class="headerlink" id="XII44" href="#XII44"></a></h2>
 			  
 			   <p>Ici, nous allons utiliser l'algorithme du maximum de vraisemblance pour regrouper les pixels en catégories, en se basant sur les ROI que nous venons de dessiner.</p>
 			   
@@ -287,7 +287,7 @@
   					<p>On peut y lire par exemple que la classe 3 (végétation rase) rassemble un peu plus de 35% des pixels de l'image. Bien sûr, vos résultats seront sûrement un peu différents&nbsp;!</p>
 			   </div>
 			  
-			  <h3>Interprétation des résultats et mise en page<a class="headerlink" id="XII45" href="#XII45"></a></h3>
+			  <h2>Interprétation des résultats et mise en page<a class="headerlink" id="XII45" href="#XII45"></a></h2>
 			  
 			   <p class="keskonfai">A faire !!</p>
 			  

@@ -12,7 +12,7 @@
 		</div>	
 	
 		<div class="main">
-			<h2>V.3  Saisie des données attributaires : en savoir plus</h2>
+			<h1>V.3  Saisie des données attributaires : en savoir plus</h1>
 				<ul class="listetitres">
 					<li><a href="#V31">Saisir les données : à la création de l'entité ou dans la table</a></li>
 					<li><a href="#V32">Pour une saisie plus facile : les outils d'édition</a></li>
@@ -22,7 +22,7 @@
 			<p>Cette partie est tout à fait optionnelle pour suivre la suite du chapitre. Elle pourra néanmoins vous faire gagner du temps si vous vous apprêtez à saisir des données sous QGIS...</p>
 
 			
-			<h3>Saisir les données : à la création de l'entité ou dans la table<a class="headerlink" id="V31" href="#V31"></a></h3>
+			<h2>Saisir les données : à la création de l'entité ou dans la table<a class="headerlink" id="V31" href="#V31"></a></h2>
 			
 				<p>Vous avez remarqué que la saisie des données attributaires se fait dans une fenêtre qui apparaît directement après avoir créé une entité.</p>
 				<p>Il est possible de modifier ce comportement :</p>
@@ -44,7 +44,7 @@
 				</div>
 				<p>Il est ensuite possible de rentrer les données attributaires directement dans la table. La <a href="07_02_calculer.php">calculatrice de champ</a> offre la possibilité de remplir plusieurs cases avec une requête.</p>
 
-			<h3>Pour une saisie plus facile : les outils d'édition<a class="headerlink" id="V32" href="#V32"></a></h3>
+			<h2>Pour une saisie plus facile : les outils d'édition<a class="headerlink" id="V32" href="#V32"></a></h2>
 			
 				<p>Il est possible de définir des règles pour la saisie d'attributs : vous pouvez par exemple saisir vos données en choisissant une valeur dans une liste déroulante.</p>
 				

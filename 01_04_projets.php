@@ -12,13 +12,13 @@
 		</div>	
 	
 		<div class="main">
-			<h2>I.4  Espace de travail (projet QGS)</h2>
+			<h1>I.4  Espace de travail (projet QGS)</h1>
 				<ul class="listetitres">
 					<li><a href="#I31">Qu'est-ce qu'un projet dans un logiciel SIG ?</a></li>
 					<li><a href="#I32">Comment un projet appelle-t-il les données ?</a></li>
 				</ul>	
 			
-				<h3>Qu'est-ce qu'un projet dans un logiciel SIG ?<a class="headerlink" id="I31" href="#I31"></a></h3>
+				<h2>Qu'est-ce qu'un projet dans un logiciel SIG ?<a class="headerlink" id="I31" href="#I31"></a></h2>
 				
 					<p>Un projet est un espace de travail. Sauvegarder un projet équivaut à sauvegarder le style utilisé pour chaque couche, le zoom... mais pas les données !</p>
 					<p><b>Depuis la version 3 de QGIS, le format par défaut pour les projets est le QGZ et non plus le QGS</b>. Un fichier QGZ est en fait un fichier QGS plus d'autres informations compressées dans un seul fichier. Il est toujours possible d'ouvrir et d'enregistrer des projets au format QGS.</p>
@@ -51,7 +51,7 @@
 					<p><b>Si vous fournissez à un collègue votre seul fichier QGZ ou QGS, sans les données correspondantes, ce collègue ne pourra pas visualiser les données !</b></p>
 				
 				
-				<h3>Comment un projet appelle-t-il les données ?<a class="headerlink" id="I32" href="#I32"></a></h3>
+				<h2>Comment un projet appelle-t-il les données ?<a class="headerlink" id="I32" href="#I32"></a></h2>
 				
 				    <p>Le chemin des couches peut être stocké de deux manières dans le projet : </p>
 					<ol>

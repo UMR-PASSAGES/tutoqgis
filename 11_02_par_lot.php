@@ -12,7 +12,7 @@
 		</div>
 		
 		<div class="main">
-			<h2>XI.2  Exécuter un outil &#171; par lot &#187;</h2>
+			<h1>XI.2  Exécuter un outil &#171; par lot &#187;</h1>
 				
 				<p>L'outil de découpage est accessible via la boîte à outils&nbsp;; tous les outils de cette boîte peuvent être exécutés <b>par lot</b>.</p>
 				

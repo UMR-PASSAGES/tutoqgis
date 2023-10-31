@@ -12,7 +12,7 @@
 		</div>
 		
 		<div class="main">
-			<h2>XII.3  Classification non supervisée</h2>
+			<h1>XII.3  Classification non supervisée</h1>
 			
   			<ul class="listetitres">
   				<li><a href="#XII31">Qu'est-ce qu'une classification non supervisée ?</a></li>
@@ -32,7 +32,7 @@
 				
 				<p>Pour cela, nous allons utiliser une image Sentinel-2 du Sud de l'Inde. Nous commencerons par explorer cette image et ses signature spectrales, comme vu <a href="12_01_intro_teledec.php" >ici</a> et <a href="12_02_info_spectrale.php" >là</a>, avant d'effectuer une classification non supervisée par la méthode des K-Means pour en extraire l'occupation du sol.</p>
 				
-				<h3>Qu'est-ce qu'une classification non supervisée ?<a class="headerlink" id="XII31" href="#XII31"></a></h3>
+				<h2>Qu'est-ce qu'une classification non supervisée ?<a class="headerlink" id="XII31" href="#XII31"></a></h2>
 				
           <p>Un peu de théorie avant de commencer&nbsp;! <b>Une classification a pour but de partir d'une image pour en regrouper les pixels sous forme de catégories.</b> Typiquement, on va partir d'une image satellite pour arriver à une couche d'occupation du sol avec par exemple 4 catégories&nbsp;: surface en eau, sol nu, forêt, cultures. Bien sûr, les catégories vont varier suivant l'image et l'objectif.</p>
           
@@ -49,7 +49,7 @@
           
           <p>Pour en savoir plus sur les classifications, vous pouvez vous rendre sur le <a class="ext" target="_blank" href="https://www.rncan.gc.ca/cartes-outils-et-publications/imagerie-satellitaire-et-photos-aeriennes/tutoriel-notions-fondamentales-teledetection/9310" >tutoriel du Centre canadien de cartographie et d’observation de la Terre</a>.</p>
 				
-				<h3>Prise en main des données<a class="headerlink" id="XII32" href="#XII32"></a></h3>
+				<h2>Prise en main des données<a class="headerlink" id="XII32" href="#XII32"></a></h2>
 				
           <p>L'image que nous allons utiliser est une image Sentinel-2 su Sud de l'Inde d'avril 2020.</p>
           
@@ -79,7 +79,7 @@
           
           <p class="keskonfai">Interprétation ?</p>
 				
-				<h3>Extraction des signatures spectrales<a class="headerlink" id="XII33" href="#XII33"></a></h3>
+				<h2>Extraction des signatures spectrales<a class="headerlink" id="XII33" href="#XII33"></a></h2>
 				
 				  <p>Nous allons maintenant extraire les signatures spectrales des 4 types d'occupation du sol suivants&nbsp;:</p>
 				  
@@ -98,9 +98,9 @@
 				  
 				  <p class="keskonfai">Interprétation des signatures spectrales ?</p>
 				
-				<h3>Classification au moyen de la méthodes des K-Means<a class="headerlink" id="XII34" href="#XII34"></a></h3>
+				<h2>Classification au moyen de la méthodes des K-Means<a class="headerlink" id="XII34" href="#XII34"></a></h2>
 				
-  				<h4>K-Means : comment ça marche&nbsp;?<a class="headerlink" id="XII34a" href="#XII34a"></a></h4>
+  				<h3>K-Means : comment ça marche&nbsp;?<a class="headerlink" id="XII34a" href="#XII34a"></a></h3>
   				
   				  <p>La méthode des <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/K-moyennes" >K-Means ou K-moyennes</a> est une méthode de clustering utilisé pour regrouper des individus (dans notre cas, des pixels), de manière à ce qu'au sein de chaque groupe les individus se ressemblent le plus possible, et que les groupes soient le plus différents possibles les uns des autres.</p>
   				  
@@ -128,7 +128,7 @@
   				  
   				  <p>Une manière de contourner la première de ces limitations est de définir un grand nombre de classes, pour les regrouper ensuite manuellement. C'est ce que nous allons faire ici&nbsp;!</p>
   				  
-  				 <h4>Mise en pratique sur l'image Sentinel-2<a class="headerlink" id="XII34b" href="#XII34b"></a></h4>
+  				 <h3>Mise en pratique sur l'image Sentinel-2<a class="headerlink" id="XII34b" href="#XII34b"></a></h3>
   				  
   				  <div class="manip">
   				    <p><em>Le jeu de bande doit bien être <a href="12_02_info_spectrale.php#XII21a">défini</a> au préalable dans l'extension SCP.</em></p>
@@ -178,7 +178,7 @@
 				    <p>C'est un premier résultat, qui est peu lisible à cause du grand nombre de classes. L'étape suivante est donc d'opérer des regroupements de classes manuellement, afin d'obtenir une image plus lisible.</p>
 				    
 				    
-				   <h4>Reclassification : regrouper des classes pour y voir plus clair<a class="headerlink" id="XII34c" href="#XII34c"></a></h4>
+				   <h3>Reclassification : regrouper des classes pour y voir plus clair<a class="headerlink" id="XII34c" href="#XII34c"></a></h3>
 				   
 				    <p>Notre objectif sera ici de regrouper des classes pour n'en obtenir que 4&nbsp;:</p>
 				    <ul>

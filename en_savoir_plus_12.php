@@ -12,9 +12,9 @@
 		</div>	
 	
 		<div class="main">
-			<h2>En savoir plus</h2>
+			<h1>En savoir plus</h1>
 			
-			    <h3>Sur QGIS</h3>
+			    <h2>Sur QGIS</h2>
 			    
 			        <p>QGIS est un <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Logiciel_libre">logiciel libre</a> et peut donc être utilisé, étudié, modifié et redistribué sans restriction par la personne à qui il a été distribué.</p>
 			        <p>QGIS.org est une association dont la <a class="ext" target="_blank" href="https://www.qgis.org/fr/site/getinvolved/governance/governance.html">gouvernance</a> comprend différentes instances&nbsp;: bureau, comité de projet, groupes d'utilisateurs... Le fonctionnement de l'association, ses rapports annuels et financiers ainsi que bien d'autres informations sont <a class="ext" target="_blank" href="https://www.qgis.org/fr/site/getinvolved/governance/index.html">disponibles en ligne</a>.</p>
@@ -25,7 +25,7 @@
 			        <p>QGIS est <b>votre</b> logiciel. En y contribuant, au-delà de participer à son amélioration, vous apprendrez également des outils et méthodes collaboratifs qui seront un atout lors d'une recherche d'emploi&nbsp;!</p>
 			        
 			    
-			    <h3>Sur ce tutoriel</h3>
+			    <h2>Sur ce tutoriel</h2>
 			
         			<p>Ce tutoriel a été initialement créé par le pôle Analyse et Représentation des Données de <a href="http://www.passages.cnrs.fr">l'UMR PASSAGES</a> (de même que les autres passionnants tutoriels sur la plate-forme <a href="http://ouvrir.passages.cnrs.fr">OUVRIR</a>). Il est aujourd'hui et depuis 2020 maintenu par <a href="https://letg.cnrs.fr/" >l'UMR LETG</a>.</p>
         			<p>Il a bénéficié de relectures et conseils avisés de (par ordre alphabétique, UMR Passages sauf mention contraire) : Xavier Amelot, Véronique André-Lamat, Gaëlle Deletraz, Marina Duféal, Thierry Feuillet (Université de Caen Normandie - UMR IDEES), Grégoire Le Campion, Delphine Montagne, Claude Monteil (INP-ENSAT - Toulouse), Guilhem Mousselin, Matthieu Noucher, Olivier Pissoat, Jean-Michel Poux (Ministère de la Transition Écologique et Solidaire), Raphaël Schirmer, David Sheeren (INP-ENSAT - Toulouse). Merci à eux&nbsp;!</p>

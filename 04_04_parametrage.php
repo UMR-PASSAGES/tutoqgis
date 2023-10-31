@@ -12,7 +12,7 @@
 		</div>	
 	
 		<div class="main">
-			<h2>IV.4  Paramétrage du géoréférencement</h2>
+			<h1>IV.4  Paramétrage du géoréférencement</h1>
 				<ul class="listetitres">
 					<li><a href="#IV41">Type de transformation, ou comment calculer les nouvelles coordonnées des points ?</a>
 						<ul class= "listesoustitres">
@@ -59,14 +59,14 @@
 				</div>
 				<p>Nous allons passer en revue ces différents paramètres.</p>
 					
-				<h3>Type de transformation, ou comment calculer les nouvelles coordonnées des points ?<a class="headerlink" id="IV41" href="#IV41"></a></h3>
+				<h2>Type de transformation, ou comment calculer les nouvelles coordonnées des points ?<a class="headerlink" id="IV41" href="#IV41"></a></h2>
 				
-					<h4>Qu'est-ce qu'une transformation ?<a class="headerlink" id="IV41a" href="#IV41a"></a></h4>
+					<h3>Qu'est-ce qu'une transformation ?<a class="headerlink" id="IV41a" href="#IV41a"></a></h3>
 					
 						<p>Lors du calage, l'image subit une transformation, afin de faire coïncider au maximum les points de départ avec les coordonnées spécifiées par l'utilisateur. Une transformation est en fait une formule mathématique transformant les coordonnées de départ vers les coordonnées voulues.</p>
 						<p>Il existe divers types de transformations, adaptées à des usages différents. Chaque transformation, si on l'utilise avec un nombre de points de calage supérieur à son minimum, renverra une erreur correspondant à la différence entre les coordonnées "idéales" voulues par l'utilisateur et les coordonnées effectivement calculées lors de la transformation (erreur résiduelle <b>residual[pixels]</b> de la table des points de contrôle, voir plus haut).</p>
 						
-					<h4>Quelques types de transformations<a class="headerlink" id="IV41b" href="#IV41b"></a></h4>
+					<h3>Quelques types de transformations<a class="headerlink" id="IV41b" href="#IV41b"></a></h3>
 					
 						<p>QGIS permet les transformations suivantes :</p>
 						<ul>
@@ -80,7 +80,7 @@
 						</ul>
 						
 						
-					<h4>Choisir une transformation<a class="headerlink" id="IV41c" href="#IV41c"></a></h4>
+					<h3>Choisir une transformation<a class="headerlink" id="IV41c" href="#IV41c"></a></h3>
 					
 						<p>Quelques éléments vous ont été donnés dans la description des types de transformation pouvant vous aider à choisir l'une ou l'autre transformation. En pratique, le choix est souvent difficile et requiert de tester plusieurs transformations et de les comparer si l'on recherche une bonne précision.</p>
 						<p>Ici, nous nous bornerons à choisir une transformation simple et rapide.</p>
@@ -94,7 +94,7 @@
 						</div>					
 					
 					
-				<h3>Rééchantillonnage, ou comment calculer les valeurs des pixels ?<a class="headerlink" id="IV42" href="#IV42"></a></h3>
+				<h2>Rééchantillonnage, ou comment calculer les valeurs des pixels ?<a class="headerlink" id="IV42" href="#IV42"></a></h2>
 				
 					<p>Si on utilise une transformation qui déforme le raster d'origine (transformation polynomiale d'ordre supérieur à 1, ou transformation de type Spline par exemple), la valeur (couleur) de chaque pixel du nouveau raster sera déterminée par un calcul en se basant sur le raster original.</p>
 					<p>Cette valeur sera différente selon la méthode de rééchantillonnage choisie. QGIS, comme d'autres logiciels SIG, propose trois méthodes de rééchantillonnage :</p>
@@ -121,7 +121,7 @@
 						</figure>	
 					</div>
 				
-				<h3>Mode de compression utilisé pour la création de la nouvelle image<a class="headerlink" id="IV43" href="#IV43"></a></h3>
+				<h2>Mode de compression utilisé pour la création de la nouvelle image<a class="headerlink" id="IV43" href="#IV43"></a></h2>
 				
 					<p>La compression permet d'obtenir un raster moins volumineux, mais peut provoquer une perte de qualité. Une image compressée peut par ailleurs être illisible par certains logiciels.</p>
 					<p>QGIS propose les méthodes suivantes :</p>
@@ -141,9 +141,9 @@
 						</figure>	
 					</div>
 				
-				<h3>Raster en sortie et SCR<a class="headerlink" id="IV44" href="#IV44"></a></h3>
+				<h2>Raster en sortie et SCR<a class="headerlink" id="IV44" href="#IV44"></a></h2>
 				
-					<h4>Raster de sortie<a class="headerlink" id="IV44a" href="#IV44a"></a></h4>
+					<h3>Raster de sortie<a class="headerlink" id="IV44a" href="#IV44a"></a></h3>
 					
 						<div class="manip">
 							<p>Spécifiez ici le nom et l'emplacement de l'image géoréférencée qui sera créée, en cliquant sur l'icône à droite de la ligne <b>Raster de sortie</b>.</p>
@@ -156,7 +156,7 @@
 						</div>
 						
 				
-					<h4>SCR cible<a class="headerlink" id="IV44b" href="#IV44b"></a></h4>
+					<h3>SCR cible<a class="headerlink" id="IV44b" href="#IV44b"></a></h3>
 						
 						<p>Comme décidé en partie <a href="04_02_preliminaires.php#IV22">précédemment</a>, nous allons partir du principe que les coordonnées de cette carte sont exprimées dans un système proche du WGS84.</p>
 						<div class="manip">
@@ -174,13 +174,13 @@
 							</figure>
 						</div>
 						
-				<h3>Les autres paramètres<a class="headerlink" id="IV45" href="#IV4"></a></h3>
+				<h2>Les autres paramètres<a class="headerlink" id="IV45" href="#IV4"></a></h2>
 
-					<h4>Enregistrer les points de contrôle<a class="headerlink" id="IV45a" href="#IV45a"></a></h4>
+					<h3>Enregistrer les points de contrôle<a class="headerlink" id="IV45a" href="#IV45a"></a></h3>
 					
             <p>Si vous n'avez pas déjà enregistré les points de contrôle, ça peut être une bonne idée de cocher cette case afin de sauvegarder votre travail, et de garder trace des points utilisés, pour tester ensuite avec une autre transformation par exemple.</p>					
 					
-					<h4>Transparence<a class="headerlink" id="IV45b" href="#IV45b"></a></h4>
+					<h3>Transparence<a class="headerlink" id="IV45b" href="#IV45b"></a></h3>
 					
 						<p>Employer 0 pour la transparence : cette option est utile principalement pour les photographies aériennes ou satellites et permet de ne pas visualiser les pixels noirs (bords de l'image), ce qui serait gênant dans notre cas.</p>
 						<div class="manip">
@@ -192,7 +192,7 @@
 							</figure>	
 						</div>
 	
-					<h4>Définir la résolution de la cible<a class="headerlink" id="IV45c" href="#IV45c"></a></h4>	
+					<h3>Définir la résolution de la cible<a class="headerlink" id="IV45c" href="#IV45c"></a></h3>	
 					
 						<div class="manip">
 							<p>Laisser cette case décochée pour que l'image créée ait la même résolution que l'image de départ.</p>
@@ -203,7 +203,7 @@
 							</figure>	
 						</div>
 						
-					<h4>Carte et rapport PDF<a class="headerlink" id="IV45d" href="#IV45d"></a></h4>
+					<h3>Carte et rapport PDF<a class="headerlink" id="IV45d" href="#IV45d"></a></h3>
 						
 						<p>La carte PDF permettra de visualiser le décalage qu'aura subi chaque point de contrôle. Le rapport PDF comportera notamment les coordonnées et erreurs pour chaque point.</p>
 						<div class="manip">
@@ -215,7 +215,7 @@
 							</figure>
 						</div>
 						
-					<h4>Charger directement le raster dans QGIS<a class="headerlink" id="IV45e" href="#IV45e"></a></h4>
+					<h3>Charger directement le raster dans QGIS<a class="headerlink" id="IV45e" href="#IV45e"></a></h3>
 					
 						<div class="manip">
 							<p>Charger dans QGIS lorsque terminé : cocher cette case pour que le nouveau raster soit chargé automatiquement dans QGIS une fois le géoréférencement effectué.</p>
@@ -227,7 +227,7 @@
 						</div>
 
 									
-				<h3>Une fois tous les paramètres choisis...<a class="headerlink" id="IV46" href="#IV46"></a></h3>
+				<h2>Une fois tous les paramètres choisis...<a class="headerlink" id="IV46" href="#IV46"></a></h2>
 				
 					<p>...Cliquez sur OK : les paramètres sont sauvegardés... Mais rien ne semble se passer. Rendez-vous dans la partie suivante pour l'étape finale !</p>						
 					

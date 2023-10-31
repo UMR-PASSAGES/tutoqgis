@@ -12,7 +12,7 @@
 		</div>	
 	
 		<div class="main">
-			<h2>IX.5  Un exemple d'application&nbsp;: dites-le avec du SQL !</h2>
+			<h1>IX.5  Un exemple d'application&nbsp;: dites-le avec du SQL !</h1>
 				<ul class="listetitres">
 					<li><a href="#IX51">Création d'une nouvelle base SpatiaLite ou PostGIS</a>
 					   <ul class="listesoustitres">
@@ -54,7 +54,7 @@
 			   
 			   <p class="attention">Pour ce chapitre, vous pouvez soit télécharger les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a>&nbsp;: <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip" >Données Métropole 2000</a> et <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC12_FR_RGF_SHP.zip" >Données Métropole 2012</a> puis les filtrer pour ne garder que les vignes, comme détaillé dans le tutoriel, ou bien utiliser les <a href="telechargement.php">données en téléchargement</a> déjà filtrées (pour un téléchargement moins lourd).</p>
 			
-			   <h3>Création d'une nouvelle base SpatiaLite ou PostGIS<a class="headerlink" id="IX51" href="#IX51"></a></h3>
+			   <h2>Création d'une nouvelle base SpatiaLite ou PostGIS<a class="headerlink" id="IX51" href="#IX51"></a></h2>
 			   
 			     <p>La première étape consiste à créer une base de données vides dans le logiciel choisi, et à y importer les données de départ, à savoir la couche Corine Land Cover.</p>
 			     <p><b>Si vous choisissez d'utiliser Postgresql/PostGIS, assurez-vous d'avoir installé ces logiciels avant de poursuivre&nbsp;!</b></p>
@@ -63,7 +63,7 @@
 			         <p>Commencez par ouvrir un nouveau projet QGIS et chargez la couche <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip">CLC00_FR_RGF</a> ou bien <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em> (données déjà filtrées pour ne garder que les vignes).</p>
 			     </div>
 			     
-			     <h4>Création d'une base SpatiaLite<a class="headerlink" id="IX51a" href="#IX51a"></a></h4>
+			     <h3>Création d'une base SpatiaLite<a class="headerlink" id="IX51a" href="#IX51a"></a></h3>
 			     
 			         <p>Nous allons tout d'abord créer une base SpatiaLite vide.</p>
 			         
@@ -87,7 +87,7 @@
 			         <p>Ça n'est pas le cas des logiciels de bases de données &#171;&nbsp;traditionnels&nbsp;&#187; tels que PostgreSQL, qui fonctionnent selon une logique <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Client-serveur">client-serveur</a>&nbsp;: la base est installé sur un serveur, et des utilisateurs peuvent s'y connecter à partir d'autres ordinateurs. Bien sûr il est possible de se servir de son propre ordinateur comme de serveur, et la base ne sera accessible que depuis celui-ci : c'est ce qu'on appelle une base &#171;&nbsp;en local&nbsp;&#187;.</p>
 			     
 			         
-			     <h4>Création d'une base PostGIS<a class="headerlink" id="IX51b" href="#IX51b"></a></h4>
+			     <h3>Création d'une base PostGIS<a class="headerlink" id="IX51b" href="#IX51b"></a></h3>
 			         
 			         <p>...Et c'est ce que nous allons faire ici&nbsp;! Si vous avez décidé de travailler avec SpatiaLite, passez directement à <a href="#IX51c" >l'import des données</a>.</p>
 			         <p class="attention">Je pars du principe ici que vous avez déjà installé PostgreSQL et PostGIS, et que vous êtes connecté à un serveur PostgreSQL, local ou distant.</p>
@@ -159,7 +159,7 @@
 			         </div>
 			         <p class="note">Vous remarquerez que cette étape est plus longue et complexe avec PostgreSQL. Néanmoins, une fois ce logiciel configuré et avec un peu d'habitude, il ne vous faudra plus que quelque secondes pour créer une nouvelle base&nbsp;!</p>
 			     
-			   <h3>Import de données dans SpatiaLite ou PostGIS<a class="headerlink" id="IX52" href="#IX52"></a></h3>
+			   <h2>Import de données dans SpatiaLite ou PostGIS<a class="headerlink" id="IX52" href="#IX52"></a></h2>
 			   
 			     <p>Cette étape est presque équivalente pour les 2 logiciels, en passant par le gestionnaire de base de données de QGIS.</p>
 			     <p>Avant d'importer les données, nous allons sélectionner dans la couche Corine Land Cover les entités correspondant au vignoble, pour n'importer que celles-ci. Cette étape pourrait tout à fait être effectuée une fois les données importées dans la base, mais comme cela le temps d'import dans SpatiaLite ou PostGIS sera plus court.</p>
@@ -237,7 +237,7 @@
         	     <p>Nous allons pouvoir rentrer dans le vif du sujet&nbsp;!</p>
 			   
 			   
-			   <h3>Lancer une requête simple<a class="headerlink" id="IX53" href="#IX53"></a></h3>
+			   <h2>Lancer une requête simple<a class="headerlink" id="IX53" href="#IX53"></a></h2>
 			   
 			     <p>A ce stade, si vous n'avez aucune notion de SQL, je vous conseille de d'abord suivre <a href="06_04_req_sql.php" >cette partie</a> sur les requêtes SQL.</p>
 			     <p>Nous allons ici lancer une requête simple dans SpatiaLite ou PostGIS, en guise d'introduction.</p>
@@ -324,13 +324,13 @@ WHERE area_ha &lt; 25</p>
 		        <p>Nous allons maintenant utiliser des requêtes plus complexes pour créer une grille&nbsp;!</p>
    
 			   
-			   <h3>Création d'une grille<a class="headerlink" id="IX54" href="#IX54"></a></h3>
+			   <h2>Création d'une grille<a class="headerlink" id="IX54" href="#IX54"></a></h2>
 			   
 			     <p>Notre première étape consiste à créer une grille ayant la même étendue que notre couche <b>clc00_vignes</b>, avec une maille de 50km. C'est l'équivalent de <a href="09_04_maillage.php#IX42" >cette étape</a> réalisée au chapitre précédent.</p>
 			     
 			     <p>Il existe dans SpatiaLite une fonction spécifique pour créer une grille&nbsp;; la fonction équivalente n'est accessible dans PostGIS qu'à partir de la version 3.1. A moins de disposer de cette version, il faudra donc utiliser une fonction &#171;&nbsp;fait maison&nbsp;&#187;.</p>
 			     
-			     <h4>Créer une grille avec SpatiaLite<a class="headerlink" id="IX54a" href="#IX54a"></a></h4>
+			     <h3>Créer une grille avec SpatiaLite<a class="headerlink" id="IX54a" href="#IX54a"></a></h3>
 			     
 			         <p>Dans SpatiaLite, nous allons pouvoir utiliser la fonction ST_SquareGrid. 4 étapes seront nécessaires&nbsp;:</p>
 			         <ol>
@@ -375,7 +375,7 @@ WHERE area_ha &lt; 25</p>
 			         </div>
 			     
 			     
-			     <h4>Créer une grille avec PostGIS<a class="headerlink" id="IX54b" href="#IX54b"></a></h4>
+			     <h3>Créer une grille avec PostGIS<a class="headerlink" id="IX54b" href="#IX54b"></a></h3>
 			     
 			         <p>Malheureusement, la fonction ST_SquareGrid permettant la génération d'une grille avec PostGIS n'est accessible qu'à partir de la version 3.1. A moins de disposer de cette version, il faudra donc utiliser notre propre fonction&nbsp;!</p>
 			         
@@ -485,7 +485,7 @@ SELECT row_number() over () as gid, geom FROM
         	         <p>A ce stade, si vous avez suivi le <a href="09_04_maillage.php#IX42" >chapitre précédent</a> et créé une grille avec l'outil <b>Créer une grille</b> de QGIS, l'opération paraît bien plus compliquée en SQL. Avec un peu de chance la partie suivante vous donnera l'impression inverse&nbsp;!</p>
                     
 			     
-			   <h3>Union et agrégation<a class="headerlink" id="IX55" href="#IX55"></a></h3>
+			   <h2>Union et agrégation<a class="headerlink" id="IX55" href="#IX55"></a></h2>
 			   
 			     <p>Nous allons maintenant donner à chaque case de cette grille une valeur correspondant à sa surface en vignes, à partir de la couche <em class="data">clc00_vignes</em>.</p>
 			     <p>Cette opération regroupe les 3 parties du chapitre précédent&nbsp;: <a href="09_04_maillage.php#IX43" >union</a>, <a href="09_04_maillage.php#IX44" >recalcul de la surface</a> et <a href="09_04_maillage.php#IX45" >agrégation des données par maille</a> (je vous avais bien dit que le SQL avait des avantages).</p>
@@ -555,9 +555,9 @@ ORDER BY g.gid</p>
 			     <p>Et surtout, il sera très facile de relancer toute cette opération sur d'autres données, comme nous allons le faire ci-dessous.</p>
 			     
 			   
-			   <h3>Évolution temporelle&nbsp;: soustraction de 2 maillages<a class="headerlink" id="IX56" href="#IX56"></a></h3>
+			   <h2>Évolution temporelle&nbsp;: soustraction de 2 maillages<a class="headerlink" id="IX56" href="#IX56"></a></h2>
 			   
-			     <h4>Relancer l'opération sur les données Corine Land Cover 2012<a class="headerlink" id="IX56a" href="#IX56a"></a></h4>
+			     <h3>Relancer l'opération sur les données Corine Land Cover 2012<a class="headerlink" id="IX56a" href="#IX56a"></a></h3>
 			     
 			         <p>Nous avons jusqu'ici travaillé sur les données Corine Land Cover 2000. Nous allons maintenant utiliser les données équivalentes pour l'année 2012, ce qui nous permettra de visualiser l'évolution entre ces 2 années.</p>
 			         <p>Nous allons donc relancer l'opération précédente (union et agrégation) sur la couche CLC 2012.</p>
@@ -607,7 +607,7 @@ ORDER BY g.gid;</p>
 			         <p>Il est possible en SQL d'ajouter des <a class="ext" target="_blank" href="https://sql.sh/cours/commentaires">commentaires</a>, non pris en compte : la ligne doit alors être précédée par 2 tirets. Ceci vous permet d'expliquer vos requêtes, ce qui est toujours utile quand on reprend un travail quelques semaines/mois/années plus tard, ou pour vos collègues.</p>
 			     
 			     
-			     <h4>Soustraire les 2 maillages 2012 et 2000<a class="headerlink" id="IX56b" href="#IX56b"></a></h4>
+			     <h3>Soustraire les 2 maillages 2012 et 2000<a class="headerlink" id="IX56b" href="#IX56b"></a></h3>
 			     
 			         <p>En guise de dernière application pour ce chapitre, nous allons voir 2 manières de visualiser l'évolution de la surface en vignes entre 2000 et 2012&nbsp;:</p>
 			         <ul>

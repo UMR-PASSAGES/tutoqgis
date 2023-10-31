@@ -12,7 +12,7 @@
 		</div>	
 	
 		<div class="main">
-			<h2>V.4  Numériser des lignes</h2>
+			<h1>V.4  Numériser des lignes</h1>
 				<ul class="listetitres">
 					<li><a href="#V41">Création d'une couche de lignes</a></li>
 					<li><a href="#V42">Ajout d'une ligne</a>
@@ -28,7 +28,7 @@
 			<p>Nous avons vu précédemment comment numériser des points. Comment procéder quand le but est de numériser des lignes ? Nous allons numériser des fleuves de la carte de l'île d'Oahu.</p>
 
 			
-			<h3>Création d'une couche de lignes<a class="headerlink" id="V41" href="#V41"></a></h3>
+			<h2>Création d'une couche de lignes<a class="headerlink" id="V41" href="#V41"></a></h2>
 				
 				<div class="manip">
 					<p>Reportez-vous à la <a href="05_01_creation_couche.php">partie V.1</a> pour créer une couche de ligne, en lui donnant :</p>
@@ -40,9 +40,9 @@
 					<p>Vérifiez que cette couche soit bien chargée dans votre projet, ainsi que la carte <em class="data"><a href="donnees/TutoQGIS_05_Numerisation.zip">Oahu_Hawaiian_Islands_1906_wgs84.tif</a></em>.</p>
 				</div>
 			
-			<h3>Ajout d'une ligne<a class="headerlink" id="V42" href="#V42"></a></h3>
+			<h2>Ajout d'une ligne<a class="headerlink" id="V42" href="#V42"></a></h2>
 			
-				<h4>Première ligne<a class="headerlink" id="V42a" href="#V42a"></a></h4>
+				<h3>Première ligne<a class="headerlink" id="V42a" href="#V42a"></a></h3>
 				
     				<div class="manip">
     					<p>Zoomez sur un fleuve, par exemple dans l'ouest de l'île, dans la région de Makaha :</p>
@@ -65,7 +65,7 @@
     					</figure>
     				</div>
 				
-				<h4>Quelques astuces<a class="headerlink" id="V42b" href="#V42b"></a></h4>
+				<h3>Quelques astuces<a class="headerlink" id="V42b" href="#V42b"></a></h3>
 				
 					<ul>
 					<li class="espace">Si pendant la numérisation vous avez des <b>difficultés à voir votre ligne</b> : menu Préférences &#8594; Options &#8594; rubrique Numérisation : réglez l'épaisseur de la ligne, par exemple 2, et la couleur. Pour la 
@@ -80,7 +80,7 @@
 					<li class="espace"><b>Abandonner la ligne en cours :</b> terminez-la avec un clic droit, puis si les fenêtres de saisie d'attributs sont activées cliquez sur annuler, sinon utilisez ctrl + z</li>
 					</ul>
 			
-			<h3>Modification du tracé d'une ligne<a class="headerlink" id="V43" href="#V43"></a></h3>
+			<h2>Modification du tracé d'une ligne<a class="headerlink" id="V43" href="#V43"></a></h2>
 			
 				<p>Il est possible de modifier le tracé d'une ligne existante en déplaçant des sommets, en en rajoutant ou supprimant.</p>
 				

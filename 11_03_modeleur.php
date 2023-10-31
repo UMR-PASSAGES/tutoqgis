@@ -12,7 +12,7 @@
 		</div>
 		
 		<div class="main">
-			<h2>XI.3  Construire et utiliser un modèle</h2>
+			<h1>XI.3  Construire et utiliser un modèle</h1>
 				<ul class="listetitres">
 					<li><a href="#XI31">Création d'un modèle</a>
 						<ul class="listesoustitres">
@@ -55,9 +55,9 @@
 					</a>
 				</figure>
 				
-				<h3>Création d'un modèle<a class="headerlink" id="XI31" href="#XI31"></a></h3>
+				<h2>Création d'un modèle<a class="headerlink" id="XI31" href="#XI31"></a></h2>
 				
-					<h4>Création du premier paramètre en entrée&nbsp;: couche à découper<a class="headerlink" id="XI31a" href="#XI31a"></a></h4>
+					<h3>Création du premier paramètre en entrée&nbsp;: couche à découper<a class="headerlink" id="XI31a" href="#XI31a"></a></h3>
 					
 						<div class="manip">
 							<p>Dans l'onglet <b>Entrées</b> dans la partie gauche de la fenêtre, double-cliquez sur <b>Couche vecteur</b>&nbsp;:</p>
@@ -88,7 +88,7 @@
 						</div>
 						
 						
-					<h4>Création du deuxième paramètre en entrée&nbsp;: masque de découpe<a class="headerlink" id="XI31b" href="#XI31b"></a></h4>
+					<h3>Création du deuxième paramètre en entrée&nbsp;: masque de découpe<a class="headerlink" id="XI31b" href="#XI31b"></a></h3>
 						
 						<div class="manip">
 							<p>Dans l'onglet Entrées, double-cliquez à nouveau sur <b>Couche vecteur</b> :</p>
@@ -111,7 +111,7 @@
 						</div>
 						
 					
-					<h4>Création du premier algorithme&nbsp;: découpage<a class="headerlink" id="XI31c" href="#XI31c"></a></h4>
+					<h3>Création du premier algorithme&nbsp;: découpage<a class="headerlink" id="XI31c" href="#XI31c"></a></h3>
 						
 						<div class="manip">
 							<p>Dans l'onglet <b>Algorithmes</b>, rubrique <b>Recouvrement de vecteur</b> &#8594; double-cliquez sur l'outil <b>Couper</b> :</p>
@@ -140,7 +140,7 @@
 						</figure>
 						
 					
-					<h4>Création du second algorithme&nbsp;: modification du SCR<a class="headerlink" id="XI31d" href="#XI31d"></a></h4>
+					<h3>Création du second algorithme&nbsp;: modification du SCR<a class="headerlink" id="XI31d" href="#XI31d"></a></h3>
 						
 						<div class="manip">
 							<p>Toujours dans la fenêtre du modeleur de traitement, 
@@ -169,9 +169,9 @@
 							</a>
 						</figure>
 				
-				<h3>Enregistrement et documentation d'un modèle<a class="headerlink" id="XI32" href="#XI32"></a></h3>
+				<h2>Enregistrement et documentation d'un modèle<a class="headerlink" id="XI32" href="#XI32"></a></h2>
 				
-				    <h4>Enregistrer un modèle<a class="headerlink" id="XI32a" href="#XI32a"></a></h4>
+				    <h3>Enregistrer un modèle<a class="headerlink" id="XI32a" href="#XI32a"></a></h3>
 				    
     					<p>Comment faire maintenant pour sauvegarder notre modèle&nbsp;?</p>
     					
@@ -192,7 +192,7 @@
     						<p>Notez qu'il va être enregistré dans le répertoire par défaut des modèles : processing/models dans le dossier qgis, et qu'il possède l'extension <em>.model3</em> (pour QGIS 3).</p>
     					</div>
     						
-    				<h4>Documenter un modèle<a class="headerlink" id="XI32b" href="#XI32b"></a></h4>
+    				<h3>Documenter un modèle<a class="headerlink" id="XI32b" href="#XI32b"></a></h3>
     				
     				    <p>Si ce modèle est destiné à être utilisé par d'autres personnes, ou tout simplement si vous comptez vous en servir régulièrement, documenter un peu ce modèle sera très pratique. Il s'agit en fait de <b>rédiger l'aide de l'outil</b>, telle qu'on peut la voir dans la partie droite de la fenêtre pour les outils QGIS.</p>
     				    <figure>
@@ -229,9 +229,9 @@
     					<p>Votre modèle est fini et possède même une aide... C'est le moment de le tester&nbsp;!</p>
 						
 				
-				<h3>Application<a class="headerlink" id="XI33" href="#XI33"></a></h3>
+				<h2>Application<a class="headerlink" id="XI33" href="#XI33"></a></h2>
 				
-					<h4>Découpage et reprojection d'une couche<a class="headerlink" id="XI33a" href="#XI33a"></a></h4>
+					<h3>Découpage et reprojection d'une couche<a class="headerlink" id="XI33a" href="#XI33a"></a></h3>
 					
 						<p>L'objectif est de découper la couche de routes par la commune, pour ne garder que les routes à l'intérieur de cette commune, la couche obtenue devant être en WGS84.</p>
 						
@@ -261,7 +261,7 @@
 							</figure>
 						</div>
 						
-					<h4>Découpage et reprojection de plusieurs couches (utilisation &#171; par lot &#187;)<a class="headerlink" id="XI33b" href="#XI33b"></a></h4>
+					<h3>Découpage et reprojection de plusieurs couches (utilisation &#171; par lot &#187;)<a class="headerlink" id="XI33b" href="#XI33b"></a></h3>
 				
 						<p>Le but est ici de découper et reprojeter plusieurs couches, sans avoir à lancer plusieurs fois le modèle.</p>
 						<div class="manip">

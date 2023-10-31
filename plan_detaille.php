@@ -13,7 +13,7 @@
 		
 		<div class="main">
 		
-			<h2>Plan détaillé</h2>
+			<h1>Plan détaillé</h1>
 			
 				<ol class="withroman">
 				

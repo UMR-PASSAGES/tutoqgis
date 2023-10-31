@@ -12,18 +12,18 @@
 		</div>	
 	
 		<div class="main">
-			<h2>II.1  Introduction à la géodésie</h2>
+			<h1>II.1  Introduction à la géodésie</h1>
 				<ul class="listetitres">
 					<li><a href="#II11">Bref historique</a></li>
 					<li><a href="#II12">Deux notions préliminaires : géoïde et ellipsoïde</a></li>
 				</ul>
 				<br>		
 			
-			<h3>Bref historique<a class="headerlink" id="II11" href="#II11"></a></h3>
+			<h2>Bref historique<a class="headerlink" id="II11" href="#II11"></a></h2>
 				<p>La géodésie est la science qui étudie la forme et les dimensions de la Terre, en tenant compte de son champ de pesanteur.</p>
 				<p>La géodésie est une science ancienne ; on attribue au grec <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/%C3%89ratosth%C3%A8ne" >Eratosthène</a> (276 à 194 av. JC) la première mesure de la circonférence de la Terre, qu'il évalua à environ 39 375 km. Cette mesure s'est révélée proche de la réalité puisque les estimations actuelles sont d'environ 40 075 km.</p>
 				
-			<h3>Deux notions préliminaires : géoïde et ellipsoïde<a class="headerlink" id="II12" href="#II12"></a></h3>
+			<h2>Deux notions préliminaires : géoïde et ellipsoïde<a class="headerlink" id="II12" href="#II12"></a></h2>
 				<p>La surface de la Terre est très irrégulière et complexe, on peut la modéliser de différentes manières.</p>
 				<p>La <b>sphère</b> est le modèle le plus simple.</p>
 				<p>L'<b>ellipsoïde</b> est une sphère aplatie, plus simple à modéliser. On le définit généralement par ses demis-axes (<b><em>a</em></b>,  <b><em>b</em></b> et  <b><em>c</em></b>) et son centre (<b><em>O</em></b>).</p>

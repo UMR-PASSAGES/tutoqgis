@@ -12,7 +12,7 @@
 		</div>
 
 		<div class="main">
-			<h2>I.2  Manipuler de l'information géographique</h2>
+			<h1>I.2  Manipuler de l'information géographique</h1>
 				<ul class="listetitres">
 					<li><a href="#I21">Ajout et suppression d'une couche de données vecteur</a>
 					   <ul class= "listesoustitres">
@@ -33,9 +33,9 @@
 				</ul>
 
 				
-				<h3>Ajout et suppression d'une couche de données vecteur<a class="headerlink" id="I21" href="#I21"></a></h3>
+				<h2>Ajout et suppression d'une couche de données vecteur<a class="headerlink" id="I21" href="#I21"></a></h2>
 				
-				    <h4>Par le menu<a class="headerlink" id="I21a" href="#I21a"></a></h4>
+				    <h3>Par le menu<a class="headerlink" id="I21a" href="#I21a"></a></h3>
 				
     					<div class="manip">
     						<p>Lancez QGIS. Depuis QGIS 3, il existe une interface unique pour ajouter des couches vecteurs, rasters etc. : le gestionnaire des sources de données.</p>
@@ -86,7 +86,7 @@
     					</div>
     						<p>Cette manipulation enlève seulement la couche de QGIS&#160;; elle reste présente sur votre ordinateur, prête à être ajoutée à nouveau dans QGIS.</p>
     						
-    				<h4>Par l'explorateur de fichiers<a class="headerlink" id="I21b" href="#I21b"></a></h4>
+    				<h3>Par l'explorateur de fichiers<a class="headerlink" id="I21b" href="#I21b"></a></h3>
     				
     				    <div class="manip">
     					
@@ -105,7 +105,7 @@
                             </figure>
     					</div>
     					
-				<h3>L'interface de QGIS<a class="headerlink" id="I22" href="#I22"></a></h3>
+				<h2>L'interface de QGIS<a class="headerlink" id="I22" href="#I22"></a></h2>
 					
 					<figure>
 						<a href="illustrations/1_2_interface.jpg" >
@@ -131,7 +131,7 @@
 					</div>
 	
 	
-				<h3>Propriétés d'une couche vecteur<a class="headerlink" id="I23" href="#I23"></a></h3>
+				<h2>Propriétés d'une couche vecteur<a class="headerlink" id="I23" href="#I23"></a></h2>
 						
 					<div class="manip">
 						<p>Pour accéder aux propriétés de la couche, clic-droit sur le nom de la couche dans la table des matières,
@@ -149,7 +149,7 @@
 						<li>l'emplacement de la couche, dans la rubrique <b>Information</b></li>
 					</ol>
 					
-					<h4>Changer la représentation d'une couche<a class="headerlink" id="I23a" href="#I23a"></a></h4>
+					<h3>Changer la représentation d'une couche<a class="headerlink" id="I23a" href="#I23a"></a></h3>
 					
     					<div class="manip">
     						<p>Dans les propriétés de la couche, rubrique <b>Symbologie</b> :</p>
@@ -179,7 +179,7 @@
     						</figure>
     					</div>
 					
-					<h4>Connaître l'emplacement d'une couche<a class="headerlink" id="I23b" href="#I23b"></a></h4>
+					<h3>Connaître l'emplacement d'une couche<a class="headerlink" id="I23b" href="#I23b"></a></h3>
 					
 						<div class="manip">			
 							<div class="question">
@@ -196,7 +196,7 @@
 						</div>
 						<p class="note">Vous pouvez aussi vérifier l'emplacement d'une couche en passant simplement la souris sur son nom dans le panneau des couches !</p>
 						
-					<h4>Filtrer les données<a class="headerlink" id="I23c" href="#I23c"></a></h4>
+					<h3>Filtrer les données<a class="headerlink" id="I23c" href="#I23c"></a></h3>
 					
 					   <p>Le logiciel offre également la possibilité de de <b>filtrer les données</b>. Cette opération ne modifie pas les données elles-mêmes, mais seules les données filtrées seront affichées aussi bien sur la carte que dans la table attributaire. Toutes les opérations effectuées sur la couche ne le seront que sur les données filtrées.</p>
 					   <p>Ceci est très utile pour masquer temporairement certaines données. Si vous souhaitez vraiment ne travailler que sur une partie des données, il est peut-être plus clair de créer une nouvelle couche contenant uniquement les données étudiées.</p>
@@ -228,7 +228,7 @@
 					   <p class="note">Le filtres est également accessible à partir des propriétés de la couche &#8594; rubrique Source &#8594; bouton Constructeur de requête tout en bas de la fenêtre.</p>
 						
 						
-				<h3>Ajout d'une couche raster<a class="headerlink" id="I24" href="#I24"></a></h3>		
+				<h2>Ajout d'une couche raster<a class="headerlink" id="I24" href="#I24"></a></h2>		
 				
 					<div class="manip">
 						<p>Comme lors de l'ajout d'une couche vecteur, vous avez plusieurs possibilités pour ajouter une couche raster. Par exemple, en utilisant le <b>gestionnaire des sources de données :</b></p>
@@ -277,7 +277,7 @@
 						</div>
 					
 				
-				<h3>Propriétés d'une couche raster : modifier le style<a class="headerlink" id="I25" href="#I25"></a></h3>	
+				<h2>Propriétés d'une couche raster : modifier le style<a class="headerlink" id="I25" href="#I25"></a></h2>	
 					
 					<div class="manip">
 						<p>Comme pour accéder aux propriétés d'une couche vecteur, clic-droit sur le nom de la couche dans la table des matières, <b>Propriétés</b> (ou bien double-clic sur le nom de la couche).</p>

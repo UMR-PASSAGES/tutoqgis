@@ -12,7 +12,7 @@
 		</div>	
 	
 		<div class="main">
-			<h2>II.4  Passer d'un système de coordonnées à un autre</h2>
+			<h1>II.4  Passer d'un système de coordonnées à un autre</h1>
 				<ul class="listetitres">
 					<li><a href="#II41">Modifier le SCR du projet</a></li>
 					<li><a href="#II42">Modifier le SCR d'une couche</a></li>
@@ -21,7 +21,7 @@
 				</ul>
 	
 				
-			<h3>Modifier le SCR du projet<a class="headerlink" id="II41" href="#II41"></a></h3>
+			<h2>Modifier le SCR du projet<a class="headerlink" id="II41" href="#II41"></a></h2>
 			
 				<p>Vous avez pu constater dans la partie <a href="02_03_couches_projets.php">II.3 Couches et projets : à chacun son système</a> que les couches d'un projet sont affichées dans le SCR du projet. Comment modifier le SCR du projet pour afficher les couches dans le SCR de votre choix&nbsp;?</p>
 				<p>Nous allons modifier le SCR du projet <em class="data">monde.qgz</em> du WGS84 vers <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Projection_de_Robinson" >Robinson</a> (code EPSG 53030).</p>
@@ -83,7 +83,7 @@
 				<p class="attention">Vous avez pu constater que modifier le SCR du projet ne modifie pas les données. Cette manipulation permet de visualiser les données dans le SCR de votre choix, à des fins cartographiques par exemple.</p>
 			
 			
-			<h3>Modifier le SCR d'une couche<a class="headerlink" id="II42" href="#II42"></a></h3>
+			<h2>Modifier le SCR d'une couche<a class="headerlink" id="II42" href="#II42"></a></h2>
 			
 				<p>Nous avons vu que QGIS gère le cas où plusieurs couches dans différents SCR sont affichés dans un même projet. Cependant, certaines manipulations nécessitent que toutes les couches soient dans le même SCR. Par ailleurs, par souci de clarté et pour éviter les erreurs, on peut vouloir travailler avec des couches dans le même SCR.</p>
 				<p>Pour toutes ces raisons, il est utile de savoir modifier le SCR d'une couche.</p>
@@ -132,7 +132,7 @@
 				<p class="attention">Modifier le SCR d'une couche crée une nouvelle couche. Cette manipulation est utile pour pouvoir effectuer ensuite des traitements sur les données, ou pour éviter toute source de confusion en ayant uniquement des données dans le même SCR.</p>
 				
 				
-			<h3>Redéfinir le SCR d'une couche<a class="headerlink" id="II43" href="#II43"></a></h3>
+			<h2>Redéfinir le SCR d'une couche<a class="headerlink" id="II43" href="#II43"></a></h2>
 				
 				<p>Il existe une autre manipulation souvent confondue avec le fait de modifier le SCR d'une couche : <b>redéfinir le SCR d'une couche</b>. Dans ce cas, les coordonnées ne sont pas recalculées et aucune nouvelle couche n'est créée, le SCR associé à la couche est simplement modifié.</p>
 				<p>Pour reprendre l'exemple utilisé plus haut d'une couche en WGS84 contenant un point correspondant à la ville de Paris de coordonnées (48,89 2,35), si le SCR de cette couche est redéfini en RGF93 / Lambert-93, les coordonnées du point resteront (48,89 2,35) mais ces coordonnées seront renseignées comme étant mesurées dans le SCR RGF93 / Lambert-93.</p>
@@ -171,7 +171,7 @@
 					<li>Idem que ci-dessus mais ne crée pas de nouvelle couche, uniquement pour les shapefiles : boîte à outils &#8594; Définir la projection du fichier shapefile</li>
 					</ul>
 				
-			<h3>Modifier et redéfinir le SCR&nbsp;: à ne pas confondre&nbsp;!<a class="headerlink" id="II44" href="#II44"></a></h3>
+			<h2>Modifier et redéfinir le SCR&nbsp;: à ne pas confondre&nbsp;!<a class="headerlink" id="II44" href="#II44"></a></h2>
 				
 				<p>La confusion entre les 2 manipulations <b>modifier le SCR</b> (outil reprojeter) et <b>(re)définir le SCR</b> (dans les propriétés de la couche) est une source d'erreur très courante&nbsp;!</p>
 				

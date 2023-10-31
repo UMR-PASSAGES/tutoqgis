@@ -12,7 +12,7 @@
 		</div>	
 	
 		<div class="main">
-			<h2>IX.4  Un exemple d'application&nbsp;: créer un maillage</h2>
+			<h1>IX.4  Un exemple d'application&nbsp;: créer un maillage</h1>
 				<ul class="listetitres">
 					<li><a href="#IX41">Principe</a></li>
 					<li><a href="#IX42">Création d'une grille</a></li>
@@ -38,7 +38,7 @@
     			<p class="attention">Pour ce chapitre et le suivant, vous pouvez soit télécharger les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a>&nbsp;: <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip" >Données Métropole 2000</a> puis les filtrer pour ne garder que les vignes, comme détaillé dans le tutoriel, ou bien utiliser les <a href="telechargement.php">données en téléchargement</a> déjà filtrées (pour un téléchargement moins lourd).</p>
     
     			
-    		    <h3>Principe<a class="headerlink" id="IX41" href="#IX41"></a></h3>
+    		    <h2>Principe<a class="headerlink" id="IX41" href="#IX41"></a></h2>
     			
         		 <p>Pour bien comprendre la manip, nous allons commencer par créer un maillage en utilisant les outils QGIS.</p>
         		 <p>Nous partirons des données Corine Land Cover (CLC) d'occupation du sol, en filtrant les données pour ne garder que celles correspondant au vignoble&nbsp;:
@@ -67,7 +67,7 @@
         		 
         		 <p>Si ça n'est pas clair, ne vous inquiétez pas, tout devrait s'éclaircir par la pratique&nbsp;!</p>
         			 
-        	   <h3>Création d'une grille<a class="headerlink" id="IX42" href="#IX42"></a></h3>
+        	   <h2>Création d'une grille<a class="headerlink" id="IX42" href="#IX42"></a></h2>
         		  
     		      <p>Première étape : créer une grille. Elle devra avoir la même emprise que la couche de départ, et pour que les temps de calcul soient raisonnables nous utiliserons une taille de maille de 50 km.</p>
     		      
@@ -120,7 +120,7 @@
     		      
     		      <p>Notre but est de récupérer pour chaque case la surface en vigne correspondante. Nous allons voir maintenant que pour cela, l'union fait la force&nbsp;! (et l'agrégation aussi).</p>
     			
-    		   <h3>Union&nbsp;!<a class="headerlink" id="IX43" href="#IX43"></a></h3>
+    		   <h2>Union&nbsp;!<a class="headerlink" id="IX43" href="#IX43"></a></h2>
     			 
     		     <p>Qu'est-ce que l'union&nbsp;? Il s'agit d'une opération du même type que l'intersection, mettant en jeu 2 couches. A la différence de l'intersection où seules les parties communes aux 2 couches sont gardées, on récupère après une union les parties communes mais aussi les parties présentes dans une seule des couches.</p>
     		     <p>La couche résultat est une couche &#171;&nbsp;à plat&nbsp;&#187;, sans superposition.</p>
@@ -192,7 +192,7 @@
     			     <p>Les champs des 2 couches en entrée sont présents.</p>
     			  </div>
         			  
-        	   <h3>Recalcul de la surface<a class="headerlink" id="IX44" href="#IX44"></a></h3>
+        	   <h2>Recalcul de la surface<a class="headerlink" id="IX44" href="#IX44"></a></h2>
         			     
     		     <p>Notre but étant de calculer la surface en vigne par maille, nous allons mettre à jour le champ AREA_HA. En effet, les valeurs contenues dans ce champ correspondent à la surface des polygones avant découpage et ne sont donc pas à jour.</p>
     		     <p>Il faut donc recalculer la surface de chaque polygone, et mettre une surface nulle pour les polygones ne correspondant pas à la vigne (sélectionné en jaune ci-dessous par exemple)&nbsp;:</p>
@@ -225,7 +225,7 @@
     		     <p>Il ne nous reste plus qu'à agréger cette surface par maille&nbsp;!</p>
     			     
     			 
-    		   <h3>Agrégation des données par maille<a class="headerlink" id="IX45" href="#IX45"></a></h3>
+    		   <h2>Agrégation des données par maille<a class="headerlink" id="IX45" href="#IX45"></a></h2>
     			 
     		     <p>Cette opération consiste à <b>additionner les surfaces en vignes par maille pour récupérer la surface totale en vigne pour chaque maille</b>. La couche résultat aura donc la même géométrie que la grille, mais avec en attribut pour chaque case la surface en vigne.</p>
     		     <p>Pour le logiciel, cette opération correspond à <b>fusionner toutes les entités ayant la même valeur pour le champ id</b> (identifiant de la maille) en <b>récupérant pour les entités fusionnées la somme des valeurs du champ AREA_HA</b> (surface en vignes).</p>
@@ -273,7 +273,7 @@
     		     <p>Bien sûr, le résultat serait différent avec une autre taille de maille. La répartition n'est pas la même selon l'échelle à laquelle on travaille.</p>
     			 
     			 
-    		   <h3>Rastérisation<a class="headerlink" id="IX46" href="#IX46"></a></h3>
+    		   <h2>Rastérisation<a class="headerlink" id="IX46" href="#IX46"></a></h2>
     			 
     		     <p>On pourrait s'arrêter là... Mais nous allons faire une étape de plus, pour transformer notre couche de vecteur en couche raster, où 1 maille = 1 pixel.</p>
     		     <p>Pourquoi cette opération&nbsp;? Les données raster sont moins lourdes, et nous n'aurons pas de perte de précision puisque chaque maille correspondra à un pixel. Nous pourrons ensuite très facilement faire des opérations telles que soustraire 2 maillages pour 2 années différentes afin de voir l'évolution entre ces 2 années.</p>

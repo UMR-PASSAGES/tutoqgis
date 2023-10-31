@@ -13,7 +13,7 @@
 		
 		<div class="main">
 		
-			<h2>XII.1  Introduction à la télédétection</h2>
+			<h1>XII.1  Introduction à la télédétection</h1>
 			
 			    <ul class="listetitres">
   					<li><a href="#XII11">Données utilisées : image Sentinel-2</a>
@@ -41,7 +41,7 @@
               <li>interpréter une image satellitaire, extraire de l’information spatiale et spectrale</li>
           </ul>
                 
-          <h3>Données utilisées : image Sentinel-2<a class="headerlink" id="XII11" href="#XII11"></a></h3>
+          <h2>Données utilisées : image Sentinel-2<a class="headerlink" id="XII11" href="#XII11"></a></h2>
           
               <p>L'image que nous allons utiliser ici est une <b>image <a target="_blank" class="ext" href="https://fr.wikipedia.org/wiki/Sentinel-2">Sentinel-2</a> acquise le 17 août 2021</b>. Nous allons commencer par essayer de répondre à 3 questions :</p>
               
@@ -51,7 +51,7 @@
                   <li><b>Quand&nbsp;?</b> Quelle est la date de prise de vue, l'heure, l'hémisphère...</li>
               </ul>
               
-              <h4>Comment&nbsp;? Type de satellite et de produit<a class="headerlink" id="XII11a" href="#XII11a"></a></h4>
+              <h3>Comment&nbsp;? Type de satellite et de produit<a class="headerlink" id="XII11a" href="#XII11a"></a></h3>
               
                   <p>Il s'agit d'une image <a target="_blank" class="ext" href="https://fr.wikipedia.org/wiki/Sentinel-2">Sentinel-2</a> de <a target="_blank" class="ext" href="https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-2-msi/product-types">niveau 1C</a>, qui contient donc les valeurs de <b>réflectance</b> obtenues en haut de l'atmosphère (&#171;&nbsp;Top Of Atmosphere&nbsp;&#187; ou TOA).</p>
                   
@@ -107,7 +107,7 @@
                   <p class="keskonfai">Mais du coup on n'est pas déjà sur des valeurs de réflectance TOA ?</p>
                     
                 
-              <h4>Où&nbsp;? Géométrie des images Sentinel-2<a class="headerlink" id="XII11b" href="#XII11b"></a></h4>
+              <h3>Où&nbsp;? Géométrie des images Sentinel-2<a class="headerlink" id="XII11b" href="#XII11b"></a></h3>
                 
                 <figure>
       						<a href="illustrations/12_01_grille_sentinel.jpg" >
@@ -140,7 +140,7 @@
                 
                 <p>Nous allons voir dans la suite de ce chapitre les étapes 1 et 3 : téléchargement et visualisation.</p>
           
-          <h3>Installation de l'extension SCP<a class="headerlink" id="XII12" href="#XII12"></a></h3>
+          <h2>Installation de l'extension SCP<a class="headerlink" id="XII12" href="#XII12"></a></h2>
           
             <p>L'extension QGIS <a class="ext" target="_blank" href="https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html">SCP : Semi-Automatic Classification Plugin</a> est développée et maintenue par Luca Congedo. C'est un outil très complet, presque un logiciel dans le logiciel, qui permet la classification supervisée d'images satellitaires, mais aussi leur téléchargement, pré-traitement et post-traitement.</p>
             <p>Cette extension dispose d'un <a class="ext" target="_blank" href="https://readthedocs.org/projects/semiautomaticclassificationmanual-fr/downloads/pdf/latest/" >manuel</a> également très complet, utile notamment en cas de problème lors de l'installation.</p>
@@ -170,7 +170,7 @@
   					</figure>
   					
   					
-  				<h3>Téléchargement des données avec SCP<a class="headerlink" id="XII13" href="#XII13"></a></h3>
+  				<h2>Téléchargement des données avec SCP<a class="headerlink" id="XII13" href="#XII13"></a></h2>
           
             <p>SCP offre la possibilité de télécharger des images gratuites (Sentinel, Landsat,etc.) sans avoir besoin de se rendre sur les géoportails. Pour cela, il faut au préalable avoir un compte sur ces sites (identifiant et mot de passe).</p>
             <p>Il faudra également définir une zone géographique et une période d'acquisition.</p>
@@ -178,7 +178,7 @@
             
             <p class="keskonfai">Est-ce qu'on montre ici commment télécharger une image pas à pas ? Puis comment fusionner les bandes ?</p>
               
-          <h3>Visualisation et présentation des images<a class="headerlink" id="XII14" href="#XII14"></a></h3> 
+          <h2>Visualisation et présentation des images<a class="headerlink" id="XII14" href="#XII14"></a></h2> 
                 
             <div class="manip">
               <p>Ouvrez un nouveau projet QGIS, ajoutez l'image Sentinel-2 <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>.</p>
@@ -268,7 +268,7 @@
 					   </tr>
             </table>
             
-            <h4>Affichage d'une image en niveau de gris<a class="headerlink" id="XII14a" href="#XII14a"></a></h4> 
+            <h3>Affichage d'une image en niveau de gris<a class="headerlink" id="XII14a" href="#XII14a"></a></h3> 
             
               <div class="manip">
                 <p>Par défaut, si on charge dans QGIS un raster avec plusieurs bandes, les 3 premières bandes sont affichées dans les canaux rouge, vert et bleu. Si on veut afficher une seule bande spectrale, par exemple celle du rouge (bande 4)&nbsp;:</p>
@@ -332,7 +332,7 @@
     						<p>Il est possible d'exporter ce graphique au format image (JPG, PNG...).</p>
               </div>
               
-            <h4>Affichage d'une composition colorée<a class="headerlink" id="XII14b" href="#XII14b"></a></h4>
+            <h3>Affichage d'une composition colorée<a class="headerlink" id="XII14b" href="#XII14b"></a></h3>
             
               <p>Dans une <b>composition colorée</b>, on associe aux trois couleurs primaire (synthèse additive), le bleu, le vert et le rouge, trois bandes spectrales d’une image multispectrale.</p>
               <p>Selon le site <a class="ext" target="_blank" href="https://www.123couleurs.fr/">123couleurs</a> : &#171;&nbsp;La <b>synthèse additive</b> correspond aux mélanges de couleurs que l’on obtient quand, en partant de l’absence de lumière (le « NOIR »), on allume ensemble plusieurs sources de lumière colorées. Le terme additif vient du fait que les mélanges résultent d’une addition de lumières colorées.&nbsp;&#187;</p>
