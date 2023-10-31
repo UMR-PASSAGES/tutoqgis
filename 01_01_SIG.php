@@ -5,11 +5,6 @@
 	<?php include('menus_horizontaux.inc.php'); ?>
 	
 	<div id="container_main_sidebar">
-
-		<div class="backgrounds">
-			<div class="main"></div>
-			<div class="sidebar"></div>
-		</div>
 		
 		<div class="main">
 			<h1>I.1  Qu'est-ce qu'un SIG ? (un peu de théorie...)</h1>
@@ -32,13 +27,13 @@
 				</ul>
 				
 				
-				<h1>Définitions<a class="headerlink" id="I11" href="#I11"></a></h1>
+				<h2>Définitions<a class="headerlink" id="I11" href="#I11"></a></h2>
 				
-					<h2>Qu'est-ce que la géomatique ?<a class="headerlink" id="I11a" href="#I11a"></a></h2>
+					<h3>Qu'est-ce que la géomatique ?<a class="headerlink" id="I11a" href="#I11a"></a></h3>
 						<p>La géomatique est l'ensemble des techniques de traitement informatique des données géographiques (Journal Officiel, 1994). Elle regroupe donc les outils et méthodes permettant l'acquisition, le stockage, le traitement et la diffusion de données à référence spatiale.</p>
 					
 					
-					<h2>Qu'est-ce qu'un Système d'Information Géographique ?<a class="headerlink" id="I11b" href="#I11b"></a></h2>
+					<h3>Qu'est-ce qu'un Système d'Information Géographique ?<a class="headerlink" id="I11b" href="#I11b"></a></h3>
 						<p>C'est un système permettant de gérer des informations localisées géographiquement. Ce système est composé de :</p>
 							<ul>
 								<li>données</li>
@@ -50,9 +45,9 @@
 						<p>Par abus de langage, un SIG signifie souvent aujourd'hui le logiciel utilisé dans un SIG.</p>
 						
 						
-				<h1>Les données des SIG<a class="headerlink" id="I12" href="#I12"></a></h1>
+				<h2>Les données des SIG<a class="headerlink" id="I12" href="#I12"></a></h2>
 				
-					<h2>Une organisation par couches<a class="headerlink" id="I12a" href="#I12a"></a></h2>
+					<h3>Une organisation par couches<a class="headerlink" id="I12a" href="#I12a"></a></h3>
 						<p>Les données sont organisées sous forme de couches superposables.</p>
 						<figure>
 							<a href="illustrations/1_1_couches.svg" >
@@ -75,7 +70,7 @@
 						</div>
 						
 						
-					<h2>Deux grands types de données : vecteur et raster<a class="headerlink" id="I12b" href="#I12b"></a></h2>
+					<h3>Deux grands types de données : vecteur et raster<a class="headerlink" id="I12b" href="#I12b"></a></h3>
 						<p>On distingue généralement deux types de données : <b>vecteur et raster</b>.</p>
 						<figure>
 							<a href="illustrations/1_1_vecteur.jpg" >
@@ -98,7 +93,7 @@
 						<p>Certains formats, comme le <a class="ext" target="_blank" href="https://www.geopackage.org/" >GeoPackage</a>, peuvent contenir des données vecteur ou raster.</p>
 						
 						
-					<h2>Les données vecteur : à chaque géométrie ses attributs (et vice-versa)<a class="headerlink" id="I12c" href="#I12c"></a></h2>
+					<h3>Les données vecteur : à chaque géométrie ses attributs (et vice-versa)<a class="headerlink" id="I12c" href="#I12c"></a></h3>
 						<p>On distingue deux composantes dans les données utilisées dans un SIG : spatiale et attributaire. La <b>composante spatiale</b> est constituée de la localisation et la géométrie d'un objet, donc de ses coordonnées. La <b>composante attributaire</b> est constituée des données qui y sont associées. Par exemple, la composante spatiale d'un département sera le polygone représentant ce département, et sa composante attributaire sera son nom, son code, sa population...</p>
 						<figure>					
 							<a href="illustrations/1_1_spatial_attrib.jpg" >					
@@ -132,7 +127,7 @@
 						</div>
 						
 						
-					<h2>Des données sur les données : les métadonnées<a class="headerlink" id="I12d" href="#I12d"></a></h2>
+					<h3>Des données sur les données : les métadonnées<a class="headerlink" id="I12d" href="#I12d"></a></h3>
 						<p>Afin de savoir quelles sont les utilisations que l'on peut faire d'une donnée, il est indispensable de posséder des informations sur la manière dont a été fabriquée cette donnée, sa date, ses limites éventuelles d'utilisation... <b>Ces « données sur la donnée » constituent ce qu'on appelle des métadonnées</b>. Elles peuvent se présenter sous diverses formes : un simple fichier texte, une fiche PDF...</p>
 						<p class="manip">Vous pouvez voir ici les métadonnées de la couche Corine Land Cover : <a class="ext" target="_blank" href="http://www.geocatalogue.fr/Detail.do?id=7665">www.geocatalogue.fr/Detail.do?id=7665</a></p>
 						<p>Il existe aujourd'hui des normes régissant la manière dont sont construites ces métadonnées : nombres de rubriques présentes, choix des rubriques... Ceci permet de construire des catalogues de métadonnées, et facilite <i>in fine</i> l'échange de données entre organismes.</p>
@@ -140,7 +135,7 @@
 						<p class="note">Le géocatalogue est mis en oeuvre par le <a class="ext" target="_blank" href="http://www.brgm.fr/">BRGM</a>, la visualisation étant opérée par l'<a class="ext" target="_blank" href="http://www.ign.fr/">IGN</a> au travers du <a class="ext" target="_blank" href="http://www.geoportail.gouv.fr/">géoportail</a>.</p>
 						
 						
-					<h2>A quoi sert un SIG ?<a class="headerlink" id="I12e" href="#I12e"></a></h2>
+					<h3>A quoi sert un SIG ?<a class="headerlink" id="I12e" href="#I12e"></a></h3>
 						<p>Un SIG permet de saisir, représenter, interroger, et mettre à jour l’information géographique. Il peut notamment répondre aux questions suivantes : </p>
 							<ul>
 								<li>où : localisation, étendue</li>

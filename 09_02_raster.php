@@ -5,11 +5,7 @@
 	<?php include('menus_horizontaux.inc.php'); ?>
 	
 	<div id="container_main_sidebar">
-
-		<div class="backgrounds">
-			<div class="main"></div>
-			<div class="sidebar"></div>
-		</div>	
+	
 	
 		<div class="main">
 			<h1>IX.2  Analyse spatiale : quelques exemples d'opérations sur des données raster</h1>

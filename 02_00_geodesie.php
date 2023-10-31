@@ -5,11 +5,6 @@
 	<?php include('menus_horizontaux.inc.php'); ?>
 	
 	<div id="container_main_sidebar">
-	
-		<div class="backgrounds">
-			<div class="main"></div>
-			<div class="sidebar"></div>
-		</div>
 		
 		<div class="main">
 			<h1>II.  Géodésie</h1>

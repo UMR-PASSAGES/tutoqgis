@@ -6,11 +6,6 @@
 	
 	<div id="container_main_sidebar">
 
-		<div class="backgrounds">
-			<div class="main"></div>
-			<div class="sidebar"></div>
-		</div>
-	
 		<div class="main">
 			<h1>I.3  Formats de données SIG</h1>
 				<ul class="listetitres">

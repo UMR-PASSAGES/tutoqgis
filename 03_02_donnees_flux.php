@@ -6,10 +6,6 @@
 	
 	<div id="container_main_sidebar">
 
-		<div class="backgrounds">
-			<div class="main"></div>
-			<div class="sidebar"></div>
-		</div>	
 	
 		<div class="main">
 			<h1>III.2  Ajout de données via des flux</h1>

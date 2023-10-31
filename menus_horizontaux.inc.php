@@ -1,4 +1,4 @@
-<div id="wrapdanswrap">
+<div id="menus_horiz">
 
 	<!-- titre -->
 	<div id="header">

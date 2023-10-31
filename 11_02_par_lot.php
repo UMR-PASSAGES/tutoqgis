@@ -6,10 +6,6 @@
 	
 	<div id="container_main_sidebar">
 
-		<div class="backgrounds">
-			<div class="main"></div>
-			<div class="sidebar"></div>
-		</div>
 		
 		<div class="main">
 			<h1>XI.2  Exécuter un outil &#171; par lot &#187;</h1>

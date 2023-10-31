@@ -5,11 +5,7 @@
 	<?php include('menus_horizontaux.inc.php'); ?>
 	
 	<div id="container_main_sidebar">
-
-		<div class="backgrounds">
-			<div class="main"></div>
-			<div class="sidebar"></div>
-		</div>	
+	
 	
 		<div class="main">
 			<h1>VI.2  Sélectionner des éléments en fonction de leur position par rapport à d'autres : requêtes spatiales</h1>

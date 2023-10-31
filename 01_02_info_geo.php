@@ -6,11 +6,6 @@
 	
 	<div id="container_main_sidebar">
 
-		<div class="backgrounds">
-			<div class="main"></div>
-			<div class="sidebar"></div>
-		</div>
-
 		<div class="main">
 			<h1>I.2  Manipuler de l'information géographique</h1>
 				<ul class="listetitres">

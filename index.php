@@ -5,11 +5,6 @@
 	<?php include('menus_horizontaux.inc.php'); ?>
 
 	<div id="container_main_sidebar">
-
-		<div class="backgrounds">
-			<div class="main"></div>
-			<div class="sidebar"></div>
-		</div>
 		
 		<div class="main">
 		
@@ -55,7 +50,7 @@
 		<div class="sidebar">
 			<?php include('logos_menus_verticaux.inc.php'); ?>
 			<?php include('menus_verticaux.inc.php'); ?>
-		</div>	
+		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	

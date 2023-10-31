@@ -5,11 +5,7 @@
 	<?php include('menus_horizontaux.inc.php'); ?>
 	
 	<div id="container_main_sidebar">
-
-		<div class="backgrounds">
-			<div class="main"></div>
-			<div class="sidebar"></div>
-		</div>	
+	
 	
 		<div class="main">
 			<h1>VI.4  Pour aller plus loin : requêtes SQL</h1>
