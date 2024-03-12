@@ -8,7 +8,7 @@
 
 	
 		<div class="main">
-			<h1>III.5  QGIS et OpenStreetMap</h1>
+			<h2>III.5  QGIS et OpenStreetMap</h2>
 				<ul class="listetitres">
 					<li><a href="#III51">Qu'est-ce qu'OpenStreetMap ?</a></li>
 					<li><a href="#III52">Visualiser un fonds OpenStreetMap</a></li>
@@ -17,7 +17,7 @@
 					<li><a href="#III55">Charger des données OpenStreetMap à partir de QGIS</a></li>
 				</ul>
 	
-			<h2>Qu'est-ce qu'OpenStreetMap ?<a class="headerlink" id="III51" href="#III51"></a></h2>
+			<h3>Qu'est-ce qu'OpenStreetMap ?<a class="headerlink" id="III51" href="#III51"></a></h3>
 			
                 <p><a class="ext" target="_blank" href="http://www.openstreetmap.org">OpenStreetMap ou OSM</a> est un projet qui a pour but de constituer une base de données géographiques libre du monde. A l'instar de <a class="ext" target="_blank" href="https://fr.wikipedia.org">Wikipédia</a>, tout un chacun peut participer et enrichir le projet. On peut donc visualiser, réutiliser et même après inscription modifier gratuitement les données.</p>
                 <p>La partie la plus connue du projet est peut-être la visualisation des données OSM sous forme de <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=19/44.79461/-0.61780" >carte</a> ; mais OSM est avant tout un ensemble de <a class="ext" target="_blank" href="https://www.openstreetmap.org/way/226888023">données</a> géographiques, utilisables entre autres dans un logiciel SIG.</p>
@@ -35,7 +35,7 @@
                 <p>Il existe plusieurs valeurs possibles pour chaque clé, la clé <b>waterway</b> peut par exemple avoir comme valeur <b>river</b> (rivière), <b>stream</b> (ruisseau), <b>canal</b>... Retrouvez <a target="_blank" class="ext" href="http://wiki.openstreetmap.org/wiki/FR:%C3%89l%C3%A9ments_cartographiques">ici</a> la liste des clés et des valeurs couramment utilisées.</p>
                 <p>Nous allons découvrir ici différentes manières pour non seulement visualiser un fonds OSM, mais également pour utiliser les données OSM dans QGIS. Il est possible de télécharger ces données à partir de différents sites pour ensuite les ajouter à QGIS, mais aussi de les charger directement dans QGIS.</p>
 
-			<h2>Visualiser un fonds OpenStreetMap<a class="headerlink" id="III52" href="#III52"></a></h2>
+			<h3>Visualiser un fonds OpenStreetMap<a class="headerlink" id="III52" href="#III52"></a></h3>
 			
     			<p>Il s'agira ici de simplement visualiser les données OSM comme un fonds raster, c'est-à-dire une image non modifiable. OSM étant une base de données, il est possible de représenter ces données comme on le souhaite ; plusieurs organismes proposent ainsi leur représentation des données OSM. Ces représentations peuvent avoir des objectifs différents : servir de fonds de carte discret, représenter les itinéraires cyclables, les données utiles pour les organisations humanitaires...</p>
     			
@@ -79,7 +79,7 @@
     	        </div>
 			   
 			
-			<h2>Télécharger des données OpenStreetMap<a class="headerlink" id="III53" href="#III53"></a></h2>
+			<h3>Télécharger des données OpenStreetMap<a class="headerlink" id="III53" href="#III53"></a></h3>
 			
 			    <p>Il existe plusieurs possibilités pour <a class="ext" target="_blank" href="http://wiki.openstreetmap.org/wiki/Downloading_data">télécharger des données OSM</a>, notamment <a class="ext" target="_blank" href="http://wiki.openstreetmap.org/wiki/Shapefiles#Download_shapefiles">au format Shapefile</a>.</p>
 			
@@ -117,7 +117,7 @@
                 </div>
                    
                     
-            <h2>Représenter des données OpenStreetMap<a class="headerlink" id="III54" href="#III54"></a></h2>
+            <h3>Représenter des données OpenStreetMap<a class="headerlink" id="III54" href="#III54"></a></h3>
                 
                 <p>Les données OpenStreetMap ajoutées dans QGIS, comme toute autre donnée, ont un style &#171; par défaut &#187;, ne convenant pas pour une carte. Nous allons voir ici comment représenter ces données pour obtenir quelque chose de similaire à ceci :</p>
                 <figure>
@@ -194,7 +194,7 @@
                 <p>Vous pouvez ensuite si vous le désirez modifier le style des couches pour créer votre propre version. Pour enregistrer un fichier de style QML, procédez comme pour charger un style, mais choisissez <b>Enregistrer le style</b>.</p>
            
                 
-			<h2>Charger des données OpenStreetMap à partir de QGIS<a class="headerlink" id="III55" href="#III55"></a></h2>
+			<h3>Charger des données OpenStreetMap à partir de QGIS<a class="headerlink" id="III55" href="#III55"></a></h3>
 			 
 			    <p>Nous allons utiliser ici l'extension <a class="ext" target="_blank" href="https://github.com/3liz/QuickOSM">QuickOSM</a> pour charger des données OpenStreetMap directement dans QGIS.</p>
 			    <p>Cette extension permet le téléchargement de données OSM sous forme de couches temporaires, pour l'emprise de votre choix.</p>

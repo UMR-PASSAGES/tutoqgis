@@ -8,7 +8,7 @@
 
 	
 		<div class="main">
-			<h1>V.1  Création d'une couche vide</h1>
+			<h2>V.1  Création d'une couche vide</h2>
 				<ul class="listetitres">
 					<li><a href="#V11">Création d'une couche vide</a></li>
 					<li><a href="#V12">Vérification</a></li>
@@ -29,7 +29,7 @@
 			    <img src="illustrations/5_1_ex_pts.jpg" alt="extrait de la carte d'Oahu avec écoles et postes" width="200">
 			</figure>
 			
-			<h2>Création d'une couche vide<a class="headerlink" id="V11" href="#V11"></a></h2>
+			<h3>Création d'une couche vide<a class="headerlink" id="V11" href="#V11"></a></h3>
 			
 				<p>La première étape consiste à créer une couche vierge, qui accueillera les données que nous allons créer.</p>
 				<div class="manip">
@@ -65,7 +65,7 @@
 					<p>La couche est automatiquement ajoutée à QGIS.</p>
 				</div>
 				
-			<h2>Vérification<a class="headerlink" id="V12" href="#V12"></a></h2>
+			<h3>Vérification<a class="headerlink" id="V12" href="#V12"></a></h3>
 				
 			    <div class="manip">
 			        <p>Allez dans les propriétés de la couche, rubrique <b>Information</b> :</p>

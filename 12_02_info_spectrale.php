@@ -9,7 +9,7 @@
 		
 		<div class="main">
 		
-			<h1>XII.2  Extraction de l'information spectrale</h1>
+			<h2>XII.2  Extraction de l'information spectrale</h2>
 				
 				<ul class="listetitres">
   					<li><a href="#XII21">Extraction de signature spectrale</a>
@@ -37,7 +37,7 @@
   				  <li>Extraire et analyser des <b>indices spectraux</b> : <b>NDVI</b> (Normalized Difference Vegetation Index) et <b>NBR</b> (Normalized Burn Ratio)</li>
   				</ul>
   				
-  				<h2>Extraction de signature spectrale<a class="headerlink" id="XII21" href="#XII21"></a></h2>
+  				<h3>Extraction de signature spectrale<a class="headerlink" id="XII21" href="#XII21"></a></h3>
   				
   				  <div class="manip">
   				    <p>Ouvrez un nouveau projet QGIS. Ajoutez-y la couche raster <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>.</p>
@@ -47,7 +47,7 @@
   				  <p>Nous allons ici digitaliser (dessiner) des polygones dans des zones avec différents types d'occupation du sol (eau, urbain, forêt...), afin de voir ensuite la signature spectrale de chacune de ces classes.</p>
   				  <p>Ces polygones sont souvent nommés <b>ROI</b> en télédétection pour &#171;&nbsp;Region Of Interest&nbsp;&#187;.</p>
   				  
-  				  <h3>Définition du jeu de bandes en entrée dans l'extension SCP<a class="headerlink" id="XII21a" href="#XII21a"></a></h3>
+  				  <h4>Définition du jeu de bandes en entrée dans l'extension SCP<a class="headerlink" id="XII21a" href="#XII21a"></a></h4>
   				  
     				  <p>Il faut tout d'abord définir l'image satellite en entrée pour l'extension SCP.</p>
     				  
@@ -67,7 +67,7 @@
     				  
     				  <p>L'extension SCP est maintenant paramétrée pour travailler sur notre image, qui est reconnue comme une image Sentinel-2. Nous allons pouvoir dessiner nos ROI&nbsp;!</p>
     				  
-    				<h3>Création des polygones d'entraînement (ROI)<a class="headerlink" id="XII21b" href="#XII21b"></a></h3>
+    				<h4>Création des polygones d'entraînement (ROI)<a class="headerlink" id="XII21b" href="#XII21b"></a></h4>
   				  
     				  <div class="manip">
     				    <p>Dans le panneau SCP (s'il n'est pas visible, menu Vue &#8594; Panneaux &#8594; Menu SCP), cliquez sur l'onglet vertical <b>Entrée données d'entraînement</b>&nbsp;:</p>
@@ -160,7 +160,7 @@
   
      					<p>Nous allons maintenant afficher les signatures spectrales de nos ROIs.</p>
      					
-     				<h3>Affichage des signatures spectrales<a class="headerlink" id="XII21c" href="#XII21c"></a></h3>
+     				<h4>Affichage des signatures spectrales<a class="headerlink" id="XII21c" href="#XII21c"></a></h4>
     				
       				<div class="manip">
       				  <p><img class="icone" src="illustrations/12_02_signature_spectrale_icone.jpg" alt="icône d'ajout des singatures spectrales au graphique"> Sélectionnez par exemple un polygone par classe, puis cliquez sur l'icône <b>Ajouter les signatures spectrales surlignées au graphique</b> dans la partie gauche du panneau&nbsp;:</p>
@@ -191,13 +191,13 @@
     					
     					<p class="keskonfai">Proposer de charger la couche de ROI déjà prête pour la suite de l'exo</p>
   				  
-  				<h2>Interprétation de signature spectrale<a class="headerlink" id="XII22" href="#XII22"></a></h2>
+  				<h3>Interprétation de signature spectrale<a class="headerlink" id="XII22" href="#XII22"></a></h3>
   				
   				  <p class="keskonfai">TODO</p>
   				
-  				<h2>Extraction et analyse d'indices spectraux<a class="headerlink" id="XII23" href="#XII23"></a></h2>
+  				<h3>Extraction et analyse d'indices spectraux<a class="headerlink" id="XII23" href="#XII23"></a></h3>
   				
-  				  <h3>Indice de végétation NDVI<a class="headerlink" id="XII23a" href="#XII23a"></a></h3>
+  				  <h4>Indice de végétation NDVI<a class="headerlink" id="XII23a" href="#XII23a"></a></h4>
   				  
   				    <p>L'indice de végétation ou <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">NDVI (Normalized Difference Vegetation Index)</a> permet de mesurer et spatialiser le taux de couverture de la végétation au sol ainsi que son activité chlorophyllienne.</p>
   				    <p>Il se calcule à partire des bandes Proche Infra-Rouge (PIR) et Rouge (R) de la manière suivante&nbsp;:</p>
@@ -283,7 +283,7 @@
   				    <p class="keskonfai">TODO : interprétation NDVI</p>
   				    <p class="keskonfai">TODO : calcul NDVI pour les surfaces en eau, forêt etc.</p>
   				  
-  				  <h3>Normalized Burn Ratio (NBR)<a class="headerlink" id="XII23b" href="#XII23b"></a></h3>
+  				  <h4>Normalized Burn Ratio (NBR)<a class="headerlink" id="XII23b" href="#XII23b"></a></h4>
   				  
   				    <p>L'<a class="ext" target="_blank" href="https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio">indice normalisé des surfaces brûlées</a> (Normalized Burn Ratio ou NBR) est utilisé pour identifier les surfaces brûlées et donner une mesure de l'intensité des feux.</p>
   				    <p>De la même manière que le NDVI, c'est un ratio basé sur 2 bandes, mais cette fois il s'agit des bandes <b>Proche Infra-Rouge (PIR)</b> et <b>Infra-Rouge Court (SWIR)</b> :</p>

@@ -7,7 +7,7 @@
 	<div id="container_main_sidebar">
 		
 		<div class="main">
-			<h1>I.1  Qu'est-ce qu'un SIG ? (un peu de théorie...)</h1>
+			<h2>I.1  Qu'est-ce qu'un SIG ? (un peu de théorie...)</h2>
 				<ul class="listetitres">
 					<li><a href="#I11">Définitions</a>
 						<ul class= "listesoustitres">
@@ -21,19 +21,19 @@
 							<li><a href="#I12b" >Deux grands types de données : vecteur et raster</a></li>
 							<li><a href="#I12c" >Les données vecteur : à chaque géométrie ses attributs (et vice-versa)</a></li>
 							<li><a href="#I12d" >Des données sur les données : les métadonnées</a></li>
-							<li><a href="#I12e" >A quoi sert un SIG ?</a></li>
 						</ul>
 					</li>
+					<li><a href="#I13" >A quoi sert un SIG ?</a></li>
 				</ul>
 				
 				
-				<h2>Définitions<a class="headerlink" id="I11" href="#I11"></a></h2>
+				<h3>Définitions<a class="headerlink" id="I11" href="#I11"></a></h3>
 				
-					<h3>Qu'est-ce que la géomatique ?<a class="headerlink" id="I11a" href="#I11a"></a></h3>
+					<h4>Qu'est-ce que la géomatique ?<a class="headerlink" id="I11a" href="#I11a"></a></h4>
 						<p>La géomatique est l'ensemble des techniques de traitement informatique des données géographiques (Journal Officiel, 1994). Elle regroupe donc les outils et méthodes permettant l'acquisition, le stockage, le traitement et la diffusion de données à référence spatiale.</p>
 					
-					
-					<h3>Qu'est-ce qu'un Système d'Information Géographique ?<a class="headerlink" id="I11b" href="#I11b"></a></h3>
+					<h4>Qu'est-ce qu'un Système d'Information Géographique ?<a class="headerlink" id="I11b" href="#I11b"></a></h4>
+
 						<p>C'est un système permettant de gérer des informations localisées géographiquement. Ce système est composé de :</p>
 							<ul>
 								<li>données</li>
@@ -45,9 +45,10 @@
 						<p>Par abus de langage, un SIG signifie souvent aujourd'hui le logiciel utilisé dans un SIG.</p>
 						
 						
-				<h2>Les données des SIG<a class="headerlink" id="I12" href="#I12"></a></h2>
+				<h3>Les données des SIG<a class="headerlink" id="I12" href="#I12"></a></h3>
 				
-					<h3>Une organisation par couches<a class="headerlink" id="I12a" href="#I12a"></a></h3>
+					<h4>Une organisation par couches<a class="headerlink" id="I12a" href="#I12a"></a></h4>
+					
 						<p>Les données sont organisées sous forme de couches superposables.</p>
 						<figure>
 							<a href="illustrations/1_1_couches.svg" >
@@ -69,8 +70,8 @@
     						<p>Ces données proviennent de <a class="ext" target="_blank" href="http://www.anat.sn/" >l'Agence Nationale de l'Aménagement du Territoire (ANAT) du Sénégal</a> et sont disponibles sur <a class="ext" target="_blank" href="https://www.geosenegal.gouv.sn/Senegal-vectoriel.html" >GéoSénégal</a>, comme vous pouvez le voir dans la liste des données fournie avec les données du tutoriel (fichier PDF TutoQGIS_01_PriseEnMain_liste_donnees).</p>
 						</div>
 						
-						
-					<h3>Deux grands types de données : vecteur et raster<a class="headerlink" id="I12b" href="#I12b"></a></h3>
+					<h4>Deux grands types de données : vecteur et raster<a class="headerlink" id="I12b" href="#I12b"></a></h4>
+					
 						<p>On distingue généralement deux types de données : <b>vecteur et raster</b>.</p>
 						<figure>
 							<a href="illustrations/1_1_vecteur.jpg" >
@@ -92,8 +93,8 @@
 						<p>Quelques exemples de formats raster : JPG, TIFF, PNG...</p>
 						<p>Certains formats, comme le <a class="ext" target="_blank" href="https://www.geopackage.org/" >GeoPackage</a>, peuvent contenir des données vecteur ou raster.</p>
 						
-						
-					<h3>Les données vecteur : à chaque géométrie ses attributs (et vice-versa)<a class="headerlink" id="I12c" href="#I12c"></a></h3>
+					<h4>Les données vecteur : à chaque géométrie ses attributs (et vice-versa)<a class="headerlink" id="I12c" href="#I12c"></a></h4>
+					
 						<p>On distingue deux composantes dans les données utilisées dans un SIG : spatiale et attributaire. La <b>composante spatiale</b> est constituée de la localisation et la géométrie d'un objet, donc de ses coordonnées. La <b>composante attributaire</b> est constituée des données qui y sont associées. Par exemple, la composante spatiale d'un département sera le polygone représentant ce département, et sa composante attributaire sera son nom, son code, sa population...</p>
 						<figure>					
 							<a href="illustrations/1_1_spatial_attrib.jpg" >					
@@ -126,16 +127,16 @@
 							<p class="note">Pour que la fenêtre de la table attributaire soit "ancrée" dans QGIS : menu <b>Préférences &#8594; Options &#8594; Sources de données</b> : cocher la case <b>Ouvrir la table d'attributs dans une fenêtre intégrée</b>.</p>
 						</div>
 						
-						
-					<h3>Des données sur les données : les métadonnées<a class="headerlink" id="I12d" href="#I12d"></a></h3>
+					<h4>Des données sur les données : les métadonnées<a class="headerlink" id="I12d" href="#I12d"></a></h4>
+					
 						<p>Afin de savoir quelles sont les utilisations que l'on peut faire d'une donnée, il est indispensable de posséder des informations sur la manière dont a été fabriquée cette donnée, sa date, ses limites éventuelles d'utilisation... <b>Ces « données sur la donnée » constituent ce qu'on appelle des métadonnées</b>. Elles peuvent se présenter sous diverses formes : un simple fichier texte, une fiche PDF...</p>
 						<p class="manip">Vous pouvez voir ici les métadonnées de la couche Corine Land Cover : <a class="ext" target="_blank" href="http://www.geocatalogue.fr/Detail.do?id=7665">www.geocatalogue.fr/Detail.do?id=7665</a></p>
 						<p>Il existe aujourd'hui des normes régissant la manière dont sont construites ces métadonnées : nombres de rubriques présentes, choix des rubriques... Ceci permet de construire des catalogues de métadonnées, et facilite <i>in fine</i> l'échange de données entre organismes.</p>
 						<p>La métadonnée ci-dessus est tirée du catalogue de métadonnées national, le géocatalogue : <a class="ext" target="_blank" href="http://www.geocatalogue.fr/" >www.geocatalogue.fr</a>.</p>
 						<p class="note">Le géocatalogue est mis en oeuvre par le <a class="ext" target="_blank" href="http://www.brgm.fr/">BRGM</a>, la visualisation étant opérée par l'<a class="ext" target="_blank" href="http://www.ign.fr/">IGN</a> au travers du <a class="ext" target="_blank" href="http://www.geoportail.gouv.fr/">géoportail</a>.</p>
 						
-						
-					<h3>A quoi sert un SIG ?<a class="headerlink" id="I12e" href="#I12e"></a></h3>
+					<h3>A quoi sert un SIG ?<a class="headerlink" id="I13" href="#I13"></a></h3>
+					
 						<p>Un SIG permet de saisir, représenter, interroger, et mettre à jour l’information géographique. Il peut notamment répondre aux questions suivantes : </p>
 							<ul>
 								<li>où : localisation, étendue</li>
@@ -150,7 +151,7 @@
 						<p>Le SIG va permettre de croiser les parcelles et le MNT pour aboutir à une couche de parcelles où seront renseignées pour chaque parcelle par exemple sa taille, sa pente moyenne, son altitude moyenne. Ces données pourront être ensuite visualisées dans le SIG, et/ou être le point de départ d'analyses statistiques dans un autre logiciel.</p>
 						
 						
-<!-- 				<h1><a class="headerlink" id="I13">Quelques limites des SIG</a></h1>
+<!-- 				<h3><a class="headerlink" id="I14">Quelques limites des SIG</a></h3>
 				
 					<p>Les limites d'un SIG sont en premier lieu celles de ses données. Leur pertinence, richesse, mise à jour, droits d'auteur... ne permettent pas toujours en effet de réaliser le travail voulu, sans parler de leur coût. Certaines données n'existent tout simplement pas, ce qui peut nécessiter de longues campagnes de terrain.</p>
 					<p>La puissance des ordinateurs utilisés peut aussi entrer en jeu. Certains calculs pourront en effet s'avérer impossibles si elle n'est pas suffisante. Enfin, la compétence des utilisateurs est évidemment à prendre en compte.</p>

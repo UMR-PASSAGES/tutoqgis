@@ -8,7 +8,7 @@
 	
 	
 		<div class="main">
-			<h1>VI.3  Combiner des requêtes</h1>
+			<h2>VI.3  Combiner des requêtes</h2>
 				<ul class="listetitres">
 					<li><a href="#VI31">Combiner deux requêtes attributaires</a></li>
 					<li><a href="#VI32">Combiner deux requêtes spatiales</a></li>
@@ -18,7 +18,7 @@
 				
 			<p>Comment faire quand on souhaite combiner plusieurs requêtes, par exemple sélectionner les communes traversées par un cours d'eau et ayant une population de + de 10&nbsp;000 habitants ?</p>
 			
-			<h2>Combiner deux requêtes attributaires<a class="headerlink" id="VI31" href="#VI31"></a></h2>
+			<h3>Combiner deux requêtes attributaires<a class="headerlink" id="VI31" href="#VI31"></a></h3>
 			
 				<p>Pour combiner deux requêtes attributaires, nous avons vu dans la <a href="06_01_req_attrib.php#VI15" >partie VI.1.5</a> qu'il est possible d'utiliser les opérateurs AND et OR.</p>
 				<p>Il est également possible de faire deux requêtes successives.</p>
@@ -57,7 +57,7 @@
 			
 			
 			
-			<h2>Combiner deux requêtes spatiales<a class="headerlink" id="VI32" href="#VI32"></a></h2>
+			<h3>Combiner deux requêtes spatiales<a class="headerlink" id="VI32" href="#VI32"></a></h3>
 			
 				<p>Comment faire maintenant pour combiner deux requêtes spatiales, par exemple pour sélectionner les communes avec éolienne et cours d'eau&nbsp;?</p>
 				<p>Attention, le nombre d'entités sélectionnées peut varier légèrement par rapport à ceux indiqués ici si vous chargez des données via des flux WFS et que ces données ont été mises à jour depuis la rédaction de ce tutoriel.</p>
@@ -99,7 +99,7 @@
 				<p>Le résultat serait le même en procédant à l'inverse, c'est-à-dire en sélectionnant d'abord les communes traversées par un cours d'eau puis à partir de cette sélection les communes contenant une éolienne.</p>
 			
 			
-			<h2>Combiner requêtes spatiales et attributaires<a class="headerlink" id="VI33" href="#VI33"></a></h2>
+			<h3>Combiner requêtes spatiales et attributaires<a class="headerlink" id="VI33" href="#VI33"></a></h3>
 			
 				<p>Le principe est le même que précédemment. Sélectionnons par exemple les communes de + de 10&nbsp;000 habitants avec éolienne.</p>
 				

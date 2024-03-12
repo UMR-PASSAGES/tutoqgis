@@ -8,7 +8,7 @@
 
 	
 		<div class="main">
-			<h1>III.2  Ajout de données via des flux</h1>
+			<h2>III.2  Ajout de données via des flux</h2>
 				<ul class="listetitres">
 					<li><a href="#III21">Qu'est-ce qu'un flux WMS ou WFS ?</a></li>
 					<li><a href="#III22">Ajout de données via un flux WMS : carte géologique</a></li>
@@ -19,7 +19,7 @@
 				</ul>
 	
 			
-			<h2>Qu'est-ce qu'un flux WMS ou WFS ?<a class="headerlink" id="III21" href="#III21"></a></h2>
+			<h3>Qu'est-ce qu'un flux WMS ou WFS ?<a class="headerlink" id="III21" href="#III21"></a></h3>
 			
 				<p>Il est possible de visualiser directement dans un SIG des données accessibles sur un serveur, sans devoir préalablement les télécharger sur votre ordinateur. Ceci se fait via des flux. Les deux types de flux les plus courant permettant ceci sont les <b>flux WMS (Web Map Service)</b> et <b>WFS (Web Feature Service)</b>.</p>
 				<ul>
@@ -28,7 +28,7 @@
 				</ul>			
 				
 			
-			<h2>Ajout de données via un flux WMS : carte géologique<a class="headerlink" id="III22" href="#III22"></a></h2>
+			<h3>Ajout de données via un flux WMS : carte géologique<a class="headerlink" id="III22" href="#III22"></a></h3>
 				
 				<div class="manip">
 					<p>Lancez QGIS si ce n'est pas déjà fait, ou bien créez un nouveau projet.</p>
@@ -81,7 +81,7 @@
 				<p class="note">Pour aller plus loin : le niveau de zoom auquel une couche est visible est parfois indiqué dans le résumé ; sinon, il est possible d'interroger le serveur qui propose les couches, en allant par exemple ici à l'URL <a class="ext" target="_blank" href="http://geoservices.brgm.fr/geologie?service=wms&request=GetCapabilities" >http://geoservices.brgm.fr/geologie?service=wms&request=GetCapabilities</a> dans un navigateur internet, puis en recherchant les balises <b>MinScaleDenominator</b> et <b>MaxScaleDenominator</b> pour la couche choisie. Pour en savoir plus, rendez-vous sur le <a class="ext" target="_blank" href="https://georezo.net/wiki/main/standards/wms" >wiki du GeoRezo</a>.</p>
 							
 			
-			<h2>Ajout de données via un flux WFS : cours d'eau<a class="headerlink" id="III23" href="#III23"></a></h2>
+			<h3>Ajout de données via un flux WFS : cours d'eau<a class="headerlink" id="III23" href="#III23"></a></h3>
 			
 				<p>Le but va être ici d'ajouter une couche WFS de cours d'eau disponible via le <a class="ext" target="_blank" href="https://www.sandre.eaufrance.fr/">Sandre</a> (Service d'Administration Nationale des Données et Référentiels sur l'Eau). Les adresses des flux du Sandre sont disponible sur <a class="ext" target="_blank" href="https://www.sandre.eaufrance.fr/actualite/evolution-des-services-web-g%C3%A9ographiques" >cette page</a>.</p>
 				<p>Cette opération est similaire à celle décrite ci-dessus pour une couche WMS.</p>
@@ -128,7 +128,7 @@
 				</div>
 				<p>De même, s'agissant d'un flux WFS, il est possible de <b>sauvegarder les cours d'eau</b> au format vectoriel sur votre ordinateur : clic droit sur la couche &#8594; Exporter &#8594; Sauvegarder les entités sous...</p>
 	
-			<h2>Ajout de données WMS ou WFS via le panneau explorateur<a class="headerlink" id="III24" href="#III24"></a></h2>
+			<h3>Ajout de données WMS ou WFS via le panneau explorateur<a class="headerlink" id="III24" href="#III24"></a></h3>
 			
 			 <p>Une autre méthode, plus rapide, pour créer des connexions et ajouter des couches WMS et WFS est de passer par le <a href="01_02_info_geo.php#I21b">panneau explorateur</a>.</p>
 			 <p>Cependant, cette méthode ne permet pas autant de paramétrage que le gestionnaire de sources de données&nbsp;: par exemple, il n'est pas possible de choisir le SCR d'une couche.</p>
@@ -154,13 +154,13 @@
 			 <p>Attention, si la couche avait été par défaut dans un autre SCR que celui du projet et des autres couches (Lambert 93), il y aurait eu des problèmes d'affichage. Il vaut mieux dans ce cas passer par le gestionnaire de sources de données pour spécifier le SCR voulu, s'il est disponible.</p>
 			
 			
-			<h2>Avantages et inconvénients des flux<a class="headerlink" id="III25" href="#III25"></a></h2>
+			<h3>Avantages et inconvénients des flux<a class="headerlink" id="III25" href="#III25"></a></h3>
 				
 				<p>Un inconvénient d'utiliser des flux est le temps de chargement et la nécessité d'avoir une connexion internet.</p>
 				<p>Cependant, ils vous assurent de toujours visualiser la dernière mise à jour des données, vous évitent d'encombrer vos ordinateurs et vous permettent de transmettre des projets QGS à des collègues en étant sûr que ceux-ci puissent en visualiser les données (s'ils sont connectés à internet).</p>
 				<p>En résumé, c'est probablement l'usage que vous ferez des données qui vous fera opter pour l'une ou l'autre solution.</p>
 				
-			<h2>Quelques adresses de flux WMS et WFS<a class="headerlink" id="III26" href="#III26"></a></h2>
+			<h3>Quelques adresses de flux WMS et WFS<a class="headerlink" id="III26" href="#III26"></a></h3>
 			
 			    <p>Vous pouvez trouver <a class="ext" target="_blank" href="https://github.com/igeofr/qgis2/tree/master/flux">ici</a> une liste de flux WFS et WMS, créée par l'utilisateur github <a class="ext" target="_blank" href="https://github.com/igeofr">igeofr</a>, merci à lui !</p>
 			    <p>Vous pouvez soit ajouter ces flux manuellement, un par un, comme décrit plus haut, en copiant l'url, soit tous les ajouter en même temps. Pour cela, par exemple pour les flux WFS, collez le contenu entier du fichier QGIS_WFS.xml dans un fichier texte vierge, enregistrez ce fichier sous le nom QGIS_WFS.xml. Ensuite, dans QGIS : gestionnaire de sources &#8594; WFS ou WMS &#8594; Charger &#8594; sélectionnez le fichier XML, et choisissez les flux que vous souhaitez ajouter.</p>

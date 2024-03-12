@@ -632,6 +632,13 @@ hov         #1D3437     hover colour
 		margin:1em 0 1em;
 	}
 	h2 {
+		font-variant:small-caps;
+		color: /*link*/#28A6B7;
+		font-weight:bold;
+		font-size:1.5em;
+		margin:1em 0 1em;
+	}
+	h3 {
 		color: /*link*/#28A6B7;
 		font-weight:bold;
 		font-size:1.3em;
@@ -641,7 +648,7 @@ hov         #1D3437     hover colour
 		border-bottom-style:solid;
 		border-bottom-color:/*link*/#28A6B7;
 	}
-	h3 {
+	h4 {
 		color: /*link*/#28A6B7;
 		font-style:italic;
 		font-weight: normal;
@@ -649,12 +656,12 @@ hov         #1D3437     hover colour
 		margin:0 0 1em;
 		padding-top: 10px;
 	}
-	#h3 li {
+	#h4 li {
 	}
-	#h3 ul {
+	#h4 ul {
 		list-style-type: none;
 	}
-	#h1Verti {
+	#h2Verti {
 	font-weight:bold;
 		font-size:1.2em;
 		margin:0 0 1em;

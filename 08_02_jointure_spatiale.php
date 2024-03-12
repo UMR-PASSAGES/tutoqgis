@@ -8,7 +8,7 @@
 	
 	
 		<div class="main">
-			<h1>VIII.2  Lier des données en fonction de leur position : jointures spatiales</h1>
+			<h2>VIII.2  Lier des données en fonction de leur position : jointures spatiales</h2>
 				<ul class="listetitres">
 					<li><a href="#VIII21">Comment fonctionne une jointure spatiale ?</a></li>
 					<li><a href="#VIII22">Joindre des éléments un à un</a>
@@ -27,7 +27,7 @@
 				<br>
 				
 
-			<h2>Comment fonctionne une jointure spatiale ?<a class="headerlink" id="VIII21" href="#VIII21"></a></h2>
+			<h3>Comment fonctionne une jointure spatiale ?<a class="headerlink" id="VIII21" href="#VIII21"></a></h3>
 
 				<p>Pour faire une jointure, il est possible de se baser sur la <b>position des éléments</b> et non plus sur leurs données attributaires : il s'agit alors d'une jointure spatiale.</p>
 				<p>Ce type de jointure ne peut se faire qu'entre deux couches SIG, de type point, ligne ou polygone. Il est possible par exemple de partir d'une couche de polygones et d'une couche point, et de lier à chaque polygone les données attributaires du point contenu par ce polygone.</p>
@@ -40,9 +40,9 @@
 				<p>Dans l'exemple ci-dessus, les deux couches de départ sont une couche de département et une couche de chefs-lieux. Les données attributaires des chefs-lieux (leur nom, code et coordonnées) sont jointes aux départements en se basant sur leur position : <b>chaque département récupère les données du chef-lieu intersectant ce département</b>.</p>
 				<p>Il existe plusieurs outils pour cela dans QGIS ; nous utiliserons celui présentant a priori le plus de possibilités.</p>
 				
-			<h2>Joindre des éléments un à un<a class="headerlink" id="VIII22" href="#VIII22"></a></h2>
+			<h3>Joindre des éléments un à un<a class="headerlink" id="VIII22" href="#VIII22"></a></h3>
 			     
-			    <h3>Premier exemple détaillé : quel chef-lieu pour quel département ?<a class="headerlink" id="VIII22a" href="#VIII22a"></a></h3>
+			    <h4>Premier exemple détaillé : quel chef-lieu pour quel département ?<a class="headerlink" id="VIII22a" href="#VIII22a"></a></h4>
 			
     				<p>Voyons tout d'abord le cas où les données correspondent une à une, par exemple pour joindre les données d'un chef-lieu au département qui lui correspond.</p>
     				
@@ -91,7 +91,7 @@
     					</figure>
                     </div>
                     
-                <h3>Pour s'entraîner : quel comté pour quel site remarquable ?<a class="headerlink" id="VIII22b" href="#VIII22b"></a></h3>
+                <h4>Pour s'entraîner : quel comté pour quel site remarquable ?<a class="headerlink" id="VIII22b" href="#VIII22b"></a></h4>
                 
                     <div class="manip">
                         <p>Ouvrez un nouveau projet QGIS, ajoutez les couches <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip" >Counties</a></em> et <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip" >Heritage</a></em>, correspondant aux comtés et sites remarquables irlandais.</p>
@@ -114,7 +114,7 @@
 			
 							
     				
-    		<h2>Joindre plusieurs éléments à un seul<a class="headerlink" id="VIII23" href="#VIII23"></a></h2>
+    		<h3>Joindre plusieurs éléments à un seul<a class="headerlink" id="VIII23" href="#VIII23"></a></h3>
     		
     		   <p>Nous avons vu le cas où l'on souhaite joindre des données une à une.</p>
     		   <p>Comment faire maintenant si <b>une entité dans la couche source correspond à plusieurs entités dans la couche à joindre&nbsp;?</b> Par exemple, en reprenant l'exemple des comtés (données surfaciques) et sites remarquables (données ponctuelles) irlandais, on peut vouloir joindre les données des sites aux comtés. Chaque comté contenant plusieurs sites, il y a 2 possibilités pour faire la jointure :</p>
@@ -124,7 +124,7 @@
     		   </ul>
     		   <p><em>Avant de procéder à la jointure, il est important de bien réfléchir aux questions que l'on voudra poser par la suite aux données : que cherche-t-on à faire&nbsp;? Quelle sera la prochaine étape&nbsp;?</em></p>
     		
-        		<h3>Compter le nombre de sites par comté<a class="headerlink" id="VIII23a" href="#VIII23a"></a></h3>
+        		<h4>Compter le nombre de sites par comté<a class="headerlink" id="VIII23a" href="#VIII23a"></a></h4>
     			
     			    <p>Le but sera ici de compter le nombre de sites remarquables par comté.</p>
     			    
@@ -156,7 +156,7 @@
     			    </div>
     				
     			
-    			<h3>Calculer la population par département à partir des communes<a class="headerlink" id="VIII23b" href="#VIII23b"></a></h3>
+    			<h4>Calculer la population par département à partir des communes<a class="headerlink" id="VIII23b" href="#VIII23b"></a></h4>
     			
     			    <p>Nous allons ici partir d'une couche de communes avec un champ population, et d'une couche de départements. L'objectif sera de calculer pour chaque département la population totale, la population moyenne par commune et la population médiane par commune.</p>
     			

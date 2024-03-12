@@ -8,7 +8,7 @@
 
 	
 		<div class="main">
-			<h1>III.1  Recherche de données SIG sur internet</h1>
+			<h2>III.1  Recherche de données SIG sur internet</h2>
 				<ul class="listetitres">
 					<li><a href="#III11">Données nationales pour la France</a>
 						<ul class= "listesoustitres">
@@ -33,9 +33,9 @@
 			<p>Cette partie se borne à donner quelques exemples de sites permettant le téléchargement de données SIG. Il en existe beaucoup d'autres !</p>
 			<p>Ne vous offusquez pas de ne pas voir ici les <b>données OpenStreetMap</b> : il existe <a href="03_05_donnees_osm.php">une partie qui leur est spécialement dédiée !</a></p>
 				
-			<h2>Données nationales pour la France<a class="headerlink" id="III11" href="#III11"></a></h2>
+			<h3>Données nationales pour la France<a class="headerlink" id="III11" href="#III11"></a></h3>
 			
-				<h3>Avec l'IGN<a class="headerlink" id="III11a" href="#III11a"></a></h3>
+				<h4>Avec l'IGN<a class="headerlink" id="III11a" href="#III11a"></a></h4>
 				
 					<p>L'IGN (Institut National de l'Information Géographique et Forestière) diffuse gratuitement la plupart de ses données ici : <a class="ext" target="_blank" href="https://geoservices.ign.fr/catalogue">https://geoservices.ign.fr/catalogue</a>.</p>
 					<p class="note">Si vous êtes étudiant ou bien si vous travaillez dans un laboratoire de recherche, il existe peut-être entre votre structure et l'IGN une convention recherche et enseignement vous donnant accès à plus de données !</p>
@@ -113,7 +113,7 @@
 					<p class="note">Pour télécharger les données de l'IGN, vous pouvez également passer par <a class="ext" target="_blank" href="https://geotribu.github.io/ign-fr-opendata-download-ui/index.html" >ign2map</a> (et profitez-en pour aller faire un tour sur l'excellent site <a class="ext" target="_blank" href="https://static.geotribu.fr/" >Geotribu</a> !)</p>
 					
 					
-				<h3>Avec geo.data.gouv.fr<a class="headerlink" id="III11b" href="#III11b"></a></h3>				
+				<h4>Avec geo.data.gouv.fr<a class="headerlink" id="III11b" href="#III11b"></a></h4>				
 					
 					<p>Le site <a class="ext" target="_blank" href="https://geo.data.gouv.fr/fr/">https://geo.data.gouv.fr/fr/</a> recense les jeux de données géographiques en accès libre pour la France. Nous allons utiliser ce site pour rechercher des données sur les hôpitaux en Guyane.</p>
 					
@@ -148,9 +148,9 @@
 					
 					<p class="note">Si vous téléchargez les autres jeux de données résultant de la recherche sur "hôpitaux guyane", vous constaterez qu'ils présentent entre eux des différences de localisation et de données attributaires. Quel jeu de données vaut-il mieux utiliser ? Cette question est celle que vous vous poserez systématiquement à chaque nouveau projet, et y répondre peut parfois prendre un temps considérable et représenter un projet en soi ! La première piste de réponse est bien sûr d'aller voir les métadonnées, si elles sont disponibles.</p>
 	
-			<h2>Données mondiales<a class="headerlink" id="III12" href="#III12"></a></h2>
+			<h3>Données mondiales<a class="headerlink" id="III12" href="#III12"></a></h3>
 			
-			    <h3>Avec Natural Earth<a class="headerlink" id="III12a" href="#III12a"></a></h3>
+			    <h4>Avec Natural Earth<a class="headerlink" id="III12a" href="#III12a"></a></h4>
 			    
 			     <p><a class="ext" target="_blank" href="https://www.naturalearthdata.com/">Natural Earth</a> est un jeu de données cartographiques public mondial disponible à 3 échelles différentes. De nombreuses données sont disponibles, notamment les limites administratives, routes, cours d'eau et fonds raster.</p>
 			     <p>Nous allons télécharger ici les <b>limites administratives des pays à petite échelle</b> (peu de niveau de détail).</p>
@@ -179,7 +179,7 @@
 					 </figure>
 			     </div>
 			    
-			    <h3>Avec les données SRTM<a class="headerlink" id="III12b" href="#III12b"></a></h3>
+			    <h4>Avec les données SRTM<a class="headerlink" id="III12b" href="#III12b"></a></h4>
 			
         			<p>Nous avons vu jusqu'ici le téléchargement de quelques données vecteur. Les données raster seront par exemple des images satellite, des fonds de carte, des <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain">modèles numériques de terrain (MNT)</a>...</p>
         			<p>Nous allons ici télécharger un <b>modèle d'élévation pour le Kenya</b>.</p>
@@ -204,7 +204,7 @@
         				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les autres données du tutoriel</a>.</p>
         			</div>
 			
-			<h2>Et tout le reste ?<a class="headerlink" id="III13" href="#III13"></a></h2>
+			<h3>Et tout le reste ?<a class="headerlink" id="III13" href="#III13"></a></h3>
 			 
 			    <p>Selon la zone sur laquelle vous travaillez et votre sujet, il existe de nombreux sites avec des données géographiques en téléchargement. En voici quelques uns en vrac, qui seront ou non pertinents pour vous :</p>
 			

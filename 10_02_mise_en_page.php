@@ -8,7 +8,7 @@
 
 		
 		<div class="main">
-			<h1>X.2  Mettre en page une carte</h1>
+			<h2>X.2  Mettre en page une carte</h2>
 				<ul class="listetitres">
 					<li><a href="#X21">Préparation de la mise en page</a></li>
 					<li><a href="#X22">Mise en page&nbsp;: une fenêtre dédiée</a></li>
@@ -37,7 +37,7 @@
 				<p>Une fois vos données représentées de manière satisfaisante, il peut être utile d'en faire une carte. <b>Cette partie n'a pas pour but d'expliquer les bonnes et mauvaises pratiques en matière de cartographie</b>, mais se bornera à décrire quelques fonctionnalités du mode mise en page de QGIS.</p>
 				<p>L'exemple portera ici sur une carte de la densité de population par communes (carte choroplèthe) en France. Mais vous pouvez choisir le sujet de votre choix, avec vos données&nbsp;!</p>
 				
-				<h2>Préparation de la mise en page<a class="headerlink" id="X21" href="#X21"></a></h2>
+				<h3>Préparation de la mise en page<a class="headerlink" id="X21" href="#X21"></a></h3>
 				
 					<div class="manip">
 						<p>Commencez par ajouter toutes les couches dont vous avez besoin, et supprimez toutes les couches inutiles.</p>
@@ -46,7 +46,7 @@
 						<p>Pour aller plus vite, vous pouvez ouvrir le projet tout fait <a href="donnees/TutoQGIS_10_Representation.zip" >misenpage_densite.qgz</a>. Dans ce cas, nombre des étapes décrites ci-dessous seront déjà réalisées, mais vous pourrez modifier les différents paramètres.</p>
 					</div>
 						
-				<h2>Mise en page&nbsp;: une fenêtre dédiée<a class="headerlink" id="X22" href="#X22"></a></h2>
+				<h3>Mise en page&nbsp;: une fenêtre dédiée<a class="headerlink" id="X22" href="#X22"></a></h3>
 					
 					<p>Le mode mise en page ouvre une fenêtre à part dans QGIS. On peut y ajouter différents éléments&nbsp;: carte, légende, échelle... La carte est liée à celle de la fenêtre principale de QGIS et se met à jour automatiquement.</p>
 					<p class="note">Dans la version 2.18 de QGIS, le mode mise en page se nommait &#171;&nbsp;composeur d'impression&nbsp;&#187;.</p>
@@ -73,7 +73,7 @@
 					<p><em class="numero">8. </em><b>Barre d'état :</b> vous pouvez lire ici les coordonnées de votre souris dans la page (il ne s'agit pas de coordonnées géographiques, mais de coordonnées en mm par rapport au coin en haut à gauche de la page) et vous pourrez aussi modifier le niveau de zoom sur la page.</p>
 					
 					
-				<h2>Modifier les dimensions de la page<a class="headerlink" id="X23" href="#X23"></a></h2>
+				<h3>Modifier les dimensions de la page<a class="headerlink" id="X23" href="#X23"></a></h3>
 				
 					<p>La première étape consiste à déterminer les dimensions de la page. Par défaut, il s'agit d'un A4 paysage, mais s'il s'agit d'une figure destinée à être intégrée dans un rapport, vous pouvez très bien choisir une taille personnalisée, par exemple 20 x 20 cm.</p>
 					
@@ -92,7 +92,7 @@
 						<p><img class="icone" src="illustrations/10_02_zoom_page_icone.jpg" alt="icône zoom sur l'emprise totale de la page" >Pour zoomer sur votre page : cliquez sur l'icône <b>Zoom complet</b> (ou <b>menu Vue &#8594; Zoom sur l'emprise totale</b>).</p>
 					</div>
 						
-				<h2>Ajouter une carte<a class="headerlink" id="X24" href="#X24"></a></h2>
+				<h3>Ajouter une carte<a class="headerlink" id="X24" href="#X24"></a></h3>
 						
 					<div class="manip">
 						<p><img class="icone" src="illustrations/10_02_nouvelle_carte_icone.jpg" alt="icône ajouter une nouvelle carte" >Cliquez ensuite sur l'icône <b>Ajouter Carte</b> (ou <b>menu Ajouter un objet &#8594; Ajouter Carte</b>).</p>
@@ -127,11 +127,11 @@
 						
 					</div>
 					
-				<h2>Ajouter une légende<a class="headerlink" id="X25" href="#X25"></a></h2>
+				<h3>Ajouter une légende<a class="headerlink" id="X25" href="#X25"></a></h3>
 				
 					<p>Il existe de nombreuses possibilités pour paramétrer la légende. Elles ne seront pas toutes passées en revue ici, mais n'hésitez pas à explorer par vous-même !</p>
 					
-					<h3>Création de la légende<a class="headerlink" id="X25a" href="#X25a"></a></h3>
+					<h4>Création de la légende<a class="headerlink" id="X25a" href="#X25a"></a></h4>
     					<div class="manip">
     					
     						<p><img class="icone" src="illustrations/10_02_legende_icone.jpg" alt="icône ajouter légende" >Pour ajouter une <b>légende</b> : icône <b>Ajouter Légende</b>, puis cliquez n’importe où sur la carte.</p>
@@ -150,7 +150,7 @@
     						<p><img class="icone" src="illustrations/10_02_selection_deplace_icone.jpg" alt="icône sélectionner/déplacer un objet" >Revenez ensuite dans la mise en page, les changements que vous avez effectués sont visibles dans la légende puisque la case <b>Mise à jour auto</b> est cochée par défaut.</p>
     					</div>
 					
-					<h3>Modifier les éléments<a class="headerlink" id="X25b" href="#X25b"></a></h3>
+					<h4>Modifier les éléments<a class="headerlink" id="X25b" href="#X25b"></a></h4>
 					
 					    <p>Comment faire maintenant si vous désirez encore modifier les éléments de la légende&nbsp;?</p>
     					<p>La case <b>Mise à jour auto</b> permet de prendre en compte directement les changements effectués dans la fenêtre principale de QGIS.</p>
@@ -175,7 +175,7 @@
     					    <p><img class="icone" src="illustrations/10_02_legende_filtrexpression_icone.jpg" alt="icône pour filtrer les éléments de la légende en fonction d'une expression" ><b>Filtrer la légende en fonction d'une expression</b></p>
     					</div>
     					
-    					<h3>Ajouter un titre<a class="headerlink" id="X25c" href="#X25c"></a></h3>
+    					<h4>Ajouter un titre<a class="headerlink" id="X25c" href="#X25c"></a></h4>
     					
     					   <p>Parfois, il peut être utile d'ajouter un titre à la légende&nbsp;; dans d'autre cas, le nom de la couche peut suffire.</p>
     					   <p><b>Dans tous les cas, évitez d'écrire &#171;&nbsp;Légende&nbsp;&#187;</b>, ce qui n'apporte rien à la carte puisqu'on voit bien qu'il s'agit de la légende. Préférez un titre indiquant clairement le sujet de la carte.</p>
@@ -191,7 +191,7 @@
         					   <p>Le $ provoquera également une retour à la ligne pour les autres objets de la légende (étiquettes, nom de la couche...).</p>
         					</div>
         					
-        				<h3>Autres paramètres de la légende<a class="headerlink" id="X25d" href="#X25d"></a></h3>
+        				<h4>Autres paramètres de la légende<a class="headerlink" id="X25d" href="#X25d"></a></h4>
         				
         				    <p>Il est possible de modifier beaucoup de paramètres de la légende, comme par exemple la police, l'espacement des éléments...</p>
         				    <figure>
@@ -217,13 +217,13 @@
     					</figure>
 					
 					
-				<h2>Ajouter une échelle<a class="headerlink" id="X26" href="#X26"></a></h2>
+				<h3>Ajouter une échelle<a class="headerlink" id="X26" href="#X26"></a></h3>
 				
 				    <p>Pour certaines cartes, une échelle peut aider le lecteur à mieux comprendre le phénomène représenté. <b>Dans d'autres, elle ne sera pas nécessaire</b> (par exemple une carte du monde pour un public déjà familier de ce type de carte).</p>
 				    <p>On trouve 2 types d'échelles&nbsp;: <b>numérique</b>, de type 1/25000, ou <b>graphique</b>, avec une barre d'échelle. La barre d'échelle est généralement plus claire, et présente l'avantage d'être toujours valable si votre document est imprimé à une taille différente de l'original. QGIS permet la création de ces 2 types d'échelles.</p>
 				    <p>Attention, si vous utilisez une projection ne conservant pas les distances, votre échelle ne sera pas valable partout. Il est dans ce cas d'usage de préciser par exemple &#171;&nbsp;échelle valable à l'équateur&nbsp;&#187;.</p>
 				    
-				    <h3>Création de l'échelle<a class="headerlink" id="X26a" href="#X26a"></a></h3>
+				    <h4>Création de l'échelle<a class="headerlink" id="X26a" href="#X26a"></a></h4>
 				    
     					<div class="manip">
     						<p><img class="icone" src="illustrations/10_02_echelle_icone.jpg" alt="icône ajouter une nouvelle échelle graphique" >Pour ajouter une échelle : outil <b>Ajouter Barre d'échelle</b> puis dessinez un rectangle sur la carte.</p>
@@ -237,7 +237,7 @@
         				</div>
         				<p>Comme pour la légende, il est possible de régler assez finement les différents paramètres de cette échelle.</p>
         					
-        		 <h3>A chaque échelle son style<a class="headerlink" id="X26b" href="#X26b"></a></h3>
+        		 <h4>A chaque échelle son style<a class="headerlink" id="X26b" href="#X26b"></a></h4>
     					
     					<div class="manip">
 						  <p><img class="icone" src="illustrations/10_02_selection_deplace_icone.jpg" alt="icône sélectionner/déplacer un objet" >Après avoir sélectionné l'échelle au moyen de l'outil de sélection, vous pouvez en modifier les propriétés dans l'onglet <b>Propriétés de l'objet.</b></p>
@@ -306,7 +306,7 @@
     					<p class="note">(Notez bien que je décline toute responsabilité dans ce cas)</p>
 						
 				
-				<h2>Ajout d'éléments supplémentaires&nbsp;: titre, logo, flèche nord...<a class="headerlink" id="X27" href="#X27"></a></h2>
+				<h3>Ajout d'éléments supplémentaires&nbsp;: titre, logo, flèche nord...<a class="headerlink" id="X27" href="#X27"></a></h3>
 				
 					<div class="manip">
 						<p><img class="icone" src="illustrations/10_02_etiquette_icone.jpg" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter Etiquette</b>.</p>
@@ -345,7 +345,7 @@
 						<p>Si la carte présente une rotation (à spécifier dans ses propriétés, toujours dans la mise en page), la flèche aura cette même rotation.</p>
 					</div>
 					
-				<h2>Ajout d'une carte de situation<a class="headerlink" id="X28" href="#X28"></a></h2>
+				<h3>Ajout d'une carte de situation<a class="headerlink" id="X28" href="#X28"></a></h3>
 				
 					<p>Vous pouvez également ajouter une deuxième carte à votre page, qui servira par exemple de carte de situation.</p>
 					<p>Il est possible de faire figurer dans cette deuxième carte un rectangle correspondant à l'emprise de la première carte.</p>
@@ -393,7 +393,7 @@
 					</div>
 					
 				
-				<h2>Exporter la carte<a class="headerlink" id="X29" href="#X29"></a></h2>
+				<h3>Exporter la carte<a class="headerlink" id="X29" href="#X29"></a></h3>
 				
 					<p>Vous êtes satisfait de votre carte ? Voici venu le moment de l'exporter !</p>
 					<p>Vous pouvez soit l'<b>exporter au format image</b> (PNG, JPG) pour l'intégrer directement dans un rapport par exemple, soit l'<b>exporter au format vectoriel</b> SVG ou PDF pour la retravailler dans un logiciel de dessin type Inkscape ou Adobe Illustrator. Vous pouvez également l'imprimer directement&nbsp;!</p>
@@ -436,7 +436,7 @@
 					</figure>
 				
 				
-				<h2>Sauvegarder une mise en page<a class="headerlink" id="X210" href="#X210"></a></h2>
+				<h3>Sauvegarder une mise en page<a class="headerlink" id="X210" href="#X210"></a></h3>
 				
 					<p>Dans QGIS, les mises en page sont sauvegardées dans les projets QGZ ou QGS. Pour sauvegarder votre mise en page, il vous suffit donc de sauvegarder votre projet.</p>
 					

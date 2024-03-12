@@ -8,7 +8,7 @@
 
 	
 		<div class="main">
-			<h1>IV.6 Points de calage : en se basant sur une couche de référence</h1>
+			<h2>IV.6 Points de calage : en se basant sur une couche de référence</h2>
 				<ul class="listetitres">
 					<li><a href="#IV61">Ajout d'un fonds OpenStreetMap</a></li>
 					<li><a href="#IV62">Zoom sur la zone d'étude avec l'extension Nominatim Locator Filter</a></li>
@@ -26,7 +26,7 @@
 				</figure>
 				<p>Pour caler cette carte, nous allons nous baser sur les données <a class="ext" target="_blank" href="http://www.openstreetmap.org/">OpenStreetMap</a>. OpenStreetMap est une base de données cartographique libre ; on décrit souvent ce projet comme un "wikipedia cartographique". Pour en savoir plus, voir aussi <a href="03_05_donnees_osm.php" >ici</a> !</p>
 			
-				<h2>Ajout d'un fonds OpenStreetMap<a class="headerlink" id="IV61" href="#IV61"></a></h2>
+				<h3>Ajout d'un fonds OpenStreetMap<a class="headerlink" id="IV61" href="#IV61"></a></h3>
 				
 				    <p>2 méthodes permettant d'afficher un fonds OpenStreetMap sont décrites <a href="03_04_fonds_carte.php">ici</a>.</p>
 				    
@@ -53,7 +53,7 @@
   					</figure>
 					</div>
 				
-				<h2>Zoom sur la zone d'étude avec l'extension Nominatim Locator Filter<a class="headerlink" id="IV62" href="#IV62"></a></h2>
+				<h3>Zoom sur la zone d'étude avec l'extension Nominatim Locator Filter<a class="headerlink" id="IV62" href="#IV62"></a></h3>
 				
 				    <p>Nous cherchons ici à zoomer sur la zone qui concerne notre carte, à savoir Doncaster East dans le banlieue de Melbourne, en Australie. Il est bien sûr possible d'utiliser les outils de zoom pour cela, mais nous allons en profiter pour découvrir une autre méthode parfois bien pratique, avec l'extension <a class="ext" target="_blank" href="https://github.com/rduivenvoorde/nominatim_locator_filter">Nominatim Locator Filter</a>.</p>
 				    <div class="manip">
@@ -95,7 +95,7 @@
 					<p class="note">Savez-vous qu'il existe une version française de cette extension, <a class="ext" target="_blank" href="https://github.com/Oslandia/french_locator_filter" >French locator Filter</a>, basée sur l'API publique <a class="ext" target="_blank" href="https://geo.api.gouv.fr/adresse" >https://geo.api.gouv.fr/adresse</a> ?</p>
 					<p>Nous allons maintenant pouvoir procéder à la création des points de calage.</p>
 					
-				<h2>Création des points de calage<a class="headerlink" id="IV63" href="#IV63"></a></h2>
+				<h3>Création des points de calage<a class="headerlink" id="IV63" href="#IV63"></a></h3>
 					
 					<div class="manip">
 						<p>Ouvrez la fenêtre du géoréférenceur et ajoutez l'image à caler : <em class="data"><a href="donnees/TutoQGIS_04_Georef.zip">Doncaster_east_locality_map.PNG</a></em> située dans le dossier <b>TutoQGIS_04_Georef/donnees</b> (si nécessaire, aidez-vous pour cela du début de la <a href="04_03_calage_carroyage.php#IV31">partie IV.3.1</a>).</p>

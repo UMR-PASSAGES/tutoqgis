@@ -8,7 +8,7 @@
 	
 	
 		<div class="main">
-			<h1>VIII.1  Lier des données en fonction de leurs attributs : jointures attributaires</h1>
+			<h2>VIII.1  Lier des données en fonction de leurs attributs : jointures attributaires</h2>
 				<ul class="listetitres">
 					<li><a href="#VIII11">Comment fonctionne une jointure attributaire ? </a></li>
 					<li><a href="#VIII12">Application : population au Bhoutan</a></li>
@@ -30,7 +30,7 @@
 				
 			<p></p>
 
-			<h2>Comment fonctionne une jointure attributaire ?<a class="headerlink" id="VIII11" href="#VIII11"></a></h2>
+			<h3>Comment fonctionne une jointure attributaire ?<a class="headerlink" id="VIII11" href="#VIII11"></a></h3>
 			
 				<p>Dans un logiciel SIG, une jointure attributaire consiste à lier à une couche des données provenant d'une table ou d'une autre couche. On se base pour cela sur les données attributaires.</p>
 				<p>Un champ de la couche de départ et un champ de la table contenant les données à joindre servent de <b>champs clé</b>. Ces champs doivent être de même type (texte, nombre) et contenir les mêmes données. Le logiciel se base sur le contenu de ces champs pour déterminer quel élément de la table est lié à quel élément de la couche.</p>
@@ -50,7 +50,7 @@
 
 				
 				
-			<h2>Application : population au Bhoutan<a class="headerlink" id="VIII12" href="#VIII12"></a></h2>
+			<h3>Application : population au Bhoutan<a class="headerlink" id="VIII12" href="#VIII12"></a></h3>
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche des régions du <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Bhoutan" >Bhoutan</a> <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">regions_bhutan.shp</a></em>.</p>
@@ -104,9 +104,9 @@
 				<p>Cependant, la couche n'a pas été modifiée, la jointure n'est que temporaire. Pour sauvegarder définitivement la jointure, il faut sauvegarder la couche sous un autre nom (clic droit sur le nom de la couche &#8594; Exporter &#8594; Sauvegarder les entités sous).</p>
 			
 			
-			<h2>Quelques exemples supplémentaires<a class="headerlink" id="VIII13" href="#VIII13"></a></h2>
+			<h3>Quelques exemples supplémentaires<a class="headerlink" id="VIII13" href="#VIII13"></a></h3>
 			
-				<h3>Jointure d'une couche et d'une table : recensement de la population au Kenya<a class="headerlink" id="VIII13a" href="#VIII13a"></a></h3>
+				<h4>Jointure d'une couche et d'une table : recensement de la population au Kenya<a class="headerlink" id="VIII13a" href="#VIII13a"></a></h4>
 				
 					<div class="manip">
 						<p>Ouvrez un nouveau projet QGIS. Ajoutez-y la couche <em class="data">gadm36_KEN_1</em> de la base GeoPackage <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">gadm36_KEN.gpkg</a></em> et le fichier CSV <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">County_Population_2009</a></em>.</p>
@@ -129,7 +129,7 @@
 					</div>
 				
 				
-				<h3>Jointure de deux couches : licences sportives et catégories socio-professionnelles en France<a class="headerlink" id="VIII13b" href="#VIII13b"></a></h3>
+				<h4>Jointure de deux couches : licences sportives et catégories socio-professionnelles en France<a class="headerlink" id="VIII13b" href="#VIII13b"></a></h4>
 				
 					<div class="manip">
 						<p>Ouvrez un nouveau projet QGIS. Ajoutez-y les couches <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_licences_sportives_2016-2017</a></em> et <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_CSP_2016</a></em>.</p>
@@ -149,9 +149,9 @@
 					</figure>
 
 
-            <h2>Si une entité correspond à plusieurs entités de la couche à joindre<a class="headerlink" id="VIII14" href="#VIII14"></a></h2>
+            <h3>Si une entité correspond à plusieurs entités de la couche à joindre<a class="headerlink" id="VIII14" href="#VIII14"></a></h3>
             
-                <h3>Pour bien comprendre le problème<a class="headerlink" id="VIII14a" href="#VIII14a"></a></h3>
+                <h4>Pour bien comprendre le problème<a class="headerlink" id="VIII14a" href="#VIII14a"></a></h4>
                 
                     <div class="manip">
                         <p>Ouvrez un nouveau projet QGIS. Ajoutez-y la couche GeoPackage <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">communes_oise</a></em> et le fichier CSV <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">L_MONUMENT_HISTO_S_060</a></em> qui correspond à l'ensemble des monuments historiques classés et inscrits dans le département de l'Oise.</p>
@@ -179,7 +179,7 @@
                     <p class="note">Il importe de bien réfléchir aux questions qu'on veut pouvoir poser à ses données et à les structurer en conséquence, ce qui sort de l'objectif de ce tutoriel. Pour cela, vous pouvez discuter avec quelqu'un ayant l'habitude de travailler avec des bases de données, de préférence spatiales&nbsp;!</p>
                     <p>Nous allons ici ajouter à la couche de communes un champ contenant le nombre de monuments.</p>
                 
-                <h3>Agréger les données en 2 étapes<a class="headerlink" id="VIII14b" href="#VIII14b"></a></h3>                
+                <h4>Agréger les données en 2 étapes<a class="headerlink" id="VIII14b" href="#VIII14b"></a></h4>                
                 
                     <p>Une première possibilité consiste à procéder en 2 étapes :</p>
                     <ul>
@@ -225,7 +225,7 @@
                         </figure>
                     </div>
                     
-                <h3>Pour aller plus loin : une deuxième méthode avec une requête SQL<a class="headerlink" id="VIII14c" href="#VIII14c"></a></h3>
+                <h4>Pour aller plus loin : une deuxième méthode avec une requête SQL<a class="headerlink" id="VIII14c" href="#VIII14c"></a></h4>
                 
                     <p>Cette autre méthode fait ici appel à une requête SQL. Une <a href="06_04_req_sql.php">partie spécifique</a> étant dédiée à ces requêtes, voici sans plus de détails une requête répondant à notre question. Pour mieux comprendre cette méthode, si vous n'êtes pas familier du SQL, merci donc de vous reporter <a href="06_04_req_sql.php">ici</a> avant d'aller plus loin&nbsp;!</p>
                     <p>Vous pouvez bien sûr sauter cette étape et passer directement au <a href="08_02_jointure_spatiale.php">chapitre suivant sur les jointures spatiales</a>.</p>

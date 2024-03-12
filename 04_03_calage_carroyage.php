@@ -8,7 +8,7 @@
 
 	
 		<div class="main">
-			<h1>IV.3  Points de calage : avec un carroyage</h1>
+			<h2>IV.3  Points de calage : avec un carroyage</h2>
 				<ul class="listetitres">
 					<li><a href="#IV31">Création du premier point</a></li>
 					<li><a href="#IV32">Quelques astuces pour créer les points suivants</a></li>
@@ -19,7 +19,7 @@
 			<p>Pour ce faire, nous utiliserons la <a href="04_01_principe.php#IV12a">première méthode décrite dans la partie IV.1</a> : nous nous baserons sur le carroyage de cette carte pour créer les points de calage (la deuxième méthode sera abordée dans la <a href="04_06_calage_autre_couche.php"> partie IV.6</a>).</p>
 			
 		
-				<h2>Création du premier point<a class="headerlink" id="IV31" href="#IV31"></a></h2>
+				<h3>Création du premier point<a class="headerlink" id="IV31" href="#IV31"></a></h3>
 				
 					<div class="manip">
 						<p>Lancez QGIS ou créez un nouveau projet, et assurez-vous que le <a href="02_03_couches_projets.php#II31">SCR de ce projet</a> soit le <b>WGS84 EPSG 4326</b>.</p>
@@ -96,7 +96,7 @@
 				
 
 	
-				<h2>Quelques astuces pour créer les points suivants<a class="headerlink" id="IV32" href="#IV32"></a></h2>
+				<h3>Quelques astuces pour créer les points suivants<a class="headerlink" id="IV32" href="#IV32"></a></h3>
 					
 					<div class="manip">
 						<p>Procédez de la même manière pour rajouter 5 autres points de calage. Faites en sorte que ces points soient bien répartis sur l'image.</p>

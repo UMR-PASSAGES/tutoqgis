@@ -8,7 +8,7 @@
 		
 		<div class="main">
 		
-			<h1>Index</h1>
+			<h2>Index</h2>
 				
 				<p>Cette liste recense les notions abordées dans ce tutoriel et n'est donc pas un catalogue exhaustif des fonctionnalités de QGIS.</p>
 				<p>Chaque terme renvoie à la ou les partie(s) ou sous-partie(s) où il est abordé.</p>

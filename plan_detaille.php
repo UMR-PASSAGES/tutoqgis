@@ -8,7 +8,7 @@
 		
 		<div class="main">
 		
-			<h1>Plan détaillé</h1>
+			<h2>Plan détaillé</h2>
 			
 				<ol class="withroman">
 				

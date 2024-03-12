@@ -8,7 +8,7 @@
 
 	
 		<div class="main">
-			<h1>III.3  Ajout de données ponctuelles à partir d'un fichier texte</h1>
+			<h2>III.3  Ajout de données ponctuelles à partir d'un fichier texte</h2>
 				<ul class="listetitres">
 					<li><a href="#III31">Qu'y a-t-il dans le fichier texte ?</a></li>
 					<li><a href="#III32">Visualisation des données dans QGIS</a></li>
@@ -18,7 +18,7 @@
 			<p>Nous avons vu quelques pistes pour rechercher et afficher des données au format SIG dans QGIS, que ce soit en les <a href="03_01_donnees_internet.php">téléchargeant</a> ou via des <a href="03_02_donnees_flux.php">flux</a>. Il arrive aussi de disposer d'un tableau avec deux colonnes X et Y : comment utiliser ces données dans un SIG ?</p>
 			<p>Nous prendrons ici l'exemple d'un fichier au <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Comma-separated_values">format CSV</a>. Pour information, il est possible de créer un fichier au format CSV à partir d'un fichier ODS (LibreOffice) ou XLS (Microsoft Office) par exemple.</p>
 			
-			<h2>Qu'y a-t-il dans le fichier texte ?<a class="headerlink" id="III31" href="#III31"></a></h2>
+			<h3>Qu'y a-t-il dans le fichier texte ?<a class="headerlink" id="III31" href="#III31"></a></h3>
 				
 				<div class="manip">
 					<p>Dans l'explorateur de votre ordinateur, ouvrez le fichier <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">villes_bhutan_geonames.csv</a></em> situé dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b> à l'aide d'un éditeur de texte simple (<b>pas dans un tableur</b>) : par exemple, WordPad dans Windows, TextEdit sous Mac, gedit sous Ubuntu.</p>
@@ -62,7 +62,7 @@
 				</div>
 	
 			
-			<h2>Visualisation des données dans QGIS<a class="headerlink" id="III32" href="#III32"></a></h2>
+			<h3>Visualisation des données dans QGIS<a class="headerlink" id="III32" href="#III32"></a></h3>
 				
 				<div class="manip">
 				  <p>Ouvrez un nouveau projet vide dans QGIS.</p>
@@ -90,7 +90,7 @@
 				</div>		
 	
 			
-			<h2>Création du shapefile de points<a class="headerlink" id="III33" href="#III33"></a></h2>
+			<h3>Création du shapefile de points<a class="headerlink" id="III33" href="#III33"></a></h3>
 			
 			<p>Regardez <a href="01_02_info_geo.php#I23b">à quel emplacement</a> est stockée votre couche. Vous pouvez observer que cet emplacement fait référence à un fichier CSV et non à un fichier SHP.</p>
 			<p>Par ailleurs, si vous sélectionnez la couche de villes dans la table des matières, vous pouvez constater que l'icône pour passer en mode édition est désactivée, au contraire de notre couche de pays. La couche de villes n'est donc pas éditable.</p>
