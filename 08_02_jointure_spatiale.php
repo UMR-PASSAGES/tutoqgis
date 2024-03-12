@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">VIII.  Lier des données de deux sources différentes : les jointures</h1>
 			<h2>VIII.2  Lier des données en fonction de leur position : jointures spatiales</h2>
 				<ul class="listetitres">
 					<li><a href="#VIII21">Comment fonctionne une jointure spatiale ?</a></li>

@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">III.  Recherche et ajout de données</h1>
 			<h2>III.4  Ajouter un fonds de carte en ligne</h2>
 				<ul class="listetitres">
 					<li><a href="#III41">Principe</a></li>

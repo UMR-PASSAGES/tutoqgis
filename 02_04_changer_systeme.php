@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">II.  Géodésie</h1>
 			<h2>II.4  Passer d'un système de coordonnées à un autre</h2>
 				<ul class="listetitres">
 					<li><a href="#II41">Modifier le SCR du projet</a></li>

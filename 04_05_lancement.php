@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">IV.  Géoréférencement</h1>
 			<h2>IV.5  Lancer le géoréférencement</h2>
 				<ul class="listetitres">
 					<li><a href="#IV51">Vérification avant calage : les erreurs</a>

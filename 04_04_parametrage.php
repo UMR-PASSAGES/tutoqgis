@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">IV.  Géoréférencement</h1>
 			<h2>IV.4  Paramétrage du géoréférencement</h2>
 				<ul class="listetitres">
 					<li><a href="#IV41">Type de transformation, ou comment calculer les nouvelles coordonnées des points ?</a>

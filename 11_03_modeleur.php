@@ -8,6 +8,7 @@
 
 		
 		<div class="main">
+		  <h1 class="hide_for_pdf">XI.  Automatisation de traitements</h1>
 			<h2>XI.3  Construire et utiliser un modèle</h2>
 				<ul class="listetitres">
 					<li><a href="#XI31">Création d'un modèle</a>

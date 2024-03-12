@@ -8,6 +8,7 @@
 
 		
 		<div class="main">
+		  <h1 class="hide_for_pdf">XII.  Télédétection</h1>
 			<h2>XII.3  Classification non supervisée</h2>
 			
   			<ul class="listetitres">

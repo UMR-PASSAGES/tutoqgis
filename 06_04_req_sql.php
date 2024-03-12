@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">VI.  Sélectionner des données : les requêtes</h1>
 			<h2>VI.4  Pour aller plus loin : requêtes SQL</h2>
 				<ul class="listetitres">
 					<li><a href="#VI41">Utiliser du SQL sans passer par un logiciel de bases de données : le concept de couche virtuelle</a></li>

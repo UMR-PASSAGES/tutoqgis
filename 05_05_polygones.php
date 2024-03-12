@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">V. Numérisation</h1>
 			<h2>V.5  Numériser des polygones</h2>
 				<ul class="listetitres">
 					<li><a href="#V51">Création d'une couche de polygones</a></li>

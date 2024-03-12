@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">VI.  Sélectionner des données : les requêtes</h1>
 			<h2>VI.2  Sélectionner des éléments en fonction de leur position par rapport à d'autres : requêtes spatiales</h2>
 				<ul class="listetitres">
 					<li><a href="#VI21">Faire une requête spatiale simple</a></li>

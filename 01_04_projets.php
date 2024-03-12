@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">I.  Prise en main</h1>
 			<h2>I.4  Espace de travail (projet QGS)</h2>
 				<ul class="listetitres">
 					<li><a href="#I31">Qu'est-ce qu'un projet dans un logiciel SIG ?</a></li>

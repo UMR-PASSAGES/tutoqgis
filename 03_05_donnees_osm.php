@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">III.  Recherche et ajout de données</h1>
 			<h2>III.5  QGIS et OpenStreetMap</h2>
 				<ul class="listetitres">
 					<li><a href="#III51">Qu'est-ce qu'OpenStreetMap ?</a></li>

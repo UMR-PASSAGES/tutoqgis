@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">II.  Géodésie</h1>
 			<h2>II.1  Introduction à la géodésie</h2>
 				<ul class="listetitres">
 					<li><a href="#II11">Bref historique</a></li>

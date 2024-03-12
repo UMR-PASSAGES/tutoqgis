@@ -7,6 +7,7 @@
 	<div id="container_main_sidebar">
 
 		<div class="main">
+		  <h1 class="hide_for_pdf">I.  Prise en main</h1>
 			<h2>I.3  Formats de données SIG</h2>
 				<ul class="listetitres">
 					<li><a href="#I31">Formats vecteur : SHP, GPKG et TAB</a>

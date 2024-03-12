@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">IV.  Géoréférencement</h1>
 			<h2>IV.2  Géoréférencement : les préliminaires</h2>
 				<ul class="listetitres">
 					<li><a href="#IV21">Objectif</a></li>

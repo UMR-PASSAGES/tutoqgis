@@ -8,6 +8,7 @@
 
 		
 		<div class="main">
+		  <h1 class="hide_for_pdf">X.  Représenter des données et les mettre en page</h1>
 			<h2>X.1  Représenter des données : différentes méthodes adaptées à différents cas</h2>
 				<ul class="listetitres">
 					<li><a href="#X11">Représenter des quantités ou des effectifs : carte en symboles proportionnels</a>
@@ -309,8 +310,8 @@
 					
 					<p>Une carte en semis de points permet, à partir d'un maillage surfacique, de représenter des quantités ou effectifs par des points placés aléatoirement au sein de chaque polygone. Le nombre de ces points est proportionnel à la quantité ou l'effectif lié au polygone.</p>
 					<figure>
-					   <iframe src="http://www.radicalcartography.net/index.html?chicagodots" width="600" height="400" style="border:1px solid darkgrey;"></iframe>
-					   <figcaption>Carte en semis de points des Etats-Unis&nbsp;: 1 point représente un personne, sa couleur est fonction de l'origine de cette personne. Cette carte met en lumière la ségrégation qui a lieu notamment dans certains quartiers des grandes villes.</figcaption>
+					   <iframe src="http://www.radicalcartography.net/chicagodots" width="600" height="400" style="border:1px solid darkgrey;"></iframe>
+					   <figcaption>Carte en semis de points de Chicago&nbsp;: 1 point représente un personne, sa couleur est fonction de l'origine de cette personne. Cette carte met en lumière la ségrégation qui a lieu notamment dans certains quartiers des grandes villes.</figcaption>
 				    </figure>
 					
 					<p>Ici, nous allons créer ces points aléatoires en fonction du champ POPULATION. On pourrait créer un point par personne, mais le temps de création de la couche de points serait très long, et le résultat serait peu lisible. <b>Nous allons donc créer un point pour 100 personnes.</b></p>

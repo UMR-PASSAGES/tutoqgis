@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">VII.  Créer, supprimer, renommer et calculer des champs</h1>
 			<h2>VII.1  Manipulation de champs</h2>
 				<ul class="listetitres">
 					<li><a href="#VII11">Quels sont les champs présents dans une table&nbsp;?</a></li>

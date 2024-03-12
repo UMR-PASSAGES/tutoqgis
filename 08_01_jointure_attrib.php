@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">VIII.  Lier des données de deux sources différentes : les jointures</h1>
 			<h2>VIII.1  Lier des données en fonction de leurs attributs : jointures attributaires</h2>
 				<ul class="listetitres">
 					<li><a href="#VIII11">Comment fonctionne une jointure attributaire ? </a></li>

@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">V. Numérisation</h1>
 			<h2>V.2  Ajout de points dans une couche</h2>
 				<ul class="listetitres">
 					<li><a href="#V21">Rendre une couche éditable</a></li>

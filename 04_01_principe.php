@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">IV.  Géoréférencement</h1>
 			<h2>IV.1  Principe du géoréférencement</h2>
 				<ul class="listetitres">
 					<li><a href="#IV11">Qu'est-ce que le géoréférencement ?</a></li>

@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">VI.  Sélectionner des données : les requêtes</h1>
 			<h2>VI.1  Sélectionner des éléments en fonction de leurs données attributaires : requêtes attributaires</h2>
 				<ul class="listetitres">
 					<li><a href="#VI11">Faire une requête simple</a></li>

@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">IX.  Analyse spatiale</h1>
 			<h2>IX.2  Analyse spatiale : quelques exemples d'opérations sur des données raster</h2>
 				<ul class="listetitres">
 					<li><a href="#IX21">Préparation des données : découpage d'un raster</a></li>

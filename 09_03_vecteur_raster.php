@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">IX.  Analyse spatiale</h1>
 			<h2>IX.3  Analyse spatiale : croisement de données vecteur et raster</h2>
 				<ul class="listetitres">
 					<li><a href="#IX31">Préparation des données&nbsp;: un seul SCR pour tous</a></li>

@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">IV.  Géoréférencement</h1>
 			<h2>IV.3  Points de calage : avec un carroyage</h2>
 				<ul class="listetitres">
 					<li><a href="#IV31">Création du premier point</a></li>

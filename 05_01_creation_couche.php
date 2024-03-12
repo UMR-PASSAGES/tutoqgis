@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">V. Numérisation</h1>
 			<h2>V.1  Création d'une couche vide</h2>
 				<ul class="listetitres">
 					<li><a href="#V11">Création d'une couche vide</a></li>

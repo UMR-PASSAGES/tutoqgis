@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">V. Numérisation</h1>
 			<h2>V.6  Quelques notions de topologie</h2>
 				<ul class="listetitres">
 					<li><a href="#V61">Qu'est-ce que la topologie ?</a>

@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">IX.  Analyse spatiale</h1>
 			<h2>IX.1  Analyse spatiale : quelques exemples d'opérations sur des données vecteur</h2>
 				<ul class="listetitres">
 					<li><a href="#IX11">Découper des données par d'autres données</a>

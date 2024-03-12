@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">IX.  Analyse spatiale</h1>
 			<h2>IX.4  Un exemple d'application&nbsp;: créer un maillage</h2>
 				<ul class="listetitres">
 					<li><a href="#IX41">Principe</a></li>

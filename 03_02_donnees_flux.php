@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">III.  Recherche et ajout de données</h1>
 			<h2>III.2  Ajout de données via des flux</h2>
 				<ul class="listetitres">
 					<li><a href="#III21">Qu'est-ce qu'un flux WMS ou WFS ?</a></li>

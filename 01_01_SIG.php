@@ -7,6 +7,7 @@
 	<div id="container_main_sidebar">
 		
 		<div class="main">
+		  <h1 class="hide_for_pdf">I.  Prise en main</h1>
 			<h2>I.1  Qu'est-ce qu'un SIG ? (un peu de théorie...)</h2>
 				<ul class="listetitres">
 					<li><a href="#I11">Définitions</a>

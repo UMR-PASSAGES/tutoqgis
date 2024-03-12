@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">VI.  Sélectionner des données : les requêtes</h1>
 			<h2>VI.3  Combiner des requêtes</h2>
 				<ul class="listetitres">
 					<li><a href="#VI31">Combiner deux requêtes attributaires</a></li>

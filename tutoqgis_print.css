@@ -598,6 +598,9 @@ hov         #1D3437     hover colour
 		font-size:1.5em;
 		margin:1em 0 1em;
 	}
+	h1.hide_for_pdf {
+		display: none;
+	}
 	h2 {
 		font-variant:small-caps;
 		color: /*link*/#28A6B7;

@@ -8,6 +8,7 @@
 	
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">VII.  Créer, supprimer, renommer et calculer des champs</h1>
 			<h2>VII.2  Calcul de champs</h2>
 				<ul class="listetitres">
 					<li><a href="#VII21">Comment fonctionne la calculatrice de champ ?</a></li>

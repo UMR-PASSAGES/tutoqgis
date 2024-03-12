@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">V. Numérisation</h1>
 			<h2>V.3  Saisie des données attributaires : en savoir plus</h2>
 				<ul class="listetitres">
 					<li><a href="#V31">Saisir les données : à la création de l'entité ou dans la table</a></li>

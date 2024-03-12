@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">V. Numérisation</h1>
 			<h2>V.4  Numériser des lignes</h2>
 				<ul class="listetitres">
 					<li><a href="#V41">Création d'une couche de lignes</a></li>

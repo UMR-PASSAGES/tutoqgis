@@ -8,6 +8,7 @@
 
 		
 		<div class="main">
+		  <h1 class="hide_for_pdf">XI.  Automatisation de traitements</h1>
 			<h2>XI.1  Traitement de base pour une seule couche</h2>
 				
 				<p>Nous allons (re)voir ici une manipulation simple&nbsp;: comment <a href="09_01_vecteur.php#IX11">découper une couche par une autre</a>.</p>

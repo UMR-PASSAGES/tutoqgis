@@ -8,6 +8,7 @@
 
 		
 		<div class="main">
+		  <h1 class="hide_for_pdf">XI.  Automatisation de traitements</h1>
 			<h2>XI.2  Exécuter un outil &#171; par lot &#187;</h2>
 				
 				<p>L'outil de découpage est accessible via la boîte à outils&nbsp;; tous les outils de cette boîte peuvent être exécutés <b>par lot</b>.</p>

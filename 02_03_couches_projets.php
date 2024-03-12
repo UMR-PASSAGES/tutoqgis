@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">II.  Géodésie</h1>
 			<h2>II.3  Couches et projets : à chacun son système</h2>
 				<ul class="listetitres">
 					<li><a href="#II31">SCR du projet</a></li>

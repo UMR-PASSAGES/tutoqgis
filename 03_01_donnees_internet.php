@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">III.  Recherche et ajout de données</h1>
 			<h2>III.1  Recherche de données SIG sur internet</h2>
 				<ul class="listetitres">
 					<li><a href="#III11">Données nationales pour la France</a>

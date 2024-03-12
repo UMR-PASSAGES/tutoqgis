@@ -8,6 +8,7 @@
 
 		
 		<div class="main">
+		  <h1 class="hide_for_pdf">X.  Représenter des données et les mettre en page</h1>
 			<h2>X.2  Mettre en page une carte</h2>
 				<ul class="listetitres">
 					<li><a href="#X21">Préparation de la mise en page</a></li>

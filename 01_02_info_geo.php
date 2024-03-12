@@ -7,6 +7,7 @@
 	<div id="container_main_sidebar">
 
 		<div class="main">
+		  <h1 class="hide_for_pdf">I.  Prise en main</h1>
 			<h2>I.2  Manipuler de l'information géographique</h2>
 				<ul class="listetitres">
 					<li><a href="#I21">Ajout et suppression d'une couche de données vecteur</a>

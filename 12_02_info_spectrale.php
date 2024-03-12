@@ -8,7 +8,7 @@
 
 		
 		<div class="main">
-		
+		  <h1 class="hide_for_pdf">XII.  Télédétection</h1>
 			<h2>XII.2  Extraction de l'information spectrale</h2>
 				
 				<ul class="listetitres">

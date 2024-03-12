@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">IV.  Géoréférencement</h1>
 			<h2>IV.6 Points de calage : en se basant sur une couche de référence</h2>
 				<ul class="listetitres">
 					<li><a href="#IV61">Ajout d'un fonds OpenStreetMap</a></li>

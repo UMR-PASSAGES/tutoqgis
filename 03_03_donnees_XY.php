@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">III.  Recherche et ajout de données</h1>
 			<h2>III.3  Ajout de données ponctuelles à partir d'un fichier texte</h2>
 				<ul class="listetitres">
 					<li><a href="#III31">Qu'y a-t-il dans le fichier texte ?</a></li>

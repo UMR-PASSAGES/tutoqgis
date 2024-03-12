@@ -8,6 +8,7 @@
 
 	
 		<div class="main">
+		  <h1 class="hide_for_pdf">II.  Géodésie</h1>
 			<h2>II.2  Des coordonnées, oui mais dans quel système ?</h2>
 				<ul class="listetitres">
 					<li><a href="#II21">Systèmes de coordonnées</a>
