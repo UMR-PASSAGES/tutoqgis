@@ -60,9 +60,9 @@
       					</figure>
       					<ul>
       					 <li class="espace">Sélectionnez l'image <em class="data">Sentinel2_2021_08_17.tif</em> dans la liste déroulante en haut de la fenêtre (si vous ne la voyez pas, rafraîchissez la liste au moyen du bouton à droite)</li>
-      					 <li class="espace">En bas de la fenêtre, dans la liste <em>Paramétrage rapide des longueurs d'onde</em>, sélectionnez <b>Sentinel-2</b>.</li>
+      					 <li class="espace">En bas de la fenêtre, dans la liste <b>Wavelength quick settings</b>, sélectionnez <b>Sentinel-2</b>.</li>
       					</ul>
-      					<p>Il est inutile de cliquer sur le bouton <em>Lancer</em>. Vous pouvez maintenant fermer cette fenêtre.</p>
+      					<p>Il est inutile de cliquer sur le bouton <em>Run</em>. Vous pouvez maintenant fermer cette fenêtre.</p>
     				  </div>
     				  
     				  <p>L'extension SCP est maintenant paramétrée pour travailler sur notre image, qui est reconnue comme une image Sentinel-2. Nous allons pouvoir dessiner nos ROI&nbsp;!</p>
@@ -70,13 +70,13 @@
     				<h4>Création des polygones d'entraînement (ROI)<a class="headerlink" id="XII21b" href="#XII21b"></a></h4>
   				  
     				  <div class="manip">
-    				    <p>Dans le panneau SCP (s'il n'est pas visible, menu Vue &#8594; Panneaux &#8594; Menu SCP), cliquez sur l'onglet vertical <b>Entrée données d'entraînement</b>&nbsp;:</p>
+    				    <p>Dans le panneau SCP (s'il n'est pas visible, menu Vue &#8594; Panneaux &#8594; Menu SCP), cliquez sur l'onglet vertical <b>Training input</b>&nbsp;:</p>
     				    <figure>
       						<a href="illustrations/12_02_entree_rois.jpg" >
       							<img src="illustrations/12_02_entree_rois.jpg" alt="onglet 'entrée données d'entrainement' du panneau SCP" width="450">
       						</a>
       					</figure>
-      					<p><img class="icone" src="illustrations/12_02_ouvrir_roi_icone.jpg" alt="icône ouvrir un jeu d'entrainement dans le panneau SCP" >Cliquez sur l'icône <b>Créer une nouvelle données d'entraînement</b> en haut du panneau SCP. Choisir l'emplacement et le nom de la couche SCP qui sera créée et qui contiendra les ROIs.</p>
+      					<p><img class="icone" src="illustrations/12_02_ouvrir_roi_icone.jpg" alt="icône ouvrir un jeu d'entrainement dans le panneau SCP" >Cliquez sur l'icône <b>Créer une nouvelle donnée d'entraînement</b> en haut du panneau SCP. Choisir l'emplacement et le nom de la couche SCP qui sera créée et qui contiendra les ROIs.</p>
       					<p>Cette couche est ajoutée à QGIS (ici, elle se nomme <em>signatures_spectrales</em>)&nbsp;:</p>
       					<figure>
       						<a href="illustrations/12_02_couche_rois.jpg" >
@@ -148,7 +148,7 @@
     				    </ul>
     				    <p class="note">N'oubliez pas d'incrémenter l'ID de la macro-classe (MC ID) à chaque nouveau polygone&nbsp;! Sinon, il est possible de le faire par la suite en double-cliquant sur la case à modifier, puis en tapant un chiffre.</p>
     				    
-    				    <p class="keskonfai">Je devrais peut-être ajouter plusieurs polgyones par classe ? (note pour moi-même : sauvegarder après chaque polygone, décocher "signature" pour que la sauvegarde soit plus rapide")</p>
+    				    <p class="note">Pensez à sauvegarder après chaque polygone, si vous décochez "signature" la sauvegarde sera plus rapide&nbsp;!</p>
     				    
     				    <p>Au final, votre panneau SCP doit ressembler à ceci&nbsp;:</p>
     				    <figure>
@@ -189,7 +189,8 @@
     						</a>
     					</figure>
     					
-    					<p class="keskonfai">Proposer de charger la couche de ROI déjà prête pour la suite de l'exo</p>
+    					<p>Vous pouvez par exemple charger la couche de polygones d'entraînement <em class="data">roi_sentinel2_2021_08_17.scp</em>.</p>
+    					<p class="keskonfai">TODO : préparer la couche et la mettre en téléchargement</p>
   				  
   				<h3>Interprétation de signature spectrale<a class="headerlink" id="XII22" href="#XII22"></a></h3>
   				
@@ -229,7 +230,6 @@
   				    </div>
   				    
   				    <p>Contrairement à ce qu'on aurait pu penser, il n'y a pas 13 bandes dans ce tableau mais 40&nbsp;! Pourquoi&nbsp;? Sont listées dans cet outil&nbsp;:</p>
-  				    <p class="keskonfai">A mettre à jour, il y en a 60 maintenant !</p>
   				    <ul>
   				      <li>Les 13 bandes du jeu de bandes actuel, sous la forme bandset#b1, bandset#b2 etc. (raster1 à raster13)</li>
   				      <li>Les 13 bandes du jeu de bande 1 (donc identiques à celles ci-dessus), sous la forme bandset1b1, bandset2b2 etc. (raster14 à raster26)</li>
