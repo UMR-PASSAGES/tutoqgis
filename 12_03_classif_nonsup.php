@@ -59,7 +59,7 @@
   					</figure>
   				</div>
   					
-  				<p class="keskonfai">Il n'y a que 10 bandes sur cette image et non 13 ?</p>
+  				<p class="keskonfai">Il n'y a que 10 bandes sur cette image et non 13 ? > on a enlevé la bande 1 (corrections atmosphériques à 60m) et la 9 et 10 (bandes d'estimation de la vapeur d'eau dans l'atmosphère, à 60m)</p>
   				
   				<div class="manip">	
   					<p>Pour explorer cette image, nous pouvons tester différentes <a href="12_01_intro_teledec.php#XII14b">compositions colorées</a>.</p>
@@ -70,7 +70,7 @@
   						</a>
   					</figure>
   					<p>On peut aussi tester des compositions en fausse couleur&nbsp;:</p>
-  					<p class="keskonfai">Lesquelles ?</p>
+  					<p class="keskonfai">PIR-R-Vert pour voir la végétation en rouge, IRM(12)-PIR,R, pour voir les sols nus, la végétation et l'humidité</p>
           </div>
           
           <p class="keskonfai">Interprétation ?</p>
@@ -98,7 +98,7 @@
 				
   				<h3>K-Means : comment ça marche&nbsp;?<a class="headerlink" id="XII34a" href="#XII34a"></a></h3>
   				
-  				  <p>La méthode des <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/K-moyennes" >K-Means ou K-moyennes</a> est une méthode de clustering utilisé pour regrouper des individus (dans notre cas, des pixels), de manière à ce qu'au sein de chaque groupe les individus se ressemblent le plus possible, et que les groupes soient le plus différents possibles les uns des autres.</p>
+  				  <p>La méthode des <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/K-moyennes" >K-Means ou K-moyennes</a> est une méthode de clustering utilisée pour regrouper des individus (dans notre cas, des pixels), de manière à ce qu'au sein de chaque groupe les individus se ressemblent le plus possible, et que les groupes soient le plus différents possibles les uns des autres.</p>
   				  
   				  <figure>
   						<a href="illustrations/12_03_kmeans_principe.jpg" >
@@ -165,9 +165,8 @@
 				      <ul>
 				        <li>La première colonne correspond à l'identifiant de la classe</li>
 				        <li>La deuxième colonne indique la signature spectrale de chaque classe, avec une valeur par bande</li>
-				        <li>La troisième colonne indique la distance</li>
+				        <li>La troisième colonne indique la distance au centre de la classe</li>
 				      </ul>
-				      <p class="keskonfai">Je ne sais pas à quoi correspond la distance dans la 3ème colonne ?</p>
 				      <p>L'image en sortie est automatiquement ajoutée à QGIS.</p>
 				    </div>
 				    
@@ -201,7 +200,7 @@
     					 <li>Cliquez ensuite sur le bouton <b>Calculer les valeurs uniques</b> pour faire apparaître une ligne par classe (si vous avez suivi l'exemple, il y en aura donc 20) dans le tableau</li>
     					</ul>
 
-    					<p class="keskonfai">Je ne comprends pas bien ce qui se passe quand on coche <em>Valeur C ID vers MC ID</em> ? Comment peut-on reclasser sans avoir la liste des classes ?</p>
+    					<p class="keskonfai"><em>Valeur C ID vers MC ID</em> : pas utilisé pour K-means puisque pas de hiérarchie pour ce type de classif</p>
     					
 				    </div>
 				  

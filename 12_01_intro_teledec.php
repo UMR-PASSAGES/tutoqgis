@@ -87,7 +87,7 @@
           					<p class="code">Réflectance x 100 = 60%</p> 
                   </div>
                   
-                  <p>Pour obtenir des valeurs de réflectances en bas de l'atmosphère (&#171;&nbsp;Bottom Of Atmosphere&nbsp;&#187; ou BOA), il faut appliquer un <b>modèle de corrections atmosphériques</b>. Il en existe de nombreux et tous sont imparfaits&nbsp;:</p>
+                  <p>Pour obtenir des valeurs de réflectances au sol (&#171;&nbsp;Bottom Of Atmosphere&nbsp;&#187; ou BOA), il faut appliquer un <b>modèle de corrections atmosphériques</b>. Il en existe de nombreux et tous sont imparfaits&nbsp;:</p>
                    
                   <ul>
                       <li>Modèle 6S, ATCOR, MACCS, etc.</li>
@@ -97,7 +97,7 @@
                   <p>L'objectif principal est&nbsp;:</p>
                   <ul>
                       <li>d'estimer la contribution atmosphérique dans les réflectances mesurées</li>
-                      <li>de passer des comptes numériques d’une image (CN ou DN pour « Digital Number ») à des valeurs physiques de réflectance</li>
+                      <li>de passer des luminances d’une image (CN ou DN pour « Digital Number ») à des valeurs physiques de réflectance</li>
                   </ul>
                   
                   <p class="keskonfai">Mais du coup on n'est pas déjà sur des valeurs de réflectance TOA ?</p>
@@ -132,7 +132,15 @@
       						</a>
       					</figure>
       					
-      					<p class="keskonfai">Il n'y a pas de partie "Quand ?"</p>
+      					<h3>Quand l'image a-t-elle été prise&nbsp;?<a class="headerlink" id="XII11c" href="#XII11c"></a></h3>
+      					
+      					 <p>La date de prise de vue d'une image satellitaire est très importante pour l'analyse et le traitement de cette dernière. En effet, l'interprétation d'une image prise en hiver ou en été n'est pas la même. Par exemple, une image prise en avril en Bretagne permet de détecter les sols nus et ainsi les semis de maïs. A contrario, une image prise fin juillet permet de détecter les céréales qui ont été récoltées (champs sols nus).</p>
+                  <figure>
+      						  <a href="illustrations/12_01_quand.jpg" >
+      							 <img src="illustrations/12_01_quand.jpg" alt="" width="650">
+      						  </a>  
+      					   </figure>
+                
                 
                 <p>Nous allons voir dans la suite de ce chapitre les étapes 1 et 3 : téléchargement et visualisation.</p>
           
@@ -142,12 +150,13 @@
             <p>Cette extension dispose d'un <a class="ext" target="_blank" href="https://readthedocs.org/projects/semiautomaticclassificationmanual-fr/downloads/pdf/latest/" >manuel</a> également très complet, utile notamment en cas de problème lors de l'installation.</p>
             
             <div class="manip">
-              <p>Pour installer cette extension&nbsp;: <b>menu Extensions &#8594; Installer/Gérer les extensions</b>&bvsp;:</p>
+              <p>Pour installer cette extension&nbsp;: <b>menu Extensions &#8594; Installer/Gérer les extensions</b>&nbsp;:</p>
               <figure>
     						<a href="illustrations/12_01_scp_install.jpg" >
     							<img src="illustrations/12_01_scp_install.jpg" alt="installation de l'extension scp" width="600">
     						</a>
     					</figure>
+    					
     					<ul>
     					 <li>Rubrique <b>Toutes</b></li>
     					 <li>barre de recherche : taper <b>SCP</b> par exemple</li>
@@ -165,6 +174,8 @@
   						<figcaption>Fenêtre de QGIS avec le menu, les 2 barres d'outils et le panneau SCP (cliquer pour agrandir).</figcaption>
   					</figure>
   					
+  					<p class="keskonfai">Refaire la capture d'écran avec la dernière version !</p>
+  					
   					
   				<h2>Téléchargement des données avec SCP<a class="headerlink" id="XII13" href="#XII13"></a></h2>
           
@@ -172,21 +183,20 @@
             <p>Il faudra également définir une zone géographique et une période d'acquisition.</p>
             <p>Une fois les images téléchargées, il est possible, toujours dans SCP, d'effectuer des prétraitements atmosphériques sur des images Landsat ou autre (bien vérifier le niveau de prétraitement de vos images téléchargées), de mosaïquer plusieurs images entre elles etc.</p>
             
-            <p class="keskonfai">Est-ce qu'on montre ici commment télécharger une image pas à pas ? Puis comment fusionner les bandes ?</p>
+            <p>Ici, cette étape de téléchargement de n'est pas abordée mais toutes les étapes sont décrites <a href="" >dans la documentation</a>.</p>
               
           <h2>Visualisation et présentation des images<a class="headerlink" id="XII14" href="#XII14"></a></h2> 
                 
             <div class="manip">
-              <p>Ouvrez un nouveau projet QGIS, ajoutez l'image Sentinel-2 <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>.</p>
+              <p>Ouvrez un nouveau projet QGIS, ajoutez l'image Sentinel-2 <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em> au moyen du plugin SCP :</p>
+              <p><img class="icone" src="illustrations/12_01_jeu_bandes_icone.jpg" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
+              <p class="keskonfai">Ajouter une capture d'écran en entourant le bouton</p>
             </div>
+            
             
             <p>Cette image est au format <a href="01_03_formats.php#I32" >GeoTIFF</a>, un format d’image standard comprenant des informations de géoréférencement à une image TIFF (projection, système de coordonnées, métadonnées…).</p>
             <p>Un GeoTIFF peut être composée de plusieurs sous-images, c’est le cas pour les images satellitaires dites multispectrales !!!</p>
             
-            <div class="manip">
-              <p><img class="icone" src="illustrations/12_01_jeu_bandes_icone.jpg" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
-              <p class="keskonfai">Peut-être intégrer cette manip dans le chapitre suivant, puisque le plugin SCP n'est pas utilisée dans ce chapitre ?</p>
-            </div>
             
             <p>Sentinel-2 est un satellite qui fournit des images composées de 13 bandes spectrales&nbsp;:</p>
             
@@ -264,18 +274,33 @@
 					   </tr>
             </table>
             
+            <p>Dans le module SCP > band set, on peut indiquer dans <b>Band quick settings</b>, on peut indiquer le satellite utilisé, ici Sentinel-2.</p>
+            
+            <p class="keskonfai">capture d'écran</p>
+            
+            <p>Pour afficher votre image dans les couches QGIS, il faut cliquer sur le bouton <b>Display RGB composite in map</b>.</p>
+            
+            <p class="keskonfai">capture d'écran</p>
+            
             <h3>Affichage d'une image en niveau de gris<a class="headerlink" id="XII14a" href="#XII14a"></a></h3> 
             
               <div class="manip">
-                <p>Par défaut, si on charge dans QGIS un raster avec plusieurs bandes, les 3 premières bandes sont affichées dans les canaux rouge, vert et bleu. Si on veut afficher une seule bande spectrale, par exemple celle du rouge (bande 4)&nbsp;:</p>
+                <p>Si on veut afficher une seule bande spectrale, par exemple celle de l'infra-rouge moyen (bande 13)&nbsp;:</p>
                 <p>Double-cliquez sur le nom de la couche pour aller dans ses <b>propriétés, rubrique Symbologie</b>&nbsp;:</p>
                 <figure>
       						<a href="illustrations/12_01_bande_grise_unique.jpg" >
       							<img src="illustrations/12_01_bande_grise_unique.jpg" alt="fenêtre des propriétés, rubrique symbologie, rendu = bande grise unique" width="600">
       						</a>
     						</figure>
-    						<p>Choisissez le type de rendu <b>Bande grise unique</b> puis la bande à représenter, ici la bande rouge 4.</p>
-                <p>Pour rehausse le contraste, on peut ensuite choisir d'exclure les valeurs extrêmes&nbsp;:</p>
+    						<p>Choisissez le type de rendu <b>Bande grise unique</b> puis la bande à représenter, ici la bande infra-rouge moyen 13.</p>
+    						
+              	<div class="question">
+            		<input type="checkbox" id="faq-1">
+            		<p><label for="faq-1">A quoi correspondent les pixels blancs ?</label></p>
+            		<p class="reponse">Ils correspondent aux feux de forêt actifs à l'heure de la prise de vue de l'image. Dans la bande spectrale de l'infra-rouge moyen (bande 13 à 2,19 micromètres pour Sentinel-2), les feux actifs sont caractérisés par une très forte réflectance, voire une saturation du signal. Si vous cliquez sur un pixel blanc avec l'outil Identifier les entités, vous avez une valeur à 1, soit 100% de réflectance. </p>
+            	</div>
+    						
+                <p>Pour rehausser le contraste, on peut ensuite choisir d'exclure les valeurs extrêmes&nbsp;:</p>
                 <figure>
       						<a href="illustrations/12_01_minmax.jpg" >
       							<img src="illustrations/12_01_minmax.jpg" alt="fenêtre des propriétés, rubrique symbologie, valeurs min-max, borne d'exclusion des valeurs extrêmes 2 et 98%" width="400">
@@ -289,8 +314,8 @@
     						</figure>
               </div>
               
-              <p>Comment interpréter cet affichage&nbsp;? Les pixels noirs ont des valeurs de réflectance très faibles et les pixels clairs des réflectances plus importantes.</p>
-              <p>On peut lire dans les propriétés les valeurs minimum (par défaut, en noir) et maximum (par défaut, en blanc). Entre ces 2 valeurs, la couleur est interpolée entre le noir et le blanc pour aboutir à un gris plus ou moins foncé</p>
+              <p>Comment interpréter cet affichage&nbsp;? Les pixels noirs ont des valeurs de réflectance très faibles (proches de 0) et les pixels clairs des réflectances plus importantes (proches de 1).</p>
+              <p>On peut lire dans les propriétés les valeurs minimum (par défaut, en noir) et maximum (par défaut, en blanc). Entre ces 2 valeurs, les nuances de gris sont interpolées entre le noir et le blanc pour aboutir à un gris plus ou moins foncé</p>
               <figure>
                 <a href="illustrations/12_01_minmax_valeurs.jpg" >
     							<img src="illustrations/12_01_minmax_valeurs.jpg" alt="fenêtre des propriétés, rubrique symbologie, lecture des valeurs min-max" width="650">
@@ -318,7 +343,7 @@
       							<img src="illustrations/12_01_histo_preferences.jpg" alt="fenêtre des propriétés, histogramme, choix de la bande" width="600">
       						</a>
     						</figure>
-    						<p>Par défaut, toutes les bandes sont affichées. Pour n'afficher qu'une seule bande, cliquer sur le bouton <b>Préférences/Actions</b> et choisir par exemple <b>Afficher la bande sélectionnée</b> puis afficher la bande 04&nbsp;:</p>
+    						<p>Par défaut, toutes les bandes sont affichées. Pour n'afficher qu'une seule bande, cliquer sur le bouton <b>Préférences/Actions</b> et choisir par exemple <b>Afficher la bande sélectionnée</b> puis afficher la bande 13&nbsp;:</p>
     						<figure>
                   <a href="illustrations/12_01_histo_bande4.jpg" >
       							<img src="illustrations/12_01_histo_bande4.jpg" alt="fenêtre des propriétés, histogramme, bande 4" width="600">
@@ -330,7 +355,7 @@
               
             <h3>Affichage d'une composition colorée<a class="headerlink" id="XII14b" href="#XII14b"></a></h3>
             
-              <p>Dans une <b>composition colorée</b>, on associe aux trois couleurs primaire (synthèse additive), le bleu, le vert et le rouge, trois bandes spectrales d’une image multispectrale.</p>
+              <p>Dans une <b>composition colorée</b>, on associe aux trois couleurs primaire (synthèse additive) que sont le bleu, le vert et le rouge, trois bandes spectrales d’une image multispectrale.</p>
               <p>Selon le site <a class="ext" target="_blank" href="https://www.123couleurs.fr/">123couleurs</a> : &#171;&nbsp;La <b>synthèse additive</b> correspond aux mélanges de couleurs que l’on obtient quand, en partant de l’absence de lumière (le « NOIR »), on allume ensemble plusieurs sources de lumière colorées. Le terme additif vient du fait que les mélanges résultent d’une addition de lumières colorées.&nbsp;&#187;</p>
 				      <figure>
                 <a href="https://fr.wikipedia.org/wiki/Synth%C3%A8se_additive#/media/Fichier:Synthese+.svg" >
@@ -361,7 +386,6 @@
   						
 				      <p>Dans une <b>composition colorée fausse couleur</b>, il n'y a pas d'adéquation entre les couleurs utilisées pour l’affichage et les bandes spectrales !</p>
 				      <p>Le but peut être par exemple de mieux voir la végétation, des zones brûlées...</p>
-				      <p class="keskonfai">Dans l'exemple ci-dessous, le but est bien de voir les zones qui ont brûlées ?</p>
 				      
 				      <div class="manip">
 				        <p>Par exemple, en choisissant les bandes suivantes&nbsp;:</p>
@@ -376,6 +400,8 @@
       						</a>
     						</figure>
 				      </div>
+				      
+				      <p class="keskonfai">Commentaire à venir !</p>
 				      
 				      <p>Dans le chapitre suivant, nous verrons comment aller un peu plus loin pour &#171;&nbsp;faire parler&nbsp;&#187; nos image satellite, à travers la notion de <em>signature spectrale</em>&nbsp;!</p>
 				      

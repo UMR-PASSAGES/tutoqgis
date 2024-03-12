@@ -54,7 +54,9 @@
 						</a>
 			   </figure>
 			  
-			   <p class="keskonfai">ici, 2 mots sur les avantages et les inconvénients de ce type de classif par rapport à d'autres types de classif supervisées ?</p>
+			   <p>Cet algorithme de type probabiliste bien adapté aux images satellitaires permet d'associer une probabilité d'appartenance d'un pixel à une classe. La prise de décision se fait par la valeur maximale de probabilité et permet d'associer une carte de confiance dans la prédiction.</p>
+			   
+			   <p>Le choix d'un algorithme de classification demeure complexe puisqu'il dépend du type de données, de l'échantillonnage dont on dispose et surtout du paysage étudié.</p>
 			  
 			  <h2>Visualisation de l'image<a class="headerlink" id="XII42" href="#XII42"></a></h2>
 			  

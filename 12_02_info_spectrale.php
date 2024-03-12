@@ -188,6 +188,8 @@
     							<img src="illustrations/12_02_charger_rois.jpg" alt="haut du panneau SCP, onglet 'entrée données d'entraînement', avec le bouton 'ouvrir un fichier de données d'entraînement' entouré en rouge" width="420">
     						</a>
     					</figure>
+    					
+    					<p class="keskonfai">Proposer de charger la couche de ROI déjà prête pour la suite de l'exo</p>
   				  
   				<h2>Interprétation de signature spectrale<a class="headerlink" id="XII22" href="#XII22"></a></h2>
   				
@@ -197,10 +199,10 @@
   				
   				  <h3>Indice de végétation NDVI<a class="headerlink" id="XII23a" href="#XII23a"></a></h3>
   				  
-  				    <p>L'indice de végétation ou <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">NDVI (Normalized Difference Vegetation Index)</a> permet de mesurer la présence de végétation vivante.</p>
+  				    <p>L'indice de végétation ou <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">NDVI (Normalized Difference Vegetation Index)</a> permet de mesurer et spatialiser le taux de couverture de la végétation au sol ainsi que son activité chlorophyllienne.</p>
   				    <p>Il se calcule à partire des bandes Proche Infra-Rouge (PIR) et Rouge (R) de la manière suivante&nbsp;:</p>
   				    <p class="code">NDVI = (PIR - R) / (PIR + R)</p>
-  				    <p>Ici, nous allons calculer cette indice de 2 manières différentes : avec l'extension SCP, et avec la calculatrice raster de QGIS.</p>
+  				    <p>Ici, nous allons calculer cet indice de 2 manières différentes : avec l'extension SCP, et avec la calculatrice raster de QGIS.</p>
   				    
   				    <p>Voici tout d'abord comment calculer le NDVI avec SCP&nbsp;:</p>
   				    
@@ -227,6 +229,7 @@
   				    </div>
   				    
   				    <p>Contrairement à ce qu'on aurait pu penser, il n'y a pas 13 bandes dans ce tableau mais 40&nbsp;! Pourquoi&nbsp;? Sont listées dans cet outil&nbsp;:</p>
+  				    <p class="keskonfai">A mettre à jour, il y en a 60 maintenant !</p>
   				    <ul>
   				      <li>Les 13 bandes du jeu de bandes actuel, sous la forme bandset#b1, bandset#b2 etc. (raster1 à raster13)</li>
   				      <li>Les 13 bandes du jeu de bande 1 (donc identiques à celles ci-dessus), sous la forme bandset1b1, bandset2b2 etc. (raster14 à raster26)</li>
@@ -282,7 +285,7 @@
   				  
   				  <h3>Normalized Burn Ratio (NBR)<a class="headerlink" id="XII23b" href="#XII23b"></a></h3>
   				  
-  				    <p>L'<a class="ext" target="_blank" href="https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio">indice de ratio de brûlure normalisé</a> (Normalized Burn Ration ou NBR) est utilisé pour identifier les zones brûlées et donner une mesure de la gravité.</p>
+  				    <p>L'<a class="ext" target="_blank" href="https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio">indice normalisé des surfaces brûlées</a> (Normalized Burn Ratio ou NBR) est utilisé pour identifier les surfaces brûlées et donner une mesure de l'intensité des feux.</p>
   				    <p>De la même manière que le NDVI, c'est un ratio basé sur 2 bandes, mais cette fois il s'agit des bandes <b>Proche Infra-Rouge (PIR)</b> et <b>Infra-Rouge Court (SWIR)</b> :</p>
   				    <p class="code">NBR = (NIR - SWIR) / (NIR + SWIR)</p>
   				    

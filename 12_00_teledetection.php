@@ -17,7 +17,7 @@
 					<li>Caractéristiques spectrales, spatiales, radiométriques et temporelles associées à une image satellitaire</li>
 					<li>Interprétation d'une image satellitaire, extraction de l’information spatiale et spectrale</li>
 					<li>Extraction des signatures spectrales d’objets géographiques sur une image satellitaire</li>
-					<li>Extraction et analyse des indices spectraux NDVI (Normalized Diference Vegetation Indes) et NBR (Normalized Burn Ratio)</li>
+					<li>Extraction et analyse des indices spectraux NDVI (Normalized Difference Vegetation Index) et NBR (Normalized Burn Ratio)</li>
 					<li>Métadonnées d'une image satellitaire</li>
 					<li>Classification non supervisée</li>
 					<li>Classification supervisée avec échantillonnage terrain au moyen de différents algorithmes : bayésiens, machine learning (SVM, Random Forest, réseaux de neurones...) et Deep Learning</li>
