@@ -20,10 +20,11 @@
   					</li>
   					<li><a href="#XII12">Installation de l'extension SCP</a></li>
   					<li><a href="#XII13">Téléchargement des données avec SCP</a></li>
-  					<li><a href="#XII14">Visualisation et présentation des images</a>
+  					<li><a href="#XII14">Chargement d'une image avec SCP</a></li>
+  					<li><a href="#XII15">Visualisation et présentation des images</a>
   					  <ul class="listesoustitres">
-  							<li><a href="#XII14a">Affichage d'une image en niveaux de gris</a></li>
-  							<li><a href="#XII14b">Affichage d'une composition colorée</a></li>
+  							<li><a href="#XII15a">Affichage d'une image en niveaux de gris</a></li>
+  							<li><a href="#XII15b">Affichage d'une composition colorée</a></li>
   						</ul>
   					</li>
   				</ul>
@@ -74,8 +75,6 @@
                   </table>
                   <br>
                   
-                  <p class="keskonfai">Demander autorisation à ESA pour reproduire du contenu du site web ,cf. https://sentinels.copernicus.eu/web/sentinel/terms-conditions</p>
-                  
                   <div class="theorie">
                       <p class="theorie">Qu'est-ce que la <a target="_blank" class="ext" href="https://fr.wikipedia.org/wiki/R%C3%A9flectance">réflectance</a>&nbsp;? C'est une grandeur physique qui correspond à la lumière réfléchie par un objet géographique. C’est donc un rapport entre l’énergie réfléchie et l’énergie incidente (soleil), il s’exprime en pourcentage.</p>
                       <figure>
@@ -100,9 +99,6 @@
                       <li>de passer des luminances d’une image (CN ou DN pour « Digital Number ») à des valeurs physiques de réflectance</li>
                   </ul>
                   
-                  <p class="keskonfai">Mais du coup on n'est pas déjà sur des valeurs de réflectance TOA ?</p>
-                    
-                
               <h4>Où&nbsp;? Géométrie des images Sentinel-2<a class="headerlink" id="XII11b" href="#XII11b"></a></h4>
                 
                 <figure>
@@ -134,10 +130,11 @@
       					
       					<h3>Quand l'image a-t-elle été prise&nbsp;?<a class="headerlink" id="XII11c" href="#XII11c"></a></h3>
       					
-      					 <p>La date de prise de vue d'une image satellitaire est très importante pour l'analyse et le traitement de cette dernière. En effet, l'interprétation d'une image prise en hiver ou en été n'est pas la même. Par exemple, une image prise en avril en Bretagne permet de détecter les sols nus et ainsi les semis de maïs. A contrario, une image prise fin juillet permet de détecter les céréales qui ont été récoltées (champs sols nus).</p>
+      					 <p>La date de prise de vue d'une image satellitaire est très importante pour l'analyse et le traitement de cette dernière. En effet, l'interprétation d'une image prise en hiver ou en été n'est pas la même.</p>
+      					 <p>Par exemple, une image prise en avril en Bretagne permet de détecter les sols nus et ainsi les semis de maïs. A contrario, une image prise fin juillet permet de détecter les céréales qui ont été récoltées (champs sols nus).</p>
                   <figure>
       						  <a href="illustrations/12_01_quand.jpg" >
-      							 <img src="illustrations/12_01_quand.jpg" alt="" width="650">
+      							 <img src="illustrations/12_01_quand.jpg" alt="figure à venir" width="650">
       						  </a>  
       					   </figure>
                 
@@ -149,23 +146,53 @@
             <p>L'extension QGIS <a class="ext" target="_blank" href="https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html">SCP : Semi-Automatic Classification Plugin</a> est développée et maintenue par Luca Congedo. C'est un outil très complet, presque un logiciel dans le logiciel, qui permet la classification supervisée d'images satellitaires, mais aussi leur téléchargement, pré-traitement et post-traitement.</p>
             <p>Cette extension dispose d'un <a class="ext" target="_blank" href="https://readthedocs.org/projects/semiautomaticclassificationmanual-fr/downloads/pdf/latest/" >manuel</a> également très complet, utile notamment en cas de problème lors de l'installation.</p>
             
+            <p class="attention">Dans la dernière version de SCP (version 8), <a class="ext" target="_blank" href="https://github.com/semiautomaticgit/SemiAutomaticClassificationPlugin/issues/307">la classification non supervisée n'est pas disponible</a>. Pour cette raison, nous utilisons ici l'ancienne version 7 de SCP.</p>     
+            
+            <p>Dès que la classification supervisée sera disponible dans la version actuelle, SCP pourra être installé comme les autres extensions&nbsp;!</p>            
+            <p>La première étape consiste à vérifier si SCP est déjà installé, et si oui dans quelle version.</p>            
+            
             <div class="manip">
-              <p>Pour installer cette extension&nbsp;: <b>menu Extensions &#8594; Installer/Gérer les extensions</b>&nbsp;:</p>
+              <p><b>Menu Extensions &#8594; Installer/Gérer les extensions</b>, tapez <b>scp</b> dans la barre de recherche.</p>
+              <p>3 possibilités&nbsp;:</p>
+              <ul>
+                <li class="espace"><b>SCP est déjà installé et son numéro de version commence par 7</b>&nbsp;: vous n'avez rien à faire et pouvez passer directement à <a href="12_01_intro_teledec.php#XII13">l'étape suivante</a>&nbsp;:</li>
+                <li class="espace"><b>SCP est déjà installé et son numéro de version commence par 8</b> : désactivez l'extension si elle est activée en décochant sa cas, ou bien désinstallez-la pour être sûr-e de ne pas vous tromper entre les 2 versions, puis lisez ce qui suit pour installer la version 7</li>
+                <li class="espace">la recherche ne renvoie pas de résultats, <b>SCP n'est pas installé</b> : lisez ce qui suit pour installer la version 7</li>
+              </ul>
+             </div>
+            
+             <p>Pour installer la version 7  de SCP, nous allons suivre <a class="ext" target="_blank" href="https://semiautomaticclassificationmanual.readthedocs.io/en/latest/faq.html#can-i-use-the-previous-version-7-of-scp" >la documentation</a>&nbsp:</p>
+             
+            <div class="manip">
+              <p><b>Menu Extensions &#8594; Installer/Gérer les extensions &#8594; Paramètres</b>&nbsp;: cliquez sur le bouton <b>Ajouter...</b> La fenêtre suivante s'ouvre&nbsp;:</p>
+              
               <figure>
-    						<a href="illustrations/12_01_scp_install.jpg" >
-    							<img src="illustrations/12_01_scp_install.jpg" alt="installation de l'extension scp" width="600">
+    						<a href="illustrations/12_01_depot_scp7.jpg" >
+    							<img src="illustrations/12_01_depot_scp7.jpg" alt="fenêtre d'ajout d'un dépôt d'extension avec le lien vers le dépôt SCP7" width="450">
     						</a>
     					</figure>
-    					
-    					<ul>
-    					 <li>Rubrique <b>Toutes</b></li>
-    					 <li>barre de recherche : taper <b>SCP</b> par exemple</li>
-    					 <li>Sélectionner <b>Semi-Automatic Classification Plugin</b> (attention, pas SCP-plugin&nbsp;!)</li>
-    					 <li><b>Installer le plugin</b></li>
-    					</ul>
-    					<p>Un nouveau panneau apparaît dans QGIS. Vous pourrez le désactiver/réactiver à l'aide du menu Vue &#8594; Panneaux &#8594; Menu SCP, ou bien à partir du menu SCP dans la barre de menu QGIS.</p>
-    					<p>2 barres d'outils peuvent également être affichées&nbsp;: SCP Working Toolbar et SCP Edit Toolbar (menu Vue &#8594; Barres d'outils pour les activer/désactiver).</p>
-            </div>
+  					
+  					<ul>
+  					 <li>Nom&nbsp;: <b>SCP</b></li>
+  					 <li>URL&nbsp;: <b>https://semiautomaticgit.github.io/SemiAutomaticClassificationPlugin_v7/repository.xml</b></li>
+  					 <li>Authentification&nbsp;: ne rien mettre</li>
+  					 <li><b>OK</b></li>
+  					</ul>
+  					
+  					<p>Si vous allez maintenant dans la rubrique <b>Toutes</b> du gestionnaire d'extensions et tapez <b>SCP</b> dans la barre de recherche, vous devriez voir l'extension <b>Semi-Automatic Classification Plugin - master</b>&nbsp;:</p>
+  					
+            <figure>
+  						<a href="illustrations/12_01_scp7_install.jpg" >
+  							<img src="illustrations/12_01_scp7_install.jpg" alt="fenêtre du gestionnaire d'extension, SCP7" width="650">
+  						</a>
+  					</figure>
+  					
+  					<p>Cliquez sur <b>Installer l'extension</b>. Il est possible que des messages d'erreurs s'affichent&nbsp;; redémarrez éventuellement QGIS.</p>
+  					<p>Vérifiez que l'extension SCP dans sa version 7 soit bien activée dans le gestionnaire d'extensions (case cochée).</p>
+  				</div>
+  				
+					<p>Une fois SCP7 installé et activé, un nouveau panneau apparaît dans QGIS. Vous pourrez le désactiver/réactiver à l'aide du <b>menu Vue &#8594; Panneaux &#8594; Menu SCP</b>, ou bien à partir du <b>nouveau menu SCP</b> dans la barre de menu QGIS.</p>
+					<p>2 barres d'outils peuvent également être affichées&nbsp;: <b>SCP Working Toolbar</b> et <b>SCP Edit Toolbar</b> (menu Vue &#8594; Barres d'outils pour les activer/désactiver).</p>
             
             <figure>
   						<a href="illustrations/12_01_qgis_scp.jpg" >
@@ -174,29 +201,30 @@
   						<figcaption>Fenêtre de QGIS avec le menu, les 2 barres d'outils et le panneau SCP (cliquer pour agrandir).</figcaption>
   					</figure>
   					
-  					<p class="keskonfai">Refaire la capture d'écran avec la dernière version !</p>
-  					
-  					
   				<h3>Téléchargement des données avec SCP<a class="headerlink" id="XII13" href="#XII13"></a></h3>
           
             <p>SCP offre la possibilité de télécharger des images gratuites (Sentinel, Landsat,etc.) sans avoir besoin de se rendre sur les géoportails. Pour cela, il faut au préalable avoir un compte sur ces sites (identifiant et mot de passe).</p>
             <p>Il faudra également définir une zone géographique et une période d'acquisition.</p>
             <p>Une fois les images téléchargées, il est possible, toujours dans SCP, d'effectuer des prétraitements atmosphériques sur des images Landsat ou autre (bien vérifier le niveau de prétraitement de vos images téléchargées), de mosaïquer plusieurs images entre elles etc.</p>
             
-            <p>Ici, cette étape de téléchargement de n'est pas abordée mais toutes les étapes sont décrites <a href="" >dans la documentation</a>.</p>
+            <p><b>Ici, cette étape de téléchargement de n'est pas abordée</b> mais toutes les étapes sont décrites <a class="ext" target="_blank" href="https://semiautomaticclassificationmanual.readthedocs.io/en/latest/download_products_tab.html" >dans la documentation</a>.</p>
+          
               
-          <h3>Visualisation et présentation des images<a class="headerlink" id="XII14" href="#XII14"></a></h3> 
+          <h3>Chargement d'une image avec SCP<a class="headerlink" id="XII14" href="#XII14"></a></h3> 
                 
             <div class="manip">
-              <p>Ouvrez un nouveau projet QGIS, ajoutez l'image Sentinel-2 <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em> au moyen du plugin SCP :</p>
+              <p>Ouvrez un nouveau projet QGIS. Il n'est pas nécessaire d'ajouter l'image <a href="01_02_info_geo.php#I24">de la manière habituelle</a>, nous allons la charger au moyen du plugin SCP :</p>
               <p><img class="icone" src="illustrations/12_01_jeu_bandes_icone.jpg" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
-              <p class="keskonfai">Ajouter une capture d'écran en entourant le bouton</p>
+              <figure>
+    						<a href="illustrations/12_01_scp_open_image.jpg" >
+    							<img src="illustrations/12_01_scp_open_image.jpg" alt="Fenêtre SCP, onglet bandset, avec le bouton pour ajouter une image entouré en rouge" width="600">
+    						</a>
+    					</figure>
+    					<p>Cliquez sur le bouton <b>Open a file</b> à droite de la liste déroulante vide, en haut de la fenêtre, et sélectionnez l'image <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>&nbsp;: elle est ajoutée à QGIS.</p>
             </div>
-            
             
             <p>Cette image est au format <a href="01_03_formats.php#I32" >GeoTIFF</a>, un format d’image standard comprenant des informations de géoréférencement à une image TIFF (projection, système de coordonnées, métadonnées…).</p>
             <p>Un GeoTIFF peut être composée de plusieurs sous-images, c’est le cas pour les images satellitaires dites multispectrales !!!</p>
-            
             
             <p>Sentinel-2 est un satellite qui fournit des images composées de 13 bandes spectrales&nbsp;:</p>
             
@@ -274,22 +302,36 @@
 					   </tr>
             </table>
             
-            <p>Dans le module SCP > band set, on peut indiquer dans <b>Band quick settings</b>, on peut indiquer le satellite utilisé, ici Sentinel-2.</p>
+            <p>Dans le module SCP <b>Band set</b>, on peut indiquer le satellite utilisé, ici Sentinel-2.</p>
             
-            <p class="keskonfai">capture d'écran</p>
+            <div class="manip">
+              <p>Toujours dans la partie <b>Band set</b>, à droite du bouton que vous avez utilisé pour ouvrir votre image, cliquez sur le bouton <b>Refresh list</b>.</p>
+              <p> Vous pouvez maintenant sélectionnez dans la liste déroulante votre image Sentinel2&nbsp;:</p>
+              <figure>
+    						<a href="illustrations/12_01_bandset_refresh.jpg" >
+    							<img src="illustrations/12_01_bandset_refresh.jpg" alt="fenêtre SCP, Band set : bouton pour rafraîchir la liste entouré en rouge, image Sentinel2 sélectionnée" width="480">
+    						</a>
+  						</figure>
+  						<p>En bas de la fenêtre, dans la liste déroulante <b>Wavelength quick settings</b>, vous pouvez maintenant choisir Sentinel-2&nbsp;:</p>
+  						<figure>
+    						<a href="illustrations/12_01_bandset_sentinel2.jpg" >
+    							<img src="illustrations/12_01_bandset_sentinel2.jpg" alt="fenêtre SCP, Band set : Sentinel-2 est sélectionné dans la liste Wavelength quick settings" width="600">
+    						</a>
+  						</figure>
+            </div>
             
-            <p>Pour afficher votre image dans les couches QGIS, il faut cliquer sur le bouton <b>Display RGB composite in map</b>.</p>
+            <p>SCP reconnaît maintenant qu'il s'agit d'une image Sentinel-2 : les longueurs d'onde des différentes bandes sont connues.</p>
             
-            <p class="keskonfai">capture d'écran</p>
+           <h3>Visualisation et présentation des images<a class="headerlink" id="XII15" href="#XII15"></a></h3> 
             
-            <h4>Affichage d'une image en niveau de gris<a class="headerlink" id="XII14a" href="#XII14a"></a></h4> 
+            <h4>Affichage d'une image en niveau de gris<a class="headerlink" id="XII15a" href="#XII15a"></a></h4> 
             
               <div class="manip">
                 <p>Si on veut afficher une seule bande spectrale, par exemple celle de l'infra-rouge moyen (bande 13)&nbsp;:</p>
                 <p>Double-cliquez sur le nom de la couche pour aller dans ses <b>propriétés, rubrique Symbologie</b>&nbsp;:</p>
                 <figure>
       						<a href="illustrations/12_01_bande_grise_unique.jpg" >
-      							<img src="illustrations/12_01_bande_grise_unique.jpg" alt="fenêtre des propriétés, rubrique symbologie, rendu = bande grise unique" width="600">
+      							<img src="illustrations/12_01_bande_grise_unique.jpg" alt="fenêtre des propriétés, rubrique symbologie, rendu = bande grise unique" width="580">
       						</a>
     						</figure>
     						<p>Choisissez le type de rendu <b>Bande grise unique</b> puis la bande à représenter, ici la bande infra-rouge moyen 13.</p>
@@ -345,15 +387,15 @@
     						</figure>
     						<p>Par défaut, toutes les bandes sont affichées. Pour n'afficher qu'une seule bande, cliquer sur le bouton <b>Préférences/Actions</b> et choisir par exemple <b>Afficher la bande sélectionnée</b> puis afficher la bande 13&nbsp;:</p>
     						<figure>
-                  <a href="illustrations/12_01_histo_bande4.jpg" >
-      							<img src="illustrations/12_01_histo_bande4.jpg" alt="fenêtre des propriétés, histogramme, bande 4" width="600">
+                  <a href="illustrations/12_01_histo_bande13.jpg" >
+      							<img src="illustrations/12_01_histo_bande13.jpg" alt="fenêtre des propriétés, histogramme, bande 13" width="600">
       						</a>
     						</figure>
     						<p>Vous pouvez zoomer sur le graphique en dessinant un rectangle, et revenir au zoom initial par un clic droit.</p>
     						<p>Il est possible d'exporter ce graphique au format image (JPG, PNG...).</p>
               </div>
               
-            <h4>Affichage d'une composition colorée<a class="headerlink" id="XII14b" href="#XII14b"></a></h4>
+            <h4>Affichage d'une composition colorée<a class="headerlink" id="XII15b" href="#XII15b"></a></h4>
             
               <p>Dans une <b>composition colorée</b>, on associe aux trois couleurs primaire (synthèse additive) que sont le bleu, le vert et le rouge, trois bandes spectrales d’une image multispectrale.</p>
               <p>Selon le site <a class="ext" target="_blank" href="https://www.123couleurs.fr/">123couleurs</a> : &#171;&nbsp;La <b>synthèse additive</b> correspond aux mélanges de couleurs que l’on obtient quand, en partant de l’absence de lumière (le « NOIR »), on allume ensemble plusieurs sources de lumière colorées. Le terme additif vient du fait que les mélanges résultent d’une addition de lumières colorées.&nbsp;&#187;</p>
@@ -381,8 +423,6 @@
     						  <li>Bande bleue &#8594; <b>bande 02</b> : bleu, 490 nm</li>
     						</ul>
   						</div>
-  						
-  						<p class="keskonfai">Ici il y a l'exo "Interpréter une composition colorée : méthode". On fait un truc là-dessus ??</p>
   						
 				      <p>Dans une <b>composition colorée fausse couleur</b>, il n'y a pas d'adéquation entre les couleurs utilisées pour l’affichage et les bandes spectrales !</p>
 				      <p>Le but peut être par exemple de mieux voir la végétation, des zones brûlées...</p>
