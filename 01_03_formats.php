@@ -119,6 +119,8 @@
 						<li class="espace"><b>AUX.XML :</b> ce fichier parfois présent sauvegarde des statistiques et parfois le système de coordonnées de l'image. Il permet d'accélérer l'affichage et certains traitements. Ce fichier est également lisible par le logiciel ArcGIS.</li>
 						<li class="espace"><b>TFW :</b> souvent appelé <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/World_file">"World file"</a>, ce fichier stocke les coordonnées de l'image et la taille des pixels. Ce type de fichier existe pour plusieurs formats d'image : l'extension sera JGW pour un JPG, PGW pour un PNG etc. Ce fichier n'est pas nécessaire si les informations sont déjà contenues dans l'en-tête de l'image (ce qui est le cas pour notre GeoTIFF). Les world file sont de moins en moins utilisés dans les SIG&nbsp;; ils peuvent cependant être utiles pour un logiciel non SIG ou pour un format d'image ne permettant pas le stockage d'informations de localisation dans son en-tête.</li>
 					</ul>
+					
+				  <p class="note">Pour en savoir plus sur ce format, vous pouvez lire cet article (en anglais) sur <a class="ext" target="_blank" href="https://blogs.loc.gov/maps/2023/05/the-secret-life-of-geotiffs/" >la vie secrète des GeoTIFFs</a>&nbsp;!</p>
 				
 				<h3>Quel format utiliser parmi tout ça ?<a class="headerlink" id="I33" href="#I33"></a></h3>
 				
@@ -129,7 +131,7 @@
 				        <li>S'agit-il de données raster, vecteur ?</li>
 				        <li>Faites-vous des traitements sur ces données, ou bien les affichez-vous simplement ?</li>
 				    </ul>
-				    <p>Utiliser le même format que vos collègues simplifie généralement beaucoup les choses.</p>
+				    <p>Utiliser le même format que vos collègues simplifie généralement les choses.</p>
 				    <p>Dans ce tutoriel, nous utiliserons surtout des données au format GeoPackage, pour les avantages cités plus haut. Cependant, les manipulations sont exactement les mêmes avec des données au format Shapefile ou autre.</p>
 				   
 				    
