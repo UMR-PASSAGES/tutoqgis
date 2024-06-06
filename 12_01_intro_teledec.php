@@ -146,7 +146,9 @@
             <p>L'extension QGIS <a class="ext" target="_blank" href="https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html">SCP : Semi-Automatic Classification Plugin</a> est développée et maintenue par Luca Congedo. C'est un outil très complet, presque un logiciel dans le logiciel, qui permet la classification supervisée d'images satellitaires, mais aussi leur téléchargement, pré-traitement et post-traitement.</p>
             <p>Cette extension dispose d'un <a class="ext" target="_blank" href="https://readthedocs.org/projects/semiautomaticclassificationmanual-fr/downloads/pdf/latest/" >manuel</a> également très complet, utile notamment en cas de problème lors de l'installation.</p>
             
-            <p class="attention">Dans la dernière version de SCP (version 8), <a class="ext" target="_blank" href="https://github.com/semiautomaticgit/SemiAutomaticClassificationPlugin/issues/307">la classification non supervisée n'est pas disponible</a>. Pour cette raison, nous utilisons ici l'ancienne version 7 de SCP.</p>     
+            <p class="attention">Dans la dernière version de SCP (version 8), <a class="ext" target="_blank" href="https://github.com/semiautomaticgit/SemiAutomaticClassificationPlugin/issues/307">la classification non supervisée n'est pas disponible</a>. Pour cette raison, nous utilisons ici l'ancienne version 7 de SCP.</p>
+            
+            <p><b>Il est néanmoins possible d'utiliser la dernière version de SCP pour les chapitres 1, 2 et 4 de cette partie.</b> Dans ce cas, les menus et boutons pourront être légèrement différents.</p>   
             
             <p>Dès que la classification supervisée sera disponible dans la version actuelle, SCP pourra être installé comme les autres extensions&nbsp;!</p>            
             <p>La première étape consiste à vérifier si SCP est déjà installé, et si oui dans quelle version.</p>            

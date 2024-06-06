@@ -63,21 +63,34 @@
       					 <li class="espace">En bas de la fenêtre, dans la liste <b>Wavelength quick settings</b>, sélectionnez <b>Sentinel-2</b>.</li>
       					</ul>
       					<p>Il est inutile de cliquer sur le bouton <em>Run</em>. Vous pouvez maintenant fermer cette fenêtre.</p>
+      				</div>
+      				
+      				<p>L'extension SCP est maintenant paramétrée pour travailler sur notre image, qui est reconnue comme une image Sentinel-2.
+      				
+      				<div class="manip">
+      					<p>La dernière chose à faire avant de commencer à dessiner les polygones d'entraînement est de choisir une <a href="12_01_intro_teledec.php#XII15b">composition colorée</a> permettant de bien voir les différentes catégories d'occupation du sol. Ici, afin de bien voir la végétation, les zones brûlées et les feux, nous allons afficher les <b>bandes 13, 8 et 4</b>&nbsp;:</p>
+      					<figure>
+                  	<a href="illustrations/12_02_compocol_13_8_4.jpg" >
+                		<img src="illustrations/12_02_compocol_13_8_4.jpg" alt="Composition colorée 13-8-4 de l'image Sentinel 2 : la végétation est en vert, les zones brûlées en rouge" width="600">
+                	</a>
+                </figure>
     				  </div>
     				  
-    				  <p>L'extension SCP est maintenant paramétrée pour travailler sur notre image, qui est reconnue comme une image Sentinel-2. Nous allons pouvoir dessiner nos ROI&nbsp;!</p>
+    				  <p>Nous allons pouvoir dessiner nos ROI&nbsp;!</p>
     				  
     				<h4>Création des polygones d'entraînement (ROI)<a class="headerlink" id="XII21b" href="#XII21b"></a></h4>
+    				
+    				  <p>Nous allons créer ici une couche de polygones d'entraînement. Si vous désirez sauter cette étape, ou bien comparer vos résultats, vous trouverez également en téléchargement la couche de ROI "prête à l'emploi" <em class="data"><a href="donnees/TutoQGIS_12_teledetection.zip">ROI_S2_2021_08_17.scpx</a></em>.</p>
   				  
     				  <div class="manip">
     				    <p>Dans le panneau SCP (s'il n'est pas visible, menu Vue &#8594; Panneaux &#8594; Menu SCP), cliquez sur l'onglet vertical <b>Training input</b>&nbsp;:</p>
     				    <figure>
       						<a href="illustrations/12_02_entree_rois.jpg" >
-      							<img src="illustrations/12_02_entree_rois.jpg" alt="onglet 'entrée données d'entrainement' du panneau SCP" width="450">
+      							<img src="illustrations/12_02_entree_rois.jpg" alt="onglet 'entrée données d'entrainement' du panneau SCP" width="350">
       						</a>
       					</figure>
       					<p><img class="icone" src="illustrations/12_02_ouvrir_roi_icone.jpg" alt="icône ouvrir un jeu d'entrainement dans le panneau SCP" >Cliquez sur l'icône <b>Créer une nouvelle donnée d'entraînement</b> en haut du panneau SCP. Choisir l'emplacement et le nom de la couche SCP qui sera créée et qui contiendra les ROIs.</p>
-      					<p>Cette couche est ajoutée à QGIS (ici, elle se nomme <em>signatures_spectrales</em>)&nbsp;:</p>
+      					<p>Cette couche est ajoutée à QGIS (ici, elle se nomme <b>ROI_S2_2021_08_17</b>)&nbsp;:</p>
       					<figure>
       						<a href="illustrations/12_02_couche_rois.jpg" >
       							<img src="illustrations/12_02_couche_rois.jpg" alt="liste des couches dans QGIS, avec l'image sentinel-2 et la couche scp" width="250">
@@ -96,10 +109,10 @@
       					</ul>
     				    <figure>
       						<a href="illustrations/12_02_noms_rois.jpg" >
-      							<img src="illustrations/12_02_noms_rois.jpg" alt="Nom de MC et Nom de C remplis par 'Surface en eau' et 'Eau'" width="400">
+      							<img src="illustrations/12_02_noms_rois.jpg" alt="Nom de MC et Nom de C remplis par 'Surface en eau' et 'Eau'" width="350">
       						</a>
       					</figure>
-      					<p>MC signifie <em>Macro-Classe</em>, et C <em>Classe</em> : une macro-classe peut regrouper plusieurs classes.</p>
+      					<p>MC signifie <em>Macro-Classe</em>, et C <em>Classe</em> : une macro-classe peut regrouper plusieurs classes (par exemple, on pourrait avoir une macro-classe <em>surface en eau</em> et 2 classes <em>eau douce</em> et <em>mer</em>).</p>
       					<p>Il ne reste plus maintenant qu'à digitaliser un polygone correspondant à cette classe.</p>
       					<p><img class="icone" src="illustrations/12_02_create_roi_icon.jpg" alt="icône de création de ROI">Cliquez sur l'icône <b>Create a ROI polygon</b> dans la barre d'outil <b>SCP working toolbar</b>.</p>
       					<p class="note">Si vous ne voyez pas cette barre d'outils, menu Vue &#8594; Barres d'outils &#8594; SCP Working Toolbar.</p>
@@ -108,23 +121,24 @@
       							<img src="illustrations/12_02_working_toolbar.jpg" alt="SCP working toolbar avec l'outil de création de ROIs entouré en rouge" width="500">
       						</a>
       					</figure>
-      					<p>Le curseur est maintenant une croix. Dans QGIS, zoomez sur une zone avec de l'eau et dessinez un polygone contenant uniquement de l'eau, en faisant un clic droit pour terminer&nbsp;:</p>
+      					<p>Le curseur est maintenant une croix. Dans QGIS, zoomez sur une zone avec de l'eau et dessinez un polygone contenant uniquement de l'eau, en faisant un clic droit pour terminer (contrairement à la numérisation dans QGIS, le clic droit final est pris en compte)&nbsp;:</p>
       					<figure>
       						<a href="illustrations/12_02_roi_eau.jpg" >
       							<img src="illustrations/12_02_roi_eau.jpg" alt="ROI temporaire eau, orange transparent" width="400">
       						</a>
       					</figure>
       					<p>Ce ROI est temporaire&nbsp;; s'il ne vous convient pas, dessinez-en simplement un autre et le premier sera supprimé.</p>
+      					<p>Une fois satisfait-e de votre ROI, cliquez sur le bouton en bas à droite du panneau SCP <b>Sauvez les ROI temporaires dans les données d'entraînement</b>&nbsp;:</p>
       					<figure>
       						<a href="illustrations/12_02_sauver_roi_icone.jpg" >
-      							<img src="illustrations/12_02_sauver_roi_icone.jpg" alt="bas du panneau SCP avec l'icône pour sauver les ROIs entourée en rouge" width="400">
+      							<img src="illustrations/12_02_sauver_roi_icone.jpg" alt="bas du panneau SCP avec l'icône pour sauver les ROIs entourée en rouge" width="350">
       						</a>
       					</figure>
-      					<p>Une fois satisfait-e de votre ROI, cliquez sur le bouton en bas à droite du panneau SCP <b>Sauvez les ROI temporaires dans les données d'entraînement</b>.</p>
+      					<p class="note">Si le calcul de la signature est trop long, vous pouvez décocher la case <b>Signature</b> pour les calculer ultérieurement.</p>
       					<p>Patientez... Le ROI est ajouté dans le haut du panneau SCP&nbsp;:</p>
       					<figure>
       						<a href="illustrations/12_02_roi_ajoute.jpg" >
-      							<img src="illustrations/12_02_roi_ajoute.jpg" alt="haut du panneau SCP avec le 1er ROI visible" width="400">
+      							<img src="illustrations/12_02_roi_ajoute.jpg" alt="haut du panneau SCP avec le 1er ROI visible" width="350">
       						</a>
       					</figure>
       					<p>Il a aussi changé d'aspect dans la fenêtre de QGIS&nbsp;:</p>
@@ -153,7 +167,7 @@
     				    <p>Au final, votre panneau SCP doit ressembler à ceci&nbsp;:</p>
     				    <figure>
       						<a href="illustrations/12_02_liste_rois.jpg" >
-      							<img src="illustrations/12_02_liste_rois.jpg" alt="panneau SCP avec les 6 ROIs correspondant aux 6 classes définies + haut" width="470">
+      							<img src="illustrations/12_02_liste_rois.jpg" alt="panneau SCP avec les 6 ROIs correspondant aux 6 classes définies + haut" width="450">
       						</a>
       					</figure>
       				</div>
@@ -166,7 +180,7 @@
       				  <p><img class="icone" src="illustrations/12_02_signature_spectrale_icone.jpg" alt="icône d'ajout des singatures spectrales au graphique"> Sélectionnez par exemple un polygone par classe, puis cliquez sur l'icône <b>Ajouter les signatures spectrales surlignées au graphique</b> dans la partie gauche du panneau&nbsp;:</p>
       				  <figure>
       						<a href="illustrations/12_02_selection_rois.jpg" >
-      							<img src="illustrations/12_02_selection_rois.jpg" alt="panneau SCP avec les 6 classes sélectionnées et le bouton de signature spectrale entouré en rouge" width="470">
+      							<img src="illustrations/12_02_selection_rois.jpg" alt="panneau SCP avec les 6 classes sélectionnées et le bouton de signature spectrale entouré en rouge" width="450">
       						</a>
       					</figure>
       					<p>La fenêtre suivante s'ouvre (cliquez si vous voulez la voir en plus grand)&nbsp;:</p>
@@ -178,23 +192,35 @@
       					<p>La signature spectrale de chacune des 6 classes est représentée sous forme d'un graphique, de la couleur spécifiée dans le panneau SCP. Testez les différentes possibilités, par exemple&nbsp;:</p>
       					<ul>
       					 <li>cochez/décochez une ligne dans le tableau en haut de la fenêtre pour afficher/masquer une courbe</li>
-      					 <li>cochez/décochez la case <em>étendue des valeurs du graphique</em> en bas de la fenêtre pour voir l'amplitude des signatures spectrales</li>
+      					 <li>cochez/décochez la case <em>étendue des valeurs du graphique</em> ou <em>Plot value range</em> en bas de la fenêtre pour voir l'amplitude des signatures spectrales</li>
       					</ul>
     				  </div>
     				  
-    				  <p>Tous vos polygones sont sauvegardés dans la couche au format SCP <em class="data">signatures_spectrales</em> (ou le nom que vous lui avez donné). Il est possible de charger une couche SCP au moyen du bouton <b>Ouvrir un fichier de données d'entraînement</b>.</p>
+    				  <p>Tous vos polygones sont sauvegardés dans la couche au format SCP <em class="data">ROI_S2_2021_08_17</em> (ou le nom que vous lui avez donné). Il est possible de charger une couche SCP au moyen du bouton <b>Ouvrir un fichier de données d'entraînement</b>.</p>
     				  <figure>
     						<a href="illustrations/12_02_charger_rois.jpg" >
     							<img src="illustrations/12_02_charger_rois.jpg" alt="haut du panneau SCP, onglet 'entrée données d'entraînement', avec le bouton 'ouvrir un fichier de données d'entraînement' entouré en rouge" width="420">
     						</a>
     					</figure>
     					
-    					<p>Vous pouvez par exemple charger la couche de polygones d'entraînement <em class="data">roi_sentinel2_2021_08_17.scp</em>.</p>
-    					<p class="keskonfai">TODO : préparer la couche et la mettre en téléchargement</p>
+    					<p>Vous pouvez par exemple charger la couche de polygones d'entraînement <em class="data">ROI_S2_2021_08_17.scpx</em>.</p>
   				  
   				<h3>Interprétation de signature spectrale<a class="headerlink" id="XII22" href="#XII22"></a></h3>
   				
-  				  <p class="keskonfai">TODO</p>
+  				  <p>Les signatures spectrales sont représentées sur un graphique avec en abscisse les bandes spectrales (ici les 13 bandes spectrales de Sentinel-2) et en ordonnée les valeurs de pixels (en réflectance au sol entre 0 et 1 ou 0 et 100%). Nous représentons ici les signatures spectrales de 6 classes d’occupation des sols :</p>
+  				  <ol>
+              <li>surface en eau</li>
+              <li>surface bâtie</li>
+              <li>surface en forêt</li>
+              <li>surface en culture</li>
+              <li>surface brûlée</li>
+              <li>feux</li>
+            </ol>
+
+  				  <p>Pour chaque bande, on représente la moyenne de valeurs de pixels extrait pour chaque ROI (Region of Interest). Ainsi, pour les surfaces en eau, représentée par une courbe bleue sur le graphique, nous avons des valeurs moyennes de réflectance très faibles quelle que soit la longueur d’onde, la signature spectrale de l’eau correspond ainsi à une ligne décroissante (plus forte valeur de réflectance dans le bleu et les plus faibles dans l’infrarouge).</p>
+  				  <p>La signature spectrale des cultures est typique de celle de la végétation caractérisée par une forte activité chlorophyllienne (culture certainement irriguée car l’image a été prise durant l’été dans le sud de la France) qui se traduit par de fortes réflectances dans le PIR (entre 30 et 35%).</p>
+  				  <p>Les surfaces brûlées, ici en rouge sur le graphique, sont caractérisés par des valeurs homogènes (autour de 10 % de réflectance) du bleu jusqu’au PIR (bande 9). En revanche, les valeurs de réflectance dans les bandes 12 et 13 (Infrarouge moyen) sont plus importantes (autour de 20 – 25 %), typique d’une réflectance d’une surface brûlée. Comme pour les autres classes d’occupation des sols, les bandes d’absorption de l’eau (Bande 10 et 11) sont caractérisées par de très faibles valeurs de réflectance, elles sont utilisées pour les corrections atmosphériques (cf. Lien CNES pour plus d’informations sur les modèles de correction atmosphérique).</p>
+  				  <p>Concernant les feux, les valeurs de réflectance dans l’infrarouge moyen sont très importantes, certains pixels dans la bande 13 saturent à 1, soit 100 % de réflectance. Cette bande spectrale apparaît ainsi particulièrement pertinente pour la détection et la localisation des feux en cours.</p>
   				
   				<h3>Extraction et analyse d'indices spectraux<a class="headerlink" id="XII23" href="#XII23"></a></h3>
   				
@@ -258,6 +284,9 @@
       							<img src="illustrations/12_02_ndvi_resultat.jpg" alt="image NDVI" width="500">
       						</a>
       					</figure>
+
+      					<p class="keskonfai">Ajouter l'histogramme, utiliser gamme couleur RdYlGn, à centrer sur 0 ?</p>
+      					
   				    </div>
   				    
   				    <p>Bravo, vous venez de calculer un indice de végétation avec l'extension SCP&nbsp;!</p>
