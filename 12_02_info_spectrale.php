@@ -68,7 +68,7 @@
       				<p>L'extension SCP est maintenant paramétrée pour travailler sur notre image, qui est reconnue comme une image Sentinel-2.
       				
       				<div class="manip">
-      					<p>La dernière chose à faire avant de commencer à dessiner les polygones d'entraînement est de choisir une <a href="12_01_intro_teledec.php#XII15b">composition colorée</a> permettant de bien voir les différentes catégories d'occupation du sol. Ici, afin de bien voir la végétation, les zones brûlées et les feux, nous allons afficher les <b>bandes 13, 8 et 4</b>&nbsp;:</p>
+      					<p>La dernière chose à faire avant de commencer à dessiner les polygones d'entraînement est de choisir une <a href="12_01_intro_teledec.php#XII15b">composition colorée</a> permettant de bien voir les différentes catégories d'occupation du sol. Ici, afin de bien voir la végétation, les zones brûlées et les feux, nous allons afficher les <b>bandes 13, 8 et 4</b> (propriétés de la couche &#8594; symbologie)&nbsp;:</p>
       					<figure>
                   	<a href="illustrations/12_02_compocol_13_8_4.jpg" >
                 		<img src="illustrations/12_02_compocol_13_8_4.jpg" alt="Composition colorée 13-8-4 de l'image Sentinel 2 : la végétation est en vert, les zones brûlées en rouge" width="600">
@@ -81,7 +81,9 @@
     				<h4>Création des polygones d'entraînement (ROI)<a class="headerlink" id="XII21b" href="#XII21b"></a></h4>
     				
     				  <p>Nous allons créer ici une couche de polygones d'entraînement. Si vous désirez sauter cette étape, ou bien comparer vos résultats, vous trouverez également en téléchargement la couche de ROI "prête à l'emploi" <em class="data"><a href="donnees/TutoQGIS_12_teledetection.zip">ROI_S2_2021_08_17.scpx</a></em>.</p>
-  				  
+  				    
+  				    <p>Attention, <b>les couches de ROI ont l'extension SCP avec la version 7 de l'extension SCP, et l'extention SCPX avec la version 8</b>. Dans les données du tutoriel, vous trouverez les 2 versions.</p>
+  				    
     				  <div class="manip">
     				    <p>Dans le panneau SCP (s'il n'est pas visible, menu Vue &#8594; Panneaux &#8594; Menu SCP), cliquez sur l'onglet vertical <b>Training input</b>&nbsp;:</p>
     				    <figure>
@@ -96,7 +98,7 @@
       							<img src="illustrations/12_02_couche_rois.jpg" alt="liste des couches dans QGIS, avec l'image sentinel-2 et la couche scp" width="250">
       						</a>
       					</figure>
-      					<p class="note">Cette couche semble une couche temporaire (icône grise à côté de son nom), mais il s'agit bien d'une couche sauvegardée sur votre disque, comme vous pouvez vous en assurer dans votre explorateur de fichiers. Elle possède l'extension .scp propre à l'extension QGIS SCP.</p>
+      					<p class="note">Cette couche semble une couche temporaire (icône grise à côté de son nom), mais il s'agit bien d'une couche sauvegardée sur votre disque, comme vous pouvez vous en assurer dans votre explorateur de fichiers. Elle possède l'extension .scp (v7) ou .scpx (v8) propre à l'extension QGIS SCP.</p>
     				  </div>
     				  
     				  <p>Nous allons maintenant ajouter des polygones dans cette couche&nbsp;!</p>
@@ -160,7 +162,7 @@
     				      <li>Surface brulée</li>
     				      <li>Feux</li>
     				    </ul>
-    				    <p class="note">N'oubliez pas d'incrémenter l'ID de la macro-classe (MC ID) à chaque nouveau polygone&nbsp;! Sinon, il est possible de le faire par la suite en double-cliquant sur la case à modifier, puis en tapant un chiffre.</p>
+    				    <p class="note">N'oubliez pas d'incrémenter l'ID de la macro-classe (MC ID) à chaque nouveau polygone&nbsp;! Sinon, il est possible de le faire par la suite en double-cliquant sur la case à modifier, puis en tapant un chiffre. L'ID de la classe (C ID) peut rester à 1, nous ne créerons à chaque fois qu'une seule classe par macro-classe.</p>
     				    
     				    <p class="note">Pensez à sauvegarder après chaque polygone, si vous décochez "signature" la sauvegarde sera plus rapide&nbsp;!</p>
     				    
@@ -217,17 +219,17 @@
               <li>feux</li>
             </ol>
 
-  				  <p>Pour chaque bande, on représente la moyenne de valeurs de pixels extrait pour chaque ROI (Region of Interest). Ainsi, pour les surfaces en eau, représentée par une courbe bleue sur le graphique, nous avons des valeurs moyennes de réflectance très faibles quelle que soit la longueur d’onde, la signature spectrale de l’eau correspond ainsi à une ligne décroissante (plus forte valeur de réflectance dans le bleu et les plus faibles dans l’infrarouge).</p>
-  				  <p>La signature spectrale des cultures est typique de celle de la végétation caractérisée par une forte activité chlorophyllienne (culture certainement irriguée car l’image a été prise durant l’été dans le sud de la France) qui se traduit par de fortes réflectances dans le PIR (entre 30 et 35%).</p>
-  				  <p>Les surfaces brûlées, ici en rouge sur le graphique, sont caractérisés par des valeurs homogènes (autour de 10 % de réflectance) du bleu jusqu’au PIR (bande 9). En revanche, les valeurs de réflectance dans les bandes 12 et 13 (Infrarouge moyen) sont plus importantes (autour de 20 – 25 %), typique d’une réflectance d’une surface brûlée. Comme pour les autres classes d’occupation des sols, les bandes d’absorption de l’eau (Bande 10 et 11) sont caractérisées par de très faibles valeurs de réflectance, elles sont utilisées pour les corrections atmosphériques (cf. Lien CNES pour plus d’informations sur les modèles de correction atmosphérique).</p>
-  				  <p>Concernant les feux, les valeurs de réflectance dans l’infrarouge moyen sont très importantes, certains pixels dans la bande 13 saturent à 1, soit 100 % de réflectance. Cette bande spectrale apparaît ainsi particulièrement pertinente pour la détection et la localisation des feux en cours.</p>
+  				  <p>Pour chaque bande, on représente la moyenne de valeurs de pixels extrait pour chaque ROI (Region of Interest). Ainsi, pour les <b>surfaces en eau</b>, représentée par une courbe bleue sur le graphique, nous avons des valeurs moyennes de réflectance très faibles quelle que soit la longueur d’onde, la signature spectrale de l’eau correspond ainsi à une ligne décroissante (plus forte valeur de réflectance dans le bleu et les plus faibles dans l’infrarouge).</p>
+  				  <p>La signature spectrale des <b>cultures</b> est typique de celle de la végétation caractérisée par une forte activité chlorophyllienne (culture certainement irriguée car l’image a été prise durant l’été dans le sud de la France) qui se traduit par de fortes réflectances dans le PIR (entre 30 et 35%).</p>
+  				  <p>Les <b>surfaces brûlées</b>, ici en rouge sur le graphique, sont caractérisés par des valeurs homogènes (autour de 10 % de réflectance) du bleu jusqu’au PIR (bande 9). En revanche, les valeurs de réflectance dans les bandes 12 et 13 (Infrarouge moyen) sont plus importantes (autour de 20 – 25 %), typique d’une réflectance d’une surface brûlée. Comme pour les autres classes d’occupation des sols, les bandes d’absorption de l’eau (Bande 10 et 11) sont caractérisées par de très faibles valeurs de réflectance, elles sont utilisées pour les corrections atmosphériques (cf. Lien CNES pour plus d’informations sur les modèles de correction atmosphérique).</p>
+  				  <p>Concernant les <b>feux</b>, les valeurs de réflectance dans l’infrarouge moyen sont très importantes, certains pixels dans la bande 13 saturent à 1, soit 100 % de réflectance. Cette bande spectrale apparaît ainsi particulièrement pertinente pour la détection et la localisation des feux en cours.</p>
   				
   				<h3>Extraction et analyse d'indices spectraux<a class="headerlink" id="XII23" href="#XII23"></a></h3>
   				
   				  <h4>Indice de végétation NDVI<a class="headerlink" id="XII23a" href="#XII23a"></a></h4>
   				  
   				    <p>L'indice de végétation ou <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">NDVI (Normalized Difference Vegetation Index)</a> permet de mesurer et spatialiser le taux de couverture de la végétation au sol ainsi que son activité chlorophyllienne.</p>
-  				    <p>Il se calcule à partire des bandes Proche Infra-Rouge (PIR) et Rouge (R) de la manière suivante&nbsp;:</p>
+  				    <p>Il se calcule à partir des bandes Proche Infra-Rouge (PIR) et Rouge (R) de la manière suivante&nbsp;:</p>
   				    <p class="code">NDVI = (PIR - R) / (PIR + R)</p>
   				    <p>Ici, nous allons calculer cet indice de 2 manières différentes : avec l'extension SCP, et avec la calculatrice raster de QGIS.</p>
   				    
@@ -247,7 +249,7 @@
       					 <li>En bas de la fenêtre, choisissez <b>Sentinel-2</b> pour le paramétrage rapide des longueurs d'onde</li>
       					</ul>
       					
-      					<p>Vous pouvez maintenant aller dans la partie <b>Calcul de bande</b> de SCP, les bandes de notre raster seront listées dans le tableau en haut de la fenêtre.</p>
+      					<p>Vous pouvez maintenant aller dans la partie <b>Calcul de bande</b> de SCP, les bandes de notre raster seront listées dans le tableau en haut de la fenêtre. Si ça n'est pas le cas, utilisez le bouton <b>Actualiser</b> à droite de la liste des bandes.</p>
       					<figure>
       						<a href="illustrations/12_02_calcul_bandes.jpg" >
       							<img src="illustrations/12_02_calcul_bandes.jpg" alt="SCP, calcul de bandes, liste des bandes en haut de la fenêtre entourée de rouge" width="600">
@@ -263,7 +265,7 @@
   				      <li>bandset*b1, bandset*b2 etc. (raster28 à raster40) : toutes les bandes 1 de tous les jeux de bandes, toutes les bandes 2 de tous les jeux de bandes etc. (ici nous n'avons qu'un seul jeu de bandes, donc il s'agit encore des 13 mêmes bandes)</li>
   				    </ul>
   				    <p>Certaines de ces &#171;&nbsp;bandes&nbsp;&#187; sont donc en réalité des listes de bandes et pourront être utilisées dans des expressions acceptant ces listes.</p>
-  				    <p>Ici, nous utiliserons uniquement les 13 premiers éléments de la liste correspondant aux 13 bandes de notre image&nbsp;!</p>
+  				    <p><b>Ici, nous utiliserons uniquement les 13 premiers éléments de la liste correspondant aux 13 bandes de notre image&nbsp;!</b></p>
   				    
   				    <div class="manip">
       						<a href="illustrations/12_02_scp_ndvi.jpg" >
@@ -284,14 +286,42 @@
       							<img src="illustrations/12_02_ndvi_resultat.jpg" alt="image NDVI" width="500">
       						</a>
       					</figure>
+      					
+      					<p>Dans les propriétés de la couche, on peut voir l'histogramme des valeurs du NDVI&nbsp;:</p>
+      					<figure>
+      						<a href="illustrations/12_02_ndvi_histogramme.jpg" >
+      							<img src="illustrations/12_02_ndvi_histogramme.jpg" alt="image NDVI" width="500">
+      						</a>
+      					</figure>
+      					
+      					<p>Pour mieux visualiser ce NDVI, on peut utiliser une gamme de couleur allant du rouge au vert, en choisissant le type de rendu <b>Pseudo-couleur à bande unique</b>&nbsp;:</p>
+      					<figure>
+      						<a href="illustrations/12_02_ndvi_style.jpg" >
+      							<img src="illustrations/12_02_ndvi_style.jpg" alt="style pseudo-couleur de -1 à 1 avec la galle RdYlGn pour le NDVI" width="500">
+      						</a>
+      					</figure>
+      					
+      					<p>Ce qui permet d'observer&nbsp;:</p>
+      					<ul>
+      					 <li><b>en rouge-orange les valeurs inférieures à 0&nbsp;: ce sont les surfaces non couvertes par les végétaux (eau, nuages...)</b>, les valeurs des pixels sont plus grandes dans le rouge que dans le proche infra-rouge</li>
+      					 <li><b>en jaune les valeurs autour de 0 correspondant au sol nu</b> : les valeurs des pixels sont à peu près les mêmes dans le rouge et dans le proche infra-rouge</li>
+      					 <li><b>en vert les valeurs supérieures à 0 correspondant aux zones avec de la végétation</b>, un vert plus foncé traduisant un couvert plus dense : les pixels ont une valeur plus forte dans le proche infra-rouge que dans le rouge.</li>
+      					</ul>
+      					
+      					<p class="keskonfai">TODO : interprétation NDVI à compléter/modifier ?</p>
+      					
+      					<figure>
+      						<a href="illustrations/12_02_ndvi_rdylgn.jpg" >
+      							<img src="illustrations/12_02_ndvi_rdylgn.jpg" alt="image NDVI du rouge (-1) au vert (1)" width="500">
+      						</a>
+      					</figure>
 
-      					<p class="keskonfai">Ajouter l'histogramme, utiliser gamme couleur RdYlGn, à centrer sur 0 ?</p>
       					
   				    </div>
   				    
   				    <p>Bravo, vous venez de calculer un indice de végétation avec l'extension SCP&nbsp;!</p>
   				    
-  				    <p>On peut également calculer le NDVI sans utiliser l'extension SCP, directement dans QGIS, à l'aide de la calculatrice raster.</p>
+  				    <p>On peut également calculer le NDVI sans utiliser l'extension SCP, directement dans QGIS, à l'aide de la <b>calculatrice raster</b>.</p>
   				    
   				    <div class="manip">
   				      <p>Dans la boîte à outils &#8594; Analyse raster &#8594; Raster Calculator&nbsp;:</p>
@@ -309,7 +339,6 @@
       					<p>Exécutez... La couche temporaire est ajoutée à QGIS, elle est similaire à celle créée avec SCP.</p>
   				    </div>
   				    
-  				    <p class="keskonfai">TODO : interprétation NDVI</p>
   				    <p class="keskonfai">TODO : calcul NDVI pour les surfaces en eau, forêt etc.</p>
   				  
   				  <h4>Normalized Burn Ratio (NBR)<a class="headerlink" id="XII23b" href="#XII23b"></a></h4>

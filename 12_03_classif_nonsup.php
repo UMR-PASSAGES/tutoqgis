@@ -48,7 +48,7 @@
 				
 				<h3>Prise en main des données<a class="headerlink" id="XII32" href="#XII32"></a></h3>
 				
-          <p>L'image que nous allons utiliser est une image Sentinel-2 su Sud de l'Inde d'avril 2020.</p>
+          <p>L'image que nous allons utiliser est une image Sentinel-2 du Sud de l'Inde d'avril 2020.</p>
           
           <div class="manip">
             <p>Ouvrez un nouveau projet QGIS et ajoutez-y l'image geotiff <em class="data"><a href="donnees/TutoQGIS_12_teledetection.zip">S2A_20200401</a></em>.</p>
@@ -60,21 +60,100 @@
   					</figure>
   				</div>
   					
-  				<p class="keskonfai">Il n'y a que 10 bandes sur cette image et non 13 ? > on a enlevé la bande 1 (corrections atmosphériques à 60m) et la 9 et 10 (bandes d'estimation de la vapeur d'eau dans l'atmosphère, à 60m)</p>
+  				<p>Cette image ne possède que 10 bandes et non 13 comme normalement les images Sentinel 2. Les bandes 1 (corrections atmosphériques à 60m), 9 et 10 (bandes d'estimation de la vapeur d'eau dans l'atmosphère, à 60m) ont été enlevées.</p>
+  				
+          <p>Si on reprend la liste des bandes d'une image Sentinel 2, la correspondance se fait donc ainsi&nbsp;:</p>
+          
+          <table>
+            <caption>Correspondance entre numéro de bande visible dans QGIS et bande Sentinel-2 pour l'image S2A_20200401</caption>
+					   <tr>
+				       <th>Numéro de bande</th>
+				       <th>Bande Sentinel-2</th>
+					   </tr>
+					   <tr>
+  			       <td>-</td>
+  			       <td>Bande 1 - Aérosol côtier</td>
+					   </tr>
+					   <tr class="alt">
+  			       <td>01</td>
+  			       <td>Bande 2 - Bleu</td>
+					   </tr>
+					   <tr>
+  			       <td>02</td>
+  			       <td>Bande 3 - Vert</td>
+					   </tr>
+             <tr class="alt">
+  			       <td>03</td>
+  			       <td>Bande 4 - Rouge</td>
+					   </tr>
+             <tr>
+  			       <td>04</td>
+  			       <td>Bande 5 - Végétation "red edge"</td>
+					   </tr>
+             <tr class="alt">
+  			       <td>05</td>
+  			       <td>Bande 6 - Végétation "red edge"</td>
+					   </tr>
+             <tr>
+  			       <td>06</td>
+  			       <td>Bande 7 - Végétation "red edge"</td>
+					   </tr>
+					   <tr class="alt">
+  			       <td>07</td>
+  			       <td>Bande 8 - PIR</td>
+					   </tr>
+             <tr>
+  			       <td>08</td>
+  			       <td>Bande 8A - PIR "étroit"</td>
+					   </tr>
+					   <tr class="alt">
+  			       <td>-</td>
+  			       <td>Bande 9 - Vapeur d'eau</td>
+					   </tr>
+					   <tr>
+  			       <td>-</td>
+  			       <td>Bande 10 - SWIR - Cirrus</td>
+					   </tr>
+					   <tr class="alt">
+  			       <td>09</td>
+  			       <td>Bande 11 - SWIR</td>
+					   </tr>
+					   <tr>
+  			       <td>10</td>
+  			       <td>Bande 12 - SWIR</td>
+					   </tr>
+            </table>
+            <br>
+            
+          <figure>
+  						<a href="illustrations/12_03_bandset.jpg" >
+  							<img src="illustrations/12_03_bandset.jpg" alt="Bandset pour l'image Sentinel-2 S2A_20200401 : choix des longueurs d'onde" width="650">
+  						</a>
+  					</figure>
   				
   				<div class="manip">	
   					<p>Pour explorer cette image, nous pouvons tester différentes <a href="12_01_intro_teledec.php#XII14b">compositions colorées</a>.</p>
-  					<p>Commençons par une composition colorée "en vraie couleur", avec les bandes rouge, vert et bleu, soit les bandes 4, 3 et 2&nbsp;:</p>
+  					<p>Commençons par une composition colorée "en vraie couleur", avec les bandes <b>rouge-vert-bleu</b>, soit les bandes 3-2-1&nbsp;:</p>
   					<figure>
-  						<a href="illustrations/12_03_compocol_432.jpg" >
-  							<img src="illustrations/12_03_compocol_432.jpg" alt="Composition colorée en vraie couleur de l'image Sentinel-2" width="600">
+  						<a href="illustrations/12_03_compocol_321.jpg" >
+  							<img src="illustrations/12_03_compocol_321.jpg" alt="Composition colorée en vraie couleur de l'image Sentinel-2" width="600">
   						</a>
   					</figure>
-  					<p>On peut aussi tester des compositions en fausse couleur&nbsp;:</p>
-  					<p class="keskonfai">PIR-R-Vert pour voir la végétation en rouge, IRM(12)-PIR,R, pour voir les sols nus, la végétation et l'humidité</p>
+  					<p>On peut aussi tester des compositions en fausse couleur.</p>
+  					<p>Avec les bandes <b>PIR-R-Vert</b> (7-3-2 ici), on observe la végétation en rouge&nbsp;:</p>
+  					<figure>
+  						<a href="illustrations/12_03_compocol_732.jpg" >
+  							<img src="illustrations/12_03_compocol_732.jpg" alt="Composition colorée PIR-R-Vert de l'image Sentinel-2" width="600">
+  						</a>
+  					</figure>
+  					<p>Avec les bandes <b>IRM-PIR-R</b> (10-7-3 ici), on observe plutôt les sols nus, la végétation et l'humidité&nbsp;:</p>
+            <figure>
+  						<a href="illustrations/12_03_compocol_1073.jpg" >
+  							<img src="illustrations/12_03_compocol_1073.jpg" alt="Composition colorée IRM-PIR-R de l'image Sentinel-2" width="600">
+  						</a>
+  					</figure>
           </div>
           
-          <p class="keskonfai">Interprétation ?</p>
 				
 				<h3>Extraction des signatures spectrales<a class="headerlink" id="XII33" href="#XII33"></a></h3>
 				
@@ -94,6 +173,7 @@
 				  <p>N'oubliez pas de <a href="12_02_info_spectrale.php#XII21a">définir le jeu de bandes</a> comme l'image S2A_20200401&nbsp;!</p>
 				  
 				  <p class="keskonfai">Interprétation des signatures spectrales ?</p>
+				  <p class="keskonfai">Pq a-t-on besoin de regarder les signatures spectrales si on fait une classif non supervisée ?</p>
 				
 				<h3>Classification au moyen de la méthodes des K-Means<a class="headerlink" id="XII34" href="#XII34"></a></h3>
 				

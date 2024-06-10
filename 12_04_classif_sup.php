@@ -61,6 +61,105 @@
 			  
 			  <h3>Visualisation de l'image<a class="headerlink" id="XII42" href="#XII42"></a></h3>
 			  
+			   			   <h4>Compositions colorées<a class="headerlink" id="XII42c" href="#XII42c"></a></h4>
+			  
+  			   <div class="manip">
+  			     <p>Ouvrez un nouveau projet QGIS et ajoutez-y l'image <em class="data"><a href="donnees/TutoQGIS_12_teledetection.zip">SENTINEL2B_20200619-Okavango</a></em>.</p>
+  			     <p><a href="03_04_fonds_carte.php#III42a">Ajoutez un fonds OpenStreetMap</a> pour situer l'image.</p>
+  			     <figure>
+  						<a href="https://fr.wikipedia.org/wiki/Loi_normale#/media/Fichier:Gauss_reduite.svg" >
+  							<img src="illustrations/12_04_okavango.jpg" alt="Localisation de l'image satellite dans le Sud de l'Afrique et zoom sur l'image elle-même" width="600">
+  						</a>
+  					</figure>
+  			   </div>
+  			   
+  			   <p>En allant dans les propriétés de la couche, rubrique Information, vous pouvez voir que cette image n'a que 10 bandes, contrairement à ce que nous avons pu voir sur les images Sentinel-2 <a href="12_01_intro_teledec.php#XII14" >ici</a>. Les bandes B1 (aérosol côtier), B9 (vapeur d'eau) et B10 (SWIR Cirrus) ne sont pas présentes, ce qui nous donne la correspondance suivante&nbsp;:</p>
+  					
+  					<table>
+                <caption>Correspondance entre numéro de bande visible dans QGIS et bande Sentinel-2 pour l'image SENTINEL2B_20200619-Okavango</caption>
+                <tr>
+				       <th>Numéro de bande</th>
+				       <th>Bande Sentinel-2</th>
+					   </tr>
+					   <tr>
+  			       <td>-</td>
+  			       <td>Bande 1 - Aérosol côtier</td>
+					   </tr>
+					   <tr class="alt">
+  			       <td>01</td>
+  			       <td>Bande 2 - Bleu</td>
+					   </tr>
+					   <tr>
+  			       <td>02</td>
+  			       <td>Bande 3 - Vert</td>
+					   </tr>
+             <tr class="alt">
+  			       <td>03</td>
+  			       <td>Bande 4 - Rouge</td>
+					   </tr>
+             <tr>
+  			       <td>04</td>
+  			       <td>Bande 5 - Végétation "red edge"</td>
+					   </tr>
+             <tr class="alt">
+  			       <td>05</td>
+  			       <td>Bande 6 - Végétation "red edge"</td>
+					   </tr>
+             <tr>
+  			       <td>06</td>
+  			       <td>Bande 7 - Végétation "red edge"</td>
+					   </tr>
+					   <tr class="alt">
+  			       <td>07</td>
+  			       <td>Bande 8 - PIR</td>
+					   </tr>
+             <tr>
+  			       <td>08</td>
+  			       <td>Bande 8A - PIR "étroit"</td>
+					   </tr>
+					   <tr class="alt">
+  			       <td>-</td>
+  			       <td>Bande 9 - Vapeur d'eau</td>
+					   </tr>
+					   <tr>
+  			       <td>-</td>
+  			       <td>Bande 10 - SWIR - Cirrus</td>
+					   </tr>
+					   <tr class="alt">
+  			       <td>09</td>
+  			       <td>Bande 11 - SWIR</td>
+					   </tr>
+					   <tr>
+  			       <td>10</td>
+  			       <td>Bande 12 - SWIR</td>
+					   </tr>
+            </table>
+            
+           <figure>
+						<a href="illustrations/12_04_bandset.jpg" >
+							<img src="illustrations/12_04_bandset.jpg" alt="bandset pour l'image SENTINEL2B_20200619-Okavango : longueurs d'onde" width="650">
+						</a>
+			     </figure>
+            
+           <br>
+  			   <div class="manip">			
+          	<div class="question">
+          		<input type="checkbox" id="faq-1">
+          		<p><label for="faq-1">Comment afficher cette image avec une composition colorée en vraie couleur&nbsp;?</label></p>
+          		<p class="reponse">Avec les bandes 3, 2 et 1 dans les canaux R, G et B, on obtient cette image en "vraies couleurs"&nbsp:
+          		<img src="illustrations/12_04_vraiecouleur.jpg" alt="Composition colorée avec les bandes 3, 2 et 1" width="400"></p>
+          	</div>
+           </div>
+           
+           <div class="manip">			
+          	<div class="question">
+          		<input type="checkbox" id="faq-2">
+          		<p><label for="faq-2">Quelles autres compositions colorées pouvez-vous faire avec cette image&nbsp;?</label></p>
+          		<p class="reponse">A compléter !</p>
+          	</div>
+           </div>
+           
+			  
 			   <h4>Pixels en RFE (Réflectance au sol en pour 10000)<a class="headerlink" id="XII42a" href="#XII42a"></a></h4>
 			   
 			    <p class="keskonfai">A faire !</p>
@@ -114,86 +213,9 @@
 			     </div>
 			     
 			     <p><b>Notre zone couvre donc environ 23 km par 27 km,soit un peu plus de 600 km&#178;.</b></p>
+			     
+			     <p class="keskonfai">Dire pourquoi on calcule cette superficie</p>
 			  
-			   <h4>Compositions colorées<a class="headerlink" id="XII42c" href="#XII42c"></a></h4>
-			  
-  			   <div class="manip">
-  			     <p>Ouvrez un nouveau projet QGIS et ajoutez-y l'image <em class="data"><a href="donnees/TutoQGIS_12_teledetection.zip">SENTINEL2B_20200619-Okavango</a></em>.</p>
-  			     <p><a href="03_04_fonds_carte.php#III42a">Ajoutez un fonds OpenStreetMap</a> pour situer l'image.</p>
-  			     <figure>
-  						<a href="https://fr.wikipedia.org/wiki/Loi_normale#/media/Fichier:Gauss_reduite.svg" >
-  							<img src="illustrations/12_04_okavango.jpg" alt="Localisation de l'image satellite dans le Sud de l'Afrique et zoom sur l'image elle-même" width="600">
-  						</a>
-  					</figure>
-  			   </div>
-  			   
-  			   <p>En allant dans les propriétés de la couche, rubrique Information, vous pouvez voir que cette image n'a que 10 bandes, contrairement à ce que nous avons pu voir sur les images Sentinel-2 <a href="12_01_intro_teledec.php#XII14" >ici</a>. Les bandes B1 (aérosol côtier), B9 (vapeur d'eau) et B10 (SWIR Cirrus) ne sont pas présentes, ce qui nous donne la correspondance suivante&nbsp;:</p>
-  					
-  					<table>
-                <caption>Correspondance entre numéro de bande visible dans QGIS et bande Sentinel-2</caption>
-                <tr>
-                    <th class="centre">Numéro de bande</th>
-                    <th class="centre">Bande Sentinel-2</th>
-                </tr>
-                <tr>
-                    <td class="centre">Bande 01</td>
-                    <td class="centre">B2 (Bleu)</td>
-                </tr>
-                <tr class="alt">
-                    <td class="centre">Bande 02</td>
-                    <td class="centre">B3 (Vert)</td>
-                </tr>
-                <tr>
-                    <td class="centre">Bande 03</td>
-                    <td class="centre">B4 (Rouge)</td>
-                </tr>
-                <tr class="alt">
-                    <td class="centre">Bande 04</td>
-                    <td class="centre">B5 (Rededge)</td>
-                </tr>
-                <tr>
-                    <td class="centre">Bande 05</td>
-                    <td class="centre">B6 (Rededge)</td>
-                </tr>
-                <tr class="alt">
-                    <td class="centre">Bande 06</td>
-                    <td class="centre">B7 (Rededge)</td>
-                </tr>
-                <tr>
-                    <td class="centre">Bande 07</td>
-                    <td class="centre">B8 (PIR 10mètres)</td>
-                </tr>
-                <tr class="alt">
-                    <td class="centre">Bande 08</td>
-                    <td class="centre">B8A (PIR20 mètres)</td>
-                </tr>
-                <tr>
-                    <td class="centre">Bande 09</td>
-                    <td class="centre">B11 (MIR1)</td>
-                </tr>
-                <tr class="alt">
-                    <td class="centre">Bande 10</td>
-                    <td class="centre">B12 (MIR2)</td>
-                </tr>
-            </table>
-            
-           <br>
-  			   <div class="manip">			
-          	<div class="question">
-          		<input type="checkbox" id="faq-1">
-          		<p><label for="faq-1">Comment afficher cette image avec une composition colorée en vraie couleur&nbsp;?</label></p>
-          		<p class="reponse">Avec les bandes 3, 2 et 1 dans les canaux R, G et B, on obtient cette image en "vraies couleurs"&nbsp:
-          		<img src="illustrations/12_04_vraiecouleur.jpg" alt="Composition colorée avec les bandes 3, 2 et 1" width="400"></p>
-          	</div>
-           </div>
-           
-           <div class="manip">			
-          	<div class="question">
-          		<input type="checkbox" id="faq-2">
-          		<p><label for="faq-2">Quelles autres compositions colorées pouvez-vous faire avec cette image&nbsp;?</label></p>
-          		<p class="reponse">A compléter !</p>
-          	</div>
-           </div>	
            
 			  <h3>Extraction des signatures spectrales<a class="headerlink" id="XII43" href="#XII43"></a></h3>
 			  
@@ -209,8 +231,7 @@
 			     </ul>
 			     
   			    <div class="manip">
-  			     <p><a href="12_02_info_spectrale.php#XII21a">Définissez tout d'abord le jeu de bandes</a> dans SCP.</p>
-  			     <p><a href="12_02_info_spectrale.php#XII21b">Créez ensuite les ROI</a>, en prenant entre 5 et 10 polygones par classe.</p>
+  			     <p><a href="12_02_info_spectrale.php#XII21b">Créez une couche de ROI</a>, en prenant entre 5 et 10 polygones par classe.</p>
   			     <p>Pour digitaliser plusieurs polygones dans une même macro-classe, il faut cliquer après chaque polygone sur l'icône <b>Sauver les ROI temporaires dans les données d'entraînement</b> (en bas à droite du panneau SCP)&nbsp;:</p>
   			     <figure>
     						<a href="illustrations/12_04_enregistrer_roi.jpg" >
