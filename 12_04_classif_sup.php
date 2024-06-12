@@ -80,58 +80,72 @@
                 <tr>
 				       <th>Numéro de bande</th>
 				       <th>Bande Sentinel-2</th>
+				       <th>Longueur d'onde (nm)</th>
 					   </tr>
 					   <tr>
   			       <td>-</td>
-  			       <td>Bande 1 - Aérosol côtier</td>
+  			       <td><i>Bande 1 - Aérosol côtier</i></td>
+  			       <td><i>443</i></td>
 					   </tr>
 					   <tr class="alt">
   			       <td>01</td>
   			       <td>Bande 2 - Bleu</td>
+  			       <td>492</td>
 					   </tr>
 					   <tr>
   			       <td>02</td>
   			       <td>Bande 3 - Vert</td>
+  			       <td>560</td>
 					   </tr>
              <tr class="alt">
   			       <td>03</td>
   			       <td>Bande 4 - Rouge</td>
+  			       <td>665</td>
 					   </tr>
              <tr>
   			       <td>04</td>
   			       <td>Bande 5 - Végétation "red edge"</td>
+  			       <td>704</td>
 					   </tr>
              <tr class="alt">
   			       <td>05</td>
   			       <td>Bande 6 - Végétation "red edge"</td>
+  			       <td>741</td>
 					   </tr>
              <tr>
   			       <td>06</td>
   			       <td>Bande 7 - Végétation "red edge"</td>
+  			       <td>783</td>
 					   </tr>
 					   <tr class="alt">
   			       <td>07</td>
   			       <td>Bande 8 - PIR</td>
+  			       <td>833</td>
 					   </tr>
              <tr>
   			       <td>08</td>
   			       <td>Bande 8A - PIR "étroit"</td>
+  			       <td>865</td>
 					   </tr>
 					   <tr class="alt">
   			       <td>-</td>
-  			       <td>Bande 9 - Vapeur d'eau</td>
+  			       <td><i>Bande 9 - Vapeur d'eau</i></td>
+  			       <td><i>945</i></td>
 					   </tr>
 					   <tr>
   			       <td>-</td>
-  			       <td>Bande 10 - SWIR - Cirrus</td>
+  			       <td><i>Bande 10 - SWIR - Cirrus</i></td>
+  			       <td><i>1374</i></td>
 					   </tr>
 					   <tr class="alt">
   			       <td>09</td>
   			       <td>Bande 11 - SWIR</td>
+  			       <td>1614</td>
 					   </tr>
 					   <tr>
   			       <td>10</td>
   			       <td>Bande 12 - SWIR</td>
+  			       <td>2202</td>
 					   </tr>
             </table>
             
@@ -155,15 +169,13 @@
           	<div class="question">
           		<input type="checkbox" id="faq-2">
           		<p><label for="faq-2">Quelles autres compositions colorées pouvez-vous faire avec cette image&nbsp;?</label></p>
-          		<p class="reponse">A compléter !</p>
+          		<p class="reponse">A compléter ! cf. image Inde</p>
           	</div>
            </div>
            
 			  
-			   <h4>Pixels en RFE (Réflectance au sol en pour 10000)<a class="headerlink" id="XII42a" href="#XII42a"></a></h4>
+			     <p>Les valeurs de pixel sont en réflectance au sol pour 10000.</p>
 			   
-			    <p class="keskonfai">A faire !</p>
-			    
 			   <h4>Superficie de l'image<a class="headerlink" id="XII42b" href="#XII42b"></a></h4>
 			   
 			     <p>Comment obtenir la superficie de l'image étudiée&nbsp;?</p>
@@ -214,7 +226,7 @@
 			     
 			     <p><b>Notre zone couvre donc environ 23 km par 27 km,soit un peu plus de 600 km&#178;.</b></p>
 			     
-			     <p class="keskonfai">Dire pourquoi on calcule cette superficie</p>
+			     <p>Le calcul de la superficie nous permet de mieux nous rendre compte de l'échelle à laquelle on travaille.</p>
 			  
            
 			  <h3>Extraction des signatures spectrales<a class="headerlink" id="XII43" href="#XII43"></a></h3>

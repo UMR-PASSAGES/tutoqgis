@@ -25,6 +25,7 @@
   					  <ul class="listesoustitres">
   							<li><a href="#XII15a">Affichage d'une image en niveaux de gris</a></li>
   							<li><a href="#XII15b">Affichage d'une composition colorée</a></li>
+  							<li><a href="#XII15b">Interprétation d'une composition colorée</a></li>
   						</ul>
   					</li>
   				</ul>
@@ -146,54 +147,21 @@
             <p>L'extension QGIS <a class="ext" target="_blank" href="https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html">SCP : Semi-Automatic Classification Plugin</a> est développée et maintenue par Luca Congedo. C'est un outil très complet, presque un logiciel dans le logiciel, qui permet la classification supervisée d'images satellitaires, mais aussi leur téléchargement, pré-traitement et post-traitement.</p>
             <p>Cette extension dispose d'un <a class="ext" target="_blank" href="https://readthedocs.org/projects/semiautomaticclassificationmanual-fr/downloads/pdf/latest/" >manuel</a> également très complet, utile notamment en cas de problème lors de l'installation.</p>
             
-            <p class="attention">Dans la dernière version de SCP (version 8), <a class="ext" target="_blank" href="https://github.com/semiautomaticgit/SemiAutomaticClassificationPlugin/issues/307">la classification non supervisée n'est pas disponible</a>. Pour cette raison, nous utilisons ici l'ancienne version 7 de SCP.</p>
-            
-            <p><b>Il est néanmoins possible d'utiliser la dernière version de SCP pour les chapitres 1, 2 et 4 de cette partie.</b> Dans ce cas, les menus et boutons pourront être légèrement différents.</p>   
-            
-            <p>Dès que la classification supervisée sera disponible dans la version actuelle, SCP pourra être installé comme les autres extensions&nbsp;!</p>            
-            <p>La première étape consiste à vérifier si SCP est déjà installé, et si oui dans quelle version.</p>            
+            <p><b>Dans la dernière version de SCP (version 8), <a class="ext" target="_blank" href="https://github.com/semiautomaticgit/SemiAutomaticClassificationPlugin/issues/307">la classification non supervisée n'est pas disponible</a></b>. Pour cette raison, nous utiliserons pour cette opération dans le <a href="12_03_classif_nonsup.php">troisième chapitre</a> un autre outil issu de <a class="ext" target="_blank" href="https://www.orfeo-toolbox.org/">l'OrfeoToolBox</a>.</p>
             
             <div class="manip">
-              <p><b>Menu Extensions &#8594; Installer/Gérer les extensions</b>, tapez <b>scp</b> dans la barre de recherche.</p>
-              <p>3 possibilités&nbsp;:</p>
-              <ul>
-                <li class="espace"><b>SCP est déjà installé et son numéro de version commence par 7</b>&nbsp;: vous n'avez rien à faire et pouvez passer directement à <a href="12_01_intro_teledec.php#XII13">l'étape suivante</a>&nbsp;:</li>
-                <li class="espace"><b>SCP est déjà installé et son numéro de version commence par 8</b> : désactivez l'extension si elle est activée en décochant sa cas, ou bien désinstallez-la pour être sûr-e de ne pas vous tromper entre les 2 versions, puis lisez ce qui suit pour installer la version 7</li>
-                <li class="espace">la recherche ne renvoie pas de résultats, <b>SCP n'est pas installé</b> : lisez ce qui suit pour installer la version 7</li>
-              </ul>
-             </div>
-            
-             <p>Pour installer la version 7  de SCP, nous allons suivre <a class="ext" target="_blank" href="https://semiautomaticclassificationmanual.readthedocs.io/en/latest/faq.html#can-i-use-the-previous-version-7-of-scp" >la documentation</a>&nbsp:</p>
-             
-            <div class="manip">
-              <p><b>Menu Extensions &#8594; Installer/Gérer les extensions &#8594; Paramètres</b>&nbsp;: cliquez sur le bouton <b>Ajouter...</b> La fenêtre suivante s'ouvre&nbsp;:</p>
+              <p>Pour installer SCP&nbsp;: <b>Menu Extensions &#8594; Installer/Gérer les extensions</b>, rubrique <b>Toutes</b>, tapez <b>scp</b> dans la barre de recherche.</p>
               
               <figure>
-    						<a href="illustrations/12_01_depot_scp7.jpg" >
-    							<img src="illustrations/12_01_depot_scp7.jpg" alt="fenêtre d'ajout d'un dépôt d'extension avec le lien vers le dépôt SCP7" width="450">
-    						</a>
-    					</figure>
-  					
-  					<ul>
-  					 <li>Nom&nbsp;: <b>SCP</b></li>
-  					 <li>URL&nbsp;: <b>https://semiautomaticgit.github.io/SemiAutomaticClassificationPlugin_v7/repository.xml</b></li>
-  					 <li>Authentification&nbsp;: ne rien mettre</li>
-  					 <li><b>OK</b></li>
-  					</ul>
-  					
-  					<p>Si vous allez maintenant dans la rubrique <b>Toutes</b> du gestionnaire d'extensions et tapez <b>SCP</b> dans la barre de recherche, vous devriez voir l'extension <b>Semi-Automatic Classification Plugin - master</b>&nbsp;:</p>
-  					
-            <figure>
-  						<a href="illustrations/12_01_scp7_install.jpg" >
-  							<img src="illustrations/12_01_scp7_install.jpg" alt="fenêtre du gestionnaire d'extension, SCP7" width="650">
-  						</a>
-  					</figure>
-  					
-  					<p>Cliquez sur <b>Installer l'extension</b>. Il est possible que des messages d'erreurs s'affichent&nbsp;; redémarrez éventuellement QGIS.</p>
-  					<p>Vérifiez que l'extension SCP dans sa version 7 soit bien activée dans le gestionnaire d'extensions (case cochée).</p>
-  				</div>
-  				
-					<p>Une fois SCP7 installé et activé, un nouveau panneau apparaît dans QGIS. Vous pourrez le désactiver/réactiver à l'aide du <b>menu Vue &#8594; Panneaux &#8594; Menu SCP</b>, ou bien à partir du <b>nouveau menu SCP</b> dans la barre de menu QGIS.</p>
+  						  <a href="illustrations/12_01_scp_install.jpg" >
+  							 <img src="illustrations/12_01_scp_install.jpg" alt="fenêtre du gestionnaire d'extension, SCP" width="600">
+  						  </a>  
+  					   </figure>
+              
+              <p>Sélectionnez l'extension <b>Semi-Automatic Classification Plugin</b> et cliquez sur <b>Installer l'extension en bas à droite</b>.</p>
+             </div>
+            
+					<p>Une fois SCP installé et activé, un nouveau panneau apparaît dans QGIS. Vous pourrez le désactiver/réactiver à l'aide du <b>menu Vue &#8594; Panneaux &#8594; Menu SCP</b>, ou bien à partir du <b>nouveau menu SCP</b> dans la barre de menu QGIS.</p>
 					<p>2 barres d'outils peuvent également être affichées&nbsp;: <b>SCP Working Toolbar</b> et <b>SCP Edit Toolbar</b> (menu Vue &#8594; Barres d'outils pour les activer/désactiver).</p>
             
             <figure>
@@ -216,13 +184,21 @@
                 
             <div class="manip">
               <p>Ouvrez un nouveau projet QGIS. Il n'est pas nécessaire d'ajouter l'image <a href="01_02_info_geo.php#I24">de la manière habituelle</a>, nous allons la charger au moyen du plugin SCP :</p>
-              <p><img class="icone" src="illustrations/12_01_jeu_bandes_icone.jpg" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
+              <p><img class="icone" src="illustrations/12_01_jeu_bandes_icone.jpg" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Band set</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP (en haut ou sur le côté gauche)&nbsp;:</p>
               <figure>
-    						<a href="illustrations/12_01_scp_open_image.jpg" >
-    							<img src="illustrations/12_01_scp_open_image.jpg" alt="Fenêtre SCP, onglet bandset, avec le bouton pour ajouter une image entouré en rouge" width="600">
+    						<a href="illustrations/12_01_scp_bandset_icon.jpg" >
+    							<img src="illustrations/12_01_scp_bandset_icon.jpg" alt="Panneau SCP avec l'icône bandset en haut et à gauche entourée en rouge" width="400">
     						</a>
     					</figure>
-    					<p>Cliquez sur le bouton <b>Open a file</b> à droite de la liste déroulante vide, en haut de la fenêtre, et sélectionnez l'image <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>&nbsp;: elle est ajoutée à QGIS.</p>
+    					
+    					<p>La fenêtre suivante s'ouvre&nbsp;:</p>
+    					<figure>
+    						<a href="illustrations/12_01_bandset_openfile.jpg" >
+    							<img src="illustrations/12_01_bandset_openfile.jpg" alt="Fenêtre SCP, bandset, avec le bouton pour ajouter une image entouré en rouge" width="600">
+    						</a>
+    					</figure>
+    					
+    					<p><img class="icone" src="illustrations/12_01_scp_openfile_icon.jpg" alt="icône 'open a file' du plugin SCP" >Cliquez sur le bouton <b>Open a file</b> en haut à droite et sélectionnez l'image <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>.</p>
             </div>
             
             <p>Cette image est au format <a href="01_03_formats.php#I32" >GeoTIFF</a>, un format d’image standard comprenant des informations de géoréférencement à une image TIFF (projection, système de coordonnées, métadonnées…).</p>
@@ -307,22 +283,31 @@
             <p>Dans le module SCP <b>Band set</b>, on peut indiquer le satellite utilisé, ici Sentinel-2.</p>
             
             <div class="manip">
-              <p>Toujours dans la partie <b>Band set</b>, à droite du bouton que vous avez utilisé pour ouvrir votre image, cliquez sur le bouton <b>Refresh list</b>.</p>
-              <p> Vous pouvez maintenant sélectionnez dans la liste déroulante votre image Sentinel2&nbsp;:</p>
-              <figure>
-    						<a href="illustrations/12_01_bandset_refresh.jpg" >
-    							<img src="illustrations/12_01_bandset_refresh.jpg" alt="fenêtre SCP, Band set : bouton pour rafraîchir la liste entouré en rouge, image Sentinel2 sélectionnée" width="480">
-    						</a>
-  						</figure>
-  						<p>En bas de la fenêtre, dans la liste déroulante <b>Wavelength quick settings</b>, vous pouvez maintenant choisir Sentinel-2&nbsp;:</p>
+              <p>Dans la liste déroulante <b>Wavelength</b> vers le bas de la fenêtre, sélectionnez <b>Sentinel-2</b>. Les longueurs d'onde sont maintenant renseignées pour chacune des bandes&nbsp;:</p>
+
   						<figure>
     						<a href="illustrations/12_01_bandset_sentinel2.jpg" >
-    							<img src="illustrations/12_01_bandset_sentinel2.jpg" alt="fenêtre SCP, Band set : Sentinel-2 est sélectionné dans la liste Wavelength quick settings" width="600">
+    							<img src="illustrations/12_01_bandset_sentinel2.jpg" alt="fenêtre SCP, Band set : Sentinel-2 est sélectionné dans la liste Wavelength quick settings" width="500">
     						</a>
   						</figure>
+  						
+  						<p>Pour afficher l'image, sélectionnez le jeu de bandes puis cliquez sur l'icône en bas <b>Display RGB composite</b>&nbsp;:</p>
+  						<figure>
+    						<a href="illustrations/12_01_display_rgb.jpg" >
+    							<img src="illustrations/12_01_display_rgb.jpg" alt="fenêtre SCP, Band set : jeu de bande sélectionné et icône display RGB entourée en rouge" width="400">
+    						</a>
+  						</figure>
+  						
+  						<p>L'image est maintenant visible dans QGIS&nbsp;:</p>
+  						<figure>
+    						<a href="illustrations/12_01_image_rgb.jpg" >
+    							<img src="illustrations/12_01_image_rgb.jpg" alt="image RGB dans QGIS, avec la liste des couches" width="650">
+    						</a>
+  						</figure>
+  						
             </div>
             
-            <p>SCP reconnaît maintenant qu'il s'agit d'une image Sentinel-2 : les longueurs d'onde des différentes bandes sont connues.</p>
+            <p class="note">Au passage, vous pouvez noter que cette image est un <a class="ext" target="_blank" href="https://docs.qgis.org/3.34/fr/docs/training_manual/rasters/data_manipulation.html#follow-along-create-a-virtual-raster" >raster virtuel</a> stocké dans le répertoire temporaire de l'extension SCP.</p>
             
            <h3>Visualisation et présentation des images<a class="headerlink" id="XII15" href="#XII15"></a></h3> 
             
@@ -443,9 +428,25 @@
     						</figure>
 				      </div>
 				      
-				      <p class="keskonfai">Commentaire à venir !</p>
+				     <h4>Interprétation d'une composition colorée<a class="headerlink" id="XII15c" href="#XII15c"></a></h4>
 				      
-				      <p>Dans le chapitre suivant, nous verrons comment aller un peu plus loin pour &#171;&nbsp;faire parler&nbsp;&#187; nos image satellite, à travers la notion de <em>signature spectrale</em>&nbsp;!</p>
+				      <p>Cette composition colorée fausse couleur associe donc à la couleur rouge la bande 13 (2.19µm), à la couleur verte la bande 08 (0.842 µm) et à la couleur bleue, la bande 04 (0.665 µm).</p>
+				      
+  				    <figure>
+                <a href="illustrations/12_01_carte_compocol_13_08_04.jpg" >
+    							<img src="illustrations/12_01_carte_compocol_13_08_04.jpg" alt="image avec les bandes 13, 8 et 4 : les zones brûlées sont bien visibles en rouge" width="600">
+    						</a>
+  						</figure>
+				      
+				      <p>Nous pouvons dans un premier temps visualiser sur la partie est de l’image une surface sombre en noir et bleu très foncé. Le centre de l’image est caractérisé par une large surface de couleur magenta avec des patchs rouge vif qui apparaissent notamment au nord, le reste de l’image est dominé par une couleur verte  avec des tons plus ou moins sombres et des surfaces en rose très clair.</p>
+				      
+				      <p><b>Concernant la partie sombre située à l’est de l’image</b>, celle-ci correspond à la mer Méditerranée, elle apparaît dans cette teinte de couleur, car <b>les réflectances pour les surfaces en eau sont très faibles dans les bandes infrarouges et du rouge</b>. Dans une synthèse additive, lorsque l’on combine trois bandes spectrales avec des faibles valeurs de réflectance, l’image en sortie apparaît avec des pixels sombres, on note d’ailleurs plusieurs réservoirs d’eau  qui apparaissent également en noir sur notre site d’étude. Lorsque l’on étudie les surfaces en eau, ce mode de représentation apparaît ainsi très pertinent.</p>
+				      
+				      <p><b>Pour les surfaces apparaissant en vert sur l’image</b>, cela signifie que les valeurs de réflectance de la bande spectrale B8 (Proche Infrarouge) que l’on a associée à la couleur verte sont plus fortes que pour les autres bandes spectrales. C’est une base importante en télédétection satellitaire, <b>la végétation saine est caractérisée par des réflectances faibles dans les bandes du bleu et du rouge, elles sont un peu plus fortes dans la bande spectrale du vert</b> (0.665 µm), c’est pour cela qu’elle apparaît en vert sur une composition colorée en vraie couleur ou couleur naturelle. Dans l’infrarouge moyen (Bande 12 et 13), les valeurs de réflectance de la végétation sont très fortement dépendantes du taux d’humidité. Ainsi, dans la bande 13 (2.2 µm), un pixel de végétation en stress hydrique va apparaître avec des valeurs de réflectance plus fortes que pour un pixel de végétation non stressé.</p>
+				      
+              <p><b>Pour la partie au centre en magenta</b> (combinaison du bleu avec le rouge), ceci indique que les valeurs de réflectance dans la bande 13 (2.19 µm) que l’on a associé à la couleur rouge, dominent par rapport aux autres valeurs de réflectance de la bande du rouge (B4) et du proche infrarouge (B8). Étant donné le contexte (milieu forestier et de garrigue, période estivale, sud de la France...), on peut ici faire l’hypothèse que l’on observe ici des <b>surfaces brûlées qui ont des réflectances importantes dans l’infrarouge moyen</b>. Ceci est corroboré par la présence de patch rouge et rose vifs qui correspondent à des pixels avec de très fortes valeurs dans la bande 13 (allant de 50 à une saturation du signal à 100 % de réflectance), qui correspondent à des feux en cours avec des panaches de fumées que l’on identifie surtout dans la partie nord-est des surfaces brûlées.</p>				      
+				      
+				      <p>Dans le chapitre suivant, nous verrons comment aller un peu plus loin pour &#171;&nbsp;faire parler&nbsp;&#187; nos images satellite, à travers la notion de <em>signature spectrale</em>&nbsp;!</p>
 				      
 				<br>
 				<a class="prec" href="12_00_teledetection.php">chapitre précédent</a>

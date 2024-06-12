@@ -69,58 +69,72 @@
 					   <tr>
 				       <th>Numéro de bande</th>
 				       <th>Bande Sentinel-2</th>
+				       <th>Longueur d'onde (nm)</th>
 					   </tr>
 					   <tr>
   			       <td>-</td>
-  			       <td>Bande 1 - Aérosol côtier</td>
+  			       <td><i>Bande 1 - Aérosol côtier</i></td>
+  			       <td><i>443</i></td>
 					   </tr>
 					   <tr class="alt">
   			       <td>01</td>
   			       <td>Bande 2 - Bleu</td>
+  			       <td>492</td>
 					   </tr>
 					   <tr>
   			       <td>02</td>
   			       <td>Bande 3 - Vert</td>
+  			       <td>560</td>
 					   </tr>
              <tr class="alt">
   			       <td>03</td>
   			       <td>Bande 4 - Rouge</td>
+  			       <td>665</td>
 					   </tr>
              <tr>
   			       <td>04</td>
   			       <td>Bande 5 - Végétation "red edge"</td>
+  			       <td>704</td>
 					   </tr>
              <tr class="alt">
   			       <td>05</td>
   			       <td>Bande 6 - Végétation "red edge"</td>
+  			       <td>741</td>
 					   </tr>
              <tr>
   			       <td>06</td>
   			       <td>Bande 7 - Végétation "red edge"</td>
+  			       <td>783</td>
 					   </tr>
 					   <tr class="alt">
   			       <td>07</td>
   			       <td>Bande 8 - PIR</td>
+  			       <td>833</td>
 					   </tr>
              <tr>
   			       <td>08</td>
   			       <td>Bande 8A - PIR "étroit"</td>
+  			       <td>865</td>
 					   </tr>
 					   <tr class="alt">
   			       <td>-</td>
-  			       <td>Bande 9 - Vapeur d'eau</td>
+  			       <td><i>Bande 9 - Vapeur d'eau</i></td>
+  			       <td><i>945</i></td>
 					   </tr>
 					   <tr>
   			       <td>-</td>
-  			       <td>Bande 10 - SWIR - Cirrus</td>
+  			       <td><i>Bande 10 - SWIR - Cirrus</i></td>
+  			       <td><i>1374</i></td>
 					   </tr>
 					   <tr class="alt">
   			       <td>09</td>
   			       <td>Bande 11 - SWIR</td>
+  			       <td>1614</td>
 					   </tr>
 					   <tr>
   			       <td>10</td>
   			       <td>Bande 12 - SWIR</td>
+  			       <td>2202</td>
 					   </tr>
             </table>
             <br>
@@ -166,14 +180,28 @@
 				    <li>Surface en cultures</li>
 				  </ol>
 				  
-				  <p class="keskonfai">Ce serait bien de fournir un couche scp exemple avec les ROI, ou de montrer des captures d'écran. Je ne sais pas trop quoi choisir pour les cultures par exemple !</p>
+				  <figure>
+  						<a href="illustrations/12_03_signatures_spectrales.png" >
+  							<img src="illustrations/12_03_signatures_spectrales.png" alt="Nuage de points à gauche, le même nuage de points avec 3 groupes déterminés avec la méthode des K-Means à droite" width="600">
+  						</a>
+  					</figure>
+				  
 				  
 				  <p>Pour cela, vous pouvez vous référer <a href="12_02_info_spectrale.php#XII21">ici</a>.</p>
 				  
 				  <p>N'oubliez pas de <a href="12_02_info_spectrale.php#XII21a">définir le jeu de bandes</a> comme l'image S2A_20200401&nbsp;!</p>
 				  
-				  <p class="keskonfai">Interprétation des signatures spectrales ?</p>
-				  <p class="keskonfai">Pq a-t-on besoin de regarder les signatures spectrales si on fait une classif non supervisée ?</p>
+				  <p>Les signatures spectrales représentent sur un graphique les valeurs de réflectance d'un objet géographique (surface en eau, surface en forêt...). Sur ce graphique, on retrouve en abscisse  les bandes spectrales de Sentinel-2 et en ordonnée les valeurs de réflectance en pour 10000.</p>
+
+          <p>Les signatures spectrales permettent de comprendre comment réfléchit l'énergie incidente (l'énergie solaire) sur un objet, elles peuvent être utilisées par la suite dans un processus de classification supervisée (cf. partie suivante).</p>
+          
+          <p>Sur ce graphique, nous avons représenté les signatures spectrales de 4 objets : les surfaces en eau, les surfaces en forêt, les surfaces en sol nu et les surfaces en culture.</p>
+          <ul>
+            <li>Pour les surfaces en eau, on constate que dans le visible, entre 0.50 et 0.70 µm, les réflectances sont autour de 15% ce qui est relativement important et qui s'explique par une forte turbidité de l'objet qui a été sélectionné. Ses réflectances sont plus faibles dans le PIR et l'IRM.</li>
+            <li>Pour les surfaces en forêt, on a ici une signature "classique" de la végétation, c'est-à-dire avec des faibles valeurs dans le bleu et le rouge (absorption du rayonnement incident dans ces bandes spectrales par les pigments chlorophylliens). On observe un léger pic dans la bande spectrale du vert (0.56µm) et des valeurs de réflectance plus importante dans le red edge et surtout le PIR (autour de 25% de réflectance). Celles-ci baissent dans les bandes spectrales de l'IRM (1.6 et 2.2 µm).</li>
+            <li>Pour les surfaces en culture, la signature a la même forme que celle des surfaces en forêt mais avec des valeurs beaucoup plus fortes dans le PIR (> 45%) liées au fait qu'à cette période de l'année, les cultures sont irriguées et présentent une forte activité chlorophyllienne.</li>
+            <li>Pour les surfaces en sol nu, on observe des réflectances faibles dans le visible, qui augmentent fortement dans le PIR (> 30%) et surtout dans l'IRM (> 45%) dans la bande à 1.6 µm. Cela indique un sol nu clair et sec.</li>
+           </ul>
 				
 				<h3>Classification au moyen de la méthodes des K-Means<a class="headerlink" id="XII34" href="#XII34"></a></h3>
 				

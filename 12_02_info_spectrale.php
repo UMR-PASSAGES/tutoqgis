@@ -23,7 +23,9 @@
   					<li><a href="#XII23">Extraction et analyse d'indices spectraux</a>
   					  <ul class="listesoustitres">
   							<li><a href="#XII23a">Indice de végétation NDVI</a></li>
-  							<li><a href="#XII23b">Normalized Burn Ratio (NBR)</a></li>
+  							<li><a href="#XII23b">Interprétation du NDVI</a></li>
+  							<li><a href="#XII23c">Normalized Burn Ratio (NBR)</a></li>
+  							<li><a href="#XII23d">Interprétation du NBR</a></li>
   						</ul>
   					</li>
   				</ul>
@@ -39,34 +41,22 @@
   				
   				<h3>Extraction de signature spectrale<a class="headerlink" id="XII21" href="#XII21"></a></h3>
   				
+  				  <h4>Ajout de l'image via l'extension SCP<a class="headerlink" id="XII21a" href="#XII21a"></a></h4>
+  				
   				  <div class="manip">
-  				    <p>Ouvrez un nouveau projet QGIS. Ajoutez-y la couche raster <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>.</p>
-  				    <p class="note">Pour en savoir plus sur cette image, voir le <a href="12_01_intro_teledec.php" >chapitre précédent</a>&nbsp;!</p>
+  				    <p>Ouvrez un nouveau projet QGIS.</p>
+  				    <p><img class="icone" src="illustrations/12_01_jeu_bandes_icone.jpg" alt="icône bandset de l'extension SCP" >Cliquez sur l'icône <b>band set</b> du panneau SCP (ou bien menu SCP &#8594; Band set).</p>
+  				    <p><img class="icone" src="illustrations/12_02_openfile_icone.jpg" alt="icône 'open a file' du plugin SCP" >Dans la fenêtre de définition du jeu de bandes, cliquez sur l'icône en haut à droite pour ajouter une image, et sélectionnez l'image <em class="data"><a href="donnees/TutoQGIS_12_teledetection.zip">Sentinel2_2021_08_17.tif</a></em>.</p>
+  				    <p>Dans la liste déroulante <b>Wavelength</b> en bas de la fenêtre, sélectionnez <b>Sentinel-2</b> pour que les longueurs d'onde soient bien reconnues.</p>
+  				    <p><img class="icone" src="illustrations/12_02_rgb_icone.jpg" alt="icône 'RGB composite' du plugin SCP" >Enfin, sélectionnez le jeu de bande puis cliquez sur l'icône en bas <b>RGB composite</b> pour afficher l'image dans QGIS.</p>
+  				    <p class="note">Ces étapes sont décrites plus en détail <a href="12_01_intro_teledec.php#XII14" >au chapitre précédent</a>&nbsp;! Pour en savoir plus sur cette image, voir également au <a href="12_01_intro_teledec.php" >chapitre précédent</a>.</p>
   				  </div>
+  				  
+  				  <p>L'extension SCP est maintenant paramétrée pour travailler sur notre image, qui est reconnue comme une image Sentinel-2.
   				  
   				  <p>Nous allons ici digitaliser (dessiner) des polygones dans des zones avec différents types d'occupation du sol (eau, urbain, forêt...), afin de voir ensuite la signature spectrale de chacune de ces classes.</p>
   				  <p>Ces polygones sont souvent nommés <b>ROI</b> en télédétection pour &#171;&nbsp;Region Of Interest&nbsp;&#187;.</p>
   				  
-  				  <h4>Définition du jeu de bandes en entrée dans l'extension SCP<a class="headerlink" id="XII21a" href="#XII21a"></a></h4>
-  				  
-    				  <p>Il faut tout d'abord définir l'image satellite en entrée pour l'extension SCP.</p>
-    				  
-    				  <div class="manip">
-    				    <p><img class="icone" src="illustrations/12_01_jeu_bandes_icone.jpg" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Jeu de bandes</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP&nbsp;:</p>
-    				    <figure>
-      						<a href="illustrations/12_02_jeu_bandes.jpg" >
-      							<img src="illustrations/12_02_jeu_bandes.jpg" alt="Choix du jeu de bandes dans le plugin SCP" width="600">
-      						</a>
-      					</figure>
-      					<ul>
-      					 <li class="espace">Sélectionnez l'image <em class="data">Sentinel2_2021_08_17.tif</em> dans la liste déroulante en haut de la fenêtre (si vous ne la voyez pas, rafraîchissez la liste au moyen du bouton à droite)</li>
-      					 <li class="espace">En bas de la fenêtre, dans la liste <b>Wavelength quick settings</b>, sélectionnez <b>Sentinel-2</b>.</li>
-      					</ul>
-      					<p>Il est inutile de cliquer sur le bouton <em>Run</em>. Vous pouvez maintenant fermer cette fenêtre.</p>
-      				</div>
-      				
-      				<p>L'extension SCP est maintenant paramétrée pour travailler sur notre image, qui est reconnue comme une image Sentinel-2.
-      				
       				<div class="manip">
       					<p>La dernière chose à faire avant de commencer à dessiner les polygones d'entraînement est de choisir une <a href="12_01_intro_teledec.php#XII15b">composition colorée</a> permettant de bien voir les différentes catégories d'occupation du sol. Ici, afin de bien voir la végétation, les zones brûlées et les feux, nous allons afficher les <b>bandes 13, 8 et 4</b> (propriétés de la couche &#8594; symbologie)&nbsp;:</p>
       					<figure>
@@ -98,7 +88,7 @@
       							<img src="illustrations/12_02_couche_rois.jpg" alt="liste des couches dans QGIS, avec l'image sentinel-2 et la couche scp" width="250">
       						</a>
       					</figure>
-      					<p class="note">Cette couche semble une couche temporaire (icône grise à côté de son nom), mais il s'agit bien d'une couche sauvegardée sur votre disque, comme vous pouvez vous en assurer dans votre explorateur de fichiers. Elle possède l'extension .scp (v7) ou .scpx (v8) propre à l'extension QGIS SCP.</p>
+      					<p class="note">Cette couche semble une couche temporaire (icône grise à côté de son nom), mais il s'agit bien d'une couche sauvegardée sur votre disque, comme vous pouvez vous en assurer dans votre explorateur de fichiers. Elle possède l'extension .scp avec la version 7 de SCP ou .scpx avec la version 8 de SCP.</p>
     				  </div>
     				  
     				  <p>Nous allons maintenant ajouter des polygones dans cette couche&nbsp;!</p>
@@ -172,6 +162,7 @@
       							<img src="illustrations/12_02_liste_rois.jpg" alt="panneau SCP avec les 6 ROIs correspondant aux 6 classes définies + haut" width="450">
       						</a>
       					</figure>
+      					<p>Vous pouvez modifier les couleurs attribuées aux macro-classes et classes en double-cliquant sur le carré de couleur.</p>
       				</div>
   
      					<p>Nous allons maintenant afficher les signatures spectrales de nos ROIs.</p>
@@ -205,7 +196,7 @@
     						</a>
     					</figure>
     					
-    					<p>Vous pouvez par exemple charger la couche de polygones d'entraînement <em class="data">ROI_S2_2021_08_17.scpx</em>.</p>
+    					<p>Vous pouvez par exemple charger la couche de polygones d'entraînement <em class="data"><a href="donnees/TutoQGIS_12_teledetection.zip">ROI_S2_2021_08_17.scpx</a></em>.</p>
   				  
   				<h3>Interprétation de signature spectrale<a class="headerlink" id="XII22" href="#XII22"></a></h3>
   				
@@ -236,20 +227,9 @@
   				    <p>Voici tout d'abord comment calculer le NDVI avec SCP&nbsp;:</p>
   				    
   				    <div class="manip">
-  				      <p>Ouvrez un nouveau projet QGIS, ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>.</p>
-  				      <p>Il faut d'abord si ça n'est pas déjà fait définir le <b>jeu de bandes</b> pour SCP : Menu SCP &#8594; Jeu de bande :</p>
-  				      <figure>
-      						<a href="illustrations/12_02_bandset.jpg" >
-      							<img src="illustrations/12_02_bandset.jpg" alt="SCP, jeu de bandes" width="600">
-      						</a>
-      					</figure>
-      					<ul>
-      					 <li>Cliquez éventuellement sur le bouton <b>actualiser la liste</b> pour voir apparaître le nom de l'image dans la liste déroulante</li>
-      					 <li>Sélectionnez l'image dans la liste déroulante</li>
-      					 <li>En bas de la fenêtre, choisissez <b>Sentinel-2</b> pour le paramétrage rapide des longueurs d'onde</li>
-      					</ul>
+  				      <p>Ouvrez un nouveau projet QGIS, chargez la couche <em class="data"><a href="donnees/TutoQGIS_12_teledetection.zip">Sentinel2_2021_08_17.tif</a></em> <a href="12_02_info_spectrale.php#XII21a">en utilisant l'extension SCP</a> (définition du jeu de bandes).</p>
       					
-      					<p>Vous pouvez maintenant aller dans la partie <b>Calcul de bande</b> de SCP, les bandes de notre raster seront listées dans le tableau en haut de la fenêtre. Si ça n'est pas le cas, utilisez le bouton <b>Actualiser</b> à droite de la liste des bandes.</p>
+      					<p>Vous pouvez maintenant aller dans la partie <b>Calcul de bande (Band calc)</b> de SCP, les bandes de notre raster seront listées dans le tableau en haut de la fenêtre. Si ça n'est pas le cas, utilisez le bouton <b>Actualiser</b> à droite de la liste des bandes.</p>
       					<figure>
       						<a href="illustrations/12_02_calcul_bandes.jpg" >
       							<img src="illustrations/12_02_calcul_bandes.jpg" alt="SCP, calcul de bandes, liste des bandes en haut de la fenêtre entourée de rouge" width="600">
@@ -257,69 +237,44 @@
       					</figure>
   				    </div>
   				    
-  				    <p>Contrairement à ce qu'on aurait pu penser, il n'y a pas 13 bandes dans ce tableau mais 40&nbsp;! Pourquoi&nbsp;? Sont listées dans cet outil&nbsp;:</p>
+  				    <p>Contrairement à ce qu'on aurait pu penser, il n'y a pas 13 bandes dans ce tableau mais 60&nbsp;! Pourquoi&nbsp;? Sont listées dans cet outil&nbsp;:</p>
   				    <ul>
-  				      <li>Les 13 bandes du jeu de bandes actuel, sous la forme bandset#b1, bandset#b2 etc. (raster1 à raster13)</li>
-  				      <li>Les 13 bandes du jeu de bande 1 (donc identiques à celles ci-dessus), sous la forme bandset1b1, bandset2b2 etc. (raster14 à raster26)</li>
-  				      <li>bandset1b* (raster27) : toutes les bandes du jeu de bande 1 (toutes les bandes de l'image Sentinel-2)</li>
-  				      <li>bandset*b1, bandset*b2 etc. (raster28 à raster40) : toutes les bandes 1 de tous les jeux de bandes, toutes les bandes 2 de tous les jeux de bandes etc. (ici nous n'avons qu'un seul jeu de bandes, donc il s'agit encore des 13 mêmes bandes)</li>
+  				      <li>les 13 bandes du jeu de bandes 1, sous la forme bandset1b1, bandset2b2 etc. (lignes 1 à 13)</li>
+  				      <li>les 13 bandes du jeu de bande actuel (donc identiques à celles ci-dessus), sous la forme bandset#b1, bandset#b2 etc. (lignes 14 à 26)</li>
+  				      <li>bandset#b*&nbsp;: toutes les bandes du jeu de bande actuel (toutes les bandes de l'image Sentinel-2) (ligne 27)</li>
+  				      <li>à nouveau les 13 bandes du jeu de bande actuel, sous la forme bandset#b1, bandset#b2 etc. (lignes 28 à 40)</li>
+  				      <li>si les longueurs d'onde sont bien renseignées pour le jeu de bande, un moyen rapide d'accéder aux bandes bleu, vert, rouge, PIR et SWIR (#BLUE#, #GREEN#...) (lignes 41 à 46)</li>
+  				      <li>bandset1b*&nbsp;: toutes les bandes du jeu de bande 1, ici équivalent à bandset#b* (ligne 47)</li>
+  				      <li>à nouveau les 13 bandes du jeu de bandes 1, sous la forme bandset1b1, bandset2b2 etc. (lignes 48 à 60)</li>
   				    </ul>
+  				    <p class="note">Certains items sont répétés, pouquoi ? Mystère !</p>
   				    <p>Certaines de ces &#171;&nbsp;bandes&nbsp;&#187; sont donc en réalité des listes de bandes et pourront être utilisées dans des expressions acceptant ces listes.</p>
   				    <p><b>Ici, nous utiliserons uniquement les 13 premiers éléments de la liste correspondant aux 13 bandes de notre image&nbsp;!</b></p>
   				    
   				    <div class="manip">
       						<a href="illustrations/12_02_scp_ndvi.jpg" >
-      							<img class="droite" src="illustrations/12_02_scp_ndvi.jpg" alt="SCP, calcul de bandes, partie Fonctions : NDVI" width="250">
+      							<img class="droite" src="illustrations/12_02_scp_ndvi.jpg" alt="SCP, calcul de bandes, partie Fonctions : NDVI" width="230">
       						</a>
       					<p>Dans la partie <b>Fonctions</b> à droite de la fenêtre, descendez pour arriver jusqu'à la rubrique <b>Indices</b> et double-cliquez sur <b>NDVI</b>.</p>
       					<p>La formule suivante s'affiche dans la partie <b>Expression</b>&nbsp;:</p>
       					<p class="code">( "#NIR#" - "#RED#" ) / ( "#NIR#" + "#RED#" ) @NDVI</p>
-      					<p class="note">Dans cette formule, <b>@NDVI</b> sera le nom de la couche qui sera créée.</p>
+      					<p>Dans cette formule, <b>@NDVI</b> sera le nom de la couche temporaire qui sera créée. Si vous désirez enregistrer cette couche, il faut enlever cette partie&nbsp;:</p>
+      					<p class="code">( "#NIR#" - "#RED#" ) / ( "#NIR#" + "#RED#" )</p>
       					<p>Vous pouvez également choisir de taper la formule du NDVI &#171;&nbsp;à la main&nbsp;&#187; en double-cliquant sur les bandes dans la partie haute de la fenêtre&nbsp;:</p>
-      					<p class="code">("raster8" - "raster4") / ("raster8" + "raster4") @NDVI</p>
-      					<p class="note">Le résultat sera le même en utilisant <em>bandset#b8</em> et <em>bandset#b4</em>, ou bien <em>bandset1b8</em> et <em>bandset1b4</em>...</p>
+      					<p class="code">("bandset1b8"-"bandset1b4")/ ("bandset1b8"+"bandset1b4") @NDVI</p>
+      					<p class="note">Le résultat sera le même en utilisant <em>bandset#b8</em> et <em>bandset#b4</em> à la place de <em>bandset1b8</em> et <em>bandset1b4</em>...</p>
       					<p><img class="icone" src="illustrations/12_02_ndvi_lancer_icone.jpg" alt="bouton Lancer en bas à droite du panneau SCP" >Pour lancer le calcul du NDVI, cliquez sur le bouton <b>Lancer</b> en bas à droite de la fenêtre.</p>
-      					<p>Une nouvelle fenêtre s'ouvre pour vous demander l'emplacement où enregistrer la couche qui sera créee (son nom est défini par le texte à droite de l'arobase dans la formule, ici ce sera NDVI).</p>
+      					
+      					<p>Une nouvelle fenêtre s'ouvre pour vous demander l'emplacement où enregistrer la couche qui sera créee. <b>Attention, si votre formule se termine par @NDVI par exemple, la couche ne sera en réalité pas enregistrée, seule une couche temporaire sera générée&nbsp;!</b></p>
       					<p>Patientez... Le nouveau raster est ajouté à QGIS&nbsp;:</p>
       					<figure>
       						<a href="illustrations/12_02_ndvi_resultat.jpg" >
       							<img src="illustrations/12_02_ndvi_resultat.jpg" alt="image NDVI" width="500">
       						</a>
       					</figure>
-      					
-      					<p>Dans les propriétés de la couche, on peut voir l'histogramme des valeurs du NDVI&nbsp;:</p>
-      					<figure>
-      						<a href="illustrations/12_02_ndvi_histogramme.jpg" >
-      							<img src="illustrations/12_02_ndvi_histogramme.jpg" alt="image NDVI" width="500">
-      						</a>
-      					</figure>
-      					
-      					<p>Pour mieux visualiser ce NDVI, on peut utiliser une gamme de couleur allant du rouge au vert, en choisissant le type de rendu <b>Pseudo-couleur à bande unique</b>&nbsp;:</p>
-      					<figure>
-      						<a href="illustrations/12_02_ndvi_style.jpg" >
-      							<img src="illustrations/12_02_ndvi_style.jpg" alt="style pseudo-couleur de -1 à 1 avec la galle RdYlGn pour le NDVI" width="500">
-      						</a>
-      					</figure>
-      					
-      					<p>Ce qui permet d'observer&nbsp;:</p>
-      					<ul>
-      					 <li><b>en rouge-orange les valeurs inférieures à 0&nbsp;: ce sont les surfaces non couvertes par les végétaux (eau, nuages...)</b>, les valeurs des pixels sont plus grandes dans le rouge que dans le proche infra-rouge</li>
-      					 <li><b>en jaune les valeurs autour de 0 correspondant au sol nu</b> : les valeurs des pixels sont à peu près les mêmes dans le rouge et dans le proche infra-rouge</li>
-      					 <li><b>en vert les valeurs supérieures à 0 correspondant aux zones avec de la végétation</b>, un vert plus foncé traduisant un couvert plus dense : les pixels ont une valeur plus forte dans le proche infra-rouge que dans le rouge.</li>
-      					</ul>
-      					
-      					<p class="keskonfai">TODO : interprétation NDVI à compléter/modifier ?</p>
-      					
-      					<figure>
-      						<a href="illustrations/12_02_ndvi_rdylgn.jpg" >
-      							<img src="illustrations/12_02_ndvi_rdylgn.jpg" alt="image NDVI du rouge (-1) au vert (1)" width="500">
-      						</a>
-      					</figure>
-
-      					
-  				    </div>
-  				    
-  				    <p>Bravo, vous venez de calculer un indice de végétation avec l'extension SCP&nbsp;!</p>
+      				</div>
+      				
+      				<p>Bravo, vous venez de calculer un indice de végétation avec l'extension SCP&nbsp;!</p>
   				    
   				    <p>On peut également calculer le NDVI sans utiliser l'extension SCP, directement dans QGIS, à l'aide de la <b>calculatrice raster</b>.</p>
   				    
@@ -338,12 +293,54 @@
       					</ul>
       					<p>Exécutez... La couche temporaire est ajoutée à QGIS, elle est similaire à celle créée avec SCP.</p>
   				    </div>
+      					
+      					
+      			<h4>Interprétation du NDVI<a class="headerlink" id="XII23b" href="#XII23b"></a></h4>
+      			
+      			   <p>Le NDVI est un indice normalisé développé en 1973 par <a class="ext" target="_blank" href="https://ntrs.nasa.gov/citations/19740022614">Rouse <i>et al.</i> (1973)</a> qui vise à étudier et spatialiser la végétation que l’on peut détecter sur une image satellitaire. Pour rappel, il est calculé de la façon suivante :</p>
+      			   
+                <p class="code">NDVI = (Bande du Proche Infrarouge – Bande du Rouge) / (Bande du Proche Infrarouge + Bande du Rouge)</p>
+      			
+      			   <p>Les valeurs du NDVI en sortie sont donc comprises entre – 1 et +1, elles peuvent être interprétées de la façon suivante (à nuancer bien évidemment selon la date de prise de vue des images, du cycle phénologique de la végétation étudiée, etc.) :</p>
+      			   <ul>
+                <li><b>valeurs entre -1 et 0 :</b> pixels caractérisés par une valeur de réflectance dans l’image de la bande spectrale du rouge supérieure à la valeur de réflectance de la bande spectrale du Proche Infrarouge, cela concerne essentiellement les surfaces en eau et certains types de surfaces en sol nu (sable, certains types de bâti) </li>
+                <li><b>valeurs autour de 0 (entre 0 et 0.2):</b> pixels caractérisés par une valeur de réflectance dans l’image de la bande spectrale du rouge égale (ou presque) à celle de la bande spectrale du Proche Infrarouge, cela concerne essentiellement les surfaces en sol nu avec peu de végétation</li>
+                <li><b>valeurs supérieures à 0.2 :</b> pixels caractérisés par une valeur de réflectance dans l’image de la bande spectrale du rouge supérieure à la valeur de réflectance de labande spectrale du Proche Infrarouge, cela concerne essentiellement les surfaces en eau et certains types de surfaces en sol nu (sable, certains types de bâti)</li>
+               </ul>
+      					
+      					<p>Dans les propriétés de la couche, on peut voir l'histogramme des valeurs du NDVI&nbsp;:</p>
+      					<figure>
+      						<a href="illustrations/12_02_ndvi_histogramme.jpg" >
+      							<img src="illustrations/12_02_ndvi_histogramme.jpg" alt="image NDVI" width="650">
+      						</a>
+      					</figure>
+      					
+      					<p>Sur cet histogramme de l’image NDVI, nous pouvons identifier 3 modes :</p>
+      					<ul>
+      					 <li>le premier mode avec des valeurs de pixels compris entre -0.2 et 0 correspondant aux <b>surfaces en eau</b></li>
+      					 <li>le second mode avec des valeurs entre 0 et 0.2 correspond aux <b>surfaces avec pas ou peu de végétation</b> (surfaces brûlées, sol nu, surfaces bâties…)</li>
+      					 <li>le troisième avec des valeurs entre 0.2 et 1 caractérise le <b>gradient de la présence de végétation</b> (0.2 correspondant aux pixels avec un faible taux de couverture de végétation et 0.9, une valeur de NDVI correspondant à un fort taux de couverture de la végétation au sol et une forte activité chlorophyllienne.</li>
+      					</ul>
+      					
+      					<p>Une carte permet de spatialiser ce NDVI. Pour mieux le visualiser, on peut utiliser une gamme de couleur allant du rouge au vert, en choisissant le type de rendu <b>Pseudo-couleur à bande unique</b>&nbsp;:</p>
+      					<figure>
+      						<a href="illustrations/12_02_ndvi_style.jpg" >
+      							<img src="illustrations/12_02_ndvi_style.jpg" alt="style pseudo-couleur de -1 à 1 avec la galle RdYlGn pour le NDVI" width="500">
+      						</a>
+      					</figure>
+      					
+      					<p>Ce qui permet d'observer&nbsp;:</p>
+      					<figure>
+      						<a href="illustrations/12_02_ndvi_rdylgn.jpg" >
+      							<img src="illustrations/12_02_ndvi_rdylgn.jpg" alt="image NDVI du rouge (-1) au vert (1)" width="650">
+      						</a>
+      					</figure>
+      					<p>Les teintes en orange foncé correspondent aux surfaces en eau, on remarque également au sud-est de l’image la plage qui ressort en rouge. Au centre de l’image, les surfaces brûlées sont bien identifiables. Les surfaces en vert clair et foncé correspondent aux pixels avec des taux de végétation plus ou moins forts. </p>
+      					
   				    
-  				    <p class="keskonfai">TODO : calcul NDVI pour les surfaces en eau, forêt etc.</p>
+  				  <h4>Normalized Burn Ratio (NBR)<a class="headerlink" id="XII23c" href="#XII23c"></a></h4>
   				  
-  				  <h4>Normalized Burn Ratio (NBR)<a class="headerlink" id="XII23b" href="#XII23b"></a></h4>
-  				  
-  				    <p>L'<a class="ext" target="_blank" href="https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio">indice normalisé des surfaces brûlées</a> (Normalized Burn Ratio ou NBR) est utilisé pour identifier les surfaces brûlées et donner une mesure de l'intensité des feux.</p>
+  				    <p>L'<a class="ext" target="_blank" href="https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio">indice normalisé des surfaces brûlées</a> (Normalized Burn Ratio ou NBR) est un indice normalisé qui vise à étudier et spatialiser les feux que l’on peut détecter sur une image satellitaire.</p>
   				    <p>De la même manière que le NDVI, c'est un ratio basé sur 2 bandes, mais cette fois il s'agit des bandes <b>Proche Infra-Rouge (PIR)</b> et <b>Infra-Rouge Court (SWIR)</b> :</p>
   				    <p class="code">NBR = (NIR - SWIR) / (NIR + SWIR)</p>
   				    
@@ -371,9 +368,28 @@
       					</figure>
   				    </div>
   				    
-  				    <p class="keskonfai">TODO : analyse et interprétation NBR</p>
+  				  <h4>Interprétation du NBR<a class="headerlink" id="XII23d" href="#XII23d"></a></h4>
+  				  
+  				    <p>Pour rappel&nbsp;:</p>
+  				    <p class="code">NBR = (NIR - SWIR) / (NIR + SWIR)</p>
+  				    <p>Les valeurs du NBR en sortie sont donc comprises entre – 1 et +1, elles peuvent être interprétées de la façon suivante&nbsp;:</p>
+  				    <ul>
+  				      <li class="espace"><b>valeurs entre -1 et -0.7</b>&nbsp;: pixels caractérisés par une valeur de réflectance dans l’image de la bande spectrale l’Infrarouge Moyen supérieure à la valeur de réflectance de la bande spectrale du Proche Infrarouge, cela concerne essentiellement les feux en cours caractérisés par des valeurs de réflectance très fortes dans l’IRM (2.2 µm) et très faibles dans le PIR</li>
+  				      <li class="espace"><b>valeurs entre -0.7 et -0.3</b>&nbsp;: pixels caractérisant les surfaces brûlées</li>
+  				      <li class="espace"><b>valeurs supérieures à -0.3</b>&nbsp;: pixels correspondant à des surfaces non brulées</li>
+  				    </ul>
+  				    
+  				    <figure>
+    						<a href="illustrations/12_02_nbr_rdylgn.jpg" >
+    							<img src="illustrations/12_02_nbr_rdylgn.jpg" alt="image NBR du rouge (-1) au vert (1)" width="650">
+    						</a>
+    					</figure>
+  				    
+  				    <p>Ici, les teintes en rouge correspondent aux feux en cours à l’heure de prise de vue, ce qui s’avère une source d’information très utile pour les acteurs impliqués dans la gestion des forêts. Les teintes en orange correspondent aux surfaces brûlées qui sont localisées au centre de l’image.</p>
+  				    
+  				    <p>Dans le chapitre suivant, nous verrons comment <b>classifier</b> une image pour obtenir des catégories d'occupation du sol, de manière non supervisée.</p>
 
-				
+
 				<br>
 				<a class="prec" href="12_01_intro_teledec.php">chapitre précédent</a>
 				<a class="suiv" href="12_03_classif_nonsup.php">chapitre suivant</a>
