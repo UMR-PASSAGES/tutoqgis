@@ -113,7 +113,7 @@
 				    <p>La couche <em class="data">srtm_bretagne</em> est au format TIF.</p>
 				
 					<p>Vous avez peut-être déjà manipulé des images au format TIF. Les TIF utilisés dans les logiciels SIG possèdent des informations en plus par rapport aux TIF "classiques" : quel type de coordonnées est utilisé, quelles sont les coordonnées de l'image... Il s'agit alors d'un cas particulier de TIF nommé <b>GeoTIFF</b>.</p>
-					<p>L'extension du fichier reste TIF. Cependant, chargé dans un logiciel SIG, ce TIF s'affichera directement au bon endroit&nbsp;; on dit qu'il est <b>géoréférencé</b> (cf. <a href="04_00_georeferencement.php">partie 4 sur le géoréférencement</a>).</p>
+					<p>L'extension du fichier reste TIF. Cependant, chargé dans un logiciel SIG, ce TIF s'affichera directement au bon endroit (c'est-à-dire qu'il se superposera correctement à d'autres couches)&nbsp;; on dit qu'il est <b>géoréférencé</b> (cf. <a href="04_00_georeferencement.php">partie 4 sur le géoréférencement</a>).</p>
 					<p>D'autres fichiers peuvent être associés à un raster :</p>
 					<ul>
 						<li class="espace"><b>QML :</b> ce fichier facultatif sauvegarde le mode de représentation du raster : du noir vers le blanc, valeur minimum et maximum... S'il n'est pas présent, le raster s'affichera avec des paramètres par défaut. Il est propre à QGIS.</li>

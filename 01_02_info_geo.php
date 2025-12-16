@@ -31,7 +31,7 @@
 				
 				<h3>Ajout et suppression d'une couche de données vecteur<a class="headerlink" id="I21" href="#I21"></a></h3>
 				
-				    <h4>Par le menu<a class="headerlink" id="I21a" href="#I21a"></a></h4>
+				    <h4>Par le menu Couche ou les icônes<a class="headerlink" id="I21a" href="#I21a"></a></h4>
 				
     					<div class="manip">
     						<p>Lancez QGIS. Depuis QGIS 3, il existe une interface unique pour ajouter des couches vecteurs, rasters etc. : le gestionnaire des sources de données.</p>
@@ -47,7 +47,7 @@
 								<li>cliquer sur l'icône <b>Ouvrir le gestionnaire des sources de données</b><img class="iconemid" src="illustrations/1_2_gestionnaire_donnees_icone.jpg" alt="Icône du gestionnaire des sources de données"></li>
 								<li>utiliser le raccourci clavier <b>ctrl + L</b> (minuscule)</li>
 							</ul>
-    					    <p>Si vous souhaitez retrouver vos habitudes de QGIS 2.18, vous pouvez également procéder ainsi : </p>
+    					    <p>On peut aussi procéder de cette manière pour arriver directement sur la rubrique <b>Vecteur</b> du gestionnaire de source de données&nbsp;: </p>
 					       <ul>
 					           <li>
 									<a class="thumbnail_bottom" href="#thumb">Menu couche &#8594; Ajouter une couche &#8594; Ajouter une couche vecteur...
@@ -174,6 +174,8 @@
     							</a>
     						</figure>
     					</div>
+    					
+    					<p>Dans la symbologie, on modifie uniquement la manière dont sont représentées les données, mais pas les données elles-mêmes&nbsp;!</p>
 					
 					<h4>Connaître l'emplacement d'une couche<a class="headerlink" id="I23b" href="#I23b"></a></h4>
 					

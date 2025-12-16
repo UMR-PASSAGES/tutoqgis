@@ -44,6 +44,12 @@
 					<div class="manip">
 						<p>Masquez QGIS, décompressez le fichier QGZ et ouvrez ensuite le fichier QGS au moyen d'un éditeur de texte type bloc-notes : vous pouvez y trouver le chemin des couches chargées dans le projet, la description des couleurs utilisées... Fermez ce fichier.</p>
 					</div>
+					<figure>
+          	<a href="illustrations/1_4_qgs.jpg" >
+          		<img src="illustrations/1_4_qgs.jpg" alt="Extrait du contenu d'un fichier QGS vu dans un éditeur de texte (chemin vers une couche)" width="620">
+          	</a>
+          	<figcaption>Extrait du contenu d'un fichier QGS vu dans un éditeur de texte (cliquez pour voir en plus grand)</figcaption>
+          </figure>
 					<p>Il n'est bien sûr pas utile de comprendre en détail le contenu du fichier QGS, mais il est important de noter qu'il ne s'agit que <b>d'un fichier texte, qui va "appeler" les données</b>.</p>
 					<p><b>Si vous fournissez à un collègue votre seul fichier QGZ ou QGS, sans les données correspondantes, ce collègue ne pourra pas visualiser les données !</b></p>
 				

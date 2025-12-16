@@ -78,11 +78,11 @@
 							<a href="illustrations/1_1_vecteur.jpg" >
 							<img src="illustrations/1_1_vecteur.jpg" alt="Exemple de données vecteur" width="600">
 							</a>
-							<figcaption >Exemple de données vecteur, l'exemple du Sénégal : régions sous forme de polygones, rivières sous forme de lignes et villes sous forme de points (source : Agence Nationale de l'Aménagement du Territoire (ANAT) du Sénégal).</figcaption>
+							<figcaption >Données vecteur, l'exemple du Sénégal : régions sous forme de polygones, rivières sous forme de lignes et villes sous forme de points (source : Agence Nationale de l'Aménagement du Territoire (ANAT) du Sénégal).</figcaption>
 						</figure>
-						<p>Les <b>données vecteurs</b> se définissent uniquement par des coordonnées. On trouvera des données vecteurs de type <b>point</b>, <b>ligne</b> et <b>polygone</b>. Un point sera défini par un couple de coordonnées XY, une ligne ou un polygone par les coordonnées de leurs sommets. Une couche vecteur sera soit de type point, soit de type ligne, soit de type polygone, mais ne pourra contenir de données de deux types différents (sauf dans le cas particuliers de certains formats qui ne seront pas abordés dans ce tutoriel).</p>
-						<p>On pourra choisir par exemple de représenter des cours d'eau sous forme de ligne, des villes sous forme de points...</p>
-						<p>Les données vecteur sont généralement moins volumineuses que les données raster. Quelques exemples de formats vecteur : SVG, AI, SHP, Geo...</p>
+						<p>Les <b>données vecteurs</b> se définissent uniquement par des coordonnées. On trouvera des données vecteur de type <b>point</b>, <b>ligne</b> et <b>polygone</b>. Un point sera défini par un couple de coordonnées XY, une ligne ou un polygone par les coordonnées de leurs sommets. Une couche vecteur sera soit de type point, soit de type ligne, soit de type polygone, mais ne pourra contenir de données de deux types différents (sauf dans le cas particuliers de certains formats qui ne seront pas abordés dans ce tutoriel).</p>
+						<p>On pourra choisir par exemple de représenter des cours d'eau sous forme de ligne, des pays sous forme de polygones... tout en sachant que le type de données dépend de l'échelle de travail : par exemple, les villes pourront être représentées sous forme de points à l'échelle du pays ou sous forme de polygones à une échelle plus précise.</p>
+						<p>Les données vecteur sont généralement moins volumineuses que les données raster. Quelques exemples de formats vecteur : SVG, AI, SHP...</p>
 		
 						<p>Les <b>données raster</b>, ou images, sont constituées de pixels. En zoomant sur un raster, on finit par distinguer les pixels. Chaque pixel possède une valeur correspondant par exemple à sa couleur, ou à son altitude. Un raster est caractérisé par la taille d'un pixel, ou résolution. Exemples de données raster : carte IGN scannée, photographie aérienne, image satellite...</p>
 						<figure>
@@ -125,15 +125,15 @@
 									<img src="illustrations/1_1_table_liste_deroulante.jpg" alt="Table attributaire : ne montrer que les entités sélectionnées" width="600">
 								</a>
 							</figure>
-							<p class="note">Pour que la fenêtre de la table attributaire soit "ancrée" dans QGIS : menu <b>Préférences &#8594; Options &#8594; Sources de données</b> : cocher la case <b>Ouvrir la table d'attributs dans une fenêtre intégrée</b>.</p>
+							<p class="note">Pour que la fenêtre de la table attributaire soit "ancrée" dans QGIS : menu <b>Préférences &#8594; Options &#8594; Sources de données</b> : cocher la case <b>Ouvrir la table attributaire dans une fenêtre intégrée</b>.</p>
 						</div>
 						
 					<h4>Des données sur les données : les métadonnées<a class="headerlink" id="I12d" href="#I12d"></a></h4>
 					
 						<p>Afin de savoir quelles sont les utilisations que l'on peut faire d'une donnée, il est indispensable de posséder des informations sur la manière dont a été fabriquée cette donnée, sa date, ses limites éventuelles d'utilisation... <b>Ces « données sur la donnée » constituent ce qu'on appelle des métadonnées</b>. Elles peuvent se présenter sous diverses formes : un simple fichier texte, une fiche PDF...</p>
             <div class="manip">						
-						  <p>Vous pouvez voir ici les métadonnées de la couche Corine Land Cover France métropolitaine 2018 :</p>
-						  <p><a class="ext" target="_blank" href="https://www.geocatalogue.fr/geonetwork/srv/api/records/urn:isogeo:metadata:uuid:eec629be-b922-4a16-af9a-8501bc259dd4?language=all">https://www.geocatalogue.fr/geonetwork/srv/api/records/urn:isogeo:metadata:uuid:eec629be-b922-4a16-af9a-8501bc259dd4?language=all</a></p>
+						  <p>Vous pouvez voir ici les métadonnées de la base IGN ADMIN EXPRESS dont est tirée la couche de départements français que vous avez sous les yeux&nbsp;:</p>
+						  <p><a class="ext" target="_blank" href="https://www.geocatalogue.fr/geonetwork/srv/fre/catalog.search#/metadata/IGNF_ADMIN-EXPRESS">https://www.geocatalogue.fr/geonetwork/srv/api/records/urn:isogeo:metadata:uuid:eec629be-b922-4a16-af9a-8501bc259dd4?language=all</a></p>
 						</div>
 						<p>Il existe aujourd'hui des normes régissant la manière dont sont construites ces métadonnées : nombres de rubriques présentes, choix des rubriques... Ceci permet de construire des catalogues de métadonnées, et facilite <i>in fine</i> l'échange de données entre organismes.</p>
 						<p>La métadonnée ci-dessus est tirée du catalogue de métadonnées national, le géocatalogue : <a class="ext" target="_blank" href="https://www.geocatalogue.fr/geonetwork/" >https://www.geocatalogue.fr/geonetwork/</a>.</p>
@@ -152,7 +152,7 @@
 						<p>Les SIG sont utilisés aujourd'hui dans des domaines très variés : géographie, géologie, écologie, urbanisme, archéologie, économie...</p>
 						<p>On peut par exemple chercher à répondre à la question : "la taille des parcelles de vignes est-elle corrélée avec la pente et l'altitude de la parcelle, sur une zone donnée ?"</p>
 						<p>Les données nécessaires seront une couche contenant les parcelles de vignes, et un <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain">Modèle Numérique de Terrain (MNT)</a> de la zone d'étude. La résolution du MNT devra être suffisante en comparaison de la taille moyenne des parcelles.</p>
-						<p>Le SIG va permettre de croiser les parcelles et le MNT pour aboutir à une couche de parcelles où seront renseignées pour chaque parcelle par exemple sa taille, sa pente moyenne, son altitude moyenne. Ces données pourront être ensuite visualisées dans le SIG, et/ou être le point de départ d'analyses statistiques dans un autre logiciel.</p>
+						<p>Le SIG va permettre de croiser les parcelles et le MNT pour aboutir à une couche de parcelles où seront renseignées pour chaque parcelle par exemple sa taille, sa pente moyenne, son altitude moyenne. Ces données pourront être ensuite visualisées dans le SIG, et/ou être le point de départ d'analyses statistiques dans un autre logiciel, ou encore être exportées dans un logiciel de dessin pour améliorer leur représentation cartographique.</p>
 						
 						
 <!-- 				<h3><a class="headerlink" id="I14">Quelques limites des SIG</a></h3>

@@ -11,7 +11,7 @@
 			<h2>Présentation</h2>
 			
 				<h3>En quelques mots</h3>
-					<p>Ce tutoriel QGIS a été créé par le pôle Analyse et Représentation des données de l'UMR <a class="ext" target="_blank" href="http://www.passages.cnrs.fr/">PASSAGES</a> et est aujourd'hui maintenu par le <a class="ext" target="_blank" href="https://letg.cnrs.fr/mot9.html">RASTeR</a> de l'UMR <a class="ext" target="_blank" href="https://letg.cnrs.fr/">LETG</a>. Son but est de permettre aux débutants en SIG de s'initier à ceux-ci via le logiciel libre QGIS. Pour installer QGIS, rendez-vous sur <a class="ext" target="_blank" href="http://www.qgis.org/" >http://www.qgis.org/</a>.</p>
+					<p>Ce tutoriel QGIS a été créé par le pôle <a class="ext" target="_blank" href="https://www.passages.cnrs.fr/laboratoire/appui-a-la-recherche/ard/">Analyse et Représentation des données</a> de l'UMR <a class="ext" target="_blank" href="http://www.passages.cnrs.fr/">PASSAGES</a> et est aujourd'hui maintenu par le <a class="ext" target="_blank" href="https://letg.cnrs.fr/accompagnement/">RASTeR</a> de l'UMR <a class="ext" target="_blank" href="https://letg.cnrs.fr/">LETG</a>. Son but est de permettre aux débutants en SIG de s'initier à ceux-ci via le logiciel libre QGIS. Pour installer QGIS, rendez-vous sur <a class="ext" target="_blank" href="http://www.qgis.org/" >http://www.qgis.org/</a>.</p>
 					<p>Le tutoriel est mis à jour pour chaque version maintenue &#171;&nbsp;à long terme&nbsp;&#187; de QGIS : actuellement il s'agit de la version <a class="ext" target="_blank" href="https://www.qgis.org/fr/site/forusers/visualchangelog322/index.html">3.22 'Białowieża'</a>.</p>
 					
 				<h3>Accès au tutoriel</h3>
