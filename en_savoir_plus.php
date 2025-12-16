@@ -6,7 +6,6 @@
 	
 	<div id="container_main_sidebar">
 
-	
 		<div class="main">
 			<h2>En savoir plus</h2>
 			
