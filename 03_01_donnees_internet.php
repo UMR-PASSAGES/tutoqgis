@@ -28,7 +28,7 @@
 				<br>
 	
 			<p>Il est possible de trouver sur internet des <b>données déjà géoréférencées, c'est-à-dire possédant déjà des coordonnées, donc directement utilisables dans un SIG</b>. Ces données peuvent être vecteur ou raster.</p>
-			<p>Dans le cas de <b>données vecteur</b>, le format le plus courant est sans doute le shapefile ; on trouvera aussi des données dans d'autres formats, par exemple GeoPackage, GeoJSON, KML...</p>
+			<p>Dans le cas de <b>données vecteur</b>, le format le plus courant est peut-être le shapefile ; on trouvera aussi des données dans d'autres formats, par exemple GeoPackage, GeoJSON, KML...</p>
 			<p>Dans le cas de <b>données raster</b>, on pourra trouver par exemple des données au format geotiff (TIF géoréférencé, c'est-à-dire avec des coordonnées lui permettant de se superposer correctement à d'autres couches).</p>
 			<p>Parfois, on ne trouvera que des <b>données non géoréférencées</b> (carte papier par exemple, ou simple image trouvée sur internet). Ce cas sera traité dans la <a href="04_00_georeferencement.php" >partie 4 : géoréférencement</a>.</p>
 			<p>Cette partie se borne à donner quelques exemples de sites permettant le téléchargement de données SIG. Il en existe beaucoup d'autres !</p>
@@ -50,16 +50,15 @@
 							</a>
 						</figure>
 					</div>
-					   <p>La base ADMIN EXPRESS contient des couches de régions, départements, arrondissements, EPCI, communes et chef-lieux pour la France métropolitaine et ultra-marine. Elle remplace la base GEOFLA® qui n'est plus mise à jour et dont la dernière édition est celle de 2016.</p>
+					   <p>La base ADMIN EXPRESS contient des couches de régions, départements, arrondissements, EPCI, communes et chef-lieux pour la France métropolitaine et ultra-marine. Elle remplace la base GEOFLA® qui n'est plus mise à jour et dont la dernière édition est celle de 2016. Il est possible de la télécharger séparément pour la France métropolitaine et les territoires ultramarins, ou bien dans son ensemble.</p>
 					<div class="manip">
-					   <p class="note">Attention, le téléchargement de ces données peut être un peu long (environ 255 Mo pour la version de juin 2022), vous pouvez également utiliser directement la couche <a href="donnees/TutoQGIS_03_RechercheDonnees.zip" ><em class="data">COMMUNE</em></a> disponible en téléchargement.</p>
-					   <p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS par territoire</b> (ici celle de juin 2022) :</p>
+					   <p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS pour le territoire de la Guyane</b> (ici celle de décembre 2025 qui fait 1,1 Mo) :</p>
 					   <figure>
 							<a href="illustrations/3_1_ign_telechargement_2.jpg" >
 								<img src="illustrations/3_1_ign_telechargement_2.jpg" alt="page de téléchargement des données ADMIN EXPRESS (IGN)" width="500">
 							</a>
 						</figure>
-						<p class="note">Vous pouvez également télécharger la version <a class="ext" target="_blank" href="https://geoservices.ign.fr/ressources_documentaires/Espace_documentaire/BASES_VECTORIELLES/ADMIN_EXPRESS_COG/SE_ADMIN_EXPRESS_COG.pdf">COG (Code Officiel Géographique)</a> mais celle-ci est plus lourde.</p>
+						<p class="note">Vous pouvez également utiliser la version COG (Code Officiel Géographique), qui existe dans 2 versions : une version plus généralisée pour des usages cartographiques (COG-CARTO) et une version plus précise pour des usages statistiques (COG).</p>
 						<p>Dézippez le fichier téléchargé (vous pouvez par exemple utiliser <a class="ext" target="_blank" href="https://www.7-zip.org/">7-zip</a>).</p>
 					</div>
 					
@@ -67,49 +66,27 @@
 					
 					<div class="manip">
 					  <p>Une fois le fichier dézippé, vous pouvez constater qu'il contient une arborescence de dossiers complexe. Comment y voir plus clair ?</p>
-					  <p>En commençant par les métadonnées ! Sur la page de téléchargement d'Admin Express, cliquez sur le bouton <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/donnees/vecteur/adminexpress" >Documentation</a> puis sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/sites/default/files/2021-11/DC_DL_ADMIN_EXPRESS_3-1_0.pdf" >ADMIN EXPRESS - Descriptif de contenu et de livraison</a>, ce qui ouvre un fichier PDF.</p>
-					  <p>En parcourant ce PDF, vous en saurez plus sur les données que vous venez de télécharger. Vous y trouverez notamment page 7 la liste des différents SCR utilisés pour la France métropolitaine ainsi que pour l'Outre-Mer : le SCR utilisé pour la Guyane est le <b>RGF95 UTM 22, code EPSG 2972</b>.</p>
+					  <p>En commençant par les métadonnées ! Sur la page de téléchargement d'Admin Express, cliquez sur le bouton <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/donnees/vecteur/adminexpress" >Documentation</a> dans la partie droite puis sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/sites/default/files/2021-11/DC_DL_ADMIN_EXPRESS_3-1_0.pdf" >ADMIN EXPRESS - Descriptif de contenu</a>, ce qui ouvre un fichier PDF.</p>
+					  <p>En parcourant ce PDF, vous en saurez plus sur les données que vous venez de télécharger. Vous y trouverez notamment page dans la partie 2.3 <em>Références géodésiques</em> la liste des différents SCR utilisés pour la France métropolitaine ainsi que pour l'Outre-Mer : le SCR utilisé pour la Guyane est le <b>RGFG95 UTM 22, code EPSG 2972</b>.</p>
 					</div>
 					
 					<p>Pour rappel, le but de l'exercice est ici d'afficher les communes de la Guyane, mais vous pouvez très bien décider de travailler sur un autre département !</p>
 					
 					<div class="manip">
-					  <p>La couche <em class="data">COMMUNE</em> de la Guyane est donc située dans le sous-dossier <b>ADE_X-X_SHP_UTM22RGFG95_D973</b> où :</p>
+					  <p>La couche <em class="data">COMMUNE</em> de la Guyane est donc située dans le dossier <b>1_DONNEES_LIVRAISON_...</b> puis dans le sous-dossier<b>ADE_X-X_GPKG_UTM22RGFG95_GUF</b> où :</p>
 					  <ul>
-					   <li><b>X-X</b> correspond à la version d'ADMIN EXPRESS téléchargée, par exemple 3-1</li>
-					   <li><b>UTM22RGF95</b> correspond au SCR des données (voir plus haut)</li>
-					   <li><b>D973</b> est le code du département</li>
+					   <li><b>X-X</b> correspond à la version d'ADMIN EXPRESS téléchargée, par exemple 4-0</li>
+					   <li><b>UTM22RGFG95</b> correspond au SCR des données (voir plus haut)</li>
+					   <li><b>GUF</b> signifie Guyane française</li>
 					  </ul>
-						<p>A partir de l'explorateur de fichiers de QGIS, ajoutez les communes de Guyane à la carte.</p>
+						<p>A partir de l'explorateur de fichiers de QGIS, ajoutez les communes de Guyane à la carte, dans un nouveau projet vide.</p>
 						<figure>
 							<a href="illustrations/3_1_commune_guyane_explorateur.jpg" >
 								<img src="illustrations/3_1_commune_guyane_explorateur.jpg" alt="ajout de la couche de communes de Guyane via l'explorateur QGIS" width="600">
 							</a>
 						</figure>
-						<p>Selon votre version de QGIS et votre configuration, une fenêtre peut alors s'ouvrir pour vous demander quelle transformation vous souhaitez utiliser pour passer du SCR RGFG95 (utilisé en Guyane) et WGS84. Dans ce cas, choisissez la 1ère de ces transformations, normalement sélectionnée par défaut.</p>
-						<figure>
-							<a href="illustrations/3_1_choix_transformation.jpg" >
-								<img src="illustrations/3_1_choix_transformation.jpg" alt="Choix de la transformation pour passer d'un SCR à un autre" width="600">
-							</a>
-						</figure>
+						<p>Si les données ne s'affichent pas, vérifiez que cela n'est pas dû à une visibilité dépendant de l'échelle (la couche s'affiche ou non suivant le niveau de zoom) : <b>propriétés de la couche &#8594; Rendu</b>, décochez la case <b>Visibilité dépendante de l'échelle</b>.</p>
 					</div>
-					
-					<p class="note">Il semblerait que les 2 transformations disponibles ici aient les mêmes paramètres. Pour ajouter ou supprimer des transformations dans un projet : Propriétés du projet &#8594; rubrique Transformations.</p>
-					
-					<p>Les <a class="ext" target="_blank" href="https://docs.qgis.org/3.10/fr/docs/user_manual/working_with_projections/working_with_projections.html#datum-transformations">transformations</a> sont des formules mathématiques permettant la conversion des coordonnées d'un point d'un SCR à un autre. Il existe en effet parfois plusieurs transformations possibles pour passer d'un SCR à un autre !</p>
-					
-					<div class="manip">
-					   <p>Il est possible de paramétrer QGIS pour être informé ou non lorsqu'il existe plusieurs transformations disponibles entre 2 SCR :</p>
-					   <p><b>Menu Préférences &#8594; Options &#8594; rubrique Transformations</b> : vous pouvez décocher ou cocher la case <b>Demander de choisir la transformation de datum si plusieurs sont disponibles</b>.</p>
-					   <figure>
-							<a href="illustrations/3_1_options_transformations.jpg" >
-								<img src="illustrations/3_1_options_transformations.jpg" alt="Choix de l'option pour choisir soi-même ou non la transformation lorsque plusieurs sont disponibles" width="600">
-							</a>
-						</figure>
-						<p>Si cette case est décochée, QGIS choisira la transformation la plus précise : dans la plupart des cas, ce paramétrage est adapté.</p>
-					</div>
-					
-					<p>Dans les données téléchargées sur le site de l'IGN se trouvent également les autres découpages administratifs pour la Guyane, ainsi que pour les autres territoires ultra-marins et la France métropolitaine.</p>
 					
 					<p class="note">Pour télécharger les données de l'IGN, vous pouvez également passer par <a class="ext" target="_blank" href="https://geotribu.github.io/ign-fr-opendata-download-ui/index.html" >ign2map</a> (et profitez-en pour aller faire un tour sur l'excellent site <a class="ext" target="_blank" href="https://static.geotribu.fr/" >Geotribu</a> !)</p>
 					

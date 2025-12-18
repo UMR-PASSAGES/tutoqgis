@@ -102,6 +102,8 @@
 				    <h4>Et bien d'autres...<a class="headerlink" id="I31d" href="#I31d"></a></h4>
 				    
 				        <p>Il existe de nombreux autres formats de fichiers vecteur lisibles par QGIS. Citons par exemple le <b>GeoJSON</b>, utilisé notamment pour les cartes interactives en ligne, le <b>KML</b>, utilisé par Google Maps et Google Earth...</p>
+				        
+				        <p>QGIS utilise la bibliothèque <a class="ext" target="_blank" href="https://gdal.org/">GDAL</a> pour lire tous ces différents formats. Vous trouverez donc ici la liste de tous les formats vecteur que QGIS peut ouvrir : <a class="ext" target="_blank" href="https://gdal.org/en/latest/drivers/vector/" >https://gdal.org/en/latest/drivers/vector/</a>.</p>
 	
 				<h3>Un exemple de format raster : le GeoTIFF<a class="headerlink" id="I32" href="#I32"></a></h3>
 				
@@ -122,6 +124,8 @@
 					</ul>
 					
 				  <p class="note">Pour en savoir plus sur ce format, vous pouvez lire cet article (en anglais) sur <a class="ext" target="_blank" href="https://blogs.loc.gov/maps/2023/05/the-secret-life-of-geotiffs/" >la vie secrète des GeoTIFFs</a>&nbsp;!</p>
+				  
+				  <p>De même que pour les données vecteur, QGIS utilise GDAL pour lire les différents formats raster, pour voir la liste : <a class="ext" target="_blank" href="https://gdal.org/en/latest/drivers/raster/" >https://gdal.org/en/latest/drivers/raster/</a></p>
 				
 				<h3>Quel format utiliser parmi tout ça ?<a class="headerlink" id="I33" href="#I33"></a></h3>
 				
