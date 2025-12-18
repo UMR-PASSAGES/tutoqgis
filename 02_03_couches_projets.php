@@ -21,7 +21,7 @@
 					
 				<div class="manip">
 					<p><img class="icone" src="illustrations/1_4_ouvrir_projet_icone.jpg" alt="Icône Ouvrir">A partir de QGIS, ouvrez le projet <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">regions_france.qgz</a></em> situé dans le dossier <b>TutoQGIS_02_geodesie/projets</b>.</p>
-					<p>Toutes les couches chargées dans ce projet seront <b>affichées</b> dans le SCR du projet. Quel est ce SCR ? Trois manières pour accéder à cette information :</p>
+					<p>Toutes les couches chargées dans ce projet seront <b>affichées</b> dans le SCR du projet. Quel est ce SCR ? Trois manières d'accéder à cette information&nbsp;:</p>
 					<ul>
 						<li>
 							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Propriétés...
@@ -81,6 +81,13 @@
 						<p><label for="faq-2">A votre avis, quel est le SCR de la couche <em class="data">REGION</em> ?</label></p>
 						<p class="reponse">Cette couche est en RGF93 / Lambert-93, code EPSG 2154.</p>
 					</div>
+					
+					<p>Pour aller plus vite, si vous connaissez les codes EPSG des SCR utilisés, vous pouvez simplement passer la souris sur le nom de la couche et lire l'infobulle qui s'affiche&nbsp;:</p>
+					<figure>
+						<a href="illustrations/2_3_infobulle_scr.jpg" >
+							<img src="illustrations/2_3_infobulle_scr.jpg" alt="Infobulle de la couche Région, avec le code EPSG de son SCR (ici 2154)" width="250" >
+						</a>
+					</figure>
 				</div>
 			
 				<p>Vous avez donc pu constater que notre projet et la couche qui y est présente ont deux SCR différents. Comment cela est-il possible ?</p>		
@@ -89,7 +96,7 @@
 			
 				<p>La <b>projection à la volée</b> est une fonctionnalité qui permet d'afficher des couches dans un autre SCR que le leur, le SCR du projet.</p>
 				<p>Ainsi, la couche <em class="data">REGION</em> est affichée en WGS84 bien que son SCR soit le RGF93 Lambert93. Il s'agit bien uniquement d'une question d'affichage, le SCR de la couche n'est pas modifié.</p>
-				<p>Depuis la version 3 de QGIS, <b>il n'est plus possible de désactive la projection à la volée</b>. <b>Toutes les couches sont donc toujours affichées dans le SCR du projet</b>.</p>
+				<p>Depuis la version 3 de QGIS, la projection à la volée est toujours activée (à moins de cocher la case <em>aucun SCR</em> dans la fenêtre <em>Propriétés du projet - SCR</em>). <b>Toutes les couches sont donc toujours affichées dans le SCR du projet</b>.</p>
 				<p>Il est donc possible de superposer plusieurs couches dans des SCR différents. C'est ce que nous allons vérifier!</p>
 				<div class="manip">
     				<p>Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">ne_110m_admin_0_countries.shp</a></em> au projet. Vérifiez son SCR. Les deux couches doivent se superposer correctement (même si elles ont des niveaux de généralisation différents, elles ne présentent pas de décalage l'une par rapport à l'autre).</p>

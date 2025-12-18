@@ -25,7 +25,7 @@
 							<li><a href="#II22d">Quelques exemples de projections</a></li>
 						</ul>
 					</li>
-					<li><a href="#II23">A retenir</a></li>
+					<li><a href="#II23">À retenir</a></li>
 					<li><a href="#II24">Quelques ressources internet</a></li>
 				</ul>
 				<br>
@@ -63,7 +63,7 @@
 					<p><b>NTF (Nouvelle Triangulation de la France) :</b>
 					<br>
 					Système local issu de mesures réalisées depuis la fin du XIXème jusqu'en 1991. Son ellipsoïde associé est Clarke 1880 et son méridien d'origine Paris.</p>
-					<p class="note">En France, le système NTF a été abandonné au profit du système RGF93 qui présente une meilleure compatibilité avec les autres systèmes mondiaux. Il existe toutefois encore aujourd'hui de nombreuses données utilisant le système NTF.</p>
+					<p class="note">En France, le système NTF a été abandonné au profit du système RGF93 qui présente une meilleure compatibilité avec les autres systèmes mondiaux. Il existe toutefois encore aujourd'hui des données utilisant le système NTF.</p>
 	
 					<p>Certains systèmes seront adaptés à une zone précise, d'autre à la Terre entière. Plusieurs systèmes coexistent souvent pour une même zone, en raison par exemple de l'avancée des techniques ou de règlements.</p>	
 					<p><b>Un même point aura des coordonnées différentes selon le système utilisé pour les mesurer</b>. Le tableau ci-dessous montre les coordonnées de Paris dans différents systèmes.</p>				
@@ -238,12 +238,12 @@
 					
 					<p><b>En résumé, la projection parfaite n'existe pas</b> ; il faut essayer de faire au mieux pour l'usage auquel on destine la carte (à ce sujet, vous pouvez voir <a class="ext" target="_blank" href="https://www.onf.ca/film/carte_impossible">ce film</a>). Par exemple, les cartes utilisées pour la navigation conservent généralement les angles et non les distances. L'échelle de la carte influe également sur le choix de la projection.</p>
 				
-			<h3>A retenir<a class="headerlink" id="II23" href="#II23"></a></h3>
+			<h3>À retenir<a class="headerlink" id="II23" href="#II23"></a></h3>
 			
 				<p>On peut exprimer les coordonnées d'un point :</p>
 				<ul>
-					<li>sous forme de coordonnées géographiques en degrés : latitude, longitude, hauteur ellipsoïdale. Ces coordonnées sont calculées <b>dans un système géodésique de référence, sans utilisation de projection</b></li>
-					<li>sous forme de coordonnées en projection en mètres (représentation plane), calculées <b>dans un système géodésique de référence et avec une projection cartographique</b></li>
+					<li><b>sous forme de coordonnées géographiques en degrés</b> : latitude et longitude. Ces coordonnées sont calculées dans un système géodésique de référence, sans utilisation de projection</li>
+					<li><b>sous forme de coordonnées projetées en mètres</b> (représentation plane), calculées dans un système géodésique de référence et avec une projection cartographique</li>
 				</ul>
 				<p>Exemple : les coordonnées de Paris peuvent être exprimées sous forme de coordonnées géographiques en degrés dans le système RGF93, ou bien sous forme de coordonnées projetées en mètres dans le même système RGF93 avec en plus utilisation de la projection Lambert 93.</p>
 				<p class="note">Il est à noter que la projection Lambert 93 a été conçue pour être utilisée uniquement avec le système RGF93.</p>

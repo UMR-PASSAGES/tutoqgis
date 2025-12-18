@@ -7,7 +7,7 @@
         </td>
         <td colspan="1">
             <a target="_blank" href="http://www.passages.cnrs.fr/" >
-            	<img class="logo" src="illustrations/logo_passages.png" alt="logo Passages" height="33">
+            	<img class="logo" src="illustrations/logo_passages.png" alt="logo Passages" height="40">
             </a>
         </td>
     </tr>

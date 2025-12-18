@@ -82,11 +82,11 @@
 			
 			<h3>Modifier le SCR d'une couche<a class="headerlink" id="II42" href="#II42"></a></h3>
 			
-				<p>Nous avons vu que QGIS gère le cas où plusieurs couches dans différents SCR sont affichés dans un même projet. Cependant, certaines manipulations nécessitent que toutes les couches soient dans le même SCR. Par ailleurs, par souci de clarté et pour éviter les erreurs, on peut vouloir travailler avec des couches dans le même SCR.</p>
+				<p>Nous avons vu que QGIS gère le cas où plusieurs couches dans différents SCR sont affichés dans un même projet. Cependant, certaines manipulations nécessitent que toutes les couches soient dans le même SCR. Par ailleurs, par souci de clarté et pour éviter les erreurs, on peut vouloir travailler avec des couches dans le même SCR (c'est d'ailleurs une bonne pratique).</p>
 				<p>Pour toutes ces raisons, il est utile de savoir modifier le SCR d'une couche.</p>
 				<p>Cette manipulation implique de <b>recalculer les coordonnées de tous les objets de la couche dans un autre SCR</b>.</p>
 				<p>Par exemple, si la couche d'origine est en WGS84 et contient un point correspondant à la ville de Paris, et que le but est d'obtenir une couche en RGF93 / Lambert-93 , les coordonnées initiales du point (48,89 2,35) en WGS84 seront recalculées pour devenir (652381 6862047) en RGF93 / Lambert-93.</p>
-				<p>Cette manipulation <b>crée une nouvelle couche</b>. La couche d'origine et la couche résultat se superposeront exactement dans QGIS, puisqu'elles contiendront exactement les mêmes objets.</p>
+				<p>Cette manipulation <b>crée une nouvelle couche</b>. La couche d'origine et la couche résultat se superposeront exactement dans QGIS, puisqu'elles contiendront exactement les mêmes objets, et que QGIS gère la reprojection à la volée.</p>
 				<div class="manip">
 					<p>L'objectif sera ici de créer une nouvelle couche pays dans la projection de Bonne (code ESRI 53024).</p>
 					<p>Pour cela, affichez la <b>boîte à outils de traitements</b> : menu Traitements &#8594; Boîte à outils.</p>
@@ -110,9 +110,9 @@
 						<li class="espace">SCR cible : cliquez sur l'icône à droite et choisissez le SCR <b>Sphere Bonne, code ESRI 53024</b></li>
 						<li class="espace">Advanced Parameters : dans certains cas, pour passer d'un SCR à un autre, différentes transformations sont disponibles. Nous n'utiliserons pas ici cette option</li>
 						<li class="espace">Reprojeté : laissez l'option par défaut, à savoir créer une couche temporaire. Le but étant ici de tester la manipulation, il n'est pas nécessaire de sauvegarder une nouvelle couche sur votre ordinateur.</li>
+						<li class="espace">Ouvrir le fichier en sortie après l'exécution de l'algorithme&nbsp;: cette case est cochée par défaut et permer l'ajout automatique de la couche résultat au projet</li>
 					</ul>
 					<p>Cliquez sur <b>Exécuter</b>.</p>
-					<p>Si vous avez bien coché la case correspondante, la couche est automatiquement ajoutée à la carte. Sinon, ajoutez-la dans QGIS.</p>
 					
 					<p>Vérifiez dans ses propriétés que son SCR soit bien Sphere Bonne.</p>
                 	<div class="question">
@@ -149,7 +149,7 @@
 								<img src="illustrations/2_3_preferences_options_menu.jpg" alt="Menu Préférences, Options" height="150" >
 							</span>
 						</a>
-						, rubrique <b>SCR</b> :
+						, rubrique <b>Gestion des SCR</b> :
 					</p>
 					<figure>
 						<a href="illustrations/2_4_options_sans_scr.jpg" >

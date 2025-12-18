@@ -89,7 +89,7 @@
 						  </a>
 					    </figure>
 					    <p>La couche <em class="data">DEPARTEMENT</em> est au format TAB.</p>
-						<p>Ce format a été créé pour le logiciel <b>MapInfo</b>. Comme pour le SHP, un fichier au format <b>TAB</b> est en fait composé de <b>plusieurs fichiers</b> :</p>
+						<p>Ce format que vous rencontrerez plus rarement a été créé pour le logiciel <b>MapInfo</b>. Comme pour le SHP, un fichier au format <b>TAB</b> est en fait composé de <b>plusieurs fichiers</b> :</p>
 						<ul>
 							<li><b>MAP</b> : données spatiales (avec le système de coordonnées)</li>
 							<li><b>DAT</b> : données attributaires</li>

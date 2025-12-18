@@ -18,8 +18,8 @@
 				<h3>Qu'est-ce qu'un projet dans un logiciel SIG ?<a class="headerlink" id="I31" href="#I31"></a></h3>
 				
 					<p>Un projet est un espace de travail. Sauvegarder un projet équivaut à sauvegarder le style utilisé pour chaque couche, le zoom... mais pas les données !</p>
-					<p><b>Depuis la version 3 de QGIS, le format par défaut pour les projets est le QGZ et non plus le QGS</b>. Un fichier QGZ est en fait un fichier QGS plus d'autres informations compressées dans un seul fichier. Il est toujours possible d'ouvrir et d'enregistrer des projets au format QGS.</p>
-					<p>L'intérêt du format QGZ par rapport au format QGS est de stocker plus d'informations directement dans le projet, par exemple les symboles utilisés, les polices, les rampes de couleurs, les emplacements des étiquettes...</p>
+					<p><b>Depuis la version 3 de QGIS, le format par défaut pour les projets est le QGZ</b>. Un fichier QGZ est en fait un fichier QGS plus d'autres informations compressées dans un seul fichier.</p>
+					<p class="note">Avant la version 3 c'était le format QGS qui était utilisé ; il est toujours possible aujourd'hui d'ouvrir et d'enregistrer des projets au format QGS. L'intérêt du format QGZ par rapport au format QGS est de stocker plus d'informations directement dans le projet, par exemple les symboles utilisés, les polices, les rampes de couleurs, les emplacements des étiquettes...</p>
 					<div class="manip">
 						<p><img class="icone" src="illustrations/1_4_ouvrir_projet_icone.jpg" alt="Icône Ouvrir">
 							<a class="thumbnail_bottom" href="#thumb">Ouvrez le projet
@@ -51,7 +51,7 @@
           	<figcaption>Extrait du contenu d'un fichier QGS vu dans un éditeur de texte (cliquez pour voir en plus grand)</figcaption>
           </figure>
 					<p>Il n'est bien sûr pas utile de comprendre en détail le contenu du fichier QGS, mais il est important de noter qu'il ne s'agit que <b>d'un fichier texte, qui va "appeler" les données</b>.</p>
-					<p><b>Si vous fournissez à un collègue votre seul fichier QGZ ou QGS, sans les données correspondantes, ce collègue ne pourra pas visualiser les données !</b></p>
+					<p class="attention">Si vous fournissez à un collègue votre seul fichier QGZ ou QGS, sans les données correspondantes, ce collègue ne pourra pas visualiser les données !</p>
 				
 				
 				<h3>Comment un projet appelle-t-il les données ?<a class="headerlink" id="I32" href="#I32"></a></h3>

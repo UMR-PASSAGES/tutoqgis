@@ -12,7 +12,7 @@
 				<ul class="listetitres">
 					<li><a href="#I21">Ajout et suppression d'une couche de données vecteur</a>
 					   <ul class= "listesoustitres">
-							<li><a href="#I21a" >Par le menu</a></li>
+							<li><a href="#I21a" >Par le menu ou les icônes</a></li>
 							<li><a href="#I21b" >Par l'explorateur de fichiers</a></li>
 						</ul>
 					</li>
@@ -31,7 +31,7 @@
 				
 				<h3>Ajout et suppression d'une couche de données vecteur<a class="headerlink" id="I21" href="#I21"></a></h3>
 				
-				    <h4>Par le menu Couche ou les icônes<a class="headerlink" id="I21a" href="#I21a"></a></h4>
+				    <h4>Par le menu ou les icônes<a class="headerlink" id="I21a" href="#I21a"></a></h4>
 				
     					<div class="manip">
     						<p>Lancez QGIS. Depuis QGIS 3, il existe une interface unique pour ajouter des couches vecteurs, rasters etc. : le gestionnaire des sources de données.</p>
