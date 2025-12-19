@@ -194,7 +194,7 @@
 						<a href="http://commons.wikimedia.org/wiki/File%3AUtm_projections.svg" >
 							<img src="illustrations/2_2_Utm_projections.jpg" alt="rotation d'un cylindre autour de la Terre" width="200">
 						</a>
-						<figcaption>Projection UTM : rotation d'un cylindre autour de la Terre.<br>Par Javiersanp (Travail personnel) [<a class="ext" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA-3.0</a> ou <a class="ext" target="_blank" href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>], <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3AUtm_projections.svg">via Wikimedia Commons</a></figcaption>
+						<figcaption>Projection UTM : rotation d'un cylindre autour de la Terre.<br>Par Javiersanp (Travail personnel) <a class="ext" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0">CC-BY-SA-3.0</a> ou <a class="ext" target="_blank" href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>, <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3AUtm_projections.svg">via Wikimedia Commons</a></figcaption>
 					</figure>
 					
 					<p><b>Un même point aura des coordonnées différentes selon la projection utilisée</b> (et le système associé à cette projection). Ci-dessous, les coordonnées de Paris mesurées dans différents sytèmes et projections.</p>

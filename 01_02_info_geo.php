@@ -34,7 +34,8 @@
 				    <h4>Par le menu ou les icônes<a class="headerlink" id="I21a" href="#I21a"></a></h4>
 				
     					<div class="manip">
-    						<p>Lancez QGIS. Depuis QGIS 3, il existe une interface unique pour ajouter des couches vecteurs, rasters etc. : le gestionnaire des sources de données.</p>
+    						<p>Lancez QGIS, ou bien si QGIS est déjà lancé ouvrez un nouveau projet vide : <b>menu Projet &#8594; Nouveau</b> (inutile de sauvegarder le projet en cours).</p>
+    						<p>Depuis QGIS 3, il existe une interface unique pour ajouter des couches vecteurs, rasters etc. : le gestionnaire des sources de données.</p>
     						<p>Pour ajouter une couche vecteur via cette interface, plusieurs solutions au choix :</p>
 							<ul>
 								<li>
@@ -69,7 +70,7 @@
     						    <li>Vérifiez que vous êtes bien dans la rubrique <b>Vecteur</b>. Par défaut, le gestionnaire des sources de données s'ouvre dans la dernière rubrique utilisée.</li>
         						<li>Type de source et encodage : laissez les valeurs par défaut. Pour en savoir plus sur ce qu'est l'encodage :
         						<a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Codage_de_caract%C3%A8res" >http://fr.wikipedia.org/wiki/Codage_de_caractères</a></li>
-        						<li>Cliquez sur <b>...</b> à gauche de <b>Jeux de données vectorielles</b> et sélectionnez la couche <em class="data"><a href="donnees/TutoQGIS_01_PriseEnMain.zip">DEPARTEMENT_BRETAGNE.shp</a></em> située dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>.</li>
+        						<li>Cliquez sur <b>...</b> à gauche de <b>Jeux de données vectorielles</b> et sélectionnez la couche <em class="data"><a href="donnees/TutoQGIS_01_PriseEnMain.zip">departement_bretagne.gpkg</a></em> située dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>.</li>
     						</ul>
     						<p>Cliquez sur <b>Ajouter</b> : vous pouvez voir à l'écran les départements de la région Bretagne. Vous pouvez fermer la fenêtre du gestionnaire de source de données.</p>
     						<p>Pour <b>supprimer cette couche</b> : clic droit sur son nom dans la table des matières,
@@ -93,13 +94,14 @@
                             	</span>
                             </a>.</p>
     						<p>Dans ce panneau, naviguez dans l'arborescence de vos fichiers jusqu'au dossier où vous avez téléchargé les données de ce tutoriel. Faites un <b>clic droit sur ce dossier &#8594; Ajouter aux marque-pages</b>.</p>
-    						<p>A partir des marque-pages, rendez-vous dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et double-cliquez sur la couche <em class="data">DEPARTEMENT_BRETAGNE.shp</em>.</p>
+    						<p>A partir des marque-pages, rendez-vous dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b> et double-cliquez sur la couche <em class="data">departement_bretagne.gpkg</em>.</p>
     						<figure>
                             	<a href="illustrations/1_2_explorateur.jpg" >
-                            		<img src="illustrations/1_2_explorateur.jpg" alt="Panneau Explorateur" width="330">
+                            		<img src="illustrations/1_2_explorateur.jpg" alt="Panneau Explorateur" width="270">
                             	</a>
                             </figure>
     					</div>
+    					<p class="note">Pourquoi pour ajouter cette couche faut-il "déplier" d'abord la base de données <b>departement_bretagne.gpkg</b> puis double-cliquer sur la couche du même nom ? Cela est dû au format de cette couche, le GeoPackage, qui est en réalité une base de données SQLite. Plus d'infos dans le <a href="01_03_formats.php#I31b">chapitre suivant</a> !</p>
     					
 				<h3>L'interface de QGIS<a class="headerlink" id="I22" href="#I22"></a></h3>
 					
@@ -182,7 +184,7 @@
 						<div class="manip">			
 							<div class="question">
 								<input type="checkbox" id="faq-1">
-								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Information</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">DEPARTEMENT_BRETAGNE</em> sur votre ordinateur ?</label></p>
+								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Information</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">departement_bretagne</em> sur votre ordinateur ?</label></p>
 								<p class="reponse">
 								La couche est stockée à l'endroit indiqué dans la partie <b>Chemin</b>.
 								 Cet emplacement varie bien sûr en fonction de l'endroit où vous avez enregistré les données du tutoriel.
@@ -192,7 +194,7 @@
 								</p>
 							</div>
 						</div>
-						<p class="note">Vous pouvez aussi vérifier l'emplacement d'une couche en passant simplement la souris sur son nom dans le panneau des couches !</p>
+						<p class="note">Vous pouvez aussi vérifier l'emplacement d'une couche en passant simplement la souris sur son nom dans le panneau des couches : une infobulle s'affiche alors avec notamment le chemin vers cette couche.</p>
 						
 					<h4>Filtrer les données<a class="headerlink" id="I23c" href="#I23c"></a></h4>
 					
@@ -204,14 +206,14 @@
 					       <p>Faites un clic droit sur la couche de départements &#8594; <b>Filtrer...</b></p>
 					       <figure>
 								<a href="illustrations/1_2_filtrer.jpg" >
-									<img src="illustrations/1_2_filtrer.jpg" alt="Fenêtre du constructeur de requêtes" width="500">
+									<img src="illustrations/1_2_filtrer.jpg" alt="Fenêtre du constructeur de requêtes" width="550">
 								</a>
 							</figure>
 							<p>Nous allons ici construire une requête simple pour sélectionner le département du Finistère. Les requêtes sont vues plus en détail <a href="06_01_req_attrib.php" >ici</a> !</p>
 							<ul>
-							 <li class="espace">Double-cliquez sur le champ <b>NOM_DEP</b> pour le faire apparaître en bas dans l'expression de filtrage</li>
+							 <li class="espace">Double-cliquez sur le champ <b>nom_officiel</b> pour le faire apparaître en bas dans l'expression de filtrage</li>
 							 <li class="espace">Cliquez sur l'opérateur <b>LIKE</b></li>
-							 <li class="espace">Cliquez sur le bouton <b>Toutes</b> à droite pour voir toutes les valeurs possibles pour le champ NOM_DEP, puis double-cliquez sur <b>FINISTERE</b></li>
+							 <li class="espace">Cliquez sur le bouton <b>Tout</b> à droite pour voir toutes les valeurs possibles pour le champ nom_officiel, puis double-cliquez sur <b>Finistère</b></li>
 							</ul>
 							<p>Cliquez ensuite sur le bouton <b>Tester</b> : la requête renvoie un résultat. Cliquez sur <b>OK</b>.</p>
 							<figure>
