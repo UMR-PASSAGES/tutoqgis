@@ -26,7 +26,8 @@
 						</ul>
 					</li>
 					<li><a href="#II23">À retenir</a></li>
-					<li><a href="#II24">Quelques ressources internet</a></li>
+					<li><a href="#II24">Pour compliquer un peu les choses...</a></li>
+					<li><a href="#II25">Quelques ressources internet</a></li>
 				</ul>
 				<br>
 	
@@ -250,8 +251,20 @@
 				<p>Chaque ensemble système de coordonnées et projection s'il y en a une, ou simplement système de coordonnées, est référencé par un code, généralement défini par l'EPSG.</p>
 				<p class="attention">Pour simplifier, dans le reste de ce tutoriel, le système de coordonnées et sa projection associée s'il y en a une seront nommés SCR (Système de Coordonnées de Référence) suivant la terminologie utilisée par QGIS.</p>
 				
+			<h3>Pour compliquer un peu les choses...<a class="headerlink" id="II24" href="#II24"></a></h3>
 			
-			<h3>Quelques ressources internet<a class="headerlink" id="II24" href="#II24"></a></h3>
+			 <p>On peut se demander comment gère le logiciel pour afficher sur un écran (plat) des données dans un système de coordonnées géographiques en degrés, donc sans projection. En réalité, sans nous le dire, le logiciel utilise tout de même une projection !</p>
+			 <p>En effet, si on prend par exemple le cas du WGS84, qui est un SCR non projeté, et si on affiche simplement les coordonnées en latitude/longitude sur une grille avec la même résolution en X et en Y (grille orthonormée), cela revient à utiliser une projection <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Projection_cylindrique_%C3%A9quidistante" >équirectangulaire</a> (pour des explications un peu plus détaillée, voir <a class="ext" target="_blank" href="https://gis.stackexchange.com/a/387518" >ce post sur gis.stackexchange</a>).</p>
+			 <figure>
+						<a href="illustrations/2_2_wgs84_proj.jpg" >
+							<img src="illustrations/2_2_wgs84_proj.jpg" alt="Affichage des données WGS84 sur un plan : grille orthonormée" width="500">
+						</a>
+						<figcaption>Affichage de données WGS84 en 2D selon une grille orthonormée, donc selon une projection équirectangulaire (données NaturalEarth)</figcaption>
+					</figure>
+			 <p>En réalité, dès qu'on affiche des données avec des coordonnées géographiques (non projetées) sur une surface plane (écran ou papier), on utilise forcément une projection. Mais il s'agit uniquement d'une question d'affichage, les coordonnées restent "stockées" sous forme de coordonnées géographiques non projetées.</p>
+			
+			
+			<h3>Quelques ressources internet<a class="headerlink" id="II25" href="#II25"></a></h3>
 			
 				<ul>
 					<li>Comprendre le principe des projections : <a class="ext" target="_blank" href="https://www.onf.ca/film/carte_impossible">la carte impossible</a></li>

@@ -96,6 +96,7 @@
 			
 				<p>La <b>projection à la volée</b> est une fonctionnalité qui permet d'afficher des couches dans un autre SCR que le leur, le SCR du projet.</p>
 				<p>Ainsi, la couche <em class="data">REGION</em> est affichée en WGS84 bien que son SCR soit le RGF93 Lambert93. Il s'agit bien uniquement d'une question d'affichage, le SCR de la couche n'est pas modifié.</p>
+				<p class="note">L'affichage de la France en WGS84 est ce qui provoque cette impression d'aplatissement par rapport aux cartes dont nous avons l'habitude ! L'affichage en RGF93/Lambert93 correspond plus à notre vision habituelle, rendez-vous au <a href="02_02_coord.php" >prochain chapitre </a> pour voir comment modifier le SCR du projet.</p>
 				<p>Depuis la version 3 de QGIS, la projection à la volée est toujours activée (à moins de cocher la case <em>aucun SCR</em> dans la fenêtre <em>Propriétés du projet - SCR</em>). <b>Toutes les couches sont donc toujours affichées dans le SCR du projet</b>.</p>
 				<p>Il est donc possible de superposer plusieurs couches dans des SCR différents. C'est ce que nous allons vérifier!</p>
 				<div class="manip">

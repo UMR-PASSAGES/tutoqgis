@@ -97,7 +97,7 @@
 					</figure>
 					<p>Dans la barre de recherche de cette boîte à outils, tapez <b>projection</b> et double-cliquez sur l'outil <b>Reprojeter une couche</b>.</p>
 				</div>
-				<p class="note">Vous noterez que cet outil est improprement nommé : il peut en effet être utiliser pour modifier le SCR d'une couche, que les SCR de départ et d'arrivée soit projetés ou géographiques&nbsp;!</p>
+				<p class="note">Vous noterez que cet outil est improprement nommé : il peut en effet être utilisé pour modifier le SCR d'une couche, que les SCR de départ et d'arrivée soient projetés ou géographiques&nbsp;!</p>
 				<div class="manip">
 					<p>La fenêtre suivante apparaît :</p>
 					<figure>
@@ -114,7 +114,7 @@
 					</ul>
 					<p>Cliquez sur <b>Exécuter</b>.</p>
 					
-					<p>Vérifiez dans ses propriétés que son SCR soit bien Sphere Bonne.</p>
+					<p>Vérifiez dans les propriétés de la couche résultat que son SCR soit bien Sphere Bonne.</p>
                 	<div class="question">
                 		<input type="checkbox" id="faq-3">
                 		<p><label for="faq-3">Comment afficher cette couche dans son SCR, pour savoir à quoi ressemble la projection de Bonne ?</label></p>
