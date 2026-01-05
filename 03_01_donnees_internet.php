@@ -14,7 +14,7 @@
 					<li><a href="#III11">Données nationales pour la France</a>
 						<ul class= "listesoustitres">
 							<li><a href="#III11a" >Avec l'IGN</a></li>
-							<li><a href="#III11b" >Avec geo.data.gouv.fr</a></li>
+							<li><a href="#III11b" >Avec un catalogue de données régional</a></li>
 						</ul>
 					</li>
 					<li><a href="#III12">Données mondiales</a>
@@ -28,18 +28,17 @@
 				<br>
 	
 			<p>Il est possible de trouver sur internet des <b>données déjà géoréférencées, c'est-à-dire possédant déjà des coordonnées, donc directement utilisables dans un SIG</b>. Ces données peuvent être vecteur ou raster.</p>
-			<p>Dans le cas de <b>données vecteur</b>, le format le plus courant est peut-être le shapefile ; on trouvera aussi des données dans d'autres formats, par exemple GeoPackage, GeoJSON, KML...</p>
+			<p>Dans le cas de <b>données vecteur</b>, les formats les plus courants sont probablement le shapefile et le GeoPackage ; on trouvera aussi des données dans d'autres formats, par exemple GeoJSON, KML...</p>
 			<p>Dans le cas de <b>données raster</b>, on pourra trouver par exemple des données au format geotiff (TIF géoréférencé, c'est-à-dire avec des coordonnées lui permettant de se superposer correctement à d'autres couches).</p>
 			<p>Parfois, on ne trouvera que des <b>données non géoréférencées</b> (carte papier par exemple, ou simple image trouvée sur internet). Ce cas sera traité dans la <a href="04_00_georeferencement.php" >partie 4 : géoréférencement</a>.</p>
 			<p>Cette partie se borne à donner quelques exemples de sites permettant le téléchargement de données SIG. Il en existe beaucoup d'autres !</p>
-			<p>Ne vous offusquez pas de ne pas voir ici les <b>données OpenStreetMap</b> : il existe <a href="03_05_donnees_osm.php">une partie qui leur est spécialement dédiée !</a></p>
+			<p>Quant aux <b>données OpenStreetMap</b>, elles ne seront pas traitées ici car il existe <a href="03_05_donnees_osm.php">une partie qui leur est tout spécialement dédiée !</a></p>
 				
 			<h3>Données nationales pour la France<a class="headerlink" id="III11" href="#III11"></a></h3>
 			
 				<h4>Avec l'IGN<a class="headerlink" id="III11a" href="#III11a"></a></h4>
 				
 					<p>L'IGN (Institut National de l'Information Géographique et Forestière) diffuse gratuitement la plupart de ses données ici : <a class="ext" target="_blank" href="https://geoservices.ign.fr/catalogue">https://geoservices.ign.fr/catalogue</a>.</p>
-					<p class="note">Si vous êtes étudiant ou bien si vous travaillez dans un laboratoire de recherche, il existe peut-être entre votre structure et l'IGN une convention recherche et enseignement vous donnant accès à plus de données !</p>
 					<p>Nous allons ici télécharger les <b>communes de la Guyane</b>.</p>
 					<div class="manip">
 					   <p>Sur la page internet <a class="ext" target="_blank" href="https://geoservices.ign.fr/catalogue">https://geoservices.ign.fr/catalogue</a>, cliquez sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/adminexpress">ADMIN-EXPRESS</a>.</p>
@@ -50,7 +49,7 @@
 							</a>
 						</figure>
 					</div>
-					   <p>La base ADMIN EXPRESS contient des couches de régions, départements, arrondissements, EPCI, communes et chef-lieux pour la France métropolitaine et ultra-marine. Elle remplace la base GEOFLA® qui n'est plus mise à jour et dont la dernière édition est celle de 2016. Il est possible de la télécharger séparément pour la France métropolitaine et les territoires ultramarins, ou bien dans son ensemble.</p>
+					   <p>La base ADMIN EXPRESS contient des couches de régions, départements, arrondissements, EPCI, communes et chef-lieux pour la France métropolitaine et ultra-marine. Elle remplace la base GEOFLA® qui n'est plus mise à jour et dont la dernière édition est celle de 2016. Il est possible de télécharger la base ADMIN EXPRESS séparément pour la France métropolitaine et les territoires ultramarins, ou bien dans son ensemble.</p>
 					<div class="manip">
 					   <p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS pour le territoire de la Guyane</b> (ici celle de décembre 2025 qui fait 1,1 Mo) :</p>
 					   <figure>
@@ -73,9 +72,11 @@
 					<p>Pour rappel, le but de l'exercice est ici d'afficher les communes de la Guyane, mais vous pouvez très bien décider de travailler sur un autre département !</p>
 					
 					<div class="manip">
-					  <p>La couche <em class="data">COMMUNE</em> de la Guyane est donc située dans le dossier <b>1_DONNEES_LIVRAISON_...</b> puis dans le sous-dossier<b>ADE_X-X_GPKG_UTM22RGFG95_GUF</b> où :</p>
+					  <p>La couche <em class="data">COMMUNE</em> de la Guyane est donc située dans le dossier <b>1_DONNEES_LIVRAISON_...</b> puis dans le sous-dossier <b>ADE_X-X_GPKG_UTM22RGFG95_GUF</b> où :</p>
 					  <ul>
+					   <li><b>ADE</b> signifie ADMIN EXPRESS</li>
 					   <li><b>X-X</b> correspond à la version d'ADMIN EXPRESS téléchargée, par exemple 4-0</li>
+					   <li><b>GPKG</b> correspond au format (GeoPackage)</li>
 					   <li><b>UTM22RGFG95</b> correspond au SCR des données (voir plus haut)</li>
 					   <li><b>GUF</b> signifie Guyane française</li>
 					  </ul>
@@ -85,46 +86,59 @@
 								<img src="illustrations/3_1_commune_guyane_explorateur.jpg" alt="ajout de la couche de communes de Guyane via l'explorateur QGIS" width="600">
 							</a>
 						</figure>
-						<p>Si les données ne s'affichent pas, vérifiez que cela n'est pas dû à une visibilité dépendant de l'échelle (la couche s'affiche ou non suivant le niveau de zoom) : <b>propriétés de la couche &#8594; Rendu</b>, décochez la case <b>Visibilité dépendante de l'échelle</b>.</p>
+						<p>Si les données ne s'affichent pas, vérifiez que cela n'est pas dû à une visibilité dépendant de l'échelle (la couche s'affiche ou non suivant le niveau de zoom) : <b>propriétés de la couche &#8594; Rendu</b>, décochez la case 
+						  <a class="thumbnail_bottom" href="#thumb">Visibilité dépendante de l'échelle
+            		<span>
+            			<img src="illustrations/3_1_rendu_echelle.jpg" alt="Propriétés de la couche, rendu" height="400" >
+            		</span>
+            	</a>.</p>  
 					</div>
 					
 					<p class="note">Pour télécharger les données de l'IGN, vous pouvez également passer par <a class="ext" target="_blank" href="https://geotribu.github.io/ign-fr-opendata-download-ui/index.html" >ign2map</a> (et profitez-en pour aller faire un tour sur l'excellent site <a class="ext" target="_blank" href="https://static.geotribu.fr/" >Geotribu</a> !)</p>
 					
 					
-				<h4>Avec geo.data.gouv.fr<a class="headerlink" id="III11b" href="#III11b"></a></h4>				
+				<h4>Avec un catalogue de données régional<a class="headerlink" id="III11b" href="#III11b"></a></h4>				
 					
-					<p>Le site <a class="ext" target="_blank" href="https://geo.data.gouv.fr/fr/">https://geo.data.gouv.fr/fr/</a> recense les jeux de données géographiques en accès libre pour la France. Nous allons utiliser ce site pour rechercher des données sur les hôpitaux en Guyane.</p>
+					<p>En france comme dans d'autres pays, il existe des catalogues de données pour chaque région. Comme nous avons déjà téléchargé les communes de Guyane, nous allons donc nous rendre sur le géocatalogue guyanais pour télécharger l'emplacement des centrales électriques.</p>
+					
+					<p>Si le téléchargement échoue, la couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip." >ici</a>.</p>
+					
+					<p>Le cas de la Guyane est un peu particulier car il existe 2 catalogues pour ce territoire, <a class="ext" target="_blank" href="https://www.guyane-sig.fr" >guyane-sig</a> et <a class="ext" target="_blank" href="https://www.geoguyane.fr/" >geoguyane</a>. C'est ce dernier que nous allons utiliser ici.</p>
 					
 					<div class="manip">
-					   <p>Dans la barre de recherche du site internet <a class="ext" target="_blank" href="https://geo.data.gouv.fr/fr/">https://geo.data.gouv.fr/fr/</a>, tapez <b>hôpitaux guyane puis appuyez sur Entrée</b>.</p>
+					   <p>Dans la barre de recherche du site internet <a class="ext" target="_blank" href="https://catalogue.geoguyane.fr/">https://catalogue.geoguyane.fr/</a>, tapez <b>centrale électrique</b> puis appuyez sur <b>Entrée</b>.</p>
 					   <figure>
-							<a href="illustrations/3_1_geodatagouv_recherche.jpg" >
-								<img src="illustrations/3_1_geodatagouv_recherche.jpg" alt="recherche sur le site geo.data.gouv.fr" width="600">
+							<a href="illustrations/3_1_geoguyane_recherche.jpg" >
+								<img src="illustrations/3_1_geoguyane_recherche.jpg" alt="recherche de 'centrale électrique' sur le catalogue geoguyane" width="600">
 							</a>
 						</figure>
-						<p>Vous obtenez plusieurs résultats. Ici, nous allons télécharger les données <b>Guyane - Finess cat1100 - Etablissements Hospitaliers</b>.</p>
+						<p>Vous obtenez normalement un seul résultat : <b>Recensement des centrales de production électrique</b> : cliquez sur <a class="ext" target="_blank" href="https://catalogue.geoguyane.fr/geonetwork/srv/fre/catalog.search#/metadata/fd503135-bf8d-450a-9b8d-823e450e6617">cette fiche</a>.</p>
+						<p>Les métadonnées nous apprennent notamment que ces données proviennent de la DAAF Guyane, ont été créées en 2013 et révisées en 2015.</p>
+						<p>Cliquez sur le lien de téléchargement : </p>
 						<figure>
-							<a href="illustrations/3_1_geodatagouv_recherche_2.jpg" >
-								<img src="illustrations/3_1_geodatagouv_recherche_2.jpg" alt="recherche sur le site geo.data.gouv.fr" width="500">
+							<a href="illustrations/3_1_geoguyane_fiche.jpg" >
+								<img src="illustrations/3_1_geoguyane_fiche.jpg" alt="Fiche métadonnée 'Recensement des centrales de production électrique' sur geoguyane" width="600">
 							</a>
 						</figure>
-						<p>Les métadonnées nous apprennent que ces données proviennent de la BD Adresse, datent de  2013 et ont été mises à jour il y a 3 ans.</p>
-						<p>Téléchargez ces données au format GeoJSON, en cliquant sur le bouton <b>GeoJSON</b> en bas à gauche de la fenêtre : </p>
+						<p>Choisissez :</p>
+						<ul>
+						  <li>le format : geojson par exemple pour changer</li>
+						  <li>le système de coordonnées : RGF95 UTM 22 Nord (code EPSG 2972) pour avoir le même SCR que les communes précédemment téléchargées</li>
+						</ul>
+						<p>Puis cliquez sur <b>Télécharger la donnée</b>.</p>
 						<figure>
-							<a href="illustrations/3_1_geodatagouv_recherche_3.jpg" >
-								<img src="illustrations/3_1_geodatagouv_recherche_3.jpg" alt="téléchargement au format geojson sur le site geo.data.gouv.fr" width="600">
+							<a href="illustrations/3_1_geoguyane_telechargement.jpg" >
+								<img src="illustrations/3_1_geoguyane_telechargement.jpg" alt="page de téléchargement des centrales électriques sur geoguyane" width="600">
 							</a>
 						</figure>
-						<p class="note">Si le téléchargement échoue, cette couche est également accessible en <a href="donnees/TutoQGIS_03_RechercheDonnees.zip." >téléchargement</a>.</p>
-						<p>Ajoutez ensuite ces données à QGIS.</p>
-						<figure>
-							<a href="illustrations/3_1_guyane_communes_hopitaux.jpg" >
-								<img src="illustrations/3_1_guyane_communes_hopitaux.jpg" alt="affichage des communes et des hôpitaux de Guyane" width="500">
-							</a>
-						</figure>
+						<p>Dézippez le fichier obtenu, et ajoutez la couche <em  class="data">l_ouvrage_elec_prod_973.json</em> à QGIS : vous pouvez la faire glisser depuis l'explorateur de fichier, ou bien passer par le panneau Explorateur ou le gestionnaire de sources de données.</p>
 					</div>
-					
-					<p class="note">Si vous téléchargez les autres jeux de données résultant de la recherche sur "hôpitaux guyane", vous constaterez qu'ils présentent entre eux des différences de localisation et de données attributaires. Quel jeu de données vaut-il mieux utiliser ? Cette question est celle que vous vous poserez systématiquement à chaque nouveau projet, et y répondre peut parfois prendre un temps considérable et représenter un projet en soi ! La première piste de réponse est bien sûr d'aller voir les métadonnées, si elles sont disponibles.</p>
+					<figure>
+					  <a href="illustrations/3_1_centrales_guyane.jpg" >
+							<img src="illustrations/3_1_centrales_guyane.jpg" alt="affichage des communes et des centrales de Guyane dans QGIS" width="400">
+						</a>
+						<figcaption>Affichage des centrales électriques avec un style catégorisé sur le champ "centrale".</figcaption>
+					</figure> 
 	
 			<h3>Données mondiales<a class="headerlink" id="III12" href="#III12"></a></h3>
 			
@@ -140,7 +154,7 @@
 							<img src="illustrations/3_1_naturalearth_telechargement.jpg" alt="téléchargement des données Natural Earth" width="500">
 						</a>
 					 </figure>
-					 <p>Ces données sont utilisables à l'échelle mondiale mais ne seront pas assez détaillées pour travailler à l'échelle d'un pays.</p>
+					 <p>Ces données sont adaptées à une échelle mondiale mais ne seront pas assez détaillées pour travailler à l'échelle d'un pays.</p>
 					 <p>Sur la page suivante, dans <b>Admin 0 - Countries</b>, cliquez sur le bouton <b>Download countries</b>.</p>
 					 <figure>
 						<a href="illustrations/3_1_naturalearth_telechargement_2.jpg" >
@@ -148,8 +162,8 @@
 						</a>
 					 </figure>
 					 <p class="note">Si le téléchargement échoue, cette couche est également accessible <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">en téléchargement</a></em>.</p>
-					 <p>Une fois le fichier téléchargé, placez-le dans votre dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
-					 <p>Ouvrez un nouveau projet QGIS, et à partir de l'explorateur, ajoutez la couche <em class="data">ne_110m_admin_0_countries</em>. <b>Notez qu'il n'est pas nécessaire de dézipper le fichier pour visualiser les données dans QGIS !</b> Ceci est très pratique quand on est par exemple à la recherche de données sur internet et évite de dézipper tous les fichiers et donc de se retrouver avec beaucoup de dossiers. Il faudra cependant décompresser les données pour pouvoir les éditer.</p>
+					 <p>Une fois le fichier téléchargé, <b>ouvrez un nouveau projet QGIS</b>, et à partir de l'explorateur, ajoutez la couche <em class="data">ne_110m_admin_0_countries</em>.</p>
+					 <p><b>Notez qu'il n'est pas nécessaire de dézipper le fichier pour visualiser les données dans QGIS !</b> Ceci est très pratique quand on est par exemple à la recherche de données sur internet et évite de dézipper tous les fichiers et donc de se retrouver avec beaucoup de dossiers. Il faudra cependant décompresser les données pour pouvoir les éditer.</p>
 					 <figure>
 						<a href="illustrations/3_1_donnees_naturalearth.jpg" >
 							<img src="illustrations/3_1_donnees_naturalearth.jpg" alt="visualisation dans QGIS de la couche ne_110m_admin_0_countries" width="450">
@@ -172,7 +186,7 @@
         						<img src="illustrations/3_1_telechargement_srtm.jpg" alt="téléchargement d'une dalle du SRTM" width="350">
         					</a>
         				</figure>
-        				<p>Téléchargez la dalle au format GeoTIFF, placez le fichier dans votre dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>. Il n'est pas nécessaire de dézipper le fichier obtenu.</p>
+        				<p>Téléchargez la dalle au format GeoTIFF. Il n'est pas nécessaire de dézipper le fichier obtenu.</p>
         				<p>Dans QGIS, ajoutez le fichier TIF téléchargé au moyen de l'explorateur.</p>
         				<figure>
         					<a href="illustrations/3_1_srtm_kenya.jpg" >
@@ -193,11 +207,11 @@
 					</li>
 					<li class="espace">FAO (Food and Agriculture Organisation) : catalogue de métadonnées donnant accès à un large éventail de données vecteur ou raster, en particulier sur les pays du Sud.
 						<br>
-						<a class="ext" target="_blank" href="http://www.fao.org/geonetwork/">http://www.fao.org/geonetwork/</a>
+						<a class="ext" target="_blank" href="https://data.apps.fao.org/catalog/">https://data.apps.fao.org/catalog/</a>
 					</li>
-					<li class="espace">geo.data.gouv.fr : portail national français de données géographiques
+					<li class="espace">data.gouv.fr : plateforme des données publiques françaises (filtrer les données par format, par ex. geopackage, geojson ou shp pour trouver des données géographiques)
 						<br>
-						<a class="ext" target="_blank" href="https://geo.data.gouv.fr/fr/">https://geo.data.gouv.fr/fr/</a>
+						<a class="ext" target="_blank" href="https://www.data.gouv.fr/datasets/search">https://www.data.gouv.fr/datasets/search</a>
 					</li>
 					<li class="espace">OpenStreetMap : extractions de données au format SHP ou OSM, fourni par Geofabrik :
 						<br>
@@ -222,11 +236,11 @@
 					</li>
 					<li class="espace">DIVA-GIS : site du logiciel SIG libre DIVA, où sont aussi disponibles des données vecteur sur les limites administratives, l'hydrographie, le transport, la population... classées par pays
 						<br>
-						<a class="ext" target="_blank" href="http://www.diva-gis.org/gdata">http://www.diva-gis.org/gdata</a>
+						<a class="ext" target="_blank" href="https://diva-gis.org/data.html">https://diva-gis.org/data.html</a>
 					</li>
 					<li class="espace">ASTER : modèle d'élévation, données mondiales téléchargeables par dalles
 						<br>
-						<a class="ext" target="_blank" href="https://search.earthdata.nasa.gov/">https://search.earthdata.nasa.gov/</a>
+						<a class="ext" target="_blank" href="https://www.earthdata.nasa.gov/data/instruments/aster">https://www.earthdata.nasa.gov/data/instruments/aster</a>
 					</li>
 					<li class="espace">SRTM : modèle d'élévation, données mondiales téléchargeables par dalles
 						<br>
