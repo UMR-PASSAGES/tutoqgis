@@ -44,8 +44,8 @@
   				
   				<div class="manip">
   					<p>Lancez QGIS si ce n'est pas déjà fait, ou bien créez un nouveau projet.</p>
-  					<p><img class="icone" src="illustrations/1_2_gestionnaire_donnees_icone.jpg" alt="icône gestionnaire de source de données" > Ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">DEPARTEMENT_CREUSE.gpkg</a></em> que vous trouverez dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
-  					<p>Vérifiez que votre projet soit bien dans le même SCR que la couche  <em class="data">DEPARTEMENT_CREUSE.shp</em>, soit le RGF93/Lambert93 EPSG:2154.</p>
+  					<p><img class="icone" src="illustrations/1_2_gestionnaire_donnees_icone.jpg" alt="icône gestionnaire de source de données" > Ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">departement_creuse.gpkg</a></em> que vous trouverez dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>.</p>
+  					<p>Vérifiez que votre projet soit bien dans le même SCR que la couche  <em class="data">departement_creuse.shp</em>, soit le RGF93/Lambert93 EPSG:2154.</p>
   				</div>
   				<p>Nous allons maintenant ajouter au projet la carte géologique de la France au 1/1 000 000è via un flux WMS.</p>
   				<div class="manip">

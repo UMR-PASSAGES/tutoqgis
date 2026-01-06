@@ -42,42 +42,7 @@
     			
     			<p>Il est possible d'afficher un fonds OpenStreetMap, comme décrit précédemment, soit <a href="03_04_fonds_carte.php#III42">via l'explorateur avec un serveur de tuiles</a>, soit <a href="03_04_fonds_carte.php#III43">via l'extension QuickMapServices</a>.</p>
     			
-    			 <p>Si vous choisissez la première méthode, voici comment ajouter de nombreux fonds utilisant les données OSM :</p>
-    	        
-    	        <div class="manip">
-    	            <p>Dans un navigateur internet, rendez-vous dans <a target="_blank" class="ext" href="https://wiki.openstreetmap.org/wiki/Tile_servers">la page du wiki OSM dédiée aux serveurs de tuiles raster</a> : cette page liste les adresses des fonds de carte utilisant les données OSM accessibles en ligne.</p>
-    	            <p>Ici, nous allons ajouter le fonds <b>Stamen Toner</b> en noir et blanc.</p>
-    	            <figure>
-                    	<a href="illustrations/3_5_stamen_toner.jpg" >
-                    	    <img src="illustrations/3_5_stamen_toner.jpg" alt="page du wiki OSM sur les serveurs de tuiles, ligne correspondant au fonds Stamen Toner" width="620">
-                        </a>
-                    </figure>
-    	            <p>Copiez l'url du serveur : <b>https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.jpg</b></p>
-    	            <p>Dans QGIS, panneau explorateur, clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</p>
-    	            <figure>
-                    	<a href="illustrations/3_5_stamen_connexion.jpg" >
-                    	    <img src="illustrations/3_5_stamen_connexion.jpg" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="430">
-                        </a>
-                    </figure>
-                    <ul>
-                        <li>Nom : il s'agit du nom qui apparaîtra dans le panneau explorateur, vous pouvez taper par exemple <b>Stamen Toner</b></li>
-                        <li>URL : collez l'URL que vous avez préalablement copiée : <b>https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.jpg</b></li>
-                    </ul>
-                    <p class="note">Si l'URL contient le caractère <b>$</b>, il faut le supprimer, par exemple http://c.tile.stamen.com/watercolor/${z}/${x}/${y}.jpg devient http://c.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg.</p>
-                    <p>Laissez les valeurs par défaut pour les autres paramètres, cliquez sur OK.</p>
-                    <p>Le fonds Stamen Toner apparaît maintenant avec les autres fonds dans la rubrique XYZ Tiles.</p>
-                    <figure>
-                        <a href="illustrations/3_5_stamen_xyz.jpg" >
-                    	    <img src="illustrations/3_5_stamen_xyz.jpg" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Stamen Toner apparaît avec les autres" width="180">
-                    	</a>
-                    </figure>
-                    <p>Double-cliquez pour l'ajouter :</p>
-                    <figure>
-                    	<a href="illustrations/3_5_stamen_visu.jpg" >
-                    	    <img src="illustrations/3_5_stamen_visu.jpg" alt="Aperçu du fonds Stamen Toner" width="500">
-                        </a>
-                    </figure>
-    	        </div>
+    			<p>Attention, si vous voulez afficher un fonds <a class="ext" target="_blank" href="https://maps.stamen.com/" >Stamen</a>, il vous faudra une clé API ; voir <a class="ext" target="_blank" href="https://docs.stadiamaps.com/tutorials/how-to-use-stadia-maps-as-a-raster-base-layer-in-qgis/" >ce tutoriel (en anglais)</a> pour la marche à suivre.</p>
 			   
 			
 			<h3>Télécharger des données OpenStreetMap<a class="headerlink" id="III53" href="#III53"></a></h3>
@@ -94,7 +59,7 @@
                      <p>Dans la colonne <b>Sub-Region</b>, cliquez sur <b>South America</b>, puis sur téléchargez les données au format shapefile pour le <b>Suriname</b>.</p>
                      <figure>
                     	<a href="illustrations/3_5_geofabrik_southamerica.jpg" >
-                    		<img src="illustrations/3_5_geofabrik_southamerica.jpg" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="500">
+                    		<img src="illustrations/3_5_geofabrik_southamerica.jpg" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="600">
                     	</a>
                      </figure>
                      <figure>
@@ -102,7 +67,7 @@
                     		<img src="illustrations/3_5_geofabrik_suriname.jpg" alt="lien pour télécharger les données du Suriname au format SHP sur Geofabrik" width="500">
                     	</a>
                     </figure>
-                     <p class="note">Au cas où le téléchargement échouerait, ces données sont également disponibles <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les données de la partie III</a>.</p>
+                     <p class="note">Au cas où le téléchargement échouerait, ces données sont également disponibles <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les données de la partie III</a> (fichier <em class="data">suriname-260105-free.shp.zip</em>).</p>
                      <p>Enregistrer le fichier sur votre ordinateur, décompressez le fichier ZIP obtenu dans votre répertoire de travail : vous obtenez une série de couches au format Shapefile.</p>
                      <p>Que contiennent ces données ? Pour le savoir, cliquez sur le lien <a class="ext" target="_blank" href="http://download.geofabrik.de/osm-data-in-gis-formats-free.pdf" >Format description PDF</a> disponible en cliquant sur <b>Suriname</b>
                      <a class="thumbnail_bottom" href="#thumb">à partir de la page où vous avez téléchargé les données
@@ -215,11 +180,11 @@
                     		<img src="illustrations/3_5_quickosm_fenetre.jpg" alt="Fenêtre de QuickOSM, choix des options" width="600">
                     	</a>
                     </figure>
-                    <p>Dans la rubrique <b>Requête rapide</b> :</p>
+                    <p>Dans la rubrique <b>Requête rapide</b> (colonne de gauche) :</p>
                     <ul>
                         <li class="espace">Choisissez la clé <b>waterway</b> puis la valeur <b>river</b> pour ne récupérer que les cours d'eau de type rivière</li>
                         <li class="espace">Dans la liste déroulante <b>Dans</b>, sélectionnez l'option <b>Emprise du canevas</b> pour limiter le volume de données à charger à la zone visible dans QGIS</li>
-                        <li class="espace">Cliquez enfin sur le bouton <b>Exécuter</b>.</li>
+                        <li class="espace">Cliquez enfin sur le bouton <b>Exécuter la requête</b>.</li>
                     </ul>
                     <p>Patientez (plus la zone visible dans QGIS est grande, plus c'est long !)... Les données sont chargées et affichées :</p>
                     <figure>
