@@ -17,7 +17,7 @@
 				</ul>
 	
 			<p>Nous avons vu quelques pistes pour rechercher et afficher des données au format SIG dans QGIS, que ce soit en les <a href="03_01_donnees_internet.php">téléchargeant</a> ou via des <a href="03_02_donnees_flux.php">flux</a>. Il arrive aussi de disposer d'un tableau avec deux colonnes X et Y : comment utiliser ces données dans un SIG ?</p>
-			<p>Nous prendrons ici l'exemple d'un fichier au <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Comma-separated_values">format CSV</a>. Pour information, il est possible de créer un fichier au format CSV à partir d'un fichier ODS (LibreOffice) ou XLS (Microsoft Office) par exemple.</p>
+			<p>Nous prendrons ici l'exemple d'un fichier au <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Comma-separated_values">format CSV</a>. Pour information, il est possible de créer un fichier au format CSV à partir d'un fichier ODS (LibreOffice) ou XLSX (Microsoft Office) par exemple.</p>
 			
 			<h3>Qu'y a-t-il dans le fichier texte ?<a class="headerlink" id="III31" href="#III31"></a></h3>
 				
@@ -27,26 +27,33 @@
 						<a href="illustrations/3_3_apercu_csv.jpg" >
 							<img src="illustrations/3_3_apercu_csv.jpg" alt="capture d'écran du fichier CSV" width="600">
 						</a>
+						<figcaption>Cliquez pour voir en plus grand !</figcaption>
 					</figure>
 				</div>
 				<p>Le format CSV est un format relativement simple : il contient des colonnes séparées habituellement par des virgules, parfois par des points-virgules, tabulations ou autre. La première ligne contient les en-têtes de colonnes.</p>
+				<p class="note">Pour rappel, dans les données que vous avez téléchargées pour chaque partie, il existe dans le dossier <b>liste_donnees</b> une liste de ces données avec l'emplacement de leurs métadonnées.</p>
 				<div class="manip">
-					<div class="question">
+				  <div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">Combien de colonnes y a-t-il dans le fichier  <em class="data">villes_bhutan_geonames.csv</em> ?</label></p>
-						<p class="reponse">Le fichier comporte 9 colonnes : geonamesid, name, asciiname, latitude, longitude, country code, population, dem et modification date.</p>
-						<p class="reponse"><img src="illustrations/3_3_csv_colonnes.jpg" alt="capture d'écran des données du CSV avec les noms de colonnes encadrés en rouge" width="600"></p>
+						<p><label for="faq-1">Quel est le séparateur de colonne utilisé dans le fichier <em class="data">villes_bhutan_geonames.csv</em> ?</label></p>
+						<p class="reponse">Il s'agit ici de la tabulation.</p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-2">
-						<p><label for="faq-2">Quelle est la latitude de la ville de Timphu?</label></p>
-						<p class="reponse">La latitude de la ville de Timphu est 27.46609 (la colonne "latitude" est la 4ème colonne : la réponse se trouve donc dans la 4ème colonne de la ligne correspondant à Timphu.</p>
-						<p class="reponse"><img src="illustrations/3_3_lat_timphu.jpg" alt="capture d'écran des données du CSV avec la latitude de Timphu encadrée en rouge" width="460"></p>
+						<p><label for="faq-2">Combien de colonnes y a-t-il dans ce fichier ?</label></p>
+						<p class="reponse">Le fichier comporte 19 colonnes qui sont listées dans les <a class="ext" target="_blank" href="http://download.geonames.org/export/dump/readme.txt">métadonnées</a> (sous &#171;&nbsp;The main 'geoname' table has the following fields :&nbsp;&#187;).</p>
+						<p class="reponse"><img src="illustrations/3_3_csv_colonnes.jpg" alt="capture d'écran des données du CSV avec les noms de colonnes encadrés en rouge" width="600"></p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-3">
-						<p><label for="faq-3">A quoi correspond la colonne "dem" ? Pouvez-vous trouver la réponse dans les métadonnées&nbsp;?</label></p>
-						<p class="note">Pour rappel, dans les données que vous avez téléchargées pour chaque partie, il existe dans le dossier <b>liste_donnees</b> une liste de ces données avec l'emplacement de leurs métadonnées.</p>
+						<p><label for="faq-3">Quelle est la latitude de la ville de Thimphu (la capitale) ?</label></p>
+						<p class="reponse">Il faut regarder à la ligne 20, 5ème colonne : sa latitude est 27.46609.</p>
+						<p class="reponse"><img src="illustrations/3_3_lat_timphu.jpg" alt="capture d'écran des données du CSV avec la latitude de Timphu encadrée en rouge" width="600"></p>
+					</div>
+					<div class="question">
+						<input type="checkbox" id="faq-4">
+						<p><label for="faq-4">A quoi correspond la colonne "dem" ? Pouvez-vous trouver la réponse dans les métadonnées&nbsp;?</label></p>
+						
 						<p class="reponse">En vous rendant sur <a class="ext" target="_blank" href="http://download.geonames.org/export/dump/readme.txt">http://download.geonames.org/export/dump/readme.txt</a> dans un navigateur internet, vous pouvez lire la définition suivante pour la colonne dem (dans la partie "The main 'geoname' table has the following fields" ) : <b>digital elevation model, srtm3 or gtopo30, average elevation of 3''x3'' (ca 90mx90m) or 30''x30'' (ca 900mx900m) area in meters, integer. srtm processed by cgiar/ciat.</b></p>
 						<p class="reponse">Il s'agit donc de la valeur d'un <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain" >modèle d'élévation numérique</a>, correspondant approximativement à l'altitude. Différents modèles ont été utilisés, à différentes résolutions. </p>
 					</div>
@@ -57,7 +64,7 @@
 					<div class="question">
 						<input type="checkbox" id="faq-4">
 						<p><label for="faq-4">A votre avis, dans quel SCR sont mesurées la latitude et la longitude? Pouvez-vous trouver cette info dans les métadonnées?</label></p>
-						<p class="reponse">Comme précisé dans le fichier de métadonnées (voir fichier pdf dans le dossier liste_donnees), les coordonnées sont mesurées en degrés décimaux dans le SCR WGS84.</p>
+						<p class="reponse">Comme précisé dans les métadonnées, les coordonnées sont mesurées en degrés décimaux dans le SCR WGS84.</p>
 						<p class="reponse">Dans le cas d'un fichier avec des coordonnées en latitude et longitude et un SCR inconnu, il s'agit fréquemment de coordonnées en WGS84.</p>
 					</div>
 				</div>
@@ -76,10 +83,13 @@
 					</figure>
 					<ul>
 						<li class="espace">Cliquez sur le bouton <b>...</b> et sélectionnez le fichier <em class="data">villes_bhutan_geonames.csv</em></li>
-						<li class="espace"><b>Format de fichier :</b> choisir <b>CSV (virgule)</b></li>
-						<li class="espace"><b>Options des champs et enregistrements :</b> vérifiez que les cases <b>en-têtes de 1ère ligne</b>, <b>Détecter les types de champs</b> et <b>Virgule en sépareteur décimal</b> soient bien cochées</li>
+						<li class="espace"><b>Format de fichier :</b> choisir <b>délimiteurs personnalisés</b> et <b>Tab</b> pour tabulation (vérifiez que les autres séparateurs comme la virgule soient bien décochés). Vérifiez que les colonnes soient bien reconnues dans l'aperçu en bas de la fenêtre.</li>
+						<li class="espace"><b>Options des champs et enregistrements :</b> vérifiez que la case <b>en-têtes de 1ère ligne</b> soit bien cochée, et que la case <b>Virgule en séparateur décimal</b> soit bien décochée. Vérifiez dans l'aperçu que les colonnes latitude et longitude sont bien reconnues comme des colonnes de type décimal</li>
+					</ul>
+					<p class="note">Il faut ajuster la case <b>Virgule en séparateur décimal</b> en fonction de si les nombres décimaux sont écrits sous la forme <em>1.234</em> ou <em>1,234</em> ; si le mauvais séparateur est choisi les nombres décimaux ne seront pas reconnus et seront lus comme du texte.</p>
+					<ul>
 						<li class="espace"><b>Définition de la géométrie : </b> choisir <b>point</b>, puis les colonnes X et Y : <b>longitude et latitude</b></li>		
-						<li class="espace">Vérifiez également que le SCR sélectionné soit bien <b>WGS84 - code EPSG 4326</b></li>		
+						<li class="espace">Vérifiez également que le SCR sélectionné soit bien <b>EPSG 4326 - WGS84</b></li>		
 					</ul>
 					<p>Cliquez sur <b>Ajouter</b>. Faites un clic droit sur le nom de cette couche, <b>zoomer sur la couche</b>.</p>
 					<figure>
@@ -129,7 +139,7 @@
 				
 			</div>
 			<p>Félicitations ! L'ajout de données ponctuelles à partir d'un fichier texte dans QGIS n'a désormais plus de secrets pour vous !</p>
-			<p>Notez que si vous effectuez cette manipulation avec un fichier CSV &#171; non standard &#187; (dont le délimiteur n'est pas la virgule), il vous faudra choisir l'option <b>délimiteurs personnalisés</b> dans la fenêtre d'ajout du fichier CSV, puis votre délimiteur : point-virgule, tabulation... Attention aussi à la case <b>Virgule en séparateur décimal</b>, à cocher ou décocher suivant vos coordonnées (44,192 vs 44.192).</p>
+			<p>Le principe n'est pas compliqué, mais il faut néanmoins <b>vérifier avec attention toutes les options de la fenêtre d'ajout d'un fichier texte délimité</b>, notamment le type de délimiteur, le séparateur de nombre décimal, les colonnes de géométrie et le SCR. Par défaut la fenêtre s'ouvre avec les derniers paramètres utilisés. L'aperçu en bas de la fenêtre permet de vérifier que les colonnes soient bien reconnues ainsi que les bons types de champ (texte ou nombre).</p>
 	
 			<br>
 			<a class="prec" href="03_02_donnees_flux.php">chapitre précédent</a>
