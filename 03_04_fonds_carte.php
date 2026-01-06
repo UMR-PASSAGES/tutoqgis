@@ -14,7 +14,7 @@
 					<li><a href="#III41">Principe</a></li>
 					<li><a href="#III42">Afficher un fonds via l'explorateur</a>
 					   <ul class="listesoustitres">
-					       <li><a href="#III42a">Ajouter un fonds proposé par défaut</a></li>
+					       <li><a href="#III42a">Ajouter le fonds OSM proposé par défaut</a></li>
 					       <li><a href="#III42b">Ajouter de nouveaux fonds</a></li>
 					   </ul>
 					</li>
@@ -35,7 +35,7 @@
 
 		        <p>Depuis QGIS 3, il existe une solution pour ajouter des fonds de carte sans installation d'extension.</p>
 		        
-		        <h4>Ajouter un fonds proposé par défaut<a class="headerlink" id="III42a" href="#III42a"></a></h4>
+		        <h4>Ajouter le fonds OSM proposé par défaut<a class="headerlink" id="III42a" href="#III42a"></a></h4>
 		        
     		        <div class="manip">
     		            <p>Ouvrez un nouveau projet QGIS.</p>
@@ -53,12 +53,11 @@
     		        
     		    <h4>Ajouter de nouveaux fonds<a class="headerlink" id="III42b" href="#III42b"></a></h4>
     		    
-    		        <p>Il faut tout d'abord trouver des adresses de fonds à ajouter à QGIS. Vous pouvez trouver quelques adresses <a class="ext" target="_blank" href="https://www.spatialbias.com/2018/02/qgis-3.0-xyz-tile-layers/">au bas de cette page</a>, qui explique par ailleurs comment en obtenir d'autres. Voir aussi <a class="ext" target="_blank" href="https://wiki.openstreetmap.org/wiki/Tile_servers" >la page Tile Servers du wiki OpenStreetMap</a>, comme décrit <a href="03_05_donnees_osm.php#III52" >plus loin</a>.</p>
+    		        <p>Il faut tout d'abord trouver des adresses de fonds à ajouter à QGIS. Vous pouvez trouver quelques adresses <a class="ext" target="_blank" href="https://www.geohowtos.com/howtos/xyz-tiles/xyz-tiles-qgis">au bas de cette page</a>. Voir aussi <a class="ext" target="_blank" href="https://wiki.openstreetmap.org/wiki/Raster_tile_providers" >la page Raster tile providers du wiki OpenStreetMap</a>, comme décrit <a href="03_05_donnees_osm.php#III52" >plus loin</a>.</p>
     		        <p>Ici, nous allons ajouter un fonds en niveaux de gris utilisant les données OpenStreetMap, qui se nomme Carto Positron.</p>
 		        
     		        <div class="manip">
-    		            <p>Copiez l'URL du serveur Carto Positron : <b>https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.jpg</b></p>
-    		            <p>Dans QGIS, panneau explorateur, clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</p>
+    		            <p>Dans QGIS, panneau explorateur, <b>clic-droit sur XYZ Tiles &#8594; Nouvelle connexion...</b></p>
     		            <figure>
                         	<a href="illustrations/3_4_positron_connexion.jpg" >
                         	    <img src="illustrations/3_4_positron_connexion.jpg" alt="Fenêtre de nouvelle connexion à un serveur de tuiles" width="400">
@@ -66,7 +65,7 @@
                         </figure>
                         <ul>
                             <li>Nom : il s'agit du nom qui apparaîtra dans le panneau explorateur, vous pouvez taper par exemple <b>Carto Positron</b></li>
-                            <li>URL : collez l'URL que vous avez préalablement copiée
+                            <li>URL : collez l'URL du serveur Carto Positron <b>https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.jpg</b></li>
                         </ul>
                         <p>Laissez les valeurs par défaut pour les autres paramètres, cliquez sur OK.</p>
                         <p>Le fonds Carto Positron apparaît maintenant avec le fonds OpenStreetMap dans la rubrique XYZ Tiles.</p>
@@ -85,12 +84,23 @@
     		        
     		        <p class="note">Attention à ne pas utiliser le caractère / (&#171;&nbsp;slash&nbsp;&#187;) dans le nom des connexions !</p>
     		        <p class="note">Attention également, certaines url de serveurs de tuiles sont sous la forme <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.jpg</b> : il faut alors supprimer les <b>$</b> pour obtenir <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.jpg</b>.</p>
+    		        
+    		      <p>Il est également possible d’ajouter des fonds Google Maps. Par exemple pour ajouter un fonds Google Satellite (procédez comme décrit ci-dessus), l’url est la suivante : <b>https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}</b>.</p>
+    		      <p>Vous pouvez obtenir les autres fonds Google Maps en faisant varier la lettre indiquée après lyrs= (source : <a class="ext" target="_blank" href="https://stackoverflow.com/a/33023651">https://stackoverflow.com/a/33023651</a>) :</p>
+    		      <ul>
+                <li>h = roads only</li>
+                <li>m = standard roadmap</li>
+                <li>p = terrain</li>
+                <li>r = somehow altered roadmap</li>
+                <li>s = satellite only</li>
+                <li>t = terrain only</li>
+                <li>y = hybrid</li>
+    		      </ul>
 			   
 		    <h3>Afficher un fonds avec l'extension QuickMapServices<a class="headerlink" id="III43" href="#III43"></a></h3>
 		    
 		        <p>Une autre méthode pour ajouter des fonds de carte consiste à utiliser l'extension <a class="ext" target="_blank" href="https://github.com/nextgis/quickmapservices">QuickMapServices</a>, qui propose un certain nombre de fonds, notamment des fonds OpenStreetMap et Google Maps.</p>
 		        
-		        <p class="note">L'extension QuickMapServices est similaire à l'extension <b>OpenLayers</b> sur laquelle elle est d'ailleurs basée, mais propose plus de couches et utilise un serveur de tuilage, ce qui semble provoquer moins d'erreur lors de changements de niveau de zoom et de SCR.</p>
 				<div class="manip">
 					<p>Pour installer QuickMapServices : 
 						<a class="thumbnail_bottom" href="#thumb">Menu Extension &#8594; Installer/Gérer les extensions
