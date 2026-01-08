@@ -27,12 +27,15 @@
 						<p><b>Il est inutile d'ajouter la carte d'Oahu à QGIS</b> (si vous le faites néanmoins, profitez-en pour observer qu'en l'absence d'informations de localisation pour cette image, QGIS positionne son coin supérieur gauche aux coordonnées (0,0)).</p>
 						<p><img class="icone" src="illustrations/4_3_georeferenceur_icone.jpg" alt="icône du géoréférenceur" >
 						Ouvrez la fenêtre du géoréférenceur :
-							<a class="thumbnail_bottom" href="#thumb">Menu Raster &#8594; Géoréférencer...
+							<a class="thumbnail_bottom" href="#thumb">Menu Couche &#8594; Géoréférencer...
 								<span>
-									<img src="illustrations/4_3_georeferenceur_menu.jpg" alt="Menu Raster, Géoréférencer, Géoréférencer..." height="250" >
+									<img src="illustrations/4_3_georeferenceur_menu.jpg" alt="Menu Couche, Géoréférencer..." height="170" >
 								</span>
 							</a>
 						</p>
+					</div>
+						<p class="note">Avant la version 3.26 de QGIS, le géoréférenceur était accessible depuis le menu Raster. Depuis cette version, il fonctionne également pour les données vecteur et a donc migré vers le menu Couche.</p>
+					<div class="manip">
 						<figure>
 							<a href="illustrations/4_3_georeferenceur_fenetre.jpg" >
 								<img src="illustrations/4_3_georeferenceur_fenetre.jpg" alt="Fenêtre du géoréférenceur" width="600">
@@ -85,8 +88,8 @@
 					</figure>
 					<p>Que signifient les différentes colonnes de cette table&nbsp;?</p>
 					<ul>
-						<li class="espace"><b>Visible :</b> indique si le point sera pris en compte ou non pour le géoréférencement. Permet de ne pas prendre en compte certains points qui semblent apporter trop d'erreurs, tout en les gardant en mémoire.</li>
-						<li class="espace"><b>ID :</b> identifiant du point. Peut aider à repérer de quel point il s'agit sur la carte, dans le fenêtre du géoréférenceur comme dans celle de QGIS.</li>
+						<li class="espace"><b>Activé :</b> indique si le point sera pris en compte ou non pour le géoréférencement. Permet de ne pas prendre en compte certains points qui semblent apporter trop d'erreurs, tout en les gardant en mémoire.</li>
+						<li class="espace"><b>ID :</b> identifiant du point. Peut aider à repérer de quel point il s'agit sur la carte, dans la fenêtre du géoréférenceur comme dans celle de QGIS.</li>
 						<li class="espace"><b>Source X et Y :</b> coordonnées du point dans l'image non géoréférencée, c'est-à-dire en considérant que le pixel en haut à gauche de l'image a pour coordonnées 0,0.</li>
 						<li class="espace"><b>Destination X et Y :</b> les coordonnées que l'on souhaite faire prendre à ce point, exprimées dans le SCR choisi précédemment. Ces coordonnées sont en degrés décimaux (ici, -158°15' a été converti en -158,25 degrés décimaux).</li>
 						<li class="espace"><b>dX (pixels) et dY (pixels) :</b> la différence entre les coordonnées qu'on souhaiterait voir prendre le point (dstX et dstY) et les coordonnées que prendra effectivement le point après le géoréférencement. En effet, en fonction du type de transformation choisi et du nombre de points de calage, il n'est pas toujours possible de faire coïncider exactement les points avec les coordonnées souhaitées.</li>
@@ -113,19 +116,19 @@
 								<img src="illustrations/4_3_config_georeferenceur_fenetre.jpg" alt="Fenêtre de configuration du géoréférenceur" width="400">
 							</a>
 						</figure>
-						<p><img class="icone" src="illustrations/4_3_effacer_point_icone.jpg" alt="Icône effacer un point du géoréférenceur" >Si vous faites une erreur, vous pouvez supprimer un point en cliquant sur l'icône <b>Effacer un point</b>, puis sur le point à effacer.</p>
-						<p><img class="icone" src="illustrations/4_3_deplacer_point_icone.jpg" alt="Icône déplacer un point du géoréférenceur" >Vous pouvez également déplacer un point déjà créé en cliquant sur l'icône <b>Deplacer les points de contrôle</b>, puis en faisant glisser le point à déplacer.</p>
+						<p><img class="icone" src="illustrations/4_3_effacer_point_icone.jpg" alt="Icône effacer un point du géoréférenceur" >Si vous faites une erreur, vous pouvez supprimer un point en cliquant sur l'icône <b>Supprimer un point d'appui</b>, puis sur le point à effacer.</p>
+						<p><img class="icone" src="illustrations/4_3_deplacer_point_icone.jpg" alt="Icône déplacer un point du géoréférenceur" >Vous pouvez également déplacer un point déjà créé en cliquant sur l'icône <b>Déplacer un point d'appui</b>, puis en faisant glisser le point à déplacer.</p>
 						<p><img class="icone" src="illustrations/4_3_sauv_points_icone.jpg" alt="Icône sauvegarder les points de contrôle" >Une fois vos points créés, vous pouvez les sauvegarder au moyen du menu
-							<a class="thumbnail_bottom" href="#thumb">Fichier &#8594; Enregistrer les points de contrôle sous...
+							<a class="thumbnail_bottom" href="#thumb">Fichier &#8594; Enregistrer les points d'appui sous...
 								<span>
-									<img src="illustrations/4_3_sauv_points_menu.jpg" alt="Menu Projet, Fichier, Enregistrer les points de contrôle sous..." height="170" >
+									<img src="illustrations/4_3_sauv_points_menu.jpg" alt="Menu Projet, Fichier, Enregistrer les points d'appui sous..." height="170" >
 								</span>
 							</a>	
 						 ou bien en cliquant sur l'icône correspondante.</p>
-						 <p>Cette manipulation crée un fichier avec l'extension .POINTS. Par défaut, ce fichier aura le même nom et sera dans le même dossier que l'image que vous êtes en train de caler. Ces points de calage pourront être chargés dans le géoréférenceur au moyen du <b>menu Fichier &#8594; Charger les points de contrôle...</b>.</p>
+						 <p>Cette manipulation crée un fichier avec l'extension .POINTS. Par défaut, ce fichier aura le même nom et sera dans le même dossier que l'image que vous êtes en train de caler. Ces points de calage pourront être chargés dans le géoréférenceur au moyen du <b>menu Fichier &#8594; Charger les points d'appui...</b>.</p>
 					</div>
 						 
-					 <p>Voici à quoi ressemble la fenêtre du géoréférenceur une fois tous les poins de calage correspondant à des intersections du carroyage renseignés :</p>
+					 <p>Voici à quoi ressemble la fenêtre du géoréférenceur une fois tous les points de calage correspondant à des intersections du carroyage renseignés :</p>
 				 	<figure>
 				 		<a href="illustrations/4_3_avec_tous_les_points.jpg" >
 							<img src="illustrations/4_3_avec_tous_les_points.jpg" alt="Cartes de Oahu avec le maximum de points de calage renseignés" width="600">

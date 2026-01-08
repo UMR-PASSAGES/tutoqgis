@@ -20,14 +20,14 @@
 					</li>
 					<li><a href="#IV42">Rééchantillonnage, ou comment calculer les valeurs des pixels ?</a></li>
 					<li><a href="#IV43">Mode de compression utilisé pour la création de la nouvelle image</a></li>
-					<li><a href="#IV44">Raster en sortie et SCR</a>
+					<li><a href="#IV44">Fichier en sortie et SCR</a>
 						<ul class= "listesoustitres">
-							<li><a href="#IV44a" >Raster de sortie</a></li>
+							<li><a href="#IV44a" >Fichier en sortie</a></li>
 							<li><a href="#IV44b" >SCR cible</a></li>
 						</ul>
 					<li><a href="#IV45">Les autres paramètres</a>
 					   <ul class= "listesoustitres">
-							<li><a href="#IV45a" >Enregistrer les points de contrôle</a></li>
+							<li><a href="#IV45a" >Enregistrer les points d'appui</a></li>
 							<li><a href="#IV45b" >Transparence</a></li>
 							<li><a href="#IV45c" >Définir la résolution de la cible</a></li>
 							<li><a href="#IV45d" >Carte et rapport PDF</a></li>
@@ -61,7 +61,7 @@
 					<h4>Qu'est-ce qu'une transformation ?<a class="headerlink" id="IV41a" href="#IV41a"></a></h4>
 					
 						<p>Lors du calage, l'image subit une transformation, afin de faire coïncider au maximum les points de départ avec les coordonnées spécifiées par l'utilisateur. Une transformation est en fait une formule mathématique transformant les coordonnées de départ vers les coordonnées voulues.</p>
-						<p>Il existe divers types de transformations, adaptées à des usages différents. Chaque transformation, si on l'utilise avec un nombre de points de calage supérieur à son minimum, renverra une erreur correspondant à la différence entre les coordonnées "idéales" voulues par l'utilisateur et les coordonnées effectivement calculées lors de la transformation (erreur résiduelle <b>residual[pixels]</b> de la table des points de contrôle, voir plus haut).</p>
+						<p>Il existe divers types de transformations, adaptées à des usages différents. Chaque transformation, si on l'utilise avec un nombre de points de calage supérieur à son minimum, renverra une erreur correspondant à la différence entre les coordonnées "idéales" voulues par l'utilisateur et les coordonnées effectivement calculées lors de la transformation (erreur résiduelle <b>Résidu (pixels)</b> de la table des points d'appui, voir <a href="04_03_calage_carroyage.php#IV31">chapitre précédent</a>).</p>
 						
 					<h4>Quelques types de transformations<a class="headerlink" id="IV41b" href="#IV41b"></a></h4>
 					
@@ -138,15 +138,15 @@
 						</figure>	
 					</div>
 				
-				<h3>Raster en sortie et SCR<a class="headerlink" id="IV44" href="#IV44"></a></h3>
+				<h3>Fichier en sortie et SCR<a class="headerlink" id="IV44" href="#IV44"></a></h3>
 				
-					<h4>Raster de sortie<a class="headerlink" id="IV44a" href="#IV44a"></a></h4>
+					<h4>Fichier en sortie<a class="headerlink" id="IV44a" href="#IV44a"></a></h4>
 					
 						<div class="manip">
 							<p>Spécifiez ici le nom et l'emplacement de l'image géoréférencée qui sera créée, en cliquant sur l'icône à droite de la ligne <b>Raster de sortie</b>.</p>
 							<figure>
 								<a href="illustrations/4_4_raster_sortie.jpg" >
-									<img src="illustrations/4_4_raster_sortie.jpg" alt="Choisir le nom et l'emplacement du raster de sortie" width="440">
+									<img src="illustrations/4_4_raster_sortie.jpg" alt="Choisir le nom et l'emplacement du raster de sortie" width="600">
 								</a>							
 							</figure>
 							<p>Choisissez à quel endroit vous souhaitez créer cette couche, et donnez-lui un nom, par exemple <b>Oahu_Hawaiian_Islands_1906_pol1_wgs84.tif</b>.</p>
@@ -173,9 +173,9 @@
 						
 				<h3>Les autres paramètres<a class="headerlink" id="IV45" href="#IV4"></a></h3>
 
-					<h4>Enregistrer les points de contrôle<a class="headerlink" id="IV45a" href="#IV45a"></a></h4>
+					<h4>Enregistrer les points d'appui<a class="headerlink" id="IV45a" href="#IV45a"></a></h4>
 					
-            <p>Si vous n'avez pas déjà enregistré les points de contrôle, ça peut être une bonne idée de cocher cette case afin de sauvegarder votre travail, et de garder trace des points utilisés, pour tester ensuite avec une autre transformation par exemple.</p>					
+            <p>Si vous n'avez pas déjà enregistré les points d'appui, ça peut être une bonne idée de cocher cette case afin de sauvegarder votre travail, et de garder trace des points utilisés, pour tester ensuite avec une autre transformation par exemple.</p>					
 					
 					<h4>Transparence<a class="headerlink" id="IV45b" href="#IV45b"></a></h4>
 					
@@ -202,7 +202,7 @@
 						
 					<h4>Carte et rapport PDF<a class="headerlink" id="IV45d" href="#IV45d"></a></h4>
 						
-						<p>La carte PDF permettra de visualiser le décalage qu'aura subi chaque point de contrôle. Le rapport PDF comportera notamment les coordonnées et erreurs pour chaque point.</p>
+						<p>La carte PDF permettra de visualiser le décalage qu'aura subi chaque point d'appui. Le rapport PDF comportera notamment les coordonnées et erreurs pour chaque point.</p>
 						<div class="manip">
 							<p>Cliquez sur les icônes à droite des lignes carte PDF et rapport PDF pour spécifier un nom (à votre convenance) et l'emplacement (par exemple dans le même dossier que l'image de départ) pour la carte et le rapport qui seront créés.</p>
 							<figure>

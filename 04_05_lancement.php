@@ -42,7 +42,7 @@
 					<p>Comme indiqué dans la partie <a href="04_03_calage_carroyage.php#IV31" >IV.3.1</a> :</p>
 					<ul>
 						<li class="espace">les colonnes <b>dX (pixels) et dY (pixels)</b> correspondent à la différence entre les coordonnées qu'on souhaiterait voir prendre le point (dstX et dstY) et les coordonnées que prendra effectivement le point après le géoréférencement. Cette valeur variera selon le type de transformation choisie.</li>
-						<li class="espace">La colonne <b>Résidu (pixels)</b> correspond à l'erreur associée à ce point, calculée à partir de dX[pixels] et dY[pixels]. Cette erreur est égale à la racine de la somme des carrés de dX[pixels] et dY[pixels], soit : <br>&#8730; ( dX[pixels] &#178; + dY[pixels] &#178; )</li>
+						<li class="espace">La colonne <b>Résidu (pixels)</b> correspond à l'erreur associée à ce point, calculée à partir de dX[pixels] et dY[pixels]. Cette erreur est égale à la racine de la somme des carrés de dX[pixels] et dY[pixels], soit : &#8730; ( dX[pixels] &#178; + dY[pixels] &#178; )</li>
 					</ul>
 					
 					<div class="manip">
@@ -67,7 +67,7 @@
 					</figure>
 					<p>En plus de l'erreur résiduelle calculée par pixel, la transformation renvoie une erreur globale appelée <b>Erreur Quadratique Moyenne (EMQ)</b> ou bien Root Mean Square (RMS). Cette erreur est calculée de la manière suivante :</p>
 					<p>EMQ = &#8730; ( ( Somme dX[pixels] &#178; + Somme dY[pixels] &#178; ) / ( nb points – nb points min ) )</p>
-					<p>Vous pouvez donc constater que si le nombre de points utilisés est égal au nombre de points minimum associé à la transformation, l'EMQ est considérée comme nulle. Une erreur nulle n'est donc pas forcément révélatrice d'un calage précis...</p>
+					<p>Vous pouvez donc constater que si le nombre de points utilisés est égal au nombre de points minimum associé à la transformation, l'EMQ est considérée comme nulle. <b>Une erreur nulle n'est donc pas forcément révélatrice d'un calage précis !</b></p>
 					
 					<div class="manip">
 						<p>Vérifiez que votre EMQ soit inférieure à 5. Si les erreurs de chacun de vos points sont suffisamment faibles, comme vérifié <a href="04_05_lancement.php#IV51a" >plus haut</a>, cela devrait être le cas.</p>
@@ -106,8 +106,8 @@
 						  <img src="illustrations/4_5_point_0.jpg" alt="ligne correspondant au point 0 dans la table des points de contrôle" height="40" >
 					   </a>
 					</figure>
-					<p>En effet, les informations des cases dX[pixels] et dY[pixels] indiquent un déplacement de 2,77 pixels en Y (vers le bas) et -0,82 pixels en Y (vers la gauche). Ces chiffres seront différents dans votre cas, mais ils seront cohérents avec votre carte PDF.</p>
-					<p>Le rapport PDF contient la carte, la visualisation séparée des erreurs de calage en chaque point, ainsi que la table des points de contrôle avec les erreurs en X, en Y et totale pour chacun d'eux. Il n'indique malheureusement pas la RMSE (ou l'EMQ). Il demeure cependant possible de la recalculer sous un tableur en important le fichier-texte des points de contrôle (extension .points).</p>
+					<p>En effet, les informations des cases dX(pixels) et dY(pixels) indiquent un déplacement de 2,77 pixels en Y (vers le bas) et -0,82 pixels en Y (vers la gauche). Ces chiffres seront différents dans votre cas, mais ils seront cohérents avec votre carte PDF.</p>
+					<p>Le rapport PDF contient la carte, le type de transformation utilisée, l'erreur moyenne et la visualisation séparée des erreurs de calage en chaque point, ainsi que la table des points de contrôle avec les erreurs en X, en Y et totale pour chacun d'eux.</p>
 				
 				<h4>Vérification par superposition d'une autre couche<a class="headerlink" id="IV53b" href="#IV53b"></a></h4>
 				

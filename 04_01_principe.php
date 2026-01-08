@@ -23,7 +23,7 @@
 			
 			<h3>Qu'est-ce que le géoréférencement ?<a class="headerlink" id="IV11" href="#IV11"></a></h3>
 			
-				<p>Les données SIG que nous avons utilisées jusqu'ici ont toutes des coordonnées, ce qui nous permet de les superposer correctement dans une logiciel SIG. A l'inverse, dans le cas d'une image simplement scannée, une carte ancienne par exemple, le logiciel ne possède pas d'informations de coordonnées&nbsp;; il placera cette image simplement en considérant que le coin en haut à gauche a les coordonnées 0,0.</p>
+				<p>Les données SIG que nous avons utilisées jusqu'ici ont toutes des coordonnées, ce qui nous permet de les superposer correctement dans une logiciel SIG. À l'inverse, dans le cas d'une image simplement scannée, une carte ancienne par exemple, le logiciel ne possède pas d'informations de coordonnées&nbsp;; il placera cette image simplement en considérant que le coin en haut à gauche a les coordonnées 0,0.</p>
 				<p><b>Le géoréférencement, ou calage, consiste à attribuer des coordonnées à une image</b>. Cette image pourra ensuite être superposée à d'autres couches dans un logiciel SIG, et servir par exemple de fond de carte ou être <a href="05_00_numerisation.php">numérisée</a>. Nous traiterons uniquement du cas des données raster (il existe d'autres méthodes pour les données vecteur qui ne seront pas abordées ici).</p>
 				<p>Lors du géoréférencement, il faudra aussi préciser dans quel SCR est notre image.</p>
 				

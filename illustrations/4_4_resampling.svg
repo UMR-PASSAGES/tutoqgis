@@ -2,23 +2,23 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1027.5591"
    height="318.89764"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="resampling3.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="4_4_resampling.svg"
    inkscape:export-filename="/home/julie/ET/tutoqgis/TD_Master_Archeo/TD_Master_Archeo_2013/TDs/Seance_3/Illus/resampling3.png"
    inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300">
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs4">
     <pattern
@@ -270,17 +270,18 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.3050344"
-     inkscape:cx="513.77954"
-     inkscape:cy="159.44882"
+     inkscape:cx="-27.968611"
+     inkscape:cy="159.38277"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1124"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-width="1632"
+     inkscape:window-height="959"
+     inkscape:window-x="48"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
-     units="cm">
+     units="cm"
+     inkscape:pagecheckerboard="0">
     <inkscape:grid
        type="xygrid"
        id="grid5210"
@@ -288,6 +289,11 @@
        visible="true"
        enabled="false"
        snapvisiblegridlinesonly="true" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid985"
+       spacingx="10"
+       spacingy="10" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -297,7 +303,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -383,23 +388,24 @@
        d="m 812.5118,536.17239 16.48435,-0.0545 0.0545,16.48436 -16.48436,0.0545 -0.0545,-16.48435 z m 49.45307,-0.16349 16.48436,-0.0545 0.0545,16.48436 -16.48436,0.0545 -0.0545,-16.48435 z m -16.48436,0.0545 16.48436,-0.0545 0.0545,16.48435 -16.48436,0.0545 -0.0545,-16.48436 z m -16.48436,0.0545 16.48436,-0.0545 0.0545,16.48435 -16.48435,0.0545 -0.0545,-16.48436 z m -16.53886,-16.42984 16.48436,-0.0545 0.0545,16.48436 -16.48436,0.0545 -0.0545,-16.48435 z m 49.45309,-0.16349 16.48435,-0.0545 0.0545,16.48436 -16.48436,0.0545 -0.0545,-16.48435 z m -16.48436,0.0545 16.48436,-0.0545 0.0545,16.48435 -16.48436,0.0545 -0.0545,-16.48436 z m -16.48437,0.0545 16.48437,-0.0545 0.0545,16.48436 -16.48436,0.0545 -0.0545,-16.48436 z m -16.53885,-16.42986 16.48435,-0.0545 0.0545,16.48436 -16.48436,0.0545 -0.0545,-16.48436 z m 49.45308,-0.16349 16.48435,-0.0545 0.0545,16.48436 -16.48435,0.0545 -0.0545,-16.48436 z m -16.48437,0.0545 16.48436,-0.0545 0.0545,16.48436 -16.48436,0.0545 -0.0545,-16.48435 z m -16.48436,0.0545 16.48436,-0.0545 0.0545,16.48435 -16.48437,0.0545 -0.0545,-16.48436 z m -16.53885,-16.42987 16.48436,-0.0545 0.0545,16.48436 -16.48437,0.0545 -0.0545,-16.48436 z m 49.45308,-0.16349 16.48435,-0.0545 0.0545,16.48436 -16.48436,0.0545 -0.0545,-16.48436 z m -16.48436,0.0545 16.48436,-0.0545 0.0545,16.48436 -16.48435,0.0545 -0.0545,-16.48437 z m -16.48436,0.0545 16.48436,-0.0545 0.0545,16.48437 -16.48436,0.0545 -0.0545,-16.48436 z"
        inkscape:connector-curvature="0" />
     <rect
-       style="fill:#0016c5;fill-opacity:0.81818183;stroke:none"
+       style="fill:#0016c5;fill-opacity:0.818182;stroke:none"
        id="rect5521-0-63"
        width="21.284756"
        height="21.284756"
-       x="834.78363"
-       y="579.51062" />
+       x="611.03821"
+       y="811.8775"
+       transform="rotate(-18)" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect5168-9-46-2-8-5"
        width="16.484449"
        height="16.484449"
-       x="591.53229"
-       y="874.71234"
-       transform="matrix(0.95002972,-0.31215947,0.31215947,0.95002972,0,0)" />
+       x="835.02521"
+       y="646.15698"
+       transform="rotate(-0.18941844)" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        x="899.82532"
        y="413.32675"
        id="text5962"><tspan
@@ -407,15 +413,15 @@
          id="tspan5964"
          x="899.82532"
          y="413.32675"
-         style="font-size:16px;text-align:start;text-anchor:start">image</tspan><tspan
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start">image</tspan><tspan
          sodipodi:role="line"
          x="899.82532"
-         y="433.32675"
-         style="font-size:16px;text-align:start;text-anchor:start"
+         y="463.32675"
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start"
          id="tspan5995">en sortie</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        x="899.82532"
        y="513.9931"
        id="text5962-9"><tspan
@@ -423,91 +429,91 @@
          id="tspan5964-6"
          x="899.82532"
          y="513.9931"
-         style="font-size:16px;text-align:start;text-anchor:start">image</tspan><tspan
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start">image</tspan><tspan
          sodipodi:role="line"
          x="899.82532"
-         y="533.9931"
-         style="font-size:16px;text-align:start;text-anchor:start"
+         y="563.9931"
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start"
          id="tspan5991">de départ</tspan><tspan
          sodipodi:role="line"
          x="899.82532"
-         y="553.9931"
-         style="font-size:16px;text-align:start;text-anchor:start"
-         id="tspan5993" /></text>
+         y="613.9931"
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start"
+         id="tspan5993"> </tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        x="899.12219"
        y="584.88739"
        id="text5962-9-9"><tspan
          sodipodi:role="line"
          x="899.12219"
          y="584.88739"
-         style="font-size:16px;text-align:start;text-anchor:start"
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start"
          id="tspan5991-5">pixel à </tspan><tspan
          sodipodi:role="line"
          x="899.12219"
-         y="604.88739"
-         style="font-size:16px;text-align:start;text-anchor:start"
+         y="634.88739"
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start"
          id="tspan6032">renseigner</tspan><tspan
          sodipodi:role="line"
          x="899.12219"
-         y="624.88739"
-         style="font-size:16px;text-align:start;text-anchor:start"
-         id="tspan5993-9" /></text>
+         y="684.88739"
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start"
+         id="tspan5993-9"> </tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';text-align:start;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        x="899.51282"
        y="646.34222"
        id="text5962-9-9-1"><tspan
          sodipodi:role="line"
          x="899.51282"
          y="646.34222"
-         style="font-size:16px;text-align:start;text-anchor:start"
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start"
          id="tspan6069">pixel utilisé pour</tspan><tspan
          sodipodi:role="line"
          x="899.51282"
-         y="666.34222"
-         style="font-size:16px;text-align:start;text-anchor:start"
+         y="696.34222"
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start"
          id="tspan6071">le rééchantillonnage</tspan><tspan
          sodipodi:role="line"
          x="899.51282"
-         y="686.34222"
-         style="font-size:16px;text-align:start;text-anchor:start"
-         id="tspan5993-9-1" /></text>
+         y="746.34222"
+         style="font-size:16px;line-height:1.25;text-align:start;text-anchor:start"
+         id="tspan5993-9-1"> </tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="183.87793"
        y="624.60205"
        id="text5962-95"><tspan
          sodipodi:role="line"
          x="183.87793"
          y="624.60205"
-         style="font-size:20px;text-align:center;text-anchor:middle"
+         style="font-size:20px;line-height:1.25;text-align:center;text-anchor:middle"
          id="tspan5995-7">Plus proche voisin</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="412.88556"
        y="625.00244"
        id="text5962-95-6"><tspan
          sodipodi:role="line"
          x="412.88556"
          y="625.00244"
-         style="font-size:20px;text-align:center;text-anchor:middle"
+         style="font-size:20px;line-height:1.25;text-align:center;text-anchor:middle"
          id="tspan5995-7-4">Linéaire</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:20px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:'Bitstream Vera Sans';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="652.31409"
        y="624.60205"
        id="text5962-95-6-9"><tspan
          sodipodi:role="line"
          x="652.31409"
          y="624.60205"
-         style="font-size:20px;text-align:center;text-anchor:middle"
+         style="font-size:20px;line-height:1.25;text-align:center;text-anchor:middle"
          id="tspan5995-7-4-3">Cubique</tspan></text>
     <g
        id="g3948">
