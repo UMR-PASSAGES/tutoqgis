@@ -16,7 +16,7 @@
 				</ul>
 				<br>
 				
-			<p>Cette partie est tout à fait optionnelle pour suivre la suite du chapitre. Elle pourra néanmoins vous faire gagner du temps si vous vous apprêtez à saisir des données sous QGIS...</p>
+			<p>Cette partie est tout à fait optionnelle pour suivre la suite de cette partie sur la numérisation. Elle pourra néanmoins vous faire gagner du temps si vous vous apprêtez à saisir des données sous QGIS...</p>
 
 			
 			<h3>Saisir les données : à la création de l'entité ou dans la table<a class="headerlink" id="V31" href="#V31"></a></h3>
@@ -72,13 +72,13 @@
 					</figure>
 				</div>
 				
-				<p>Notez que cette liste déroulante sera également utilisable dans la fenêtre de saisie des attributs, si la case <b>Supprimer les fenêtres d'avertissement lors de la création de chaque entité</b> des options de numérisation est décochée (cf. plus haut).</p>
+				<p>Notez que cette liste déroulante sera également utilisable dans la fenêtre de saisie des attributs, si la case <b>Supprimer la fenêtre de saisie des attributs lors de la création de chaque entité</b> des options de numérisation est décochée (cf. plus haut).</p>
 				<figure>
 				    <a href="illustrations/5_3_liste_fenetre.jpg" >
 				        <img src="illustrations/5_3_liste_fenetre.jpg" alt="la fenêtre de saisie des attributs, avec la liste déroulante" width="370">
 				    </a>
 				</figure>
-				<p>Pour en savoir plus, les différents outils d'édition sont décrits dans le <a class="ext" target="_blank" href="https://docs.qgis.org/3.22/fr/docs/user_manual/working_with_vector/vector_properties.html#configure-the-field-behavior" >manuel QGIS</a>.</p>
+				<p>Pour en savoir plus, les différents outils d'édition sont décrits dans le <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/working_with_vector/vector_properties.html#configure-the-field-behavior" >manuel QGIS</a>.</p>
 				
 				<p>Dans le chapitre suivant, dessinez des lignes avec QGIS&nbsp;!</p>
 				

@@ -54,7 +54,7 @@
     					<p>Passez en mode édition pour votre couche de fleuves.</p>
     					<p><img class="icone" src="illustrations/5_4_ajout_icone.jpg" alt="icône ajouter une entité linéaire">Cliquez sur l'icône <b>Ajouter une entité linéaire</b>. Attention, elle ressemble beaucoup à l'icône pour créer une nouvelle couche shapefile&nbsp;!</p>
     					<p class="note">Vous remarquerez que cette icône varie en fonction du type de couche éditée : point, ligne ou polygone.</p>
-    					<p>Cliquez sur le début du fleuve pour créer un premier sommet, puis rajoutez d'autres points à votre ligne. Pour terminer, faites un clic-droit n'importe où.</p>
+    					<p>Cliquez sur le début du fleuve pour créer un premier sommet, puis rajoutez d'autres points à votre ligne. Pour terminer, faites un clic-droit n'importe où (ce clic ne sera pas pris en compte mais termine la saisie).</p>
     					<figure>
     						<a href="illustrations/5_4_fleuve.jpg" >
     							<img src="illustrations/5_4_fleuve.jpg" alt="fleuve numérisé" width="500">

@@ -60,7 +60,7 @@
 				<img src="illustrations/5_2_couche_editable.jpg" alt="symbole de crayon à gauche d'une couche éditable" width="170">
 				<p>La couche est maintenant modifiable.</p>
 				<p>Dans QGIS, le passage en mode édition est géré &#171; par couches &#187; : certaines couches peuvent être éditables et d'autres non. Il est facile de voir dans la table des matières quelle couche est éditable.</p>
-				<p><b>De manière générale, il vaut mieux quitter le mode édition dès que vous n'en avez plus besoin, et limiter le nombre de couches éditables.</b></p>
+				<p><b>De manière générale, il vaut mieux quitter le mode édition dès que vous n'en avez plus besoin, et limiter le nombre de couches éditables</b> (l'idéal étant de ne jamais avoir plus d'une seule couche en mode édition).</p>
 				<p>Les couches raster ne sont jamais modifiables : si vous sélectionnez la carte de l'île d'Oahu, le passage en mode édition n'est pas possible pour cette couche.</p>
 			
 			<h3>Ajout d'un point<a class="headerlink" id="V22" href="#V22"></a></h3>
@@ -106,14 +106,14 @@
 			
 			<h3>Modification d'un point<a class="headerlink" id="V23" href="#V23"></a></h3>
 				
-				<p>Il peut arriver bien sûr de vouloir modifier un point déjà existant, soit que vous vouliez le déplacer, soit que vous souhaitiez modifier ses données attributaires.</p>
+				<p>Il peut arriver bien sûr de vouloir modifier un point déjà existant, soit pour le déplacer, soit pour modifier ses données attributaires.</p>
 				
 				<h4>Déplacement<a class="headerlink" id="V23a" href="#V23a"></a></h4>
 				
 					<p>Imaginons qu'un de vos points soit mal placé et que vous vouliez le déplacer.</p>
 					<div class="manip">
 						<p>La couche doit être en mode édition.</p>
-						<p>Il faut également <b>activer la barre d'outils de numérisation avancée</b> : clic droit sur n'importe quelle barre d'outils (sauf sur un outil désactivé) et cochez si ça n'est pas déjà le cas la case Barre d'outils de numérisation avancée. Vous pouvez également passer par le menu Vue &#8594; Barres d'outils.</p>
+						<p>Il faut également <b>activer la barre d'outils de numérisation avancée</b> : menu Vue &#8594; Barres d'outils, cocher <b>Numérisation avancée</b> si ça n'est pas déjà fait.</p>
 						<p><img class="icone" src="illustrations/5_2_deplacer_icone.jpg" alt="icône déplacer l'entité" >Sélectionnez votre couche de bâtiments dans la table des matières, puis cliquez sur l'icône <b>Déplacer l'entité</b>.</p>
 						<p>Le curseur prend la forme d'une croix. Cliquez sur le point à déplacer, puis cliquez sur l'endroit où vous souhaitez déplacer ce point.</p>
 					</div>
@@ -139,7 +139,7 @@
 				<ul>
 					<li>éviter de faire des modifications par erreur</li>
 					<li>sauvegarder les modifications effectuées</li>
-					<li>certains outils SIG ne peuvent fonctionner sur une couche en cours d'édition</li>
+					<li>certains outils ne peuvent fonctionner sur une couche en cours d'édition</li>
 				</ul>
 				<div class="manip">
 					<p><img class="icone" src="illustrations/5_2_edition_icone.jpg" alt="icône basculer en mode édition">Sélectionnez votre couche dans la table des matières et cliquez sur l'icône <b>basculer en mode édition</b>.</p>
