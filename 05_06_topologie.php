@@ -65,8 +65,14 @@
 
 				<h4>Pourquoi faire attention à la topologie ?<a class="headerlink" id="V61b" href="#V61b"></a></h4>
 					
-					<p>Ne pas respecter les règles de topologie peut poser des problèmes lors de l'utilisation d'outils d'analyse spatiale, qui donneront alors des résultats inattendus.</p>
+					<p>Ne pas respecter les règles de topologie peut poser des problèmes lors de l'utilisation d'outils d'analyse spatiale, qui donneront alors des résultats inattendus. En particulier on peut avoir une couche où certaines entités ont des géométries invalides, et sur laquelle on ne pourra pas lancer certains géotraitement.</p>
 					
+					<figure>
+						<a href="illustrations/5_6_papillon.jpg" >
+							<img src="illustrations/5_6_papillon.jpg" alt="Géométrie invalide de type 'papillon'" width="300">
+						</a>
+						<figcaption>Géométrie invalide de type "papillon" avec les sommets en rouge.</figcaption>
+					</figure>
 					
 			<h3>Pour aller plus loin : comment vérifier la topologie d'une couche ?<a class="headerlink" id="V62" href="#V62"></a></h3>
 			
@@ -124,7 +130,7 @@
 								<img src="illustrations/5_6_veriftopo_fenetre.jpg" alt="fenêtre (intégrée) du vérificateur de topologie" width="400">
 							</a>
 						</figure>
-						<p>Cliquez sur le bouton <b>Configuration</b> pour ajouter ou supprimer des règles de topologie. Nous allons ajouter une règle pour interdire les superpositions de polygones dans la couche <em class="data">zones_oahu</em>.</p>
+						<p>Cliquez sur le bouton <b>Configurer</b> (clé à molette) pour ajouter ou supprimer des règles de topologie. Nous allons ajouter une règle pour interdire les superpositions de polygones dans la couche <em class="data">zones_oahu</em>.</p>
 						<figure>
 							<a href="illustrations/5_6_regle_fenetre.jpg" >
 								<img src="illustrations/5_6_regle_fenetre.jpg" alt="fenêtre de gestion des règles de topologie" width="430">
@@ -146,7 +152,14 @@
 					
 			    <h4>Corriger les erreurs de topologie manuellement<a class="headerlink" id="V63a" href="#V63a"></a></h4>
 			
-			       <p>Pour corriger les erreurs de topologie d'une couche, vous pouvez procéder &#171; à la main &#187;, en corrigeant les erreurs une à une avec les outils d'édition de QGIS, en utilisant les <b>propriétés d'accrochage</b> et l'<b>outil de noeud</b>. Cliquer sur la ligne correspondant à une erreur dans le vérificateur de topologie zoome sur cette erreur.</p>
+			       <p>Pour corriger les erreurs de topologie d'une couche, vous pouvez procéder &#171; à la main &#187;, en corrigeant les erreurs une à une avec les outils d'édition de QGIS, en utilisant les <b>propriétés d'accrochage</b> et l'<b>outil de sommet</b>.</p>
+			       
+            <figure>
+							<img class="icone" src="illustrations/5_5_accrochage_icone.jpg" alt="Icône de l'outil d'accrochage">
+							<img class="icone" src="illustrations/5_4_noeud_icone.jpg" alt="Icône de l'outil de sommet">
+					  </figure>
+			       
+			       <p>Cliquer sur la ligne correspondant à une erreur dans le vérificateur de topologie zoome sur cette erreur.</p>
 			       
 			    <h4>Corriger les erreurs de topologie avec l'outil &#171;&nbsp; réparer les géométries &#187;&nbsp;<a class="headerlink" id="V63b" href="#V63b"></a></h4>
 			    
@@ -166,11 +179,11 @@
   							<img src="illustrations/5_6_vclean.jpg" alt="accès à l'outil vclean à partir de la boîte à outils" width="300">
   						</a>
   					</figure>
-  					<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass70/manuals/v.clean.html" >https://grass.osgeo.org/grass70/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>
+  					<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass-stable/manuals/v.clean.html" >https://grass.osgeo.org/grass-stable/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>
 					
 					<h4>Cas particulier des erreurs de type &#171;&nbsp;auto-intersection&nbsp;&#187;<a class="headerlink" id="V63d" href="#V63d"></a></h4>
 					
-					   <p>Vous rencontrerez peut-être des erreurs de topologie de type &#171;&nbsp;self-intersection&nbsp;&#187; dans une couche de polygones&nbsp;: ces erreurs peuvent généralement être réparées en créant une <a href="09_01_vecteur.php#VIII23b">zone tampon</a> de 0 autour de la couche originale.</p>
+					   <p>Vous rencontrerez peut-être des erreurs de topologie de type <b>self-intersection</b> dans une couche de polygones&nbsp;: ces erreurs peuvent généralement être réparées en créant une <a href="09_01_vecteur.php#IX12">zone tampon</a> de taille zéro à partir de la couche originale.</p>
 
 				<br>
 				<a class="prec" href="05_05_polygones.php">chapitre précédent</a>

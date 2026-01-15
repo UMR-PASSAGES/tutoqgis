@@ -122,10 +122,10 @@
 			
 				<div class="manip">
 				  <p>Commencez par donner de la transparence à votre couche de polygones (propriétés de la couche &#8594; Symbologie &#8594; baisser l'opacité), ou bien réglez le style pour n'afficher que les bordures (remplissage transparent).</p>
-					<p><img class="icone" src="illustrations/5_4_noeud_icone.jpg" alt="icône de l'outil de noeud" >A l'aide de <a href="05_04_lignes.php#V43">l'outil de nœud</a>, déplacez un sommet de la petite langue de terre d'Aiea.</p>
+					<p><img class="icone" src="illustrations/5_4_noeud_icone.jpg" alt="icône de l'outil de sommet" >A l'aide de <a href="05_04_lignes.php#V43">l'outil de sommet</a>, déplacez un sommet de la petite langue de terre d'Aiea.</p>
 					<figure>
 						<a href="illustrations/5_5_deplacement_noeud.jpg" >
-							<img src="illustrations/5_5_deplacement_noeud.jpg" alt="déplacement d'un noeud de polygone" width="400">
+							<img src="illustrations/5_5_deplacement_noeud.jpg" alt="déplacement d'un sommet de polygone" width="400">
 						</a>
 					</figure>
 					<p><img class="icone" src="illustrations/1_1_selection_icone.jpg" alt="icône de sélection" >A l'aide de l'outil de sélection, sélectionnez successivement le polygone d'Aiea, et celui qui l'entoure.</p>

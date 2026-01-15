@@ -82,11 +82,11 @@
 				<p>Il est possible de modifier le tracé d'une ligne existante en déplaçant des sommets, en en rajoutant ou supprimant.</p>
 				
 				<div class="manip">
-					<p><img class="icone" src="illustrations/5_4_noeud_icone.jpg" alt="icône outil de noeud">Vérifiez que vous êtes bien en mode édition pour la couche de fleuves. Sélectionnez-la dans la table des matières, puis cliquez sur l'icône <b>Outil de nœud</b>.</p>
+					<p><img class="icone" src="illustrations/5_4_noeud_icone.jpg" alt="icône outil de sommet">Vérifiez que vous êtes bien en mode édition pour la couche de fleuves. Sélectionnez-la dans la table des matières, puis cliquez sur l'icône <b>Outil de sommet</b>.</p>
 					<p>Survolez une ligne existante : les sommets prennent la forme de ronds rouges.</p>
 					<figure>
 						<a href="illustrations/5_4_fleuve_noeud.jpg" >
-							<img src="illustrations/5_4_fleuve_noeud.jpg" alt="ligne avec les noeuds visibles sous forme de carrés rouges" width="500" >
+							<img src="illustrations/5_4_fleuve_noeud.jpg" alt="ligne avec les sommets visibles sous forme de carrés rouges" width="500" >
 						</a>
 					</figure>
 					<p>Si vous survolez un sommet, il devient plus gros. Vous pouvez alors :</p>
