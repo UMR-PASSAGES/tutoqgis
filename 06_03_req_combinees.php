@@ -21,22 +21,22 @@
 			
 			<h3>Combiner deux requêtes attributaires<a class="headerlink" id="VI31" href="#VI31"></a></h3>
 			
-				<p>Pour combiner deux requêtes attributaires, nous avons vu dans la <a href="06_01_req_attrib.php#VI15" >partie VI.1.5</a> qu'il est possible d'utiliser les opérateurs AND et OR.</p>
+				<p>Pour combiner deux requêtes attributaires, nous avons vu dans le <a href="06_01_req_attrib.php#VI15" >chapitre sur les requêtes attributaires</a> qu'il est possible d'utiliser les opérateurs AND et OR.</p>
 				<p>Il est également possible de faire deux requêtes successives.</p>
 				<p>Nous allons ici sélectionner les communes du Morbihan de + de 10&nbsp;000 habitants.</p>
 				
 				<div class="manip">
-					<p>Ouvrez un nouveau projet QGIS, ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_Bretagne</a></em>.</p>
+					<p>Ouvrez un nouveau projet QGIS, ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_bretagne</a></em>.</p>
 					<p><img class="iconemid" src="illustrations/6_3_selection_attrib_icone.jpg" alt="icône de sélection attributaire" >Ouvrez la table attributaire de cette couche puis la fenêtre de requête attributaire.</p>
-					<p>Sélectionnez tout d'abord les communes de + de 10 000 habitants au moyen d'une requête attributaire :</p>
-					<p class="code">"POPULATION" > 10000</p>
+					<p>Sélectionnez tout d'abord les communes de + de 10&nbsp;000 habitants au moyen d'une requête attributaire :</p>
+					<p class="code">"population" > 10000</p>
 					<figure>
-						<a href="illustrations/6_3_sup10000hab.jpg" >
-							<img src="illustrations/6_3_sup10000hab.jpg" alt="Communes de + de 10 000 habitants sélectionnées" width="400" >
+						<a href="illustrations/6_1_popsup10000_res.jpg" >
+							<img src="illustrations/6_1_popsup10000_res.jpg" alt="Communes de + de 10 000 habitants sélectionnées" width="400" >
 						</a>
 					</figure>
 					<p>Tapez ensuite la requête suivante, pour sélectionner les communes du Morbihan...</p>
-					<p class="code">"INSEE_DEP" = '56' </p>
+					<p class="code">"code_insee_du_departement" = '56' </p>
 					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection courante</b> :</p>
 					<figure>
 					    <a href="illustrations/6_3_selection_liste.jpg" >

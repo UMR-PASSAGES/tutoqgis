@@ -24,17 +24,17 @@
 			<h3>Faire une requête spatiale simple<a class="headerlink" id="VI21" href="#VI21"></a></h3>
 			
 				<div class="manip">
-					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_Bretagne</a></em>.</p>
-					<p>En vous connectant au <a href="03_02_donnees_flux.php#III23">flux WFS</a> <b>https://geobretagne.fr/geoserver/dreal_b/wfs</b>, ajoutez également au projet la couche <em class="data">Eoliennes implantations en Bretagne</em>.</p>
-					<p class="note">Au cas où la connexion au flux échouerait, cette couche est également disponible dans le dossier <a href="donnees/TutoQGIS_06_Requetes.zip">TutoQGIS_06_Requetes</a>.</p>
+					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_bretagne</a></em>.</p>
+					<p>En vous connectant au <a href="03_02_donnees_flux.php#III23">flux WFS</a> <b>https://geobretagne.fr/geoserver/eolien_bretagne/wfs</b>, ajoutez également au projet la couche <em class="data">Eoliennes publiées par Géorisques</em>.</p>
+					<p class="note">Au cas où la connexion au flux échouerait, cette couche est également disponible dans le dossier <a href="donnees/TutoQGIS_06_Requetes.zip">TutoQGIS_06_Requetes</a> sous le nom <em class="data">aerogenerateurs_georisques_vgs.shp</em>.</p>
 					<figure>
                     	<a href="illustrations/6_2_eoliennes_bretagne.jpg" >
                     		<img src="illustrations/6_2_eoliennes_bretagne.jpg" alt="Eoliennes en Bretagne" width="500">
                     	</a>
                     </figure>
 				</div>
-				<p>Le but va être ici de sélectionner toutes les communes de Bretagne sur lesquelles sont implantées une ou plusieurs éoliennes.</p>
-				<p><b>Les données provenant d'un flux, il est possible que vos requêtes donnent des résultats légèrement différents de ceux présentés ici, si le flux a été mis à jour&nbsp;!</b></p>
+				<p>Le but va être ici de <b>sélectionner toutes les communes de Bretagne sur lesquelles sont implantées une ou plusieurs éoliennes</b>.</p>
+				<p class="note">Les données provenant d'un flux, il est possible que vos requêtes donnent des résultats légèrement différents de ceux présentés ici, si le flux a été mis à jour&nbsp;!</p>
 				
 			    <div class="manip">
     				<p>Si la boîte à outils de traitements n'est pas visible, activez-la en vous rendant dans le <b>menu Traitement &#8594; Boîte à outils</b>.</p>
@@ -47,7 +47,7 @@
                     <p>Dans la rubrique <b>Sélection dans un vecteur</b>, double-cliquez sur l'outil <b>Sélection par localisation</b> :</p>
                     <figure>
                     	<a href="illustrations/6_2_select_localisation_fenetre.jpg" >
-                    		<img src="illustrations/6_2_select_localisation_fenetre.jpg" alt="Fenêtre de l'outil de sélection par localisation" width="600">
+                    		<img src="illustrations/6_2_select_localisation_fenetre.jpg" alt="Fenêtre de l'outil de sélection par localisation" width="620">
                     	</a>
                     </figure>
                     <ul>
@@ -57,7 +57,7 @@
                         <li class="espace">Vérifiez que <b>Créer une nouvelle sélection</b> soit bien l'option choisie, afin de ne pas partir d'une sélection existante</li>
                         <li class="espace">Cliquez sur <b>Exécuter</b>, vous pouvez ensuite fermer la fenêtre.</li>
                     </ul>
-					<p>Vous devriez obtenir 256 communes sélectionnées (mais ce nombre peut varier légèrement si vous chargez les données via le flux WFS et qu'elles ont été mises à jour depuis la rédaction de ce tutoriel) :</p>
+					<p>Vous devriez obtenir 182 communes sélectionnées (mais ce nombre peut varier légèrement si vous chargez les données via le flux WFS et qu'elles ont été mises à jour depuis la rédaction de ce tutoriel) :</p>
 					<figure>
                     	<a href="illustrations/6_2_select_localisation_res.jpg" >
                     		<img src="illustrations/6_2_select_localisation_res.jpg" alt="Communes sélectionnées" width="450">
@@ -188,8 +188,9 @@
 				<h3>Quelques exemples<a class="headerlink" id="VI23" href="#VI23"></a></h3>
 					
 					<div class="manip">
-    					<p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">Cours d'eau de plus de 100km - BD Carthage - France entière</em>.</p>
-    					<p>Ajoutez également si ça n'est pas déjà fait la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">DEPARTEMENT</a></em>.</p>
+    					<p><a href="03_02_donnees_flux.php#III23">Toujours en utilisant le flux WFS</a> <b>https://geobretagne.fr/geoserver/eolien_bretagne/wfs</b>, ajoutez la couche <em class="data ">Parcs éoliens publiés par Géorisques</em>.</p>
+							<p class="note">Au cas où la connexion au flux échouerait, cette couche est également disponible dans le dossier <a href="donnees/TutoQGIS_06_Requetes.zip">TutoQGIS_06_Requetes</a> sous le nom <em class="data">parcs_eoliens_georisques_vgs.shp</em>.</p>
+    					<p>Ajoutez également si ça n'est pas déjà fait la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">departement</a></em>.</p>
     					<p>Votre projet doit donc contenir les 4 couche suivantes :</p>
     					<figure>
                         	<a href="illustrations/6_2_projet.jpg" >
@@ -201,29 +202,26 @@
     					<p class="note">Attention, le nombre d'entités sélectionnées peut varier légèrement si vous chargez des données via des flux WFS et que ces données ont été mises à jour depuis la rédaction de ce tutoriel.</p>
 						<div class="question">
 							<input type="checkbox" id="faq-2">
-							<p><label for="faq-2">Combien de communes bretonnes sont traversées par des cours d'eau de plus de 100 km&nbsp;?</label></p>
-							<p class="reponse">Sélection des communes qui intersectent les cours d'eau : <b>447 communes sélectionnées</b>.</p>
-                            <p class="reponse"><img src="illustrations/6_2_communes_inters_coursdeau.jpg" alt="Communes intersectant les cours d'eau" width="400"></p>
+							<p><label for="faq-2">Combien de communes bretonnes ont des parcs éoliens sur leur territoire&nbsp;?</label></p>
+							<p class="reponse">Sélection des communes qui intersectent les parcs éoliens : <b>250 communes sélectionnées</b>.</p>
 						</div>
 						<div class="question">
 							<input type="checkbox" id="faq-3">
-							<p><label for="faq-3">Combien de cours d'eau de plus de 100 km traversent la Bretagne ?</label></p>
-							<p class="reponse">Sélection des cours d'eau qui intersectent les communes (ou les départements bretons préalablement sélectionnés) : <b>68 cours d'eau sélectionnés</b>.</p>
-							<p class="reponse"><img src="illustrations/6_2_coursdeau_inters_communes.jpg" alt="Cours d'eau de intersectant les communes" width="400"></p>
+							<p><label for="faq-3">Combien d'éoliennes se trouvent hors de Bretagne ?</label></p>
+							<p class="reponse">Sélection des éoliennes disjointes des communes : <b>29 éoliennes sélectionnés</b>.</p>
+							<p class="reponse"><img class="icone" src="illustrations/6_2_inverser_selection_icone.jpg" alt="icône inverser la sélection" >Vous pouvez aussi partir des éoliennes intersectant les communes, et <b>inverser la sélection</b> avec le bouton correspondant en haut de la table attributaire des communes.</p>
 						</div>
 						<div class="question">
 							<input type="checkbox" id="faq-4">
 							<p><label for="faq-4">Combien de communes ne contiennent pas d'éoliennes ?</label></p>
-							<p class="reponse">Sélection des communes disjointes des éoliennes : <b>952 communes sélectionnées</b></p>
-							<p class="reponse"><img class="icone" src="illustrations/6_2_inverser_selection_icone.jpg" alt="icône inverser la sélection" >Vous pouvez aussi repartir des communes contenant des éoliennes, et <b>inverser la sélection</b> avec le bouton correspondant en haut de la table attributaire des communes.</p>
-							<p class="reponse"><img src="illustrations/6_2_communes_disjoint_eoliennes.jpg" alt="Communes sans éoliennes" width="400"></p>
+							<p class="reponse">Sélection des communes disjointes des éoliennes : <b>1020 communes sélectionnées</b></p>
+							<p class="reponse"><img class="icone" src="illustrations/6_2_inverser_selection_icone.jpg" alt="icône inverser la sélection" >Vous pouvez aussi partir des communes contenant des éoliennes, et <b>inverser la sélection</b> avec le bouton correspondant en haut de la table attributaire des communes.</p>
 						</div>
 						<div class="question">
 							<input type="checkbox" id="faq-5">
 							<p><label for="faq-5">Combien le département du Finistère contient-il d'éoliennes ?</label></p>
-							<p class="reponse">Il faut procéder en 2 étapes : 1/ sélectionner &#171; à la main &#187; le département du Finistère 2/ utiliser l'outil de sélection par localisation pour sélectionner les éoliennes à l'intérieur des départements, en cochant la case <b>Entités sélectionnées uniquement</b>.</p>
-							<p class="reponse"><img src="illustrations/6_2_eoliennes_finistere.jpg" alt="Eoliennes du Finistère" width="400"></p>
-							<p class="reponse">Au final, on trouve <b>656 éoliennes sélectionnées</b>.</p>
+							<p class="reponse">Il faut procéder en 2 étapes : 1/ sélectionner &#171; à la main &#187; le département du Finistère en cliquant dessus à partir de la couche <b>departement</b> 2/ utiliser l'outil de sélection par localisation pour sélectionner les éoliennes à l'intérieur des départements, en cochant la case <b>Entités sélectionnées uniquement</b>.</p>
+							<p class="reponse">Au final, on trouve <b>155 éoliennes sélectionnées</b>.</p>
 						</div>
 					</div>
 						
