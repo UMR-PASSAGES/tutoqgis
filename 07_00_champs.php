@@ -11,7 +11,7 @@
 		
 			<h1>VII.  Créer, supprimer, renommer et calculer des champs</h1>
 			
-			<p>Dans les parties <a href="05_01_creation_couche.php" >V.1</a> et <a href="05_03_donnees_attrib.php" >V.3</a>, nous avons vu comment choisir les champs qui seront ajoutés à une couche lors de sa création, et comment remplir des champs case par case.</p>
+			<p>Dans les parties <a href="05_01_creation_couche.php" >Numérisation - création d'une couche vide</a> et <a href="05_03_donnees_attrib.php" >Numérisation - données attributaires</a>, nous avons vu comment choisir les champs qui seront ajoutés à une couche lors de sa création, et comment remplir des champs case par case.</p>
 			<p>Nous allons voir ici comment <b>ajouter, supprimer et renommer et changer l'ordre des champs</b> pour une couche existante, et comment <b>calculer automatiquement des valeurs dans un champ</b>.</p>
 			
 			<p>Notions abordées :</p>

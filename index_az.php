@@ -542,6 +542,7 @@
 									<li class="index_03"><a href="04_04_parametrage.php#IV41b">Thin Plate Spline TPS</a></li>
 								</ul>
 							</li>
+							<li class="index_02"><a href="03_02_donnees_flux.php#III25">Tuiles vectorielles</a></li>
 							<li class="index_02"><a href="07_01_creation_suppression.php#VII12">Type de champ</a></li>
 						</ul>
 					</li>
@@ -564,7 +565,9 @@
 					
 					<li class="index_01" id="W">W
 						<ul>
+							<li class="index_02"><a href="03_02_donnees_flux.php#III23">WFS</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II21b">WGS84 (SCR)</a></li>
+							<li class="index_02"><a href="03_02_donnees_flux.php#III22">WMS/WMTS</a></li>
 						</ul>
 					</li>
 					

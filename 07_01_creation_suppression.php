@@ -28,7 +28,7 @@
 			<h3>Quels sont les champs présents dans une table&nbsp;?<a class="headerlink" id="VII11" href="#VII11"></a></h3>
 			
 				<div class="manip">
-					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>.</p>
+					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_bretagne_calcul</a></em> (dossier <b>TutoQGIS_07_Champs</b>).</p>
 					<p>Pour voir les champs de la table attributaire de cette couche, vous pouvez bien sûr ouvrir la table attributaire, mais vous pouvez également ouvrir les propriétés de la couche, rubrique <b>Champs</b> :</p>
 					<figure>
 						<a href="illustrations/7_1_proprietes_champs.jpg" >
@@ -44,10 +44,10 @@
 			
 			    <h4>Créer un champ<a class="headerlink" id="VII12a" href="#VII12a"></a></h4>
 			
-    				<p>Nous allons ajouter un champs à la couche <em class="data">communes_Bretagne_calcul</em>, nommé <b>NOM_DEPT</b>, destiné à contenir le nom du département de la commune.</p>
+    				<p>Nous allons ajouter un champs à la couche <em class="data">communes_bretagne_calcul</em>, nommé <b>NOM_DEPT</b>, destiné à contenir le nom du département de la commune.</p>
     				
     				<div class="manip">
-    					<p>Ouvrez la table attributaire de la couche <em class="data">communes_Bretagne_calcul</em>.</p>
+    					<p>Ouvrez la table attributaire de la couche <em class="data">communes_bretagne_calcul</em>.</p>
     					<p><img class="icone" src="illustrations/7_1_edition_icone.jpg" alt="icône passer en mode édition" ><a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
     					<p>Cliquez sur l'icône <b>Ajouter un champ</b> en haut de la table attributaire :</p>
     					<figure>
@@ -60,9 +60,8 @@
     						</a>
     					</figure>
     					<ul>
-    						<li class="espace"><b>Nom :</b> Tapez <b>NOM_DEPT</b></li>
-    						<li class="espace"><b>Commentaire :</b> ce champ peut contenir un commentaire, laissez-le vide</li>
-    						<li class="espace"><b>Type :</b> ce champ peut contenir les valeurs suivantes : texte, nombre entier, nombre décimal et date. Choisissez texte puisque nous voulons y mettre les noms des départements</li>
+    						<li class="espace"><b>Nom :</b> Tapez <b>nom_dept</b></li>
+    						<li class="espace"><b>Type :</b> choisissez texte puisque nous voulons y mettre les noms des départements</li>
     						<li class="espace"><b>Longueur :</b> Dans le cas d'un champ type texte, cette valeur représente le nombre maximum de caractères que pourra contenir le champ. Tapez 50, ce qui devrait suffire.</li>
     					</ul>
     					<p>Cliquez sur <b>OK</b> ; le champ est ajouté à la table, rempli pour l'instant de valeurs nulles.</p>
@@ -78,20 +77,15 @@
 			     
 			         <p>Il est maintenant possible de taper du texte pour remplir le champ NOM_DEPT que nous venons de créer.</p>
 			         <div class="manip">
-			             <p><img class="icone" src="illustrations/7_1_edition_icone.jpg" alt="icône passer en mode édition" >Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
+			             <p><img class="icone" src="illustrations/7_1_edition_icone.jpg" alt="icône passer en mode édition" >Passez à nouveau en mode édition pour la couche <em class="data">communes_bretagne_calcul</em>.</p>
 			             <p>Ouvrez sa table attributaire si ce n'est pas déjà fait.</p>
-			             <p>Double-cliquez dans une case du champ <b>NOM_DEPT</b> :</p>
+			             <p>Double-cliquez dans une case du champ <b>nom_dept</b> :</p>
 			             <figure>
     						<a href="illustrations/7_1_table_modifier.jpg" >
-    							<img src="illustrations/7_1_table_modifier.jpg" alt="double clic dans une case du champ CODE_DEPT vide" width="520" >
+    							<img src="illustrations/7_1_table_modifier.jpg" alt="double clic dans une case du champ CODE_DEPT vide" width="100" >
     						</a>
     					 </figure>
-    					 <p>Et tapez-y la valeur correspondante (en vous aidant du champ INSEE_DEP qui contient le <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais#Liste_des_d%C3%A9partements">code du département</a>), terminez en appuyant sur la touche entrée&nbsp;:</p>
-    					 <figure>
-    						<a href="illustrations/7_1_table_modifier_ok.jpg" >
-    							<img src="illustrations/7_1_table_modifier_ok.jpg" alt="double clic dans une case du champ CODE_DEPT vide" width="100" >
-    						</a>
-    					 </figure>
+    					 <p>Et tapez-y la valeur correspondante (en vous aidant du champ <em>code_insee_du_departement</em> qui contient le <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Liste_des_d%C3%A9partements_fran%C3%A7ais#Liste_des_d%C3%A9partements">code du département</a>), terminez en appuyant sur la touche entrée&nbsp;:</p>
     					 <p>Vous pouvez tapez ainsi quelques valeurs.</p>
 			         </div>
 			         
@@ -104,10 +98,10 @@
 			     
 			     <h4>Supprimer un champ existant<a class="headerlink" id="VII12c" href="#VII12c"></a></h4>
 			
-    				<p>Nous allons <b>supprimer le champ NOM_DEPT</b> que vous venez de créer (nous créerons un autre champ NOM_DEPT dans le <a href="07_02_calculer.php">chapitre suivant</a> que nous remplirons automatiquement).</p>
+    				<p>Nous allons <b>supprimer le champ nom_dept</b> que vous venez de créer (nous créerons un autre champ nom_dept dans le <a href="07_02_calculer.php">chapitre suivant</a> que nous remplirons automatiquement).</p>
     				
     				<div class="manip">
-    					<p>Passez à nouveau en mode édition pour la couche <em class="data">communes_Bretagne_calcul</em>.</p>
+    					<p>Passez à nouveau en mode édition pour la couche <em class="data">communes_bretagne_calcul</em>.</p>
     					<p>Cliquez sur l'icône <b>Supprimer la colonne</b> en haut de la table attributaire :</p>
     					<figure>
     						<img src="illustrations/7_1_BO_table_suppression.jpg" alt="barre d'outils de la table attributaire, icône de suppression de champ entourée en rouge" width="600" >
@@ -115,10 +109,10 @@
     					<p>La fenêtre suivante apparaît :</p>
     					<figure>
     						<a href="illustrations/7_1_suppression_fenetre.jpg" >
-    							<img src="illustrations/7_1_suppression_fenetre.jpg" alt="fenêtre de suppression de colonne" width="240" >
+    							<img src="illustrations/7_1_suppression_fenetre.jpg" alt="fenêtre de suppression de colonne" width="260" >
     						</a>
     					</figure>
-    					<p>Sélectionnez le champ <b>NOM_DEPT</b> puis cliquez sur <b>OK</b>.</p>
+    					<p>Sélectionnez le champ <b>nom_dept</b> puis cliquez sur <b>OK</b>.</p>
     					<p class="note">Notez qu'il est possible de sélectionner plusieurs champs dans cette fenêtre.</p>
     					<p>Le champ est supprimé. Quittez le mode édition en enregistrant les modifications.</p>
     				</div>

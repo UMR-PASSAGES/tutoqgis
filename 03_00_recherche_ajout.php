@@ -14,7 +14,8 @@
 			<p>Notions abordées :</p>
 				<ul>
 					<li>télécharger des données sur internet</li>
-					<li>flux WMS et WFS</li>
+					<li>flux WMS, WMTS et WFS</li>
+					<li>tuiles vectorielles</li>
 					<li>données XY</li>
 					<li>fonds de carte en ligne (tuiles raster)</li>
 					<li>données OpenStreetMap</li>

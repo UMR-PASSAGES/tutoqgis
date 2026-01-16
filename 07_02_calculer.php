@@ -33,7 +33,7 @@
 			<h3>Comment fonctionne la calculatrice de champ ?<a class="headerlink" id="VII21" href="#VII21"></a></h3>
 			
 				<div class="manip">
-					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>. Ouvrez sa table attributaire.</p>
+					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_bretagne_calcul</a></em>. Ouvrez sa table attributaire.</p>
 					<p>Passez en <a href="05_02_points.php#V21">mode édition</a>. Cliquez sur l'icône <b>Ouvrir la calculatrice de champs</b> parmi les icônes de la table attributaire :</p>
 					<figure>
 						<img src="illustrations/7_2_BO_table_calc.jpg" alt="barre d'outils de la table attributaire, avec icône de la calculatrice de champs entourée en rouge" width="600" >
@@ -52,7 +52,7 @@
 				<p><em class="numero">4</em> : Expression servant à calculer les valeurs du champ.</p>
 				<p><em class="numero">5</em> : Les opérateurs les plus couramment utilisés.</p>
 				<p><em class="numero">6</em> : Liste des opérateurs et fonctions disponibles pour le calcul de champ.</p>
-				<p><em class="numero">7</em> : Si un opérateur ou une fonction est choisi en 6, l'aide correspondante apparaît dans cette partie.</p>
+				<p><em class="numero">7</em> : Si un opérateur ou une fonction est choisi en 6, l'aide correspondante apparaît dans cette partie. Si un champ est choisi en 6, vous pourrez y voir les valeurs uniques de ce champ.</p>
 				<p><em class="numero">8</em> : Ici, une fois l'expression remplie, vous pourrez voir un aperçu du résultat du calcul pour l'entité choisie.</p>
 				<p>L'onglet <b>Editeur de fonction</b>, derrière l'onglet <b>Expression</b>, permet le calcul de champs à l'aide du langage Python : cette possibilité ne sera pas abordée ici.</p>
 				<p>Comme vous pouvez le constater, le mode de fonctionnement de la calculatrice de champ est assez similaire à celui d'une <a href="06_01_req_attrib.php">requête attributaire</a>. </p>
@@ -72,7 +72,7 @@
 						</figure>
 						<ul>
 							<li class="espace">Choisissez <b>Créer un nouveau champ</b></li>
-							<li class="espace">Nommez le <b>SURF_KM2</b></li>
+							<li class="espace">Nommez le <b>surf_km2</b></li>
 							<li class="espace">Choisissez le type <b>Nombre décimal</b>. Contrairement au shapefile, avec le format GeoPackage les valeurs sont toujours stockées &#171; telles quelles &#187; et il n'est donc pas possible de définir une longueur (nombre total de chiffres) ou une précision (nombre de chiffres après la virgule)</li>
 							<li class="espace">Dans la liste des fonctions, dans la rubrique <b>Géométrie</b>, double-cliquez sur la fonction <b>$area</b> puis rajoutez à la main dans la case expression <b>/ 1000000</b> (par défaut, la surface est calculée en unités de la couche, donc en m² puisque cette couche est projetée en Lambert 93)</li>
 							<li class="espace">Au final, l'expression est donc <b>$area / 1000000</b></li>
@@ -80,17 +80,17 @@
 						</ul>
 					</div>
 					<p class="note">Avez-vous noté qu'il est possible de créer des <b>champs virtuels</b> (case à cocher en haut à gauche sous &#171;&nbsp;créer un nouveau champ&#187;&nbsp;) ? Ces champs ne sont pas permanents et ne seront pas sauvegardés (il est donc possible d'en créer sans passer en mode édition).</p>
-					<p class="note">Si un champ virtuel est utilisé pour calculer par exemple une surface, et si les polygones sont modifiés, <b>la surface sera automatiquement mise à jour</b>. </p>
+					<p class="note">Si un champ virtuel est utilisé pour calculer par exemple une surface, et si les polygones sont modifiés, <b>la surface sera automatiquement mise à jour</b> (ce ne sera pas le cas avec un champ non virtuel).</p>
 						
 				<h4>Vérification<a class="headerlink" id="VII22b" href="#VII22b"></a></h4>
 					
-					<p>Parfois, il peut arriver de se mélanger dans les unités... Il peut être utile de vérifier les calculs de géométrie. Nous allons voir 2 méthodes pour le faire&nbsp;; cela vous indique aussi comment connaître par exemple la surface d'un polygone donné sans forcément créer et calculer un champ.</p>
+					<p>Parfois, il peut arriver de se mélanger dans les unités... Il peut donc être utile de vérifier les calculs de géométrie. Nous allons voir 2 méthodes pour le faire&nbsp;; cela vous indique aussi comment connaître par exemple la surface d'un polygone donné sans forcément créer et calculer un champ.</p>
 					<p>La première méthode consiste à <b>mesurer &#171;&nbsp;à la main&nbsp;&#187; la surface d'une commune et à comparer le résultat avec celui du champ SURF_KM2</b>.</p>
 					<div class="manip">
 						<p><img class="iconemid" src="illustrations/7_2_mesure_icone.jpg" alt="icône mesurer une aire" >Vous pouvez vérifier votre calcul au moyen de l'outil <b>Mesurer une aire</b> : </p>
 						<figure>
 						  <a href="illustrations/7_2_aire_selection.jpg" >
-							<img src="illustrations/7_2_aire_selection.jpg" alt="Sélection de l'outil mesurer une aire dans la liste" width="280" >
+							<img src="illustrations/7_2_aire_selection.jpg" alt="Sélection de l'outil mesurer une aire dans la liste" width="500" >
 						  </a>
 						</figure>
 						<p>Sélectionnez une commune, mesurez son aire en faisant un clic droit sur le dernier sommet pour terminer, choisissez dans la table l'option <b>Ne montrer que les entités sélectionnées</b> et comparer l'aire que vous avez mesuré et l'aire du champ SURF_KM2.</p>
@@ -133,16 +133,16 @@
 					</div>
 					
 					<div class="manip">
-						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche  <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em>. Ouvrez la calculatrice de champs :</p>
+						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche  <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_bretagne_calcul</a></em>. Ouvrez la calculatrice de champs :</p>
 						<figure>
 							<a href="illustrations/7_2_calc_densite.jpg" >
 								<img src="illustrations/7_2_calc_densite.jpg" alt="Fenêtre de la calculatrice de champ, calcul de la densité" width="600" >
 							</a>
 						</figure>
 						<ul>
-							<li class="espace">Choisissez l'option <b>Créer un nouveau champ</b>, nommez-le <b>DENSITE</b>, type <b>Nombre décimal</b></li>
-							<li class="espace">Dans la liste des <b>fonctions</b>, rubrique <b>Champs et valeurs</b>, double-cliquez sur <b>POPULATION</b>, le diviseur <b>/</b> puis double-cliquez sur le champ <b>SURF_KM2</b></li>
-							<li class="espace">Au final, l'expression est <b> "POPULATION" / "SURF_KM2" </b></li>
+							<li class="espace">Choisissez l'option <b>Créer un nouveau champ</b>, nommez-le <b>densite</b>, type <b>Nombre décimal</b></li>
+							<li class="espace">Dans la liste des <b>fonctions</b>, rubrique <b>Champs et valeurs</b>, double-cliquez sur <b>population</b>, le diviseur <b>/</b> puis double-cliquez sur le champ <b>surf_km2</b></li>
+							<li class="espace">Au final, l'expression est <b> "population" / "surf_km2" </b></li>
 							<li class="espace">Cliquez sur <b>OK</b> : le champ densité est ajouté et calculé, en nombre d'habitants par km&#178; :</li>
 						</ul>
 						<figure>
@@ -154,11 +154,11 @@
 					
 				<h4>Opérations sur du texte : extraction<a class="headerlink" id="VII23b" href="#VII23b"></a></h4>
 				
-					<p>La couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_Bretagne_calcul</a></em> comporte une colonne INSEE_COM avec le code INSEE des communes. Ce code INSEE est constitué du code du département (2 chiffres pour la Bretagne) et du code commune (3 chiffres).</p>
+					<p>La couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_bretagne_calcul</a></em> comporte une colonne <em>code_insee</em> avec le code INSEE des communes. Ce code INSEE est constitué du code du département (2 chiffres pour la Bretagne) et du code commune (3 chiffres). Il s'agit d'un champ de type texte (la Corse a pour codes de département 2A et 2B).</p>
 					<p>Le but est ici d'<b>extraire le code commune</b> du code INSEE, donc les 3 derniers chiffres de ce dernier. Par exemple, la commune de Dirinon a comme code INSEE 29045 : le nouveau champ CODE_COM aura la valeur 045 pour cette commune.</p>
 				
 					<div class="manip">
-						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche <em class="data">communes_Bretagne</em>. Ouvrez la calculatrice de champs :</p>
+						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche <em class="data">communes_bretagne_calcul</em>. Ouvrez la calculatrice de champs :</p>
 						<figure>
 							<a href="illustrations/7_2_calcul_fenetre_right.jpg" >
 								<img src="illustrations/7_2_calcul_fenetre_right.jpg" alt="Calculatrice de champ : calcul du code commune à partir du code INSEE avec la fonction right" width="600" >
@@ -167,11 +167,11 @@
 						<ul>
 							<li class="espace">Vérifiez que la case <b>Ne mettre à jour que les x entités sélectionnées</b> soit décochée, puisque le but est de mettre à jour toutes les lignes de la table</li>
 							<li class="espace">Choisissez <b>Créer un nouveau champ</b></li>
-							<li class="espace">Nommez-le <b>CODE_COM</b>, type <b>Texte</b>, longueur <b>3</b></li>
-							<li class="espace">Dans la liste des fonctions, allez dans la rubrique <b>Chaîne</b> (texte) et cliquez sur la fonction <b>right</b> : vous pouvez lire l'aide à droite. Cette fonction extrait les caractères les plus à droite d'un texte.</li>
-							<li class="espace">La fonction right nécessite deux paramètres : le texte d'où seront extraits les caractères (ici, le champ <b>INSEE_COM</b>) et le nombre de caractères à extraire (ici, <b>3</b> puisque le code commune codé sur 3 caractères)</li>
-							<li class="espace">L'expression est donc <b>right( "INSEE_COM", 3)</b></li>
-							<li class="espace">Cliquez sur <b>OK</b> : le champ CODE_COM est créé et mis à jour :</li>
+							<li class="espace">Nommez-le <b>code_commune</b>, type <b>Texte</b>, longueur <b>3</b></li>
+							<li class="espace">Dans la liste des fonctions, allez dans la rubrique <b>Chaîne de caractères</b> (texte) et cliquez sur la fonction <b>right</b> : vous pouvez lire l'aide à droite. Cette fonction extrait les caractères les plus à droite d'un texte.</li>
+							<li class="espace">La fonction right nécessite deux paramètres : le texte d'où seront extraits les caractères (ici, le champ <b>code_insee</b>) et le nombre de caractères à extraire (ici, <b>3</b> puisque le code commune est codé sur 3 caractères)</li>
+							<li class="espace">L'expression est donc <b>right( "code_insee", 3)</b></li>
+							<li class="espace">Cliquez sur <b>OK</b> : le champ code_commune est créé et mis à jour :</li>
 						</ul>
 						<figure>
 						  <a href="illustrations/7_2_table_codeinsee.jpg" >
@@ -188,11 +188,11 @@
 				    
 				    <div class="manip">
 				        <p>Comme d'habitude, ouvrez la calculatrice de champs.</p>
-				        <p>Nous allons créer un nouveau champ nommé <b>NOM_DEP</b> de type <b>texte</b> et de longueur maximale <b>50</b>.</p>
+				        <p>Nous allons créer un nouveau champ nommé <b>nom_dept</b> de type <b>texte</b> et de longueur maximale <b>50</b>.</p>
 				        <p>Dans la rubrique <b>Conditions</b> de la liste des opérateurs, cliquez sur <b>CASE</b> et lisez l'aide associée à cette fonction dans la partie droite de la fenêtre.</p>
 				        <figure>
 						  <a href="illustrations/7_2_aide_case.jpg" >
-							<img src="illustrations/7_2_aide_case.jpg" alt="CASE et la rubrique d'aide associée" width="500" >
+							<img src="illustrations/7_2_aide_case.jpg" alt="CASE et la rubrique d'aide associée" width="600" >
 						  </a>
 						</figure>
 						<p>Cette fonction commence par <b>CASE</b> et se termine par <b>END</b>. Entre les deux, on trouve une série de clauses avec les 2 mots-clés <b>WHEN</b>, pour définir un critère, et <b>THEN</b>, pour définir comment sera calculée la valeur si le critère est rempli. Nous n'utiliserons pas <b>ELSE</b> ici.</p>
@@ -202,23 +202,23 @@
                     		<p class="reponse">Nous devrons écrire 4 clauses différentes, une pour chaque département.</p>
                     	</div>
                     	<p>Pour le département du Finistère, nous écrirons par exemple</p>
-                    	<p class="code">WHEN "INSEE_DEP" = '29' THEN 'Finistère'</p>
+                    	<p class="code">WHEN "code_insee_du_departement" = '29' THEN 'Finistère'</p>
                     	<div class="question">
                     		<input type="checkbox" id="faq-3">
                     		<p><label for="faq-3">Pouvez-vous écrire dans son entier l'expression utilisée pour écrire le nom du département en fonction de son code&nbsp;?</label></p>
-                    		<p class="reponse">CASE<br>WHEN  "INSEE_DEP" = '29' THEN 'Finistère'<br>WHEN  "INSEE_DEP" = '22' THEN 'Côtes-d''Armor'<br>WHEN  "INSEE_DEP" = '35' THEN 'Ille-et-Vilaine'<br>WHEN  "INSEE_DEP" = '56' THEN 'Morbihan'<br>END</p>
+                    		<p class="reponse">CASE<br>WHEN "code_insee_du_departement" = '29' THEN 'Finistère'<br>WHEN "code_insee_du_departement" = '22' THEN 'Côtes-d''Armor'<br>WHEN "code_insee_du_departement" = '35' THEN 'Ille-et-Vilaine'<br>WHEN "code_insee_du_departement" = '56' THEN 'Morbihan'<br>END</p>
                             <p class="reponse">Attention, il y a un piège&nbsp;! Pour que l'apostrophe de &#171; Côtes-d'Armor &#187; ne soit pas considérée comme celle de fin de la chaîne de caractères, il faut utiliser une double apostrophe&nbsp;: 'Côtes-d<b>''</b>Armor'.</p>
                     	</div>
                     	<p>Au final, la calculatrice doit être paramétrée comme suit :</p>
                     	<figure>
 						  <a href="illustrations/7_2_calc_case.jpg" >
-							<img src="illustrations/7_2_calc_case.jpg" alt="calculatrice de champ avec une expression utilisant CASE" width="600" >
+							<img src="illustrations/7_2_calc_case.jpg" alt="calculatrice de champ avec une expression utilisant CASE" width="620" >
 						  </a>
 						</figure>
 						<p>Et le résultat :</p>
 						<figure>
 						  <a href="illustrations/7_2_table_nomdep.jpg" >
-							<img src="illustrations/7_2_table_nomdep.jpg" alt="Extrait de la table avec le code et le nom du département" width="200" >
+							<img src="illustrations/7_2_table_nomdep.jpg" alt="Extrait de la table avec le code et le nom du département" width="340" >
 						  </a>
 						</figure>
 
