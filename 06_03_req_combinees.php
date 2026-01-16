@@ -28,16 +28,14 @@
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS, ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_bretagne</a></em>.</p>
 					<p><img class="iconemid" src="illustrations/6_3_selection_attrib_icone.jpg" alt="icône de sélection attributaire" >Ouvrez la table attributaire de cette couche puis la fenêtre de requête attributaire.</p>
-					<p>Sélectionnez tout d'abord les communes de + de 10&nbsp;000 habitants au moyen d'une requête attributaire :</p>
-					<p class="code">"population" > 10000</p>
+					<p>Sélectionnez tout d'abord les communes de + de 10&nbsp;000 habitants au moyen d'une requête attributaire : <b>"population" > 10000</b></p>
 					<figure>
 						<a href="illustrations/6_1_popsup10000_res.jpg" >
 							<img src="illustrations/6_1_popsup10000_res.jpg" alt="Communes de + de 10 000 habitants sélectionnées" width="400" >
 						</a>
 					</figure>
-					<p>Tapez ensuite la requête suivante, pour sélectionner les communes du Morbihan...</p>
-					<p class="code">"code_insee_du_departement" = '56' </p>
-					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection courante</b> :</p>
+					<p>Tapez ensuite la requête suivante, pour sélectionner les communes du Morbihan : <b>"code_insee_du_departement" = '56'</b>...</p>
+					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection actuelle</b> :</p>
 					<figure>
 					    <a href="illustrations/6_3_selection_liste.jpg" >
 						    <img src="illustrations/6_3_selection_liste.jpg" alt="liste accessible à partir du bouton sélection" width="600" >
@@ -48,31 +46,40 @@
 						<a href="illustrations/6_3_sup10000hab_morbihan.jpg" >
 							<img src="illustrations/6_3_sup10000hab_morbihan.jpg" alt="Communes de + de 10 000 habitants du département du Morbihan sélectionnées" width="400" >
 						</a>
+						<figcaption>Communes du Morbihan de + de 10&nbsp;000 habitants : 10 communes sélectionnées</figcaption>
 					</figure>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">Pouvez-vous au moyen des mêmes 2 requêtes ("POPULATION" > 10000 et "INSEE_DEP" = '56') sélectionner les communes bretonnes de + de 10 000 habitants qui ne sont pas dans le département du Morbihan ?</label></p>
-						<p class="reponse">Utilisez cette fois pour la deuxième requête le bouton <b>Supprimer de la sélection actuelle</b> : les communes du Morbihan seront désélectionnées et il ne restera de sélectionnées que les communes de + de 10 000 des autres départements.</p>
+						<p><label for="faq-1">Pouvez-vous au moyen des mêmes 2 requêtes (<em>"population" > 10000</em> et <em>"code_insee_du_departement" = '56'</em>) sélectionner les communes bretonnes de + de 10 000 habitants qui ne sont pas dans le département du Morbihan ?</label></p>
+						<p class="reponse">Utilisez cette fois pour la deuxième requête le bouton <b>Supprimer de la sélection actuelle</b> : les communes du Morbihan seront désélectionnées et il ne restera de sélectionnées que les communes de + de 10 000 des autres départements (soit 30 communes).</p>
 					</div>
 				</div>
 			
 			
-			
 			<h3>Combiner deux requêtes spatiales<a class="headerlink" id="VI32" href="#VI32"></a></h3>
 			
-				<p>Comment faire maintenant pour combiner deux requêtes spatiales, par exemple pour sélectionner les communes avec éolienne et cours d'eau&nbsp;?</p>
+				<p>Comment faire maintenant pour combiner deux requêtes spatiales, par exemple pour sélectionner les communes avec éolienne et sommet&nbsp;?</p>
 				<p>Attention, le nombre d'entités sélectionnées peut varier légèrement par rapport à ceux indiqués ici si vous chargez des données via des flux WFS et que ces données ont été mises à jour depuis la rédaction de ce tutoriel.</p>
 				
 				<div class="manip">
-				    <p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>http://services.sandre.eaufrance.fr/geo/zonage</b> et ajoutez la couche <em class="data ">Cours d'eau de plus de 100km - BD Carthage - France entière</em>.</p>
-					<p>Ajoutez également au projet la couche <em class="data">Eoliennes implantations en Bretagne</em> issue du flux WFS <b>https://geobretagne.fr/geoserver/dreal_b/wfs</b>.</p>
+				  <p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>https://geobretagne.fr/geoserver/eolien_bretagne/wfs</b> et ajoutez la couche <em class="data ">Eoliennes publiées par Géorisques</em>.</p>
+				  <p>De même, connectez-vous au flux WFS IGN <b>https://data.geopf.fr/annexes/ressources/wfs/cartovecto.xml</b> et ajoutez la couche <em class="data ">BD CARTO® detail_hydrographique</em>.</p>
+				  <p class="note">Ces 2 couches sont également disponibles en <a href="donnees/TutoQGIS_06_Requetes.zip" >téléchargement</a> sous les noms <b>aerogenerateurs_georisques_vgs.shp</b> et <b>BDCARTO_sommets.gpkg</b>.</p>
 					<p>A ce stade, votre projet contient donc ces 3 couches :</p>
 					<figure>
 						<a href="illustrations/6_3_couches_chargees.jpg" >
-							<img src="illustrations/6_3_couches_chargees.jpg" alt="projet QGIS avec les 3 couches communes, éoliennes et cours d'eau" width="570" >
+							<img src="illustrations/6_3_couches_chargees.jpg" alt="projet QGIS avec les 3 couches communes, éoliennes et détail_orographique" width="600" >
 						</a>
 					</figure>
-					<p>Avec l'<a href="06_02_req_spatiales.php#VI21">outil de sélection par localisation</a>, sélectionnez tout d'abord les communes avec éoliennes.</p>
+					<p>Pour commencer, nous allons filtrer la couche <em class="data ">BD CARTO® detail_hydrographique</em> pour ne garder que les sommets : <b>clic droit sur la couche &#8594; Filtrer...</b>, tapez la requête suivante : <b>"nature" = 'Sommet'</b>.</p>
+					<figure>
+						<a href="illustrations/6_3_eoliennes_sommets.jpg" >
+							<img src="illustrations/6_3_eoliennes_sommets.jpg" alt="Idem que juste au-dessus mais la couche de détails orographiques a été filtrée pour n'afficher que les sommets" width="400" >
+						</a>
+						<figcaption>Éoliennes en noir, sommets en rouge.</figcaption>
+					</figure>
+					
+					<p>Avec <a href="06_02_req_spatiales.php#VI21">l'outil de sélection par localisation</a>, sélectionnez tout d'abord les communes avec éoliennes.</p>
 					<figure>
 						<a href="illustrations/6_2_select_localisation_fenetre.jpg" >
 							<img src="illustrations/6_2_select_localisation_fenetre.jpg" alt="Fenêtre de l'outil de sélection par localisation" width="600" >
@@ -83,21 +90,21 @@
 							<img src="illustrations/6_3_communes_eoliennes.jpg" alt="communes avec éoliennes sélectionnées" width="500" >
 						</a>
 					</figure>
-					<p>A ce stade, 256 communes sont sélectionnées.</p>
-					<p>Il ne reste plus ensuite qu'à sélectionner les communes intersectant des cours d'eau <b>à partir de cette sélection</b> :</p>
+					<p>A ce stade, 182 communes sont sélectionnées.</p>
+					<p>Il ne reste plus ensuite qu'à sélectionner les communes intersectant des sommets <b>à partir de cette sélection</b>, en utilisant l'option <b>Sélectionner parmi la sélection actuelle</b> en bas de la fenêtre :</p>
 					<figure>
-						<a href="illustrations/6_3_communes_eoliennes_coursdeau_fenetre.jpg" >
-							<img src="illustrations/6_3_communes_eoliennes_coursdeau_fenetre.jpg" alt="Fenêtre de l'outil de sélection par localisation" width="600" >
+						<a href="illustrations/6_3_communes_eoliennes_sommets_fenetre.jpg" >
+							<img src="illustrations/6_3_communes_eoliennes_sommets_fenetre.jpg" alt="Fenêtre de l'outil de sélection par localisation" width="600" >
 						</a>
 					</figure>
 					<figure>
-						<a href="illustrations/6_3_communes_eoliennes_coursdeau.jpg" >
-							<img src="illustrations/6_3_communes_eoliennes_coursdeau.jpg" alt="communes avec éoliennes et cours d'eau sélectionnées" width="500" >
+						<a href="illustrations/6_3_communes_eoliennes_sommets.jpg" >
+							<img src="illustrations/6_3_communes_eoliennes_sommets.jpg" alt="communes avec éoliennes et sommets sélectionnées" width="500" >
 						</a>
 					</figure>
-					<p>Au final, 109 communes contiennent à la fois une éolienne et sont traversées par un cours d'eau de + de 100 km.</p>
+					<p>Au final, 5 communes contiennent à la fois une éolienne et un sommet.</p>
 				</div>
-				<p>Le résultat serait le même en procédant à l'inverse, c'est-à-dire en sélectionnant d'abord les communes traversées par un cours d'eau puis à partir de cette sélection les communes contenant une éolienne.</p>
+				<p>Le résultat serait le même en procédant à l'inverse, c'est-à-dire en sélectionnant d'abord les communes avec sommet puis à partir de cette sélection les communes contenant une éolienne.</p>
 			
 			
 			<h3>Combiner requêtes spatiales et attributaires<a class="headerlink" id="VI33" href="#VI33"></a></h3>
@@ -105,18 +112,18 @@
 				<p>Le principe est le même que précédemment. Sélectionnons par exemple les communes de + de 10&nbsp;000 habitants avec éolienne.</p>
 				
 				<div class="manip">
-					<p>Commencez par sélectionner au moyen d'une requête attributaire les communes de + de 10&nbsp;000 habitants : <b>"POPULATION" > 10000</b>.</p>
-					<p><b>37 communes</b> sont sélectionnées.</p>
-					<p>Ensuite, au moyen d'une requête spatiale, sélectionnez parmi ces communes celles avec une éolienne, avec l'option <b>Sélection au sein de la sélection courante</b> :</p>
+					<p>Commencez par sélectionner au moyen d'une <a href="06_01_req_attrib.php#VI11">requête attributaire</a> les communes de + de 10&nbsp;000 habitants : <b>"population" > 10000</b>.</p>
+					<p><b>40 communes</b> sont sélectionnées.</p>
+					<p>Ensuite, au moyen d'une requête spatiale, sélectionnez parmi ces communes celles avec une éolienne, avec l'option <b>Sélectionner parmi la sélection actuelle</b> :</p>
 					<figure>
 						<a href="illustrations/6_3_communes_sup10000_eoliennes_fenetre.jpg" >
 							<img src="illustrations/6_3_communes_sup10000_eoliennes_fenetre.jpg" alt="outil de sélection" width="600" >
 						</a>
 					</figure>
-					<p>Au final, <b>2 communes</b> restent sélectionnées : Lamballe-Armor et Pacé.</p>
+					<p>Au final, <b>1 seule commune</b> reste sélectionnée, celle de Lamballe-Armor.</p>
 					<figure>
 						<a href="illustrations/6_3_communes_sup10000_eoliennes.jpg" >
-							<img src="illustrations/6_3_communes_sup10000_eoliennes.jpg" alt="communes avec éolienne et cours d'eau" width="500" >
+							<img src="illustrations/6_3_communes_sup10000_eoliennes.jpg" alt="communes de + de 10000 habitants avec éolienne" width="500" >
 						</a>
 					</figure>
 					<p class="note">Pour connaître le nom des communes sélectionnées, ouvrez la table attributaire de la couche de communes et choisir <b>Ne montrer que les entités sélectionnées</b> dans la liste déroulante en bas à gauche de la table.</p>
