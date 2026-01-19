@@ -8,7 +8,7 @@
 		<li><a href="06_00_requetes.php">Requêtes</a></li>
 		<li><a href="07_00_champs.php">Calcul de champs</a>
 			<ol class="witharabic">
-				<li><a href="07_01_creation_suppression.php">Créer et supprimer des champs</a></li>
+				<li><a href="07_01_creation_suppression.php">Manipulation de champs</a></li>
 				<li><a href="07_02_calculer.php">Calcul de champ</a></li>
 			</ol>
 		</li>
