@@ -71,7 +71,7 @@
 							<img src="illustrations/6_3_couches_chargees.jpg" alt="projet QGIS avec les 3 couches communes, éoliennes et détail_orographique" width="600" >
 						</a>
 					</figure>
-					<p>Pour commencer, nous allons filtrer la couche <em class="data ">BD CARTO® detail_hydrographique</em> pour ne garder que les sommets : <b>clic droit sur la couche &#8594; Filtrer...</b>, tapez la requête suivante : <b>"nature" = 'Sommet'</b>.</p>
+					<p>Pour commencer, nous allons <a href="01_02_info_geo.php#I23c">filtrer</a> la couche <em class="data ">BD CARTO® detail_hydrographique</em> pour ne garder que les sommets : <b>clic droit sur la couche &#8594; Filtrer...</b>, tapez la requête suivante : <b>"nature" = 'Sommet'</b>.</p>
 					<figure>
 						<a href="illustrations/6_3_eoliennes_sommets.jpg" >
 							<img src="illustrations/6_3_eoliennes_sommets.jpg" alt="Idem que juste au-dessus mais la couche de détails orographiques a été filtrée pour n'afficher que les sommets" width="400" >
