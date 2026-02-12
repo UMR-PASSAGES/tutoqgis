@@ -60,7 +60,7 @@
 				<h4>Découpage, mode d'emploi<a class="headerlink" id="IX11b" href="#IX11b"></a></h4>
 				
     				<div class="manip">
-    					<p>Ouvrez un nouveau projet QGIS. Ajoutez les couches <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">DEPARTEMENT</a></em> et <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">gis_osm_waterways_free_1</a></em>.</p>
+    					<p>Ouvrez un nouveau projet QGIS. Ajoutez les couches <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">departement</a></em> et <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">gis_osm_waterways_free_1</a></em>.</p>
     					<p>Le but sera donc de découper les cours d'eau par le département 44, pour ne garder que les cours d'eau à l'intérieur de ce département. Cette opération crée une nouvelle couche.</p>
     					<p><img class="icone" src="illustrations/1_1_selection_icone.jpg" alt="menu projet, sauvegarder sous..." >Tout d'abord, sélectionnez le département 44 au moyen de l'outil de sélection :</p>
     					<figure>
@@ -80,9 +80,9 @@
     					</figure>
     					<ul>
     						<li class="espace">Couche source : choisir la couche à découper, en l'occurrence les cours d'eau : <em class="data">gis_osm_waterways_free_1</em></li>
-    						<li class="espace">Couche de superposition : choisir la couche servant de masque de découpe, en l'occurrence <em class="data">DEPARTEMENT</em></li>
+    						<li class="espace">Couche de superposition : choisir la couche servant de masque de découpe, en l'occurrence <em class="data">departement</em></li>
     						<li class="espace">Entité(s) sélectionnée(s) uniquement : <b>cochez cette case</b> pour ne garder que les cours d'eau à l'intérieur du département sélectionné, et non à l'intérieur de tous les départements</li>
-    						<li class="espace">Découpé : cliquez sur <b>...</b>, sélectionnez l'option <b>Enregistrer vers un fichier</b>, et choisissez l'endroit où la couche sera créée, et son nom : <em class="data">coursdeau_osm_44</em> (au format GeoPackage)</li>
+    						<li class="espace">Découpé : cliquez sur <b>...</b>, sélectionnez l'option <b>Enregistrer dans un GeoPackage...</b>, et choisissez l'endroit où la couche sera créée, et son nom, par exemple : <em class="data">coursdeau_osm_44</em>. Comme il s'agit d'un <a href="01_03_formats.php#I31b" >format GPKG</a>, il faut spécifier 2 fois le nom : pour la base, et pour la couche. Vous pouvez indiquer le même nom les 2 fois.</li>
     						<li class="espace">Cliquez sur <b>Exécuter</b></li>
     					</ul>
     					<p>Patientez... La nouvelle couche est ajoutée :</p>
@@ -131,7 +131,7 @@
 							<p><label for="faq-2">Comment faire pour sélectionner le cours d'eau dont le nom est <b>L'Erdre</b> de la couche <em class="data">coursdeau_osm_44</em>&nbsp;?</label></p>
 							<p class="reponse">2 méthodes au choix :</p>
 							<p class="reponse">1/ Sélectionner à la main dans la table attributaire les lignes où la valeur du champ <b>name</b> est <b>L'Erdre</b> (pour les trouver plus facilement, cliquez sur l'intitulé de colonne <b>name</b> pour classer les lignes par nom)</p>
-						    <p class="reponse">2/ <a href="06_01_req_attrib.php">utiliser une requête attributaire</a> : <b>"name"  =  'L\'Erdre'</b>. Attention, le caractère <b>\ (antislash)</b> est nécessaire avant l'apostrophe, pour que ce dernier ne soit pas considéré comme la fin de la chaîne de caractères.</p>
+						    <p class="reponse">2/ <a href="06_01_req_attrib.php">utiliser une requête attributaire</a> : <b>"name"  =  'L''Erdre'</b>. Attention, l'apostrophe doit être doublé pour que ce dernier ne soit pas considéré comme la fin de la chaîne de caractères. Il est aussi possible d'utiliser le caractère <b>\ (antislash)</b> : "name"  =  'L\'Erdre'.</p>
 						</div>
 						<figure>
 						  <a href="illustrations/9_1_selection_erdre.jpg" >
@@ -144,13 +144,19 @@
 				<h4>Création d'une zone tampon autour de la sélection<a class="headerlink" id="IX12c" href="#IX12c"></a></h4>
 				
 					<div class="manip">
-						<p>Pour créer la zone tampon : <b>Boîte à outils de traitements &#8594; Géométrie vectorielle &#8594; Tampon</b></p>
+						<p>Pour créer la zone tampon : 
+						  <a class="thumbnail_bottom" href="#thumb">Boîte à outils de traitements &#8594; Géométrie vectorielle &#8594; Tampon
+              	<span>
+              		<img src="illustrations/9_1_emplacement_outil_tampon.jpg" alt="Outil Tampon dans la boîte à outils, en tapant 'tampon' dans la barre de recherche" height="300" >
+              	</span>
+              </a>
+          	</p>
 						<figure>
 						  <a href="illustrations/9_1_tampon_degres.jpg" >
 							<img src="illustrations/9_1_tampon_degres.jpg" alt="Paramètrage de l'outil zone tampon, où l'on voit que les unités de la couche coursdeau_osm_44 sont les degrés" width="600" >
 						  </a>
 						</figure>
-                        <p>Sélectionnez la couche source : <em class="data">coursdeau_osm_44</em>. En-dessous, la distance permet de paramétrer la taille de la zone tampon.</p>
+            <p>Sélectionnez la couche source : <em class="data">coursdeau_osm_44</em>. En-dessous, la distance permet de paramétrer la taille de la zone tampon.</p>
                         <p>Vous pouvez voir que <b>les unités de taille sont les degrés&nbsp;!</b> En effet, notre couche de cours d'eau étant en WGS84, il s'agit des unités de cette couche.</p>
                     </div>
                     
@@ -158,7 +164,11 @@
                     
                     <div class="manip">
                         <p>Fermez la fenêtre de l'outil de zone tampon <b>sans créer la zone tampon</b>.</p>
-                        <p><a href="02_04_changer_systeme.php#II42">Modifiez le SCR</a> de la couche <em class="data">coursdeau_osm_44</em>, pour passer du WGS84 vers le <b>RGF93/Lambert-93 (code EPSG 2154)</b> grâce à l'outil <b>Reprojeter une couche</b> (Outils généraux pour les vecteurs) de la boîte à outils.</p>
+                        <p><a href="02_04_changer_systeme.php#II42">Modifiez le SCR</a> de la couche <em class="data">coursdeau_osm_44</em>, pour passer du WGS84 vers le <b>RGF93/Lambert-93 (code EPSG 2154)</b> grâce à l'outil <a class="thumbnail_bottom" href="#thumb">Reprojeter une couche
+	<span>
+		<img src="illustrations/9_1_emplacement_reprojeter.jpg" alt="Outil Reprojeter dans la boîte à outils, en tapant 'repro' dans la barre de recherche" height="300" >
+	</span>
+</a>(Outils généraux pour les vecteurs) de la boîte à outils.</p>
                         <p>Nommez la nouvelle couche <em class="data">coursdeau_osm_44_L93</em>.</p>
                     	<p>Vérifiez dans les propriétés de cette nouvelle couche, rubrique <b>Source</b>, que son SCR soit bien le Lambert 93 :</p>
                     	<figure>
@@ -166,6 +176,7 @@
     							<img src="illustrations/9_1_verif_l93.jpg" alt="Propriétés de la couche, rubrique Source : le SCR est le RGF93/Lambert-93" width="450" >
     						</a>
     					</figure>
+    					<p>Vérifiez également que cette couche se superpose bien à la couche d'origine <em class="data">coursdeau_osm_44</em>.</p>
     				</div>
 				    <p>Attention, si le SCR n'est pas le bon, ne le modifiez pas ici&nbsp;! Utilisez l'outil <b>Reprojeter une couche</b> de la boîte à outils. Modifier le SCR et <a href="02_04_changer_systeme.php#II43">redéfinir le SCR</a> sont 2 manipulations différentes.</p>
 				    
@@ -182,7 +193,7 @@
 							<li class="espace">Entité(s) sélectionnée(s) uniquement : <b>cocher cette case</b> afin de ne créer de zone tampon qu'autour de l'Erdre</li>
 							<li class="espace">Distance tampon : la couche étant projetée en Lambert 93, son unité est le mètre. Choisissez une distance de <b>100 mètres</b>. Le bouton tout à droite permet de faire varier la largeur de la zone en fonction des valeurs d'un champ ou d'une expression&nbsp;; nous ne l'utiliserons pas ici</li>
 							<li class="espace"><b>Regrouper le résultat :</b> cette case permet de fusionner toutes les zones tampon qui seront créées&nbsp;; sinon, une zone tampon est créée par entité de la couche source. Cochez cette case pour cet exercice (cf. image ci-dessous)</li>
-							<li class="espace">Mis en tampon : cliquez tout à droite sur le bouton <b>... &#8594; Enregistrer vers un fichier...</b> choisir le nom : <em class="data">Erdre_tampon100m.gpkg</em> par exemple et l'emplacement de la couche qui sera créée</li>
+							<li class="espace">Mis en tampon : cliquez tout à droite sur le bouton <b>... &#8594; Enregistrer dans un GeoPackage...</b> choisir le nom : <em class="data">Erdre_tampon100m.gpkg</em> par exemple (2 fois) et l'emplacement de la couche qui sera créée</li>
 						</ul>
 						<figure>
     						<a href="illustrations/9_1_tampon_nonregroupe.jpg" >
@@ -260,7 +271,7 @@
 				    <p>L'idée sera ici de créer la couche d'intersection entre les communes et la zone tampon autour de l'Erdre créée ci-dessus. Ceci pourrait permettre de visualiser par exemple pour chaque commune la partie qui se trouve en zone inondable.</p>
 					
 					<div class="manip">
-					    <p>Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">COMMUNE_44</a></em> au projet.</p>
+					    <p>Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">commune_44</a></em> au projet.</p>
 						<p><b>Boîte à outils de traitements &#8594; Recouvrement de vecteur &#8594; Intersection</b>
 						:</p>
 						<figure>
@@ -269,7 +280,7 @@
 							</a>
 						</figure>
 						<ul>
-							<li class="espace">Couche source : choisir la couche <em class="data">COMMUNE_44</em>. Ne pas cocher la case &#171; Entités sélectionnées uniquement &#187; puisqu'il s'agit d'intersecter toutes les communes</li>
+							<li class="espace">Couche source : choisir la couche <em class="data">commune_44</em>. Ne pas cocher la case &#171; Entités sélectionnées uniquement &#187; puisqu'il s'agit d'intersecter toutes les communes</li>
 							<li class="espace">Couche de superposition : choisir la couche <em class="data">Erdre_tampon_100m</em>. Idem, ne pas cocher la case &#171; Entités sélectionnées uniquement &#187;</li>
 							<li class="espace">Champs d'entrée à conserver : cette option permet de choisir les champs de la couche source à conserver. Ici, nous garderons tous les champs et nous n'utiliserons donc pas ce paramètre</li>
 							<li class="espace">Champs à conserver : cette option permet de choisir les champs de la couche de superposition. Ici, nous garderons tous les champs et nous n'utiliserons donc pas ce paramètre</li>
@@ -284,6 +295,8 @@
 						</figure>
 						<p>Ouvrez la table attributaire de cette couche : notez que les champs des deux couches sont présents.</p>
 					</div>
+					
+					<p>L'intersection est une opération symétrique : on peut inverser l'ordre des 2 couches dans l'outil d'intersection, et le résultat sera la même, à ceci près que les champs de la première couche sont toujours en premier dans la table attributaire.</p>
 					
 				<h4>Si on voulait aller plus loin...<a class="headerlink" id="IX13c" href="#IX13c"></a></h4>
 				
@@ -309,8 +322,10 @@
   					</a>
   				</figure>
   				<p>Dans cette fenêtre, chaque ligne correspond à une fois où vous avez lancé un outil de la boîte à outils, le tout classé par ordre chronologique.</p>
-  				<p>Cliquez sur une des lignes&nbsp;: dans la partie basse de la fenêtre, vous pouvez voir la commande Python correspondante, que le logiciel a lancé pour exécuter l'outil (voir partie <a href="11_04_python.php" >XI.4</a>).</p>
-  				<p><b>Si vous double-cliquez sur une ligne, la fenêtre de l'outil se lance avec exactement le même paramétrage que celui utilisé cette fois-là.</b> Ce qui est très utile en particulier pour les outils avec beaucoup de paramètres, par exemple quand on fait des tests et qu'on est amené à relancer plusieurs fois un outil.</p>
+  				<p>Cliquez sur une des lignes&nbsp;: dans la partie basse de la fenêtre, vous pouvez voir des informations telles que la date d'exécution, les paramètres en entrée, s'il y a eu des erreurs...</p>
+  				<p>En cliquant sur le petit triangle devant une ligne de la partie haute de la fenêtre, on peut peut voir notamment la <a href="11_04_python.php">commande Python</a> correspondante, que le logiciel a lancé pour exécuter l'outil.</p>
+  				<p><b>Si vous double-cliquez sur une ligne, la fenêtre de l'outil s'ouvre avec exactement le même paramétrage que celui utilisé cette fois-là.</b> Vous pouvez ensuite relancer l'outil tel quel, ou bien modifier les paramètres puis le relancer.</p>
+  				<p>L'historique est très utile en particulier pour les outils avec beaucoup de paramètres, par exemple quand on fait des tests et qu'on est amené à relancer plusieurs fois un outil, ou bien simplement pour se rappeler de ce qu'on a fait.</p>
 			 </div>
 
 			<br>
