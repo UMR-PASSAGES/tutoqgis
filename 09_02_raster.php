@@ -60,11 +60,11 @@
 					</figure>
 					<ul>
 						<li class="espace">Couche source : sélectionnez <em class="data">srtm_21_09</em></li>
-						<li class="espace">Etendue de découpage : cliquez sur le bouton <b>...</b> tout à droite, choisissez <b>Dessiner sur le canevas</b>. Il faut ensuite dessiner l'emprise à garder, toujours dans l'outil de découpage. Dessinez un rectangle approximatif autour de l'île de la Jamaïque :
+						<li class="espace">Etendue de découpage : cliquez sur le bouton <b>...</b> tout à droite, choisissez <b>Dessiner sur le canevas de carte</b>. Il faut ensuite dessiner l'emprise à garder, toujours dans l'outil de découpage. Dessinez un rectangle approximatif autour de l'île de la Jamaïque :
     						<a href="illustrations/9_2_decoupe_jam.jpg" >
     							<img src="illustrations/9_2_decoupe_jam.jpg" alt="Menu Raster, Extraction, Découper" width="400" >
     						</a></li>
-						<li class="espace">Découpé (étendue)&nbsp;: cliquez sur le bouton à droite <b>...</b> et choisissez où la nouvelle couche sera créée, et son nom : <em class="data">srtm_jamaique</em></li>
+						<li class="espace">Découpé (étendue)&nbsp;: cliquez sur le bouton à droite <b>... &#8594; Enregistrer vers un fichier...</b>, vérifiez que le format sélectionné soit bien <b>TIF</b> (tout en haut de la liste) et choisissez où la nouvelle couche sera créée, et son nom : <em class="data">srtm_jamaique</em></li>
 						<li class="espace">Cliquez ensuite sur <b>Exécuter</b>.</li>
 					</ul>
 					
@@ -81,7 +81,7 @@
 					</figure>
 				</div>
 				
-				<p>Notez qu'il est également possible de découper un raster suivant l'emprise d'une couche de polygones, en utilisant l'option <b>Utiliser l'emprise de la couche</b>. Vous pouvez aussi directement rentrer à la main les coordonnées de l'emprise à conserver.</p>
+				<p>Notez qu'il est également possible de découper un raster suivant l'emprise d'une couche de polygones, en utilisant l'option <b>Calculer depuis la couche</b>. Vous pouvez aussi directement rentrer à la main les coordonnées de l'emprise à conserver.</p>
 			
 			
 			<h3>Explorer les données en modifiant le mode de représentation<a class="headerlink" id="IX22" href="#IX22"></a></h3>
@@ -104,7 +104,7 @@
     				<p>L'axe horizontal représente les valeurs de pixels, donc ici d'élévation. L'axe vertical représente le nombre de pixels ayant une valeur donnée. Il est également possible de lire les valeurs minimale et maximale sou l'histogramme.</p>
     				<p>On peut voir d'un seul coup d'&#339;il que beaucoup de pixels ont une valeur inférieure à 100 mètres d'élévation.</p>
     				<div class="manip">
-    					<p>Il est possible de zoomer sur le graphique en dessinant un rectangle, ou bien en modifiant les valeurs min et max. Un clic droit permet de revenir à la vue initiale.</p>
+    					<p>Il est possible de zoomer sur le graphique en dessinant un rectangle. Un clic droit permet de revenir à la vue initiale.</p>
 			        </div>
 			        
 			    <h4>La valeur des pixels sans valeur<a class="headerlink" id="IX22b" href="#IX22b"></a></h4>
@@ -112,25 +112,30 @@
 			        <p>Une information utile à savoir est la <b>valeur des pixels &#171; sans données &#187;</b>. En effet, vous ne voyez dans QGIS que les pixels de la Jamaïque et non ceux de l'océan les environnant, bien que nous ayons précédemment découpé cette couche suivant un rectangle.</p>
 			        <p>En fait, <b>un raster étant un tableau, son emprise sera toujours rectangulaire et tous les pixels auront toujours une valeur</b>. Cependant, par commodité, on donne une valeur aberrante aux pixels &#171; sans données &#187;. D'où ce titre énigmatique&nbsp;!</p>
 			        <div class="manip">
-			            <p>Pour savoir quelle est cette valeur : <b>propriétés de la couche &#8594; rubrique Transparence</b> :</p>
-			            <figure>
-    						<a href="illustrations/9_2_nodata.jpg" >
-    							<img src="illustrations/9_2_nodata.jpg" alt="Rubrique Transparence des propriétés de la couche, avec encadré la valeur nulle des pixels" width="600" >
-    						</a>
-    					</figure>
-    					<p>Regardez la valeur à droite de <b>Aucune valeur de données</b> : pour cette couche, cette valeur est de <b>-32768</b>.</p>
-			        </div>
-			        <p>Il est évident que l'élévation n'est jamais de -32768 mètres : il s'agit d'une valeur aberrante pour indiquer que certains pixels n'ont pas de valeur d'élévation associée.</p>
-			        <p><b>Le logiciel gère cela en rendant ces pixels transparents par défaut.</b></p>
-			        <div class="manip">
-			            <p>Pour tester cela, décochez la case devant <b>Aucune valeur de données</b> et fermez la fenêtre des propriétés. Vous pouvez voir toute l'emprise de la couche, y compris les pixels sans données.</p>
+		            <p>Pour savoir quelle est cette valeur : <b>propriétés de la couche &#8594; rubrique Information</b> :</p>
+		            <figure>
+      						<a href="illustrations/9_2_nodata_info.jpg" >
+      							<img src="illustrations/9_2_nodata_info.jpg" alt="Rubrique Information des propriétés de la couche, avec encadré la valeur nulle des pixels" width="600" >
+      						</a>
+      					</figure>
+      					<p>Descendez un peu, et dans la partie <b>Bandes</b>, vous pouvez lire la valeur NoData : -32768.</p>
+      				</div>
+      				<p>Il est évident que l'élévation n'est jamais de -32768 mètres : il s'agit d'une valeur aberrante pour indiquer que certains pixels n'ont pas de valeur d'élévation associée.</p>
+      				<div class="manip">
+      					<p>Par défaut, les pixels NoData, donc pour ce raster les pixels avec la valeur -32768, sont rendus transparents, ce que vous pouvez vérifier dans la rubrique <b>Transparence</b> des propriétés de la couche :</p>
+		            <figure>
+      						<a href="illustrations/9_2_nodata.jpg" >
+      							<img src="illustrations/9_2_nodata.jpg" alt="Rubrique Transparence des propriétés de la couche, avec encadré la valeur nulle des pixels" width="600" >
+      						</a>
+      					</figure>
+      					<p>Si vous décochez la case devant <b>Valeur NoData</b> et fermez la fenêtre des propriétés, vous pouvez voir toute l'emprise de la couche, y compris les pixels sans données.</p>
 			            <p><img class="icone" src="illustrations/1_2_informations_icone.jpg" alt="icône identifier les entités" >Vous pouvez utiliser l'outil <b>Identifier des entités</b> pour cliquer sur un pixel &#171; sans données &#187; sur le bord du raster et voir que sa valeur correspond bien à -32768.</p>
 			            <figure>
     						<a href="illustrations/9_2_test_nodata.jpg" >
     							<img src="illustrations/9_2_test_nodata.jpg" alt="SRTM Jamaïque en visualisant toutes les valeurs, y compris la valeur -32768" width="500" >
     						</a>
     					</figure>
-    					<p>Retournez dans les propriétés de la couche et recochez la case <b>Aucune valeur de données</b>.</p>
+    					<p>Retournez dans les propriétés de la couche et recochez la case <b>Valeur NoData</b>.</p>
     					<p>Si vous utilisez à nouveau l'outil d'identification sur un pixel du bord du raster (désormais invisible), vous verrez qu'il est maintenant considéré comme &#171; sans données &#187;. En cliquant en-dehors de l'emprise du raster, l'outil d'identification ne renvoie aucun résultat.</p>
 			        </div>
 			        
@@ -192,7 +197,7 @@
 			    
 			    <div class="manip">
 			       <p>Rendez-vous dans la
-						<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; Analyse raster &#8594; Raster calculator
+						<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; Analyse raster &#8594; Calculatrice raster
 							<span>
 								<img src="illustrations/9_2_rastercalc_menu.jpg" alt="Menu Raster, Analyse raster, Calculatrice raster" width="370" >
 							</span>
@@ -209,9 +214,9 @@
 			    
 			    <div class="manip">
 			        <ul>
-			            <li class="espace">Dans la partie <b>Couches</b> en haut à gauche, double-cliquez sur <em class="data">srtm_jamaique</em> pour faire apparaître le nom de la couche dans la partie <b>Expression</b> en-dessous</li>
-			            <li class="espace">Complétez l'expression en rajoutant à la main <b>&lt; 100</b> : l'expression complète est donc <b>"srtm_jamaique@1" &lt; 100</b></li>
-			            <li class="espace">Dans la partie <b>Reference Layer(s)</b>, cliquez sur le bouton <b>...</b> à doite et sélectionnez la couche <em class="data">srtm_jamaique</em>, pour que le raster créé ait la même emprise, résolution et CRS</li>
+			            <li class="espace"><b>Couches en entrée</b> : cliquez sur <b>...</b> puis sélectionnez la couche <em class="data">srtm_jamaique</em></li>
+			            <li class="espace"><b>Expression</b> : cliquez sur <b>&#949;</b>, une fenêtre s'ouvre : double-cliquez sur <b>srtm_jamaique@1</b> dans la partie <em>layers</em> à gauche, puis rajoutez à la main dans la partie en bas <b> &lt; 100</b> : l'expression complète est : <b>"srtm_jamaique@1" &lt; 100</b></li>
+			            <li class="espace">Vous pouvez laisser les autres paramètres par défaut</li>
 			        </ul>
 			        <p>Exécutez... Le nouveau raster (temporaire) est ajouté.</p>
 			    </div>
@@ -234,6 +239,8 @@
 			    </div>
 			    
 			    <p>Cette couche pourra servir par exemple de masque, telle quelle ou bien en la transformant en couche vecteur au moyen de l'outil Polygoniser.</p>
+			    
+			    <p class="note">La calculatrice raster est également accessible par le <b>menu Raster &#8594; Calculatrice Raster</b>. Son interface est alors plus lisible ; en revanche, on ne peut pas créer de couche temporaire en sortie.</p>
 			
 			<h3>Exemples d'opérations sur des données d'altitude<a class="headerlink" id="IX24" href="#IX24"></a></h3>
 			
@@ -252,7 +259,7 @@
     				
     				<div class="manip">
     					<p>Rendez-vous dans la
-    						<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; GDAL &#8594; Extraction raster &#8594; Courbe de niveau
+    						<a class="thumbnail_bottom" href="#thumb">boîte à outils &#8594; GDAL &#8594; Extraction raster &#8594; Courbes de niveaux
     							<span>
     								<img src="illustrations/9_2_contours_menu.jpg" alt="Emplacement de l'outil Contour dans la boîte à outils" width="350" >
     							</span>
@@ -274,7 +281,7 @@
     							<img src="illustrations/9_2_courbes_carte.jpg" alt="Visualisation des courbes de niveau" width="600" >
     						</a>
     						<a href="illustrations/9_2_courbes_table.jpg">
-    							<img src="illustrations/9_2_courbes_table.jpg" alt="Visualisation des courbes de niveau" width="200" >
+    							<img src="illustrations/9_2_courbes_table.jpg" alt="Visualisation des courbes de niveau" width="260" >
     						</a>
     					</figure>
     				
@@ -304,15 +311,15 @@
   								<img src="illustrations/9_2_scr_jamaica.jpg" alt="Recherche d'un SCR pour la Jamaïque" width="600" >
   							</a>
   						</figure>
-  						<p>Tapez <b>jamaica</b> dans la rubrique <b>Filtre</b> : plusieurs réponses sont proposées, dont 3 SCR projetés. Une rapide recherche internet semble indiquer que le SCR <b>JAD2001</b> est le plus récent (source : <a class="ext" target="_blank" href="http://www.jamaicancaves.org/jad2001.htm" >http://www.jamaicancaves.org/jad2001.htm</a>). C'est donc ce SCR que nous utiliserons.</p>
+  						<p>Tapez <b>jamaica</b> dans la rubrique <b>Filtre</b> : plusieurs réponses sont proposées, dont 4 SCR projetés. Une rapide recherche internet semble indiquer que le SCR <b>JAD2001</b> est le plus récent (source : <a class="ext" target="_blank" href="http://www.jamaicancaves.org/jad2001.htm" >http://www.jamaicancaves.org/jad2001.htm</a>). C'est donc ce SCR que nous utiliserons.</p>
+  						<p class="note">Selon si vous avez déjà utilisé un SCR jamaïcain, la partie du haut concernant les SCR récemment utilisés sera vide ou non.</p>
   						<p>Sélectionnez <b>JAD2001 (code EPSG:3448) et cliquez sur <b>OK</b>.</b></p>
   					</div>
   					
   					<p>Nous venons de changer le SCR du projet, mais pas celui de notre raster (pour rappel, voir <a href="02_03_couches_projets.php">ici</a>).</p>
   					
   					<div class="manip">
-  						<p>Une étape préliminaire avant de projeter le raster : ouvrez les propriétés du raster, rubrique <b>Information</b>, sous-rubrique <b>Bandes</b>, recherchez <b>Aucune valeur de données</b>. Vous devriez avoir -32768, notez cette valeur. C'est celle utilisée pour les pixels &#171; sans valeur &#187; (qui ont donc en réalité la valeur -32768), en-dehors de l'île.</p>
-  						<p>Ensuite, pour changer le SCR du raster :
+  						<p>Pour changer le SCR du raster (comme pour les vecteurs, cette opération crée une nouvelle couche) :
   							<a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; GDAL &#8594; Projections raster &#8594; Projection (warp)
   								<span>
   									<img src="illustrations/9_2_reproj_raster_menu.jpg" alt="Menu Raster , Projections, Projection..." width="280" >
@@ -326,8 +333,8 @@
   						</figure>
   						<ul>
   							<li class="espace">Couche source : sélectionnez <em class="data">srtm_jamaique</em> dans la liste</li>
-  							<li class="espace">SCR cible : cliquez sur le bouton à droite pour rechercher le SCR <b>JAD2001 code EPSG:3448</b></li>
-  							<li class="espace">Valeur Nodata : tapez la <a href="09_02_raster.php#IX22b">valeur des pixels sans données</a> : <b>-32768</b></li>
+  							<li class="espace">SCR cible : cliquez sur le bouton à droite pour rechercher le SCR <b>JAD2001 code EPSG:3448</b> (normalement si vous avez bien effectué l'étape précédente c'est le SCR du projet)</li>
+  							<li>Reprojeté : cliquez sur les <b>...</b>, vérifiez que le format soit bien <b>TIF</b>, choisissez l'emplacement de la couche qui sera créée en sortie, ainsi que son nom : par ex. <b>srtm_jamaique_JAD2001</b></li>
   							<li class="espace">Laissez tous les autres paramètres par défaut, cliquez sur <b>Exécuter</b>.</li>
   						</ul>
   						<p>Patientez... La nouvelle couche est ajoutée, vous pouvez vérifier dans ses propriétés (rubrique Source) que son SCR soit bien le JAD2001.</p>
@@ -336,7 +343,7 @@
   								<img src="illustrations/9_2_scr_ok.jpg" alt="scr de la nouvelle couche : JAD2001" width="500" >
   							</a>
   						</figure>
-  						<p class="note">Il semblerait qu'il ne soit plus utile de préciser la valeur NoData, celle-ci étant automatiquement lue dans les propriétés du raster en entrée&nbsp;!</p>
+  						<p class="note">Avec les anciennes versions de QGIS, il fallait préciser la valeur NoData, celle-ci est aujourd'hui automatiquement lue dans les propriétés du raster en entrée&nbsp;!</p>
   						<p>Supprimez les autres couches, pour ne garder dans le projet que la couche <em class="data">srtm_jamaique_JAD2001</em>.</p>
   					</div>
     				
