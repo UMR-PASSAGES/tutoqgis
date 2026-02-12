@@ -19,7 +19,8 @@
 							<li><a href="#VII12c">Supprimer un champ existant</a></li>
 						</ul>
 					</li>
-					<li><a href="#VII13">Pour aller plus loin : refactoriser les champs</a></li>
+					<li><a href="#VII13">Renommer un champ</a></li>
+					<li><a href="#VII14">Pour aller plus loin : refactoriser les champs</a></li>
 				</ul>
 				<br>
 				
@@ -117,7 +118,26 @@
     					<p>Le champ est supprimé. Quittez le mode édition en enregistrant les modifications.</p>
     				</div>
 			
-			    <h3>Pour aller plus loin : refactoriser les champs<a class="headerlink" id="VII13" href="#VII13"></a></h3>
+			    <h3>Renommer un champ<a class="headerlink" id="VII13" href="#VII13"></a></h3>
+			    
+            <p>Il est possible de renommer les champs de la table ; contrairement aux manipulations précédentes qui se font à partir de la table attributaire, il faut passer pour cela par les propriétés de la couche.</p>
+            
+            <div class="manip">
+              <p>Double-cliquez sur la couche <em class="data">communes_bretagne_calcul</em>, ou bien clic-droit sur son nom &#8594; Propriétés..., et rendez-vous dans la rubrique <b>Champs</b> :</p>
+              <figure>
+    						<a href="illustrations/7_1_renommer_champ.jpg" >
+    							<img src="illustrations/7_1_renommer_champ.jpg" alt="fenêtre des propriétés de la couche, rubrique champs" width="600" >
+    						</a>
+    					</figure>
+    					<ul>
+    					 <li>Cliquez sur le bouton <b>Basculer en mode édition</b> en haut à gauche de la fenêtre</li>
+    					 <li>Vous pouvez maintenant double-cliquer dans une des cases de la colonne <b>Nom</b> et modifier le nom d'un ou plusieurs champs</li>
+    					 <li>Quand vous avez fini, cliquez à nouveau sur le bouton <b>Basculer en mode édition</b> et enregistrez les modifications</li>
+    					</ul>
+    					<p>Vous pouvez ensuite fermer la fenêtre des propriétés de la couche et vérifier que les changements ont bien été pris en comte dans la table attributaire.</p>
+            </div>			    
+			    
+			    <h3>Pour aller plus loin : refactoriser les champs<a class="headerlink" id="VII14" href="#VII14"></a></h3>
 			    
 			       <p>Sous le nom un peu barbare de &#171; refactoriser &#187; se cache la possibilité de <b>renommer les champs</b>, ainsi que d'en <b>modifier l'ordre et le type</b> (texte, nombre...). Cet outil offre également la possibilité de créer ou supprimer des champs.</p>
 			       <p>Notez que la couche en entrée ne sera pas directement modifiée, une nouvelle couche sera créée.</p>
