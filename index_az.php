@@ -100,7 +100,7 @@
 									<li class="index_03"><a href="07_01_creation_suppression.php#VII12">créer</a>, voir aussi <a href="07_01_creation_suppression.php#VII13">ici</a></li>
 									<li class="index_03"><a href="10_01_representation.php#X11b">de proportion</a></li>
 									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">ordre (modifier)</a></li>
-									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">renommer</a></li>
+									<li class="index_03"><a href="07_01_creation_suppression.php#VII13">renommer</a>, voir aussi <a href="07_01_creation_suppression.php#VII14">ici</a></li>
 									<li class="index_03"><a href="07_01_creation_suppression.php#VII12">supprimer</a>, voir aussi <a href="07_01_creation_suppression.php#VII13">ici</a></li>
 									<li class="index_03"><a href="07_01_creation_suppression.php#VII12">type</a></li>
 								</ul>
@@ -449,7 +449,7 @@
 								</ul>
 							</li>
 							<li class="index_02"><a href="07_01_creation_suppression.php#VII13">Refactoriser les champs</a></li>
-							<li class="index_02"><a href="07_01_creation_suppression.php#VII13">Renommer un champ</a></li>
+							<li class="index_02"><a href="07_01_creation_suppression.php#VII13">Renommer un champ</a>, voir aussi <a href="07_01_creation_suppression.php#VII14">ici</a></li>
 							<li class="index_02"><a href="06_00_requetes.php">Requête</a>
 								<ul>
 									<li class="index_03"><a href="06_01_req_attrib.php">attributaire</a></li>

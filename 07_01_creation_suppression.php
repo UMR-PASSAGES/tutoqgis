@@ -123,7 +123,7 @@
             <p>Il est possible de renommer les champs de la table ; contrairement aux manipulations précédentes qui se font à partir de la table attributaire, il faut passer pour cela par les propriétés de la couche.</p>
             
             <div class="manip">
-              <p>Double-cliquez sur la couche <em class="data">communes_bretagne_calcul</em>, ou bien clic-droit sur son nom &#8594; Propriétés..., et rendez-vous dans la rubrique <b>Champs</b> :</p>
+              <p>Double-cliquez sur la couche <em class="data">communes_bretagne_calcul</em>, ou bien clic-droit sur son nom &#8594; <b>Propriétés...</b>, et rendez-vous dans la rubrique <b>Champs</b> :</p>
               <figure>
     						<a href="illustrations/7_1_renommer_champ.jpg" >
     							<img src="illustrations/7_1_renommer_champ.jpg" alt="fenêtre des propriétés de la couche, rubrique champs" width="600" >
