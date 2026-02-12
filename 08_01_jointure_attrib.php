@@ -137,16 +137,20 @@
 							<p><label for="faq-4">Combien de lignes n'ont pas été jointes ? Pourquoi ?</label></p>
 							<p class="reponse">Trois counties n'ont pas de données jointes : <b>Elgeyo-Marakwet</b>, <b>Nairobi</b> et <b>Taita Taveta</b>, orthographiés respectivement <b>Elg eyo/Marakwet</b>, <b>Nairobi City</b> et <b>Taita/Taveta</b> dans le fichier CSV.</p>
 						</div>
-						
-						<p>Pour que tous les enregistrements soient joints, vous pouvez modifier à la main les noms des counties qui posent problème, soit dans la couche GeoPackage soit dans le fichier CSV (ces opérations peuvent être effectuées dans QGIS).</p>
 					</div>
+						
+					<p>Pour que tous les enregistrements soient joints, vous pouvez modifier à la main les noms des counties qui posent problème, soit dans la couche GeoPackage soit dans le fichier CSV (ces opérations peuvent être effectuées dans QGIS).</p>
 				
 				
 				<h4>Jointure de deux couches : licences sportives et catégories socio-professionnelles en France<a class="headerlink" id="VIII13b" href="#VIII13b"></a></h4>
 				
 					<div class="manip">
-						<p>Ouvrez un nouveau projet QGIS. Ajoutez-y les couches <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_licences_sportives_2016-2017</a></em> et <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_CSP_2016</a></em>.</p>
-						<p>La couche <em class="data">depts_licences_sportives_2023_2024</em> correspond aux nombres de licences pour différents sports par département, et la couche <em class="data">depts_CSP_2022</em> aux % des différentes catégories socio-professionnelles par département.</p>
+						<p>Ouvrez un nouveau projet QGIS. Ajoutez-y les 2 couches suivantes :</p>
+						<ul>
+						  <li><em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_licences_sportives_2023_2024.gpkg</a></em> : nombres de licences pour différents sports par département</li>
+						  <li><em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_CSP_2022.gpkg</a></em> : % des différentes catégories socio-professionnelles par département</li>
+						 </ul>
+
 						<div class="question">
 							<input type="checkbox" id="faq-5">
 							<p><label for="faq-5">Ouvrez les deux tables attributaires. A votre avis, sur quels champs faire la jointure ?</label></p>
@@ -221,8 +225,13 @@
                             <li>Couche vectorielle en entrée : choisir la table de monuments <em class="data">L_MONUMENT_HISTO_S_060</em></li>
                             <li>Champ pour calculer les statistiques : laisser vide puisqu'on veut simplement compter les monuments</li>
                             <li>Champs avec catégories : cliquez sur <b>...</b> et cocher le champ <b>INSEE</b> pour compter le nombre de monuments par code INSEE. On pourrait ici choisir commune mais ce sera moins sûr pour faire la jointure par la suite</li>
-                            <li>Cliquez sur <b>Exécuter</b>, l'outil va créer une couche temporaire nommée <b>Statistiques par catégorie</b>. Vous pouvez ensuite fermer la fenêtre.</li>
+                            <li>Cliquez sur <b>Exécuter</b>, l'outil va créer une couche temporaire nommée <b>Statistiques par catégorie</b>. Vous pouvez ensuite fermer la fenêtre de l'outil.</li>
                         </ul>
+                        <figure>
+                        	<a href="illustrations/8_1_stats_categ.jpg" >
+                        		<img src="illustrations/8_1_stats_categ.jpg" alt="Table créée par l'outil Statistiques par catégories dans la liste des couches" width="280">
+                        	</a>
+                        </figure>
                         <p>Ouvrez la table attributaire de cette couche temporaire :</p>
                         <figure>
                         	<a href="illustrations/8_1_stats_cats_res.jpg" >

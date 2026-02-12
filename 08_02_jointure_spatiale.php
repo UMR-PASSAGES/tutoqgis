@@ -48,7 +48,7 @@
     				<p>Voyons tout d'abord le cas où les données correspondent une à une, par exemple pour joindre les données d'un chef-lieu au département qui lui correspond.</p>
     				
     				<div class="manip">
-    					<p>Ouvrez un nouveau projet QGIS, ajoutez les deux couches shapefile <em class="data">DEPARTEMENT</em> et <em class="data">CHEF_LIEU</em>.</p>
+    					<p>Ouvrez un nouveau projet QGIS, ajoutez les deux couches geopackage <em class="data">departement</em> et <em class="data">chef_lieu_de_departement</em>.</p>
     					<figure>
     						<a href="illustrations/8_2_cheflieux_depts.jpg" >
     							<img src="illustrations/8_2_cheflieux_depts.jpg" alt="superposition des chefs-lieux et des départements" width="400" >
@@ -59,7 +59,7 @@
                         <p>Par contre, <b>chaque chef-lieu est situé dans un département</b>&nbsp;; il est donc possible d'associer les 2 avec un <a href="06_02_req_spatiales.php#VI22">opérateur spatial</a> comme par exemple <b>contient</b>.</p>
                     </div>
                     
-                    <p>Le but de l'opération est d'<b>ajouter des colonnes</b> dans la table attributaire de la couche de départements, avec le nom du chef-lieu, son statut etc. Bien sûr, l'inverse est également possible : ajouter dans la table attributaire des chefs-lieux des colonnes avec le nom du département, son code etc.</p>
+                    <p>Le but de l'opération est d'<b>ajouter des colonnes</b> dans la table attributaire de la couche de départements, avec le nom du chef-lieu, son code etc. Bien sûr, l'inverse est également possible : ajouter dans la table attributaire des chefs-lieux des colonnes avec le nom du département, son code etc.</p>
                     
                     <div class="manip">
                         <p>Dans la boîte à outils de traitements, rubrique <b>Outils généraux pour les vecteurs</b>, double-cliquez sur <b>Joindre les attributs par localisation</b>.</p>
@@ -74,11 +74,12 @@
     						</a>
     					</figure>
     					<ul>
-    					   <li class="espace">Couche source : sélectionnez la couche <em class="data">DEPARTEMENT</em></li>
-    					   <li class="espace">Joindre la couche : sélectionnez la couche <em class="data">CHEF_LIEU</em></li>
+    					   <li class="espace">Couche source : sélectionnez la couche <em class="data">departement</em></li>
+    					   <li class="espace">Joindre la couche : sélectionnez la couche <em class="data">chef_lieu_de_departement</em></li>
     					   <li class="espace">Prédicat géométrique : vous pouvez choisir <b>intersecte</b>, ou bien <b>contient</b></li>
     					   <li class="espace">Champs à ajouter : il est possible de n'ajouter que certains champs de la couche à joindre. Laisser vide pour ajouter tous les champs</li>
     					   <li class="espace">Type de jointure : dans la mesure où ici, un chef-lieu correspond exactement à un département, vous pouvez choisir l'une ou l'autre option et le résultat sera le même</li>
+    					   <li class="espace">Préfixe de champ joint : laissez vide</li>
     					   <li class="espace">Couche issue de la jointure spatiale : laisser la valeur par défaut <b>Créer une couche temporaire</b></li>
     					   <li class="espace">Cliquez sur <b>Exécuter</b></li>
     					</ul>
@@ -113,7 +114,6 @@
 
 					<p class="note">Il existe d'autres moyens pour faire une jointure spatiale, notamment en passant par une base de données relationnelle type PostgreSQL avec son extension spatiale PostGIS, ou bien à l'aide du plugin mmqgis...</p>	
 			
-							
     				
     		<h3>Joindre plusieurs éléments à un seul<a class="headerlink" id="VIII23" href="#VIII23"></a></h3>
     		
@@ -141,7 +141,7 @@
     					   <li class="espace">Couche source : <em class="data">Counties</em></li>
     					   <li class="espace">Joindre la couche : <em class="data">Heritage</em></li>
     					   <li class="espace">Prédicat géométrique : <b>Intersecte</b>, ou bien <b>Contient</b></li>
-    					   <li class="espace">Champs à résumer : cliquez sur le bouton <b>...</b> à droite, et choisissez un champ d'identifiant unique, ici <b>OBJECTID</b> (NAMN1 donnerait le même résultat, dans la mesure où chaque site a un nom différent)</li>
+    					   <li class="espace">Champs à résumer : cliquez sur le bouton <b>...</b> à droite, et choisissez un champ quelconque, par exemple <b>OBJECTID</b> (tous les champs donneraient le même résultat, dans la mesure où il s'agit juste ici de compter le nombre de sites)</li>
     					   <li class="espace">Résumés à calculer : cliquez sur le bouton <b>...</b> à droite, et cochez <b>compte</b> pour compter le nombre de sites par comté</li>
     					   <li class="espace">Couche issue de la jointure spatiale : laissez la valeur par défaut pour créer une couche temporaire</li>
     					   <li class="espace">Cliquez sur <b>Exécuter</b></li>
@@ -159,11 +159,12 @@
     			
     			<h4>Calculer la population par département à partir des communes<a class="headerlink" id="VIII23b" href="#VIII23b"></a></h4>
     			
-    			    <p>Nous allons ici partir d'une couche de communes avec un champ population, et d'une couche de départements. L'objectif sera de calculer pour chaque département la population totale, la population moyenne par commune et la population médiane par commune.</p>
+    			    <p>Nous allons ici partir d'une couche de communes avec un champ population, et d'une couche de départements. <b>L'objectif sera de calculer pour chaque département la population totale, la population moyenne par commune et la population médiane par commune.</b></p>
     			
     				<div class="manip">
-    					<p>Ouvrez un nouveau projet QGIS, ajoutez les couches <em class="data">COMMUNE</em> et <em class="data">DEPARTEMENT</em>.</p>
-    					<p>Ouvrez la table attributaire de la couche de communes, vérifiez que le champ <b>POPULATION</b> soit bien présent.</p>
+    					<p>Ouvrez un nouveau projet QGIS, ajoutez les couches <em class="data">commune</em> et <em class="data">departement</em>.</p>
+    					<p>Ouvrez la table attributaire de la couche de communes, vérifiez que le champ <b>population</b> soit bien présent.</p>
+    					<p>De manière similaire, vous pouvez constater dans la table attributaire de la couche de départements qu'il n'y a aucune information sur la population.</p>
     					<p>Boîte à outils de traitement &#8594; Outils généraux pour les vecteurs &#8594; <b>Joindre les attributs par localisation (résumé)</b></p>
     					<figure>
     						<a href="illustrations/8_2_join_resume_fenetre_2.jpg" >
@@ -171,10 +172,10 @@
     						</a>
     					</figure>
     					<ul>
-    					   <li class="espace">Couche source : <em class="data">DEPARTEMENT</em></li>
-    					   <li class="espace">Joindre la couche : <em class="data">COMMUNE</em></li>
+    					   <li class="espace">Couche source : <em class="data">departement</em></li>
+    					   <li class="espace">Joindre la couche : <em class="data">population</em></li>
     					   <li class="espace">Prédicat géométrique : choisissez <b>contient</b>. Avec l'opérateur Intersecte, les communes limitrophes seraient également prises en compte, ce qui n'est pas souhaité ici.</li>
-    					   <li class="espace">Champs à résumer : cliquez sur le bouton <b>...</b> à droite, et choisissez le champ <b>POPULATION</b></li>
+    					   <li class="espace">Champs à résumer : cliquez sur le bouton <b>...</b> à droite, et choisissez le champ <b>population</b></li>
     					   <li class="espace">Résumés à calculer : cliquez sur le bouton <b>...</b> à droite, et cochez <b>somme</b>, <b>moyenne</b> et <b>médiane</b> pour calculer ces valeurs pour chaque département.
     						<a href="illustrations/8_2_choix_resumes.jpg" >
     							<img src="illustrations/8_2_choix_resumes.jpg" alt="Fenêtre de choix des opérations d'agrégation : sum, moyenne et median sont cochés" width="320" >
@@ -182,17 +183,24 @@
     					   <li class="espace">Couche issue de la jointure spatiale : laissez la valeur par défaut pour créer une couche temporaire</li>
     					   <li class="espace">Cliquez sur <b>Exécuter</b>. Attention, le temps de traitement peut être un peu long.</li>
     					</ul>
-    					<p>La couche temporaire est ajoutée à QGIS. Ses géométries sont celles des départements. Ouvrez sa table attributaire, vérifiez son contenu : on connaît maintenant pour chaque département la population totale (POPULATION_sum), la population communale moyenne (POPULATION_mean) et la population communale mediane (POPULATION_median).</p>
+    					<p>La couche temporaire est ajoutée à QGIS. Ses géométries sont celles des départements. Ouvrez sa table attributaire, vérifiez son contenu : on connaît maintenant pour chaque département la population totale (population_sum), la population communale moyenne (population_mean) et la population communale mediane (population_median).</p>
+    				</div>
+    				
+            <p class="note">Ici, les champs créés sont nommés automatiquement en fonction de leur nom d'origine (population) et de la fonction d'agrégation choisie (sum, mean, median). Il est bien sûr possible de les <a href="07_01_creation_suppression.php#VII13" >renommer</a> !</p>    				
+    				
+    				<div class="manip">
     					<div class="question">
                     		<input type="checkbox" id="faq-3">
                     		<p><label for="faq-3">Quel est le département le moins peuplé&nbsp;?</label></p>
-                    		<p class="reponse">En cliquant sur la colonne <b>POPULATION_sum</b>, on peut classer les départements en fonction de leur population. La Lozère est le département le moins peuplé avec une population de 76422 habitants.</p>
+                    		<p class="reponse">En cliquant sur la colonne <b>population_sum</b>, on peut classer les départements en fonction de leur population. La Lozère est le département le moins peuplé avec une population de 76503 habitants.</p>
                     		<p class="reponse"><a href="illustrations/8_2_depts_pop_communes_table.jpg" ><img src="illustrations/8_2_depts_pop_communes_table.jpg" alt="Extrait de la table attributaire de la couche résultat, du moins peuplé au plus peuplé" width="600" ></a></p>
                     	</div>
     				</div>
     				
-                    <p>Il est possible d'utiliser d'autres méthodes pour réaliser les jointures spatiales, par exemple avec le plugin mmqgis, ou bien via une <a href="06_04_req_sql.php" >requête SQL</a>.</p>
+                    <p>Il est possible d'utiliser d'autres méthodes pour réaliser les jointures spatiales, par exemple avec le <a class="ext" target="_blank" href="https://michaelminn.com/linux/mmqgis/">plugin mmqgis</a>, ou bien via une <a href="06_04_req_sql.php" >requête SQL</a>.</p>
                     <p>Concernant cette dernière méthode, avec utilisation des couches virtuelles, les temps de traitement sont parfois longs en particulier avec des opérateurs spatiaux. L'utilisation de Postgresql/PostGIS améliore grandement ces temps de traitement, mais ceci sort de l'objet de ce tutoriel&nbsp;!</p>
+                    
+                    <p class="note">On pourrait aboutir à un résultat similaire avec l'outil <a href="09_04_maillage.php#IX45" >d'agrégation</a>, dans la mesure où il existe un champ indiquant le code du département dans la couche de communes. On peut donc fusionner toutes les communes ayant un même code département et au passage calculer la population moyenne etc. Cette opération sera probablement un peu plus longue dans la mesure où les géométries des départements sont créés à partir des communes, et bien sûr on ne disposera pas dans la couche résultat des champs de la couche de départements (puisqu'on utilise uniquement la couche de communes). Comme souvent il y a plusieurs manières de faire les choses, il faut choisir en fonction des données dont on dispose et du résultat souhaité !</p>
 
 				
 		<br>
