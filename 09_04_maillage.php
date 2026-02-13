@@ -32,13 +32,11 @@
     				<figcaption>Un exemple de résultat avec une taille de maille de 10km</figcaption>
     			</figure>
     			
-    			<p class="attention">Pour ce chapitre et le suivant, vous pouvez soit télécharger les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a>&nbsp;: <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip" >Données Métropole 2000</a> puis les filtrer pour ne garder que les vignes, comme détaillé dans le tutoriel, ou bien utiliser les <a href="telechargement.php">données en téléchargement</a> déjà filtrées (pour un téléchargement moins lourd).</p>
-    
     			
     		    <h3>Principe<a class="headerlink" id="IX41" href="#IX41"></a></h3>
     			
         		 <p>Pour bien comprendre la manip, nous allons commencer par créer un maillage en utilisant les outils QGIS.</p>
-        		 <p>Nous partirons des données Corine Land Cover (CLC) d'occupation du sol, en filtrant les données pour ne garder que celles correspondant au vignoble&nbsp;:
+             <p>Pour ce chapitre et le suivant, nous allons utiliser les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a> 2000 d'occupation du sol filtrées pour ne garder que les vignes.</p>
         		 <figure>
         		     <a href="illustrations/9_4_principe_depart.jpg" >
         		         <img src="illustrations/9_4_principe_depart.jpg" alt="données Corine Land Cover France métro vignes" width="250">
@@ -69,18 +67,18 @@
     		      <p>Première étape : créer une grille. Elle devra avoir la même emprise que la couche de départ, et pour que les temps de calcul soient raisonnables nous utiliserons une taille de maille de 50 km.</p>
     		      
     		      <div class="manip">
-    		          <p>Ouvrez un nouveau projet QGIS, chargez la couche shapefile <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip">CLC00_FR_RGF</a> ou bien <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em> (données déjà filtrées pour ne garder que les vignes).</p>
-    		          <p>Vous pouvez également chargez la couche de pays <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">ne_50m_admin_0_countries</a></em> qui nous aidera à nous repérer.</p>
+    		          <p>Ouvrez un nouveau projet QGIS, chargez la couche shapefile <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em></p>
+    		          <p>Vous pouvez également chargez la couche de pays <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">region</a></em> qui nous aidera à nous repérer.</p>
     		          <p>Pour comprendre les données CLC, ouvrez la table attributaire, qui comporte 3 champs&nbsp;:</p>
     		          <ul>
-    		              <li class="espace"><b>CODE_00</b> correspond au type d'occupation du sol. Pour connaître la signification des codes, lisez le fichier <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC_nomenclature.xls</a></em> dans le dossier <b>TutoQGIS_09_AnalyseSpat/metadonnees</b>.</li>
+    		              <li class="espace"><b>CODE_00</b> correspond au type d'occupation du sol (ici, une seule valeur : 221, qui correspond aux vignes). Pour connaître la signification des codes, lisez le fichier <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC_nomenclature.xls</a></em> dans le dossier <b>TutoQGIS_09_AnalyseSpat/metadonnees</b>.</li>
     		              <li class="espace"><b>AREA_HA</b> correspond à la surface en hectares (1 ha = 10&nbsp;000 m&#178;)</li>
     		              <li class="espace">et <b>ID</b> est un champ d'identifiant unique</li>
     		          </ul>
                       <div class="question">
                     		<input type="checkbox" id="faq-1">
                     		<p><label for="faq-1">Quel est le CRS de cette couche&nbsp;? (réflexe !!!)</label></p>
-                    		<p class="reponse">Le SCR de cette couche est <b>IGNF:LAMB93</b> équivalent au RGF93/Lambert93 code EPSG 2154.</p>
+                    		<p class="reponse">Le SCR de cette couche est <b>RGF93/Lambert93 code EPSG 2154</b>.</p>
                       </div>
     		          <p>Laissons de côté ces données pour le moment, et créons la grille. Pour cela, ouvrez la boîte à outils et faites une recherche sur le mot <b>grille</b>&nbsp;:</p>
     		          <figure>
@@ -96,7 +94,7 @@
         			 </figure>
         			 <ul>
         			     <li class="espace"><b>Type de grille</b>&nbsp;: choisir <b>rectangle</b> (et notez au passage qu'on peut également créer des mailles hexagonales)</li>
-        			     <li class="espace"><b>Étendue de la grille</b>&nbsp;: cliquez sur le bouton <b>...</b> tout à droite &#8594; <b>Calculer depuis la couche</b> &#8594; <b>CLC00_FR_RGF</b></li>
+        			     <li class="espace"><b>Étendue de la grille</b>&nbsp;: cliquez sur la flèche tout à droite &#8594; <b>Calculer depuis la couche</b> &#8594; <b>region</b></li>
         			     <li class="espace"><b>Espacement horizontal et vertical</b>&nbsp;: puisque nous voulons une taille de maille de 50 km et que nos données sont dans un SCR projeté, donc en mètres, tapez <b>50&nbsp;000</b> pour ces 2 paramètres</li>
         			     <li class="espace"><b>Grille</b>&nbsp;: cliquez sur le bouton <b>...</b> à droite pour spécifier l'emplacement et le nom de la grille qui sera créée &#8594; Enregistrer vers un fichier ou dans un GeoPackage, et nommez-la par exemple <b>grille_CLC_50km</b></li>
         			 </ul>
@@ -109,10 +107,10 @@
         			 <p>Ouvrez la table attributaire de la grille&nbsp;:</p>
         			 <figure>
         			     <a href="illustrations/9_4_grille_table.jpg" >
-        			         <img src="illustrations/9_4_grille_table.jpg" alt="Extrait de la table attributaire de la grille" width="500">
+        			         <img src="illustrations/9_4_grille_table.jpg" alt="Extrait de la table attributaire de la grille" width="600">
         			     </a>
         			 </figure>
-        			 <p>La table comporte un champ d'identifiant unique, et 4 champs correspondant aux coordonnées minimales et maximales de chaque case. Les cases sont numérotées de haut en bas et de gauche à droite.</p>
+        			 <p>La table comporte un champ d'identifiant unique (plus le champ fid s'il s'agit d'une couche GeoPackage), et champs correspondant aux coordonnées minimales et maximales de chaque case, et 2 champs correspondant aux numéros de lignes et de colonnes.</p>
     		      </div>
     		      
     		      <p>Notre but est de récupérer pour chaque case la surface en vigne correspondante. Nous allons voir maintenant que pour cela, l'union fait la force&nbsp;! (et l'agrégation aussi).</p>
@@ -128,36 +126,10 @@
     			     <figcaption>Union : couche en entrée 1, couche en entrée 2 et couche résultat : elle contient 3 polygones distincts, sans superposition.</figcaption>
     		     </figure>
     		     
-    		     <p>Notre but sera ici de faire une union entre la grille et les données CLC sur la vigne. La première étape sera de ne garder que les données CLC qui nous intéressent.</p>
-    		     <p class="attention">Cette étape n'est pas nécessaire si vous utilisez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em> disponible en téléchargement.</p>
-    		     <p>Il existe plusieurs possibilités pour cela, on pourrait par exemple sélectionner les vignes avec une requête attributaire puis exporter la sélection pour en faire une nouvelle couche.</p>
-    		     <p>Pour changer un peu, nous allons ici <a href="01_02_info_geo.php#I23c" >filtrer</a> les données, ce qui permet de n'afficher que les données répondant à un critère, à la fois dans la table et sur la carte.</p>
-    		     <p class="note">Quelle que soit la méthode choisie, l'important est de garder les données originales, pour pouvoir y revenir en cas de besoin&nbsp;!</p>
+    		     <p>Notre but sera ici de faire une union entre la grille et les données CLC sur la vigne.</p>
     		     
     		     <div class="manip">
-    		         <p>Il faut d'abord rechercher quel est le code correspondant au vignoble&nbsp;: ouvrez le fichier <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC_nomenclature.xls</a></em> dans le dossier <b>TutoQGIS_09_AnalyseSpat/metadonnees</b>.</p>
-    		         <p>Recherchez le code correspondant au vignoble&nbsp;:</p>
-    		         <figure>
-    			         <a href="illustrations/9_4_code_vignoble.jpg" >
-        			         <img src="illustrations/9_4_code_vignoble.jpg" alt="fichier tableur avec le code 2210 pour le vignoble" width="500">
-        			     </a>
-    			     </figure>
-    			     <p>Il s'agit du code <b>2210</b>.</p>
-    		         <p>Clic-droit sur la couche <em class="data">CLC00_FR_RGF</em> &#8594; <b>Filtrer...</b>&nbsp;:</p>
-    		         <p>Utilisez l'expression <b>"CODE_00" = '221'</b> pour ne garder que les entités ayant pour valeur 221 pour le champ CODE_00, qui correspondent donc aux vignes.</p>
-    		         <p class="note">Si besoin référez-vous <a href="01_02_info_geo.php#I23c" >ici</a>&nbsp;!</p>
-    		     </div>
-    		     
-    		     <p>A ce stade, votre projet doit donc ressembler à ceci&nbsp;:</p>
-    		     <figure>
-    		         <a href="illustrations/9_4_couches.jpg" >
-    			         <img src="illustrations/9_4_couches.jpg" alt="projet QGIS avec les 3 couches CLC vignes, grille et fonds Natural Eartg" width="500">
-    			     </a>
-    		     </figure>
-    		     
-    		     
-    		     <div class="manip">
-    		         <p>Nous pouvons maintenant procéder à l'union. Comme d'habitude, pour trouver l'outil adéquat, utilisez la barre de recherche de la boîte à outils avec le mot <b>union</b>&nbsp;:</p>
+    		         <p>Comme d'habitude, pour trouver l'outil adéquat, utilisez la barre de recherche de la boîte à outils avec le mot <b>union</b>&nbsp;:</p>
     		         <figure>
     			         <a href="illustrations/9_4_union_toolbox.jpg" >
         			         <img src="illustrations/9_4_union_toolbox.jpg" alt="Emplacement de l'outil Union dans la boîte à outils" width="330">
@@ -170,7 +142,7 @@
         			     </a>
     			     </figure>
     			     <ul>
-    			         <li class="espace">Couche source et couche de superposition&nbsp;: choisissez <b>grille_CLC_50km</b> et <b>CLC00_FR_RGF</b>. Il est possible de choisir l'une ou l'autre des couches en premier, seul l'ordre des champs changera dans la table attributaire.</li>
+    			         <li class="espace">Couche source et couche de superposition&nbsp;: choisissez <b>grille_CLC_50km</b> et <b>CLC00_221_FR_RGF</b>. Il est possible de choisir l'une ou l'autre des couches en premier, seul l'ordre des champs changera dans la table attributaire.</li>
     			         <li class="espace">Union&nbsp;: cliquez sur le bouton <b>...</b> à droite, et enregistrez le résultat au format shapefile ou GeoPackage. Nommez-le par exemple <b>union_grille50km_CLC</b>.</li>
     			     </ul>
     			     <p><b>Exécuter</b>, patientez...</p>
@@ -244,7 +216,7 @@
     			         <li class="espace">Grouper par expression : les entités ayant la même valeur pour le champ choisi ici seront fusionnées, choisir le champ <b>id</b> correspondant à l'identifiant unique des cases de la grille</li>
     			         <li class="espace">Agrégats : on peut définir dans cette partie quels champs garder, et pour ceux-ci quelle fonction d'agrégation utiliser. On peut par exemple&nbsp;:
     			             <ul>
-    			                 <li>supprimer les champs <b>left, top, right, bottom</b> issus de la grille, et <b>ID_2 et CODE_00</b> issus de la couche CLC, puisqu'ils ne nous seront pas utiles</li>
+    			                 <li>supprimer les champs <b>left, top, right, bottom, row_index et col_index</b> issus de la grille, et <b>ID_2 et CODE_00</b> issus de la couche CLC, puisqu'ils ne nous seront pas utiles. Le champ <b>fid</b> peut aussi être supprimé.</li>
     			                 <li>garder le champ <b>id</b> (identifiant de la grille), avec la fonction d'agrégation <b>first value</b>&nbsp;: l'entité fusionnée aura la première valeur rencontrée pour ce champ (sachant que de toute manière toutes les valeurs seront égales puisqu'on fusionne selon ce champ)</li>
     			                 <li>garder le champ <b>AREA_HA</b> puisque c'est notre but, avec la fonction d'agrégation <b>sum</b> pour faire la somme de toutes les valeurs rencontrées pour une même case. Au passage, on en profite pour le renomme <b>VIGNE_HA</b> et en faire un champ de type <b>entier</b>, puisque les virgules à cette échelle n'auront pas vraiment de sens.</li>
     			             </ul>
@@ -293,7 +265,7 @@
     			         <li class="espace">Champ à utiliser pour la valeur fixe à créer&nbsp;: choisissez ici le champ qui sera utilisé pour déterminer les valeurs des pixesls, donc <b>VIGNE_HA</b></li>
     			         <li class="espace">Unité du raster résultat&nbsp;: nous allons spécifier non pas un nombre de pixels en largeur et hauteur pour le futur raster, mais une taille de pixels en mètres, choisir donc <b>Unités géoréférencées</b></li>
     			         <li class="espace">Largeur/Résolution horizontale et Hauteur/Résolution verticale : tapez la largeur et hauteur de chaque pixel en mètres, soit <b>50&nbsp;000</b> puisque notre grille a une résolution de 50 km</li>
-    			         <li class="espace">emprise du résultat&nbsp;: cliquez sur les <b>...</b> à droite pour spécifier une couche modèle pour l'emprise du futur raster, par exemple la grille en entrée, ou la couche d'agrégation</li>
+    			         <li class="espace">emprise du résultat&nbsp;: cliquez sur la flèche tout à droite pour spécifier une couche modèle pour l'emprise du futur raster, par exemple la grille en entrée, ou la couche d'agrégation</li>
     			         <li class="espace">Rastérisé&nbsp;: spécifiez un nom et un emplacement pour le raster, ainsi que son format&nbsp;: <b>TIF</b></li>
     			     </ul>
     			     <p>Par défaut, les valeurs égales à 0 ne sont pas représentées&nbsp;:</p>

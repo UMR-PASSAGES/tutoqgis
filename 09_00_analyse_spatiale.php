@@ -22,7 +22,12 @@
 					<li>découpage d'une couche raster</li>
 					<li>création de courbes de niveau à partir d'un MNE</li>
 					<li>calcul de pente à partir d'un MNE</li>
-					<li>Calcul de la valeur d'un point en fonction d'un raster</li>
+					<li>récupération de données d'un raster vers une couche de points</li>
+					<li>récupération de données d'un raster vers une couche de polygones</li>
+					<li>transformer une couche raster en vecteur</li>
+					<li>transformer une couche vecteur en raster</li>
+					<li>agrégation de données</li>
+					<li>requêtes SQL</li>
 				</ul>
 			<p>Les données pour cette partie ainsi qu'une version PDF du tutoriel sont accessibles dans la rubrique <a href="telechargement.php"> téléchargement</a>.</p>
 			

@@ -49,7 +49,7 @@
                <p>Il n'y a pas une solution meilleure qu'une autre mais elles répondent à des besoins différents.</p>
                <p><b>Pour cet exercice les 2 logiciels peuvent être utilisés.</b> Si vous choisissez Postgresql/PostGIS, l'installation ne sera pas détaillée ici mais on trouve de nombreuses ressources sur internet. La syntaxe étant légèrement différente d'un logiciel à l'autre, les requêtes seront proposées en 2 versions.</p>			
 			   
-			   <p class="attention">Pour ce chapitre, vous pouvez soit télécharger les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a>&nbsp;: <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip" >Données Métropole 2000</a> et <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC12_FR_RGF_SHP.zip" >Données Métropole 2012</a> puis les filtrer pour ne garder que les vignes, comme détaillé dans le tutoriel, ou bien utiliser les <a href="telechargement.php">données en téléchargement</a> déjà filtrées (pour un téléchargement moins lourd).</p>
+			   <p>Pour ce chapitre comme pour le précédent, nous utiliserons les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a>, cette fois pour les 2 années 2000 et 2012. Elles ont été filtrées pour ne garder que les vignes et sont disponibles comme d'habitude <a href="telechargement.php">ici</a> !</p>
 			
 			   <h3>Création d'une nouvelle base SpatiaLite ou PostGIS<a class="headerlink" id="IX51" href="#IX51"></a></h3>
 			   
@@ -57,7 +57,7 @@
 			     <p><b>Si vous choisissez d'utiliser Postgresql/PostGIS, assurez-vous d'avoir installé ces logiciels avant de poursuivre&nbsp;!</b></p>
 			     
 			     <div class="manip">
-			         <p>Commencez par ouvrir un nouveau projet QGIS et chargez la couche <a class="ext" target="_blank" href="http://www.donnees.statistiques.developpement-durable.gouv.fr/donneesCLC/CLC/millesime/CLC00_FR_RGF_SHP.zip">CLC00_FR_RGF</a> ou bien <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em> (données déjà filtrées pour ne garder que les vignes).</p>
+			         <p>Commencez par ouvrir un nouveau projet QGIS et chargez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em>.</p>
 			     </div>
 			     
 			     <h4>Création d'une base SpatiaLite<a class="headerlink" id="IX51a" href="#IX51a"></a></h4>
@@ -86,7 +86,7 @@
 			         
 			     <h4>Création d'une base PostGIS<a class="headerlink" id="IX51b" href="#IX51b"></a></h4>
 			         
-			         <p>...Et c'est ce que nous allons faire ici&nbsp;! Si vous avez décidé de travailler avec SpatiaLite, passez directement à <a href="#IX51c" >l'import des données</a>.</p>
+			         <p>...Et c'est ce que nous allons faire ici&nbsp;! Si vous avez décidé de travailler avec SpatiaLite, passez directement à <a href="#IX52" >l'import des données</a>.</p>
 			         <p class="attention">Je pars du principe ici que vous avez déjà installé PostgreSQL et PostGIS, et que vous êtes connecté à un serveur PostgreSQL, local ou distant.</p>
 			         <p>QGIS peut uniquement se connecter à une base déjà existante, <b>la création d'une nouvelle base PostgreSQL/PostGIS ne peut se faire dans QGIS</b>.</p>
 			         <p>Il existe plusieurs méthodes pour cela, qui sortent un peu de ce tutoriel&nbsp;: cette partie consistera surtout en des renvois vers des tutoriels existants.</p>
@@ -96,8 +96,8 @@
 			         
 			         <p>Pour <b>créer une nouvelle base de données PostgreSQL</b>, en la nommant <b>maillage_clc</b>&nbsp;:</p>
 			         <ul>
-			             <li><a class="ext" target="_blank" href="https://www.postgresql.org/docs/9.1/manage-ag-createdb.html">en ligne de commande</a> ou <a class="ext" target="_blank" href="https://www.postgresqltutorial.com/postgresql-create-database/">ici</a></li>
-			             <li>avec <a class="ext" target="_blank" href="https://www.postgresqltutorial.com/postgresql-create-database/" >pgAdmin</a> en déroulant pour aller à la partie &#171;&nbsp;3) Creating a new database using pgAdmin&nbsp;&#187;</li>
+			             <li><a class="ext" target="_blank" href="https://www.postgresql.org/docs/9.1/manage-ag-createdb.html">en ligne de commande</a> ou <a class="ext" target="_blank" href="https://neon.com/postgresql/postgresql-administration/postgresql-create-database">ici</a></li>
+			             <li>avec <a class="ext" target="_blank" href="https://neon.com/postgresql/postgresql-administration/postgresql-create-database" >pgAdmin</a> en déroulant pour aller à la partie &#171;&nbsp;3) Creating a new database using pgAdmin&nbsp;&#187;</li>
 			             <li>avec DBeaver, le principe est le même qu'avec pgAdmin : clic droit sur le serveur postgres &#8594; Créer &#8594; Database</li>
 			         </ul>
 			         
@@ -159,22 +159,9 @@
 			   <h3>Import de données dans SpatiaLite ou PostGIS<a class="headerlink" id="IX52" href="#IX52"></a></h3>
 			   
 			     <p>Cette étape est presque équivalente pour les 2 logiciels, en passant par le gestionnaire de base de données de QGIS.</p>
-			     <p>Avant d'importer les données, nous allons sélectionner dans la couche Corine Land Cover les entités correspondant au vignoble, pour n'importer que celles-ci. Cette étape pourrait tout à fait être effectuée une fois les données importées dans la base, mais comme cela le temps d'import dans SpatiaLite ou PostGIS sera plus court.</p>
 			     
 			     <div class="manip">
-			         <p class="attention">Cette sélection n'est pas nécessaire si vous utilisez la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em> disponible en téléchargement.</p>
-			         <p>Utilisez une <a href="06_01_req_attrib.php" >requête attributaire</a> sur la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_FR_RGF</a></em>  pour ne sélectionner que les vignes :  <b>"CODE_00"  = '221'</b> (en jaune ci-dessous).</p>
-			         <figure>
-        			     <a href="illustrations/9_5_selection_vignes.jpg" >
-        			         <img src="illustrations/9_5_selection_vignes.jpg" alt="Couche CLC, vignes sélectionnées en jaune" width="250">
-        			     </a>
-        			 </figure>
-			     </div>
-			     
-			     <p>Il ne reste plus qu'à importer les entités sélectionnes, dans SpatiaLite ou PostGIS selon votre choix.</p>
-			     
-			     <div class="manip">
-			         <p><img class="icone" src="illustrations/6_4_dbmanager_icone.jpg" alt="icône du gestionnaire de bases de données" >Dans QGIS, ouvrez la fenêtre du <b>gestionnaire de bases de données</b>&nbsp;: menu Base de données &#8594; DB Manager... ou bien clic sur l'icône correspondante.</p>
+			         <p><img class="icone" src="illustrations/6_4_dbmanager_icone.jpg" alt="icône du gestionnaire de bases de données" >Dans QGIS, ouvrez la fenêtre du <b>gestionnaire de bases de données</b>&nbsp;: menu Base de données &#8594; Gestionnaire BD... ou bien clic sur l'icône correspondante.</p>
 			         <p>Sélectionnez votre base, SpatiaLite...&nbsp;:</p>
 			         <figure>
         			     <a href="illustrations/9_5_dbmanager_sl.jpg" >

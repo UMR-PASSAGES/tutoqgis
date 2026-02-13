@@ -407,9 +407,11 @@
 							<li class="index_02"><a href="04_03_calage_carroyage.php">Point de calage</a>, voir aussi <a href="04_06_calage_autre_couche.php#IV63">ici</a></li>
 							<li class="index_02"><a href="10_01_representation.php#X13">Points aléatoires</a></li>
 							<li class="index_02"><a href="12_02_info_spectrale.php#XII21b">Polygone d'entraînement (ROI)</a></li>
+							<li class="index_02"><a href="09_03_vecteur_raster.php#IX32">Polygoniser un raster (polygonisation)</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Polynomiale (transformation)</a></li>
 							<li class="index_02"><a href="09_05_maillage_sql.php">PostGIS</a></li>
 							<li class="index_02"><a href="09_05_maillage_sql.php">PostgreSQL</a></li>
+							<li class="index_02"><a href="09_03_vecteur_raster.php#IX31a">Prélèvement des valeurs rasters vers ponctuels (outil)</a></li>
 							<li class="index_02"><a href="02_02_coord.php#II22">Projection</a></li>
 							<li class="index_02"><a href="04_04_parametrage.php#IV41b">Projective (transformation)</a></li>
 							<li class="index_02"><a href="01_04_projets.php">Projet</a></li>
@@ -503,6 +505,7 @@
 							<li class="index_02"><a href="09_05_maillage_sql.php">SQLite</a></li>
 							<li class="index_02"><a href="03_01_donnees_internet.php#III12b">SRTM</a></li>
 							<li class="index_02"><a href="08_01_jointure_attrib.php#VIII14b">Statistiques par catégories (outil)</a></li>
+							<li class="index_02"><a href="09_03_vecteur_raster.php#IX31b">Statistiques de zone (outil)</a></li>
 							<li class="index_02">Style d'une couche
 								<ul>
 									<li class="index_03"><a href="05_02_points.php#V22">catégorisé</a></li>
