@@ -83,7 +83,7 @@
 						<p>C'est la raison pour laquelle nous allons utiliser ici l'outil <b>Point dans la surface</b> plutôt que l'outil <b>Centroïdes</b>.</p>
 					   
 					  <div class="manip">
-						  <p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">COMMUNE.shp</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
+						  <p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">commune.gpkg</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
 						  <p>Dans la barre de recherche de la boîte à outils, tapez par exemple <em>point dans</em> pour trouver plus facilement l'outil <b>point dans la surface</b> (rubrique Géométrie vectorielle)&nbsp;:</p>
 						  <figure>
 								<a href="illustrations/10_01_centroides_menu.jpg" >
@@ -97,8 +97,8 @@
 								</a>
 							</figure>
 							<ul>
-								<li class="espace">Couche source : choisir la couche <em class="data">COMMUNE</em></li>
-								<li class="espace">Point cliquez sur le bouton à droite <b>...</b>, allez à l'emplacement où vous voulez créer la couche de centroïdes et donnez-lui un nom : <em class="data">communes_centroides</em> </li>
+								<li class="espace">Couche source : choisir la couche <em class="data">commune</em></li>
+								<li class="espace">Point cliquez sur le bouton à droite <b>...</b>, allez à l'emplacement où vous voulez créer la couche de centroïdes et donnez-lui un nom : <em class="data">communes_centroides</em> (si vous choisissez le format GeoPackage, il faut donner un nom à la base et à la couche, vous pouvez utiliser le même nom)</li>
 							</ul>
 							<p><b>Exécuter</b>... La couche de centroïdes est ajoutée à QGIS : un point a été créé par commune.</p>
 							<figure>
@@ -131,8 +131,8 @@
 						<div class="manip">
 						    <p><b>Partie Saisie</b> : cette partie concerne les valeurs de la variable utilisée.</p>
 						    <ul>
-						      <li>Source : il s'agit du champ dont les valeurs seront utilisées, ici <b>POPULATION</b></li>
-						      <li>Valeurs depuis... à ... : cliquez sur le bouton Actualiser à droite pour lire automatiquement les valeurs minimum et maximum de population, ici 0 et 2190327</li>
+						      <li>Source : il s'agit du champ dont les valeurs seront utilisées, ici <b>population</b></li>
+						      <li>Valeurs depuis... à ... : cliquez sur le bouton Actualiser à droite pour lire automatiquement les valeurs minimum et maximum de population, ici 0 et 2113705</li>
 						    </ul>
 						    
 							<p><b>Partie Sortie</b> : cette partie concerne la manière dont les valeurs seront représentées.</p>
@@ -178,19 +178,20 @@
 						</figure>
 							
 						<div class="manip">
-							<p>Dans les propriétés de la couche <em class="data">communes_centroides</em>, <b>Symbologie</b>, tout en bas de la fenêtre, cliquez sur <b>Rendu de couche</b>&nbsp;:</p>
+							<p>Dans les propriétés de la couche <em class="data">communes_centroides</em>, <b>Symbologie</b>, tout en bas de la fenêtre, rendez-vous dans la partie <b>Rendu de couche</b>.</p>
+							<p>Cochez la case <b>Contrôle de l'ordre de rendu des entités</b>&nbsp;, puis cliquez sur le bouton tout à droite&nbsp; qui est maintenant activé :</p>
 							<figure>
 								<a href="illustrations/10_01_ordre_entites.jpg" >
 									<img src="illustrations/10_01_ordre_entites.jpg" alt="Activer l'ordre de rendu des entités" width="500">
 								</a>
 							</figure>
-							<p>Cochez la case <b>Contrôle de l'ordre de rendu des entités</b> et cliquez sur le bouton tout à droite&nbsp;:</p>
+							<p>Choisissez le champ <b>population</b> et l'ordre <b>Descendant</b> : ainsi, les cercles seront dessinés du plus peuplé au moins peuplé.</p>
 							<figure>
 								<a href="illustrations/10_01_ordre_entites_2.jpg" >
 									<img src="illustrations/10_01_ordre_entites_2.jpg" alt="Fenêtre de définition de l'ordre de rendu des entités" width="550">
 								</a>
 							</figure>
-							<p>Choisissez le champ <b>POPULATION</b> et l'ordre <b>Descendant</b> : ainsi, les cercles seront dessinés du plus peuplé au moins peuplé.</p>
+
 						</div>
 		  	           <figure>
 							<a href="illustrations/10_01_prop_visu.jpg" >
@@ -201,7 +202,7 @@
 					<h4>C'est mieux avec la légende<a class="headerlink" id="X11e" href="#X11e"></a></h4>
 					   
 					   <p>QGIS gère normalement les légendes pour les différents types de représentation, mais les cartes en cercles proportionnels présentent un cas particulier où nous devrons nous-même créer la légende.</p>
-					   <p>Cette fonctionnalité a été rajoutée récemment, ce qui illustre bien le fait que les logiciels SIG ne sont pas initialement pensés comme des logiciels de cartographie (mais ils ont aujourd'hui tellement de possibilité en ce sens que ce serait dommage de se priver&nbsp;!).</p>
+					   <p>Cette fonctionnalité a été rajoutée après coup, ce qui illustre bien le fait que les logiciels SIG ne sont pas initialement pensés comme des logiciels de cartographie (mais ils ont aujourd'hui tellement de possibilité en ce sens que ce serait dommage de se priver&nbsp;!).</p>
 					   
 					   <div class="manip">
 					       <p>Ouvrez la fenêtre des propriétés, rubrique <b>Symbologie</b>, et cliquez en bas à droite sur <b>Avancé</b> pour choisir <b>Légende pour la Taille définie par des données</b> :</p>
@@ -245,15 +246,15 @@
 						<p>La première étape consistera pour nous à créer un champ densité de population, rempli en fonction de la population et de la surface.</p>
 						
 						<div class="manip">
-							<p>Ouvrez la table attributaire de <em class="data">COMMUNE</em>, <a href="05_02_points.php#V21">passez en mode édition</a> et ouvrez la <a href="07_02_calculer.php#VII21">calculatrice de champ</a>.</p>
+							<p><img class="icone" src="illustrations/9_3_calc_champs_icone.jpg" alt="icône calculatrice de champs" >Ouvrez la table attributaire de <em class="data">commune</em>, <a href="05_02_points.php#V21">passez en mode édition</a> et ouvrez la <a href="07_02_calculer.php#VII21">calculatrice de champ</a>.</p>
 							<p>Calculez dans un nouveau champ nommé <b>densite</b> de type <b>décimal</b> la densité de population en <b>nombre d'habitants par km²</b>.</p>
 							<div class="question">
 								<input type="checkbox" id="faq-1">
 								<p><label for="faq-1">Quelle formule utiliser pour cela ?</label></p>
 								<p class="reponse">On peut utiliser <b>$area</b> pour calculer la surface. Les unités de la couche étant des mètres (couche projetée en Lambert 93), il faut diviser $area par 1 000 000 pour obtenir des km<sup>2</sup>.</p>
-								<p class="reponse">Au final, la formule est donc : <b>"POPULATION"  / ($area / 1000000)</b></p>
+								<p class="reponse">Au final, la formule est donc : <b>"population"  / ($area / 1000000)</b></p>
 							</div>
-							<p>Quittez le mode édition. Vérifiez le contenu du champ densite.</p>
+							<p>Quittez le mode édition en enregistrant les modifications. Vérifiez le contenu du champ densite.</p>
                             <figure>
 								<a href="illustrations/10_01_densite_res.jpg" >
 									<img src="illustrations/10_01_densite_res.jpg" alt="Champ densité dans la table attributaire" width="90">
@@ -268,7 +269,7 @@
 						
 						<div class="manip">
 							<p>Pour faire varier la couleur des communes en fonction de la densité :</p>
-							<p><b>Propriétés de la couche COMMUNE &#8594; rubrique Symbologie</b></p>
+							<p><b>Propriétés de la couche commune &#8594; rubrique Symbologie</b></p>
 							<figure>
 								<a href="illustrations/10_01_choroplethe_fenetre.jpg" >
 									<img src="illustrations/10_01_choroplethe_fenetre.jpg" alt="Choix des paramètres du style pour une carte choroplèthe en 5 classes par la méthode des quantiles" width="600">
@@ -297,12 +298,32 @@
 									<img src="illustrations/10_01_enlever_bordure_02.jpg" alt="Cliquer sur Modifier pour enlever les bordures" width="400">
 								</a>
 							</figure>
-							<p class="note">Toutefois, même ainsi, les limites restent un peu visibles. Pour ne vraiment plus les voir, il faut rendre visibles ces limites avec une épaisseur fine et leur donner la même couleur que la couleur de remplissage.</p>
+							<p>Toutefois, même ainsi, les limites restent un peu visibles. Il existe une astuce pour ne plus les voir, en allant dans le style du symbole :</p>
+							<figure>
+								<a href="illustrations/10_01_enlever_bordure.jpg" >
+									<img src="illustrations/10_01_enlever_bordure.jpg" alt="Cliquer sur Modifier pour enlever les bordures" width="500">
+								</a>
+							</figure>
+							<p>Puis :</p>
+							<figure>
+								<a href="illustrations/10_01_enlever_bordure_03.jpg" >
+									<img src="illustrations/10_01_enlever_bordure_03.jpg" alt="Bordure minimales, mêmes couleurs que les communes" width="500">
+								</a>
+							</figure>
+							<ul>
+							 <li>cliquer sur remplissage simple</li>
+							 <li>donner une épaisseur minimale aux bordures</li>
+							 <li>et leur donner la même couleur que la couleur de remplissage, en cliquant sur le bouton à droite de la couleur de trait &#8594; Éditer... &#8594; expression <b>@symbol_color</b></li>
+							</ul>
 						</div>
 						<figure>
 							<a href="illustrations/10_01_choroplethe_visu.jpg" >
-								<img src="illustrations/10_01_choroplethe_visu.jpg" alt="Exemple de carte choroplethe : 5 classes, méthode des quantiles, dégradé de bleu" width="400">
+								<img src="illustrations/10_01_choroplethe_visu.jpg" alt="Exemple de carte choroplethe : 7 classes, méthode des quantiles, dégradé de rose fuschia, pas de bordure" width="300">
 							</a>
+							<a href="illustrations/10_01_choroplethe_visu2.jpg" >
+								<img src="illustrations/10_01_choroplethe_visu2.jpg" alt="Exemple de carte choroplethe : 7 classes, méthode des quantiles, dégradé de rose fuschia, bordures de la couleur des communes" width="300">
+							</a>
+							<figcaption>À gauche, sans bordure, à droite, avec des bordures de la couleur des symboles.</figcaption>
 						</figure>
 
 						
@@ -316,7 +337,7 @@
 					   <figcaption>Carte en semis de points de Chicago (Source : Bill Rankin sur <a href="http://www.radicalcartography.net/index.html?chicagodots">Radical Cartography</a>), &nbsp;: 1 point représente un personne, sa couleur est fonction de l'origine de cette personne. Cette carte met en lumière la ségrégation qui a lieu notamment dans certains quartiers des grandes villes.</figcaption>
 				    </figure>
 					
-					<p>Ici, nous allons créer ces points aléatoires en fonction du champ POPULATION. On pourrait créer un point par personne, mais le temps de création de la couche de points serait très long, et le résultat serait peu lisible. <b>Nous allons donc créer un point pour 100 personnes.</b></p>
+					<p>Ici, nous allons créer ces points aléatoires en fonction de la population. On pourrait créer un point par personne, mais le temps de création de la couche de points serait très long, et le résultat serait peu lisible. <b>Nous allons donc créer un point pour 100 personnes.</b></p>
 					<p>Il faudra donc diviser la population par 100, et arrondir le résultat à l'entier le plus proche, puisqu'on ne peut créer 1,2 points.</p>
 					
 					<div class="manip">
@@ -333,9 +354,9 @@
 							</a>
 						</figure>
 						<ul>
-							<li class="espace">Couche source : <b>COMMUNE</b></li>
+							<li class="espace">Couche source : <b>commune</b></li>
 							<li class="espace">Stratégie d'échantillonnage : <b>Nombre de points</b>, pour créer un nombre de points directement proportionnel à la population</li>
-							<li class="espace">Comptage de points : cliquez sur le bouton à droite, choisissez <b>éditer</b> et tapez l'expression suivante : <b>  round("POPULATION"/100)</b>, pour diviser la population par 100 et arrondir le résultat pour obtenir un nombre entier</li>
+							<li class="espace">Comptage de points : cliquez sur le bouton à droite, choisissez <b>éditer</b> et tapez l'expression suivante : <b>  round("population"/100)</b>, pour diviser la population par 100 et arrondir le résultat pour obtenir un nombre entier</li>
 							<li class="espace">Laissez les autres paramètres par défaut, pour créer une couche temporaire</li>
 							<li class="espace"><b>Exécuter</b>, patientez, l'opération est un peu longue... et fermez la fenêtre une fois terminé.</li>
 						</ul>
@@ -359,7 +380,7 @@
 				        <p>Nous allons voir 2 méthodes, une directement dans la fenêtre des propriétés de la couche, et l'autre avec l'extension Plotly.</p>
     			        <p>Ici, nous allons prendre l'exemple de la densité de population pour les communes de France métropolitaine.</p>
                         <div class="manip">
-                            <p>Si ce n'est pas déjà fait, ajoutez à votre projet la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">COMMUNE.shp</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
+                            <p>Si ce n'est pas déjà fait, ajoutez à votre projet la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">commune.gpkg</a></em> située dans le dossier <b>TutoQGIS_10_representation/donnees</b>.</p>
                         </div>	
     				
     				    <h4>Histogramme simple<a class="headerlink" id="X14a" href="#X14a"></a></h4>
@@ -403,8 +424,8 @@
     				        
     				        <div class="manip">
     				            <p>Il faut tout d'abord <a href="03_04_fonds_carte.php#III43" >installer l'extension</a> : <b>menu Extension &#8594; Installer/Gérer les extensions</b>, tapez <b>plotly</b> dans la barre de recherche et cliquez sur <b>Installer l'extension</b>.</p>
-    				            <p><img class="icone" src="illustrations/10_01_plotly_icone.jpg" alt="icône extension Plotly" >Plotly est ensuite accessible via le <b>menu Extension &#8594; DataPlotly</b> ou bien en cliquant sur son icône.</p>
-    				            <p>Un nouveau panneau appraît : il peut être nécessaire de l'agrandir un peu.</p>
+    				            <p><img class="icone" src="illustrations/10_01_plotly_icone.jpg" alt="icône extension Plotly" >Plotly est ensuite accessible via le <b>menu Vue &#8594; Panneaux &#8594; DataPlotly</b> ou bien en cliquant sur son icône.</p>
+    				            <p>Un nouveau panneau apparaît : il peut être nécessaire de l'agrandir un peu.</p>
                                 <p>Pour affficher un histogramme de fréquence de la densité de population&nbsp;:</p>
     				            <figure>
             							<a href="illustrations/10_01_plotly_config.jpg" >
@@ -413,7 +434,7 @@
             						</figure>
             						<ul>
             						  <li>Choisissez le type <b>Histogram</b></li>
-            						  <li>Les données à représenter proviennent de la couche <b>COMMUNE</b>...</li>
+            						  <li>Les données à représenter proviennent de la couche <b>commune</b>...</li>
             						  <li>...et de son champ <b>densite</b></li>
             						  <li>Cliquez ensuite sur le bouton <b>Créer le graphique</b> tout en bas&nbsp;:</li>
             						</ul>
