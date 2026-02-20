@@ -16,7 +16,7 @@
 				
 				<div class="manip">
 					<p>Lancer QGIS et ouvrir le projet <em class='data'><a href="donnees/TutoQGIS_11_Automatisation.zip">decoupe.qgz</a></em> situé dans <b>TutoQGIS_11_automatisation/projets</b>.</p>
-					<p>Ce projet contient une couche correspondant aux limites communales de la commune de Sainte-Radégonde, ainsi que 4 autres couches de lieux, routes, espaces naturels et bâtiments.</p>
+					<p>Ce projet contient une couche correspondant aux limites communales de la commune de Sainte-Radégonde-des-Noyers (Vendée), ainsi que 4 autres couches de lieux, routes, espaces naturels et bâtiments.</p>
 					<figure>
 							<a href="illustrations/11_01_projet.jpg" >
 								<img src="illustrations/11_01_projet.jpg" alt="Aperçu du projet decoupe.qgz" width="550">

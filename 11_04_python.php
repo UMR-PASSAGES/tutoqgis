@@ -19,12 +19,12 @@
 				<br>
 				
 				<p>Chaque manipulation que nous faisons dans QGIS via l'interface graphique (ajouter une couche, découper une couche etc.) peut également être faite sous forme d'une ligne de commande dans le langage <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Python_%28langage%29">Python</a>.</p>
-				<p>Par exemple, pour ajouter la couche <em class="data">SAINTE_RADEGONDE.shp</em>, située dans le dossier /mnt/travail/temp, vous pouvez soit l'ajouter comme nous l'avons fait jusqu'ici, soit taper la commande Python suivante :</p>
-				<p class="code">qgis.utils.iface.addVectorLayer("/mnt/travail/temp/SAINTE_RADEGONDE.shp", "SAINTE_RADEGONDE", "ogr")</p>
+				<p>Par exemple, pour ajouter la couche <em class="data">Sainte_Radegonde_des_Noyers.shp</em>, située dans le dossier /mnt/travail/temp, vous pouvez soit l'ajouter comme nous l'avons fait jusqu'ici, soit taper la commande Python suivante :</p>
+				<p class="code">qgis.utils.iface.addVectorLayer("/mnt/travail/temp/Sainte_Radegonde_des_Noyers.shp", "Sainte_Radegonde_des_Noyers", "ogr")</p>
 				<p>Ce qui revient à lancer l'outil d'ajout de couche vecteur <b>addVectorLayer</b> de QGIS, avec 3 paramètres :</p>
 				<ul>
-					<li>l'emplacement de la couche : <b>/mnt/travail/temp/SAINTE_RADEGONDE.shp</b> (ce chemin va bien sûr varier)</li>
-					<li>le nom avec lequel la couche sera affichée dans QGIS : <b>SAINTE_RADEGONDE</b></li>
+					<li>l'emplacement de la couche : <b>/mnt/travail/temp/Sainte_Radegonde_des_Noyers.shp</b> (ce chemin va bien sûr varier)</li>
+					<li>le nom avec lequel la couche sera affichée dans QGIS : <b>Sainte_Radegonde_des_Noyers</b></li>
 					<li>le nom du fournisseur de données : <b>ogr</b> car QGIS utilise en interne une <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_logicielle">bibliothèque</a> nommée ogr pour accéder aux shapefiles</li>
 				</ul>
 				
@@ -49,17 +49,17 @@
     							<img src="illustrations/11_04_test_console_resultat.jpg" alt="test de la console : taper une commande" width="620">
     						</a>
     					</figure>
-    					<p>Vous venez d’utiliser la commande <b>Print</b>, qui permet d'afficher du texte dans la console. Vous pouvez également tester la commande citée plus haut pour ajouter une couche vecteur :</p>
+    					<p>Vous venez d’utiliser la commande <b>print</b>, qui permet d'afficher du texte dans la console. Vous pouvez également tester la commande citée plus haut pour ajouter une couche vecteur :</p>
     					<p class="code">qgis.utils.iface.addVectorLayer("/mnt/travail/temp/SAINTE_RADEGONDE.shp", "SAINTE_RADEGONDE", "ogr")</p>
     					<p>Il faut remplacer le chemin ("/mnt/travail/temp/SAINTE_RADEGONDE.shp") par le chemin vers la couche sur votre ordinateur.</p>
     					<p class="note">Sur Windows, les chemins seront de la forme 'C:/…' par exemple.</p>
     				</div>
     				
-    				<p>Il est possible de travailler uniquement en lançant ainsi des commandes une à une ; seulement, les commandes utilisées ne seront pas sauvegardées et ne pourront donc être réutilisées sans tout retaper à la main (même s'il est possible de faire défiler les dernières commandes utilisées en appuyant sur la touche flèche haut du clavier).</p>
+    				<p>Il est possible de travailler uniquement en lançant ainsi des commandes une à une ; seulement, les commandes utilisées ne seront pas sauvegardées et ne pourront donc être réutilisées sans tout retaper à la main (même s'il est possible de faire défiler les dernières commandes utilisées en appuyant sur la touche <em>flèche haut</em> du clavier).</p>
 				
 				<h3>Ouvrir un script Python<a class="headerlink" id="XI42" href="#XI42"></a></h3>
 					
-					<p>Pour sauvegarder et réutiliser facilement votre travail, le plus simple est d'utiliser ce qu'on appelle un script. Il s'agit simplement d'un fichier texte comportant une suite de commandes, et qui porte l'extension PY puisqu'il s'agit d'un script Python.</p>
+					<p>Pour sauvegarder et réutiliser facilement votre travail, le plus simple est d'utiliser ce qu'on appelle un script. Il s'agit simplement d'un fichier texte comportant une suite de commandes, et qui porte l'extension <b>.py</b> puisqu'il s'agit d'un script Python.</p>
 					<p>Ce tutoriel n'étant pas un tutoriel Python, nous nous contenterons d'ouvrir un script existant plutôt que d'en créer un nous-mêmes.</p>
 					
 					<div class="manip">
@@ -78,7 +78,7 @@
                         </figure>
 						<p>Lisez le contenu du script. <b>Les lignes commençant par un # sont des commentaires</b> : leur contenu ne sera pas pris en compte, ils sont uniquement utiles pour mieux comprendre le script.</p>
 					</div>
-					<p>L'objectif n'est pas de comprendre dans le détail tout ce que fait ce script, mais de comprendre globalement ce qui s'y passe, notamment au moyen des commentaires. Il s'agit ici d'un script faisant le même travail que le modèle que vous avez réalisé en <a href="11_03_modeleur.php#XI33b">précédemment</a>, à savoir découper plusieurs couches par une même couche et reprojeter les couches obtenues en WGS84.</p>
+					<p>L'objectif n'est pas de comprendre dans le détail tout ce que fait ce script, mais de comprendre globalement ce qui s'y passe, notamment au moyen des commentaires. Il s'agit ici d'un script faisant le même travail que le modèle que vous avez réalisé <a href="11_03_modeleur.php">précédemment</a>, à savoir découper plusieurs couches par une même couche et reprojeter les couches obtenues en WGS84.</p>
 
 				
 				<h3>Paramétrer le script<a class="headerlink" id="XI43" href="#XI43"></a></h3>
@@ -96,14 +96,14 @@
 						<li><b>dossier_sortie</b> : le dossier où seront enregistrées les couches créées (ce dossier doit déjà exister)</li>
 					</ul>
 					<div class="manip">
-						<p>A vous de modifier ces paramètres suivant l'emplacement des données sur votre ordinateur&nbsp;! Attention à ce que le dossier en entrée ne comporte que les couches à découper.</p>
+						<p>À vous de modifier ces paramètres suivant l'emplacement des données sur votre ordinateur&nbsp;! Attention à ce que le dossier en entrée ne comporte que les couches à découper.</p>
 						<p>Attention à bien écrire les chemins exacts dans le script, une erreur d'une seule lettre vous renverra un message d'erreur quand vous voudrez l'exécuter.</p>
 					</div>
 					
 				
 				<h3>Lancer et éditer un script<a class="headerlink" id="XI44" href="#XI44"></a></h3>
 				
-          <p>Pour savoir comment appeler un outil en python, une astuce est de d'abord le lancer &#171;&nbsp;normalement&nbsp;&#187; puis d'aller dans le <b>menu Traitement &#8594; Historique</b> et cliquer sur la ligne correspondante. En bas de la fenêtre, vous aurez la commande Python qui a été exécutée cette fois-là&nbsp;:</p>				
+          <p>Pour savoir comment appeler un outil en python, une astuce est de d'abord le lancer &#171;&nbsp;normalement&nbsp;&#187; puis d'aller dans le <b>menu Traitement &#8594; Historique</b> et cliquer sur le petit triangle devant la ligne correspondante, puis sur la ligne python. En bas de la fenêtre, vous aurez la commande python qui a été exécutée cette fois-là&nbsp;:</p>				
 				  <figure>
 				    <a href="illustrations/11_04_historique.jpg" >
 			       <img class="icone" src="illustrations/11_04_historique.jpg" alt="Fenêtre Historique" width="600">
@@ -118,6 +118,7 @@
 					      </a>
 					    </figure>
 						<p>Pour lancer le script, cliquez sur l'icône <b>Lancer le script</b> en haut de l'éditeur. Vérifiez que tout ait bien fonctionné.</p>
+						<p>Si vous obtenez une erreur, pas de panique, ça fait partie du processus ! Lisez le message d'erreur, il est probable qu'il s'agisse d'une erreur dans un des paramètres en entrée : un mauvais chemin ou nom de couche, ou bien le dossier résultat qui n'existe pas.</p>
 						<p>Quelles modifications apporter au script pour que :</p>
 						<div class="question">
 							<input type="checkbox" id="faq-1">
@@ -132,6 +133,8 @@
 					</div>
 					
 					<p>Pour en savoir plus sur le sujet, vous pouvez lire par exemple <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/pyqgis_developer_cookbook/intro.html" >ici</a>.</p>
+					
+					<p>Ce tutoriel est fini, bravo à vous !!! N'hésitez pas à envoyer une carte postale à julie.pierson (at) cnrs.fr, ou bien <a class="ext" target="_blank" href="https://mapstodon.space/@sigomatique">@sigomatique</a> sur Mastodon (<a class="ext" target="_blank" href="https://mapstodon.space/">mapstodon.space</a>) &#128522;</p>
 					
 				<br>
 				<a class="prec" href="11_03_modeleur.php">chapitre précédent</a>

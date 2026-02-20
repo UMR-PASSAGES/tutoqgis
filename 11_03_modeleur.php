@@ -36,6 +36,7 @@
 				
 				<p>Les modèles sont surtout utiles pour chaîner plusieurs traitements. Par exemple, imaginons que notre but soit non seulement de découper une couche par une autre, mais ensuite de changer le SCR de la couche découpée pour la passer en WGS84 par exemple.</p>
 				<p>Il est possible de <b>créer un modèle enchaînant les deux outils</b>, qui pourra être lancé facilement sur plusieurs couches, et même être exécuté <a href="11_02_par_lot.php">par lot</a>.</p>
+				<p class="note">Ici nous verrons un exemple simple, mais un modèle peut comporter autant d'outils et de paramètres que l'on souhaite !</p>
 				<div class="manip">
 					<p>Dans la boîte à outils Traitements, cliquez sur l'icône <b>Modèles</b> tout en haut à gauche et choisissez <b>Créer un nouveau modèle</b>.</p>
 					<figure>
@@ -69,7 +70,7 @@
     							</a>
 							</figure>
 							<ul>
-								<li class="espace">Nom du paramètre : <b>couche à découper</b></li>
+								<li class="espace">Description : <b>couche à découper</b></li>
 								<li class="espace">Type de géométrie : <b>Tout type de géométrie</b>, puisque cette couche peut aussi bien être de type point, ligne ou polygone</li>
 								<li class="espace"><b>Obligatoire</b> : cochez la case, il ne s'agit pas d'un paramètre optionnel</li>
 							</ul>	
@@ -95,8 +96,8 @@
 								</a>
 								</figure>
 							<ul>
-								<li>Nom du paramètre : <b>couche masque</b></li>
-								<li>Type de géométrie : <b>polygone</b></li>
+								<li>Description : <b>couche masque</b></li>
+								<li>Type de géométrie : <b>Polygone</b></li>
 								<li><b>Obligatoire</b></li>
 							</ul>
 							<p>Une deuxième boîte apparait aux côtés de la première&nbsp;:</p>
@@ -124,7 +125,7 @@
 							</figure>
 							<ul>
 								<li>Description : <b>Couper</b></li>
-								<li>Couche en entrée : cliquez sur le bouton à gauche pour choisir <b>Entrée du modèle</b> à la place de valeur, pour choisir <b>couche à découper</b> dans la liste à droite</li>
+								<li>Couche en entrée : cliquez sur le bouton à gauche pour choisir <b>Entrée du modèle</b>, puis choisir <b>couche à découper</b> dans la liste à droite</li>
 								<li>Couche de découpage : idem, choisir <b>Entrée du modèle</b> puis <b>couche masque</b></li>
 								<li>Découpé : ne rentrez rien dans cette partie, pour que la couche créée soit temporaire</li>
 							</ul>
@@ -178,16 +179,27 @@
         							<img src="illustrations/11_03_enregistrer_modele_fenetre.jpg" alt="Fenêtre du modeleur, choix du nom du modèle et du groupe et icône de sauvegarde entourés en rouge" width="600">
         						</a>
         					</figure>
-    						<p>Dans l'onglet <b>Propriétés du modèle</b> de la partie gauche de la fenêtre, choisissez le nom sous lequel votre modèle sera disponible dans la boîte à outils, par exemple <b>découper et modifier SCR</b> par exemple.</p>
+    						<p>Dans l'onglet <b>Propriétés du modèle</b> de la partie gauche de la fenêtre, choisissez le nom sous lequel votre modèle sera disponible dans la boîte à outils, par exemple <b>découper et modifier SCR</b>.</p>
     						<p>Tapez également le nom de son groupe, c'est-à-dire la rubrique dans laquelle votre modèle apparaîtra au sein de la boîte à outils : <b>tests</b> par exemple.</p>
     					</div>
     					
     					<p>Si le groupe n'existe pas déjà, il sera créé.</p>
     					
     					<div class="manip">
-    						<p><img class="icone" src="illustrations/11_03_enregistrer_modele_icone.jpg" alt="icône Enregistrer" >Cliquez ensuite sur l'icône <b>Enregistrer le modèle sous</b>. Dans la fenêtre qui s'ouvre alors, choisissez un nom pour votre modèle, par exemple <b>couper_modifSCR</b>.</p>
-    						<p>Notez qu'il va être enregistré dans le répertoire par défaut des modèles : processing/models dans le dossier qgis, et qu'il possède l'extension <em>.model3</em> (pour QGIS 3).</p>
+    						<p><img class="icone" src="illustrations/11_03_enregistrer_modele_icone.jpg" alt="icône Enregistrer" >Cliquez ensuite sur l'icône <b>Enregistrer le modèle sous</b> dans la barre d'outils en haut. Dans la fenêtre qui s'ouvre alors, choisissez un nom pour votre modèle (il s'agit ici du nom du fichier qui sera créé), par exemple <b>couper_modifSCR</b>.</p>
     					</div>
+    					
+    					<p>Notez qu'il va être enregistré dans le répertoire par défaut des modèles : processing/models dans le dossier qgis, et qu'il possède l'extension <em>.model3</em> (pour QGIS 3). Il est conseillé de le laisser dans ce répertoire par défaut.</p>
+    					
+    					<div class="manip">
+      					<p>Vous pouvez fermer la fenêtre du modeleur. Votre modèle est maintenant accessible dans la boîte à outils :</p>
+      					<figure>
+      						<a href="illustrations/11_03_emplacement_modele.jpg" >
+      							<img src="illustrations/11_03_emplacement_modele.jpg" alt="Emplacement du modèle dans la boîte à outils" width="300">
+      						</a>
+    				    </figure>
+    				    <p>Si vous avez besoin de le modifier, il suffit de faire un clic droit sur son nom &#8594; Éditer le modèle...</p>
+  				    </div>
     						
     				<h4>Documenter un modèle<a class="headerlink" id="XI32b" href="#XI32b"></a></h4>
     				
@@ -200,12 +212,8 @@
     					</figure>
     					
     					<div class="manip">
-    					   <p>Si vous avez fermé la fenêtre d'édition du modèle, vous pouvez y accéder à nouveau : <b>boîte à outils &#8594; modèles &#8594; tests (ou le nom de votre groupe) &#8594; clic droit sur le nom de votre outil, Editer le modèle...</b></p>
-    					   <figure>
-        						<a href="illustrations/11_03_emplacement_modele.jpg" >
-        							<img src="illustrations/11_03_emplacement_modele.jpg" alt="Emplacement du modèle dans la boîte à outils" width="300">
-        						</a>
-        				   </figure>
+    					   <p>Si vous avez fermé la fenêtre d'édition du modèle, vous pouvez y accéder à nouveau : <b>boîte à outils &#8594; modèles &#8594; tests (ou le nom de votre groupe) &#8594; clic droit sur le nom de votre outil &#8594; Éditer le modèle...</b></p>
+    					   
         				   <p>Dans la barre d'outils en haut de la fenêtre d'édition du modèle, cliquez sur l'icône <b>Éditer l'aide du modèle</b>.</p>
                            <figure>
         						<a href="illustrations/11_03_modele_aide_icone.jpg" >
@@ -218,10 +226,12 @@
         							<img src="illustrations/11_03_aide_fenetre.jpg" alt="Fenêtre de l'éditeur d'aide du modèle" width="470">
         						</a>
         				   </figure>
-        				   <p>Cliquez par exemple sur <b>Description de l'algorithme</b> à gauche, puis rédigez le texte correspondant à droite.</p>
+        				   <p>Cliquez par exemple sur <b>Description de l'algorithme</b> en bas à gauche, puis rédigez le texte correspondant en bas à droite. Vous pouvez voir le rendu en haut.</p>
         				   <p>L'aide doit être courte et claire&nbsp;!</p>
         				   <p>Vous pouvez également rédiger l'aide pour d'autres parties, par exemple pour les 2 paramètres en entrée et le rendu.</p>
     					</div>
+    					
+    					<p class="note">Pour info, il est possible d'éditer directement le HTML de l'aide : dans <b>Description de l'algorithme</b>, cliquez sur le bouton tout à droite <b>Éditer la source HTML</b>.</p>
     					
     					<p>Votre modèle est fini et possède même une aide... C'est le moment de le tester&nbsp;!</p>
 						
@@ -250,19 +260,14 @@
 								<li class="espace">couche masque&nbsp;: <em class="data">SAINTE_RADEGONDE</em></li>
 								<li class="espace">découpé+reprojeté&nbsp;: ne tapez rien, pour que le résultat soit une couche temporaire</li>
 							</ul>
-							<p><b>Exécutez</b>, vérifiez le SCR de la couche obtenue, ainsi que son contenu : elle ne doit comporter que les routes à l'intérieur de la commune de Sainte-Radégonde (en gris foncé dans la figure ci-dessous).</p>
-							<figure>
-								<a href="illustrations/11_03_resultat_decoupe.jpg" >
-									<img src="illustrations/11_03_resultat_decoupe.jpg" alt="résultat de la découpe : les 2 couches de route et la couche de commune" width="350">
-								</a>
-							</figure>
+							<p><b>Exécutez</b>, vérifiez le SCR de la couche obtenue, ainsi que son contenu : elle ne doit comporter que les routes à l'intérieur de la commune de Sainte-Radégonde-des-Noyers.</p>
 						</div>
 						
 					<h4>Découpage et reprojection de plusieurs couches (utilisation &#171; par lot &#187;)<a class="headerlink" id="XI33b" href="#XI33b"></a></h4>
 				
 						<p>Le but est ici de découper et reprojeter plusieurs couches, sans avoir à lancer plusieurs fois le modèle.</p>
 						<div class="manip">
-							<p>A partir de la boîte à outils de traitements, clic droit sur le modèle, <b>Exécuter comme processus de lot...</b>. Remplissez les différents paramètres, en vous aidant éventuellement de la <a href="11_02_par_lot.php">partie XI.2</a>.</p>
+							<p>A partir de la boîte à outils de traitements, clic droit sur le modèle, <b>Exécuter comme processus de lot...</b>. Remplissez les différents paramètres, en vous aidant éventuellement du <a href="11_02_par_lot.php">chapitre précédent</a>.</p>
 							<figure>
 								<a href="illustrations/11_03_test_modele_lot.jpg" >
 									<img src="illustrations/11_03_test_modele_lot.jpg" alt="remplissage des paramètres de l'outil clip and project en mode par lot" width="620">
