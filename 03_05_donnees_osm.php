@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -11,25 +11,25 @@
 		  <h1 class="hide_for_pdf">III.  Recherche et ajout de données</h1>
 			<h2>III.5  QGIS et OpenStreetMap</h2>
 				<ul class="listetitres">
-					<li><a href="#III51">Qu'est-ce qu'OpenStreetMap ?</a></li>
+					<li><a href="#III51">Qu'est-ce qu'OpenStreetMap&nbsp;?</a></li>
 					<li><a href="#III52">Visualiser un fonds OpenStreetMap</a></li>
 					<li><a href="#III53">Télécharger des données OpenStreetMap</a></li>
 					<li><a href="#III54">Représenter des données OpenStreetMap</a></li>
 					<li><a href="#III55">Charger des données OpenStreetMap à partir de QGIS</a></li>
 				</ul>
 	
-			<h3>Qu'est-ce qu'OpenStreetMap ?<a class="headerlink" id="III51" href="#III51"></a></h3>
+			<h3>Qu'est-ce qu'OpenStreetMap&nbsp;?<a class="headerlink" id="III51" href="#III51"></a></h3>
 			
                 <p><a class="ext" target="_blank" href="http://www.openstreetmap.org">OpenStreetMap ou OSM</a> est un projet qui a pour but de constituer une base de données géographiques libre du monde. A l'instar de <a class="ext" target="_blank" href="https://fr.wikipedia.org">Wikipédia</a>, tout un chacun peut participer et enrichir le projet. On peut donc visualiser, réutiliser et même après inscription modifier gratuitement les données.</p>
-                <p>La partie la plus connue du projet est peut-être la visualisation des données OSM sous forme de <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=19/44.79461/-0.61780" >carte</a> ; mais OSM est avant tout un ensemble de <a class="ext" target="_blank" href="https://www.openstreetmap.org/way/226888023">données</a> géographiques, utilisables entre autres dans un logiciel SIG.</p>
+                <p>La partie la plus connue du projet est peut-être la visualisation des données OSM sous forme de <a class="ext" target="_blank" href="http://www.openstreetmap.org/#map=19/44.79461/-0.61780" >carte</a>&nbsp;; mais OSM est avant tout un ensemble de <a class="ext" target="_blank" href="https://www.openstreetmap.org/way/226888023">données</a> géographiques, utilisables entre autres dans un logiciel SIG.</p>
                 <figure>
                     <a href="illustrations/3_5_carte.jpg" >
-                		<img src="illustrations/3_5_carte.jpg" alt="OpenStreetMap : extrait de carte" width="290">
+                		<img src="illustrations/3_5_carte.jpg" alt="OpenStreetMap&nbsp;: extrait de carte" width="290">
                 	</a>
                     <a href="illustrations/3_5_donnees.jpg" >
-                		<img src="illustrations/3_5_donnees.jpg" alt="OpenStreetMap : extrait de carte avec les données en bleu" width="290">
+                		<img src="illustrations/3_5_donnees.jpg" alt="OpenStreetMap&nbsp;: extrait de carte avec les données en bleu" width="290">
                 	</a>
-                	<figcaption>Sous la carte... les données !</figcaption>
+                	<figcaption>Sous la carte... les données&nbsp;!</figcaption>
                 </figure>
                 <p class="note"><br>Pour voir les données dans <a class="ext" target="_blank" href="https://www.openstreetmap.org/">OSM</a>, cliquez sur l'icône <b>Couches</b> à droite de la carte puis cochez la case <b>Données de carte</b>.</p>
                 <p>Les attributs des données OSM sont des paires <b>clé=valeur</b> (key=value). Un élément peut par exemple être caractérisé par <b>l'attribut</b> (tag) <b>waterway=river</b> pour indiquer qu'il s'agit d'un cours d'eau de type rivière. La clé est ici waterway et la valeur river. Un élément peut être caractérisé par plusieurs attributs (plusieurs paires clé=valeur).</p>
@@ -38,11 +38,11 @@
 
 			<h3>Visualiser un fonds OpenStreetMap<a class="headerlink" id="III52" href="#III52"></a></h3>
 			
-    			<p>Il s'agira ici de simplement visualiser les données OSM comme un fonds raster, c'est-à-dire une image non modifiable. OSM étant une base de données, il est possible de représenter ces données comme on le souhaite ; plusieurs organismes proposent ainsi leur représentation des données OSM. Ces représentations peuvent avoir des objectifs différents : servir de fonds de carte discret, représenter les itinéraires cyclables, les données utiles pour les organisations humanitaires...</p>
+    			<p>Il s'agira ici de simplement visualiser les données OSM comme un fonds raster, c'est-à-dire une image non modifiable. OSM étant une base de données, il est possible de représenter ces données comme on le souhaite&nbsp;; plusieurs organismes proposent ainsi leur représentation des données OSM. Ces représentations peuvent avoir des objectifs différents&nbsp;: servir de fonds de carte discret, représenter les itinéraires cyclables, les données utiles pour les organisations humanitaires...</p>
     			
     			<p>Il est possible d'afficher un fonds OpenStreetMap, comme décrit précédemment, soit <a href="03_04_fonds_carte.php#III42">via l'explorateur avec un serveur de tuiles</a>, soit <a href="03_04_fonds_carte.php#III43">via l'extension QuickMapServices</a>.</p>
     			
-    			<p>Attention, si vous voulez afficher un fonds <a class="ext" target="_blank" href="https://maps.stamen.com/" >Stamen</a>, il vous faudra une clé API ; voir <a class="ext" target="_blank" href="https://docs.stadiamaps.com/tutorials/how-to-use-stadia-maps-as-a-raster-base-layer-in-qgis/" >ce tutoriel (en anglais)</a> pour la marche à suivre.</p>
+    			<p>Attention, si vous voulez afficher un fonds <a class="ext" target="_blank" href="https://maps.stamen.com/" >Stamen</a>, il vous faudra une clé API&nbsp;; voir <a class="ext" target="_blank" href="https://docs.stadiamaps.com/tutorials/how-to-use-stadia-maps-as-a-raster-base-layer-in-qgis/" >ce tutoriel (en anglais)</a> pour la marche à suivre.</p>
 			   
 			
 			<h3>Télécharger des données OpenStreetMap<a class="headerlink" id="III53" href="#III53"></a></h3>
@@ -68,8 +68,8 @@
                     	</a>
                     </figure>
                      <p class="note">Au cas où le téléchargement échouerait, ces données sont également disponibles <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les données de la partie III</a> (fichier <em class="data">suriname-260105-free.shp.zip</em>).</p>
-                     <p>Enregistrer le fichier sur votre ordinateur, décompressez le fichier ZIP obtenu dans votre répertoire de travail : vous obtenez une série de couches au format Shapefile.</p>
-                     <p>Que contiennent ces données ? Pour le savoir, cliquez sur le lien <a class="ext" target="_blank" href="http://download.geofabrik.de/osm-data-in-gis-formats-free.pdf" >Format description PDF</a> disponible en cliquant sur <b>Suriname</b>
+                     <p>Enregistrer le fichier sur votre ordinateur, décompressez le fichier ZIP obtenu dans votre répertoire de travail&nbsp;: vous obtenez une série de couches au format Shapefile.</p>
+                     <p>Que contiennent ces données&nbsp;? Pour le savoir, cliquez sur le lien <a class="ext" target="_blank" href="http://download.geofabrik.de/osm-data-in-gis-formats-free.pdf" >Format description PDF</a> disponible en cliquant sur <b>Suriname</b>
                      <a class="thumbnail_bottom" href="#thumb">à partir de la page où vous avez téléchargé les données
                     	<span>
                     		<img src="illustrations/3_5_lien_pdf_geofabrik.jpg" alt="Page geofabrik Suriname avec le lien vers le PDF des métadonnées entouré en rouge" height="400" >
@@ -85,7 +85,7 @@
                     
             <h3>Représenter des données OpenStreetMap<a class="headerlink" id="III54" href="#III54"></a></h3>
                 
-                <p>Les données OpenStreetMap ajoutées dans QGIS, comme toute autre donnée, ont un style &#171; par défaut &#187;, ne convenant pas pour une carte. Nous allons voir ici comment représenter ces données pour obtenir quelque chose de similaire à ceci :</p>
+                <p>Les données OpenStreetMap ajoutées dans QGIS, comme toute autre donnée, ont un style &#171; par défaut &#187;, ne convenant pas pour une carte. Nous allons voir ici comment représenter ces données pour obtenir quelque chose de similaire à ceci&nbsp;:</p>
                 <figure>
                 	<a href="illustrations/3_5_style_resultat.jpg" >
                 		<img src="illustrations/3_5_style_resultat.jpg" alt="Exemple de données OSM stylées, grande échelle" width="500">
@@ -93,7 +93,7 @@
                 </figure>
                 
                 <div class="manip">
-                    <p>Chargez dans QGIS les couches GeoFabrik suivantes :</p>
+                    <p>Chargez dans QGIS les couches GeoFabrik suivantes&nbsp;:</p>
                     <ul>
                         <li>qgis.osm_roads_free.1</li>
                         <li>qgis.osm_buildings_a_free.1</li>
@@ -103,20 +103,20 @@
                         <li>qgis.osm_natural_a_free.1</li>
                         <li>qgis.osm_landuse_a_free.1</li>
                     </ul>
-                    <p>Une dernière couche sera nécessaire : ajoutez également la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">land_polygons_suriname</a></em>.</p>
+                    <p>Une dernière couche sera nécessaire&nbsp;: ajoutez également la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">land_polygons_suriname</a></em>.</p>
                 </div>
                 <p>Dans QGIS, le style d'une couche est enregistré dans le projet. Il est également possible de créer des fichiers de style, au format <b>QML</b> (fichier de style QGIS, propre au logiciel) ou <b>SLD</b> (Style Layer Descriptor, utilisé plus largement en cartographie web).</p>
                 <p>Nous allons ici charger pour chaque couche un fichier de style QML approprié. Ces fichiers ont été élaborés à partir de ceux créés par Charley Glynn et disponibles sur <a class="ext" target="_blank" href="https://github.com/charleyglynn/OSM-Shapefile-QGIS-stylesheets" >https://github.com/charleyglynn/OSM-Shapefile-QGIS-stylesheets</a>.</p>
                 <p>Ces fichiers de style sont adaptés pour un SCR projeté, car certaines taille de symboles sont définies en suivant les unités de la carte et adaptés pour des unités métriques et non en degrés. La première étape consistera donc à adopter un SCR projeté.</p>
                 <div class="manip">
                     <p><a href="02_04_changer_systeme.php#II41">Modifiez le SCR du projet</a> pour choisir par exemple le SCR World_Robinson (code EPSG 54030), et activez la projection à la volée.</p>
-                    <p>Modifiez l'ordre des couches pour obtenir ceci :</p>
+                    <p>Modifiez l'ordre des couches pour obtenir ceci&nbsp;:</p>
                      <figure>
                     	<a href="illustrations/3_5_ordre_couches.jpg" >
                     		<img src="illustrations/3_5_ordre_couches.jpg" alt="Ordre des couches OSM" width="250">
                     	</a>
                     </figure>
-                    <p>Ouvrez la fenêtre <b>Propriétés</b> de la couche <em class="data">gis.osm_roads_free_1</em>, rubrique <b>Symbologie</b> :</p>
+                    <p>Ouvrez la fenêtre <b>Propriétés</b> de la couche <em class="data">gis.osm_roads_free_1</em>, rubrique <b>Symbologie</b>&nbsp;:</p>
                     <figure>
                     	<a href="illustrations/3_5_charger_style.jpg" >
                     		<img src="illustrations/3_5_charger_style.jpg" alt="Charger un style" width="600">
@@ -128,20 +128,20 @@
                     		<img src="illustrations/3_5_charger_style_fenetre.jpg" alt="Sélectionner un style depuis un fichier" width="450">
                     	</a>
                     </figure>
-                    <p>Dans la fenêtre qui s'affiche :</p>
+                    <p>Dans la fenêtre qui s'affiche&nbsp;:</p>
                     <ul>
                        <li class="espace">sélectionnez <b>depuis un fichier</b> dans la liste déroulante</li>
-                       <li class="espace">Fichier : cliquez sur le bouton <b>...</b> et sélectionnez le fichier de style <b><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">roads.qml</a></b> situé dans le dossier <b>TutoQGIS_03_RechercheDonnees/legendes</b>.</li>
-                       <li class="espace">Catégories : laissez les valeurs par défaut</li>
+                       <li class="espace">Fichier&nbsp;: cliquez sur le bouton <b>...</b> et sélectionnez le fichier de style <b><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">roads.qml</a></b> situé dans le dossier <b>TutoQGIS_03_RechercheDonnees/legendes</b>.</li>
+                       <li class="espace">Catégories&nbsp;: laissez les valeurs par défaut</li>
                        <li class="espace">Cliquez sur <b>Charger le style</b></li>
                     </ul>
                     <p>Cliquez ensuite sur <b>OK</b> pour fermer la fenêtre des propriétés.</p>
-                    <p>Zoomez et dézoomez : le style change suivant le niveau de zoom.</p>
+                    <p>Zoomez et dézoomez&nbsp;: le style change suivant le niveau de zoom.</p>
                     <p>Procédez de manière similaire pour chacune des couches, en choisissant à chaque fois le fichier de style approprié.</p>
-                    <p>Pour finir, donnez un fond bleu à votre carte : <b>menu Projet &#8594; Propriétés... &#8594; rubrique Général, Paramètres généraux (en haut)</b> : cliquez sur la couleur à droite de <b>Couleur d'arrière-plan</b>.</p>
+                    <p>Pour finir, donnez un fond bleu à votre carte&nbsp;: <b>menu Projet &#8594; Propriétés... &#8594; rubrique Général, Paramètres généraux (en haut)</b>&nbsp;: cliquez sur la couleur à droite de <b>Couleur d'arrière-plan</b>.</p>
                     <figure>
                     	<a href="illustrations/3_5_modif_couleur_fond.jpg" >
-                    		<img src="illustrations/3_5_modif_couleur_fond.jpg" alt="Propriétés du projet, Général : modification de la couleur d'arrière-plan" width="600">
+                    		<img src="illustrations/3_5_modif_couleur_fond.jpg" alt="Propriétés du projet, Général&nbsp;: modification de la couleur d'arrière-plan" width="600">
                     	</a>
                     </figure>
                     <p>Dans la boîte de dialogue qui s'affiche alors, choisissez une couleur pour la mer, par exemple dans l'exemple ci-dessous <b>R 184 V 217 B 247</b>.</p>
@@ -164,56 +164,56 @@
 			 
 			    <p>Nous allons utiliser ici l'extension <a class="ext" target="_blank" href="https://github.com/3liz/QuickOSM">QuickOSM</a> pour charger des données OpenStreetMap directement dans QGIS.</p>
 			    <p>Cette extension permet le téléchargement de données OSM sous forme de couches temporaires, pour l'emprise de votre choix.</p>
-			    <p>Elle offre par rapport aux solutions précédentes une possibilité supplémentaire : <b>choisir la clé et les valeurs voulues</b>. Vous pouvez ainsi télécharger uniquement les cours d'eau de type rivière pour une zone.</p>
+			    <p>Elle offre par rapport aux solutions précédentes une possibilité supplémentaire&nbsp;: <b>choisir la clé et les valeurs voulues</b>. Vous pouvez ainsi télécharger uniquement les cours d'eau de type rivière pour une zone.</p>
 			    <div class="manip">
 			        <p>Ouvrez un nouveau projet QGIS. Ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">ne_10m_admin_0_countries</a></em> située dans le dossier <b>TutoQGIS_03_RechercheDonnees/donnees</b>. Zoomez sur le Suriname.</p>
-			        <p>Pour <b>installer l'extension QuickOSM</b> (cette étape nécessite une connexion internet) :</p>
+			        <p>Pour <b>installer l'extension QuickOSM</b> (cette étape nécessite une connexion internet)&nbsp;:</p>
 			        <ul>
 			            <li>rendez-vous dans le <b>menu Extensions &#8594; Installer/Gérer les extensions</b>, rubrique <b>Toutes</b></li>
 			            <li>tapez <b>quickosm</b> dans la barre de recherche en haut</li>
 			            <li>cliquez sur le nom de l'extension puis sur le bouton <b>Installer l'extension</b> en bas à droite</li>
 			            <li>Fermez la fenêtre du gestionnaire d'extension.</li>
 			        </ul>
-			        <p>Pour accéder à QuickOSM : <b>menu Vecteur &#8594; Quick OSM &#8594; QuickOSM</b>. La fenêtre suivante s'ouvre :</p>
+			        <p>Pour accéder à QuickOSM&nbsp;: <b>menu Vecteur &#8594; Quick OSM &#8594; QuickOSM</b>. La fenêtre suivante s'ouvre&nbsp;:</p>
 			        <figure>
                     	<a href="illustrations/3_5_quickosm_fenetre.jpg" >
                     		<img src="illustrations/3_5_quickosm_fenetre.jpg" alt="Fenêtre de QuickOSM, choix des options" width="600">
                     	</a>
                     </figure>
-                    <p>Dans la rubrique <b>Requête rapide</b> (colonne de gauche) :</p>
+                    <p>Dans la rubrique <b>Requête rapide</b> (colonne de gauche)&nbsp;:</p>
                     <ul>
                         <li class="espace">Choisissez la clé <b>waterway</b> puis la valeur <b>river</b> pour ne récupérer que les cours d'eau de type rivière</li>
                         <li class="espace">Dans la liste déroulante <b>Dans</b>, sélectionnez l'option <b>Emprise du canevas</b> pour limiter le volume de données à charger à la zone visible dans QGIS</li>
                         <li class="espace">Cliquez enfin sur le bouton <b>Exécuter la requête</b>.</li>
                     </ul>
-                    <p>Patientez (plus la zone visible dans QGIS est grande, plus c'est long !)... Les données sont chargées et affichées :</p>
+                    <p>Patientez (plus la zone visible dans QGIS est grande, plus c'est long&nbsp;!)... Les données sont chargées et affichées&nbsp;:</p>
                     <figure>
                     	<a href="illustrations/3_5_quickosm_resultat.jpg" >
-                    		<img src="illustrations/3_5_quickosm_resultat.jpg" alt="Aperçu des données récupérées avec OSM : rivières du Suriname" width="600">
+                    		<img src="illustrations/3_5_quickosm_resultat.jpg" alt="Aperçu des données récupérées avec OSM&nbsp;: rivières du Suriname" width="600">
                     	</a>
                     </figure>
 			    </div>
 			    <p>Ces données sont temporaires&nbsp;: pour les sauvegarder, clic droit sur la couche &#8594; Exporter &#8594; Sauvegarder les entités sous...</p>
-			    <p>Pour savoir où sont stockées les données temporaires : propriétés de la couche, rubrique Information, ou bien dans l'infobulle qui s'affiche en survolant le nom de la couche.</p>
-			    <p>Nous avons vu ici quelques méthodes pour accéder aux données OSM dans QGIS, mais il en existe d'autres !</p>
+			    <p>Pour savoir où sont stockées les données temporaires&nbsp;: propriétés de la couche, rubrique Information, ou bien dans l'infobulle qui s'affiche en survolant le nom de la couche.</p>
+			    <p>Nous avons vu ici quelques méthodes pour accéder aux données OSM dans QGIS, mais il en existe d'autres&nbsp;!</p>
 	
 			<br>
 			<a class="prec" href="03_04_fonds_carte.php">chapitre précédent</a>
-			<a class="suiv" href="04_00_georeferencement.php">partie IV : géoréférencement</a>
+			<a class="suiv" href="04_00_georeferencement.php">partie IV&nbsp;: géoréférencement</a>
 			<br>
 			<a class="hautpage" href="#wrap">haut de page</a>						
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_3.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_3.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

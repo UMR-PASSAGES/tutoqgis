@@ -1,15 +1,15 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 		
 		<div class="main">
 			<h1>II.  Géodésie</h1>
 			<p>La géodésie est la science qui étudie la forme et les dimensions de la Terre. Cette deuxième partie abordera les différentes manières d'exprimer des coordonnées, et comment cela se traduit dans un logiciel SIG.</p>
-			<p>Notions abordées :</p>
+			<p>Notions abordées&nbsp;:</p>
 				<ul>
 					<li>ellipsoïde et géoïde</li>
 					<li>coordonnées géographiques</li>
@@ -25,15 +25,15 @@
 		</div>
 		
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_2.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_2.inc.php');?>
 		</div>	
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 	
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

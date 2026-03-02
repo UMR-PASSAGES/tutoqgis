@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -11,19 +11,19 @@
 		  <h1 class="hide_for_pdf">V. Numérisation</h1>
 			<h2>V.6  Quelques notions de topologie</h2>
 				<ul class="listetitres">
-					<li><a href="#V61">Qu'est-ce que la topologie ?</a>
+					<li><a href="#V61">Qu'est-ce que la topologie&nbsp;?</a>
 						<ul class="listesoustitres">
 							<li><a href="#V61a">Définition et exemples</a></li>
-							<li><a href="#V61b">Pourquoi faire attention à la topologie ?</a></li>
+							<li><a href="#V61b">Pourquoi faire attention à la topologie&nbsp;?</a></li>
 						</ul>
 					</li>
-					<li><a href="#V62">Pour aller plus loin : comment vérifier la topologie d'une couche ?</a>
+					<li><a href="#V62">Pour aller plus loin&nbsp;: comment vérifier la topologie d'une couche&nbsp;?</a>
 						<ul class="listesoustitres">
 							<li><a href="#V62a">Vérification simple</a></li>
 							<li><a href="#V62b">Utilisation du vérificateur de topologie</a></li>
 						</ul>
 					</li>
-					<li><a href="#V63">Corriger les erreurs de topologie : quelques pistes</a>
+					<li><a href="#V63">Corriger les erreurs de topologie&nbsp;: quelques pistes</a>
 					   <ul class="listesoustitres">
 							<li><a href="#V63a">Corriger les erreurs de topologie manuellement</a></li>
 							<li><a href="#V63b">Corriger les erreurs de topologie avec l'outil &#171;&nbsp; réparer les géométries &#187;&nbsp;</a></li>
@@ -37,25 +37,25 @@
 			<p>Au cours de la dernière partie notamment, nous avons vu comment éviter que deux polygones soient &#171;&nbsp;presque&nbsp;&#187; jointifs, au moyen de propriétés telles que l'accrochage, ou par l'utilisation d'outils de découpage par exemple. Nous avons également vu comment utiliser le mode d'édition topologique de QGIS.</p>
 			<p>Nous allons ici en apprendre un peu plus sur ce qu'est la topologie, et comment vérifier la topologie d'une couche.</p>
 
-			<h3>Qu'est-ce que la topologie ?<a class="headerlink" id="V61" href="#V61"></a></h3>
+			<h3>Qu'est-ce que la topologie&nbsp;?<a class="headerlink" id="V61" href="#V61"></a></h3>
 			
 				<h4>Définition et exemples<a class="headerlink" id="V61a" href="#V61a"></a></h4>
 				
 					<p>La <a class="ext" target="_blank" href="http://www.cnrtl.fr/definition/topologie">topologie</a> est la &#171; partie de la géométrie qui considère uniquement les relations de position &#187; (Aur.-Weil 1981).</p>
 					<p>En géomatique, la topologie est utilisée pour décrire les relations entre les géométries des entités. Des règles de topologie peuvent être définies, et les erreurs de topologie détectées.</p>
-					<p>Par exemple, on peut décider qu'il ne doit y avoir aucune superposition de polygones dans une couche (les erreurs sont en rouge) :</p>
+					<p>Par exemple, on peut décider qu'il ne doit y avoir aucune superposition de polygones dans une couche (les erreurs sont en rouge)&nbsp;:</p>
 					<figure>
 						<a href="illustrations/5_6_overlap.jpg" >
 							<img src="illustrations/5_6_overlap.jpg" alt="deux polygones se superposant en partie" width="300">
 						</a>
 					</figure>
-					<p>Ou bien qu'il ne doit pas y avoir de trous entre les polygones :</p>
+					<p>Ou bien qu'il ne doit pas y avoir de trous entre les polygones&nbsp;:</p>
 					<figure>
 						<a href="illustrations/5_6_gap.jpg" >
 							<img src="illustrations/5_6_gap.jpg" alt="deux polygones avec un trou entre les deux" width="300">
 						</a>
 					</figure>
-					<p>Les règles de topologie peuvent aussi mettre en jeu plusieurs couches. Par exemple, tous les points d'une couche doivent être dans un polygone d'une autre couche :</p>
+					<p>Les règles de topologie peuvent aussi mettre en jeu plusieurs couches. Par exemple, tous les points d'une couche doivent être dans un polygone d'une autre couche&nbsp;:</p>
 					<figure>
 						<a href="illustrations/5_6_pts_dans_polygones.jpg" >
 							<img src="illustrations/5_6_pts_dans_polygones.jpg" alt="des points dans des polygones sauf deux" width="300">
@@ -63,7 +63,7 @@
 					</figure>
 					<p>Il est bien sûr possible de combiner plusieurs règles. Vous trouverez dans le <a class="ext" target="_blank" href="https://docs.qgis.org/testing/en/docs/gentle_gis_introduction/topology.html" >manuel de QGIS</a> la description d'un certain nombre de règles de topologie.</p>
 
-				<h4>Pourquoi faire attention à la topologie ?<a class="headerlink" id="V61b" href="#V61b"></a></h4>
+				<h4>Pourquoi faire attention à la topologie&nbsp;?<a class="headerlink" id="V61b" href="#V61b"></a></h4>
 					
 					<p>Ne pas respecter les règles de topologie peut poser des problèmes lors de l'utilisation d'outils d'analyse spatiale, qui donneront alors des résultats inattendus. En particulier on peut avoir une couche où certaines entités ont des géométries invalides, et sur laquelle on ne pourra pas lancer certains géotraitement.</p>
 					
@@ -74,9 +74,9 @@
 						<figcaption>Géométrie invalide de type "papillon" avec les sommets en rouge.</figcaption>
 					</figure>
 					
-			<h3>Pour aller plus loin : comment vérifier la topologie d'une couche ?<a class="headerlink" id="V62" href="#V62"></a></h3>
+			<h3>Pour aller plus loin&nbsp;: comment vérifier la topologie d'une couche&nbsp;?<a class="headerlink" id="V62" href="#V62"></a></h3>
 			
-				<p>Cette partie est pour &#171; aller un peu plus loin &#187; : vous pouvez donc passer directement à la partie suivante si vous le désirez !</p>
+				<p>Cette partie est pour &#171; aller un peu plus loin &#187;&nbsp;: vous pouvez donc passer directement à la partie suivante si vous le désirez&nbsp;!</p>
 				<p>Sinon, vous aurez besoin d'un projet QGIS avec une couche de polygones, par exemple <em class="data">zones_oahu</em>.</p>
 			
 				<h4>Vérification simple<a class="headerlink" id="V62a" href="#V62a"></a></h4>
@@ -96,7 +96,7 @@
 							</a>
 						</figure>
 						<p>Sélectionnez la couche <em class="data">zones_oahu</em> et cliquez sur <b>Exécuter</b>.</p>
-						<p>3 couches temporaires sont ajoutées au projet :</p>
+						<p>3 couches temporaires sont ajoutées au projet&nbsp;:</p>
 						<ul>
 						  <li><b>sortie valide</b> liste les entités valide</li>
 						  <li><b>sortie invalide</b> liste les entités invalides (avec une ou plusieurs erreurs de topologie</li>
@@ -118,7 +118,7 @@
 							</a>
 						</figure>
 
-						<p>Vous pouvez maintenant accéder au vérificateur de topologie : 
+						<p>Vous pouvez maintenant accéder au vérificateur de topologie&nbsp;: 
 							<a class="thumbnail_bottom" href="#thumb">menu Vecteur &#8594; Vérificateur de topologie
 								<span>
 									<img src="illustrations/5_6_veriftopo_menu.jpg" alt="Menu Vecteur, Vérificateur de topologie" height="200" >
@@ -143,12 +143,12 @@
 								<img src="illustrations/5_6_veriftopo_erreurs.jpg" alt="fenêtre du vérificateur de topologie, pas d'erreurs" width="400">
 							</a>
 						</figure>
-						<p>La liste des éventuelles erreurs apparaît ; il est possible de zoomer sur une erreur en double-cliquant sur la ligne correspondante.</p>
+						<p>La liste des éventuelles erreurs apparaît&nbsp;; il est possible de zoomer sur une erreur en double-cliquant sur la ligne correspondante.</p>
 					</div>
 					
-			<h3>Corriger les erreurs de topologie : quelques pistes<a class="headerlink" id="V63" href="#V63"></a></h3>
+			<h3>Corriger les erreurs de topologie&nbsp;: quelques pistes<a class="headerlink" id="V63" href="#V63"></a></h3>
 					
-			    <p>Cette partie n'est pas très étoffée et mériterait un chapitre à part entière ! A venir ?</p>
+			    <p>Cette partie n'est pas très étoffée et mériterait un chapitre à part entière&nbsp;! A venir&nbsp;?</p>
 					
 			    <h4>Corriger les erreurs de topologie manuellement<a class="headerlink" id="V63a" href="#V63a"></a></h4>
 			
@@ -163,7 +163,7 @@
 			       
 			    <h4>Corriger les erreurs de topologie avec l'outil &#171;&nbsp; réparer les géométries &#187;&nbsp;<a class="headerlink" id="V63b" href="#V63b"></a></h4>
 			    
-			      <p>Il existe un outil <b>Réparer les géométries</b> accessible dans la boîte à outils de traitement. Pour afficher (ou masquer si elle est déjà affichée) cette boîte, <b>menu Traitement &#8594; Boîte à outils</b>. Tapez ensuite <b>réparer</b> dans la partie filtre pour trouver facilement cet outil :</p>
+			      <p>Il existe un outil <b>Réparer les géométries</b> accessible dans la boîte à outils de traitement. Pour afficher (ou masquer si elle est déjà affichée) cette boîte, <b>menu Traitement &#8594; Boîte à outils</b>. Tapez ensuite <b>réparer</b> dans la partie filtre pour trouver facilement cet outil&nbsp;:</p>
 			      <figure>
 						<a href="illustrations/5_6_reparer.jpg" >
 							<img src="illustrations/5_6_reparer.jpg" alt="accès à l'outil réparer les géométries à partir de la boîte à outils" width="300">
@@ -179,7 +179,7 @@
   							<img src="illustrations/5_6_vclean.jpg" alt="accès à l'outil vclean à partir de la boîte à outils" width="300">
   						</a>
   					</figure>
-  					<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici : <a class="ext" target="_blank" href="https://grass.osgeo.org/grass-stable/manuals/v.clean.html" >https://grass.osgeo.org/grass-stable/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>
+  					<p>En double-cliquant sur cet outil, une aide est accessible dans l'onglet Help, ou bien ici&nbsp;: <a class="ext" target="_blank" href="https://grass.osgeo.org/grass-stable/manuals/v.clean.html" >https://grass.osgeo.org/grass-stable/manuals/v.clean.html</a>. Regardez également <a class="ext" target="_blank" href="http://grasswiki.osgeo.org/wiki/Vector_topology_cleaning" >ici</a> pour plus de documentation.</p>
 					
 					<h4>Cas particulier des erreurs de type &#171;&nbsp;auto-intersection&nbsp;&#187;<a class="headerlink" id="V63d" href="#V63d"></a></h4>
 					
@@ -187,21 +187,21 @@
 
 				<br>
 				<a class="prec" href="05_05_polygones.php">chapitre précédent</a>
-				<a class="suiv" href="06_00_requetes.php">partie VI : requêtes</a>
+				<a class="suiv" href="06_00_requetes.php">partie VI&nbsp;: requêtes</a>
 				<br>
 				<a class="hautpage" href="#wrap">haut de page</a>					
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_5.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_5.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

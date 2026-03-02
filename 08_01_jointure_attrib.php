@@ -1,29 +1,29 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
 	
 		<div class="main">
-		  <h1 class="hide_for_pdf">VIII.  Lier des données de deux sources différentes : les jointures</h1>
-			<h2>VIII.1  Lier des données en fonction de leurs attributs : jointures attributaires</h2>
+		  <h1 class="hide_for_pdf">VIII.  Lier des données de deux sources différentes&nbsp;: les jointures</h1>
+			<h2>VIII.1  Lier des données en fonction de leurs attributs&nbsp;: jointures attributaires</h2>
 				<ul class="listetitres">
-					<li><a href="#VIII11">Comment fonctionne une jointure attributaire ? </a></li>
-					<li><a href="#VIII12">Application : population au Bhoutan</a></li>
+					<li><a href="#VIII11">Comment fonctionne une jointure attributaire&nbsp;? </a></li>
+					<li><a href="#VIII12">Application&nbsp;: population au Bhoutan</a></li>
 					<li><a href="#VIII13">Quelques exemples supplémentaires</a>
 						<ul class="listesoustitres">
-							<li><a href="#VIII13a">Jointure d'une couche et d'une table : recensement de la population au Kenya</a></li>
-							<li><a href="#VIII13b">Jointure de deux couches : licences sportives et catégories socio-professionnelles en France</a></li>
+							<li><a href="#VIII13a">Jointure d'une couche et d'une table&nbsp;: recensement de la population au Kenya</a></li>
+							<li><a href="#VIII13b">Jointure de deux couches&nbsp;: licences sportives et catégories socio-professionnelles en France</a></li>
 						</ul>
 					</li>
 					<li><a href="#VIII14">Si une entité correspond à plusieurs entités de la couche à joindre</a>
 					   <ul class="listesoustitres">
 							<li><a href="#VIII14a">Pour bien comprendre le problème</a></li>
 							<li><a href="#VIII14b">Agréger les données en 2 étapes</a></li>
-							<li><a href="#VIII14c">Pour aller plus loin : une deuxième méthode avec une requête SQL</a></li>
+							<li><a href="#VIII14c">Pour aller plus loin&nbsp;: une deuxième méthode avec une requête SQL</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -31,7 +31,7 @@
 				
 			<p></p>
 
-			<h3>Comment fonctionne une jointure attributaire ?<a class="headerlink" id="VIII11" href="#VIII11"></a></h3>
+			<h3>Comment fonctionne une jointure attributaire&nbsp;?<a class="headerlink" id="VIII11" href="#VIII11"></a></h3>
 			
 				<p>Dans un logiciel SIG, une jointure attributaire consiste à lier à une couche des données provenant d'une table ou d'une autre couche. On se base pour cela sur les données attributaires.</p>
 				<p>Un champ de la couche de départ et un champ de la table contenant les données à joindre servent de <b>champs clé</b>. Ces champs doivent être de même type (texte, nombre) et contenir les mêmes données. Le logiciel se base sur le contenu de ces champs pour déterminer quel élément de la table est lié à quel élément de la couche.</p>
@@ -40,35 +40,35 @@
 						<img src="illustrations/8_1_principe_jointure_attrib.jpg" alt="principe d'une jointure attributaire" width="620">
 					</a>
 				</figure>
-				<p>Dans l'illustration ci-dessus, les données de départ sont :</p>
+				<p>Dans l'illustration ci-dessus, les données de départ sont&nbsp;:</p>
 				<ul>
 					<li class="espace">une couche de polygone avec les régions du Bhoutan. La table attributaire comporte le nom et le code de chaque région, mais pas leur population.</li>
 					<li class="espace">un tableau avec le code de chaque région et sa population en 1995</li>
 				</ul>
-				<p>Les données de la table sont jointes aux données du shapefile, en se basant sur le code région : champ <b>CODEREGION</b> pour le shapefile et champ <b>REG_CODE</b> pour le tableau.</p>
+				<p>Les données de la table sont jointes aux données du shapefile, en se basant sur le code région&nbsp;: champ <b>CODEREGION</b> pour le shapefile et champ <b>REG_CODE</b> pour le tableau.</p>
 				<p>Au final, on obtient une couche shapefile des régions du Bhoutan, <b>avec en données attributaires les données de la couche de départ et les données du tableau</b>, donc la population.</p>
-				<p>Il arrive qu'un élément de la couche de départ corresponde à plusieurs éléments de la table. Différentes stratégies sont alors possibles selon l'objectif et le type de champ : ne prendre en compte que les données du premier élément lié, calculer la moyenne des données...</p>
+				<p>Il arrive qu'un élément de la couche de départ corresponde à plusieurs éléments de la table. Différentes stratégies sont alors possibles selon l'objectif et le type de champ&nbsp;: ne prendre en compte que les données du premier élément lié, calculer la moyenne des données...</p>
 				
 				
-			<h3>Application : population au Bhoutan<a class="headerlink" id="VIII12" href="#VIII12"></a></h3>
+			<h3>Application&nbsp;: population au Bhoutan<a class="headerlink" id="VIII12" href="#VIII12"></a></h3>
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS et ajoutez-y la couche des régions du <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Bhoutan" >Bhoutan</a> <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">Dzongkhag_Boundary.shp</a></em>.</p>
-					<p>Ajoutez également au projet la table <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">dzongkhag_pop.csv</a></em> : pour cela, procédez comme pour <a href="03_03_donnees_XY.php">ajouter une couche de texte délimité</a> en choisissant l'option <b>Pas de géométrie</b>.</p>
-					<p>Vérifiez le <b>type de champ</b> dans l'aperçu en bas de la fenêtre : </p>
+					<p>Ajoutez également au projet la table <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">dzongkhag_pop.csv</a></em>&nbsp;: pour cela, procédez comme pour <a href="03_03_donnees_XY.php">ajouter une couche de texte délimité</a> en choisissant l'option <b>Pas de géométrie</b>.</p>
+					<p>Vérifiez le <b>type de champ</b> dans l'aperçu en bas de la fenêtre&nbsp;: </p>
 					<ul>
-					 <li><b>dzo_code : Texte</b></li>
-					 <li>totalpopul : Décimal (ou entier)</li>
+					 <li><b>dzo_code&nbsp;: Texte</b></li>
+					 <li>totalpopul&nbsp;: Décimal (ou entier)</li>
 					</ul>
 					<figure>
 						<a href="illustrations/8_1_ajout_csv.jpg" >
-							<img src="illustrations/8_1_ajout_csv.jpg" alt="ajout d'un csv : choisir tous les fichiers comme format" width="600">
+							<img src="illustrations/8_1_ajout_csv.jpg" alt="ajout d'un csv&nbsp;: choisir tous les fichiers comme format" width="600">
 						</a>
 					</figure>
 					<p>Vous pouvez également ajouter ce fichier via le <a href="01_02_info_geo.php#I21b">panneau Explorateur</a> ou en procédant comme pour une couche vecteur.</p>
 					<p>Cependant la méthode présentée ici permet de <b>détecter automatiquement les types des champs</b> (texte, entier...). En passant par une autre méthode, tous les champs seront considérés comme du texte.</p>
 					<p class="note">Le <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Comma-separated_values">format CSV</a> est un format texte contenant des colonnes séparées par un caractère délimiteur, habituellement la virgule, le point-virgule ou la tabulation.</p>
-					<p>Vous devez donc avoir dans QGIS ces deux données (notez l'icône de tableau pour le CSV) :</p>
+					<p>Vous devez donc avoir dans QGIS ces deux données (notez l'icône de tableau pour le CSV)&nbsp;:</p>
 					<figure>
 					  <a href="illustrations/8_1_donnees_chargees.jpg" >
 						<img src="illustrations/8_1_donnees_chargees.jpg" alt="la table et la couche dans la table des matières" width="200">
@@ -77,31 +77,31 @@
 					<p>Ouvrez les deux tables attributaires.</p>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">&#192; votre avis, pour pouvoir effectuer une jointure entre les 2 tables, quels seront les 2 champs clés ?</label></p>
-						<p class="reponse">Le champ clé a le même nom dans les 2 tables : <b>dzo_code</b>.</p>
+						<p><label for="faq-1">&#192; votre avis, pour pouvoir effectuer une jointure entre les 2 tables, quels seront les 2 champs clés&nbsp;?</label></p>
+						<p class="reponse">Le champ clé a le même nom dans les 2 tables&nbsp;: <b>dzo_code</b>.</p>
 					</div>
-					<p>Allez dans les propriétés de la couche <em class="data">Dzongkhag_Boundary</em>, rubrique <b>Jointure</b> :</p>
+					<p>Allez dans les propriétés de la couche <em class="data">Dzongkhag_Boundary</em>, rubrique <b>Jointure</b>&nbsp;:</p>
 					<figure>
 						<a href="illustrations/8_1_proprietes_jointure.jpg" >
 							<img src="illustrations/8_1_proprietes_jointure.jpg" alt="rubrique jointure des propriétés de la couche" width="600">
 						</a>
 					</figure>
-					<p>Cliquez sur le symbole <img class="iconemid" src="illustrations/8_1_plus.jpg" alt="symbole + d'ajout de jointure" > pour ajouter une jointure :</p>
+					<p>Cliquez sur le symbole <img class="iconemid" src="illustrations/8_1_plus.jpg" alt="symbole + d'ajout de jointure" > pour ajouter une jointure&nbsp;:</p>
 					<figure>
 						<a href="illustrations/8_1_jointure_fenetre.jpg" >
-							<img src="illustrations/8_1_jointure_fenetre.jpg" alt="création d'une jointure : choix de la couche à joindre et des champs clés" width="400">
+							<img src="illustrations/8_1_jointure_fenetre.jpg" alt="création d'une jointure&nbsp;: choix de la couche à joindre et des champs clés" width="400">
 						</a>
 					</figure>
 					<ul>
-						<li class="espace"><b>Joindre la couche :</b> choisissez la couche qui sera jointe, ici le CSV <em class="data">dzongkhag_pop</em></li>
-						<li class="espace"><b>Champs de jointure :</b> choisissez le champs clé dans le CSV, à savoir <b>dzo_code</b></li>
-						<li class="espace"><b>Champs dans la couche cible :</b> choisissez le champs clé dans la couche région, qui est se nomme également <b>dzo_code</b></li>
-						<li class="espace"><b>Mettre la couche jointe en cache dans la mémoire virtuelle :</b> si cette case est cochée, l'affichage de la table sera plus rapide, mais les données ne seront pas mises à jour si des modifications sont effectuées dans la couche jointe</li>
-						<li class="espace"><b>champs joints :</b> ici, nous voulons joindre tous les champs donc vous pouvez laisser cette case décochée</li>
-						<li class="espace"><b>Préfixe de nom de champ personnalisé :</b> les champs joints peuvent avoir le préfixe de votre choix, pour bien les différencier des champs originaux ou issus d'autres jointures. Choisissez un préfixe court, par exemple <b>join_</b></li>
+						<li class="espace"><b>Joindre la couche&nbsp;:</b> choisissez la couche qui sera jointe, ici le CSV <em class="data">dzongkhag_pop</em></li>
+						<li class="espace"><b>Champs de jointure&nbsp;:</b> choisissez le champs clé dans le CSV, à savoir <b>dzo_code</b></li>
+						<li class="espace"><b>Champs dans la couche cible&nbsp;:</b> choisissez le champs clé dans la couche région, qui est se nomme également <b>dzo_code</b></li>
+						<li class="espace"><b>Mettre la couche jointe en cache dans la mémoire virtuelle&nbsp;:</b> si cette case est cochée, l'affichage de la table sera plus rapide, mais les données ne seront pas mises à jour si des modifications sont effectuées dans la couche jointe</li>
+						<li class="espace"><b>champs joints&nbsp;:</b> ici, nous voulons joindre tous les champs donc vous pouvez laisser cette case décochée</li>
+						<li class="espace"><b>Préfixe de nom de champ personnalisé&nbsp;:</b> les champs joints peuvent avoir le préfixe de votre choix, pour bien les différencier des champs originaux ou issus d'autres jointures. Choisissez un préfixe court, par exemple <b>join_</b></li>
 					</ul>
-					<p>Cliquez sur <b>OK</b> pour créer la jointure : la ligne correspondante apparaît dans la fenêtre des propriétés. Vous pouvez fermer la fenêtre des propriétés.</p>
-					<p>Ouvrez la table attributaire de la couche  <em class="data">Dzongkhag_Boundary</em> : les données de la table ont été ajoutées (champ join_totalpopul).</p>
+					<p>Cliquez sur <b>OK</b> pour créer la jointure&nbsp;: la ligne correspondante apparaît dans la fenêtre des propriétés. Vous pouvez fermer la fenêtre des propriétés.</p>
+					<p>Ouvrez la table attributaire de la couche  <em class="data">Dzongkhag_Boundary</em>&nbsp;: les données de la table ont été ajoutées (champ join_totalpopul).</p>
 					<figure>
 						<a href="illustrations/8_1_jointure_res.jpg">
 							<img src="illustrations/8_1_jointure_res.jpg" alt="table attributaire de la couche Dzongkhag_Boundary une fois les données de populations jointes" width="450">
@@ -114,7 +114,7 @@
 			
 			<h3>Quelques exemples supplémentaires<a class="headerlink" id="VIII13" href="#VIII13"></a></h3>
 			
-				<h4>Jointure d'une couche et d'une table : recensement de la population au Kenya<a class="headerlink" id="VIII13a" href="#VIII13a"></a></h4>
+				<h4>Jointure d'une couche et d'une table&nbsp;: recensement de la population au Kenya<a class="headerlink" id="VIII13a" href="#VIII13a"></a></h4>
 				
 					<div class="manip">
 						<p>Ouvrez un nouveau projet QGIS. Ajoutez-y la couche <em class="data">ADM_ADM_1</em> de la base GeoPackage <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">gadm41_KEN.gpkg</a></em> et le fichier CSV <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">kenya_census_2019</a></em>.</p>
@@ -122,43 +122,43 @@
 						<p class="note">Notez que <em class="data">gadm41_KEN.gpkg</em> contient plusieurs couches correspondant aux différents niveaux administratifs. En passant par l'explorateur de données, vous pouvez &#171; ouvrir &#187; la base pour ajouter directement la couche de votre choix. En utilisant le gestionnaire des sources, vous choisissez les couches à ajouter après avoir cliqué sur le bouton Ajouter.</p>
 						<div class="question">
 							<input type="checkbox" id="faq-2">
-							<p><label for="faq-2">Ouvrez les deux tables attributaires. A votre avis, sur quels champs faire la jointure ? Quel problème pourrait se poser ?</label></p>
-							<p class="reponse">Il est possible de faire la jointure en utilisant le nom du County : champ <b>NAME_1</b> pour  <em class="data">ADM_ADM_1</em> et champ <b>County</b> pour <em class="data">County_Population_2009.csv</em>.</p>
+							<p><label for="faq-2">Ouvrez les deux tables attributaires. A votre avis, sur quels champs faire la jointure&nbsp;? Quel problème pourrait se poser&nbsp;?</label></p>
+							<p class="reponse">Il est possible de faire la jointure en utilisant le nom du County&nbsp;: champ <b>NAME_1</b> pour  <em class="data">ADM_ADM_1</em> et champ <b>County</b> pour <em class="data">County_Population_2009.csv</em>.</p>
 							<p class="reponse">Le champ étant un nom et non un code, il est possible que des lignes ne soient pas jointes si les noms sont orthographiés de manière légèrement différente.</p>
 						</div>
 						<div class="question">
 							<input type="checkbox" id="faq-3">
-							<p><label for="faq-3">Combien de lignes possèdent les 2 tables ?</label></p>
+							<p><label for="faq-3">Combien de lignes possèdent les 2 tables&nbsp;?</label></p>
 							<p class="reponse">La table de ADM_ADM_1 possède 47 lignes, tandis que kenya_census_2019 en compte 48. Il y a une ligne consacrée au pays entier (County = KENYA) dans kenya_census_2019, ce qui explique cette différence.</p>
 						</div>
 						<p>Joignez les données de <em class="data">County_Population_2009.csv</em> à la couche <em class="data">ADM_ADM_1</em>.</p>
 						<div class="question">
 							<input type="checkbox" id="faq-4">
-							<p><label for="faq-4">Combien de lignes n'ont pas été jointes ? Pourquoi ?</label></p>
-							<p class="reponse">Trois counties n'ont pas de données jointes : <b>Elgeyo-Marakwet</b>, <b>Nairobi</b> et <b>Taita Taveta</b>, orthographiés respectivement <b>Elg eyo/Marakwet</b>, <b>Nairobi City</b> et <b>Taita/Taveta</b> dans le fichier CSV.</p>
+							<p><label for="faq-4">Combien de lignes n'ont pas été jointes&nbsp;? Pourquoi&nbsp;?</label></p>
+							<p class="reponse">Trois counties n'ont pas de données jointes&nbsp;: <b>Elgeyo-Marakwet</b>, <b>Nairobi</b> et <b>Taita Taveta</b>, orthographiés respectivement <b>Elg eyo/Marakwet</b>, <b>Nairobi City</b> et <b>Taita/Taveta</b> dans le fichier CSV.</p>
 						</div>
 					</div>
 						
 					<p>Pour que tous les enregistrements soient joints, vous pouvez modifier à la main les noms des counties qui posent problème, soit dans la couche GeoPackage soit dans le fichier CSV (ces opérations peuvent être effectuées dans QGIS).</p>
 				
 				
-				<h4>Jointure de deux couches : licences sportives et catégories socio-professionnelles en France<a class="headerlink" id="VIII13b" href="#VIII13b"></a></h4>
+				<h4>Jointure de deux couches&nbsp;: licences sportives et catégories socio-professionnelles en France<a class="headerlink" id="VIII13b" href="#VIII13b"></a></h4>
 				
 					<div class="manip">
-						<p>Ouvrez un nouveau projet QGIS. Ajoutez-y les 2 couches suivantes :</p>
+						<p>Ouvrez un nouveau projet QGIS. Ajoutez-y les 2 couches suivantes&nbsp;:</p>
 						<ul>
-						  <li><em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_licences_sportives_2023_2024.gpkg</a></em> : nombres de licences pour différents sports par département</li>
-						  <li><em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_CSP_2022.gpkg</a></em> : % des différentes catégories socio-professionnelles par département</li>
+						  <li><em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_licences_sportives_2023_2024.gpkg</a></em>&nbsp;: nombres de licences pour différents sports par département</li>
+						  <li><em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">depts_CSP_2022.gpkg</a></em>&nbsp;: % des différentes catégories socio-professionnelles par département</li>
 						 </ul>
 
 						<div class="question">
 							<input type="checkbox" id="faq-5">
-							<p><label for="faq-5">Ouvrez les deux tables attributaires. A votre avis, sur quels champs faire la jointure ?</label></p>
+							<p><label for="faq-5">Ouvrez les deux tables attributaires. A votre avis, sur quels champs faire la jointure&nbsp;?</label></p>
 							<p class="reponse">Il est possible de faire la jointure sur les champs <b>code_insee</b> ou <b>nom_officiel</b>. C'est généralement un bon réflexe de faire si possible la jointure sur des identifiants (code_insee) plutôt que des noms au cas où ceux-ci seraient orthographiés différemment dans les 2 fichiers.</p>
 						</div>
 						<p>Joignez les données attributaires d'une couche à l'autre couche.</p>
 					</div>
-					<p>On peut ensuite explorer la relation entre catégories socio-professionnelles et sports pratiqués, par exemple en utilisant l'extension <a href="10_01_representation.php#X14b">Data Plotly</a> pour visualiser le nombre de licences de golf en fonction de la part de cadres et professions intellectuelles supérieures :</p>
+					<p>On peut ensuite explorer la relation entre catégories socio-professionnelles et sports pratiqués, par exemple en utilisant l'extension <a href="10_01_representation.php#X14b">Data Plotly</a> pour visualiser le nombre de licences de golf en fonction de la part de cadres et professions intellectuelles supérieures&nbsp;:</p>
 					<figure>
 						<a href="illustrations/8_1_golf_cadres.jpg">
 							<img src="illustrations/8_1_golf_cadres.jpg" alt="graphique du nombre de licences de golf en fonction du % de cadres, réalisé avec Plotly" width="550">
@@ -174,8 +174,8 @@
                         <p>Ouvrez un nouveau projet QGIS. Ajoutez-y la couches GeoPackage <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">communes_oise</a></em> et le fichier CSV <em class="data"><a href="donnees/TutoQGIS_08_Jointures.zip">L_MONUMENT_HISTO_S_060</a></em> qui correspond à l'ensemble des monuments historiques classés et inscrits dans le département de l'Oise.</p>
                         <div class="question">
                     		<input type="checkbox" id="faq-6">
-                    		<p><label for="faq-6">Explorez ces données : pouvez-vous joindre les données du fichier CSV à la couche de communes&nbsp;? Grâce à quels champs&nbsp;?</label></p>
-                    		<p class="reponse">Il est possible de joindre les couches en se basant sur le code INSEE : champ code_insee pour la couche de communes et INSEE pour le tableau des monuments historiques.</p>
+                    		<p><label for="faq-6">Explorez ces données&nbsp;: pouvez-vous joindre les données du fichier CSV à la couche de communes&nbsp;? Grâce à quels champs&nbsp;?</label></p>
+                    		<p class="reponse">Il est possible de joindre les couches en se basant sur le code INSEE&nbsp;: champ code_insee pour la couche de communes et INSEE pour le tableau des monuments historiques.</p>
                     	</div>
                         <p>Faites la jointure.</p>
                         <div class="question">
@@ -198,7 +198,7 @@
                 
                 <h4>Agréger les données en 2 étapes<a class="headerlink" id="VIII14b" href="#VIII14b"></a></h4>                
                 
-                    <p>Une première possibilité consiste à procéder en 2 étapes :</p>
+                    <p>Une première possibilité consiste à procéder en 2 étapes&nbsp;:</p>
                     <ul>
                         <li>A partir du CSV, créer un tableau avec le nombre de monuments par communes</li>
                         <li>Joindre ce tableau à la couche de communes</li>
@@ -214,7 +214,7 @@
                     </div>
                     <p>Cet outil permet de calculer des statistiques (nombre, moyenne etc.) sur des champs d'une table attributaire.</p>
                     <p>Par exemple, on peut savoir pour chaque type de monument (église, château...) les dates d'inscription min et max, et le nombre de dates d'inscription différentes. Ainsi, on compte 240 églises correspondant à 162 dates d'inscription différentes, entre le 01/01/1840 et le 27/10/2016.</p>
-                    <p>Nous allons ici utiliser cet outil de manière très simple, pour compter le nombre de monuments par commune :</p>
+                    <p>Nous allons ici utiliser cet outil de manière très simple, pour compter le nombre de monuments par commune&nbsp;:</p>
                     <div class="manip">
                         <figure>
                         	<a href="illustrations/8_1_stats_cats_fenetre.jpg" >
@@ -222,9 +222,9 @@
                         	</a>
                         </figure>
                         <ul>
-                            <li>Couche vectorielle en entrée : choisir la table de monuments <em class="data">L_MONUMENT_HISTO_S_060</em></li>
-                            <li>Champ pour calculer les statistiques : laisser vide puisqu'on veut simplement compter les monuments</li>
-                            <li>Champs avec catégories : cliquez sur <b>...</b> et cocher le champ <b>INSEE</b> pour compter le nombre de monuments par code INSEE. On pourrait ici choisir commune mais ce sera moins sûr pour faire la jointure par la suite</li>
+                            <li>Couche vectorielle en entrée&nbsp;: choisir la table de monuments <em class="data">L_MONUMENT_HISTO_S_060</em></li>
+                            <li>Champ pour calculer les statistiques&nbsp;: laisser vide puisqu'on veut simplement compter les monuments</li>
+                            <li>Champs avec catégories&nbsp;: cliquez sur <b>...</b> et cocher le champ <b>INSEE</b> pour compter le nombre de monuments par code INSEE. On pourrait ici choisir commune mais ce sera moins sûr pour faire la jointure par la suite</li>
                             <li>Cliquez sur <b>Exécuter</b>, l'outil va créer une couche temporaire nommée <b>Statistiques par catégorie</b>. Vous pouvez ensuite fermer la fenêtre de l'outil.</li>
                         </ul>
                         <figure>
@@ -232,14 +232,14 @@
                         		<img src="illustrations/8_1_stats_categ.jpg" alt="Table créée par l'outil Statistiques par catégories dans la liste des couches" width="280">
                         	</a>
                         </figure>
-                        <p>Ouvrez la table attributaire de cette couche temporaire :</p>
+                        <p>Ouvrez la table attributaire de cette couche temporaire&nbsp;:</p>
                         <figure>
                         	<a href="illustrations/8_1_stats_cats_res.jpg" >
                         		<img src="illustrations/8_1_stats_cats_res.jpg" alt="tableau résultat de Statistiques par catégories" width="230">
                         	</a>
                         </figure>
                         <p>Chaque ligne correspond à une commune (un code INSEE) et le champ count indique combien cette commune contient de monuments.</p>
-                        <p>Il ne reste plus qu'à joindre ce tableau à la couche de communes ! Ceci vous permet par exemple de créer une <a href="10_01_representation.php#X11b" >carte en cercles proportionnels</a> du nombre de monuments par communes :</p>
+                        <p>Il ne reste plus qu'à joindre ce tableau à la couche de communes&nbsp;! Ceci vous permet par exemple de créer une <a href="10_01_representation.php#X11b" >carte en cercles proportionnels</a> du nombre de monuments par communes&nbsp;:</p>
                         <figure>
                         	<a href="illustrations/8_1_carte_monuments_communes.jpg" >
                         		<img src="illustrations/8_1_carte_monuments_communes.jpg" alt="carte en cercles proportionnels du nombre de monuments par commune" width="400">
@@ -247,28 +247,28 @@
                         </figure>
                     </div>
                     
-                <h4>Pour aller plus loin : une deuxième méthode avec une requête SQL<a class="headerlink" id="VIII14c" href="#VIII14c"></a></h4>
+                <h4>Pour aller plus loin&nbsp;: une deuxième méthode avec une requête SQL<a class="headerlink" id="VIII14c" href="#VIII14c"></a></h4>
                 
                     <p>Cette autre méthode fait ici appel à une requête SQL. Une <a href="06_04_req_sql.php">partie spécifique</a> étant dédiée à ces requêtes, voici sans plus de détails une requête répondant à notre question. Pour mieux comprendre cette méthode, si vous n'êtes pas familier du SQL, merci donc de vous reporter <a href="06_04_req_sql.php">ici</a> avant d'aller plus loin&nbsp;!</p>
                     <p>Vous pouvez bien sûr sauter cette étape et passer directement au <a href="08_02_jointure_spatiale.php">chapitre suivant sur les jointures spatiales</a>.</p>
                     
                     <div class="manip">
-                        <p><img class="icone" src="illustrations/6_4_dbmanager_icone.jpg" alt="icône gestionnaire de bases de données">Ouvrez la fenêtre du gestionnaire de bases de données : menu <b>Base de données &#8594; DB Manager...</b>, ou bien cliquez sur l'icône correspondante dans la barre d'outils Base de données.</p>
-                        <p>Dans l'arborescence située dans la partie gauche de la fenêtre, allez dans <b>Couches virtuelle</b> &#8594; <b>Couches du projet</b> : vous devriez voir vos couches chargées dans QGIS.</p>
+                        <p><img class="icone" src="illustrations/6_4_dbmanager_icone.jpg" alt="icône gestionnaire de bases de données">Ouvrez la fenêtre du gestionnaire de bases de données&nbsp;: menu <b>Base de données &#8594; DB Manager...</b>, ou bien cliquez sur l'icône correspondante dans la barre d'outils Base de données.</p>
+                        <p>Dans l'arborescence située dans la partie gauche de la fenêtre, allez dans <b>Couches virtuelle</b> &#8594; <b>Couches du projet</b>&nbsp;: vous devriez voir vos couches chargées dans QGIS.</p>
                         <p><img class="icone" src="illustrations/6_4_fenetre_sql_icone.jpg" alt="icône de la fenêtre SQL" >Cliquez ensuite sur l'icône <b>Fenêtre SQL</b>, ou bien menu <b>Base de données</b> &#8594; <b>Fenêtre SQL</b>.</p>
                         <figure>
                         	<a href="illustrations/8_1_requete_sql.jpg" >
                         		<img src="illustrations/8_1_requete_sql.jpg" alt=" dans le gestionnaire de bases de données, requête SQL pour compter le nombre de nombre de monuments par commune" width="600">
                         	</a>
                         </figure>
-                        <p>Tapez la requête suivante :</p>
+                        <p>Tapez la requête suivante&nbsp;:</p>
                         <p class="code">SELECT c.code_insee, c.nom_officiel, count(m.INSEE) as nb_monuments, c.geometry<br>FROM communes_oise as c, L_MONUMENT_HISTO_S_060 as m<br>WHERE c.code_insee = m.INSEE<br>GROUP BY c.code_insee, c.nom_officiel, c.geometry;</p>
-                        <p>Vérifiez le résultat : chaque ligne correspond à une commune, avec pour chacune le nombre de monuments.</p>
+                        <p>Vérifiez le résultat&nbsp;: chaque ligne correspond à une commune, avec pour chacune le nombre de monuments.</p>
                         <p>Cochez la case <b>Charger en tant que nouvelle couche</b>.</p>
-                        <p>Choisissez la colonne avec des valeurs uniques : <b>code_insee</b>, et la colonne de géométrie : <b>geometry</b>.</p>
+                        <p>Choisissez la colonne avec des valeurs uniques&nbsp;: <b>code_insee</b>, et la colonne de géométrie&nbsp;: <b>geometry</b>.</p>
                         <p>Donnez un nom à la couche qui sera créée, <b>communes_monuments</b> par exemple, et cliquez sur le bouton <b>Charger</b>.</p>
                         <p>Le résultat est équivalent à celui obtenu avec la première méthode, mis à part le fait que les communes sans monuments n'existent pas dans la nouvelle couche.</p>
-                        <p>Une autre requête utilisant <b>left join</b> permet de les conserver :</p>
+                        <p>Une autre requête utilisant <b>left join</b> permet de les conserver&nbsp;:</p>
                         <p class="code">SELECT c.code_insee, c.nom_officiel, count(m.INSEE) as nb_monuments, c.geometry<br>FROM communes_oise as c
 LEFT JOIN L_MONUMENT_HISTO_S_060 as m<br>ON c.code_insee = m.INSEE<br>GROUP BY c.code_insee, c.nom_officiel, c.geometry</p>
                     </div>
@@ -281,15 +281,15 @@ LEFT JOIN L_MONUMENT_HISTO_S_060 as m<br>ON c.code_insee = m.INSEE<br>GROUP BY c
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_8.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_8.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

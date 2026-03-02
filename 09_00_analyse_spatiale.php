@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
@@ -11,10 +11,10 @@
 		
 			<h1>IX.  Analyse spatiale</h1>
 			
-			<p>Dans cette partie, nous allons aborder un domaine particulièrement utile des SIG : comment croiser spatialement des données, ou créer des données à partir d'autres données.</p>
+			<p>Dans cette partie, nous allons aborder un domaine particulièrement utile des SIG&nbsp;: comment croiser spatialement des données, ou créer des données à partir d'autres données.</p>
 			<p>Nous verrons quelques exemples de traitements possibles sur des <a href="01_01_SIG.php#I12b" >données vecteur et raster</a>.</p>
 			
-			<p>Notions abordées :</p>
+			<p>Notions abordées&nbsp;:</p>
 				<ul>
 					<li>découpage d'une couche vecteur</li>
 					<li>intersection de deux couches</li>
@@ -37,15 +37,15 @@
 		</div>
 		
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_9.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_9.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

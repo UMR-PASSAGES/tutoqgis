@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
@@ -14,7 +14,7 @@
 			<p>Dans les parties <a href="05_01_creation_couche.php" >Numérisation - création d'une couche vide</a> et <a href="05_03_donnees_attrib.php" >Numérisation - données attributaires</a>, nous avons vu comment choisir les champs qui seront ajoutés à une couche lors de sa création, et comment remplir des champs case par case.</p>
 			<p>Nous allons voir ici comment <b>ajouter, supprimer et renommer et changer l'ordre des champs</b> pour une couche existante, et comment <b>calculer automatiquement des valeurs dans un champ</b>.</p>
 			
-			<p>Notions abordées :</p>
+			<p>Notions abordées&nbsp;:</p>
 				<ul>
 					<li>Création de champs</li>
 					<li>Suppression de champs</li>
@@ -30,15 +30,15 @@
 		</div>
 		
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_7.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_7.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

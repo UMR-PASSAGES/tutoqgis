@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
@@ -14,7 +14,7 @@
 							<p>Les logiciels SIG sont avant tout des logiciels d'analyse spatiale. Ils permettent également la représentation des données sous différentes formes, et la mise en page de cartes. Les règles de sémiologie graphique ne seront pas ou peu abordées ici, nous verrons avant tout l'aspect &#171;&nbsp;technique&nbsp;&#187; sous QGIS.</p>
 			<p>Nous verrons ici comment représenter des données dans QGIS&nbsp;: quels types de cartes sont possibles, quelles en sont les limites, et comment mettre en page une carte.</p>
 			
-			<p>Notions abordées :</p>
+			<p>Notions abordées&nbsp;:</p>
 				<ul>
 					<li>symboles proportionnels</li>
 					<li>cartes choroplèthes</li>
@@ -28,15 +28,15 @@
 		</div>
 		
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_10.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_10.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -36,7 +36,7 @@
   				<ul>
   				  <li>Extraire les <b>signatures spectrales</b> d’objets géographiques sur une image satellitaire</li>
   				  <li><b>Interprétez</b> vos signatures spectrales</li>
-  				  <li>Extraire et analyser des <b>indices spectraux</b> : <b>NDVI</b> (Normalized Difference Vegetation Index) et <b>NBR</b> (Normalized Burn Ratio)</li>
+  				  <li>Extraire et analyser des <b>indices spectraux</b>&nbsp;: <b>NDVI</b> (Normalized Difference Vegetation Index) et <b>NBR</b> (Normalized Burn Ratio)</li>
   				</ul>
   				
   				<h3>Extraction de signature spectrale<a class="headerlink" id="XII21" href="#XII21"></a></h3>
@@ -61,7 +61,7 @@
       					<p>La dernière chose à faire avant de commencer à dessiner les polygones d'entraînement est de choisir une <a href="12_01_intro_teledec.php#XII15b">composition colorée</a> permettant de bien voir les différentes catégories d'occupation du sol. Ici, afin de bien voir la végétation, les zones brûlées et les feux, nous allons afficher les <b>bandes 13, 8 et 4</b> (propriétés de la couche &#8594; symbologie)&nbsp;:</p>
       					<figure>
                   	<a href="illustrations/12_02_compocol_13_8_4.jpg" >
-                		<img src="illustrations/12_02_compocol_13_8_4.jpg" alt="Composition colorée 13-8-4 de l'image Sentinel 2 : la végétation est en vert, les zones brûlées en rouge" width="600">
+                		<img src="illustrations/12_02_compocol_13_8_4.jpg" alt="Composition colorée 13-8-4 de l'image Sentinel 2&nbsp;: la végétation est en vert, les zones brûlées en rouge" width="600">
                 	</a>
                 </figure>
     				  </div>
@@ -94,17 +94,17 @@
     				  <p>Nous allons maintenant ajouter des polygones dans cette couche&nbsp;!</p>
     				  
     				  <div class="manip">
-    				    <p>Tout d’abord, dans le bas du panneau SCP, écrire le type d’objet géographique que l’on souhaite digitaliser, par exemple :</p>
+    				    <p>Tout d’abord, dans le bas du panneau SCP, écrire le type d’objet géographique que l’on souhaite digitaliser, par exemple&nbsp;:</p>
     				    <ul>
-      					 <li>Nom de MC : Surface en eau</li>
-      					 <li>Nom de C : Eau</li>
+      					 <li>Nom de MC&nbsp;: Surface en eau</li>
+      					 <li>Nom de C&nbsp;: Eau</li>
       					</ul>
     				    <figure>
       						<a href="illustrations/12_02_noms_rois.jpg" >
       							<img src="illustrations/12_02_noms_rois.jpg" alt="Nom de MC et Nom de C remplis par 'Surface en eau' et 'Eau'" width="350">
       						</a>
       					</figure>
-      					<p>MC signifie <em>Macro-Classe</em>, et C <em>Classe</em> : une macro-classe peut regrouper plusieurs classes (par exemple, on pourrait avoir une macro-classe <em>surface en eau</em> et 2 classes <em>eau douce</em> et <em>mer</em>).</p>
+      					<p>MC signifie <em>Macro-Classe</em>, et C <em>Classe</em>&nbsp;: une macro-classe peut regrouper plusieurs classes (par exemple, on pourrait avoir une macro-classe <em>surface en eau</em> et 2 classes <em>eau douce</em> et <em>mer</em>).</p>
       					<p>Il ne reste plus maintenant qu'à digitaliser un polygone correspondant à cette classe.</p>
       					<p><img class="icone" src="illustrations/12_02_create_roi_icon.jpg" alt="icône de création de ROI">Cliquez sur l'icône <b>Create a ROI polygon</b> dans la barre d'outil <b>SCP working toolbar</b>.</p>
       					<p class="note">Si vous ne voyez pas cette barre d'outils, menu Vue &#8594; Barres d'outils &#8594; SCP Working Toolbar.</p>
@@ -136,7 +136,7 @@
       					<p>Il a aussi changé d'aspect dans la fenêtre de QGIS&nbsp;:</p>
                 <figure>
       						<a href="illustrations/12_02_roi_definitif.jpg" >
-      							<img src="illustrations/12_02_roi_definitif.jpg" alt="fenêtre de QGIS : ROI sauvegardé, en noir avec contour en pointillés blancs" width="400">
+      							<img src="illustrations/12_02_roi_definitif.jpg" alt="fenêtre de QGIS&nbsp;: ROI sauvegardé, en noir avec contour en pointillés blancs" width="400">
       						</a>
       					</figure>
     				  </div>
@@ -222,7 +222,7 @@
   				    <p>L'indice de végétation ou <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">NDVI (Normalized Difference Vegetation Index)</a> permet de mesurer et spatialiser le taux de couverture de la végétation au sol ainsi que son activité chlorophyllienne.</p>
   				    <p>Il se calcule à partir des bandes Proche Infra-Rouge (PIR) et Rouge (R) de la manière suivante&nbsp;:</p>
   				    <p class="code">NDVI = (PIR - R) / (PIR + R)</p>
-  				    <p>Ici, nous allons calculer cet indice de 2 manières différentes : avec l'extension SCP, et avec la calculatrice raster de QGIS.</p>
+  				    <p>Ici, nous allons calculer cet indice de 2 manières différentes&nbsp;: avec l'extension SCP, et avec la calculatrice raster de QGIS.</p>
   				    
   				    <p>Voici tout d'abord comment calculer le NDVI avec SCP&nbsp;:</p>
   				    
@@ -247,13 +247,13 @@
   				      <li>bandset1b*&nbsp;: toutes les bandes du jeu de bande 1, ici équivalent à bandset#b* (ligne 47)</li>
   				      <li>à nouveau les 13 bandes du jeu de bandes 1, sous la forme bandset1b1, bandset2b2 etc. (lignes 48 à 60)</li>
   				    </ul>
-  				    <p class="note">Certains items sont répétés, pouquoi ? Mystère !</p>
+  				    <p class="note">Certains items sont répétés, pouquoi&nbsp;? Mystère&nbsp;!</p>
   				    <p>Certaines de ces &#171;&nbsp;bandes&nbsp;&#187; sont donc en réalité des listes de bandes et pourront être utilisées dans des expressions acceptant ces listes.</p>
   				    <p><b>Ici, nous utiliserons uniquement les 13 premiers éléments de la liste correspondant aux 13 bandes de notre image&nbsp;!</b></p>
   				    
   				    <div class="manip">
       						<a href="illustrations/12_02_scp_ndvi.jpg" >
-      							<img class="droite" src="illustrations/12_02_scp_ndvi.jpg" alt="SCP, calcul de bandes, partie Fonctions : NDVI" width="230">
+      							<img class="droite" src="illustrations/12_02_scp_ndvi.jpg" alt="SCP, calcul de bandes, partie Fonctions&nbsp;: NDVI" width="230">
       						</a>
       					<p>Dans la partie <b>Fonctions</b> à droite de la fenêtre, descendez pour arriver jusqu'à la rubrique <b>Indices</b> et double-cliquez sur <b>NDVI</b>.</p>
       					<p>La formule suivante s'affiche dans la partie <b>Expression</b>&nbsp;:</p>
@@ -287,7 +287,7 @@
       					</figure>
       					<ul>
       					 <li class="espace">Dans <b>Expressions prédéfinies</b>, sélectionnez <b>NDVI</b> puis cliquez sur <b>Ajouter...</b> pour sélectionner les bandes rouges et proche infra-rouges</li>
-      					 <li class="espace">Dans la case <b>Expression</b>, la formule est maintenant la suivante : <em>(Sentinel2_2021_08_17@8 - Sentinel2_2021_08_17@4) / (Sentinel2_2021_08_17@8 + Sentinel2_2021_08_17@4)</em></li>
+      					 <li class="espace">Dans la case <b>Expression</b>, la formule est maintenant la suivante&nbsp;: <em>(Sentinel2_2021_08_17@8 - Sentinel2_2021_08_17@4) / (Sentinel2_2021_08_17@8 + Sentinel2_2021_08_17@4)</em></li>
       					 <li class="espace">Dans <b>Reference layer(s)</b>, cliquez sur les <b>...</b> à droite et sélectionnez l'image Sentinel, pour que la couche NDVI en sortie aie la même emprise, résolution et SCR</li>
       					 <li class="espace">Dans <b>Output</b> en bas de la fenêtre, laissez la valeur par défaut <b>Enregistrer dans un fichier temporaire</b></li>
       					</ul>
@@ -341,7 +341,7 @@
   				  <h4>Normalized Burn Ratio (NBR)<a class="headerlink" id="XII23c" href="#XII23c"></a></h4>
   				  
   				    <p>L'<a class="ext" target="_blank" href="https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio">indice normalisé des surfaces brûlées</a> (Normalized Burn Ratio ou NBR) est un indice normalisé qui vise à étudier et spatialiser les feux que l’on peut détecter sur une image satellitaire.</p>
-  				    <p>De la même manière que le NDVI, c'est un ratio basé sur 2 bandes, mais cette fois il s'agit des bandes <b>Proche Infra-Rouge (PIR)</b> et <b>Infra-Rouge Court (SWIR)</b> :</p>
+  				    <p>De la même manière que le NDVI, c'est un ratio basé sur 2 bandes, mais cette fois il s'agit des bandes <b>Proche Infra-Rouge (PIR)</b> et <b>Infra-Rouge Court (SWIR)</b>&nbsp;:</p>
   				    <p class="code">NBR = (NIR - SWIR) / (NIR + SWIR)</p>
   				    
   				    <figure>
@@ -398,15 +398,15 @@
 
 		</div>b1
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_12.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_12.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 		
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

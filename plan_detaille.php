@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 
 	<div id="container_main_sidebar">
 		
@@ -25,7 +25,7 @@
 						<ol class="witharabic">
 							<li><a href="02_01_intro.php">Introduction à la géodésie</a>
 							<li><a href="02_02_coord.php">Des coordonnées, oui mais dans quel système?</a></li>
-							<li><a href="02_03_couches_projets.php">Couches et projets : à chacun son système</a></li>
+							<li><a href="02_03_couches_projets.php">Couches et projets&nbsp;: à chacun son système</a></li>
 							<li><a href="02_04_changer_systeme.php">Passer d'un système de coordonnées à un autre</a></li>
 						</ol>
 					</li>
@@ -91,7 +91,7 @@
 							<li><a href="09_02_raster.php">Opérations sur données raster</a></li>
 							<li><a href="09_03_vecteur_raster.php">Croiser vecteur et raster</a></li>
 							<li><a href="09_04_maillage.php">Créer un maillage</a></li>
-							<li><a href="09_05_maillage_sql.php">Dites-le avec du SQL !</a></li>
+							<li><a href="09_05_maillage_sql.php">Dites-le avec du SQL&nbsp;!</a></li>
 						</ol>
 					</li>
 					
@@ -117,15 +117,15 @@
 		</div>
 		
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux.inc.php');?>
 		</div>	
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 
 

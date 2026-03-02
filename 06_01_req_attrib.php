@@ -1,15 +1,15 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
 	
 		<div class="main">
-		  <h1 class="hide_for_pdf">VI.  Sélectionner des données : les requêtes</h1>
-			<h2>VI.1  Sélectionner des éléments en fonction de leurs données attributaires : requêtes attributaires</h2>
+		  <h1 class="hide_for_pdf">VI.  Sélectionner des données&nbsp;: les requêtes</h1>
+			<h2>VI.1  Sélectionner des éléments en fonction de leurs données attributaires&nbsp;: requêtes attributaires</h2>
 				<ul class="listetitres">
 					<li><a href="#VI11">Faire une requête simple</a></li>
 					<li><a href="#VI12">Créer une nouvelle couche à partir d'une sélection</a></li>
@@ -22,7 +22,7 @@
 				
 			<p>Nous allons voir ici comment utiliser les données de la table attributaire pour sélectionner des éléments d'une couche, par exemple comment sélectionner les départements dans le nom commence par &#171; A &#187; .</p>
 			<p>Beaucoup d'opérateurs sont disponibles pour les requêtes attributaires&nbsp;; nous ne les passerons pas tous en revue mais allons simplement utiliser quelques-uns des plus courants.</p>
-			<p>Pour une description de tous les opérateurs et fonctions possibles : voir le <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/working_with_vector/expression.html" >manuel de QGIS</a>.</p>
+			<p>Pour une description de tous les opérateurs et fonctions possibles&nbsp;: voir le <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/working_with_vector/expression.html" >manuel de QGIS</a>.</p>
 
 			<h3>Faire une requête simple<a class="headerlink" id="VI11" href="#VI11"></a></h3>
 
@@ -34,23 +34,23 @@
 				<div class="manip">
 					<p>Dans la barre d'outils située en haut de la table attributaire, cliquez sur l'icône <b>Sélectionner les entités en utilisant une expression</b>.</p>
 					<img src="illustrations/6_1_BO_icone_selection.jpg" alt="barre d'outils de la table attributaire avec icône sélection entourée en rouge" width="600">
-					<p>La fenêtre de requête attributaire s'ouvre :</p>
+					<p>La fenêtre de requête attributaire s'ouvre&nbsp;:</p>
 					<figure>
 						<a href="illustrations/6_1_selection_fenetre.jpg" >
 							<img src="illustrations/6_1_selection_fenetre.jpg" alt="fenêtre de sélection, avec une requête simple" width="620">
 						</a>
 					</figure>
-					<p>Pour faire une requête simple, par exemple pour sélectionner le département du Nord :</p>
+					<p>Pour faire une requête simple, par exemple pour sélectionner le département du Nord&nbsp;:</p>
 						<ul>
-							<li class="espace">Cliquez sur <b>Champs et valeurs</b> dans la colonne du milieu : la liste des champs de la table apparaît</li>
+							<li class="espace">Cliquez sur <b>Champs et valeurs</b> dans la colonne du milieu&nbsp;: la liste des champs de la table apparaît</li>
 							<li class="espace">Double-cliquez sur le champ <b>nom_officiel</b> pour le faire apparaître dans la case <b>Expression</b> à gauche de la fenêtre (notez les guillemets doubles)</li>
 							<li class="espace">Cliquez sur l'opérateur <b>=</b></li>
 							<li class="espace">Cliquez sur le bouton <b>Tous uniques</b> pour voir dans la case <b>Valeurs</b> la liste des valeurs uniques du champ sélectionné (ici, nom_officiel)</li>
 							<li class="espace">Double-cliquez sur la valeur <b>'Nord'</b> (notez les guillemets simples dans la case Expression)</li>
-							<li class="espace">À ce stade, la case <b>Expression</b> doit contenir  : <b>"nom_officiel" = 'Nord'</b></li>
+							<li class="espace">À ce stade, la case <b>Expression</b> doit contenir &nbsp;: <b>"nom_officiel" = 'Nord'</b></li>
 							<li class="espace">Cliquez sur le bouton <b>Sélectionner des entités</b> en bas de la fenêtre</li>
 						</ul>
-					<p class="note">Il est également possible de taper la requête &#171; à la main &#187; directement dans la case Expression. Attention dans ce cas à bien respecter la syntaxe utilisée par QGIS : par exemple, les noms de champs sont entourés de guillemets doubles et les chaînes de caractères de guillemets simples.</p>
+					<p class="note">Il est également possible de taper la requête &#171; à la main &#187; directement dans la case Expression. Attention dans ce cas à bien respecter la syntaxe utilisée par QGIS&nbsp;: par exemple, les noms de champs sont entourés de guillemets doubles et les chaînes de caractères de guillemets simples.</p>
 				</div>
 				
 				<p>Pourquoi pour cette requête la <b>Prévisualisation</b> du résultat (en bas à gauche de la fenêtre de sélection) est-elle égale à 0&nbsp;? Cette expression est traitée pour chaque ligne de la table et est évaluée par vrai ou faux, 0 ou 1 pour l'ordinateur. L'aperçu donne le 1er résultat trouvé, ici 0 pour le département de l'Ain.</p>
@@ -62,7 +62,7 @@
 							<img src="illustrations/6_1_selection_nord.jpg" alt="carte avec le département du Nord sélectionné" width="300">
 						</a>
 					</figure>
-					<p>Vous pouvez lire le nombre d'éléments sélectionnés en haut de la table attributaire, ou encore en bas à gauche de la fenêtre de QGIS, dans la barre d'état :</p>
+					<p>Vous pouvez lire le nombre d'éléments sélectionnés en haut de la table attributaire, ou encore en bas à gauche de la fenêtre de QGIS, dans la barre d'état&nbsp;:</p>
 					<figure>
 					    <a href="illustrations/6_1_nb_selectionnes.jpg" >
 						    <img src="illustrations/6_1_nb_selectionnes.jpg" alt="ligne indiquant le nombre d'éléments sélectionnés, en haut de la table et dans la barre d'état" width="600">
@@ -93,7 +93,7 @@
 			
 			<h3>Désélectionner des entités<a class="headerlink" id="VI13" href="#VI13"></a></h3>
 			
-    			 <p>Par défaut, une nouvelle requête attributaire &#171;&nbsp;part de zéro&nbsp;&#187;, en ne tenant pas compte des entités déjà sélectionnées (pour au contraire tenir compte d'une requête précédente, cf. <a href="06_03_req_combinees.php#VI31" >un peu plus loin : Combiner deux requêtes attributaires</a>).</p>
+    			 <p>Par défaut, une nouvelle requête attributaire &#171;&nbsp;part de zéro&nbsp;&#187;, en ne tenant pas compte des entités déjà sélectionnées (pour au contraire tenir compte d'une requête précédente, cf. <a href="06_03_req_combinees.php#VI31" >un peu plus loin&nbsp;: Combiner deux requêtes attributaires</a>).</p>
     			 <p>Néanmoins, pour plus de clarté, il peut être utile de désélectionner des entités.</p>
     			 
     			 <div class="manip">
@@ -109,10 +109,10 @@
 					<p>Fermez la table attributaire de la couche de départements et ouvrez celle de la couche de communes. Cette table comporte une colonne <b>population</b> avec la population de chaque commune en nombre d'habitants.</p>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">Pouvez-vous dire rapidement quelle est la commune la plus peuplée ?</label></p>
+						<p><label for="faq-1">Pouvez-vous dire rapidement quelle est la commune la plus peuplée&nbsp;?</label></p>
 						<p class="reponse">En cliquant une première fois sur le nom de colonne &#171;&nbsppopulation&nbsp;&#187; pour la classer par ordre croissant, puis une deuxième fois pour la classer par ordre décroissant, on peut lire que la commune de Rennes est la plus peuplée avec 227&nbsp;830 habitants.</p>
 					</div>
-					<p><img class="icone" src="illustrations/6_1_selection_attr_icone.jpg" alt="icône de sélection de la table attributaire" >Nous allons faire une requête pour sélectionner les communes de + de 10 000 habitants. Ouvrez la fenêtre de requête pour la couche de communes :</p>
+					<p><img class="icone" src="illustrations/6_1_selection_attr_icone.jpg" alt="icône de sélection de la table attributaire" >Nous allons faire une requête pour sélectionner les communes de + de 10 000 habitants. Ouvrez la fenêtre de requête pour la couche de communes&nbsp;:</p>
 					<figure>
 						<a href="illustrations/6_1_popsup10000.jpg" >
 							<img src="illustrations/6_1_popsup10000.jpg" alt="fenêtre de sélection avec une requête pour les communes de population supérieure à 10" width="600">
@@ -123,7 +123,7 @@
 							<li class="espace">Dans la case <b>Expression</b>, tapez <b>> 10000</b> (avec ou sans espaces)</li>
 						</ul>
 					<p>Il est également possible d'aller chercher l'opérateur <b>></b> dans la liste des opérateurs, dans la colonne de gauche. Il faut ensuite taper la valeur 10000 à la main.</p>
-					<p>Une fois votre requête tapée : <b>"population" > 10000</b>, cliquez sur le bouton <b>Sélectionner des entités</b> pour voir le résultat :</p>
+					<p>Une fois votre requête tapée&nbsp;: <b>"population" > 10000</b>, cliquez sur le bouton <b>Sélectionner des entités</b> pour voir le résultat&nbsp;:</p>
 					<figure>
 						<a href="illustrations/6_1_popsup10000_res.jpg" >
 							<img src="illustrations/6_1_popsup10000_res.jpg" alt="résultat de la requête pour les communes de population supérieure à 10" width="450">
@@ -131,18 +131,18 @@
 					</figure>
 				</div>
 
-				<p>Les opérateurs qu'on voit en bas à gauche de la fenêtre de sélection (=, +, - ...) ne représentent qu'une petite partie des opérateurs disponibles ; vous pouvez tous les retrouver dans la catégorie <b>Opérateurs</b> de la colonne du milieu. En cliquant sur un opérateur, vous pouvez lire l'aide dans la partie de droite :</p>
+				<p>Les opérateurs qu'on voit en bas à gauche de la fenêtre de sélection (=, +, - ...) ne représentent qu'une petite partie des opérateurs disponibles&nbsp;; vous pouvez tous les retrouver dans la catégorie <b>Opérateurs</b> de la colonne du milieu. En cliquant sur un opérateur, vous pouvez lire l'aide dans la partie de droite&nbsp;:</p>
 				<figure>
 					<a href="illustrations/6_1_liste_operateurs.jpg" >
 						<img src="illustrations/6_1_liste_operateurs.jpg" alt="liste des opérateurs avec aide pour l'opérateur <>" width="500">
 					</a>
 				</figure>
 				<p>Parmi ces opérateurs se trouvent <b>LIKE</b> et <b>ILIKE</b>. L'opérateur <b>LIKE</b> permet de comparer une chaîne de caractère à une autre chaîne qui peut utiliser le caractère joker <b>%</b>.</p>
-				<p>Ce caractère peut remplacer un ou plusieurs caractères : par exemple, 'A%' peut correspondre à Ardèche, Allier...</p>
-				<p>Sélectionnons les communes dont le nom commence par 'PLOU' !</p>
+				<p>Ce caractère peut remplacer un ou plusieurs caractères&nbsp;: par exemple, 'A%' peut correspondre à Ardèche, Allier...</p>
+				<p>Sélectionnons les communes dont le nom commence par 'PLOU'&nbsp;!</p>
 				
 				<div class="manip">
-					<p>Ouvrez la fenêtre de sélection pour la couche de communes. Écrivez la requête suivante : <b>"nom_officiel" like 'Plou%'</b> (soit en la tapant à la main soit en double-cliquant sur les différents éléments).</p>
+					<p>Ouvrez la fenêtre de sélection pour la couche de communes. Écrivez la requête suivante&nbsp;: <b>"nom_officiel" like 'Plou%'</b> (soit en la tapant à la main soit en double-cliquant sur les différents éléments).</p>
 					<figure>
 						<a href="illustrations/6_1_res_plou.jpg" >
 							<img src="illustrations/6_1_res_plou.jpg" alt="communes dont le nom commence par PLOU" width="450">
@@ -158,8 +158,8 @@
 			
 			<h3>Combiner plusieurs critères<a class="headerlink" id="VI15" href="#VI15"></a></h3>
 			
-				<p>Comment faire s'il l'on veut sélectionner par exemple les communes de + de 10&nbsp;000 habitants dont le nom commence par 'PLOU' ?</p>
-				<p>Il s'agit ici de combiner deux critères. Deux opérateurs permettent cela : <b>AND</b> (et) et <b>OR</b> (ou).</p>
+				<p>Comment faire s'il l'on veut sélectionner par exemple les communes de + de 10&nbsp;000 habitants dont le nom commence par 'PLOU'&nbsp;?</p>
+				<p>Il s'agit ici de combiner deux critères. Deux opérateurs permettent cela&nbsp;: <b>AND</b> (et) et <b>OR</b> (ou).</p>
 				<ul>
 					<li>Avec l'opérateur <b>AND</b>, <b>tous les critères</b> doivent être remplis</li>
 					<li>Avec l'opérateur <b>OR</b>, il suffit <b>qu'un seul des critères</b> soit rempli</li>
@@ -168,18 +168,18 @@
 				<div class="manip">
 					<div class="question">
 						<input type="checkbox" id="faq-2">
-						<p><label for="faq-2">Quelle requête utiliser pour sélectionner les communes de plus de 10&nbsp;000 habitants dont le nom commence par &#171;&nbsp;Plou&nbsp;&#187; ?</label></p>
-						<p class="reponse">"population" > 10000 AND "nom_officiel" like 'Plou%' : cette requête sélectionne 3 communes.</p>
+						<p><label for="faq-2">Quelle requête utiliser pour sélectionner les communes de plus de 10&nbsp;000 habitants dont le nom commence par &#171;&nbsp;Plou&nbsp;&#187;&nbsp;?</label></p>
+						<p class="reponse">"population" > 10000 AND "nom_officiel" like 'Plou%'&nbsp;: cette requête sélectionne 3 communes.</p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-3">
-						<p><label for="faq-3">Quelle requête utiliser pour sélectionner les communes de Brest et Plouzané ?</label></p>
-						<p class="reponse"> "nom_officiel" like 'Brest' OR  "nom_officiel" like 'Plouzané' : cette requête sélectionne 2 communes. L'opérateur OR doit être utilisé car les communes ne peuvent satisfaire qu'un seul des critères à la fois (une commune ne peut s'appeler Brest et Plouzané en même temps).</p>
-						<p class="reponse">Une autre possibilité, moins lourde, consiste à utiliser l'opérateur <b>IN</b> : "nom_officiel" in ('Brest', 'Plouzané')</p>
+						<p><label for="faq-3">Quelle requête utiliser pour sélectionner les communes de Brest et Plouzané&nbsp;?</label></p>
+						<p class="reponse"> "nom_officiel" like 'Brest' OR  "nom_officiel" like 'Plouzané'&nbsp;: cette requête sélectionne 2 communes. L'opérateur OR doit être utilisé car les communes ne peuvent satisfaire qu'un seul des critères à la fois (une commune ne peut s'appeler Brest et Plouzané en même temps).</p>
+						<p class="reponse">Une autre possibilité, moins lourde, consiste à utiliser l'opérateur <b>IN</b>&nbsp;: "nom_officiel" in ('Brest', 'Plouzané')</p>
 					</div>
 				</div>
 				
-				<p>Petite astuce : vous pouvez retrouver les dernières requêtes utilisées dans la rubrique <b>Récent</b>, il suffit de double-cliquer sur une requête pour qu'elle apparaisse dans la case Expression :</p>
+				<p>Petite astuce&nbsp;: vous pouvez retrouver les dernières requêtes utilisées dans la rubrique <b>Récent</b>, il suffit de double-cliquer sur une requête pour qu'elle apparaisse dans la case Expression&nbsp;:</p>
 				<figure>
 					<a href="illustrations/6_1_requetes_recentes.jpg" >
 						<img src="illustrations/6_1_requetes_recentes.jpg" alt="Accès aux requêtes attributaires récentes" width="600">
@@ -189,38 +189,38 @@
 			<h3>Quelques exemples à tester<a class="headerlink" id="VI16" href="#VI16"></a></h3>
 			
 			    <p>Voici quelques exemples à tester, plusieurs requêtes sont parfois possibles pour un même résultat.</p>
-				<p>Pouvez-vous sélectionner ? ...</p>
+				<p>Pouvez-vous sélectionner&nbsp;? ...</p>
 				
 				<div class="manip">
 					<div class="question">
 						<input type="checkbox" id="faq-4">
-						<p><label for="faq-4">La commune de Pouldreuzic ?</label></p>
-						<p class="reponse">"nom_officiel" like 'Pouldreuzic' : une commune sélectionnée</p>
+						<p><label for="faq-4">La commune de Pouldreuzic&nbsp;?</label></p>
+						<p class="reponse">"nom_officiel" like 'Pouldreuzic'&nbsp;: une commune sélectionnée</p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-5">
-						<p><label for="faq-5">Les communes du département des Côtes d'Armor (22) ?</label></p>
-						<p class="reponse">"code_insee_du_departement" = '22' : 344 communes sélectionnées</p>
+						<p><label for="faq-5">Les communes du département des Côtes d'Armor (22)&nbsp;?</label></p>
+						<p class="reponse">"code_insee_du_departement" = '22'&nbsp;: 344 communes sélectionnées</p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-6">
-						<p><label for="faq-6">Les communes dont le nom contient 'saint' (avec ou sans majuscules) ?</label></p>
-						<p class="reponse">"nom_officiel" ilike '%saint%' : 188 communes sélectionnées</p>
+						<p><label for="faq-6">Les communes dont le nom contient 'saint' (avec ou sans majuscules)&nbsp;?</label></p>
+						<p class="reponse">"nom_officiel" ilike '%saint%'&nbsp;: 188 communes sélectionnées</p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-8">
-						<p><label for="faq-8">Les communes dont le nom commence par 'Plou' et se termine par 'ec' ?</label></p>
-						<p class="reponse">"nom_officiel" like 'Plou%ec' : 5 communes sélectionnées</p>
+						<p><label for="faq-8">Les communes dont le nom commence par 'Plou' et se termine par 'ec'&nbsp;?</label></p>
+						<p class="reponse">"nom_officiel" like 'Plou%ec'&nbsp;: 5 communes sélectionnées</p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-9">
-						<p><label for="faq-9">Les communes dont la population est comprise entre 10&nbsp;000 et 50&nbsp;000 habitants inclus ?</label></p>
-						<p class="reponse">"population" > 10000 AND  "population" < 50000 : 35 communes sélectionnées</p>
+						<p><label for="faq-9">Les communes dont la population est comprise entre 10&nbsp;000 et 50&nbsp;000 habitants inclus&nbsp;?</label></p>
+						<p class="reponse">"population" > 10000 AND  "population" < 50000&nbsp;: 35 communes sélectionnées</p>
 					</div>
 					<div class="question">
 						<input type="checkbox" id="faq-10">
-						<p><label for="faq-10">Les communes du département du Morbihan (56), dont le nom contient 'plou' ou 'ec' (avec ou sans majuscules), et dont la population est inférieure ou égal à 10&nbsp;000 habitants ?<br><em>Notez qu'on peut utiliser des parenthèses pour séparer les critères, AND étant prioritaire sur OR !</em></label><p>
-						<p class="reponse">"code_insee_du_departement" = '56' AND ("nom_officiel" ilike '%plou%' OR "nom_officiel" ilike '%ec%') AND "population" <= 10000 : 12 communes sélectionnées</p>
+						<p><label for="faq-10">Les communes du département du Morbihan (56), dont le nom contient 'plou' ou 'ec' (avec ou sans majuscules), et dont la population est inférieure ou égal à 10&nbsp;000 habitants&nbsp;?<br><em>Notez qu'on peut utiliser des parenthèses pour séparer les critères, AND étant prioritaire sur OR&nbsp;!</em></label><p>
+						<p class="reponse">"code_insee_du_departement" = '56' AND ("nom_officiel" ilike '%plou%' OR "nom_officiel" ilike '%ec%') AND "population" <= 10000&nbsp;: 12 communes sélectionnées</p>
 					</div>
 				</div>
 				
@@ -235,15 +235,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_6.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_6.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

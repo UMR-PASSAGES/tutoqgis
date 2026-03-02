@@ -1,15 +1,15 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
 	
 		<div class="main">
 		  <h1 class="hide_for_pdf">IX.  Analyse spatiale</h1>
-			<h2>IX.5  Un exemple d'application&nbsp;: dites-le avec du SQL !</h2>
+			<h2>IX.5  Un exemple d'application&nbsp;: dites-le avec du SQL&nbsp;!</h2>
 				<ul class="listetitres">
 					<li><a href="#IX51">Création d'une nouvelle base SpatiaLite ou PostGIS</a>
 					   <ul class="listesoustitres">
@@ -49,7 +49,7 @@
                <p>Il n'y a pas une solution meilleure qu'une autre mais elles répondent à des besoins différents.</p>
                <p><b>Pour cet exercice les 2 logiciels peuvent être utilisés.</b> Si vous choisissez Postgresql/PostGIS, l'installation ne sera pas détaillée ici mais on trouve de nombreuses ressources sur internet. La syntaxe étant légèrement différente d'un logiciel à l'autre, les requêtes seront proposées en 2 versions.</p>			
 			   
-			   <p>Pour ce chapitre comme pour le précédent, nous utiliserons les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a>, cette fois pour les 2 années 2000 et 2012. Elles ont été filtrées pour ne garder que les vignes et sont disponibles comme d'habitude <a href="telechargement.php">ici</a> !</p>
+			   <p>Pour ce chapitre comme pour le précédent, nous utiliserons les données <a class="ext" target="_blank" href="https://www.statistiques.developpement-durable.gouv.fr/corine-land-cover-0" >Corine Land Cover</a>, cette fois pour les 2 années 2000 et 2012. Elles ont été filtrées pour ne garder que les vignes et sont disponibles comme d'habitude <a href="telechargement.php">ici</a>&nbsp;!</p>
 			
 			   <h3>Création d'une nouvelle base SpatiaLite ou PostGIS<a class="headerlink" id="IX51" href="#IX51"></a></h3>
 			   
@@ -81,7 +81,7 @@
 			         
 			         <p>Si vous naviguez dans l'explorateur de fichiers de votre ordinateur jusqu'à votre base de données, vous verrez qu'un fichier SQLite a été créé. Par rapport à un format comme le shapefile, une base de données est comme une boîte qui peut contenir plusieurs jeux de données.</p>
 			         <p>Une base SpatiaLite est une base SQLite qui peut gérer des données spatiales grâce au module SpatiaLite. Elle est constituée d'une seule fichier qu'on peut copier d'un dossier à l'autre.</p>
-			         <p>Ça n'est pas le cas des logiciels de bases de données &#171;&nbsp;traditionnels&nbsp;&#187; tels que PostgreSQL, qui fonctionnent selon une logique <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Client-serveur">client-serveur</a>&nbsp;: la base est installé sur un serveur, et des utilisateurs peuvent s'y connecter à partir d'autres ordinateurs. Bien sûr il est possible de se servir de son propre ordinateur comme de serveur, et la base ne sera accessible que depuis celui-ci : c'est ce qu'on appelle une base &#171;&nbsp;en local&nbsp;&#187;.</p>
+			         <p>Ça n'est pas le cas des logiciels de bases de données &#171;&nbsp;traditionnels&nbsp;&#187; tels que PostgreSQL, qui fonctionnent selon une logique <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Client-serveur">client-serveur</a>&nbsp;: la base est installé sur un serveur, et des utilisateurs peuvent s'y connecter à partir d'autres ordinateurs. Bien sûr il est possible de se servir de son propre ordinateur comme de serveur, et la base ne sera accessible que depuis celui-ci&nbsp;: c'est ce qu'on appelle une base &#171;&nbsp;en local&nbsp;&#187;.</p>
 			     
 			         
 			     <h4>Création d'une base PostGIS<a class="headerlink" id="IX51b" href="#IX51b"></a></h4>
@@ -98,7 +98,7 @@
 			         <ul>
 			             <li><a class="ext" target="_blank" href="https://www.postgresql.org/docs/9.1/manage-ag-createdb.html">en ligne de commande</a> ou <a class="ext" target="_blank" href="https://neon.com/postgresql/postgresql-administration/postgresql-create-database">ici</a></li>
 			             <li>avec <a class="ext" target="_blank" href="https://neon.com/postgresql/postgresql-administration/postgresql-create-database" >pgAdmin</a> en déroulant pour aller à la partie &#171;&nbsp;3) Creating a new database using pgAdmin&nbsp;&#187;</li>
-			             <li>avec DBeaver, le principe est le même qu'avec pgAdmin : clic droit sur le serveur postgres &#8594; Créer &#8594; Database</li>
+			             <li>avec DBeaver, le principe est le même qu'avec pgAdmin&nbsp;: clic droit sur le serveur postgres &#8594; Créer &#8594; Database</li>
 			         </ul>
 			         
 			         <p>Il faut ensuite <b>donner les 2 extensions postgis et postgis_topology à la base</b> pour pouvoir y mettre des données géographiques. Encore une fois, vous pouvez procéder au choix&nbsp;:</p>
@@ -140,13 +140,13 @@
 			         </div>
 			         <p>Une dernière étape consiste à créer un <b>schéma</b> nommé tutoqgis dans cette base. Un schéma correspond à un sous-dossier dans la base de données. Le schéma par défaut se nomme <b>public</b> mais c'est une bonne pratique de créer vos propres schémas.</p>
 			         <div class="manip">
-			             <p>Rien de compliqué : toujours dans l'explorateur, clic droit sur votre base &#8594; <b>Nouveau schéma...</b></p>
+			             <p>Rien de compliqué&nbsp;: toujours dans l'explorateur, clic droit sur votre base &#8594; <b>Nouveau schéma...</b></p>
 			             <figure>
             			     <a href="illustrations/9_5_creer_schema.jpg" >
             			         <img src="illustrations/9_5_creer_schema.jpg" alt="clic droit sur la base, créer schéma" width="300">
             			     </a>
             			 </figure>
-            			 <p>Nommez-le par exemple <b>tutoqgis</b>. Votre base doit donc contenir 3 schémas : tutoqgis, public et topology.</p>
+            			 <p>Nommez-le par exemple <b>tutoqgis</b>. Votre base doit donc contenir 3 schémas&nbsp;: tutoqgis, public et topology.</p>
             			 <figure>
             			     <a href="illustrations/9_5_creer_schema_res.jpg" >
             			         <img src="illustrations/9_5_creer_schema_res.jpg" alt="base maillage_clc avec ses 3 schémas" width="150">
@@ -184,14 +184,14 @@
         			     <a href="illustrations/9_5_import_postgis.jpg" >
         			         <img src="illustrations/9_5_import_postgis.jpg" alt="Import de données dans PostGIS" width="300">
         			     </a>
-        			     <figcaption>Import de données : à gauche dans SpatiaLite, à droite dans PostGIS (cliquez pour voir en plus grand).</figcaption>
+        			     <figcaption>Import de données&nbsp;: à gauche dans SpatiaLite, à droite dans PostGIS (cliquez pour voir en plus grand).</figcaption>
         			 </figure>
         			 <ul>
-        			     <li class="espace">Source : choisir la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em></li>
-        			     <li class="espace">Table en sortie : pour PostGIS, sélectionnez le schéma <b>tutoqgis</b>, et dans tous les cas nommez la future table SpatiaLite ou PostGIS <b>clc00_vignes</b> (il est plus pratique d'éviter les majuscules)</li>
-        			     <li class="espace"><a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Cl%C3%A9_primaire">clé primaire</a> : il s'agit d'un champ d'identifiant unique qui sera créé, nommez-le <b>gid</b> par exemple</li>
-        			     <li class="espace">SCR source : <b>RGF93/Lambert93 EPSG 2154</b> (normalement le SCR source est lu automatiquement mais c'est bien de le vérifier !</li>
-        			     <li class="espace"><b>Convertir les noms de champs en minuscule</b> (PostGIS) : cocher cette case est plus pratique, car s'il y a des noms de champs en majuscules il faudra penser les mettre entre guillemets dans les requêtes. SpatiaLite n'est quant à lui pas sensible à la casse pour les noms de champs</li>
+        			     <li class="espace">Source&nbsp;: choisir la couche <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em></li>
+        			     <li class="espace">Table en sortie&nbsp;: pour PostGIS, sélectionnez le schéma <b>tutoqgis</b>, et dans tous les cas nommez la future table SpatiaLite ou PostGIS <b>clc00_vignes</b> (il est plus pratique d'éviter les majuscules)</li>
+        			     <li class="espace"><a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Cl%C3%A9_primaire">clé primaire</a>&nbsp;: il s'agit d'un champ d'identifiant unique qui sera créé, nommez-le <b>gid</b> par exemple</li>
+        			     <li class="espace">SCR source&nbsp;: <b>RGF93/Lambert93 EPSG 2154</b> (normalement le SCR source est lu automatiquement mais c'est bien de le vérifier&nbsp;!</li>
+        			     <li class="espace"><b>Convertir les noms de champs en minuscule</b> (PostGIS)&nbsp;: cocher cette case est plus pratique, car s'il y a des noms de champs en majuscules il faudra penser les mettre entre guillemets dans les requêtes. SpatiaLite n'est quant à lui pas sensible à la casse pour les noms de champs</li>
         			     <li class="espace">Vous pouvez également cocher la case <b>créer un index spatial</b>, ce qui accélérera certaines opérations spatiales (mais il peut être créé par la suite)</li>
         			 </ul>
         			 <p><img class="icone" src="illustrations/9_5_actualiser_bdd_icone.jpg" alt="icône actualiser du gestionnaire de bdd" >Cliquez sur <b>OK</b>, patientez... Il faut éventuellement actualiser la base pour que la nouvelle couche soit visible&nbsp;:</p>
@@ -208,14 +208,14 @@
 			     <p>Bravo&nbsp;! Vous disposez maintenant d'une base de données avec une couche de données.</p>
 			     
 			     <div class="manip">
-    			     <p>Pour chaque couche PostGIS ou SpatiaLite, on peut accéder à partir du gestionnaire de bases de données à 3 onglet : info, table et aperçu.</p>
+    			     <p>Pour chaque couche PostGIS ou SpatiaLite, on peut accéder à partir du gestionnaire de bases de données à 3 onglet&nbsp;: info, table et aperçu.</p>
     			     <figure>
             			     <a href="illustrations/9_5_info_couche.jpg" >
             			         <img src="illustrations/9_5_info_couche.jpg" alt="3 onglets info, table et aperçu dans le gestionnaire de bdd" width="400">
             			     </a>
             	     </figure>
             	     <p>L'onglet <b>info</b> vous permet de voir le nombre d'entités (4215), le type de géométrie (multipolygone), le SCR (RGF93 Lambert93 EPSG 2154), la liste des champs...</p>
-            	     <p>Les onglets <b>table</b> et <b>aperçu</b> permettent un aperçu des données attributaires et spatiales : cliquez sur chacun d'eux.</p>
+            	     <p>Les onglets <b>table</b> et <b>aperçu</b> permettent un aperçu des données attributaires et spatiales&nbsp;: cliquez sur chacun d'eux.</p>
             	     <p>Double-cliquez sur la couche dans la partie gauche du gestionnaire de bases de données pour l'ajouter à QGIS. Vous pouvez maintenant l'utiliser comme n'importe quelle couche shapefile ou GeoPackage.</p>
         	 </div>
         	 
@@ -243,7 +243,7 @@
         	         </figure>
         	      </div>
         	      
-    	         <p>Remarquez que cet onglet porte le nom de votre base : il ne sera pas possible d'y lancer une requête concernant une autre base (mais on peut très bien ouvrir plusieurs onglets de requête).</p>
+    	         <p>Remarquez que cet onglet porte le nom de votre base&nbsp;: il ne sera pas possible d'y lancer une requête concernant une autre base (mais on peut très bien ouvrir plusieurs onglets de requête).</p>
     	         <p>L'onglet comporte 2 parties&nbsp;:</p>
     	         <ol>
     	           <li>en haut, vous pouvez taper une requête</li>
@@ -254,7 +254,7 @@
     	         <div class="manip">
     	           <p>Tapez la requête suivante (pour une base SpatiaLite)&nbsp;:</p>
     	           <p class="code">SELECT * FROM clc00_vignes WHERE area_ha &lt; 25;</p>
-    	           <p>Et pour une base PostGIS (la seule différence est qu'il faut rajouter le nom du schéma devant le nom de la table) :</p>
+    	           <p>Et pour une base PostGIS (la seule différence est qu'il faut rajouter le nom du schéma devant le nom de la table)&nbsp;:</p>
                  <p class="code">SELECT * FROM tutoqgis.clc00_vignes WHERE area_ha &lt; 25;</p>
     	           <p>Puis cliquez sur le bouton <b>Exécuter</b>&nbsp;: les 10 lignes correspondant à des polygones de surface &lt; 25 hectares s'affichent.</p>
     	           <figure>
@@ -265,24 +265,24 @@
     	         </div>
     	         <p class="note">Les différents mots clés (select, from, where...) peuvent être écrits indifféremment en minuscules ou majuscules. De même, la requête peut être écrite en une seule ligne ou bien avec des retours à la ligne.</p>
     	         
-			    <p>Si l'on détaille cette requête ligne par ligne :</p>
+			    <p>Si l'on détaille cette requête ligne par ligne&nbsp;:</p>
 		        <p class="code">SELECT *</p>
 		        <p>signifie que nous allons sélectionner (<b>select</b>) toutes (la mention <b>*</b>) les colonnes de la table attributaire, ainsi que la géométrie, qui est considérée comme une colonne nommée geom, comme vous pouvez le vérifier dans l'onglet <b>Info</b>.</p>
 		        <p class="code">FROM clc00_vignes</p>
-		        <p>signifie que nous allons sélectionner les colonnes de la couche <em class="data">clc00_vignes</em>. Pour PostGIS, on ajoute le nom du schéma devant le nom de la table ; si la table est dans le schéma public on peut spécifier uniquement le nom de la table.</p>
+		        <p>signifie que nous allons sélectionner les colonnes de la couche <em class="data">clc00_vignes</em>. Pour PostGIS, on ajoute le nom du schéma devant le nom de la table&nbsp;; si la table est dans le schéma public on peut spécifier uniquement le nom de la table.</p>
 		        <p class="code">WHERE area_ha &lt; 25;</p>
-		        <p>applique un critère à la requête : seules seront sélectionnées les lignes répondant à ce critère, c'est-à-dire dont la valeur pour le champ area_ha est inférieure à 25.</p>
+		        <p>applique un critère à la requête&nbsp;: seules seront sélectionnées les lignes répondant à ce critère, c'est-à-dire dont la valeur pour le champ area_ha est inférieure à 25.</p>
 		        <p>Le <b>point-virgule</b> termine la requête. Dans le gestionnaire de BDD de QGIS, il est optionnel mais peut- être requis dans d'autres logiciels. C'est donc une bonne pratique de penser à l'ajouter, de plus il est indispensable pour séparer les requêtes si on en lance plusieurs en même temps (possible pour PostGIS mais pas pour SpatiaLite).</p>
 		        
-		        <p>Ici, la requête ne crée pas de nouvelles couches mais renvoie les lignes sélectionnées. Comment faire pour créer une nouvelle couche à partir de cette sélection ?</p>
+		        <p>Ici, la requête ne crée pas de nouvelles couches mais renvoie les lignes sélectionnées. Comment faire pour créer une nouvelle couche à partir de cette sélection&nbsp;?</p>
 		        
 		        <div class="manip">
-		          <p>Dans PostGIS, il suffira d'ajouter devant cette requête <b>CREATE TABLE nouvelle_table AS</b> : la requête complète sera donc</p>
+		          <p>Dans PostGIS, il suffira d'ajouter devant cette requête <b>CREATE TABLE nouvelle_table AS</b>&nbsp;: la requête complète sera donc</p>
 		          <p class="code">CREATE TABLE tutoqgis.inf25ha AS
 SELECT * FROM tutoqgis.clc00_vignes
 WHERE area_ha &lt; 25;</p>
 		          <p>pour créer une nouvelle couche nommée <b>inf25ha</b> dans le schéma tutoqgis par exemple.</p>
-		          <p>Cliquez sur <b>Exécuter</b> : aucun résultat n'est renvoyé mais une nouvelle couche est ajoutée à la base, visible après l'avoir actualisée.</p>
+		          <p>Cliquez sur <b>Exécuter</b>&nbsp;: aucun résultat n'est renvoyé mais une nouvelle couche est ajoutée à la base, visible après l'avoir actualisée.</p>
 		          <figure>
     			     <a href="illustrations/9_5_requete_exemple2.jpg" >
     			         <img src="illustrations/9_5_requete_exemple2.jpg" alt="Requête de création de table" width="600">
@@ -345,7 +345,7 @@ WHERE area_ha &lt; 25;</p>
 			             <p class="code">INSERT INTO grid (geom)
 SELECT ST_SquareGrid(Extent(r.geom), 50000) AS geom 
 FROM region AS r;</p>
-			             <p>Cette dernière requête créer une grille avec la même étendue que la couche <b>region</b>, et une maille de 50 km. La fonction <b>ST_SquareGrid</b> prend 2 arguments :</p>
+			             <p>Cette dernière requête créer une grille avec la même étendue que la couche <b>region</b>, et une maille de 50 km. La fonction <b>ST_SquareGrid</b> prend 2 arguments&nbsp;:</p>
 			             <ul>
 			                 <li>une géométrie correspondant à l'étendue de la grille, ici l'étendue de la couche de régions récupérée au moyen de la fonction <b>Extent</b></li>
 			                 <li>la taille de maille dans le SCR de la couche, ici 50&nbsp;000 mètres</li>
@@ -357,7 +357,7 @@ FROM region AS r;</p>
             			         <img src="illustrations/9_5_grille_res.jpg" alt="Grille superposée aux vignes" width="300">
             			     </a>
             	     </figure>
-			             <p>Cependant, cette couche ne contient qu'une seule entité multi-partie : vous ne pouvez pas sélectionner une seule case. Une dernière requête est donc nécessaire&nbsp;:</p>
+			             <p>Cependant, cette couche ne contient qu'une seule entité multi-partie&nbsp;: vous ne pouvez pas sélectionner une seule case. Une dernière requête est donc nécessaire&nbsp;:</p>
 			             <p class="code">SELECT ElementaryGeometries('grid','geom','grid_sp','gid','fid') AS geom
 FROM grid;</p>
 			             <p>Ici, nous utilisons la fonction <b>ElementaryGeometries</b> pour passer d'une couche de multipolygones à une couche de polygone. Cette fonction utilise les arguments suivants&nbsp;:</p>
@@ -377,14 +377,14 @@ FROM grid;</p>
 			         <p>Dans PostGIS, la fonction <b>ST_SquareGrid</b> permettant la génération d'une grille avec PostGIS n'est accessible qu'à partir de la version 3.1. A priori ça ne devrait pas poser problème, PostGIS en étant actuellement à sa version 3.6.</p>
 			         
 			         <div class="manip">
-			           <p>Pour le vérifier, tapez la requête suivante :</p>
+			           <p>Pour le vérifier, tapez la requête suivante&nbsp;:</p>
 			           <p class="code">SELECT PostGIS_Version();</p>
 			           <figure>
         			     <a href="illustrations/9_5_version_postgis.jpg" >
-      			         <img src="illustrations/9_5_version_postgis.jpg" alt="Requête pour obtenir la version de PostGIS et son résultat : version 3.2" width="620">
+      			         <img src="illustrations/9_5_version_postgis.jpg" alt="Requête pour obtenir la version de PostGIS et son résultat&nbsp;: version 3.2" width="620">
         			     </a>
             	   </figure>
-            	     <p>Le résultat de la requête devrait être sous la forme <b>3.2 USE_GEOS=1 USE_PROJ=1 USE_STATS=1</b> : ici, il s'agit de la version 3.2.</p>
+            	     <p>Le résultat de la requête devrait être sous la forme <b>3.2 USE_GEOS=1 USE_PROJ=1 USE_STATS=1</b>&nbsp;: ici, il s'agit de la version 3.2.</p>
 			         </div>
 			         
 			         <p class="note">Si vous possédez une version antérieure à la 3.1, vous pouvez utiliser <a class="ext" target="_blank" href="https://gis.stackexchange.com/a/23541/175131" >cette fonction</a> créée par Alexander Palamarchuk pour générer une grille.</p>
@@ -412,14 +412,14 @@ FROM tutoqgis.region;</p>
                     <p class="code">ST_Extent(geom)</p>
                     <p>La fonction <a class="ext" target="_blank" href="https://postgis.net/docs/ST_Extent.html" >ST_Extent</a> récupère l'emprise d'une couche. Cette fonction est nécessaire car si on utilise ST_SquareGrid directement sur la géométrie de <em>clc00_vignes</em>, la grille n'aura des cases que là où elle recouvre la couche de régions (ce qui pourrait d'ailleurs aussi fonctionner). Elle prend un seul paramètre, ici <b>geom</b>, la colonne de géométrie de <em>clc00_vignes</em>.</p>
                     <p class="code">ST_SquareGrid(50000, ST_Extent(geom))</p>
-                    <p>La fonction <b>St_SquareGrid</b> prend 2 arguments en paramètre : la taille d'une case de la grille, ici <b>50&nbsp;000</b>, et la zone sur laquelle créer la grille, ici <b>ST_Extent(geom)</b>. Vous pouvez remplacer <em>ST_Extent(geom)</em> par <em>geom</em> et la grille n'aura de cases que là où elle recouvre la couche de régions, comme dit plus haut.</p>
+                    <p>La fonction <b>St_SquareGrid</b> prend 2 arguments en paramètre&nbsp;: la taille d'une case de la grille, ici <b>50&nbsp;000</b>, et la zone sur laquelle créer la grille, ici <b>ST_Extent(geom)</b>. Vous pouvez remplacer <em>ST_Extent(geom)</em> par <em>geom</em> et la grille n'aura de cases que là où elle recouvre la couche de régions, comme dit plus haut.</p>
                     <p class="code"><b>(</b>ST_SquareGrid(50000, ST_Extent(geom))<b>).*</b></p>
                     <p>Les parenthèses entourant la fonction <em>ST_SquareGrid</em>, ainsi que le <b>.geom</b>, sont nécessaires car cette fonction renvoie une couche en sortie. Ici, on précise qu'on veut récupérer le champ <b>geom</b> de cette couche (les autres champs étant des index de ligne et de colonne).</p>
                     <p class="code">FROM tutoqgis.region;</p>
                     <p>Enfin, la dernière ligne indique qu'on travaille à partir de la couche <b>region</b> du schéma <b>tutoqgis</b>.</p>
                     
                      <div class="manip">   
-                        <p>Actualisez la base&nbsp;: la couche <b>grid</b> est visible, on peut l'ajouter à QGIS, mais vous remarquerez 3 problèmes, visibles dans l'onglet <b>Info</b> :</p>
+                        <p>Actualisez la base&nbsp;: la couche <b>grid</b> est visible, on peut l'ajouter à QGIS, mais vous remarquerez 3 problèmes, visibles dans l'onglet <b>Info</b>&nbsp;:</p>
                         <figure>
                 			     <a href="illustrations/9_5_pb_grille.jpg" >
               			         <img src="illustrations/9_5_pb_grille.jpg" alt="Onglet info de ma grille créée avec les 3 problèmes indiqués ci-dessous" width="600">
@@ -430,14 +430,14 @@ FROM tutoqgis.region;</p>
                           <li>son type de géométrie non plus n'est pas reconnu</li>
                           <li>la table n'a pas de clé primaire (ça n'est pas toujours un problème mais ici nous en aurons besoin pour la suite)</li>
                         </ul>
-                        <p>Qu'à cela ne tienne, à chaque problème sa requête :</p>
+                        <p>Qu'à cela ne tienne, à chaque problème sa requête&nbsp;:</p>
                         <p class="code">SELECT populate_geometry_columns();</p>
                         <p>Cette fonction va faire en sorte que la géométrie de cette couche soit reconnue comme étant de type polygone.</p>
                         <p class="code">SELECT UpdateGeometrySRID('tutoqgis', 'grid', 'geom', 2154);</p>
                         <p>Ici, on définit le système de coordonnées en 2154 (code EPSG du RGF93/Lambert93)</p>
                         <p class="code">ALTER TABLE tutoqgis.grid ADD COLUMN gid SERIAL PRIMARY KEY;</p>
                         <p>Enfin, cette requête ajoute une clé primaire nommée <b>gid</b>.</p>
-                        <p>Après avoir actualisé tout devrait être ok :</p>
+                        <p>Après avoir actualisé tout devrait être ok&nbsp;:</p>
                         <figure>
               			     <a href="illustrations/9_5_pb_grille_regles.jpg" >
               			         <img src="illustrations/9_5_pb_grille_regles.jpg" alt="Onglet info de ma grille créée avec les 3 problèmes réglés" width="600">
@@ -453,7 +453,7 @@ FROM tutoqgis.region;</p>
 			   
 			     <p>Nous allons maintenant donner à chaque case de cette grille une valeur correspondant à sa surface en vignes, à partir de la couche <em class="data">clc00_vignes</em>.</p>
 			     <p>Cette opération regroupe les 3 parties du chapitre précédent&nbsp;: <a href="09_04_maillage.php#IX43" >union</a>, <a href="09_04_maillage.php#IX44" >recalcul de la surface</a> et <a href="09_04_maillage.php#IX45" >agrégation des données par maille</a> (je vous avais bien dit que le SQL avait des avantages).</p>
-			     <p>Comme d'habitude, à vous de choisir votre logiciel préféré pour cette opération, qui nécessite donc 2 couches : une grille, et une couche de polygones.</p>
+			     <p>Comme d'habitude, à vous de choisir votre logiciel préféré pour cette opération, qui nécessite donc 2 couches&nbsp;: une grille, et une couche de polygones.</p>
 			     
 		         <div class="manip">
 		             <p>La requête est la même pour SpatiaLite et PostGIS, il faut juste ajouter le nom du schéma <b>tutoqgis</b> pour PostGIS, et exécuter la requête sur <b>grid_sp</b> et non <b>grid</b> pour SpatiaLite.</p>
@@ -489,7 +489,7 @@ ORDER BY g.gid;</p>
 		         <p>On descend 2 lignes plus bas...</p>
 		         <p class="code">GROUP BY g.gid, g.geom</p>
 		         <p>La clause <a class="ext" target="_blank" href="https://sql.sh/cours/group-by" >GROUP BY</a> permet de regrouper toutes les entités ayant la même valeur de géométrie et d'identifant. Elle implique d'utiliser une fonction d'agrégation pour les colonnes autres que <b>geom</b> et <b>gid</b>. Ici, c'est la fonction d'agrégation <b>SUM</b> qui est utilisée dans la deuxième ligne de la requête pour créer la colonne <b>surf</b>.</p>
-		         <p>Pour que la requête soit moins longue à exécuter, on aurait pu rajouter la ligne :</p>
+		         <p>Pour que la requête soit moins longue à exécuter, on aurait pu rajouter la ligne&nbsp;:</p>
 		         <p class="code">WHERE ST_Intersects(g.geom, v.geom)</p>
 		         <p>qui permet de ne prendre en compte que les cases de la grille qui sont superposées avec des vignes. Avec ce critère, la table créée ne contiendrait donc que ces cases. Cela serait moins pratique pour comparer ensuite les 2 années, c'est pourquoi cette option n'a pas été choisie.</p>
 		         <p class="code">ORDER BY g.gid</p>
@@ -551,7 +551,7 @@ ORDER BY g.gid;</p>
 			         </div>
 			         
 			         <p>Rapide, non&nbsp;? Quand vous travaillez avec des requêtes SQL, une pratique peut être de copier les requêtes dans un fichier texte. Ainsi vous en gardez la mémoire, et si vous avez besoin de les relancer sur d'autres données, il vous suffira de faire un rechercher-remplacer sur les noms des couches, puis de recopier ces requêtes dans le gestionnaire de bases de données QGIS.</p>
-			         <p>Il est possible en SQL d'ajouter des <a class="ext" target="_blank" href="https://sql.sh/cours/commentaires">commentaires</a>, non pris en compte : la ligne doit alors être précédée par 2 tirets. Ceci vous permet d'expliquer vos requêtes, ce qui est toujours utile quand on reprend un travail quelques semaines/mois/années plus tard, ou pour vos collègues.</p>
+			         <p>Il est possible en SQL d'ajouter des <a class="ext" target="_blank" href="https://sql.sh/cours/commentaires">commentaires</a>, non pris en compte&nbsp;: la ligne doit alors être précédée par 2 tirets. Ceci vous permet d'expliquer vos requêtes, ce qui est toujours utile quand on reprend un travail quelques semaines/mois/années plus tard, ou pour vos collègues.</p>
 			     
 			     
 			     <h4>Soustraire les 2 maillages 2012 et 2000<a class="headerlink" id="IX56b" href="#IX56b"></a></h4>
@@ -640,7 +640,7 @@ WHERE g1.gid = g2.gid;</p>
         	               <li class="espace">Champ à utiliser&nbsp;: sélectionnez le champ <b>surf</b>, chaque pixel du raster aura ainsi la valeur correspondante de ce champ</li>
         	               <li class="espace">Unité du raster résultat&nbsp;: afin de pouvoir fixer la taille du pixel en mètres et non le nombre de pixel du raster résultat, sélectionnez <b>Unités géoréférencées</b></li>
         	               <li class="espace">Largeur/Résolution horizontale et verticale&nbsp;: tapez <b>50&nbsp;000</b> pour une taille de pixel de 50 km, identique à celle du maillage d'origine</li>
-        	               <li class="espace">Affecter une valeur nulle : choisir par exemple <b>-9999</b> afin de différencier les cases sans valeur des cases avec une valeur de 0</li>
+        	               <li class="espace">Affecter une valeur nulle&nbsp;: choisir par exemple <b>-9999</b> afin de différencier les cases sans valeur des cases avec une valeur de 0</li>
         	               <li class="espace">Emprise du résultat&nbsp;: cliquez sur la flèche tout à droite et sélectionnez la couche <b>grid00_surf</b>, pour que le futur raster ait la même étendue que le maillage d'origine</li>
         	               <li class="espace">Vous pouvez choisir de créer un fichier temporaire ou bien d'enregistrer le résultat sur votre ordinateur.</li>
         	            </ul>
@@ -664,7 +664,7 @@ WHERE g1.gid = g2.gid;</p>
         			         </a>
         	            </figure>
         	            <ul>
-        	               <li class="espace">Couches en entrée : choisissez les 2 rasters que vous venez de créer en cliquant sur les <b>...</b> à droite</li>
+        	               <li class="espace">Couches en entrée&nbsp;: choisissez les 2 rasters que vous venez de créer en cliquant sur les <b>...</b> à droite</li>
         	               <li class="espace">Expression&nbsp;: cliquez sur <b>&#949;</b> à droite, puis dans la fenêtre qui s'ouvre double-cliquez sur la couche <b>rast12</b>, tapez le signe <b>-</b> (ou cliquez sur ce signe dans les opérateur), puis double-cliquez sur la couche <b>rast00</b>. L'expression finale est <b>"rast12@1" - "rast00@1"</b></li>
         	               <li class="espace">Emprise du résultat&nbsp;: cliquez sur là flèche tout à droite, et sélectionnez l'une ou l'autre couche <b>rast00</b> ou <b>rast12</b>&nbsp;: la couche créée aura la même emprise, résolution et SCR que cette couche de référence</li>
         	               <li class="espace">Output&nbsp;: vous pouvez soit créer une couche temporaire, soit enregistrer cette couche sur votre ordinateur</li>
@@ -672,7 +672,7 @@ WHERE g1.gid = g2.gid;</p>
         	            <p>Par défaut, le résultat s'affiche en niveau de gris&nbsp;:</p>
         	            <figure>
         			         <a href="illustrations/9_5_evol_raster1.jpg" >
-        			             <img src="illustrations/9_5_evol_raster1.jpg" alt="Résultat de la différence des 2 rasters : style par défaut bande grise unique" width="400">
+        			             <img src="illustrations/9_5_evol_raster1.jpg" alt="Résultat de la différence des 2 rasters&nbsp;: style par défaut bande grise unique" width="400">
         			         </a>
         	            </figure>
         	            <p>Pour une représentation similaire à celle obtenue plus haut, il faut paramétrer le style de ce raster (cliquez sur l'image pour la voir en plus grand)&nbsp;:</p>
@@ -701,21 +701,21 @@ WHERE g1.gid = g2.gid;</p>
 				
 				<br>
 				<a class="prec" href="09_04_maillage.php">chapitre précédent</a>
-				<a class="suiv" href="10_00_carto.php">partie X : représentation et mise en page</a>
+				<a class="suiv" href="10_00_carto.php">partie X&nbsp;: représentation et mise en page</a>
 				<br>
 				<a class="hautpage" href="#wrap">haut de page</a>					
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_9.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_9.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

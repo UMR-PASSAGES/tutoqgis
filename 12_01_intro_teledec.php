@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -12,7 +12,7 @@
 			<h2>XII.1  Introduction à la télédétection</h2>
 			
 			    <ul class="listetitres">
-  					<li><a href="#XII11">Données utilisées : image Sentinel-2</a>
+  					<li><a href="#XII11">Données utilisées&nbsp;: image Sentinel-2</a>
   					   <ul class="listesoustitres">
   							<li><a href="#XII11a">Type de satellite et de produit</a></li>
   							<li><a href="#XII11b">Localisation de l'image</a></li>
@@ -31,7 +31,7 @@
   				</ul>
   				<br>
 				
-          <p>L'objectif de cette introduction est de voir comment :</p>
+          <p>L'objectif de cette introduction est de voir comment&nbsp;:</p>
           
           <ul>
               <li>importer et ouvrir une image satellitaire de type Sentinel-2 (ESA)</li>
@@ -39,9 +39,9 @@
               <li>interpréter une image satellitaire, extraire de l’information spatiale et spectrale</li>
           </ul>
                 
-          <h3>Données utilisées : image Sentinel-2<a class="headerlink" id="XII11" href="#XII11"></a></h3>
+          <h3>Données utilisées&nbsp;: image Sentinel-2<a class="headerlink" id="XII11" href="#XII11"></a></h3>
           
-              <p>L'image que nous allons utiliser ici est une <b>image <a target="_blank" class="ext" href="https://fr.wikipedia.org/wiki/Sentinel-2">Sentinel-2</a> acquise le 17 août 2021</b>. Nous allons commencer par essayer de répondre à 3 questions :</p>
+              <p>L'image que nous allons utiliser ici est une <b>image <a target="_blank" class="ext" href="https://fr.wikipedia.org/wiki/Sentinel-2">Sentinel-2</a> acquise le 17 août 2021</b>. Nous allons commencer par essayer de répondre à 3 questions&nbsp;:</p>
               
               <ul>
                   <li><b>Comment&nbsp;?</b> Quel est le type de satellite, de produit, etc.</li>
@@ -80,10 +80,10 @@
                       <p class="theorie">Qu'est-ce que la <a target="_blank" class="ext" href="https://fr.wikipedia.org/wiki/R%C3%A9flectance">réflectance</a>&nbsp;? C'est une grandeur physique qui correspond à la lumière réfléchie par un objet géographique. C’est donc un rapport entre l’énergie réfléchie et l’énergie incidente (soleil), il s’exprime en pourcentage.</p>
                       <figure>
           						<a href="illustrations/12_01_reflectance.svg" >
-          							<img src="illustrations/12_01_reflectance.jpg" alt="illustration réflectance : flux incident entre soleil et sol et énergie réfléchie entre sol et satellite" width="420">
+          							<img src="illustrations/12_01_reflectance.jpg" alt="illustration réflectance&nbsp;: flux incident entre soleil et sol et énergie réfléchie entre sol et satellite" width="420">
           						</a>
           					</figure>
-          					<p>Exemple pour une parcelle de maïs en juillet dans le Proche Infra Rouge (PIR) en Bretagne :</p>
+          					<p>Exemple pour une parcelle de maïs en juillet dans le Proche Infra Rouge (PIR) en Bretagne&nbsp;:</p>
           					<p class="code">Réflectance x 100 = 60%</p> 
                   </div>
                   
@@ -106,7 +106,7 @@
       						<a href="illustrations/12_01_grille_sentinel.jpg" >
       							<img src="illustrations/12_01_grille_sentinel.jpg" alt="grille sentinel sur la France et les pays voisins" width="600">
       						</a>
-      						<figcaption>Grille Sentinel, projection UTM : une tuile mesure 100 km de côté, les tuiles se recouvrent légèrement (source grille : <a class="ext" target="_blank" href="https://github.com/justinelliotmeyers/Sentinel-2-Shapefile-Index">https://github.com/justinelliotmeyers/Sentinel-2-Shapefile-Index</a>).</figcaption>
+      						<figcaption>Grille Sentinel, projection UTM&nbsp;: une tuile mesure 100 km de côté, les tuiles se recouvrent légèrement (source grille&nbsp;: <a class="ext" target="_blank" href="https://github.com/justinelliotmeyers/Sentinel-2-Shapefile-Index">https://github.com/justinelliotmeyers/Sentinel-2-Shapefile-Index</a>).</figcaption>
       					</figure>
                 
                 <p>Les images Sentinel-2 sont des <b>granules ou tuiles de 100 x 100 km</b>. Ces images sont <b>orthorectifiées</b> et projetées dans le système de coordonnées <b><a href="02_02_coord.php#II22d">UTM</a> / WGS84</b> et ont donc des coordonnées métriques.</p>
@@ -125,7 +125,7 @@
                 <p>Les grandes étapes de traitements d’images satellitaires sont les suivantes&nbsp;:</p>
                 <figure>
       						<a href="illustrations/12_01_etapes_traitement.jpg" >
-      							<img src="illustrations/12_01_etapes_traitement.jpg" alt="5 étapes de traitement des images satellitaires : accès, pré-traitements, visualisation, classification et post-traitements" width="650">
+      							<img src="illustrations/12_01_etapes_traitement.jpg" alt="5 étapes de traitement des images satellitaires&nbsp;: accès, pré-traitements, visualisation, classification et post-traitements" width="650">
       						</a>
       					</figure>
       					
@@ -140,11 +140,11 @@
       					   </figure>
                 
                 
-                <p>Nous allons voir dans la suite de ce chapitre les étapes 1 et 3 : téléchargement et visualisation.</p>
+                <p>Nous allons voir dans la suite de ce chapitre les étapes 1 et 3&nbsp;: téléchargement et visualisation.</p>
           
           <h3>Installation de l'extension SCP<a class="headerlink" id="XII12" href="#XII12"></a></h3>
           
-            <p>L'extension QGIS <a class="ext" target="_blank" href="https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html">SCP : Semi-Automatic Classification Plugin</a> est développée et maintenue par Luca Congedo. C'est un outil très complet, presque un logiciel dans le logiciel, qui permet la classification supervisée d'images satellitaires, mais aussi leur téléchargement, pré-traitement et post-traitement.</p>
+            <p>L'extension QGIS <a class="ext" target="_blank" href="https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html">SCP&nbsp;: Semi-Automatic Classification Plugin</a> est développée et maintenue par Luca Congedo. C'est un outil très complet, presque un logiciel dans le logiciel, qui permet la classification supervisée d'images satellitaires, mais aussi leur téléchargement, pré-traitement et post-traitement.</p>
             <p>Cette extension dispose d'un <a class="ext" target="_blank" href="https://readthedocs.org/projects/semiautomaticclassificationmanual-fr/downloads/pdf/latest/" >manuel</a> également très complet, utile notamment en cas de problème lors de l'installation.</p>
             
             <p><b>Dans la dernière version de SCP (version 8), <a class="ext" target="_blank" href="https://github.com/semiautomaticgit/SemiAutomaticClassificationPlugin/issues/307">la classification non supervisée n'est pas disponible</a></b>. Pour cette raison, nous utiliserons pour cette opération dans le <a href="12_03_classif_nonsup.php">troisième chapitre</a> un autre outil issu de <a class="ext" target="_blank" href="https://www.orfeo-toolbox.org/">l'OrfeoToolBox</a>.</p>
@@ -183,7 +183,7 @@
           <h3>Chargement d'une image avec SCP<a class="headerlink" id="XII14" href="#XII14"></a></h3> 
                 
             <div class="manip">
-              <p>Ouvrez un nouveau projet QGIS. Il n'est pas nécessaire d'ajouter l'image <a href="01_02_info_geo.php#I24">de la manière habituelle</a>, nous allons la charger au moyen du plugin SCP :</p>
+              <p>Ouvrez un nouveau projet QGIS. Il n'est pas nécessaire d'ajouter l'image <a href="01_02_info_geo.php#I24">de la manière habituelle</a>, nous allons la charger au moyen du plugin SCP&nbsp;:</p>
               <p><img class="icone" src="illustrations/12_01_jeu_bandes_icone.jpg" alt="icône jeu de bandes du plugin SCP" ><b>Menu SCP &#8594; Band set</b> ou bien cliquez sur l'icône correspondante dans le panneau SCP (en haut ou sur le côté gauche)&nbsp;:</p>
               <figure>
     						<a href="illustrations/12_01_scp_bandset_icon.jpg" >
@@ -202,12 +202,12 @@
             </div>
             
             <p>Cette image est au format <a href="01_03_formats.php#I32" >GeoTIFF</a>, un format d’image standard comprenant des informations de géoréférencement à une image TIFF (projection, système de coordonnées, métadonnées…).</p>
-            <p>Un GeoTIFF peut être composée de plusieurs sous-images, c’est le cas pour les images satellitaires dites multispectrales !!!</p>
+            <p>Un GeoTIFF peut être composée de plusieurs sous-images, c’est le cas pour les images satellitaires dites multispectrales&nbsp;!!!</p>
             
             <p>Sentinel-2 est un satellite qui fournit des images composées de 13 bandes spectrales&nbsp;:</p>
             
             <table>
-						 <caption>Bandes spectrales de l'instrument MSI à bord de Sentinel-2 (source : <a class="ext" target="_blank" href="https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-2-msi/msi-instrument" >European Spatial Agency</a> et <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Sentinel-2">Wikipedia</a>)</caption>
+						 <caption>Bandes spectrales de l'instrument MSI à bord de Sentinel-2 (source&nbsp;: <a class="ext" target="_blank" href="https://sentinel.esa.int/web/sentinel/technical-guides/sentinel-2-msi/msi-instrument" >European Spatial Agency</a> et <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Sentinel-2">Wikipedia</a>)</caption>
 					   <tr>
 				       <th>Bandes Sentinel-2</th>
 				       <th>Longueur d'onde centrale (nm)</th>
@@ -287,14 +287,14 @@
 
   						<figure>
     						<a href="illustrations/12_01_bandset_sentinel2.jpg" >
-    							<img src="illustrations/12_01_bandset_sentinel2.jpg" alt="fenêtre SCP, Band set : Sentinel-2 est sélectionné dans la liste Wavelength quick settings" width="500">
+    							<img src="illustrations/12_01_bandset_sentinel2.jpg" alt="fenêtre SCP, Band set&nbsp;: Sentinel-2 est sélectionné dans la liste Wavelength quick settings" width="500">
     						</a>
   						</figure>
   						
   						<p>Pour afficher l'image, sélectionnez le jeu de bandes puis cliquez sur l'icône en bas <b>Display RGB composite</b>&nbsp;:</p>
   						<figure>
     						<a href="illustrations/12_01_display_rgb.jpg" >
-    							<img src="illustrations/12_01_display_rgb.jpg" alt="fenêtre SCP, Band set : jeu de bande sélectionné et icône display RGB entourée en rouge" width="400">
+    							<img src="illustrations/12_01_display_rgb.jpg" alt="fenêtre SCP, Band set&nbsp;: jeu de bande sélectionné et icône display RGB entourée en rouge" width="400">
     						</a>
   						</figure>
   						
@@ -325,7 +325,7 @@
     						
               	<div class="question">
             		<input type="checkbox" id="faq-1">
-            		<p><label for="faq-1">A quoi correspondent les pixels blancs ?</label></p>
+            		<p><label for="faq-1">A quoi correspondent les pixels blancs&nbsp;?</label></p>
             		<p class="reponse">Ils correspondent aux feux de forêt actifs à l'heure de la prise de vue de l'image. Dans la bande spectrale de l'infra-rouge moyen (bande 13 à 2,19 micromètres pour Sentinel-2), les feux actifs sont caractérisés par une très forte réflectance, voire une saturation du signal. Si vous cliquez sur un pixel blanc avec l'outil Identifier les entités, vous avez une valeur à 1, soit 100% de réflectance. </p>
             	</div>
     						
@@ -385,15 +385,15 @@
             <h4>Affichage d'une composition colorée<a class="headerlink" id="XII15b" href="#XII15b"></a></h4>
             
               <p>Dans une <b>composition colorée</b>, on associe aux trois couleurs primaire (synthèse additive) que sont le bleu, le vert et le rouge, trois bandes spectrales d’une image multispectrale.</p>
-              <p>Selon le site <a class="ext" target="_blank" href="https://www.123couleurs.fr/">123couleurs</a> : &#171;&nbsp;La <b>synthèse additive</b> correspond aux mélanges de couleurs que l’on obtient quand, en partant de l’absence de lumière (le « NOIR »), on allume ensemble plusieurs sources de lumière colorées. Le terme additif vient du fait que les mélanges résultent d’une addition de lumières colorées.&nbsp;&#187;</p>
+              <p>Selon le site <a class="ext" target="_blank" href="https://www.123couleurs.fr/">123couleurs</a>&nbsp;: &#171;&nbsp;La <b>synthèse additive</b> correspond aux mélanges de couleurs que l’on obtient quand, en partant de l’absence de lumière (le « NOIR »), on allume ensemble plusieurs sources de lumière colorées. Le terme additif vient du fait que les mélanges résultent d’une addition de lumières colorées.&nbsp;&#187;</p>
 				      <figure>
                 <a href="https://fr.wikipedia.org/wiki/Synth%C3%A8se_additive#/media/Fichier:Synthese+.svg" >
     							<img src="illustrations/12_01_synthese_additive.svg" alt="schéma de la synthèse additive" width="200">
     						</a>
-    						<figcaption>Synthèse additive, source : <a class="ext" target="_blank" href="https://commons.wikimedia.org/wiki/File:Synthese%2B.svg">Wikimedia Commons</a>, auteur Quark67</figcaption>
+    						<figcaption>Synthèse additive, source&nbsp;: <a class="ext" target="_blank" href="https://commons.wikimedia.org/wiki/File:Synthese%2B.svg">Wikimedia Commons</a>, auteur Quark67</figcaption>
   						</figure>
   						
-  						<p>Dans une <b>composition colorée vraie couleur</b>, il y aura adéquation entre les couleurs utilisées pour l’affichage et les bandes spectrales !</p>
+  						<p>Dans une <b>composition colorée vraie couleur</b>, il y aura adéquation entre les couleurs utilisées pour l’affichage et les bandes spectrales&nbsp;!</p>
   						
   						<div class="manip">
   						  <p>Ouvrez la fenêtre des propriétés de l'image <em class="data"><a href="donnees/TutoQGIS_12_Teledetection">Sentinel2_2021_08_17.tif</a></em>, rubrique <b>Symbologie</b>&nbsp;:</p>
@@ -405,25 +405,25 @@
     						<p>Sélectionnez le type de rendu <b>Couleur à bandes multiples</b> si ça n'est pas déjà fait.</p>
     						<p>Pour une composition colorée en vraie couleur, sélectionnez les bandes suivantes&nbsp;:</p>
     						<ul>
-    						  <li>Bande rouge &#8594; <b>bande 04</b> : rouge, 665 nm</li>
-    						  <li>Bande verte &#8594; <b>bande 03</b> : vert, 560 nm</li>
-    						  <li>Bande bleue &#8594; <b>bande 02</b> : bleu, 490 nm</li>
+    						  <li>Bande rouge &#8594; <b>bande 04</b>&nbsp;: rouge, 665 nm</li>
+    						  <li>Bande verte &#8594; <b>bande 03</b>&nbsp;: vert, 560 nm</li>
+    						  <li>Bande bleue &#8594; <b>bande 02</b>&nbsp;: bleu, 490 nm</li>
     						</ul>
   						</div>
   						
-				      <p>Dans une <b>composition colorée fausse couleur</b>, il n'y a pas d'adéquation entre les couleurs utilisées pour l’affichage et les bandes spectrales !</p>
+				      <p>Dans une <b>composition colorée fausse couleur</b>, il n'y a pas d'adéquation entre les couleurs utilisées pour l’affichage et les bandes spectrales&nbsp;!</p>
 				      <p>Le but peut être par exemple de mieux voir la végétation, des zones brûlées...</p>
 				      
 				      <div class="manip">
 				        <p>Par exemple, en choisissant les bandes suivantes&nbsp;:</p>
 				        <ul>
-    						  <li>Bande rouge &#8594; <b>bande 13</b> : moyen infrarouge 2 (SWIR2), 2190 nm</li>
-    						  <li>Bande verte &#8594; <b>bande 08</b> : proche infra-rouge, 842 nm</li>
-    						  <li>Bande bleue &#8594; <b>bande 04</b> : rouge, 665 nm</li>
+    						  <li>Bande rouge &#8594; <b>bande 13</b>&nbsp;: moyen infrarouge 2 (SWIR2), 2190 nm</li>
+    						  <li>Bande verte &#8594; <b>bande 08</b>&nbsp;: proche infra-rouge, 842 nm</li>
+    						  <li>Bande bleue &#8594; <b>bande 04</b>&nbsp;: rouge, 665 nm</li>
     						</ul>
 				        <figure>
                   <a href="illustrations/12_01_compocol_2.jpg" >
-      							<img src="illustrations/12_01_compocol_2.jpg" alt="image avec les bandes 13, 8 et 4 : les zones brûlées sont bien visibles en rouge" width="600">
+      							<img src="illustrations/12_01_compocol_2.jpg" alt="image avec les bandes 13, 8 et 4&nbsp;: les zones brûlées sont bien visibles en rouge" width="600">
       						</a>
     						</figure>
 				      </div>
@@ -434,7 +434,7 @@
 				      
   				    <figure>
                 <a href="illustrations/12_01_carte_compocol_13_08_04.jpg" >
-    							<img src="illustrations/12_01_carte_compocol_13_08_04.jpg" alt="image avec les bandes 13, 8 et 4 : les zones brûlées sont bien visibles en rouge" width="600">
+    							<img src="illustrations/12_01_carte_compocol_13_08_04.jpg" alt="image avec les bandes 13, 8 et 4&nbsp;: les zones brûlées sont bien visibles en rouge" width="600">
     						</a>
   						</figure>
 				      
@@ -456,15 +456,15 @@
 
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_12.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_12.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 		
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

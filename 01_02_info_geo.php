@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -25,7 +25,7 @@
 						</ul>
 					</li>
 					<li><a href="#I24">Ajout d'une couche raster</a></li>
-					<li><a href="#I25">Propriétés d'une couche raster : modifier le style</a></li>
+					<li><a href="#I25">Propriétés d'une couche raster&nbsp;: modifier le style</a></li>
 				</ul>
 
 				
@@ -34,9 +34,9 @@
 				    <h4>Par le menu ou les icônes<a class="headerlink" id="I21a" href="#I21a"></a></h4>
 				
     					<div class="manip">
-    						<p>Lancez QGIS, ou bien si QGIS est déjà lancé ouvrez un nouveau projet vide : <b>menu Projet &#8594; Nouveau</b> (inutile de sauvegarder le projet en cours).</p>
-    						<p>Depuis QGIS 3, il existe une interface unique pour ajouter des couches vecteurs, rasters etc. : le gestionnaire des sources de données.</p>
-    						<p>Pour ajouter une couche vecteur via cette interface, plusieurs solutions au choix :</p>
+    						<p>Lancez QGIS, ou bien si QGIS est déjà lancé ouvrez un nouveau projet vide&nbsp;: <b>menu Projet &#8594; Nouveau</b> (inutile de sauvegarder le projet en cours).</p>
+    						<p>Depuis QGIS 3, il existe une interface unique pour ajouter des couches vecteurs, rasters etc.&nbsp;: le gestionnaire des sources de données.</p>
+    						<p>Pour ajouter une couche vecteur via cette interface, plusieurs solutions au choix&nbsp;:</p>
 							<ul>
 								<li>
 									<a class="thumbnail_bottom" href="#thumb">Menu couche &#8594; Gestionnaire des sources de données
@@ -57,10 +57,10 @@
 										</span>
 									</a>	
 								</li>
-								<li><img class="icone" src="illustrations/1_2_ajout_vecteur_icone.jpg" alt="Icône ajout couche vecteur">Cliquer sur l'icône <b>Ajouter une couche vecteur</b> (il faut activer la barre d'outils <b>Gestion des couches</b> si ce n'est pas déjà fait : menu Vue &#8594; Barres d'outils &#8594; Gestion des couches)</li>
+								<li><img class="icone" src="illustrations/1_2_ajout_vecteur_icone.jpg" alt="Icône ajout couche vecteur">Cliquer sur l'icône <b>Ajouter une couche vecteur</b> (il faut activer la barre d'outils <b>Gestion des couches</b> si ce n'est pas déjà fait&nbsp;: menu Vue &#8594; Barres d'outils &#8594; Gestion des couches)</li>
 								<li>utiliser le raccourci clavier <b>ctrl + majuscule + v</b></li>
 							</ul>
-    					   <p>Dans tous les cas, vous arrivez normalement à cette fenêtre :</p>
+    					   <p>Dans tous les cas, vous arrivez normalement à cette fenêtre&nbsp;:</p>
     						<figure>
     							<a href="illustrations/1_2_ajout_couche_vecteur_gestionnaire.jpg" >
     								<img src="illustrations/1_2_ajout_couche_vecteur_gestionnaire.jpg" alt="Fenêtre du gestionnaire des sources de données, rubrique vecteur" width="600" >
@@ -68,12 +68,12 @@
     						</figure>
     						<ul>
     						    <li>Vérifiez que vous êtes bien dans la rubrique <b>Vecteur</b>. Par défaut, le gestionnaire des sources de données s'ouvre dans la dernière rubrique utilisée.</li>
-        						<li>Type de source et encodage : laissez les valeurs par défaut. Pour en savoir plus sur ce qu'est l'encodage :
+        						<li>Type de source et encodage&nbsp;: laissez les valeurs par défaut. Pour en savoir plus sur ce qu'est l'encodage&nbsp;:
         						<a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Codage_de_caract%C3%A8res" >http://fr.wikipedia.org/wiki/Codage_de_caractères</a></li>
         						<li>Cliquez sur <b>...</b> à gauche de <b>Jeux de données vectorielles</b> et sélectionnez la couche <em class="data"><a href="donnees/TutoQGIS_01_PriseEnMain.zip">departement_bretagne.gpkg</a></em> située dans le dossier <b>TutoQGIS_01_PriseEnMain/donnees</b>.</li>
     						</ul>
-    						<p>Cliquez sur <b>Ajouter</b> : vous pouvez voir à l'écran les départements de la région Bretagne. Vous pouvez fermer la fenêtre du gestionnaire de source de données.</p>
-    						<p>Pour <b>supprimer cette couche</b> : clic droit sur son nom dans la table des matières,
+    						<p>Cliquez sur <b>Ajouter</b>&nbsp;: vous pouvez voir à l'écran les départements de la région Bretagne. Vous pouvez fermer la fenêtre du gestionnaire de source de données.</p>
+    						<p>Pour <b>supprimer cette couche</b>&nbsp;: clic droit sur son nom dans la table des matières,
     						<a class="thumbnail_bottom" href="#thumb">Supprimer la couche...
                             	<span>
                             		<img src="illustrations/1_2_supprimer_couche.jpg" alt="Clic droit sur une couche, supprimer" height="300" >
@@ -101,7 +101,7 @@
                             	</a>
                             </figure>
     					</div>
-    					<p class="note">Pourquoi pour ajouter cette couche faut-il "déplier" d'abord la base de données <b>departement_bretagne.gpkg</b> puis double-cliquer sur la couche du même nom ? Cela est dû au format de cette couche, le GeoPackage, qui est en réalité une base de données SQLite. Plus d'infos dans le <a href="01_03_formats.php#I31b">chapitre suivant</a> !</p>
+    					<p class="note">Pourquoi pour ajouter cette couche faut-il "déplier" d'abord la base de données <b>departement_bretagne.gpkg</b> puis double-cliquer sur la couche du même nom&nbsp;? Cela est dû au format de cette couche, le GeoPackage, qui est en réalité une base de données SQLite. Plus d'infos dans le <a href="01_03_formats.php#I31b">chapitre suivant</a>&nbsp;!</p>
     					
 				<h3>L'interface de QGIS<a class="headerlink" id="I22" href="#I22"></a></h3>
 					
@@ -110,7 +110,7 @@
 							<img src="illustrations/1_2_interface.jpg" alt="Interface de QGIS" width="600">
 						</a>
 					</figure>
-					<p>On peut distinguer 6 zones dans QGIS :</p>
+					<p>On peut distinguer 6 zones dans QGIS&nbsp;:</p>
 					<p><em class="numero">1. </em><b>Menus</b></p>
 					<p><em class="numero">2. </em><b>Barres d'outils</b>. On y trouve la même chose que dans les menus, mais sous forme 	d'icônes. Pour savoir que fait un outil, passez la souris au-dessus et lisez l'infobulle. Pour rajouter ou enlever des barres d'outils, clic-droit n'importe où dans cette zone sauf sur un outil désactivé, cocher ou décocher les barres d'outils voulues.</p>
 					<p><em class="numero">3. </em><b>Panneau couches</b>, avec la liste des couches chargées, aussi appelé parfois table des matières ou table of contents (TOC). Si plusieurs couches sont présentes, vous pouvez en modifier ici l'ordre d'affichage en les faisant glisser. Pour faire apparaître ou disparaître cette zone : menu <b>Vue &#8594; Panneaux &#8594; Couches</b></p>
@@ -124,7 +124,7 @@
 						  </a>
 						</figure>
 						<p>Testez les différents boutons de zoom et de déplacement.</p>
-						<p>Pouvez-vous déterminer l'effet de chacun d'entre eux ? A noter : on peut aussi zoomer et dézoomer en utilisant la molette de la souris, ainsi que le trackpad.</p>
+						<p>Pouvez-vous déterminer l'effet de chacun d'entre eux&nbsp;? A noter&nbsp;: on peut aussi zoomer et dézoomer en utilisant la molette de la souris, ainsi que le trackpad.</p>
 						<p>Vous pouvez aussi vous déplacer dans la carte (équivalent de l'outil "main") en maintenant la touche espace appuyée, quelque soit l'outil en cours dans QGIS. Le même résultat est obtenu en maintenant la molette de la souris enfoncée (clic molette prolongé).</p>
 					</div>
 	
@@ -141,7 +141,7 @@
 							(ou bien double-clic sur le nom de la couche).</p>
 					</div>
 					
-					<p>Vous avez accès ici à plusieurs propriétés, notamment :</p>
+					<p>Vous avez accès ici à plusieurs propriétés, notamment&nbsp;:</p>
 					<ol>
 						<li>la manière dont la couche est représentée, dans la rubrique <b>Symbologie</b>. Vous pouvez par exemple changer ici la couleur des départements</li>
 						<li>l'emplacement de la couche, dans la rubrique <b>Information</b></li>
@@ -150,7 +150,7 @@
 					<h4>Changer la représentation d'une couche<a class="headerlink" id="I23a" href="#I23a"></a></h4>
 					
     					<div class="manip">
-    						<p>Dans les propriétés de la couche, rubrique <b>Symbologie</b> :</p>
+    						<p>Dans les propriétés de la couche, rubrique <b>Symbologie</b>&nbsp;:</p>
     						<figure>
     							<a href="illustrations/1_2_style_couche.jpg" >
     								<img src="illustrations/1_2_style_couche.jpg" alt="Onglet Style des propriétés d'une couche" width="600">
@@ -158,12 +158,12 @@
     						</figure>
     						<p>Cliquez sur <b>Remplissage simple</b>. </p>
     					</div>
-    					<p>Vous pouvez modifier ici notamment :</p>
+    					<p>Vous pouvez modifier ici notamment&nbsp;:</p>
     					<p><em class="numero">1. </em>La couleur et le style du remplissage (continu, hachures, pas de remplissage...)</p>
     					<p><em class="numero">2. </em>La couleur et le style de la bordure (ligne continue, pas de bordure, pointillés...)</p>
     					
     					<div class="manip">
-    						<p>Essayez de donner à votre couche ces différents styles :</p>
+    						<p>Essayez de donner à votre couche ces différents styles&nbsp;:</p>
     						<figure>
     							<a href="illustrations/1_2_style1.jpg" >
     								<img src="illustrations/1_2_style1.jpg" alt="Surfaces en gris clair, bordures en blanc" width="170">
@@ -184,7 +184,7 @@
 						<div class="manip">			
 							<div class="question">
 								<input type="checkbox" id="faq-1">
-								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Information</b> : pouvez-vous dire à quel endroit est stockée la couche <em class="data">departement_bretagne</em> sur votre ordinateur ?</label></p>
+								<p><label for="faq-1">Dans les propriétés de la couche, rubrique <b>Information</b>&nbsp;: pouvez-vous dire à quel endroit est stockée la couche <em class="data">departement_bretagne</em> sur votre ordinateur&nbsp;?</label></p>
 								<p class="reponse">
 								La couche est stockée à l'endroit indiqué dans la partie <b>Chemin</b>.
 								 Cet emplacement varie bien sûr en fonction de l'endroit où vous avez enregistré les données du tutoriel.
@@ -194,7 +194,7 @@
 								</p>
 							</div>
 						</div>
-						<p class="note">Vous pouvez aussi vérifier l'emplacement d'une couche en passant simplement la souris sur son nom dans le panneau des couches : une infobulle s'affiche alors avec notamment le chemin vers cette couche.</p>
+						<p class="note">Vous pouvez aussi vérifier l'emplacement d'une couche en passant simplement la souris sur son nom dans le panneau des couches&nbsp;: une infobulle s'affiche alors avec notamment le chemin vers cette couche.</p>
 						
 					<h4>Filtrer les données<a class="headerlink" id="I23c" href="#I23c"></a></h4>
 					
@@ -209,13 +209,13 @@
 									<img src="illustrations/1_2_filtrer.jpg" alt="Fenêtre du constructeur de requêtes" width="550">
 								</a>
 							</figure>
-							<p>Nous allons ici construire une requête simple pour sélectionner le département du Finistère. Les requêtes sont vues plus en détail <a href="06_01_req_attrib.php" >ici</a> !</p>
+							<p>Nous allons ici construire une requête simple pour sélectionner le département du Finistère. Les requêtes sont vues plus en détail <a href="06_01_req_attrib.php" >ici</a>&nbsp;!</p>
 							<ul>
 							 <li class="espace">Double-cliquez sur le champ <b>nom_officiel</b> pour le faire apparaître en bas dans l'expression de filtrage</li>
 							 <li class="espace">Cliquez sur l'opérateur <b>LIKE</b></li>
 							 <li class="espace">Cliquez sur le bouton <b>Tout</b> à droite pour voir toutes les valeurs possibles pour le champ nom_officiel, puis double-cliquez sur <b>Finistère</b></li>
 							</ul>
-							<p>Cliquez ensuite sur le bouton <b>Tester</b> : la requête renvoie un résultat. Cliquez sur <b>OK</b>.</p>
+							<p>Cliquez ensuite sur le bouton <b>Tester</b>&nbsp;: la requête renvoie un résultat. Cliquez sur <b>OK</b>.</p>
 							<figure>
 								<a href="illustrations/1_2_filtrer_resultat.jpg" >
 									<img src="illustrations/1_2_filtrer_resultat.jpg" alt="couche et table après filtre" width="600">
@@ -231,7 +231,7 @@
 				<h3>Ajout d'une couche raster<a class="headerlink" id="I24" href="#I24"></a></h3>		
 				
 					<div class="manip">
-						<p>Comme lors de l'ajout d'une couche vecteur, vous avez plusieurs possibilités pour ajouter une couche raster. Par exemple, en utilisant le <b>gestionnaire des sources de données :</b></p>
+						<p>Comme lors de l'ajout d'une couche vecteur, vous avez plusieurs possibilités pour ajouter une couche raster. Par exemple, en utilisant le <b>gestionnaire des sources de données&nbsp;:</b></p>
 						<ul>
 								<li>menu couche &#8594; Gestionnaire des sources de données</li>
 								<li><img class="iconemid" src="illustrations/1_2_gestionnaire_donnees_icone.jpg" alt="Icône du gestionnaire des sources de données">cliquer sur l'icône du gestionnaire des sources de données</li>
@@ -265,24 +265,24 @@
                                 </a>.
                             </p>
 						</div>
-						<p>Il s'agit d'un <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain" >modèle d'élévation numérique</a> : chaque pixel possède une valeur correspondant à l'altitude en mètres des éléments présents au sol. Si une forêt est présente, ce sera donc l'altitude du sommet des arbres qui sera mesurée et non l'altitude du sol, idem si des bâtiments sont présents.</p>
+						<p>Il s'agit d'un <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Mod%C3%A8le_num%C3%A9rique_de_terrain" >modèle d'élévation numérique</a>&nbsp;: chaque pixel possède une valeur correspondant à l'altitude en mètres des éléments présents au sol. Si une forêt est présente, ce sera donc l'altitude du sommet des arbres qui sera mesurée et non l'altitude du sol, idem si des bâtiments sont présents.</p>
 						<div class="manip">
 							<p><img class="icone" src="illustrations/1_2_informations_icone.jpg" alt="icône identifier les entités" >Après avoir sélectionné la couche <em class="data">srtm_bretagne.tif</em> en cliquant sur son nom dans la table des matières, utilisez l'outil <b>Identifier les entités</b> pour cliquer sur un point du raster et connaître l'altitude de ce point.</p>
 							<figure>
 								<a href="illustrations/1_2_identifier_fenetre.jpg" >
-									<img src="illustrations/1_2_identifier_fenetre.jpg" alt="résultat de l'identification d'un point au hasard du srtm : altitude = 143m" width="500" >
+									<img src="illustrations/1_2_identifier_fenetre.jpg" alt="résultat de l'identification d'un point au hasard du srtm&nbsp;: altitude = 143m" width="500" >
 								</a>
 							</figure>
 							<p>Par exemple, ici, c'est un pixel d'altitude 336 mètres qui a été identifié.</p>
 						</div>
 					
 				
-				<h3>Propriétés d'une couche raster : modifier le style<a class="headerlink" id="I25" href="#I25"></a></h3>	
+				<h3>Propriétés d'une couche raster&nbsp;: modifier le style<a class="headerlink" id="I25" href="#I25"></a></h3>	
 					
 					<div class="manip">
 						<p>Comme pour accéder aux propriétés d'une couche vecteur, clic-droit sur le nom de la couche dans la table des matières, <b>Propriétés</b> (ou bien double-clic sur le nom de la couche).</p>
-						<p>Pour une couche raster, les différentes rubriques des propriétés sont un peu différentes de celles d'une couche vecteur ; on retrouve néanmoins les rubriques <b>Information</b> et <b>Symbologie.</b></p>
-						<p>Rendez-vous dans la rubrique <b>Symbologie</b> :</p>
+						<p>Pour une couche raster, les différentes rubriques des propriétés sont un peu différentes de celles d'une couche vecteur&nbsp;; on retrouve néanmoins les rubriques <b>Information</b> et <b>Symbologie.</b></p>
+						<p>Rendez-vous dans la rubrique <b>Symbologie</b>&nbsp;:</p>
 						<figure>
 							<a href="illustrations/1_2_style_raster.jpg" >
 								<img src="illustrations/1_2_style_raster.jpg" alt="style d'un raster" width="600" >
@@ -302,15 +302,15 @@
 					
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_1.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_1.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>	
 	
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 	
 </div>
 </body>

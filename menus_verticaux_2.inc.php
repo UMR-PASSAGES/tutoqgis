@@ -5,7 +5,7 @@
 			<ol class="witharabic">
 				<li><a href="02_01_intro.php">Introduction à la géodésie</a>
 				<li><a href="02_02_coord.php">Des coordonnées, oui mais dans quel système?</a></li>
-				<li><a href="02_03_couches_projets.php">Couches et projets : à chacun son système</a></li>
+				<li><a href="02_03_couches_projets.php">Couches et projets&nbsp;: à chacun son système</a></li>
 				<li><a href="02_04_changer_systeme.php">Passer d'un système de coordonnées à un autre</a></li>
 			</ol>
 		</li>

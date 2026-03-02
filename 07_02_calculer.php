@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
@@ -11,8 +11,8 @@
 		  <h1 class="hide_for_pdf">VII.  Créer, supprimer, renommer et calculer des champs</h1>
 			<h2>VII.2  Calcul de champs</h2>
 				<ul class="listetitres">
-					<li><a href="#VII21">Comment fonctionne la calculatrice de champ ?</a></li>
-					<li><a href="#VII22">Calcul de géométrie : l'exemple de la surface</a>
+					<li><a href="#VII21">Comment fonctionne la calculatrice de champ&nbsp;?</a></li>
+					<li><a href="#VII22">Calcul de géométrie&nbsp;: l'exemple de la surface</a>
 						<ul class="listesoustitres">
 							<li><a href="#VII22a">Calcul de la surface</a></li>
 							<li><a href="#VII22b">Vérification</a></li>
@@ -20,9 +20,9 @@
 					</li>
 					<li><a href="#VII23">Quelques exemples supplémentaires de calculs</a>
 						<ul class="listesoustitres">
-							<li><a href="#VII23a">Opérations mathématiques : calcul de densité</a></li>
-							<li><a href="#VII23b">Opérations sur du texte : extraction</a></li>
-							<li><a href="#VII23c">Pour aller plus loin : utiliser une expression conditionnelle avec CASE</a></li>
+							<li><a href="#VII23a">Opérations mathématiques&nbsp;: calcul de densité</a></li>
+							<li><a href="#VII23b">Opérations sur du texte&nbsp;: extraction</a></li>
+							<li><a href="#VII23c">Pour aller plus loin&nbsp;: utiliser une expression conditionnelle avec CASE</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -30,36 +30,36 @@
 				
 			<p>Il est possible de calculer automatiquement les valeurs d'un champ au moyen de la calculatrice de champ, un peu à la manière d'une formule dans un tableur.</p>
 
-			<h3>Comment fonctionne la calculatrice de champ ?<a class="headerlink" id="VII21" href="#VII21"></a></h3>
+			<h3>Comment fonctionne la calculatrice de champ&nbsp;?<a class="headerlink" id="VII21" href="#VII21"></a></h3>
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_bretagne_calcul</a></em>. Ouvrez sa table attributaire.</p>
-					<p>Passez en <a href="05_02_points.php#V21">mode édition</a>. Cliquez sur l'icône <b>Ouvrir la calculatrice de champs</b> parmi les icônes de la table attributaire :</p>
+					<p>Passez en <a href="05_02_points.php#V21">mode édition</a>. Cliquez sur l'icône <b>Ouvrir la calculatrice de champs</b> parmi les icônes de la table attributaire&nbsp;:</p>
 					<figure>
 						<img src="illustrations/7_2_BO_table_calc.jpg" alt="barre d'outils de la table attributaire, avec icône de la calculatrice de champs entourée en rouge" width="600" >
 					</figure>
 				</div>
 				
-				<p>La fenêtre suivante s'ouvre :</p>
+				<p>La fenêtre suivante s'ouvre&nbsp;:</p>
 				<figure>
 					<a href="illustrations/7_2_calc_fenetre.jpg" >
 						<img src="illustrations/7_2_calc_fenetre.jpg" alt="Fenêtre de la calculatrice de champs" width="620" >
 					</a>
 				</figure>
-				<p><em class="numero">1</em> : Si cette case est cochée, seules les lignes sélectionnées seront modifiées (en grisé si aucune entité n'est sélectionnée).</p>
-				<p><em class="numero">2</em> : Cocher cette case pour créer un nouveau champ.</p>
-				<p><em class="numero">3</em> : Cocher cette case pour mettre à jour un champ existant.</p>
-				<p><em class="numero">4</em> : Expression servant à calculer les valeurs du champ.</p>
-				<p><em class="numero">5</em> : Les opérateurs les plus couramment utilisés.</p>
-				<p><em class="numero">6</em> : Liste des opérateurs et fonctions disponibles pour le calcul de champ.</p>
-				<p><em class="numero">7</em> : Si un opérateur ou une fonction est choisi en 6, l'aide correspondante apparaît dans cette partie. Si un champ est choisi en 6, vous pourrez y voir les valeurs uniques de ce champ.</p>
-				<p><em class="numero">8</em> : Ici, une fois l'expression remplie, vous pourrez voir un aperçu du résultat du calcul pour l'entité choisie.</p>
-				<p>L'onglet <b>Editeur de fonction</b>, derrière l'onglet <b>Expression</b>, permet le calcul de champs à l'aide du langage Python : cette possibilité ne sera pas abordée ici.</p>
+				<p><em class="numero">1</em>&nbsp;: Si cette case est cochée, seules les lignes sélectionnées seront modifiées (en grisé si aucune entité n'est sélectionnée).</p>
+				<p><em class="numero">2</em>&nbsp;: Cocher cette case pour créer un nouveau champ.</p>
+				<p><em class="numero">3</em>&nbsp;: Cocher cette case pour mettre à jour un champ existant.</p>
+				<p><em class="numero">4</em>&nbsp;: Expression servant à calculer les valeurs du champ.</p>
+				<p><em class="numero">5</em>&nbsp;: Les opérateurs les plus couramment utilisés.</p>
+				<p><em class="numero">6</em>&nbsp;: Liste des opérateurs et fonctions disponibles pour le calcul de champ.</p>
+				<p><em class="numero">7</em>&nbsp;: Si un opérateur ou une fonction est choisi en 6, l'aide correspondante apparaît dans cette partie. Si un champ est choisi en 6, vous pourrez y voir les valeurs uniques de ce champ.</p>
+				<p><em class="numero">8</em>&nbsp;: Ici, une fois l'expression remplie, vous pourrez voir un aperçu du résultat du calcul pour l'entité choisie.</p>
+				<p>L'onglet <b>Editeur de fonction</b>, derrière l'onglet <b>Expression</b>, permet le calcul de champs à l'aide du langage Python&nbsp;: cette possibilité ne sera pas abordée ici.</p>
 				<p>Comme vous pouvez le constater, le mode de fonctionnement de la calculatrice de champ est assez similaire à celui d'une <a href="06_01_req_attrib.php">requête attributaire</a>. </p>
-				<p class="note">Il n'est pas obligatoire de passer en mode édition pour utiliser la calculatrice de champ ; dans ce cas, cliquer sur OK dans la calculatrice enclenche le mode édition.</p>
+				<p class="note">Il n'est pas obligatoire de passer en mode édition pour utiliser la calculatrice de champ&nbsp;; dans ce cas, cliquer sur OK dans la calculatrice enclenche le mode édition.</p>
 				
 			
-			<h3>Calcul de géométrie : l'exemple de la surface<a class="headerlink" id="VII22" href="#VII22"></a></h3>
+			<h3>Calcul de géométrie&nbsp;: l'exemple de la surface<a class="headerlink" id="VII22" href="#VII22"></a></h3>
 			
 				<h4>Calcul de la surface<a class="headerlink" id="VII22a" href="#VII22a"></a></h4>
 			
@@ -79,7 +79,7 @@
 							<li class="espace">cliquez sur <b>OK</b></li>
 						</ul>
 					</div>
-					<p class="note">Avez-vous noté qu'il est possible de créer des <b>champs virtuels</b> (case à cocher en haut à gauche sous &#171;&nbsp;créer un nouveau champ&#187;&nbsp;) ? Ces champs ne sont pas permanents et ne seront pas sauvegardés (il est donc possible d'en créer sans passer en mode édition).</p>
+					<p class="note">Avez-vous noté qu'il est possible de créer des <b>champs virtuels</b> (case à cocher en haut à gauche sous &#171;&nbsp;créer un nouveau champ&#187;&nbsp;)&nbsp;? Ces champs ne sont pas permanents et ne seront pas sauvegardés (il est donc possible d'en créer sans passer en mode édition).</p>
 					<p class="note">Si un champ virtuel est utilisé pour calculer par exemple une surface, et si les polygones sont modifiés, <b>la surface sera automatiquement mise à jour</b> (ce ne sera pas le cas avec un champ non virtuel).</p>
 						
 				<h4>Vérification<a class="headerlink" id="VII22b" href="#VII22b"></a></h4>
@@ -87,7 +87,7 @@
 					<p>Parfois, il peut arriver de se mélanger dans les unités... Il peut donc être utile de vérifier les calculs de géométrie. Nous allons voir 2 méthodes pour le faire&nbsp;; cela vous indique aussi comment connaître par exemple la surface d'un polygone donné sans forcément créer et calculer un champ.</p>
 					<p>La première méthode consiste à <b>mesurer &#171;&nbsp;à la main&nbsp;&#187; la surface d'une commune et à comparer le résultat avec celui du champ SURF_KM2</b>.</p>
 					<div class="manip">
-						<p><img class="iconemid" src="illustrations/7_2_mesure_icone.jpg" alt="icône mesurer une aire" >Vous pouvez vérifier votre calcul au moyen de l'outil <b>Mesurer une aire</b> : </p>
+						<p><img class="iconemid" src="illustrations/7_2_mesure_icone.jpg" alt="icône mesurer une aire" >Vous pouvez vérifier votre calcul au moyen de l'outil <b>Mesurer une aire</b>&nbsp;: </p>
 						<figure>
 						  <a href="illustrations/7_2_aire_selection.jpg" >
 							<img src="illustrations/7_2_aire_selection.jpg" alt="Sélection de l'outil mesurer une aire dans la liste" width="500" >
@@ -115,7 +115,7 @@
 					   <p>Comparez la surface du champ SURF_KM2 et la surface indiquée dans les résultats de l'identification (rubrique Dérivé). Les deux aires devraient être sensiblement égales (attention à convertir les unités).</p>
 					</div>
 					
-					<p>Vous remarquerez qu'on peut lire 2 surfaces dans les résultats de l'identification : <b>la surface cartésienne, et la surface basée sur une ellipsoïde</b>. La première est basée sur des distances en ligne droite, qui ne prennent pas en compte la courbure de la Terre. La deuxième prend en compte la courbure de la Terre en se basant sur l'ellipsoïde indiquée.</p>
+					<p>Vous remarquerez qu'on peut lire 2 surfaces dans les résultats de l'identification&nbsp;: <b>la surface cartésienne, et la surface basée sur une ellipsoïde</b>. La première est basée sur des distances en ligne droite, qui ne prennent pas en compte la courbure de la Terre. La deuxième prend en compte la courbure de la Terre en se basant sur l'ellipsoïde indiquée.</p>
 					<p>Pour de faibles distances, les 2 résultats seront donc très proches, la différence augmentant avec la distance.</p>
 				
 			
@@ -123,17 +123,17 @@
 			
 				<p>La calculatrice de champs offre beaucoup de fonctions que nous ne passerons pas toutes en revue&nbsp;; nous verrons simplement quelques exemples pour vous donner un aperçu des possibilités.</p>
 
-				<h4>Opérations mathématiques : calcul de densité<a class="headerlink" id="VII23a" href="#VII23a"></a></h4>
+				<h4>Opérations mathématiques&nbsp;: calcul de densité<a class="headerlink" id="VII23a" href="#VII23a"></a></h4>
 				
 					<p>L'objectif sera ici de calculer la densité en habitants par km<sup>2</sup> de chaque commune, à partir de la population et la surface.</p>
 					<div class="question">
 							<input type="checkbox" id="faq-1">
-							<p><label for="faq-1">Savez-vous comment calculer la densité à partir de la population et la surface ?</label></p>
+							<p><label for="faq-1">Savez-vous comment calculer la densité à partir de la population et la surface&nbsp;?</label></p>
 							<p class="reponse">La densité se calcule en divisant la population par la surface. Si la population est en nombre d'habitants et la surface en km<sup>2</sup>, alors la densité sera en nombre d'habitants par km<sup>2</sup>.</p>
 					</div>
 					
 					<div class="manip">
-						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche  <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_bretagne_calcul</a></em>. Ouvrez la calculatrice de champs :</p>
+						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche  <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_bretagne_calcul</a></em>. Ouvrez la calculatrice de champs&nbsp;:</p>
 						<figure>
 							<a href="illustrations/7_2_calc_densite.jpg" >
 								<img src="illustrations/7_2_calc_densite.jpg" alt="Fenêtre de la calculatrice de champ, calcul de la densité" width="600" >
@@ -143,7 +143,7 @@
 							<li class="espace">Choisissez l'option <b>Créer un nouveau champ</b>, nommez-le <b>densite</b>, type <b>Nombre décimal</b></li>
 							<li class="espace">Dans la liste des <b>fonctions</b>, rubrique <b>Champs et valeurs</b>, double-cliquez sur <b>population</b>, le diviseur <b>/</b> puis double-cliquez sur le champ <b>surf_km2</b></li>
 							<li class="espace">Au final, l'expression est <b> "population" / "surf_km2" </b></li>
-							<li class="espace">Cliquez sur <b>OK</b> : le champ densité est ajouté et calculé, en nombre d'habitants par km&#178; :</li>
+							<li class="espace">Cliquez sur <b>OK</b>&nbsp;: le champ densité est ajouté et calculé, en nombre d'habitants par km&#178;&nbsp;:</li>
 						</ul>
 						<figure>
 						  <a href="illustrations/7_2_densite_table.jpg" >
@@ -152,26 +152,26 @@
 						</figure>
 					</div>
 					
-				<h4>Opérations sur du texte : extraction<a class="headerlink" id="VII23b" href="#VII23b"></a></h4>
+				<h4>Opérations sur du texte&nbsp;: extraction<a class="headerlink" id="VII23b" href="#VII23b"></a></h4>
 				
 					<p>La couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_bretagne_calcul</a></em> comporte une colonne <em>code_insee</em> avec le code INSEE des communes. Ce code INSEE est constitué du code du département (2 chiffres pour la Bretagne) et du code commune (3 chiffres). Il s'agit d'un champ de type texte (la Corse a pour codes de département 2A et 2B).</p>
-					<p>Le but est ici d'<b>extraire le code commune</b> du code INSEE, donc les 3 derniers chiffres de ce dernier. Par exemple, la commune de Dirinon a comme code INSEE 29045 : le nouveau champ CODE_COM aura la valeur 045 pour cette commune.</p>
+					<p>Le but est ici d'<b>extraire le code commune</b> du code INSEE, donc les 3 derniers chiffres de ce dernier. Par exemple, la commune de Dirinon a comme code INSEE 29045&nbsp;: le nouveau champ CODE_COM aura la valeur 045 pour cette commune.</p>
 				
 					<div class="manip">
-						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche <em class="data">communes_bretagne_calcul</em>. Ouvrez la calculatrice de champs :</p>
+						<p>Si ce n'est pas déjà fait, ouvrez la table attributaire de la couche <em class="data">communes_bretagne_calcul</em>. Ouvrez la calculatrice de champs&nbsp;:</p>
 						<figure>
 							<a href="illustrations/7_2_calcul_fenetre_right.jpg" >
-								<img src="illustrations/7_2_calcul_fenetre_right.jpg" alt="Calculatrice de champ : calcul du code commune à partir du code INSEE avec la fonction right" width="600" >
+								<img src="illustrations/7_2_calcul_fenetre_right.jpg" alt="Calculatrice de champ&nbsp;: calcul du code commune à partir du code INSEE avec la fonction right" width="600" >
 							</a>
 						</figure>
 						<ul>
 							<li class="espace">Vérifiez que la case <b>Ne mettre à jour que les x entités sélectionnées</b> soit décochée, puisque le but est de mettre à jour toutes les lignes de la table</li>
 							<li class="espace">Choisissez <b>Créer un nouveau champ</b></li>
 							<li class="espace">Nommez-le <b>code_commune</b>, type <b>Texte</b>, longueur <b>3</b></li>
-							<li class="espace">Dans la liste des fonctions, allez dans la rubrique <b>Chaîne de caractères</b> (texte) et cliquez sur la fonction <b>right</b> : vous pouvez lire l'aide à droite. Cette fonction extrait les caractères les plus à droite d'un texte.</li>
-							<li class="espace">La fonction right nécessite deux paramètres : le texte d'où seront extraits les caractères (ici, le champ <b>code_insee</b>) et le nombre de caractères à extraire (ici, <b>3</b> puisque le code commune est codé sur 3 caractères)</li>
+							<li class="espace">Dans la liste des fonctions, allez dans la rubrique <b>Chaîne de caractères</b> (texte) et cliquez sur la fonction <b>right</b>&nbsp;: vous pouvez lire l'aide à droite. Cette fonction extrait les caractères les plus à droite d'un texte.</li>
+							<li class="espace">La fonction right nécessite deux paramètres&nbsp;: le texte d'où seront extraits les caractères (ici, le champ <b>code_insee</b>) et le nombre de caractères à extraire (ici, <b>3</b> puisque le code commune est codé sur 3 caractères)</li>
 							<li class="espace">L'expression est donc <b>right( "code_insee", 3)</b></li>
-							<li class="espace">Cliquez sur <b>OK</b> : le champ code_commune est créé et mis à jour :</li>
+							<li class="espace">Cliquez sur <b>OK</b>&nbsp;: le champ code_commune est créé et mis à jour&nbsp;:</li>
 						</ul>
 						<figure>
 						  <a href="illustrations/7_2_table_codeinsee.jpg" >
@@ -180,11 +180,11 @@
 						</figure>
 					</div>
 					
-				<h4>Pour aller plus loin : utiliser une expression conditionnelle avec CASE<a class="headerlink" id="VII23c" href="#VII23c"></a></h4>
+				<h4>Pour aller plus loin&nbsp;: utiliser une expression conditionnelle avec CASE<a class="headerlink" id="VII23c" href="#VII23c"></a></h4>
 				
 				    <p>Nous allons ici voir un exemple d'expression un peu plus complexe pour écrire dans un nouveau champ le nom du département en fonction de son code.</p>
-				    <p>Le but est ici de vous montrer que tout est possible, ou presque ! Il est possible de faire les calculs dans un tableur pour joindre ensuite les données, mais cela nécessite moins d'étapes de tout faire dans QGIS.</p>
-				    <p>Pour cette étape, il vous faudra connaître les noms des 4 départements bretons associés à leur code ! Vous pouvez aussi consulter <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Num%C3%A9rotation_des_d%C3%A9partements_fran%C3%A7ais#/media/Fichier:D%C3%A9partements_de_France_nom+num.svg" >cette carte</a> issue de Wikipedia.</p>
+				    <p>Le but est ici de vous montrer que tout est possible, ou presque&nbsp;! Il est possible de faire les calculs dans un tableur pour joindre ensuite les données, mais cela nécessite moins d'étapes de tout faire dans QGIS.</p>
+				    <p>Pour cette étape, il vous faudra connaître les noms des 4 départements bretons associés à leur code&nbsp;! Vous pouvez aussi consulter <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Num%C3%A9rotation_des_d%C3%A9partements_fran%C3%A7ais#/media/Fichier:D%C3%A9partements_de_France_nom+num.svg" >cette carte</a> issue de Wikipedia.</p>
 				    
 				    <div class="manip">
 				        <p>Comme d'habitude, ouvrez la calculatrice de champs.</p>
@@ -209,13 +209,13 @@
                     		<p class="reponse">CASE<br>WHEN "code_insee_du_departement" = '29' THEN 'Finistère'<br>WHEN "code_insee_du_departement" = '22' THEN 'Côtes-d''Armor'<br>WHEN "code_insee_du_departement" = '35' THEN 'Ille-et-Vilaine'<br>WHEN "code_insee_du_departement" = '56' THEN 'Morbihan'<br>END</p>
                             <p class="reponse">Attention, il y a un piège&nbsp;! Pour que l'apostrophe de &#171; Côtes-d'Armor &#187; ne soit pas considérée comme celle de fin de la chaîne de caractères, il faut utiliser une double apostrophe&nbsp;: 'Côtes-d<b>''</b>Armor'.</p>
                     	</div>
-                    	<p>Au final, la calculatrice doit être paramétrée comme suit :</p>
+                    	<p>Au final, la calculatrice doit être paramétrée comme suit&nbsp;:</p>
                     	<figure>
 						  <a href="illustrations/7_2_calc_case.jpg" >
 							<img src="illustrations/7_2_calc_case.jpg" alt="calculatrice de champ avec une expression utilisant CASE" width="620" >
 						  </a>
 						</figure>
-						<p>Et le résultat :</p>
+						<p>Et le résultat&nbsp;:</p>
 						<figure>
 						  <a href="illustrations/7_2_table_nomdep.jpg" >
 							<img src="illustrations/7_2_table_nomdep.jpg" alt="Extrait de la table avec le code et le nom du département" width="340" >
@@ -230,21 +230,21 @@
 					
 				<br>
 				<a class="prec" href="07_01_creation_suppression.php">chapitre précédent</a>
-				<a class="suiv" href="08_00_jointures.php">partie VIII : jointures</a>
+				<a class="suiv" href="08_00_jointures.php">partie VIII&nbsp;: jointures</a>
 				<br>
 				<a class="hautpage" href="#wrap">haut de page</a>					
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_7.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_7.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

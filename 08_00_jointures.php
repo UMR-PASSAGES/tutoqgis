@@ -1,19 +1,19 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
 	
 		<div class="main">
 		
-			<h1>VIII.  Lier des données de deux sources différentes : les jointures</h1>
+			<h1>VIII.  Lier des données de deux sources différentes&nbsp;: les jointures</h1>
 			
-			<p>Nous allons aborder ici la notion de jointure : comment partir de deux couches de données, ou d'une couche et d'un tableau, pour au final n'obtenir qu'une seule couche avec toutes les données qui nous intéressent ?</p>
+			<p>Nous allons aborder ici la notion de jointure&nbsp;: comment partir de deux couches de données, ou d'une couche et d'un tableau, pour au final n'obtenir qu'une seule couche avec toutes les données qui nous intéressent&nbsp;?</p>
 			
-			<p>Notions abordées :</p>
+			<p>Notions abordées&nbsp;:</p>
 				<ul>
 					<li>Jointure attributaire</li>
 					<li>Jointure spatiale</li>
@@ -28,15 +28,15 @@
 		</div>
 		
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_8.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_8.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

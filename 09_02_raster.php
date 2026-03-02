@@ -1,25 +1,25 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
 	
 		<div class="main">
 		  <h1 class="hide_for_pdf">IX.  Analyse spatiale</h1>
-			<h2>IX.2  Analyse spatiale : quelques exemples d'opérations sur des données raster</h2>
+			<h2>IX.2  Analyse spatiale&nbsp;: quelques exemples d'opérations sur des données raster</h2>
 				<ul class="listetitres">
-					<li><a href="#IX21">Préparation des données : découpage d'un raster</a></li>
+					<li><a href="#IX21">Préparation des données&nbsp;: découpage d'un raster</a></li>
 					<li><a href="#IX22">Explorer les données en modifiant le mode de représentation</a>
 					   <ul class="listesoustitres">
-					       <li><a href="#IX22a">Répartition des valeurs : histogramme de fréquence</a></li>
+					       <li><a href="#IX22a">Répartition des valeurs&nbsp;: histogramme de fréquence</a></li>
 					       <li><a href="#IX22b">La valeur des pixels sans valeur</a></li>
 					       <li><a href="#IX22c">Modifier le style pour explorer les données</a></li>
 					   </ul>
 					</li>
-					<li><a href="#IX23">Manipuler les données : extraction de valeurs</a></li>
+					<li><a href="#IX23">Manipuler les données&nbsp;: extraction de valeurs</a></li>
 					<li><a href="#IX24">Exemples d'opérations sur des données d'altitude</a>
 						<ul class="listesoustitres">
 							<li><a href="#IX24a">Création de courbes de niveau</a></li>
@@ -33,7 +33,7 @@
 			<p>Vous verrez ici quelques manipulations sur un raster d'altitude, appliquées au <a href="03_01_donnees_internet.php#III12b">modèle d'élévation numérique (MNE)</a> de la Jamaïque.</p>	
 		
 
-			<h3>Préparation des données : découpage d'un raster<a class="headerlink" id="IX21" href="#IX21"></a></h3>
+			<h3>Préparation des données&nbsp;: découpage d'un raster<a class="headerlink" id="IX21" href="#IX21"></a></h3>
 			
 				<p>Le but sera ici de découper un raster pour ne  garder que la zone qui nous intéresse. Cette manipulation permet d'alléger les données et les futurs traitements.</p>
 				
@@ -59,17 +59,17 @@
 						</a>
 					</figure>
 					<ul>
-						<li class="espace">Couche source : sélectionnez <em class="data">srtm_21_09</em></li>
-						<li class="espace">Etendue de découpage : cliquez sur le bouton <b>...</b> tout à droite, choisissez <b>Dessiner sur le canevas de carte</b>. Il faut ensuite dessiner l'emprise à garder, toujours dans l'outil de découpage. Dessinez un rectangle approximatif autour de l'île de la Jamaïque :
+						<li class="espace">Couche source&nbsp;: sélectionnez <em class="data">srtm_21_09</em></li>
+						<li class="espace">Etendue de découpage&nbsp;: cliquez sur le bouton <b>...</b> tout à droite, choisissez <b>Dessiner sur le canevas de carte</b>. Il faut ensuite dessiner l'emprise à garder, toujours dans l'outil de découpage. Dessinez un rectangle approximatif autour de l'île de la Jamaïque&nbsp;:
     						<a href="illustrations/9_2_decoupe_jam.jpg" >
     							<img src="illustrations/9_2_decoupe_jam.jpg" alt="Menu Raster, Extraction, Découper" width="400" >
     						</a></li>
-						<li class="espace">Découpé (étendue)&nbsp;: cliquez sur le bouton à droite <b>... &#8594; Enregistrer vers un fichier...</b>, vérifiez que le format sélectionné soit bien <b>TIF</b> (tout en haut de la liste) et choisissez où la nouvelle couche sera créée, et son nom : <em class="data">srtm_jamaique</em></li>
+						<li class="espace">Découpé (étendue)&nbsp;: cliquez sur le bouton à droite <b>... &#8594; Enregistrer vers un fichier...</b>, vérifiez que le format sélectionné soit bien <b>TIF</b> (tout en haut de la liste) et choisissez où la nouvelle couche sera créée, et son nom&nbsp;: <em class="data">srtm_jamaique</em></li>
 						<li class="espace">Cliquez ensuite sur <b>Exécuter</b>.</li>
 					</ul>
 					
 					<p>Une fois l'opération terminée, fermez la fenêtre de l'outil de découpage.</p>
-					<p>Dans la liste des couches, décochez srtm_21_09 pour ne voir que la couche découpée : elle ne comprend que la Jamaïque.</p>
+					<p>Dans la liste des couches, décochez srtm_21_09 pour ne voir que la couche découpée&nbsp;: elle ne comprend que la Jamaïque.</p>
 					<figure>
 						<a href="illustrations/9_2_decoupage_avant.jpg" >
 							<img src="illustrations/9_2_decoupage_avant.jpg" alt="srtm avant découpage" width="280" >
@@ -89,12 +89,12 @@
 			    <p>Les données ne contiennent maintenant plus que la zone d'étude et sont donc prêtes pour la suite... Mais au fait, que contiennent-elles, ces données&nbsp;?</p>
 			    <p>Avant de créer de nouvelles données à partir de ce MNE, ou bien de le croiser avec d'autres couches, il peut être judicieux d'explorer un peu ces données. Pour cela, il est possible de faire beaucoup de choses en allant simplement dans les propriétés de la couche &nbsp;!</p>
 			    
-			    <h4>Répartition des valeurs : histogramme de fréquence<a class="headerlink" id="IX22a" href="#IX22a"></a></h4>
+			    <h4>Répartition des valeurs&nbsp;: histogramme de fréquence<a class="headerlink" id="IX22a" href="#IX22a"></a></h4>
 			    
 			        <p>Une manière simple d'avoir un aperçu du contenu des données est de visualiser l'histogramme de fréquence des valeurs des pixels. Vous pourrez ainsi voir d'un coup d'&#339;il la répartition des valeurs d'élévation.</p>
 			        
 			        <div class="manip">
-			            <p><b>Propriétés de la couche <em class="data">srtm_jamaique</em> &#8594; rubrique Histogramme</b> : cliquez sur le bouton <b>Calculer l'histogramme</b>.</p>
+			            <p><b>Propriétés de la couche <em class="data">srtm_jamaique</em> &#8594; rubrique Histogramme</b>&nbsp;: cliquez sur le bouton <b>Calculer l'histogramme</b>.</p>
 			            <figure>
     						<a href="illustrations/9_2_histogramme.jpg" >
     							<img src="illustrations/9_2_histogramme.jpg" alt="Rubrique histogramme des propriétés de la couche" width="600" >
@@ -112,17 +112,17 @@
 			        <p>Une information utile à savoir est la <b>valeur des pixels &#171; sans données &#187;</b>. En effet, vous ne voyez dans QGIS que les pixels de la Jamaïque et non ceux de l'océan les environnant, bien que nous ayons précédemment découpé cette couche suivant un rectangle.</p>
 			        <p>En fait, <b>un raster étant un tableau, son emprise sera toujours rectangulaire et tous les pixels auront toujours une valeur</b>. Cependant, par commodité, on donne une valeur aberrante aux pixels &#171; sans données &#187;. D'où ce titre énigmatique&nbsp;!</p>
 			        <div class="manip">
-		            <p>Pour savoir quelle est cette valeur : <b>propriétés de la couche &#8594; rubrique Information</b> :</p>
+		            <p>Pour savoir quelle est cette valeur&nbsp;: <b>propriétés de la couche &#8594; rubrique Information</b>&nbsp;:</p>
 		            <figure>
       						<a href="illustrations/9_2_nodata_info.jpg" >
       							<img src="illustrations/9_2_nodata_info.jpg" alt="Rubrique Information des propriétés de la couche, avec encadré la valeur nulle des pixels" width="600" >
       						</a>
       					</figure>
-      					<p>Descendez un peu, et dans la partie <b>Bandes</b>, vous pouvez lire la valeur NoData : -32768.</p>
+      					<p>Descendez un peu, et dans la partie <b>Bandes</b>, vous pouvez lire la valeur NoData&nbsp;: -32768.</p>
       				</div>
-      				<p>Il est évident que l'élévation n'est jamais de -32768 mètres : il s'agit d'une valeur aberrante pour indiquer que certains pixels n'ont pas de valeur d'élévation associée.</p>
+      				<p>Il est évident que l'élévation n'est jamais de -32768 mètres&nbsp;: il s'agit d'une valeur aberrante pour indiquer que certains pixels n'ont pas de valeur d'élévation associée.</p>
       				<div class="manip">
-      					<p>Par défaut, les pixels NoData, donc pour ce raster les pixels avec la valeur -32768, sont rendus transparents, ce que vous pouvez vérifier dans la rubrique <b>Transparence</b> des propriétés de la couche :</p>
+      					<p>Par défaut, les pixels NoData, donc pour ce raster les pixels avec la valeur -32768, sont rendus transparents, ce que vous pouvez vérifier dans la rubrique <b>Transparence</b> des propriétés de la couche&nbsp;:</p>
 		            <figure>
       						<a href="illustrations/9_2_nodata.jpg" >
       							<img src="illustrations/9_2_nodata.jpg" alt="Rubrique Transparence des propriétés de la couche, avec encadré la valeur nulle des pixels" width="600" >
@@ -139,7 +139,7 @@
     					<p>Si vous utilisez à nouveau l'outil d'identification sur un pixel du bord du raster (désormais invisible), vous verrez qu'il est maintenant considéré comme &#171; sans données &#187;. En cliquant en-dehors de l'emprise du raster, l'outil d'identification ne renvoie aucun résultat.</p>
 			        </div>
 			        
-			        <p>Pourquoi la valeur -32768&nbsp;? Voici quelques explications si vous désirez en savoir plus. Il existe différents types de raster : 8 bits, 16 bits, 32 bits... Ce qui correspond en fait au nombre de bits sur lesquels est stockée la valeur d'un pixel.</p>
+			        <p>Pourquoi la valeur -32768&nbsp;? Voici quelques explications si vous désirez en savoir plus. Il existe différents types de raster&nbsp;: 8 bits, 16 bits, 32 bits... Ce qui correspond en fait au nombre de bits sur lesquels est stockée la valeur d'un pixel.</p>
 			        <p>Ici, notre raster est de type 16 bits (ce que vous pouvez vérifier en allant dans les propriétés de la couche, rubrique Information). Chaque valeur de pixel est codée sur 16 bits, ce qui donne 2<sup>16</sup> soit 65536 possibilités. Les valeurs pouvant être positives ou négatives, elles vont de -32768 à 32767, puisque 65536/2=32768.</p>
 			        <p>La valeur nulle est donc la valeur la plus aberrante possible, ici -32768.</p>
 			        <p>Rendez-vous <a class="ext" target="_blank" href="http://desktop.arcgis.com/fr/arcmap/10.3/manage-data/raster-and-images/bit-depth-capacity-for-raster-dataset-cells.htm" >ici</a> pour en savoir plus sur les différents types de raster et les données qu'ils peuvent contenir. En règle général, on choisit le type codé sur le moins de bits possibles en restant compatible avec les données, pour obtenir des rasters moins lourds.</p>
@@ -167,7 +167,7 @@
     					<a href="illustrations/9_2_interpol_discret.jpg" >
 							<img src="illustrations/9_2_interpol_discret.jpg" alt="Choix du mode d'interpolation discret dans les propriétés, rubrique Style" width="600" >
 						</a>
-						<p>Appliquez les changements :</p>
+						<p>Appliquez les changements&nbsp;:</p>
 						<figure>
     						<a href="illustrations/9_2_style_discret.jpg" >
     							<img src="illustrations/9_2_style_discret.jpg" alt="Elevations en classes du orange clair au marron (mode discret)" width="400" >
@@ -175,22 +175,22 @@
     					</figure>
     					<p><b>Les valeurs sont maintenant représentées par classes.</b></p>
     					<p>Il est possible de modifier les classes, soit de manière automatique en choisissant le mode <b>intervalle égal</b> ou <b>quantile</b> et le nombre de classes, sous le tableau des valeurs, soit à la main en double-cliquant sur une valeur dans le tableau.</p>
-    					<p class="note">Pour en savoir plus sur les méthodes de discrétisation : voir notamment <a class="ext" target="_blank" href="https://blog.m0le.net/2014/09/08/cartographie-numerique-precis-de-discretisation-pour-les-nuls/" >ici</a>.</p>
-    					<p>Par exemple, modifiez les classes pour faire apparaître les pixels de valeur inférieure à 100 mètres, comprise entre 100 et 700 mètres et supérieure à 700 mètres :</p>
+    					<p class="note">Pour en savoir plus sur les méthodes de discrétisation&nbsp;: voir notamment <a class="ext" target="_blank" href="https://blog.m0le.net/2014/09/08/cartographie-numerique-precis-de-discretisation-pour-les-nuls/" >ici</a>.</p>
+    					<p>Par exemple, modifiez les classes pour faire apparaître les pixels de valeur inférieure à 100 mètres, comprise entre 100 et 700 mètres et supérieure à 700 mètres&nbsp;:</p>
     					<figure>
     						<a href="illustrations/9_2_style_discret_3classes.jpg" >
-    							<img src="illustrations/9_2_style_discret_3classes.jpg" alt="Fenêtre Symbologie : 3 classes, valeurs seuil 100, 700 et max" width="550" >
+    							<img src="illustrations/9_2_style_discret_3classes.jpg" alt="Fenêtre Symbologie&nbsp;: 3 classes, valeurs seuil 100, 700 et max" width="550" >
     						</a>
     					</figure>
     					<figure>
     						<a href="illustrations/9_2_style_discret_3classes_res.jpg" >
-    							<img src="illustrations/9_2_style_discret_3classes_res.jpg" alt="3 classes, valeurs seuil 100, 700 et max : visualisation" width="400" >
+    							<img src="illustrations/9_2_style_discret_3classes_res.jpg" alt="3 classes, valeurs seuil 100, 700 et max&nbsp;: visualisation" width="400" >
     						</a>
     					</figure>
 			        </div>
-			        <p>En modifiant le style des données, notamment en discrétisant les données et en faisant varier les classes, on peut avoir une meilleure idée du sujet étudié, ici l'élévation de la Jamaïque. C'est une première approche !</p>
+			        <p>En modifiant le style des données, notamment en discrétisant les données et en faisant varier les classes, on peut avoir une meilleure idée du sujet étudié, ici l'élévation de la Jamaïque. C'est une première approche&nbsp;!</p>
 			
-			<h3>Manipuler les données : extraction de valeurs<a class="headerlink" id="IX23" href="#IX23"></a></h3>
+			<h3>Manipuler les données&nbsp;: extraction de valeurs<a class="headerlink" id="IX23" href="#IX23"></a></h3>
 			
 			    <p>Admettons maintenant que l'étape précédente nous ait permis de décider qu'on souhaite s'intéresser uniquement à la zone inférieure à 100 mètres d'altitude.</p>
 			    <p><b>Comment faire pour obtenir un nouveau raster, où les pixels d'élévation inférieure à 100 mètres ont une valeur de 1 et les autres une valeur de 0&nbsp;?</b> Une telle couche pourra servir par exemple de masque, ou bien pour ne garder que les valeurs d'un raster portant sur un autre thème de la zone inférieure à 100 mètres.</p>
@@ -214,8 +214,8 @@
 			    
 			    <div class="manip">
 			        <ul>
-			            <li class="espace"><b>Couches en entrée</b> : cliquez sur <b>...</b> puis sélectionnez la couche <em class="data">srtm_jamaique</em></li>
-			            <li class="espace"><b>Expression</b> : cliquez sur <b>&#949;</b>, une fenêtre s'ouvre : double-cliquez sur <b>srtm_jamaique@1</b> dans la partie <em>layers</em> à gauche, puis rajoutez à la main dans la partie en bas <b> &lt; 100</b> : l'expression complète est : <b>"srtm_jamaique@1" &lt; 100</b></li>
+			            <li class="espace"><b>Couches en entrée</b>&nbsp;: cliquez sur <b>...</b> puis sélectionnez la couche <em class="data">srtm_jamaique</em></li>
+			            <li class="espace"><b>Expression</b>&nbsp;: cliquez sur <b>&#949;</b>, une fenêtre s'ouvre&nbsp;: double-cliquez sur <b>srtm_jamaique@1</b> dans la partie <em>layers</em> à gauche, puis rajoutez à la main dans la partie en bas <b> &lt; 100</b>&nbsp;: l'expression complète est&nbsp;: <b>"srtm_jamaique@1" &lt; 100</b></li>
 			            <li class="espace">Vous pouvez laisser les autres paramètres par défaut</li>
 			        </ul>
 			        <p>Exécutez... Le nouveau raster (temporaire) est ajouté.</p>
@@ -225,22 +225,22 @@
 			    
 			    <div class="manip">
 			        <p>Contrairement à ce à quoi on aurait pu s'attendre, on peut voir en noir les valeurs supérieure à 100 mètres. Cependant, en interrogeant le raster avec l'outil d'identification on peut voir que les pixels qui avaient une élévation &lt; 100 mètres ont maintenant une valeur de 1, et les autres 0.</p>
-			        <p>Il est facile de changer le mode de représentation, par exemple dans les <b>propriétés &#8594; Symbologie &#8594; Dégradé de couleur</b> : choisir <b>Blanc vers noir</b> au lieu de Noir vers blanc.</p>
+			        <p>Il est facile de changer le mode de représentation, par exemple dans les <b>propriétés &#8594; Symbologie &#8594; Dégradé de couleur</b>&nbsp;: choisir <b>Blanc vers noir</b> au lieu de Noir vers blanc.</p>
 			        <figure>
 						<a href="illustrations/9_2_blancversnoir.jpg" >
-							<img src="illustrations/9_2_blancversnoir.jpg" alt='propriétés rubrique symbologie : blanc vers noir' width="600" >
+							<img src="illustrations/9_2_blancversnoir.jpg" alt='propriétés rubrique symbologie&nbsp;: blanc vers noir' width="600" >
 						</a>
 					</figure>
                     <figure>
 						<a href="illustrations/9_2_blancversnoir_res.jpg" >
-							<img src="illustrations/9_2_blancversnoir_res.jpg" alt='propriétés rubrique symbologie : blanc vers noir' width="400" >
+							<img src="illustrations/9_2_blancversnoir_res.jpg" alt='propriétés rubrique symbologie&nbsp;: blanc vers noir' width="400" >
 						</a>
 					</figure>
 			    </div>
 			    
 			    <p>Cette couche pourra servir par exemple de masque, telle quelle ou bien en la transformant en couche vecteur au moyen de l'outil Polygoniser.</p>
 			    
-			    <p class="note">La calculatrice raster est également accessible par le <b>menu Raster &#8594; Calculatrice Raster</b>. Son interface est alors plus lisible ; en revanche, on ne peut pas créer de couche temporaire en sortie.</p>
+			    <p class="note">La calculatrice raster est également accessible par le <b>menu Raster &#8594; Calculatrice Raster</b>. Son interface est alors plus lisible&nbsp;; en revanche, on ne peut pas créer de couche temporaire en sortie.</p>
 			
 			<h3>Exemples d'opérations sur des données d'altitude<a class="headerlink" id="IX24" href="#IX24"></a></h3>
 			
@@ -254,7 +254,7 @@
 						<a href="illustrations/9_2_isohypses_exemple.jpg" >
 							<img src="illustrations/9_2_isohypses_exemple.jpg" alt="extrait de carte avec courbes de niveaux" width="300" >
 						</a>
-						<figcaption>Un extrait de carte avec des courbes de niveau (Source : <a class="ext" target="_blank" href="https://commons.wikimedia.org/wiki/File:Cntr-map-1.jpg" >Wikimedia</a>)</figcaption>
+						<figcaption>Un extrait de carte avec des courbes de niveau (Source&nbsp;: <a class="ext" target="_blank" href="https://commons.wikimedia.org/wiki/File:Cntr-map-1.jpg" >Wikimedia</a>)</figcaption>
 					</figure>
     				
     				<div class="manip">
@@ -271,11 +271,11 @@
     					   </a>
     					</figure>
     					<ul>
-    						<li class="espace">Couche source : sélectionnez <em class="data">srtm_jamaique</em></li>
-    						<li class="espace">Intervalle entre les courbes de niveaux : tapez <b>100</b> pour un intervalle de 100 mètres</li>
-    						<li class="espace"><b>Nom de l'attribut :</b> il s'agit du nom du champ qui contiendra l'altitude de la courbe. Vous pouvez laisser la valeur par défaut <b>ELEV</b>, ou bien taper le nom de votre choix</li>
+    						<li class="espace">Couche source&nbsp;: sélectionnez <em class="data">srtm_jamaique</em></li>
+    						<li class="espace">Intervalle entre les courbes de niveaux&nbsp;: tapez <b>100</b> pour un intervalle de 100 mètres</li>
+    						<li class="espace"><b>Nom de l'attribut&nbsp;:</b> il s'agit du nom du champ qui contiendra l'altitude de la courbe. Vous pouvez laisser la valeur par défaut <b>ELEV</b>, ou bien taper le nom de votre choix</li>
     					</ul>
-    					<p>Cliquez sur <b>Exécuter</b> :</p>
+    					<p>Cliquez sur <b>Exécuter</b>&nbsp;:</p>
     					<figure class="gauche">
     						<a href="illustrations/9_2_courbes_carte.jpg" >
     							<img src="illustrations/9_2_courbes_carte.jpg" alt="Visualisation des courbes de niveau" width="600" >
@@ -293,25 +293,25 @@
     				
     			<h4>Projection d'un raster<a class="headerlink" id="IX24b" href="#IX24b"></a></h4>
     			
-    				<p>Il est également possible de créer à partir d'un raster d'altitude un raster de pente : chaque pixel aura la valeur de la pente en ce point. Pour en savoir plus sur la manière dont est calculée la pente, vous pouvez vous référer à <a class="ext" target="_blank" href="http://resources.arcgis.com/fr/help/main/10.1/index.html#//00q90000001r000000" >l'aide d'ArcGIS</a> sur ce point.</p>
+    				<p>Il est également possible de créer à partir d'un raster d'altitude un raster de pente&nbsp;: chaque pixel aura la valeur de la pente en ce point. Pour en savoir plus sur la manière dont est calculée la pente, vous pouvez vous référer à <a class="ext" target="_blank" href="http://resources.arcgis.com/fr/help/main/10.1/index.html#//00q90000001r000000" >l'aide d'ArcGIS</a> sur ce point.</p>
     				<a href="illustrations/9_2_pente.svg">
     					<img class="gauche" src="illustrations/9_2_pente.jpg" alt="Représentation de la pente" width="150" >
     				</a>
     				<p>La pente est calculée en fonction de la distance horizontale et de la hauteur. Dans notre cas, la hauteur est en mètres, et la distance horizontale en degrés. Les deux unités étant différentes, le calcul de pente donnera des valeurs aberrantes.</p>
     				<p>La première étape est donc de <b>projeter notre raster, pour obtenir des unités identiques verticalement et horizontalement.</b></p>
     			
-  					<p>Quelle projection utiliser pour notre raster ?</p>
-  					<p>En règle générale, il y a deux possibilités quand on cherche une projection pour un pays : utiliser une projection nationale, ou bien une <a href="02_02_coord.php#II22d" >projection UTM</a>.</p>
+  					<p>Quelle projection utiliser pour notre raster&nbsp;?</p>
+  					<p>En règle générale, il y a deux possibilités quand on cherche une projection pour un pays&nbsp;: utiliser une projection nationale, ou bien une <a href="02_02_coord.php#II22d" >projection UTM</a>.</p>
   					<p>Pour savoir s'il existe dans QGIS des projections  nationales pour la Jamaïque, vous pouvez faire une recherche dans les SCR proposés.</p>
   					
   					<div class="manip">
-  						<p><img class="icone" src="illustrations/2_3_scr_projet_icone.jpg" alt="icône SCR" >Rendez-vous dans les propriétés du projet, rubrique SCR, par exemple en cliquant sur l'icône de sphère tout en bas à droite de la fenêtre de QGIS :</p>
+  						<p><img class="icone" src="illustrations/2_3_scr_projet_icone.jpg" alt="icône SCR" >Rendez-vous dans les propriétés du projet, rubrique SCR, par exemple en cliquant sur l'icône de sphère tout en bas à droite de la fenêtre de QGIS&nbsp;:</p>
   						<figure>						
   							<a href="illustrations/9_2_scr_jamaica.jpg">
   								<img src="illustrations/9_2_scr_jamaica.jpg" alt="Recherche d'un SCR pour la Jamaïque" width="600" >
   							</a>
   						</figure>
-  						<p>Tapez <b>jamaica</b> dans la rubrique <b>Filtre</b> : plusieurs réponses sont proposées, dont 4 SCR projetés. Une rapide recherche internet semble indiquer que le SCR <b>JAD2001</b> est le plus récent (source : <a class="ext" target="_blank" href="http://www.jamaicancaves.org/jad2001.htm" >http://www.jamaicancaves.org/jad2001.htm</a>). C'est donc ce SCR que nous utiliserons.</p>
+  						<p>Tapez <b>jamaica</b> dans la rubrique <b>Filtre</b>&nbsp;: plusieurs réponses sont proposées, dont 4 SCR projetés. Une rapide recherche internet semble indiquer que le SCR <b>JAD2001</b> est le plus récent (source&nbsp;: <a class="ext" target="_blank" href="http://www.jamaicancaves.org/jad2001.htm" >http://www.jamaicancaves.org/jad2001.htm</a>). C'est donc ce SCR que nous utiliserons.</p>
   						<p class="note">Selon si vous avez déjà utilisé un SCR jamaïcain, la partie du haut concernant les SCR récemment utilisés sera vide ou non.</p>
   						<p>Sélectionnez <b>JAD2001 (code EPSG:3448) et cliquez sur <b>OK</b>.</b></p>
   					</div>
@@ -319,7 +319,7 @@
   					<p>Nous venons de changer le SCR du projet, mais pas celui de notre raster (pour rappel, voir <a href="02_03_couches_projets.php">ici</a>).</p>
   					
   					<div class="manip">
-  						<p>Pour changer le SCR du raster (comme pour les vecteurs, cette opération crée une nouvelle couche) :
+  						<p>Pour changer le SCR du raster (comme pour les vecteurs, cette opération crée une nouvelle couche)&nbsp;:
   							<a class="thumbnail_bottom" href="#thumb">Boîte à outils &#8594; GDAL &#8594; Projections raster &#8594; Projection (warp)
   								<span>
   									<img src="illustrations/9_2_reproj_raster_menu.jpg" alt="Menu Raster , Projections, Projection..." width="280" >
@@ -332,15 +332,15 @@
   							</a>
   						</figure>
   						<ul>
-  							<li class="espace">Couche source : sélectionnez <em class="data">srtm_jamaique</em> dans la liste</li>
-  							<li class="espace">SCR cible : cliquez sur le bouton à droite pour rechercher le SCR <b>JAD2001 code EPSG:3448</b> (normalement si vous avez bien effectué l'étape précédente c'est le SCR du projet)</li>
-  							<li>Reprojeté : cliquez sur les <b>...</b>, vérifiez que le format soit bien <b>TIF</b>, choisissez l'emplacement de la couche qui sera créée en sortie, ainsi que son nom : par ex. <b>srtm_jamaique_JAD2001</b></li>
+  							<li class="espace">Couche source&nbsp;: sélectionnez <em class="data">srtm_jamaique</em> dans la liste</li>
+  							<li class="espace">SCR cible&nbsp;: cliquez sur le bouton à droite pour rechercher le SCR <b>JAD2001 code EPSG:3448</b> (normalement si vous avez bien effectué l'étape précédente c'est le SCR du projet)</li>
+  							<li>Reprojeté&nbsp;: cliquez sur les <b>...</b>, vérifiez que le format soit bien <b>TIF</b>, choisissez l'emplacement de la couche qui sera créée en sortie, ainsi que son nom&nbsp;: par ex. <b>srtm_jamaique_JAD2001</b></li>
   							<li class="espace">Laissez tous les autres paramètres par défaut, cliquez sur <b>Exécuter</b>.</li>
   						</ul>
   						<p>Patientez... La nouvelle couche est ajoutée, vous pouvez vérifier dans ses propriétés (rubrique Source) que son SCR soit bien le JAD2001.</p>
   						<figure>
   							<a href="illustrations/9_2_scr_ok.jpg">
-  								<img src="illustrations/9_2_scr_ok.jpg" alt="scr de la nouvelle couche : JAD2001" width="500" >
+  								<img src="illustrations/9_2_scr_ok.jpg" alt="scr de la nouvelle couche&nbsp;: JAD2001" width="500" >
   							</a>
   						</figure>
   						<p class="note">Avec les anciennes versions de QGIS, il fallait préciser la valeur NoData, celle-ci est aujourd'hui automatiquement lue dans les propriétés du raster en entrée&nbsp;!</p>
@@ -364,17 +364,17 @@
   							</a>
   						</figure>
   						<ul>
-  							<li class="espace">Couche source : sélectionnez <em class="data">srtm_jamaique_JAD2001</em></li>
-  							<li class="espace">Laissez les autres paramètres par défaut (pour plus d'infos sur les méthodes de Zevenberger & Thorne et Horn : <a class="ext" target="_blank" href="http://www.macaulay.ac.uk/LADSS/documents/DEMs-for-spatial-modelling.pdf" >http://www.macaulay.ac.uk/LADSS/documents/DEMs-for-spatial-modelling.pdf</a>, pp. 12 et 13).</li>
+  							<li class="espace">Couche source&nbsp;: sélectionnez <em class="data">srtm_jamaique_JAD2001</em></li>
+  							<li class="espace">Laissez les autres paramètres par défaut (pour plus d'infos sur les méthodes de Zevenberger & Thorne et Horn&nbsp;: <a class="ext" target="_blank" href="http://www.macaulay.ac.uk/LADSS/documents/DEMs-for-spatial-modelling.pdf" >http://www.macaulay.ac.uk/LADSS/documents/DEMs-for-spatial-modelling.pdf</a>, pp. 12 et 13).</li>
   						</ul>
-  						<p>Cliquez sur <b>Exécuter</b>, patientez... la couche s'affiche :</p>
+  						<p>Cliquez sur <b>Exécuter</b>, patientez... la couche s'affiche&nbsp;:</p>
   						<figure>
   							<a href="illustrations/9_2_pente_res.jpg">
   								<img src="illustrations/9_2_pente_res.jpg" alt="la couche de pentes" width="400" >
   							</a>
   						</figure>
   						<p>Ici, les pixels sombres représentent des pentes faibles et les pixels clairs de fortes pentes.</p>
-  						<p><img class="icone" src="illustrations/8_2_id_icone.jpg" alt="menu projet, sauvegarder sous..." >En cliquant sur un pixel avec l'outil <b>Identifier les entités</b>, vous pouvez connaître la valeur de la pente pour ce pixel :</p>
+  						<p><img class="icone" src="illustrations/8_2_id_icone.jpg" alt="menu projet, sauvegarder sous..." >En cliquant sur un pixel avec l'outil <b>Identifier les entités</b>, vous pouvez connaître la valeur de la pente pour ce pixel&nbsp;:</p>
   						<figure>
   							<a href="illustrations/9_2_id_pente.jpg">
   								<img src="illustrations/9_2_id_pente.jpg" alt="la couche de pentes" width="400" >
@@ -394,15 +394,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_9.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_9.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

@@ -1,15 +1,15 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
 	
 		<div class="main">
 		  <h1 class="hide_for_pdf">II.  Géodésie</h1>
-			<h2>II.3  Couches et projets : à chacun son système</h2>
+			<h2>II.3  Couches et projets&nbsp;: à chacun son système</h2>
 				<ul class="listetitres">
 					<li><a href="#II31">SCR du projet</a></li>
 					<li><a href="#II32">SCR d'une couche</a></li>
@@ -21,7 +21,7 @@
 					
 				<div class="manip">
 					<p><img class="icone" src="illustrations/1_4_ouvrir_projet_icone.jpg" alt="Icône Ouvrir">A partir de QGIS, ouvrez le projet <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">regions_france.qgz</a></em> situé dans le dossier <b>TutoQGIS_02_geodesie/projets</b>.</p>
-					<p>Toutes les couches chargées dans ce projet seront <b>affichées</b> dans le SCR du projet. Quel est ce SCR ? Trois manières d'accéder à cette information&nbsp;:</p>
+					<p>Toutes les couches chargées dans ce projet seront <b>affichées</b> dans le SCR du projet. Quel est ce SCR&nbsp;? Trois manières d'accéder à cette information&nbsp;:</p>
 					<ul>
 						<li>
 							<a class="thumbnail_bottom" href="#thumb">Menu Projet &#8594; Propriétés...
@@ -35,24 +35,24 @@
 					</ul>
 				</div>
 				
-				<p>La fenêtre suivante s'ouvre :</p>
+				<p>La fenêtre suivante s'ouvre&nbsp;:</p>
 				<figure>
 					<a href="illustrations/2_3_scr_projet.jpg" >
 						<img src="illustrations/2_3_scr_projet.jpg" alt="fenêtre SCR du projet" width="600">
 					</a>
 				</figure>
 				
-				<p><em class="numero">1. </em><b>Aucun SCR</b> : cette case à cocher permet de visualiser facilement si les différentes couches d'un projet utilisent des SCR différents.</p>
-				<p><em class="numero">2. </em><b>Partie "Filtre"</b> : vous pouvez taper ici un code ou un nom pour rechercher un SCR précis.</p>
+				<p><em class="numero">1. </em><b>Aucun SCR</b>&nbsp;: cette case à cocher permet de visualiser facilement si les différentes couches d'un projet utilisent des SCR différents.</p>
+				<p><em class="numero">2. </em><b>Partie "Filtre"</b>&nbsp;: vous pouvez taper ici un code ou un nom pour rechercher un SCR précis.</p>
 				<p><em class="numero">3. </em><b>SCR récemment utilisés</b> (cette partie peut être vide). Cette liste permet d'accéder facilement aux SCR que vous utilisez souvent.</p>
-				<p><em class="numero">4. </em><b>Liste de tous les SCR disponibles dans QGIS</b>. Ils sont classés selon 3 grandes rubriques : systèmes de coordonnées géographiques, systèmes de coordonnées projetés et systèmes de coordonnées définis par l'utilisateur (soit qu'ils aient été créés par vous-même, soit qu'ils aient été lus par QGIS dans une couche).</p>
+				<p><em class="numero">4. </em><b>Liste de tous les SCR disponibles dans QGIS</b>. Ils sont classés selon 3 grandes rubriques&nbsp;: systèmes de coordonnées géographiques, systèmes de coordonnées projetés et systèmes de coordonnées définis par l'utilisateur (soit qu'ils aient été créés par vous-même, soit qu'ils aient été lus par QGIS dans une couche).</p>
 				<p><em class="numero">5. </em><b>SCR actuellement utilisé par le projet</b> avec sa définition dans 2 formats, WKT et Proj4, et sa zone d'application (également visible dans la carte à droite)</p>
 				
 				<p>La rubrique SCR de la fenêtre des propriétés du projet permet donc de modifier le système de coordonnées du projet, ou bien simplement de vérifier quel est ce système, ce que nous nous bornerons à faire pour le moment.</p>
 				<div class="manip">			
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">A votre avis, quel est le SCR du projet ?</label></p>
+						<p><label for="faq-1">A votre avis, quel est le SCR du projet&nbsp;?</label></p>
 						<p class="reponse">Le projet est en WGS84, comme indiqué dans la partie <em class="numero">5</em> de la fenêtre.</p>
 					</div>
 				</div>
@@ -78,7 +78,7 @@
 				
 					<div class="question">
 						<input type="checkbox" id="faq-2">
-						<p><label for="faq-2">A votre avis, quel est le SCR de la couche <em class="data">REGION</em> ?</label></p>
+						<p><label for="faq-2">A votre avis, quel est le SCR de la couche <em class="data">REGION</em>&nbsp;?</label></p>
 						<p class="reponse">Cette couche est en RGF93 / Lambert-93, code EPSG 2154.</p>
 					</div>
 					
@@ -90,13 +90,13 @@
 					</figure>
 				</div>
 			
-				<p>Vous avez donc pu constater que notre projet et la couche qui y est présente ont deux SCR différents. Comment cela est-il possible ?</p>		
+				<p>Vous avez donc pu constater que notre projet et la couche qui y est présente ont deux SCR différents. Comment cela est-il possible&nbsp;?</p>		
 			
 			<h3>Projection à la volée<a class="headerlink" id="II33" href="#II33"></a></h3>
 			
 				<p>La <b>projection à la volée</b> est une fonctionnalité qui permet d'afficher des couches dans un autre SCR que le leur, le SCR du projet.</p>
 				<p>Ainsi, la couche <em class="data">REGION</em> est affichée en WGS84 bien que son SCR soit le RGF93 Lambert93. Il s'agit bien uniquement d'une question d'affichage, le SCR de la couche n'est pas modifié.</p>
-				<p class="note">L'affichage de la France en WGS84 est ce qui provoque cette impression d'aplatissement par rapport aux cartes dont nous avons l'habitude ! L'affichage en RGF93/Lambert93 correspond plus à notre vision habituelle, rendez-vous au <a href="02_02_coord.php" >prochain chapitre </a> pour voir comment modifier le SCR du projet.</p>
+				<p class="note">L'affichage de la France en WGS84 est ce qui provoque cette impression d'aplatissement par rapport aux cartes dont nous avons l'habitude&nbsp;! L'affichage en RGF93/Lambert93 correspond plus à notre vision habituelle, rendez-vous au <a href="02_02_coord.php" >prochain chapitre </a> pour voir comment modifier le SCR du projet.</p>
 				<p>Depuis la version 3 de QGIS, la projection à la volée est toujours activée (à moins de cocher la case <em>aucun SCR</em> dans la fenêtre <em>Propriétés du projet - SCR</em>). <b>Toutes les couches sont donc toujours affichées dans le SCR du projet</b>.</p>
 				<p>Il est donc possible de superposer plusieurs couches dans des SCR différents. C'est ce que nous allons vérifier!</p>
 				<div class="manip">
@@ -116,15 +116,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_2.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_2.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 	
 </div>
 </body>

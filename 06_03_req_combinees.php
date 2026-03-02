@@ -1,14 +1,14 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
 	
 		<div class="main">
-		  <h1 class="hide_for_pdf">VI.  Sélectionner des données : les requêtes</h1>
+		  <h1 class="hide_for_pdf">VI.  Sélectionner des données&nbsp;: les requêtes</h1>
 			<h2>VI.3  Combiner des requêtes</h2>
 				<ul class="listetitres">
 					<li><a href="#VI31">Combiner deux requêtes attributaires</a></li>
@@ -17,7 +17,7 @@
 				</ul>
 				<br>
 				
-			<p>Comment faire quand on souhaite combiner plusieurs requêtes, par exemple sélectionner les communes traversées par un cours d'eau et ayant une population de + de 10&nbsp;000 habitants ?</p>
+			<p>Comment faire quand on souhaite combiner plusieurs requêtes, par exemple sélectionner les communes traversées par un cours d'eau et ayant une population de + de 10&nbsp;000 habitants&nbsp;?</p>
 			
 			<h3>Combiner deux requêtes attributaires<a class="headerlink" id="VI31" href="#VI31"></a></h3>
 			
@@ -28,30 +28,30 @@
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS, ajoutez-y la couche <em class="data"><a href="donnees/TutoQGIS_06_Requetes.zip">communes_bretagne</a></em>.</p>
 					<p><img class="iconemid" src="illustrations/6_3_selection_attrib_icone.jpg" alt="icône de sélection attributaire" >Ouvrez la table attributaire de cette couche puis la fenêtre de requête attributaire.</p>
-					<p>Sélectionnez tout d'abord les communes de + de 10&nbsp;000 habitants au moyen d'une requête attributaire : <b>"population" > 10000</b></p>
+					<p>Sélectionnez tout d'abord les communes de + de 10&nbsp;000 habitants au moyen d'une requête attributaire&nbsp;: <b>"population" > 10000</b></p>
 					<figure>
 						<a href="illustrations/6_1_popsup10000_res.jpg" >
 							<img src="illustrations/6_1_popsup10000_res.jpg" alt="Communes de + de 10 000 habitants sélectionnées" width="400" >
 						</a>
 					</figure>
-					<p>Tapez ensuite la requête suivante, pour sélectionner les communes du Morbihan : <b>"code_insee_du_departement" = '56'</b>...</p>
-					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection actuelle</b> :</p>
+					<p>Tapez ensuite la requête suivante, pour sélectionner les communes du Morbihan&nbsp;: <b>"code_insee_du_departement" = '56'</b>...</p>
+					<p>...Mais cette fois-ci, au lieu de cliquer sur &#171;&nbsp;Sélectionner des entités&nbsp;&#187;, cliquez sur le <b>petit triangle à droite</b> et sélectionnez dans la liste <b>Filtrer la sélection actuelle</b>&nbsp;:</p>
 					<figure>
 					    <a href="illustrations/6_3_selection_liste.jpg" >
 						    <img src="illustrations/6_3_selection_liste.jpg" alt="liste accessible à partir du bouton sélection" width="600" >
 						</a>
 					</figure>
-					<p>Ainsi, cette deuxième requête s'appliquera uniquement aux communes déjà sélectionnées : les communes du Morbihan seront sélectionnées parmi les communes de + de 10&nbsp;000 habitants.</p>
+					<p>Ainsi, cette deuxième requête s'appliquera uniquement aux communes déjà sélectionnées&nbsp;: les communes du Morbihan seront sélectionnées parmi les communes de + de 10&nbsp;000 habitants.</p>
 					<figure>
 						<a href="illustrations/6_3_sup10000hab_morbihan.jpg" >
 							<img src="illustrations/6_3_sup10000hab_morbihan.jpg" alt="Communes de + de 10 000 habitants du département du Morbihan sélectionnées" width="400" >
 						</a>
-						<figcaption>Communes du Morbihan de + de 10&nbsp;000 habitants : 10 communes sélectionnées</figcaption>
+						<figcaption>Communes du Morbihan de + de 10&nbsp;000 habitants&nbsp;: 10 communes sélectionnées</figcaption>
 					</figure>
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">Pouvez-vous au moyen des mêmes 2 requêtes (<em>"population" > 10000</em> et <em>"code_insee_du_departement" = '56'</em>) sélectionner les communes bretonnes de + de 10 000 habitants qui ne sont pas dans le département du Morbihan ?</label></p>
-						<p class="reponse">Utilisez cette fois pour la deuxième requête le bouton <b>Supprimer de la sélection actuelle</b> : les communes du Morbihan seront désélectionnées et il ne restera de sélectionnées que les communes de + de 10 000 des autres départements (soit 30 communes).</p>
+						<p><label for="faq-1">Pouvez-vous au moyen des mêmes 2 requêtes (<em>"population" > 10000</em> et <em>"code_insee_du_departement" = '56'</em>) sélectionner les communes bretonnes de + de 10 000 habitants qui ne sont pas dans le département du Morbihan&nbsp;?</label></p>
+						<p class="reponse">Utilisez cette fois pour la deuxième requête le bouton <b>Supprimer de la sélection actuelle</b>&nbsp;: les communes du Morbihan seront désélectionnées et il ne restera de sélectionnées que les communes de + de 10 000 des autres départements (soit 30 communes).</p>
 					</div>
 				</div>
 			
@@ -65,13 +65,13 @@
 				  <p><a href="03_02_donnees_flux.php#III23">Connectez-vous au flux WFS</a> <b>https://geobretagne.fr/geoserver/eolien_bretagne/wfs</b> et ajoutez la couche <em class="data ">Eoliennes publiées par Géorisques</em>.</p>
 				  <p>De même, connectez-vous au flux WFS IGN <b>https://data.geopf.fr/annexes/ressources/wfs/cartovecto.xml</b> et ajoutez la couche <em class="data ">BD CARTO® detail_hydrographique</em>.</p>
 				  <p class="note">Ces 2 couches sont également disponibles en <a href="donnees/TutoQGIS_06_Requetes.zip" >téléchargement</a> sous les noms <b>aerogenerateurs_georisques_vgs.shp</b> et <b>BDCARTO_sommets.gpkg</b>.</p>
-					<p>A ce stade, votre projet contient donc ces 3 couches :</p>
+					<p>A ce stade, votre projet contient donc ces 3 couches&nbsp;:</p>
 					<figure>
 						<a href="illustrations/6_3_couches_chargees.jpg" >
 							<img src="illustrations/6_3_couches_chargees.jpg" alt="projet QGIS avec les 3 couches communes, éoliennes et détail_orographique" width="600" >
 						</a>
 					</figure>
-					<p>Pour commencer, nous allons <a href="01_02_info_geo.php#I23c">filtrer</a> la couche <em class="data ">BD CARTO® detail_hydrographique</em> pour ne garder que les sommets : <b>clic droit sur la couche &#8594; Filtrer...</b>, tapez la requête suivante : <b>"nature" = 'Sommet'</b>.</p>
+					<p>Pour commencer, nous allons <a href="01_02_info_geo.php#I23c">filtrer</a> la couche <em class="data ">BD CARTO® detail_hydrographique</em> pour ne garder que les sommets&nbsp;: <b>clic droit sur la couche &#8594; Filtrer...</b>, tapez la requête suivante&nbsp;: <b>"nature" = 'Sommet'</b>.</p>
 					<figure>
 						<a href="illustrations/6_3_eoliennes_sommets.jpg" >
 							<img src="illustrations/6_3_eoliennes_sommets.jpg" alt="Idem que juste au-dessus mais la couche de détails orographiques a été filtrée pour n'afficher que les sommets" width="400" >
@@ -91,7 +91,7 @@
 						</a>
 					</figure>
 					<p>A ce stade, 182 communes sont sélectionnées.</p>
-					<p>Il ne reste plus ensuite qu'à sélectionner les communes intersectant des sommets <b>à partir de cette sélection</b>, en utilisant l'option <b>Sélectionner parmi la sélection actuelle</b> en bas de la fenêtre :</p>
+					<p>Il ne reste plus ensuite qu'à sélectionner les communes intersectant des sommets <b>à partir de cette sélection</b>, en utilisant l'option <b>Sélectionner parmi la sélection actuelle</b> en bas de la fenêtre&nbsp;:</p>
 					<figure>
 						<a href="illustrations/6_3_communes_eoliennes_sommets_fenetre.jpg" >
 							<img src="illustrations/6_3_communes_eoliennes_sommets_fenetre.jpg" alt="Fenêtre de l'outil de sélection par localisation" width="600" >
@@ -112,9 +112,9 @@
 				<p>Le principe est le même que précédemment. Sélectionnons par exemple les communes de + de 10&nbsp;000 habitants avec éolienne.</p>
 				
 				<div class="manip">
-					<p>Commencez par sélectionner au moyen d'une <a href="06_01_req_attrib.php#VI11">requête attributaire</a> les communes de + de 10&nbsp;000 habitants : <b>"population" > 10000</b>.</p>
+					<p>Commencez par sélectionner au moyen d'une <a href="06_01_req_attrib.php#VI11">requête attributaire</a> les communes de + de 10&nbsp;000 habitants&nbsp;: <b>"population" > 10000</b>.</p>
 					<p><b>40 communes</b> sont sélectionnées.</p>
-					<p>Ensuite, au moyen d'une requête spatiale, sélectionnez parmi ces communes celles avec une éolienne, avec l'option <b>Sélectionner parmi la sélection actuelle</b> :</p>
+					<p>Ensuite, au moyen d'une requête spatiale, sélectionnez parmi ces communes celles avec une éolienne, avec l'option <b>Sélectionner parmi la sélection actuelle</b>&nbsp;:</p>
 					<figure>
 						<a href="illustrations/6_3_communes_sup10000_eoliennes_fenetre.jpg" >
 							<img src="illustrations/6_3_communes_sup10000_eoliennes_fenetre.jpg" alt="outil de sélection" width="600" >
@@ -129,9 +129,9 @@
 					<p class="note">Pour connaître le nom des communes sélectionnées, ouvrez la table attributaire de la couche de communes et choisir <b>Ne montrer que les entités sélectionnées</b> dans la liste déroulante en bas à gauche de la table.</p>
 				</div>
 				
-				<p>Il est aussi possible de procéder à l'inverse : sélectionner d'abord les communes avec éoliennes puis parmi celles-ci celles de + de 10&nbsp;000 habitants.</p>
+				<p>Il est aussi possible de procéder à l'inverse&nbsp;: sélectionner d'abord les communes avec éoliennes puis parmi celles-ci celles de + de 10&nbsp;000 habitants.</p>
 				
-				<p>Dans le chapitre suivant, nous verrons comment aller encore plus loin en écrivant directement des requêtes en langage SQL !</p>
+				<p>Dans le chapitre suivant, nous verrons comment aller encore plus loin en écrivant directement des requêtes en langage SQL&nbsp;!</p>
 
 				
 				<br>
@@ -142,15 +142,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_6.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_6.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -12,7 +12,7 @@
 			<h2>XII.4  Classification supervisée</h2>
 			
 			  <ul class="listetitres">
-			   <li><a href="#XII41">Qu'est-ce qu'une classification supervisée ?</a></li>
+			   <li><a href="#XII41">Qu'est-ce qu'une classification supervisée&nbsp;?</a></li>
 			   <li><a href="#XII42">Visualisation de l'image</a>
 			     <ul class="listesoustitres">
   				    <li><a href="#XII42a">Pixels en RFE (Réflectance au sol en pour 10000)</a></li>
@@ -28,13 +28,13 @@
 			 
 			  <p>Dans cette partie, nous allons effectuer une classification supervisée, c'est-à-dire se basant sur des données d'entraînement que vous aurez créées. Nous utiliserons pour cela une image Sentinel 2B acquise sur le bassin <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Endor%C3%A9isme">endoréique</a> de <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Okavango">l'Okavango</a>, au Botswana.</p>
 			  
-			  <h3>Qu'est-ce qu'une classification supervisée ?<a class="headerlink" id="XII41" href="#XII41"></a></h3>
+			  <h3>Qu'est-ce qu'une classification supervisée&nbsp;?<a class="headerlink" id="XII41" href="#XII41"></a></h3>
 			  
 			   <p>Comme une <a href="12_03_classif_nonsup.php#XII31">classification non supervisée</a>, une classification permet le regroupement des pixels d'une image pour aboutir à des catégories, par exemple d'occupation du sol. Mais à la différence de cette dernière, elle se base sur un <b>échantillonnage terrain</b> fait par l'utilisateur.</p>
 			   
 			   <p>Pour cet échantillonnage, il est possible de se baser sur une campagne de terrain avec des relevés d'occupation du sol, et/ou sur des bases de données autres (Corine Land Cover...).</p>
 			   
-			   <p>Il existe de nombreux algorithmes de classification supervisée :</p>
+			   <p>Il existe de nombreux algorithmes de classification supervisée&nbsp;:</p>
 			   
 			   <ul>
 			     <li>Algorithmes bayésiens</li>
@@ -151,7 +151,7 @@
             
            <figure>
 						<a href="illustrations/12_04_bandset.jpg" >
-							<img src="illustrations/12_04_bandset.jpg" alt="bandset pour l'image SENTINEL2B_20200619-Okavango : longueurs d'onde" width="650">
+							<img src="illustrations/12_04_bandset.jpg" alt="bandset pour l'image SENTINEL2B_20200619-Okavango&nbsp;: longueurs d'onde" width="650">
 						</a>
 			     </figure>
             
@@ -169,7 +169,7 @@
           	<div class="question">
           		<input type="checkbox" id="faq-2">
           		<p><label for="faq-2">Quelles autres compositions colorées pouvez-vous faire avec cette image&nbsp;?</label></p>
-          		<p class="reponse">A compléter ! cf. image Inde</p>
+          		<p class="reponse">A compléter&nbsp;! cf. image Inde</p>
           	</div>
            </div>
            
@@ -197,8 +197,8 @@
     							<img src="illustrations/12_04_info_emprise.jpg" alt="Capture d'écran de l'emprise dans la partie Information de la fenêtre des propriétés" width="500">
     						</a>
     			   </figure>
-    			   <p>Cette emprise se lit comme ci : xmin, ymin, xmax, ymax.</p>
-    			   <p>La couche mesure donc en X :</p>
+    			   <p>Cette emprise se lit comme ci&nbsp;: xmin, ymin, xmax, ymax.</p>
+    			   <p>La couche mesure donc en X&nbsp;:</p>
     			   <code>750000 - 723200 = 26800</code>
     			   <p>Soit 26,8 km, et en Y&nbsp;:</p>
     			   <code>7812800 - 7790200 = 22600</code>
@@ -218,7 +218,7 @@
     			   <p>Dessinez ensuite le contour de l'image satellite, en cliquant sur chacun de ses 4 angles, avec un clic droit n'importe où pour terminer. Vous pouvez lire la surface de la zone que vous avez délimitée dans la fenêtre de l'outil, en choisissant l'unité kilomètres carrés&nbsp;:</p>
     			   <figure>
     						<a href="illustrations/12_04_mesure_res.jpg" >
-    							<img src="illustrations/12_04_mesure_res.jpg" alt="Résultat de la mesure à la main : environ 610 km2" width="400">
+    							<img src="illustrations/12_04_mesure_res.jpg" alt="Résultat de la mesure à la main&nbsp;: environ 610 km2" width="400">
     						</a>
     			   </figure>
     			   <p>Cette mesure variera selon les points où vous avez cliqué.</p>
@@ -277,15 +277,15 @@
 			     
 			     <figure>
   						<a href="illustrations/12_04_classif_fenetre.jpg" >
-  							<img src="illustrations/12_04_classif_fenetre.jpg" alt="Fenêtre de l'outil de classification, avec les options : utiliser MC ID, algorithme max de vraisemblance, rapport de classification" width="600">
+  							<img src="illustrations/12_04_classif_fenetre.jpg" alt="Fenêtre de l'outil de classification, avec les options&nbsp;: utiliser MC ID, algorithme max de vraisemblance, rapport de classification" width="600">
   						</a>
   					</figure>
   					
   					<ul>
-  					 <li class="espace">Sélectionner un jeu de bande : a priori il y a un seul jeu de bandes dans notre projet, laisser 1</li>
-  					 <li class="espace">Utiliser : sélectionnez <b>MC ID</b> pour obtenir dans l'image finale autant de catégories que de macro-classes, c-est-à-dire de classes d'occupation du sol (en choisissant C ID nous aurions autant de catégories que de polygones)</li>
-  					 <li class="espace">Algorithme : sélectionnez <b>maximum de vraisemblance</b> et laissez le seuil à 0. Si le seuil est défini, avec une valeur entre 0 et 100, les pixels ayant une probabilité inférieure à ce seuil d'appartenir à une classe seront exclus de la classification</li>
-  					 <li class="espace">Classification d'occupation des sols : ne sélectionnez aucune valeur. Il s'agit d'un autre algorithme de classification qui peut être utilisé seul ou bien combiné à celui choisi au-dessus. Pour plus d'infos voir <a class="ext" target="_blank" href="https://semiautomaticclassificationmanual.readthedocs.io/fr/latest/classificationTab.html#land-cover-signature-classification" >la documentation (Land Cover Signature Classification)</a>&nbsp;!</li>
+  					 <li class="espace">Sélectionner un jeu de bande&nbsp;: a priori il y a un seul jeu de bandes dans notre projet, laisser 1</li>
+  					 <li class="espace">Utiliser&nbsp;: sélectionnez <b>MC ID</b> pour obtenir dans l'image finale autant de catégories que de macro-classes, c-est-à-dire de classes d'occupation du sol (en choisissant C ID nous aurions autant de catégories que de polygones)</li>
+  					 <li class="espace">Algorithme&nbsp;: sélectionnez <b>maximum de vraisemblance</b> et laissez le seuil à 0. Si le seuil est défini, avec une valeur entre 0 et 100, les pixels ayant une probabilité inférieure à ce seuil d'appartenir à une classe seront exclus de la classification</li>
+  					 <li class="espace">Classification d'occupation des sols&nbsp;: ne sélectionnez aucune valeur. Il s'agit d'un autre algorithme de classification qui peut être utilisé seul ou bien combiné à celui choisi au-dessus. Pour plus d'infos voir <a class="ext" target="_blank" href="https://semiautomaticclassificationmanual.readthedocs.io/fr/latest/classificationTab.html#land-cover-signature-classification" >la documentation (Land Cover Signature Classification)</a>&nbsp;!</li>
   					 <li class="espace">Sortie de la classification&nbsp;: il est possible ici de spécifier un style ou un masque pour l'image en sortie, créer un fichier vecteur de sortie en plus du geotiff, créer un <b>rapport de classification</b> qui indiquera pour chaque classe le nombre et le pourcentage de pixels concernés, ainsi que la surface. Ici, <b>vous pouvez ne cocher que la case du rapport de classification</b>.</li>
   					 <li class="espace">En cochant la case <em>sauvegarder les fichiers temporaires</em>, vous obtiendrez également un raster pour chacun des ROI utilisés, plus un raster &#171;&nbsp;général&nbsp;&#187;&nbsp;; voir <a class="ext" target="_blank" href="https://semiautomaticclassificationmanual.readthedocs.io/fr/latest/classificationTab.html#classification-output-1" >la documentation (Save algorithm files)</a> pour plus d'informations.</li>
   					</ul>
@@ -300,7 +300,7 @@
 			     <p>Pour mieux voir ce résultat, il est possible de <b>modifier le style</b> de cette couche. Rendez-vous dans ses propriétés &#8594; Symbologie&nbsp;: vous pouvez modifier la <b>couleur</b> de chaque classe et son <b>étiquette</b> en double-cliquant dessus (oui, il est possible de mettre des caractères accentués dans les étiquettes&nbsp;!)&nbsp;:</p>
 			     <figure>
   						<a href="illustrations/12_04_classif_res_style.jpg" >
-  							<img src="illustrations/12_04_classif_res_style.jpg" alt="Fenêtre des propriétés du geotiff créé avec la classification, rubrique style, avec des couleurs 'classiques' : bleu pour l'eau, vert foncé pour la végétation arborée, vert clair pour la végétation rase, jaune pour le sol nu, et des étiquettes correspondant aux noms des classes." width="500">
+  							<img src="illustrations/12_04_classif_res_style.jpg" alt="Fenêtre des propriétés du geotiff créé avec la classification, rubrique style, avec des couleurs 'classiques'&nbsp;: bleu pour l'eau, vert foncé pour la végétation arborée, vert clair pour la végétation rase, jaune pour le sol nu, et des étiquettes correspondant aux noms des classes." width="500">
   						</a>
   					</figure>
   					<p>pour un résultat qui doit ressemble à ceci (ce résultat dépendra de vos ROI&nbsp;!)&nbsp;:</p>
@@ -309,11 +309,11 @@
   							<img src="illustrations/12_04_classif_res.jpg" alt="Résultat de la classification, avec l'eau en bleu, la végétation arborée en vert foncé, la végétation rase en vert clair et le sol nu en jaune" width="600">
   						</a>
   					</figure>
-  					<p class="keskonfai">Alors là, j'ai un truc assez différent du cours, j'ai dû mal choisir mes ROI !!</p>
+  					<p class="keskonfai">Alors là, j'ai un truc assez différent du cours, j'ai dû mal choisir mes ROI&nbsp;!!</p>
   					<p>Vous pouvez également ouvrir le rapport de classification avec un tableur, ce fichier CSV a été créé au même endroit que l'image avec le suffixe <em>_report</em> (le délimiteur est la tabulation)&nbsp;:</p>
   					<figure>
   						<a href="illustrations/12_04_rapport_classif.jpg" >
-  							<img src="illustrations/12_04_rapport_classif.jpg" alt="Rapport de classification : tableau avec 4 colonnes Class, PixelSum, Percentage % et Area [metre^2], et 4 lignes pour les 4 classes" width="400">
+  							<img src="illustrations/12_04_rapport_classif.jpg" alt="Rapport de classification&nbsp;: tableau avec 4 colonnes Class, PixelSum, Percentage % et Area [metre^2], et 4 lignes pour les 4 classes" width="400">
   						</a>
   					</figure>
   					<p>On peut y lire par exemple que la classe 3 (végétation rase) rassemble un peu plus de 35% des pixels de l'image. Bien sûr, vos résultats seront sûrement un peu différents&nbsp;!</p>
@@ -321,7 +321,7 @@
 			  
 			  <h3>Interprétation des résultats et mise en page<a class="headerlink" id="XII45" href="#XII45"></a></h3>
 			  
-			   <p class="keskonfai">A faire !!</p>
+			   <p class="keskonfai">A faire&nbsp;!!</p>
 			  
 			  <br>
         <p>Vous êtes arrivé.e au bout de ce tutoriel. Si vous le suivez depuis le début, bravo pour votre patience, et sinon bravo également&nbsp;!</p>
@@ -338,15 +338,15 @@
 
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_12.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_12.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 		
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

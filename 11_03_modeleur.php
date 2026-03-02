@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -36,7 +36,7 @@
 				
 				<p>Les modèles sont surtout utiles pour chaîner plusieurs traitements. Par exemple, imaginons que notre but soit non seulement de découper une couche par une autre, mais ensuite de changer le SCR de la couche découpée pour la passer en WGS84 par exemple.</p>
 				<p>Il est possible de <b>créer un modèle enchaînant les deux outils</b>, qui pourra être lancé facilement sur plusieurs couches, et même être exécuté <a href="11_02_par_lot.php">par lot</a>.</p>
-				<p class="note">Ici nous verrons un exemple simple, mais un modèle peut comporter autant d'outils et de paramètres que l'on souhaite !</p>
+				<p class="note">Ici nous verrons un exemple simple, mais un modèle peut comporter autant d'outils et de paramètres que l'on souhaite&nbsp;!</p>
 				<div class="manip">
 					<p>Dans la boîte à outils Traitements, cliquez sur l'icône <b>Modèles</b> tout en haut à gauche et choisissez <b>Créer un nouveau modèle</b>.</p>
 					<figure>
@@ -180,7 +180,7 @@
         						</a>
         					</figure>
     						<p>Dans l'onglet <b>Propriétés du modèle</b> de la partie gauche de la fenêtre, choisissez le nom sous lequel votre modèle sera disponible dans la boîte à outils, par exemple <b>découper et modifier SCR</b>.</p>
-    						<p>Tapez également le nom de son groupe, c'est-à-dire la rubrique dans laquelle votre modèle apparaîtra au sein de la boîte à outils : <b>tests</b> par exemple.</p>
+    						<p>Tapez également le nom de son groupe, c'est-à-dire la rubrique dans laquelle votre modèle apparaîtra au sein de la boîte à outils&nbsp;: <b>tests</b> par exemple.</p>
     					</div>
     					
     					<p>Si le groupe n'existe pas déjà, il sera créé.</p>
@@ -189,10 +189,10 @@
     						<p><img class="icone" src="illustrations/11_03_enregistrer_modele_icone.jpg" alt="icône Enregistrer" >Cliquez ensuite sur l'icône <b>Enregistrer le modèle sous</b> dans la barre d'outils en haut. Dans la fenêtre qui s'ouvre alors, choisissez un nom pour votre modèle (il s'agit ici du nom du fichier qui sera créé), par exemple <b>couper_modifSCR</b>.</p>
     					</div>
     					
-    					<p>Notez qu'il va être enregistré dans le répertoire par défaut des modèles : processing/models dans le dossier qgis, et qu'il possède l'extension <em>.model3</em> (pour QGIS 3). Il est conseillé de le laisser dans ce répertoire par défaut.</p>
+    					<p>Notez qu'il va être enregistré dans le répertoire par défaut des modèles&nbsp;: processing/models dans le dossier qgis, et qu'il possède l'extension <em>.model3</em> (pour QGIS 3). Il est conseillé de le laisser dans ce répertoire par défaut.</p>
     					
     					<div class="manip">
-      					<p>Vous pouvez fermer la fenêtre du modeleur. Votre modèle est maintenant accessible dans la boîte à outils :</p>
+      					<p>Vous pouvez fermer la fenêtre du modeleur. Votre modèle est maintenant accessible dans la boîte à outils&nbsp;:</p>
       					<figure>
       						<a href="illustrations/11_03_emplacement_modele.jpg" >
       							<img src="illustrations/11_03_emplacement_modele.jpg" alt="Emplacement du modèle dans la boîte à outils" width="300">
@@ -212,7 +212,7 @@
     					</figure>
     					
     					<div class="manip">
-    					   <p>Si vous avez fermé la fenêtre d'édition du modèle, vous pouvez y accéder à nouveau : <b>boîte à outils &#8594; modèles &#8594; tests (ou le nom de votre groupe) &#8594; clic droit sur le nom de votre outil &#8594; Éditer le modèle...</b></p>
+    					   <p>Si vous avez fermé la fenêtre d'édition du modèle, vous pouvez y accéder à nouveau&nbsp;: <b>boîte à outils &#8594; modèles &#8594; tests (ou le nom de votre groupe) &#8594; clic droit sur le nom de votre outil &#8594; Éditer le modèle...</b></p>
     					   
         				   <p>Dans la barre d'outils en haut de la fenêtre d'édition du modèle, cliquez sur l'icône <b>Éditer l'aide du modèle</b>.</p>
                            <figure>
@@ -231,7 +231,7 @@
         				   <p>Vous pouvez également rédiger l'aide pour d'autres parties, par exemple pour les 2 paramètres en entrée et le rendu.</p>
     					</div>
     					
-    					<p class="note">Pour info, il est possible d'éditer directement le HTML de l'aide : dans <b>Description de l'algorithme</b>, cliquez sur le bouton tout à droite <b>Éditer la source HTML</b>.</p>
+    					<p class="note">Pour info, il est possible d'éditer directement le HTML de l'aide&nbsp;: dans <b>Description de l'algorithme</b>, cliquez sur le bouton tout à droite <b>Éditer la source HTML</b>.</p>
     					
     					<p>Votre modèle est fini et possède même une aide... C'est le moment de le tester&nbsp;!</p>
 						
@@ -246,7 +246,7 @@
 							<p>Si elles ne sont pas déjà chargées, ajoutez à QGIS les couches <em class='data'>OSM_routes</em> et <em class="data">SAINTE_RADEGONDE</em> situées dans le dossier <b>TutoQGIS_11_Automatisation/donnees</b>.</p>
 							<div class="question">
 								<input type="checkbox" id="faq-1">
-								<p><label for="faq-1">Dans quel SCR sont ces deux couches ?</label></p>
+								<p><label for="faq-1">Dans quel SCR sont ces deux couches&nbsp;?</label></p>
 								<p class="reponse">Les 2 couches sont en RGF93 Lambert 93, code EPSG 2154 (cf. <a href="02_03_couches_projets.php#II32">SCR d'une couche</a>).</p>
 							</div>
 							<p>Lancez votre modèle&nbsp;: <b>boîte à outils &#8594; modèles &#8594; tests (ou le nom de votre groupe) &#8594; double clic sur le nom de votre outil</b>.</p>
@@ -260,7 +260,7 @@
 								<li class="espace">couche masque&nbsp;: <em class="data">SAINTE_RADEGONDE</em></li>
 								<li class="espace">découpé+reprojeté&nbsp;: ne tapez rien, pour que le résultat soit une couche temporaire</li>
 							</ul>
-							<p><b>Exécutez</b>, vérifiez le SCR de la couche obtenue, ainsi que son contenu : elle ne doit comporter que les routes à l'intérieur de la commune de Sainte-Radégonde-des-Noyers.</p>
+							<p><b>Exécutez</b>, vérifiez le SCR de la couche obtenue, ainsi que son contenu&nbsp;: elle ne doit comporter que les routes à l'intérieur de la commune de Sainte-Radégonde-des-Noyers.</p>
 						</div>
 						
 					<h4>Découpage et reprojection de plusieurs couches (utilisation &#171; par lot &#187;)<a class="headerlink" id="XI33b" href="#XI33b"></a></h4>
@@ -288,15 +288,15 @@
 
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_11.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_11.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 		
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
@@ -64,20 +64,20 @@
         			 
         	   <h3>Création d'une grille<a class="headerlink" id="IX42" href="#IX42"></a></h3>
         		  
-    		      <p>Première étape : créer une grille. Elle devra avoir la même emprise que la couche de départ, et pour que les temps de calcul soient raisonnables nous utiliserons une taille de maille de 50 km.</p>
+    		      <p>Première étape&nbsp;: créer une grille. Elle devra avoir la même emprise que la couche de départ, et pour que les temps de calcul soient raisonnables nous utiliserons une taille de maille de 50 km.</p>
     		      
     		      <div class="manip">
     		          <p>Ouvrez un nouveau projet QGIS, chargez la couche shapefile <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC00_221_FR_RGF</a></em></p>
     		          <p>Vous pouvez également chargez la couche de pays <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">region</a></em> qui nous aidera à nous repérer.</p>
     		          <p>Pour comprendre les données CLC, ouvrez la table attributaire, qui comporte 3 champs&nbsp;:</p>
     		          <ul>
-    		              <li class="espace"><b>CODE_00</b> correspond au type d'occupation du sol (ici, une seule valeur : 221, qui correspond aux vignes). Pour connaître la signification des codes, lisez le fichier <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC_nomenclature.xls</a></em> dans le dossier <b>TutoQGIS_09_AnalyseSpat/metadonnees</b>.</li>
+    		              <li class="espace"><b>CODE_00</b> correspond au type d'occupation du sol (ici, une seule valeur&nbsp;: 221, qui correspond aux vignes). Pour connaître la signification des codes, lisez le fichier <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">CLC_nomenclature.xls</a></em> dans le dossier <b>TutoQGIS_09_AnalyseSpat/metadonnees</b>.</li>
     		              <li class="espace"><b>AREA_HA</b> correspond à la surface en hectares (1 ha = 10&nbsp;000 m&#178;)</li>
     		              <li class="espace">et <b>ID</b> est un champ d'identifiant unique</li>
     		          </ul>
                       <div class="question">
                     		<input type="checkbox" id="faq-1">
-                    		<p><label for="faq-1">Quel est le CRS de cette couche&nbsp;? (réflexe !!!)</label></p>
+                    		<p><label for="faq-1">Quel est le CRS de cette couche&nbsp;? (réflexe&nbsp;!!!)</label></p>
                     		<p class="reponse">Le SCR de cette couche est <b>RGF93/Lambert93 code EPSG 2154</b>.</p>
                       </div>
     		          <p>Laissons de côté ces données pour le moment, et créons la grille. Pour cela, ouvrez la boîte à outils et faites une recherche sur le mot <b>grille</b>&nbsp;:</p>
@@ -121,9 +121,9 @@
     		     <p>La couche résultat est une couche &#171;&nbsp;à plat&nbsp;&#187;, sans superposition.</p>
     		     <figure>
     		         <a href="illustrations/9_4_union_principe.svg" >
-    			         <img src="illustrations/9_4_union_principe.svg" alt="Explication union : couches en entrée et couche résultat" width="600">
+    			         <img src="illustrations/9_4_union_principe.svg" alt="Explication union&nbsp;: couches en entrée et couche résultat" width="600">
     			     </a>
-    			     <figcaption>Union : couche en entrée 1, couche en entrée 2 et couche résultat : elle contient 3 polygones distincts, sans superposition.</figcaption>
+    			     <figcaption>Union&nbsp;: couche en entrée 1, couche en entrée 2 et couche résultat&nbsp;: elle contient 3 polygones distincts, sans superposition.</figcaption>
     		     </figure>
     		     
     		     <p>Notre but sera ici de faire une union entre la grille et les données CLC sur la vigne.</p>
@@ -186,7 +186,7 @@
     			         <li class="espace">Cochez la case <b>Mise à jour d'un champ existant</b> en haut à droite...</li>
     			         <li class="espace">et choisissez le champ en question dans la liste en-dessous&nbsp;: <b>AREA_HA</b></li>
     			         <li class="espace">Nous allons utiliser une fonction conditionnelle pour ne calculer la surface que pour les polygones de vignes, c'est-à-dire dont la valeur pour le champ AREA_HA n'est pas nulle. Nous utiliserons donc la fonction <b>if</b> (rubrique Conditions) dont vous pouvez lire l'aide.</li>
-    			         <li class="espace">L'expression est donc la suivante : <b> if("AREA_HA" is not null, $area/10000, 0)</b>. Cela signifie que si le champ AREA_HA n'a pas de valeur nulle, il sera recalculé selon l'expression <b>$area/10000</b>, c'est-à-dire la surface en hectares, et sinon il prendra la valeur zéro.</li>
+    			         <li class="espace">L'expression est donc la suivante&nbsp;: <b> if("AREA_HA" is not null, $area/10000, 0)</b>. Cela signifie que si le champ AREA_HA n'a pas de valeur nulle, il sera recalculé selon l'expression <b>$area/10000</b>, c'est-à-dire la surface en hectares, et sinon il prendra la valeur zéro.</li>
     		         </ul>
     		         <p>Cliquez sur <b>OK</b>, vérifiez le résultat dans la table attributaire, et <a href="05_02_points.php#V24">quittez le mode édition</a> en enregistrant les modifications.</p>
     		     </div>
@@ -212,9 +212,9 @@
         			     </a>
     			     </figure>
     			     <ul>
-    			         <li class="espace">Couche source : votre couche d'union</li>
-    			         <li class="espace">Grouper par expression : les entités ayant la même valeur pour le champ choisi ici seront fusionnées, choisir le champ <b>id</b> correspondant à l'identifiant unique des cases de la grille</li>
-    			         <li class="espace">Agrégats : on peut définir dans cette partie quels champs garder, et pour ceux-ci quelle fonction d'agrégation utiliser. On peut par exemple&nbsp;:
+    			         <li class="espace">Couche source&nbsp;: votre couche d'union</li>
+    			         <li class="espace">Grouper par expression&nbsp;: les entités ayant la même valeur pour le champ choisi ici seront fusionnées, choisir le champ <b>id</b> correspondant à l'identifiant unique des cases de la grille</li>
+    			         <li class="espace">Agrégats&nbsp;: on peut définir dans cette partie quels champs garder, et pour ceux-ci quelle fonction d'agrégation utiliser. On peut par exemple&nbsp;:
     			             <ul>
     			                 <li>supprimer les champs <b>left, top, right, bottom, row_index et col_index</b> issus de la grille, et <b>ID_2 et CODE_00</b> issus de la couche CLC, puisqu'ils ne nous seront pas utiles. Le champ <b>fid</b> peut aussi être supprimé.</li>
     			                 <li>garder le champ <b>id</b> (identifiant de la grille), avec la fonction d'agrégation <b>first value</b>&nbsp;: l'entité fusionnée aura la première valeur rencontrée pour ce champ (sachant que de toute manière toutes les valeurs seront égales puisqu'on fusionne selon ce champ)</li>
@@ -223,7 +223,7 @@
     			         </li>
     			         <li class="espace">Agrégé&nbsp;: comme d'habitude, cliquez sur <b>...</b> tout à droite pour spécifier le nom et l'emplacement du résultat, au format GeoPackage ou shapefile.</li>
     			     </ul>
-    			     <p><b>Exécuter</b>, patientez... et admirez le résultat :</p>
+    			     <p><b>Exécuter</b>, patientez... et admirez le résultat&nbsp;:</p>
     			     <figure>
     			         <a href="illustrations/9_4_agreg_resultat.jpg" >
         			         <img src="illustrations/9_4_agreg_resultat.jpg" alt="Couche d'agrégation" width="350">
@@ -264,7 +264,7 @@
     			         <li class="espace">Couche source&nbsp;: il s'agit de la couche à rastériser, ici notre couche issue de l'agrégation</li>
     			         <li class="espace">Champ à utiliser pour la valeur fixe à créer&nbsp;: choisissez ici le champ qui sera utilisé pour déterminer les valeurs des pixesls, donc <b>VIGNE_HA</b></li>
     			         <li class="espace">Unité du raster résultat&nbsp;: nous allons spécifier non pas un nombre de pixels en largeur et hauteur pour le futur raster, mais une taille de pixels en mètres, choisir donc <b>Unités géoréférencées</b></li>
-    			         <li class="espace">Largeur/Résolution horizontale et Hauteur/Résolution verticale : tapez la largeur et hauteur de chaque pixel en mètres, soit <b>50&nbsp;000</b> puisque notre grille a une résolution de 50 km</li>
+    			         <li class="espace">Largeur/Résolution horizontale et Hauteur/Résolution verticale&nbsp;: tapez la largeur et hauteur de chaque pixel en mètres, soit <b>50&nbsp;000</b> puisque notre grille a une résolution de 50 km</li>
     			         <li class="espace">emprise du résultat&nbsp;: cliquez sur la flèche tout à droite pour spécifier une couche modèle pour l'emprise du futur raster, par exemple la grille en entrée, ou la couche d'agrégation</li>
     			         <li class="espace">Rastérisé&nbsp;: spécifiez un nom et un emplacement pour le raster, ainsi que son format&nbsp;: <b>TIF</b></li>
     			     </ul>
@@ -292,7 +292,7 @@
     			     </figure>
     		     </div>
     		     
-    		     <p>Avec cette représentation utilisant une interpolation linéaire, contrairement à ce que la fenêtre pourrait laisser croire, il n'y a pas de classes : chaque valeur correspond à une couleur unique, en étirant les couleurs de début et de fin du dégradé pour les faire correspondre aux valeurs minimales et maximales.</p>
+    		     <p>Avec cette représentation utilisant une interpolation linéaire, contrairement à ce que la fenêtre pourrait laisser croire, il n'y a pas de classes&nbsp;: chaque valeur correspond à une couleur unique, en étirant les couleurs de début et de fin du dégradé pour les faire correspondre aux valeurs minimales et maximales.</p>
     		     
     		     <p>Bravo&nbsp;! Vous êtes arrivés au résultat final&nbsp;!</p>
     		     
@@ -307,15 +307,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_9.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_9.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

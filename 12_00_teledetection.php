@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -12,7 +12,7 @@
 			
 			<p>Cette douxième partie est basée sur le cours créé par <a target="_blank" class="ext" href="https://perso.univ-rennes2.fr/samuel.corgne" >Samuel Corgne</a> pour les étudiants en <a target="_blank" class="ext" href="https://formations.univ-rennes2.fr/fr/formations/licence-22/licence-mention-geographie-JE70TNDB.html">licence 3 de Géographie de l'Université Rennes 2</a>.</p>
 
-			<p>Elle traite de télédétection, et aborde les notions suivantes :</p>
+			<p>Elle traite de télédétection, et aborde les notions suivantes&nbsp;:</p>
 				<ul>
 					<li>Caractéristiques spectrales, spatiales, radiométriques et temporelles associées à une image satellitaire</li>
 					<li>Interprétation d'une image satellitaire, extraction de l’information spatiale et spectrale</li>
@@ -20,7 +20,7 @@
 					<li>Extraction et analyse des indices spectraux NDVI (Normalized Difference Vegetation Index) et NBR (Normalized Burn Ratio)</li>
 					<li>Métadonnées d'une image satellitaire</li>
 					<li>Classification non supervisée</li>
-					<li>Classification supervisée avec échantillonnage terrain au moyen de différents algorithmes : bayésiens, machine learning (SVM, Random Forest, réseaux de neurones...) et Deep Learning</li>
+					<li>Classification supervisée avec échantillonnage terrain au moyen de différents algorithmes&nbsp;: bayésiens, machine learning (SVM, Random Forest, réseaux de neurones...) et Deep Learning</li>
 				</ul>
 			<p>Cette partie utilise <a target="_blank" class="ext" href="https://fromgistors.blogspot.com/p/semi-automatic-classification-plugin.html">l'extension de classification semi-automatique pour QGIS</a> créée par <a target="_blank" class="ext" href="https://github.com/semiautomaticgit" >Luca Congedo</a>.</p>
 			
@@ -31,15 +31,15 @@
 		</div>
 		
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_12.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_12.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

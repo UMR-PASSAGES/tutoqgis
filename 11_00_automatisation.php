@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -11,7 +11,7 @@
 			<h1>XI.  Automatisation de traitements</h1>
 			<p>Cette onzième partie vous permettra d'aller plus loin dans votre utilisation de QGIS. Le but est ici de voir comment automatiser des traitements sous QGIS : par exemple, au lieu de découper une couche par une autre au moyen de l'outil découper, vous avez 30 couches à découper par une même autre et vous ne voulez pas faire 30 fois la même opération.</p>
 			<p>Nous allons utiliser 3 méthodes différentes pour cela.</p>
-			<p>Notions abordées :</p>
+			<p>Notions abordées&nbsp;:</p>
 				<ul>
 					<li>Exécution d'un outil &#171;&nbsp;par lot&nbsp;&#187;</li>
 					<li>Modèles</li>
@@ -23,15 +23,15 @@
 		</div>
 		
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_11.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_11.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

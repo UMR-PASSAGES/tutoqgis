@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -12,14 +12,14 @@
 			<h2>XII.3  Classification non supervisée</h2>
 			
   			<ul class="listetitres">
-  				<li><a href="#XII31">Qu'est-ce qu'une classification non supervisée ?</a></li>
+  				<li><a href="#XII31">Qu'est-ce qu'une classification non supervisée&nbsp;?</a></li>
   				<li><a href="#XII32">Prise en main des données</a></li>
   				<li><a href="#XII33">Extraction des signatures spectrales</a></li>
   				<li><a href="#XII34">Classification non supervisée au moyen de la méthodes des K-Means</a>
   				  <ul class="listesoustitres">
-  				    <li><a href="#XII34a">K-Means : comment ça marche&nbsp;?</a></li>
+  				    <li><a href="#XII34a">K-Means&nbsp;: comment ça marche&nbsp;?</a></li>
   				    <li><a href="#XII34b">Mise en pratique sur l'image Sentinel-2</a></li>
-  				    <li><a href="#XII34c">Reclassification : regrouper des classes pour y voir plus clair</a></li>
+  				    <li><a href="#XII34c">Reclassification&nbsp;: regrouper des classes pour y voir plus clair</a></li>
   				  </ul>
   				</li>
   			</ul>
@@ -29,11 +29,11 @@
 				
 				<p>Pour cela, nous allons utiliser une image Sentinel-2 du Sud de l'Inde. Nous commencerons par explorer cette image et ses signature spectrales, comme vu <a href="12_01_intro_teledec.php" >ici</a> et <a href="12_02_info_spectrale.php" >là</a>, avant d'effectuer une classification non supervisée par la méthode des K-Means pour en extraire l'occupation du sol.</p>
 				
-				<h3>Qu'est-ce qu'une classification non supervisée ?<a class="headerlink" id="XII31" href="#XII31"></a></h3>
+				<h3>Qu'est-ce qu'une classification non supervisée&nbsp;?<a class="headerlink" id="XII31" href="#XII31"></a></h3>
 				
           <p>Un peu de théorie avant de commencer&nbsp;! <b>Une classification a pour but de partir d'une image pour en regrouper les pixels sous forme de catégories.</b> Typiquement, on va partir d'une image satellite pour arriver à une couche d'occupation du sol avec par exemple 4 catégories&nbsp;: surface en eau, sol nu, forêt, cultures. Bien sûr, les catégories vont varier suivant l'image et l'objectif.</p>
           
-          <p>On va distinguer 2 grands types de classification : <b>supervisée</b> ou <b>non supervisée</b>. Nous allons voir dans ce chapitre un exemple de classification non supervisée, c'est-à-dire uniquement basée sur les traitements statistiques de l'image, sans recours à un échantillonnage terrain. En gros c'est le logiciel qui fait tout le travail, ce qui a comme vous vous en doutez des avantages et des inconvénients&nbsp;!</p>
+          <p>On va distinguer 2 grands types de classification&nbsp;: <b>supervisée</b> ou <b>non supervisée</b>. Nous allons voir dans ce chapitre un exemple de classification non supervisée, c'est-à-dire uniquement basée sur les traitements statistiques de l'image, sans recours à un échantillonnage terrain. En gros c'est le logiciel qui fait tout le travail, ce qui a comme vous vous en doutez des avantages et des inconvénients&nbsp;!</p>
           
           <p>L'hypothèse de travail est que les objets de l'image ayant une signature spectrale identique ou similaire appartiennent à la même classe d'occupation du sol.</p>
           
@@ -141,7 +141,7 @@
             
           <figure>
   						<a href="illustrations/12_03_bandset.jpg" >
-  							<img src="illustrations/12_03_bandset.jpg" alt="Bandset pour l'image Sentinel-2 S2A_20200401 : choix des longueurs d'onde" width="650">
+  							<img src="illustrations/12_03_bandset.jpg" alt="Bandset pour l'image Sentinel-2 S2A_20200401&nbsp;: choix des longueurs d'onde" width="650">
   						</a>
   					</figure>
   				
@@ -181,8 +181,8 @@
 				  </ol>
 				  
 				  <figure>
-  						<a href="illustrations/12_03_signatures_spectrales.png" >
-  							<img src="illustrations/12_03_signatures_spectrales.png" alt="Nuage de points à gauche, le même nuage de points avec 3 groupes déterminés avec la méthode des K-Means à droite" width="600">
+  						<a href="illustrations/12_03_signatures_spectrales.jpg" >
+  							<img src="illustrations/12_03_signatures_spectrales.jpg" alt="Nuage de points à gauche, le même nuage de points avec 3 groupes déterminés avec la méthode des K-Means à droite" width="600">
   						</a>
   					</figure>
 				  
@@ -195,7 +195,7 @@
 
           <p>Les signatures spectrales permettent de comprendre comment réfléchit l'énergie incidente (l'énergie solaire) sur un objet, elles peuvent être utilisées par la suite dans un processus de classification supervisée (cf. partie suivante).</p>
           
-          <p>Sur ce graphique, nous avons représenté les signatures spectrales de 4 objets : les surfaces en eau, les surfaces en forêt, les surfaces en sol nu et les surfaces en culture.</p>
+          <p>Sur ce graphique, nous avons représenté les signatures spectrales de 4 objets&nbsp;: les surfaces en eau, les surfaces en forêt, les surfaces en sol nu et les surfaces en culture.</p>
           <ul>
             <li>Pour les surfaces en eau, on constate que dans le visible, entre 0.50 et 0.70 µm, les réflectances sont autour de 15% ce qui est relativement important et qui s'explique par une forte turbidité de l'objet qui a été sélectionné. Ses réflectances sont plus faibles dans le PIR et l'IRM.</li>
             <li>Pour les surfaces en forêt, on a ici une signature "classique" de la végétation, c'est-à-dire avec des faibles valeurs dans le bleu et le rouge (absorption du rayonnement incident dans ces bandes spectrales par les pigments chlorophylliens). On observe un léger pic dans la bande spectrale du vert (0.56µm) et des valeurs de réflectance plus importante dans le red edge et surtout le PIR (autour de 25% de réflectance). Celles-ci baissent dans les bandes spectrales de l'IRM (1.6 et 2.2 µm).</li>
@@ -205,7 +205,7 @@
 				
 				<h3>Classification au moyen de la méthodes des K-Means<a class="headerlink" id="XII34" href="#XII34"></a></h3>
 				
-  				<h4>K-Means : comment ça marche&nbsp;?<a class="headerlink" id="XII34a" href="#XII34a"></a></h4>
+  				<h4>K-Means&nbsp;: comment ça marche&nbsp;?<a class="headerlink" id="XII34a" href="#XII34a"></a></h4>
   				
   				  <p>La méthode des <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/K-moyennes" >K-Means ou K-moyennes</a> est une méthode de clustering utilisée pour regrouper des individus (dans notre cas, des pixels), de manière à ce qu'au sein de chaque groupe les individus se ressemblent le plus possible, et que les groupes soient le plus différents possibles les uns des autres.</p>
   				  
@@ -218,7 +218,7 @@
   				  
   				  <p>Cette méthode est utilisée en télédétection mais également dans beaucoup d'autres domaines&nbsp;!</p>
   				  
-  				  <p><b>Cette méthode nécessite que l'utilisateur détermine au préalable un nombre de classes.</b> Elle se déroule en plusieurs étapes :</p>
+  				  <p><b>Cette méthode nécessite que l'utilisateur détermine au préalable un nombre de classes.</b> Elle se déroule en plusieurs étapes&nbsp;:</p>
   				  
   				  <ul>
   				    <li class="espace">Choix au hasard d'un point par classe (si l'utilisateur a choisi d'utiliser 4 classes, 4 points seront tirés au sort). Ces points constitueront le centre des classes.</li>
@@ -251,7 +251,7 @@
     					
     					<p>Les principaux paramètres à définir ici sont les suivants&nbsp;:</p>
     					<ul>
-    					 <li class="espace">Méthode : <b>K-Means</b> (la méthode <a class="ext" target="_blank" href="https://semiautomaticclassificationmanual.readthedocs.io/fr/latest/remote_sensing.html#isodata">ISODATA</a> est une autre méthode de classification non supervisée basée sur celle des K-Means)</li>
+    					 <li class="espace">Méthode&nbsp;: <b>K-Means</b> (la méthode <a class="ext" target="_blank" href="https://semiautomaticclassificationmanual.readthedocs.io/fr/latest/remote_sensing.html#isodata">ISODATA</a> est une autre méthode de classification non supervisée basée sur celle des K-Means)</li>
     					 <li class="espace"><b>Nombre de classes&nbsp;: choisir 20</b>, nous procéderons ensuite à des regroupements pour arriver à 4 classes finales</li>
     					 <li class="espace"><b>Nombre max d'itérations</b>&nbsp;: il s'agit du nombre d'itérations de la méthode (voir <a href="12_03_classif.php#XII34a" >plus haut</a>). L'idéal est de fixer un nombre d'itérations assez élevé, 50 par exemple, mais le temps de calcul peut être assez important. Vous pouvez tester avec par exemple 10 itérations, et relancer avec un nombre plus important si le temps de calcul n'est pas trop élevé, en fonction de votre ordinateur&nbsp;!</li>
     					</ul>
@@ -266,7 +266,7 @@
   					 <li class="espace"><b>Distance algorithm</b>&nbsp;: cet algorithme définit comment la distance entre les points est calculée, il peut s'agir simplement de la distance euclidienne avec <em>plus proche voisin</em>, ou de la distance spectrale avec <em>Spectral Angle Mapping</em></li>
   					 <li class="espace"><b>Sauvegarder les résultats à la liste des signatures</b>&nbsp;: si cette case est cochée, les signatures spectrales des futures classes seront ajoutées à celles des ROI</li>
   					</ul>
-  					<p class="keskonfai">Pas trop sûre de l'explication sur les 3 options pour choisir la manière dont seront déterminées les centres des classes la 1ère fois !</p>
+  					<p class="keskonfai">Pas trop sûre de l'explication sur les 3 options pour choisir la manière dont seront déterminées les centres des classes la 1ère fois&nbsp;!</p>
 				  
 				    <div class="manip">
 				      <p>Une fois vos paramètres choisis, cliquez sur le bouton <b>Lancer</b> en bas de la fenêtre. Choisissez le nom et l'emplacement de l'image GeoTIFF qui sera créée en sortie, et patientez... (une barre de progression est visible en haut de la fenêtre de QGIS)</p>
@@ -282,7 +282,7 @@
 				    <p>C'est un premier résultat, qui est peu lisible à cause du grand nombre de classes. L'étape suivante est donc d'opérer des regroupements de classes manuellement, afin d'obtenir une image plus lisible.</p>
 				    
 				    
-				   <h4>Reclassification : regrouper des classes pour y voir plus clair<a class="headerlink" id="XII34c" href="#XII34c"></a></h4>
+				   <h4>Reclassification&nbsp;: regrouper des classes pour y voir plus clair<a class="headerlink" id="XII34c" href="#XII34c"></a></h4>
 				   
 				    <p>Notre objectif sera ici de regrouper des classes pour n'en obtenir que 4&nbsp;:</p>
 				    <ul>
@@ -309,7 +309,7 @@
     					 <li>Cliquez ensuite sur le bouton <b>Calculer les valeurs uniques</b> pour faire apparaître une ligne par classe (si vous avez suivi l'exemple, il y en aura donc 20) dans le tableau</li>
     					</ul>
 
-    					<p class="keskonfai"><em>Valeur C ID vers MC ID</em> : pas utilisé pour K-means puisque pas de hiérarchie pour ce type de classif</p>
+    					<p class="keskonfai"><em>Valeur C ID vers MC ID</em>&nbsp;: pas utilisé pour K-means puisque pas de hiérarchie pour ce type de classif</p>
     					
 				    </div>
 				  
@@ -325,15 +325,15 @@
 
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_12.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_12.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 		
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

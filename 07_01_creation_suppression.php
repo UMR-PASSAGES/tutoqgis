@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
@@ -20,7 +20,7 @@
 						</ul>
 					</li>
 					<li><a href="#VII13">Renommer un champ</a></li>
-					<li><a href="#VII14">Pour aller plus loin : refactoriser les champs</a></li>
+					<li><a href="#VII14">Pour aller plus loin&nbsp;: refactoriser les champs</a></li>
 				</ul>
 				<br>
 				
@@ -30,7 +30,7 @@
 			
 				<div class="manip">
 					<p>Ouvrez un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_07_Champs.zip">communes_bretagne_calcul</a></em> (dossier <b>TutoQGIS_07_Champs</b>).</p>
-					<p>Pour voir les champs de la table attributaire de cette couche, vous pouvez bien sûr ouvrir la table attributaire, mais vous pouvez également ouvrir les propriétés de la couche, rubrique <b>Champs</b> :</p>
+					<p>Pour voir les champs de la table attributaire de cette couche, vous pouvez bien sûr ouvrir la table attributaire, mais vous pouvez également ouvrir les propriétés de la couche, rubrique <b>Champs</b>&nbsp;:</p>
 					<figure>
 						<a href="illustrations/7_1_proprietes_champs.jpg" >
 							<img src="illustrations/7_1_proprietes_champs.jpg" alt="fenêtre des propriétés de la couche, rubrique champs" width="600" >
@@ -50,22 +50,22 @@
     				<div class="manip">
     					<p>Ouvrez la table attributaire de la couche <em class="data">communes_bretagne_calcul</em>.</p>
     					<p><img class="icone" src="illustrations/7_1_edition_icone.jpg" alt="icône passer en mode édition" ><a href="05_02_points.php#V21">Passez en mode édition</a> pour cette couche.</p>
-    					<p>Cliquez sur l'icône <b>Ajouter un champ</b> en haut de la table attributaire :</p>
+    					<p>Cliquez sur l'icône <b>Ajouter un champ</b> en haut de la table attributaire&nbsp;:</p>
     					<figure>
     						<img src="illustrations/7_1_BO_table_ajout.jpg" alt="barre d'outils de la table attributaire, icône d'ajout de champ entourée en rouge" width="600" >
     					</figure>
-    					<p>La fenêtre suivante s'ouvre :</p>
+    					<p>La fenêtre suivante s'ouvre&nbsp;:</p>
     					<figure>
     						<a href="illustrations/7_1_ajout_fenetre.jpg" >
     							<img src="illustrations/7_1_ajout_fenetre.jpg" alt="fenêtre de création de colonne" width="400" >
     						</a>
     					</figure>
     					<ul>
-    						<li class="espace"><b>Nom :</b> Tapez <b>nom_dept</b></li>
-    						<li class="espace"><b>Type :</b> choisissez texte puisque nous voulons y mettre les noms des départements</li>
-    						<li class="espace"><b>Longueur :</b> Dans le cas d'un champ type texte, cette valeur représente le nombre maximum de caractères que pourra contenir le champ. Tapez 50, ce qui devrait suffire.</li>
+    						<li class="espace"><b>Nom&nbsp;:</b> Tapez <b>nom_dept</b></li>
+    						<li class="espace"><b>Type&nbsp;:</b> choisissez texte puisque nous voulons y mettre les noms des départements</li>
+    						<li class="espace"><b>Longueur&nbsp;:</b> Dans le cas d'un champ type texte, cette valeur représente le nombre maximum de caractères que pourra contenir le champ. Tapez 50, ce qui devrait suffire.</li>
     					</ul>
-    					<p>Cliquez sur <b>OK</b> ; le champ est ajouté à la table, rempli pour l'instant de valeurs nulles.</p>
+    					<p>Cliquez sur <b>OK</b>&nbsp;; le champ est ajouté à la table, rempli pour l'instant de valeurs nulles.</p>
     					<figure>
     						<a href="illustrations/7_1_table_nouveau_champ.jpg" >
     							<img src="illustrations/7_1_table_nouveau_champ.jpg" alt="table avec le champ CODE_DEPT vide" width="600" >
@@ -80,7 +80,7 @@
 			         <div class="manip">
 			             <p><img class="icone" src="illustrations/7_1_edition_icone.jpg" alt="icône passer en mode édition" >Passez à nouveau en mode édition pour la couche <em class="data">communes_bretagne_calcul</em>.</p>
 			             <p>Ouvrez sa table attributaire si ce n'est pas déjà fait.</p>
-			             <p>Double-cliquez dans une case du champ <b>nom_dept</b> :</p>
+			             <p>Double-cliquez dans une case du champ <b>nom_dept</b>&nbsp;:</p>
 			             <figure>
     						<a href="illustrations/7_1_table_modifier.jpg" >
     							<img src="illustrations/7_1_table_modifier.jpg" alt="double clic dans une case du champ CODE_DEPT vide" width="100" >
@@ -103,11 +103,11 @@
     				
     				<div class="manip">
     					<p>Passez à nouveau en mode édition pour la couche <em class="data">communes_bretagne_calcul</em>.</p>
-    					<p>Cliquez sur l'icône <b>Supprimer la colonne</b> en haut de la table attributaire :</p>
+    					<p>Cliquez sur l'icône <b>Supprimer la colonne</b> en haut de la table attributaire&nbsp;:</p>
     					<figure>
     						<img src="illustrations/7_1_BO_table_suppression.jpg" alt="barre d'outils de la table attributaire, icône de suppression de champ entourée en rouge" width="600" >
     					</figure>
-    					<p>La fenêtre suivante apparaît :</p>
+    					<p>La fenêtre suivante apparaît&nbsp;:</p>
     					<figure>
     						<a href="illustrations/7_1_suppression_fenetre.jpg" >
     							<img src="illustrations/7_1_suppression_fenetre.jpg" alt="fenêtre de suppression de colonne" width="260" >
@@ -120,10 +120,10 @@
 			
 			    <h3>Renommer un champ<a class="headerlink" id="VII13" href="#VII13"></a></h3>
 			    
-            <p>Il est possible de renommer les champs de la table ; contrairement aux manipulations précédentes qui se font à partir de la table attributaire, il faut passer pour cela par les propriétés de la couche.</p>
+            <p>Il est possible de renommer les champs de la table&nbsp;; contrairement aux manipulations précédentes qui se font à partir de la table attributaire, il faut passer pour cela par les propriétés de la couche.</p>
             
             <div class="manip">
-              <p>Double-cliquez sur la couche <em class="data">communes_bretagne_calcul</em>, ou bien clic-droit sur son nom &#8594; <b>Propriétés...</b>, et rendez-vous dans la rubrique <b>Champs</b> :</p>
+              <p>Double-cliquez sur la couche <em class="data">communes_bretagne_calcul</em>, ou bien clic-droit sur son nom &#8594; <b>Propriétés...</b>, et rendez-vous dans la rubrique <b>Champs</b>&nbsp;:</p>
               <figure>
     						<a href="illustrations/7_1_renommer_champ.jpg" >
     							<img src="illustrations/7_1_renommer_champ.jpg" alt="fenêtre des propriétés de la couche, rubrique champs" width="600" >
@@ -137,14 +137,14 @@
     					<p>Vous pouvez ensuite fermer la fenêtre des propriétés de la couche et vérifier que les changements ont bien été pris en comte dans la table attributaire.</p>
             </div>			    
 			    
-			    <h3>Pour aller plus loin : refactoriser les champs<a class="headerlink" id="VII14" href="#VII14"></a></h3>
+			    <h3>Pour aller plus loin&nbsp;: refactoriser les champs<a class="headerlink" id="VII14" href="#VII14"></a></h3>
 			    
 			       <p>Sous le nom un peu barbare de &#171; refactoriser &#187; se cache la possibilité de <b>renommer les champs</b>, ainsi que d'en <b>modifier l'ordre et le type</b> (texte, nombre...). Cet outil offre également la possibilité de créer ou supprimer des champs.</p>
 			       <p>Notez que la couche en entrée ne sera pas directement modifiée, une nouvelle couche sera créée.</p>
 			       <p>Nous n'utiliserons pas cet outil, mais vous trouverez ici une brève description de son fonctionnement.</p>
 			       
 			       
-    		       <p>Pour accéder à l'outil : <b>boîte à outils Traitement  &#8594; Table vecteur &#8594; Refactoriser les champs</b>.</p>
+    		       <p>Pour accéder à l'outil&nbsp;: <b>boîte à outils Traitement  &#8594; Table vecteur &#8594; Refactoriser les champs</b>.</p>
 		           <figure>
     				   <a href="illustrations/7_1_outil_refactoriser.jpg" >
     				       <img src="illustrations/7_1_outil_refactoriser.jpg" alt="Outil refactoriser dans la boîte à outils Traitement" width="350" >
@@ -173,15 +173,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_7.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_7.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

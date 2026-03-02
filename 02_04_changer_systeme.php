@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -20,7 +20,7 @@
 				
 			<h3>Modifier le SCR du projet<a class="headerlink" id="II41" href="#II41"></a></h3>
 			
-				<p>Vous avez pu constater dans la partie <a href="02_03_couches_projets.php">II.3 Couches et projets : à chacun son système</a> que les couches d'un projet sont affichées dans le SCR du projet. Comment modifier le SCR du projet pour afficher les couches dans le SCR de votre choix&nbsp;?</p>
+				<p>Vous avez pu constater dans la partie <a href="02_03_couches_projets.php">II.3 Couches et projets&nbsp;: à chacun son système</a> que les couches d'un projet sont affichées dans le SCR du projet. Comment modifier le SCR du projet pour afficher les couches dans le SCR de votre choix&nbsp;?</p>
 				<p>Nous allons modifier le SCR du projet <em class="data">monde.qgz</em> du WGS84 vers <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Projection_de_Robinson" >Robinson</a> (code EPSG 53030).</p>
 				<div class="manip">
 					<p><img class="icone" src="illustrations/1_4_ouvrir_projet_icone.jpg" alt="Icône Ouvrir">A partir de QGIS, ouvrez le projet <em class="data"><a href="donnees/TutoQGIS_02_Geodesie.zip">monde.qgz</a></em> situé dans le dossier <b>TutoQGIS_02_Geodesie/projets</b></p>
@@ -30,7 +30,7 @@
 				<div class="manip">
 					<div class="question">
 						<input type="checkbox" id="faq-1">
-						<p><label for="faq-1">Dans quel SCR sont les 3 couches du projet ?</label></p>
+						<p><label for="faq-1">Dans quel SCR sont les 3 couches du projet&nbsp;?</label></p>
 						<p class="reponse">Elles sont toutes les 3 en WGS84, code EPSG 4326 (pour le vérifier, allez dans les propriétés de la couche, rubrique Information).</p>
 					</div>	
 					<p>
@@ -39,7 +39,7 @@
 									<img src="illustrations/2_3_proprietes_projet_menu.jpg" alt="Menu Projet, Propriétés du projet" height="300" >
 								</span>
 						</a>
-					, rubrique SCR :</p>
+					, rubrique SCR&nbsp;:</p>
 					<figure>
 						<a href="illustrations/2_4_modif_scr_projet.jpg" >
 							<img src="illustrations/2_4_modif_scr_projet.jpg" alt="Modifier le SCR d'un projet" width="600">
@@ -48,7 +48,7 @@
 					<p><em class="numero">1. </em>Vérifiez que la case <b>Aucun SCR</b> soit bien décochée.</p>
 					<p><em class="numero">2. </em>Tapez <b>robinson</b> dans cette partie, ou bien 53030 (code EPSG).</p>
 					<p><em class="numero">3. </em>Le filtre est activé dans la liste des derniers SCR utilisés. Selon si vous avez déjà utilisé Robinson ou non, cette partie sera donc ou vide ou avec une ou deux lignes correspondant à ce système.</p>
-					<p><em class="numero">4. </em>Le filtre est également activé dans la liste de tous les SCR disponibles : seuls les SCR dont le nom contient "Robinson" sont affichés. <b>Sélectionnez Sphere Robinson, code EPSG 53030</b>.</p>
+					<p><em class="numero">4. </em>Le filtre est également activé dans la liste de tous les SCR disponibles&nbsp;: seuls les SCR dont le nom contient "Robinson" sont affichés. <b>Sélectionnez Sphere Robinson, code EPSG 53030</b>.</p>
 					<p><em class="numero">5. </em><b>Vous devez voir dans cette partie le SCR que vous venez de sélectionner.</b></p>
 					<p>Cliquez sur <b>OK</b>.</p>
 				
@@ -56,7 +56,7 @@
 				
 				    <p class="note">Si des bugs d'affichage apparaissent, zoomez ou dézoomez.</p>
 	
-					<p>Répétez cette manipulation pour que le SCR du projet passe en :</p>
+					<p>Répétez cette manipulation pour que le SCR du projet passe en&nbsp;:</p>
 					<ul>
 						<li>Mercator, code EPSG 54004</li>
 						<li>Projection azimutale équidistante du pôle Sud, code EPSG 102019</li>
@@ -64,10 +64,10 @@
 					</ul>
 					<div class="question">
 						<input type="checkbox" id="faq-2">
-						<p><label for="faq-2">Qu'observez-vous dans ce dernier cas ? A quoi cela est-il dû ?</label></p>
+						<p><label for="faq-2">Qu'observez-vous dans ce dernier cas&nbsp;? A quoi cela est-il dû&nbsp;?</label></p>
 						<p class="reponse">Le RGF93 / Lambert-93 est un système adapté à l'emprise de la France métropolitaine&nbsp;; tout le reste du monde est donc de plus en plus déformé au fur et à mesure qu'on s'éloigne de la France.</p>
 					</div>
-					<p>Nous allons maintenant repasser le projet en WGS84. Puisqu'il existe dans ce projet des couches en WGS84, vous pouvez utiliser un raccourci pour cela :
+					<p>Nous allons maintenant repasser le projet en WGS84. Puisqu'il existe dans ce projet des couches en WGS84, vous pouvez utiliser un raccourci pour cela&nbsp;:
 						<br>
 						<a class="thumbnail_bottom" href="#thumb">Clic-droit sur une couche (n'importe laquelle puisqu'elles sont toutes trois en WGS84) &#8594; SCR de la couche &#8594; Définir le SCR du projet depuis cette couche
 							<span>
@@ -89,7 +89,7 @@
 				<p>Cette manipulation <b>crée une nouvelle couche</b>. La couche d'origine et la couche résultat se superposeront exactement dans QGIS, puisqu'elles contiendront exactement les mêmes objets, et que QGIS gère la reprojection à la volée.</p>
 				<div class="manip">
 					<p>L'objectif sera ici de créer une nouvelle couche pays dans la projection de Bonne (code ESRI 53024).</p>
-					<p>Pour cela, affichez la <b>boîte à outils de traitements</b> : menu Traitements &#8594; Boîte à outils.</p>
+					<p>Pour cela, affichez la <b>boîte à outils de traitements</b>&nbsp;: menu Traitements &#8594; Boîte à outils.</p>
 					<figure>
 						<a href="illustrations/2_4_traitement_reprojeter.jpg" >
 							<img src="illustrations/2_4_traitement_reprojeter.jpg" alt="Emplacement de l'outil reprojeter dans la boîte à outils de traitements" width="400" >
@@ -97,19 +97,19 @@
 					</figure>
 					<p>Dans la barre de recherche de cette boîte à outils, tapez <b>projection</b> et double-cliquez sur l'outil <b>Reprojeter une couche</b>.</p>
 				</div>
-				<p class="note">Vous noterez que cet outil est improprement nommé : il peut en effet être utilisé pour modifier le SCR d'une couche, que les SCR de départ et d'arrivée soient projetés ou géographiques&nbsp;!</p>
+				<p class="note">Vous noterez que cet outil est improprement nommé&nbsp;: il peut en effet être utilisé pour modifier le SCR d'une couche, que les SCR de départ et d'arrivée soient projetés ou géographiques&nbsp;!</p>
 				<div class="manip">
-					<p>La fenêtre suivante apparaît :</p>
+					<p>La fenêtre suivante apparaît&nbsp;:</p>
 					<figure>
 						<a href="illustrations/2_4_reprojeter_fenetre.jpg" >
 							<img src="illustrations/2_4_reprojeter_fenetre.jpg" alt="Fenêtre de l'outil reprojeter" width="600" >
 						</a>
 					</figure>
 					<ul>
-						<li class="espace">Couche source : sélectionnez <b>ne_110m_admin_0_countries</b> dans la liste</li>
-						<li class="espace">SCR cible : cliquez sur l'icône à droite et choisissez le SCR <b>Sphere Bonne, code ESRI 53024</b></li>
-						<li class="espace">Advanced Parameters : dans certains cas, pour passer d'un SCR à un autre, différentes transformations sont disponibles. Nous n'utiliserons pas ici cette option</li>
-						<li class="espace">Reprojeté : laissez l'option par défaut, à savoir créer une couche temporaire. Le but étant ici de tester la manipulation, il n'est pas nécessaire de sauvegarder une nouvelle couche sur votre ordinateur.</li>
+						<li class="espace">Couche source&nbsp;: sélectionnez <b>ne_110m_admin_0_countries</b> dans la liste</li>
+						<li class="espace">SCR cible&nbsp;: cliquez sur l'icône à droite et choisissez le SCR <b>Sphere Bonne, code ESRI 53024</b></li>
+						<li class="espace">Advanced Parameters&nbsp;: dans certains cas, pour passer d'un SCR à un autre, différentes transformations sont disponibles. Nous n'utiliserons pas ici cette option</li>
+						<li class="espace">Reprojeté&nbsp;: laissez l'option par défaut, à savoir créer une couche temporaire. Le but étant ici de tester la manipulation, il n'est pas nécessaire de sauvegarder une nouvelle couche sur votre ordinateur.</li>
 						<li class="espace">Ouvrir le fichier en sortie après l'exécution de l'algorithme&nbsp;: cette case est cochée par défaut et permer l'ajout automatique de la couche résultat au projet</li>
 					</ul>
 					<p>Cliquez sur <b>Exécuter</b>.</p>
@@ -117,7 +117,7 @@
 					<p>Vérifiez dans les propriétés de la couche résultat que son SCR soit bien Sphere Bonne.</p>
                 	<div class="question">
                 		<input type="checkbox" id="faq-3">
-                		<p><label for="faq-3">Comment afficher cette couche dans son SCR, pour savoir à quoi ressemble la projection de Bonne ?</label></p>
+                		<p><label for="faq-3">Comment afficher cette couche dans son SCR, pour savoir à quoi ressemble la projection de Bonne&nbsp;?</label></p>
                 		<p class="reponse">Clic droit sur le nom de la couche &#8594; SCR de la couche &#8594; Définir le SCR du projet depuis cette couche, ou bien dans les propriétés du projet, rubrique SCR, choisissez le SCR Sphere Bonne.</p>
                 	</div>
 					<figure>
@@ -131,13 +131,13 @@
 				
 			<h3>Redéfinir le SCR d'une couche<a class="headerlink" id="II43" href="#II43"></a></h3>
 				
-				<p>Il existe une autre manipulation souvent confondue avec le fait de modifier le SCR d'une couche : <b>redéfinir le SCR d'une couche</b>. Dans ce cas, les coordonnées ne sont pas recalculées et aucune nouvelle couche n'est créée, le SCR associé à la couche est simplement modifié.</p>
+				<p>Il existe une autre manipulation souvent confondue avec le fait de modifier le SCR d'une couche&nbsp;: <b>redéfinir le SCR d'une couche</b>. Dans ce cas, les coordonnées ne sont pas recalculées et aucune nouvelle couche n'est créée, le SCR associé à la couche est simplement modifié.</p>
 				<p>Pour reprendre l'exemple utilisé plus haut d'une couche en WGS84 contenant un point correspondant à la ville de Paris de coordonnées (48,89 2,35), si le SCR de cette couche est redéfini en RGF93 / Lambert-93, les coordonnées du point resteront (48,89 2,35) mais ces coordonnées seront renseignées comme étant mesurées dans le SCR RGF93 / Lambert-93.</p>
 				<p>Le point ne sera donc pas affiché, ou affiché à un endroit aberrant, puisqu'il n'est pas possible de trouver de telles coordonnées dans ce SCR (en RGF93 / Lambert-93, les X varient de 100 000 à 1 200 000 et les Y de 6 000 000 à 7 100 000).</p>
-				<p>Redéfinir le SCR d'une couche n'est donc utile que dans deux cas bien précis :</p>
+				<p>Redéfinir le SCR d'une couche n'est donc utile que dans deux cas bien précis&nbsp;:</p>
 					<ul>
 						<li><b>le SCR n'est pas défini du tout</b>, ce qui peut arriver par exemple pour certaine couches trouvées sur internet. Il faudra alors retrouver dans quel SCR a été initialement créée la couche</li>
-						<li><b>le SCR est mal défini</b> (quelqu'un - ou vous-même ! - a donc déjà effectué cette manipulation à tort)</li>
+						<li><b>le SCR est mal défini</b> (quelqu'un - ou vous-même&nbsp;! - a donc déjà effectué cette manipulation à tort)</li>
 					</ul>
 					
 					<p>Si ça n'est pas clair, une autre <a href="#II44">tentative d'explication plus bas</a>&nbsp!</p>
@@ -149,7 +149,7 @@
 								<img src="illustrations/2_3_preferences_options_menu.jpg" alt="Menu Préférences, Options" height="150" >
 							</span>
 						</a>
-						, rubrique <b>Gestion des SCR</b> :
+						, rubrique <b>Gestion des SCR</b>&nbsp;:
 					</p>
 					<figure>
 						<a href="illustrations/2_4_options_sans_scr.jpg" >
@@ -165,7 +165,7 @@
 				<ul>
 					<li>Pour redéfinir <b>temporairement</b> le SCR d'une couche&nbsp;: propriétés de la couche &#8594; rubrique Source (utile pour tester et retrouver le bon SCR)</li>
 					<li>Pour redéfinir le SCR d'une couche de manière permanente (crée une nouvelle couche)&nbsp;: boîte à outils &#8594; Assigner une projection</li>
-					<li>Idem que ci-dessus mais ne crée pas de nouvelle couche, uniquement pour les shapefiles : boîte à outils &#8594; Définir la projection du fichier shapefile</li>
+					<li>Idem que ci-dessus mais ne crée pas de nouvelle couche, uniquement pour les shapefiles&nbsp;: boîte à outils &#8594; Définir la projection du fichier shapefile</li>
 					</ul>
 				
 			<h3>Modifier et redéfinir le SCR&nbsp;: à ne pas confondre&nbsp;!<a class="headerlink" id="II44" href="#II44"></a></h3>
@@ -181,28 +181,28 @@
 				<p>Autrement dit&nbsp;:</p>
 				
 				<figure>
-					<a href="illustrations/2_4_ne_pas_confondre.png" >
-						<img src="illustrations/2_4_ne_pas_confondre.png" alt="Analogie d'un livre à traduire pour expliquer la différence entre modifier et redéfinir le SCR" width="500">
+					<a href="illustrations/2_4_ne_pas_confondre.jpg" >
+						<img src="illustrations/2_4_ne_pas_confondre.jpg" alt="Analogie d'un livre à traduire pour expliquer la différence entre modifier et redéfinir le SCR" width="500">
 					</a>
 				</figure>
 				
 				<br>
 				<a class="prec" href="02_03_couches_projets.php">chapitre précédent</a>
-				<a class="suiv" href="03_00_recherche_ajout.php">partie III : recherche et ajout de données</a>
+				<a class="suiv" href="03_00_recherche_ajout.php">partie III&nbsp;: recherche et ajout de données</a>
 				<br>
 				<a class="hautpage" href="#wrap">haut de page</a>		
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_2.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_2.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -11,10 +11,10 @@
 		  <h1 class="hide_for_pdf">IV.  Géoréférencement</h1>
 			<h2>IV.5  Lancer le géoréférencement</h2>
 				<ul class="listetitres">
-					<li><a href="#IV51">Vérification avant calage : les erreurs</a>
+					<li><a href="#IV51">Vérification avant calage&nbsp;: les erreurs</a>
 						<ul class= "listesoustitres">
-							<li><a href="#IV51a" >Erreur locale : en chaque point de contrôle</a></li>
-							<li><a href="#IV51b" >Erreur globale : Erreur Quadratique Moyenne</a></li>
+							<li><a href="#IV51a" >Erreur locale&nbsp;: en chaque point de contrôle</a></li>
+							<li><a href="#IV51b" >Erreur globale&nbsp;: Erreur Quadratique Moyenne</a></li>
 						</ul>
 					</li>
 					<li><a href="#IV52">Lancement du géoréférencement</a></li>
@@ -28,46 +28,46 @@
 				<br>
 			
 			
-			<h3>Vérification avant calage : les erreurs<a class="headerlink" id="IV51" href="#IV51"></a></h3>
+			<h3>Vérification avant calage&nbsp;: les erreurs<a class="headerlink" id="IV51" href="#IV51"></a></h3>
 			
 			
-				<h4>Erreur locale : en chaque point de contrôle<a class="headerlink" id="IV51a" href="#IV51a"></a></h4>
+				<h4>Erreur locale&nbsp;: en chaque point de contrôle<a class="headerlink" id="IV51a" href="#IV51a"></a></h4>
 				
-					<p>Maintenant que le type de transformation est renseigné, les erreurs pour chaque pixel ont été calculées dans la table des points de contrôle :</p>
+					<p>Maintenant que le type de transformation est renseigné, les erreurs pour chaque pixel ont été calculées dans la table des points de contrôle&nbsp;:</p>
 					<figure>
 						<a href="illustrations/4_5_table_avec_erreurs.jpg" >
 							<img src="illustrations/4_5_table_avec_erreurs.jpg" alt="Tables de points de contrôle une fois les erreurs par pixel calculées" width="620">
 						</a>
 					</figure>
-					<p>Comme indiqué dans la partie <a href="04_03_calage_carroyage.php#IV31" >IV.3.1</a> :</p>
+					<p>Comme indiqué dans la partie <a href="04_03_calage_carroyage.php#IV31" >IV.3.1</a>&nbsp;:</p>
 					<ul>
 						<li class="espace">les colonnes <b>dX (pixels) et dY (pixels)</b> correspondent à la différence entre les coordonnées qu'on souhaiterait voir prendre le point (dstX et dstY) et les coordonnées que prendra effectivement le point après le géoréférencement. Cette valeur variera selon le type de transformation choisie.</li>
-						<li class="espace">La colonne <b>Résidu (pixels)</b> correspond à l'erreur associée à ce point, calculée à partir de dX[pixels] et dY[pixels]. Cette erreur est égale à la racine de la somme des carrés de dX[pixels] et dY[pixels], soit : &#8730; ( dX[pixels] &#178; + dY[pixels] &#178; )</li>
+						<li class="espace">La colonne <b>Résidu (pixels)</b> correspond à l'erreur associée à ce point, calculée à partir de dX[pixels] et dY[pixels]. Cette erreur est égale à la racine de la somme des carrés de dX[pixels] et dY[pixels], soit&nbsp;: &#8730; ( dX[pixels] &#178; + dY[pixels] &#178; )</li>
 					</ul>
 					
 					<div class="manip">
 						<p>Classez les points par erreur décroissante, en cliquant deux fois sur l'en-tête de colonne Résidu (pixels).</p>
-						<p>Avez-vous dans votre table des points avec des valeurs d'erreur très importantes par rapport aux autres ? Pouvez-vous en trouver la cause ? Vous pouvez décocher les points aberrants dans la colonne on/off.</p>
+						<p>Avez-vous dans votre table des points avec des valeurs d'erreur très importantes par rapport aux autres&nbsp;? Pouvez-vous en trouver la cause&nbsp;? Vous pouvez décocher les points aberrants dans la colonne on/off.</p>
 					</div>
 					
 						<p>Observez que, quand vous décochez un point de contrôle, son erreur résiduelle devient plus grande que lorsqu'il était coché, ce qui traduit une moins bonne précision de calage dans la zone autour de ce point. Il est fortement conseillé, lorsqu'on désactive un point, de le remplacer par un autre point situé dans le voisinage de matière à éviter des zones non prises en compte dans le calage et pour lesquelles on ne peut avoir de résidu, donc d'indicateur de qualité du calage.</p>
 						
 					<div class="manip">
-						<p>Vous ne devriez normalement pas obtenir des erreurs résiduelles supérieures à 10 ; si nécessaire, supprimez et recréez des points de calage.</p>
+						<p>Vous ne devriez normalement pas obtenir des erreurs résiduelles supérieures à 10&nbsp;; si nécessaire, supprimez et recréez des points de calage.</p>
 					</div>
 				
 				
-				<h4>Erreur globale : Erreur Quadratique Moyenne<a class="headerlink" id="IV51b" href="#IV51b"></a></h4>
+				<h4>Erreur globale&nbsp;: Erreur Quadratique Moyenne<a class="headerlink" id="IV51b" href="#IV51b"></a></h4>
 				
-					<p>Tout en bas de la table des points de contrôle est indiqué le type de transformation utilisée (polynomiale 1 dans notre cas) et l'erreur moyenne :</p>
+					<p>Tout en bas de la table des points de contrôle est indiqué le type de transformation utilisée (polynomiale 1 dans notre cas) et l'erreur moyenne&nbsp;:</p>
 					<figure>
 						<a href="illustrations/4_5_table_emq.jpg" >
 							<img src="illustrations/4_5_table_emq.jpg" alt="Tables de points de contrôle avec l'erreur moyenne insiquée tout en bas" width="650">
 						</a>
 					</figure>
-					<p>En plus de l'erreur résiduelle calculée par pixel, la transformation renvoie une erreur globale appelée <b>Erreur Quadratique Moyenne (EMQ)</b> ou bien Root Mean Square (RMS). Cette erreur est calculée de la manière suivante :</p>
+					<p>En plus de l'erreur résiduelle calculée par pixel, la transformation renvoie une erreur globale appelée <b>Erreur Quadratique Moyenne (EMQ)</b> ou bien Root Mean Square (RMS). Cette erreur est calculée de la manière suivante&nbsp;:</p>
 					<p>EMQ = &#8730; ( ( Somme dX[pixels] &#178; + Somme dY[pixels] &#178; ) / ( nb points – nb points min ) )</p>
-					<p>Vous pouvez donc constater que si le nombre de points utilisés est égal au nombre de points minimum associé à la transformation, l'EMQ est considérée comme nulle. <b>Une erreur nulle n'est donc pas forcément révélatrice d'un calage précis !</b></p>
+					<p>Vous pouvez donc constater que si le nombre de points utilisés est égal au nombre de points minimum associé à la transformation, l'EMQ est considérée comme nulle. <b>Une erreur nulle n'est donc pas forcément révélatrice d'un calage précis&nbsp;!</b></p>
 					
 					<div class="manip">
 						<p>Vérifiez que votre EMQ soit inférieure à 5. Si les erreurs de chacun de vos points sont suffisamment faibles, comme vérifié <a href="04_05_lancement.php#IV51a" >plus haut</a>, cela devrait être le cas.</p>
@@ -77,7 +77,7 @@
 			<h3>Lancement du géoréférencement<a class="headerlink" id="IV52" href="#IV52"></a></h3>
 			
 				<div class="manip">
-					<p><img class="icone" src="illustrations/4_5_lancement_icone.jpg" alt="icône de lancement du géoréférencement" >Pour procéder au géoréférencement proprement dit :
+					<p><img class="icone" src="illustrations/4_5_lancement_icone.jpg" alt="icône de lancement du géoréférencement" >Pour procéder au géoréférencement proprement dit&nbsp;:
 						<a class="thumbnail_bottom" href="#thumb">Menu Fichier &#8594; Débuter le géoréférencement
 							<span>
 								<img src="illustrations/4_5_lancement_menu.jpg" alt="Menu Fichier, Débuter le géoréférencement" height="170" >
@@ -100,7 +100,7 @@
 						</a>
 					</figure>
 					<p>Cette carte montre le déplacement des différents points de calage. Attention, ce déplacement n'est pas représenté à l'échelle de l'image, mais selon une échelle en pixels située en bas à gauche de l'image.</p>
-					<p>Par exemple, le point 0 en haut à gauche s'est déplacé d'environ 2 ou 3 pixels vers le bas et un peu moins d'un pixel vers la gauche. Vous pouvez constater que cette information coïncide avec celle de la table des points :</p>
+					<p>Par exemple, le point 0 en haut à gauche s'est déplacé d'environ 2 ou 3 pixels vers le bas et un peu moins d'un pixel vers la gauche. Vous pouvez constater que cette information coïncide avec celle de la table des points&nbsp;:</p>
 					<figure>
 					   <a href="illustrations/4_5_point_0.jpg" >
 						  <img src="illustrations/4_5_point_0.jpg" alt="ligne correspondant au point 0 dans la table des points de contrôle" height="40" >
@@ -123,7 +123,7 @@
 							<img src="illustrations/4_5_superposition.jpg" alt="superposition de la couche de pays et de l'image calée" width="550" >
 						</a>
 					</figure>
-					<p>Félicitations, votre géoréférencement a fonctionné ! Vous pouvez si vous le voulez découvrir l'autre méthode pour géoréférencer, en se basant sur une couche déjà calée, dans le chapitre suivant.</p>
+					<p>Félicitations, votre géoréférencement a fonctionné&nbsp;! Vous pouvez si vous le voulez découvrir l'autre méthode pour géoréférencer, en se basant sur une couche déjà calée, dans le chapitre suivant.</p>
 			
 
 				<br>
@@ -134,15 +134,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_4.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_4.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

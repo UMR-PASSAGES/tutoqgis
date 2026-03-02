@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -21,11 +21,11 @@
 				<p>Chaque manipulation que nous faisons dans QGIS via l'interface graphique (ajouter une couche, découper une couche etc.) peut également être faite sous forme d'une ligne de commande dans le langage <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Python_%28langage%29">Python</a>.</p>
 				<p>Par exemple, pour ajouter la couche <em class="data">Sainte_Radegonde_des_Noyers.shp</em>, située dans le dossier /mnt/travail/temp, vous pouvez soit l'ajouter comme nous l'avons fait jusqu'ici, soit taper la commande Python suivante :</p>
 				<p class="code">qgis.utils.iface.addVectorLayer("/mnt/travail/temp/Sainte_Radegonde_des_Noyers.shp", "Sainte_Radegonde_des_Noyers", "ogr")</p>
-				<p>Ce qui revient à lancer l'outil d'ajout de couche vecteur <b>addVectorLayer</b> de QGIS, avec 3 paramètres :</p>
+				<p>Ce qui revient à lancer l'outil d'ajout de couche vecteur <b>addVectorLayer</b> de QGIS, avec 3 paramètres&nbsp;:</p>
 				<ul>
-					<li>l'emplacement de la couche : <b>/mnt/travail/temp/Sainte_Radegonde_des_Noyers.shp</b> (ce chemin va bien sûr varier)</li>
-					<li>le nom avec lequel la couche sera affichée dans QGIS : <b>Sainte_Radegonde_des_Noyers</b></li>
-					<li>le nom du fournisseur de données : <b>ogr</b> car QGIS utilise en interne une <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_logicielle">bibliothèque</a> nommée ogr pour accéder aux shapefiles</li>
+					<li>l'emplacement de la couche&nbsp;: <b>/mnt/travail/temp/Sainte_Radegonde_des_Noyers.shp</b> (ce chemin va bien sûr varier)</li>
+					<li>le nom avec lequel la couche sera affichée dans QGIS&nbsp;: <b>Sainte_Radegonde_des_Noyers</b></li>
+					<li>le nom du fournisseur de données&nbsp;: <b>ogr</b> car QGIS utilise en interne une <a class="ext" target="_blank" href="https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_logicielle">bibliothèque</a> nommée ogr pour accéder aux shapefiles</li>
 				</ul>
 				
         <p>Quel est l'intérêt&nbsp;? D'abord, mieux comprendre comment fonctionne le logiciel. Ensuite, <b>créer exactement l'outil dont vous avez besoin</b>, avec plus de souplesse et de possibilités qu'un <a href="11_03_modeleur.php" >modèle</a>&nbsp;! Bien sûr, <b>on peut parfaitement utiliser QGIS sans jamais lire une ligne de Python</b>. Il s'agit d'un autre mode d'utilisation de QGIS.</p>				
@@ -40,13 +40,13 @@
     					<p>Tapez <b>print ('hello !')</b> en bas de la console :</p>
     					<figure>
     						<a href="illustrations/11_04_test_console.jpg" >
-    							<img src="illustrations/11_04_test_console.jpg" alt="test de la console : taper une commande" width="620">
+    							<img src="illustrations/11_04_test_console.jpg" alt="test de la console&nbsp;: taper une commande" width="620">
     						</a>
     					</figure>
     					<p>Puis appuyez sur la touche entrée. Vous devriez voir votre commande, suivie du résultat, en haut de la console :</p>
     					<figure>
     						<a href="illustrations/11_04_test_console_resultat.jpg" >
-    							<img src="illustrations/11_04_test_console_resultat.jpg" alt="test de la console : taper une commande" width="620">
+    							<img src="illustrations/11_04_test_console_resultat.jpg" alt="test de la console&nbsp;: taper une commande" width="620">
     						</a>
     					</figure>
     					<p>Vous venez d’utiliser la commande <b>print</b>, qui permet d'afficher du texte dans la console. Vous pouvez également tester la commande citée plus haut pour ajouter une couche vecteur :</p>
@@ -89,11 +89,11 @@
 							<img src="illustrations/11_04_parametres.jpg" alt="lignes du script correspondant aux paramètres en entrée" width="550">
 						</a>
 					</figure>
-					<p>Il s'agit des paramètres en entrée et sortie du script :</p>
+					<p>Il s'agit des paramètres en entrée et sortie du script&nbsp;:</p>
 					<ul>
-						<li><b>dossier_entree</b> : le dossier où sont situées les couches à découper</li>
-						<li><b>couche_masque</b> : la couche qui servira de masque de découpe</li>
-						<li><b>dossier_sortie</b> : le dossier où seront enregistrées les couches créées (ce dossier doit déjà exister)</li>
+						<li><b>dossier_entree</b>&nbsp;: le dossier où sont situées les couches à découper</li>
+						<li><b>couche_masque</b>&nbsp;: la couche qui servira de masque de découpe</li>
+						<li><b>dossier_sortie</b>&nbsp;: le dossier où seront enregistrées les couches créées (ce dossier doit déjà exister)</li>
 					</ul>
 					<div class="manip">
 						<p>À vous de modifier ces paramètres suivant l'emplacement des données sur votre ordinateur&nbsp;! Attention à ce que le dossier en entrée ne comporte que les couches à découper.</p>
@@ -118,7 +118,7 @@
 					      </a>
 					    </figure>
 						<p>Pour lancer le script, cliquez sur l'icône <b>Lancer le script</b> en haut de l'éditeur. Vérifiez que tout ait bien fonctionné.</p>
-						<p>Si vous obtenez une erreur, pas de panique, ça fait partie du processus ! Lisez le message d'erreur, il est probable qu'il s'agisse d'une erreur dans un des paramètres en entrée : un mauvais chemin ou nom de couche, ou bien le dossier résultat qui n'existe pas.</p>
+						<p>Si vous obtenez une erreur, pas de panique, ça fait partie du processus&nbsp;! Lisez le message d'erreur, il est probable qu'il s'agisse d'une erreur dans un des paramètres en entrée&nbsp;: un mauvais chemin ou nom de couche, ou bien le dossier résultat qui n'existe pas.</p>
 						<p>Quelles modifications apporter au script pour que :</p>
 						<div class="question">
 							<input type="checkbox" id="faq-1">
@@ -128,13 +128,13 @@
 						<div class="question">
 							<input type="checkbox" id="faq-2">
 							<p><label for="faq-2">au lieu de l'outil Clip de découpage, ce soit l'outil Intersection qui soit utilisé ?</label></p>
-							<p class="reponse">Ligne 46 remplacez <b>native:clip</b> par ce nom : <b>native:intersection</b>. Pour en savoir plus, vous pouvez voir <a class="ext" target="_blank" href="https://docs.qgis.org/testing/en/docs/user_manual/processing/console.html#using-processing-algorithms-from-the-console" >ici</a>.</p>
+							<p class="reponse">Ligne 46 remplacez <b>native:clip</b> par ce nom&nbsp;: <b>native:intersection</b>. Pour en savoir plus, vous pouvez voir <a class="ext" target="_blank" href="https://docs.qgis.org/testing/en/docs/user_manual/processing/console.html#using-processing-algorithms-from-the-console" >ici</a>.</p>
 						</div>
 					</div>
 					
 					<p>Pour en savoir plus sur le sujet, vous pouvez lire par exemple <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/pyqgis_developer_cookbook/intro.html" >ici</a>.</p>
 					
-					<p>Ce tutoriel est fini, bravo à vous !!! N'hésitez pas à envoyer une carte postale à julie.pierson (at) cnrs.fr, ou bien <a class="ext" target="_blank" href="https://mapstodon.space/@sigomatique">@sigomatique</a> sur Mastodon (<a class="ext" target="_blank" href="https://mapstodon.space/">mapstodon.space</a>) &#128522;</p>
+					<p>Ce tutoriel est fini, bravo à vous&nbsp;!!! N'hésitez pas à envoyer une carte postale à julie.pierson (at) cnrs.fr, ou bien <a class="ext" target="_blank" href="https://mapstodon.space/@sigomatique">@sigomatique</a> sur Mastodon (<a class="ext" target="_blank" href="https://mapstodon.space/">mapstodon.space</a>) &#128522;</p>
 					
 				<br>
 				<a class="prec" href="11_03_modeleur.php">chapitre précédent</a>
@@ -143,15 +143,15 @@
 
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_11.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_11.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 		
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

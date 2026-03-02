@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -23,22 +23,22 @@
 							<li><a href="#III12b" >Avec les données SRTM</a></li>
 						</ul>
 					</li>
-					<li><a href="#III13">Et tout le reste ?</a></li>
+					<li><a href="#III13">Et tout le reste&nbsp;?</a></li>
 				</ul>
 				<br>
 	
 			<p>Il est possible de trouver sur internet des <b>données déjà géoréférencées, c'est-à-dire possédant déjà des coordonnées, donc directement utilisables dans un SIG</b>. Ces données peuvent être vecteur ou raster.</p>
-			<p>Dans le cas de <b>données vecteur</b>, les formats les plus courants sont probablement le shapefile et le GeoPackage ; on trouvera aussi des données dans d'autres formats, par exemple GeoJSON, KML...</p>
+			<p>Dans le cas de <b>données vecteur</b>, les formats les plus courants sont probablement le shapefile et le GeoPackage&nbsp;; on trouvera aussi des données dans d'autres formats, par exemple GeoJSON, KML...</p>
 			<p>Dans le cas de <b>données raster</b>, on pourra trouver par exemple des données au format geotiff (TIF géoréférencé, c'est-à-dire avec des coordonnées lui permettant de se superposer correctement à d'autres couches).</p>
-			<p>Parfois, on ne trouvera que des <b>données non géoréférencées</b> (carte papier par exemple, ou simple image trouvée sur internet). Ce cas sera traité dans la <a href="04_00_georeferencement.php" >partie 4 : géoréférencement</a>.</p>
-			<p>Cette partie se borne à donner quelques exemples de sites permettant le téléchargement de données SIG. Il en existe beaucoup d'autres !</p>
-			<p>Quant aux <b>données OpenStreetMap</b>, elles ne seront pas traitées ici car il existe <a href="03_05_donnees_osm.php">une partie qui leur est tout spécialement dédiée !</a></p>
+			<p>Parfois, on ne trouvera que des <b>données non géoréférencées</b> (carte papier par exemple, ou simple image trouvée sur internet). Ce cas sera traité dans la <a href="04_00_georeferencement.php" >partie 4&nbsp;: géoréférencement</a>.</p>
+			<p>Cette partie se borne à donner quelques exemples de sites permettant le téléchargement de données SIG. Il en existe beaucoup d'autres&nbsp;!</p>
+			<p>Quant aux <b>données OpenStreetMap</b>, elles ne seront pas traitées ici car il existe <a href="03_05_donnees_osm.php">une partie qui leur est tout spécialement dédiée&nbsp;!</a></p>
 				
 			<h3>Données nationales pour la France<a class="headerlink" id="III11" href="#III11"></a></h3>
 			
 				<h4>Avec l'IGN<a class="headerlink" id="III11a" href="#III11a"></a></h4>
 				
-					<p>L'IGN (Institut National de l'Information Géographique et Forestière) diffuse gratuitement la plupart de ses données ici : <a class="ext" target="_blank" href="https://geoservices.ign.fr/catalogue">https://geoservices.ign.fr/catalogue</a>.</p>
+					<p>L'IGN (Institut National de l'Information Géographique et Forestière) diffuse gratuitement la plupart de ses données ici&nbsp;: <a class="ext" target="_blank" href="https://geoservices.ign.fr/catalogue">https://geoservices.ign.fr/catalogue</a>.</p>
 					<p>Nous allons ici télécharger les <b>communes de la Guyane</b>.</p>
 					<div class="manip">
 					   <p>Sur la page internet <a class="ext" target="_blank" href="https://geoservices.ign.fr/catalogue">https://geoservices.ign.fr/catalogue</a>, cliquez sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/adminexpress">ADMIN-EXPRESS</a>.</p>
@@ -51,28 +51,28 @@
 					</div>
 					   <p>La base ADMIN EXPRESS contient des couches de régions, départements, arrondissements, EPCI, communes et chef-lieux pour la France métropolitaine et ultra-marine. Elle remplace la base GEOFLA® qui n'est plus mise à jour et dont la dernière édition est celle de 2016. Il est possible de télécharger la base ADMIN EXPRESS séparément pour la France métropolitaine et les territoires ultramarins, ou bien dans son ensemble.</p>
 					<div class="manip">
-					   <p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS pour le territoire de la Guyane</b> (ici celle de décembre 2025 qui fait 1,1 Mo) :</p>
+					   <p>Téléchargez la dernière édition des données <b>ADMIN EXPRESS pour le territoire de la Guyane</b> (ici celle de décembre 2025 qui fait 1,1 Mo)&nbsp;:</p>
 					   <figure>
 							<a href="illustrations/3_1_ign_telechargement_2.jpg" >
 								<img src="illustrations/3_1_ign_telechargement_2.jpg" alt="page de téléchargement des données ADMIN EXPRESS (IGN)" width="500">
 							</a>
 						</figure>
-						<p class="note">Vous pouvez également utiliser la version COG (Code Officiel Géographique), qui existe dans 2 versions : une version plus généralisée pour des usages cartographiques (COG-CARTO) et une version plus précise pour des usages statistiques (COG).</p>
+						<p class="note">Vous pouvez également utiliser la version COG (Code Officiel Géographique), qui existe dans 2 versions&nbsp;: une version plus généralisée pour des usages cartographiques (COG-CARTO) et une version plus précise pour des usages statistiques (COG).</p>
 						<p>Dézippez le fichier téléchargé (vous pouvez par exemple utiliser <a class="ext" target="_blank" href="https://www.7-zip.org/">7-zip</a>).</p>
 					</div>
 					
 					<p class="note">Si le téléchargement échoue, cette couche est également accessible <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">en téléchargement</a></em>.</p>
 					
 					<div class="manip">
-					  <p>Une fois le fichier dézippé, vous pouvez constater qu'il contient une arborescence de dossiers complexe. Comment y voir plus clair ?</p>
-					  <p>En commençant par les métadonnées ! Sur la page de téléchargement d'Admin Express, cliquez sur le bouton <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/donnees/vecteur/adminexpress" >Documentation</a> dans la partie droite puis sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/sites/default/files/2021-11/DC_DL_ADMIN_EXPRESS_3-1_0.pdf" >ADMIN EXPRESS - Descriptif de contenu</a>, ce qui ouvre un fichier PDF.</p>
-					  <p>En parcourant ce PDF, vous en saurez plus sur les données que vous venez de télécharger. Vous y trouverez notamment page dans la partie 2.3 <em>Références géodésiques</em> la liste des différents SCR utilisés pour la France métropolitaine ainsi que pour l'Outre-Mer : le SCR utilisé pour la Guyane est le <b>RGFG95 UTM 22, code EPSG 2972</b>.</p>
+					  <p>Une fois le fichier dézippé, vous pouvez constater qu'il contient une arborescence de dossiers complexe. Comment y voir plus clair&nbsp;?</p>
+					  <p>En commençant par les métadonnées&nbsp;! Sur la page de téléchargement d'Admin Express, cliquez sur le bouton <a class="ext" target="_blank" href="https://geoservices.ign.fr/documentation/donnees/vecteur/adminexpress" >Documentation</a> dans la partie droite puis sur <a class="ext" target="_blank" href="https://geoservices.ign.fr/sites/default/files/2021-11/DC_DL_ADMIN_EXPRESS_3-1_0.pdf" >ADMIN EXPRESS - Descriptif de contenu</a>, ce qui ouvre un fichier PDF.</p>
+					  <p>En parcourant ce PDF, vous en saurez plus sur les données que vous venez de télécharger. Vous y trouverez notamment page dans la partie 2.3 <em>Références géodésiques</em> la liste des différents SCR utilisés pour la France métropolitaine ainsi que pour l'Outre-Mer&nbsp;: le SCR utilisé pour la Guyane est le <b>RGFG95 UTM 22, code EPSG 2972</b>.</p>
 					</div>
 					
-					<p>Pour rappel, le but de l'exercice est ici d'afficher les communes de la Guyane, mais vous pouvez très bien décider de travailler sur un autre département !</p>
+					<p>Pour rappel, le but de l'exercice est ici d'afficher les communes de la Guyane, mais vous pouvez très bien décider de travailler sur un autre département&nbsp;!</p>
 					
 					<div class="manip">
-					  <p>La couche <em class="data">COMMUNE</em> de la Guyane est donc située dans le dossier <b>1_DONNEES_LIVRAISON_...</b> puis dans le sous-dossier <b>ADE_X-X_GPKG_UTM22RGFG95_GUF</b> où :</p>
+					  <p>La couche <em class="data">COMMUNE</em> de la Guyane est donc située dans le dossier <b>1_DONNEES_LIVRAISON_...</b> puis dans le sous-dossier <b>ADE_X-X_GPKG_UTM22RGFG95_GUF</b> où&nbsp;:</p>
 					  <ul>
 					   <li><b>ADE</b> signifie ADMIN EXPRESS</li>
 					   <li><b>X-X</b> correspond à la version d'ADMIN EXPRESS téléchargée, par exemple 4-0</li>
@@ -86,7 +86,7 @@
 								<img src="illustrations/3_1_commune_guyane_explorateur.jpg" alt="ajout de la couche de communes de Guyane via l'explorateur QGIS" width="600">
 							</a>
 						</figure>
-						<p>Si les données ne s'affichent pas, vérifiez que cela n'est pas dû à une visibilité dépendant de l'échelle (la couche s'affiche ou non suivant le niveau de zoom) : <b>propriétés de la couche &#8594; Rendu</b>, décochez la case 
+						<p>Si les données ne s'affichent pas, vérifiez que cela n'est pas dû à une visibilité dépendant de l'échelle (la couche s'affiche ou non suivant le niveau de zoom)&nbsp;: <b>propriétés de la couche &#8594; Rendu</b>, décochez la case 
 						  <a class="thumbnail_bottom" href="#thumb">Visibilité dépendante de l'échelle
             		<span>
             			<img src="illustrations/3_1_rendu_echelle.jpg" alt="Propriétés de la couche, rendu" height="400" >
@@ -94,7 +94,7 @@
             	</a>.</p>  
 					</div>
 					
-					<p class="note">Pour télécharger les données de l'IGN, vous pouvez également passer par <a class="ext" target="_blank" href="https://geotribu.github.io/ign-fr-opendata-download-ui/index.html" >ign2map</a> (et profitez-en pour aller faire un tour sur l'excellent site <a class="ext" target="_blank" href="https://static.geotribu.fr/" >Geotribu</a> !)</p>
+					<p class="note">Pour télécharger les données de l'IGN, vous pouvez également passer par <a class="ext" target="_blank" href="https://geotribu.github.io/ign-fr-opendata-download-ui/index.html" >ign2map</a> (et profitez-en pour aller faire un tour sur l'excellent site <a class="ext" target="_blank" href="https://static.geotribu.fr/" >Geotribu</a>&nbsp;!)</p>
 					
 					
 				<h4>Avec un catalogue de données régional<a class="headerlink" id="III11b" href="#III11b"></a></h4>				
@@ -112,18 +112,18 @@
 								<img src="illustrations/3_1_geoguyane_recherche.jpg" alt="recherche de 'centrale électrique' sur le catalogue geoguyane" width="600">
 							</a>
 						</figure>
-						<p>Vous obtenez normalement un seul résultat : <b>Recensement des centrales de production électrique</b> : cliquez sur <a class="ext" target="_blank" href="https://catalogue.geoguyane.fr/geonetwork/srv/fre/catalog.search#/metadata/fd503135-bf8d-450a-9b8d-823e450e6617">cette fiche</a>.</p>
+						<p>Vous obtenez normalement un seul résultat&nbsp;: <b>Recensement des centrales de production électrique</b>&nbsp;: cliquez sur <a class="ext" target="_blank" href="https://catalogue.geoguyane.fr/geonetwork/srv/fre/catalog.search#/metadata/fd503135-bf8d-450a-9b8d-823e450e6617">cette fiche</a>.</p>
 						<p>Les métadonnées nous apprennent notamment que ces données proviennent de la DAAF Guyane, ont été créées en 2013 et révisées en 2015.</p>
-						<p>Cliquez sur le lien de téléchargement : </p>
+						<p>Cliquez sur le lien de téléchargement&nbsp;: </p>
 						<figure>
 							<a href="illustrations/3_1_geoguyane_fiche.jpg" >
 								<img src="illustrations/3_1_geoguyane_fiche.jpg" alt="Fiche métadonnée 'Recensement des centrales de production électrique' sur geoguyane" width="600">
 							</a>
 						</figure>
-						<p>Choisissez :</p>
+						<p>Choisissez&nbsp;:</p>
 						<ul>
-						  <li>le format : geojson par exemple pour changer</li>
-						  <li>le système de coordonnées : RGF95 UTM 22 Nord (code EPSG 2972) pour avoir le même SCR que les communes précédemment téléchargées</li>
+						  <li>le format&nbsp;: geojson par exemple pour changer</li>
+						  <li>le système de coordonnées&nbsp;: RGF95 UTM 22 Nord (code EPSG 2972) pour avoir le même SCR que les communes précédemment téléchargées</li>
 						</ul>
 						<p>Puis cliquez sur <b>Télécharger la donnée</b>.</p>
 						<figure>
@@ -131,7 +131,7 @@
 								<img src="illustrations/3_1_geoguyane_telechargement.jpg" alt="page de téléchargement des centrales électriques sur geoguyane" width="600">
 							</a>
 						</figure>
-						<p>Dézippez le fichier obtenu, et ajoutez la couche <em  class="data">l_ouvrage_elec_prod_973.json</em> à QGIS : vous pouvez la faire glisser depuis l'explorateur de fichier, ou bien passer par le panneau Explorateur ou le gestionnaire de sources de données.</p>
+						<p>Dézippez le fichier obtenu, et ajoutez la couche <em  class="data">l_ouvrage_elec_prod_973.json</em> à QGIS&nbsp;: vous pouvez la faire glisser depuis l'explorateur de fichier, ou bien passer par le panneau Explorateur ou le gestionnaire de sources de données.</p>
 					</div>
 					<figure>
 					  <a href="illustrations/3_1_centrales_guyane.jpg" >
@@ -163,7 +163,7 @@
 					 </figure>
 					 <p class="note">Si le téléchargement échoue, cette couche est également accessible <em class="data"><a href="donnees/TutoQGIS_03_RechercheDonnees.zip">en téléchargement</a></em>.</p>
 					 <p>Une fois le fichier téléchargé, <b>ouvrez un nouveau projet QGIS</b>, et à partir de l'explorateur, ajoutez la couche <em class="data">ne_110m_admin_0_countries</em>.</p>
-					 <p><b>Notez qu'il n'est pas nécessaire de dézipper le fichier pour visualiser les données dans QGIS !</b> Ceci est très pratique quand on est par exemple à la recherche de données sur internet et évite de dézipper tous les fichiers et donc de se retrouver avec beaucoup de dossiers. Il faudra cependant décompresser les données pour pouvoir les éditer.</p>
+					 <p><b>Notez qu'il n'est pas nécessaire de dézipper le fichier pour visualiser les données dans QGIS&nbsp;!</b> Ceci est très pratique quand on est par exemple à la recherche de données sur internet et évite de dézipper tous les fichiers et donc de se retrouver avec beaucoup de dossiers. Il faudra cependant décompresser les données pour pouvoir les éditer.</p>
 					 <figure>
 						<a href="illustrations/3_1_donnees_naturalearth.jpg" >
 							<img src="illustrations/3_1_donnees_naturalearth.jpg" alt="visualisation dans QGIS de la couche ne_110m_admin_0_countries" width="450">
@@ -180,7 +180,7 @@
         			
         			<div class="manip">
         				<p>Rendez-vous sur <a class="ext" target="_blank" href="http://dwtkns.com/srtm/">http://dwtkns.com/srtm/</a>. Un avertissement en haut de la page indique que l'outil ne fonctionne plus, mais il semble néanmoins opérationnel.</p>
-        				<p>Cliquez sur une des cases recouvrant le Kenya (par exemple la dalle <b>srtm_44_12</b>) :</p>
+        				<p>Cliquez sur une des cases recouvrant le Kenya (par exemple la dalle <b>srtm_44_12</b>)&nbsp;:</p>
         				<figure>
         					<a href="illustrations/3_1_telechargement_srtm.jpg" >
         						<img src="illustrations/3_1_telechargement_srtm.jpg" alt="téléchargement d'une dalle du SRTM" width="350">
@@ -196,9 +196,9 @@
         				<p class="note">Au cas où le téléchargement échouerait, cette couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip">avec les autres données du tutoriel</a>.</p>
         			</div>
 			
-			<h3>Et tout le reste ?<a class="headerlink" id="III13" href="#III13"></a></h3>
+			<h3>Et tout le reste&nbsp;?<a class="headerlink" id="III13" href="#III13"></a></h3>
 			 
-			    <p>Selon la zone sur laquelle vous travaillez et votre sujet, il existe de nombreux sites avec des données géographiques en téléchargement. En voici quelques uns en vrac, qui seront ou non pertinents pour vous :</p>
+			    <p>Selon la zone sur laquelle vous travaillez et votre sujet, il existe de nombreux sites avec des données géographiques en téléchargement. En voici quelques uns en vrac, qui seront ou non pertinents pour vous&nbsp;:</p>
 			
 				<ul>
 					<li class="espace">Natural Earth : données à l'échelle mondiale : limites administratives, hydrographie, bathymétrie, fonds de carte raster...
@@ -209,7 +209,7 @@
 						<br>
 						<a class="ext" target="_blank" href="https://data.apps.fao.org/catalog/">https://data.apps.fao.org/catalog/</a>
 					</li>
-					<li class="espace">data.gouv.fr : plateforme des données publiques françaises (filtrer les données par format, par ex. geopackage, geojson ou shp pour trouver des données géographiques)
+					<li class="espace">data.gouv.fr&nbsp;: plateforme des données publiques françaises (filtrer les données par format, par ex. geopackage, geojson ou shp pour trouver des données géographiques)
 						<br>
 						<a class="ext" target="_blank" href="https://www.data.gouv.fr/datasets/search">https://www.data.gouv.fr/datasets/search</a>
 					</li>
@@ -224,9 +224,9 @@
 					<li class="espace">cadastre.data.gouv.fr : données cadastrales françaises en opendata
 						<br>
 						<a class="ext" target="_blank" href="https://cadastre.data.gouv.fr/datasets/plan-cadastral-informatise">https://cadastre.data.gouv.fr/datasets/plan-cadastral-informatise</a>
-						(pour exploiter les données du cadastre au format edigeo sous QGIS : voir <a class="ext" target="_blank" href="http://atelier.adullact.org/projects/edigeo/">ce projet</a> et <a class="ext" target="_blank" href="http://atelier.adullact.org/frs/download.php/file/8387/documentationEDIGEO-0.90.pdf">sa documentation</a>)
+						(pour exploiter les données du cadastre au format edigeo sous QGIS&nbsp;: voir <a class="ext" target="_blank" href="http://atelier.adullact.org/projects/edigeo/">ce projet</a> et <a class="ext" target="_blank" href="http://atelier.adullact.org/frs/download.php/file/8387/documentationEDIGEO-0.90.pdf">sa documentation</a>)
 					</li>
-					<li class="espace">THEIA : structure nationale inter-organismes ayant pour vocation de faciliter l’usage des images satellite
+					<li class="espace">THEIA&nbsp;: structure nationale inter-organismes ayant pour vocation de faciliter l’usage des images satellite
 						<br>
 						<a class="ext" target="_blank" href="http://www.theia-land.fr/">http://www.theia-land.fr/</a>
 					</li>
@@ -258,15 +258,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_3.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_3.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -25,11 +25,11 @@
 			
 			    <p>Il est possible d'afficher dans QGIS des fonds de carte &#171;&nbsp;en ligne &nbsp;&#187;, comme par exemple les fonds <a class="ext" target="_blank" href="https://www.openstreetmap.org/">OpenStreetMap</a> ou Google Maps. <b>Ces fonds ne seront pas modifiables</b>, la seule possibilité étant de les rendre plus ou moins transparents pour les atténuer.</p>
 			    
-			    <p class="note">Pour en savoir plus sur OpenSreetMap, c'est au <a href="03_05_donnees_osm.php">chapitre suivant</a> !</p>
+			    <p class="note">Pour en savoir plus sur OpenSreetMap, c'est au <a href="03_05_donnees_osm.php">chapitre suivant</a>&nbsp;!</p>
 			    
 			    <p>Ajouter de tels fonds est utile pour se repérer rapidement, ou bien pour servir de fonds pour une carte&nbsp;;  dans ce dernier cas il faut que le fonds soit adapté à l'objectif de la carte et y apporte des informations utiles sans l'alourdir.</p>
 			    
-			    <p>De tels fonds sont dits &#171;&nbsp;tuilés &nbsp;&#187; car ils sont découpés en carrés jointifs (tuiles) pour faciliter l'affichage, à chaque niveau de zoom. On parle également de tuiles XYZ, X et Y correspondant à  la position de la tuile et Z au niveau de zoom. Pour en savoir plus : <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Tiled_web_map">la page (en anglais) de wikipedia</a></p>
+			    <p>De tels fonds sont dits &#171;&nbsp;tuilés &nbsp;&#187; car ils sont découpés en carrés jointifs (tuiles) pour faciliter l'affichage, à chaque niveau de zoom. On parle également de tuiles XYZ, X et Y correspondant à  la position de la tuile et Z au niveau de zoom. Pour en savoir plus&nbsp;: <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Tiled_web_map">la page (en anglais) de wikipedia</a></p>
 			
 			<h3>Afficher un fonds via l'explorateur<a class="headerlink" id="III42" href="#III42"></a></h3>
 
@@ -40,7 +40,7 @@
     		        <div class="manip">
     		            <p>Ouvrez un nouveau projet QGIS.</p>
     			        <p>Rendez-vous dans le panneau <b>Explorateur</b> de QGIS. Si vous ne voyez pas ce panneau, activez-le via le <b>menu Vue &#8594; Panneaux &#8594; Explorateur</b>.</p>
-    			        <p>Dans ce panneau Explorateur, allez dans la rubrique <b>XYZ Tiles</b> : un fonds s'y trouve par défaut : OpenStreetMap.</p>
+    			        <p>Dans ce panneau Explorateur, allez dans la rubrique <b>XYZ Tiles</b>&nbsp;: un fonds s'y trouve par défaut&nbsp;: OpenStreetMap.</p>
     			        <figure>
                         	<a href="illustrations/3_4_xyz_tiles.jpg" >
                         		<img src="illustrations/3_4_xyz_tiles.jpg" alt="panneau explorateur, rubrique xyz tiles" width="220">
@@ -64,29 +64,29 @@
                             </a>
                         </figure>
                         <ul>
-                            <li>Nom : il s'agit du nom qui apparaîtra dans le panneau explorateur, vous pouvez taper par exemple <b>Carto Positron</b></li>
-                            <li>URL : collez l'URL du serveur Carto Positron <b>https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.jpg</b></li>
+                            <li>Nom&nbsp;: il s'agit du nom qui apparaîtra dans le panneau explorateur, vous pouvez taper par exemple <b>Carto Positron</b></li>
+                            <li>URL&nbsp;: collez l'URL du serveur Carto Positron <b>https://cartodb-basemaps-a.global.ssl.fastly.net/light_all/{z}/{x}/{y}.jpg</b></li>
                         </ul>
                         <p>Laissez les valeurs par défaut pour les autres paramètres, cliquez sur OK.</p>
                         <p>Le fonds Carto Positron apparaît maintenant avec le fonds OpenStreetMap dans la rubrique XYZ Tiles.</p>
                         <figure>
                             <a href="illustrations/3_4_positron_xyz.jpg" >
-                        	    <img src="illustrations/3_4_positron_xyz.jpg" alt="panneau explorateur, rubrique XYZ Tiles : le fonds Carto Positron apparaît" width="180">
+                        	    <img src="illustrations/3_4_positron_xyz.jpg" alt="panneau explorateur, rubrique XYZ Tiles&nbsp;: le fonds Carto Positron apparaît" width="180">
                         	</a>
                         </figure>
-                        <p>Double-cliquez pour l'ajouter :</p>
+                        <p>Double-cliquez pour l'ajouter&nbsp;:</p>
                         <figure>
                         	<a href="illustrations/3_4_positron_visu.jpg" >
-                        	    <img src="illustrations/3_4_positron_visu.jpg" alt="Aperçu du fonds Carto Positron : Brest" width="500">
+                        	    <img src="illustrations/3_4_positron_visu.jpg" alt="Aperçu du fonds Carto Positron&nbsp;: Brest" width="500">
                             </a>
                         </figure>
     		        </div>
     		        
-    		        <p class="note">Attention à ne pas utiliser le caractère / (&#171;&nbsp;slash&nbsp;&#187;) dans le nom des connexions !</p>
-    		        <p class="note">Attention également, certaines url de serveurs de tuiles sont sous la forme <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.jpg</b> : il faut alors supprimer les <b>$</b> pour obtenir <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.jpg</b>.</p>
+    		        <p class="note">Attention à ne pas utiliser le caractère / (&#171;&nbsp;slash&nbsp;&#187;) dans le nom des connexions&nbsp;!</p>
+    		        <p class="note">Attention également, certaines url de serveurs de tuiles sont sous la forme <b>http://a.tile.stamen.com/toner/${z}/${x}/${y}.jpg</b>&nbsp;: il faut alors supprimer les <b>$</b> pour obtenir <b>http://a.tile.stamen.com/toner/{z}/{x}/{y}.jpg</b>.</p>
     		        
-    		      <p>Il est également possible d’ajouter des fonds Google Maps. Par exemple pour ajouter un fonds Google Satellite (procédez comme décrit ci-dessus), l’url est la suivante : <b>https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}</b>.</p>
-    		      <p>Vous pouvez obtenir les autres fonds Google Maps en faisant varier la lettre indiquée après lyrs= (source : <a class="ext" target="_blank" href="https://stackoverflow.com/a/33023651">https://stackoverflow.com/a/33023651</a>) :</p>
+    		      <p>Il est également possible d’ajouter des fonds Google Maps. Par exemple pour ajouter un fonds Google Satellite (procédez comme décrit ci-dessus), l’url est la suivante&nbsp;: <b>https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}</b>.</p>
+    		      <p>Vous pouvez obtenir les autres fonds Google Maps en faisant varier la lettre indiquée après lyrs= (source&nbsp;: <a class="ext" target="_blank" href="https://stackoverflow.com/a/33023651">https://stackoverflow.com/a/33023651</a>)&nbsp;:</p>
     		      <ul>
                 <li>h = roads only</li>
                 <li>m = standard roadmap</li>
@@ -102,13 +102,13 @@
 		        <p>Une autre méthode pour ajouter des fonds de carte consiste à utiliser l'extension <a class="ext" target="_blank" href="https://github.com/nextgis/quickmapservices">QuickMapServices</a>, qui propose un certain nombre de fonds, notamment des fonds OpenStreetMap et Google Maps.</p>
 		        
 				<div class="manip">
-					<p>Pour installer QuickMapServices : 
+					<p>Pour installer QuickMapServices&nbsp;: 
 						<a class="thumbnail_bottom" href="#thumb">Menu Extension &#8594; Installer/Gérer les extensions
 							<span>
 								<img src="illustrations/4_6_extensions_menu.jpg" alt="Menu Extension, Installer/Gérer les extensions" height="100" >
 							</span>
 						</a>	
-					 : la fenêtre du gestionnaire d'extensions s'ouvre.</p>
+					&nbsp;: la fenêtre du gestionnaire d'extensions s'ouvre.</p>
 					<figure>
 						<a href="illustrations/4_6_install_quickmapservices.jpg" >
 							<img src="illustrations/4_6_install_quickmapservices.jpg" alt="Installation de QuickMapServices" width="600">
@@ -118,10 +118,10 @@
 					<p>Fermez la fenêtre du gestionnaire d'extensions.</p>
 				</div>
 				
-				<p>Par défaut, QuickMapServices permet l'ajout de quelques fonds de carte, que vous pouvez voir en allant dans le menu Internet &#8594; QuickMapservices... Il est possible d'en ajouter d'autres !</p>
+				<p>Par défaut, QuickMapServices permet l'ajout de quelques fonds de carte, que vous pouvez voir en allant dans le menu Internet &#8594; QuickMapservices... Il est possible d'en ajouter d'autres&nbsp;!</p>
 				
 				<div class="manip">
-				   <p>Menu Internet &#8594; QuickMapServices &#8594; Settings :</p>
+				   <p>Menu Internet &#8594; QuickMapServices &#8594; Settings&nbsp;:</p>
 				   <p>Dans l'onglet <b>More services</b>, cliquez sur le bouton <b>Get contributed pack</b>.</p>
 				   <figure>
 						<a href="illustrations/4_6_quickmapservices_moreservices.jpg" >
@@ -129,7 +129,7 @@
 						</a>
 					</figure>
 					<p>Rendez-vous ensuite dans l'onglet <b>Visibility</b> pour décocher les fonds qui ne vous semblent pas à première vue utiles, pour plus de clarté.</p>
-				<p>Pour ajouter les données OSM : le menu QuickMapServices est maintenant visible dans le menu Internet. Chargez la couche <b>OSM standard</b> dans la rubrique OSM.</p>
+				<p>Pour ajouter les données OSM&nbsp;: le menu QuickMapServices est maintenant visible dans le menu Internet. Chargez la couche <b>OSM standard</b> dans la rubrique OSM.</p>
 					<figure>
 						<a href="illustrations/4_6_menu_quickmapservices.jpg" >
 							<img src="illustrations/4_6_menu_quickmapservices.jpg" alt="Menu QuickMapServices" width="600">
@@ -146,15 +146,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_3.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_3.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

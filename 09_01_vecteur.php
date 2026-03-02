@@ -1,32 +1,32 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
 	
 		<div class="main">
 		  <h1 class="hide_for_pdf">IX.  Analyse spatiale</h1>
-			<h2>IX.1  Analyse spatiale : quelques exemples d'opérations sur des données vecteur</h2>
+			<h2>IX.1  Analyse spatiale&nbsp;: quelques exemples d'opérations sur des données vecteur</h2>
 				<ul class="listetitres">
 					<li><a href="#IX11">Découper des données par d'autres données</a>
 					   <ul class="listesoustitres">
-							<li><a href="#IX11a">Quel est le principe ?</a></li>
+							<li><a href="#IX11a">Quel est le principe&nbsp;?</a></li>
 							<li><a href="#IX11b">Découpage, mode d'emploi</a></li>
 							<li><a href="#IX11c">Sans oublier de penser aux systèmes de coordonnées...</a></li>
 						</ul>
 					</li>
 					<li><a href="#IX12">Création d'une zone tampon autour d'un cours d'eau</a>
 						<ul class="listesoustitres">
-							<li><a href="#IX12a">Qu'est-ce qu'une zone tampon ?</a></li>
+							<li><a href="#IX12a">Qu'est-ce qu'une zone tampon&nbsp;?</a></li>
 							<li><a href="#IX12b">Sélection d'un cours d'eau</a></li>
 							<li><a href="#IX12c">Création d'une zone tampon autour de la sélection</a></li>
 							<li><a href="#IX12d">Pour aller plus loin&nbsp;: détail des autres paramètres</a></li>
 						</ul>
 					</li>
-					<li><a href="#IX13">Données communes entre deux couches : intersection</a>
+					<li><a href="#IX13">Données communes entre deux couches&nbsp;: intersection</a>
 						<ul class="listesoustitres">
 							<li><a href="#IX13a">Qu'est-ce qu'une intersection&nbsp;?</a></li>
 							<li><a href="#IX13b">Intersection entre communes et zone tampon</a></li>
@@ -37,22 +37,22 @@
 				</ul>
 				<br>
 				
-			<p>Nous aborderons ici quelques traitements possibles sur des données vecteur. Il en existe bien sûr beaucoup d'autres !</p>
+			<p>Nous aborderons ici quelques traitements possibles sur des données vecteur. Il en existe bien sûr beaucoup d'autres&nbsp;!</p>
 			
 
 			<h3>Découper des données par d'autres données<a class="headerlink" id="IX11" href="#IX11"></a></h3>
 			
-			    <h4>Quel est le principe ?<a class="headerlink" id="IX11a" href="#IX11a"></a></h4>
+			    <h4>Quel est le principe&nbsp;?<a class="headerlink" id="IX11a" href="#IX11a"></a></h4>
 			
     				<p>Le but sera ici, à partir d'une couche de cours d'eau de la région Pays de la Loire et d'une couche des départements de France métropolitaine, de <b>découper les cours d'eau pour ne garder que ceux dans notre zone d'étude</b>, en l'occurrence le département de la Loire-Atlantique (44).</p>
     				<figure>
     				    <a href="illustrations/9_1_decoupage_principe_1.jpg" >
-    						<img src="illustrations/9_1_decoupage_principe_1.jpg" alt="Couches de départ : cours d'eau et départements" width="300" >
+    						<img src="illustrations/9_1_decoupage_principe_1.jpg" alt="Couches de départ&nbsp;: cours d'eau et départements" width="300" >
     					</a>
     					<a href="illustrations/9_1_decoupage_principe_2.jpg" >
-    						<img src="illustrations/9_1_decoupage_principe_2.jpg" alt="Couche résultat : cours d'eau du département de la Loire-Atlantique" width="300" >
+    						<img src="illustrations/9_1_decoupage_principe_2.jpg" alt="Couche résultat&nbsp;: cours d'eau du département de la Loire-Atlantique" width="300" >
     					</a>
-    					<figcaption>A gauche, les 2 couches de départ : cours d'eau des Pays de la Loire et départements. A droite, le résultat souhaité : les cours d'eau découpés selon le département de la Loire-Atlantique (44)</figcaption>
+    					<figcaption>A gauche, les 2 couches de départ&nbsp;: cours d'eau des Pays de la Loire et départements. A droite, le résultat souhaité&nbsp;: les cours d'eau découpés selon le département de la Loire-Atlantique (44)</figcaption>
     				</figure>
     				
     				<p>Une telle opération est utile pour avoir des données moins lourdes, ce qui diminue les temps de traitement. Par ailleurs, votre travail sera plus clair si vous utilisez des données adaptées à votre zone d'étude.</p>
@@ -62,7 +62,7 @@
     				<div class="manip">
     					<p>Ouvrez un nouveau projet QGIS. Ajoutez les couches <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">departement</a></em> et <em class="data"><a href="donnees/TutoQGIS_09_AnalyseSpat.zip">gis_osm_waterways_free_1</a></em>.</p>
     					<p>Le but sera donc de découper les cours d'eau par le département 44, pour ne garder que les cours d'eau à l'intérieur de ce département. Cette opération crée une nouvelle couche.</p>
-    					<p><img class="icone" src="illustrations/1_1_selection_icone.jpg" alt="menu projet, sauvegarder sous..." >Tout d'abord, sélectionnez le département 44 au moyen de l'outil de sélection :</p>
+    					<p><img class="icone" src="illustrations/1_1_selection_icone.jpg" alt="menu projet, sauvegarder sous..." >Tout d'abord, sélectionnez le département 44 au moyen de l'outil de sélection&nbsp;:</p>
     					<figure>
     						<a href="illustrations/9_1_selection_44.jpg" >
     							<img src="illustrations/9_1_selection_44.jpg" alt="Département 44 sélectionné (en jaune)" width="300" >
@@ -79,25 +79,25 @@
     						</a>
     					</figure>
     					<ul>
-    						<li class="espace">Couche source : choisir la couche à découper, en l'occurrence les cours d'eau : <em class="data">gis_osm_waterways_free_1</em></li>
-    						<li class="espace">Couche de superposition : choisir la couche servant de masque de découpe, en l'occurrence <em class="data">departement</em></li>
-    						<li class="espace">Entité(s) sélectionnée(s) uniquement : <b>cochez cette case</b> pour ne garder que les cours d'eau à l'intérieur du département sélectionné, et non à l'intérieur de tous les départements</li>
-    						<li class="espace">Découpé : cliquez sur <b>...</b>, sélectionnez l'option <b>Enregistrer dans un GeoPackage...</b>, et choisissez l'endroit où la couche sera créée, et son nom, par exemple : <em class="data">coursdeau_osm_44</em>. Comme il s'agit d'un <a href="01_03_formats.php#I31b" >format GPKG</a>, il faut spécifier 2 fois le nom : pour la base, et pour la couche. Vous pouvez indiquer le même nom les 2 fois.</li>
+    						<li class="espace">Couche source&nbsp;: choisir la couche à découper, en l'occurrence les cours d'eau&nbsp;: <em class="data">gis_osm_waterways_free_1</em></li>
+    						<li class="espace">Couche de superposition&nbsp;: choisir la couche servant de masque de découpe, en l'occurrence <em class="data">departement</em></li>
+    						<li class="espace">Entité(s) sélectionnée(s) uniquement&nbsp;: <b>cochez cette case</b> pour ne garder que les cours d'eau à l'intérieur du département sélectionné, et non à l'intérieur de tous les départements</li>
+    						<li class="espace">Découpé&nbsp;: cliquez sur <b>...</b>, sélectionnez l'option <b>Enregistrer dans un GeoPackage...</b>, et choisissez l'endroit où la couche sera créée, et son nom, par exemple&nbsp;: <em class="data">coursdeau_osm_44</em>. Comme il s'agit d'un <a href="01_03_formats.php#I31b" >format GPKG</a>, il faut spécifier 2 fois le nom&nbsp;: pour la base, et pour la couche. Vous pouvez indiquer le même nom les 2 fois.</li>
     						<li class="espace">Cliquez sur <b>Exécuter</b></li>
     					</ul>
-    					<p>Patientez... La nouvelle couche est ajoutée :</p>
+    					<p>Patientez... La nouvelle couche est ajoutée&nbsp;:</p>
     				    <figure>
     						<a href="illustrations/9_1_decoupage_resultat.jpg" >
     							<img src="illustrations/9_1_decoupage_resultat.jpg" alt="Les 2 couches de départ et la couche résultat en rouge" width="500" >
     						</a>
     					</figure>
-                        <p>Vérifiez ses données attributaires : <b>elle contient les mêmes champs que la couche de cours d'eau initiale</b>. Les valeurs des champs ne sont pas recalculées (sauf dans le cas de champs virtuels) : s'il y a un champ longueur, ses valeurs seront donc erronées.</p>
+                        <p>Vérifiez ses données attributaires&nbsp;: <b>elle contient les mêmes champs que la couche de cours d'eau initiale</b>. Les valeurs des champs ne sont pas recalculées (sauf dans le cas de champs virtuels)&nbsp;: s'il y a un champ longueur, ses valeurs seront donc erronées.</p>
                     </div>
                     
     				<p>Contrairement à une requête spatiale, le découpage modifie les entités en les <b>découpant</b> suivant les limites de la couche de découpage. Une requête se borne à <b>sélectionner</b> par exemple les cours d'eau à l'intérieur d'un département, ou intersectant ce département.</p>
     				<figure>
     				    <a href="illustrations/9_1_selection.jpg" >
-    						<img src="illustrations/9_1_selection.jpg" alt="Cours d'eau intersectant un département : il dépasse du département" width="250" >
+    						<img src="illustrations/9_1_selection.jpg" alt="Cours d'eau intersectant un département&nbsp;: il dépasse du département" width="250" >
     					</a>
     					<a href="illustrations/9_1_decoupage.jpg" >
     						<img src="illustrations/9_1_decoupage.jpg" alt="Cours d'eau découpé par un département" width="250" >
@@ -113,7 +113,7 @@
 			
 			<h3>Création d'une zone tampon autour d'un cours d'eau<a class="headerlink" id="IX12" href="#IX12"></a></h3>
 			
-				<h4>Qu'est-ce qu'une zone tampon ?<a class="headerlink" id="IX12a" href="#IX12a"></a></h4>
+				<h4>Qu'est-ce qu'une zone tampon&nbsp;?<a class="headerlink" id="IX12a" href="#IX12a"></a></h4>
 			
 					<p>Une zone tampon (aussi appelée « buffer ») est une <b>zone épousant la forme des objets d'une couche, d'une largeur donnée</b>. Si elles sont tracées autour de points, les zones tampons seront des cercles. Autour de lignes et de polygones, ce sera des polygones de forme variable. Une zone tampon peut servir par exemple à modéliser une zone inondable, un périmètre de sécurité, une zone d'achalandage...</p>
 					<figure>
@@ -129,9 +129,9 @@
 						<div class="question">
 							<input type="checkbox" id="faq-2">
 							<p><label for="faq-2">Comment faire pour sélectionner le cours d'eau dont le nom est <b>L'Erdre</b> de la couche <em class="data">coursdeau_osm_44</em>&nbsp;?</label></p>
-							<p class="reponse">2 méthodes au choix :</p>
+							<p class="reponse">2 méthodes au choix&nbsp;:</p>
 							<p class="reponse">1/ Sélectionner à la main dans la table attributaire les lignes où la valeur du champ <b>name</b> est <b>L'Erdre</b> (pour les trouver plus facilement, cliquez sur l'intitulé de colonne <b>name</b> pour classer les lignes par nom)</p>
-						    <p class="reponse">2/ <a href="06_01_req_attrib.php">utiliser une requête attributaire</a> : <b>"name"  =  'L''Erdre'</b>. Attention, l'apostrophe doit être doublé pour que ce dernier ne soit pas considéré comme la fin de la chaîne de caractères. Il est aussi possible d'utiliser le caractère <b>\ (antislash)</b> : "name"  =  'L\'Erdre'.</p>
+						    <p class="reponse">2/ <a href="06_01_req_attrib.php">utiliser une requête attributaire</a>&nbsp;: <b>"name"  =  'L''Erdre'</b>. Attention, l'apostrophe doit être doublé pour que ce dernier ne soit pas considéré comme la fin de la chaîne de caractères. Il est aussi possible d'utiliser le caractère <b>\ (antislash)</b>&nbsp;: "name"  =  'L\'Erdre'.</p>
 						</div>
 						<figure>
 						  <a href="illustrations/9_1_selection_erdre.jpg" >
@@ -144,7 +144,7 @@
 				<h4>Création d'une zone tampon autour de la sélection<a class="headerlink" id="IX12c" href="#IX12c"></a></h4>
 				
 					<div class="manip">
-						<p>Pour créer la zone tampon : 
+						<p>Pour créer la zone tampon&nbsp;: 
 						  <a class="thumbnail_bottom" href="#thumb">Boîte à outils de traitements &#8594; Géométrie vectorielle &#8594; Tampon
               	<span>
               		<img src="illustrations/9_1_emplacement_outil_tampon.jpg" alt="Outil Tampon dans la boîte à outils, en tapant 'tampon' dans la barre de recherche" height="300" >
@@ -156,7 +156,7 @@
 							<img src="illustrations/9_1_tampon_degres.jpg" alt="Paramètrage de l'outil zone tampon, où l'on voit que les unités de la couche coursdeau_osm_44 sont les degrés" width="600" >
 						  </a>
 						</figure>
-            <p>Sélectionnez la couche source : <em class="data">coursdeau_osm_44</em>. En-dessous, la distance permet de paramétrer la taille de la zone tampon.</p>
+            <p>Sélectionnez la couche source&nbsp;: <em class="data">coursdeau_osm_44</em>. En-dessous, la distance permet de paramétrer la taille de la zone tampon.</p>
                         <p>Vous pouvez voir que <b>les unités de taille sont les degrés&nbsp;!</b> En effet, notre couche de cours d'eau étant en WGS84, il s'agit des unités de cette couche.</p>
                     </div>
                     
@@ -170,10 +170,10 @@
 	</span>
 </a>(Outils généraux pour les vecteurs) de la boîte à outils.</p>
                         <p>Nommez la nouvelle couche <em class="data">coursdeau_osm_44_L93</em>.</p>
-                    	<p>Vérifiez dans les propriétés de cette nouvelle couche, rubrique <b>Source</b>, que son SCR soit bien le Lambert 93 :</p>
+                    	<p>Vérifiez dans les propriétés de cette nouvelle couche, rubrique <b>Source</b>, que son SCR soit bien le Lambert 93&nbsp;:</p>
                     	<figure>
     						<a href="illustrations/9_1_verif_l93.jpg" >
-    							<img src="illustrations/9_1_verif_l93.jpg" alt="Propriétés de la couche, rubrique Source : le SCR est le RGF93/Lambert-93" width="450" >
+    							<img src="illustrations/9_1_verif_l93.jpg" alt="Propriétés de la couche, rubrique Source&nbsp;: le SCR est le RGF93/Lambert-93" width="450" >
     						</a>
     					</figure>
     					<p>Vérifiez également que cette couche se superpose bien à la couche d'origine <em class="data">coursdeau_osm_44</em>.</p>
@@ -182,18 +182,18 @@
 				    
 				    <div class="manip">
 				        <p><a href="09_01_vecteur.php#IX12b">Sélectionnez à nouveau l'Erdre</a>.</p>
-				        <p>Vous pouvez ensuite créer la zone tampon :</p>
+				        <p>Vous pouvez ensuite créer la zone tampon&nbsp;:</p>
 				        <figure>
     						<a href="illustrations/9_1_tampon_fenetre.jpg" >
     							<img src="illustrations/9_1_tampon_fenetre.jpg" alt="Fenêtre de l'outil de zone tampon" width="600" >
     						</a>
     					</figure>
 						<ul>
-							<li class="espace">Couche source : il s'agit de la couche autour de laquelle sera créée la ou les zones tampons, donc ici la couche de cours d'eau <em class="data">coursdeau_osm_44_L93</em></li>
-							<li class="espace">Entité(s) sélectionnée(s) uniquement : <b>cocher cette case</b> afin de ne créer de zone tampon qu'autour de l'Erdre</li>
-							<li class="espace">Distance tampon : la couche étant projetée en Lambert 93, son unité est le mètre. Choisissez une distance de <b>100 mètres</b>. Le bouton tout à droite permet de faire varier la largeur de la zone en fonction des valeurs d'un champ ou d'une expression&nbsp;; nous ne l'utiliserons pas ici</li>
-							<li class="espace"><b>Regrouper le résultat :</b> cette case permet de fusionner toutes les zones tampon qui seront créées&nbsp;; sinon, une zone tampon est créée par entité de la couche source. Cochez cette case pour cet exercice (cf. image ci-dessous)</li>
-							<li class="espace">Mis en tampon : cliquez tout à droite sur le bouton <b>... &#8594; Enregistrer dans un GeoPackage...</b> choisir le nom : <em class="data">Erdre_tampon100m.gpkg</em> par exemple (2 fois) et l'emplacement de la couche qui sera créée</li>
+							<li class="espace">Couche source&nbsp;: il s'agit de la couche autour de laquelle sera créée la ou les zones tampons, donc ici la couche de cours d'eau <em class="data">coursdeau_osm_44_L93</em></li>
+							<li class="espace">Entité(s) sélectionnée(s) uniquement&nbsp;: <b>cocher cette case</b> afin de ne créer de zone tampon qu'autour de l'Erdre</li>
+							<li class="espace">Distance tampon&nbsp;: la couche étant projetée en Lambert 93, son unité est le mètre. Choisissez une distance de <b>100 mètres</b>. Le bouton tout à droite permet de faire varier la largeur de la zone en fonction des valeurs d'un champ ou d'une expression&nbsp;; nous ne l'utiliserons pas ici</li>
+							<li class="espace"><b>Regrouper le résultat&nbsp;:</b> cette case permet de fusionner toutes les zones tampon qui seront créées&nbsp;; sinon, une zone tampon est créée par entité de la couche source. Cochez cette case pour cet exercice (cf. image ci-dessous)</li>
+							<li class="espace">Mis en tampon&nbsp;: cliquez tout à droite sur le bouton <b>... &#8594; Enregistrer dans un GeoPackage...</b> choisir le nom&nbsp;: <em class="data">Erdre_tampon100m.gpkg</em> par exemple (2 fois) et l'emplacement de la couche qui sera créée</li>
 						</ul>
 						<figure>
     						<a href="illustrations/9_1_tampon_nonregroupe.jpg" >
@@ -202,9 +202,9 @@
     						<a href="illustrations/9_1_tampon_regroupe.jpg" >
     							<img src="illustrations/9_1_tampon_regroupe.jpg" alt="Détail du résultat de la zone tampon en regroupant" width="200" >
     						</a>
-    						<figcaption>Détail du résultat de la zone tampon : à gauche sans regrouper, à droite en regroupant.</figcaption>
+    						<figcaption>Détail du résultat de la zone tampon&nbsp;: à gauche sans regrouper, à droite en regroupant.</figcaption>
     					</figure>
-						<p>Cliquez sur <b>Exécuter</b>, observez le résultat :</p>
+						<p>Cliquez sur <b>Exécuter</b>, observez le résultat&nbsp;:</p>
 						<figure>
     						<a href="illustrations/9_1_res_tampon_erdre.jpg" >
     							<img src="illustrations/9_1_res_tampon_erdre.jpg" alt="Résultat de la zone tampon" width="400" >
@@ -214,10 +214,10 @@
 					
 				<h4>Pour aller plus loin&nbsp;: détail des autres paramètres<a class="headerlink" id="IX12d" href="#IX12d"></a></h4>
 					
-					<p>Les autres paramètres de l'outil de zone tampon sont moins fréquemment modifiés et vous pouvez souvent laisser les valeurs par défaut. Voici leur description pour information, que vous pouvez également retrouver dans l'aide (partie droite de la fenêtre de l'outil) ou bien la <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/processing_algs/qgis/vectorgeometry.html#buffer" >documentation QGIS</a> :</p>
+					<p>Les autres paramètres de l'outil de zone tampon sont moins fréquemment modifiés et vous pouvez souvent laisser les valeurs par défaut. Voici leur description pour information, que vous pouvez également retrouver dans l'aide (partie droite de la fenêtre de l'outil) ou bien la <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/processing_algs/qgis/vectorgeometry.html#buffer" >documentation QGIS</a>&nbsp;:</p>
 					<ul>
-					    <li class="espace"><b>Segments :</b> plus cette valeur est élevée, plus les contours de la zone seront « arrondis ». Il s'agit en fait du nombre de segments utilisés pour représenter un quart de cercle.</li>
-    					<li class="espace"><b>Style d'extrémité :</b> il s'agit de la manière dont les zones tampons sont &#171; terminées &#187;. 3 valeurs sont possibles : rond, plat et carré</li>
+					    <li class="espace"><b>Segments&nbsp;:</b> plus cette valeur est élevée, plus les contours de la zone seront « arrondis ». Il s'agit en fait du nombre de segments utilisés pour représenter un quart de cercle.</li>
+    					<li class="espace"><b>Style d'extrémité&nbsp;:</b> il s'agit de la manière dont les zones tampons sont &#171; terminées &#187;. 3 valeurs sont possibles&nbsp;: rond, plat et carré</li>
     				</ul>
 					<figure>
 						<a href="illustrations/9_1_tampon_extr_rond.jpg" >
@@ -229,10 +229,10 @@
                         <a href="illustrations/9_1_tampon_extr_rond.jpg" >
 							<img src="illustrations/9_1_tampon_extr_carre.jpg" alt="Style d'extrémité carré pour une zone tampon" width="170" >
 						</a>
-						<figcaption>Différents types d'extrémité pour les zones tampon : de gauche à droite, rond, plat et carré.</figcaption>
+						<figcaption>Différents types d'extrémité pour les zones tampon&nbsp;: de gauche à droite, rond, plat et carré.</figcaption>
 					</figure>
 					<ul>
-    					<li class="espace"><b>Style de jointure :</b> les zones tampons sont créées en &#171; décalant &#187; les sommets d'une entité, ici une ligne. Il existe plusieurs manières de réaliser ce décalage, ce que contrôle ce paramètre. 3 valeurs sont possibles : rond, angle droit et oblique.</li>
+    					<li class="espace"><b>Style de jointure&nbsp;:</b> les zones tampons sont créées en &#171; décalant &#187; les sommets d'une entité, ici une ligne. Il existe plusieurs manières de réaliser ce décalage, ce que contrôle ce paramètre. 3 valeurs sont possibles&nbsp;: rond, angle droit et oblique.</li>
     				</ul>
 					<figure>
 						<a href="illustrations/9_1_tampon_jointure_rond.jpg" >
@@ -247,13 +247,13 @@
 						<a href="illustrations/9_1_tampon_jointure_tous.jpg" >
 							<img src="illustrations/9_1_tampon_jointure_tous.jpg" alt="Comparaison des 3 styles de jointure pour une zone tampon" width="140" >
 						</a>
-						<figcaption>Différents types de jointure pour les zones tampon : de gauche à droite, rond, angle droit, oblique et superposition des 3.</figcaption>
+						<figcaption>Différents types de jointure pour les zones tampon&nbsp;: de gauche à droite, rond, angle droit, oblique et superposition des 3.</figcaption>
 					</figure>
 					<ul>
-    					<li class="espace"><b>Limite d'angle droite :</b> ce paramètre n'est utilisé que pour les styles jointure à angle droit. D'après l'aide, il contrôle &#171; la distance maximale de la courbe de décalage &#187;. Personnellement je trouve cette définition peu claire, et d'après mes observations les différences sont minimes (on peut les observer en passant de 1 à 2 par exemple). Ecrivez-moi si vous en savez plus&nbsp;!</li>
+    					<li class="espace"><b>Limite d'angle droite&nbsp;:</b> ce paramètre n'est utilisé que pour les styles jointure à angle droit. D'après l'aide, il contrôle &#171; la distance maximale de la courbe de décalage &#187;. Personnellement je trouve cette définition peu claire, et d'après mes observations les différences sont minimes (on peut les observer en passant de 1 à 2 par exemple). Ecrivez-moi si vous en savez plus&nbsp;!</li>
     				</ul>
 					
-			<h3>Données communes entre deux couches : intersection<a class="headerlink" id="IX13" href="#IX13"></a></h3>
+			<h3>Données communes entre deux couches&nbsp;: intersection<a class="headerlink" id="IX13" href="#IX13"></a></h3>
 			
 				<h4>Qu'est-ce qu'une intersection&nbsp;?<a class="headerlink" id="IX13a" href="#IX13a"></a></h4>
 				
@@ -280,11 +280,11 @@
 							</a>
 						</figure>
 						<ul>
-							<li class="espace">Couche source : choisir la couche <em class="data">commune_44</em>. Ne pas cocher la case &#171; Entités sélectionnées uniquement &#187; puisqu'il s'agit d'intersecter toutes les communes</li>
-							<li class="espace">Couche de superposition : choisir la couche <em class="data">Erdre_tampon_100m</em>. Idem, ne pas cocher la case &#171; Entités sélectionnées uniquement &#187;</li>
-							<li class="espace">Champs d'entrée à conserver : cette option permet de choisir les champs de la couche source à conserver. Ici, nous garderons tous les champs et nous n'utiliserons donc pas ce paramètre</li>
-							<li class="espace">Champs à conserver : cette option permet de choisir les champs de la couche de superposition. Ici, nous garderons tous les champs et nous n'utiliserons donc pas ce paramètre</li>
-							<li class="espace">Intersection : cliquez tout à droite sur le bouton <b>... &#8594; Enregistrer vers un fichier...</b> choisir le nom : <em class="data">inters_communes_tampon.gpkg</em> par exemple et l'emplacement de la couche qui sera créée</li>
+							<li class="espace">Couche source&nbsp;: choisir la couche <em class="data">commune_44</em>. Ne pas cocher la case &#171; Entités sélectionnées uniquement &#187; puisqu'il s'agit d'intersecter toutes les communes</li>
+							<li class="espace">Couche de superposition&nbsp;: choisir la couche <em class="data">Erdre_tampon_100m</em>. Idem, ne pas cocher la case &#171; Entités sélectionnées uniquement &#187;</li>
+							<li class="espace">Champs d'entrée à conserver&nbsp;: cette option permet de choisir les champs de la couche source à conserver. Ici, nous garderons tous les champs et nous n'utiliserons donc pas ce paramètre</li>
+							<li class="espace">Champs à conserver&nbsp;: cette option permet de choisir les champs de la couche de superposition. Ici, nous garderons tous les champs et nous n'utiliserons donc pas ce paramètre</li>
+							<li class="espace">Intersection&nbsp;: cliquez tout à droite sur le bouton <b>... &#8594; Enregistrer vers un fichier...</b> choisir le nom&nbsp;: <em class="data">inters_communes_tampon.gpkg</em> par exemple et l'emplacement de la couche qui sera créée</li>
 						</ul>
 						
 						<p>Cliquez sur <b>Exécuter</b>, observez le résultat&nbsp;:</p>
@@ -293,10 +293,10 @@
 								<img src="illustrations/9_1_inters_resultat.jpg" alt="Résultat de l'intersection, superposé à la couche de communes" width="400" >
 							</a>
 						</figure>
-						<p>Ouvrez la table attributaire de cette couche : notez que les champs des deux couches sont présents.</p>
+						<p>Ouvrez la table attributaire de cette couche&nbsp;: notez que les champs des deux couches sont présents.</p>
 					</div>
 					
-					<p>L'intersection est une opération symétrique : on peut inverser l'ordre des 2 couches dans l'outil d'intersection, et le résultat sera la même, à ceci près que les champs de la première couche sont toujours en premier dans la table attributaire.</p>
+					<p>L'intersection est une opération symétrique&nbsp;: on peut inverser l'ordre des 2 couches dans l'outil d'intersection, et le résultat sera la même, à ceci près que les champs de la première couche sont toujours en premier dans la table attributaire.</p>
 					
 				<h4>Si on voulait aller plus loin...<a class="headerlink" id="IX13c" href="#IX13c"></a></h4>
 				
@@ -308,7 +308,7 @@
 				        <li class="espace">Ajouter un champ à la couche de communes et y calculer le pourcentage en zone inondable, en utilisant le champ Surface joint et la surface de la commune</li>
 				    </ol>
 				    
-				    <p>En combinant les outils vus dans ce tutoriel (et d'autres !), on peut essayer de répondre à des questions sur des données spatiales.</p>
+				    <p>En combinant les outils vus dans ce tutoriel (et d'autres&nbsp;!), on peut essayer de répondre à des questions sur des données spatiales.</p>
 				    
 			<h3>Relancer rapidement un outil à l'aide de l'historique<a class="headerlink" id="IX14" href="#IX14"></a></h3>
 			
@@ -336,15 +336,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_9.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_9.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

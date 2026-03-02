@@ -1,8 +1,8 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
@@ -43,29 +43,29 @@
 					<p>Le principe est de commencer par ajouter toutes les couches dont vous avez besoin, et supprimez toutes les couches inutiles.</p>
 					<div class="manip">
 					 <p>Dans un nouveau projet QGIS, ajoutez la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">commune.gpkg</a></em>.</p>
-					 <p>Puis <a href="01_02_info_geo.php#I23c">filtrez</a> la couche pour ne garder que les communes de Normandie (ou de la région de votre choix !). Le code région de Normandie est 28, comme vous pouvez le vérifier en cliquant sur une commune normande avec l'outil <em>Identifier des entités</em>.</p>
+					 <p>Puis <a href="01_02_info_geo.php#I23c">filtrez</a> la couche pour ne garder que les communes de Normandie (ou de la région de votre choix&nbsp;!). Le code région de Normandie est 28, comme vous pouvez le vérifier en cliquant sur une commune normande avec l'outil <em>Identifier des entités</em>.</p>
 					 <p>Afin d'éviter un effet &#171;&nbsp;île&nbsp;&#187; où la Normandie flotte dans le vide, chargez également la couche <em class="data"><a href="donnees/TutoQGIS_10_Representation.zip">region.gpkg</a></em>, qui jouera le rôle de fond de carte.</p>
 					</div>
 					
 					<p>Il faut ensuite définir le style de chacune des couches.</p>
 					<div class="manip">
-					 <p>Pour la couche commune, le but est de représenter la densité de population par une carte choroplèthe. Pour cela vous devrez déterminer dans la symbologue de la couche :</p>
+					 <p>Pour la couche commune, le but est de représenter la densité de population par une carte choroplèthe. Pour cela vous devrez déterminer dans la symbologue de la couche&nbsp;:</p>
 					 <ul>
-					   <li class="espace">le type de symbologie : <b>Gradué</b> pour pouvoir faire des classes</li>
-					   <li class="espace">la variable à représenter : soit en <a href="10_01_representation.php#X12a">créant un champ densité</a> au préalable, soit directement avec l'expression <b> "population" / ($area/1000000)</b></li>
+					   <li class="espace">le type de symbologie&nbsp;: <b>Gradué</b> pour pouvoir faire des classes</li>
+					   <li class="espace">la variable à représenter&nbsp;: soit en <a href="10_01_representation.php#X12a">créant un champ densité</a> au préalable, soit directement avec l'expression <b> "population" / ($area/1000000)</b></li>
 					   <li class="espace">le mode de discrétisation, par exemple par <b>quantiles</b> (effectifs égaux)</li>
 					   <li class="espace">un nombre de classes, ici <b>7</b></li>
 					   <li class="espace">une palette de couleur, ici le dégradé <b>PuRd</b> (Purple-Red)</li>
 					   <li class="espace">enfin, pour des raisons d'esthétisme et de lisibilité, on va <a href="10_01_representation.php#X12b">masquer les bordures</a> des communes avec l'expression <em>@symbol_color</em></li>
 					 </ul>
-					 <p>Ce qui donne à peu près ceci :</p>
+					 <p>Ce qui donne à peu près ceci&nbsp;:</p>
 					 <figure>
 							<a href="illustrations/10_02_style_communes.jpg" >
 								<img src="illustrations/10_02_style_communes.jpg" alt="Style des couches avec tous les paramètres listés ci-dessus" width="600">
 							</a>
 						</figure>
 						<p>Concernant les régions, l'idée est choisir un fond neutre, par exemple gris clair.</p>
-						<p>Voici un exemple de rendu :</p>
+						<p>Voici un exemple de rendu&nbsp;:</p>
 						<figure>
 							<a href="illustrations/10_02_rendu_style.jpg" >
 								<img src="illustrations/10_02_rendu_style.jpg" alt="communes avec densité de pop en aplat de couleur et régions en gris clair" width="500">
@@ -76,7 +76,7 @@
 					<p>Ne pas oublier de choisir un SCR adapté pour votre projet (projeté si vous souhaitez créer une échelle en mètres par exemple) (cf. <a href="02_04_changer_systeme.php#II41">Modifier le SCR du projet</a>).</p>
 					
 					<div class="manip">
-					 <p>Vérifiez le SCR de vos 2 couches ; normalement le projet doit être dans le même SCR, c'est-à-dire le <b>RGF93/Lambert93 code EPSG 2154</b>.</p>
+					 <p>Vérifiez le SCR de vos 2 couches&nbsp;; normalement le projet doit être dans le même SCR, c'est-à-dire le <b>RGF93/Lambert93 code EPSG 2154</b>.</p>
 					 <p>Dans la mesure où il s'agit d'un SCR projeté et du système officiel en France métropolitaine, ce choix est adapté.</p>
 					</div>
 					
@@ -87,7 +87,7 @@
 					
 					<div class="manip">
 						<p>Dans la fenêtre principale de QGIS, rendez-vous dans le <b>menu Projet &#8594; Enregistrer sous...</b>.</p>
-						<p>Choisissez un emplacement : dossier <b>TutoQGIS_10_Representation/projets</b> par exemple, et un nom : <b>carte_densite_01</b> par exemple.</p>
+						<p>Choisissez un emplacement&nbsp;: dossier <b>TutoQGIS_10_Representation/projets</b> par exemple, et un nom&nbsp;: <b>carte_densite_01</b> par exemple.</p>
 						<p>Un projet peut contenir plusieurs mises en page. Pour renommer, ajouter, supprimer ou dupliquer des mises en page&nbsp;: <b>menu Projet &#8594; Gestionnaire de mise en page...</b>.</p>
 						<figure>
 							<a href="illustrations/10_02_gestionnaire_misenpage.jpg" >
@@ -97,7 +97,7 @@
 					</div>
 					
 					<p>Jusqu'ici nous n'avons que rarement sauvegardé le projet, en cas de problème relancer QGIS et ajouter à nouveau les quelques couches utilisées ne prend pas beaucoup de temps.</p>
-					<p>Par contre, dans le cas d'une mise en page, la sauvegarde devient essentielle ! <b>Pensez donc à régulièrement sauvegarder votre projet.</b></p>
+					<p>Par contre, dans le cas d'une mise en page, la sauvegarde devient essentielle&nbsp;! <b>Pensez donc à régulièrement sauvegarder votre projet.</b></p>
 					
 						
 				<h3>Mise en page&nbsp;: une fenêtre dédiée<a class="headerlink" id="X23" href="#X23"></a></h3>
@@ -106,7 +106,7 @@
 					
 					<div class="manip">
 						<p>Créez une nouvelle mise en page&nbsp;: <b>menu Projet &#8594; Nouvelle mise en page...</b> Tapez un titre, par exemple densité communes.</p>
-						<p>La fenêtre de mise en page s'ouvre :</p>
+						<p>La fenêtre de mise en page s'ouvre&nbsp;:</p>
 						<figure>
 							<a href="illustrations/10_02_misenpage_general.jpg" >
 								<img src="illustrations/10_02_misenpage_general.jpg" alt="Fenêtre de mise en page, avec des numéros pour les différentes parties (menus et outils, carte...)" width="600">
@@ -115,21 +115,21 @@
 					</div>
 					
 					<p>On trouve dans cette fenêtre&nbsp;:</p>
-					<p><em class="numero">1. </em><b>Mise en page :</b> cette zone correspond à une page blanche, dont vous pouvez paramétrez notamment les dimensions. Vous pouvez ajouter à cette page des cartes (liées à la fenêtre principale de QGIS), légendes, échelles etc.</p>
-					<p><em class="numero">2. </em><b>Menus et barres d'outils :</b> on retrouve les mêmes outils dans les menus ou via les icônes.</p>
-					<p><em class="numero">3. </em><b>Onglets Eléments et Historique :</b></p>
+					<p><em class="numero">1. </em><b>Mise en page&nbsp;:</b> cette zone correspond à une page blanche, dont vous pouvez paramétrez notamment les dimensions. Vous pouvez ajouter à cette page des cartes (liées à la fenêtre principale de QGIS), légendes, échelles etc.</p>
+					<p><em class="numero">2. </em><b>Menus et barres d'outils&nbsp;:</b> on retrouve les mêmes outils dans les menus ou via les icônes.</p>
+					<p><em class="numero">3. </em><b>Onglets Eléments et Historique&nbsp;:</b></p>
 					 <ul>
 					   <li><b>Éléments</b> comporte la liste des éléments présents sur la page (carte, légende etc.). Vous pouvez les rendre visibles ou invisibles, verrouillés ou non, et en modifier l'ordre.</li>
 					   <li>dans <b>l'historique</b>, vous pouvez retrouvez la liste des dernières opérations que vous avez effectuées, par exemple modifier l'ordre des éléments. En cliquant sur une opération, vous l'effectuez à nouveau.</li>
 					 </ul>
-					<p><em class="numero">4. </em>Plusieurs onglets sont disponibles ici :</p>
+					<p><em class="numero">4. </em>Plusieurs onglets sont disponibles ici&nbsp;:</p>
 					<ul>
-					 <li><b>Mise en page :</b> cet onglet permet notamment de définir une grille d'accrochage, et une résolution pour l'export. Le contenu de cet onglet ne change jamais.</li>
-					 <li><b>Propriétés de l'objet :</b> cet onglet contient les propriétés de l'objet actuellement sélectionné, son contenu varie donc en fonction du type d'objet : carte, légende, texte...</li>
-					 <li><b>Guides</b> : ici, vous pouvez définir des lignes de référence pour y aligner les objets. Nous n'utiliserons pas cette fonctionnalité, mais <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/print_composer/overview_composer.html#the-guides-panel" >lisez la documentation</a> pour en savoir plus !</li>
-					 <li><b>Atlas :</b> QGIS possède un mode Atlas, très pratique si vous avez une série de cartes à faire sur des zones différentes. Nous n'aborderons pas son fonctionnement, mais vous pouvez en savoir plus par exemple <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/training_manual/forestry/forest_maps.html?highlight=atlas">ici</a>.</li>
+					 <li><b>Mise en page&nbsp;:</b> cet onglet permet notamment de définir une grille d'accrochage, et une résolution pour l'export. Le contenu de cet onglet ne change jamais.</li>
+					 <li><b>Propriétés de l'objet&nbsp;:</b> cet onglet contient les propriétés de l'objet actuellement sélectionné, son contenu varie donc en fonction du type d'objet&nbsp;: carte, légende, texte...</li>
+					 <li><b>Guides</b>&nbsp;: ici, vous pouvez définir des lignes de référence pour y aligner les objets. Nous n'utiliserons pas cette fonctionnalité, mais <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/print_composer/overview_composer.html#the-guides-panel" >lisez la documentation</a> pour en savoir plus&nbsp;!</li>
+					 <li><b>Atlas&nbsp;:</b> QGIS possède un mode Atlas, très pratique si vous avez une série de cartes à faire sur des zones différentes. Nous n'aborderons pas son fonctionnement, mais vous pouvez en savoir plus par exemple <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/training_manual/forestry/forest_maps.html?highlight=atlas">ici</a>.</li>
 					</ul>
-					<p><em class="numero">5. </em><b>Barre d'état :</b> vous pouvez lire ici les coordonnées de votre souris dans la page (il ne s'agit pas de coordonnées géographiques, mais de coordonnées en mm par rapport au coin en haut à gauche de la page) et vous pourrez aussi modifier le niveau de zoom sur la page.</p>
+					<p><em class="numero">5. </em><b>Barre d'état&nbsp;:</b> vous pouvez lire ici les coordonnées de votre souris dans la page (il ne s'agit pas de coordonnées géographiques, mais de coordonnées en mm par rapport au coin en haut à gauche de la page) et vous pourrez aussi modifier le niveau de zoom sur la page.</p>
 					
 					
 				<h3>Modifier les dimensions de la page<a class="headerlink" id="X24" href="#X24"></a></h3>
@@ -145,11 +145,11 @@
 							</a>
 						</figure>
 						<ul>
-						 <li class="espace">Largeur : <b>230 mm</b></li>
-						 <li class="espace">Hauteur : <b>160 mm</b></li>
+						 <li class="espace">Largeur&nbsp;: <b>230 mm</b></li>
+						 <li class="espace">Hauteur&nbsp;: <b>160 mm</b></li>
 						</ul>
 						
-						<p><img class="icone" src="illustrations/10_02_zoom_page_icone.jpg" alt="icône zoom sur l'emprise totale de la page" >Pour zoomer sur votre page : cliquez sur l'icône <b>Zoom complet</b> (ou <b>menu Vue &#8594; Zoom sur l'emprise totale</b>).</p>
+						<p><img class="icone" src="illustrations/10_02_zoom_page_icone.jpg" alt="icône zoom sur l'emprise totale de la page" >Pour zoomer sur votre page&nbsp;: cliquez sur l'icône <b>Zoom complet</b> (ou <b>menu Vue &#8594; Zoom sur l'emprise totale</b>).</p>
 					</div>
 						
 				<h3>Ajouter une carte<a class="headerlink" id="X25" href="#X25"></a></h3>
@@ -166,19 +166,19 @@
 					
 					</div>
 					
-					<p><b>La carte ainsi créée est synchronisée avec les données visibles dans QGIS</b> : si vous changer le style d'une des couches dans la fenêtre principale de QGIS et revenez à la mise en page, la carte aura été mise à jour (si besoin en cliquant sur le bouton actualiser).</p>
+					<p><b>La carte ainsi créée est synchronisée avec les données visibles dans QGIS</b>&nbsp;: si vous changer le style d'une des couches dans la fenêtre principale de QGIS et revenez à la mise en page, la carte aura été mise à jour (si besoin en cliquant sur le bouton actualiser).</p>
 						
 					<div class="manip">
 					
-						<p><img class="icone" src="illustrations/10_02_deplacer_contenu_icone.jpg" alt="icône déplacer le contenu de l'objet" >Pour <b>centrer la carte</b> : cliquez sur l'icône <b>Déplacer le contenu de l'objet</b> et faites glisser le contenu de la carte.</p>
-						<p>Pour <b>zoomer et dézoomer</b>, 3 méthodes :</p>
+						<p><img class="icone" src="illustrations/10_02_deplacer_contenu_icone.jpg" alt="icône déplacer le contenu de l'objet" >Pour <b>centrer la carte</b>&nbsp;: cliquez sur l'icône <b>Déplacer le contenu de l'objet</b> et faites glisser le contenu de la carte.</p>
+						<p>Pour <b>zoomer et dézoomer</b>, 3 méthodes&nbsp;:</p>
 						<ul>
 						    <li class="espace">pour un zoom &#171;&nbsp;à la louche&nbsp;&#187;, utilisez la <b>molette</b> de la souris après avoir sélectionné l'outil <b>Déplacer le contenu de l'objet</b></li>
-						    <li class="espace"><img class="icone" src="illustrations/10_02_selection_deplace_icone.jpg" alt="Icône de l'outil de sélection du mode mise en page" >pour un zoom plus précis : sélectionnez la carte au moyen de l'<b>outil de sélection</b>, puis <b>modifiez l'échelle</b> dans l'onglet Propriétés de l'objet &#8594; Propriétés principales
+						    <li class="espace"><img class="icone" src="illustrations/10_02_selection_deplace_icone.jpg" alt="Icône de l'outil de sélection du mode mise en page" >pour un zoom plus précis&nbsp;: sélectionnez la carte au moyen de l'<b>outil de sélection</b>, puis <b>modifiez l'échelle</b> dans l'onglet Propriétés de l'objet &#8594; Propriétés principales
     							<a href="illustrations/10_02_zoom.jpg" >
     								<img src="illustrations/10_02_zoom.jpg" alt="Fixer l'échelle de la carte" width="450">
     							</a></li>
-        					<li class="espace">Synchroniser la carte de la mise en page avec celle de la fenêtre principale de QGIS : cliquez sur la 2ème icône dans la barre d'outils en haut des propriétés de l'objet&nbsp;:
+        					<li class="espace">Synchroniser la carte de la mise en page avec celle de la fenêtre principale de QGIS&nbsp;: cliquez sur la 2ème icône dans la barre d'outils en haut des propriétés de l'objet&nbsp;:
     							<a href="illustrations/10_02_zoom2.jpg" >
     								<img src="illustrations/10_02_zoom2.jpg" alt="Fixer l'échelle de la carte sur celle de la fenêtre QGIS" width="270">
     							</a></li>
@@ -190,13 +190,13 @@
 					
 				<h3>Ajouter une légende<a class="headerlink" id="X26" href="#X26"></a></h3>
 				
-					<p>Il existe de nombreuses possibilités pour paramétrer la légende. Elles ne seront pas toutes passées en revue ici, mais n'hésitez pas à explorer par vous-même !</p>
+					<p>Il existe de nombreuses possibilités pour paramétrer la légende. Elles ne seront pas toutes passées en revue ici, mais n'hésitez pas à explorer par vous-même&nbsp;!</p>
 					
 					<h4>Création de la légende<a class="headerlink" id="X26a" href="#X26a"></a></h4>
     					<div class="manip">
     					
     						<p><img class="icone" src="illustrations/10_02_legende_icone.jpg" alt="icône ajouter légende" >Pour ajouter une <b>légende</b> : icône <b>Ajouter Légende</b>, puis cliquez n’importe où sur la carte.</p>
-    						<p>La fenêtre <b>Propriétés du nouvel objet</b> s'ouvre : cliquez sur OK sans modifiez les paramètres, ce que vous pourrez toujours faire par la suite.</p>
+    						<p>La fenêtre <b>Propriétés du nouvel objet</b> s'ouvre&nbsp;: cliquez sur OK sans modifiez les paramètres, ce que vous pourrez toujours faire par la suite.</p>
     						<p>La légende reprend celle des couches dans QGIS&nbsp;: si vous modifiez les étiquettes de la légende dans la propriété de la couche, la légende de la mise en page prendra en compte ces modifications.</p>
     						<p>Dans la fenêtre principale de QGIS, ouvrez les propriétés de la couche, rubrique Style. Vous pouvez&nbsp;:</p>
     						<ul>
@@ -229,16 +229,16 @@
     							</a>
     						</figure>
     						<p>Vous pouvez maintenant, au moyen de ces outils&nbsp;:</p>
-    					    <p><img class="icone" src="illustrations/10_02_legende_pli_icone.jpg" alt="2 icônes pour monter ou descendre les éléménts de la légende" ><b>Plier ou déplier</b> les éléments dans la légende : pratique pour y voir plus clair si vous avez beaucoup d'éléments</p>
-    					    <p><img class="icone" src="illustrations/10_02_legende_ordre_icone.jpg" alt="2 icônes pour monter ou descendre les éléménts de la légende" ><b>Modifier l'ordre</b> des éléments dans la légende : utile pour mettre les éléments plus importants en premier</p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_pli_icone.jpg" alt="2 icônes pour monter ou descendre les éléménts de la légende" ><b>Plier ou déplier</b> les éléments dans la légende&nbsp;: pratique pour y voir plus clair si vous avez beaucoup d'éléments</p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_ordre_icone.jpg" alt="2 icônes pour monter ou descendre les éléménts de la légende" ><b>Modifier l'ordre</b> des éléments dans la légende&nbsp;: utile pour mettre les éléments plus importants en premier</p>
     					    <p><img class="icone" src="illustrations/10_02_legende_groupe_icone.jpg" alt="icône pour créer des groupes dans la légende" ><b>Créer des groupes</b>, pour hiérarchiser l'information</p>
     					    <p><img class="icone" src="illustrations/10_02_legende_plus_icone.jpg" alt="icône pour ajouter des éléments dans la légende" ><b>Ajouter des couches</b> présentes dans QGIS et non visibles dans la légende</p>
     					    <p><img class="icone" src="illustrations/10_02_legende_moins_icone.jpg" alt="icône pour supprimer des éléments de la légende" ><b>Supprimer des couches</b> de la légende, par exemple ici la couche <em class="data">region</em>, qui n'apporte rien à la compréhension de la carte en étant présente dans la légende</p>
     					    <p><img class="icone" src="illustrations/10_02_legende_texte_icone.jpg" alt="icône pour modifier le texte des éléments de la légende" ><b>Modifier le texte</b> des éléments, si vous ne l'avez pas déjà fait dans QGIS, par exemple <em>discrétisation par quantiles</em> à la place de <em>commune</em></p>
     					    <p><img class="icone" src="illustrations/10_02_legende_compter_icone.jpg" alt="icône pour compter le nombre d'entités dans la légende" ><b>Afficher le nombre d'entités</b> dans une couche et éventuellement dans chaque classe, après avoir sélectionné une couche</p>
-    					    <p><img class="icone" src="illustrations/10_02_legende_expression_icone.jpg" alt="icône pour utiliser une expression pour définir le texte de légende" ><b>Utiliser une expression</b> pour définir le texte à afficher, c'est une fonctionnalité un peu plus avancée que nous ne verrons pas ici mais vous pouvez <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/print_composer/composer_items/composer_legend.html#legend-items-data-defined" >lire la documentation</a> pour en savoir plus !</p>
+    					    <p><img class="icone" src="illustrations/10_02_legende_expression_icone.jpg" alt="icône pour utiliser une expression pour définir le texte de légende" ><b>Utiliser une expression</b> pour définir le texte à afficher, c'est une fonctionnalité un peu plus avancée que nous ne verrons pas ici mais vous pouvez <a class="ext" target="_blank" href="https://docs.qgis.org/latest/fr/docs/user_manual/print_composer/composer_items/composer_legend.html#legend-items-data-defined" >lire la documentation</a> pour en savoir plus&nbsp;!</p>
     					    <p><img class="icone" src="illustrations/10_02_legende_filtrexpression_icone.jpg" alt="icône pour filtrer les éléments de la légende en fonction d'une expression" ><b>Filtrer la légende en fonction d'une expression</b></p>
-    					    <p><b>Ne montrer que les entités à l'intérieur de la carte liée</b> (case à cocher) : vous pouvez tester cette fonctionnalité en déplaçant le contenu de la carte pour ne voir qu'un petit bout de la Normandie par exemple ; les classes non représentées ne seront plus visibles dans la légende. Si vous déplacez le contenu de la carte pour ne voir que du blanc (pas de données), la légende sera vide.</p>
+    					    <p><b>Ne montrer que les entités à l'intérieur de la carte liée</b> (case à cocher)&nbsp;: vous pouvez tester cette fonctionnalité en déplaçant le contenu de la carte pour ne voir qu'un petit bout de la Normandie par exemple&nbsp;; les classes non représentées ne seront plus visibles dans la légende. Si vous déplacez le contenu de la carte pour ne voir que du blanc (pas de données), la légende sera vide.</p>
     					</div>
     					
     					<h4>Ajouter un titre<a class="headerlink" id="X26c" href="#X26c"></a></h4>
@@ -267,15 +267,15 @@
     					   </figure>
     					   <p>Voici quelques uns de ces éléments passés en revue, n'hésitez pas à tester&nbsp;!</p>
     					   <ul>
-    					       <li class="espace"><b>Fonts (Polices)</b> : vous pouvez choisir la police, la taille et le style pour le titre, les groupes etc.</li>
-    					       <li class="espace"><b>Colonnes</b> : pour une légende sur plusieurs colonnes</li>
-    					       <li class="espace"><b>Symbole</b> : pour modifier la taille des symboles de légende</li>
-    					       <li class="espace"><b>Espacement</b> : pour augmenter ou diminuer l'espace entre les différents éléments (par exemple sous le titre)</li>
-    					       <li class="espace"><b>Cadre</b> : pour encadrer ou non la légende</li>
-    					       <li class="espace"><b>Arrière-plan</b> : pour enlever ou choisir la couleur d'arrière-plan. Cette couleur peut avoir de la transparence.</li>
+    					       <li class="espace"><b>Fonts (Polices)</b>&nbsp;: vous pouvez choisir la police, la taille et le style pour le titre, les groupes etc.</li>
+    					       <li class="espace"><b>Colonnes</b>&nbsp;: pour une légende sur plusieurs colonnes</li>
+    					       <li class="espace"><b>Symbole</b>&nbsp;: pour modifier la taille des symboles de légende</li>
+    					       <li class="espace"><b>Espacement</b>&nbsp;: pour augmenter ou diminuer l'espace entre les différents éléments (par exemple sous le titre)</li>
+    					       <li class="espace"><b>Cadre</b>&nbsp;: pour encadrer ou non la légende</li>
+    					       <li class="espace"><b>Arrière-plan</b>&nbsp;: pour enlever ou choisir la couleur d'arrière-plan. Cette couleur peut avoir de la transparence.</li>
     					   </ul>
     						
-    					<p>Un exemple de légende :</p>
+    					<p>Un exemple de légende&nbsp;:</p>
     					<figure>
     						<a href="illustrations/10_02_legende_visu.jpg" >
     							<img src="illustrations/10_02_legende_visu.jpg" alt="Exemple de légende pour la densité de population" width="200">
@@ -377,7 +377,7 @@
 					<div class="manip">
 						<p><img class="icone" src="illustrations/10_02_etiquette_icone.jpg" alt="icône ajouter une étiquette" >Pour ajouter du <b>texte</b>, par exemple un titre, les sources, l'auteur... : outil <b>Ajouter Etiquette</b>.</p>
 						<p>Dans les propriétés de cet objet, vous pouvez ensuite modifier le texte, la police, la couleur...</p>
-						<p><img class="icone" src="illustrations/10_02_image_icone.jpg" alt="icône ajouter une image" >Si vous voulez ajouter une image, par exemple un logo : outil <b>Ajouter Image</b> puis dessinez un rectangle sur la page.</p>
+						<p><img class="icone" src="illustrations/10_02_image_icone.jpg" alt="icône ajouter une image" >Si vous voulez ajouter une image, par exemple un logo&nbsp;: outil <b>Ajouter Image</b> puis dessinez un rectangle sur la page.</p>
 						<p>Dans les propriétés principales, choisissez ensuite une image sur votre ordinateur. Attention, il faut choisir <b>image raster</b> si votre image est au format JPG, PNG... ou bien <b>image SVG</b> si elle est au format vectoriel SVG.</p>
 						<p>Pour une image raster&nbsp;:</p>
 						<figure>
@@ -417,7 +417,7 @@
 					<p>Il est possible de faire figurer dans cette deuxième carte un rectangle correspondant à l'emprise de la première carte (qui sera mis à jour automatiquement si cette emprise change).</p>
 					<figure>
 						<a href="illustrations/10_02_apercu.jpg" >
-							<img src="illustrations/10_02_apercu.jpg" alt="exemple : une carte de France, avec en haut une petite carte d'Europe et un rectangle correspondant à l'emprise de la carte de France" width="500">
+							<img src="illustrations/10_02_apercu.jpg" alt="exemple&nbsp;: une carte de France, avec en haut une petite carte d'Europe et un rectangle correspondant à l'emprise de la carte de France" width="500">
 						</a>
 						<figcaption>En bas à droite, une carte de situation avec un rectangle correspondant à l'emprise de la carte principale.</figcaption>
 					</figure>
@@ -425,7 +425,7 @@
           <p>Pour cela, nous allons ajouter une couche de pays qui éviter l'effet &#171;&nbsp;île&nbsp;&#187; qu'on aurait en utilisant la couche de régions.</p>
 					
 					<div class="manip">
-					 <p>Comme les cartes mises en page sont liées à la fenêtre principale de QGIS, si nous ajoutons une nouvelle couche la carte sera modifiée. Pour éviter cela, dans la fenêtre de mise en page, sélectionnez la carte et cochez la case <b>Verrouiller les couches</b> dans l'onglet <b>Propriétés de l'objet</b> :</p>
+					 <p>Comme les cartes mises en page sont liées à la fenêtre principale de QGIS, si nous ajoutons une nouvelle couche la carte sera modifiée. Pour éviter cela, dans la fenêtre de mise en page, sélectionnez la carte et cochez la case <b>Verrouiller les couches</b> dans l'onglet <b>Propriétés de l'objet</b>&nbsp;:</p>
 					 <figure>
 					  <img src="illustrations/10_02_verrouiller_couches.jpg" alt="case pour verrouiller les couches dans les propriétés de la carte" width="370">
 					 </figure>
@@ -446,9 +446,9 @@
 					 </ul>
 				 </div>
 				 
-				 <p>L'emprise de la carte principale est maintenant visible dans la carte de situation ; vous pouvez vérifier que si cette emprise change, le rectangle est automatiquement mis à jour.</p>
+				 <p>L'emprise de la carte principale est maintenant visible dans la carte de situation&nbsp;; vous pouvez vérifier que si cette emprise change, le rectangle est automatiquement mis à jour.</p>
 						
-				<p>Dans une mise en page avec plusieurs cartes et plusieurs couches pour chaque carte, il est facile de s'emmêler. Pour éviter ça, vous pouvez procéder ainsi :</p>
+				<p>Dans une mise en page avec plusieurs cartes et plusieurs couches pour chaque carte, il est facile de s'emmêler. Pour éviter ça, vous pouvez procéder ainsi&nbsp;:</p>
 					
 				<ul>
 				  <li class="espace">Dans QGIS, créez autant de groupes que de cartes dans votre mise en page (clic droit dans la liste des couches &#8594; Ajouter un groupe), par exemple un groupe <b>carte principale</b> et un groupe <b>carte de situation</b></li>
@@ -461,17 +461,17 @@
 				
 				<h3>Exporter la carte<a class="headerlink" id="X210" href="#X210"></a></h3>
 				
-					<p>Vous êtes satisfait de votre carte ? Voici venu le moment de l'exporter !</p>
+					<p>Vous êtes satisfait de votre carte&nbsp;? Voici venu le moment de l'exporter&nbsp;!</p>
 					<p>Vous pouvez soit l'<b>exporter au format image</b> (PNG, JPG) pour l'intégrer directement dans un rapport par exemple, soit l'<b>exporter au format vectoriel</b> SVG ou PDF pour la retravailler dans un logiciel de dessin type Inkscape ou Adobe Illustrator. Vous pouvez également l'imprimer directement&nbsp;!</p>
 					
 					<div class="manip">
-						<p>Pour <b>exporter au format image</b> : vous pouvez tout d'abord paramétrer la résolution à laquelle votre carte sera exportée : onglet <b>Mise en page</b>, <b>Paramètres d'export :</b></p>
+						<p>Pour <b>exporter au format image</b>&nbsp;: vous pouvez tout d'abord paramétrer la résolution à laquelle votre carte sera exportée&nbsp;: onglet <b>Mise en page</b>, <b>Paramètres d'export&nbsp;:</b></p>
 						<figure>
 							<a href="illustrations/10_02_export_resolution.jpg" >
 								<img src="illustrations/10_02_export_resolution.jpg" alt="choix d'une résolution de 300 dpi pour l'export" width="400">
 							</a>
 						</figure>
-						<p class="note">On considère généralement qu'une résolution de 300 dpi est suffisante pour une impression. Pour en savoir plus sur ce qu'est la résolution d'une image : <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/R%C3%A9solution_%28imagerie_num%C3%A9rique%29" >http://fr.wikipedia.org/wiki/R%C3%A9solution_%28imagerie_num%C3%A9rique%29</a></p>
+						<p class="note">On considère généralement qu'une résolution de 300 dpi est suffisante pour une impression. Pour en savoir plus sur ce qu'est la résolution d'une image&nbsp;: <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/R%C3%A9solution_%28imagerie_num%C3%A9rique%29" >http://fr.wikipedia.org/wiki/R%C3%A9solution_%28imagerie_num%C3%A9rique%29</a></p>
 						<p><img class="icone" src="illustrations/10_02_export_image_icone.jpg" alt="icône Exporter comme une image" >Pour ensuite exporter votre mise en page au format image : à partir de la fenêtre de mise en page, <b>menu Mise en page &#8594; Exporter au format image...</b></p>
 						<p>De nombreux formats sont disponibles : PNG, JPEG, TIFF...</p>
 					</div>
@@ -494,7 +494,7 @@
 						<p><img class="icone" src="illustrations/10_02_impression_icone.jpg" alt="icône Imprimer" >Pour <b>imprimer la carte</b> : <b>menu mise en page &#8594; Imprimer...</b> ou bien <b>Ctrl + P</b></p>
 					</div>
 						
-					<p>Voici un exemple de carte (mais ça n'est pas un modèle !) :</p>
+					<p>Voici un exemple de carte (mais ça n'est pas un modèle&nbsp;!)&nbsp;:</p>
 				  <figure>
 						<a href="illustrations/10_02_exemple_carte.jpg" >
 							<img src="illustrations/10_02_exemple_carte.jpg" alt="Exemple de carte de la densité de pop des communes normandes" width="600">
@@ -508,21 +508,21 @@
 
 				<br>
 				<a class="prec" href="10_01_representation.php">chapitre précédent</a>
-				<a class="suiv" href="11_00_automatisation.php">partie XI : automatisation de traitements</a>
+				<a class="suiv" href="11_00_automatisation.php">partie XI&nbsp;: automatisation de traitements</a>
 				<br>
 				<a class="hautpage" href="#wrap">haut de page</a>
 
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_10.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_10.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 		
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

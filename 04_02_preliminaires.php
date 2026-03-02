@@ -1,15 +1,15 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
 	
 		<div class="main">
 		  <h1 class="hide_for_pdf">IV.  Géoréférencement</h1>
-			<h2>IV.2  Géoréférencement : les préliminaires</h2>
+			<h2>IV.2  Géoréférencement&nbsp;: les préliminaires</h2>
 				<ul class="listetitres">
 					<li><a href="#IV21">Objectif</a></li>
 					<li><a href="#IV22">Découverte de l'image à caler</a></li>
@@ -18,7 +18,7 @@
 				
 			<h3>Objectif<a class="headerlink" id="IV21" href="#IV21"></a></h3>
 	
-    			<p>Notre but sera ici de caler une carte de l'île d'Oahu (Hawaii) de 1902 (source : <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3A1902_Land_Office_Map_of_the_Island_of_Oahu%2C_Hawaii_(_Honolulu_)_-_Geographicus_-_OhauHawaii-lo-1902.jpg">Wikimedia</a>).</p>
+    			<p>Notre but sera ici de caler une carte de l'île d'Oahu (Hawaii) de 1902 (source&nbsp;: <a class="ext" target="_blank" href="http://commons.wikimedia.org/wiki/File%3A1902_Land_Office_Map_of_the_Island_of_Oahu%2C_Hawaii_(_Honolulu_)_-_Geographicus_-_OhauHawaii-lo-1902.jpg">Wikimedia</a>).</p>
     			<figure>
     				<a href="illustrations/4_2_carte_oahu.jpg" >
     					<img src="illustrations/4_2_carte_oahu.jpg" alt="carte à caler de l'île d'Oahu" width="600">
@@ -29,7 +29,7 @@
 			
 			<h3>Découverte de l'image à caler<a class="headerlink" id="IV22" href="#IV22"></a></h3>			
 			
-				<p>Où se situe l'île d'Oahu? Rendez-vous par exemple sur Wikipedia pour le savoir : <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Oahu" >http://fr.wikipedia.org/wiki/Oahu</a>.</p>
+				<p>Où se situe l'île d'Oahu? Rendez-vous par exemple sur Wikipedia pour le savoir&nbsp;: <a class="ext" target="_blank" href="http://fr.wikipedia.org/wiki/Oahu" >http://fr.wikipedia.org/wiki/Oahu</a>.</p>
 				<div class="question">
 					<input type="checkbox" id="faq-1">
 					<p><label for="faq-1">Quelles sont les coordonnées de l'île d'Oahu&nbsp;? Dans quel SCR sont mesurées ces coordonnées&nbsp;?</label></p>
@@ -52,15 +52,15 @@
 				
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_4.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_4.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

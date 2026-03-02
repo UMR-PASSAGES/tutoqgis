@@ -1,23 +1,23 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 	
 		<div class="main">
 			<h1>I.  Prise en main</h1>
 			<p>Cette première partie constitue une introduction aux logiciels SIG de manière générale et à QGIS en particulier.</p>
-			<p>Notions abordées :</p>
+			<p>Notions abordées&nbsp;:</p>
 				<ul>
-					<li>Qu'est-ce qu'un SIG ?</li>
+					<li>Qu'est-ce qu'un SIG&nbsp;?</li>
 					<li>Ajout de données vecteur et raster</li>
 					<li>Propriétés d'une couche</li>
 					<li>Modifier la représentation d'une couche</li>
 					<li>La table attributaire</li>
 					<li>Formats de données vecteur et raster</li>
-					<li>Espace de travail : le projet QGZ</li>
+					<li>Espace de travail&nbsp;: le projet QGZ</li>
 				</ul>
 			<p>Les données pour cette partie ainsi qu'une version PDF du tutoriel sont accessibles dans la rubrique <a href="telechargement.php"> téléchargement</a>.</p>
 			
@@ -27,15 +27,15 @@
 		</div>
 		
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_1.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_1.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 	
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>

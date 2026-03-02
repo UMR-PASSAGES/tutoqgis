@@ -1,32 +1,32 @@
-<?php include('head.inc.php'); ?>
+<?php include('head.inc.php');?>
 
 <body>
 <div id="wrap">
-	<?php include('menus_horizontaux.inc.php'); ?>
+	<?php include('menus_horizontaux.inc.php');?>
 	
 	<div id="container_main_sidebar">
 
 		
 		<div class="main">
 		  <h1 class="hide_for_pdf">X.  Représenter des données et les mettre en page</h1>
-			<h2>X.1  Représenter des données : différentes méthodes adaptées à différents cas</h2>
+			<h2>X.1  Représenter des données&nbsp;: différentes méthodes adaptées à différents cas</h2>
 				<ul class="listetitres">
-					<li><a href="#X11">Représenter des quantités ou des effectifs : carte en symboles proportionnels</a>
+					<li><a href="#X11">Représenter des quantités ou des effectifs&nbsp;: carte en symboles proportionnels</a>
 						<ul class="listesoustitres">
 							<li><a href="#X11a">Créer une couche de points à partir d'une couche de polygones</a></li>
 							<li><a href="#X11b">Faire varier la surface de points en fonction d'un champ</a></li>
 							<li><a href="#X11c">Surface, rayon, Flannery... Pour en savoir plus sur les différentes méthodes</a></li>
-							<li><a href="#X11d">Les plus petits devant ! Modifier l'ordre d'affichage des symboles</a></li>
+							<li><a href="#X11d">Les plus petits devant&nbsp;! Modifier l'ordre d'affichage des symboles</a></li>
 							<li><a href="#X11e">C'est mieux avec la légende</a></li>
 						</ul>
 					</li>
-					<li><a href="#X12">Représenter des variables relatives à des surfaces : cartes choroplèthes</a>
+					<li><a href="#X12">Représenter des variables relatives à des surfaces&nbsp;: cartes choroplèthes</a>
 						<ul class="listesoustitres">
 							<li><a href="#X12a">Créer un champ de densité de population</a></li>
 							<li><a href="#X12b">Faire varier la couleur des communes en fonction du champ densité</a></li>
 						</ul>
 					</li>
-					<li><a href="#X13">Représenter des quantités ou des effectifs : cartes en semis de points</a></li>
+					<li><a href="#X13">Représenter des quantités ou des effectifs&nbsp;: cartes en semis de points</a></li>
           <li><a href="#X14">Connaître la distribution de ses données</a>
 					    <ul class="listesoustitres">
 							<li><a href="#X14a">Histogramme simple</a></li>
@@ -41,7 +41,7 @@
 				<p>Le <a href="10_02_mise_en_page.php" >chapitre suivant</a> abordera quant à lui la mise en page proprement dite, dans le module dédié de QGIS, qui permet d'exporter une carte avec légende, titre, échelle...</p>
 				<p>A partir d'une couche de communes et leur population, nous allons voir différentes manières de visualiser cette population.</p>
 				
-				<p><b>Nous ne parlerons pas ici, ou très peu, de sémiologie graphique et du choix du mode de représentation</b>, ce qui a déjà été fait dans de nombreux ouvrages, notamment :</p>
+				<p><b>Nous ne parlerons pas ici, ou très peu, de sémiologie graphique et du choix du mode de représentation</b>, ce qui a déjà été fait dans de nombreux ouvrages, notamment&nbsp;:</p>
 				<ul>
 					<li><em>Sémiologie graphique: Les diagrammes - Les réseaux - Les cartes</em> de Jacques Bertin</li>
 					<li><em>Manuel de cartographie</em> de Nicolas Lambert et Christine Zanin</li>
@@ -51,21 +51,21 @@
 				
 				    
 				
-				<h3>Représenter des quantités ou des effectifs : carte en symboles proportionnels<a class="headerlink" id="X11" href="#X11"></a></h3>
+				<h3>Représenter des quantités ou des effectifs&nbsp;: carte en symboles proportionnels<a class="headerlink" id="X11" href="#X11"></a></h3>
 				
 					<p>Les cartes en symbole proportionnels permettent la représentation de quantités ou d'effectifs par des symboles, généralement des cercles. La surface des symboles sera proportionnelle à la quantité ou l'effectif.</p>
 					<figure>
 						<a href="https://neocarto.hypotheses.org/5064" >
 							<img src="illustrations/10_01_exemple_cercleprop.jpg" alt="Exemple d'une carte en cercles proportionnels sur les ouvriers et cadres en Occitanie" width="600">
 						</a>
-						<figcaption>Exemple d'une carte en cercles proportionnels réalisée par Nicolas Lambert et Ronan Ysebaert (2018). Source : <a href="https://neocarto.hypotheses.org/5064">carnet (néo)cartographique</a>.</figcaption>
+						<figcaption>Exemple d'une carte en cercles proportionnels réalisée par Nicolas Lambert et Ronan Ysebaert (2018). Source&nbsp;: <a href="https://neocarto.hypotheses.org/5064">carnet (néo)cartographique</a>.</figcaption>
 					</figure>
 					
 					<h4>Créer une couche de points à partir d'une couche de polygones<a class="headerlink" id="X11a" href="#X11a"></a></h4>
 					
 						<p>Dans QGIS, la visualisation de données sous forme de cercles proportionnels peut se faire directement à partir d'une couche de polygone (c'est alors les centroïdes des polygones qui sont représentés) mais est plus simple à partir d'une couche de points.</p>
 						<p><b>A partir de la couche de communes, nous allons créer les centroïdes (barycentres) des communes.</b></p>
-						<p>Qu'est-ce que le <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Centroid">centroïde</a> d'un polygone ? Il s'agit du centre géométrique de ce polygone. Concrètement, cela correspond au point où une forme en papier du polygone tiendrait en équilibre sur une épingle. Sans entrer dans le détail du calcul des coordonnées d'un centroïde, l'idée est de minimiser la distance au carré de ce centroïde à chacun des sommets du polygone.</p>
+						<p>Qu'est-ce que le <a class="ext" target="_blank" href="https://en.wikipedia.org/wiki/Centroid">centroïde</a> d'un polygone&nbsp;? Il s'agit du centre géométrique de ce polygone. Concrètement, cela correspond au point où une forme en papier du polygone tiendrait en équilibre sur une épingle. Sans entrer dans le détail du calcul des coordonnées d'un centroïde, l'idée est de minimiser la distance au carré de ce centroïde à chacun des sommets du polygone.</p>
 						<figure>
 							<a href="illustrations/10_01_centroides_principe.jpg" >
 								<img src="illustrations/10_01_centroides_principe.jpg" alt="Communes et leur centroïde" width="300">
@@ -97,10 +97,10 @@
 								</a>
 							</figure>
 							<ul>
-								<li class="espace">Couche source : choisir la couche <em class="data">commune</em></li>
-								<li class="espace">Point cliquez sur le bouton à droite <b>...</b>, allez à l'emplacement où vous voulez créer la couche de centroïdes et donnez-lui un nom : <em class="data">communes_centroides</em> (si vous choisissez le format GeoPackage, il faut donner un nom à la base et à la couche, vous pouvez utiliser le même nom)</li>
+								<li class="espace">Couche source&nbsp;: choisir la couche <em class="data">commune</em></li>
+								<li class="espace">Point cliquez sur le bouton à droite <b>...</b>, allez à l'emplacement où vous voulez créer la couche de centroïdes et donnez-lui un nom&nbsp;: <em class="data">communes_centroides</em> (si vous choisissez le format GeoPackage, il faut donner un nom à la base et à la couche, vous pouvez utiliser le même nom)</li>
 							</ul>
-							<p><b>Exécuter</b>... La couche de centroïdes est ajoutée à QGIS : un point a été créé par commune.</p>
+							<p><b>Exécuter</b>... La couche de centroïdes est ajoutée à QGIS&nbsp;: un point a été créé par commune.</p>
 							<figure>
 								<a href="illustrations/10_01_centroides_visu.jpg" >
 									<img src="illustrations/10_01_centroides_visu.jpg" alt="Visualisation des centroïdes sur la carte" width="200">
@@ -110,10 +110,10 @@
 
 					<h4>Faire varier la surface de points en fonction d'un champ<a class="headerlink" id="X11b" href="#X11b"></a></h4>
 					
-						<p>Il est ensuite possible de faire varier la surface des centroïdes des communes en fonction d'un champ, ou d'une expression :</p>
+						<p>Il est ensuite possible de faire varier la surface des centroïdes des communes en fonction d'un champ, ou d'une expression&nbsp;:</p>
 
 						<div class="manip">
-							<p>Couche <em class="data">communes_centroides</em> : <b>Propriétés &#8594; Symbologie &#8594; bouton à droite de Taille &#8594; Assistant...</b> :</p>
+							<p>Couche <em class="data">communes_centroides</em>&nbsp;: <b>Propriétés &#8594; Symbologie &#8594; bouton à droite de Taille &#8594; Assistant...</b>&nbsp;:</p>
 							<figure>
 								<a href="illustrations/10_01_assistant_taille_acces.jpg" >
 									<img src="illustrations/10_01_assistant_taille_acces.jpg" alt="Accès à l'Assistant Taille dans la rubrique style des propriétés de la couche" width="600">
@@ -126,19 +126,19 @@
 							</figure>
 						</div>
 						
-        				<p>Le principe est simple : cet outil lit les valeurs minimum et maximum pour un champ de la table attributaire, et leur fait correspondre une surface minimum et maximum. Les surfaces correspondant aux valeurs intermédiaires sont interpolées.</p>		
+        				<p>Le principe est simple&nbsp;: cet outil lit les valeurs minimum et maximum pour un champ de la table attributaire, et leur fait correspondre une surface minimum et maximum. Les surfaces correspondant aux valeurs intermédiaires sont interpolées.</p>		
 						
 						<div class="manip">
-						    <p><b>Partie Saisie</b> : cette partie concerne les valeurs de la variable utilisée.</p>
+						    <p><b>Partie Saisie</b>&nbsp;: cette partie concerne les valeurs de la variable utilisée.</p>
 						    <ul>
-						      <li>Source : il s'agit du champ dont les valeurs seront utilisées, ici <b>population</b></li>
-						      <li>Valeurs depuis... à ... : cliquez sur le bouton Actualiser à droite pour lire automatiquement les valeurs minimum et maximum de population, ici 0 et 2113705</li>
+						      <li>Source&nbsp;: il s'agit du champ dont les valeurs seront utilisées, ici <b>population</b></li>
+						      <li>Valeurs depuis... à ...&nbsp;: cliquez sur le bouton Actualiser à droite pour lire automatiquement les valeurs minimum et maximum de population, ici 0 et 2113705</li>
 						    </ul>
 						    
-							<p><b>Partie Sortie</b> : cette partie concerne la manière dont les valeurs seront représentées.</p>
+							<p><b>Partie Sortie</b>&nbsp;: cette partie concerne la manière dont les valeurs seront représentées.</p>
 							<ul>
-							 <li>Taille depuis... à ... : choisissez ici les surfaces correspondant aux valeurs minimale et maximale. Vous pouvez tester différentes valeurs, le résultat dépendra de l'échelle à laquelle la carte sera lue (France entière, département...)</li>
-							 <li>Méthode de calcul : choisissez <b>Surface</b> pour faire varier la surface et non le diamètre des cercles</li>
+							 <li>Taille depuis... à ...&nbsp;: choisissez ici les surfaces correspondant aux valeurs minimale et maximale. Vous pouvez tester différentes valeurs, le résultat dépendra de l'échelle à laquelle la carte sera lue (France entière, département...)</li>
+							 <li>Méthode de calcul&nbsp;: choisissez <b>Surface</b> pour faire varier la surface et non le diamètre des cercles</li>
 							</ul>
 						</div>
 
@@ -161,11 +161,11 @@
 								<img src="illustrations/10_01_methode_exponentiel.jpg" alt="Légende cercles proportionnels avec la méthode exponentiel (valeurs 1000, 100000, 1000000 et 2190327" width="150">
 							</a>
 						</figure>
-						<p>Si vous ne devez retenir qu'une chose : <b>faites varier la surface de vos cercles, pas leur rayon&nbsp;!</b> Cela permettra une lecture plus juste du phénomène que vous représentez.</p>
+						<p>Si vous ne devez retenir qu'une chose&nbsp;: <b>faites varier la surface de vos cercles, pas leur rayon&nbsp;!</b> Cela permettra une lecture plus juste du phénomène que vous représentez.</p>
 						
-					<h4>Les plus petits devant ! Modifier l'ordre d'affichage des symboles<a class="headerlink" id="X11d" href="#X11d"></a></h4>
+					<h4>Les plus petits devant&nbsp;! Modifier l'ordre d'affichage des symboles<a class="headerlink" id="X11d" href="#X11d"></a></h4>
 						
-						<p>Comme vous l'avez peut-être remarqué, QGIS affiche les cercles dans l'ordre de la table ; il peut donc arriver que de petits cercles soient masqués par de plus gros cercles.</p>
+						<p>Comme vous l'avez peut-être remarqué, QGIS affiche les cercles dans l'ordre de la table&nbsp;; il peut donc arriver que de petits cercles soient masqués par de plus gros cercles.</p>
 						<p>Nous allons voir ici comment afficher les cercles par ordre de population, les plus faibles populations par-dessus.</p>
 						<figure>
 							<a href="illustrations/10_01_ordre_avant.jpg" >
@@ -179,13 +179,13 @@
 							
 						<div class="manip">
 							<p>Dans les propriétés de la couche <em class="data">communes_centroides</em>, <b>Symbologie</b>, tout en bas de la fenêtre, rendez-vous dans la partie <b>Rendu de couche</b>.</p>
-							<p>Cochez la case <b>Contrôle de l'ordre de rendu des entités</b>&nbsp;, puis cliquez sur le bouton tout à droite&nbsp; qui est maintenant activé :</p>
+							<p>Cochez la case <b>Contrôle de l'ordre de rendu des entités</b>&nbsp;, puis cliquez sur le bouton tout à droite&nbsp; qui est maintenant activé&nbsp;:</p>
 							<figure>
 								<a href="illustrations/10_01_ordre_entites.jpg" >
 									<img src="illustrations/10_01_ordre_entites.jpg" alt="Activer l'ordre de rendu des entités" width="500">
 								</a>
 							</figure>
-							<p>Choisissez le champ <b>population</b> et l'ordre <b>Descendant</b> : ainsi, les cercles seront dessinés du plus peuplé au moins peuplé.</p>
+							<p>Choisissez le champ <b>population</b> et l'ordre <b>Descendant</b>&nbsp;: ainsi, les cercles seront dessinés du plus peuplé au moins peuplé.</p>
 							<figure>
 								<a href="illustrations/10_01_ordre_entites_2.jpg" >
 									<img src="illustrations/10_01_ordre_entites_2.jpg" alt="Fenêtre de définition de l'ordre de rendu des entités" width="550">
@@ -205,14 +205,14 @@
 					   <p>Cette fonctionnalité a été rajoutée après coup, ce qui illustre bien le fait que les logiciels SIG ne sont pas initialement pensés comme des logiciels de cartographie (mais ils ont aujourd'hui tellement de possibilité en ce sens que ce serait dommage de se priver&nbsp;!).</p>
 					   
 					   <div class="manip">
-					       <p>Ouvrez la fenêtre des propriétés, rubrique <b>Symbologie</b>, et cliquez en bas à droite sur <b>Avancé</b> pour choisir <b>Légende pour la Taille définie par des données</b> :</p>
+					       <p>Ouvrez la fenêtre des propriétés, rubrique <b>Symbologie</b>, et cliquez en bas à droite sur <b>Avancé</b> pour choisir <b>Légende pour la Taille définie par des données</b>&nbsp;:</p>
 					       <figure>
 								<a href="illustrations/10_01_legende_symbolprop_acces.jpg" >
 									<img src="illustrations/10_01_legende_symbolprop_acces.jpg" alt="Fenêtre des propriétés, symbologie, clic sur le bouton avancé" width="600">
 								</a>
 							</figure>
 					   
-					       <p>Sous cet intitulé un peu obscur se cache une légende paramétrable pour notre carte en cercles proportionnels :</p>
+					       <p>Sous cet intitulé un peu obscur se cache une légende paramétrable pour notre carte en cercles proportionnels&nbsp;:</p>
 					       <figure>
     							<a href="illustrations/10_01_legende_symbolprop.jpg" >
     								<img src="illustrations/10_01_legende_symbolprop.jpg" alt="Fenêtre de la légende des symbols proportionnels" width="470">
@@ -231,12 +231,12 @@
 					   </div>
 					   
 						
-				<h3>Représenter des variables relatives à des surfaces : cartes choroplèthes<a class="headerlink" id="X12" href="#X12"></a></h3>
+				<h3>Représenter des variables relatives à des surfaces&nbsp;: cartes choroplèthes<a class="headerlink" id="X12" href="#X12"></a></h3>
 					
 					<p>Une carte choroplèthe est une carte en aplats de couleurs. Les régions sont colorées selon une mesure statistique telle que la densité de population ou le revenu par habitant. Ce type de carte <a class="ext" target="_blank" href="https://neocarto.hypotheses.org/5717">ne peut donc être utilisé pour représenter des quantités ou des effectifs</a>. Les variables continues doivent être <a class="ext" target="_blank" href="http://www.hypergeo.eu/spip.php?article374">discrétisées</a> pour produire des classes.</p>
 					<figure>
 						<a href="illustrations/10_01_carte_choroplethe.jpg" >
-							<img src="illustrations/10_01_carte_choroplethe.jpg" alt="Exemple de carte choroplethe : carte de densité de population par commune, France métropolitaine, discrétisation par quantiles" width="500">
+							<img src="illustrations/10_01_carte_choroplethe.jpg" alt="Exemple de carte choroplethe&nbsp;: carte de densité de population par commune, France métropolitaine, discrétisation par quantiles" width="500">
 						</a>
 						<figcaption>Exemple de carte choroplèthe réalisée sous QGIS montrant la densité de population par commune en France métropolitaine, avec une discrétisation par quantiles.</figcaption>
 				   </figure>
@@ -250,9 +250,9 @@
 							<p>Calculez dans un nouveau champ nommé <b>densite</b> de type <b>décimal</b> la densité de population en <b>nombre d'habitants par km²</b>.</p>
 							<div class="question">
 								<input type="checkbox" id="faq-1">
-								<p><label for="faq-1">Quelle formule utiliser pour cela ?</label></p>
+								<p><label for="faq-1">Quelle formule utiliser pour cela&nbsp;?</label></p>
 								<p class="reponse">On peut utiliser <b>$area</b> pour calculer la surface. Les unités de la couche étant des mètres (couche projetée en Lambert 93), il faut diviser $area par 1 000 000 pour obtenir des km<sup>2</sup>.</p>
-								<p class="reponse">Au final, la formule est donc : <b>"population"  / ($area / 1000000)</b></p>
+								<p class="reponse">Au final, la formule est donc&nbsp;: <b>"population"  / ($area / 1000000)</b></p>
 							</div>
 							<p>Quittez le mode édition en enregistrant les modifications. Vérifiez le contenu du champ densite.</p>
                             <figure>
@@ -268,7 +268,7 @@
 						<p>Maintenant que ce champ est créé et à jour, il est possible de faire varier la couleur des communes en fonction de la densité.</p>
 						
 						<div class="manip">
-							<p>Pour faire varier la couleur des communes en fonction de la densité :</p>
+							<p>Pour faire varier la couleur des communes en fonction de la densité&nbsp;:</p>
 							<p><b>Propriétés de la couche commune &#8594; rubrique Symbologie</b></p>
 							<figure>
 								<a href="illustrations/10_01_choroplethe_fenetre.jpg" >
@@ -298,13 +298,13 @@
 									<img src="illustrations/10_01_enlever_bordure_02.jpg" alt="Cliquer sur Modifier pour enlever les bordures" width="400">
 								</a>
 							</figure>
-							<p>Toutefois, même ainsi, les limites restent un peu visibles. Il existe une astuce pour ne plus les voir, en allant dans le style du symbole :</p>
+							<p>Toutefois, même ainsi, les limites restent un peu visibles. Il existe une astuce pour ne plus les voir, en allant dans le style du symbole&nbsp;:</p>
 							<figure>
 								<a href="illustrations/10_01_enlever_bordure.jpg" >
 									<img src="illustrations/10_01_enlever_bordure.jpg" alt="Cliquer sur Modifier pour enlever les bordures" width="500">
 								</a>
 							</figure>
-							<p>Puis :</p>
+							<p>Puis&nbsp;:</p>
 							<figure>
 								<a href="illustrations/10_01_enlever_bordure_03.jpg" >
 									<img src="illustrations/10_01_enlever_bordure_03.jpg" alt="Bordure minimales, mêmes couleurs que les communes" width="500">
@@ -318,23 +318,23 @@
 						</div>
 						<figure>
 							<a href="illustrations/10_01_choroplethe_visu.jpg" >
-								<img src="illustrations/10_01_choroplethe_visu.jpg" alt="Exemple de carte choroplethe : 7 classes, méthode des quantiles, dégradé de rose fuschia, pas de bordure" width="300">
+								<img src="illustrations/10_01_choroplethe_visu.jpg" alt="Exemple de carte choroplethe&nbsp;: 7 classes, méthode des quantiles, dégradé de rose fuschia, pas de bordure" width="300">
 							</a>
 							<a href="illustrations/10_01_choroplethe_visu2.jpg" >
-								<img src="illustrations/10_01_choroplethe_visu2.jpg" alt="Exemple de carte choroplethe : 7 classes, méthode des quantiles, dégradé de rose fuschia, bordures de la couleur des communes" width="300">
+								<img src="illustrations/10_01_choroplethe_visu2.jpg" alt="Exemple de carte choroplethe&nbsp;: 7 classes, méthode des quantiles, dégradé de rose fuschia, bordures de la couleur des communes" width="300">
 							</a>
 							<figcaption>À gauche, sans bordure, à droite, avec des bordures de la couleur des symboles.</figcaption>
 						</figure>
 
 						
-				<h3>Représenter des quantités ou des effectifs : cartes en semis de points<a class="headerlink" id="X13" href="#X13"></a></h3>
+				<h3>Représenter des quantités ou des effectifs&nbsp;: cartes en semis de points<a class="headerlink" id="X13" href="#X13"></a></h3>
 					
 					<p>Une carte en semis de points permet, à partir d'un maillage surfacique, de représenter des quantités ou effectifs par des points placés aléatoirement au sein de chaque polygone. Le nombre de ces points est proportionnel à la quantité ou l'effectif lié au polygone.</p>
 					<figure>
 					   <a href="http://www.radicalcartography.net/index.html?chicagodots" >
 								<img src="illustrations/10_01_chicagodots.jpg" alt="carte en semis de points" width="600">
 							</a>
-					   <figcaption>Carte en semis de points de Chicago (Source : Bill Rankin sur <a href="http://www.radicalcartography.net/index.html?chicagodots">Radical Cartography</a>), &nbsp;: 1 point représente un personne, sa couleur est fonction de l'origine de cette personne. Cette carte met en lumière la ségrégation qui a lieu notamment dans certains quartiers des grandes villes.</figcaption>
+					   <figcaption>Carte en semis de points de Chicago (Source&nbsp;: Bill Rankin sur <a href="http://www.radicalcartography.net/index.html?chicagodots">Radical Cartography</a>), &nbsp;: 1 point représente un personne, sa couleur est fonction de l'origine de cette personne. Cette carte met en lumière la ségrégation qui a lieu notamment dans certains quartiers des grandes villes.</figcaption>
 				    </figure>
 					
 					<p>Ici, nous allons créer ces points aléatoires en fonction de la population. On pourrait créer un point par personne, mais le temps de création de la couche de points serait très long, et le résultat serait peu lisible. <b>Nous allons donc créer un point pour 100 personnes.</b></p>
@@ -355,12 +355,12 @@
 						</figure>
 						<ul>
 							<li class="espace">Couche source : <b>commune</b></li>
-							<li class="espace">Stratégie d'échantillonnage : <b>Nombre de points</b>, pour créer un nombre de points directement proportionnel à la population</li>
-							<li class="espace">Comptage de points : cliquez sur le bouton à droite, choisissez <b>éditer</b> et tapez l'expression suivante : <b>  round("population"/100)</b>, pour diviser la population par 100 et arrondir le résultat pour obtenir un nombre entier</li>
+							<li class="espace">Stratégie d'échantillonnage&nbsp;: <b>Nombre de points</b>, pour créer un nombre de points directement proportionnel à la population</li>
+							<li class="espace">Comptage de points&nbsp;: cliquez sur le bouton à droite, choisissez <b>éditer</b> et tapez l'expression suivante&nbsp;: <b>  round("population"/100)</b>, pour diviser la population par 100 et arrondir le résultat pour obtenir un nombre entier</li>
 							<li class="espace">Laissez les autres paramètres par défaut, pour créer une couche temporaire</li>
 							<li class="espace"><b>Exécuter</b>, patientez, l'opération est un peu longue... et fermez la fenêtre une fois terminé.</li>
 						</ul>
-						<p>Ajustez le style de la couche, par exemple à l'échelle du pays :</p>
+						<p>Ajustez le style de la couche, par exemple à l'échelle du pays&nbsp;:</p>
 						<figure>
 							<a href="illustrations/10_01_style_pts_aleatoires.jpg" >
 								<img src="illustrations/10_01_style_pts_aleatoires.jpg" alt="paramètres de représentation de la couche de points" width="520">
@@ -389,7 +389,7 @@
     				        
     				        <div class="manip">
     				            <p>Ouvrez les propriétés de la couche de communes, et <a href="10_01_representation.php#X12b">choisissez le mode gradué</a> pour le champ densité <a href="10_01_representation.php#X12a">créé précédemment</a> avec une discrétisation par exemple par quantiles.
-    				            <p>Cliquez ensuite sur l'onglet <b>Histogramme</b> (toujours dans la rubrique symbologie) puis sur <b>Charger les valeurs</b> :</p>
+    				            <p>Cliquez ensuite sur l'onglet <b>Histogramme</b> (toujours dans la rubrique symbologie) puis sur <b>Charger les valeurs</b>&nbsp;:</p>
     				            <figure>
         							<a href="illustrations/10_01_histogramme.jpg" >
         								<img src="illustrations/10_01_histogramme.jpg" alt="Histogramme dans la fenêtres des propriétés" width="550">
@@ -410,9 +410,9 @@
         								<img src="illustrations/10_01_histogramme_filtre.jpg" alt="Histogramme de fréquence pour les communes de densite<300" width="530">
         							</a>
         						</figure>
-        						<p>On y voit plus clair&nbsp;! Au passage, profitez-en pour cocher les cases <b>moyenne</b> et <b>écart-type</b>. Et vous pouvez ainsi vous rendre compte de l'intérêt principal de cet histogramme : les couleurs sont celles de la discrétisation choisie, et il est possible de modifier les bornes des classes directement dans l'histogramme.</p>
+        						<p>On y voit plus clair&nbsp;! Au passage, profitez-en pour cocher les cases <b>moyenne</b> et <b>écart-type</b>. Et vous pouvez ainsi vous rendre compte de l'intérêt principal de cet histogramme&nbsp;: les couleurs sont celles de la discrétisation choisie, et il est possible de modifier les bornes des classes directement dans l'histogramme.</p>
         						<p>Testez-le en faisant glisser un des traits correspondant à une borne. En cliquant sur le bouton <b>Appliquer</b>, les changements sont visibles dans la fenêtre de QGIS.</p>
-        						<p>Ceci peut être très utile pour appliquer la méthode des <b>seuils observés</b> : délimiter les classes à la main, en se basant sur les ruptures visibles dans l'histogramme.</p>
+        						<p>Ceci peut être très utile pour appliquer la méthode des <b>seuils observés</b>&nbsp;: délimiter les classes à la main, en se basant sur les ruptures visibles dans l'histogramme.</p>
         						<p>N'oubliez pas de <b>supprimer le filtre</b> pour travailler à nouveau sur l'ensemble de vos données.</p>
     				        </div>
     				        
@@ -423,9 +423,9 @@
     				        <p>Cette extension permet la création de graphiques de différents types (nuages de points, boîtes à moustaches, histogramme...) à partir des données chargées dans QGIS. Nous ne verrons pas ici toutes les fonctionnalités liées à cette extension, mais vous aurez une petite entrevue de ses riches possibilités&nbsp;!</p>
     				        
     				        <div class="manip">
-    				            <p>Il faut tout d'abord <a href="03_04_fonds_carte.php#III43" >installer l'extension</a> : <b>menu Extension &#8594; Installer/Gérer les extensions</b>, tapez <b>plotly</b> dans la barre de recherche et cliquez sur <b>Installer l'extension</b>.</p>
+    				            <p>Il faut tout d'abord <a href="03_04_fonds_carte.php#III43" >installer l'extension</a>&nbsp;: <b>menu Extension &#8594; Installer/Gérer les extensions</b>, tapez <b>plotly</b> dans la barre de recherche et cliquez sur <b>Installer l'extension</b>.</p>
     				            <p><img class="icone" src="illustrations/10_01_plotly_icone.jpg" alt="icône extension Plotly" >Plotly est ensuite accessible via le <b>menu Vue &#8594; Panneaux &#8594; DataPlotly</b> ou bien en cliquant sur son icône.</p>
-    				            <p>Un nouveau panneau apparaît : il peut être nécessaire de l'agrandir un peu.</p>
+    				            <p>Un nouveau panneau apparaît&nbsp;: il peut être nécessaire de l'agrandir un peu.</p>
                                 <p>Pour affficher un histogramme de fréquence de la densité de population&nbsp;:</p>
     				            <figure>
             							<a href="illustrations/10_01_plotly_config.jpg" >
@@ -444,7 +444,7 @@
             							</a>
             						</figure>
             						<p>La barre d'outils en haut à droite permet de zoomer, dézoomer etc. dans le graphique.</p>
-            						<p>Tout est ensuite paramétrable, ou presque, notamment ici :</p>
+            						<p>Tout est ensuite paramétrable, ou presque, notamment ici&nbsp;:</p>
             						<figure>
             							<a href="illustrations/10_01_plotly_config1.jpg" >
             								<img src="illustrations/10_01_plotly_config1.jpg" alt="Paramétrage du graphique dans Plotly" width="550">
@@ -468,8 +468,8 @@
     				        </div>
 						
 					
-					<p>En conclusion de ce chapitre, nous avons vu ici trois manières de représenter une même donnée : la population des communes. Il en existe beaucoup d'autres&nbsp;!</p>
-					<p>Dans le chapitre suivant, nous aborderons la <b>mise en page de cartes</b> afin par exemple de pouvoir les intégrer dans un article : ajout d'un titre, d'une légende... et export au format image ou vectoriel. L'export au format vectoriel vous permettra de retravailler la carte dans un logiciel de dessin vectoriel.</p>
+					<p>En conclusion de ce chapitre, nous avons vu ici trois manières de représenter une même donnée&nbsp;: la population des communes. Il en existe beaucoup d'autres&nbsp;!</p>
+					<p>Dans le chapitre suivant, nous aborderons la <b>mise en page de cartes</b> afin par exemple de pouvoir les intégrer dans un article&nbsp;: ajout d'un titre, d'une légende... et export au format image ou vectoriel. L'export au format vectoriel vous permettra de retravailler la carte dans un logiciel de dessin vectoriel.</p>
 
 				<br>
 				<a class="prec" href="10_00_carto.php">chapitre précédent</a>
@@ -479,15 +479,15 @@
 
 		</div>
 		<div class="sidebar">
-			<?php include('logos_menus_verticaux.inc.php'); ?>
-			<?php include('menus_verticaux_10.inc.php'); ?>
+			<?php include('logos_menus_verticaux.inc.php');?>
+			<?php include('menus_verticaux_10.inc.php');?>
 		</div>
 		
 		<div id="notforprint" style="clear:both;"></div>
 		
 	</div>
 
-	<?php include('footer.inc.php'); ?>
+	<?php include('footer.inc.php');?>
 
 </div>
 </body>
