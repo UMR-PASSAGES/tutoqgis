@@ -181,8 +181,8 @@
 				<p>Autrement dit&nbsp;:</p>
 				
 				<figure>
-					<a href="illustrations/2_4_ne_pas_confondre.jpg" >
-						<img src="illustrations/2_4_ne_pas_confondre.jpg" alt="Analogie d'un livre à traduire pour expliquer la différence entre modifier et redéfinir le SCR" width="500">
+					<a href="illustrations/2_4_ne_pas_confondre.png" >
+						<img src="illustrations/2_4_ne_pas_confondre.png" alt="Analogie d'un livre à traduire pour expliquer la différence entre modifier et redéfinir le SCR" width="500">
 					</a>
 				</figure>
 				

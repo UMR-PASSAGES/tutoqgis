@@ -741,7 +741,7 @@ hov         #1D3437     hover colour
         #nav li {display: block; text-align: center; font-size: 6vw;}
         #nav ul li, #nav ul li a {width: 100%;}
         #nav li:hover {display: block;}
-        #wrapdanswrap { background:#FFFFFF url(illustrations/bandeau.jpg); background-size: cover;}
+        #menus_horiz { background:#FFFFFF url(illustrations/bandeau.jpg); background-size: cover;}
         /* taille de police pour le titre */
         a.grostitre {font-size: 8vw;}
         /* taille de police pour le plan détaillé */

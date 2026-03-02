@@ -79,8 +79,8 @@
 							<a href="illustrations/4_6_osm_doncaster_east.jpg">
 								<img src="illustrations/4_6_osm_doncaster_east.jpg" alt="Doncaster East&nbsp;: carte OSM avec zoom sur la zone de la carte à caler" width="250">
 							</a>
-							<a href="illustrations/4_6_Doncaster_east_locality_map.jpg">
-								<img src="illustrations/4_6_Doncaster_east_locality_map.jpg" alt="Doncaster East&nbsp;: carte à caler" width="250">
+							<a href="illustrations/4_6_Doncaster_east_locality_map.png">
+								<img src="illustrations/4_6_Doncaster_east_locality_map.png" alt="Doncaster East&nbsp;: carte à caler" width="250">
 							</a>
 						</figure>
 					</div>

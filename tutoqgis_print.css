@@ -62,17 +62,17 @@ hov         #1D3437     hover colour
 	}
 
 	/* les menus horizontaux */
-	#wrapdanswrap {	/* le contenant global des menus horizontaux */
-	    display: none;
+	#menus_horiz {	/* le contenant global des menus horizontaux */
+	  display: none;
 		padding:0px 0px;
-		background:#FFFFFF url(illustrations/tous/bandeau.png);
+		background:#FFFFFF url(illustrations/tous/bandeau.jpg);
 	}
 	/* le div pour les logos à n'afficher qu'à l'impression */
 	#logos_print {
 		display: none;
 	}
 	#header {	/* le titre (ex. : tutoriel QGIS 2) */
-    	padding:15px 10px;
+    padding:15px 10px;
 		color: #FFFFFF;
 	}
 	#nav {	/* les menus eux-mêmes */
@@ -94,8 +94,8 @@ hov         #1D3437     hover colour
 	}
 	#nav li a {	/* pour les liens du menu horizontal */
 		font-size: 1.1em;
-        color: #FFFFFF;
-        text-decoration: none;
+    color: #FFFFFF;
+    text-decoration: none;
 	}
 	#nav li:hover {	/* pour les liens du menu horizontal */
 		color: #191919;
@@ -237,7 +237,7 @@ hov         #1D3437     hover colour
 		border-color: silver;
 		box-shadow: none;
 		-webkit-box-shadow: none;
-   	    box-shadow: none;
+   	box-shadow: none;
 	}
 
 	/* Pour afficher une image quand on passe la souris sur un texte (capture d'écran) */
@@ -254,7 +254,7 @@ hov         #1D3437     hover colour
 		z-index: 50;
 	}
 	.thumbnail_bottom span{ /*CSS for enlarged image when invisible (without hover)*/
-	    display: none;
+	  display: none;
 		position: absolute;
 		background-color: white;
 		padding: 0;
@@ -278,20 +278,20 @@ hov         #1D3437     hover colour
 	}
 	/* quand on veut que l'image s'affiche au-dessus du texte (bas de page) */
 	.thumbnail_top{
-	    display: none;
+	  display: none;
 		color: /*hov*/#1D3437;
 		border-bottom: 1px dotted;
 		position: relative;
 		z-index: 0;
 	}
 	.thumbnail_top:hover{
-	    display: none;
-	    color: /*hov*/#1D3437;
+	  display: none;
+	  color: /*hov*/#1D3437;
 		background-color: transparent;
 		z-index: 50;
 	}
 	.thumbnail_top span{ /*CSS for enlarged image when invisible (without hover)*/
-	    display: none;
+	  display: none;
 		position: absolute;
 		background-color: white;
 		padding: 0;
@@ -308,7 +308,7 @@ hov         #1D3437     hover colour
 		padding: 0;
 	}
 	.thumbnail_top:hover span{ /*CSS for enlarged image on hover*/
-	    display: none;
+	  display: none;
 		visibility: visible;
 		bottom: 20px;
 		left: 0; /*position where enlarged image should offset horizontally */	
@@ -713,7 +713,7 @@ hov         #1D3437     hover colour
         #nav li {display: block; text-align: center; font-size: 6vw;}
         #nav ul li, #nav ul li a {width: 100%;}
         #nav li:hover {display: block;}
-        #wrapdanswrap { background:#FFFFFF url(illustrations/tous/bandeau.png); background-size: cover;}
+        #wrapdanswrap { background:#FFFFFF url(illustrations/tous/bandeau.jpg); background-size: cover;}
         /* taille de police pour le titre */
         a.grostitre {font-size: 8vw;}
         /* taille de police pour le plan détaillé */

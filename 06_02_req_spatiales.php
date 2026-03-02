@@ -85,19 +85,19 @@
 						<caption>Opérateurs de requête spatiale disponibles en fonction des types des couches de de départ et de référence.</caption>
 						 <tr>
 					       <th>Couche de départ&nbsp;:</th>
-					       <th class="clair" colspan="2"><img class="noshadow" src="illustrations/6_2_point.jpg" alt="icône de point" ></th>
-					       <th class="centre" colspan="3"><img class="noshadow" src="illustrations/6_2_ligne.jpg" alt="icône de ligne" ></th>
-					       <th class="clair" colspan="2"><img class="noshadow" src="illustrations/6_2_polygone.jpg" alt="icône de polygone" ></th>
+					       <th class="clair" colspan="2"><img class="noshadow" src="illustrations/6_2_point.png" alt="icône de point" ></th>
+					       <th class="centre" colspan="3"><img class="noshadow" src="illustrations/6_2_ligne.png" alt="icône de ligne" ></th>
+					       <th class="clair" colspan="2"><img class="noshadow" src="illustrations/6_2_polygone.png" alt="icône de polygone" ></th>
 					   </tr>
 					   <tr>
 					       <th>Couche de référence&nbsp;:</th>
-					       <th class="clair"><img class="noshadow" src="illustrations/6_2_point.jpg" alt="icône de point" ></th>
-					       <th class="clair"><img class="noshadow" src="illustrations/6_2_ligne.jpg" alt="icône de ligne" ><img class="noshadow" src="illustrations/6_2_polygone.jpg" alt="icône de polygone" ></th>
-					       <th class="centre"><img class="noshadow" src="illustrations/6_2_point.jpg" alt="icône de point" ></th>
-					       <th class="centre"><img class="noshadow" src="illustrations/6_2_ligne.jpg" alt="icône de ligne" ></th>
-					       <th class="centre"><img class="noshadow" src="illustrations/6_2_polygone.jpg" alt="icône de polygone" ></th>
-					       <th class="clair"><img class="noshadow" src="illustrations/6_2_point.jpg" alt="icône de point" ><img class="noshadow" src="illustrations/6_2_ligne.jpg" alt="icône de ligne" ></th>
-					       <th class="clair"><img class="noshadow" src="illustrations/6_2_polygone.jpg" alt="icône de polygone" ></th>
+					       <th class="clair"><img class="noshadow" src="illustrations/6_2_point.png" alt="icône de point" ></th>
+					       <th class="clair"><img class="noshadow" src="illustrations/6_2_ligne.png" alt="icône de ligne" ><img class="noshadow" src="illustrations/6_2_polygone.png" alt="icône de polygone" ></th>
+					       <th class="centre"><img class="noshadow" src="illustrations/6_2_point.png" alt="icône de point" ></th>
+					       <th class="centre"><img class="noshadow" src="illustrations/6_2_ligne.png" alt="icône de ligne" ></th>
+					       <th class="centre"><img class="noshadow" src="illustrations/6_2_polygone.png" alt="icône de polygone" ></th>
+					       <th class="clair"><img class="noshadow" src="illustrations/6_2_point.png" alt="icône de point" ><img class="noshadow" src="illustrations/6_2_ligne.png" alt="icône de ligne" ></th>
+					       <th class="clair"><img class="noshadow" src="illustrations/6_2_polygone.png" alt="icône de polygone" ></th>
 					   </tr>
 					   <tr>
 					       <td>A l'intérieur</td>
