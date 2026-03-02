@@ -65,7 +65,7 @@ hov         #1D3437     hover colour
 	#menus_horiz {	/* le contenant global des menus horizontaux */
 	  display: none;
 		padding:0px 0px;
-		background:#FFFFFF url(illustrations/tous/bandeau.jpg);
+		background:#FFFFFF url(illustrations/bandeau.jpg);
 	}
 	/* le div pour les logos à n'afficher qu'à l'impression */
 	#logos_print {
@@ -713,7 +713,7 @@ hov         #1D3437     hover colour
         #nav li {display: block; text-align: center; font-size: 6vw;}
         #nav ul li, #nav ul li a {width: 100%;}
         #nav li:hover {display: block;}
-        #wrapdanswrap { background:#FFFFFF url(illustrations/tous/bandeau.jpg); background-size: cover;}
+        #wrapdanswrap { background:#FFFFFF url(illustrations/bandeau.jpg); background-size: cover;}
         /* taille de police pour le titre */
         a.grostitre {font-size: 8vw;}
         /* taille de police pour le plan détaillé */
