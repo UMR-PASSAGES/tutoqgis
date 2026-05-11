@@ -101,7 +101,7 @@
 					
 					<p>En france comme dans d'autres pays, il existe des catalogues de données pour chaque région. Comme nous avons déjà téléchargé les communes de Guyane, nous allons donc nous rendre sur le géocatalogue guyanais pour télécharger l'emplacement des centrales électriques.</p>
 					
-					<p>Si le téléchargement échoue, la couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip." >ici</a>.</p>
+					<p>Si le téléchargement échoue, la couche est également disponible <a href="donnees/TutoQGIS_03_RechercheDonnees.zip" >ici</a>.</p>
 					
 					<p>Le cas de la Guyane est un peu particulier car il existe 2 catalogues pour ce territoire, <a class="ext" target="_blank" href="https://www.guyane-sig.fr" >guyane-sig</a> et <a class="ext" target="_blank" href="https://www.geoguyane.fr/" >geoguyane</a>. C'est ce dernier que nous allons utiliser ici.</p>
 					
